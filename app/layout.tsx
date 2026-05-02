@@ -3,7 +3,7 @@ import './globals.css'
 import Providers from './providers'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ek-druck.at'),
+  metadataBase: new URL('https://www.ek-druck.at'),
   title: {
     default: '3D-Druck Österreich | ekdruck',
     template: '%s',
