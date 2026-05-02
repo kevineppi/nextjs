@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Index from '@/src-pages/Index'
 
 export const metadata: Metadata = {
-  title: '3D-Druck Österreich ★5,0 – Architekturmodelle & Messemodelle | ekdruck',
-  description: 'Österreichs Spezialist für Architekturmodelle & Messemodelle. ★ 5,0 Google (31 Bewertungen) · Angebot in 6 h · Express 24 h · ab €20 · Flatrate für Architekturbüros ab €199/Mon.',
+  title: '3D-Druck Österreich ★5,0 – Architektur- & Messemodelle | ekdruck',
+  description: 'Architektur- & Messemodelle aus dem 3D-Druck ★5,0 (31 Bewertungen). Angebot in 6h · Express 24h · ab €20 · Made in Austria.',
   alternates: {
     canonical: 'https://ek-druck.at',
   },
   openGraph: {
-    title: '3D-Druck Österreich ★5,0 – Architekturmodelle & Messemodelle | ekdruck',
-    description: 'Österreichs Spezialist für Architekturmodelle & Messemodelle. ★ 5,0 Google (31 Bewertungen) · Angebot in 6 h · Express 24 h · ab €20 · Flatrate für Architekturbüros ab €199/Mon.',
+    title: '3D-Druck Österreich ★5,0 – Architektur- & Messemodelle | ekdruck',
+    description: 'Architektur- & Messemodelle aus dem 3D-Druck ★5,0 (31 Bewertungen). Angebot in 6h · Express 24h · ab €20 · Made in Austria.',
     url: 'https://ek-druck.at',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D-Druck Österreich ★5,0 – Architekturmodelle & Messemodelle | ekdruck',
-    description: 'Österreichs Spezialist für Architekturmodelle & Messemodelle. ★ 5,0 Google (31 Bewertungen) · Angebot in 6 h · Express 24 h · ab €20 · Flatrate für Architekturbüros ab €199/Mon.',
+    title: '3D-Druck Österreich ★5,0 – Architektur- & Messemodelle | ekdruck',
+    description: 'Architektur- & Messemodelle aus dem 3D-Druck ★5,0 (31 Bewertungen). Angebot in 6h · Express 24h · ab €20 · Made in Austria.',
   },
 }
 

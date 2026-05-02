@@ -95,11 +95,11 @@ const Hero = () => {
           <div style={t(0.2)}>
             <h1 className="text-[clamp(3.5rem,11vw,10rem)] font-bold leading-[0.9] tracking-[-0.05em] mb-4">
               <span className="block">
-                {line1.displayed}
+                {line1.displayed || "Architektur- &"}
                 {!line1.done && <span className="inline-block w-[3px] h-[0.8em] bg-primary ml-1 animate-pulse align-baseline" />}
               </span>
               <span className="block text-gradient">
-                {line2.displayed}
+               {line2.displayed || "Messemodelle."}
                 {line1.done && !line2.done && <span className="inline-block w-[3px] h-[0.8em] bg-primary ml-1 animate-pulse align-baseline" />}
               </span>
             </h1>
