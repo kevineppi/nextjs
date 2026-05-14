@@ -3,7 +3,7 @@
 import SEOHead from "@/components/SEOHead";
 import InlineSchema from "@/components/InlineSchema";
 import Link from "next/link";
-import { useParams, redirect } from "next/navigation";
+import { usePathname, redirect } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
@@ -50,7 +50,8 @@ import {
 } from "lucide-react";
 
 const ArchitekturmodellRegion = () => {
-  const { region } = useParams<{ region: string }>();
+  const pathname = usePathname();
+  const region = pathname?.split("/").pop() || "";
   const atRegion = region ? getArchitekturRegionBySlug(region) : undefined;
   const deRegion = region ? getGermanArchitekturBySlug(region) : undefined;
   const regionData = atRegion || deRegion;
