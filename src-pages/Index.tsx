@@ -772,7 +772,7 @@ const Index = () => {
                 ].map(({ val, label }) =>
                   <div key={label} className="text-center">
                     <p className="mono text-3xl font-bold text-primary leading-none tracking-tight">{val}</p>
-                    <p className="mono text-[9px] text-background/30 mt-2 font-bold uppercase tracking-[0.2em]">{label}</p>
+                    <p className="mono text-[9px] text-background/50 mt-2 font-bold uppercase tracking-[0.2em]">{label}</p>
                   </div>
                 )}
               </div>

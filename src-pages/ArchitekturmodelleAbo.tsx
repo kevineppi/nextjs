@@ -438,7 +438,7 @@ const ArchitekturmodelleAbo = () => {
               </tbody>
             </table>
             <p className="text-xs text-muted-foreground mt-4 text-center">
-              *Marktvergleich Österreich 2024. Preise variieren je nach Komplexität und Anbieter.
+              *Marktvergleich Österreich 2026. Preise variieren je nach Komplexität und Anbieter.
             </p>
           </div>
         </div>
@@ -453,7 +453,7 @@ const ArchitekturmodelleAbo = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold shadow-lg"
+              className="bg-white text-primary hover:bg-white/90 font-semibold shadow-lg"
               onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
             >
               Jetzt kostenlos anfragen <ArrowRight className="ml-2 h-4 w-4" />
@@ -619,7 +619,7 @@ const ArchitekturmodelleAbo = () => {
             </Card>
 
             {/* Right – Form */}
-            <Card className="p-7 md:p-8 bg-background text-foreground border-0 shadow-2xl">
+            <Card className="p-7 md:p-8 bg-background text-foreground border-2 border-border shadow-xl rounded-2xl">
               {submitted ? (
                 <div className="text-center py-6">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5">
@@ -711,7 +711,7 @@ const ArchitekturmodelleAbo = () => {
                     onClick={handleSubmit}
                     disabled={submitting}
                     size="lg"
-                    className="w-full bg-accent text-accent-foreground hover:bg-accent/90 hover:scale-[1.01] active:scale-[0.99] transition-transform font-semibold"
+                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-[1.01] active:scale-[0.99] transition-transform font-semibold"
                   >
                     {submitting ? "Wird gesendet..." : (<>Jetzt kostenlos anfragen <Send className="ml-2 h-4 w-4" /></>)}
                   </Button>
