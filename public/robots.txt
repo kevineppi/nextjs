@@ -5,4 +5,4 @@ Allow: /
 Disallow: /api/
 Disallow: /_next/
 
-Sitemap: https://ek-druck.at/sitemap.xml
+Sitemap: https://www.ek-druck.at/sitemap.xml
