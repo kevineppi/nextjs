@@ -1,13 +1,14 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Building, Calendar, Tag } from "lucide-react";
+import { Building, Calendar, Tag, Timer } from "lucide-react";
 
 interface Messe {
   name: string;
   location: string;
   type: string;
   month?: string;
+  deadline?: string;
   visitors?: string;
   description?: string;
 }
@@ -71,6 +72,12 @@ const LocalMessenSection = ({ messen, regionName, type }: LocalMessenSectionProp
                     <p className="text-xs text-muted-foreground mt-3">
                       ca. {messe.visitors} Besucher
                     </p>
+                  )}
+                  {messe.deadline && messe.deadline !== '–' && (
+                    <div className="flex items-center gap-1.5 mt-3 text-xs font-semibold text-primary">
+                      <Timer className="w-3 h-3" />
+                      <span>Bestellen ab {messe.deadline}</span>
+                    </div>
                   )}
                   {messe.description && (
                     <p className="text-sm text-muted-foreground mt-3 leading-relaxed">

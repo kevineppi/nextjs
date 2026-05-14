@@ -29,23 +29,15 @@ import {
    ═══════════════════════════════════════════════════════════ */
 
 const messeKalender = [
-  { name: "IFAT", ort: "München", datum: "Mai 2026", branche: "Umwelttechnik", bestellStart: "März 2026", status: "bald" as const },
-  { name: "Automechanika", ort: "Frankfurt", datum: "Sep 2026", branche: "Automotive", bestellStart: "Juli 2026", status: "offen" as const },
-  { name: "Welser Messe", ort: "Wels", datum: "Sep 2026", branche: "Industrie", bestellStart: "Juli 2026", status: "offen" as const },
-  { name: "OLMA", ort: "St. Gallen 🇨🇭", datum: "Okt 2026", branche: "Landwirtschaft", bestellStart: "Aug 2026", status: "offen" as const },
-  { name: "MEDICA", ort: "Düsseldorf", datum: "Nov 2026", branche: "Medizintechnik", bestellStart: "Sep 2026", status: "offen" as const },
-  { name: "SPS", ort: "Nürnberg", datum: "Nov 2026", branche: "Automation", bestellStart: "Sep 2026", status: "offen" as const },
-  { name: "electronica", ort: "München", datum: "Nov 2026", branche: "Elektronik", bestellStart: "Sep 2026", status: "offen" as const },
-  { name: "BAUEN & WOHNEN", ort: "Wien", datum: "Nov 2026", branche: "Bau & Immobilien", bestellStart: "Sep 2026", status: "offen" as const },
-  { name: "PRODEX", ort: "Basel 🇨🇭", datum: "Nov 2026", branche: "Fertigung", bestellStart: "Sep 2026", status: "offen" as const },
-  { name: "BAU", ort: "München", datum: "Jan 2027", branche: "Bau & Architektur", bestellStart: "Nov 2026", status: "offen" as const },
-  { name: "Swissbau", ort: "Basel 🇨🇭", datum: "Jan 2027", branche: "Bau & Immobilien", bestellStart: "Nov 2026", status: "offen" as const },
-  { name: "VIENNA AUTOSHOW", ort: "Wien", datum: "Jan 2027", branche: "Automotive", bestellStart: "Nov 2026", status: "offen" as const },
-  { name: "Power-Days", ort: "Salzburg", datum: "Mär 2027", branche: "Elektrotechnik", bestellStart: "Jan 2027", status: "offen" as const },
-  { name: "Hannover Messe", ort: "Hannover", datum: "Apr 2027", branche: "Industrie", bestellStart: "Feb 2027", status: "offen" as const },
-  { name: "BEA", ort: "Bern 🇨🇭", datum: "Apr 2027", branche: "Gewerbe", bestellStart: "Feb 2027", status: "offen" as const },
-  { name: "LUGA", ort: "Luzern 🇨🇭", datum: "Apr 2027", branche: "Gewerbe", bestellStart: "Feb 2027", status: "offen" as const },
-  { name: "LIGNA", ort: "Hannover", datum: "Mai 2027", branche: "Holzverarbeitung", bestellStart: "Mär 2027", status: "offen" as const },
+  { name: "IFAT", ort: "München", datum: "Mai 2026", branche: "Umwelttechnik", bestellStart: "Mär 2026", status: "bald" as const, link: "/messemodelle/muenchen" },
+  { name: "Automechanika", ort: "Frankfurt", datum: "Sep 2026", branche: "Automotive", bestellStart: "Jul 2026", status: "offen" as const, link: "/messemodelle/frankfurt" },
+  { name: "Welser Messe", ort: "Wels", datum: "Sep 2026", branche: "Industrie", bestellStart: "Jul 2026", status: "offen" as const, link: "/messemodelle/oberoesterreich" },
+  { name: "OLMA", ort: "St. Gallen 🇨🇭", datum: "Okt 2026", branche: "Landwirtschaft", bestellStart: "Aug 2026", status: "offen" as const, link: "/messemodelle/st-gallen" },
+  { name: "MEDICA", ort: "Düsseldorf", datum: "Nov 2026", branche: "Medizintechnik", bestellStart: "Sep 2026", status: "offen" as const, link: "/messemodelle/duesseldorf" },
+  { name: "SPS", ort: "Nürnberg", datum: "Nov 2026", branche: "Automation", bestellStart: "Sep 2026", status: "offen" as const, link: "/messemodelle/nuernberg" },
+  { name: "BAUEN & WOHNEN", ort: "Wien", datum: "Nov 2026", branche: "Bau & Immobilien", bestellStart: "Sep 2026", status: "offen" as const, link: "/messemodelle/wien" },
+  { name: "BAU", ort: "München", datum: "Jan 2027", branche: "Bau & Architektur", bestellStart: "Nov 2026", status: "offen" as const, link: "/messemodelle/muenchen" },
+  { name: "Hannover Messe", ort: "Hannover", datum: "Apr 2027", branche: "Industrie", bestellStart: "Feb 2027", status: "offen" as const, link: "/messemodelle/hannover" },
 ];
 
 const branchenUseCases = [
@@ -528,7 +520,7 @@ const Messemodelle = () => (
       </section>
 
       {/* ════════════════════════════════════════════
-          MESSEKALENDER – Clean table, no cards
+          MESSEKALENDER – Responsive cards, links to regional pages
           ════════════════════════════════════════════ */}
       <section className="py-32 bg-muted/30 border-y border-border">
         <div className="container mx-auto px-4">
@@ -536,41 +528,41 @@ const Messemodelle = () => (
             <AnimatedSection animation="fade-in" className="mb-16">
               <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Messekalender DACH 2026/2027</p>
               <h2 className="text-4xl md:text-5xl font-bold tracking-[-0.03em] mb-4">Ihre Messe – <span className="text-gradient">wann bestellen?</span></h2>
-              <p className="text-muted-foreground max-w-lg">Optimale Vorlaufzeit: 4–6 Wochen. Express bis 48h vor Aufbau.</p>
+              <p className="text-muted-foreground max-w-lg">Optimale Vorlaufzeit: 4–6 Wochen. Express bis 48h vor Aufbau. Alle Messen finden Sie auf den jeweiligen Regionsseiten.</p>
             </AnimatedSection>
 
-            <AnimatedSection animation="slide-up">
-              <div className="rounded-3xl border-2 border-border overflow-hidden bg-card">
-                {/* Table header */}
-                <div className="grid grid-cols-12 border-b-2 border-border bg-muted/50 px-6 py-4">
-                  <div className="col-span-4 md:col-span-3 mono text-[10px] font-bold uppercase tracking-[0.15em] text-muted-foreground">Messe</div>
-                  <div className="col-span-3 md:col-span-3 mono text-[10px] font-bold uppercase tracking-[0.15em] text-muted-foreground">Ort</div>
-                  <div className="col-span-2 mono text-[10px] font-bold uppercase tracking-[0.15em] text-muted-foreground hidden md:block">Branche</div>
-                  <div className="col-span-2 mono text-[10px] font-bold uppercase tracking-[0.15em] text-muted-foreground">Termin</div>
-                  <div className="col-span-3 md:col-span-2 mono text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Bestellen ab</div>
-                </div>
-                {/* Rows */}
-                {messeKalender.map((m, i) => (
-                  <div key={m.name} className={`grid grid-cols-12 px-6 py-4 border-b border-border/30 last:border-b-0 hover:bg-primary/[0.02] transition-colors items-center ${m.status === 'bald' ? 'bg-amber-500/[0.03]' : ''}`}>
-                    <div className="col-span-4 md:col-span-3 font-semibold text-sm truncate pr-2 flex items-center gap-2">
-                      {m.status === 'bald' && <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse shrink-0" />}
-                      {m.name}
-                    </div>
-                    <div className="col-span-3 md:col-span-3 text-xs text-muted-foreground flex items-center gap-1.5"><MapPin className="w-3 h-3 shrink-0" />{m.ort}</div>
-                    <div className="col-span-2 text-xs text-muted-foreground hidden md:block">{m.branche}</div>
-                    <div className="col-span-2 mono text-xs font-medium">{m.datum}</div>
-                    <div className="col-span-3 md:col-span-2">
-                      <span className={`inline-flex items-center gap-1 mono text-[11px] font-bold px-2.5 py-1 rounded-full ${m.status === 'bald' ? 'bg-amber-500/10 text-amber-600' : 'bg-primary/10 text-primary'}`}>
-                        <Timer className="w-3 h-3" />{m.bestellStart}
-                      </span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </AnimatedSection>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {messeKalender.slice(0, 9).map((m, i) => (
+                <AnimatedSection key={m.name} animation="slide-up" delay={i * 60}>
+                  <Link href={m.link} className="group block">
+                    <MagneticCard className={`rounded-2xl border-2 h-full transition-all duration-300 ${m.status === 'bald' ? 'border-amber-500/30 bg-amber-500/[0.03]' : 'border-border hover:border-primary/30 bg-card'}`}>
+                      <div className="p-5">
+                        <div className="flex items-start justify-between mb-3">
+                          <div>
+                            <p className="font-bold text-base group-hover:text-primary transition-colors">{m.name}</p>
+                            <p className="text-xs text-muted-foreground flex items-center gap-1 mt-0.5"><MapPin className="w-3 h-3" />{m.ort}</p>
+                          </div>
+                          <span className="mono text-xs font-bold text-muted-foreground bg-muted px-2 py-1 rounded-lg">{m.datum}</span>
+                        </div>
+                        <p className="text-xs text-muted-foreground mb-3">{m.branche}</p>
+                        <div className="flex items-center justify-between">
+                          <span className={`inline-flex items-center gap-1 mono text-[11px] font-bold px-2.5 py-1 rounded-full ${m.status === 'bald' ? 'bg-amber-500/10 text-amber-600' : 'bg-primary/10 text-primary'}`}>
+                            <Timer className="w-3 h-3" />Bestellen ab {m.bestellStart}
+                          </span>
+                          <ChevronRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                        </div>
+                      </div>
+                    </MagneticCard>
+                  </Link>
+                </AnimatedSection>
+              ))}
+            </div>
 
-            <AnimatedSection animation="fade-in" className="mt-8 text-center">
-              <p className="text-sm text-muted-foreground">Ihre Messe fehlt? <Link href="#kontakt" className="text-primary font-semibold hover:underline">Messetermin mitteilen →</Link></p>
+            <AnimatedSection animation="fade-in" className="mt-10 text-center">
+              <p className="text-sm text-muted-foreground mb-4">Weitere Messen finden Sie auf den regionalen Seiten unten.</p>
+              <Button variant="outline" className="rounded-full" asChild>
+                <Link href="#kontakt">Messetermin mitteilen <ArrowRight className="ml-2 w-4 h-4" /></Link>
+              </Button>
             </AnimatedSection>
           </div>
         </div>

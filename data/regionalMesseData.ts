@@ -16,6 +16,8 @@ export interface RegionalMesseData {
     name: string;
     location: string;
     type: string;
+    month?: string;
+    deadline?: string;
   }[];
   localAdvantages: string[];
   nearbyRegions: string[];
@@ -40,11 +42,11 @@ export const regionalMesseData: Record<string, RegionalMesseData> = {
     deliveryTime: '5-7 Tage',
     deliveryNote: 'Versand direkt zur Messe Wien möglich',
     localMessen: [
-      { name: 'FERIEN-MESSE Wien', location: 'Reed Messe Wien', type: 'Touristik' },
-      { name: 'BAUEN & WOHNEN', location: 'Reed Messe Wien', type: 'Bau' },
-      { name: 'Vienna Autoshow', location: 'Reed Messe Wien', type: 'Automobil' },
-      { name: 'GEWINN Messe', location: 'Reed Messe Wien', type: 'Finanzen' },
-      { name: 'Salon Österreich', location: 'Marx Halle', type: 'Kunst' },
+      { name: 'BAUEN & WOHNEN Wien', location: 'Reed Messe Wien', type: 'Bau & Immobilien', month: 'Nov 2026', deadline: 'Sep 2026' },
+      { name: 'Vienna Autoshow', location: 'Reed Messe Wien', type: 'Automotive', month: 'Jan 2027', deadline: 'Nov 2026' },
+      { name: 'FERIEN-MESSE Wien', location: 'Reed Messe Wien', type: 'Touristik', month: 'Mär 2027', deadline: 'Jan 2027' },
+      { name: 'GEWINN Messe', location: 'Reed Messe Wien', type: 'Finanzen', month: 'Okt 2026', deadline: 'Aug 2026' },
+      { name: 'Salon Österreich', location: 'Marx Halle', type: 'Kunst', month: 'Nov 2026', deadline: 'Sep 2026' },
     ],
     localAdvantages: [
       'Direkte Lieferung zur Reed Messe Wien',

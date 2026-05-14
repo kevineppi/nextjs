@@ -474,12 +474,12 @@ export const germanMesseData: Record<string, GermanRegionalMesseData> = {
     deliveryTime: '3-5 Tage',
     deliveryNote: 'Grenznahe Fertigung – schnellste Lieferung über A8',
     localMessen: [
-      { name: 'BAU München', location: 'Messe München', type: 'Bau' },
-      { name: 'bauma', location: 'Messe München', type: 'Baumaschinen' },
-      { name: 'IFAT', location: 'Messe München', type: 'Umwelttechnologie' },
-      { name: 'electronica', location: 'Messe München', type: 'Elektronik' },
-      { name: 'ISPO Munich', location: 'Messe München', type: 'Sport' },
-      { name: 'analytica', location: 'Messe München', type: 'Laboranalytik' },
+      { name: 'IFAT', location: 'Messe München', type: 'Umwelttechnologie', month: 'Mai 2026', deadline: 'Mär 2026' },
+      { name: 'electronica', location: 'Messe München', type: 'Elektronik', month: 'Nov 2026', deadline: 'Sep 2026' },
+      { name: 'BAU München', location: 'Messe München', type: 'Bau & Architektur', month: 'Jan 2027', deadline: 'Nov 2026' },
+      { name: 'bauma', location: 'Messe München', type: 'Baumaschinen', month: 'Apr 2028', deadline: 'Feb 2028' },
+      { name: 'ISPO Munich', location: 'Messe München', type: 'Sport', month: 'Nov 2026', deadline: 'Sep 2026' },
+      { name: 'analytica', location: 'Messe München', type: 'Laboranalytik', month: '2027', deadline: '–' },
     ],
     localAdvantages: [
       'Grenznahe Fertigung – nur 3 Stunden Fahrzeit',
