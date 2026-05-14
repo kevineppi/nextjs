@@ -15,7 +15,7 @@ const TypicalProjectsSection = ({ regionName, data }: TypicalProjectsSectionProp
     <section className="py-20 md:py-28 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-background" />
       <div className="container mx-auto px-4 relative">
-        <AnimatedSection animation="fade-in" className="max-w-5xl mx-auto">
+        <AnimatedSection animation="fade-in" className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
             <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 text-primary px-5 py-2.5 rounded-full text-sm font-semibold mb-6">
               <Lightbulb className="w-4 h-4" />

@@ -29,7 +29,7 @@ const RegionalUniqueContent = ({
     return (
       <section className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <AnimatedSection animation="fade-in">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
@@ -87,7 +87,7 @@ const RegionalUniqueContent = ({
     return (
       <section className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <AnimatedSection animation="fade-in">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
@@ -156,7 +156,7 @@ const RegionalUniqueContent = ({
   return (
     <section className="py-16 md:py-24 bg-muted/20">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto space-y-14">
+        <div className="max-w-6xl mx-auto space-y-14">
 
           {/* Block 1: Haupttext */}
           <AnimatedSection animation="fade-in">

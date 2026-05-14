@@ -14,7 +14,7 @@ const CustomerPrioritiesSection = ({ regionName, data }: CustomerPrioritiesSecti
     <section className="py-20 md:py-28 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/3 via-background to-muted/10" />
       <div className="container mx-auto px-4 relative">
-        <AnimatedSection animation="fade-in" className="max-w-4xl mx-auto">
+        <AnimatedSection animation="fade-in" className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 text-primary px-5 py-2.5 rounded-full text-sm font-semibold mb-6">
               <Heart className="w-4 h-4" />

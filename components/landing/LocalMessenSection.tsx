@@ -39,7 +39,7 @@ const LocalMessenSection = ({ messen, regionName, type }: LocalMessenSectionProp
           <p className="text-muted-foreground max-w-2xl mx-auto">{subtitle}</p>
         </AnimatedSection>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-7xl mx-auto">
           {messen.map((messe, index) => (
             <AnimatedSection key={index} animation="slide-up" delay={index * 60}>
               <Card className="group border border-border/50 shadow-sm hover:shadow-md hover:border-primary/20 transition-all duration-300 h-full">

@@ -14,7 +14,7 @@ const ProblemSolutionSection = ({ regionName, category, data }: ProblemSolutionS
     return (
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
             <AnimatedSection animation="fade-in">
               <div className="flex items-center gap-2 mb-6">
                 <div className="w-10 h-10 rounded-xl bg-destructive/10 flex items-center justify-center">
@@ -90,7 +90,7 @@ const ProblemSolutionSection = ({ regionName, category, data }: ProblemSolutionS
   return (
     <section className="py-20 md:py-28">
       <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
           <AnimatedSection animation="fade-in">
             <div className="flex items-center gap-2 mb-6">
               <div className="w-10 h-10 rounded-xl bg-destructive/10 flex items-center justify-center">

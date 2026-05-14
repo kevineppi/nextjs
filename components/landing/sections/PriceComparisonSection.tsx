@@ -24,7 +24,7 @@ const PriceComparisonSection = ({ regionName, category, data }: PriceComparisonS
             <p className="text-muted-foreground max-w-2xl mx-auto">{data.subheadline}</p>
           </AnimatedSection>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto mb-10">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-7xl mx-auto mb-10">
             {data.prices.map((item, index) => (
               <AnimatedSection key={index} animation="slide-up" delay={index * 80}>
                 <Card className="border border-border/50 shadow-sm hover:shadow-md hover:border-primary/20 transition-all h-full">
@@ -82,7 +82,7 @@ const PriceComparisonSection = ({ regionName, category, data }: PriceComparisonS
           </p>
         </AnimatedSection>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto mb-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-7xl mx-auto mb-10">
           {priceData.map((item, index) => (
             <AnimatedSection key={index} animation="slide-up" delay={index * 80}>
               <Card className="border border-border/50 shadow-sm hover:shadow-md hover:border-primary/20 transition-all h-full">

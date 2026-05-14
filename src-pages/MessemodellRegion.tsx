@@ -158,7 +158,7 @@ const MessemodellRegion = () => {
           <section key="la" className="py-20 md:py-28 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-b from-muted/30 via-background to-background" />
             <div className="container mx-auto px-4 relative">
-              <div className="max-w-5xl mx-auto">
+              <div className="max-w-7xl mx-auto">
                 <AnimatedSection animation="fade-in" className="text-center mb-16">
                   <div className="inline-flex items-center gap-2 bg-card border border-border shadow-sm px-5 py-2.5 rounded-full text-sm font-semibold mb-6"><CheckCircle className="w-4 h-4 text-primary" />Regionale Vorteile</div>
                   <h2 className="text-4xl md:text-5xl font-bold mb-4">Ihre Vorteile in {regionData.name}</h2>
@@ -182,7 +182,7 @@ const MessemodellRegion = () => {
         return (
           <section key="di" className="py-20 md:py-28 relative overflow-hidden bg-muted/30">
             <div className="container mx-auto px-4 relative">
-              <AnimatedSection animation="fade-in" className="max-w-4xl mx-auto text-center">
+              <AnimatedSection animation="fade-in" className="max-w-5xl mx-auto text-center">
                 <div className="w-18 h-18 rounded-2xl bg-primary flex items-center justify-center mx-auto mb-8 shadow-lg p-4"><Truck className="w-8 h-8 text-primary-foreground" /></div>
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">Lieferung nach {regionData.name}</h2>
                 <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">{regionData.deliveryNote}</p>
@@ -221,7 +221,7 @@ const MessemodellRegion = () => {
           <section key="nr" className="py-20 md:py-28">
             <div className="container mx-auto px-4">
               <AnimatedSection animation="fade-in" className="text-center mb-12"><h2 className="text-3xl md:text-4xl font-bold mb-4">Auch in der Nähe</h2><p className="text-muted-foreground">Messemodelle für weitere Regionen</p></AnimatedSection>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-7xl mx-auto">
                 {nearbyRegions.map((nearby, i) => (
                   <AnimatedSection key={nearby.slug} animation="slide-up" delay={i * 75}>
                     <Link href={`/messemodelle/${nearby.slug}`} className="group block" onClick={() => window.scrollTo(0, 0)}>

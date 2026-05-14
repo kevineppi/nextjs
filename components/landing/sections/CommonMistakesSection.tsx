@@ -15,7 +15,7 @@ const CommonMistakesSection = ({ regionName, data }: CommonMistakesSectionProps)
     <section className="py-20 md:py-28 bg-muted/30 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(var(--primary)/0.03),transparent_50%)]" />
       <div className="container mx-auto px-4 relative">
-        <AnimatedSection animation="fade-in" className="max-w-4xl mx-auto">
+        <AnimatedSection animation="fade-in" className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <div className="inline-flex items-center gap-2 bg-destructive/10 border border-destructive/20 text-destructive px-5 py-2.5 rounded-full text-sm font-semibold mb-6">
               <AlertTriangle className="w-4 h-4" />

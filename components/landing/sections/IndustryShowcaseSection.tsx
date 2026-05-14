@@ -33,7 +33,7 @@ const IndustryShowcaseSection = ({ regionName, industries, category }: IndustryS
           <p className="text-muted-foreground max-w-2xl mx-auto">{subtitle}</p>
         </AnimatedSection>
 
-        <div className="grid sm:grid-cols-2 gap-5 max-w-4xl mx-auto">
+        <div className="grid sm:grid-cols-2 gap-5 max-w-6xl mx-auto">
           {industries.map((item, index) => (
             <AnimatedSection key={index} animation="slide-up" delay={index * 80}>
               <Card className="border border-border/50 shadow-sm hover:shadow-md hover:border-primary/20 transition-all h-full">

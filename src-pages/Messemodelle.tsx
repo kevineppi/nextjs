@@ -200,8 +200,8 @@ const Messemodelle = () => (
             </AnimatedSection>
 
             {/* First row: big + small */}
-            <div className="grid md:grid-cols-5 gap-4 mb-4">
-              <AnimatedSection animation="slide-up" className="md:col-span-3">
+            <div className="grid md:grid-cols-3 gap-4 mb-4">
+              <AnimatedSection animation="slide-up" className="md:col-span-2">
                 <MagneticCard className="rounded-3xl border-2 border-border hover:border-primary/30 transition-all duration-500 h-full">
                   <div className="p-8 md:p-12">
                     <Factory className="w-10 h-10 text-primary mb-6" />
@@ -212,7 +212,7 @@ const Messemodelle = () => (
                   </div>
                 </MagneticCard>
               </AnimatedSection>
-              <AnimatedSection animation="slide-up" delay={100} className="md:col-span-2">
+              <AnimatedSection animation="slide-up" delay={100}>
                 <MagneticCard className="rounded-3xl border-2 border-border hover:border-primary/30 transition-all duration-500 h-full">
                   <div className="p-8 md:p-10">
                     <Building2 className="w-10 h-10 text-primary mb-6" />
@@ -226,8 +226,8 @@ const Messemodelle = () => (
             </div>
 
             {/* Second row: small + big */}
-            <div className="grid md:grid-cols-5 gap-4 mb-4">
-              <AnimatedSection animation="slide-up" delay={150} className="md:col-span-2">
+            <div className="grid md:grid-cols-3 gap-4 mb-4">
+              <AnimatedSection animation="slide-up" delay={150}>
                 <MagneticCard className="rounded-3xl border-2 border-border hover:border-primary/30 transition-all duration-500 h-full">
                   <div className="p-8 md:p-10">
                     <Wrench className="w-10 h-10 text-primary mb-6" />
@@ -238,7 +238,7 @@ const Messemodelle = () => (
                   </div>
                 </MagneticCard>
               </AnimatedSection>
-              <AnimatedSection animation="slide-up" delay={200} className="md:col-span-3">
+              <AnimatedSection animation="slide-up" delay={200} className="md:col-span-2">
                 <MagneticCard className="rounded-3xl border-2 border-border hover:border-primary/30 transition-all duration-500 h-full">
                   <div className="p-8 md:p-12">
                     <Lightbulb className="w-10 h-10 text-primary mb-6" />

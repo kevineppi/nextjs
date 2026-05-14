@@ -26,7 +26,7 @@ const TechSpecsSection = ({ regionName, category, data }: TechSpecsSectionProps)
             <p className="text-muted-foreground max-w-2xl mx-auto">{data.subheadline}</p>
           </AnimatedSection>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-7xl mx-auto">
             {data.specs.map((spec, index) => {
               const Icon = defaultIcons[index % defaultIcons.length];
               return (
@@ -85,7 +85,7 @@ const TechSpecsSection = ({ regionName, category, data }: TechSpecsSectionProps)
           </p>
         </AnimatedSection>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-7xl mx-auto">
           {specs.map((spec, index) => (
             <AnimatedSection key={index} animation="slide-up" delay={index * 60}>
               <Card className="border border-border/50 shadow-sm hover:shadow-md hover:border-primary/20 transition-all h-full">
