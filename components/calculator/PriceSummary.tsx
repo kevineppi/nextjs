@@ -20,6 +20,7 @@ interface Props {
   result: PricingResult | null;
   input: PricingInput | null;
   stlFile?: File | null;
+  hideInquiry?: boolean;
 }
 
 const fmt = (n: number) => n.toFixed(2).replace(".", ",") + " €";
@@ -31,7 +32,7 @@ const mins = (n: number) => {
   return m > 0 ? `${h} Std. ${m} Min.` : `${h} Std.`;
 };
 
-const PriceSummary = ({ result, input, stlFile }: Props) => {
+const PriceSummary = ({ result, input, stlFile, hideInquiry = false }: Props) => {
   const [showForm, setShowForm] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -236,7 +237,7 @@ const PriceSummary = ({ result, input, stlFile }: Props) => {
         </p>
 
         {/* ── CTA / Inquiry Form ─────────────────────── */}
-        {submitted ? (
+        {!hideInquiry && (submitted ? (
           <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 text-center space-y-2">
             <CheckCircle2 className="h-10 w-10 text-primary mx-auto" />
             <p className="font-semibold text-foreground">Anfrage erfolgreich gesendet!</p>
@@ -309,7 +310,7 @@ const PriceSummary = ({ result, input, stlFile }: Props) => {
               Keine Bestellung. Kein Vertragsabschluss. Wir prüfen alles persönlich.
             </p>
           </form>
-        )}
+        ))}
       </CardContent>
     </Card>
   );
