@@ -16,6 +16,10 @@ import MesseChecklist from "@/components/landing/MesseChecklist";
 import MesseCaseStudy from "@/components/landing/MesseCaseStudy";
 import MesseMaterialTips from "@/components/landing/MesseMaterialTips";
 import MesseValueProposition from "@/components/landing/MesseValueProposition";
+import MesseComparisonSection from "@/components/landing/MesseComparisonSection";
+import MesseROISection from "@/components/landing/MesseROISection";
+import MesseEffectsSection from "@/components/landing/MesseEffectsSection";
+import MesseTimelineSection from "@/components/landing/MesseTimelineSection";
 import StickyCTA from "@/components/landing/StickyCTA";
 import SectionDivider from "@/components/landing/SectionDivider";
 import PersonalDeliveryInfo from "@/components/landing/PersonalDeliveryInfo";
@@ -146,6 +150,10 @@ const MessemodellRegion = () => {
         );
 
       case 'valueProposition': return <MesseValueProposition key="vp" regionName={regionData.name} />;
+      case 'comparison': return <MesseComparisonSection key="comp" />;
+      case 'roi': return <MesseROISection key="roi" />;
+      case 'effects': return <MesseEffectsSection key="eff" />;
+      case 'timeline': return <MesseTimelineSection key="tl" regionName={regionData.name} deliveryTime={regionData.deliveryTime} />;
       case 'caseStudy': return <MesseCaseStudy key="cs" caseStudy={extendedData.caseStudy} regionName={regionData.name} />;
       case 'checklist': return <MesseChecklist key="cl" regionName={regionData.name} deliveryTime={regionData.deliveryTime} />;
       case 'materials': return <MesseMaterialTips key="mat" materials={extendedData.materials} regionName={regionData.name} industryFocus={extendedData.industryFocus} />;

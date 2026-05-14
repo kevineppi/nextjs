@@ -247,3 +247,22 @@
     pointer-events: none;
   }
 }
+
+  /* ═══ FADE SLIDE IN (Timeline) ═══ */
+  @keyframes fade-slide-in {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-slide-in {
+    animation: fade-slide-in 0.6s ease forwards;
+  }
+
+  /* ═══ SCALE LINE (Comparison bar) ═══ */
+  @keyframes scale-x-in {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+  .animate-scale-x {
+    animation: scale-x-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    transform-origin: left;
+  }

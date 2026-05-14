@@ -14,6 +14,10 @@ import FAQSection from "@/components/landing/FAQSection";
 import AllRegionsLinks from "@/components/landing/AllRegionsLinks";
 import ProductOfferSchema from "@/components/ProductOfferSchema";
 import StickyCTA from "@/components/landing/StickyCTA";
+import MesseComparisonSection from "@/components/landing/MesseComparisonSection";
+import MesseROISection from "@/components/landing/MesseROISection";
+import MesseEffectsSection from "@/components/landing/MesseEffectsSection";
+import MesseTimelineSection from "@/components/landing/MesseTimelineSection";
 import { 
   Zap, Clock, Package, CheckCircle, ArrowRight, MapPin,
   Target, Calendar, Briefcase,
@@ -412,112 +416,27 @@ const Messemodelle = () => (
         </div>
       </section>
 
-      {/* ════════════════════════════════════════════
-          VERGLEICHSTABELLE – Dark, bold
-          ════════════════════════════════════════════ */}
-      <section className="py-32 bg-foreground text-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <AnimatedSection animation="fade-in" className="mb-16">
-              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Head to Head</p>
-              <h2 className="text-4xl md:text-6xl font-bold tracking-[-0.04em]">3D-Druck vs.<br/>klassischer Modellbau</h2>
-            </AnimatedSection>
-            <AnimatedSection animation="slide-up">
-              <div className="rounded-3xl overflow-hidden border border-background/10">
-                <div className="grid grid-cols-3 bg-background/5 border-b border-background/10">
-                  <div className="p-5 mono text-[10px] font-bold text-background/40 uppercase tracking-[0.2em]">Kriterium</div>
-                  <div className="p-5 text-center"><span className="inline-flex items-center gap-2 font-bold text-primary"><span className="w-2 h-2 rounded-full bg-primary animate-pulse" />ekdruck</span></div>
-                  <div className="p-5 mono text-[10px] font-bold text-background/40 uppercase tracking-[0.2em] text-center">Handmodellbau</div>
-                </div>
-                {vergleich.map(r => (
-                  <div key={r.k} className="grid grid-cols-3 border-b border-background/[0.06] last:border-b-0 hover:bg-background/[0.03] transition-colors">
-                    <div className="p-5 font-medium text-sm text-background/70">{r.k}</div>
-                    <div className="p-5 text-center border-x border-background/[0.06]">
-                      <span className={`inline-flex items-center gap-1.5 text-sm font-bold ${r.w === 'ek' ? 'text-primary' : 'text-background/50'}`}>
-                        {r.w === 'ek' && <CheckCircle className="w-4 h-4" />} {r.ek}
-                      </span>
-                    </div>
-                    <div className="p-5 text-center">
-                      <span className={`text-sm ${r.w === 'kl' ? 'text-primary font-bold' : 'text-background/30'}`}>{r.kl}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
 
       {/* ════════════════════════════════════════════
-          ABLAUF + CHECKLISTE
+          VERGLEICH: Messemodell vs. Alternativen
           ════════════════════════════════════════════ */}
-      <section className="py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto">
-            <AnimatedSection animation="fade-in" className="mb-20">
-              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Ihr Weg zum Exponat</p>
-              <TextReveal text="4 Schritte. 1 Ziel: Pünktlich auf der Messe." className="text-4xl md:text-6xl font-bold leading-[0.95] tracking-[-0.04em]" />
-            </AnimatedSection>
+      <MesseComparisonSection />
 
-            <div className="grid lg:grid-cols-3 gap-8">
-              {/* Steps */}
-              <div className="lg:col-span-2 grid sm:grid-cols-2 gap-4">
-                {[
-                  { s: "01", t: "Anfrage", tx: "CAD-Datei, Skizze oder Produktbeschreibung – und Ihren Messetermin. Antwort am selben Tag.", tm: "2 Min", ic: Target },
-                  { s: "02", t: "Festpreis", tx: "Verbindliches Angebot mit Visualisierung, Material- und Größenempfehlung. Kostenlos, in 6h.", tm: "< 6h", ic: Calculator },
-                  { s: "03", t: "Fertigung", tx: "Druck, Nachbearbeitung, QA. Zwischenfoto zur Freigabe. Express: Über-Nacht-Produktion möglich.", tm: "1–14 Tage", ic: Wrench },
-                  { s: "04", t: "Lieferung", tx: "Bruchsichere Individualverpackung, Tracking, Versicherung. Direkt zum Stand mit Hallennummer.", tm: "1–3 Tage", ic: Truck },
-                ].map((st, i) => (
-                  <AnimatedSection key={st.s} animation="slide-up" delay={i * 80}>
-                    <MagneticCard className="rounded-3xl border-2 border-border hover:border-primary/30 transition-all duration-500 h-full">
-                      <div className="p-6 md:p-8 relative">
-                        <p className="mono text-7xl font-bold text-foreground/[0.03] absolute top-4 right-6">{st.s}</p>
-                        <div className="flex items-center gap-3 mb-4">
-                          <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center"><st.ic className="w-5 h-5 text-primary" /></div>
-                          <span className="mono text-[10px] font-bold text-primary uppercase tracking-[0.2em]">{st.tm}</span>
-                        </div>
-                        <h3 className="font-bold text-xl mb-2 tracking-tight">{st.t}</h3>
-                        <p className="text-sm text-muted-foreground leading-relaxed">{st.tx}</p>
-                      </div>
-                    </MagneticCard>
-                  </AnimatedSection>
-                ))}
-              </div>
+      {/* ════════════════════════════════════════════
+          ROI – Warum sich ein Modell rechnet
+          ════════════════════════════════════════════ */}
+      <MesseROISection />
 
-              {/* Checkliste */}
-              <AnimatedSection animation="slide-up" delay={300}>
-                <div className="rounded-3xl border-2 border-primary/20 bg-primary/[0.02] p-8 h-full">
-                  <div className="flex items-center gap-3 mb-8">
-                    <BadgeCheck className="w-6 h-6 text-primary" />
-                    <p className="text-lg font-bold">Ihre Checkliste</p>
-                  </div>
-                  {[
-                    { item: "3D-Datei oder Skizze", detail: "STL, STEP – oder Foto einer Skizze" },
-                    { item: "Maßstab & Größe", detail: "Wie viel Platz am Stand?" },
-                    { item: "Farbwunsch", detail: "RAL, Pantone oder Hex-Code" },
-                    { item: "Messetermin & Ort", detail: "Wir planen rückwärts" },
-                    { item: "Lieferadresse", detail: "Halle + Standnummer" },
-                    { item: "Transportbox?", detail: "Einweg oder Mehrweg" },
-                  ].map((c, i) => (
-                    <div key={i} className="flex gap-3 mb-4 last:mb-0">
-                      <div className="w-6 h-6 rounded-full border-2 border-primary/30 flex items-center justify-center shrink-0 mt-0.5">
-                        <span className="mono text-[10px] font-bold text-primary">{i + 1}</span>
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold">{c.item}</p>
-                        <p className="text-xs text-muted-foreground">{c.detail}</p>
-                      </div>
-                    </div>
-                  ))}
-                  <Button className="w-full mt-8 rounded-full py-6" asChild>
-                    <Link href="#kontakt">Anfrage starten <ArrowRight className="ml-2 w-4 h-4" /></Link>
-                  </Button>
-                </div>
-              </AnimatedSection>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ════════════════════════════════════════════
+          3 Psychologische Effekte
+          ════════════════════════════════════════════ */}
+      <MesseEffectsSection />
+
+      {/* ════════════════════════════════════════════
+          TIMELINE + CHECKLISTE
+          ════════════════════════════════════════════ */}
+      <MesseTimelineSection />
+
 
       {/* ════════════════════════════════════════════
           MESSEKALENDER – Responsive cards, links to regional pages
