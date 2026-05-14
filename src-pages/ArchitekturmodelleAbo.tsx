@@ -3,9 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import {
-  Star, Zap, Unlock, MapPin, X, Check, Clock, Wallet, Shield,
+  Star, Zap, Unlock, MapPin, X, Check, Clock, Wallet,
   Trophy, Building2, Briefcase, GraduationCap, Globe, TrendingUp,
-  Phone, Mail, Send, ChevronDown, ArrowRight, Sparkles, MessageCircle
+  Phone, Mail, ChevronDown, ArrowRight, Sparkles, MessageCircle
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Contact from "@/components/Contact";
@@ -14,11 +14,11 @@ import StickyCTA from "@/components/landing/StickyCTA";
 import QuickContactBar from "@/components/QuickContactBar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
+import { } from "@/components/ui/input";
+import { } from "@/components/ui/textarea";
+import { } from "@/components/ui/label";
 import {
-  Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
+  Select,
 } from "@/components/ui/select";
 import {
   Accordion, AccordionContent, AccordionItem, AccordionTrigger,
@@ -192,43 +192,8 @@ const FAQS = [
 ];
 
 const ArchitekturmodelleAbo = () => {
-  const [form, setForm] = useState({
-    name: "", email: "", company: "", tier: "", volume: "", message: "",
-  });
-  const [submitting, setSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = async () => {
-    if (!form.name.trim() || !form.email.trim()) {
-      toast.error("Bitte Name und E-Mail ausfüllen.");
-      return;
-    }
-    setSubmitting(true);
-    try {
-      const { error } = await supabase.from("contact_inquiries").insert({
-        name: form.name.trim(),
-        email: form.email.trim(),
-        project_type: `Architektur-Abo: ${form.tier || "unbestimmt"}`,
-        timeline: form.volume || null,
-        message: `Büro: ${form.company}\n\nGewünschtes Paket: ${form.tier}\nModelle/Monat: ${form.volume}\n\n${form.message}`.trim(),
-      });
-      if (error) throw error;
-      trackContactClick("form", { source: "architektur_abo", context: form.tier });
-      (window as any).dataLayer = (window as any).dataLayer || [];
-      (window as any).dataLayer.push({
-        event: "form_submit_success",
-        form_name: "architektur_abo_form",
-        tier: form.tier || "unbestimmt",
-        conversion: true,
-      });
-      setSubmitted(true);
-    } catch (e) {
-      console.error(e);
-      toast.error("Senden fehlgeschlagen. Bitte rufen Sie uns direkt an.");
-    } finally {
-      setSubmitting(false);
-    }
-  };
+
 
   return (
     <div className="min-h-screen bg-background">
@@ -395,7 +360,6 @@ const ArchitekturmodelleAbo = () => {
                   }`}
                   size="lg"
                   onClick={() => {
-                    setForm(prev => ({ ...prev, tier: tier.name }));
                     trackContactClick("form", { source: "pricing_card", context: tier.name });
                     document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" });
                   }}
@@ -544,189 +508,6 @@ const ArchitekturmodelleAbo = () => {
 
       {/* SECTION 8 – CONTACT */}
       <section id="kontakt" className="scroll-mt-20"><Contact /></section>
-
-      {/* subtle decorative gradient blobs for premium feel */}
-        <div className="pointer-events-none absolute -top-32 -left-32 h-96 w-96 rounded-full bg-primary/10 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-primary/5 blur-3xl" />
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center mb-14">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-semibold mb-5">
-              <Sparkles className="h-3.5 w-3.5" />
-              Erstes Modell kostenlos
-            </div>
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
-              Jetzt Flatrate anfragen
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Antwort innerhalb von 6&nbsp;Arbeitsstunden. Persönlich, ohne Verkaufsgespräch.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-5 gap-8 max-w-6xl mx-auto items-start">
-            {/* Left – Contact info card */}
-            <Card className="lg:col-span-2 p-7 md:p-8 bg-card border border-border shadow-sm">
-              <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3">
-                Direkter Draht
-              </h3>
-              <p className="text-muted-foreground leading-relaxed mb-8 text-sm">
-                Lieber persönlich? Wir sind direkt erreichbar – ohne Warteschleife.
-              </p>
-              <ul className="space-y-5">
-                <li className="flex items-start gap-3">
-                  <div className="h-9 w-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-4 w-4 text-primary" />
-                  </div>
-                  <div>
-                    <div className="text-xs text-muted-foreground uppercase tracking-wide mb-0.5">Telefon</div>
-                    <a
-                      href={`tel:${CONTACT.phone}`}
-                      onClick={() => trackContactClick("phone", { source: "architektur_abo" })}
-                      className="text-foreground font-semibold hover:text-primary transition-colors"
-                    >
-                      {CONTACT.phoneDisplay}
-                    </a>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="h-9 w-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Mail className="h-4 w-4 text-primary" />
-                  </div>
-                  <div>
-                    <div className="text-xs text-muted-foreground uppercase tracking-wide mb-0.5">E-Mail</div>
-                    <a href={`mailto:${CONTACT.email}`} className="text-foreground font-semibold hover:text-primary transition-colors break-all">
-                      {CONTACT.email}
-                    </a>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="h-9 w-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-4 w-4 text-primary" />
-                  </div>
-                  <div>
-                    <div className="text-xs text-muted-foreground uppercase tracking-wide mb-0.5">Standort</div>
-                    <div className="text-foreground font-semibold">Gunskirchen, Oberösterreich</div>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="h-9 w-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Clock className="h-4 w-4 text-primary" />
-                  </div>
-                  <div>
-                    <div className="text-xs text-muted-foreground uppercase tracking-wide mb-0.5">Erreichbarkeit</div>
-                    <div className="text-foreground font-semibold">Mo–Fr 8:00–18:00</div>
-                  </div>
-                </li>
-              </ul>
-            </Card>
-
-            {/* Right – Form */}
-            <Card className="p-7 md:p-8 bg-background text-foreground border-2 border-border shadow-xl rounded-2xl">
-              {submitted ? (
-                <div className="text-center py-6">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5">
-                    <Check className="h-8 w-8 text-primary" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-3">Anfrage gesendet!</h3>
-                  <p className="text-muted-foreground mb-2 leading-relaxed">
-                    Wir melden uns <strong>innerhalb von 6 Stunden</strong> mit einem persönlichen Angebot und drucken Ihr erstes Modell kostenlos.
-                  </p>
-                  <p className="text-sm text-muted-foreground mb-8">
-                    Zur Überbrückung:{" "}
-                    <Link href="/ratgeber/architekturmodell-flatrate" className="text-primary hover:underline font-medium">
-                      Break-even-Guide lesen →
-                    </Link>
-                  </p>
-                  <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
-                    <Phone className="h-4 w-4" />
-                    <span>Dringlich? Rufen Sie an:</span>
-                    <a href={`tel:${CONTACT.phone}`} className="text-foreground font-semibold hover:text-primary transition-colors">
-                      {CONTACT.phoneDisplay}
-                    </a>
-                  </div>
-                </div>
-              ) : (
-                <div className="space-y-4">
-                  <div>
-                    <Label htmlFor="abo-name">Vor- und Nachname</Label>
-                    <Input
-                      id="abo-name"
-                      value={form.name}
-                      onChange={(e) => setForm({ ...form, name: e.target.value })}
-                      maxLength={100}
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="abo-email">E-Mail-Adresse</Label>
-                    <Input
-                      id="abo-email"
-                      type="email"
-                      value={form.email}
-                      onChange={(e) => setForm({ ...form, email: e.target.value })}
-                      maxLength={255}
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="abo-company">Büro/Unternehmen</Label>
-                    <Input
-                      id="abo-company"
-                      value={form.company}
-                      onChange={(e) => setForm({ ...form, company: e.target.value })}
-                      maxLength={150}
-                    />
-                  </div>
-                  <div>
-                    <Label>Gewünschtes Paket</Label>
-                    <Select value={form.tier} onValueChange={(v) => setForm({ ...form, tier: v })}>
-                      <SelectTrigger><SelectValue placeholder="Bitte wählen" /></SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="Starter">Starter (€199)</SelectItem>
-                        <SelectItem value="Professional">Professional (€349)</SelectItem>
-                        <SelectItem value="Studio">Studio (€549)</SelectItem>
-                        <SelectItem value="Unsicher">Ich bin unsicher</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div>
-                    <Label>Wie viele Modelle pro Monat ca.?</Label>
-                    <Select value={form.volume} onValueChange={(v) => setForm({ ...form, volume: v })}>
-                      <SelectTrigger><SelectValue placeholder="Bitte wählen" /></SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="1-3">1–3</SelectItem>
-                        <SelectItem value="4-7">4–7</SelectItem>
-                        <SelectItem value="8-15">8–15</SelectItem>
-                        <SelectItem value="15+">Mehr als 15</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div>
-                    <Label htmlFor="abo-msg">Nachricht / Projektbeschreibung</Label>
-                    <Textarea
-                      id="abo-msg"
-                      rows={4}
-                      value={form.message}
-                      onChange={(e) => setForm({ ...form, message: e.target.value })}
-                      maxLength={1500}
-                    />
-                  </div>
-                  <Button
-                    onClick={handleSubmit}
-                    disabled={submitting}
-                    size="lg"
-                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-[1.01] active:scale-[0.99] transition-transform font-semibold"
-                  >
-                    {submitting ? "Wird gesendet..." : (<>Jetzt kostenlos anfragen <Send className="ml-2 h-4 w-4" /></>)}
-                  </Button>
-                  <p className="text-xs text-muted-foreground flex items-center gap-2 justify-center pt-1">
-                    <Shield className="h-3 w-3" />
-                    Ihre Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.
-                  </p>
-                </div>
-              )}
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* SECTION 9 – INTERNAL LINKS */}
       <section className="py-20 md:py-24">
