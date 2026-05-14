@@ -15,14 +15,21 @@ interface AllRegionsLinksProps {
   type: 'messe' | 'architektur' | 'druck';
 }
 
+const KEPT_MESSE_REGIONS = new Set([
+  'wien', 'oberoesterreich', 'steiermark', 'salzburg', 'graz', 'linz',
+  'bayern', 'muenchen', 'nuernberg', 'baden-wuerttemberg', 'stuttgart',
+  'nordrhein-westfalen', 'duesseldorf', 'koeln', 'essen',
+  'hessen', 'frankfurt', 'niedersachsen', 'hannover', 'berlin', 'hamburg',
+]);
+
 const AllRegionsLinks = ({ currentSlug, type }: AllRegionsLinksProps) => {
   const basePath = type === 'messe' ? '/messemodelle' : type === 'architektur' ? '/architekturmodelle' : '/3d-druck';
   
   const atData = type === 'messe' ? regionalMesseData : type === 'architektur' ? regionalArchitekturData : regionalDruckData;
   const deData = type === 'messe' ? germanMesseData : type === 'architektur' ? germanArchitekturData : {};
 
-  const atRegions = Object.values(atData).filter(r => r.slug !== currentSlug);
-  const deRegions = Object.values(deData).filter(r => r.slug !== currentSlug);
+  const atRegions = Object.values(atData).filter(r => r.slug !== currentSlug && (type !== 'messe' || KEPT_MESSE_REGIONS.has(r.slug)));
+  const deRegions = Object.values(deData).filter(r => r.slug !== currentSlug && (type !== 'messe' || KEPT_MESSE_REGIONS.has(r.slug)));
 
   // Show ALL regions for maximum internal linking / PageRank signal
   const atTop = atRegions;

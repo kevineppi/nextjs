@@ -14,25 +14,13 @@ const RegionalCoverage = ({ serviceName, description, baseUrl = '3d-druck' }: Re
   const regionData = [
     { name: "Wien", slug: "wien" },
     { name: "Oberösterreich", slug: "oberoesterreich" },
-    { name: "Niederösterreich", slug: "niederoesterreich" },
     { name: "Steiermark", slug: "steiermark" },
     { name: "Salzburg", slug: "salzburg" },
-    { name: "Kärnten", slug: "kaernten" },
-    { name: "Tirol", slug: "tirol" },
-    { name: "Vorarlberg", slug: "vorarlberg" },
-    { name: "Burgenland", slug: "burgenland" },
   ];
 
   const cityData = [
     { name: "Linz", slug: "linz" },
     { name: "Graz", slug: "graz" },
-    { name: "Innsbruck", slug: "innsbruck" },
-    { name: "Klagenfurt", slug: "klagenfurt" },
-    { name: "Wels", slug: "wels" },
-    { name: "St. Pölten", slug: "st-poelten" },
-    { name: "Dornbirn", slug: "dornbirn" },
-    { name: "Villach", slug: "villach" },
-    { name: "Gunskirchen", slug: "gunskirchen" },
   ];
 
   // Build URLs based on baseUrl prop
