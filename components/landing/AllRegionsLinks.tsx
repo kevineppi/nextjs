@@ -54,9 +54,9 @@ const AllRegionsLinks = ({ currentSlug, type }: AllRegionsLinksProps) => {
 
         {/* Austria */}
         <div className="mb-8">
-          <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4 text-center">
+          <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4 text-center">
             🇦🇹 Österreich
-          </h3>
+          </p>
           <div className="flex flex-wrap gap-2 justify-center max-w-4xl mx-auto">
             {atTop.map((region) => (
               <Link
@@ -76,9 +76,9 @@ const AllRegionsLinks = ({ currentSlug, type }: AllRegionsLinksProps) => {
         {/* Germany - only show if deData has entries */}
         {deTop.length > 0 && (
           <div>
-            <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4 text-center">
+            <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4 text-center">
               🇩🇪 Deutschland
-            </h3>
+            </p>
             <div className="flex flex-wrap gap-2 justify-center max-w-4xl mx-auto">
               {deTop.map((region) => (
                 <Link
@@ -99,9 +99,9 @@ const AllRegionsLinks = ({ currentSlug, type }: AllRegionsLinksProps) => {
         {/* Switzerland - only show for messe type */}
         {chTop.length > 0 && (
           <div className="mt-8">
-            <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4 text-center">
+            <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4 text-center">
               🇨🇭 Schweiz
-            </h3>
+            </p>
             <div className="flex flex-wrap gap-2 justify-center max-w-4xl mx-auto">
               {chTop.map((region: any) => (
                 <Link

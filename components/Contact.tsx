@@ -144,9 +144,9 @@ const Contact = () => {
           <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-3">
             Kostenloses Angebot · Keine Verpflichtung
           </p>
-          <h1 className="text-4xl md:text-5xl font-black leading-[1.05] tracking-tight mb-4">
+          <h2 className="text-4xl md:text-5xl font-black leading-[1.05] tracking-tight mb-4">
             Ihr Angebot <span className="text-primary">in 6 Stunden.</span>
-          </h1>
+          </h2>
           <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
             Projekt beschreiben, Datei hochladen – fertig. Wir melden uns noch heute persönlich
             aus Gunskirchen, Oberösterreich.

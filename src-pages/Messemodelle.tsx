@@ -211,7 +211,7 @@ const Messemodelle = () => (
                   <div className="p-8 md:p-12">
                     <Factory className="w-10 h-10 text-primary mb-6" />
                     <p className="mono text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-2">{branchenUseCases[0].branche}</p>
-                    <h3 className="text-2xl md:text-3xl font-bold mb-4 tracking-tight">{branchenUseCases[0].titel}</h3>
+                    <p className="text-2xl md:text-3xl font-bold mb-4 tracking-tight">{branchenUseCases[0].titel}</h3>
                     <p className="text-muted-foreground leading-relaxed mb-6">{branchenUseCases[0].text}</p>
                     <div className="flex items-center gap-2 text-sm text-primary font-semibold"><Scan className="w-4 h-4" /> {branchenUseCases[0].beispiel}</div>
                   </div>
@@ -222,7 +222,7 @@ const Messemodelle = () => (
                   <div className="p-8 md:p-10">
                     <Building2 className="w-10 h-10 text-primary mb-6" />
                     <p className="mono text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-2">{branchenUseCases[1].branche}</p>
-                    <h3 className="text-xl font-bold mb-3 tracking-tight">{branchenUseCases[1].titel}</h3>
+                    <p className="text-xl font-bold mb-3 tracking-tight">{branchenUseCases[1].titel}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-4">{branchenUseCases[1].text}</p>
                     <p className="text-xs text-primary font-semibold">{branchenUseCases[1].beispiel}</p>
                   </div>
@@ -237,7 +237,7 @@ const Messemodelle = () => (
                   <div className="p-8 md:p-10">
                     <Wrench className="w-10 h-10 text-primary mb-6" />
                     <p className="mono text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-2">{branchenUseCases[2].branche}</p>
-                    <h3 className="text-xl font-bold mb-3 tracking-tight">{branchenUseCases[2].titel}</h3>
+                    <p className="text-xl font-bold mb-3 tracking-tight">{branchenUseCases[2].titel}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-4">{branchenUseCases[2].text}</p>
                     <p className="text-xs text-primary font-semibold">{branchenUseCases[2].beispiel}</p>
                   </div>
@@ -248,7 +248,7 @@ const Messemodelle = () => (
                   <div className="p-8 md:p-12">
                     <Lightbulb className="w-10 h-10 text-primary mb-6" />
                     <p className="mono text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-2">{branchenUseCases[3].branche}</p>
-                    <h3 className="text-2xl md:text-3xl font-bold mb-4 tracking-tight">{branchenUseCases[3].titel}</h3>
+                    <p className="text-2xl md:text-3xl font-bold mb-4 tracking-tight">{branchenUseCases[3].titel}</h3>
                     <p className="text-muted-foreground leading-relaxed mb-6">{branchenUseCases[3].text}</p>
                     <div className="flex items-center gap-2 text-sm text-primary font-semibold"><Scan className="w-4 h-4" /> {branchenUseCases[3].beispiel}</div>
                   </div>
@@ -264,7 +264,7 @@ const Messemodelle = () => (
                     <div className="p-8 md:p-10">
                       <uc.icon className="w-10 h-10 text-primary mb-6" />
                       <p className="mono text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-2">{uc.branche}</p>
-                      <h3 className="text-xl font-bold mb-3 tracking-tight">{uc.titel}</h3>
+                      <p className="text-xl font-bold mb-3 tracking-tight">{uc.titel}</h3>
                       <p className="text-sm text-muted-foreground leading-relaxed mb-4">{uc.text}</p>
                       <p className="text-xs text-primary font-semibold">{uc.beispiel}</p>
                     </div>
@@ -525,7 +525,7 @@ const Messemodelle = () => (
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Unsere Kunden</h3>
-                  <p><strong>Messeaussteller, Eventagenturen, Produktmanager und Marketing-Abteilungen</strong> aus dem DACH-Raum. Maschinenbau, Baubranche, Medizintechnik, Automotive, Energiesektor. B2B-Konditionen unter <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">Firmenkunden</Link>. Unsere <Link href="/architekturmodelle" className="text-primary font-semibold hover:underline">Architekturmodelle</Link> finden Sie auf der eigenen Serviceseite.</p>
+                  <p><strong>Messeaussteller und Marketing-Abteilungen</strong> aus dem DACH-Raum – Eventagenturen, Produktmanager, Maschinenbau, Baubranche, Medizintechnik, Automotive und Energiesektor. B2B-Konditionen unter <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">Firmenkunden</Link>. Unsere <Link href="/architekturmodelle" className="text-primary font-semibold hover:underline">Architekturmodelle</Link> finden Sie auf der eigenen Serviceseite.</p>
                 </div>
               </div>
             </AnimatedSection>

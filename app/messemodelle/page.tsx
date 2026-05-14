@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Messemodelle from '@/src-pages/Messemodelle'
 
 export const metadata: Metadata = {
-  title: 'Messemodelle, Exponate & Präsentationsmodelle | 3D-Druck Express 24h | ekdruck',
-  description: 'Messemodelle drucken lassen: Ausstellungsmodelle, Schaumodelle & Exponate für DACH-Messen. Ab €30 · Express 24h · bis 2m+ · bruchsicher · ★5,0 (31 Bewertungen). Industriemodelle, Schnittmodelle, Standmodelle.',
+  title: 'Messemodelle & Exponate 3D-Druck | Express 24h | ekdruck',
+  description: 'Messemodelle drucken lassen: Exponate & Präsentationsmodelle für DACH-Messen. Ab €30 · Express 24h · bruchsicher · ★5,0 (31 Bewertungen).',
   alternates: {
     canonical: 'https://www.ek-druck.at/messemodelle',
   },
   openGraph: {
-    title: 'Messemodelle, Exponate & Präsentationsmodelle | 3D-Druck Express 24h | ekdruck',
-    description: 'Messemodelle drucken lassen: Ausstellungsmodelle, Schaumodelle & Exponate für DACH-Messen. Ab €30 · Express 24h · bis 2m+ · bruchsicher · ★5,0 (31 Bewertungen).',
+    title: 'Messemodelle & Exponate 3D-Druck | Express 24h | ekdruck',
+    description: 'Messemodelle drucken lassen: Exponate & Präsentationsmodelle für DACH-Messen. Ab €30 · Express 24h · bruchsicher · ★5,0 (31 Bewertungen).',
     url: 'https://www.ek-druck.at/messemodelle',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Messemodelle, Exponate & Präsentationsmodelle | 3D-Druck Express 24h | ekdruck',
-    description: 'Messemodelle drucken lassen: Ausstellungsmodelle, Schaumodelle & Exponate für DACH-Messen. Ab €30 · Express 24h · bis 2m+ · bruchsicher · ★5,0 (31 Bewertungen).',
+    title: 'Messemodelle & Exponate 3D-Druck | Express 24h | ekdruck',
+    description: 'Messemodelle drucken lassen: Exponate & Präsentationsmodelle für DACH-Messen. Ab €30 · Express 24h · bruchsicher · ★5,0 (31 Bewertungen).',
   },
 }
 
