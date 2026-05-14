@@ -265,7 +265,7 @@ const Kostenrechner = () => {
         {/* ── Mid-page CTA back to calculator ────────────────────────── */}
         <section className="py-10">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto bg-gradient-to-r from-primary/8 via-primary/5 to-accent/5 border border-primary/15 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6">
+            <div className="max-w-3xl mx-auto bg-gradient-to-r from-primary/8 via-primary/5 to-primary/5 border border-primary/15 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6">
               <div className="flex-1">
                 <h3 className="text-lg font-bold text-foreground mb-1">Bereit für Ihren Richtpreis?</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">

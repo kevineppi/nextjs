@@ -8,6 +8,7 @@ import {
   Phone, Mail, Send, ChevronDown, ArrowRight, Sparkles, MessageCircle
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import StickyCTA from "@/components/landing/StickyCTA";
 import QuickContactBar from "@/components/QuickContactBar";
@@ -542,8 +543,9 @@ const ArchitekturmodelleAbo = () => {
       </section>
 
       {/* SECTION 8 – CONTACT */}
-      <section id="kontakt" className="relative py-20 md:py-28 bg-muted/40 scroll-mt-20 overflow-hidden">
-        {/* subtle decorative gradient blobs for premium feel */}
+      <section id="kontakt" className="scroll-mt-20"><Contact /></section>
+
+      {/* subtle decorative gradient blobs for premium feel */}
         <div className="pointer-events-none absolute -top-32 -left-32 h-96 w-96 rounded-full bg-primary/10 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-primary/5 blur-3xl" />
 

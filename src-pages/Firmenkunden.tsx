@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/landing/Breadcrumbs";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
@@ -304,7 +305,7 @@ const Firmenkunden = () => {
                 
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                   Professioneller<br />
-                  <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
                     3D-Druck Service Österreich
                   </span>
                 </h1>
@@ -351,7 +352,7 @@ const Firmenkunden = () => {
                   <div className="flex items-center gap-2">
                     <div className="flex">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
+                        <Star key={i} className="w-5 h-5 fill-primary text-primary" />
                       ))}
                     </div>
                     <span className="font-semibold">5.0</span>
@@ -462,7 +463,7 @@ const Firmenkunden = () => {
                   key={index} 
                   className="group border-2 hover:border-primary/50 hover:shadow-xl transition-all duration-300 overflow-hidden relative"
                 >
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-primary/70 opacity-0 group-hover:opacity-100 transition-opacity" />
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
                       <div className="w-14 h-14 bg-gradient-to-br from-primary/20 to-primary/5 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
@@ -696,7 +697,7 @@ const Firmenkunden = () => {
 
             {/* Discount Tiers */}
             <div className="mt-12 max-w-3xl mx-auto">
-              <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-2 border-primary/20">
+              <Card className="bg-gradient-to-br from-primary/5 to-primary/5 border-2 border-primary/20">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold mb-6 text-center">Mengenrabatt-Staffel</h3>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -740,12 +741,12 @@ const Firmenkunden = () => {
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {testimonials.map((testimonial, index) => (
                 <Card key={index} className="hover:shadow-xl transition-all group border-2 hover:border-primary/30 relative overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent" />
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-primary/70" />
                   <CardContent className="p-8">
                     {/* Rating */}
                     <div className="flex gap-1 mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
+                        <Star key={i} className="w-5 h-5 fill-primary text-primary" />
                       ))}
                     </div>
 
@@ -777,7 +778,7 @@ const Firmenkunden = () => {
               <div className="inline-flex items-center gap-3 bg-background px-6 py-3 rounded-full border shadow-sm">
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
+                    <Star key={i} className="w-5 h-5 fill-primary text-primary" />
                   ))}
                 </div>
                 <span className="font-semibold">5.0 von 5</span>
@@ -790,7 +791,7 @@ const Firmenkunden = () => {
         {/* CTA Section - Subtle */}
         <section className="py-16 md:py-20">
           <div className="container mx-auto px-4">
-            <Card className="max-w-4xl mx-auto border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-accent/5">
+            <Card className="max-w-4xl mx-auto border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-primary/5">
               <CardContent className="p-8 md:p-12 text-center">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">
                   Bereit für eine professionelle Zusammenarbeit?
@@ -872,6 +873,7 @@ const Firmenkunden = () => {
       </main>
 
       <StickyCTA context="B2B Firmenkundenanfrage" />
+      <section id="kontakt" className="scroll-mt-20"><Contact /></section>
       <Footer />
     </>
   );

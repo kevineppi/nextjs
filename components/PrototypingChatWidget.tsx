@@ -109,7 +109,7 @@ const PrototypingChatWidget = () => {
           <Button
             size="lg"
             onClick={() => setIsOpen(true)}
-            className="h-16 w-16 rounded-full shadow-2xl hover-scale bg-gradient-to-br from-primary to-accent hover:from-primary/90 hover:to-accent/90"
+            className="h-16 w-16 rounded-full shadow-2xl hover-scale bg-gradient-to-br from-primary to-primary/70 hover:from-primary/90 hover:to-accent/90"
           >
             <Bot className="h-8 w-8" />
           </Button>
@@ -122,7 +122,7 @@ const PrototypingChatWidget = () => {
           <CardHeader className="border-b bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center">
+                <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/70 rounded-full flex items-center justify-center">
                   <Bot className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -175,7 +175,7 @@ const PrototypingChatWidget = () => {
                     <div className={`max-w-[85%] ${msg.role === 'user' ? 'order-2' : 'order-1'}`}>
                       {msg.role === 'assistant' && (
                         <div className="flex items-center gap-2 mb-1">
-                          <div className="w-6 h-6 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center">
+                          <div className="w-6 h-6 bg-gradient-to-br from-primary to-primary/70 rounded-full flex items-center justify-center">
                             <Bot className="w-4 h-4 text-white" />
                           </div>
                           <span className="text-xs font-semibold text-muted-foreground">
@@ -249,7 +249,7 @@ const PrototypingChatWidget = () => {
                 <Button 
                   onClick={handleSendMessage}
                   size="icon"
-                  className="bg-gradient-to-br from-primary to-accent hover:from-primary/90 hover:to-accent/90"
+                  className="bg-gradient-to-br from-primary to-primary/70 hover:from-primary/90 hover:to-accent/90"
                 >
                   <Send className="h-4 w-4" />
                 </Button>

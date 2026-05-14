@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/landing/Breadcrumbs";
 import FAQSection from "@/components/landing/FAQSection";
@@ -730,6 +731,7 @@ const Architekturmodelle = () => {
       </main>
 
       <StickyCTA context="Architekturmodell" />
+      <section id="kontakt" className="scroll-mt-20"><Contact /></section>
       <Footer />
     </>
   );

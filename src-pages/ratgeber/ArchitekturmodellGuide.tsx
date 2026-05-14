@@ -475,7 +475,7 @@ const ArchitekturmodellGuide = () => {
                             <ul className="space-y-1">
                               {mat.cons.map((c, j) => (
                                 <li key={j} className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                                  <AlertTriangle className="w-3 h-3 text-amber-500 shrink-0" />
+                                  <AlertTriangle className="w-3 h-3 text-destructive shrink-0" />
                                   {c}
                                 </li>
                               ))}
@@ -501,12 +501,12 @@ const ArchitekturmodellGuide = () => {
                 </p>
                 <div className="space-y-4">
                   {commonMistakes.map((item, i) => (
-                    <Card key={i} className="border-l-4 border-l-amber-400 border-border/40">
+                    <Card key={i} className="border-l-4 border-l-destructive border-border/40">
                       <CardContent className="p-5">
                         <div className="grid md:grid-cols-3 gap-4">
                           <div>
                             <div className="flex items-center gap-2 mb-1">
-                              <AlertTriangle className="w-4 h-4 text-amber-500" />
+                              <AlertTriangle className="w-4 h-4 text-destructive" />
                               <span className="font-semibold text-sm">Fehler {i+1}</span>
                             </div>
                             <p className="text-sm font-medium">{item.mistake}</p>

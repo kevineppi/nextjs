@@ -151,7 +151,7 @@ const PriceSummary = ({ result, input, stlFile }: Props) => {
           </div>
 
           {result.sizeFactor > 1.01 && (
-            <div className="flex justify-between text-amber-700">
+            <div className="flex justify-between text-destructive">
               <span className="flex items-center gap-1">
                 <Maximize2 className="h-3.5 w-3.5" />
                 Größenzuschlag (×{result.sizeFactor.toFixed(2)})

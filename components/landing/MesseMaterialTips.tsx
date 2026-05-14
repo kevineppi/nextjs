@@ -70,7 +70,7 @@ const MesseMaterialTips = ({ materials, regionName, industryFocus }: MesseMateri
                 >
                   <Card className={`group relative border border-border/50 shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300 h-full overflow-hidden ${isMiddle ? 'ring-1 ring-primary/20' : ''}`}>
                     {/* Top accent bar */}
-                    <div className="h-1 bg-gradient-to-r from-primary/50 to-accent/50" />
+                    <div className="h-1 bg-gradient-to-r from-primary/50 to-primary/50" />
                     
                     <CardContent className="p-8 relative">
                       {/* Icon */}

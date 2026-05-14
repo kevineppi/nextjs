@@ -43,7 +43,7 @@ const Materialien = () => {
       
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-16 lg:py-24 bg-gradient-to-br from-background to-accent/5 relative overflow-hidden">
+        <section className="py-16 lg:py-24 bg-gradient-to-br from-background to-primary/5 relative overflow-hidden">
           {/* Floating Elements */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-10 right-20 w-4 h-4 bg-primary rounded-full animate-bounce"></div>
@@ -530,7 +530,7 @@ const Materialien = () => {
 
         {/* CTA Section */}
         <section className="py-16 lg:py-20 relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-accent/5 via-primary/5 to-accent/5"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-accent/5 via-primary/5 to-primary/5"></div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-6">

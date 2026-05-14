@@ -17,6 +17,7 @@ import MesseCaseStudy from "@/components/landing/MesseCaseStudy";
 import MesseMaterialTips from "@/components/landing/MesseMaterialTips";
 import MesseValueProposition from "@/components/landing/MesseValueProposition";
 import StickyCTA from "@/components/landing/StickyCTA";
+import Contact from "@/components/Contact";
 import SectionDivider from "@/components/landing/SectionDivider";
 import PersonalDeliveryInfo from "@/components/landing/PersonalDeliveryInfo";
 import LocalMessenSection from "@/components/landing/LocalMessenSection";
@@ -204,7 +205,7 @@ const MessemodellRegion = () => {
         );
 
       case 'ctaPrimary':
-        return <CTASection key="cta" headline={ctaConfig.headline} subline={ctaConfig.subline} ctaLabel={ctaConfig.ctaLabel} ctaHref="/kontakt" secondaryLabel={ctaConfig.secondaryLabel} secondaryHref="/referenzen" badge={ctaConfig.badge} urgencyText={ctaConfig.urgencyText} variant={ctaConfig.variant} />;
+        return <section key="cta" id="kontakt" className="scroll-mt-20"><Contact /></section>;
 
       case 'ctaSecondary':
         return <CTASection key="cta2" headline={`Express-Messemodell für ${regionData.name}`} subline="Messe morgen? Wir fertigen über Nacht. Direkte Lieferung zum Messegelände." ctaLabel="Express starten" ctaHref="/kontakt" badge="Messe-Express" urgencyText={`🚀 24h Fertigung · Direkt zur Messe in ${regionData.name}`} variant="filled" />;

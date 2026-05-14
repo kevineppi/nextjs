@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import StructuredData from "@/components/StructuredData";
@@ -417,6 +418,7 @@ const Einzelanfertigungen = () => {
 
       <StickyCTA context="Einzelanfertigung" />
       <AIChatWidget />
+      <section id="kontakt" className="scroll-mt-20"><Contact /></section>
       <Footer />
     </>
   );

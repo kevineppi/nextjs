@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import StickyCTA from "@/components/landing/StickyCTA";
@@ -553,6 +554,7 @@ const UeberUns = () => {
       </main>
 
       <StickyCTA context="ekdruck Anfrage" />
+      <section id="kontakt" className="scroll-mt-20"><Contact /></section>
       <Footer />
     </div>
   );

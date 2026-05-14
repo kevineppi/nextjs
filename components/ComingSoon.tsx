@@ -14,7 +14,7 @@ const ComingSoon = ({
   return (
     <div className="relative overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-primary/10" />
       
       {/* Animated background shapes */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />

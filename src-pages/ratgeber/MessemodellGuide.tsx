@@ -191,7 +191,7 @@ const MessemodellGuide = () => {
                 {[
                   { time: "4+ Wochen vor Messe", action: "Planung starten, Konzept und Größe festlegen, 3D-Datei erstellen lassen", color: "bg-green-500/10 border-green-500/30" },
                   { time: "2–3 Wochen vorher", action: "Angebot einholen, Auftrag bestätigen, Standard-Produktion startet", color: "bg-primary/10 border-primary/30" },
-                  { time: "1 Woche vorher", action: "Letzte Chance für Standard-Service – oder Express mit Aufpreis", color: "bg-amber-500/10 border-amber-500/30" },
+                  { time: "1 Woche vorher", action: "Letzte Chance für Standard-Service – oder Express mit Aufpreis", color: "bg-destructive/10 border-destructive/30" },
                   { time: "3–5 Tage vorher", action: "Nur noch Express 24–48h möglich (50% Aufpreis)", color: "bg-red-500/10 border-red-500/30" },
                 ].map((item, i) => (
                   <div key={i} className={`border rounded-xl p-4 ${item.color}`}>
