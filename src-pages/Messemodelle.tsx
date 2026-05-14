@@ -1,3 +1,5 @@
+'use client'
+
 import SEOHead from "@/components/SEOHead";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -5,549 +7,297 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Breadcrumbs from "@/components/landing/Breadcrumbs";
+import AnimatedSection from "@/components/AnimatedSection";
 import FAQSection from "@/components/landing/FAQSection";
-import RelatedPages from "@/components/landing/RelatedPages";
 import RegionalCoverage from "@/components/landing/RegionalCoverage";
 import AllRegionsLinks from "@/components/landing/AllRegionsLinks";
-import KeywordRichContent from "@/components/landing/KeywordRichContent";
 import ProductOfferSchema from "@/components/ProductOfferSchema";
-import SpeakableSchema from "@/components/SpeakableSchema";
-import QuickContactBar from "@/components/QuickContactBar";
-import TrustBarSocialProof from "@/components/TrustBarSocialProof";
 import StickyCTA from "@/components/landing/StickyCTA";
 import { 
-  Presentation, 
-  Zap, 
-  Clock, 
-  Package, 
-  CheckCircle, 
-  ArrowRight,
-  MapPin,
-  Scale,
-  Sparkles,
-  Award,
-  Target,
-  Eye,
-  Calendar,
-  Briefcase,
-  TrendingUp
+  Zap, Clock, Package, CheckCircle, ArrowRight, MapPin,
+  Sparkles, Award, Target, Eye, Calendar, Briefcase, TrendingUp,
+  Factory, Shield, Truck, Star, Building2, Wrench,
+  Lightbulb, Users, Globe, Timer, Calculator, X
 } from "lucide-react";
 
-const Messemodelle = () => {
-  const stats = [
-    { value: "24h", label: "Express", description: "Schnellste Lieferzeit" },
-    { value: "2m+", label: "Maximalgröße", description: "Für Eyecatcher-Objekte" },
-    { value: "50+", label: "Messen", description: "Bereits beliefert" },
-    { value: "100%", label: "Termintreue", description: "Zuverlässige Lieferung" }
-  ];
+const messeKalender = [
+  { name: "BAUEN & WOHNEN Wien", ort: "Wien", land: "AT", datum: "Nov 2026", branche: "Bau & Immobilien", bestellDeadline: "Sep 2026" },
+  { name: "VIENNA AUTOSHOW", ort: "Wien", land: "AT", datum: "Jan 2027", branche: "Automotive", bestellDeadline: "Nov 2026" },
+  { name: "Welser Messe (Herbst)", ort: "Wels", land: "AT", datum: "Sep 2026", branche: "Industrie & Gewerbe", bestellDeadline: "Jul 2026" },
+  { name: "Häuslbauermesse", ort: "Graz", land: "AT", datum: "Jan 2027", branche: "Bau & Wohnen", bestellDeadline: "Nov 2026" },
+  { name: "AGRARIA", ort: "Wels", land: "AT", datum: "Nov 2026", branche: "Landwirtschaft", bestellDeadline: "Sep 2026" },
+  { name: "Power-Days", ort: "Salzburg", land: "AT", datum: "Mär 2027", branche: "Elektrotechnik", bestellDeadline: "Jan 2027" },
+  { name: "Hannover Messe", ort: "Hannover", land: "DE", datum: "Apr 2027", branche: "Industrie & Automation", bestellDeadline: "Feb 2027" },
+  { name: "BAU München", ort: "München", land: "DE", datum: "Jan 2027", branche: "Bau & Architektur", bestellDeadline: "Nov 2026" },
+  { name: "MEDICA", ort: "Düsseldorf", land: "DE", datum: "Nov 2026", branche: "Medizintechnik", bestellDeadline: "Sep 2026" },
+  { name: "SPS", ort: "Nürnberg", land: "DE", datum: "Nov 2026", branche: "Automatisierung", bestellDeadline: "Sep 2026" },
+  { name: "electronica", ort: "München", land: "DE", datum: "Nov 2026", branche: "Elektronik", bestellDeadline: "Sep 2026" },
+  { name: "IFAT", ort: "München", land: "DE", datum: "Mai 2026", branche: "Umwelttechnik", bestellDeadline: "Mär 2026" },
+  { name: "Automechanika", ort: "Frankfurt", land: "DE", datum: "Sep 2026", branche: "Automotive Aftermarket", bestellDeadline: "Jul 2026" },
+  { name: "LIGNA", ort: "Hannover", land: "DE", datum: "Mai 2027", branche: "Holzverarbeitung", bestellDeadline: "Mär 2027" },
+  { name: "OLMA", ort: "St. Gallen", land: "CH", datum: "Okt 2026", branche: "Landwirtschaft & Ernährung", bestellDeadline: "Aug 2026" },
+  { name: "BEA Bern", ort: "Bern", land: "CH", datum: "Apr 2027", branche: "Gewerbe & Landwirtschaft", bestellDeadline: "Feb 2027" },
+  { name: "Swissbau", ort: "Basel", land: "CH", datum: "Jan 2027", branche: "Bau & Immobilien", bestellDeadline: "Nov 2026" },
+  { name: "PRODEX", ort: "Basel", land: "CH", datum: "Nov 2026", branche: "Fertigungsindustrie", bestellDeadline: "Sep 2026" },
+  { name: "LUGA", ort: "Luzern", land: "CH", datum: "Apr 2027", branche: "Gewerbe & Lifestyle", bestellDeadline: "Feb 2027" },
+];
 
-  const benefits = [
-    {
-      icon: Zap,
-      title: "Express-Fertigung 24-48h",
-      description: "Auch bei kurzfristigen Messeterminen liefern wir pünktlich. Unser Express-Service garantiert Lieferung innerhalb von 24-48 Stunden nach Auftragsbestätigung."
-    },
-    {
-      icon: Scale,
-      title: "Jede Größe möglich",
-      description: "Von kleinen Produktmodellen (ab 5cm) bis zu beeindruckenden Eyecatcher-Objekten über 2 Meter. Mehrteilige Konstruktion für XXL-Formate."
-    },
-    {
-      icon: Sparkles,
-      title: "Hochwertige Optik",
-      description: "Professionelle Oberflächen für anspruchsvolle Präsentationen. Nachbearbeitung wie Schleifen, Lackieren oder Beschriften auf Anfrage."
-    },
-    {
-      icon: Package,
-      title: "Transportsicher",
-      description: "Leichte PLA- und PETG-Objekte sind ideal für den Messetransport. Bis zu 70% leichter als vergleichbare Holz- oder Metallmodelle."
-    }
-  ];
+const branchenUseCases = [
+  { icon: Factory, branche: "Maschinenbau & Industrie", titel: "Industrieanlage als Anschauungsmodell", text: "Ihre Maschine wiegt 8 Tonnen und passt in keine Messehalle? Wir fertigen maßstabsgetreue Industriemodelle, die komplexe Anlagen auf Tischgröße bringen. Schnittmodelle zeigen das Innenleben, bewegliche Teile verdeutlichen Funktionsabläufe.", beispiel: "Sägeanlage 1:20 für die LIGNA – 47 Einzelteile, funktionsfähige Kanzel" },
+  { icon: Building2, branche: "Immobilien & Bau", titel: "Immobilienprojekt als Präsentationsmodell", text: "Bauträger, Projektentwickler und Architekten nutzen unsere Präsentationsmodelle für Verkaufsgespräche, Baueinreichungen und Messeauftritte. Maßstab 1:50 bis 1:500, mit Geländemodellierung und optionaler Beleuchtung.", beispiel: "Wohnbauprojekt 1:100 für die BAUEN & WOHNEN Wien – 3 Gebäude mit Umgebung" },
+  { icon: Wrench, branche: "Automotive & Zulieferer", titel: "Fahrzeugkomponenten als Exponat", text: "Von der Einzelkomponente bis zum Cutaway-Modell: Wir drucken Ausstellungsmodelle für den Automotive-Bereich. Vergrößerte Darstellungen machen filigrane Bauteile sichtbar, verkleinerte Gesamtfahrzeuge sparen Standfläche.", beispiel: "Bremsanlage 3:1 für die Automechanika Frankfurt – Schnittdarstellung mit CI-Farben" },
+  { icon: Lightbulb, branche: "Medizintechnik & Pharma", titel: "Medizinprodukt greifbar machen", text: "Erklärungsbedürftige Medizingeräte werden als Demonstrationsmodell sofort verständlich. Chirurgische Instrumente, Diagnostikgeräte oder Implantate in vergrößerter Darstellung erzeugen den entscheidenden Aha-Effekt am Messestand.", beispiel: "Insulinpumpe 5:1 für die MEDICA Düsseldorf – mit aufklappbarem Gehäuse" },
+  { icon: Globe, branche: "Energie & Umwelttechnik", titel: "Infrastrukturprojekt visualisieren", text: "Windparks, Solaranlagen, Kläranlagen oder Wasserkraftwerke: Wir erstellen Schaumodelle, die komplexe Infrastrukturprojekte auf einen Blick verständlich machen. Ideal für Fachmessen wie die IFAT oder die RENEXPO.", beispiel: "Kläranlage 1:50 für die IFAT München – mit Fließrichtungspfeilen" },
+  { icon: Briefcase, branche: "Start-ups & Dienstleister", titel: "Abstrakte Produkte physisch erlebbar", text: "Kein physisches Produkt? Kein Problem. Wir übersetzen Software, Prozesse oder Dienstleistungen in symbolische Exponatmodelle, die als Gesprächsstarter am Messestand funktionieren und Ihre Innovation greifbar machen.", beispiel: "Symbolisches Prozessmodell für ein FinTech – modularer Aufbau zum Zusammenstecken" },
+];
 
-  const useCases = [
-    {
-      title: "Überdimensionale Produktmodelle",
-      description: "Vergrößerte Darstellungen Ihrer Produkte als Blickfang am Messestand. Perfekt für technische Produkte, Medizintechnik oder Konsumgüter.",
-      details: ["Maßstab frei wählbar (z.B. 10:1)", "Originalgetreue Details", "Bis zu 2m Größe"],
-      icon: Target,
-      highlight: "Maximale Aufmerksamkeit"
-    },
-    {
-      title: "Schnittmodelle & Cutaways",
-      description: "Zeigen Sie das Innenleben Ihrer Produkte. Schnittmodelle und Funktionsdarstellungen für technische Erklärungen und Schulungen.",
-      details: ["Transparente Materialien möglich", "Mehrteilige Modelle", "Austauschbare Komponenten"],
-      icon: Eye,
-      highlight: "Technische Präsentation"
-    },
-    {
-      title: "3D-Logos & Markenelemente",
-      description: "Individuelle 3D-Logos, Schriftzüge und Markenelemente für Ihren Messestand. Corporate Design in allen Farben umsetzbar.",
-      details: ["Exakte Farbmatchung", "Große Formate bis 1m+", "Leichte Montage"],
-      icon: Award,
-      highlight: "Branding auf höchstem Niveau"
-    },
-    {
-      title: "Architektur & Immobilien",
-      description: "Immobilienprojekte und Standort-Modelle für Immobilienmessen und Investorenpräsentationen. Maßstabsgetreue Visualisierung.",
-      details: ["Maßstäbe 1:50 bis 1:500", "Umgebungsdarstellung", "Modularer Aufbau"],
-      icon: Presentation,
-      highlight: "Für Immobilienmessen"
-    }
-  ];
+const preisstufen = [
+  { typ: "Display-Modell", preis: "ab €30", groesse: "bis 15 cm", beschreibung: "Tischmodelle für Besprechungsräume, POS oder als Geschenk für Messebesucher.", lieferzeit: "3–5 Tage", material: "PLA / PLA+" },
+  { typ: "Standmodell", preis: "ab €80", groesse: "15–40 cm", beschreibung: "Aufmerksamkeitsstarke Produktmodelle, verkleinerte Maschinen oder Architekturmodelle für den Messestand.", lieferzeit: "5–7 Tage", material: "PETG / ASA" },
+  { typ: "Eyecatcher-Exponat", preis: "ab €180", groesse: "40–80 cm", beschreibung: "Großformatige Präsentationsmodelle als Blickfang. Segmentiert gedruckt, lackierbar, mit Sockelplatte.", lieferzeit: "7–10 Tage", material: "PETG / ASA / ABS" },
+  { typ: "Großmodell / Anlage", preis: "auf Anfrage", groesse: "80 cm – 2m+", beschreibung: "Maßstabsgetreue Industriemodelle, Anlagenmodelle oder Infrastrukturprojekte mit Aufbauanleitung.", lieferzeit: "2–4 Wochen", material: "nach Anforderung" },
+];
 
-  // Industrial Case Studies
-  const caseStudies = [
-    {
-      title: "Industriemesse-Projekt",
-      industry: "Maschinenbau-Aussteller",
-      challenge: "Überdimensionales Produktmodell (1,5m) für Messestand bei der Hannover Messe. Nur 10 Tage Vorlaufzeit.",
-      solution: "Mehrteiliger FDM-Druck in Corporate-Farben, nahtlose Montage vor Ort.",
-      results: ["Termingerecht geliefert", "Eyecatcher am Stand", "Wiederholungsauftrag erhalten"],
-      metrics: { size: "1,5m", time: "10 Tage", parts: "12 Teile" }
-    },
-    {
-      title: "Immobilienmesse Wien",
-      industry: "Projektentwickler",
-      challenge: "Städtebauliches Modell eines Quartiers im Maßstab 1:200 für Investorenpräsentation.",
-      solution: "Detailgetreue Gebäudemodelle mit abnehmbaren Dächern zur Innenraumvisualisierung.",
-      results: ["Investor überzeugt", "3 Folgeprojekte", "Transportable Einzelteile"],
-      metrics: { scale: "1:200", buildings: "8 Gebäude", time: "14 Tage" }
-    },
-    {
-      title: "Medizintechnik-Messe",
-      industry: "Medtech-Unternehmen",
-      challenge: "Vergrößertes Funktionsmodell eines Implantats für MEDICA-Messestand.",
-      solution: "10:1 Vergrößerung mit transparenten und farbigen Komponenten zur Veranschaulichung.",
-      results: ["Komplexität verständlich gemacht", "Hohe Standbesucherzahl", "Presseanfragen"],
-      metrics: { scale: "10:1", colors: "4 Farben", finish: "Hochglanz" }
-    }
-  ];
+const faqs = [
+  { question: "Was kostet ein 3D-gedrucktes Messemodell?", answer: "Display-Modelle starten ab €30, Standmodelle ab €80, Eyecatcher-Exponate ab €180. Großmodelle und Anlagenmodelle werden individuell kalkuliert. Sie erhalten ein verbindliches Festpreisangebot innerhalb von 6 Stunden – kostenlos und unverbindlich." },
+  { question: "Wie schnell kann ein Messemodell gefertigt werden?", answer: "Express-Fertigung in 24–48 Stunden ist möglich. Standard-Lieferzeit beträgt 5–10 Werktage, bei Großmodellen 2–4 Wochen. Wir empfehlen, 4–6 Wochen vor der Messe zu bestellen." },
+  { question: "Welche Dateiformate werden für Messemodelle akzeptiert?", answer: "Wir verarbeiten STL, OBJ, STEP, IGES und 3MF. Auch native CAD-Formate aus SolidWorks, Inventor, Fusion 360 und Rhino sind möglich. Kein 3D-Modell vorhanden? Wir erstellen Ihr Exponat auch nach Skizze, Foto oder technischer Zeichnung." },
+  { question: "Kann ich mein Messeexponat in unserer CI-Farbe erhalten?", answer: "Ja. Über 20 Filamentfarben ab Lager, oder professionelle Lackierung nach RAL-, Pantone- oder HEX-Farbwerten – exakt nach Ihrem Corporate Design." },
+  { question: "Wie wird das Exponat bruchsicher zur Messe geliefert?", answer: "Individuelle Schaumstoffverpackung mit doppelwandigem Karton. Großmodelle in verstärkten Holzkisten. Lieferung direkt zum Messestand in Wien, München, Düsseldorf, Basel und weiteren Messestädten." },
+  { question: "Was unterscheidet 3D-Druck vom klassischen Modellbau für Messen?", answer: "3D-Druck ist 5–10× schneller (Express 24h statt 3–6 Wochen), 60–80% günstiger und erlaubt unbegrenzte geometrische Komplexität. Digital reproduzierbar – Korrekturen kosten nur eine Dateiänderung." },
+  { question: "Bieten Sie Express-Service für kurzfristige Messetermine?", answer: "Ja. 24–48h Express-Fertigung ohne Qualitätseinbußen. Selbst bei Bestellung am Freitag kann Ihr Messemodell am Montag auf dem Stand stehen. Rufen Sie an: +43 676 5517197." },
+  { question: "Für welche Messen in Österreich, Deutschland und der Schweiz liefern Sie?", answer: "Alle Messen im DACH-Raum: Wien (Reed Messe), München (BAU, IFAT), Düsseldorf (MEDICA), Hannover (Hannover Messe), Frankfurt (Automechanika), Nürnberg (SPS), Basel (Swissbau), St. Gallen (OLMA), Zürich und viele weitere." },
+  { question: "Kann ein Messemodell für mehrere Messen wiederverwendet werden?", answer: "Ja. Modelle aus PETG oder ASA sind extrem robust und überstehen 5–10 Messeeinsätze. Wir empfehlen eine Transportbox für sichere Lagerung zwischen den Einsätzen." },
+  { question: "Welches Material eignet sich für Messemodelle bei Spotbeleuchtung?", answer: "PLA wird ab 55°C weich. Wir empfehlen PETG (bis 75°C) oder ASA (bis 95°C) für beleuchtete Stände. ASA ist zudem UV-beständig für Outdoor-Messen und Freiluft-Events." },
+];
 
-  const timeline = [
-    { days: "24-48h", type: "Express", description: "Für dringende Messetermine", price: "+50% Aufpreis", recommended: true },
-    { days: "3-5 Tage", type: "Standard", description: "Optimales Preis-Leistungs-Verhältnis", price: "Normalpreis", recommended: false },
-    { days: "5-10 Tage", type: "Großprojekte", description: "Umfangreiche Messeinstallationen", price: "Nach Vereinbarung", recommended: false }
-  ];
+const vergleich = [
+  { k: "Kosten", ek: "ab €30", kl: "ab €1.000", w: "ek" },
+  { k: "Lieferzeit", ek: "24h Express möglich", kl: "3–6 Wochen", w: "ek" },
+  { k: "Geometrische Komplexität", ek: "Unbegrenzt", kl: "Stark limitiert", w: "ek" },
+  { k: "Reproduzierbarkeit", ek: "1:1 identisch, digital", kl: "Jedes Stück Unikat", w: "ek" },
+  { k: "Korrekturen", ek: "Dateiänderung → Neudruck", kl: "Komplett neuer Bau", w: "ek" },
+  { k: "Transportgewicht", ek: "70–90% leichter", kl: "Schwer (Holz, Metall)", w: "ek" },
+  { k: "Haptik & Oberfläche", ek: "Gut (lackierbar)", kl: "Exzellent (Handarbeit)", w: "kl" },
+];
 
-  const messeTypen = [
-    { name: "Industriemessen", examples: "Hannover Messe, EMO, LIGNA" },
-    { name: "Baumessen", examples: "BAU München, Bauen & Wohnen" },
-    { name: "Medizintechnik", examples: "MEDICA, Compamed" },
-    { name: "Konsumgüter", examples: "Ambiente, IFA" },
-    { name: "Automobilmessen", examples: "IAA, Auto Zürich" },
-    { name: "Immobilien", examples: "Expo Real, Immobilienmessen" }
-  ];
+const Messemodelle = () => (
+  <>
+    <SEOHead title="Messemodelle, Exponate & Präsentationsmodelle | 3D-Druck Express | ekdruck" description="Messemodelle drucken lassen: Ausstellungsmodelle, Exponate & Schaumodelle für DACH-Messen. Express 24h · ab €30 · bruchsicher · ★5,0 (31 Bewertungen)" keywords="messemodelle, messemodell drucken lassen, messeexponat, ausstellungsmodell, präsentationsmodell, exponat, schaumodell, anschauungsmodell, industriemodell, messemodelle kosten, 3d druck messe, messestand modell, produktmodell messe, demonstrationsmodell" path="/messemodelle" />
+    <ProductOfferSchema name="Messemodelle & Exponate 3D-Druck" description="3D-gedruckte Messemodelle, Exponate und Präsentationsmodelle für Fachmessen in Österreich, Deutschland und der Schweiz. Express 24h." price="30" image="https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png" />
+    <Navigation />
+    <main className="min-h-screen bg-background">
 
-  const faqs = [
-    {
-      question: "Wie schnell können Messemodelle gefertigt werden?",
-      answer: "Unser Express-Service liefert in 24-48 Stunden nach Auftragsbestätigung. Standard-Lieferzeit beträgt 3-5 Werktage. Auch bei kurzfristigen Messeterminen sind wir Ihr zuverlässiger Partner."
-    },
-    {
-      question: "Welche Größe ist für Messemodelle möglich?",
-      answer: "Wir fertigen Objekte von wenigen Zentimetern bis über 2 Meter Größe. Große Objekte werden mehrteilig konstruiert und nahtlos zusammengefügt. Ideal für Eyecatcher-Elemente am Messestand."
-    },
-    {
-      question: "Sind 3D-gedruckte Messemodelle transportfähig?",
-      answer: "Ja, unsere PLA- und PETG-Objekte sind bis zu 70% leichter als vergleichbare Holz- oder Metallmodelle. Das macht sie ideal für den Messetransport und die Handhabung vor Ort."
-    },
-    {
-      question: "Können Firmenfarben exakt umgesetzt werden?",
-      answer: "Wir bieten über 20 Standardfarben und können viele RAL-Farben durch spezielle Filamente oder Nachbearbeitung (Lackierung) umsetzen. Sprechen Sie uns für Corporate-Design-Anforderungen an."
-    },
-    {
-      question: "Was kosten Messemodelle im 3D-Druck?",
-      answer: "Die Kosten hängen von Größe, Material und Komplexität ab. Kleine Produktmodelle starten ab ca. €30, große Eyecatcher-Objekte liegen typischerweise zwischen €150-500. Kontaktieren Sie uns für ein individuelles Angebot."
-    },
-    {
-      question: "Kann man das gleiche Modell mehrfach fertigen?",
-      answer: "Ja, das ist ein großer Vorteil des 3D-Drucks. Identische Reproduktionen sind ohne Mehraufwand möglich – ideal für mehrere Messestandorte oder als Ersatz bei Beschädigung."
-    }
-  ];
-
-  const keywordContent = {
-    title: "Messemodelle: Der Wettbewerbsvorteil am Stand",
-    intro: "Auf Messen zählt der erste Eindruck. 3D-gedruckte Präsentationsobjekte ziehen Blicke an und ermöglichen es Ihnen, Produkte und Konzepte haptisch erlebbar zu machen. Von der Hannover Messe über die BAU München bis zu regionalen Fachmessen in Wien, Graz oder Salzburg – überall setzen erfolgreiche Aussteller auf 3D-gedruckte Eyecatcher.",
-    blocks: [
-      {
-        title: "Kurzfristige Termine",
-        content: "Messe-Deadlines sind oft eng. Während traditionelle Modellbauer Wochen brauchen, liefern wir in 24-48 Stunden. Das gibt Ihnen die Flexibilität, auch kurzfristige Änderungen oder Last-Minute-Ergänzungen für Ihren Messestand umzusetzen."
-      },
-      {
-        title: "Leicht & Transportabel",
-        content: "3D-gedruckte Objekte aus PLA oder PETG sind bis zu 70% leichter als vergleichbare Objekte aus Holz oder Metall. Das reduziert Transportkosten und macht die Handhabung am Messestand einfacher. Ideal für Messen in ganz Europa."
-      },
-      {
-        title: "Reproduzierbar",
-        content: "Benötigen Sie das gleiche Modell für mehrere Messestandorte? Kein Problem. Digitale Fertigung ermöglicht identische Reproduktionen ohne Mehraufwand. Auch Ersatzteile bei Beschädigung sind schnell nachgefertigt."
-      },
-      {
-        title: "Individuelle Größen",
-        content: "Von kleinen Produktmodellen für den Besprechungstisch bis zu überdimensionalen Eyecatcher-Objekten über 2 Meter Höhe. Mehrteilige Konstruktion ermöglicht praktisch unbegrenzte Größen ohne Qualitätsverlust."
-      }
-    ]
-  };
-
-  const breadcrumbs = [
-    { name: "Zielgruppen", url: "#" },
-    { name: "Messemodelle", url: "/messemodelle" }
-  ];
-
-  return (
-    <>
-      <SEOHead
-        title="Messemodelle 3D-Druck | Express 24h · bis 2m+ | ★5,0"
-        description="Messestand-Hingucker pünktlich geliefert: Großformate bis 2m+, transportsicher, lackierfertig. Express 24h · Angebot in 6h · ab €30 · ★5,0 (31 Bewertungen)."
-        keywords="messemodelle 3d druck, messemodell bestellen, messemodell anfertigen lassen, 3d druck messemodell express, messeexponat bestellen, eyecatcher messestand, messemodell drucken lassen"
-        path="/messemodelle"
-      />
-
-      <ProductOfferSchema
-        name="3D-Druck Messemodelle"
-        description="Professionelle 3D-gedruckte Messemodelle und Eyecatcher für Messestände. Express-Fertigung in 24h, Objekte bis 2m+."
-        url="https://www.ek-druck.at/messemodelle"
-        lowPrice="30"
-        highPrice="1000"
-        category="Messemodelle 3D-Druck"
-      />
-      <SpeakableSchema url="https://www.ek-druck.at/messemodelle" />
-
-      <Navigation />
-      <Breadcrumbs items={breadcrumbs} />
-
-      <main className="min-h-screen bg-background">
-        {/* Hero Section */}
-        <section className="relative py-20 md:py-28 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-primary/10" />
-          <div className="absolute top-20 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-          
-          <div className="container mx-auto px-4 relative">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
-                  <Presentation className="w-4 h-4" />
-                  Für Messebau & Events
-                </div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                  Messemodell anfertigen lassen –<br />
-                  <span className="text-primary">Express in 24 Stunden</span>
-                </h1>
-                <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-xl">
-                  Sie müssen kurzfristig ein <strong>Messemodell anfertigen lassen</strong>? Wir drucken individuelle 3D-Objekte
-                  von kleinen Produktmodellen bis zu spektakulären Eyecatchern (2 m+) –
-                  auch bei kurzfristigen Messeterminen pünktlich geliefert nach Wien, München, Hannover und ganz DACH.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                 <Button asChild size="lg" variant="hero" className="text-base">
-                    <Link href="/kontakt">
-                      Kostenloses Angebot in 6h
-                      <ArrowRight className="ml-2 w-5 h-5" />
-                    </Link>
-                  </Button>
-                  <Button asChild size="lg" variant="outline">
-                    <Link href="/referenzen">Projekte ansehen</Link>
-                  </Button>
-                </div>
-                <div className="flex items-center gap-6 mt-8 pt-6 border-t border-border">
-                  <div className="flex items-center gap-2">
-                    <Clock className="w-4 h-4 text-primary" />
-                    <span className="text-sm font-medium">Express 24h möglich</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <MapPin className="w-4 h-4" />
-                    Made in Austria
-                  </div>
-                </div>
-              </div>
-              
-              {/* Stats Grid */}
-              <div className="grid grid-cols-2 gap-4">
-                {stats.map((stat, index) => (
-                  <Card key={index} className={`${index === 0 ? 'bg-primary text-primary-foreground' : 'bg-card'} border-0 shadow-lg hover:shadow-xl transition-shadow`}>
-                    <CardContent className="p-6">
-                      <div className={`text-3xl md:text-4xl font-bold mb-1 ${index === 0 ? '' : 'text-primary'}`}>
-                        {stat.value}
-                      </div>
-                      <div className={`font-semibold mb-1 ${index === 0 ? 'text-primary-foreground/90' : ''}`}>
-                        {stat.label}
-                      </div>
-                      <div className={`text-sm ${index === 0 ? 'text-primary-foreground/70' : 'text-muted-foreground'}`}>
-                        {stat.description}
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
+      {/* HERO */}
+      <section className="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none"><div className="absolute inset-0" style={{backgroundImage:'linear-gradient(hsl(var(--border)/0.3) 1px,transparent 1px),linear-gradient(90deg,hsl(var(--border)/0.3) 1px,transparent 1px)',backgroundSize:'80px 80px'}}/><div className="absolute top-[20%] right-[10%] w-[500px] h-[500px] rounded-full bg-primary/[0.06] blur-[120px]"/></div>
+        <div className="relative z-10 container mx-auto px-4"><div className="max-w-5xl mx-auto">
+          <AnimatedSection animation="fade-in">
+            <div className="sticker border-primary text-primary w-fit mb-8"><span className="w-2 h-2 rounded-full bg-primary animate-pulse"/>Angebot in 6 Stunden · Express 24h</div>
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-[0.95] tracking-[-0.04em] mb-6">Messemodelle &<br/><span className="text-gradient">Exponate drucken lassen</span></h1>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed mb-8">Ihr Produkt ist zu groß, zu schwer oder zu teuer für den Messetransport? Wir fertigen maßstabsgetreue Ausstellungsmodelle, Schaumodelle und Präsentationsmodelle aus dem 3D-Druck – pünktlich zu Ihrer nächsten Messe in Wien, München, Düsseldorf, Zürich oder Basel.</p>
+            <div className="flex flex-col sm:flex-row gap-3 mb-12">
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-10 py-7 text-base font-semibold shadow-lg" asChild><Link href="#kontakt">Messemodell anfragen <ArrowRight className="ml-2 w-5 h-5"/></Link></Button>
+              <Button size="lg" variant="outline" className="rounded-full px-8 py-7 text-base font-semibold" asChild><Link href="#preise"><Calculator className="mr-2 w-4 h-4"/>Preise & Lieferzeiten</Link></Button>
             </div>
-          </div>
-        </section>
-
-        {/* Trust Bar – Social Proof direkt nach Hero */}
-        <TrustBarSocialProof />
-
-        {/* Quick-Contact: Multi-Channel B2B Direktkontakt direkt nach Hero
-            Senkt Conversion-Hürde – Studien zeigen: Aufrufe ohne Anfragen
-            korrelieren stark mit fehlenden Low-Friction-Kanälen */}
-        <QuickContactBar
-          context="Messemodell"
-          title="Messetermin in Sicht? Lassen Sie uns sprechen."
-          subtitle="Ob Eyecatcher 2 m+ oder Produktmodell 1:5 – wir liefern auch in 24 h. Wählen Sie den schnellsten Kontaktweg."
-        />
-
-        {/* Messe-Typen Banner */}
-        <section className="py-8 bg-muted/30 border-y border-border overflow-hidden">
-          <div className="container mx-auto px-4">
-            <p className="text-center text-sm text-muted-foreground mb-4">Wir liefern für alle großen Messetypen</p>
-            <div className="flex flex-wrap justify-center gap-4">
-              {messeTypen.map((messe, index) => (
-                <div key={index} className="bg-background px-4 py-2 rounded-full border border-border text-sm">
-                  <span className="font-medium">{messe.name}</span>
-                </div>
+          </AnimatedSection>
+          <AnimatedSection animation="slide-up" delay={200}>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[{v:"24h",l:"Express-Fertigung"},{v:"2m+",l:"Maximale Modellgröße"},{v:"50+",l:"Messen beliefert"},{v:"5.0★",l:"Google (31 Bew.)"}].map(s=>(
+                <div key={s.l} className="text-center p-4 rounded-2xl border border-border/50 bg-muted/30"><p className="mono text-3xl md:text-4xl font-bold text-foreground tracking-tight">{s.v}</p><p className="mono text-[10px] text-muted-foreground mt-1 font-bold uppercase tracking-[0.15em]">{s.l}</p></div>
               ))}
             </div>
-          </div>
-        </section>
+          </AnimatedSection>
+        </div></div>
+      </section>
 
-        {/* Benefits */}
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Perfekt für den Messeauftritt</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                Wir verstehen die besonderen Anforderungen im Messebau
-              </p>
-            </div>
-            <div className="grid md:grid-cols-2 gap-6">
-              {benefits.map((benefit, index) => (
-                <Card key={index} className="border-2 hover:border-primary/50 hover:shadow-lg transition-all group">
+      {/* BRANCHEN */}
+      <section className="py-20 md:py-28 bg-muted/30 border-y border-border">
+        <div className="container mx-auto px-4"><div className="max-w-7xl mx-auto">
+          <AnimatedSection animation="fade-in" className="mb-16">
+            <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Branchen & Anwendungen</p>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-[-0.03em] mb-4">Ihr Produkt als Exponat –<br/><span className="text-gradient">für jede Branche die passende Lösung</span></h2>
+            <p className="text-muted-foreground max-w-2xl text-base leading-relaxed">Ob Industrieanlage, Medizinprodukt oder Immobilienprojekt: Wir übersetzen komplexe Produkte in greifbare Messemodelle, Demonstrationsmodelle und Ausstellungsmodelle.</p>
+          </AnimatedSection>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {branchenUseCases.map((uc,i)=>(
+              <AnimatedSection key={uc.branche} animation="slide-up" delay={i*80}>
+                <Card className="h-full border-2 border-border hover:border-primary/30 transition-all duration-300 hover:-translate-y-0.5">
+                  <CardContent className="p-6 md:p-8">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4"><uc.icon className="w-6 h-6 text-primary"/></div>
+                    <p className="mono text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-2">{uc.branche}</p>
+                    <h3 className="text-lg font-bold mb-3 tracking-tight">{uc.titel}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">{uc.text}</p>
+                    <div className="border-t border-border/50 pt-3"><p className="text-xs text-muted-foreground"><span className="font-semibold text-foreground">Beispiel:</span> {uc.beispiel}</p></div>
+                  </CardContent>
+                </Card>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div></div>
+      </section>
+
+      {/* PREISE */}
+      <section id="preise" className="py-20 md:py-28 scroll-mt-20">
+        <div className="container mx-auto px-4"><div className="max-w-7xl mx-auto">
+          <AnimatedSection animation="fade-in" className="mb-14">
+            <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Transparent kalkuliert</p>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-[-0.03em] mb-4">Was kostet ein Messemodell?</h2>
+            <p className="text-muted-foreground max-w-2xl text-base leading-relaxed">Keine versteckten Kosten. Verbindliches Festpreisangebot innerhalb von 6 Stunden – kostenlos und unverbindlich.</p>
+          </AnimatedSection>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+            {preisstufen.map((p,i)=>(
+              <AnimatedSection key={p.typ} animation="slide-up" delay={i*100}>
+                <Card className={`h-full border-2 transition-all duration-300 hover:-translate-y-1 ${i===2?'border-primary bg-primary/5':'border-border hover:border-primary/30'}`}>
                   <CardContent className="p-6">
-                    <div className="flex gap-4">
-                      <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                        <benefit.icon className="w-7 h-7 text-primary" />
-                      </div>
-                      <div>
-                        <h3 className="font-bold text-lg mb-2">{benefit.title}</h3>
-                        <p className="text-muted-foreground">{benefit.description}</p>
-                      </div>
+                    {i===2&&<span className="mono text-[10px] font-bold bg-primary text-primary-foreground px-3 py-1 rounded-full uppercase tracking-wider">Beliebt</span>}
+                    <p className="text-2xl font-bold mt-3">{p.typ}</p>
+                    <p className="text-3xl font-bold text-primary mt-1">{p.preis}</p>
+                    <p className="mono text-xs text-muted-foreground mt-1">{p.groesse}</p>
+                    <p className="text-sm text-muted-foreground mt-4 leading-relaxed">{p.beschreibung}</p>
+                    <div className="mt-4 pt-4 border-t border-border/50 space-y-1.5">
+                      <div className="flex items-center gap-2 text-xs"><Clock className="w-3.5 h-3.5 text-primary"/><span>{p.lieferzeit}</span></div>
+                      <div className="flex items-center gap-2 text-xs"><Package className="w-3.5 h-3.5 text-primary"/><span>{p.material}</span></div>
                     </div>
                   </CardContent>
                 </Card>
-              ))}
-            </div>
+              </AnimatedSection>
+            ))}
           </div>
-        </section>
+          <AnimatedSection animation="fade-in">
+            <div className="bg-muted/50 rounded-2xl p-6 md:p-8 border border-border/50">
+              <div className="flex items-start gap-3"><Zap className="w-5 h-5 text-primary mt-0.5 shrink-0"/><div><p className="font-bold text-sm mb-1">Express-Fertigung: +50% Aufpreis, Lieferung in 24–48h</p><p className="text-sm text-muted-foreground">Messe übermorgen? Kein Problem. Wir fertigen über Nacht und liefern direkt zum Messegelände. <a href="tel:+436765517197" className="text-primary font-semibold hover:underline">+43 676 5517197</a></p></div></div>
+            </div>
+          </AnimatedSection>
+        </div></div>
+      </section>
 
-        {/* Timeline */}
-        <section className="py-16 md:py-24 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Lieferzeiten für Messen</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Auch bei kurzfristigen Terminen sind wir Ihr zuverlässiger Partner
-              </p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              {timeline.map((item, index) => (
-                <Card key={index} className={`relative overflow-hidden ${item.recommended ? "border-primary border-2 shadow-lg" : ""}`}>
-                  {item.recommended && (
-                    <div className="absolute top-0 left-0 right-0 bg-primary text-primary-foreground text-xs font-semibold px-3 py-1.5 text-center">
-                      ⚡ Für dringende Projekte
-                    </div>
-                  )}
-                  <CardContent className={`p-6 text-center ${item.recommended ? 'pt-10' : ''}`}>
-                    <div className="text-4xl font-bold text-primary mb-2">{item.days}</div>
-                    <h3 className="font-bold text-lg mb-1">{item.type}</h3>
-                    <p className="text-sm text-muted-foreground mb-3">{item.description}</p>
-                    <span className="text-sm font-medium bg-muted px-3 py-1 rounded-full">{item.price}</span>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Use Cases */}
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Anwendungsbereiche</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Vielfältige Einsatzmöglichkeiten für Ihren Messeauftritt
-              </p>
-            </div>
-            <div className="grid md:grid-cols-2 gap-6">
-              {useCases.map((useCase, index) => (
-                <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow group">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-4 mb-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                        <useCase.icon className="w-6 h-6 text-primary" />
-                      </div>
-                      <div className="flex-1">
-                        <div className="flex items-start justify-between gap-2">
-                          <h3 className="text-xl font-bold">{useCase.title}</h3>
-                          <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full font-medium whitespace-nowrap">
-                            {useCase.highlight}
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <p className="text-muted-foreground mb-4">{useCase.description}</p>
-                    <ul className="space-y-2">
-                      {useCase.details.map((detail, i) => (
-                        <li key={i} className="flex items-center gap-2 text-sm">
-                          <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-                          {detail}
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Case Studies Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-br from-primary/5 via-background to-primary/5">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
-                <Briefcase className="w-4 h-4" />
-                Erfolgsbeispiele
+      {/* VERGLEICH */}
+      <section className="py-20 md:py-28 bg-foreground text-background">
+        <div className="container mx-auto px-4"><div className="max-w-5xl mx-auto">
+          <AnimatedSection animation="fade-in" className="mb-14">
+            <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Vergleich</p>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-[-0.03em]">3D-Druck vs. klassischer Modellbau</h2>
+          </AnimatedSection>
+          <AnimatedSection animation="slide-up">
+            <div className="rounded-2xl overflow-hidden border border-background/10">
+              <div className="grid grid-cols-3 bg-background/5 border-b border-background/10">
+                <div className="p-4 mono text-[10px] font-bold text-background/50 uppercase tracking-[0.2em]">Kriterium</div>
+                <div className="p-4 text-center font-bold text-primary text-sm flex items-center justify-center gap-2"><span className="w-2 h-2 rounded-full bg-primary animate-pulse"/>ekdruck</div>
+                <div className="p-4 mono text-[10px] font-bold text-background/50 uppercase tracking-[0.2em] text-center">Handmodellbau</div>
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Messe-Projekte in der Praxis</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Anonymisierte Beispiele aus unserer Projektarbeit
-              </p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-6">
-              {caseStudies.map((study, index) => (
-                <Card key={index} className="overflow-hidden border-2 hover:border-primary/30 hover:shadow-xl transition-all group">
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-2 mb-4">
-                      <TrendingUp className="w-5 h-5 text-primary" />
-                      <span className="text-xs bg-muted px-2 py-1 rounded-full font-medium">{study.industry}</span>
-                    </div>
-                    <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">{study.title}</h3>
-                    
-                    <div className="space-y-3 mb-4">
-                      <div>
-                        <span className="text-xs font-semibold text-primary uppercase tracking-wide">Herausforderung</span>
-                        <p className="text-sm text-muted-foreground mt-1">{study.challenge}</p>
-                      </div>
-                      <div>
-                        <span className="text-xs font-semibold text-primary uppercase tracking-wide">Lösung</span>
-                        <p className="text-sm text-muted-foreground mt-1">{study.solution}</p>
-                      </div>
-                    </div>
-
-                    <div className="border-t border-border pt-4 mb-4">
-                      <span className="text-xs font-semibold text-foreground uppercase tracking-wide mb-2 block">Ergebnis</span>
-                      <ul className="space-y-1">
-                        {study.results.map((result, i) => (
-                          <li key={i} className="flex items-center gap-2 text-sm">
-                            <CheckCircle className="w-3 h-3 text-primary shrink-0" />
-                            {result}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className="flex flex-wrap gap-2">
-                      {Object.entries(study.metrics).map(([key, value]) => (
-                        <span key={key} className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full font-medium">
-                          {value}
-                        </span>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
+              {vergleich.map(r=>(
+                <div key={r.k} className="grid grid-cols-3 border-b border-background/10 hover:bg-background/5 transition-colors">
+                  <div className="p-4 font-medium text-sm text-background/80">{r.k}</div>
+                  <div className="p-4 text-center border-x border-background/10"><span className={`inline-flex items-center gap-1.5 text-sm font-bold ${r.w==='ek'?'text-primary':'text-background/60'}`}>{r.w==='ek'&&<CheckCircle className="w-4 h-4"/>}{r.ek}</span></div>
+                  <div className="p-4 text-center"><span className={`text-sm ${r.w==='kl'?'text-primary font-bold':'text-background/40'}`}>{r.w==='kl'&&<CheckCircle className="w-4 h-4 inline mr-1"/>}{r.kl}</span></div>
+                </div>
               ))}
             </div>
-            
-            <div className="text-center mt-10">
-              <Button asChild variant="outline" size="lg">
-                <Link href="/referenzen">
-                  Alle Referenzen ansehen
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </section>
+          </AnimatedSection>
+        </div></div>
+      </section>
 
-        {/* Checklist */}
-        <section className="py-16 md:py-24 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto">
-              <div className="text-center mb-12">
-                <Calendar className="w-12 h-12 text-primary mx-auto mb-4" />
-                <h2 className="text-3xl font-bold mb-4">Messe-Checkliste</h2>
-                <p className="text-muted-foreground">So planen Sie Ihr Messeprojekt optimal</p>
+      {/* ABLAUF */}
+      <section className="py-20 md:py-28">
+        <div className="container mx-auto px-4"><div className="max-w-7xl mx-auto">
+          <AnimatedSection animation="fade-in" className="mb-14">
+            <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">So funktioniert's</p>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-[-0.03em] mb-4">Vom Standkonzept zum fertigen Exponat</h2>
+            <p className="text-muted-foreground max-w-2xl text-base leading-relaxed">Idealerweise bestellen Sie 4–6 Wochen vor der Messe. Aber auch Last-Minute-Anfragen meistern wir.</p>
+          </AnimatedSection>
+          <div className="grid md:grid-cols-4 gap-4">
+            {[
+              {s:"01",t:"Anfrage senden",tx:"CAD-Datei, Skizze oder Produktbeschreibung – wir brauchen nur eine grobe Idee und Ihren Messetermin.",tm:"2 Min",ic:Target},
+              {s:"02",t:"Angebot erhalten",tx:"Verbindlicher Festpreis mit Material- und Größenempfehlung. Kostenlos, innerhalb von 6 Stunden.",tm:"< 6h",ic:Calculator},
+              {s:"03",t:"Fertigung & QA",tx:"Druck, Nachbearbeitung, Qualitätskontrolle. Express: Über-Nacht-Fertigung möglich.",tm:"1–14 Tage",ic:Wrench},
+              {s:"04",t:"Lieferung zur Messe",tx:"Bruchsichere Verpackung, Versand mit Tracking. Lieferung direkt zum Messestand möglich.",tm:"1–3 Tage",ic:Truck},
+            ].map((st,i)=>(
+              <AnimatedSection key={st.s} animation="slide-up" delay={i*100}>
+                <div className="relative p-6 rounded-2xl border-2 border-border hover:border-primary/30 transition-all duration-300 h-full">
+                  <p className="mono text-5xl font-bold text-foreground/[0.06] absolute top-3 right-4">{st.s}</p>
+                  <div className="flex items-center gap-3 mb-3"><div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center"><st.ic className="w-5 h-5 text-primary"/></div><span className="mono text-[10px] font-bold text-primary uppercase tracking-[0.2em]">{st.tm}</span></div>
+                  <h3 className="font-bold text-lg mb-2 tracking-tight">{st.t}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{st.tx}</p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div></div>
+      </section>
+
+      {/* MESSE-KALENDER */}
+      <section className="py-20 md:py-28 bg-muted/30 border-y border-border">
+        <div className="container mx-auto px-4"><div className="max-w-7xl mx-auto">
+          <AnimatedSection animation="fade-in" className="mb-14">
+            <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Messekalender DACH 2026/2027</p>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-[-0.03em] mb-4">Wichtige Messen –<br/><span className="text-gradient">wann Sie bestellen sollten</span></h2>
+            <p className="text-muted-foreground max-w-2xl text-base leading-relaxed">Wir empfehlen, Ihr Messemodell 4–6 Wochen vor Messebeginn zu bestellen. Express-Bestellungen bis 48h vor Aufbautag.</p>
+          </AnimatedSection>
+          {(["AT","DE","CH"] as const).map(land=>{
+            const messen=messeKalender.filter(m=>m.land===land);
+            const label=land==="AT"?"🇦🇹 Österreich":land==="DE"?"🇩🇪 Deutschland":"🇨🇭 Schweiz";
+            return(<AnimatedSection key={land} animation="slide-up" className="mb-8">
+              <h3 className="mono text-sm font-bold text-foreground uppercase tracking-[0.15em] mb-4">{label}</h3>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {messen.map(m=>(<div key={m.name} className="flex items-start gap-3 p-4 rounded-xl border border-border/50 bg-background hover:border-primary/30 transition-colors">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0"><Calendar className="w-5 h-5 text-primary"/></div>
+                  <div className="min-w-0"><p className="font-bold text-sm truncate">{m.name}</p><p className="text-xs text-muted-foreground">{m.ort} · {m.datum}</p><p className="text-xs text-muted-foreground">{m.branche}</p>
+                  {m.bestellDeadline!=="–"&&<p className="text-xs text-primary font-semibold mt-1"><Timer className="w-3 h-3 inline mr-1"/>Bestellen bis: {m.bestellDeadline}</p>}
+                  </div></div>))}
               </div>
-              <Card>
-                <CardContent className="p-8">
-                  <div className="space-y-4">
-                    {[
-                      { time: "4 Wochen vorher", task: "3D-Dateien vorbereiten oder erstellen lassen" },
-                      { time: "3 Wochen vorher", task: "Material und Farbe auswählen, Angebot einholen" },
-                      { time: "2 Wochen vorher", task: "Auftrag bestätigen (Standardlieferung)" },
-                      { time: "1 Woche vorher", task: "Express-Bestellung bei kurzfristigen Änderungen" },
-                      { time: "2-3 Tage vorher", task: "Lieferung erhalten, Qualitätskontrolle" },
-                      { time: "Messetag", task: "Beeindrucken Sie Ihre Besucher!" }
-                    ].map((item, index) => (
-                      <div key={index} className="flex items-start gap-4 p-3 rounded-lg hover:bg-muted/50 transition-colors">
-                        <div className="w-32 shrink-0">
-                          <span className="text-sm font-bold text-primary">{item.time}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <CheckCircle className="w-5 h-5 text-primary shrink-0" />
-                          <span>{item.task}</span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
+            </AnimatedSection>);
+          })}
+          <AnimatedSection animation="fade-in" className="mt-8">
+            <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 text-center">
+              <p className="font-bold mb-2">Ihre Messe ist nicht dabei?</p>
+              <p className="text-sm text-muted-foreground mb-4">Wir liefern zu jeder Messe im DACH-Raum und international.</p>
+              <Button size="sm" className="rounded-full" asChild><Link href="#kontakt">Messetermin mitteilen <ArrowRight className="ml-2 w-4 h-4"/></Link></Button>
             </div>
-          </div>
-        </section>
+          </AnimatedSection>
+        </div></div>
+      </section>
 
-        {/* Keyword Rich Content */}
-        <KeywordRichContent 
-          title={keywordContent.title}
-          intro={keywordContent.intro}
-          blocks={keywordContent.blocks}
-        />
+      {/* SEO CONTENT */}
+      <section className="py-20 md:py-28">
+        <div className="container mx-auto px-4"><div className="max-w-4xl mx-auto">
+          <AnimatedSection animation="fade-in">
+            <div className="mb-10">
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Messemodelle im Detail</p>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-[-0.03em] mb-4">Warum 3D-gedruckte Exponate Ihren Messeauftritt verändern</h2>
+            </div>
+            <div className="space-y-6 text-base leading-[1.8] text-foreground/85">
+              <p>Ein physisches Modell am Messestand erzeugt mehr Aufmerksamkeit als jeder Bildschirm. Besucher bleiben stehen, greifen zu, stellen Fragen. <strong>Messemodelle und Exponate aus dem 3D-Druck</strong> machen das möglich – schnell, präzise und wirtschaftlich. Ob maßstabsgetreues <Link href="/messemodelle/muenchen" className="text-primary font-semibold hover:underline">Anschauungsmodell für die BAU München</Link>, ein Produktmodell als Blickfang am Messestand oder ein technisches Schnittmodell für die <Link href="/messemodelle/hannover" className="text-primary font-semibold hover:underline">Hannover Messe</Link> – wir fertigen Ihr Exponat termingerecht und bruchsicher.</p>
+              <div><h3 className="font-bold text-xl mb-3">Ausstellungsmodelle für den DACH-Raum</h3><p>Von unserem Standort in Gunskirchen (Oberösterreich) beliefern wir <strong>alle Messen in Österreich, Deutschland und der Schweiz</strong>. In Wien, Wels und Salzburg bieten wir persönliche Lieferung an. Nach München, Nürnberg und Stuttgart liefern wir innerhalb von 3–5 Werktagen. Auch die Schweizer Messestädte Basel, Zürich und St. Gallen erreichen wir zuverlässig – innerhalb der EU fallen keine Zollgebühren an, Schweizer Lieferungen wickeln wir mit vollständiger Zolldokumentation ab.</p></div>
+              <div><h3 className="font-bold text-xl mb-3">Vom Standmodell zum Eyecatcher – unser Leistungsspektrum</h3><p>Wir fertigen alle Arten von Messemodellen: <strong>Produktmodelle</strong> in Originalgröße oder verkleinert, <strong>Industriemodelle</strong> von Anlagen und Maschinen, <strong>Präsentationsmodelle</strong> für Immobilien und Architektur, <strong>Demonstrationsmodelle</strong> mit aufklappbaren Gehäusen oder Schnittdarstellungen, sowie großformatige <strong>Schaumodelle</strong> als Eyecatcher. Modelle bis 2 Meter Höhe werden segmentiert gedruckt und vor Ort zusammengesetzt.</p></div>
+              <div><h3 className="font-bold text-xl mb-3">Material & Oberfläche für den Messeeinsatz</h3><p>Für den Messeeinsatz empfehlen wir <strong>PETG</strong> (robust, bis 75°C) oder <strong>ASA</strong> (Outdoor-tauglich, bis 95°C). Beide Materialien überstehen Transport und mehrere Messeeinsätze problemlos. Alle Modelle können geschliffen, gespachtelt und nach RAL/Pantone lackiert werden – exakt nach Ihrem Corporate Design. Details in unserem <Link href="/ratgeber/material-guide" className="text-primary font-semibold hover:underline">Material-Guide</Link>.</p></div>
+              <div><h3 className="font-bold text-xl mb-3">Wer bestellt Messemodelle bei ekdruck?</h3><p>Unsere Kunden sind <strong>Messeaussteller, Eventagenturen, Produktmanager und Marketing-Abteilungen</strong> aus dem DACH-Raum – aus Maschinenbau, Baubranche, Medizintechnik, Automotive und Energiesektor. Was sie verbindet: Sie brauchen ein physisches Modell, das ihr Produkt am Messestand greifbar macht. Mehr zu unseren B2B-Konditionen unter <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">Firmenkunden</Link>.</p></div>
+            </div>
+          </AnimatedSection>
+        </div></div>
+      </section>
 
-        {/* Regional Coverage + All Regions Links */}
-        <RegionalCoverage 
-          serviceName="Messemodelle" 
-          description="Wir beliefern Messebauer und Aussteller in ganz Österreich. Express-Versand für kurzfristige Messetermine. Persönliche Abholung in Gunskirchen (OÖ) möglich."
-          baseUrl="messemodelle"
-        />
+      {/* FAQ */}
+      <FAQSection faqs={faqs} title="Häufige Fragen zu Messemodellen & Exponaten" subtitle="Alles was Sie vor der Bestellung wissen sollten" schemaId="messemodelle-faq"/>
 
-        <AllRegionsLinks currentSlug="" type="messe" />
+      {/* REGIONEN */}
+      <section className="py-20 md:py-28 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <AnimatedSection animation="fade-in" className="mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-[-0.03em] mb-3">Messemodelle für <span className="text-primary">ganz Österreich, Deutschland & Schweiz</span></h2>
+            <p className="text-muted-foreground text-sm">Standort Gunskirchen (OÖ) – Express AT 24h, DE 2–5 Tage, CH 3–5 Tage.</p>
+          </AnimatedSection>
+          <RegionalCoverage serviceName="Messemodelle" baseUrl="messemodelle"/>
+          <AllRegionsLinks currentSlug="" type="messe"/>
+        </div>
+      </section>
 
-        {/* FAQ Section */}
-        <FAQSection 
-          faqs={faqs} 
-          title="Häufige Fragen zu Messemodellen"
-          subtitle="Antworten auf die wichtigsten Fragen rund um 3D-gedruckte Messemodelle"
-          schemaId="messemodelle"
-        />
-
-        {/* Related Pages */}
-        <RelatedPages currentPage="/messemodelle" />
-      </main>
-
-      <StickyCTA context="Messemodell" />
-      <section id="kontakt" className="scroll-mt-20"><Contact /></section>
-      <Footer />
-    </>
-  );
-};
+      {/* KONTAKT */}
+      <section id="kontakt" className="scroll-mt-20"><Contact/></section>
+    </main>
+    <StickyCTA/>
+    <Footer/>
+  </>
+);
 
 export default Messemodelle;

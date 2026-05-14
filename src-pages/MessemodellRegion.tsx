@@ -37,6 +37,8 @@ import { getRegionBySlug, regionalMesseData, RegionalMesseData } from "@/data/re
 import { getExtendedDataBySlug } from "@/data/regionalMesseExtendedData";
 import { getGermanRegionBySlug, germanMesseData } from "@/data/germanMesseData";
 import { getGermanExtendedDataBySlug } from "@/data/germanMesseExtendedData";
+import { getSwissRegionBySlug } from "@/data/swissMesseData";
+import { getSwissExtendedDataBySlug } from "@/data/swissMesseExtendedData";
 import { getExtendedMesseSections } from "@/data/messeExtendedSections";
 import {
   messeRegionLayouts,
@@ -54,10 +56,12 @@ const MessemodellRegion = () => {
   const region = pathname?.split("/").pop() || "";
   const atRegion = region ? getRegionBySlug(region) : undefined;
   const deRegion = region ? getGermanRegionBySlug(region) : undefined;
-  const regionData = atRegion || deRegion;
+  const chRegion = region ? getSwissRegionBySlug(region) : undefined;
+  const regionData = atRegion || deRegion || (chRegion as any);
   const isGerman = !atRegion && !!deRegion;
-  const countryName = isGerman ? 'Deutschland' : 'Österreich';
-  const extendedData = region ? (getExtendedDataBySlug(region) || getGermanExtendedDataBySlug(region)) : undefined;
+  const isSwiss = !atRegion && !deRegion && !!chRegion;
+  const countryName = isSwiss ? 'Schweiz' : isGerman ? 'Deutschland' : 'Österreich';
+  const extendedData = region ? (getExtendedDataBySlug(region) || getGermanExtendedDataBySlug(region) || getSwissExtendedDataBySlug(region)) : undefined;
   const extSections = region ? getExtendedMesseSections(region) : undefined;
 
   if (!regionData || !extendedData) {

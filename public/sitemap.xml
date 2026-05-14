@@ -53,4 +53,9 @@
   <url><loc>https://www.ek-druck.at/messemodelle/hannover</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://www.ek-druck.at/messemodelle/berlin</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://www.ek-druck.at/messemodelle/hamburg</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/zuerich</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/basel</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/bern</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/st-gallen</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/luzern</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
 </urlset>

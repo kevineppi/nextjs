@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Messemodelle from '@/src-pages/Messemodelle'
 
 export const metadata: Metadata = {
-  title: 'Messemodelle 3D-Druck | Express 24h · bis 2m+ | ★5,0',
-  description: 'Messestand-Hingucker pünktlich geliefert: Großformate bis 2m+, transportsicher, lackierfertig. Express 24h · Angebot in 6h · ab €30 · ★5,0 (31 Bewertungen).',
+  title: 'Messemodelle, Exponate & Präsentationsmodelle | 3D-Druck Express 24h | ekdruck',
+  description: 'Messemodelle drucken lassen: Ausstellungsmodelle, Schaumodelle & Exponate für DACH-Messen. Ab €30 · Express 24h · bis 2m+ · bruchsicher · ★5,0 (31 Bewertungen). Industriemodelle, Schnittmodelle, Standmodelle.',
   alternates: {
     canonical: 'https://www.ek-druck.at/messemodelle',
   },
   openGraph: {
-    title: 'Messemodelle 3D-Druck | Express 24h · bis 2m+ | ★5,0',
-    description: 'Messestand-Hingucker pünktlich geliefert: Großformate bis 2m+, transportsicher, lackierfertig. Express 24h · Angebot in 6h · ab €30 · ★5,0 (31 Bewertungen).',
+    title: 'Messemodelle, Exponate & Präsentationsmodelle | 3D-Druck Express 24h | ekdruck',
+    description: 'Messemodelle drucken lassen: Ausstellungsmodelle, Schaumodelle & Exponate für DACH-Messen. Ab €30 · Express 24h · bis 2m+ · bruchsicher · ★5,0 (31 Bewertungen).',
     url: 'https://www.ek-druck.at/messemodelle',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Messemodelle 3D-Druck | Express 24h · bis 2m+ | ★5,0',
-    description: 'Messestand-Hingucker pünktlich geliefert: Großformate bis 2m+, transportsicher, lackierfertig. Express 24h · Angebot in 6h · ab €30 · ★5,0 (31 Bewertungen).',
+    title: 'Messemodelle, Exponate & Präsentationsmodelle | 3D-Druck Express 24h | ekdruck',
+    description: 'Messemodelle drucken lassen: Ausstellungsmodelle, Schaumodelle & Exponate für DACH-Messen. Ab €30 · Express 24h · bis 2m+ · bruchsicher · ★5,0 (31 Bewertungen).',
   },
 }
 
