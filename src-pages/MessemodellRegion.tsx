@@ -20,6 +20,7 @@ import MesseComparisonSection from "@/components/landing/MesseComparisonSection"
 import MesseROISection from "@/components/landing/MesseROISection";
 import MesseEffectsSection from "@/components/landing/MesseEffectsSection";
 import MesseTimelineSection from "@/components/landing/MesseTimelineSection";
+import ReferencesTeaser from "@/components/ReferencesTeaser";
 import StickyCTA from "@/components/landing/StickyCTA";
 import SectionDivider from "@/components/landing/SectionDivider";
 import PersonalDeliveryInfo from "@/components/landing/PersonalDeliveryInfo";
@@ -251,6 +252,7 @@ const MessemodellRegion = () => {
 
       case 'allRegionsLinks': return <AllRegionsLinks key="arl" currentSlug={regionData.slug} type="messe" />;
       case 'relatedPages': return <RelatedPages key="rp" currentPage={`/messemodelle/${regionData.slug}`} />;
+      case 'references': return <ReferencesTeaser key="refs" />;
       case 'priceComparison': return <PriceComparisonSection key="pc" regionName={regionData.name} category="messe" />;
       case 'expressTimeline': return <ExpressTimelineSection key="et" regionName={regionData.name} deliveryTime={regionData.deliveryTime} />;
       case 'techSpecs': return <TechSpecsSection key="ts" regionName={regionData.name} category="messe" />;

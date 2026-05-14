@@ -18,6 +18,7 @@ import MesseComparisonSection from "@/components/landing/MesseComparisonSection"
 import MesseROISection from "@/components/landing/MesseROISection";
 import MesseEffectsSection from "@/components/landing/MesseEffectsSection";
 import MesseTimelineSection from "@/components/landing/MesseTimelineSection";
+import ReferencesTeaser from "@/components/ReferencesTeaser";
 import { 
   Zap, Clock, Package, CheckCircle, ArrowRight, MapPin,
   Target, Calendar, Briefcase,
@@ -486,6 +487,11 @@ const Messemodelle = () => (
           </div>
         </div>
       </section>
+
+      {/* ════════════════════════════════════════════
+          REFERENZEN
+          ════════════════════════════════════════════ */}
+      <ReferencesTeaser />
 
       {/* ════════════════════════════════════════════
           SEO CONTENT – Deep, keyword-rich
