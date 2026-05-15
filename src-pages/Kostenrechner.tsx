@@ -96,7 +96,7 @@ const PartCalculator = ({
             </p>
             {result && (
               <p className="text-xs text-primary font-semibold">
-                {result.finalPrice.toFixed(2).replace(".", ",")} € {currentInput && currentInput.quantity > 1 ? `(${currentInput.quantity}× à ${result.unitPrice.toFixed(2).replace(".", ",")} €)` : 'Stückpreis'}
+                {result.finalGross.toFixed(2).replace(".", ",")} € {currentInput && currentInput.quantity > 1 ? `(${currentInput.quantity}× à ${result.scaledUnitCost.toFixed(2).replace(".", ",")} €)` : 'Stückpreis'}
               </p>
             )}
           </div>
@@ -175,7 +175,7 @@ const Kostenrechner = () => {
 
   // Calculate totals
   const partsWithResults = parts.filter(p => p.result);
-  const totalPrice = partsWithResults.reduce((sum, p) => sum + (p.result?.finalPrice || 0), 0);
+  const totalPrice = partsWithResults.reduce((sum, p) => sum + (p.result?.finalGross || 0), 0);
   const totalPrintTime = partsWithResults.reduce((sum, p) => sum + (p.result?.printTimeMin || 0), 0);
 
   return (
@@ -257,8 +257,8 @@ const Kostenrechner = () => {
                                 {qty > 1 && <span className="mono text-[10px] bg-muted px-2 py-0.5 rounded">{qty}×</span>}
                               </div>
                               <div className="text-right">
-                                <span className="font-bold">{part.result.finalPrice.toFixed(2).replace(".", ",")} €</span>
-                                {qty > 1 && <span className="text-xs text-muted-foreground ml-2">(à {part.result.unitPrice.toFixed(2).replace(".", ",")} €)</span>}
+                                <span className="font-bold">{part.result.finalGross.toFixed(2).replace(".", ",")} €</span>
+                                {qty > 1 && <span className="text-xs text-muted-foreground ml-2">(à {part.result.scaledUnitCost.toFixed(2).replace(".", ",")} €)</span>}
                               </div>
                             </div>
                           );
