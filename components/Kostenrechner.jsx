@@ -11,9 +11,7 @@ import { Separator } from "@/components/ui/separator";
 import { Slider } from "@/components/ui/slider";
 import { pricingConfig } from "@/data/pricingConfig";
 import { calculatePrice as calcPriceEngine } from "@/lib/pricingEngine";
-import type { PricingInput, PricingResult } from "@/lib/pricingEngine";
 import { parseSTL } from "@/lib/stlParser";
-import type { GeometryData } from "@/lib/stlParser";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import {
