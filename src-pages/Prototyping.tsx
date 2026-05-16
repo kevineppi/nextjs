@@ -149,7 +149,7 @@ const Prototyping = () => (
     <main className="min-h-screen bg-background">
 
       {/* HERO – simpel, robust, mit visuellen Akzenten */}
-      <section className="relative pt-32 pb-24 md:pt-44 md:pb-32 overflow-hidden">
+      <section className="relative pt-44 pb-24 md:pt-56 lg:pt-64 md:pb-32 overflow-hidden">
         {/* Background – nur subtle */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0" style={{backgroundImage:'radial-gradient(hsl(var(--border)/0.4) 1px, transparent 1px)',backgroundSize:'24px 24px'}} />
