@@ -122,7 +122,7 @@ const faqs = [
   { question: "Wie ist die Vertraulichkeit bei Entwicklungsprojekten geregelt?", answer: "Auf Wunsch unterzeichnen wir eine NDA, bevor Daten ausgetauscht werden. Direkte Kommunikation mit dem Inhaber ohne Zwischeninstanzen. Keine Weitergabe an Subunternehmer ohne Ihre ausdrückliche Zustimmung. Datenarchivierung nach Projektabschluss optional – auf Wunsch löschen wir CAD-Daten sofort nach Lieferung." },
   { question: "FDM, SLA oder SLS – welches Verfahren ist richtig?", answer: "FDM für robuste Funktionsteile, Vorrichtungen und Konstruktionsprototypen – das wirtschaftlichste Verfahren mit der größten Materialvielfalt. SLA für höchste Detailauflösung, glatte Oberflächen, Designmuster und Sichtteile. SLS für Vorserien, industrielle Funktionsbaugruppen und Bauteile mit isotropen Materialeigenschaften ohne Stützstrukturen." },
   { question: "Wie groß kann ein Prototyp maximal sein?", answer: "FDM-Einzelteile bis 350 × 350 × 350 mm in einem Stück. Größere Bauteile durch segmentierten Druck mit unsichtbaren Verbindungsstellen ohne Größenbegrenzung. SLS-Bauraum bei Partnern bis 700 × 380 × 380 mm." },
-  { question: "Bietet ihr persönliche Zustellung an?", answer: "Ja. Innerhalb Oberösterreichs (Linz, Wels, Vöcklabruck, Steyr und Umgebung) liefern wir auf Wunsch persönlich – kostenfrei ab Auftragswert €200, sonst gegen Aufwandsentschädigung ab €40. Auch in Wien und Salzburg gegen Aufpreis möglich. Sinnvoll bei sehr empfindlichen Modellen, dringenden Wettbewerbsabgaben oder wenn eine kurze technische Einweisung gewünscht ist." },
+  { question: "Bietet ihr persönliche Zustellung an?", answer: "Ja. Innerhalb Oberösterreichs (Linz, Wels, Vöcklabruck, Steyr und Umgebung) liefern wir auf Wunsch persönlich gegen Aufwandsentschädigung ab €40. Wien und Salzburg gegen entsprechenden Aufpreis möglich. Sinnvoll bei sehr empfindlichen Modellen, dringenden Wettbewerbsabgaben oder wenn eine kurze technische Einweisung gewünscht ist. Preis vor Abholung verbindlich kalkuliert." },
   { question: "Bietet ihr Konstruktionsoptimierung an?", answer: "Ja. Wir prüfen Ihre Bauteile vor dem Druck auf Wandstärken, Stützstrukturen, Auflagepunkte und Anisotropie-Richtung. Bei Optimierungspotenzial melden wir uns mit konkreten Vorschlägen, bevor irgendetwas gedruckt wird. Für komplexere DfAM-Beratung (Design for Additive Manufacturing) ab €80/Stunde." },
   { question: "Gibt es Rabatte für Stammkunden?", answer: "Ja, automatisch: Ab 5 Aufträgen pro Quartal 10% Rabatt, ab 10 Aufträgen 15%, ab 20 Aufträgen 20% plus direkten Inhaber-Kontakt. Keine Mitgliedschaft, keine Karte – wir erkennen Sie über Ihre Auftraggeber-Daten und rechnen automatisch an. Zusätzlich gibt es das Hardware-Sprint-Paket (10 Iterationen in 3 Monaten zum Festpreis €1.490) und Express-Slot-Vorverträge." },
   { question: "Bietet ihr Nachbearbeitung an?", answer: "Standard: Stützstrukturen entfernen, Druckkante glätten, kritische Toleranzen messen. Auf Wunsch: Schleifen, Spachteln, Lackieren nach RAL/Pantone/HEX, Heat-Treatment für höhere Festigkeit, Gewinde-Einsätze (M3–M10), Glätten der Oberfläche durch Acetondampf bei ABS. Preise auf Anfrage." },
@@ -149,7 +149,7 @@ const Prototyping = () => (
     <main className="min-h-screen bg-background">
 
       {/* HERO */}
-      <section className="relative pt-36 pb-24 md:pt-52 md:pb-32 overflow-hidden">
+      <section className="relative pt-40 pb-32 md:pt-60 md:pb-40 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0" style={{backgroundImage:'radial-gradient(hsl(var(--border)/0.4) 1px, transparent 1px)',backgroundSize:'24px 24px'}} />
           <div className="absolute top-[10%] right-[5%] w-[600px] h-[600px] rounded-full bg-primary/[0.04] blur-[120px]" />
@@ -189,7 +189,7 @@ const Prototyping = () => (
             </AnimatedSection>
 
             <AnimatedSection animation="slide-up" delay={200}>
-              <div className="mt-20 grid grid-cols-4 gap-0 border-t border-border pt-8">
+              <div className="mt-24 md:mt-28 grid grid-cols-4 gap-0 border-t border-border pt-10">
                 {[
                   { v: "24h", l: "Express" },
                   { v: "€20", l: "Ab Preis" },
@@ -462,7 +462,7 @@ const Prototyping = () => (
                     <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0"><Truck className="w-7 h-7 text-primary" /></div>
                     <div>
                       <p className="text-xl font-bold mb-2">Persönliche Zustellung</p>
-                      <p className="text-muted-foreground leading-relaxed text-sm">Oberösterreich kostenfrei ab €200. Wien, Salzburg, Linz gegen Aufpreis. Für sehr empfindliche Modelle oder dringende Abgaben.</p>
+                      <p className="text-muted-foreground leading-relaxed text-sm">Auf Wunsch innerhalb Oberösterreichs gegen Aufwandsentschädigung ab €40. Wien und Salzburg gegen Aufpreis. Für sehr empfindliche Modelle oder dringende Abgaben.</p>
                     </div>
                   </div>
                 </MagneticCard>
@@ -568,7 +568,7 @@ const Prototyping = () => (
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Express-Fertigung und persönliche Zustellung</h3>
-                  <p>Wenn die Deadline drückt: <strong>Express-Fertigung in 24 Stunden</strong> möglich. Über-Nacht-Druck, Nachbearbeitung am Morgen, Versand oder persönliche Zustellung am gleichen Tag. Aufpreis +50%, Slot-Reservierung am besten telefonisch unter <strong>+43 676 5517197</strong>. Innerhalb von Oberösterreich (Wels, Linz, Vöcklabruck, Steyr) bieten wir <strong>persönliche Zustellung</strong> – kostenfrei ab Auftragswert €200, sonst gegen Aufwandsentschädigung ab €40. Sinnvoll bei sehr empfindlichen Modellen, dringenden Wettbewerbsabgaben oder wenn eine kurze technische Einweisung gewünscht ist.</p>
+                  <p>Wenn die Deadline drückt: <strong>Express-Fertigung in 24 Stunden</strong> möglich. Über-Nacht-Druck, Nachbearbeitung am Morgen, Versand oder persönliche Zustellung am gleichen Tag. Aufpreis +50%, Slot-Reservierung am besten telefonisch unter <strong>+43 676 5517197</strong>. Innerhalb von Oberösterreich (Wels, Linz, Vöcklabruck, Steyr) bieten wir <strong>persönliche Zustellung</strong> gegen Aufwandsentschädigung ab €40. Wien und Salzburg gegen entsprechenden Aufpreis möglich. Sinnvoll bei sehr empfindlichen Modellen, dringenden Wettbewerbsabgaben oder wenn eine kurze technische Einweisung gewünscht ist – der Preis wird vor Abholung verbindlich kalkuliert.</p>
                 </div>
 
                 <div>

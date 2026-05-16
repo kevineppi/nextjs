@@ -81,7 +81,7 @@ const PrototypingTimelineSection = () => (
                   </div>
                   <div className="text-xs">
                     <strong className="text-primary block mb-0.5">Persönliche Zustellung</strong>
-                    <span className="text-muted-foreground">OÖ ab €200 inkl.</span>
+                    <span className="text-muted-foreground">OÖ ab €40, Aufpreis</span>
                   </div>
                 </div>
               </div>
