@@ -149,7 +149,7 @@ const Prototyping = () => (
     <main className="min-h-screen bg-background">
 
       {/* HERO – simpel, robust, mit visuellen Akzenten */}
-      <section className="relative pt-48 pb-24 md:pt-64 lg:pt-72 md:pb-32 overflow-hidden">
+      <section className="relative pt-32 pb-24 md:pt-44 md:pb-32 overflow-hidden">
         {/* Background – nur subtle */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0" style={{backgroundImage:'radial-gradient(hsl(var(--border)/0.4) 1px, transparent 1px)',backgroundSize:'24px 24px'}} />
@@ -159,20 +159,6 @@ const Prototyping = () => (
 
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-
-            {/* Eyebrow Row – ohne Animation */}
-            <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-10">
-              <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/30">
-                <span className="relative flex w-2 h-2">
-                  <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-75" />
-                  <span className="relative rounded-full bg-primary w-2 h-2" />
-                </span>
-                <span className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Angebot in 6h · live</span>
-              </span>
-              <span className="sticker border-foreground/20 text-foreground/60 !px-3 !py-1.5 !text-[10px]">Express 24h</span>
-              <span className="sticker border-foreground/20 text-foreground/60 !px-3 !py-1.5 !text-[10px]">FDM · SLA · SLS</span>
-              <span className="sticker border-foreground/20 text-foreground/60 !px-3 !py-1.5 !text-[10px]">NDA-fähig</span>
-            </div>
 
             {/* Big Headline */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-[-0.04em] mb-8">
