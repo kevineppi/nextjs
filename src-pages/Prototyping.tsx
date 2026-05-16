@@ -16,7 +16,7 @@ import PrototypingComparisonSection from "@/components/landing/PrototypingCompar
 import PrototypingROISection from "@/components/landing/PrototypingROISection";
 import PrototypingProcessSection from "@/components/landing/PrototypingProcessSection";
 import PrototypingTimelineSection from "@/components/landing/PrototypingTimelineSection";
-import PrototypingAboSection from "@/components/landing/PrototypingAboSection";
+import PrototypingStammkundenSection from "@/components/landing/PrototypingStammkundenSection";
 import PrototypingFallbeispieleSection from "@/components/landing/PrototypingFallbeispieleSection";
 import ReferencesTeaser from "@/components/ReferencesTeaser";
 import {
@@ -45,7 +45,7 @@ const verfahren = [
     text: "Das wirtschaftlichste Verfahren für Funktionsprototypen, robuste Konstruktionsteile und Kleinserien. Direkt in unserer Werkstatt in Gunskirchen – schnellste Reaktionszeit, Express in 24h möglich.",
     ideal: "Funktionsprototypen · Vorrichtungen · Halterungen · Kleinserien",
     features: [
-      { label: "Bauraum", value: "bis 1.500 × 500 × 500 mm" },
+      { label: "Bauraum", value: "bis 350 × 350 × 350 mm" },
       { label: "Schichtstärke", value: "0,1 – 0,3 mm" },
       { label: "Toleranz", value: "±0,2 mm / ±0,3%" },
       { label: "Materialien", value: "8 Optionen verfügbar" },
@@ -112,19 +112,19 @@ const techSpecs = [
 ];
 
 const faqs = [
-  { question: "Was kostet ein 3D-gedruckter Prototyp?", answer: "Einfache Designprototypen starten ab €20, robuste Funktionsteile aus Carbon-PA oder SLS PA12 ab €60–120. Sie erhalten innerhalb von 6 Stunden ein verbindliches Festpreisangebot – kostenlos und unverbindlich, mit Materialempfehlung und Lieferdatum. Für regelmäßige Bedarfe rechnet sich oft ein Prototyping-Abo ab €290/Monat." },
+  { question: "Was kostet ein 3D-gedruckter Prototyp?", answer: "Einfache Designprototypen starten ab €20, robuste Funktionsteile aus Carbon-PA oder SLS PA12 ab €60–120. Sie erhalten innerhalb von 6 Stunden ein verbindliches Festpreisangebot – kostenlos und unverbindlich, mit Materialempfehlung und Lieferdatum. Ab dem 5. Auftrag pro Quartal erhalten Stammkunden automatisch 10% Rabatt." },
   { question: "Wie schnell ist mein Prototyp lieferbar?", answer: "FDM-Prototypen in 1–5 Werktagen, Express-Fertigung in 24h möglich (+50% Aufpreis). SLA über Partner in 5–7 Werktagen, SLS in 7–10 Werktagen. Bei dringenden Projekten rufen Sie an: +43 676 5517197 – wir reservieren einen Express-Slot direkt am Telefon." },
   { question: "Welche Toleranzen werden eingehalten?", answer: "FDM: ±0,2 mm bzw. ±0,3% bei Bauteilen über 50 mm. SLA: ±0,1 mm bzw. ±0,2% bei Bauteilen über 25 mm – das präziseste Verfahren. SLS: ±0,3 mm bzw. ±0,3%. Diese Werte gelten nach Standardkalibrierung. Bei kritischen Funktionsmaßen messen wir vor dem Versand mit digitalem Messschieber und dokumentieren auf Wunsch." },
   { question: "Welche 3D-Druck Verfahren bietet ihr an?", answer: "FDM (Fused Deposition Modeling) führen wir direkt in unserer Werkstatt in Gunskirchen aus – schnellste Reaktionszeit, Express in 24h möglich. SLA (Stereolithographie für hochauflösende Resin-Drucke) und SLS (Selective Laser Sintering für lasersinternde Pulver-Drucke) bieten wir über eingespielte Partner-Druckereien an. Die gesamte Abwicklung läuft über uns – ein Ansprechpartner, eine Rechnung, eine NDA." },
   { question: "Welche Materialien sind verfügbar?", answer: "Im FDM-Verfahren: PLA, PLA+, PETG, PETG transparent, ABS, ASA, TPU flexibel, Carbon-PA. Im SLA-Verfahren über Partner: Standard-Resin, ABS-like Resin, Tough Resin, Flexible Resin, biokompatible Resine. Im SLS-Verfahren über Partner: PA12, PA11, glasgefülltes PA, TPU-Pulver. Auf Wunsch auch metallisch beschichtete Oberflächen." },
-  { question: "Gibt es eine Mindestbestellmenge?", answer: "Nein. Einzelstücke ohne Aufpreis, transparente Kalkulation ab Stückzahl 1. Mengenrabatte ab 5 Stück, attraktive Konditionen für Vorserien ab 20 Stück. Bei laufendem Bedarf rechnet sich ein Prototyping-Abo mit Fixpreis pro Monat." },
+  { question: "Gibt es eine Mindestbestellmenge?", answer: "Nein. Einzelstücke ohne Aufpreis, transparente Kalkulation ab Stückzahl 1. Mengenrabatte ab 5 Stück, attraktive Konditionen für Vorserien ab 20 Stück. Ab 5 Aufträgen pro Quartal werden Sie automatisch Stammkunde mit 10% Rabatt." },
   { question: "Welche Dateiformate werden akzeptiert?", answer: "STL, STEP, IGES, 3MF, OBJ und alle gängigen CAD-Formate aus SolidWorks, Fusion 360, Inventor, Rhino, CATIA, NX, Creo oder OnShape. Kein 3D-Modell vorhanden? Wir erstellen Ihr CAD nach Skizze, Foto oder technischer Zeichnung – Reverse Engineering ab €120." },
   { question: "Wie ist die Vertraulichkeit bei Entwicklungsprojekten geregelt?", answer: "Auf Wunsch unterzeichnen wir eine NDA, bevor Daten ausgetauscht werden. Direkte Kommunikation mit dem Inhaber ohne Zwischeninstanzen. Keine Weitergabe an Subunternehmer ohne Ihre ausdrückliche Zustimmung. Datenarchivierung nach Projektabschluss optional – auf Wunsch löschen wir CAD-Daten sofort nach Lieferung." },
   { question: "FDM, SLA oder SLS – welches Verfahren ist richtig?", answer: "FDM für robuste Funktionsteile, Vorrichtungen und Konstruktionsprototypen – das wirtschaftlichste Verfahren mit der größten Materialvielfalt. SLA für höchste Detailauflösung, glatte Oberflächen, Designmuster und Sichtteile. SLS für Vorserien, industrielle Funktionsbaugruppen und Bauteile mit isotropen Materialeigenschaften ohne Stützstrukturen." },
-  { question: "Wie groß kann ein Prototyp maximal sein?", answer: "FDM-Einzelteile bis 1.500 × 500 × 500 mm in einem Stück (Großformat). Standard-Bauraum 256 × 256 × 256 mm. SLS-Bauraum bei Partnern bis 700 × 380 × 380 mm. Größere Bauteile durch segmentierten Druck mit unsichtbaren Verbindungsstellen ohne Größenbegrenzung." },
+  { question: "Wie groß kann ein Prototyp maximal sein?", answer: "FDM-Einzelteile bis 350 × 350 × 350 mm in einem Stück. Größere Bauteile durch segmentierten Druck mit unsichtbaren Verbindungsstellen ohne Größenbegrenzung. SLS-Bauraum bei Partnern bis 700 × 380 × 380 mm." },
   { question: "Bietet ihr persönliche Zustellung an?", answer: "Ja. Innerhalb Oberösterreichs (Linz, Wels, Vöcklabruck, Steyr und Umgebung) liefern wir auf Wunsch persönlich – kostenfrei ab Auftragswert €200, sonst gegen Aufwandsentschädigung ab €40. Auch in Wien und Salzburg gegen Aufpreis möglich. Sinnvoll bei sehr empfindlichen Modellen, dringenden Wettbewerbsabgaben oder wenn eine kurze technische Einweisung gewünscht ist." },
   { question: "Bietet ihr Konstruktionsoptimierung an?", answer: "Ja. Wir prüfen Ihre Bauteile vor dem Druck auf Wandstärken, Stützstrukturen, Auflagepunkte und Anisotropie-Richtung. Bei Optimierungspotenzial melden wir uns mit konkreten Vorschlägen, bevor irgendetwas gedruckt wird. Für komplexere DfAM-Beratung (Design for Additive Manufacturing) ab €80/Stunde." },
-  { question: "Wie funktioniert das Prototyping-Abo?", answer: "Drei Pakete von €290 bis €1.490 pro Monat. Sie zahlen einen Fixpreis und erhalten ein definiertes Kontingent an Prototypen mit Produktionspriorität, garantierter Express-Lieferung und persönlichem Ansprechpartner. Ideal für Hardware-Startups in der Entwicklungsphase, Design-Agenturen mit laufenden Kundenprojekten und Konstruktionsbüros mit konstantem Iterationsbedarf. Monatlich kündbar, keine Mindestlaufzeit." },
+  { question: "Gibt es Rabatte für Stammkunden?", answer: "Ja, automatisch: Ab 5 Aufträgen pro Quartal 10% Rabatt, ab 10 Aufträgen 15%, ab 20 Aufträgen 20% plus direkten Inhaber-Kontakt. Keine Mitgliedschaft, keine Karte – wir erkennen Sie über Ihre Auftraggeber-Daten und rechnen automatisch an. Zusätzlich gibt es das Hardware-Sprint-Paket (10 Iterationen in 3 Monaten zum Festpreis €1.490) und Express-Slot-Vorverträge." },
   { question: "Bietet ihr Nachbearbeitung an?", answer: "Standard: Stützstrukturen entfernen, Druckkante glätten, kritische Toleranzen messen. Auf Wunsch: Schleifen, Spachteln, Lackieren nach RAL/Pantone/HEX, Heat-Treatment für höhere Festigkeit, Gewinde-Einsätze (M3–M10), Glätten der Oberfläche durch Acetondampf bei ABS. Preise auf Anfrage." },
   { question: "Welche Branchen betreut ihr typischerweise?", answer: "Maschinenbau und Konstruktion, Produktentwicklung und Konsumgüter, Elektronik und Hardware-Startups, Medizintechnik und Laborausstattung, Automotive und Aftermarket, Industriedesign und Designagenturen. Auftraggeber aus ganz Österreich, Deutschland und der Schweiz – vom Ein-Personen-Maker bis zum mittelständischen Industriebetrieb." },
 ];
@@ -132,22 +132,24 @@ const faqs = [
 const Prototyping = () => (
   <>
     <SEOHead
-      title="Rapid Prototyping & 3D-Druck Prototypen | FDM, SLA, SLS | ekdruck"
+      title="Rapid Prototyping Österreich – 3D-Druck Prototypen ab €20 | ekdruck"
       description="Funktionsprototypen, Designmuster & Kleinserien aus dem 3D-Druck. FDM in-house, SLA/SLS über Partner. Express 24h · Toleranz ±0,1mm · ab €20 · ★5,0 (31 Bewertungen)"
-      keywords="rapid prototyping, prototyp drucken lassen, 3d druck prototyp, funktionsprototyp, designprototyp, vorserie 3d druck, kleinserienfertigung, fdm prototyp, sla prototyp, sls prototyp, prototypenbau, prototyping österreich, prototyp express, konstruktionsprototyp, designmuster, technischer prototyp, additive fertigung prototyp, rapid manufacturing, prototyping abo, prototyp gunskirchen, prototyp linz, prototyp wien, prototyp wels, carbon pa prototyp, pa12 sls, dfam beratung, reverse engineering, cad service österreich, prototyp toleranz, prototyp ohne mindestmenge, prototyp 24 stunden, nda 3d druck"
+      keywords="rapid prototyping, prototyp drucken lassen, 3d druck prototyp, funktionsprototyp, designprototyp, vorserie 3d druck, kleinserienfertigung, fdm prototyp, sla prototyp, sls prototyp, prototypenbau, prototyping österreich, prototyp express, konstruktionsprototyp, designmuster, technischer prototyp, additive fertigung prototyp, rapid manufacturing, prototyp gunskirchen, prototyp linz, prototyp wien, prototyp wels, carbon pa prototyp, pa12 sls, dfam beratung, reverse engineering, cad service österreich, prototyp toleranz, prototyp ohne mindestmenge, prototyp 24 stunden, nda 3d druck, prototyp hardware startup"
       path="/prototyping"
     />
     <ProductOfferSchema
       name="Rapid Prototyping & 3D-Druck Prototypen"
       description="3D-gedruckte Funktionsprototypen, Designmuster und Kleinserien. FDM in-house, SLA/SLS über Partner. Angebot in 6h, Express in 24h. Toleranzen bis ±0,1 mm."
-      price="20"
-      image="https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png"
+      url="https://www.ek-druck.at/prototyping"
+      lowPrice="20"
+      highPrice="2500"
+      category="Rapid Prototyping"
     />
     <Navigation />
     <main className="min-h-screen bg-background">
 
       {/* HERO */}
-      <section className="relative pt-32 pb-24 md:pt-44 md:pb-32 overflow-hidden">
+      <section className="relative pt-36 pb-24 md:pt-52 md:pb-32 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0" style={{backgroundImage:'radial-gradient(hsl(var(--border)/0.4) 1px, transparent 1px)',backgroundSize:'24px 24px'}} />
           <div className="absolute top-[10%] right-[5%] w-[600px] h-[600px] rounded-full bg-primary/[0.04] blur-[120px]" />
@@ -156,11 +158,11 @@ const Prototyping = () => (
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <AnimatedSection animation="fade-in">
-              <div className="flex flex-wrap gap-3 mb-10">
-                <span className="sticker border-primary text-primary"><span className="w-2 h-2 rounded-full bg-primary animate-pulse" />Angebot in 6h</span>
-                <span className="sticker border-foreground/20 text-foreground/60">Express 24h</span>
-                <span className="sticker border-foreground/20 text-foreground/60">FDM · SLA · SLS</span>
-                <span className="sticker border-foreground/20 text-foreground/60">NDA-fähig</span>
+              <div className="flex flex-wrap gap-2 md:gap-3 mb-10">
+                <span className="sticker border-primary text-primary !px-3 !py-1.5 !text-[10px]"><span className="w-2 h-2 rounded-full bg-primary animate-pulse" />Angebot in 6h</span>
+                <span className="sticker border-foreground/20 text-foreground/60 !px-3 !py-1.5 !text-[10px]">Express 24h</span>
+                <span className="sticker border-foreground/20 text-foreground/60 !px-3 !py-1.5 !text-[10px]">FDM · SLA · SLS</span>
+                <span className="sticker border-foreground/20 text-foreground/60 !px-3 !py-1.5 !text-[10px]">NDA-fähig</span>
               </div>
 
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-[-0.04em] mb-8">
@@ -207,12 +209,12 @@ const Prototyping = () => (
 
       {/* TICKER */}
       <div className="border-y border-border py-4 overflow-hidden" aria-hidden="true">
-        <div className="animate-marquee inline-flex">
+        <div className="animate-marquee inline-flex whitespace-nowrap">
           {[...Array(2)].map((_, di) => (
-            <span key={di} className="inline-flex">
-              {["RAPID PROTOTYPING","FUNKTIONSPROTOTYP","DESIGNPROTOTYP","VORSERIE","KLEINSERIE","FDM","SLA","SLS","CARBON-PA","PA12-SLS","TOLERANZ ±0,1mm","NDA-FÄHIG","KONSTRUKTIONSCHECK","REVERSE ENGINEERING","EXPRESS 24H","PERSÖNLICHE ZUSTELLUNG"].map((w, i) => (
-                <span key={`${di}-${i}`} className="inline-flex items-center gap-5 mx-5">
-                  <span className="mono text-xs font-bold tracking-[0.2em] text-foreground/40">{w}</span>
+            <span key={di} className="inline-flex whitespace-nowrap">
+              {["RAPID PROTOTYPING","FUNKTIONSPROTOTYP","DESIGNPROTOTYP","VORSERIE","KLEINSERIE","FDM IN-HOUSE","SLA","SLS","CARBON-PA","PA12-SLS","TOLERANZ 0,1MM","NDA-FÄHIG","REVERSE ENGINEERING","EXPRESS 24H","ZUSTELLUNG OÖ"].map((w, i) => (
+                <span key={`${di}-${i}`} className="inline-flex items-center gap-6 mx-6 whitespace-nowrap">
+                  <span className="mono text-xs font-bold tracking-[0.2em] text-foreground/40 whitespace-nowrap">{w}</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
                 </span>
               ))}
@@ -430,7 +432,6 @@ const Prototyping = () => (
               ))}
             </div>
 
-            {/* Express + Iteration + Persönliche Zustellung */}
             <div className="grid md:grid-cols-3 gap-4 mt-10">
               <AnimatedSection animation="fade-in">
                 <MagneticCard className="rounded-3xl border-2 border-primary/30 bg-primary/[0.03] h-full">
@@ -520,8 +521,8 @@ const Prototyping = () => (
       {/* ROI */}
       <PrototypingROISection />
 
-      {/* ABO – MONEY MODULE */}
-      <PrototypingAboSection />
+      {/* STAMMKUNDEN – statt Abo */}
+      <PrototypingStammkundenSection />
 
       {/* PROCESS-EFFECTS */}
       <PrototypingProcessSection />
@@ -571,6 +572,11 @@ const Prototyping = () => (
                 </div>
 
                 <div>
+                  <h3 className="font-bold text-xl mb-3 text-foreground">Stammkunden-Konditionen</h3>
+                  <p>Wer regelmäßig Prototypen druckt, profitiert von automatischen Stammkunden-Konditionen: Ab dem <strong>5. Auftrag im Quartal</strong> sparen Sie 10%, ab dem 10. Auftrag 15%, ab dem 20. Auftrag 20% plus direkten Inhaber-Kontakt. Keine Karte, keine Mitgliedschaft, keine Kündigung nötig – wir rechnen den Rabatt automatisch auf der Rechnung an. Für intensive Entwicklungsphasen gibt es das <strong>Hardware-Sprint-Paket</strong> (10 Iterationen in 3 Monaten zum Festpreis €1.490) und für Deadline-Sicherheit den <strong>Express-Slot-Vorvertrag</strong> (3 garantierte 24h-Slots für €149). <Link href="#stammkunden" className="text-primary font-semibold hover:underline">Details zu den Stammkunden-Konditionen →</Link></p>
+                </div>
+
+                <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Vertraulichkeit bei Entwicklungsprojekten</h3>
                   <p>Auf Wunsch unterzeichnen wir eine <strong>NDA</strong>, bevor Daten ausgetauscht werden. Direkte Kommunikation mit dem Inhaber, keine Zwischeninstanzen. Keine Weitergabe an Subunternehmer ohne Ihre ausdrückliche Zustimmung. Datenarchivierung nach Projektabschluss optional – auf Wunsch löschen wir CAD-Daten sofort nach Lieferung. Diskrete Bearbeitung sensibler Projekte ist für uns Standard, nicht Premium-Feature. Besonders wichtig für Hardware-Startups in der Pre-Patent-Phase, Industriebetriebe mit Wettbewerbsspionage-relevanten Konstruktionen und Auftraggeber im Medizintechnik- und Defense-Sektor.</p>
                 </div>
@@ -582,7 +588,7 @@ const Prototyping = () => (
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Unsere Auftraggeber</h3>
-                  <p><strong>Konstrukteure, Produktentwickler, Designagenturen und Hardware-Startups</strong> aus dem DACH-Raum. Maschinenbau, Konsumgüter, Elektronik, Medizintechnik, Automotive und Industriedesign. B2B-Konditionen mit UID-Rechnung unter <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">Firmenkunden</Link>. Für regelmäßige Bedarfe rechnet sich unser <Link href="#prototyping-abo" className="text-primary font-semibold hover:underline">Prototyping-Abo</Link> mit Produktionspriorität, Express-Lieferung und persönlichem Ansprechpartner – ab €290/Monat.</p>
+                  <p><strong>Konstrukteure, Produktentwickler, Designagenturen und Hardware-Startups</strong> aus dem DACH-Raum. Maschinenbau, Konsumgüter, Elektronik, Medizintechnik, Automotive und Industriedesign. B2B-Konditionen mit UID-Rechnung unter <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">Firmenkunden</Link>.</p>
                 </div>
               </div>
             </AnimatedSection>
