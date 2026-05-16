@@ -103,7 +103,7 @@ const Architekturmodelle = () => (
     <main className="min-h-screen bg-background">
 
       {/* HERO */}
-      <section className="relative pt-44 pb-24 md:pt-56 lg:pt-64 md:pb-32 overflow-hidden">
+      <section className="relative pt-56 pb-32 md:pt-72 lg:pt-80 md:pb-40 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0" style={{backgroundImage:'radial-gradient(hsl(var(--border)/0.4) 1px, transparent 1px)',backgroundSize:'24px 24px'}} />
           <div className="absolute top-[10%] right-[5%] w-[600px] h-[600px] rounded-full bg-primary/[0.04] blur-[120px]" />
@@ -119,7 +119,7 @@ const Architekturmodelle = () => (
               <span className="block text-3xl md:text-5xl lg:text-6xl mt-3 text-outline">Aus dem 3D-Druck.</span>
             </h1>
 
-            <div className="grid md:grid-cols-2 gap-12 items-end mb-20 md:mb-24">
+            <div className="grid md:grid-cols-2 gap-12 items-end mb-24 md:mb-32">
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                 Vom CAD-File zum Modell auf dem Tisch in <strong className="text-foreground">3–5 Werktagen</strong>.
                 Wettbewerbsmodelle, Bauträger-Modelle, Stadtmodelle und Privatkunden-Projekte – im Maßstab <span className="mono font-bold text-primary">1:50 bis 1:1000</span>.

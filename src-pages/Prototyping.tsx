@@ -147,7 +147,7 @@ const Prototyping = () => (
     <main className="min-h-screen bg-background">
 
       {/* HERO – simpel, robust, mit visuellen Akzenten */}
-      <section className="relative pt-44 pb-24 md:pt-56 lg:pt-64 md:pb-32 overflow-hidden">
+      <section className="relative pt-56 pb-32 md:pt-72 lg:pt-80 md:pb-40 overflow-hidden">
         {/* Background – nur subtle */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0" style={{backgroundImage:'radial-gradient(hsl(var(--border)/0.4) 1px, transparent 1px)',backgroundSize:'24px 24px'}} />
@@ -166,7 +166,7 @@ const Prototyping = () => (
             </h1>
 
             {/* Lead + CTA – 2-Spalter */}
-            <div className="grid md:grid-cols-2 gap-12 items-end mb-20 md:mb-24">
+            <div className="grid md:grid-cols-2 gap-12 items-end mb-24 md:mb-32">
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                 Vom CAD-Modell zum funktionierenden Prototyp in <strong className="text-foreground">24 Stunden</strong>.
                 Funktionsprototypen, Designmuster und Vorserien für Produktentwickler,

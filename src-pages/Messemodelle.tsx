@@ -110,7 +110,7 @@ const Messemodelle = () => (
       {/* ════════════════════════════════════════════
           HERO – Editorial, bold, nicht abgeschnitten
           ════════════════════════════════════════════ */}
-      <section className="relative pt-32 pb-24 md:pt-44 md:pb-32 overflow-hidden">
+      <section className="relative pt-56 pb-32 md:pt-72 lg:pt-80 md:pb-40 overflow-hidden">
         {/* Subtle dot grid background */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0" style={{backgroundImage:'radial-gradient(hsl(var(--border)/0.4) 1px, transparent 1px)',backgroundSize:'24px 24px'}} />
@@ -150,7 +150,7 @@ const Messemodelle = () => (
 
             {/* Big number stats – editorial style */}
             <AnimatedSection animation="slide-up" delay={200}>
-              <div className="mt-20 grid grid-cols-4 gap-0 border-t border-border pt-8">
+              <div className="mt-24 md:mt-32 grid grid-cols-4 gap-0 border-t border-border pt-10 md:pt-12">
                 {[
                   { v: "24h", l: "Express" },
                   { v: "2m+", l: "Modellgröße" },
