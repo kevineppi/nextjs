@@ -144,15 +144,16 @@ const Prototyping = () => (
       category="Rapid Prototyping"
     />
     <Navigation />
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background pt-28 md:pt-32">
 
       {/* HERO – simpel, robust, mit visuellen Akzenten */}
-      <section className="relative pt-56 pb-32 md:pt-72 lg:pt-80 md:pb-40 overflow-hidden">
-        {/* Background – nur subtle */}
+      <section className="relative py-16 md:py-24 overflow-hidden">
+        {/* Prototyping: Diagonale Druckpfade = G-Code-Optik */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute inset-0" style={{backgroundImage:'radial-gradient(hsl(var(--border)/0.4) 1px, transparent 1px)',backgroundSize:'24px 24px'}} />
-          <div className="absolute top-[10%] right-[5%] w-[600px] h-[600px] rounded-full bg-primary/[0.04] blur-[120px]" />
-          <div className="absolute bottom-[10%] left-[5%] w-[400px] h-[400px] rounded-full bg-primary/[0.03] blur-[100px]" />
+          <div className="absolute inset-0 opacity-60" style={{backgroundImage:'repeating-linear-gradient(45deg, transparent, transparent 18px, hsl(var(--border)/0.35) 18px, hsl(var(--border)/0.35) 19px)'}} />
+          <div className="absolute inset-0 opacity-30" style={{backgroundImage:'repeating-linear-gradient(-45deg, transparent, transparent 36px, hsl(var(--border)/0.25) 36px, hsl(var(--border)/0.25) 37px)'}} />
+          <div className="absolute top-[5%] left-[10%] w-[550px] h-[550px] rounded-full bg-primary/[0.06] blur-[120px]" />
+          <div className="absolute bottom-[5%] right-[10%] w-[400px] h-[400px] rounded-full bg-primary/[0.04] blur-[100px]" />
         </div>
 
         <div className="relative z-10 container mx-auto px-4">
