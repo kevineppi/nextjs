@@ -1,5 +1,3 @@
-'use client'
-
 import AnimatedSection from "@/components/AnimatedSection";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";

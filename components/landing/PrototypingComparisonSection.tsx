@@ -1,5 +1,3 @@
-'use client'
-
 import AnimatedSection from "@/components/AnimatedSection";
 import { CheckCircle, X, Minus } from "lucide-react";
 

@@ -1,5 +1,3 @@
-'use client'
-
 import SEOHead from "@/components/SEOHead";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";

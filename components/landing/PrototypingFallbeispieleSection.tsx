@@ -1,5 +1,3 @@
-'use client'
-
 import AnimatedSection from "@/components/AnimatedSection";
 import { Quote, ArrowRight, Clock, Package, TrendingUp } from "lucide-react";
 
