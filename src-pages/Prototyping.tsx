@@ -148,154 +148,90 @@ const Prototyping = () => (
     <Navigation />
     <main className="min-h-screen bg-background">
 
-      {/* HERO – Editorial mit visuellem Anker */}
+      {/* HERO – simpel, robust, mit visuellen Akzenten */}
       <section className="relative pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden">
-        {/* Background Layers */}
+        {/* Background – nur subtle */}
         <div className="absolute inset-0 pointer-events-none">
-          {/* Dot grid */}
-          <div className="absolute inset-0" style={{backgroundImage:'radial-gradient(hsl(var(--border)/0.5) 1px, transparent 1px)',backgroundSize:'28px 28px'}} />
-          {/* Diagonal print-path lines */}
-          <svg className="absolute inset-0 w-full h-full opacity-[0.04]" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <defs>
-              <pattern id="lines" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-                <line x1="0" y1="0" x2="0" y2="40" stroke="hsl(var(--primary))" strokeWidth="1" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#lines)" />
-          </svg>
-          {/* Glow blobs */}
-          <div className="absolute top-[5%] right-[10%] w-[500px] h-[500px] rounded-full bg-primary/[0.06] blur-[100px]" />
-          <div className="absolute bottom-[10%] left-[5%] w-[400px] h-[400px] rounded-full bg-primary/[0.04] blur-[100px]" />
+          <div className="absolute inset-0" style={{backgroundImage:'radial-gradient(hsl(var(--border)/0.4) 1px, transparent 1px)',backgroundSize:'24px 24px'}} />
+          <div className="absolute top-[10%] right-[5%] w-[600px] h-[600px] rounded-full bg-primary/[0.04] blur-[120px]" />
+          <div className="absolute bottom-[10%] left-[5%] w-[400px] h-[400px] rounded-full bg-primary/[0.03] blur-[100px]" />
         </div>
 
         <div className="relative z-10 container mx-auto px-4">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-6xl mx-auto">
 
-            {/* Eyebrow Row */}
-            <div className="flex items-center gap-4 mb-10 md:mb-14">
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/30">
+            {/* Eyebrow Row – ohne Animation */}
+            <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-10">
+              <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/30">
                 <span className="relative flex w-2 h-2">
                   <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-75" />
                   <span className="relative rounded-full bg-primary w-2 h-2" />
                 </span>
                 <span className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Angebot in 6h · live</span>
-              </div>
-              <div className="hidden sm:flex items-center gap-4 mono text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground/70">
-                <span>Express 24h</span>
-                <span className="w-1 h-1 rounded-full bg-foreground/20" />
-                <span>FDM · SLA · SLS</span>
-                <span className="w-1 h-1 rounded-full bg-foreground/20" />
-                <span>NDA-fähig</span>
+              </span>
+              <span className="sticker border-foreground/20 text-foreground/60 !px-3 !py-1.5 !text-[10px]">Express 24h</span>
+              <span className="sticker border-foreground/20 text-foreground/60 !px-3 !py-1.5 !text-[10px]">FDM · SLA · SLS</span>
+              <span className="sticker border-foreground/20 text-foreground/60 !px-3 !py-1.5 !text-[10px]">NDA-fähig</span>
+            </div>
+
+            {/* Big Headline */}
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-[-0.04em] mb-8">
+              <span className="block">Rapid</span>
+              <span className="block text-gradient">Prototyping.</span>
+              <span className="block text-3xl md:text-5xl lg:text-6xl mt-3 text-outline">Aus Österreich.</span>
+            </h1>
+
+            {/* Lead + CTA – 2-Spalter */}
+            <div className="grid md:grid-cols-2 gap-12 items-end mb-20 md:mb-24">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                Vom CAD-Modell zum funktionierenden Prototyp in <strong className="text-foreground">24 Stunden</strong>.
+                Funktionsprototypen, Designmuster und Vorserien für Produktentwickler,
+                Konstrukteure und Industriedesigner. Toleranzen bis <span className="mono font-bold text-primary">±0,1 mm</span>.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-10 py-7 text-base font-semibold shadow-lg shadow-primary/20" asChild>
+                  <Link href="#kontakt">Prototyp anfragen <ArrowRight className="ml-2 w-5 h-5" /></Link>
+                </Button>
+                <Button size="lg" variant="outline" className="rounded-full px-8 py-7 text-base border-2" asChild>
+                  <a href="tel:+436765517197"><Phone className="mr-2 w-4 h-4" /> Anrufen</a>
+                </Button>
               </div>
             </div>
 
-            {/* Main Headline Grid */}
-            <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-16 md:mb-20">
-              {/* Left: Big Headline */}
-              <div className="lg:col-span-8">
-                <h1 className="font-bold tracking-[-0.045em] leading-[0.85] mb-8">
-                  <span className="block text-5xl md:text-7xl lg:text-[7.5rem] text-foreground">Rapid</span>
-                  <span className="block text-5xl md:text-7xl lg:text-[7.5rem] text-gradient">Prototyping.</span>
-                  <span className="block text-3xl md:text-5xl lg:text-6xl mt-3 md:mt-4 text-outline">Aus Österreich.</span>
-                </h1>
-
-                <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl mb-8">
-                  Vom CAD-Modell zum funktionierenden Prototyp in <strong className="text-foreground">24 Stunden</strong>.
-                  Funktionsprototypen, Designmuster und Vorserien – mit Toleranzen bis <span className="mono font-bold text-primary">±0,1 mm</span>.
-                </p>
-
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-7 text-base font-semibold shadow-lg shadow-primary/20 group" asChild>
-                    <Link href="#kontakt">
-                      Prototyp anfragen
-                      <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </Link>
-                  </Button>
-                  <Button size="lg" variant="outline" className="rounded-full px-7 py-7 text-base border-2" asChild>
-                    <a href="tel:+436765517197"><Phone className="mr-2 w-4 h-4" /> +43 676 5517197</a>
-                  </Button>
-                </div>
-              </div>
-
-              {/* Right: Visual Anchor – Layer Stack Card */}
-              <div className="lg:col-span-4 lg:pt-4">
-                <div className="relative">
-                  {/* Decorative stacked cards */}
-                  <div className="absolute -top-3 -right-3 w-full h-full rounded-3xl border-2 border-border bg-card/40 -rotate-2" />
-                  <div className="absolute -top-1.5 -right-1.5 w-full h-full rounded-3xl border-2 border-border bg-card/60 -rotate-1" />
-
-                  {/* Main Card */}
-                  <div className="relative rounded-3xl border-2 border-primary/30 bg-card shadow-xl shadow-primary/5 p-6 overflow-hidden">
-                    {/* Top accent */}
-                    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-primary to-transparent" />
-
-                    {/* Live indicator */}
-                    <div className="flex items-center justify-between mb-6">
-                      <div className="flex items-center gap-2">
-                        <span className="relative flex w-2 h-2">
-                          <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-75" />
-                          <span className="relative rounded-full bg-primary w-2 h-2" />
-                        </span>
-                        <span className="mono text-[9px] font-bold uppercase tracking-[0.2em] text-primary">Live · In Druck</span>
-                      </div>
-                      <span className="mono text-[9px] text-muted-foreground">#0247</span>
-                    </div>
-
-                    {/* Stylized layer stack */}
-                    <div className="space-y-1.5 mb-6">
-                      {[100, 95, 88, 80, 72, 65, 55, 48, 40, 32, 25, 18].map((w, i) => (
-                        <div
-                          key={i}
-                          className="h-1.5 rounded-full bg-primary transition-all"
-                          style={{ width: `${w}%`, opacity: 0.15 + (i * 0.07) }}
-                        />
-                      ))}
-                    </div>
-
-                    {/* Spec readout */}
-                    <div className="space-y-2 pt-4 border-t border-border/50">
-                      <div className="flex items-center justify-between text-xs">
-                        <span className="text-muted-foreground">Verfahren</span>
-                        <span className="mono font-bold text-foreground">FDM</span>
-                      </div>
-                      <div className="flex items-center justify-between text-xs">
-                        <span className="text-muted-foreground">Material</span>
-                        <span className="mono font-bold text-foreground">Carbon-PA</span>
-                      </div>
-                      <div className="flex items-center justify-between text-xs">
-                        <span className="text-muted-foreground">Toleranz</span>
-                        <span className="mono font-bold text-primary">±0,1 mm</span>
-                      </div>
-                      <div className="flex items-center justify-between text-xs">
-                        <span className="text-muted-foreground">Lieferung</span>
-                        <span className="mono font-bold text-foreground">24h Express</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Stats Row – mit Trennlinien und Icons */}
+            {/* Stats Row – 4 Display Numbers, statisch und sauber */}
             <div className="grid grid-cols-2 md:grid-cols-4 border-t-2 border-border">
-              {[
-                { v: "24h", l: "Express", sub: "Über Nacht" },
-                { v: "€20", l: "Ab Preis", sub: "Festpreis" },
-                { v: "±0,1", l: "mm Toleranz", sub: "Präzision" },
-                { v: "5,0★", l: "Google", sub: "31 Bewertungen" },
-              ].map((s, i) => (
-                <div
-                  key={s.l}
-                  className={`relative py-8 md:py-10 px-2 md:px-6 group ${i > 0 ? 'md:border-l border-border' : ''} ${i === 1 || i === 3 ? 'border-l border-border' : ''} ${i >= 2 ? 'border-t md:border-t-0 border-border' : ''}`}
-                >
-                  <div className="absolute bottom-0 left-0 h-0.5 bg-primary w-0 group-hover:w-full transition-all duration-500" />
-                  <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">{s.v}</p>
-                  <div className="flex items-baseline gap-2 mt-3">
-                    <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">{s.l}</p>
-                    <p className="text-[10px] text-muted-foreground hidden md:inline">— {s.sub}</p>
-                  </div>
+              <div className="relative py-8 md:py-10 px-2 md:px-6 group">
+                <div className="absolute bottom-0 left-0 h-0.5 bg-primary w-0 group-hover:w-full transition-all duration-500" />
+                <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">24h</p>
+                <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
+                  <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Express</p>
+                  <p className="text-[10px] text-muted-foreground hidden md:inline">— Über Nacht</p>
                 </div>
-              ))}
+              </div>
+              <div className="relative py-8 md:py-10 px-2 md:px-6 group border-l border-border">
+                <div className="absolute bottom-0 left-0 h-0.5 bg-primary w-0 group-hover:w-full transition-all duration-500" />
+                <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">€20</p>
+                <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
+                  <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Ab Preis</p>
+                  <p className="text-[10px] text-muted-foreground hidden md:inline">— Festpreis</p>
+                </div>
+              </div>
+              <div className="relative py-8 md:py-10 px-2 md:px-6 group border-t md:border-t-0 md:border-l border-border">
+                <div className="absolute bottom-0 left-0 h-0.5 bg-primary w-0 group-hover:w-full transition-all duration-500" />
+                <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">±0,1</p>
+                <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
+                  <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">mm Toleranz</p>
+                  <p className="text-[10px] text-muted-foreground hidden md:inline">— Präzision</p>
+                </div>
+              </div>
+              <div className="relative py-8 md:py-10 px-2 md:px-6 group border-t md:border-t-0 border-l border-border md:border-l">
+                <div className="absolute bottom-0 left-0 h-0.5 bg-primary w-0 group-hover:w-full transition-all duration-500" />
+                <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">5,0★</p>
+                <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
+                  <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Google</p>
+                  <p className="text-[10px] text-muted-foreground hidden md:inline">— 31 Bewertungen</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
