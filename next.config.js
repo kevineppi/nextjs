@@ -9,20 +9,20 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      // ═══ Keyword-Kannibalisierung beseitigen ═══
-      { source: '/rapid-prototyping', destination: '/prototypen', permanent: true },
-      { source: '/rapid-prototyping-oesterreich', destination: '/prototypen', permanent: true },
+      // ═══ Prototyping: alte URLs konsolidieren auf /prototyping ═══
+      { source: '/prototypen', destination: '/prototyping', permanent: true },
+      { source: '/rapid-prototyping', destination: '/prototyping', permanent: true },
+      { source: '/rapid-prototyping-oesterreich', destination: '/prototyping', permanent: true },
+      { source: '/prototyp', destination: '/prototyping', permanent: true },
+      { source: '/3d-druck-prototyp', destination: '/prototyping', permanent: true },
+
+      // ═══ Thin Content & sonstige Keyword-Bereinigungen ═══
       { source: '/3d-druck-firma', destination: '/', permanent: true },
       { source: '/3d-druck-dienstleister-oesterreich', destination: '/', permanent: true },
-
-      // ═══ Thin Content konsolidieren ═══
       { source: '/kunstobjekte', destination: '/einzelanfertigungen', permanent: true },
       { source: '/modellbau-dekoration', destination: '/einzelanfertigungen', permanent: true },
       { source: '/fdm-3d-druck', destination: '/ratgeber/verfahrens-vergleich', permanent: true },
       { source: '/glossar', destination: '/ratgeber', permanent: true },
-
-      // ═══ Technische Seiten – noindex aber erreichbar ═══
-      // Admin und Auth sind echte Seiten, keine Redirects
 
       // ═══ Stadt → Bundesland konsolidieren ═══
       { source: '/3d-druck-linz', destination: '/3d-druck-oberoesterreich', permanent: true },
