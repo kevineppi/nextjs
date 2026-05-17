@@ -603,7 +603,7 @@ const Prototyping = () => (
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Unsere Auftraggeber</h3>
-                  <p><strong>Konstrukteure, Produktentwickler, Designagenturen und Hardware-Startups</strong> aus dem DACH-Raum. Maschinenbau, Konsumgüter, Elektronik, Medizintechnik, Automotive und Industriedesign. B2B-Konditionen mit UID-Rechnung unter <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">Firmenkunden</Link>.</p>
+                  <p><strong>Konstrukteure, Produktentwickler, Designagenturen und Hardware-Startups</strong> aus dem DACH-Raum. Maschinenbau, Konsumgüter, Elektronik, Medizintechnik, Automotive und Industriedesign. B2B-Konditionen unter <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">Firmenkunden</Link>.</p>
                 </div>
               </div>
             </AnimatedSection>

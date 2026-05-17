@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Niederoesterreich3DDruck from '@/src-pages/Niederoesterreich3DDruck'
 
 export const metadata: Metadata = {
-  title: '3D-Druck Niederösterreich ★5,0 – Express · Angebot in 6h',
-  description: '3D-Druck Anbieter für Niederösterreich ✓ Modelle & Prototypen ✓ Express-Lieferung ✓ ab €20. ★ 5,0 (31 Bewertungen)',
+  title: '3D-Druck Niederösterreich: Lieferung Wien-Umland in 24h',
+  description: 'Drucken lassen aus OÖ mit Direktlieferung St. Pölten, Krems, Wiener Neustadt. Für Industriekunden im Wien-Umland. Ab €20 ★5,0.',
   alternates: {
     canonical: 'https://www.ek-druck.at/3d-druck-niederoesterreich',
   },
   openGraph: {
-    title: '3D-Druck Niederösterreich ★5,0 – Express · Angebot in 6h',
-    description: '3D-Druck Anbieter für Niederösterreich ✓ Modelle & Prototypen ✓ Express-Lieferung ✓ ab €20. ★ 5,0 (31 Bewertungen)',
+    title: '3D-Druck Niederösterreich: Lieferung Wien-Umland in 24h',
+    description: 'Drucken lassen aus OÖ mit Direktlieferung St. Pölten, Krems, Wiener Neustadt. Für Industriekunden im Wien-Umland. Ab €20 ★5,0.',
     url: 'https://www.ek-druck.at/3d-druck-niederoesterreich',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D-Druck Niederösterreich ★5,0 – Express · Angebot in 6h',
-    description: '3D-Druck Anbieter für Niederösterreich ✓ Modelle & Prototypen ✓ Express-Lieferung ✓ ab €20. ★ 5,0 (31 Bewertungen)',
+    title: '3D-Druck Niederösterreich: Lieferung Wien-Umland in 24h',
+    description: 'Drucken lassen aus OÖ mit Direktlieferung St. Pölten, Krems, Wiener Neustadt. Für Industriekunden im Wien-Umland. Ab €20 ★5,0.',
   },
 }
 

@@ -193,7 +193,7 @@ const PrototypingStammkundenSection = () => (
                 <div>
                   <p className="font-bold text-sm mb-1">B2B-konditioniert</p>
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    UID-Rechnung, NDA auf Wunsch, Festpreise mit verbindlicher Kalkulation auch für Mehrfach-Bestellungen.
+                    NDA auf Wunsch, Festpreise mit verbindlicher Kalkulation auch für Mehrfach-Bestellungen, Zahlungsziel 30 Tage.
                   </p>
                 </div>
               </div>

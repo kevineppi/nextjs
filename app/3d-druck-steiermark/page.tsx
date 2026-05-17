@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Steiermark3DDruck from '@/src-pages/Steiermark3DDruck'
 
 export const metadata: Metadata = {
-  title: '3D-Druck Steiermark ★5,0 – Express via A9 · Angebot in 6h',
-  description: '3D-Druck Anbieter für die Steiermark ✓ Designstudien & Prototypen ✓ Express via A9. ★ 5,0 (31 Bewertungen)',
+  title: '3D-Druck Steiermark: Lieferung nach Graz in 24h | ekdruck',
+  description: '3D-Druck-Anbieter mit A9-Direktlieferung nach Graz, Leoben, Bruck. Für Maschinenbau-Prototypen und Architekturmodelle. Ab €20.',
   alternates: {
     canonical: 'https://www.ek-druck.at/3d-druck-steiermark',
   },
   openGraph: {
-    title: '3D-Druck Steiermark ★5,0 – Express via A9 · Angebot in 6h',
-    description: '3D-Druck Anbieter für die Steiermark ✓ Designstudien & Prototypen ✓ Express via A9. ★ 5,0 (31 Bewertungen)',
+    title: '3D-Druck Steiermark: Lieferung nach Graz in 24h | ekdruck',
+    description: '3D-Druck-Anbieter mit A9-Direktlieferung nach Graz, Leoben, Bruck. Für Maschinenbau-Prototypen und Architekturmodelle. Ab €20.',
     url: 'https://www.ek-druck.at/3d-druck-steiermark',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D-Druck Steiermark ★5,0 – Express via A9 · Angebot in 6h',
-    description: '3D-Druck Anbieter für die Steiermark ✓ Designstudien & Prototypen ✓ Express via A9. ★ 5,0 (31 Bewertungen)',
+    title: '3D-Druck Steiermark: Lieferung nach Graz in 24h | ekdruck',
+    description: '3D-Druck-Anbieter mit A9-Direktlieferung nach Graz, Leoben, Bruck. Für Maschinenbau-Prototypen und Architekturmodelle. Ab €20.',
   },
 }
 

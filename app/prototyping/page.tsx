@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import Prototyping from '@/src-pages/Prototyping'
 
 export const metadata: Metadata = {
-  title: 'Rapid Prototyping Österreich: Bauteil in 24h, Toleranz ±0,1mm',
-  description: 'Funktionsprototyp drucken: FDM, SLA, SLS. Carbon-PA, ASA, PA12. Vom CAD zum Bauteil über Nacht. NDA möglich. Ab €20 Festpreis.',
+  title: 'Rapid Prototyping Österreich – 3D-Druck Prototypen ab €20 | ekdruck',
+  description: 'Funktionsprototypen, Designmuster & Kleinserien aus dem 3D-Druck. FDM in-house, SLA/SLS über Partner. Express 24h ✓ Toleranz ±0,1mm ✓ Stammkunden-Rabatt bis 20% ✓ ★5,0 (31 Bewertungen).',
   keywords: 'rapid prototyping, prototyp drucken lassen, 3d druck prototyp, funktionsprototyp, designprototyp, vorserie 3d druck, kleinserienfertigung, fdm prototyp, sla prototyp, sls prototyp, prototyping österreich, prototyp express, konstruktionsprototyp, carbon pa prototyp, pa12 sls, prototyp toleranz, reverse engineering, dfam beratung',
   alternates: {
     canonical: 'https://www.ek-druck.at/prototyping',
   },
   openGraph: {
-    title: 'Rapid Prototyping Österreich: Bauteil in 24h, Toleranz ±0,1mm',
-    description: 'Funktionsprototyp drucken: FDM, SLA, SLS. Carbon-PA, ASA, PA12. Vom CAD zum Bauteil über Nacht. NDA möglich. Ab €20 Festpreis.',
+    title: 'Rapid Prototyping Österreich – 3D-Druck Prototypen ab €20 | ekdruck',
+    description: 'Funktionsprototypen, Designmuster & Kleinserien aus dem 3D-Druck. FDM in-house, SLA/SLS über Partner. Express 24h ✓ Toleranz ±0,1mm ✓ Stammkunden-Rabatt bis 20% ✓ ★5,0 (31 Bewertungen).',
     url: 'https://www.ek-druck.at/prototyping',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Rapid Prototyping Österreich: Bauteil in 24h, Toleranz ±0,1mm',
-    description: 'Funktionsprototyp drucken: FDM, SLA, SLS. Carbon-PA, ASA, PA12. Vom CAD zum Bauteil über Nacht. NDA möglich. Ab €20 Festpreis.',
+    title: 'Rapid Prototyping Österreich – 3D-Druck Prototypen ab €20 | ekdruck',
+    description: 'Funktionsprototypen, Designmuster & Kleinserien aus dem 3D-Druck. FDM in-house, SLA/SLS über Partner. Express 24h ✓ Toleranz ±0,1mm ✓ ★5,0 (31 Bewertungen).',
   },
   robots: {
     index: true,
