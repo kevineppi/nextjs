@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import MessemodellGuide from '@/src-pages/ratgeber/MessemodellGuide'
 
 export const metadata: Metadata = {
-  title: 'Messemodell planen: Kosten, Timeline & Material [2026]',
-  description: 'Checkliste für die Messevorbereitung. Messemodell ab €30 – pünktlich zur Messe.',
+  title: 'Messemodell planen: Timeline, Material, Kosten [Checkliste]',
+  description: 'Wie lange vor Messestart bestellen? Welches Material überlebt 4 Tage Standverkehr? Vollständige Checkliste mit Zeitplan und Budget.',
   alternates: {
     canonical: 'https://www.ek-druck.at/ratgeber/messemodell-guide',
   },
   openGraph: {
-    title: 'Messemodell planen: Kosten, Timeline & Material [2026]',
-    description: 'Checkliste für die Messevorbereitung. Messemodell ab €30 – pünktlich zur Messe.',
+    title: 'Messemodell planen: Timeline, Material, Kosten [Checkliste]',
+    description: 'Wie lange vor Messestart bestellen? Welches Material überlebt 4 Tage Standverkehr? Vollständige Checkliste mit Zeitplan und Budget.',
     url: 'https://www.ek-druck.at/ratgeber/messemodell-guide',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Messemodell planen: Kosten, Timeline & Material [2026]',
-    description: 'Checkliste für die Messevorbereitung. Messemodell ab €30 – pünktlich zur Messe.',
+    title: 'Messemodell planen: Timeline, Material, Kosten [Checkliste]',
+    description: 'Wie lange vor Messestart bestellen? Welches Material überlebt 4 Tage Standverkehr? Vollständige Checkliste mit Zeitplan und Budget.',
   },
 }
 

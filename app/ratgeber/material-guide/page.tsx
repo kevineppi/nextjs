@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import MaterialGuide from '@/src-pages/ratgeber/MaterialGuide'
 
 export const metadata: Metadata = {
-  title: 'PLA vs PETG vs ASA: Filament Vergleich [2026 Guide]',
-  description: 'Falsches Filament = weggeworfenes Geld. PLA, PETG, ASA – Vergleich mit Temperaturen, Kosten & Materialempfehlung.',
+  title: 'PLA vs PETG vs ASA: das richtige Filament wählen [2026]',
+  description: 'Falsches Material = doppelte Kosten. Direkter Vergleich PLA, PETG, ASA mit Temperatur, Festigkeit, Outdoor-Tauglichkeit und Anwendung.',
   alternates: {
     canonical: 'https://www.ek-druck.at/ratgeber/material-guide',
   },
   openGraph: {
-    title: 'PLA vs PETG vs ASA: Filament Vergleich [2026 Guide]',
-    description: 'Falsches Filament = weggeworfenes Geld. PLA, PETG, ASA – Vergleich mit Temperaturen, Kosten & Materialempfehlung.',
+    title: 'PLA vs PETG vs ASA: das richtige Filament wählen [2026]',
+    description: 'Falsches Material = doppelte Kosten. Direkter Vergleich PLA, PETG, ASA mit Temperatur, Festigkeit, Outdoor-Tauglichkeit und Anwendung.',
     url: 'https://www.ek-druck.at/ratgeber/material-guide',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'PLA vs PETG vs ASA: Filament Vergleich [2026 Guide]',
-    description: 'Falsches Filament = weggeworfenes Geld. PLA, PETG, ASA – Vergleich mit Temperaturen, Kosten & Materialempfehlung.',
+    title: 'PLA vs PETG vs ASA: das richtige Filament wählen [2026]',
+    description: 'Falsches Material = doppelte Kosten. Direkter Vergleich PLA, PETG, ASA mit Temperatur, Festigkeit, Outdoor-Tauglichkeit und Anwendung.',
   },
 }
 

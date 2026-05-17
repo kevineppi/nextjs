@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Kaernten3DDruck from '@/src-pages/Kaernten3DDruck'
 
 export const metadata: Metadata = {
-  title: '3D-Druck Kärnten ★5,0 – A10-Express · Angebot in 6 h',
-  description: '3D-Druck Anbieter für Kärnten ✓ Modelle & Prototypen ✓ Lieferung via A10 ✓ ab €20. ★ 5,0 (31 Bewertungen)',
+  title: '3D-Druck Kärnten: A10-Versand nach Klagenfurt & Villach',
+  description: 'Drucken lassen aus OÖ, Lieferung über A10 nach Klagenfurt/Villach in 24-48h. Für Holzindustrie, Tourismus, Maschinenbau. Ab €20.',
   alternates: {
     canonical: 'https://www.ek-druck.at/3d-druck-kaernten',
   },
   openGraph: {
-    title: '3D-Druck Kärnten ★5,0 – A10-Express · Angebot in 6 h',
-    description: '3D-Druck Anbieter für Kärnten ✓ Modelle & Prototypen ✓ Lieferung via A10 ✓ ab €20. ★ 5,0 (31 Bewertungen)',
+    title: '3D-Druck Kärnten: A10-Versand nach Klagenfurt & Villach',
+    description: 'Drucken lassen aus OÖ, Lieferung über A10 nach Klagenfurt/Villach in 24-48h. Für Holzindustrie, Tourismus, Maschinenbau. Ab €20.',
     url: 'https://www.ek-druck.at/3d-druck-kaernten',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D-Druck Kärnten ★5,0 – A10-Express · Angebot in 6 h',
-    description: '3D-Druck Anbieter für Kärnten ✓ Modelle & Prototypen ✓ Lieferung via A10 ✓ ab €20. ★ 5,0 (31 Bewertungen)',
+    title: '3D-Druck Kärnten: A10-Versand nach Klagenfurt & Villach',
+    description: 'Drucken lassen aus OÖ, Lieferung über A10 nach Klagenfurt/Villach in 24-48h. Für Holzindustrie, Tourismus, Maschinenbau. Ab €20.',
   },
 }
 

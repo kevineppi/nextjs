@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import FlatrateGuide from '@/src-pages/ratgeber/FlatrateGuide'
 
 export const metadata: Metadata = {
-  title: 'Architekturmodell Flatrate vs. Einzelauftrag [2026]',
-  description: 'Ehrlicher Kostenvergleich: Ab wann rechnet sich die Architekturmodell-Flatrate für Architekturbüros?',
+  title: 'Architekturmodell-Flatrate vs Einzelauftrag: Wann lohnt es?',
+  description: 'Ehrlicher Vergleich für Architekturbüros: ab wann rechnet sich die Flatrate? Mit Break-Even-Tabelle und Praxis-Empfehlung.',
   alternates: {
     canonical: 'https://www.ek-druck.at/ratgeber/architekturmodell-flatrate',
   },
   openGraph: {
-    title: 'Architekturmodell Flatrate vs. Einzelauftrag [2026]',
-    description: 'Ehrlicher Kostenvergleich: Ab wann rechnet sich die Architekturmodell-Flatrate für Architekturbüros?',
+    title: 'Architekturmodell-Flatrate vs Einzelauftrag: Wann lohnt es?',
+    description: 'Ehrlicher Vergleich für Architekturbüros: ab wann rechnet sich die Flatrate? Mit Break-Even-Tabelle und Praxis-Empfehlung.',
     url: 'https://www.ek-druck.at/ratgeber/architekturmodell-flatrate',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Architekturmodell Flatrate vs. Einzelauftrag [2026]',
-    description: 'Ehrlicher Kostenvergleich: Ab wann rechnet sich die Architekturmodell-Flatrate für Architekturbüros?',
+    title: 'Architekturmodell-Flatrate vs Einzelauftrag: Wann lohnt es?',
+    description: 'Ehrlicher Vergleich für Architekturbüros: ab wann rechnet sich die Flatrate? Mit Break-Even-Tabelle und Praxis-Empfehlung.',
   },
 }
 

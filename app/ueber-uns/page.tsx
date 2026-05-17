@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import UeberUns from '@/src-pages/UeberUns'
 
 export const metadata: Metadata = {
-  title: 'Über uns – ekdruck | 3D-Druck aus Oberösterreich',
-  description: 'Wer steckt hinter ekdruck? Echte Menschen aus Gunskirchen, OÖ ✓ WKO-gewerbeberechtigt ✓ 10+ FDM-Drucker ✓ Österreichisches Filament',
+  title: 'Wer ist ekdruck? 10+ Drucker, ein Inhaber, kein Mittelsmann',
+  description: 'Direkter Draht zum Inhaber Kevin Eppensteiner. Werkstatt in Gunskirchen/OÖ mit 10+ FDM-Druckern. WKO-Gewerbe, österreichisches Filament.',
   alternates: {
     canonical: 'https://www.ek-druck.at/ueber-uns',
   },
   openGraph: {
-    title: 'Über uns – ekdruck | 3D-Druck aus Oberösterreich',
-    description: 'Wer steckt hinter ekdruck? Echte Menschen aus Gunskirchen, OÖ ✓ WKO-gewerbeberechtigt ✓ 10+ FDM-Drucker ✓ Österreichisches Filament',
+    title: 'Wer ist ekdruck? 10+ Drucker, ein Inhaber, kein Mittelsmann',
+    description: 'Direkter Draht zum Inhaber Kevin Eppensteiner. Werkstatt in Gunskirchen/OÖ mit 10+ FDM-Druckern. WKO-Gewerbe, österreichisches Filament.',
     url: 'https://www.ek-druck.at/ueber-uns',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Über uns – ekdruck | 3D-Druck aus Oberösterreich',
-    description: 'Wer steckt hinter ekdruck? Echte Menschen aus Gunskirchen, OÖ ✓ WKO-gewerbeberechtigt ✓ 10+ FDM-Drucker ✓ Österreichisches Filament',
+    title: 'Wer ist ekdruck? 10+ Drucker, ein Inhaber, kein Mittelsmann',
+    description: 'Direkter Draht zum Inhaber Kevin Eppensteiner. Werkstatt in Gunskirchen/OÖ mit 10+ FDM-Druckern. WKO-Gewerbe, österreichisches Filament.',
   },
 }
 

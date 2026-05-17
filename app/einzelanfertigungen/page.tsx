@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Einzelanfertigungen from '@/src-pages/Einzelanfertigungen'
 
 export const metadata: Metadata = {
-  title: '3D-Druck Einzelanfertigung ab €20 | Unikat in 24h | ekdruck',
-  description: 'Nur 1 Stück nötig? Einzelanfertigungen ab €20 per 3D-Druck ✓ Messemodelle, Architekturmodelle, Sonderformen ✓ CAD oder Skizze reicht ✓ Express 24h',
+  title: 'Ein einzelnes Bauteil drucken lassen – ab €20 in 24h',
+  description: 'Nur ein Stück nötig? Kein Mindestauftrag, kein Aufpreis. Vom CAD oder Skizze zum fertigen Unikat in 24h. Auch Ersatzteile, Sonderformen.',
   alternates: {
     canonical: 'https://www.ek-druck.at/einzelanfertigungen',
   },
   openGraph: {
-    title: '3D-Druck Einzelanfertigung ab €20 | Unikat in 24h | ekdruck',
-    description: 'Nur 1 Stück nötig? Einzelanfertigungen ab €20 per 3D-Druck ✓ Messemodelle, Architekturmodelle, Sonderformen ✓ CAD oder Skizze reicht ✓ Express 24h',
+    title: 'Ein einzelnes Bauteil drucken lassen – ab €20 in 24h',
+    description: 'Nur ein Stück nötig? Kein Mindestauftrag, kein Aufpreis. Vom CAD oder Skizze zum fertigen Unikat in 24h. Auch Ersatzteile, Sonderformen.',
     url: 'https://www.ek-druck.at/einzelanfertigungen',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D-Druck Einzelanfertigung ab €20 | Unikat in 24h | ekdruck',
-    description: 'Nur 1 Stück nötig? Einzelanfertigungen ab €20 per 3D-Druck ✓ Messemodelle, Architekturmodelle, Sonderformen ✓ CAD oder Skizze reicht ✓ Express 24h',
+    title: 'Ein einzelnes Bauteil drucken lassen – ab €20 in 24h',
+    description: 'Nur ein Stück nötig? Kein Mindestauftrag, kein Aufpreis. Vom CAD oder Skizze zum fertigen Unikat in 24h. Auch Ersatzteile, Sonderformen.',
   },
 }
 

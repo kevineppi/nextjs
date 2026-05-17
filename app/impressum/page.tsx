@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Impressum from '@/src-pages/Impressum'
 
 export const metadata: Metadata = {
-  title: 'Impressum | ekdruck e.U.',
-  description: 'Impressum und Anbieterkennzeichnung von ekdruck e.U.',
+  title: 'Impressum – ekdruck e.U., Gunskirchen, Oberösterreich',
+  description: 'Impressum und Anbieterkennzeichnung von ekdruck e.U., Negrellistraße 15, 4623 Gunskirchen, Österreich.',
   alternates: {
     canonical: 'https://www.ek-druck.at/impressum',
   },
   openGraph: {
-    title: 'Impressum | ekdruck e.U.',
-    description: 'Impressum und Anbieterkennzeichnung von ekdruck e.U.',
+    title: 'Impressum – ekdruck e.U., Gunskirchen, Oberösterreich',
+    description: 'Impressum und Anbieterkennzeichnung von ekdruck e.U., Negrellistraße 15, 4623 Gunskirchen, Österreich.',
     url: 'https://www.ek-druck.at/impressum',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Impressum | ekdruck e.U.',
-    description: 'Impressum und Anbieterkennzeichnung von ekdruck e.U.',
+    title: 'Impressum – ekdruck e.U., Gunskirchen, Oberösterreich',
+    description: 'Impressum und Anbieterkennzeichnung von ekdruck e.U., Negrellistraße 15, 4623 Gunskirchen, Österreich.',
   },
   robots: { index: false, follow: false },
 }

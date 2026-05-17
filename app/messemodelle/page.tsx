@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Messemodelle from '@/src-pages/Messemodelle'
 
 export const metadata: Metadata = {
-  title: 'Messemodelle & Exponate 3D-Druck | Express 24h | ekdruck',
-  description: 'Messemodelle drucken lassen: Exponate & Präsentationsmodelle für DACH-Messen. Ab €30 · Express 24h · bruchsicher · ★5,0 (31 Bewertungen).',
+  title: 'Messemodelle drucken: 8-Tonnen-Maschine als Tisch-Exponat',
+  description: 'Wenn Ihr Produkt zu groß für den Messestand ist: Wir drucken es maßstabsgetreu in 24h. Bruchsichere Materialien, Express DACH-weit. Ab €30.',
   alternates: {
     canonical: 'https://www.ek-druck.at/messemodelle',
   },
   openGraph: {
-    title: 'Messemodelle & Exponate 3D-Druck | Express 24h | ekdruck',
-    description: 'Messemodelle drucken lassen: Exponate & Präsentationsmodelle für DACH-Messen. Ab €30 · Express 24h · bruchsicher · ★5,0 (31 Bewertungen).',
+    title: 'Messemodelle drucken: 8-Tonnen-Maschine als Tisch-Exponat',
+    description: 'Wenn Ihr Produkt zu groß für den Messestand ist: Wir drucken es maßstabsgetreu in 24h. Bruchsichere Materialien, Express DACH-weit. Ab €30.',
     url: 'https://www.ek-druck.at/messemodelle',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Messemodelle & Exponate 3D-Druck | Express 24h | ekdruck',
-    description: 'Messemodelle drucken lassen: Exponate & Präsentationsmodelle für DACH-Messen. Ab €30 · Express 24h · bruchsicher · ★5,0 (31 Bewertungen).',
+    title: 'Messemodelle drucken: 8-Tonnen-Maschine als Tisch-Exponat',
+    description: 'Wenn Ihr Produkt zu groß für den Messestand ist: Wir drucken es maßstabsgetreu in 24h. Bruchsichere Materialien, Express DACH-weit. Ab €30.',
   },
 }
 

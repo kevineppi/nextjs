@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Firmenkunden from '@/src-pages/Firmenkunden'
 
 export const metadata: Metadata = {
-  title: '3D-Druck B2B Österreich ★5,0 – UID · NDA · Angebot in 6h',
-  description: '3D-Druck für Unternehmen ✓ Mengenrabatt ab 5 Stück ✓ NDA möglich ✓ UID-Rechnung ✓ Express 24h ✓ Angebot in 6h.',
+  title: 'B2B-3D-Druck Österreich: Rahmenvertrag, UID, NDA, 30 Tage Ziel',
+  description: 'Für Industriekunden: Rahmenverträge, Mengenrabatte ab 5 Stück, NDA-Bereitschaft, UID-Rechnung, Zahlungsziel 30 Tage. Ansprechpartner direkt.',
   alternates: {
     canonical: 'https://www.ek-druck.at/firmenkunden',
   },
   openGraph: {
-    title: '3D-Druck B2B Österreich ★5,0 – UID · NDA · Angebot in 6h',
-    description: '3D-Druck für Unternehmen ✓ Mengenrabatt ab 5 Stück ✓ NDA möglich ✓ UID-Rechnung ✓ Express 24h ✓ Angebot in 6h.',
+    title: 'B2B-3D-Druck Österreich: Rahmenvertrag, UID, NDA, 30 Tage Ziel',
+    description: 'Für Industriekunden: Rahmenverträge, Mengenrabatte ab 5 Stück, NDA-Bereitschaft, UID-Rechnung, Zahlungsziel 30 Tage. Ansprechpartner direkt.',
     url: 'https://www.ek-druck.at/firmenkunden',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D-Druck B2B Österreich ★5,0 – UID · NDA · Angebot in 6h',
-    description: '3D-Druck für Unternehmen ✓ Mengenrabatt ab 5 Stück ✓ NDA möglich ✓ UID-Rechnung ✓ Express 24h ✓ Angebot in 6h.',
+    title: 'B2B-3D-Druck Österreich: Rahmenvertrag, UID, NDA, 30 Tage Ziel',
+    description: 'Für Industriekunden: Rahmenverträge, Mengenrabatte ab 5 Stück, NDA-Bereitschaft, UID-Rechnung, Zahlungsziel 30 Tage. Ansprechpartner direkt.',
   },
 }
 

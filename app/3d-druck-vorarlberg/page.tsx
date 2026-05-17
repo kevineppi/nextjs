@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Vorarlberg3DDruck from '@/src-pages/Vorarlberg3DDruck'
 
 export const metadata: Metadata = {
-  title: '3D-Druck Vorarlberg ★5,0 – Express · Angebot in 6 h',
-  description: '3D-Druck Anbieter für Vorarlberg ✓ Modelle & Prototypen ✓ Express-Lieferung ✓ ab €20. ★ 5,0 (31 Bewertungen)',
+  title: '3D-Druck Vorarlberg: A14-Versand nach Bregenz in 48h',
+  description: 'Drucken lassen aus OÖ mit Direktversand Bregenz/Dornbirn/Feldkirch. Für Bodensee-Industrie und Architekturbüros. Ab €20.',
   alternates: {
     canonical: 'https://www.ek-druck.at/3d-druck-vorarlberg',
   },
   openGraph: {
-    title: '3D-Druck Vorarlberg ★5,0 – Express · Angebot in 6 h',
-    description: '3D-Druck Anbieter für Vorarlberg ✓ Modelle & Prototypen ✓ Express-Lieferung ✓ ab €20. ★ 5,0 (31 Bewertungen)',
+    title: '3D-Druck Vorarlberg: A14-Versand nach Bregenz in 48h',
+    description: 'Drucken lassen aus OÖ mit Direktversand Bregenz/Dornbirn/Feldkirch. Für Bodensee-Industrie und Architekturbüros. Ab €20.',
     url: 'https://www.ek-druck.at/3d-druck-vorarlberg',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D-Druck Vorarlberg ★5,0 – Express · Angebot in 6 h',
-    description: '3D-Druck Anbieter für Vorarlberg ✓ Modelle & Prototypen ✓ Express-Lieferung ✓ ab €20. ★ 5,0 (31 Bewertungen)',
+    title: '3D-Druck Vorarlberg: A14-Versand nach Bregenz in 48h',
+    description: 'Drucken lassen aus OÖ mit Direktversand Bregenz/Dornbirn/Feldkirch. Für Bodensee-Industrie und Architekturbüros. Ab €20.',
   },
 }
 

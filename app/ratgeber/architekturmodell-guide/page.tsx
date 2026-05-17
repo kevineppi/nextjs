@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import ArchitekturmodellGuide from '@/src-pages/ratgeber/ArchitekturmodellGuide'
 
 export const metadata: Metadata = {
-  title: 'Architekturmodell 3D-Druck: Kosten, Maßstäbe & CAD [2026]',
-  description: 'Alles für Architekturbüros: Welcher Maßstab, welches Material, CAD-Export – plus 5 teure Fehler vermeiden.',
+  title: 'Architekturmodell-Ratgeber: Maßstab, CAD-Export, 5 Fehler',
+  description: 'Für Architekturbüros: welcher Maßstab für welches Projekt, CAD-Export aus ArchiCAD/Revit/Rhino, 5 typische Fehler die viel Geld kosten.',
   alternates: {
     canonical: 'https://www.ek-druck.at/ratgeber/architekturmodell-guide',
   },
   openGraph: {
-    title: 'Architekturmodell 3D-Druck: Kosten, Maßstäbe & CAD [2026]',
-    description: 'Alles für Architekturbüros: Welcher Maßstab, welches Material, CAD-Export – plus 5 teure Fehler vermeiden.',
+    title: 'Architekturmodell-Ratgeber: Maßstab, CAD-Export, 5 Fehler',
+    description: 'Für Architekturbüros: welcher Maßstab für welches Projekt, CAD-Export aus ArchiCAD/Revit/Rhino, 5 typische Fehler die viel Geld kosten.',
     url: 'https://www.ek-druck.at/ratgeber/architekturmodell-guide',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Architekturmodell 3D-Druck: Kosten, Maßstäbe & CAD [2026]',
-    description: 'Alles für Architekturbüros: Welcher Maßstab, welches Material, CAD-Export – plus 5 teure Fehler vermeiden.',
+    title: 'Architekturmodell-Ratgeber: Maßstab, CAD-Export, 5 Fehler',
+    description: 'Für Architekturbüros: welcher Maßstab für welches Projekt, CAD-Export aus ArchiCAD/Revit/Rhino, 5 typische Fehler die viel Geld kosten.',
   },
 }
 

@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import MessemodellRegion from '@/src-pages/MessemodellRegion'
 
 export const metadata: Metadata = {
-  title: 'Messemodelle Linz ★5,0 – Same-Day · 20 Min',
-  description: 'Messemodelle für Linz ✓ Design Center ✓ Ars Electronica ✓ Same-Day ✓ 20 Min Abholung. ★ 5,0 (31 Bewertungen) · Angebot in 6h | ekdruck',
+  title: 'Messemodelle Linz: Same-Day für Design Center & Ars Electronica',
+  description: 'Aussteller in Linz: Modell heute bestellen, in 20 Min abholen in Gunskirchen. Für Design Center, TechnologyCenter, Ars Electronica.',
   alternates: {
     canonical: 'https://www.ek-druck.at/messemodelle/linz',
   },
   openGraph: {
-    title: 'Messemodelle Linz ★5,0 – Same-Day · 20 Min',
-    description: 'Messemodelle für Linz ✓ Design Center ✓ Ars Electronica ✓ Same-Day ✓ 20 Min Abholung. ★ 5,0 (31 Bewertungen) · Angebot in 6h | ekdruck',
+    title: 'Messemodelle Linz: Same-Day für Design Center & Ars Electronica',
+    description: 'Aussteller in Linz: Modell heute bestellen, in 20 Min abholen in Gunskirchen. Für Design Center, TechnologyCenter, Ars Electronica.',
     url: 'https://www.ek-druck.at/messemodelle/linz',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',

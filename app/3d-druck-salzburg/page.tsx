@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Salzburg3DDruck from '@/src-pages/Salzburg3DDruck'
 
 export const metadata: Metadata = {
-  title: '3D-Druck Salzburg ★5,0 – A1-Express · Angebot in 6 h',
-  description: '3D-Druck Anbieter für Salzburg ✓ Modelle & Prototypen ✓ Express via A1 ✓ ab €20. ★ 5,0 (31 Bewertungen)',
+  title: '3D-Druck Salzburg: A1-Versand morgen vor 10 Uhr | ekdruck',
+  description: 'Drucker in OÖ mit A1-Direktversand nach Salzburg. Druck heute, Lieferung morgen vor 10 Uhr. Für Pharma, Tourismus, Festspiel-Modelle. Ab €20.',
   alternates: {
     canonical: 'https://www.ek-druck.at/3d-druck-salzburg',
   },
   openGraph: {
-    title: '3D-Druck Salzburg ★5,0 – A1-Express · Angebot in 6 h',
-    description: '3D-Druck Anbieter für Salzburg ✓ Modelle & Prototypen ✓ Express via A1 ✓ ab €20. ★ 5,0 (31 Bewertungen)',
+    title: '3D-Druck Salzburg: A1-Versand morgen vor 10 Uhr | ekdruck',
+    description: 'Drucker in OÖ mit A1-Direktversand nach Salzburg. Druck heute, Lieferung morgen vor 10 Uhr. Für Pharma, Tourismus, Festspiel-Modelle. Ab €20.',
     url: 'https://www.ek-druck.at/3d-druck-salzburg',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D-Druck Salzburg ★5,0 – A1-Express · Angebot in 6 h',
-    description: '3D-Druck Anbieter für Salzburg ✓ Modelle & Prototypen ✓ Express via A1 ✓ ab €20. ★ 5,0 (31 Bewertungen)',
+    title: '3D-Druck Salzburg: A1-Versand morgen vor 10 Uhr | ekdruck',
+    description: 'Drucker in OÖ mit A1-Direktversand nach Salzburg. Druck heute, Lieferung morgen vor 10 Uhr. Für Pharma, Tourismus, Festspiel-Modelle. Ab €20.',
   },
 }
 

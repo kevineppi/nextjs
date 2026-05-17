@@ -1,39 +1,28 @@
 import type { Metadata } from 'next'
-import Prototyping from '@/src-pages/Prototyping'
+import Prototypen from '@/src-pages/Prototypen'
 
 export const metadata: Metadata = {
   title: 'Rapid Prototyping Österreich: Bauteil in 24h, Toleranz ±0,1mm',
   description: 'Funktionsprototyp drucken: FDM, SLA, SLS. Carbon-PA, ASA, PA12. Vom CAD zum Bauteil über Nacht. NDA möglich. Ab €20 Festpreis.',
-  keywords: 'rapid prototyping, prototyp drucken lassen, 3d druck prototyp, funktionsprototyp, designprototyp, vorserie 3d druck, kleinserienfertigung, fdm prototyp, sla prototyp, sls prototyp, prototyping österreich, prototyp express, konstruktionsprototyp, carbon pa prototyp, pa12 sls, prototyp toleranz, reverse engineering, dfam beratung',
   alternates: {
-    canonical: 'https://www.ek-druck.at/prototyping',
+    canonical: 'https://www.ek-druck.at/prototypen',
   },
   openGraph: {
     title: 'Rapid Prototyping Österreich: Bauteil in 24h, Toleranz ±0,1mm',
     description: 'Funktionsprototyp drucken: FDM, SLA, SLS. Carbon-PA, ASA, PA12. Vom CAD zum Bauteil über Nacht. NDA möglich. Ab €20 Festpreis.',
-    url: 'https://www.ek-druck.at/prototyping',
+    url: 'https://www.ek-druck.at/prototypen',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'website',
-    images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630, alt: 'ekdruck – Rapid Prototyping Österreich' }],
+    images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Rapid Prototyping Österreich: Bauteil in 24h, Toleranz ±0,1mm',
     description: 'Funktionsprototyp drucken: FDM, SLA, SLS. Carbon-PA, ASA, PA12. Vom CAD zum Bauteil über Nacht. NDA möglich. Ab €20 Festpreis.',
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
 }
 
 export default function Page() {
-  return <Prototyping />
+  return <Prototypen />
 }

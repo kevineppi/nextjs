@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import MessemodellRegion from '@/src-pages/MessemodellRegion'
 
 export const metadata: Metadata = {
-  title: 'Messemodelle Salzburg ★5,0 – A1-Express · Angebot 6h',
-  description: 'Messemodelle für Salzburg ✓ Gastro & AutoSalon ✓ Express via A1 ✓ Angebot in 6h ✓ ab €20. ★ 5,0 (31 Bewertungen) | ekdruck',
+  title: 'Messemodelle Salzburg: A1-Direktversand zum Messezentrum',
+  description: 'Für Aussteller im Messezentrum Salzburg: Häuserlbauer-Messe, AutoSalon, Bauen+Wohnen. A1-Versand in 24h, ab €30.',
   alternates: {
     canonical: 'https://www.ek-druck.at/messemodelle/salzburg',
   },
   openGraph: {
-    title: 'Messemodelle Salzburg ★5,0 – A1-Express · Angebot 6h',
-    description: 'Messemodelle für Salzburg ✓ Gastro & AutoSalon ✓ Express via A1 ✓ Angebot in 6h ✓ ab €20. ★ 5,0 (31 Bewertungen) | ekdruck',
+    title: 'Messemodelle Salzburg: A1-Direktversand zum Messezentrum',
+    description: 'Für Aussteller im Messezentrum Salzburg: Häuserlbauer-Messe, AutoSalon, Bauen+Wohnen. A1-Versand in 24h, ab €30.',
     url: 'https://www.ek-druck.at/messemodelle/salzburg',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',

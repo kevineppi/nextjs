@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import VerfahrensVergleich from '@/src-pages/ratgeber/VerfahrensVergleich'
 
 export const metadata: Metadata = {
-  title: 'FDM vs SLA vs SLS – Welches Verfahren passt? [2026]',
-  description: 'Falsches Verfahren kostet doppelt. FDM, SLA, SLS – Vergleichstabelle und Empfehlung für Ihren Projekttyp.',
+  title: 'FDM, SLA oder SLS? Verfahren wählen ohne doppelt zu zahlen',
+  description: 'Welches 3D-Druck-Verfahren passt zu Ihrem Projekt? Vergleichstabelle FDM/SLA/SLS mit Detailgröße, Festigkeit, Kosten und Materialspektrum.',
   alternates: {
     canonical: 'https://www.ek-druck.at/ratgeber/verfahrens-vergleich',
   },
   openGraph: {
-    title: 'FDM vs SLA vs SLS – Welches Verfahren passt? [2026]',
-    description: 'Falsches Verfahren kostet doppelt. FDM, SLA, SLS – Vergleichstabelle und Empfehlung für Ihren Projekttyp.',
+    title: 'FDM, SLA oder SLS? Verfahren wählen ohne doppelt zu zahlen',
+    description: 'Welches 3D-Druck-Verfahren passt zu Ihrem Projekt? Vergleichstabelle FDM/SLA/SLS mit Detailgröße, Festigkeit, Kosten und Materialspektrum.',
     url: 'https://www.ek-druck.at/ratgeber/verfahrens-vergleich',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FDM vs SLA vs SLS – Welches Verfahren passt? [2026]',
-    description: 'Falsches Verfahren kostet doppelt. FDM, SLA, SLS – Vergleichstabelle und Empfehlung für Ihren Projekttyp.',
+    title: 'FDM, SLA oder SLS? Verfahren wählen ohne doppelt zu zahlen',
+    description: 'Welches 3D-Druck-Verfahren passt zu Ihrem Projekt? Vergleichstabelle FDM/SLA/SLS mit Detailgröße, Festigkeit, Kosten und Materialspektrum.',
   },
 }
 

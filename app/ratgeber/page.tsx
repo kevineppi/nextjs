@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Ratgeber from '@/src-pages/Ratgeber'
 
 export const metadata: Metadata = {
-  title: '3D-Druck Ratgeber: Kosten, Material & Verfahren [2026]',
-  description: 'Erstes 3D-Druck Projekt? 6 Gratis-Guides zu Kosten, Materialwahl & Verfahren ✓ Spart Geld & Fehler',
+  title: '3D-Druck-Ratgeber: 7 kostenlose Guides zu Material, Preis, CAD',
+  description: 'Was kostet 3D-Druck? Welches Material? FDM oder SLA? 7 ehrliche Guides aus 8 Jahren Werkstatt-Praxis – ohne Verkaufsmasche.',
   alternates: {
     canonical: 'https://www.ek-druck.at/ratgeber',
   },
   openGraph: {
-    title: '3D-Druck Ratgeber: Kosten, Material & Verfahren [2026]',
-    description: 'Erstes 3D-Druck Projekt? 6 Gratis-Guides zu Kosten, Materialwahl & Verfahren ✓ Spart Geld & Fehler',
+    title: '3D-Druck-Ratgeber: 7 kostenlose Guides zu Material, Preis, CAD',
+    description: 'Was kostet 3D-Druck? Welches Material? FDM oder SLA? 7 ehrliche Guides aus 8 Jahren Werkstatt-Praxis – ohne Verkaufsmasche.',
     url: 'https://www.ek-druck.at/ratgeber',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D-Druck Ratgeber: Kosten, Material & Verfahren [2026]',
-    description: 'Erstes 3D-Druck Projekt? 6 Gratis-Guides zu Kosten, Materialwahl & Verfahren ✓ Spart Geld & Fehler',
+    title: '3D-Druck-Ratgeber: 7 kostenlose Guides zu Material, Preis, CAD',
+    description: 'Was kostet 3D-Druck? Welches Material? FDM oder SLA? 7 ehrliche Guides aus 8 Jahren Werkstatt-Praxis – ohne Verkaufsmasche.',
   },
 }
 

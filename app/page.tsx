@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Index from '@/src-pages/Index'
 
 export const metadata: Metadata = {
-  title: '3D-Druck Österreich ★5,0 | Messemodelle & Architektur | ekdruck',
-  description: 'Messemodelle & Architekturmodelle aus dem 3D-Druck ★5,0 (31 Bewertungen). Angebot in 6h · Express 24h · ab €20 · Made in Austria.',
+  title: '3D-Druck Österreich – Express 24h, Versand morgen | ekdruck',
+  description: 'STL-Datei hochladen → Druck startet heute, Versand morgen. FDM, SLA, SLS aus Gunskirchen/OÖ. Preis online ab €20. ★5,0 (31 Bewertungen).',
   alternates: {
     canonical: 'https://www.ek-druck.at',
   },
   openGraph: {
-    title: '3D-Druck Österreich ★5,0 | Messemodelle & Architektur | ekdruck',
-    description: 'Messemodelle & Architekturmodelle aus dem 3D-Druck ★5,0 (31 Bewertungen). Angebot in 6h · Express 24h · ab €20 · Made in Austria.',
+    title: '3D-Druck Österreich – Express 24h, Versand morgen | ekdruck',
+    description: 'STL-Datei hochladen → Druck startet heute, Versand morgen. FDM, SLA, SLS aus Gunskirchen/OÖ. Preis online ab €20. ★5,0 (31 Bewertungen).',
     url: 'https://www.ek-druck.at',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D-Druck Österreich ★5,0 | Messemodelle & Architektur | ekdruck',
-    description: 'Messemodelle & Architekturmodelle aus dem 3D-Druck ★5,0 (31 Bewertungen). Angebot in 6h · Express 24h · ab €20 · Made in Austria.',
+    title: '3D-Druck Österreich – Express 24h, Versand morgen | ekdruck',
+    description: 'STL-Datei hochladen → Druck startet heute, Versand morgen. FDM, SLA, SLS aus Gunskirchen/OÖ. Preis online ab €20. ★5,0 (31 Bewertungen).',
   },
 }
 

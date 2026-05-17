@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import PrototypingGuide from '@/src-pages/ratgeber/PrototypingGuide'
 
 export const metadata: Metadata = {
-  title: 'Rapid Prototyping Guide: Verfahren, Kosten & Tipps [2026]',
-  description: 'Prototyp drucken lassen: FDM, SLA oder SLS? Kosten und Materialwahl – der komplette Guide.',
+  title: 'Rapid Prototyping: vom CAD zum Funktionsprototyp [Guide]',
+  description: 'Komplett-Guide für Konstrukteure: Verfahrenswahl, Toleranzen, Material, CAD-Export. Mit Iterations-Checkliste und typischen Fehlern.',
   alternates: {
     canonical: 'https://www.ek-druck.at/ratgeber/prototyping-guide',
   },
   openGraph: {
-    title: 'Rapid Prototyping Guide: Verfahren, Kosten & Tipps [2026]',
-    description: 'Prototyp drucken lassen: FDM, SLA oder SLS? Kosten und Materialwahl – der komplette Guide.',
+    title: 'Rapid Prototyping: vom CAD zum Funktionsprototyp [Guide]',
+    description: 'Komplett-Guide für Konstrukteure: Verfahrenswahl, Toleranzen, Material, CAD-Export. Mit Iterations-Checkliste und typischen Fehlern.',
     url: 'https://www.ek-druck.at/ratgeber/prototyping-guide',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Rapid Prototyping Guide: Verfahren, Kosten & Tipps [2026]',
-    description: 'Prototyp drucken lassen: FDM, SLA oder SLS? Kosten und Materialwahl – der komplette Guide.',
+    title: 'Rapid Prototyping: vom CAD zum Funktionsprototyp [Guide]',
+    description: 'Komplett-Guide für Konstrukteure: Verfahrenswahl, Toleranzen, Material, CAD-Export. Mit Iterations-Checkliste und typischen Fehlern.',
   },
 }
 

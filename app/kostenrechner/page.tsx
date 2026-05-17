@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import Kostenrechner from "@/src-pages/Kostenrechner";
 
 export const metadata: Metadata = {
-  title: "3D-Druck Kosten berechnen – Richtpreis in 60 Sek. | ★5,0 | ekdruck",
+  title: "3D-Druck Preisrechner: STL hochladen, Preis in 60 Sekunden",
   description:
-    "STL hochladen → Richtpreis sofort. 8 FDM-Materialien, Multi-File-Upload, Mengenvorteil ab 10 Stück. Kein Account nötig. Verbindliches Angebot in 6h · ab €20 · ★5,0 (31 Bewertungen) · Gunskirchen, OÖ",
+    "STL-Datei rein → Sofortpreis raus. 8 Materialien, Multi-File, Mengenrabatt ab 10 Stück. Kein Login, keine E-Mail nötig. Verbindlich in 6h.",
   alternates: {
     canonical: "https://www.ek-druck.at/kostenrechner",
   },
   openGraph: {
-    title: "3D-Druck Kosten berechnen – Richtpreis in 60 Sek. | ★5,0",
-    description: "STL hochladen → Richtpreis sofort. Kein Account, kein Anruf nötig. Verbindliches Angebot in 6h · ab €20 · ★5,0 (31 Bewertungen)",
+    title: "3D-Druck Preisrechner: STL hochladen, Preis in 60 Sekunden",
+    description: "STL-Datei rein → Sofortpreis raus. 8 Materialien, Multi-File, Mengenrabatt ab 10 Stück. Kein Login, keine E-Mail nötig. Verbindlich in 6h.",
     url: "https://www.ek-druck.at/kostenrechner",
     siteName: "ekdruck – 3D-Druck Österreich",
     locale: "de_AT",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3D-Druck Kosten berechnen – Richtpreis in 60 Sek. | ★5,0",
-    description: "STL hochladen → Richtpreis sofort. Kein Account, kein Anruf nötig. Verbindliches Angebot in 6h · ab €20 · ★5,0 (31 Bewertungen)",
+    title: "3D-Druck Preisrechner: STL hochladen, Preis in 60 Sekunden",
+    description: "STL-Datei rein → Sofortpreis raus. 8 Materialien, Multi-File, Mengenrabatt ab 10 Stück. Kein Login, keine E-Mail nötig. Verbindlich in 6h.",
     images: ["https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png"],
   },
 };
@@ -44,7 +44,7 @@ const webAppSchema = {
   "@type": "WebApplication",
   name: "ekdruck 3D-Druck Kostenrechner",
   url: "https://www.ek-druck.at/kostenrechner",
-  description: "Online-Kostenrechner für 3D-Druck: STL hochladen, Material wählen, Richtpreis sofort.",
+  description: "STL-Datei rein → Sofortpreis raus. 8 Materialien, Multi-File, Mengenrabatt ab 10 Stück. Kein Login, keine E-Mail nötig. Verbindlich in 6h.",
   applicationCategory: "BusinessApplication",
   operatingSystem: "All",
   offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },

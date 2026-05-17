@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import MessemodellRegion from '@/src-pages/MessemodellRegion'
 
 export const metadata: Metadata = {
-  title: 'Messemodelle Zürich | 3D-Druck Express · ab €30 · inkl. Zollabwicklung | ekdruck',
-  description: 'Messemodelle & Exponate für Messen in Zürich drucken lassen. Express 24h · ab €30 · bruchsicher · inkl. Zollabwicklung. FINANZ, Giardina, Berufsmesse. ★5,0.',
+  title: 'Messemodelle Zürich: 3D-Druck mit Schweizer Zollabwicklung',
+  description: 'Aussteller in Zürich: Messemodelle aus Österreich inkl. Schweizer Zollabwicklung. FINISH, Z-2025, weitere. CHF-Verrechnung möglich.',
   alternates: { canonical: 'https://www.ek-druck.at/messemodelle/zuerich' },
   openGraph: {
-    title: 'Messemodelle Zürich | 3D-Druck Express · ab €30 | ekdruck',
-    description: 'Messemodelle & Exponate für Messen in Zürich. Express 24h · ab €30 · inkl. Zollabwicklung AT→CH. ★5,0 (31 Bewertungen).',
+    title: 'Messemodelle Zürich: 3D-Druck mit Schweizer Zollabwicklung',
+    description: 'Aussteller in Zürich: Messemodelle aus Österreich inkl. Schweizer Zollabwicklung. FINISH, Z-2025, weitere. CHF-Verrechnung möglich.',
     url: 'https://www.ek-druck.at/messemodelle/zuerich',
     siteName: 'ekdruck – 3D-Druck Österreich', locale: 'de_AT', type: 'website',
   },

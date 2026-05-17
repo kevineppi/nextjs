@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Referenzen from '@/src-pages/Referenzen'
 
 export const metadata: Metadata = {
-  title: '3D-Druck Referenzen & Projekte | ★ 5.0 Google | ekdruck',
-  description: 'Echte 3D-Druck Projekte mit Fotos, Maßen & Druckzeiten ✓ Architekturmodelle, Messeexponate & Einzelstücke',
+  title: '3D-Druck Referenzen mit Maßen, Druckzeiten und Materialien',
+  description: 'Echte Kundenprojekte mit Fotos: Maschinenbau, Wettbewerbsabgaben, Messeexponate. Inklusive Material, Druckdauer und Toleranzen.',
   alternates: {
     canonical: 'https://www.ek-druck.at/referenzen',
   },
   openGraph: {
-    title: '3D-Druck Referenzen & Projekte | ★ 5.0 Google | ekdruck',
-    description: 'Echte 3D-Druck Projekte mit Fotos, Maßen & Druckzeiten ✓ Architekturmodelle, Messeexponate & Einzelstücke',
+    title: '3D-Druck Referenzen mit Maßen, Druckzeiten und Materialien',
+    description: 'Echte Kundenprojekte mit Fotos: Maschinenbau, Wettbewerbsabgaben, Messeexponate. Inklusive Material, Druckdauer und Toleranzen.',
     url: 'https://www.ek-druck.at/referenzen',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D-Druck Referenzen & Projekte | ★ 5.0 Google | ekdruck',
-    description: 'Echte 3D-Druck Projekte mit Fotos, Maßen & Druckzeiten ✓ Architekturmodelle, Messeexponate & Einzelstücke',
+    title: '3D-Druck Referenzen mit Maßen, Druckzeiten und Materialien',
+    description: 'Echte Kundenprojekte mit Fotos: Maschinenbau, Wettbewerbsabgaben, Messeexponate. Inklusive Material, Druckdauer und Toleranzen.',
   },
 }
 
