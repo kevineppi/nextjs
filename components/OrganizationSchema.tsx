@@ -11,7 +11,7 @@ const OrganizationSchema = () => {
       "alternateName": "EK-Druck",
       "url": "https://www.ek-druck.at",
       "logo": "https://www.ek-druck.at/lovable-uploads/40dc02c2-6cc2-46bb-aff9-6f06079f1f77.png",
-      "description": "Spezialist für Architektur- und Messemodelle aus dem 3D-Druck. B2B-Service für Architekturbüros in ganz Österreich – Angebot in 6 Stunden, Express in 24 h.",
+      "description": "Spezialist für Architektur- und Messemodelle aus dem 3D-Druck. B2B-Service für Architekturbüros in ganz Österreich – Angebot in 6h, Express 24h.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Negrellistraße 15",

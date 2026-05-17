@@ -252,14 +252,14 @@ const DruckRegion = ({ region }: DruckRegionProps) => {
             },
             {
               parts: [
-                { before: `Unternehmen in ${regionData.name} profitieren von unseren `, anchor: "B2B-Konditionen für Firmenkunden", href: "/firmenkunden", after: ": UID-Rechnung, Mengenrabatt ab 5 Stück, NDA-fähige Projektabwicklung. Eine vollständige Übersicht aller verfügbaren " },
+                { before: `Unternehmen in ${regionData.name} profitieren von unseren `, anchor: "B2B-Konditionen für Firmenkunden", href: "/firmenkunden", after: ": Mengenrabatt ab 5 Stück, NDA-fähige Projektabwicklung, Zahlungsziel 30 Tage. Eine vollständige Übersicht aller verfügbaren " },
                 { anchor: "3D-Druck Materialien (PLA, PETG, ASA, Carbon-PA)", href: "/3d-druck-materialien", after: " finden Sie auf unserer Material-Seite." },
               ],
             },
           ]}
           actions={[
             { label: "Preis online berechnen", href: "/kostenrechner", description: `Richtpreis für Ihr Projekt in ${regionData.name} in 60 Sekunden` },
-            { label: "B2B-Anfrage stellen", href: "/firmenkunden", description: "Mengenrabatt, UID-Rechnung, fester Ansprechpartner" },
+            { label: "B2B-Anfrage stellen", href: "/firmenkunden", description: "Mengenrabatt, fester Ansprechpartner, NDA" },
             { label: "Architekturmodelle", href: "/architekturmodelle", description: "Wettbewerbsmodelle 1:50–1:500 mit CAD-Import" },
             { label: "Messe-Express", href: "/messemodelle", description: `Modell in 24–48h nach ${regionData.name}` },
           ]}

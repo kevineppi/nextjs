@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Oberoesterreich3DDruck from '@/src-pages/Oberoesterreich3DDruck'
 
 export const metadata: Metadata = {
-  title: '3D-Druck Oberösterreich: Same-Day-Abholung in Gunskirchen',
-  description: 'Lokaler 3D-Druck-Anbieter in OÖ. Abholung in Gunskirchen am selben Tag, Lieferung nach Linz/Wels/Steyr in 24h. Persönliche Beratung. Ab €20.',
+  title: '3D-Druck Oberösterreich ★5,0 – Same-Day · Abholung in Gunskirchen',
+  description: '3D-Druck aus Oberösterreich ✓ Same-Day-Service ✓ Abholung in Gunskirchen ✓ Angebot in 6h. ★ 5,0 (31 Bewertungen)',
   alternates: {
     canonical: 'https://www.ek-druck.at/3d-druck-oberoesterreich',
   },
   openGraph: {
-    title: '3D-Druck Oberösterreich: Same-Day-Abholung in Gunskirchen',
-    description: 'Lokaler 3D-Druck-Anbieter in OÖ. Abholung in Gunskirchen am selben Tag, Lieferung nach Linz/Wels/Steyr in 24h. Persönliche Beratung. Ab €20.',
+    title: '3D-Druck Oberösterreich ★5,0 – Same-Day · Abholung in Gunskirchen',
+    description: '3D-Druck aus Oberösterreich ✓ Same-Day-Service ✓ Abholung in Gunskirchen ✓ Angebot in 6h. ★ 5,0 (31 Bewertungen)',
     url: 'https://www.ek-druck.at/3d-druck-oberoesterreich',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D-Druck Oberösterreich: Same-Day-Abholung in Gunskirchen',
-    description: 'Lokaler 3D-Druck-Anbieter in OÖ. Abholung in Gunskirchen am selben Tag, Lieferung nach Linz/Wels/Steyr in 24h. Persönliche Beratung. Ab €20.',
+    title: '3D-Druck Oberösterreich ★5,0 – Same-Day · Abholung in Gunskirchen',
+    description: '3D-Druck aus Oberösterreich ✓ Same-Day-Service ✓ Abholung in Gunskirchen ✓ Angebot in 6h. ★ 5,0 (31 Bewertungen)',
   },
 }
 

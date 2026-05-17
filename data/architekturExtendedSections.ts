@@ -44,7 +44,7 @@ const wien: ExtendedArchitekturSections = {
     ],
   },
   customerPriorities: [
-    { statement: 'Termin ist heilig – Wettbewerbsdeadline darf nicht gerissen werden', explanation: 'Wiener Architekturbüros arbeiten auf den Tag genau. Express in 24h ist keine Option, sondern Notwendigkeit.' },
+    { statement: 'Termin ist heilig – Wettbewerbsdeadline darf nicht gerissen werden', explanation: 'Wiener Architekturbüros arbeiten auf den Tag genau. Express 24h ist keine Option, sondern Notwendigkeit.' },
     { statement: 'Maßstabstreue bis ins Detail', explanation: 'Fensterteilungen, Fassadenraster und Geländehöhen müssen exakt sein. Die Jury prüft das Modell aus der Nähe.' },
     { statement: 'Monochrome Ästhetik bevorzugt', explanation: 'Wettbewerbsmodelle in Wien sind fast ausschließlich weiß oder grau. Farbige Modelle wirken in diesem Kontext unprofessionell.' },
     { statement: 'Umgebungsbebauung muss erkennbar sein', explanation: 'Ein Neubau wird im städtischen Kontext bewertet. Ohne Umgebung fehlt der Maßstabsbezug.' },
@@ -217,7 +217,7 @@ const kaernten: ExtendedArchitekturSections = {
       { title: 'Datei & Kontext klären', description: 'CAD-Export senden und Einsatzzweck beschreiben: Wettbewerb, Präsentation oder Bürgerinformation?', context: 'Bei Holzbau-Modellen fragen wir immer nach: Soll das Tragwerk sichtbar sein?' },
       { title: 'Materialempfehlung', description: 'PLA+ für Präsentationsmodelle, PETG für dauerhafte Ausstellung. Bei Holzbau-Schnittmodellen empfehlen wir transparentes PETG.', context: 'Transparentes PETG zeigt innere Strukturen, ohne das Modell aufschneiden zu müssen.' },
       { title: 'Fertigung mit Alpen-Verpackung', description: 'Druck und Montage in Gunskirchen, dann bruchsicher verpackt für den Transport über die Tauernautobahn.', context: 'Alpentransporte brauchen extra Polsterung – wir wissen das aus Erfahrung.' },
-      { title: 'Lieferung nach Kärnten', description: 'Standard in 5–7 Tagen, Express in 48h. Lieferung nach Klagenfurt, Villach und in alle Kärntner Gemeinden.', context: 'Bei großen Modellen bieten wir persönliche Lieferung nach Kärnten an.' },
+      { title: 'Lieferung nach Kärnten', description: 'Standard in 5–7 Tagen, Express 48h. Lieferung nach Klagenfurt, Villach und in alle Kärntner Gemeinden.', context: 'Bei großen Modellen bieten wir persönliche Lieferung nach Kärnten an.' },
     ],
   },
   customerPriorities: [
@@ -430,7 +430,7 @@ const linz: ExtendedArchitekturSections = {
     headline: 'Architekturmodelle für Linz – in 20 Minuten abgeholt',
     subheadline: 'Same-Day-Service direkt aus Gunskirchen',
     steps: [
-      { title: 'Datei senden – Angebot in 2h', description: 'CAD-Export hochladen. Bei Same-Day-Anfragen bis 10 Uhr ist Abholung am selben Abend möglich.', context: 'Linzer Architekten kennen den Weg nach Gunskirchen – 20 Minuten über die B1.' },
+      { title: 'Datei senden – Angebot in 6h', description: 'CAD-Export hochladen. Bei Same-Day-Anfragen bis 10 Uhr ist Abholung am selben Abend möglich.', context: 'Linzer Architekten kennen den Weg nach Gunskirchen – 20 Minuten über die B1.' },
       { title: 'Same-Day-Druck starten', description: 'Bei Standardmodellen starten wir sofort. Druckzeit 4–8h je nach Größe.', context: 'Wir reservieren Druckerkapazität für Linzer Express-Kunden.' },
       { title: 'Persönliche Übergabe', description: 'Sie prüfen das Modell vor Ort, wir besprechen eventuelle Anpassungen.', context: 'Korrekturen können oft am selben Tag nachgedruckt werden.' },
       { title: 'Direkt mitnehmen', description: 'Modell verpackt und bereit zur Mitnahme. Kein Versandrisiko.', context: 'Wir haben Transportboxen in verschiedenen Größen vorrätig.' },

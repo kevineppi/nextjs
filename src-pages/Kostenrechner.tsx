@@ -592,7 +592,7 @@ const Kostenrechner = () => {
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-muted-foreground">
             <span className="flex items-center gap-1.5"><ShieldCheck className="h-4 w-4 text-primary" />Kein Webshop – keine Bestellung</span>
             <span className="flex items-center gap-1.5"><UserCheck className="h-4 w-4 text-primary" />Persönliche Prüfung jeder Anfrage</span>
-            <span className="flex items-center gap-1.5"><Clock className="h-4 w-4 text-primary" />Angebot in 6 Stunden</span>
+            <span className="flex items-center gap-1.5"><Clock className="h-4 w-4 text-primary" />Angebot in 6h</span>
             <span className="flex items-center gap-1.5"><Star className="h-4 w-4 text-primary" />5,0 ★ Google (31 Bewertungen)</span>
           </div>
         </div>

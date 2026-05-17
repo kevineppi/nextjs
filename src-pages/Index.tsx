@@ -40,7 +40,7 @@ const Index = () => {
   return <>
     <SEOHead
       title="3D-Druck Österreich ★5,0 – Architekturmodelle & Messemodelle | ekdruck"
-      description="Österreichs Spezialist für Architekturmodelle & Messemodelle. ★ 5,0 Google (31 Bewertungen) · Angebot in 6 h · Express 24 h · ab €20 · Flatrate für Architekturbüros ab €199/Mon."
+      description="Österreichs Spezialist für Architekturmodelle & Messemodelle. ★ 5,0 Google (31 Bewertungen) · Angebot in 6h · Express 24h · ab €20 · Flatrate für Architekturbüros ab €199/Mon."
       keywords="3d druck, 3d druck österreich, 3d druck service, 3d druck firma, 3d druck anbieter, 3d druck dienstleister, 3d druck oberösterreich, 3d druck prototypen"
       path="/"
     />
@@ -415,7 +415,7 @@ const Index = () => {
                 },
                 {
                   icon: Users, title: "Firmenkunden & B2B",
-                  headline: "UID-Rechnung, NDA, Mengenrabatt",
+                  headline: "Rahmenverträge, NDA, Mengenrabatt",
                   desc: "Professionelle B2B-Konditionen ab 5 Stück.",
                   link: "/firmenkunden", num: "04",
                 },
@@ -564,7 +564,7 @@ const Index = () => {
                     { q: "Was kostet 3D-Druck bei ekdruck?", a: "Ab €20 pro Modell. Preis hängt von Material, Volumen und Qualitätsstufe ab. Festpreis in unter 6h.", link: { to: "/ratgeber/kosten-guide", text: "Preis-Ratgeber →" } },
                     { q: "Wie schnell bekomme ich mein Modell?", a: "Standard: 3–5 Werktage (versandkostenfrei ab €100). Express: 24–48h.", link: null },
                     { q: "Welche Dateiformate?", a: "STL, OBJ, STEP, 3MF, ArchiCAD, Revit, SolidWorks, Rhino, Fusion 360. Oder wir modellieren nach Skizze – kostenlos.", link: null },
-                    { q: "Für welche Branchen?", a: "Architekten (1:50–1:500), Messeaussteller (Express 24h), Produktentwickler, Firmenkunden (UID, NDA, Rabatte).", link: null },
+                    { q: "Für welche Branchen?", a: "Architekten (1:50–1:500), Messeaussteller (Express 24h), Produktentwickler, Firmenkunden (NDA, Mengenrabatte, Rahmenverträge).", link: null },
                     { q: "Welche Nachbearbeitung?", a: "Schleifen, Grundierung, Lackierung RAL/Pantone, Aceton-Dampfglättung, Segmentierung. Manuelle QA.", link: null },
                     { q: "Warum österreichisches Filament?", a: "Recycelte Industrieabfälle, Ökostrom. 80% weniger CO₂. Toleranz ±0,02 mm.", link: { to: "/ratgeber/material-guide", text: "Material-Guide →" } },
                   ].map((item, i) =>
@@ -666,7 +666,7 @@ const Index = () => {
                 before: "Als ",
                 anchor: "B2B-Partner für Firmenkunden",
                 href: "/firmenkunden",
-                after: " bieten wir UID-Rechnung, Mengenrabatte ab 5 Stück, NDA-fähige Projektabwicklung und persönliche Ansprechpartner. Wählen Sie aus über zehn ",
+                after: " bieten wir Mengenrabatte ab 5 Stück, NDA möglich, NDA-fähige Projektabwicklung und persönliche Ansprechpartner. Wählen Sie aus über zehn ",
               },
               {
                 anchor: "professionellen 3D-Druck Materialien",
@@ -678,7 +678,7 @@ const Index = () => {
         ]}
         actions={[
           { label: "Preis online berechnen", href: "/kostenrechner", description: "STL hochladen → Richtpreis in 60 Sekunden" },
-          { label: "B2B-Konditionen anfragen", href: "/firmenkunden", description: "UID-Rechnung, Rabatte, NDA, persönlicher Ansprechpartner" },
+          { label: "B2B-Konditionen anfragen", href: "/firmenkunden", description: "Rahmenverträge, Rabatte, NDA, persönlicher Ansprechpartner" },
           { label: "Architekturmodelle ansehen", href: "/architekturmodelle", description: "Maßstab 1:50–1:500 für Wettbewerb & Präsentation" },
           { label: "Express für Messen", href: "/messemodelle", description: "Modell in 24–48h für Wien, München, Hannover" },
         ]}
@@ -743,7 +743,7 @@ const Index = () => {
                 Bereit für Ihr<br />nächstes Modell<span className="text-primary">?</span>
               </h2>
               <p className="text-background/40 text-base md:text-lg mb-12 max-w-lg mx-auto leading-relaxed">
-                Angebot in 6 Stunden. Direkte Ansprechperson aus Gunskirchen. Kein Callcenter.
+                Angebot in 6h. Direkte Ansprechperson aus Gunskirchen. Kein Callcenter.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
                 <Button asChild size="lg" variant="cta" className="group rounded-full px-12 py-7 text-base">

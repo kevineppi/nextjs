@@ -373,7 +373,7 @@ const KostenGuide = () => {
           },
           {
             parts: [
-              { before: "Firmen mit regelmäßigem 3D-Druck-Bedarf erhalten als ", anchor: "B2B-Firmenkunden", href: "/firmenkunden", after: " Mengenrabatte ab 5 Stück, UID-Rechnung und einen festen Ansprechpartner. Persönliche Beratung jederzeit über das " },
+              { before: "Firmen mit regelmäßigem 3D-Druck-Bedarf erhalten als ", anchor: "B2B-Firmenkunden", href: "/firmenkunden", after: " Mengenrabatte ab 5 Stück, Zahlungsziel 30 Tage und einen festen Ansprechpartner. Persönliche Beratung jederzeit über das " },
               { anchor: "Kontaktformular", href: "/kontakt", after: " – wir antworten innerhalb von 6 Stunden." },
             ],
           },
@@ -381,7 +381,7 @@ const KostenGuide = () => {
         actions={[
           { label: "Kostenrechner öffnen", href: "/kostenrechner", description: "STL hochladen → Richtpreis in 60 Sekunden" },
           { label: "Anfrage senden", href: "/kontakt", description: "Festpreisangebot binnen 6 Stunden" },
-          { label: "B2B-Konditionen", href: "/firmenkunden", description: "Mengenrabatte, UID-Rechnung, NDA" },
+          { label: "B2B-Konditionen", href: "/firmenkunden", description: "Mengenrabatte, NDA, Rahmenverträge" },
           { label: "Material-Guide", href: "/ratgeber/material-guide", description: "PLA, PETG, ASA, Carbon im Detail" },
         ]}
         variant="muted"

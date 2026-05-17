@@ -81,7 +81,7 @@ const Firmenkunden = () => {
       title: "Transparente Preise",
       description: "Individuelle Angebote innerhalb von 24h. Keine versteckten Kosten.",
       highlight: "Schnelle Kalkulation",
-      stats: "Angebot in 24h"
+      stats: "Angebot in 6h"
     },
     {
       icon: HeartHandshake,
@@ -273,8 +273,8 @@ const Firmenkunden = () => {
   return (
     <>
       <SEOHead
-        title="3D-Druck B2B Österreich ★5,0 – UID · NDA · Angebot in 6h"
-        description="3D-Druck für Unternehmen ✓ Mengenrabatt ab 5 Stück ✓ NDA möglich ✓ UID-Rechnung ✓ Express 24h ✓ Angebot in 6h. ★ 5,0 (31 Bewertungen) | ekdruck"
+        title="3D-Druck B2B Österreich ★5,0 – Rahmenverträge · NDA · Angebot in 6h"
+        description="3D-Druck für Unternehmen ✓ Mengenrabatt ab 5 Stück ✓ NDA möglich ✓ Rahmenverträge ✓ Express 24h ✓ Angebot in 6h. ★ 5,0 (31 Bewertungen) | ekdruck"
         keywords="3d druck service österreich, 3d druck firma österreich, professioneller 3d druck b2b, 3d druck dienstleister österreich, 3d druck anbieter firma, 3d druck unternehmen österreich, b2b 3d druck service"
         path="/firmenkunden"
       />
@@ -312,7 +312,7 @@ const Firmenkunden = () => {
                 
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl">
                   Über 100 Unternehmen in Österreich vertrauen auf unseren <strong>B2B 3D-Druck Service</strong> –
-                  vom Architekturbüro bis zur Werbeagentur. UID-Rechnung, Mengenrabatte ab 5 Stück,
+                  vom Architekturbüro bis zur Werbeagentur. Mengenrabatte ab 5 Stück, NDA möglich,
                   NDA-fähige Abwicklung und ein fester Ansprechpartner.
                 </p>
 
@@ -438,7 +438,7 @@ const Firmenkunden = () => {
         <QuickContactBar
           context="B2B / Firmenkundenanfrage"
           title="B2B-Anfrage: Wählen Sie Ihren Kanal"
-          subtitle="UID-Rechnung, NDA und Mengenrabatte ab Stück 1. Direkter Kontakt zum Inhaber – keine Vertriebsschleife."
+          subtitle="NDA, Mengenrabatte und Rahmenverträge ab Stück 1. Direkter Kontakt zum Inhaber – keine Vertriebsschleife."
         />
 
         {/* Benefits Section - Premium Cards */}

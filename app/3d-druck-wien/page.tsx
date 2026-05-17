@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Wien3DDruck from '@/src-pages/Wien3DDruck'
 
 export const metadata: Metadata = {
-  title: '3D-Druck Wien – Versand morgen früh per ÖPOST | ekdruck',
-  description: '3D-Druck-Anbieter mit Lieferung nach Wien: Druck heute, Zustellung morgen früh per ÖPOST. Auch Express-Kurier in 6h möglich. Ab €20.',
+  title: '3D-Druck Wien ★5,0 – Express über Nacht · Angebot in 6h',
+  description: '3D-Druck Anbieter für Wien ✓ Architekturmodelle & Prototypen ✓ Express über Nacht ✓ Angebot in 6h. ★ 5,0 (31 Bewertungen)',
   alternates: {
     canonical: 'https://www.ek-druck.at/3d-druck-wien',
   },
   openGraph: {
-    title: '3D-Druck Wien – Versand morgen früh per ÖPOST | ekdruck',
-    description: '3D-Druck-Anbieter mit Lieferung nach Wien: Druck heute, Zustellung morgen früh per ÖPOST. Auch Express-Kurier in 6h möglich. Ab €20.',
+    title: '3D-Druck Wien ★5,0 – Express über Nacht · Angebot in 6h',
+    description: '3D-Druck Anbieter für Wien ✓ Architekturmodelle & Prototypen ✓ Express über Nacht ✓ Angebot in 6h. ★ 5,0 (31 Bewertungen)',
     url: 'https://www.ek-druck.at/3d-druck-wien',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D-Druck Wien – Versand morgen früh per ÖPOST | ekdruck',
-    description: '3D-Druck-Anbieter mit Lieferung nach Wien: Druck heute, Zustellung morgen früh per ÖPOST. Auch Express-Kurier in 6h möglich. Ab €20.',
+    title: '3D-Druck Wien ★5,0 – Express über Nacht · Angebot in 6h',
+    description: '3D-Druck Anbieter für Wien ✓ Architekturmodelle & Prototypen ✓ Express über Nacht ✓ Angebot in 6h. ★ 5,0 (31 Bewertungen)',
   },
 }
 

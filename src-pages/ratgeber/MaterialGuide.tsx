@@ -121,7 +121,7 @@ const MaterialGuide = () => {
             {/* Conversion Banner – User mit Buying-Intent direkt zum Rechner */}
             <ConversionBanner
               headline="Material schon gewählt? Direkt 3D drucken lassen."
-              subline="Wenn Sie Ihr Material kennen: Material wählen, STL-Datei hochladen, Festpreis erhalten – Angebot in 6 Stunden."
+              subline="Wenn Sie Ihr Material kennen: Material wählen, STL-Datei hochladen, Festpreis erhalten – Angebot in 6h."
               primaryLabel="Jetzt anfragen"
               primaryHref="/kostenrechner"
               secondaryLabel="B2B-Konditionen"

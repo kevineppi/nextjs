@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Burgenland3DDruck from '@/src-pages/Burgenland3DDruck'
 
 export const metadata: Metadata = {
-  title: '3D-Druck Burgenland: Versand Eisenstadt & Neusiedl in 24h',
-  description: '3D-Druck mit ÖPOST-Versand nach Eisenstadt, Neusiedl, Mattersburg. Für Weinbau-Modelle, Industriebauteile, Tourismus. Ab €20.',
+  title: '3D-Druck Burgenland ★5,0 – Express · Angebot in 6h',
+  description: '3D-Druck Anbieter für Burgenland ✓ Modelle & Prototypen ✓ Express-Lieferung ✓ ab €20. ★ 5,0 (31 Bewertungen)',
   alternates: {
     canonical: 'https://www.ek-druck.at/3d-druck-burgenland',
   },
   openGraph: {
-    title: '3D-Druck Burgenland: Versand Eisenstadt & Neusiedl in 24h',
-    description: '3D-Druck mit ÖPOST-Versand nach Eisenstadt, Neusiedl, Mattersburg. Für Weinbau-Modelle, Industriebauteile, Tourismus. Ab €20.',
+    title: '3D-Druck Burgenland ★5,0 – Express · Angebot in 6h',
+    description: '3D-Druck Anbieter für Burgenland ✓ Modelle & Prototypen ✓ Express-Lieferung ✓ ab €20. ★ 5,0 (31 Bewertungen)',
     url: 'https://www.ek-druck.at/3d-druck-burgenland',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D-Druck Burgenland: Versand Eisenstadt & Neusiedl in 24h',
-    description: '3D-Druck mit ÖPOST-Versand nach Eisenstadt, Neusiedl, Mattersburg. Für Weinbau-Modelle, Industriebauteile, Tourismus. Ab €20.',
+    title: '3D-Druck Burgenland ★5,0 – Express · Angebot in 6h',
+    description: '3D-Druck Anbieter für Burgenland ✓ Modelle & Prototypen ✓ Express-Lieferung ✓ ab €20. ★ 5,0 (31 Bewertungen)',
   },
 }
 

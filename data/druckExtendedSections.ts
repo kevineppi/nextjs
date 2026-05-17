@@ -32,7 +32,7 @@ const wien: ExtendedDruckSections = {
     {
       title: 'Konzeptvisualisierungen für Wiener Architekturbüros',
       description: 'Architekten nutzen schnelle 3D-Drucke für interne Designrunden. Keine finalen Wettbewerbsmodelle, sondern schnelle Volumenstudien – gedruckt über Nacht, besprochen am nächsten Morgen.',
-      whyPrint: 'Eine Volumenstudie in 6 Stunden gedruckt ersetzt zwei Tage digitale Diskussion. Das Team sieht sofort, ob Proportionen stimmen, und kann am physischen Objekt Änderungen markieren.',
+      whyPrint: 'Eine Volumenstudie in 6h gedruckt ersetzt zwei Tage digitale Diskussion. Das Team sieht sofort, ob Proportionen stimmen, und kann am physischen Objekt Änderungen markieren.',
       requirements: ['Maßstab 1:200 bis 1:500', 'PLA+ in Weiß', 'Lieferung über Nacht', 'Ab €15 pro Studie'],
     },
   ],
@@ -101,7 +101,7 @@ const linz: ExtendedDruckSections = {
     { statement: 'Funktion vor Optik', explanation: 'Im industriellen Umfeld zählt: Passt das Teil? Hält es die Belastung? Die Oberfläche ist zweitrangig – Maßhaltigkeit und Materialwahl sind entscheidend.' },
     { statement: 'Same-Day-Verfügbarkeit', explanation: 'Wenn der Schulungstermin morgen ist oder der Prototyp für die Baubesprechung fehlt, zählt jede Stunde. Online-Versand mit 3 Tagen Wartezeit ist keine Option.' },
     { statement: 'Nachbestellung ohne Neuaufwand', explanation: 'Einmal konfigurierte Modelle sollen jederzeit nachbestellbar sein – gleiche Qualität, gleicher Preis, ohne die Datei nochmal erklären zu müssen.' },
-    { statement: 'Rechnung auf Firma', explanation: 'Industriebetriebe brauchen eine ordentliche Rechnung mit UID-Nummer. Bar- oder Sofortzahlung ist im B2B-Umfeld unüblich.' },
+    { statement: 'Rechnung auf Firma', explanation: 'Wir stellen ordentliche Rechnungen aus mit Zahlungsziel 30 Tage. Als Kleinunternehmer nach § 6 Abs. 1 Z 27 UStG keine USt – das senkt Ihre Kosten direkt.' },
   ],
   commonMistakes: [
     { mistake: 'Toleranzen nicht vorab definiert', explanation: 'Wenn ein Prototyp in eine bestehende Baugruppe passen soll, reicht „ungefähr" nicht. FDM-Druck hat typisch ±0.2mm – das muss in der Konstruktion berücksichtigt werden.', prevention: 'Wir fragen immer: Muss das Teil irgendwo einpassen? Falls ja, berücksichtigen wir Toleranzen und drucken auf Wunsch ein Testmuster zum Vorab-Check.' },
@@ -382,7 +382,7 @@ const wels: ExtendedDruckSections = {
     subheadline: 'Persönlich, schnell, direkt nebenan in Gunskirchen',
     steps: [
       { title: 'Persönliche Besprechung oder WhatsApp', description: 'Kommen Sie einfach vorbei – Gunskirchen ist 10 Minuten von Wels. Oder senden Sie ein Foto/Skizze per WhatsApp für eine erste Einschätzung.', context: 'Die meisten Welser Kunden kommen persönlich – Parkplatz direkt vor der Tür.' },
-      { title: 'Sofort-Angebot am Bildschirm', description: 'Bei Vor-Ort-Terminen erstellen wir das Angebot direkt am CAD-Bildschirm. Sie sehen sofort, was möglich ist und was es kostet.', context: 'Einfache Teile: Angebot in 10 Minuten. Komplexe Objekte: Angebot in 2 Stunden.' },
+      { title: 'Sofort-Angebot am Bildschirm', description: 'Bei Vor-Ort-Terminen erstellen wir das Angebot direkt am CAD-Bildschirm. Sie sehen sofort, was möglich ist und was es kostet.', context: 'Einfache Teile: Angebot in 10 Minuten. Komplexe Objekte: Angebot in 6h.' },
       { title: 'Same-Day oder Next-Day Fertigung', description: 'Einfache Teile bis 15cm: Same-Day. Größere oder nachbearbeitete Objekte: Next-Day. Messemodelle mit Priorität.', context: 'Für die Welser Messe bieten wir Express-Slots mit garantierter Fertigstellung.' },
       { title: 'Abholung mit Qualitätscheck', description: 'Prüfen Sie Ihr Modell vor Ort. Passt etwas nicht, bessern wir sofort nach – in der Regel in 2-3 Stunden fertig.', context: 'Bar, Karte, Überweisung oder Rechnung – alles möglich.' },
     ],
@@ -436,7 +436,7 @@ const stpoelten: ExtendedDruckSections = {
     ],
   },
   customerPriorities: [
-    { statement: 'Formale Abwicklung für Behördenaufträge', explanation: 'Behörden brauchen KV, Auftragsbestätigung, Rechnung mit UID – alles korrekt und nachvollziehbar für die Buchhaltung.' },
+    { statement: 'Formale Abwicklung für Behördenaufträge', explanation: 'Behörden bekommen KV, Auftragsbestätigung und ordentliche Rechnung – alles nachvollziehbar für die Buchhaltung. Kleinunternehmer-Status spart Behörden die Vorsteuer-Abwicklung.' },
     { statement: 'Verständliche Kommunikation für Nicht-Techniker', explanation: 'Politiker und Bürger verstehen kein CAD-Fachchinesisch. Wir erklären Möglichkeiten und Grenzen in klarer Sprache.' },
     { statement: 'Faire Preise für Bildungsprojekte', explanation: 'FH-Studierende haben kein Budget für teure Prototypen. 3D-Druck ab €15 macht physische Modelle für jeden Studierenden zugänglich.' },
     { statement: 'Termingarantie für Veranstaltungen', explanation: 'WKO-Events und Bürgerbeteiligungen haben feste Termine. Das Modell muss stehen, wenn der Termin ist – keine Ausreden.' },

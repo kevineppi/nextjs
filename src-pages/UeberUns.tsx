@@ -425,7 +425,7 @@ const UeberUns = () => {
                   },
                   {
                     icon: Zap,
-                    title: "Angebot in 6 Stunden",
+                    title: "Angebot in 6h",
                     description: "Verbindliche Angebote innerhalb von 6 Stunden nach Anfrage – kein wochenlanges Warten, kein Preisrätselraten.",
                     accent: false,
                   },

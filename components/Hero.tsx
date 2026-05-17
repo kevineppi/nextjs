@@ -87,7 +87,7 @@ const Hero = () => {
           <div style={t(0.1)} className="mb-8">
             <div className="sticker border-primary text-primary w-fit">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              Angebot in 6 Stunden
+              Angebot in 6h
             </div>
           </div>
 
@@ -110,7 +110,7 @@ const Hero = () => {
             <div className="max-w-md">
               <p className="text-muted-foreground text-base leading-relaxed">
                 Österreichs Spezialist für Architektur- & Messemodelle aus dem 3D-Druck.
-                Express in 24h · AT-weite Lieferung · persönliche Antwort in 6 Stunden.
+                Express 24h · AT-weite Lieferung · persönliche Antwort in 6h.
               </p>
             </div>
             <div className="flex flex-col gap-4 shrink-0">

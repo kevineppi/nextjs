@@ -222,7 +222,7 @@ export default function Kostenrechner() {
         </h1>
         <p className="text-base text-muted-foreground">
           STL-Datei hochladen, Material wählen — Richtpreis in Echtzeit.
-          Verbindliches Festpreisangebot in 6 Stunden.
+          Verbindliches Festpreisangebot in 6h.
         </p>
         <div className="flex gap-2 justify-center flex-wrap mt-4">
           <Badge variant="outline" className="gap-1"><Star className="w-3 h-3" /> 5,0 Google (31)</Badge>

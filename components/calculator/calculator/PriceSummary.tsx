@@ -277,7 +277,7 @@ const PriceSummary = ({ result, input, stlFile }: Props) => {
                 <Label htmlFor="ps-email" className="text-xs flex items-center gap-1">
                   <Mail className="h-3 w-3" /> E-Mail *
                 </Label>
-                <Input id="ps-email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder="max@firma.at" className="h-9" />
+                <Input id="ps-email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder="ihre@email.at" className="h-9" />
               </div>
               <div className="grid grid-cols-2 gap-3">
                 <div className="space-y-1">

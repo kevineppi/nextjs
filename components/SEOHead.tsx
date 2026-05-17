@@ -20,8 +20,8 @@ interface SEOHeadProps {
 }
 
 const SEOHead = ({
-  title = "3D-Druck Service Österreich – Angebot in 6 h, Lieferung in 5–7 Tagen",
-  description = "3D-Druck Service in Österreich: Modelle, Prototypen und Architekturmodelle drucken lassen. Angebot in 6 Stunden, Express in 24 h. Anbieter aus Gunskirchen, OÖ.",
+  title = "3D-Druck Service Österreich – Angebot in 6h, Lieferung in 5–7 Tagen",
+  description = "3D-Druck Service in Österreich: Modelle, Prototypen und Architekturmodelle drucken lassen. Angebot in 6h, Express 24h. Anbieter aus Gunskirchen, OÖ.",
   keywords = "3d druck österreich, 3d druck service, 3d druck firma, 3d druck anbieter, 3d druck dienstleister, 3d druck oberösterreich, 3d druck prototypen, architekturmodell drucken lassen, messemodell anfertigen",
   path = "",
   image = "",

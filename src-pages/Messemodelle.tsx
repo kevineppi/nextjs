@@ -105,18 +105,17 @@ const Messemodelle = () => (
     <SEOHead title="Messemodelle, Exponate & Präsentationsmodelle | 3D-Druck Express | ekdruck" description="Messemodelle drucken lassen: Ausstellungsmodelle, Exponate & Schaumodelle für DACH-Messen. Express 24h · ab €30 · bruchsicher · ★5,0 (31 Bewertungen)" keywords="messemodelle, messemodell drucken lassen, messeexponat, ausstellungsmodell, präsentationsmodell, exponat, schaumodell, anschauungsmodell, industriemodell, messemodelle kosten, 3d druck messe, messestand modell, produktmodell messe, demonstrationsmodell, standmodell, eyecatcher messestand, modellbau messe, messebau modell" path="/messemodelle" />
     <ProductOfferSchema name="Messemodelle & Exponate 3D-Druck" description="3D-gedruckte Messemodelle, Exponate und Präsentationsmodelle für Fachmessen in Österreich, Deutschland und der Schweiz. Express 24h." price="30" image="https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png" />
     <Navigation />
-    <main className="min-h-screen bg-background pt-28 md:pt-32">
+    <main className="min-h-screen bg-background">
 
       {/* ════════════════════════════════════════════
           HERO – Editorial, bold, nicht abgeschnitten
           ════════════════════════════════════════════ */}
-      <section className="relative py-16 md:py-24 overflow-hidden">
-        {/* Messe: Spotlight-Atmosphäre mit konzentrischen Kreisen */}
+      <section className="relative pt-32 pb-24 md:pt-44 md:pb-32 overflow-hidden">
+        {/* Subtle dot grid background */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute inset-0 opacity-[0.5]" style={{backgroundImage:'repeating-radial-gradient(circle at 80% 30%, transparent 0px, transparent 80px, hsl(var(--border)/0.25) 80px, hsl(var(--border)/0.25) 81px)'}} />
-          <div className="absolute top-[5%] right-[10%] w-[700px] h-[700px] rounded-full bg-primary/[0.06] blur-[120px]" />
-          <div className="absolute bottom-[10%] left-[5%] w-[450px] h-[450px] rounded-full bg-primary/[0.04] blur-[100px]" />
-          <div className="absolute top-[30%] left-[40%] w-[300px] h-[300px] rounded-full bg-amber-500/[0.04] blur-[90px]" />
+          <div className="absolute inset-0" style={{backgroundImage:'radial-gradient(hsl(var(--border)/0.4) 1px, transparent 1px)',backgroundSize:'24px 24px'}} />
+          <div className="absolute top-[10%] right-[5%] w-[600px] h-[600px] rounded-full bg-primary/[0.04] blur-[120px]" />
+          <div className="absolute bottom-[10%] left-[5%] w-[400px] h-[400px] rounded-full bg-primary/[0.03] blur-[100px]" />
         </div>
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
@@ -151,7 +150,7 @@ const Messemodelle = () => (
 
             {/* Big number stats – editorial style */}
             <AnimatedSection animation="slide-up" delay={200}>
-              <div className="mt-24 md:mt-32 grid grid-cols-4 gap-0 border-t border-border pt-10 md:pt-12">
+              <div className="mt-20 grid grid-cols-4 gap-0 border-t border-border pt-8">
                 {[
                   { v: "24h", l: "Express" },
                   { v: "2m+", l: "Modellgröße" },
@@ -318,7 +317,7 @@ const Messemodelle = () => (
             <AnimatedSection animation="fade-in" className="mb-20">
               <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Transparent kalkuliert</p>
               <TextReveal text="Was kostet ein Messemodell?" className="text-5xl md:text-7xl font-bold leading-[0.95] tracking-[-0.04em]" />
-              <p className="text-muted-foreground max-w-lg mt-6 text-base leading-relaxed">Festpreisangebot in 6 Stunden. Keine versteckten Kosten.</p>
+              <p className="text-muted-foreground max-w-lg mt-6 text-base leading-relaxed">Festpreisangebot in 6h. Keine versteckten Kosten.</p>
             </AnimatedSection>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">

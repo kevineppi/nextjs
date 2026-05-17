@@ -97,7 +97,7 @@ const PAIN_POINTS = [
 
 const STEPS = [
   { n: "01", title: "Modell anfragen", text: "Schicken Sie uns Ihre CAD-Datei (ArchiCAD, Revit, Rhino, SketchUp, STL) per E-Mail oder über unser Portal. Keine Rückfragen, keine Formulare – einfach senden." },
-  { n: "02", title: "Angebot in 6 Stunden", text: "Sie erhalten ein verbindliches Festpreisangebot innerhalb von 6 Arbeitsstunden. Kein Kleingedrucktes, keine Nachberechnung." },
+  { n: "02", title: "Angebot in 6h", text: "Sie erhalten ein verbindliches Festpreisangebot innerhalb von 6 Arbeitsstunden. Kein Kleingedrucktes, keine Nachberechnung." },
   { n: "03", title: "Produktion startet sofort", text: "Flatrate-Kunden haben Produktionspriorität. Ihr Modell wird vor allen Einzelaufträgen gefertigt – garantiert." },
   { n: "04", title: "Lieferung in 48 Stunden", text: "Österreichweit. Sicher verpackt. Direkt ins Büro oder an die Baustelle." },
 ];

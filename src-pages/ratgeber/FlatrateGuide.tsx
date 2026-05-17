@@ -493,7 +493,7 @@ const FlatrateGuide = () => {
                 <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6 text-sm text-muted-foreground">
                   <span className="flex items-center gap-1.5"><Star className="h-3.5 w-3.5 fill-primary text-primary" /> 5.0 Google (31 Rezensionen)</span>
                   <span className="flex items-center gap-1.5"><Shield className="h-3.5 w-3.5 text-primary" /> Keine Mindestlaufzeit</span>
-                  <span className="flex items-center gap-1.5"><Clock className="h-3.5 w-3.5 text-primary" /> Antwort in 6 Stunden</span>
+                  <span className="flex items-center gap-1.5"><Clock className="h-3.5 w-3.5 text-primary" /> Antwort in 6h</span>
                 </div>
               </div>
             </AnimatedSection>

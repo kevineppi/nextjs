@@ -208,7 +208,7 @@ const linz: DruckSectionDataSet = {
     subheadline: 'Morgens anfragen, nachmittags abholen – so einfach ist 3D-Druck nebenan',
     steps: [
       { title: 'Anfrage senden', tasks: ['Datei per E-Mail oder WhatsApp', 'Kurze Beschreibung des Projekts', 'Gewünschte Abholzeit angeben'], tip: 'WhatsApp-Anfragen werden innerhalb von 30 Minuten beantwortet.' },
-      { title: 'Angebot in 1h', tasks: ['Sofort-Angebot bei Standardteilen', 'Materialempfehlung für Ihren Einsatz', 'Fertigungszeit-Schätzung'], tip: 'Bei einfachen Teilen antworten wir oft in 15 Minuten.' },
+      { title: 'Angebot in 6h', tasks: ['Sofort-Angebot bei Standardteilen', 'Materialempfehlung für Ihren Einsatz', 'Fertigungszeit-Schätzung'], tip: 'Bei einfachen Teilen antworten wir oft in 15 Minuten.' },
       { title: 'Fertigung am selben Tag', tasks: ['Druck startet sofort nach Freigabe', 'Qualitätskontrolle nach Abschluss', 'SMS wenn Modell abholbereit'], tip: 'Bestellung bis 9 Uhr = Abholung ab 15 Uhr möglich.' },
       { title: 'Persönliche Abholung', tasks: ['Gunskirchen – nur 20 Min von Linz', 'Modell gemeinsam prüfen', 'Bar, Überweisung oder Rechnung'], tip: 'Parkplatz direkt vor der Tür.' },
     ],
@@ -298,7 +298,7 @@ const graz: DruckSectionDataSet = {
     subheadline: 'Vom CAD zur Bewertungsrunde – strukturiert, effizient, termingerecht',
     steps: [
       { title: 'CAD-Dateien liefern', tasks: ['STL/STEP für alle Varianten', 'Materialwunsch angeben (ASA empfohlen)', 'Stückzahl und Farbwünsche definieren'], tip: 'Wir prüfen alle Dateien kostenlos auf Druckbarkeit.' },
-      { title: 'Serien-Angebot', tasks: ['Staffelpreis-Angebot in 4h', 'Mengenrabatt automatisch berechnet', 'Optimierungsvorschläge für Oberfläche'], tip: 'Ab 10 identischen Teilen sparen Sie 10%.' },
+      { title: 'Serien-Angebot', tasks: ['Staffelpreis-Angebot in 6h', 'Mengenrabatt automatisch berechnet', 'Optimierungsvorschläge für Oberfläche'], tip: 'Ab 10 identischen Teilen sparen Sie 10%.' },
       { title: 'Parallelfertigung', tasks: ['Alle Varianten gleichzeitig im Druck', 'ASA-Nachbearbeitung für Premium-Finish', 'Qualitätskontrolle jedes einzelnen Teils'], tip: '50 Teile in einer Woche realistisch.' },
       { title: 'Express nach Graz', tasks: ['Versand über A9 Pyhrnautobahn', 'Bruchsichere Einzelverpackung', 'Tracking-Nummer per E-Mail'], tip: 'Express 24h oder Standard 1-2 Werktage.' },
     ],
@@ -879,7 +879,7 @@ const stpoelten: DruckSectionDataSet = {
     solutions: [
       'Maßgefertigte Props in jeder Form, Farbe und Größe – aus dem Drucker',
       'Ab €20 pro Requisite: professionelle Ergebnisse auch mit kleinem Budget',
-      'Express in 24h: Bestellung heute, Requisite morgen am Set',
+      'Express 24h: Bestellung heute, Requisite morgen am Set',
       'PLA+ und PETG: leicht, robust, lackierbar. Perfekt für Film und Bühne',
     ],
   },
@@ -1100,7 +1100,7 @@ const oberoesterreich: DruckSectionDataSet = {
     subheadline: 'Von der Anfrage zum fertigen Präsentationsmodell – persönlich und professionell',
     steps: [
       { title: 'Projektanfrage', tasks: ['Per E-Mail, Telefon oder vor Ort', 'CAD-Daten oder Beschreibung', 'Stückzahl und Terminwunsch'], tip: 'Persönliche Beratung in Gunskirchen jederzeit möglich.' },
-      { title: 'B2B-Angebot', tasks: ['Staffelpreis bei Mengen', 'Firmenrechnung mit UID', 'NDA auf Anfrage'], tip: 'Angebot in unter 6 Stunden garantiert.' },
+      { title: 'B2B-Angebot', tasks: ['Staffelpreis bei Mengen', 'Firmenrechnung netto (Kleinunternehmerregelung)', 'NDA auf Anfrage'], tip: 'Angebot in unter 6 Stunden garantiert.' },
       { title: 'Serienfertigung', tasks: ['Bis 80 Teile pro Woche Kapazität', 'Qualitätskontrolle jedes Teils', 'Nachbearbeitung nach Standard'], tip: '40 identische Teile in 5-7 Werktagen.' },
       { title: 'Abholung oder Versand', tasks: ['Persönliche Abholung in Gunskirchen', 'Oder OÖ-weiter Versand in 24h', 'Tracking bei Versand'], tip: 'Abholung spart Versandkosten und Zeit.' },
     ],
@@ -1121,7 +1121,7 @@ const oberoesterreich: DruckSectionDataSet = {
       { label: 'Give-away-Serie (40 Stk.)', price: 'ab €15/Stk.', note: 'Identisch für Kundenevents' },
       { label: 'Schulungsmodell Detail', price: 'ab €70', note: 'Mehrfarbig, zerlegbar' },
     ],
-    badges: ['Firmenrechnung mit UID', 'Abholung in Gunskirchen', 'NDA möglich'],
+    badges: ['Firmenrechnung netto (Kleinunternehmerregelung)', 'Abholung in Gunskirchen', 'NDA möglich'],
   },
   techSpecs: {
     headline: 'Technische Daten unserer Fertigung',

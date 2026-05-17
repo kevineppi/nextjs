@@ -12,7 +12,7 @@ const contactLinks = [
   { to: "/messemodelle", label: "Messemodelle anfragen", description: "Express-Fertigung für Messen & Events ab 24h" },
   { to: "/architekturmodelle", label: "Architekturmodelle", description: "Maßstabsgetreue Modelle für Wettbewerbe & Präsentationen" },
   { to: "/rapid-prototyping", label: "Rapid Prototyping", description: "Funktionale Prototypen in 24–48 Stunden" },
-  { to: "/firmenkunden", label: "Firmenkunden-Service", description: "UID-Rechnung, NDA & Mengenrabatte für Unternehmen" },
+  { to: "/firmenkunden", label: "Firmenkunden-Service", description: "NDA & Mengenrabatte für Unternehmen, direkter Kontakt zum Inhaber" },
   { to: "/ratgeber/kosten-guide", label: "Was kostet 3D-Druck?", description: "Transparenter Kosten-Guide mit Preisbeispielen" },
   { to: "/3d-druck-materialien", label: "Material-Vergleich", description: "PLA vs PETG vs ABS – welches Material passt?" },
 ];

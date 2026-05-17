@@ -78,7 +78,7 @@ const PriceComparisonSection = ({ regionName, category, data }: PriceComparisonS
             Was kostet {category === 'architektur' ? 'ein Architekturmodell' : 'ein Messemodell'} in {regionName}?
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Transparente Richtwerte – Ihr individuelles Angebot erhalten Sie kostenlos in 6 Stunden.
+            Transparente Richtwerte – Ihr individuelles Angebot erhalten Sie kostenlos in 6h.
           </p>
         </AnimatedSection>
 
@@ -100,7 +100,7 @@ const PriceComparisonSection = ({ regionName, category, data }: PriceComparisonS
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground">
             <div className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4 text-primary" /><span>Keine versteckten Kosten</span></div>
             <div className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4 text-primary" /><span>Versandkostenfrei ab €100</span></div>
-            <div className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4 text-primary" /><span>Angebot in 6 Stunden</span></div>
+            <div className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4 text-primary" /><span>Angebot in 6h</span></div>
           </div>
         </AnimatedSection>
       </div>

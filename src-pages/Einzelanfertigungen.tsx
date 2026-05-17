@@ -94,7 +94,7 @@ const useCases = [
   {
     icon: Users,
     title: "Messemodelle & Exponate",
-    description: "Großformatige Blickfänger für Messestände, Showpieces, Produktnachbildungen und Standdekorationen. Express in 24h für kurzfristige Messetermine.",
+    description: "Großformatige Blickfänger für Messestände, Showpieces, Produktnachbildungen und Standdekorationen. Express 24h für kurzfristige Messetermine.",
     details: ["Objekte bis 2m+ durch Segmentierung", "Express 24h Service", "Robust & transportabel", "Jede Farbe & Finish"],
     link: "/messemodelle"
   },
@@ -206,7 +206,7 @@ const Einzelanfertigungen = () => {
                 </h1>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed max-w-xl">
                   Messemodelle, Architekturmodelle, Präsentationsmodelle – wir fertigen Ihre
-                  individuellen Anschauungsobjekte präzise und termingerecht. Angebot in 6 Stunden,
+                  individuellen Anschauungsobjekte präzise und termingerecht. Angebot in 6h,
                   kostenlos & unverbindlich.
                 </p>
 
@@ -404,7 +404,7 @@ const Einzelanfertigungen = () => {
 
         {/* ── CTA ───────────────────────────────────────────────────────── */}
         <CTASection
-          headline="Ihr Anschauungsmodell in 6 Stunden kalkuliert"
+          headline="Ihr Anschauungsmodell in 6h kalkuliert"
           subline="Senden Sie uns Ihre Datei oder beschreiben Sie Ihr Projekt – wir antworten persönlich mit einem verbindlichen Angebot. Kostenlos & unverbindlich."
           ctaLabel="Jetzt Anfrage stellen"
           secondaryLabel="Referenzen ansehen"

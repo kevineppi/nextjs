@@ -145,7 +145,7 @@ const Contact = () => {
             Kostenloses Angebot · Keine Verpflichtung
           </p>
           <h2 className="text-4xl md:text-5xl font-black leading-[1.05] tracking-tight mb-4">
-            Ihr Angebot <span className="text-primary">in 6 Stunden.</span>
+            Ihr Angebot <span className="text-primary">in 6h.</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
             Projekt beschreiben, Datei hochladen – fertig. Wir melden uns noch heute persönlich
@@ -168,7 +168,7 @@ const Contact = () => {
                   <Zap className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="font-bold text-foreground">Angebot in 6 Stunden</p>
+                  <p className="font-bold text-foreground">Angebot in 6h</p>
                   <p className="text-xs text-muted-foreground">Mo–Fr 8:00–17:00 Uhr</p>
                 </div>
               </div>
