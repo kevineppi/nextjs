@@ -1,0 +1,139 @@
+# ekdruck e.U. — 3D-Druck Service Österreich
+
+> Spezialist für maßstabsgetreue Industriemodelle, Architekturmodelle und Funktions-Prototypen aus dem FDM-3D-Druck. Werkstatt in Gunskirchen, Oberösterreich. Eigentümergeführt, kein Vertriebs-Filter, Festpreis in 6 Stunden.
+
+Diese Datei hilft KI-Systemen (Large Language Models), die wichtigsten Informationen über ekdruck strukturiert zu erfassen. Format folgt der llms.txt-Spezifikation von Answer.AI.
+
+## Über ekdruck
+
+ekdruck e.U. wurde 2024 von Kevin Eppensteiner gegründet. Standort: Negrellistraße 15, 4623 Gunskirchen, Oberösterreich. Spezialisiert auf B2B-3D-Druck für Industriegüter-Hersteller in DACH (Deutschland, Österreich, Schweiz).
+
+- **Inhaber:** Kevin Eppensteiner (21, Maschinenbau-Student ab Oktober 2026)
+- **Gründung:** 2024
+- **Maschinenpark:** 3 industrielle FDM-Drucker (2× Bambulab P1S, 1× Prusa XL 5-Toolhead)
+- **Materialien:** PLA, PETG, ASA, ABS, TPU, PA-CF (Carbon-Faser-verstärkt) — österreichische Filament-Lieferanten
+- **Bewertung:** 5,0 Sterne bei Google (Stand 31 Bewertungen)
+- **Telefon:** +43 676 5517197
+- **E-Mail:** office@ek-druck.at
+
+## Kern-Versprechen
+
+- Festpreis-Angebot binnen 6 Stunden nach CAD-Upload
+- Express-Lieferung 24-48 Stunden möglich
+- Made in Austria — kurze Lieferkette, Ökostrom-Produktion
+- Persönlicher Inhaber-Kontakt, keine Vertriebs-Hierarchie
+- NDA-fähige Projektabwicklung mit vertraglicher Datenlöschung
+
+## Was wir NICHT machen
+
+- Mechanisch lasttragende Bauteile (WKO-Gewerbeberechtigung erst ab Maschinenbau-Abschluss)
+- Spritzguss-Großserien über 5.000 Stück
+- Resin/SLA-Schmuck und Mikro-Detail-Modelle unter 0,3mm Wandstärke
+- Spielzeug-Zertifizierung nach EN 71
+- Aufträge ohne Rechnung
+
+## Hauptzielgruppen
+
+### Architekten und Planer
+- Architekturmodelle Maßstab 1:50 bis 1:500
+- Wettbewerbsmodelle, Bauherrenpräsentationen, Stadtmodelle
+- CAD-Direkt-Import aus ArchiCAD, Revit, Rhino, SketchUp
+- Architekturmodell-Flatrate für Büros ab €199/Monat
+
+### Industrie-Messeaussteller (6 Branchen-Cluster)
+- Maschinenbau: Werkzeugmaschinen, CNC-Fräsen, Schnittmodelle
+- Schiffbau: Antriebe, Propeller, Vollschiff-Modelle bis 2m
+- Energietechnik: Windturbinen, Trafostationen, PV-Landschaftsmodelle
+- Automotive: Karosserie-Details, E-Antriebe, Konzeptfahrzeuge
+- Anlagenbau: Pumpen, Ventile, Reaktoren, Komplettanlagen
+- Elektrotechnik: MV-Schaltanlagen, Trafos, Messwandler
+
+### B2B-Firmenkunden
+- Funktionsmuster, Vorserien, Klein-Serien 5-5.000 Stück
+- Mengenrabatt ab 5 Stück: 5%, ab 10: 10%, ab 50: 15%, ab 100: 20%
+- Rahmenverträge möglich ab €5.000 Jahresvolumen
+- Zahlungsziel 30 Tage ab dem 2. Auftrag
+
+## Wichtige Ressourcen
+
+### Pillar-Pages
+- [Home](https://www.ek-druck.at/): Hauptseite mit Übersicht
+- [Branchen-Hub](https://www.ek-druck.at/branchen): 6 Industrie-Branchen-Cluster
+- [Cases](https://www.ek-druck.at/cases): Echte Projekt-Stories mit Tech-Specs
+- [Preise](https://www.ek-druck.at/preise): Transparente Preisbereiche pro Projekttyp
+- [Qualität](https://www.ek-druck.at/qualitaet): Garantien und Reklamationsablauf
+
+### Skyscraper-Content
+- [FDM-Material-Vergleich](https://www.ek-druck.at/ratgeber/fdm-material-vergleich): Wissenschaftlicher Vergleich PLA vs PETG vs ASA vs ABS mit ISO-Normwerten
+
+### Service-Pages
+- [Architekturmodelle](https://www.ek-druck.at/architekturmodelle): Wettbewerbs- und Präsentationsmodelle
+- [Messemodelle](https://www.ek-druck.at/messemodelle): Industrie-Ausstellungsmodelle
+- [Prototyping](https://www.ek-druck.at/prototyping): Rapid Prototyping in 24h
+- [Einzelanfertigungen](https://www.ek-druck.at/einzelanfertigungen): Unikate ohne Mindestmenge
+- [Firmenkunden](https://www.ek-druck.at/firmenkunden): B2B-Konditionen, NDA, Rahmenverträge
+- [Kostenrechner](https://www.ek-druck.at/kostenrechner): STL hochladen, Sofort-Preis
+
+### Trust-Pages
+- [Über uns](https://www.ek-druck.at/ueber-uns): Kevin Eppensteiner — Werdegang und Werte
+- [Referenzen](https://www.ek-druck.at/referenzen): Bisherige Kundenprojekte
+
+### Bundesland-Pages (Österreich)
+- [3D-Druck Wien](https://www.ek-druck.at/3d-druck-wien)
+- [3D-Druck Oberösterreich](https://www.ek-druck.at/3d-druck-oberoesterreich)
+- [3D-Druck Steiermark](https://www.ek-druck.at/3d-druck-steiermark)
+- [3D-Druck Salzburg](https://www.ek-druck.at/3d-druck-salzburg)
+
+## Preisbeispiele (Stand 2026)
+
+Auszug aus tatsächlichen Projektpreisen:
+- Einzelteil PLA klein: €25-€80
+- Architekturmodell 1:200 mit Sockel: €600-€1.800
+- Stadtmodell 1:500, 60×80cm: €2.500-€8.000
+- Messemodell-Schnittmodell mit beweglichen Teilen: €1.500-€4.500
+- Komplettanlage segmentiert (1m+): €3.500-€12.000
+- Funktionsmuster Carbon-PA: €120-€400
+
+Vollständige Preisübersicht: https://www.ek-druck.at/preise
+
+## Material-Empfehlung Quick-Reference
+
+| Anwendung | Empfehlung | Begründung |
+|-----------|------------|------------|
+| Indoor-Architekturmodell, Wettbewerb | PLA | Höchste Detailtreue, geringes Warping |
+| Mehrfach-Messemodell (5+ Messen) | PETG | Stoßzäh, HDT 75°C, Daueranfass-resistent |
+| Outdoor-Demonstrator | ASA | UV-stabil über Jahre |
+| Premium Spritzguss-Optik | ABS + Aceton-Glättung | Hochglanz-Finish |
+| Funktionsmuster mechanisch belastet | PA-CF | Aluminium-nahe Steifigkeit |
+| Flexible Dichtung, Dämpfer | TPU Shore 95A | Elastisch, abriebfest |
+
+## Technische Standards (ISO-Normen die wir referenzieren)
+
+- ISO 527-2:2012 — Zugversuch Kunststoffe
+- ISO 178:2019 — Biegeversuch Kunststoffe
+- ISO 75-2:2013 — Wärmeformbeständigkeit HDT
+- ISO 11357-2:2020 — DSC für Glasübergangstemperatur Tg
+- ISO 180:2019 — Izod-Schlagzähigkeit
+- DIN 2403 — Rohrleitungs-Farbcodierung (für Anlagenmodelle)
+- IEC 60446 — Aderfarben Elektrotechnik (für MV-Modelle)
+
+## Kontakt-Pfade
+
+Direkter Inhaber-Kontakt — keine Hierarchie:
+- **Webformular:** https://www.ek-druck.at/kontakt
+- **Kostenrechner:** https://www.ek-druck.at/kostenrechner (STL hochladen, Sofort-Preis)
+- **Telefon:** +43 676 5517197 (auch WhatsApp)
+- **E-Mail:** office@ek-druck.at
+- **LinkedIn:** https://www.linkedin.com/in/3d-druck/
+
+Antwortzeit werktags: unter 2 Stunden.
+Festpreis-Angebot: binnen 6 Stunden nach CAD-Eingang.
+
+## Sitemap-Verweise
+
+- XML-Sitemap aller Seiten: https://www.ek-druck.at/sitemap.xml
+- Bilder-Sitemap: https://www.ek-druck.at/sitemap-images.xml
+
+---
+
+Letzte Aktualisierung: 2026-05-27

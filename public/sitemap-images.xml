@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!--
+    ════════════════════════════════════════════════════════════════
+    Image-Sitemap ek-druck.at
+    ════════════════════════════════════════════════════════════════
+    Zweck: Google Image-Bot expliziter Crawl-Hint für ek-druck-Fotos.
+    Pro URL die Fotos (image:loc) + Caption + Title.
+
+    Update-Routine: bei jedem neuen Hauptfoto Eintrag ergänzen.
+    Stand: 2026-05-26 — initial seeded mit Public-Brand-Assets.
+
+    Hinweis: Supabase-gehostete Fotos (Referenzen-DB) sind hier NICHT
+    enthalten — die werden über Referenzen-Schema im Page-HTML
+    referenziert. Hier nur die statisch ausgelieferten Brand-Bilder.
+  -->
+
+  <!-- ═══ HOME ═══ -->
+  <url>
+    <loc>https://www.ek-druck.at/</loc>
+    <image:image>
+      <image:loc>https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png</image:loc>
+      <image:caption>ekdruck e.U. — 3D-Druck aus Gunskirchen, Oberösterreich. Architekturmodelle, Messemodelle und Prototypen.</image:caption>
+      <image:title>ekdruck — 3D-Druck Österreich, ★5,0 (31 Bewertungen)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ek-druck.at/lovable-uploads/40dc02c2-6cc2-46bb-aff9-6f06079f1f77.png</image:loc>
+      <image:caption>ekdruck e.U. Logo — 3D-Druck Service Oberösterreich</image:caption>
+      <image:title>ekdruck Logo</image:title>
+    </image:image>
+  </url>
+
+  <!-- ═══ SERVICE-PAGES ═══ -->
+  <url>
+    <loc>https://www.ek-druck.at/messemodelle</loc>
+    <image:image>
+      <image:loc>https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png</image:loc>
+      <image:caption>3D-gedrucktes Messemodell für Industriegüter-Aussteller — maßstabsgetreu, segmentiert, in 24-48h.</image:caption>
+      <image:title>Messemodelle 3D-Druck — ekdruck</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.ek-druck.at/architekturmodelle</loc>
+    <image:image>
+      <image:loc>https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png</image:loc>
+      <image:caption>Architekturmodell aus dem 3D-Druck, Maßstab 1:50 bis 1:500 für Wettbewerb und Präsentation.</image:caption>
+      <image:title>Architekturmodelle 3D-Druck — ekdruck</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.ek-druck.at/prototyping</loc>
+    <image:image>
+      <image:loc>https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png</image:loc>
+      <image:caption>Rapid Prototyping mit FDM-3D-Druck — Funktionsmuster und Designstudien in 24-48h.</image:caption>
+      <image:title>Rapid Prototyping Österreich — ekdruck</image:title>
+    </image:image>
+  </url>
+
+  <!-- ═══ BRANCHEN-CLUSTER ═══ -->
+  <url>
+    <loc>https://www.ek-druck.at/branchen/maschinenbau</loc>
+    <image:image>
+      <image:loc>https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png</image:loc>
+      <image:caption>Maschinenbau-Messemodell aus 3D-Druck — Werkzeugmaschine als Tisch-Exponat.</image:caption>
+      <image:title>Maschinenbau Messemodell 3D-Druck — ekdruck</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.ek-druck.at/branchen/schiffbau</loc>
+    <image:image>
+      <image:loc>https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png</image:loc>
+      <image:caption>Schiffbau-Messemodell aus 3D-Druck — Antrieb, Propeller, Yacht maßstabsgetreu.</image:caption>
+      <image:title>Schiffbau Messemodell 3D-Druck — ekdruck</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.ek-druck.at/branchen/energietechnik</loc>
+    <image:image>
+      <image:loc>https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png</image:loc>
+      <image:caption>Energietechnik-Messemodell aus 3D-Druck — Windturbine, Trafostation, Kraftwerk.</image:caption>
+      <image:title>Energietechnik Messemodell 3D-Druck — ekdruck</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.ek-druck.at/branchen/automotive</loc>
+    <image:image>
+      <image:loc>https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png</image:loc>
+      <image:caption>Automotive-Messemodell aus 3D-Druck — Fahrzeugbauteil, E-Antrieb, Konzeptmodell.</image:caption>
+      <image:title>Automotive Messemodell 3D-Druck — ekdruck</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.ek-druck.at/branchen/anlagenbau</loc>
+    <image:image>
+      <image:loc>https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png</image:loc>
+      <image:caption>Anlagenbau-Messemodell aus 3D-Druck — Pumpe, Ventil, Reaktor maßstabsgetreu.</image:caption>
+      <image:title>Anlagenbau Messemodell 3D-Druck — ekdruck</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.ek-druck.at/branchen/elektrotechnik</loc>
+    <image:image>
+      <image:loc>https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png</image:loc>
+      <image:caption>Elektrotechnik-Messemodell aus 3D-Druck — Schaltschrank, Trafo, MV-Komponente.</image:caption>
+      <image:title>Elektrotechnik Messemodell 3D-Druck — ekdruck</image:title>
+    </image:image>
+  </url>
+
+  <!-- ═══ TRUST-PAGES ═══ -->
+  <url>
+    <loc>https://www.ek-druck.at/cases</loc>
+    <image:image>
+      <image:loc>https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png</image:loc>
+      <image:caption>Cases — echte 3D-Druck-Projekte aus der ekdruck-Werkstatt.</image:caption>
+      <image:title>ekdruck Cases &amp; Projekt-Stories</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.ek-druck.at/preise</loc>
+    <image:image>
+      <image:loc>https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png</image:loc>
+      <image:caption>Was kostet 3D-Druck? Transparente Preisbereiche aus der ekdruck-Werkstatt.</image:caption>
+      <image:title>ekdruck Preise &amp; Beispiele</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.ek-druck.at/qualitaet</loc>
+    <image:image>
+      <image:loc>https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png</image:loc>
+      <image:caption>ekdruck Qualitäts-Versprechen — 6h-Garantie, QA-Foto, 14-Tage-Reklamation.</image:caption>
+      <image:title>ekdruck Qualitäts-Versprechen</image:title>
+    </image:image>
+  </url>
+
+  <!-- ═══ ÜBER UNS / KONTAKT ═══ -->
+  <url>
+    <loc>https://www.ek-druck.at/ueber-uns</loc>
+    <image:image>
+      <image:loc>https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png</image:loc>
+      <image:caption>Kevin Eppensteiner — Inhaber ekdruck e.U., Gunskirchen Oberösterreich.</image:caption>
+      <image:title>Über ekdruck — Kevin Eppensteiner</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.ek-druck.at/kontakt</loc>
+    <image:image>
+      <image:loc>https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png</image:loc>
+      <image:caption>ekdruck Kontakt — direkter Draht zum Inhaber Kevin Eppensteiner.</image:caption>
+      <image:title>ekdruck Kontakt — Festpreis in 6h</image:title>
+    </image:image>
+  </url>
+
+  <!-- ═══ REFERENZEN — Supabase-DB Fotos ═══ -->
+  <url>
+    <loc>https://www.ek-druck.at/referenzen</loc>
+    <image:image>
+      <image:loc>https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png</image:loc>
+      <image:caption>3D-Druck Referenzen ekdruck — echte Kundenprojekte mit Specs, Material, Druckzeit.</image:caption>
+      <image:title>ekdruck Referenzen — 3D-Druck Kundenprojekte</image:title>
+    </image:image>
+  </url>
+
+</urlset>

@@ -33,7 +33,7 @@ export type DruckLayoutType =
 // SECTION DEFINITIONS PER LAYOUT TYPE
 // ═══════════════════════════════════════════
 
-export type SectionId = 
+export type SectionId =
   | 'hero'
   | 'valueProposition'
   | 'caseStudy'
@@ -67,7 +67,10 @@ export type SectionId =
   | 'roi'
   | 'effects'
   | 'timeline'
-  | 'references';
+  | 'references'
+  | 'localKevinAnchor'   // NEU (2026-05-26): Kevin-Voice + lokale Story → Anti-KI-Look, SEO-Differenzierung
+  | 'localMessen2026'    // NEU (2026-05-26): aktuelle Messen pro Region
+  | 'dominantBranchen';  // NEU (2026-05-26): Cross-Link zu /branchen Hub
 
 // Section order per Architektur layout type
 export const architekturSectionOrder: Record<ArchitekturLayoutType, SectionId[]> = {
@@ -134,39 +137,39 @@ export const messeSectionOrder: Record<MesseLayoutType, SectionId[]> = {
 
 export const druckSectionOrder: Record<DruckLayoutType, SectionId[]> = {
   startup: [
-    'hero', 'typicalProjects', 'industryShowcase', 'projectWorkflow', 'inTextLinks',
+    'hero', 'localKevinAnchor', 'typicalProjects', 'dominantBranchen', 'industryShowcase', 'projectWorkflow', 'inTextLinks',
     'caseStudy', 'customerPriorities', 'expressTimeline', 'commonMistakes', 'materials',
-    'moneyPageLinks', 'ctaPrimary', 'faq', 'allRegionsLinks', 'crossLinks', 'nearbyRegions'
+    'localMessen2026', 'moneyPageLinks', 'ctaPrimary', 'faq', 'allRegionsLinks', 'crossLinks', 'nearbyRegions'
   ],
   industrie: [
-    'hero', 'valueProposition', 'typicalProjects', 'materials', 'projectWorkflow',
+    'hero', 'localKevinAnchor', 'valueProposition', 'dominantBranchen', 'typicalProjects', 'materials', 'projectWorkflow',
     'caseStudy', 'commonMistakes', 'inTextLinks', 'customerPriorities', 'localContext',
-    'moneyPageLinks', 'faq', 'ctaPrimary', 'crossLinks', 'allRegionsLinks', 'nearbyRegions'
+    'localMessen2026', 'moneyPageLinks', 'faq', 'ctaPrimary', 'crossLinks', 'allRegionsLinks', 'nearbyRegions'
   ],
   kreativ: [
-    'hero', 'industryShowcase', 'customerPriorities', 'checklist', 'typicalProjects',
+    'hero', 'localKevinAnchor', 'industryShowcase', 'dominantBranchen', 'customerPriorities', 'checklist', 'typicalProjects',
     'caseStudy', 'projectWorkflow', 'commonMistakes', 'allRegionsLinks',
-    'materials', 'inTextLinks', 'moneyPageLinks', 'ctaPrimary', 'faq', 'crossLinks', 'nearbyRegions'
+    'materials', 'localMessen2026', 'inTextLinks', 'moneyPageLinks', 'ctaPrimary', 'faq', 'crossLinks', 'nearbyRegions'
   ],
   bildung: [
-    'hero', 'typicalProjects', 'industryShowcase', 'priceComparison', 'projectWorkflow',
+    'hero', 'localKevinAnchor', 'typicalProjects', 'dominantBranchen', 'industryShowcase', 'priceComparison', 'projectWorkflow',
     'inTextLinks', 'commonMistakes', 'materials', 'customerPriorities', 'caseStudy',
-    'moneyPageLinks', 'faq', 'ctaPrimary', 'crossLinks', 'nearbyRegions', 'allRegionsLinks'
+    'localMessen2026', 'moneyPageLinks', 'faq', 'ctaPrimary', 'crossLinks', 'nearbyRegions', 'allRegionsLinks'
   ],
   express: [
-    'hero', 'expressTimeline', 'typicalProjects', 'ctaSecondary', 'projectWorkflow',
+    'hero', 'localKevinAnchor', 'expressTimeline', 'dominantBranchen', 'typicalProjects', 'ctaSecondary', 'projectWorkflow',
     'caseStudy', 'customerPriorities', 'trustSignals', 'commonMistakes',
-    'inTextLinks', 'materials', 'allRegionsLinks', 'moneyPageLinks', 'faq', 'ctaPrimary', 'crossLinks', 'nearbyRegions'
+    'inTextLinks', 'materials', 'localMessen2026', 'allRegionsLinks', 'moneyPageLinks', 'faq', 'ctaPrimary', 'crossLinks', 'nearbyRegions'
   ],
   outdoor: [
-    'hero', 'techSpecs', 'typicalProjects', 'materials', 'projectWorkflow',
+    'hero', 'localKevinAnchor', 'techSpecs', 'dominantBranchen', 'typicalProjects', 'materials', 'projectWorkflow',
     'commonMistakes', 'inTextLinks', 'caseStudy', 'customerPriorities', 'localAdvantages',
-    'moneyPageLinks', 'faq', 'allRegionsLinks', 'ctaPrimary', 'crossLinks', 'nearbyRegions'
+    'localMessen2026', 'moneyPageLinks', 'faq', 'allRegionsLinks', 'ctaPrimary', 'crossLinks', 'nearbyRegions'
   ],
   serie: [
-    'hero', 'priceComparison', 'typicalProjects', 'valueProposition', 'projectWorkflow',
+    'hero', 'localKevinAnchor', 'priceComparison', 'dominantBranchen', 'typicalProjects', 'valueProposition', 'projectWorkflow',
     'checklist', 'customerPriorities', 'commonMistakes', 'inTextLinks', 'caseStudy',
-    'moneyPageLinks', 'ctaPrimary', 'allRegionsLinks', 'faq', 'crossLinks', 'nearbyRegions'
+    'localMessen2026', 'moneyPageLinks', 'ctaPrimary', 'allRegionsLinks', 'faq', 'crossLinks', 'nearbyRegions'
   ]
 };
 

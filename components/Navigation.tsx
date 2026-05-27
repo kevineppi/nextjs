@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Menu, X, ChevronDown, Sparkles, Layers, Building2, Presentation, Building, Calculator, MessageCircle, Calendar, Phone, BookOpen, FlaskConical } from "lucide-react";
@@ -18,10 +19,13 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="hover:opacity-80 transition-opacity duration-300">
-              <img 
-                src="/lovable-uploads/40dc02c2-6cc2-46bb-aff9-6f06079f1f77.png" 
-                alt="ekdruck e.U. - 3D-Druck Oberösterreich Logo" 
+              <Image
+                src="/lovable-uploads/40dc02c2-6cc2-46bb-aff9-6f06079f1f77.png"
+                alt="ekdruck e.U. - 3D-Druck Oberösterreich Logo"
                 className="h-12 md:h-16 w-auto max-w-[180px] sm:max-w-none"
+                width={180}
+                height={64}
+                priority
               />
             </Link>
           </div>
@@ -144,6 +148,20 @@ const Navigation = () => {
                         </div>
                       </Link>
                     </DropdownMenuItem>
+                    <DropdownMenuItem asChild className="p-0 focus:bg-transparent">
+                      <Link href="/branchen" className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/10 hover:scale-[1.02] hover:-translate-y-0.5 active:scale-[0.98] active:translate-y-0 transition-all duration-200 ease-out group cursor-pointer border border-primary/20 bg-primary/5">
+                        <div className="flex-shrink-0 w-9 h-9 bg-primary/20 rounded-lg flex items-center justify-center group-hover:bg-primary/30 group-hover:scale-110 transition-all duration-200">
+                          <Layers className="h-4 w-4 text-primary" />
+                        </div>
+                        <div>
+                          <div className="font-semibold text-sm text-primary flex items-center gap-1.5">
+                            Branchen-Lösungen
+                            <span className="text-[9px] font-bold bg-primary text-primary-foreground px-1.5 py-0.5 rounded-full">NEU</span>
+                          </div>
+                          <div className="text-xs text-muted-foreground">Maschinenbau · Schiffbau · Energie · Auto …</div>
+                        </div>
+                      </Link>
+                    </DropdownMenuItem>
                   </div>
                 </div>
               </DropdownMenuContent>
@@ -152,6 +170,8 @@ const Navigation = () => {
               <Calculator className="h-4 w-4" />
               Rechner
             </Link>
+            <Link href="/cases" className="text-foreground/80 hover:text-primary transition-all duration-300 font-medium hover:scale-105">Cases</Link>
+            <Link href="/preise" className="text-foreground/80 hover:text-primary transition-all duration-300 font-medium hover:scale-105">Preise</Link>
             <Link href="/ueber-uns" className="text-foreground/80 hover:text-primary transition-all duration-300 font-medium hover:scale-105">Über uns</Link>
 
             {/* Quick Contact Icons */}
@@ -276,12 +296,20 @@ const Navigation = () => {
                   <Building className="h-4 w-4 text-primary flex-shrink-0" />
                   <span className="text-sm font-medium truncate">Firmenkunden</span>
                 </Link>
-                <Link href="/architekturmodelle-abo" 
+                <Link href="/architekturmodelle-abo"
                   className="flex items-center gap-2 p-3 text-foreground rounded-xl border border-primary/20 bg-primary/5 hover:bg-primary/10 active:bg-primary/20 active:scale-[0.98] transition-all"
                   onClick={() => setIsOpen(false)}
                 >
                   <Sparkles className="h-4 w-4 text-primary flex-shrink-0" />
                   <span className="text-sm font-medium truncate text-primary">Flatrate NEU</span>
+                </Link>
+                <Link href="/branchen"
+                  className="flex items-center gap-2 p-3 text-foreground rounded-xl border border-primary/20 bg-primary/5 hover:bg-primary/10 active:bg-primary/20 active:scale-[0.98] transition-all col-span-2"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <Layers className="h-4 w-4 text-primary flex-shrink-0" />
+                  <span className="text-sm font-medium truncate text-primary">Branchen-Lösungen NEU</span>
+                  <span className="text-[10px] text-muted-foreground ml-auto">Maschinenbau · Schiffbau · Energie …</span>
                 </Link>
               </div>
             </div>
@@ -329,6 +357,24 @@ const Navigation = () => {
                   <div className="text-xs text-muted-foreground">Preis sofort berechnen</div>
                 </div>
               </Link>
+
+              <div className="grid grid-cols-3 gap-2 mt-2">
+                <Link href="/cases" onClick={() => setIsOpen(false)}
+                  className="flex flex-col items-center gap-1 p-3 bg-muted/40 text-foreground rounded-xl hover:bg-primary/10 active:scale-[0.98] transition-all">
+                  <span className="text-[11px] font-bold uppercase tracking-wider">Cases</span>
+                  <span className="text-[9px] text-muted-foreground">Projekt-Stories</span>
+                </Link>
+                <Link href="/preise" onClick={() => setIsOpen(false)}
+                  className="flex flex-col items-center gap-1 p-3 bg-muted/40 text-foreground rounded-xl hover:bg-primary/10 active:scale-[0.98] transition-all">
+                  <span className="text-[11px] font-bold uppercase tracking-wider">Preise</span>
+                  <span className="text-[9px] text-muted-foreground">Echte Beispiele</span>
+                </Link>
+                <Link href="/qualitaet" onClick={() => setIsOpen(false)}
+                  className="flex flex-col items-center gap-1 p-3 bg-muted/40 text-foreground rounded-xl hover:bg-primary/10 active:scale-[0.98] transition-all">
+                  <span className="text-[11px] font-bold uppercase tracking-wider">Qualität</span>
+                  <span className="text-[9px] text-muted-foreground">Garantien</span>
+                </Link>
+              </div>
             </div>
 
             <Button

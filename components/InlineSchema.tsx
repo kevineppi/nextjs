@@ -1,31 +1,26 @@
-'use client'
-
-import { useEffect } from 'react';
+/**
+ * InlineSchema — Server-side inline JSON-LD helper
+ * 2026-05-26: K1-Refactor — von 'use client' + useEffect zu Server Component
+ *
+ * Verwendung:
+ *   <InlineSchema id="my-schema-id" schema={{ "@context": ..., "@type": ..., ... }} />
+ */
 
 interface InlineSchemaProps {
-  id: string;
-  schema: Record<string, any>;
+  id: string
+  schema: Record<string, any>
 }
 
 const InlineSchema = ({ id, schema }: InlineSchemaProps) => {
-  useEffect(() => {
-    const scriptId = `schema-${id}`;
-    const existing = document.getElementById(scriptId);
-    if (existing) existing.remove();
+  if (!schema) return null
 
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.id = scriptId;
-    script.textContent = JSON.stringify(schema);
-    document.head.appendChild(script);
+  return (
+    <script
+      id={`schema-${id}`}
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}
 
-    return () => {
-      const el = document.getElementById(scriptId);
-      if (el) el.remove();
-    };
-  }, [id, schema]);
-
-  return null;
-};
-
-export default InlineSchema;
+export default InlineSchema

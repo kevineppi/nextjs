@@ -5,4 +5,12 @@ Allow: /
 Disallow: /api/
 Disallow: /_next/
 
+# Explizite Erlaubnis für Bild-Crawl (besonders wichtig für Supabase-CDN-Fotos)
+User-agent: Googlebot-Image
+Allow: /
+
 Sitemap: https://www.ek-druck.at/sitemap.xml
+Sitemap: https://www.ek-druck.at/sitemap-images.xml
+
+# LLM-Crawler-Hinweis: strukturierte Brand-Info nach llms.txt-Spezifikation
+# https://www.ek-druck.at/llms.txt

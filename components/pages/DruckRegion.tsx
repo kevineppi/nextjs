@@ -32,6 +32,9 @@ import CommonMistakesSection from "@/components/landing/sections/CommonMistakesS
 import AllRegionsLinks from "@/components/landing/AllRegionsLinks";
 import InTextLinksSection from "@/components/landing/InTextLinksSection";
 import ContextualLinks from "@/components/ContextualLinks";
+import LocalKevinAnchorSection from "@/components/landing/sections/LocalKevinAnchorSection";
+import LocalMessen2026Section from "@/components/landing/sections/LocalMessen2026Section";
+import DominantBranchenSection from "@/components/landing/sections/DominantBranchenSection";
 import { getDruckRegionBySlug, regionalDruckData } from "@/data/regionalDruckData";
 import { getDruckExtendedDataBySlug } from "@/data/regionalDruckExtendedData";
 import { getDruckSectionData } from "@/data/druckSectionData";
@@ -270,6 +273,12 @@ const DruckRegion = ({ region }: DruckRegionProps) => {
       case 'projectWorkflow': return <ProjectWorkflowSection key="pw" regionName={regionData.name} data={extSections.projectWorkflow} />;
       case 'customerPriorities': return <CustomerPrioritiesSection key="cp" regionName={regionData.name} data={extSections.customerPriorities} />;
       case 'commonMistakes': return <CommonMistakesSection key="cm" regionName={regionData.name} data={extSections.commonMistakes} />;
+
+      // ─── 2026-05-26: Neue Sections für KI-Anti-Look + SEO-Differenzierung ───
+      case 'localKevinAnchor': return <LocalKevinAnchorSection key="lka" regionSlug={regionData.slug} />;
+      case 'localMessen2026': return <LocalMessen2026Section key="lm26" regionSlug={regionData.slug} regionName={regionData.name} />;
+      case 'dominantBranchen': return <DominantBranchenSection key="db" regionSlug={regionData.slug} regionName={regionData.name} />;
+
       default: return null;
     }
   };

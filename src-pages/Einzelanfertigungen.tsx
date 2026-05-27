@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ServiceSeoBlock from "@/components/landing/ServiceSeoBlock";
 import SEOHead from "@/components/SEOHead";
 import StructuredData from "@/components/StructuredData";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
@@ -419,6 +420,10 @@ const Einzelanfertigungen = () => {
       <StickyCTA context="Einzelanfertigung" />
       <AIChatWidget />
       <section id="kontakt" className="scroll-mt-20"><Contact /></section>
+
+      {/* ══ SEO Long-Tail-Body + FAQ-Schema ══ */}
+      <ServiceSeoBlock serviceSlug="einzelanfertigungen" />
+
       <Footer />
     </>
   );

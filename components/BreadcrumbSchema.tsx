@@ -1,50 +1,38 @@
-'use client'
-
-import { useEffect } from 'react';
+/**
+ * BreadcrumbSchema — Server-side inline JSON-LD
+ * 2026-05-26: K1-Refactor — von 'use client' + useEffect zu Server Component
+ */
 
 interface BreadcrumbItem {
-  name: string;
-  url: string;
+  name: string
+  url: string
 }
 
 interface BreadcrumbSchemaProps {
-  items: BreadcrumbItem[];
+  items: BreadcrumbItem[]
 }
 
 const BreadcrumbSchema = ({ items }: BreadcrumbSchemaProps) => {
-  useEffect(() => {
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": items.map((item, index) => ({
-        "@type": "ListItem",
-        "position": index + 1,
-        "name": item.name,
-        "item": `https://www.ek-druck.at${item.url}`
-      }))
-    };
+  if (!items || items.length === 0) return null
 
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(schema);
-    script.id = 'breadcrumb-schema';
-    
-    const existing = document.getElementById('breadcrumb-schema');
-    if (existing) {
-      existing.remove();
-    }
-    
-    document.head.appendChild(script);
-    
-    return () => {
-      const scriptToRemove = document.getElementById('breadcrumb-schema');
-      if (scriptToRemove) {
-        scriptToRemove.remove();
-      }
-    };
-  }, [items]);
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: item.url.startsWith('http') ? item.url : `https://www.ek-druck.at${item.url}`,
+    })),
+  }
 
-  return null;
-};
+  return (
+    <script
+      id="breadcrumb-schema"
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}
 
-export default BreadcrumbSchema;
+export default BreadcrumbSchema

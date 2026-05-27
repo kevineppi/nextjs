@@ -5,6 +5,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ServiceSeoBlock from "@/components/landing/ServiceSeoBlock";
+import B2BTrustSignals from "@/components/B2BTrustSignals";
 import Breadcrumbs from "@/components/landing/Breadcrumbs";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import FAQSection from "@/components/landing/FAQSection";
@@ -873,7 +875,15 @@ const Firmenkunden = () => {
       </main>
 
       <StickyCTA context="B2B Firmenkundenanfrage" />
+
+      {/* ══ NEU (K7): B2B-Trust-Signals als Card-Section ══ */}
+      <B2BTrustSignals variant="card" />
+
       <section id="kontakt" className="scroll-mt-20"><Contact /></section>
+
+      {/* ══ SEO Long-Tail-Body + FAQ-Schema ══ */}
+      <ServiceSeoBlock serviceSlug="firmenkunden" />
+
       <Footer />
     </>
   );

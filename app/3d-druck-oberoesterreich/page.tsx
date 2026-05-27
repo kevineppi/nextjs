@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
 import Oberoesterreich3DDruck from '@/src-pages/Oberoesterreich3DDruck'
+import { buildATOnlyAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: '3D-Druck Oberösterreich: Same-Day-Abholung in Gunskirchen',
   description: 'Lokaler 3D-Druck-Anbieter in OÖ. Abholung in Gunskirchen am selben Tag, Lieferung nach Linz/Wels/Steyr in 24h. Persönliche Beratung. Ab €20.',
-  alternates: {
-    canonical: 'https://www.ek-druck.at/3d-druck-oberoesterreich',
-  },
+  alternates: buildATOnlyAlternates('/3d-druck-oberoesterreich'),
+  robots: STANDARD_ROBOTS,
   openGraph: {
     title: '3D-Druck Oberösterreich: Same-Day-Abholung in Gunskirchen',
     description: 'Lokaler 3D-Druck-Anbieter in OÖ. Abholung in Gunskirchen am selben Tag, Lieferung nach Linz/Wels/Steyr in 24h. Persönliche Beratung. Ab €20.',

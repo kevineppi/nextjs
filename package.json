@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "audit": "bash scripts/lighthouse-audit.sh",
+    "audit:quick": "bash scripts/lighthouse-audit.sh quick",
+    "audit:mobile": "bash scripts/lighthouse-audit.sh mobile",
+    "audit:desktop": "bash scripts/lighthouse-audit.sh desktop"
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.3",

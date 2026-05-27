@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ServiceSeoBlock from "@/components/landing/ServiceSeoBlock";
 import AnimatedSection from "@/components/AnimatedSection";
 import TextReveal from "@/components/TextReveal";
 import MagneticCard from "@/components/MagneticCard";
@@ -617,6 +618,10 @@ const Prototyping = () => (
       {/* KONTAKT */}
       <section id="kontakt" className="scroll-mt-20"><Contact /></section>
     </main>
+
+    {/* ══ SEO Long-Tail-Body + FAQ-Schema ══ */}
+    <ServiceSeoBlock serviceSlug="prototyping" />
+
     <StickyCTA />
     <Footer />
   </>

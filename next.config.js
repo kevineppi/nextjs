@@ -38,6 +38,26 @@ const nextConfig = {
       // ═══ Typo-Redirects ═══
       { source: '/impressu', destination: '/impressum', permanent: true },
       { source: '/messemodele', destination: '/messemodelle', permanent: true },
+
+      // ═══ Branchen-Cluster: Keyword-Varianten-Capture (2026-05-26) ═══
+      // Kanonische URL ist /branchen/<slug> — alternative Pfade konsolidieren:
+      { source: '/messemodelle-maschinenbau', destination: '/branchen/maschinenbau', permanent: true },
+      { source: '/messemodelle-schiffbau', destination: '/branchen/schiffbau', permanent: true },
+      { source: '/messemodelle-energietechnik', destination: '/branchen/energietechnik', permanent: true },
+      { source: '/messemodelle-automotive', destination: '/branchen/automotive', permanent: true },
+      { source: '/messemodelle-anlagenbau', destination: '/branchen/anlagenbau', permanent: true },
+      { source: '/messemodelle-elektrotechnik', destination: '/branchen/elektrotechnik', permanent: true },
+      { source: '/maschinenbau-messemodell', destination: '/branchen/maschinenbau', permanent: true },
+      { source: '/schiffbau-messemodell', destination: '/branchen/schiffbau', permanent: true },
+      { source: '/energietechnik-messemodell', destination: '/branchen/energietechnik', permanent: true },
+      { source: '/industriemodell', destination: '/branchen', permanent: true },
+      { source: '/industriemodelle', destination: '/branchen', permanent: true },
+      { source: '/industriegueter', destination: '/branchen', permanent: true },
+
+      // ═══ Phantom-URLs aus GSC-Coverage (2026-05-27) ═══
+      // Diese URLs werden von Google indiziert aber existieren nicht / liefern 404.
+      // Statt 404 → 301 zur thematisch nächsten Seite, damit Link-Equity erhalten bleibt.
+      { source: '/messemodelle/dortmund', destination: '/messemodelle/koeln', permanent: true },
     ]
   },
 };

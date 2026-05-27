@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- ═══ KERN-SEITEN ═══ -->
+  <url><loc>https://www.ek-druck.at/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/architekturmodelle</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/architekturmodelle-abo</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/kostenrechner</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/kontakt</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/einzelanfertigungen</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/firmenkunden</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/3d-druck-materialien</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/referenzen</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/ueber-uns</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/prototypen</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <!-- ═══ RATGEBER ═══ -->
+  <url><loc>https://www.ek-druck.at/ratgeber</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/ratgeber/material-guide</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/ratgeber/kosten-guide</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/ratgeber/verfahrens-vergleich</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/ratgeber/architekturmodell-guide</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/ratgeber/messemodell-guide</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/ratgeber/architekturmodell-flatrate</loc><priority>0.5</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/ratgeber/prototyping-guide</loc><priority>0.5</priority><changefreq>monthly</changefreq></url>
+  <!-- ═══ BUNDESLAND-SEITEN ═══ -->
+  <url><loc>https://www.ek-druck.at/3d-druck-wien</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/3d-druck-oberoesterreich</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/3d-druck-steiermark</loc><priority>0.5</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/3d-druck-salzburg</loc><priority>0.5</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/3d-druck-kaernten</loc><priority>0.4</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/3d-druck-niederoesterreich</loc><priority>0.4</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/3d-druck-vorarlberg</loc><priority>0.4</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/3d-druck-burgenland</loc><priority>0.4</priority><changefreq>monthly</changefreq></url>
+  <!-- ═══ MESSEMODELLE REGIONEN ═══ -->
+  <url><loc>https://www.ek-druck.at/messemodelle/wien</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/oberoesterreich</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/steiermark</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/salzburg</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/graz</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/linz</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/bayern</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/muenchen</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/nuernberg</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/baden-wuerttemberg</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/stuttgart</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/nordrhein-westfalen</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/duesseldorf</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/koeln</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/essen</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/hessen</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/frankfurt</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/niedersachsen</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/hannover</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/berlin</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/hamburg</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/zuerich</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/basel</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/bern</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/st-gallen</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/messemodelle/luzern</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <!-- ═══ LEAD-MAGNET (2026-05-26 v4) ═══ -->
+  <url><loc>https://www.ek-druck.at/checkliste</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <!-- ═══ TRUST-PAGES (2026-05-26 v3 added: Trust + Decision-Support) ═══ -->
+  <url><loc>https://www.ek-druck.at/qualitaet</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/preise</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/cases</loc><priority>0.85</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/cases/industriemodell-mittelspannungs-anlage-dubai</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/cases/generali-firmen-keksausstecher-3500-stueck</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/cases/maschinenbau-werkzeugmaschine-schnitt</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/cases/anlagenbau-pumpen-schnittmodell</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/cases/wien-stadtentwicklung-1-500-stadtmodell</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <!-- ═══ BRANCHEN-CLUSTER (2026-05-26 added: Long-Tail Industrie-Capture) ═══ -->
+  <url><loc>https://www.ek-druck.at/branchen</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/branchen/maschinenbau</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/branchen/schiffbau</loc><priority>0.85</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/branchen/energietechnik</loc><priority>0.85</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/branchen/automotive</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/branchen/anlagenbau</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.ek-druck.at/branchen/elektrotechnik</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+</urlset>

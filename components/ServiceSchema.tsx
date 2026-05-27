@@ -1,91 +1,88 @@
-'use client'
-
-import { useEffect } from 'react';
+/**
+ * ServiceSchema — Server-side inline JSON-LD
+ * 2026-05-26: K1-Refactor — von 'use client' + useEffect zu Server Component
+ */
 
 interface ServiceSchemaProps {
-  serviceName: string;
-  description: string;
-  serviceType?: string;
+  serviceName: string
+  description: string
+  serviceType?: string
   offers?: {
-    price?: string;
-    priceCurrency?: string;
-    description?: string;
-  };
-  areaServed?: string[];
+    price?: string
+    priceCurrency?: string
+    description?: string
+  }
+  areaServed?: string[]
   provider?: {
-    name: string;
-    url: string;
-  };
+    name: string
+    url: string
+  }
 }
 
-const ServiceSchema = ({ 
-  serviceName, 
-  description, 
-  serviceType = "Service",
+const ServiceSchema = ({
+  serviceName,
+  description,
+  serviceType = 'Service',
   offers,
-  areaServed = ["Wien", "Graz", "Linz", "Salzburg", "Innsbruck", "Klagenfurt", "Villach", "Wels", "St. Pölten", "Dornbirn"],
+  areaServed = [
+    'Wien',
+    'Graz',
+    'Linz',
+    'Salzburg',
+    'Innsbruck',
+    'Klagenfurt',
+    'Villach',
+    'Wels',
+    'St. Pölten',
+    'Dornbirn',
+  ],
   provider = {
-    name: "EK-Druck",
-    url: "https://www.ek-druck.at"
-  }
+    name: 'ekdruck e.U.',
+    url: 'https://www.ek-druck.at',
+  },
 }: ServiceSchemaProps) => {
-  useEffect(() => {
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": serviceType,
-      "name": serviceName,
-      "description": description,
-      "provider": {
-        "@type": "Organization",
-        "name": provider.name,
-        "url": provider.url
-      },
-      "areaServed": areaServed.map(area => ({
-        "@type": "City",
-        "name": area,
-        "addressCountry": "AT"
-      })),
-      "availableChannel": {
-        "@type": "ServiceChannel",
-        "serviceUrl": provider.url,
-        "serviceType": "Online"
-      }
-    };
+  const schema: Record<string, any> = {
+    '@context': 'https://schema.org',
+    '@type': serviceType,
+    name: serviceName,
+    description,
+    provider: {
+      '@type': 'Organization',
+      name: provider.name,
+      url: provider.url,
+    },
+    areaServed: areaServed.map((area) => ({
+      '@type': 'City',
+      name: area,
+      addressCountry: 'AT',
+    })),
+    availableChannel: {
+      '@type': 'ServiceChannel',
+      serviceUrl: provider.url,
+      serviceType: 'Online',
+    },
+  }
 
-    if (offers) {
-      schema["offers"] = {
-        "@type": "Offer",
-        "description": offers.description || description,
-        ...(offers.price && { 
-          "price": offers.price,
-          "priceCurrency": offers.priceCurrency || "EUR"
-        })
-      };
+  if (offers) {
+    schema.offers = {
+      '@type': 'Offer',
+      description: offers.description || description,
+      ...(offers.price && {
+        price: offers.price,
+        priceCurrency: offers.priceCurrency || 'EUR',
+      }),
     }
+  }
 
-    const scriptId = `service-schema-${serviceName.toLowerCase().replace(/\s+/g, '-')}`;
-    
-    // Remove existing schema to prevent duplicates
-    const existingScript = document.getElementById(scriptId);
-    if (existingScript) {
-      existingScript.remove();
-    }
+  const scriptId = `service-schema-${serviceName.toLowerCase().replace(/\s+/g, '-')}`
 
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(schema);
-    script.id = scriptId;
-    document.head.appendChild(script);
+  return (
+    <script
+      id={scriptId}
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}
 
-    return () => {
-      const scriptToRemove = document.getElementById(scriptId);
-      if (scriptToRemove) {
-        scriptToRemove.remove();
-      }
-    };
-  }, [serviceName, description, serviceType, offers, areaServed, provider]);
-
-  return null;
-};
-
-export default ServiceSchema;
+export default ServiceSchema

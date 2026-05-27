@@ -1,6 +1,8 @@
-'use client'
-
-import { useEffect } from 'react';
+/**
+ * StructuredData — Server-side inline JSON-LD
+ * 2026-05-26: K1-Refactor — von 'use client' + useEffect zu Server Component
+ * Schema-Builder-Logik bleibt erhalten, nur Render-Pfad wechselt.
+ */
 
 interface FAQItem {
   q: string;
@@ -17,8 +19,7 @@ interface StructuredDataProps {
 }
 
 const StructuredData = ({ type, data }: StructuredDataProps) => {
-  useEffect(() => {
-    const getStructuredData = () => {
+  const getStructuredData = () => {
       switch (type) {
         case 'organization':
           return {
@@ -381,61 +382,16 @@ const StructuredData = ({ type, data }: StructuredDataProps) => {
       }
     };
 
-    const structuredData = getStructuredData();
-    if (structuredData) {
-      // Use consistent ID format matching SEOHead to prevent duplicates
-      const scriptId = `schema-${type}-${window.location.pathname.replace(/\//g, '-') || 'home'}`;
-      
-      // CRITICAL: Remove ALL old FAQ schemas from SEOHead that might still exist
-      if (type === 'faq') {
-        document.querySelectorAll('script[type="application/ld+json"]').forEach(script => {
-          try {
-            const data = JSON.parse(script.textContent || '');
-            if (data['@type'] === 'FAQPage' && script.id !== scriptId) {
-              console.log('Removing duplicate FAQPage schema:', script.id);
-              script.remove();
-            }
-          } catch (e) {
-            // Ignore parsing errors
-          }
-        });
-      }
-      
-      // Remove any existing scripts with this exact ID
-      const existing = document.getElementById(scriptId);
-      if (existing) {
-        existing.remove();
-      }
-      
-      // Also clean up old format IDs (for migration)
-      const oldFormatIds = [
-        `structured-data-${type}`,
-        `structured-data-${type}-${window.location.pathname.replace(/\//g, '-') || 'home'}`
-      ];
-      oldFormatIds.forEach(oldId => {
-        const oldScript = document.getElementById(oldId);
-        if (oldScript) {
-          oldScript.remove();
-        }
-      });
-      
-      const script = document.createElement('script');
-      script.type = 'application/ld+json';
-      script.text = JSON.stringify(structuredData);
-      script.id = scriptId;
-      
-      document.head.appendChild(script);
-      
-      return () => {
-        const scriptToRemove = document.getElementById(scriptId);
-        if (scriptToRemove) {
-          scriptToRemove.remove();
-        }
-      };
-    }
-  }, [type, data]);
+  const structuredData = getStructuredData();
+  if (!structuredData) return null;
 
-  return null;
+  return (
+    <script
+      id={`schema-${type}`}
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+    />
+  );
 };
 
 export default StructuredData;

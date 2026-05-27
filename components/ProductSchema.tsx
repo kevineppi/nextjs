@@ -1,80 +1,64 @@
-'use client'
-
-import { useEffect } from 'react';
+/**
+ * ProductSchema — Server-side inline JSON-LD
+ * 2026-05-26: K1-Refactor — von 'use client' + useEffect zu Server Component
+ */
 
 interface ProductSchemaProps {
-  name: string;
-  description: string;
+  name: string
+  description: string
   offers: {
-    priceCurrency: string;
-    price?: string;
-    availability?: string;
-  };
-  brand?: string;
-  category?: string;
+    priceCurrency: string
+    price?: string
+    availability?: string
+  }
+  brand?: string
+  category?: string
 }
 
-const ProductSchema = ({ 
-  name, 
-  description, 
+const ProductSchema = ({
+  name,
+  description,
   offers,
-  brand = "ekdruck e.U.",
-  category = "3D-Druck Service"
+  brand = 'ekdruck e.U.',
+  category = '3D-Druck Service',
 }: ProductSchemaProps) => {
-  useEffect(() => {
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": name,
-      "description": description,
-      "brand": {
-        "@type": "Brand",
-        "name": brand
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name,
+    description,
+    brand: {
+      '@type': 'Brand',
+      name: brand,
+    },
+    category,
+    offers: {
+      '@type': 'Offer',
+      priceCurrency: offers.priceCurrency,
+      price: offers.price,
+      availability: offers.availability || 'https://schema.org/InStock',
+      url: 'https://www.ek-druck.at/kontakt',
+      seller: {
+        '@type': 'Organization',
+        name: brand,
       },
-      "category": category,
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": offers.priceCurrency,
-        "price": offers.price,
-        "availability": offers.availability || "https://schema.org/InStock",
-        "url": "https://www.ek-druck.at/kontakt",
-        "seller": {
-          "@type": "Organization",
-          "name": brand
-        }
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "31",
-        "bestRating": "5",
-        "worstRating": "1"
-      }
-    };
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5.0',
+      reviewCount: '31',
+      bestRating: '5',
+      worstRating: '1',
+    },
+  }
 
-    const scriptId = 'product-schema';
-    
-    // Remove existing schema to prevent duplicates
-    const existing = document.getElementById(scriptId);
-    if (existing) {
-      existing.remove();
-    }
+  return (
+    <script
+      id="product-schema"
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}
 
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(schema);
-    script.id = scriptId;
-    document.head.appendChild(script);
-
-    return () => {
-      const scriptToRemove = document.getElementById(scriptId);
-      if (scriptToRemove) {
-        scriptToRemove.remove();
-      }
-    };
-  }, [name, description, offers, brand, category]);
-
-  return null;
-};
-
-export default ProductSchema;
+export default ProductSchema

@@ -35,12 +35,26 @@ const Footer = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li><Link href="/architekturmodelle-abo" className="hover:text-primary transition-colors font-medium text-foreground">Flatrate für Architekturbüros</Link></li>
               <li><Link href="/kostenrechner" className="hover:text-primary transition-colors font-medium text-foreground">3D-Druck Kostenrechner</Link></li>
+              <li><Link href="/preise" className="hover:text-primary transition-colors font-medium text-foreground">Preise &amp; Beispiele</Link></li>
+              <li><Link href="/cases" className="hover:text-primary transition-colors font-medium text-foreground">Cases &amp; Projekt-Stories</Link></li>
+              <li><Link href="/qualitaet" className="hover:text-primary transition-colors font-medium text-foreground">Qualitäts-Versprechen</Link></li>
+              <li><Link href="/checkliste" className="hover:text-primary transition-colors font-medium text-foreground">Gratis-PDF Checkliste</Link></li>
+              <li><Link href="/branchen" className="hover:text-primary transition-colors font-medium text-foreground">Branchen-Lösungen</Link></li>
               <li><Link href="/firmenkunden" className="hover:text-primary transition-colors">Firmenkunden &amp; B2B</Link></li>
               <li><Link href="/architekturmodelle" className="hover:text-primary transition-colors">Architekturmodelle</Link></li>
               <li><Link href="/messemodelle" className="hover:text-primary transition-colors">Messemodelle</Link></li>
               <li><Link href="/prototypen" className="hover:text-primary transition-colors">Prototypen</Link></li>
               <li><Link href="/einzelanfertigungen" className="hover:text-primary transition-colors">Einzelanfertigungen</Link></li>
               <li><Link href="/3d-druck-materialien" className="hover:text-primary transition-colors">Materialien</Link></li>
+            </ul>
+            <h4 className="font-semibold mt-6 mb-3 text-sm">Branchen-Cluster</h4>
+            <ul className="space-y-1.5 text-muted-foreground text-sm">
+              <li><Link href="/branchen/maschinenbau" className="hover:text-primary transition-colors">Maschinenbau</Link></li>
+              <li><Link href="/branchen/schiffbau" className="hover:text-primary transition-colors">Schiffbau &amp; Marine</Link></li>
+              <li><Link href="/branchen/energietechnik" className="hover:text-primary transition-colors">Energietechnik</Link></li>
+              <li><Link href="/branchen/automotive" className="hover:text-primary transition-colors">Automotive &amp; Mobility</Link></li>
+              <li><Link href="/branchen/anlagenbau" className="hover:text-primary transition-colors">Anlagenbau</Link></li>
+              <li><Link href="/branchen/elektrotechnik" className="hover:text-primary transition-colors">Elektrotechnik</Link></li>
             </ul>
           </div>
 

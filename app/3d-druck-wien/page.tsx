@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
 import Wien3DDruck from '@/src-pages/Wien3DDruck'
+import { buildATOnlyAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: '3D-Druck Wien – Versand morgen früh per ÖPOST | ekdruck',
   description: '3D-Druck-Anbieter mit Lieferung nach Wien: Druck heute, Zustellung morgen früh per ÖPOST. Auch Express-Kurier in 6h möglich. Ab €20.',
-  alternates: {
-    canonical: 'https://www.ek-druck.at/3d-druck-wien',
-  },
+  alternates: buildATOnlyAlternates('/3d-druck-wien'),
+  robots: STANDARD_ROBOTS,
   openGraph: {
     title: '3D-Druck Wien – Versand morgen früh per ÖPOST | ekdruck',
     description: '3D-Druck-Anbieter mit Lieferung nach Wien: Druck heute, Zustellung morgen früh per ÖPOST. Auch Express-Kurier in 6h möglich. Ab €20.',
