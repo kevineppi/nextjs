@@ -84,7 +84,15 @@ const Footer = () => {
               <li><Link href="/ratgeber/architekturmodell-guide" className="hover:text-primary transition-colors">Architekturmodell-Guide</Link></li>
               <li><Link href="/ratgeber/architekturmodell-flatrate" className="hover:text-primary transition-colors">Flatrate-Guide für Büros</Link></li>
               <li><Link href="/ratgeber/messemodell-guide" className="hover:text-primary transition-colors">Messemodell-Guide</Link></li>
-              <li><Link href="/referenzen" className="hover:text-primary transition-colors">Referenzen</Link></li>
+              <li><Link href="/ratgeber/fdm-material-vergleich" className="hover:text-primary transition-colors">FDM-Material-Vergleich</Link></li>
+              <li className="pt-2 text-xs uppercase tracking-wider text-muted-foreground/70">Branchen-Guides</li>
+              <li><Link href="/ratgeber/messemodell-maschinenbau" className="hover:text-primary transition-colors">Maschinenbau</Link></li>
+              <li><Link href="/ratgeber/messemodell-anlagenbau" className="hover:text-primary transition-colors">Anlagenbau</Link></li>
+              <li><Link href="/ratgeber/messemodell-schiffbau" className="hover:text-primary transition-colors">Schiffbau</Link></li>
+              <li><Link href="/ratgeber/messemodell-energietechnik" className="hover:text-primary transition-colors">Energietechnik</Link></li>
+              <li><Link href="/ratgeber/messemodell-automotive" className="hover:text-primary transition-colors">Automotive</Link></li>
+              <li><Link href="/ratgeber/messemodell-elektrotechnik" className="hover:text-primary transition-colors">Elektrotechnik</Link></li>
+              <li className="pt-2"><Link href="/referenzen" className="hover:text-primary transition-colors">Referenzen</Link></li>
               <li><Link href="/ueber-uns" className="hover:text-primary transition-colors">Über uns</Link></li>
             </ul>
           </div>

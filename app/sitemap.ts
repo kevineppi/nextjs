@@ -79,6 +79,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/ratgeber/prototyping-guide`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.5 },
     // Skyscraper-Guide 2026-05-27: high-priority Long-Tail-Anchor für Material-Vergleichs-Cluster
     { url: `${SITE}/ratgeber/fdm-material-vergleich`, lastModified: buildDate, changeFrequency: 'weekly', priority: 0.95 },
+    // Messemodell-Branchen-Spokes 2026-05-31 — Hub-and-Spoke-Architektur
+    { url: `${SITE}/ratgeber/messemodell-maschinenbau`, lastModified: buildDate, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${SITE}/ratgeber/messemodell-schiffbau`, lastModified: buildDate, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${SITE}/ratgeber/messemodell-energietechnik`, lastModified: buildDate, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${SITE}/ratgeber/messemodell-anlagenbau`, lastModified: buildDate, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${SITE}/ratgeber/messemodell-automotive`, lastModified: buildDate, changeFrequency: 'weekly', priority: 0.85 },
+    { url: `${SITE}/ratgeber/messemodell-elektrotechnik`, lastModified: buildDate, changeFrequency: 'weekly', priority: 0.85 },
   ]
 
   // ─── BUNDESLAND-PAGES (AT-only) ───────────────────────────────
