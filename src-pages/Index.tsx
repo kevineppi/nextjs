@@ -429,8 +429,7 @@ const Index = () => {
         subtitle="Quotes aus dem letzten Jahr — direkt von Auftraggebern, anonymisiert wo nötig."
       />
 
-      {/* ══ Google-Reviews als zusätzlicher Trust-Layer ══ */}
-      <GoogleReviewsSection />
+      {/* Google-Reviews entfernt am 2026-05-31 — Trust kommt über Testimonials oben */}
 
       {/* ══════════════════════════════════════════════════════
           FAQ
@@ -498,11 +497,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ══════════════════════════════════════════════════════
-          KONTEXTUELLE INTERNE VERLINKUNG (SEO Internal Linking)
-          → Verteilt Link-Juice der Homepage auf Money-Pages
-         ══════════════════════════════════════════════════════ */}
-      <ContextualLinks
+      {/* "Welche Lösung passt zu Ihrem Projekt?" — komplett entfernt am 2026-05-31 (redundant mit Services-Übersicht) */}
+      {false && (<ContextualLinks
         eyebrow="3D-Druck im Detail"
         heading="Welche Lösung passt zu Ihrem Projekt?"
         description="Ob Architekturmodell, Messeexponat oder Prototyp – jedes Projekt beginnt mit der richtigen Strategie. Hier finden Sie den direkten Einstieg."
@@ -589,12 +585,10 @@ const Index = () => {
           { label: "Express für Messen", href: "/messemodelle", description: "Modell in 24–48h für Wien, München, Hannover" },
         ]}
         variant="muted"
-      />
+      />)}
 
-      {/* ══════════════════════════════════════════════════════
-          REGIONALE LINKS
-         ══════════════════════════════════════════════════════ */}
-      <section className="py-20 bg-background relative" aria-label="3D-Druck Standorte">
+      {/* Regionale-Links-Sektion entfernt am 2026-05-31 */}
+      {false && (<section className="py-20 bg-background relative" aria-label="3D-Druck Standorte">
         <div className="container mx-auto px-4 max-w-7xl">
           <AnimatedSection animation="fade-in" className="mb-10">
             <h2 className="text-3xl md:text-4xl font-bold tracking-[-0.03em] mb-3">
@@ -635,7 +629,7 @@ const Index = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section>)}
 
       {/* ══════════════════════════════════════════════════════
           ACTION — FINALER CTA mit 2-Pfad-Logik

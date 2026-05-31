@@ -853,12 +853,20 @@ export default function MessemodellGuidePage() {
                       <strong>Besonderheit:</strong> {b.besonderheit}
                     </p>
 
-                    <Link
-                      href={`/branchen/${b.slug}`}
-                      className="inline-flex items-center gap-1 text-sm font-bold text-primary hover:underline"
-                    >
-                      Branchen-Seite {b.branche} <ArrowRight className="w-4 h-4" />
-                    </Link>
+                    <div className="flex flex-col gap-2">
+                      <Link
+                        href={`/ratgeber/messemodell-${b.slug}`}
+                        className="inline-flex items-center gap-1 text-sm font-bold text-primary hover:underline"
+                      >
+                        Vollständiger Guide {b.branche} <ArrowRight className="w-4 h-4" />
+                      </Link>
+                      <Link
+                        href={`/branchen/${b.slug}`}
+                        className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        Service-Seite {b.branche} →
+                      </Link>
+                    </div>
                   </div>
                 )
               })}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BookOpen, TrendingUp, Clock, Award, Palette, Wrench, Wallet } from "lucide-react";
+import { BookOpen, TrendingUp, Clock, Award, Palette, Wrench, Wallet, Cog, Ship, Factory, Zap, Car, Lightbulb, Beaker } from "lucide-react";
 import StickyCTA from "@/components/landing/StickyCTA";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -22,13 +22,78 @@ const Ratgeber = () => {
       highlight: true
     },
     {
-      title: "Messemodelle im 3D-Druck: Kosten, Planung & Tipps 2026",
-      description: "Schritt-für-Schritt Guide für Messeaussteller: Was kostet ein Messemodell? Wie plane ich rechtzeitig? Materialwahl und echte Preisbeispiele aus der Praxis.",
+      title: "Messemodelle für Industrie-Aussteller: Brennstoffklasse, Standzeit, ROI",
+      description: "Master-Guide: DIN 4102 Brennstoffklassen-Tabelle, Material-Standzeit-Vergleich, Maßstabs-Strategie 1:5-1:100, ROI-Rechnungen aus 2025-Aufträgen. Plus 6 Branchen-spezifische Guides.",
       link: "/ratgeber/messemodell-guide",
       icon: TrendingUp,
       category: "Messemodelle",
-      readTime: "10 Min. Lesezeit",
-      date: "März 2026"
+      readTime: "22 Min. Lesezeit",
+      date: "Mai 2026",
+      highlight: true
+    },
+    {
+      title: "Messemodelle Maschinenbau: Werkzeugmaschinen, CNC, Spindeln",
+      description: "Bewegliche Spindeln als Eyecatcher, EMO Hannover und AMB Stuttgart Spezifika, PETG+PA-CF Materialwahl, konkrete ROI-Cases mit €4.800-Modell.",
+      link: "/ratgeber/messemodell-maschinenbau",
+      icon: Cog,
+      category: "Messemodelle • Maschinenbau",
+      readTime: "15 Min. Lesezeit",
+      date: "Mai 2026"
+    },
+    {
+      title: "Messemodelle Schiffbau: Vollschiff, Antriebe, Propeller",
+      description: "1:50-1:100 Vollschiffmodelle mit Magnetverbindungen, Azimuth-Thruster-Bewegung, SMM Hamburg und Europort Rotterdam, Querschnitt-Antriebsmodelle.",
+      link: "/ratgeber/messemodell-schiffbau",
+      icon: Ship,
+      category: "Messemodelle • Schiffbau",
+      readTime: "15 Min. Lesezeit",
+      date: "Mai 2026"
+    },
+    {
+      title: "Messemodelle Energietechnik: MV-Schaltanlagen, Windturbinen, Trafos",
+      description: "Klappbare MV-Schaltanlagen mit Sammelschienen-Innenbild, IEC 60446 Phasen-Codierung, drehbare Windturbinen-Rotoren. E-world Essen und WindEnergy Hamburg.",
+      link: "/ratgeber/messemodell-energietechnik",
+      icon: Zap,
+      category: "Messemodelle • Energietechnik",
+      readTime: "15 Min. Lesezeit",
+      date: "Mai 2026"
+    },
+    {
+      title: "Messemodelle Anlagenbau: Verfahrenstechnik, Pumpen, Reaktoren",
+      description: "Materialfluss-Codierung DIN 2403, modulare Multi-Stand-Strategien, Pumpen-Schnittmodelle mit drehendem Laufrad. Achema Frankfurt und POWTECH Nürnberg.",
+      link: "/ratgeber/messemodell-anlagenbau",
+      icon: Factory,
+      category: "Messemodelle • Anlagenbau",
+      readTime: "15 Min. Lesezeit",
+      date: "Mai 2026"
+    },
+    {
+      title: "Messemodelle Automotive: Karosserie, E-Antrieb, Konzeptfahrzeug",
+      description: "Spritzguss-Optik durch ABS+Aceton-Glättung, Karosserie-Schnittmodelle, E-Antriebs-Showcases für Tier-1/2-Zulieferer. IAA Mobility, Vienna Autoshow, Auto Zürich.",
+      link: "/ratgeber/messemodell-automotive",
+      icon: Car,
+      category: "Messemodelle • Automotive",
+      readTime: "15 Min. Lesezeit",
+      date: "Mai 2026"
+    },
+    {
+      title: "Messemodelle Elektrotechnik: Schaltschränke, Messwandler, Komponenten",
+      description: "Schaltschränke mit klappbaren Türen, IEC 60446 Farbcodierung, Klemmenreihen-Detail, Variantenvergleich am Stand. Hannover Messe, electronica München, SPS Nürnberg.",
+      link: "/ratgeber/messemodell-elektrotechnik",
+      icon: Lightbulb,
+      category: "Messemodelle • Elektrotechnik",
+      readTime: "15 Min. Lesezeit",
+      date: "Mai 2026"
+    },
+    {
+      title: "PLA vs PETG vs ASA vs ABS — FDM-Material-Vergleich 2026",
+      description: "Wissenschaftlicher Material-Vergleich nach ISO 527/178/75: Zugfestigkeit, Biegefestigkeit, Wärmeformbeständigkeit. Decision-Matrix für 6 Anwendungsfälle.",
+      link: "/ratgeber/fdm-material-vergleich",
+      icon: Beaker,
+      category: "Materialien • Wissenschaftlich",
+      readTime: "20 Min. Lesezeit",
+      date: "Mai 2026",
+      highlight: true
     },
     {
       title: "Architekturmodelle 3D-Druck: Maßstäbe, Kosten & CAD-Export",
@@ -190,13 +255,22 @@ const Ratgeber = () => {
                   <CardContent>
                     <Button asChild className="w-full md:w-auto">
                       <Link href={article.link}>
-                        {article.category === 'Architektur-Flatrate' && 'Flatrate-Guide lesen →'}
-                        {article.category === 'Messemodelle' && 'Messemodell-Guide lesen'}
-                        {article.category === 'Architekturmodelle' && 'Architekturmodell-Guide lesen'}
-                        {article.category === 'Prototypen' && 'Prototyping-Guide lesen'}
-                        {article.category === 'Kosten & Preise' && '3D-Druck Kosten-Guide lesen'}
-                        {article.category === 'Technologie' && 'Verfahrens-Vergleich lesen'}
-                        {article.category === 'Materialien' && 'Material-Guide lesen'}
+                        {(() => {
+                          const cat = article.category
+                          if (cat === 'Architektur-Flatrate') return 'Flatrate-Guide lesen →'
+                          if (cat === 'Messemodelle') return 'Messemodell-Guide lesen →'
+                          if (cat === 'Architekturmodelle') return 'Architekturmodell-Guide lesen →'
+                          if (cat === 'Prototypen') return 'Prototyping-Guide lesen →'
+                          if (cat === 'Kosten & Preise') return '3D-Druck Kosten-Guide lesen →'
+                          if (cat === 'Technologie') return 'Verfahrens-Vergleich lesen →'
+                          if (cat === 'Materialien') return 'Material-Guide lesen →'
+                          if (cat.startsWith('Messemodelle •')) {
+                            const branche = cat.split('•')[1].trim()
+                            return `${branche}-Guide lesen →`
+                          }
+                          if (cat.startsWith('Materialien •')) return 'Material-Vergleich lesen →'
+                          return 'Guide lesen →'
+                        })()}
                       </Link>
                     </Button>
                   </CardContent>
