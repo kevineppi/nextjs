@@ -119,20 +119,37 @@ export const ORG_ID = `${SITE_BASE}/#org` as const
 /**
  * LocalBusiness + Organization — site-weit im Root-Layout einbinden.
  * Setzt @id auf ORG_ID — andere Schemas können darauf referenzieren.
+ *
+ * 2026-06-02: Konsolidiert die früher in OrganizationSchema.tsx, StructuredData.tsx und
+ * AggregateRatingSchema.tsx verstreuten Schemas in EIN Master-Schema mit @id-Anker.
+ * Inkludiert die 9 öffentlich verfügbaren Google-Reviews für Review-Snippets in SERPs.
  */
+const REAL_GOOGLE_REVIEWS = [
+  { author: 'Hannah E.', date: '2025-01-15', body: 'Inhaber sehr zuvorkommend und freundlich, mein Auftrag wurde schnell bearbeitet, Top Qualität, kann ich nur weiterempfehlen..' },
+  { author: 'Simone G.', date: '2025-01-10', body: 'Anwortet schnell👌 Preis- Leistung extrem fair Empfehlenswert!' },
+  { author: 'Klaus F.', date: '2025-01-12', body: 'Sehr schnelle Abwicklung. Ein Teil wurde sogar 2x gedruckt, da beim ersten Druck ein Überhang nicht sauber war. Das auf eigene Kosten der Firma. Kommunikation war ausgezeichnet.' },
+  { author: 'Silvio T.', date: '2025-01-18', body: 'Sehr freundlich und unkompliziert. Ich bin begeistert von dem Stück. Exakter Clone vom Forschungsstück. Absolut professionell!! Preis Leistung ist einfach Super.' },
+  { author: 'Ing. Rocco Skombor BSc', date: '2024-12-20', body: 'Alles hat wunderbar geklappt. Kundenservice sehr professionell. Kann ich weiter empfehlen!' },
+  { author: 'Christian Steller', date: '2024-12-15', body: 'Ich bin absolut begeistert von ekDruck! Die Qualität ist erstklassig, jedes Detail wird sehr präzise und sauber umgesetzt. Die Kommunikation war von Anfang an ausgesprochen freundlich und professionell.' },
+  { author: 'Sadin Ramic', date: '2024-12-10', body: 'Kompetent und motiviert! Falls man in Richtung 3D Druck etwas braucht, ist man bei Kevin gut aufgehoben!' },
+  { author: 'Gertude Emirich', date: '2024-12-05', body: 'Persönlich, sehr kompetente Beratung. Individuelle Dekoantikel in verschiedenen Ausführungen und nach Wunsch - sehr empfehlenswert!' },
+  { author: 'Georg Obereder', date: '2024-11-28', body: 'Tolle Produkte Made in Austria, wo nix unmöglich ist!' },
+] as const
+
 export const orgSchema = () => ({
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  '@type': ['Organization', 'LocalBusiness'],
   '@id': ORG_ID,
   name: 'ekdruck e.U.',
   alternateName: 'ek-druck',
   legalName: 'ekdruck e.U.',
   url: SITE_BASE,
-  logo: `${SITE_BASE}/logo.png`,
+  logo: `${SITE_BASE}/lovable-uploads/40dc02c2-6cc2-46bb-aff9-6f06079f1f77.png`,
   image: `${SITE_BASE}/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png`,
   description:
     'FDM, SLA und SLS 3D-Druck-Service aus Gunskirchen, Oberösterreich. Architekturmodelle, Messemodelle, Prototypen und Kleinserien mit Express 24h Lieferung in ganz Österreich.',
-  telephone: '+436765517197',
+  foundingDate: '2024',
+  telephone: '+43 676 5517197',
   email: 'office@ek-druck.at',
   address: {
     '@type': 'PostalAddress',
@@ -144,8 +161,8 @@ export const orgSchema = () => ({
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 48.111,
-    longitude: 13.9,
+    latitude: 48.1295,
+    longitude: 13.9372,
   },
   openingHoursSpecification: [
     {
@@ -159,21 +176,43 @@ export const orgSchema = () => ({
   currenciesAccepted: 'EUR',
   paymentAccepted: ['Bank Transfer', 'PayPal', 'Credit Card'],
   areaServed: [
-    { '@type': 'Country', name: 'Austria' },
-    { '@type': 'Country', name: 'Germany' },
-    { '@type': 'Country', name: 'Switzerland' },
+    { '@type': 'Country', name: 'Österreich' },
+    { '@type': 'Country', name: 'Deutschland' },
+    { '@type': 'Country', name: 'Schweiz' },
   ],
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer service',
+    telephone: '+43 676 5517197',
+    email: 'office@ek-druck.at',
+    availableLanguage: ['German', 'English'],
+  },
   founder: {
     '@type': 'Person',
     name: 'Kevin Eppensteiner',
     url: `${SITE_BASE}/ueber-uns`,
     jobTitle: 'Gründer & Geschäftsführer',
   },
+  knowsAbout: [
+    '3D-Druck',
+    'FDM-Druck',
+    'Architekturmodelle',
+    'Messemodelle',
+    'Rapid Prototyping',
+    'Industriemodelle',
+    'Maschinenbau-Modelle',
+    'PLA',
+    'PETG',
+    'ABS',
+    'TPU',
+    'Carbon-PA',
+  ],
   sameAs: [
     'https://firmen.wko.at/ekdruck-eu-3d--druck-dienstleistung/oberösterreich/',
     'https://at.trustpilot.com/review/www.ek-druck.at',
     'https://www.firmenabc.at/ekdruck-e-u_BBVcp',
     'https://www.herold.at/gelbe-seiten/gunskirchen/nck9b/ek-druck/',
+    'https://www.instagram.com/ekdruck/',
   ],
   aggregateRating: {
     '@type': 'AggregateRating',
@@ -182,6 +221,18 @@ export const orgSchema = () => ({
     bestRating: '5',
     worstRating: '1',
   },
+  review: REAL_GOOGLE_REVIEWS.map((r) => ({
+    '@type': 'Review',
+    author: { '@type': 'Person', name: r.author },
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: '5',
+      bestRating: '5',
+      worstRating: '1',
+    },
+    reviewBody: r.body,
+    datePublished: r.date,
+  })),
 })
 
 /**

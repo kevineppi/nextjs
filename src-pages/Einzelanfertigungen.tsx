@@ -3,7 +3,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ServiceSeoBlock from "@/components/landing/ServiceSeoBlock";
 import SEOHead from "@/components/SEOHead";
-import StructuredData from "@/components/StructuredData";
+// StructuredData entfernt 2026-06-02 — LocalBusiness läuft jetzt site-wide via app/layout.tsx
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceSchema from "@/components/ServiceSchema";
 import CTASection from "@/components/landing/CTASection";
@@ -181,7 +181,7 @@ const Einzelanfertigungen = () => {
         category="Einzelanfertigungen 3D-Druck"
       />
       <SpeakableSchema url="https://www.ek-druck.at/einzelanfertigungen" />
-      <StructuredData type="organization" />
+      {/* StructuredData entfernt — Organization läuft nun site-wide via app/layout.tsx */}
       <BreadcrumbSchema items={[{ name: "Home", url: "/" }, { name: "Einzelanfertigungen", url: "/einzelanfertigungen" }]} />
 
       <Navigation />

@@ -8,11 +8,12 @@ import GoogleReviewsSection from "@/components/GoogleReviewsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CustomerLogoStrip from "@/components/CustomerLogoStrip";
 import Footer from "@/components/Footer";
-import StructuredData from "@/components/StructuredData";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
-import OrganizationSchema from "@/components/OrganizationSchema";
 import FAQSchema from "@/components/FAQSchema";
-import AggregateRatingSchema from "@/components/AggregateRatingSchema";
+// 2026-06-02: OrganizationSchema, StructuredData & AggregateRatingSchema entfernt —
+// orgSchema() in lib/seo.ts (eingebunden via app/layout.tsx) ist jetzt die einzige Quelle
+// für LocalBusiness + Organization + AggregateRating + Reviews. Dadurch reduzieren sich
+// die LocalBusiness-Duplikate von 5 auf 1 im Rich-Results-Test.
 import SEOHead from "@/components/SEOHead";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
 import TrustBadges from "@/components/TrustBadges";
@@ -41,10 +42,8 @@ const Index = () => {
       keywords="3d druck, 3d druck österreich, 3d druck service, 3d druck firma, 3d druck anbieter, 3d druck dienstleister, 3d druck oberösterreich, 3d druck prototypen"
       path="/"
     />
-    <OrganizationSchema />
-    <StructuredData type="organization" />
-    <StructuredData type="service" />
-    <AggregateRatingSchema ratingValue={5.0} ratingCount={31} bestRating={5} worstRating={1} />
+    {/* Site-wide LocalBusiness + Organization + Reviews + AggregateRating sind jetzt
+        in app/layout.tsx via orgSchema() aus lib/seo.ts — hier nur noch FAQ + Breadcrumb. */}
     <FAQSchema faqs={[
       { question: "Was kostet 3D-Druck bei ekdruck?", answer: "Ab €20 pro Modell. Der Preis hängt von Material, Volumen und Qualitätsstufe ab. Festpreisangebot in unter 6 Stunden." },
       { question: "Wie schnell erhalte ich mein 3D-Modell?", answer: "Standard: 3–5 Werktage. Express: 24–48 Stunden. Versandkostenfrei ab €100." },

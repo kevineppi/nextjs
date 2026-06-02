@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
-import StructuredData from "@/components/StructuredData";
+// StructuredData entfernt 2026-06-02 — LocalBusiness läuft jetzt site-wide via app/layout.tsx
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import Contact from "@/components/Contact";
 import AIChatWidget from "@/components/AIChatWidget";
@@ -32,8 +32,7 @@ const Materialien = () => {
           {href: "/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png", as: "image", type: "image/png"}
         ]}
       />
-      <StructuredData type="organization" />
-      <StructuredData type="service" />
+      {/* StructuredData entfernt — site-wide Organization läuft via app/layout.tsx */}
       <BreadcrumbSchema items={[
         {name: "Home", url: "/"},
         {name: "3D-Druck Materialien", url: "/3d-druck-materialien"}
