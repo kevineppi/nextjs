@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Ratgeber from '@/src-pages/Ratgeber'
+import { breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: '3D-Druck-Ratgeber: 7 kostenlose Guides zu Material, Preis, CAD',
@@ -23,6 +24,27 @@ export const metadata: Metadata = {
   },
 }
 
+const COLLECTION_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: '3D-Druck Ratgeber & Guides',
+  description:
+    'Praxiserprobte Guides zu 3D-Druck-Material, Verfahren, Kostenkalkulation, Maschinenbau-Branchen-Anwendungen und Architekturmodellen. Aus 8 Jahren Werkstatt-Erfahrung.',
+  url: 'https://www.ek-druck.at/ratgeber',
+  inLanguage: 'de-AT',
+}
+
+const BREADCRUMB_LD = breadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'Ratgeber', url: '/ratgeber' },
+])
+
 export default function Page() {
-  return <Ratgeber />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(COLLECTION_LD) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_LD) }} />
+      <Ratgeber />
+    </>
+  )
 }

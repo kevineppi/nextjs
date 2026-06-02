@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Salzburg3DDruck from '@/src-pages/Salzburg3DDruck'
+import { regionalLocalBusinessSchema, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: '3D-Druck Salzburg: A1-Versand morgen vor 10 Uhr | ekdruck',
@@ -23,6 +24,24 @@ export const metadata: Metadata = {
   },
 }
 
+
+const REGION_LD = regionalLocalBusinessSchema({
+  region: 'Salzburg',
+  url: 'https://www.ek-druck.at/3d-druck-salzburg',
+  description: '3D-Druck-Service für Kunden in Salzburg. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Kleinserien. Persönliche Antwort in 6h. Ab €20.',
+})
+
+const BREADCRUMB_LD = breadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: '3D-Druck Salzburg', url: '/3d-druck-salzburg' },
+])
+
 export default function Page() {
-  return <Salzburg3DDruck />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(REGION_LD) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_LD) }} />
+      <Salzburg3DDruck />
+    </>
+  )
 }

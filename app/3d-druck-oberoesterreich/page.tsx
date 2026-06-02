@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Oberoesterreich3DDruck from '@/src-pages/Oberoesterreich3DDruck'
-import { buildATOnlyAlternates, STANDARD_ROBOTS } from '@/lib/seo'
+import {buildATOnlyAlternates, STANDARD_ROBOTS, regionalLocalBusinessSchema, breadcrumbSchema} from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: '3D-Druck Oberösterreich: Same-Day-Abholung in Gunskirchen',
@@ -23,6 +23,24 @@ export const metadata: Metadata = {
   },
 }
 
+
+const REGION_LD = regionalLocalBusinessSchema({
+  region: 'Oberösterreich',
+  url: 'https://www.ek-druck.at/3d-druck-oberoesterreich',
+  description: '3D-Druck-Service für Kunden in Oberösterreich. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Kleinserien. Persönliche Antwort in 6h. Ab €20.',
+})
+
+const BREADCRUMB_LD = breadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: '3D-Druck Oberösterreich', url: '/3d-druck-oberoesterreich' },
+])
+
 export default function Page() {
-  return <Oberoesterreich3DDruck />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(REGION_LD) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_LD) }} />
+      <Oberoesterreich3DDruck />
+    </>
+  )
 }

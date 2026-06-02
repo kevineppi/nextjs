@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Kaernten3DDruck from '@/src-pages/Kaernten3DDruck'
+import { regionalLocalBusinessSchema, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: '3D-Druck Kärnten: A10-Versand nach Klagenfurt & Villach',
@@ -23,6 +24,24 @@ export const metadata: Metadata = {
   },
 }
 
+
+const REGION_LD = regionalLocalBusinessSchema({
+  region: 'Kärnten',
+  url: 'https://www.ek-druck.at/3d-druck-kaernten',
+  description: '3D-Druck-Service für Kunden in Kärnten. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Kleinserien. Persönliche Antwort in 6h. Ab €20.',
+})
+
+const BREADCRUMB_LD = breadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: '3D-Druck Kärnten', url: '/3d-druck-kaernten' },
+])
+
 export default function Page() {
-  return <Kaernten3DDruck />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(REGION_LD) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_LD) }} />
+      <Kaernten3DDruck />
+    </>
+  )
 }

@@ -20,7 +20,7 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Breadcrumbs from '@/components/landing/Breadcrumbs'
 import { branchen } from '@/data/branchenData'
-import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
+import { buildDachAlternates, STANDARD_ROBOTS, breadcrumbSchema } from '@/lib/seo'
 
 const TITLE =
   '6 Industrie-Branchen-Lösungen — Messemodelle Maschinenbau bis Elektrotechnik | ekdruck'
@@ -64,6 +64,11 @@ const collectionSchema = {
     about: b.primaryKeyword,
   })),
 }
+
+const BREADCRUMB_LD = breadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'Branchen', url: '/branchen' },
+])
 
 // ─────────────────────────────────────────────────────────────────
 //   BRANCHEN-PREMIUM-CONFIG (Icon, Gradient, Hauptmessen, Tech-Specs)
@@ -157,6 +162,10 @@ export default function BranchenPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_LD) }}
       />
 
       <div className="min-h-screen bg-background">

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import BranchenLanding from '@/components/landing/BranchenLanding'
 import { getBranche } from '@/data/branchenData'
-import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
+import { buildDachAlternates, STANDARD_ROBOTS, serviceSchema, faqSchema, breadcrumbSchema } from '@/lib/seo'
 
 const branche = getBranche('anlagenbau')!
 
@@ -34,6 +34,32 @@ export const metadata: Metadata = {
   robots: STANDARD_ROBOTS,
 }
 
+
+const SERVICE_LD = serviceSchema({
+  serviceType: `3D-Druck für Anlagenbau`,
+  description: branche.metaDescription,
+  url: 'https://www.ek-druck.at/branchen/anlagenbau',
+  lowPrice: '20',
+  highPrice: '8000',
+})
+
+const FAQ_LD = faqSchema(
+  branche.faqs.map((f) => ({ q: f.question, a: f.answer })),
+)
+
+const BREADCRUMB_LD = breadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'Branchen', url: '/branchen' },
+  { name: branche.h1, url: '/branchen/anlagenbau' },
+])
+
 export default function Page() {
-  return <BranchenLanding branche={branche} />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_LD) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_LD) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_LD) }} />
+      <BranchenLanding branche={branche} />
+    </>
+  )
 }

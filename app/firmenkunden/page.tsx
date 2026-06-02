@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Firmenkunden from '@/src-pages/Firmenkunden'
+import { serviceSchema, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'B2B-3D-Druck Österreich: Rahmenvertrag, UID, NDA, 30 Tage Ziel',
@@ -23,6 +24,24 @@ export const metadata: Metadata = {
   },
 }
 
+const SERVICE_LD = serviceSchema({
+  serviceType: 'B2B 3D-Druck Industriekunden',
+  description:
+    'Rahmenverträge, Mengenrabatt ab 5 Stück, NDA-Verträge möglich, Zahlungsziel 30 Tage. Industriekunden-Service mit UID-Abwicklung, persönlicher Betreuung, Mengen-Skalierung.',
+  url: 'https://www.ek-druck.at/firmenkunden',
+})
+
+const BREADCRUMB_LD = breadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'Firmenkunden', url: '/firmenkunden' },
+])
+
 export default function Page() {
-  return <Firmenkunden />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_LD) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_LD) }} />
+      <Firmenkunden />
+    </>
+  )
 }

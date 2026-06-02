@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Einzelanfertigungen from '@/src-pages/Einzelanfertigungen'
+import { serviceSchema, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Ein einzelnes Bauteil drucken lassen – ab €20 in 24h',
@@ -23,6 +24,26 @@ export const metadata: Metadata = {
   },
 }
 
+const SERVICE_LD = serviceSchema({
+  serviceType: 'Einzelanfertigung 3D-Druck',
+  description:
+    'Nur ein Stück nötig? Kein Mindestauftrag, kein Aufpreis. Vom CAD oder Skizze zum fertigen Unikat in 24h. Ersatzteile, Sonderformen, individuelle Bauteile.',
+  url: 'https://www.ek-druck.at/einzelanfertigungen',
+  lowPrice: '20',
+  highPrice: '500',
+})
+
+const BREADCRUMB_LD = breadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'Einzelanfertigungen', url: '/einzelanfertigungen' },
+])
+
 export default function Page() {
-  return <Einzelanfertigungen />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_LD) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_LD) }} />
+      <Einzelanfertigungen />
+    </>
+  )
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Vorarlberg3DDruck from '@/src-pages/Vorarlberg3DDruck'
+import { regionalLocalBusinessSchema, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: '3D-Druck Vorarlberg: A14-Versand nach Bregenz in 48h',
@@ -23,6 +24,24 @@ export const metadata: Metadata = {
   },
 }
 
+
+const REGION_LD = regionalLocalBusinessSchema({
+  region: 'Vorarlberg',
+  url: 'https://www.ek-druck.at/3d-druck-vorarlberg',
+  description: '3D-Druck-Service für Kunden in Vorarlberg. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Kleinserien. Persönliche Antwort in 6h. Ab €20.',
+})
+
+const BREADCRUMB_LD = breadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: '3D-Druck Vorarlberg', url: '/3d-druck-vorarlberg' },
+])
+
 export default function Page() {
-  return <Vorarlberg3DDruck />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(REGION_LD) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_LD) }} />
+      <Vorarlberg3DDruck />
+    </>
+  )
 }

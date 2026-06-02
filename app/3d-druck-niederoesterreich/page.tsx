@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Niederoesterreich3DDruck from '@/src-pages/Niederoesterreich3DDruck'
+import { regionalLocalBusinessSchema, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: '3D-Druck Niederösterreich: Lieferung Wien-Umland in 24h',
@@ -23,6 +24,24 @@ export const metadata: Metadata = {
   },
 }
 
+
+const REGION_LD = regionalLocalBusinessSchema({
+  region: 'Niederösterreich',
+  url: 'https://www.ek-druck.at/3d-druck-niederoesterreich',
+  description: '3D-Druck-Service für Kunden in Niederösterreich. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Kleinserien. Persönliche Antwort in 6h. Ab €20.',
+})
+
+const BREADCRUMB_LD = breadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: '3D-Druck Niederösterreich', url: '/3d-druck-niederoesterreich' },
+])
+
 export default function Page() {
-  return <Niederoesterreich3DDruck />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(REGION_LD) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_LD) }} />
+      <Niederoesterreich3DDruck />
+    </>
+  )
 }

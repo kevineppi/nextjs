@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import ArchitekturmodelleAbo from '@/src-pages/ArchitekturmodelleAbo'
+import { serviceSchema, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Architekturmodell-Flatrate für Büros – ab €199/Monat',
@@ -23,6 +24,26 @@ export const metadata: Metadata = {
   },
 }
 
+const SERVICE_LD = serviceSchema({
+  serviceType: 'Architekturmodell-Flatrate für Büros',
+  description:
+    'Festpreis-Flatrate für Architekturbüros mit regelmäßigem Modellbedarf. Ab €199/Monat, erstes Modell gratis, kein Lock-In, monatlich kündbar.',
+  url: 'https://www.ek-druck.at/architekturmodelle-abo',
+  lowPrice: '199',
+  highPrice: '999',
+})
+
+const BREADCRUMB_LD = breadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'Architekturmodell-Flatrate', url: '/architekturmodelle-abo' },
+])
+
 export default function Page() {
-  return <ArchitekturmodelleAbo />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_LD) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_LD) }} />
+      <ArchitekturmodelleAbo />
+    </>
+  )
 }

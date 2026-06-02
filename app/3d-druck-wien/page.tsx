@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Wien3DDruck from '@/src-pages/Wien3DDruck'
-import { buildATOnlyAlternates, STANDARD_ROBOTS } from '@/lib/seo'
+import {buildATOnlyAlternates, STANDARD_ROBOTS, regionalLocalBusinessSchema, breadcrumbSchema} from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: '3D-Druck Wien – Versand morgen früh per ÖPOST | ekdruck',
@@ -23,6 +23,24 @@ export const metadata: Metadata = {
   },
 }
 
+
+const REGION_LD = regionalLocalBusinessSchema({
+  region: 'Wien',
+  url: 'https://www.ek-druck.at/3d-druck-wien',
+  description: '3D-Druck-Service für Kunden in Wien. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Kleinserien. Persönliche Antwort in 6h. Ab €20.',
+})
+
+const BREADCRUMB_LD = breadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: '3D-Druck Wien', url: '/3d-druck-wien' },
+])
+
 export default function Page() {
-  return <Wien3DDruck />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(REGION_LD) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_LD) }} />
+      <Wien3DDruck />
+    </>
+  )
 }
