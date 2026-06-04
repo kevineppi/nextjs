@@ -23,9 +23,9 @@ import { branchen } from '@/data/branchenData'
 import { buildDachAlternates, STANDARD_ROBOTS, breadcrumbSchema } from '@/lib/seo'
 
 const TITLE =
-  '6 Industrie-Branchen-Lösungen — Messemodelle Maschinenbau bis Elektrotechnik | ekdruck'
+  'Branchen-Lösungen — 3D-Druck Messemodelle für 6 Industrien | ekdruck'
 const DESCRIPTION =
-  '3D-gedruckte Messemodelle für 6 Industrie-Branchen: Maschinenbau, Schiffbau, Energietechnik, Anlagenbau, Automotive, Elektrotechnik. Branchen-spezifische Guides, echte Cases, Festpreis in 6h. ★5,0 Made in Austria.'
+  '3D-gedruckte Messemodelle für Maschinenbau, Schiffbau, Energietechnik, Anlagenbau, Automotive, Elektrotechnik. Branchen-Guides, echte Cases, Festpreis in 6h. ★5,0'
 
 export const metadata: Metadata = {
   title: TITLE,

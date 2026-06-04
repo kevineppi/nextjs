@@ -363,7 +363,7 @@ const Architekturmodelle = () => (
       </section>
 
       {/* REGIONEN */}
-      <AllRegionsLinks />
+      <AllRegionsLinks currentSlug="" type="architektur" />
 
       {/* FAQ */}
       <FAQSection

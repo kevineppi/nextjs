@@ -70,7 +70,7 @@ export type Branche = {
 // ═══════════════════════════════════════════════════════════════════
 const maschinenbau: Branche = {
   slug: 'maschinenbau',
-  metaTitle: 'Maschinenbau Messemodell 3D-Druck ★5,0 — Werkzeugmaschine als Tisch-Exponat in 24h',
+  metaTitle: 'Maschinenbau-Messemodell 3D-Druck ★5,0 — CNC als Tisch-Exponat',
   metaDescription:
     '8-Tonnen-CNC-Fräse als 30cm-Modell? 3D-gedruckte Maschinenbau-Messemodelle in 24-48h: maßstabsgetreu, segmentiert, bruchsicher. Made in Austria. ★5,0 (31 Reviews) →',
   eyebrow: 'Branche · Maschinenbau & Werkzeugbau',
@@ -228,7 +228,7 @@ const maschinenbau: Branche = {
 // ═══════════════════════════════════════════════════════════════════
 const schiffbau: Branche = {
   slug: 'schiffbau',
-  metaTitle: 'Schiffbau Messemodell 3D-Druck ★5,0 — Antrieb, Propeller, Yacht maßstabsgetreu',
+  metaTitle: 'Schiffbau-Messemodell 3D-Druck ★5,0 — Antrieb · Propeller · Yacht',
   metaDescription:
     'Schiffsantrieb, Schraubantrieb, Marine-Komponente zur Messe zeigen — ohne 8-Tonnen-Kran. 3D-Druck Maßstab 1:10–1:50, segmentiert, bruchsicher. ★5,0 (31 Reviews) →',
   eyebrow: 'Branche · Schiffbau, Marine & Werften',
@@ -385,7 +385,7 @@ const schiffbau: Branche = {
 // ═══════════════════════════════════════════════════════════════════
 const energietechnik: Branche = {
   slug: 'energietechnik',
-  metaTitle: 'Energietechnik Messemodell 3D-Druck ★5,0 — Windturbine, Trafo, Kraftwerk-Modell',
+  metaTitle: 'Energietechnik-Messemodell 3D-Druck ★5,0 — Wind · Trafo · Kraftwerk',
   metaDescription:
     'Windturbine, PV-Anlage, Trafostation, Kraftwerks-Komponente als Messemodell. 3D-Druck maßstabsgetreu in 24-48h. ★5,0 (31 Reviews). STL hochladen →',
   eyebrow: 'Branche · Energietechnik & Erneuerbare',
@@ -536,7 +536,7 @@ const energietechnik: Branche = {
 // ═══════════════════════════════════════════════════════════════════
 const automotive: Branche = {
   slug: 'automotive',
-  metaTitle: 'Automotive Messemodell 3D-Druck ★5,0 — Fahrzeugbauteil, Mobility-Konzept in 24h',
+  metaTitle: 'Automotive-Messemodell 3D-Druck ★5,0 — Fahrzeug · Mobility',
   metaDescription:
     'Fahrzeugbauteil, E-Antrieb, Karosseriedetail, Mobility-Studie als Messemodell. 3D-Druck Maßstab 1:1–1:10, lackierbar. ★5,0 (31 Reviews) →',
   eyebrow: 'Branche · Automotive & Mobility',
@@ -684,7 +684,7 @@ const automotive: Branche = {
 // ═══════════════════════════════════════════════════════════════════
 const anlagenbau: Branche = {
   slug: 'anlagenbau',
-  metaTitle: 'Anlagenbau Messemodell 3D-Druck ★5,0 — Pumpe, Ventil, Reaktor maßstabsgetreu',
+  metaTitle: 'Anlagenbau-Messemodell 3D-Druck ★5,0 — Pumpe · Ventil · Reaktor',
   metaDescription:
     'Pumpen, Ventile, Reaktoren, Verfahrenstechnik-Anlagen als Messemodell. 3D-Druck Maßstab 1:5–1:50, segmentierbar, lackierbar. ★5,0 (31 Reviews) →',
   eyebrow: 'Branche · Anlagenbau & Verfahrenstechnik',
@@ -835,7 +835,7 @@ const anlagenbau: Branche = {
 // ═══════════════════════════════════════════════════════════════════
 const elektrotechnik: Branche = {
   slug: 'elektrotechnik',
-  metaTitle: 'Elektrotechnik Messemodell 3D-Druck ★5,0 — Schaltschrank, Trafo, MV-Komponente in 24h',
+  metaTitle: 'Elektrotechnik-Messemodell 3D-Druck — Trafo · Schaltschrank',
   metaDescription:
     'Schaltschrank, Trafo, Schaltanlage, MV-Komponente als Messemodell. 3D-Druck Maßstab 1:1–1:10, schnittfähig, lackierbar. ★5,0 (31 Reviews) →',
   eyebrow: 'Branche · Elektrotechnik & Messwandler',

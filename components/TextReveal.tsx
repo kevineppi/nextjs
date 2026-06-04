@@ -37,20 +37,22 @@ const TextReveal = ({ text, className = "", as: Tag = "h2" }: TextRevealProps) =
     <div ref={ref}>
       <Tag className={className}>
         {words.map((word, i) => {
-          const wordProgress = Math.min(1, Math.max(0, 
+          const wordProgress = Math.min(1, Math.max(0,
             (progress * words.length - i) * 1.2
           ));
           return (
-            <span
-              key={i}
-              className="inline-block mr-[0.3em] transition-none"
-              style={{
-                opacity: 0.15 + wordProgress * 0.85,
-                filter: `blur(${(1 - wordProgress) * 3}px)`,
-                transform: `translateY(${(1 - wordProgress) * 4}px)`,
-              }}
-            >
-              {word}
+            <span key={i}>
+              <span
+                className="inline-block transition-none"
+                style={{
+                  opacity: 0.15 + wordProgress * 0.85,
+                  filter: `blur(${(1 - wordProgress) * 3}px)`,
+                  transform: `translateY(${(1 - wordProgress) * 4}px)`,
+                }}
+              >
+                {word}
+              </span>
+              {i < words.length - 1 && " "}
             </span>
           );
         })}

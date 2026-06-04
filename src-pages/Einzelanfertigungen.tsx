@@ -202,13 +202,13 @@ const Einzelanfertigungen = () => {
                   Jedes Modell ein Unikat – ab 1 Stück
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                  Anschauungsmodelle<br />
-                  <span className="text-primary">nach Maß</span>
+                  Ein einzelnes Bauteil<br />
+                  <span className="text-primary">drucken lassen.</span>
                 </h1>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed max-w-xl">
-                  Messemodelle, Architekturmodelle, Präsentationsmodelle – wir fertigen Ihre
-                  individuellen Anschauungsobjekte präzise und termingerecht. Angebot in 6h,
-                  kostenlos & unverbindlich.
+                  Vom CAD oder Skizze zum fertigen Unikat in 24 Stunden — ohne Mindestmenge,
+                  ohne Aufpreis. Messemodelle, Architekturmodelle, Gehäuse-Sonderformen,
+                  Halterungen, Oldtimer-Ersatzteile: alles ab 1 Stück. Angebot in 6h.
                 </p>
 
                 <div className="grid grid-cols-2 gap-3 mb-8">

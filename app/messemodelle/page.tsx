@@ -8,7 +8,7 @@ import {
   breadcrumbSchema,
 } from '@/lib/seo'
 
-const TITLE = 'Messemodelle 3D-Druck ★5,0 — 8-Tonnen-Maschine als Tisch-Exponat in 24h'
+const TITLE = 'Messemodelle 3D-Druck ★5,0 — Tisch-Exponat in 24h | ekdruck'
 const DESCRIPTION = 'Ihr Produkt zu groß für den Messestand? 3D-gedrucktes Messemodell maßstabsgetreu in 24-48h. Bruchsicher, segmentiert, DACH-Express. ab €30 ★5,0 (31 Reviews) →'
 
 export const metadata: Metadata = {

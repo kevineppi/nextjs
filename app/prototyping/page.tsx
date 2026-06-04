@@ -15,7 +15,7 @@ import {
  * Description: Pain-Pull-Format (Spritzguss 6 Wochen → 24h Prototyp) statt Feature-Dump.
  */
 
-const TITLE = '3D-Druck Prototypen in 24h — Funktionsmuster ab €20 ★5,0 | ekdruck'
+const TITLE = '3D-Druck Prototypen in 24h ★5,0 — Funktionsmuster | ekdruck'
 const DESCRIPTION =
   'Spritzguss braucht 6 Wochen — wir liefern Prototyp in 24-48h. PLA, PETG, ABS, Carbon-PA. Toleranz ±0,1mm. Festpreis in 6h. ★5,0 (31 Reviews).'
 
