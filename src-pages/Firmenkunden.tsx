@@ -306,16 +306,16 @@ const Firmenkunden = () => {
                 </div>
                 
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                  Professioneller<br />
+                  3D-Druck für Firmenkunden.<br />
                   <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                    3D-Druck Service Österreich
+                    Rahmenverträge, NDA, 30 Tage Ziel.
                   </span>
                 </h1>
-                
+
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl">
-                  Über 100 Unternehmen in Österreich vertrauen auf unseren <strong>B2B 3D-Druck Service</strong> –
-                  vom Architekturbüro bis zur Werbeagentur. Mengenrabatte ab 5 Stück, NDA möglich,
-                  NDA-fähige Abwicklung und ein fester Ansprechpartner.
+                  Über 100 Unternehmen in Österreich nutzen unseren <strong>B2B-3D-Druck-Service</strong> mit
+                  Rahmenvertrag, Mengenrabatt ab 5 Stück, NDA und Zahlungsziel 30 Tage. Vom Architekturbüro
+                  bis zur Werbeagentur, vom Kleinserien-Auftrag bis zur dauerhaft laufenden Lieferbeziehung.
                 </p>
 
                 {/* Key USPs */}
@@ -659,6 +659,31 @@ const Firmenkunden = () => {
                   </div>
                 ))}
               </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Rahmenvertrag-Editorial-Block */}
+        <section className="py-20 md:py-28 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Rahmenvertrag &amp; Kleinserie</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 tracking-[-0.03em]">
+                Was ein Rahmenvertrag konkret bedeutet.
+              </h2>
+
+              <div className="prose prose-lg max-w-none text-foreground/85">
+                <p>Ein <strong>Rahmenvertrag</strong> bei ekdruck enthält fünf Bausteine, die wir mit Ihnen individuell verhandeln: <strong>Mengenstaffel</strong> (Preise nach erwartetem Quartals-Volumen), <strong>Lieferplan</strong> (garantierte Express-Slots pro Monat, oder Abruf nach Bedarf), <strong>Reaktionszeit</strong> (typisch 4 h Angebot, 24-48 h Fertigung, 1-4 Tage Versand DACH), <strong>Schlüssel-Konto</strong> (direkter Inhaber-Kontakt, eine Person für alle Fragen) und <strong>Reporting</strong> (Quartals-Übersicht über alle Aufträge, Material-Verbrauch, durchschnittliche Lieferzeit). Mindestlaufzeit 6 Monate, kein automatischer Vertragsabschluss — Sie können jederzeit kündigen, wir genauso. Für Kleinserien ab 5 Stück gibt es bereits Staffel-Preise, ab Rahmenvertrag-Status kommen Volumenrabatte oben drauf.</p>
+
+                <p>Was wir nicht machen: künstliche Mindestabnahmen, versteckte Kostenpositionen, Setup-Gebühren oder Eilzuschläge ohne klare Kommunikation vorab. Wenn ein Express-Termin nur mit Aufpreis machbar ist, sagen wir das im Angebot in der ersten Zeile.</p>
+              </div>
+
+              <h3 className="text-2xl md:text-3xl font-bold mt-12 mb-5 tracking-[-0.02em]">Kleinserie 5-500 Stück — wann FDM, wann SLS, wann Spritzguss</h3>
+              <div className="prose prose-lg max-w-none text-foreground/85">
+                <p>Bei <strong>Kleinserienfertigung</strong> hängt das wirtschaftliche Verfahren von Stückzahl und Geometrie ab. <strong>FDM in-house</strong> ist die Standard-Wahl für 1-100 Stück bei einfachen Geometrien — wir können bis zu 6 Bauteile parallel auf den drei Druckern fahren, die Stückkosten bleiben konstant. Ab <strong>50-500 Stück</strong> und höheren Festigkeitsanforderungen lohnt sich <strong>SLS oder MJF über Partner</strong> — etwa €4-12 pro Bauteil je nach Größe. Ab <strong>1.000-5.000 Stück</strong> wird klassischer <strong>Spritzguss</strong> wirtschaftlich, dann verweisen wir ehrlich an einen Spritzgießer und übernehmen optional die Urmodell-Fertigung. Diese Schwellen sind in Realität fließend — wir kalkulieren beide Verfahren und legen Ihnen den Vergleich offen, damit Sie die Entscheidung treffen können.</p>
+
+                <p>Für viele <strong>Innovation-Projekte und Vorseriendrucke</strong> sind 20-100 Stück FDM-Kleinserien genau richtig: schnelle Iteration, niedriges Risiko, keine Tool-Investition. Wenn das Produkt sich bewährt, geht es in Spritzguss; wenn nicht, ist nur ein Bruchteil des Geldes weg.</p>
+              </div>
             </div>
           </div>
         </section>

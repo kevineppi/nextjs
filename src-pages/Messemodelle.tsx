@@ -530,6 +530,11 @@ const Messemodelle = () => (
                   <h3 className="font-bold text-xl mb-3 text-foreground">Unsere Kunden</h3>
                   <p><strong>Messeaussteller und Marketing-Abteilungen</strong> aus dem DACH-Raum – Eventagenturen, Produktmanager, Maschinenbau, Baubranche, Medizintechnik, Automotive und Energiesektor. B2B-Konditionen unter <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">Firmenkunden</Link>. Unsere <Link href="/architekturmodelle" className="text-primary font-semibold hover:underline">Architekturmodelle</Link> finden Sie auf der eigenen Serviceseite.</p>
                 </div>
+
+                <div>
+                  <h3 className="font-bold text-xl mb-3 text-foreground">Industriemessen, Roadshows & Showrooms — die gleiche Modell-Qualität in robusterer Variante</h3>
+                  <p>Ein Messemodell für eine einzelne <strong>Industriemesse</strong> wie die SMART Automation Linz, die Intertool Wien oder die Hannover Messe ist der Klassiker — aber viele Aussteller verwenden das Modell danach weiter. Für <strong>Roadshows mit mehreren Stationen</strong> drucken wir aus widerstandsfähigerem Material (PETG-CF statt PLA), liefern stabile Transport-Boxen mit Schaumstoff-Einlagen und stellen Ersatzteile vor — wenn nach Stadt 4 ein Detail bricht, ist innerhalb von 48h Ersatz da. Für <strong>permanente Showrooms</strong> verwenden wir UV-stabiles ASA mit RAL-Lackierung, damit das Modell auch nach drei Jahren Sonnenlicht noch wie am ersten Tag aussieht. Same Modell-Datei — drei verschiedene Material-Spezifikationen, je nach Einsatz-Profil.</p>
+                </div>
               </div>
             </AnimatedSection>
           </div>

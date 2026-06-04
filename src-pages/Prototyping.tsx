@@ -606,6 +606,16 @@ const Prototyping = () => (
                   <h3 className="font-bold text-xl mb-3 text-foreground">Unsere Auftraggeber</h3>
                   <p><strong>Konstrukteure, Produktentwickler, Designagenturen und Hardware-Startups</strong> aus dem DACH-Raum. Maschinenbau, Konsumgüter, Elektronik, Medizintechnik, Automotive und Industriedesign. B2B-Konditionen unter <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">Firmenkunden</Link>.</p>
                 </div>
+
+                <div>
+                  <h3 className="font-bold text-xl mb-3 text-foreground">MJF & SLS für funktionale Bauteile — über zertifizierte Partner</h3>
+                  <p>Für funktionale Endbauteile mit höchsten mechanischen Anforderungen liefern wir <strong>HP Multi Jet Fusion (MJF)</strong> und <strong>Selective Laser Sintering (SLS)</strong> über zertifizierte Partner aus Deutschland und der Schweiz. PA12, PA12-GF (glasfaserverstärkt) und PA11 (bio-basiert) verfügbar. Stückzahlen ab 1 Stück bis Kleinserie 500. <strong>Toleranzen ±0,3 % bzw. ±0,3 mm</strong>, Oberflächen-Finish über Färben (Schwarz, mehrere Farben), Glätten oder Vibrationsschleifen. Lieferzeit MJF/SLS 5-7 Werktage ab Datenfreigabe, Express 3-4 Werktage gegen Aufpreis. Für 80 % aller <strong>Rapid Prototyping</strong>-Anwendungen reicht unser FDM in-house — aber für Snap-Fits mit echter Federwirkung, dichte Gehäuse für Elektronik, oder Bauteile mit hohen Drücken aus dem Spritzguss-Vorabmuster nutzen wir die SLS/MJF-Strecke. Beratung welches Verfahren zu welchem Bauteil passt ist kostenlos, und wir empfehlen aktiv die günstigere Variante wenn FDM ausreicht.</p>
+                </div>
+
+                <div>
+                  <h3 className="font-bold text-xl mb-3 text-foreground">Funktionsmodell oder Funktionsmuster — was Sie wann brauchen</h3>
+                  <p>Die Begriffe werden oft verwechselt — die Unterscheidung ist aber relevant für Material-, Toleranz- und Preisentscheidungen. Ein <strong>Funktionsmodell</strong> demonstriert wie etwas funktioniert: ein bewegliches Gelenk, ein schwenkbarer Deckel, ein druckbares Getriebe. Material ist meist PLA oder PETG, Toleranz ±0,3 mm, Druckzeit 6-24 h. Ein <strong>Funktionsmuster</strong> hingegen ist ein vollwertiger Vorab-Prototyp der finalen Funktion: realer Bauteil-Einsatz, finale Material-Kennwerte, echte mechanische Belastung im Test-Setup. Material PA-CF, PETG-CF oder via SLS PA12-GF, Toleranz ±0,1 mm, Druckzeit 1-3 Tage. Wir helfen Ihnen vor dem Auftrag zu entscheiden welche Stufe Sie für Ihr <strong>Rapid Prototyping</strong> wirklich brauchen — Funktionsmodell ist oft 70 % günstiger und reicht für die ersten Iterationen vollständig.</p>
+                </div>
               </div>
             </AnimatedSection>
           </div>

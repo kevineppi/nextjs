@@ -395,6 +395,50 @@ const Einzelanfertigungen = () => {
           </div>
         </section>
 
+        {/* ── 6-Cases-Editorial-Block — Long-Tail-Acquisition ───────────────────── */}
+        <section className="py-20 md:py-28 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Typische Einzelanfertigungs-Projekte</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-10 tracking-[-0.03em]">
+                Sechs Projekt-Typen die wir wöchentlich drucken.
+              </h2>
+
+              <div className="space-y-8">
+                <div>
+                  <h3 className="font-bold text-xl mb-2 text-foreground">Gehäuse-Sonderformen für Elektronik-Prototypen</h3>
+                  <p className="text-foreground/85 leading-relaxed">Sie haben eine PCB und brauchen ein passendes Gehäuse — gefräst wäre zu teuer, Spritzguss lohnt sich erst bei tausenden Stück. Wir drucken Ihr <strong>Gehäuse</strong> in PETG oder ABS, mit Schraubdom-Auslegung, Lüftungsschlitzen und Kabelausgängen genau dort wo Sie sie brauchen. Maße bis 300×300×300 mm in einem Stück, größer durch unsichtbares Segmentieren. Ab €25 für einfache Geometrien.</p>
+                </div>
+
+                <div>
+                  <h3 className="font-bold text-xl mb-2 text-foreground">Halterungen, Adapterstücke, Befestigungen</h3>
+                  <p className="text-foreground/85 leading-relaxed">Eine <strong>Halterung</strong> für einen Sensor an einer ungewöhnlichen Stelle. Ein Adapterstück das zwei nicht-kompatible Schraubsysteme verbindet. Eine Klemme die das Werkstück in einer Bohrvorrichtung hält. Für solche „eigentlich brauchen wir nur einen Stück"-Anwendungen ist FDM-3D-Druck genau richtig: 24-48 h Lieferzeit, ab €20, kein Lizenz- oder Tool-Setup.</p>
+                </div>
+
+                <div>
+                  <h3 className="font-bold text-xl mb-2 text-foreground">Oldtimer-Ersatzteile und historische Bauteile</h3>
+                  <p className="text-foreground/85 leading-relaxed">Ein <strong>Oldtimer-Ersatzteil</strong> dessen Original-Hersteller seit 40 Jahren weg ist. Ein Plastikteil aus den 60er-Jahren das spröde geworden ist. Ein Knopf aus einer alten Industriemaschine. Wir scannen oder rekonstruieren das Originalteil und drucken ein 1:1-Ersatzstück. Für Vereins-Restauratoren, Sammler und Industriebetriebe mit alten Werkzeugmaschinen — ab €40 bei vorhandenem Original, ab €120 bei Reverse-Engineering nach Skizze. Hinweis: rechtlich „Anschauungsstück", nicht offiziell zugelassene Ersatzteile.</p>
+                </div>
+
+                <div>
+                  <h3 className="font-bold text-xl mb-2 text-foreground">Präsentations-Unikate für Geschäftsgeschenke</h3>
+                  <p className="text-foreground/85 leading-relaxed">Ein <strong>Pokal</strong> in Form Ihres Produkts. Ein <strong>Pensionsgeschenk</strong> als Miniatur der ersten Maschine die jemand jahrzehntelang bedient hat. Ein <strong>Jubiläumsgeschenk</strong> mit dem Firmenlogo als 3D-Skulptur. Wir entwerfen oder verarbeiten Ihre Vorlage und drucken ein wertiges Unikat — meist in PLA mit Lackier-Finish oder direkt in SLA-Resin für höchste Detailtiefe. Lieferzeit 5-10 Tage, Preis €80-400 je nach Größe und Aufwand.</p>
+                </div>
+
+                <div>
+                  <h3 className="font-bold text-xl mb-2 text-foreground">Sondergeometrien aus dem Spritzguss-Konzept</h3>
+                  <p className="text-foreground/85 leading-relaxed">Ein Bauteil das später in Spritzguss gehen soll — Sie brauchen aber jetzt erstmal 1-5 Stück um zu prüfen ob Konstruktion, Maße und Funktion stimmen. Wir drucken die <strong>Vorab-Bemusterung</strong> in vergleichbarem Material (PETG für PA-ähnliche Eigenschaften, ABS für PS-ähnliche), mit ±0,1 mm Toleranz. Sobald die Konstruktion verifiziert ist, ist der Sprung zum Spritzgießer risikoarm — und das gedruckte Erstmuster geht ins Werkzeugbau-Briefing.</p>
+                </div>
+
+                <div>
+                  <h3 className="font-bold text-xl mb-2 text-foreground">Maßanfertigung nach Kunden-Skizze</h3>
+                  <p className="text-foreground/85 leading-relaxed">Sie haben kein CAD, sondern eine <strong>Skizze, Foto oder mündliche Beschreibung</strong>. Wir nehmen Maße auf (telefonisch oder vor Ort in OÖ), erstellen das 3D-Modell, schicken Ihnen eine Vorab-Visualisierung, drucken nach Freigabe. Reverse-Engineering und Konstruktion ab €120/Stunde, der Druck danach ab €20. Für Kunden ohne CAD-Erfahrung oder bei Bauteilen ohne Plan ist das oft der einzige Weg — und ein riesiger Mehrwert im Vergleich zu „bringen Sie uns ein STL".</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ── FAQ ───────────────────────────────────────────────────────── */}
         <FAQSection
           faqs={faqs}

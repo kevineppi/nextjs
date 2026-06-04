@@ -348,6 +348,16 @@ const Architekturmodelle = () => (
                 </div>
 
                 <div>
+                  <h3 className="font-bold text-xl mb-3 text-foreground">Architekturmodelle für Baueingabe & Bauverhandlung</h3>
+                  <p>Für die <strong>Baueingabe bei der Gemeinde</strong> oder die <strong>Bauverhandlung mit Nachbarn</strong> ist ein physisches Modell oft der entscheidende Unterschied zwischen Genehmigung und Vertagung. Wir liefern <strong>Baueingabe-Modelle</strong> im Maßstab 1:200 oder 1:100, die das geplante Volumen im Bestandskontext klar zeigen — wichtig bei sensiblen Bauplätzen, hangseitiger Bebauung oder bei Sichtachsen-Diskussionen. <strong>Verschattungs-Studien</strong> werden durch das gedruckte Modell sofort begreifbar, die abstrakte Diskussion „der Nachbar verliert 20 Minuten Sonne" wird durch das echte Modell zur sichtbaren Tatsache. Übergabe inklusive transportabler Hartschaum-Box, beschriftete Sockel auf Wunsch.</p>
+                </div>
+
+                <div>
+                  <h3 className="font-bold text-xl mb-3 text-foreground">Geländemodelle aus Höhenlinien — DTM/DGM zu 3D-Druck</h3>
+                  <p>Für hangseitige Baugrundstücke, alpine Lagen, Hochwasserschutz-Projekte oder Landschaftsplanung liefern wir <strong>Geländemodelle direkt aus DTM/DGM-Daten</strong>. Höhenlinien aus dem Vermessungsplan, ÖKO-1m-DTM, ALS-Punktwolken oder QGIS-Exports werden in 3D-Modelle überführt — wahlweise mit aufgesetztem Gebäude für Hangbebauungs-Analyse, oder als reines Landschaftsmodell für Behördentermine. Maßstäbe 1:500 für Einzelgrundstücke, 1:1000 bis 1:2000 für Quartiers- und Erschließungsplanungen. Höhen-Übertreibung optional (Faktor 2-3) für bessere Lesbarkeit bei flachem Gelände. Auch farbcodierte Geologie-Schichtmodelle möglich für Geotechnik-Begutachtungen.</p>
+                </div>
+
+                <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Standorte und Liefergebiete</h3>
                   <p>Unser Standort ist <strong>Gunskirchen</strong> in Oberösterreich, 20 Minuten von Linz und Wels. Wir bedienen <Link href="/3d-druck-wien" className="text-primary hover:underline">Wien</Link>, <Link href="/3d-druck-oberoesterreich" className="text-primary hover:underline">Linz und Oberösterreich</Link>, <Link href="/3d-druck-salzburg" className="text-primary hover:underline">Salzburg</Link>, <Link href="/3d-druck-steiermark" className="text-primary hover:underline">Graz</Link> und die <Link href="/3d-druck-kaernten" className="text-primary hover:underline">Kärntner Region</Link>. Versand ins gesamte DACH-Gebiet in 2–4 Werktagen, EU-Versand auf Anfrage. Persönliche Lieferung in Oberösterreich, Wien und Salzburg gegen Aufwandsentschädigung.</p>
                 </div>
