@@ -460,8 +460,8 @@ const MaterialGuide = () => {
                     <CardDescription>Umweltaspekte im 3D-Druck</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <Button asChild variant="link" className="p-0">
-                      <Link href="/ratgeber/nachhaltigkeit-guide">Demnächst →</Link>
+                    <Button variant="link" className="p-0 cursor-not-allowed" disabled>
+                      Demnächst →
                     </Button>
                   </CardContent>
                 </Card>

@@ -107,7 +107,19 @@ const MessemodellRegion = () => {
   ];
 
   const allRegionsData: Record<string, RegionalMesseData> = { ...regionalMesseData, ...germanMesseData };
-  const nearbyRegions = regionData.nearbyRegions.map(slug => allRegionsData[slug]).filter(Boolean).slice(0, 4);
+  // Whitelist: nur Slugs für die echte /messemodelle/{slug}/page.tsx existiert (Ahrefs 404-Fix).
+  const EXISTING_MESSE_PAGES = new Set([
+    'wien', 'linz', 'graz', 'salzburg', 'oberoesterreich', 'steiermark',
+    'baden-wuerttemberg', 'bayern', 'berlin', 'duesseldorf', 'essen',
+    'frankfurt', 'hamburg', 'hannover', 'hessen', 'koeln', 'muenchen',
+    'niedersachsen', 'nordrhein-westfalen', 'nuernberg', 'stuttgart',
+    'basel', 'bern', 'luzern', 'st-gallen', 'zuerich',
+  ]);
+  const nearbyRegions = regionData.nearbyRegions
+    .filter(slug => EXISTING_MESSE_PAGES.has(slug))
+    .map(slug => allRegionsData[slug])
+    .filter(Boolean)
+    .slice(0, 4);
 
   const renderSection = (sectionId: SectionId) => {
     switch (sectionId) {
