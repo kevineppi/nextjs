@@ -3,8 +3,37 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calculator } from "lucide-react";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, type ReactNode } from "react";
 import MarqueeTicker from "@/components/MarqueeTicker";
+
+// 2026-06-04 (#0c98bd8++): Space Grotesk hat sehr enge Umlaut-Punkte bei Großbuchstaben.
+// case-Feature + leading-1.1 reichen nicht — die Ö-Punkte sitzen weiter unschön nah am O.
+// Lösung: Ö durch O + eigenes Pseudo-Diakritika-Span ersetzen. Volle Position-Kontrolle.
+// Akustische Zugänglichkeit bleibt: aria-label auf wrapping span schreibt "Ö" für Screenreader.
+const renderTextWithCustomUmlaut = (text: string): ReactNode => {
+  if (!text || !text.includes('Ö')) return text;
+  const chars: ReactNode[] = [];
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i];
+    if (char === 'Ö') {
+      chars.push(
+        <span key={i} className="relative inline-block" aria-label="Ö">
+          <span aria-hidden="true">O</span>
+          <span
+            aria-hidden="true"
+            className="absolute left-1/2 -translate-x-1/2 -top-[0.18em] pointer-events-none select-none whitespace-nowrap"
+            style={{ fontSize: '0.42em', lineHeight: 1, letterSpacing: '0.28em', fontWeight: 700 }}
+          >
+            ··
+          </span>
+        </span>,
+      );
+    } else {
+      chars.push(char);
+    }
+  }
+  return chars;
+};
 
 // 2026-06-04: Typewriter SSR-konform.
 // VORHER (Bug): Initial `displayed = ""` mit Fallback `{displayed || "X"}` —
@@ -131,7 +160,7 @@ const Hero = () => {
                 {!line1.done && <span className="inline-block w-[3px] h-[0.8em] bg-primary ml-1 animate-pulse align-baseline" />}
               </span>
               <span className="block text-gradient mt-1 md:mt-2">
-                {line2.displayed}
+                {renderTextWithCustomUmlaut(line2.displayed)}
                 {line1.done && !line2.done && <span className="inline-block w-[3px] h-[0.8em] bg-primary ml-1 animate-pulse align-baseline" />}
               </span>
             </h1>
