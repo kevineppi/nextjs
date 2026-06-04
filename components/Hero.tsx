@@ -116,7 +116,7 @@ const Hero = () => {
 
           {/* Massive headline — typewriter */}
           <div style={t(0.2)}>
-            <h1 className="text-[clamp(3rem,9vw,8.5rem)] font-bold leading-[0.9] tracking-[-0.05em] mb-4">
+            <h1 className="text-[clamp(3rem,9vw,8.5rem)] font-bold leading-[1.02] tracking-[-0.05em] mb-4">
               {/* 2026-06-04: Fallback-Pattern entfernt — der Hook gibt jetzt SSR/initial
                   den vollen Text + done=true zurück. Nach Mount läuft die Animation sauber. */}
               <span className="block">
