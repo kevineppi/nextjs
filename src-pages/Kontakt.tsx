@@ -36,6 +36,7 @@ const Kontakt = () => {
         <Breadcrumbs items={[
           { name: "Kontakt & Anfrage", url: "/kontakt" }
         ]} />
+        <h1 className="sr-only">3D-Druck-Anfrage stellen — verbindliches Angebot in 6 Stunden</h1>
         <Contact />
 
         {/* Cal.com Inline-Embed: Termin direkt auf der Seite buchen */}

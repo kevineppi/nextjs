@@ -21,7 +21,7 @@ import AuthorByline from '@/components/AuthorByline'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 import { BRAND } from '@/data/brandVoice'
 
-const TITLE = 'Messemodelle Elektrotechnik — Schaltschränke, Messwandler, Komponenten [Guide]'
+const TITLE = 'Messemodelle Elektrotechnik — Schaltschrank · Trafo · MV'
 const DESCRIPTION =
   'Messemodelle für Elektrotechnik-Aussteller: Schaltschränke mit korrekter DIN 2403 / IEC 60446 Farbcodierung, Messwandler-Modelle, Komponenten-Schnittmodelle. Hannover Messe, electronica, embedded world, SPS.'
 

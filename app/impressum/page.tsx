@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: 'Impressum – ekdruck e.U., Gunskirchen, Oberösterreich',
     description: 'Impressum und Anbieterkennzeichnung von ekdruck e.U., Negrellistraße 15, 4623 Gunskirchen, Österreich.',
   },
-  robots: { index: false, follow: false },
+  robots: { index: false, follow: true },
 }
 
 export default function Page() {

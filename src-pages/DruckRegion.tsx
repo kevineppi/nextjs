@@ -92,6 +92,8 @@ const DruckRegion = ({ region }: DruckRegionProps) => {
   const aggregateRatingSchema = {
     "@context": "https://schema.org", "@type": "LocalBusiness", "name": "ekdruck e.U.",
     "url": `https://www.ek-druck.at/3d-druck-${regionData.slug}`,
+    "telephone": "+43 676 5517197",
+    "address": { "@type": "PostalAddress", "streetAddress": "Negrellistraße 15", "addressLocality": "Gunskirchen", "postalCode": "4623", "addressRegion": "Oberösterreich", "addressCountry": "AT" },
     "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "31", "bestRating": "5", "worstRating": "1" }
   };
 

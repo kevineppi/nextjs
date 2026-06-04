@@ -1,6 +1,54 @@
-'use client'
-
+import type { Metadata } from 'next'
 import ArchitekturmodellRegion from '@/src-pages/ArchitekturmodellRegion'
+import { regionalArchitekturData } from '@/data/regionalArchitekturData'
+import { germanArchitekturData } from '@/data/germanArchitekturData'
+import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
+
+// 2026-06-04: Welle 9 — generateMetadata Server-Component für unique titles pro Region.
+// Vorher: 'use client' page ohne metadata-Export → alle Sub-Regions erbten Default-Title
+// (Semrush: 4 duplicate titles auf /kaernten, /steiermark, /vorarlberg, /wien).
+// Jetzt: Server-Component generiert Region-Title aus regionalArchitekturData,
+// ArchitekturmodellRegion (Client) wird als Child eingebunden.
+
+type Params = { params: Promise<{ region: string }> }
+
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+  const { region } = await params
+  const data =
+    (regionalArchitekturData as Record<string, any>)[region] ||
+    (germanArchitekturData as Record<string, any>)[region]
+
+  if (!data) {
+    return {
+      title: 'Architekturmodelle — Region nicht gefunden | ekdruck',
+      robots: { index: false, follow: false },
+    }
+  }
+
+  const title = data.metaTitle as string
+  const description = data.metaDescription as string
+  const url = `https://www.ek-druck.at/architekturmodelle/${region}`
+
+  return {
+    title,
+    description,
+    alternates: buildDachAlternates(`/architekturmodelle/${region}`),
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: 'ekdruck – 3D-Druck Österreich',
+      locale: 'de_AT',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+    },
+    robots: STANDARD_ROBOTS,
+  }
+}
 
 export default function Page() {
   return <ArchitekturmodellRegion />

@@ -42,7 +42,7 @@ import { BRAND } from '@/data/brandVoice'
 // ─────────────────────────────────────────────────────────────────
 
 const TITLE =
-  'Messemodelle für Industrie-Aussteller — Brennstoffklasse, Standzeit, ROI [Guide 2026]'
+  'Messemodelle Industrie — Brennstoffklasse · Standzeit · ROI'
 const DESCRIPTION =
   'Vollständiger Industrie-Messemodell-Guide: DIN 4102 Brennstoffklassen-Tabelle, Material-Standzeit-Vergleich, Maßstab-Strategie 1:5 bis 1:100, konkrete ROI-Rechnungen aus 2025-Aufträgen. Aus der ekdruck-Werkstatt.'
 

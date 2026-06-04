@@ -11,6 +11,20 @@ interface CrossLinkSectionProps {
   currentType: 'druck' | 'messe' | 'architektur';
 }
 
+// Whitelist der Pages die tatsächlich als /messemodelle/{slug} bzw. /architekturmodelle/{slug}
+// existieren (Welle 9 — Semrush hatte 4xx-Reports für nicht-existente Region-Pages).
+const EXISTING_MESSE_PAGES = new Set([
+  'wien', 'linz', 'graz', 'salzburg', 'oberoesterreich', 'steiermark',
+  'baden-wuerttemberg', 'bayern', 'berlin', 'duesseldorf', 'essen',
+  'frankfurt', 'hamburg', 'hannover', 'hessen', 'koeln', 'muenchen',
+  'niedersachsen', 'nordrhein-westfalen', 'nuernberg', 'stuttgart',
+  'basel', 'bern', 'luzern', 'st-gallen', 'zuerich',
+]);
+const EXISTING_ARCHITEKTUR_PAGES = new Set([
+  'wien', 'niederoesterreich', 'oberoesterreich', 'steiermark', 'kaernten',
+  'salzburg', 'tirol', 'vorarlberg', 'burgenland', 'linz', 'wels', 'graz',
+]);
+
 const CrossLinkSection = ({ regionName, regionSlug, currentType }: CrossLinkSectionProps) => {
   const links = [
     {
@@ -19,7 +33,8 @@ const CrossLinkSection = ({ regionName, regionSlug, currentType }: CrossLinkSect
       title: `3D-Druck ${regionName}`,
       description: "Designstudien, Präsentationsmodelle und Einzelstücke für alle Branchen – von der Konzeptstudie bis zur Projektmenge.",
       href: `/3d-druck-${regionSlug}`,
-      keywords: "Designstudien · Modelle · Einzelstücke"
+      keywords: "Designstudien · Modelle · Einzelstücke",
+      existsAt: true,
     },
     {
       type: 'messe' as const,
@@ -27,7 +42,8 @@ const CrossLinkSection = ({ regionName, regionSlug, currentType }: CrossLinkSect
       title: `Messemodelle ${regionName}`,
       description: "Beeindruckende 3D-Modelle für Ihren Messestand – leicht, robust und maßgefertigt für Events.",
       href: `/messemodelle/${regionSlug}`,
-      keywords: "Messestand · Events · Exponate"
+      keywords: "Messestand · Events · Exponate",
+      existsAt: EXISTING_MESSE_PAGES.has(regionSlug),
     },
     {
       type: 'architektur' as const,
@@ -35,9 +51,10 @@ const CrossLinkSection = ({ regionName, regionSlug, currentType }: CrossLinkSect
       title: `Architekturmodelle ${regionName}`,
       description: "Maßstabsgetreue Modelle für Wettbewerbe, Bauherren-Präsentationen und Behördengespräche.",
       href: `/architekturmodelle/${regionSlug}`,
-      keywords: "Wettbewerbe · Maßstäbe · Bauherren"
+      keywords: "Wettbewerbe · Maßstäbe · Bauherren",
+      existsAt: EXISTING_ARCHITEKTUR_PAGES.has(regionSlug),
     }
-  ].filter(link => link.type !== currentType);
+  ].filter(link => link.type !== currentType && link.existsAt);
 
   return (
     <section className="py-16 md:py-20 bg-muted/20">

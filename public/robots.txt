@@ -1,9 +1,13 @@
 User-agent: *
 Allow: /
 
-# Keine technischen Seiten crawlen
+# Static Assets erlauben — Google muss CSS/JS rendern können (Welle 9 Fix)
+Allow: /_next/static/
+
+# Nur API + Daten-Cache + Image-Optimization blocken
 Disallow: /api/
-Disallow: /_next/
+Disallow: /_next/data/
+Disallow: /_next/image-optimization/
 
 # Explizite Erlaubnis für Bild-Crawl (besonders wichtig für Supabase-CDN-Fotos)
 User-agent: Googlebot-Image
