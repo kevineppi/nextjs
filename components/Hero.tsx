@@ -116,14 +116,21 @@ const Hero = () => {
 
           {/* Massive headline — typewriter */}
           <div style={t(0.2)}>
-            <h1 className="text-[clamp(3rem,9vw,8.5rem)] font-bold leading-[1.02] tracking-[-0.05em] mb-4">
+            <h1
+              className="text-[clamp(3rem,9vw,8.5rem)] font-bold leading-[1.1] tracking-[-0.05em] mb-4"
+              style={{
+                fontFeatureSettings: '"case" 1, "kern" 1',
+                textRendering: 'optimizeLegibility',
+              }}
+            >
               {/* 2026-06-04: Fallback-Pattern entfernt — der Hook gibt jetzt SSR/initial
-                  den vollen Text + done=true zurück. Nach Mount läuft die Animation sauber. */}
+                  den vollen Text + done=true zurück. Nach Mount läuft die Animation sauber.
+                  case-Feature + leading-1.1 lösen Ö-Umlaut-Engstand bei Space Grotesk. */}
               <span className="block">
                 {line1.displayed}
                 {!line1.done && <span className="inline-block w-[3px] h-[0.8em] bg-primary ml-1 animate-pulse align-baseline" />}
               </span>
-              <span className="block text-gradient">
+              <span className="block text-gradient mt-1 md:mt-2">
                 {line2.displayed}
                 {line1.done && !line2.done && <span className="inline-block w-[3px] h-[0.8em] bg-primary ml-1 animate-pulse align-baseline" />}
               </span>
