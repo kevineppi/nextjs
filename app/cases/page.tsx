@@ -8,9 +8,9 @@ import { cases } from '@/data/realCases'
 import { branchenMap } from '@/data/branchenData'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 
-const TITLE = 'Cases & Projekt-Stories ★5,0 — Echte 3D-Druck-Aufträge | ekdruck'
+const TITLE = 'Cases ★5,0 — Echte 3D-Druck-Aufträge | ekdruck'
 const DESCRIPTION =
-  'Konkrete Projekt-Stories aus der ekdruck-Werkstatt: Maschinenbau-Schnittmodell für EMO, MV-Schaltanlage für Dubai, 3.500 Custom-Keksausstecher für Generali. Mit Specs und Lessons.'
+  'Projekt-Stories aus der ekdruck-Werkstatt: Maschinenbau-Schnittmodell EMO, MV-Schaltanlage Dubai, 3.500 Custom-Ausstecher Großkunde. Mit Specs.'
 
 export const metadata: Metadata = {
   title: TITLE,

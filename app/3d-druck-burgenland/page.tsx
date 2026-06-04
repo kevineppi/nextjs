@@ -3,13 +3,13 @@ import Burgenland3DDruck from '@/src-pages/Burgenland3DDruck'
 import { regionalLocalBusinessSchema, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: '3D-Druck Burgenland: Versand Eisenstadt & Neusiedl in 24h',
+  title: '3D-Druck Burgenland — Versand Eisenstadt 24h',
   description: '3D-Druck mit ÖPOST-Versand nach Eisenstadt, Neusiedl, Mattersburg. Für Weinbau-Modelle, Industriebauteile, Tourismus. Ab €20.',
   alternates: {
     canonical: 'https://www.ek-druck.at/3d-druck-burgenland',
   },
   openGraph: {
-    title: '3D-Druck Burgenland: Versand Eisenstadt & Neusiedl in 24h',
+    title: '3D-Druck Burgenland — Versand Eisenstadt 24h',
     description: '3D-Druck mit ÖPOST-Versand nach Eisenstadt, Neusiedl, Mattersburg. Für Weinbau-Modelle, Industriebauteile, Tourismus. Ab €20.',
     url: 'https://www.ek-druck.at/3d-druck-burgenland',
     siteName: 'ekdruck – 3D-Druck Österreich',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D-Druck Burgenland: Versand Eisenstadt & Neusiedl in 24h',
+    title: '3D-Druck Burgenland — Versand Eisenstadt 24h',
     description: '3D-Druck mit ÖPOST-Versand nach Eisenstadt, Neusiedl, Mattersburg. Für Weinbau-Modelle, Industriebauteile, Tourismus. Ab €20.',
   },
 }

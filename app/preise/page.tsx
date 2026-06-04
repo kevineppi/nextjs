@@ -10,9 +10,9 @@ import Breadcrumbs from '@/components/landing/Breadcrumbs'
 import { BRAND } from '@/data/brandVoice'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 
-const TITLE = 'Preise & Beispiele ★5,0 — Was kostet 3D-Druck wirklich? | ekdruck'
+const TITLE = 'Preise ★5,0 — Was kostet 3D-Druck wirklich? | ekdruck'
 const DESCRIPTION =
-  'Konkrete Preisbeispiele aus der ekdruck-Werkstatt: was kostet ein Architekturmodell, ein Messemodell, ein Funktionsmuster? Inkl. Treiber-Übersicht & Rabattstaffel.'
+  'Konkrete Preisbeispiele: was kostet ein Architekturmodell, ein Messemodell, ein Funktionsmuster? Inkl. Preistreiber & Rabattstaffel. ★5,0.'
 
 export const metadata: Metadata = {
   title: TITLE,

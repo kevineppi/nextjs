@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import Materialien from '@/src-pages/Materialien'
 
 export const metadata: Metadata = {
-  title: '3D-Druck Material wählen: PLA, PETG, ASA, Carbon-PA – welches?',
+  title: '3D-Druck Material wählen — PLA, PETG, ASA, Carbon-PA',
   description: 'Was kostet welches Filament und wofür ist es gut? Vergleich PLA (€15/kg) bis Carbon-PA (€120/kg) mit Temperatur, Festigkeit, Anwendung.',
   alternates: {
     canonical: 'https://www.ek-druck.at/3d-druck-materialien',
   },
   openGraph: {
-    title: '3D-Druck Material wählen: PLA, PETG, ASA, Carbon-PA – welches?',
+    title: '3D-Druck Material wählen — PLA, PETG, ASA, Carbon-PA',
     description: 'Was kostet welches Filament und wofür ist es gut? Vergleich PLA (€15/kg) bis Carbon-PA (€120/kg) mit Temperatur, Festigkeit, Anwendung.',
     url: 'https://www.ek-druck.at/3d-druck-materialien',
     siteName: 'ekdruck – 3D-Druck Österreich',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D-Druck Material wählen: PLA, PETG, ASA, Carbon-PA – welches?',
+    title: '3D-Druck Material wählen — PLA, PETG, ASA, Carbon-PA',
     description: 'Was kostet welches Filament und wofür ist es gut? Vergleich PLA (€15/kg) bis Carbon-PA (€120/kg) mit Temperatur, Festigkeit, Anwendung.',
   },
 }

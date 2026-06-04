@@ -12,7 +12,7 @@ import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 
 const TITLE = 'Qualitäts-Versprechen & Garantien ★5,0 | ekdruck'
 const DESCRIPTION =
-  'So arbeite ich: 6h-Angebots-Garantie · QA-Foto vor Versand · 14-Tage-Reklamation · transparenter Reklamationsablauf. Ehrliche Versprechen statt Marketing-Floskeln.'
+  '6h-Angebots-Garantie · QA-Foto vor Versand · 14-Tage-Reklamation · transparenter Reklamationsablauf. Ehrliche Versprechen statt Floskeln. ★5,0.'
 
 export const metadata: Metadata = {
   title: TITLE,
