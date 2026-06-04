@@ -615,12 +615,12 @@ const Index = () => {
               },
               {
                 anchor: "Graz",
-                href: "/3d-druck-graz",
+                href: "/3d-druck-steiermark",
                 after: " und ",
               },
               {
                 anchor: "Linz",
-                href: "/3d-druck-linz",
+                href: "/3d-druck-oberoesterreich",
                 after: " betreuen wir zahlreiche Architekturbüros mit Express-Lieferung in 24 Stunden.",
               },
             ],
@@ -681,9 +681,9 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { title: "Städte", links: [
-                { n: "Wien", u: "/3d-druck-wien" }, { n: "Linz", u: "/3d-druck-linz" }, { n: "Graz", u: "/3d-druck-graz" },
-                { n: "Salzburg", u: "/3d-druck-salzburg" }, { n: "Innsbruck", u: "/3d-druck-innsbruck" }, { n: "Klagenfurt", u: "/3d-druck-klagenfurt" },
-                { n: "Wels", u: "/3d-druck-wels" }, { n: "St. Pölten", u: "/3d-druck-st-poelten" },
+                { n: "Wien", u: "/3d-druck-wien" }, { n: "Linz", u: "/3d-druck-oberoesterreich" }, { n: "Graz", u: "/3d-druck-steiermark" },
+                { n: "Salzburg", u: "/3d-druck-salzburg" }, { n: "Innsbruck", u: "/3d-druck-vorarlberg" }, { n: "Klagenfurt", u: "/3d-druck-kaernten" },
+                { n: "Wels", u: "/3d-druck-oberoesterreich" }, { n: "St. Pölten", u: "/3d-druck-niederoesterreich" },
               ]},
               { title: "Bundesländer", links: [
                 { n: "Oberösterreich", u: "/3d-druck-oberoesterreich" }, { n: "Niederösterreich", u: "/3d-druck-niederoesterreich" },

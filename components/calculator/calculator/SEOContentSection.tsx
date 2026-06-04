@@ -205,11 +205,11 @@ const SEOContentSection = () => (
             liefern in ganz Österreich. Der Standort erlaubt kurze Wege für persönliche Abholung
             und direkte Beratung vor Ort. Für Kunden in{" "}
             <Link href="/3d-druck-wien" className="text-primary hover:underline">Wien</Link>,{" "}
-            <Link href="/3d-druck-linz" className="text-primary hover:underline">Linz</Link>,{" "}
-            <Link href="/3d-druck-graz" className="text-primary hover:underline">Graz</Link>,{" "}
+            <Link href="/3d-druck-oberoesterreich" className="text-primary hover:underline">Linz</Link>,{" "}
+            <Link href="/3d-druck-steiermark" className="text-primary hover:underline">Graz</Link>,{" "}
             <Link href="/3d-druck-salzburg" className="text-primary hover:underline">Salzburg</Link>{" "}
             und{" "}
-            <Link href="/3d-druck-innsbruck" className="text-primary hover:underline">Innsbruck</Link>{" "}
+            <Link href="/3d-druck-vorarlberg" className="text-primary hover:underline">Innsbruck</Link>{" "}
             versenden wir versichert per Post.
           </p>
         </div>

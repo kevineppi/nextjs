@@ -30,7 +30,7 @@ const RegionalCoverage = ({ serviceName, description, baseUrl = '3d-druck' }: Re
     }
     // Default 3d-druck URLs with some special cases
     const specialCases: Record<string, string> = {
-      'tirol': '/3d-druck-innsbruck',
+      'tirol': '/3d-druck-vorarlberg',
       'salzburg': '/3d-druck-salzburg',
     };
     return specialCases[slug] || `/3d-druck-${slug}`;
