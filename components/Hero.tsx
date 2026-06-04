@@ -16,12 +16,14 @@ const renderTextWithCustomUmlaut = (text: string): ReactNode => {
   for (let i = 0; i < text.length; i++) {
     const char = text[i];
     if (char === 'Ö') {
+      // text-gradient auf jedem inneren Span — Eltern-Background wird nicht vererbt,
+      // ohne explizite Klasse blieben die Spans transparent → komplett unsichtbar.
       chars.push(
         <span key={i} className="relative inline-block" aria-label="Ö">
-          <span aria-hidden="true">O</span>
+          <span className="text-gradient" aria-hidden="true">O</span>
           <span
             aria-hidden="true"
-            className="absolute left-1/2 -translate-x-1/2 -top-[0.18em] pointer-events-none select-none whitespace-nowrap"
+            className="text-gradient absolute left-1/2 -translate-x-1/2 -top-[0.18em] pointer-events-none select-none whitespace-nowrap"
             style={{ fontSize: '0.42em', lineHeight: 1, letterSpacing: '0.28em', fontWeight: 700 }}
           >
             ··
