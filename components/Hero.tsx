@@ -124,7 +124,7 @@ const Hero = () => {
                 {line1.displayed}
                 {!line1.done && <span className="inline-block w-[3px] h-[0.8em] bg-primary ml-1 animate-pulse align-baseline" />}
               </span>
-              <span className="block text-gradient mt-2 md:mt-4 text-[clamp(2.5rem,7.5vw,7rem)]">
+              <span className="block text-gradient mt-2 md:mt-4 text-[clamp(2.5rem,7.5vw,7rem)] pt-[0.2em] leading-[1.1]">
                 {line2.displayed}
                 {line1.done && !line2.done && <span className="inline-block w-[3px] h-[0.8em] bg-primary ml-1 animate-pulse align-baseline" />}
               </span>
