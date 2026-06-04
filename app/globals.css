@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+/* 2026-06-04: Google Fonts wurden auf next/font/google migriert (app/layout.tsx).
+   Vorher: @import url('https://fonts.googleapis.com/css2?family=...') — render-blocking.
+   Jetzt: self-gehostet via next/font mit automatischem preload + display: swap. */
 
 @tailwind base;
 @tailwind components;
@@ -37,9 +39,9 @@
 
     --radius: 0.5rem;
 
-    --font-heading: 'Space Grotesk', system-ui, sans-serif;
-    --font-body: 'Space Grotesk', system-ui, sans-serif;
-    --font-mono: 'JetBrains Mono', monospace;
+    --font-heading: var(--font-space-grotesk), system-ui, sans-serif;
+    --font-body: var(--font-space-grotesk), system-ui, sans-serif;
+    --font-mono: var(--font-jetbrains-mono), monospace;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
