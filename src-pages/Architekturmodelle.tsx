@@ -116,9 +116,11 @@ const Architekturmodelle = () => (
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
 
+            {/* 2026-06-04: H1 — "Architektur" + "modelle." waren in 2 block-Spans,
+                Google las "Architektur modelle." mit Spacing → kein Exact-Match.
+                Jetzt eine Zeile, Exact-Match auf Hauptkeyword "Architekturmodelle". */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-[-0.04em] mb-8">
-              <span className="block">Architektur</span>
-              <span className="block text-gradient">modelle.</span>
+              <span className="block text-gradient">Architekturmodelle.</span>
               <span className="block text-3xl md:text-5xl lg:text-6xl mt-3 text-outline">Aus dem 3D-Druck.</span>
             </h1>
 

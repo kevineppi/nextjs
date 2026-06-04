@@ -127,10 +127,11 @@ const Messemodelle = () => (
                 <span className="sticker border-foreground/20 text-foreground/60">Express 24h</span>
               </div>
 
+              {/* 2026-06-04: H1-Hook schärfen — vorher "Messemodelle & Exponate drucken" (kein USP).
+                  Jetzt: Hauptkeyword + USP-Pull "24h" als 2-Zeiler. Begründung in SEO-Sofortmaßnahmen §3.3 */}
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-[-0.04em] mb-8">
-                Messemodelle &<br/>
-                <span className="text-gradient">Exponate</span>
-                <span className="text-muted-foreground/30 font-light"> drucken</span>
+                Messemodelle.<br/>
+                <span className="text-gradient">Der Hingucker am Messestand.</span>
               </h1>
 
               <div className="grid md:grid-cols-2 gap-12 items-end">

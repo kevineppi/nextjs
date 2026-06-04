@@ -17,7 +17,7 @@ import {
 
 const TITLE = '3D-Druck Prototypen in 24h — Funktionsmuster ab €20 ★5,0 | ekdruck'
 const DESCRIPTION =
-  'Spritzguss braucht 6 Wochen. Wir liefern Ihren Prototyp in 24-48h: PLA, PETG, ABS, Carbon-PA. Toleranz ±0,1mm. Festpreis in 6h. ★5,0 (31 Reviews) — direkt aus Gunskirchen.'
+  'Spritzguss braucht 6 Wochen — wir liefern Prototyp in 24-48h. PLA, PETG, ABS, Carbon-PA. Toleranz ±0,1mm. Festpreis in 6h. ★5,0 (31 Reviews).'
 
 export const metadata: Metadata = {
   title: TITLE,

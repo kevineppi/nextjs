@@ -160,11 +160,11 @@ const Prototyping = () => (
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
 
-            {/* Big Headline */}
+            {/* 2026-06-04: H1 wieder zusammengeführt für Exact-Match "Rapid Prototyping" +
+                USP-Pull "24h statt 6 Wochen" als Differenzierungs-Hook. */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-[-0.04em] mb-8">
-              <span className="block">Rapid</span>
-              <span className="block text-gradient">Prototyping.</span>
-              <span className="block text-3xl md:text-5xl lg:text-6xl mt-3 text-outline">Aus Österreich.</span>
+              <span className="block text-gradient">Rapid Prototyping.</span>
+              <span className="block text-3xl md:text-5xl lg:text-6xl mt-3 text-outline">24h statt 6 Wochen Spritzguss.</span>
             </h1>
 
             {/* Lead + CTA – 2-Spalter */}

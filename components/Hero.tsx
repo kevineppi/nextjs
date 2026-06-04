@@ -6,27 +6,48 @@ import { ArrowRight, Calculator } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 import MarqueeTicker from "@/components/MarqueeTicker";
 
+// 2026-06-04: Typewriter SSR-konform.
+// VORHER (Bug): Initial `displayed = ""` mit Fallback `{displayed || "X"}` —
+// im selben useEffect-Render-Cycle setze started=true → setDisplayed("3") → React-Reconciler
+// sah unterschiedliches Text-Content vs SSR-HTML → Hydration-Mismatch (React #418, 5×).
+//
+// FIX: Hook nutzt `mounted`-Pattern. SSR rendert IMMER den finalen Text. Erst nach Mount
+// startet die Animation. Vorteil: SSR-Crawler sieht direkt das Hauptkeyword "3D-Druck. Aus Österreich.",
+// User sieht beim Initial-Paint ebenfalls den vollen Text (kein leeres Hero), Animation läuft
+// dann sauber ohne Layout-Shift.
 const useTypewriter = (text: string, delay: number, speed = 60) => {
+  const [mounted, setMounted] = useState(false);
   const [displayed, setDisplayed] = useState("");
-  const [started, setStarted] = useState(false);
+  const [done, setDone] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setStarted(true), delay);
-    return () => clearTimeout(timer);
-  }, [delay]);
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
-    if (!started) return;
-    let i = 0;
-    const interval = setInterval(() => {
-      i++;
-      setDisplayed(text.slice(0, i));
-      if (i >= text.length) clearInterval(interval);
-    }, speed);
-    return () => clearInterval(interval);
-  }, [started, text, speed]);
+    if (!mounted) return;
+    setDisplayed("");
+    setDone(false);
+    const startTimer = setTimeout(() => {
+      let i = 0;
+      const interval = setInterval(() => {
+        i++;
+        setDisplayed(text.slice(0, i));
+        if (i >= text.length) {
+          setDone(true);
+          clearInterval(interval);
+        }
+      }, speed);
+      return () => clearInterval(interval);
+    }, delay);
+    return () => clearTimeout(startTimer);
+  }, [mounted, text, delay, speed]);
 
-  return { displayed, done: displayed.length === text.length };
+  // Vor Mount (SSR + first client render): kompletter Text + done=true (kein Cursor)
+  // Nach Mount: Animation läuft → displayed wächst, done geht durch
+  return mounted
+    ? { displayed, done }
+    : { displayed: text, done: true };
 };
 
 const Hero = () => {
@@ -43,8 +64,10 @@ const Hero = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const line1 = useTypewriter("Architektur- &", 600, 55);
-  const line2 = useTypewriter("Messemodelle.", 600 + 14 * 55 + 200, 65);
+  // 2026-06-04: H1 auf Hauptkeyword fokussiert (vorher: "Architektur- & Messemodelle.").
+  // Begründung in (C) SEO-Sofortmaßnahmen 2026-06-04 §1.1
+  const line1 = useTypewriter("3D-Druck.", 600, 70);
+  const line2 = useTypewriter("Aus Österreich.", 600 + 9 * 70 + 200, 65);
 
   const t = (delay: number) => ({
     opacity: loaded ? 1 : 0,
@@ -94,12 +117,14 @@ const Hero = () => {
           {/* Massive headline — typewriter */}
           <div style={t(0.2)}>
             <h1 className="text-[clamp(3.5rem,11vw,10rem)] font-bold leading-[0.9] tracking-[-0.05em] mb-4">
+              {/* 2026-06-04: Fallback-Pattern entfernt — der Hook gibt jetzt SSR/initial
+                  den vollen Text + done=true zurück. Nach Mount läuft die Animation sauber. */}
               <span className="block">
-                {line1.displayed || "Architektur- &"}
+                {line1.displayed}
                 {!line1.done && <span className="inline-block w-[3px] h-[0.8em] bg-primary ml-1 animate-pulse align-baseline" />}
               </span>
               <span className="block text-gradient">
-               {line2.displayed || "Messemodelle."}
+                {line2.displayed}
                 {line1.done && !line2.done && <span className="inline-block w-[3px] h-[0.8em] bg-primary ml-1 animate-pulse align-baseline" />}
               </span>
             </h1>
@@ -117,14 +142,14 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button variant="cta" size="lg" className="group text-base px-10 py-7 rounded-full" asChild>
                   <Link href="/kontakt">
-                    Angebot anfordern
+                    3D-Druck-Angebot anfordern
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1.5 transition-transform" />
                   </Link>
                 </Button>
                 <Button size="lg" className="group text-base px-8 py-7 rounded-full bg-foreground text-background hover:bg-foreground/90 font-semibold" asChild>
                   <Link href="/kostenrechner">
                     <Calculator className="mr-2 w-4 h-4" />
-                    Preis berechnen
+                    3D-Druck-Preis berechnen
                   </Link>
                 </Button>
               </div>

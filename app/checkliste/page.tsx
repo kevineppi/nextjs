@@ -223,6 +223,79 @@ export default function ChecklistePage() {
           </div>
         </section>
 
+        {/* AUTHORITY-PUMP zur Money-Page /messemodelle
+            2026-06-04: /checkliste rankt aktuell auf Pos 13 für "Messemodell 3D Druck Österreich" —
+            statt der eigentlichen /messemodelle Money-Page. Dieser Block lenkt User UND Internal-Link-Equity
+            zur Hauptseite mit dem Exact-Match-Anchor "Messemodell 3D Druck". */}
+        <section className="py-16 md:py-20 bg-background border-t border-border" aria-label="Messemodell 3D Druck Service">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">
+                Bereit für den nächsten Schritt
+              </p>
+              <h2 className="text-3xl md:text-5xl font-bold leading-[1.05] tracking-[-0.03em] mb-6">
+                Sie planen ein <span className="text-gradient">Messemodell</span>?
+              </h2>
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-2xl mx-auto">
+                Die Checkliste hilft Ihnen vor der Anfrage. Wenn Sie das Modell bereits konkret im Kopf haben:
+                unsere Service-Seite für <Link href="/messemodelle" className="text-primary hover:underline font-bold">Messemodelle aus dem 3D-Druck</Link> zeigt die volle Bandbreite — vom 8-Tonnen-Maschinen-Modell als
+                Tisch-Exponat über Schnittmodelle bis zum Express-Versand binnen 24 Stunden direkt an Ihren Messestand.
+              </p>
+
+              <div className="grid md:grid-cols-3 gap-4 mb-10 text-left">
+                <div className="bg-muted/30 rounded-2xl p-5">
+                  <div className="text-3xl font-bold text-primary mb-1">24h</div>
+                  <p className="text-sm font-bold mb-1">Express-Lieferung</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    Direkt zum Messestand, DACH-weit.
+                  </p>
+                </div>
+                <div className="bg-muted/30 rounded-2xl p-5">
+                  <div className="text-3xl font-bold text-primary mb-1">1:5–1:50</div>
+                  <p className="text-sm font-bold mb-1">Maßstabs-Bandbreite</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    Vom Tischmodell bis zum Hingucker am Messestand.
+                  </p>
+                </div>
+                <div className="bg-muted/30 rounded-2xl p-5">
+                  <div className="text-3xl font-bold text-primary mb-1">ab €30</div>
+                  <p className="text-sm font-bold mb-1">Einstiegspreis</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    Komponente, Detail oder ganzes Modell.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Link
+                  href="/messemodelle"
+                  className="group inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground rounded-full px-8 py-4 font-bold hover:opacity-90 transition-all"
+                >
+                  Messemodell 3D Druck — Service ansehen
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link
+                  href="/branchen"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-border rounded-full px-8 py-4 font-bold hover:border-primary/40 transition-all"
+                >
+                  Nach Branche durchstöbern
+                </Link>
+              </div>
+
+              {/* Sekundäre Anchor-Texts für Branchen-Tiefe */}
+              <p className="mt-8 text-sm text-muted-foreground">
+                Branchen-Spezialisten:{' '}
+                <Link href="/branchen/maschinenbau" className="text-primary hover:underline font-medium">Maschinenbau</Link>{' · '}
+                <Link href="/branchen/anlagenbau" className="text-primary hover:underline font-medium">Anlagenbau</Link>{' · '}
+                <Link href="/branchen/energietechnik" className="text-primary hover:underline font-medium">Energietechnik</Link>{' · '}
+                <Link href="/branchen/automotive" className="text-primary hover:underline font-medium">Automotive</Link>{' · '}
+                <Link href="/branchen/elektrotechnik" className="text-primary hover:underline font-medium">Elektrotechnik</Link>{' · '}
+                <Link href="/branchen/schiffbau" className="text-primary hover:underline font-medium">Schiffbau</Link>
+              </p>
+            </div>
+          </div>
+        </section>
+
         <Footer />
       </div>
     </>

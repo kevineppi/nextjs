@@ -10,12 +10,12 @@ import {
 
 export const metadata: Metadata = {
   title: 'Architekturmodell drucken lassen – 3D-Druck ab €20 ★5,0 | ekdruck',
-  description: 'Architekturmodelle aus dem 3D-Druck: Wettbewerb · Bauherr · Stadtmodell. Maßstab 1:50–1:500 ✓ ArchiCAD, Revit, Rhino, SketchUp ✓ Express 24h ✓ ab €20 ✓ ★5,0 (31 Bewertungen).',
+  description: 'Architekturmodelle 3D-Druck: Wettbewerb · Bauherr · Stadtmodell. 1:50–1:500. ArchiCAD/Revit/Rhino. Express 24h. ab €20. ★5,0 (31 Bewertungen).',
   keywords: 'architekturmodell, architekturmodell drucken, architekturmodell 3d druck, architekturmodellbau, wettbewerbsmodell, präsentationsmodell architektur, städtebauliches modell, bauherrenmodell, stadtmodell drucken, gebäudemodell, architekturmodell wien, architekturmodell österreich, modellbau architektur, archicad 3d druck, revit modell drucken, sketchup modell drucken, rhino modell, maßstab 1 100, maßstab 1 200, maßstab 1 500, weißes modell, präsentationsmodell',
   alternates: buildDachAlternates('/architekturmodelle'),
   openGraph: {
     title: 'Architekturmodell drucken lassen – 3D-Druck ab €20 ★5,0 | ekdruck',
-    description: 'Architekturmodelle aus dem 3D-Druck: Wettbewerb · Bauherr · Stadtmodell. Maßstab 1:50–1:500 ✓ ArchiCAD, Revit, Rhino, SketchUp ✓ Express 24h ✓ ab €20 ✓ ★5,0 (31 Bewertungen).',
+    description: 'Architekturmodelle 3D-Druck: Wettbewerb · Bauherr · Stadtmodell. 1:50–1:500. ArchiCAD/Revit/Rhino. Express 24h. ab €20. ★5,0 (31 Bewertungen).',
     url: 'https://www.ek-druck.at/architekturmodelle',
     siteName: 'ekdruck – 3D-Druck Österreich',
     locale: 'de_AT',

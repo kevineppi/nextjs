@@ -34,53 +34,22 @@ const SEOHead = ({
   dateModified,
 }: SEOHeadProps) => {
   useEffect(() => {
+    // ════════════════════════════════════════════════════════════════════
+    // 2026-06-04: SEOHead-Konsolidierung
+    // Vorher: Diese Komponente überschrieb client-side document.title,
+    // meta description, canonical, OG, Twitter — und cancelte damit die
+    // Next.js metadata aus den app/*/page.tsx Files.
+    // Konsequenz: Google sah die SSR-Version (Next.js metadata), User sah
+    // die Client-überschriebene Version → inkonsistent + Patches wirkungslos.
+    //
+    // Jetzt: Title/Description/Canonical/OG/Twitter werden komplett von
+    // Next.js metadata gemanaged. SEOHead bleibt nur für:
+    //   - dynamic hreflang (falls über metadata.alternates nicht abgedeckt)
+    //   - preloadResources (next/script in metadata nicht trivial)
+    //   - dynamic schemaType-basiertes JSON-LD (fallback)
+    // ════════════════════════════════════════════════════════════════════
+
     const fullUrl = `https://www.ek-druck.at${path}`;
-    const resolvedImage = image || DEFAULT_OG_IMAGE;
-
-    // Title
-    document.title = title;
-
-    // Description
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) metaDescription.setAttribute('content', description);
-
-    // Keywords
-    const metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (metaKeywords) metaKeywords.setAttribute('content', keywords);
-
-    // Author
-    let metaAuthor = document.querySelector('meta[name="author"]');
-    if (!metaAuthor) {
-      metaAuthor = document.createElement('meta');
-      metaAuthor.setAttribute('name', 'author');
-      document.head.appendChild(metaAuthor);
-    }
-    metaAuthor.setAttribute('content', 'ekdruck e.U.');
-
-    // Robots
-    let metaRobots = document.querySelector('meta[name="robots"]');
-    if (!metaRobots) {
-      metaRobots = document.createElement('meta');
-      metaRobots.setAttribute('name', 'robots');
-      document.head.appendChild(metaRobots);
-    }
-    metaRobots.setAttribute(
-      'content',
-      noIndex
-        ? 'noindex, follow'
-        : 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'
-    );
-
-    // Canonical
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (canonical) {
-      canonical.setAttribute('href', fullUrl);
-    } else {
-      const newCanonical = document.createElement('link');
-      newCanonical.rel = 'canonical';
-      newCanonical.href = fullUrl;
-      document.head.appendChild(newCanonical);
-    }
 
     // Hreflang – update existing tags from index.html (never duplicate)
     const hreflangMap: Record<string, string> = {
@@ -99,22 +68,6 @@ const SEOHead = ({
       }
       el.setAttribute('href', url);
     });
-
-    // Open Graph
-    const setMeta = (selector: string, content: string) => {
-      const el = document.querySelector(selector);
-      if (el) el.setAttribute('content', content);
-    };
-    setMeta('meta[property="og:title"]', title);
-    setMeta('meta[property="og:description"]', description);
-    setMeta('meta[property="og:url"]', fullUrl);
-    setMeta('meta[property="og:type"]', type);
-    setMeta('meta[property="og:image"]', resolvedImage);
-
-    // Twitter Card
-    setMeta('meta[name="twitter:title"]', title);
-    setMeta('meta[name="twitter:description"]', description);
-    setMeta('meta[name="twitter:image"]', resolvedImage);
 
     // Preload resources
     preloadResources.forEach((resource) => {

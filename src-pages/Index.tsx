@@ -332,6 +332,87 @@ const Index = () => {
       <ReferencesTeaser />
 
       {/* ══════════════════════════════════════════════════════
+          EDITORIAL — "Was 3D-Druck bei ek-druck konkret bedeutet"
+          (2026-06-04 SEO-Pass: erhöht Content-Tiefe von 620 auf ~1.300 Wörter,
+           hebt Hauptkeyword "3D-Druck Österreich" 4× natürlich, schafft 7 Internal-Links zu Service- und Branchen-Seiten)
+         ══════════════════════════════════════════════════════ */}
+      <section className="py-24 md:py-32 bg-background relative" aria-label="3D-Druck Österreich — Werkstatt, Materialien, Branchen">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <AnimatedSection animation="fade-in">
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Was wir konkret tun</p>
+              <h2 className="text-4xl md:text-6xl font-bold leading-[0.95] tracking-[-0.04em] mb-10">
+                3D-Druck Österreich.<br/>
+                <span className="text-muted-foreground/70">Aus Gunskirchen für ganz DACH.</span>
+              </h2>
+            </AnimatedSection>
+
+            <div className="grid md:grid-cols-2 gap-12 md:gap-16 mb-20">
+              <AnimatedSection animation="slide-up" delay={0.1}>
+                <h3 className="text-2xl md:text-3xl font-bold mb-5 tracking-[-0.02em]">Werkstatt &amp; Maschinenpark.</h3>
+                <p className="text-base leading-[1.85] text-foreground/85 mb-4">
+                  Unser <strong>3D-Druck Service in Österreich</strong> läuft auf drei industriellen FDM-Druckern: zwei <strong>Bambulab P1S</strong> für schnelle Standard-Aufträge und ein <strong>Prusa XL 5-Toolhead</strong> für Multi-Material-Drucke bis 360×360×360&nbsp;mm. Maschinen, Material und Service kontrollieren wir komplett selbst — kein White-Label, kein Sublieferant, kein „wir geben das weiter".
+                </p>
+                <p className="text-base leading-[1.85] text-foreground/85">
+                  Werkstatt in Gunskirchen, Oberösterreich. Anrufe nimmt <Link href="/ueber-uns" className="text-primary hover:underline font-semibold">Kevin Eppensteiner</Link> persönlich ab. Anfragen beantworten wir innerhalb von 6 Stunden mit Festpreis. Lieferung in ganz Österreich in 24–48&nbsp;Stunden, nach Deutschland 2–4 Werktage, in die Schweiz mit DHL-Express-Zollabwicklung.
+                </p>
+              </AnimatedSection>
+
+              <AnimatedSection animation="slide-up" delay={0.2}>
+                <h3 className="text-2xl md:text-3xl font-bold mb-5 tracking-[-0.02em]">Acht Materialien für jeden Einsatz.</h3>
+                <p className="text-base leading-[1.85] text-foreground/85 mb-4">
+                  <strong>PLA</strong> für Anschauungsmodelle, <strong>PETG</strong> für Funktionsteile, <strong>ASA</strong> für UV-beständige Außenanwendungen, <strong>ABS</strong> mit Aceton-Glättung für Spritzguss-Optik, <strong>TPU</strong> für flexible Dichtungen, <strong>PETG-CF</strong> und <strong>PA-CF</strong> mit Carbonfaser für mechanisch belastbare Bauteile sowie <strong>SLA-Resin</strong> für hochfeine Detailmodelle und Schmuckguss.
+                </p>
+                <p className="text-base leading-[1.85] text-foreground/85">
+                  Welches Material wann — ehrlich beraten, nicht verkauft. Wenn ein Wunsch nicht zum Bauteil passt, weisen wir vor dem Auftrag auf die bessere Alternative hin. Der <Link href="/3d-druck-materialien" className="text-primary hover:underline font-semibold">Detailvergleich aller Materialien</Link> zeigt Festigkeit, Temperaturverhalten und Preis pro Gramm.
+                </p>
+              </AnimatedSection>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-12 md:gap-16 mb-20">
+              <AnimatedSection animation="slide-up" delay={0.1}>
+                <h3 className="text-2xl md:text-3xl font-bold mb-5 tracking-[-0.02em]">Sechs Branchen, sechs Sprachen.</h3>
+                <p className="text-base leading-[1.85] text-foreground/85 mb-4">
+                  Ein Maschinenbau-Konstrukteur fragt anders als ein Bauträger, eine Werbeagentur anders als ein Anlagenbauer. Wir kennen die Spezifika für <Link href="/branchen/maschinenbau" className="text-primary hover:underline font-semibold">Maschinenbau</Link> (Messemodelle, Funktionsprototypen), <Link href="/branchen/schiffbau" className="text-primary hover:underline font-semibold">Schiffbau</Link> (Antriebs-Schnittmodelle), <Link href="/branchen/energietechnik" className="text-primary hover:underline font-semibold">Energietechnik</Link> (Schaltanlagen-Demonstrationen), <Link href="/branchen/anlagenbau" className="text-primary hover:underline font-semibold">Anlagenbau</Link>, <Link href="/branchen/automotive" className="text-primary hover:underline font-semibold">Automotive</Link> und <Link href="/branchen/elektrotechnik" className="text-primary hover:underline font-semibold">Elektrotechnik</Link>.
+                </p>
+                <p className="text-base leading-[1.85] text-foreground/85">
+                  Pro Branche eine eigene Seite mit echten Cases, Material-Empfehlungen für die jeweiligen Anforderungen, Brennstoffklassen-Hinweisen wo relevant und Mess-Toleranzen, die im Fertigungsalltag wirklich zählen — nicht nur auf dem Datenblatt.
+                </p>
+              </AnimatedSection>
+
+              <AnimatedSection animation="slide-up" delay={0.2}>
+                <h3 className="text-2xl md:text-3xl font-bold mb-5 tracking-[-0.02em]">Was wir nicht machen.</h3>
+                <p className="text-base leading-[1.85] text-foreground/85 mb-4">
+                  Mechanisch lasttragende Bauteile mit Personensicherheits-Anspruch — dafür fehlt aktuell die WKO-Gewerbeberechtigung. Das ändert sich mit dem Maschinenbau-Studium-Abschluss. Spritzguss-Großserien über 5.000 Stück — ab dieser Stückzahl ist 3D-Druck wirtschaftlich nicht mehr sinnvoll, wir verweisen ehrlich an Spritzgießer.
+                </p>
+                <p className="text-base leading-[1.85] text-foreground/85">
+                  Lieber „nein, das passt nicht zu uns" als ein halbgares Ja. Das ist keine Marketing-Phrase — wir lehnen ungefähr 10 % der Anfragen aktiv ab. Mehr Transparenz dazu auf <Link href="/ueber-uns" className="text-primary hover:underline font-semibold">Über uns</Link> und in der <Link href="/qualitaet" className="text-primary hover:underline font-semibold">Qualitäts-Selbstverpflichtung</Link>.
+                </p>
+              </AnimatedSection>
+            </div>
+
+            {/* CTA-Strip am Ende des Editorial-Blocks */}
+            <AnimatedSection animation="fade-in" delay={0.3}>
+              <div className="border-t border-border pt-12 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
+                <div>
+                  <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary mb-2">Bereit?</p>
+                  <p className="text-2xl md:text-3xl font-bold tracking-[-0.02em]">3D-Druck Österreich — STL hoch, Preis in 60 Sekunden.</p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-3 shrink-0">
+                  <Button size="lg" variant="cta" className="rounded-full px-8 py-7 font-semibold" asChild>
+                    <Link href="/kostenrechner">3D-Druck-Preis berechnen <ArrowRight className="ml-2 w-5 h-5" /></Link>
+                  </Button>
+                  <Button size="lg" variant="outline" className="rounded-full px-8 py-7 font-semibold" asChild>
+                    <Link href="/kontakt">Persönlich anfragen</Link>
+                  </Button>
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════
           DECISION — PRICING-INDIKATOR + KOSTENRECHNER-CTA
           (Funnel-Stufe: DECISION — "Was kostet's")
          ══════════════════════════════════════════════════════ */}
