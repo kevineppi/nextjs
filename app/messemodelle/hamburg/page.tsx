@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import MessemodellRegion from '@/src-pages/MessemodellRegion'
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true }, // DACH-Noindex (Thin/Doorway, AT-Fokus)
   title: 'Messemodelle Hamburg: für SMM, WindEnergy, Internorga',
   description: 'Aussteller in Hamburg: SMM (Maritime), WindEnergy, Internorga, hanseboot. Maritime-Spezialmodelle aus Carbon-PA möglich. Ab €30.',
   alternates: {

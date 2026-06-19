@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import MessemodellRegion from '@/src-pages/MessemodellRegion'
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true }, // DACH-Noindex (Thin/Doorway, AT-Fokus)
   title: 'Messemodelle St. Gallen: OLMA, Tier&Technik, Offa · Zoll inkl.',
   description: 'St. Galler Aussteller: OLMA, Tier&Technik, Offa, Aut.AG. Kürzester Weg in die Schweiz aus Vorarlberg-Nähe. Zoll inklusive.',
   alternates: { canonical: 'https://www.ek-druck.at/messemodelle/st-gallen' },

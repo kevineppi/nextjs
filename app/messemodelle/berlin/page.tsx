@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import MessemodellRegion from '@/src-pages/MessemodellRegion'
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true }, // DACH-Noindex (Thin/Doorway, AT-Fokus)
   title: 'Messemodelle Berlin: für IFA, ITB, InnoTrans, Grüne Woche',
   description: 'Für Aussteller der Messe Berlin: IFA, ITB, InnoTrans, Grüne Woche, FRUIT LOGISTICA. Versand Berlin in 48h aus OÖ. Ab €30.',
   alternates: {

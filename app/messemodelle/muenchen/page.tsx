@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import MessemodellRegion from '@/src-pages/MessemodellRegion'
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true }, // DACH-Noindex (Thin/Doorway, AT-Fokus)
   title: 'Messemodelle München: für BAU, bauma, IFAT, electronica',
   description: 'Münchner Messe Aussteller: BAU, bauma, IFAT, electronica, ISPO. Nur 3h Fahrzeit aus OÖ · auch persönliche Lieferung möglich. Ab €30.',
   alternates: {

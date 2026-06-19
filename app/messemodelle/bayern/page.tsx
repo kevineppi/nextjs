@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import MessemodellRegion from '@/src-pages/MessemodellRegion'
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true }, // DACH-Noindex (Thin/Doorway, AT-Fokus)
   title: 'Messemodelle Bayern: BAU, bauma, SPS · nur 3h aus OÖ',
   description: 'Bayerische Aussteller: BAU München, bauma, SPS Nürnberg, IFAT. Nur 3h Fahrzeit · persönliche Lieferung möglich. Ab €30.',
   alternates: {

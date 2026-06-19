@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import MessemodellRegion from '@/src-pages/MessemodellRegion'
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true }, // DACH-Noindex (Thin/Doorway, AT-Fokus)
   title: 'Messemodelle Köln: Anuga, gamescom, FIBO, imm cologne, IDS',
   description: 'Koelnmesse-Aussteller: Anuga, gamescom, FIBO, imm cologne, IDS. Versand 48h aus OÖ, mit Aufbau-Service auf Wunsch. Ab €30.',
   alternates: {

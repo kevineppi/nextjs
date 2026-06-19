@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import MessemodellRegion from '@/src-pages/MessemodellRegion'
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true }, // DACH-Noindex (Thin/Doorway, AT-Fokus)
   title: 'Messemodelle Hannover Messe, LIGNA, EMO, AGRITECHNICA',
   description: 'Für die weltgrößte Industriemesse: Hannover Messe, LIGNA, EMO, AGRITECHNICA. Industrie-4.0-Modelle mit beweglichen Teilen möglich.',
   alternates: {

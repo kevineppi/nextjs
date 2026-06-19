@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import MessemodellRegion from '@/src-pages/MessemodellRegion'
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true }, // DACH-Noindex (Thin/Doorway, AT-Fokus)
   title: 'Messemodelle NRW: MEDICA, Anuga, gamescom, drupa · 100+ Messen',
   description: 'NRW-Aussteller: über 100 Leitmessen in Düsseldorf, Köln, Essen. Branchenspezifische Modelle, günstiger als lokale Anbieter. Ab €30.',
   alternates: {

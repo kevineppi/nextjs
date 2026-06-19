@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import MessemodellRegion from '@/src-pages/MessemodellRegion'
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true }, // DACH-Noindex (Thin/Doorway, AT-Fokus)
   title: 'Messemodelle Stuttgart: AMB, R+T, Intergastra, Retro Classics',
   description: 'Aussteller in Stuttgart: AMB, R+T, Intergastra, Retro Classics. Direktversand aus Vorarlberg-Nähe in 24-48h. Ab €30.',
   alternates: {

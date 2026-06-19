@@ -17,6 +17,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const data =
     (regionalArchitekturData as Record<string, any>)[region] ||
     (germanArchitekturData as Record<string, any>)[region]
+  // DACH-Noindex: nur AT-Regionen indexieren; deutsche Standortseiten auf noindex,follow
+  const isAT = !!(regionalArchitekturData as Record<string, any>)[region]
 
   if (!data) {
     return {
@@ -46,7 +48,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       title,
       description,
     },
-    robots: STANDARD_ROBOTS,
+    robots: isAT ? STANDARD_ROBOTS : { index: false, follow: true },
   }
 }
 

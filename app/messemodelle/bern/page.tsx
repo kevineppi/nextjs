@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import MessemodellRegion from '@/src-pages/MessemodellRegion'
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true }, // DACH-Noindex (Thin/Doorway, AT-Fokus)
   title: 'Messemodelle Bern: für BEA, BERNEXPO, Suisse Public',
   description: 'Berner Aussteller: BEA (Frühjahrsmesse), Suisse Public, BERNEXPO. Schweizer Zollabwicklung inklusive, CHF möglich. Ab €30.',
   alternates: { canonical: 'https://www.ek-druck.at/messemodelle/bern' },

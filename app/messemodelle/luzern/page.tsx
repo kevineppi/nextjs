@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import MessemodellRegion from '@/src-pages/MessemodellRegion'
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true }, // DACH-Noindex (Thin/Doorway, AT-Fokus)
   title: 'Messemodelle Luzern: LUGA, Bauen+Wohnen, Zentralschweizer Messe',
   description: 'Luzerner Aussteller: LUGA, Bauen+Wohnen, Comptoir Suisse, Berufsmesse Luzern. Inkl. Schweizer Zoll, CHF-Verrechnung. Ab €30.',
   alternates: { canonical: 'https://www.ek-druck.at/messemodelle/luzern' },

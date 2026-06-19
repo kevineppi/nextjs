@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import MessemodellRegion from '@/src-pages/MessemodellRegion'
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true }, // DACH-Noindex (Thin/Doorway, AT-Fokus)
   title: 'Messemodelle Düsseldorf: für MEDICA, drupa, K, boot, glasstec',
   description: 'Aussteller in Düsseldorf: MEDICA, drupa, K, boot, glasstec, EuroCIS. Versand 48h aus Österreich, günstiger als lokale Anbieter.',
   alternates: {

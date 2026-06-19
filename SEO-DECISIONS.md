@@ -29,13 +29,14 @@ Stadt→Bundesland, prototypen→prototyping, Branchen-Varianten, Thin-Content-R
 ### 5. Google-Unternehmensprofil (kein Code)
 Vorhanden und stark (5,0 / 32 Bewertungen, 465 Interaktionen), aber Profilstärke nicht 100 %. Empfehlung: Leistungen, Produkte, Beiträge, Fotos vervollständigen. Hebt den lokalen Map-Pack, über den die kommerzielle Lokal-Nachfrage konvertiert (z.B. "3d druck oberösterreich" Pos 1,1). Außerhalb des Repos.
 
-## Phase 2: empfohlen, bewusst NOCH NICHT angewandt (Entscheidung nötig)
+## Phase 2: UMGESETZT (Freigabe Kevin, 18.06.2026) · DACH-Noindex
 
 ### 6. Thin-/Doorway-Risiko bei programmatischen Standortseiten
 - **Befund:** Dutzende fast identische Standortseiten mit 0 Klicks über 3 Monate, vor allem deutsche Städte: `/architekturmodelle/stuttgart` (73 Impr, 0 Kl), `/messemodelle/muenchen`, `/architekturmodelle/villach` (102/0), Stuttgart/Berlin/Frankfurt/Dresden u.v.m.
 - **Evidenz/Prinzip:** Google "Doorway Pages" und "Scaled Content Abuse / Helpful Content". Viele near-duplicate Templateseiten verwässern Seiten-Qualitätssignale und Crawl-Budget.
 - **Warum noch nicht umgesetzt:** Diese DE-Seiten wurden bewusst für Reichweite gebaut. Ein Entfernen/Noindex ist eine strategische Abwägung (SEO-Hygiene vs. DE-Reichweite), die nicht einstimmig ist. Der saubere, reversible Weg ist **noindex statt löschen**, gesteuert über ein `noindex`-Flag in `data/regionalArchitekturData.ts` / `data/regionalMesseData.ts` (Mechanik dafür existiert bereits: `robots: { index: false, follow: false }` in `architekturmodelle/[region]/generateMetadata`).
-- **Empfehlung:** Noindex für alle programmatischen Standortseiten mit 0 Klicks und ohne Kern-AT-Relevanz; AT-Bundesländer + Wien/Linz/Graz/Salzburg/Innsbruck/Klagenfurt/Wels + alle Service-/Branchen-/Cases-/Ratgeber-Seiten bleiben indexierbar.
+- **Umgesetzt (noindex,follow, reversibel):** `architekturmodelle/[region]` setzt für alle `germanArchitekturData`-Regionen (39) noindex; 20 DE/CH-Messe-Ordner (baden-wuerttemberg, basel, bayern, berlin, bern, duesseldorf, essen, frankfurt, hamburg, hannover, hessen, koeln, luzern, muenchen, niedersachsen, nordrhein-westfalen, nuernberg, st-gallen, stuttgart, zuerich) auf noindex. AT bleibt voll indexiert. `noindex,follow` = Link-Equity fliesst weiter zu den AT-Seiten. Build verifiziert.
+- **Reversibel:** in `architekturmodelle/[region]/page.tsx` die `isAT`-Bedingung entfernen, in den Messe-Ordnern die `robots`-Zeile löschen.
 
 ## Deploy
 `seo-cleanup` nach `main` mergen, Auto-Deploy über das verbundene Hosting. Vorher empfohlen: Vorschau-Deploy prüfen.
