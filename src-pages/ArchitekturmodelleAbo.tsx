@@ -37,13 +37,6 @@ const SCHEMA = {
   brand: { "@type": "Brand", name: "ekdruck e.U." },
   manufacturer: { "@type": "Organization", name: "ekdruck e.U.", url: "https://www.ek-druck.at" },
   image: "https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5.0",
-    reviewCount: "31",
-    bestRating: "5",
-    worstRating: "1",
-  },
   offers: [
     {
       "@type": "Offer",

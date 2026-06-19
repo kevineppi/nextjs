@@ -345,7 +345,6 @@ const ArchitekturmodellRegion = () => {
       <InlineSchema id={`architektur-service-${regionData.slug}`} schema={serviceSchema} />
       <InlineSchema id={`architektur-breadcrumb-${regionData.slug}`} schema={breadcrumbSchema} />
       <InlineSchema id={`architektur-faq-${regionData.slug}`} schema={faqSchema} />
-      <InlineSchema id={`architektur-rating-${regionData.slug}`} schema={aggregateRatingSchema} />
 
       <Navigation />
       <Breadcrumbs items={breadcrumbs} />

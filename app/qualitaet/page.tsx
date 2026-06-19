@@ -91,7 +91,6 @@ const promiseSchema = {
       addressRegion: 'Oberösterreich',
       addressCountry: 'AT',
     },
-    aggregateRating: { '@type': 'AggregateRating', ratingValue: '5.0', reviewCount: '31', bestRating: '5' },
   },
   areaServed: ['AT', 'DE', 'CH'],
   hasOfferCatalog: {

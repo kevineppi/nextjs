@@ -38,6 +38,15 @@ Vorhanden und stark (5,0 / 32 Bewertungen, 465 Interaktionen), aber Profilstärk
 - **Umgesetzt (noindex,follow, reversibel):** `architekturmodelle/[region]` setzt für alle `germanArchitekturData`-Regionen (39) noindex; 20 DE/CH-Messe-Ordner (baden-wuerttemberg, basel, bayern, berlin, bern, duesseldorf, essen, frankfurt, hamburg, hannover, hessen, koeln, luzern, muenchen, niedersachsen, nordrhein-westfalen, nuernberg, st-gallen, stuttgart, zuerich) auf noindex. AT bleibt voll indexiert. `noindex,follow` = Link-Equity fliesst weiter zu den AT-Seiten. Build verifiziert.
 - **Reversibel:** in `architekturmodelle/[region]/page.tsx` die `isAT`-Bedingung entfernen, in den Messe-Ordnern die `robots`-Zeile löschen.
 
+## Phase 3: UMGESETZT · Rezensions-Snippets (Structured Data)
+- **Befund:** GSC Rezensions-Snippets: 20 ungültig, Grund "Die Rezension hat mehrere zusammengefasste Bewertungen".
+- **Ursache:** Das globale `orgSchema()` (Layout, jede Seite) trägt eine `aggregateRating`. Zusätzlich fügten die 3 Region-Templates (Messe/Architektur/Druck), `qualitaet`, `kostenrechner` und `architekturmodelle-abo` (Product) je eine ZWEITE hinzu, also 2 pro Seite.
+- **Evidenz/Prinzip:** Google erlaubt nur EINE `aggregateRating` je Seite/Entität. Self-serving LocalBusiness/Organization-Ratings erzeugen seit 2019 ohnehin KEINE Sterne im Snippet (Sterne kommen aus dem Google-Unternehmensprofil).
+- **Änderung:** pro-Seite-`aggregateRating` entfernt (Region-Render + Properties in qualitaet/kostenrechner/Abo). Einzige Quelle bleibt global `orgSchema()`. Alte Schema-Komponenten (`StructuredData.tsx` etc.) sind toter, nirgends gerenderter Code und wurden nicht angefasst.
+- **Ehrliche Erwartung:** GSC wird grün (0 ungültig), aber es entstehen dadurch KEINE neuen Sterne (self-serving wird ignoriert). Saubere, valide Auszeichnung ist der Wert.
+- **Risiko:** gering. FAQ-, Breadcrumb-, Service- und Offer-Markup unangetastet, Build verifiziert. Reversibel via Git.
+- **Offen (klein):** Händlereinträge "Feld image fehlt" (1 Element) stammt aus einem separaten Product-Markup, getrennt zu prüfen.
+
 ## Deploy
 `seo-cleanup` nach `main` mergen, Auto-Deploy über das verbundene Hosting. Vorher empfohlen: Vorschau-Deploy prüfen.
 

@@ -288,7 +288,6 @@ const MessemodellRegion = () => {
       <InlineSchema id={`messe-service-${regionData.slug}`} schema={serviceSchema} />
       <InlineSchema id={`messe-breadcrumb-${regionData.slug}`} schema={breadcrumbSchema} />
       <InlineSchema id={`messe-faq-${regionData.slug}`} schema={faqSchema} />
-      <InlineSchema id={`messe-rating-${regionData.slug}`} schema={aggregateRatingSchema} />
 
       <Navigation />
       <Breadcrumbs items={breadcrumbs} />

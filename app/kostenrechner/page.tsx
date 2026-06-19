@@ -54,7 +54,6 @@ const webAppSchema = {
     url: "https://www.ek-druck.at",
     telephone: "+436765517197",
     address: { "@type": "PostalAddress", streetAddress: "Negrellistraße 15", addressLocality: "Gunskirchen", postalCode: "4623", addressRegion: "Oberösterreich", addressCountry: "AT" },
-    aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", reviewCount: "31", bestRating: "5" },
   },
 };
 

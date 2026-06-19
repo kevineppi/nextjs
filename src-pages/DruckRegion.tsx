@@ -282,7 +282,6 @@ const DruckRegion = ({ region }: DruckRegionProps) => {
       <InlineSchema id={`druck-service-${regionData.slug}`} schema={serviceSchema} />
       <InlineSchema id={`druck-breadcrumb-${regionData.slug}`} schema={breadcrumbSchema} />
       <InlineSchema id={`druck-faq-${regionData.slug}`} schema={faqSchema} />
-      <InlineSchema id={`druck-rating-${regionData.slug}`} schema={aggregateRatingSchema} />
 
       <Navigation />
       <Breadcrumbs items={breadcrumbs} />
