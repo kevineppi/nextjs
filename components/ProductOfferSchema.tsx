@@ -37,14 +37,8 @@ const ProductOfferSchema = ({
         "@type": "Organization",
         "name": "ekdruck e.U."
       }
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "31",
-      "bestRating": "5",
-      "worstRating": "1"
     }
+    // aggregateRating entfernt: einzige Bewertungsquelle ist global orgSchema() (Review-Snippet-Dedup)
   };
 
   return (

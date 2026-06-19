@@ -97,13 +97,7 @@ const TestimonialsSection = ({
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: BRAND.companyName,
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: BRAND.reviews.rating,
-      reviewCount: BRAND.reviews.count,
-      bestRating: '5',
-      worstRating: '1',
-    },
+    // aggregateRating entfernt: einzige Bewertungsquelle ist global orgSchema() (Review-Snippet-Dedup)
     review: list.map((t) => ({
       '@type': 'Review',
       reviewRating: {

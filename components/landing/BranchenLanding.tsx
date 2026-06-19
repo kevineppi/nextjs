@@ -74,12 +74,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
         addressRegion: 'Oberösterreich',
         addressCountry: 'AT',
       },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '5.0',
-        reviewCount: '31',
-        bestRating: '5',
-      },
+      // aggregateRating entfernt: einzige Bewertungsquelle ist global orgSchema() (Review-Snippet-Dedup)
     },
     areaServed: ['AT', 'DE', 'CH'],
     offers: branche.useCases.map((uc) => ({

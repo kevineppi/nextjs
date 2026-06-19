@@ -94,13 +94,7 @@ const LocalBusinessSchema = ({
     },
     paymentAccepted: 'Cash, Credit Card, Bank Transfer',
     currenciesAccepted: 'EUR',
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '5.0',
-      bestRating: '5',
-      worstRating: '1',
-      reviewCount: '31',
-    },
+    // aggregateRating entfernt: einzige Bewertungsquelle ist global orgSchema() (Review-Snippet-Dedup)
   }
 
   const scriptId = `local-business-schema-${city.toLowerCase().replace(/\s+/g, '-')}`
