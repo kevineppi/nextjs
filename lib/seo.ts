@@ -313,11 +313,7 @@ export const regionalLocalBusinessSchema = (params: {
     '@type': 'AdministrativeArea',
     name: params.region,
   },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '5.0',
-    reviewCount: '31',
-  },
+  // aggregateRating entfernt: einzige Bewertungsquelle ist global orgSchema() (Review-Snippet-Dedup)
 })
 
 /**
