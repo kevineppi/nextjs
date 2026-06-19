@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: CasePageProps): Promise<Metad
       title: c.metaTitle,
       description: c.metaDescription,
       url: `https://www.ek-druck.at/cases/${c.slug}`,
-      siteName: 'ekdruck – 3D-Druck Österreich',
+      siteName: 'ekdruck · 3D-Druck Österreich',
       locale: 'de_AT',
       type: 'article',
       images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630 }],
@@ -150,7 +150,7 @@ export default async function CaseDetailPage({ params }: CasePageProps) {
                   So bin ich vorgegangen.
                 </h2>
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  {c.approach.length} überprüfbare Schritte — von CAD-Eingang bis zur Anlieferung.
+                  {c.approach.length} überprüfbare Schritte · von CAD-Eingang bis zur Anlieferung.
                 </p>
               </div>
 
@@ -202,7 +202,7 @@ export default async function CaseDetailPage({ params }: CasePageProps) {
                     "{c.customerQuote.text}"
                   </p>
                   <footer className="text-xs text-background/60 uppercase tracking-wider font-bold">
-                    — {c.customerQuote.attribution}
+                    · {c.customerQuote.attribution}
                   </footer>
                 </blockquote>
               )}
@@ -212,7 +212,7 @@ export default async function CaseDetailPage({ params }: CasePageProps) {
                   <div className="flex items-center gap-2 mb-3">
                     <Lightbulb className="w-5 h-5 text-primary" />
                     <p className="mono text-[10px] font-bold uppercase tracking-wider text-primary">
-                      Lessons — was ich gelernt habe
+                      Lessons · was ich gelernt habe
                     </p>
                   </div>
                   <p className="text-base text-background/80 leading-relaxed">{c.lessons}</p>
@@ -270,7 +270,7 @@ export default async function CaseDetailPage({ params }: CasePageProps) {
                 Sieht das nach Ihrem Vorhaben aus?
               </h2>
               <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-                Schicken Sie CAD oder kurze Beschreibung — Sie bekommen das Festpreis-Angebot in 6h, direkt von mir, Kevin.
+                Schicken Sie CAD oder kurze Beschreibung · Sie bekommen das Festpreis-Angebot in 6h, direkt von mir, Kevin.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <Link href="/kostenrechner" className="inline-flex items-center gap-2 bg-primary text-primary-foreground rounded-full px-8 py-4 font-bold hover:opacity-90 transition-all">

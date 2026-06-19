@@ -1,5 +1,5 @@
 /**
- * Service-Page SEO-Content — ek-druck
+ * Service-Page SEO-Content · ek-druck
  * ──────────────────────────────────────────────────────────────────
  *
  * Long-Tail-keyword-reiche Prose-Blöcke + FAQ-Sets pro Service-Page.
@@ -32,13 +32,13 @@ const messemodelle: ServiceSeoContent = {
   slug: 'messemodelle',
   longTailBody: {
     eyebrow: 'Was Messemodelle bei ek-druck konkret bedeuten',
-    h2: 'Messemodelle drucken lassen — Maßstäbe, Materialien, Lead-Times im Detail',
+    h2: 'Messemodelle drucken lassen · Maßstäbe, Materialien, Lead-Times im Detail',
     paragraphs: [
-      'Ein Messemodell aus dem 3D-Druck ersetzt das, was im Original zu groß, zu schwer oder zu wertvoll für den Messestand ist. Eine 8-Tonnen-Werkzeugmaschine wird zum 50-Zentimeter-Tisch-Exponat. Eine 280-Meter-Windturbine wird zum 1,5-Meter-Demonstrator mit drehbaren Rotorblättern. Eine 2-Tonnen-Schiffsschraube wird zum maßstabsgetreuen Anschauungsmodell. Die Lead-Time für ein 3D-gedrucktes Messemodell liegt zwischen 2 und 6 Wochen, abhängig von Größe, Material und Veredelungstiefe — bei Express auch in 24-48 Stunden machbar.',
+      'Ein Messemodell aus dem 3D-Druck ersetzt das, was im Original zu groß, zu schwer oder zu wertvoll für den Messestand ist. Eine 8-Tonnen-Werkzeugmaschine wird zum 50-Zentimeter-Tisch-Exponat. Eine 280-Meter-Windturbine wird zum 1,5-Meter-Demonstrator mit drehbaren Rotorblättern. Eine 2-Tonnen-Schiffsschraube wird zum maßstabsgetreuen Anschauungsmodell. Die Lead-Time für ein 3D-gedrucktes Messemodell liegt zwischen 2 und 6 Wochen, abhängig von Größe, Material und Veredelungstiefe · bei Express auch in 24-48 Stunden machbar.',
       'Der Maßstab für ein Messemodell drucken zu lassen wird durch zwei Faktoren bestimmt: Originalgröße und verfügbare Tischfläche am Messestand. Faustregel für die Maßstabswahl bei Messemodellen: bei einer 2-5 Meter großen Maschine ist 1:5 bis 1:10 üblich (ergibt 30-60 cm Modellgröße), bei 5-15 Meter Originalgröße ist 1:10 bis 1:25 typisch, bei 15-50 Meter (Komplettanlagen) 1:25 bis 1:50 mit Segmentierung. Bei einem Schiff- oder Yacht-Messemodell sind Maßstäbe 1:50 bis 1:200 üblich, je nach Schiffsgröße.',
       'Material-Wahl beim Messemodell-Druck hängt ab von Einsatz-Häufigkeit und gewünschter Optik. PLA ist die Standard-Wahl für einmalige Messen mit beste Detailtreue. PETG ist robuster und hält 5-10 Messen ohne sichtbaren Verschleiß. ABS mit Aceton-Dampfglättung ergibt eine Spritzguss-ähnliche Oberfläche für Premium-Show-Quality-Modelle. Carbon-PA wird verwendet wenn das Messemodell mechanisch belastet wird (z.B. tragende Strukturen bei aktiven Demonstratoren mit Servo-Motor). Lackierung in RAL- oder Pantone-Codes ist Standard, OEM-Originalfarben werden auf Anfrage präzise getroffen.',
       'Express-Messemodelle in 24-48 Stunden sind möglich, wenn die Voraussetzungen passen: CAD muss druckreif sein (keine Geometrie-Korrekturen mehr nötig), Material muss verfügbar sein (keine Sonder-Filamente bestellen), und das Modell darf nicht zu groß sein (Express funktioniert bis ca. 40-50 cm Maximalkante). Bei Express-Messemodellen wird ein Aufschlag von 30% auf den Standardpreis fällig. Bei Standard-Lead-Time von 3-4 Wochen ist der Express-Aufpreis vermeidbar. Wer schon 6-8 Wochen vor der Messe anfragt, bekommt zusätzlich die Möglichkeit für Veredelungs-Optionen wie Aceton-Glättung oder mehrfarbige Profi-Lackierung.',
-      'Messemodell drucken lassen lohnt sich finanziell, wenn die Alternative — Originalanlage zur Messe transportieren — Logistik-Kosten von 5.000 € bis 20.000 € verursachen würde plus Risiko von Transportschäden. Ein typisches Messemodell kostet zwischen 800 € (Komponentenmodell) und 12.000 € (Komplettanlage segmentiert, 1m+, lackiert). Die Investition lohnt sich ab der ersten Messe und das Modell ist für mindestens 5-10 weitere Messen wiederverwendbar. Bei Industriegüter-Ausstellern in Maschinenbau, Schiffbau, Energietechnik, Automotive, Anlagenbau und Elektrotechnik ist das Messemodell aus dem 3D-Druck inzwischen Standard-Setup statt Sonderfall.',
+      'Messemodell drucken lassen lohnt sich finanziell, wenn die Alternative · Originalanlage zur Messe transportieren · Logistik-Kosten von 5.000 € bis 20.000 € verursachen würde plus Risiko von Transportschäden. Ein typisches Messemodell kostet zwischen 800 € (Komponentenmodell) und 12.000 € (Komplettanlage segmentiert, 1m+, lackiert). Die Investition lohnt sich ab der ersten Messe und das Modell ist für mindestens 5-10 weitere Messen wiederverwendbar. Bei Industriegüter-Ausstellern in Maschinenbau, Schiffbau, Energietechnik, Automotive, Anlagenbau und Elektrotechnik ist das Messemodell aus dem 3D-Druck inzwischen Standard-Setup statt Sonderfall.',
     ],
   },
   faqs: [
@@ -70,7 +70,7 @@ const messemodelle: ServiceSeoContent = {
     {
       question: 'Welche Materialien eignen sich am besten für Messemodelle?',
       answer:
-        'PLA für einmalige Messen mit höchster Detailtreue. PETG für 5-10 Messen — robuster, UV-stabil. ABS mit Aceton-Glättung für Premium-Show-Quality (Spritzguss-Optik). Carbon-PA bei mechanisch belasteten Demonstratoren mit Servo-Motoren. ASA für Outdoor-tauglichkeit. Lackierung in beliebigem RAL- oder Pantone-Ton ist Standard.',
+        'PLA für einmalige Messen mit höchster Detailtreue. PETG für 5-10 Messen · robuster, UV-stabil. ABS mit Aceton-Glättung für Premium-Show-Quality (Spritzguss-Optik). Carbon-PA bei mechanisch belasteten Demonstratoren mit Servo-Motoren. ASA für Outdoor-tauglichkeit. Lackierung in beliebigem RAL- oder Pantone-Ton ist Standard.',
     },
     {
       question: 'Liefern Sie das Messemodell direkt an die Messeadresse?',
@@ -102,13 +102,13 @@ const architekturmodelle: ServiceSeoContent = {
   slug: 'architekturmodelle',
   longTailBody: {
     eyebrow: 'Was Architekturmodelle bei ek-druck konkret bedeuten',
-    h2: 'Architekturmodell drucken lassen — Maßstäbe, CAD-Workflows, typische Projekte',
+    h2: 'Architekturmodell drucken lassen · Maßstäbe, CAD-Workflows, typische Projekte',
     paragraphs: [
       'Ein Architekturmodell aus dem 3D-Druck ist das physische Kommunikations-Werkzeug für Wettbewerbsabgaben, Behördentermine, Bauherrenpräsentationen und Investorenpitches. Der typische Maßstab für ein 3D-gedrucktes Architekturmodell liegt zwischen 1:50 (Detail-Modell eines Gebäudes) und 1:1000 (Stadtmodell mit weitläufiger Bebauung). Für Wettbewerbsmodelle ist 1:200 bis 1:500 die häufigste Wahl, weil ein einzelnes Gebäude mit seiner näheren Umgebung darstellbar bleibt ohne dass das Modell zu groß für den Wettbewerbs-Standard wird.',
-      'CAD-Import für Architekturmodelle bedeutet: wir nehmen Ihre ArchiCAD-, Revit-, Rhino-, SketchUp-, Vectorworks- oder AutoCAD-Datei direkt entgegen. Bei Direkt-Import aus ArchiCAD/Revit kommt es darauf an, dass die Geometrie wasserdicht ist und Details im Maßstabs-relevanten Bereich liegen — eine 8mm-Türklinke wird im Maßstab 1:500 ohnehin nicht sichtbar gedruckt, daher konstruktiv reduziert. Wir machen diese Reduzierung beim Slicing automatisch, ohne dass Sie das CAD vorher aufräumen müssen.',
+      'CAD-Import für Architekturmodelle bedeutet: wir nehmen Ihre ArchiCAD-, Revit-, Rhino-, SketchUp-, Vectorworks- oder AutoCAD-Datei direkt entgegen. Bei Direkt-Import aus ArchiCAD/Revit kommt es darauf an, dass die Geometrie wasserdicht ist und Details im Maßstabs-relevanten Bereich liegen · eine 8mm-Türklinke wird im Maßstab 1:500 ohnehin nicht sichtbar gedruckt, daher konstruktiv reduziert. Wir machen diese Reduzierung beim Slicing automatisch, ohne dass Sie das CAD vorher aufräumen müssen.',
       'Wettbewerbsmodell drucken lassen ist die häufigste Anfrage von Architekturbüros bei ek-druck. Ein typisches Wettbewerbsmodell für eine Wohnbau-Abgabe im Maßstab 1:200 mit Hauptgebäude und 2-3 Umgebungsblöcken kostet zwischen €600 und €1.800 und braucht 8-15 Werktage Lead-Time. Express-Wettbewerbsmodelle in 5 Werktagen sind gegen 30% Aufpreis machbar, wenn die Geometrie nicht zu komplex ist. Häufig kombiniert mit Sockel aus Holz oder MDF, den wir auf Wunsch maßgenau zuschneiden lassen.',
-      'Stadtmodell drucken im großen Maßstab (60×80cm bis 120×80cm) ist die anspruchsvollste Kategorie. Hier konstruieren wir Segmentierungen entlang natürlicher Straßenführungen, sodass die Stoßstellen optisch unsichtbar bleiben. Hauptobjekt der Visualisierung wird in Kontrast-Lackierung (typisch weiß) gegen die umliegende Bestandsbebauung (matt-grau, "Beton-Look") gedruckt — das macht die visuelle Hierarchie sofort lesbar. Stadtmodelle für Wiener Bauherrenprojekte, Linzer Stadtentwicklung oder Salzburger Sanierungsprojekte sind regelmäßige Aufträge.',
-      'Architekturmodell ab €20 ist eine Untergrenze für sehr kleine Einzelobjekte ohne Umgebung — z.B. ein einzelner Pavillon im Maßstab 1:200 in Weiß. Das deckt selten den tatsächlichen Projektbedarf — die meisten Architekturbüros bestellen Modelle zwischen €400 und €3.500 mit Umgebung, Lackierung und Sockel. Architekturmodell-Flatrate für Architekturbüros mit regelmäßigem Bedarf ab €199 pro Monat — beinhaltet ein freies Modell-Kontingent plus garantierte Lead-Time. Details unter /architekturmodelle-abo.',
+      'Stadtmodell drucken im großen Maßstab (60×80cm bis 120×80cm) ist die anspruchsvollste Kategorie. Hier konstruieren wir Segmentierungen entlang natürlicher Straßenführungen, sodass die Stoßstellen optisch unsichtbar bleiben. Hauptobjekt der Visualisierung wird in Kontrast-Lackierung (typisch weiß) gegen die umliegende Bestandsbebauung (matt-grau, "Beton-Look") gedruckt · das macht die visuelle Hierarchie sofort lesbar. Stadtmodelle für Wiener Bauherrenprojekte, Linzer Stadtentwicklung oder Salzburger Sanierungsprojekte sind regelmäßige Aufträge.',
+      'Architekturmodell ab €20 ist eine Untergrenze für sehr kleine Einzelobjekte ohne Umgebung · z.B. ein einzelner Pavillon im Maßstab 1:200 in Weiß. Das deckt selten den tatsächlichen Projektbedarf · die meisten Architekturbüros bestellen Modelle zwischen €400 und €3.500 mit Umgebung, Lackierung und Sockel. Architekturmodell-Flatrate für Architekturbüros mit regelmäßigem Bedarf ab €199 pro Monat · beinhaltet ein freies Modell-Kontingent plus garantierte Lead-Time. Details unter /architekturmodelle-abo.',
     ],
   },
   faqs: [
@@ -120,7 +120,7 @@ const architekturmodelle: ServiceSeoContent = {
     {
       question: 'Welche CAD-Software wird unterstützt für Architekturmodelle?',
       answer:
-        'Direkt-Import aus ArchiCAD, Revit, Rhino, SketchUp, Vectorworks, AutoCAD, sowie alle Standard-Austauschformate (STEP, IGES, STL, 3MF, OBJ). Bei komplexen Modellen mit viel Innenstruktur reduzieren wir die Geometrie auf maßstabsrelevante Ebene — Sie müssen das CAD nicht vorher aufräumen.',
+        'Direkt-Import aus ArchiCAD, Revit, Rhino, SketchUp, Vectorworks, AutoCAD, sowie alle Standard-Austauschformate (STEP, IGES, STL, 3MF, OBJ). Bei komplexen Modellen mit viel Innenstruktur reduzieren wir die Geometrie auf maßstabsrelevante Ebene · Sie müssen das CAD nicht vorher aufräumen.',
     },
     {
       question: 'Welcher Maßstab passt für ein Wettbewerbsmodell?',
@@ -130,7 +130,7 @@ const architekturmodelle: ServiceSeoContent = {
     {
       question: 'Wie schnell ist ein Express-Wettbewerbsmodell machbar?',
       answer:
-        'Express 5-7 Werktage gegen 30% Aufpreis machbar — falls Geometrie nicht zu komplex ist und Lackierungs-Wunsch sich auf 1-2 Farben begrenzt. Bei knapp zur Wettbewerbs-Frist: rufen Sie an unter +43 676 5517197, ich prüfe Kapazität sofort.',
+        'Express 5-7 Werktage gegen 30% Aufpreis machbar · falls Geometrie nicht zu komplex ist und Lackierungs-Wunsch sich auf 1-2 Farben begrenzt. Bei knapp zur Wettbewerbs-Frist: rufen Sie an unter +43 676 5517197, ich prüfe Kapazität sofort.',
     },
     {
       question: 'Wird das Architekturmodell lackiert oder bleibt es weiß?',
@@ -150,7 +150,7 @@ const architekturmodelle: ServiceSeoContent = {
     {
       question: 'Liefern Sie das Architekturmodell mit Sockel?',
       answer:
-        'Sockel aus Holz oder MDF auf Wunsch — entweder von uns auf Maß zugeschnitten (ab €40) oder Sie liefern den Sockel und wir bauen das Modell direkt darauf. Bei Wettbewerbsmodellen oft mit beschriftbarem Plexiglas-Cover, das wir auf Maß bestellen.',
+        'Sockel aus Holz oder MDF auf Wunsch · entweder von uns auf Maß zugeschnitten (ab €40) oder Sie liefern den Sockel und wir bauen das Modell direkt darauf. Bei Wettbewerbsmodellen oft mit beschriftbarem Plexiglas-Cover, das wir auf Maß bestellen.',
     },
   ],
 }
@@ -162,12 +162,12 @@ const prototyping: ServiceSeoContent = {
   slug: 'prototyping',
   longTailBody: {
     eyebrow: 'Was Rapid Prototyping bei ek-druck konkret bedeutet',
-    h2: 'Rapid Prototyping — Funktionsmuster und Designstudien in 24-48 Stunden',
+    h2: 'Rapid Prototyping · Funktionsmuster und Designstudien in 24-48 Stunden',
     paragraphs: [
-      'Rapid Prototyping aus dem FDM-3D-Druck heißt: vom CAD zur physischen Komponente in 24-48 Stunden Standard-Express. Funktionsmuster für mechanische Tests, Designstudien für Konzept-Iterationen, Vorabmodelle für Spritzguss-Entscheidungen — der 3D-Druck-Prototyp ersetzt klassische Werkzeugbau-Lead-Times von 6-12 Wochen mit dem Bruchteil der Kosten. Ein typisches Funktionsmuster im PLA kostet €25-€80 pro Stück, ein anspruchsvolles Carbon-PA-Bauteil für mechanische DV/PV-Tests €120-€400.',
-      'Funktionsprototyp drucken bedeutet bei ek-druck konkret: die Geometrie wird so optimiert, dass das Bauteil tatsächlich seine Funktion erfüllt. Wandstärken, Materialwahl, Druckrichtung (Layer-Orientation) — alles wird auf die geplante Belastung abgestimmt. Carbon-PA hat eine Festigkeit nahe Aluminium und eignet sich für mechanisch belastete Funktionsmuster. PETG ist robust und schlagfest für stoßbelastete Komponenten. Für reine Designstudien ohne mechanische Belastung ist PLA ausreichend und detailgetreuer.',
-      'Designprototyp für die Produktentwicklung wird typisch in Iterationen gedruckt — Version 1, Version 2, Version 3 — mit jeweils 3-5 Werktagen Lead-Time pro Iteration. Bei Stammkunden mit regelmäßigem Prototyping-Bedarf vergeben wir bis zu 20% Stammkunden-Rabatt auf Folgeaufträge. Klein-Serien-Fertigung von Vorserien ab 10 Stück mit 10-30% Mengenrabatt machbar. Carbon-PA-Komponenten für DV/PV-Tests vor Spritzguss-Werkzeugbau sind eine häufige Anfrage von Industriegüter-Herstellern.',
-      'Toleranzen beim FDM-Prototyping: typisch ±0,1 mm pro 100 mm Bauteilgröße. Bei kritischen Funktionsdetails (z.B. Lagerungs-Bohrungen, Steck-Verbindungen) erreichen wir ±0,05 mm in einzelnen Bereichen durch Nachbearbeitung. Wenn engere Toleranzen nötig sind (<±0,02 mm), ist FDM-3D-Druck an Grenzen — dann empfehlen wir SLA-Druck über Partner-Netzwerk oder klassische Zerspanung. Reverse Engineering von vorhandenen Bauteilen via 3D-Scan und CAD-Rekonstruktion ist auf Anfrage möglich.',
+      'Rapid Prototyping aus dem FDM-3D-Druck heißt: vom CAD zur physischen Komponente in 24-48 Stunden Standard-Express. Funktionsmuster für mechanische Tests, Designstudien für Konzept-Iterationen, Vorabmodelle für Spritzguss-Entscheidungen · der 3D-Druck-Prototyp ersetzt klassische Werkzeugbau-Lead-Times von 6-12 Wochen mit dem Bruchteil der Kosten. Ein typisches Funktionsmuster im PLA kostet €25-€80 pro Stück, ein anspruchsvolles Carbon-PA-Bauteil für mechanische DV/PV-Tests €120-€400.',
+      'Funktionsprototyp drucken bedeutet bei ek-druck konkret: die Geometrie wird so optimiert, dass das Bauteil tatsächlich seine Funktion erfüllt. Wandstärken, Materialwahl, Druckrichtung (Layer-Orientation) · alles wird auf die geplante Belastung abgestimmt. Carbon-PA hat eine Festigkeit nahe Aluminium und eignet sich für mechanisch belastete Funktionsmuster. PETG ist robust und schlagfest für stoßbelastete Komponenten. Für reine Designstudien ohne mechanische Belastung ist PLA ausreichend und detailgetreuer.',
+      'Designprototyp für die Produktentwicklung wird typisch in Iterationen gedruckt · Version 1, Version 2, Version 3 · mit jeweils 3-5 Werktagen Lead-Time pro Iteration. Bei Stammkunden mit regelmäßigem Prototyping-Bedarf vergeben wir bis zu 20% Stammkunden-Rabatt auf Folgeaufträge. Klein-Serien-Fertigung von Vorserien ab 10 Stück mit 10-30% Mengenrabatt machbar. Carbon-PA-Komponenten für DV/PV-Tests vor Spritzguss-Werkzeugbau sind eine häufige Anfrage von Industriegüter-Herstellern.',
+      'Toleranzen beim FDM-Prototyping: typisch ±0,1 mm pro 100 mm Bauteilgröße. Bei kritischen Funktionsdetails (z.B. Lagerungs-Bohrungen, Steck-Verbindungen) erreichen wir ±0,05 mm in einzelnen Bereichen durch Nachbearbeitung. Wenn engere Toleranzen nötig sind (<±0,02 mm), ist FDM-3D-Druck an Grenzen · dann empfehlen wir SLA-Druck über Partner-Netzwerk oder klassische Zerspanung. Reverse Engineering von vorhandenen Bauteilen via 3D-Scan und CAD-Rekonstruktion ist auf Anfrage möglich.',
       'Prototyp drucken lassen mit Express 24h funktioniert wenn drei Voraussetzungen passen: CAD ist druckreif, Material ist verfügbar, Bauteil ist unter 30 cm Maximalkante. Express 24h kostet 30% Aufpreis auf Standard. Express same-day (Versand am Bestelltag) ist selten möglich und nur für kleine Bauteile bis 15 cm und PLA/PETG. Bei Anfragen sehr kurzfristig: rufen Sie an unter +43 676 5517197, ich prüfe Kapazität live. Stammkunden mit DfAM-Beratung (Design for Additive Manufacturing): konstruktive Pre-Flight-Begleitung der Geometrie für optimale Druck-Tauglichkeit.',
     ],
   },
@@ -190,7 +190,7 @@ const prototyping: ServiceSeoContent = {
     {
       question: 'Welche Toleranzen sind beim FDM-Prototyping erreichbar?',
       answer:
-        'Typisch ±0,1 mm pro 100 mm Bauteilgröße. Bei kritischen Funktionsdetails durch Nachbearbeitung ±0,05 mm in einzelnen Bereichen. Engere Toleranzen unter ±0,02 mm sind mit FDM nicht zuverlässig — dann SLA-Druck über Partner oder klassische Zerspanung empfohlen.',
+        'Typisch ±0,1 mm pro 100 mm Bauteilgröße. Bei kritischen Funktionsdetails durch Nachbearbeitung ±0,05 mm in einzelnen Bereichen. Engere Toleranzen unter ±0,02 mm sind mit FDM nicht zuverlässig · dann SLA-Druck über Partner oder klassische Zerspanung empfohlen.',
     },
     {
       question: 'Können Sie auch nach Skizze oder Foto modellieren?',
@@ -210,7 +210,7 @@ const prototyping: ServiceSeoContent = {
     {
       question: 'Was ist DfAM-Beratung?',
       answer:
-        'Design for Additive Manufacturing — konstruktive Pre-Flight-Begleitung Ihrer Geometrie für optimale Druck-Tauglichkeit. Wir prüfen vor dem Druck: Wandstärken, Überhänge, Support-Strategien, Layer-Orientation, kritische Funktionsdetails. Beratung gegen Stundensatz oder pauschal im Stammkunden-Rahmen.',
+        'Design for Additive Manufacturing · konstruktive Pre-Flight-Begleitung Ihrer Geometrie für optimale Druck-Tauglichkeit. Wir prüfen vor dem Druck: Wandstärken, Überhänge, Support-Strategien, Layer-Orientation, kritische Funktionsdetails. Beratung gegen Stundensatz oder pauschal im Stammkunden-Rahmen.',
     },
   ],
 }
@@ -222,13 +222,13 @@ const firmenkunden: ServiceSeoContent = {
   slug: 'firmenkunden',
   longTailBody: {
     eyebrow: 'B2B-Konditionen bei ek-druck konkret',
-    h2: 'Firmenkunden & B2B — Rahmenverträge, NDA, Mengenrabatt im Detail',
+    h2: 'Firmenkunden & B2B · Rahmenverträge, NDA, Mengenrabatt im Detail',
     paragraphs: [
-      'B2B-3D-Druck mit ek-druck bedeutet: Mengenrabatt ab 5 Stück, Zahlungsziel 30 Tage nach Auftragserteilung, NDA-fähige Projektabwicklung mit verschlüsseltem Datentransfer, persönlicher Ansprechpartner ohne Vertriebsfilter. Als österreichisches Einzelunternehmen mit Kleinunternehmer-Regelung stelle ich ohne USt-Aufschlag aus — für B2B-Kunden mit UID neutral, für AT-Privatkunden ist das ein direkter Preisvorteil. Rahmenverträge mit garantierter Mindestabnahme und Sonderkonditionen sind verhandelbar ab €5.000 jährlichem Auftragsvolumen.',
+      'B2B-3D-Druck mit ek-druck bedeutet: Mengenrabatt ab 5 Stück, Zahlungsziel 30 Tage nach Auftragserteilung, NDA-fähige Projektabwicklung mit verschlüsseltem Datentransfer, persönlicher Ansprechpartner ohne Vertriebsfilter. Als österreichisches Einzelunternehmen mit Kleinunternehmer-Regelung stelle ich ohne USt-Aufschlag aus · für B2B-Kunden mit UID neutral, für AT-Privatkunden ist das ein direkter Preisvorteil. Rahmenverträge mit garantierter Mindestabnahme und Sonderkonditionen sind verhandelbar ab €5.000 jährlichem Auftragsvolumen.',
       'Rahmenvertrag 3D-Druck B2B funktioniert so: Sie definieren ein jährliches Auftragsvolumen (typisch €5.000-€50.000), wir vereinbaren Sonderkonditionen (Rabattstaffel, Lead-Time-Garantie, persönlicher Ansprechpartner). Zahlungsziele 30 oder 60 Tage nach Lieferung, Quartals-Reporting der bezogenen Leistungen, jährliche Konditions-Review. Bei größeren Industrie-Kunden auch Lagerhaltung gängig genutzter Komponenten gegen Mindestabnahme verhandelbar.',
-      'NDA 3D-Druck bei ek-druck heißt: verschlüsselter Datentransfer über separate Strecke (kein Standard-Email-Anhang), separater Werkstattbereich für sensible Projekte, automatische CAD-Löschung nach Lieferung mit vertraglicher Zusicherung. Standard-NDA-Vertrag liegt vor, Sonder-NDA mit branchen-spezifischen Klauseln (z.B. für Verteidigungs- oder Pharma-Projekte) wird auf Anfrage individuell formuliert. NDA-Aufschlag €150 einmalig pro Projekt — deckt den zusätzlichen Verwaltungsaufwand.',
-      'Mengenrabatt 3D-Druck startet bei 5 Stück mit 5% — ein praktischer Einstieg für Klein-Serien. Ab 10 Stück 10%, ab 50 Stück 15%, ab 100 Stück 20% Rabatt auf den Listenpreis. Bei Stückzahlen über 500 verlassen wir die Standard-Rabattstaffel und kalkulieren individuell, weil ab da Druckbett-Optimierung und Material-Bulk-Einkauf signifikante Skaleneffekte bringen — oft -30% bis -50% gegenüber Stückpreis. Werbeartikel-Klein-Serien (z.B. 1.000-5.000 Stück gebrandet) ab €6 pro Stück.',
-      'Zahlungsziel 30 Tage ist Standard für etablierte B2B-Kunden ab dem 2. Auftrag. Beim Erstauftrag mit neuem Kunden bevorzugen wir 30% Anzahlung bei Auftragserteilung, 70% bei Lieferung — das reduziert Risiko für beide Seiten. Bei größeren Aufträgen über €5.000 individuelles Zahlungs-Setup verhandelbar (z.B. 30/40/30 in 3 Tranchen). UID-Vermerk auf Rechnung Standard, Reverse-Charge-Verfahren bei EU-B2B-Kunden möglich. Buchhaltungs-Standard nach österreichischer UGB.',
+      'NDA 3D-Druck bei ek-druck heißt: verschlüsselter Datentransfer über separate Strecke (kein Standard-Email-Anhang), separater Werkstattbereich für sensible Projekte, automatische CAD-Löschung nach Lieferung mit vertraglicher Zusicherung. Standard-NDA-Vertrag liegt vor, Sonder-NDA mit branchen-spezifischen Klauseln (z.B. für Verteidigungs- oder Pharma-Projekte) wird auf Anfrage individuell formuliert. NDA-Aufschlag €150 einmalig pro Projekt · deckt den zusätzlichen Verwaltungsaufwand.',
+      'Mengenrabatt 3D-Druck startet bei 5 Stück mit 5% · ein praktischer Einstieg für Klein-Serien. Ab 10 Stück 10%, ab 50 Stück 15%, ab 100 Stück 20% Rabatt auf den Listenpreis. Bei Stückzahlen über 500 verlassen wir die Standard-Rabattstaffel und kalkulieren individuell, weil ab da Druckbett-Optimierung und Material-Bulk-Einkauf signifikante Skaleneffekte bringen · oft -30% bis -50% gegenüber Stückpreis. Werbeartikel-Klein-Serien (z.B. 1.000-5.000 Stück gebrandet) ab €6 pro Stück.',
+      'Zahlungsziel 30 Tage ist Standard für etablierte B2B-Kunden ab dem 2. Auftrag. Beim Erstauftrag mit neuem Kunden bevorzugen wir 30% Anzahlung bei Auftragserteilung, 70% bei Lieferung · das reduziert Risiko für beide Seiten. Bei größeren Aufträgen über €5.000 individuelles Zahlungs-Setup verhandelbar (z.B. 30/40/30 in 3 Tranchen). UID-Vermerk auf Rechnung Standard, Reverse-Charge-Verfahren bei EU-B2B-Kunden möglich. Buchhaltungs-Standard nach österreichischer UGB.',
     ],
   },
   faqs: [
@@ -260,7 +260,7 @@ const firmenkunden: ServiceSeoContent = {
     {
       question: 'Welche Branchen bedient ek-druck primär im B2B-Bereich?',
       answer:
-        'Maschinenbau, Schiffbau, Energietechnik, Automotive, Anlagenbau, Elektrotechnik — siehe /branchen für Detail-Cluster pro Branche. Plus Architekturbüros und Eventagenturen. Schwerpunkt sind Industriegüter-Hersteller mit Messemodell- und Funktionsmuster-Bedarf.',
+        'Maschinenbau, Schiffbau, Energietechnik, Automotive, Anlagenbau, Elektrotechnik · siehe /branchen für Detail-Cluster pro Branche. Plus Architekturbüros und Eventagenturen. Schwerpunkt sind Industriegüter-Hersteller mit Messemodell- und Funktionsmuster-Bedarf.',
     },
     {
       question: 'Gibt es eine Mindestauftragshöhe für B2B-Kunden?',
@@ -277,11 +277,11 @@ const einzelanfertigungen: ServiceSeoContent = {
   slug: 'einzelanfertigungen',
   longTailBody: {
     eyebrow: 'Was Einzelanfertigungen bei ek-druck konkret bedeuten',
-    h2: 'Einzelanfertigung 3D-Druck — vom Unikat bis zur kleinen Sonderserie',
+    h2: 'Einzelanfertigung 3D-Druck · vom Unikat bis zur kleinen Sonderserie',
     paragraphs: [
-      'Einzelanfertigung 3D-Druck ist die Antwort auf alle Anfragen, die nicht in eine Standard-Kategorie passen: Spezialhalterungen, Ersatzteile für nicht mehr produzierte Geräte, Sonder-Designs für Hochzeiten, Custom-Werbeartikel, künstlerische Objekte, Ein-Stück-Auftragsfertigungen aller Art. Ein einzelnes Bauteil zu drucken kostet ab €20 — keine Mindestmenge, kein Aufpreis für Stückzahl 1. Lead-Time typisch 3-7 Werktage, Express 24-48h bei kleineren Objekten möglich.',
-      'Vom CAD oder Skizze zum fertigen Unikat — wenn Sie kein CAD haben, modelliere ich nach Skizze, Foto oder Bemaßungs-Zeichnung gegen €80/Stunde. Typisch 1-3 Stunden CAD-Arbeit für ein kleines Bauteil, 3-8 Stunden für komplexe Geometrien. Bei sehr ausgefallenen Designs (z.B. organische Formen, künstlerische Objekte) gerne längere Vorab-Beratung — entweder Telefon-Termin oder Werkstatt-Besichtigung in Gunskirchen.',
-      'Ersatzteile drucken für Geräte die nicht mehr hergestellt werden ist eine wachsende Nische. Eine kaputte Halterung aus dem Auto der 1980er, ein Knopf aus einer alten Espressomaschine, ein verlorenes Spezialwerkzeug — wenn das Original noch da ist oder vermessbar ist, drucken wir es nach. Material-Wahl je nach Belastung: PETG für mechanisch beanspruchte Teile, PLA für reine Schauflächen, Carbon-PA wenn Original aus Aluminium war.',
+      'Einzelanfertigung 3D-Druck ist die Antwort auf alle Anfragen, die nicht in eine Standard-Kategorie passen: Spezialhalterungen, Ersatzteile für nicht mehr produzierte Geräte, Sonder-Designs für Hochzeiten, Custom-Werbeartikel, künstlerische Objekte, Ein-Stück-Auftragsfertigungen aller Art. Ein einzelnes Bauteil zu drucken kostet ab €20 · keine Mindestmenge, kein Aufpreis für Stückzahl 1. Lead-Time typisch 3-7 Werktage, Express 24-48h bei kleineren Objekten möglich.',
+      'Vom CAD oder Skizze zum fertigen Unikat · wenn Sie kein CAD haben, modelliere ich nach Skizze, Foto oder Bemaßungs-Zeichnung gegen €80/Stunde. Typisch 1-3 Stunden CAD-Arbeit für ein kleines Bauteil, 3-8 Stunden für komplexe Geometrien. Bei sehr ausgefallenen Designs (z.B. organische Formen, künstlerische Objekte) gerne längere Vorab-Beratung · entweder Telefon-Termin oder Werkstatt-Besichtigung in Gunskirchen.',
+      'Ersatzteile drucken für Geräte die nicht mehr hergestellt werden ist eine wachsende Nische. Eine kaputte Halterung aus dem Auto der 1980er, ein Knopf aus einer alten Espressomaschine, ein verlorenes Spezialwerkzeug · wenn das Original noch da ist oder vermessbar ist, drucken wir es nach. Material-Wahl je nach Belastung: PETG für mechanisch beanspruchte Teile, PLA für reine Schauflächen, Carbon-PA wenn Original aus Aluminium war.',
       'Sonder-Designs als Geschenkidee oder Custom-Werbeartikel: 3D-gedruckte personalisierte Keksausstecher, Logo-Halterungen, Custom-Vasen, ausgefallene Schmuck-Komponenten, Mini-Architekturmodelle als Bauleitungs-Geschenk, Custom-Trophäen für Firmen-Awards. Klein-Serien-Fertigung 10-100 Stück ab €15 pro Stück möglich (je nach Größe). Custom-Werbeartikel in 250-5.000 Stück ab €6 pro Stück mit individuellem Branding.',
       'Ein einzelnes Bauteil drucken lassen heißt bei ek-druck konkret: Sie schicken CAD, Skizze oder Foto, ich bestätige Machbarkeit binnen 2 Stunden werktags, das Festpreis-Angebot kommt in 6 Stunden, der Druck startet noch am gleichen Tag bei Express oder spätestens am nächsten Werktag. Bei kleineren Einzelanfertigungen unter €100 Vorkasse-Bezahlung üblich (per Überweisung oder PayPal), bei größeren Aufträgen über €500 auch Anzahlung 30% / Restzahlung bei Lieferung.',
     ],
@@ -300,7 +300,7 @@ const einzelanfertigungen: ServiceSeoContent = {
     {
       question: 'Was wenn ich kein CAD habe?',
       answer:
-        'Kein Problem. Schicken Sie Skizze, Foto, Bemaßungs-Zeichnung oder beschreiben Sie das Vorhaben — ich modelliere für Sie zum Stundensatz €80 (typisch 1-3 Stunden für ein kleines Bauteil). Bei sehr komplexen oder organischen Designs ggf. Vorab-Telefon-Termin zur Spec-Klärung.',
+        'Kein Problem. Schicken Sie Skizze, Foto, Bemaßungs-Zeichnung oder beschreiben Sie das Vorhaben · ich modelliere für Sie zum Stundensatz €80 (typisch 1-3 Stunden für ein kleines Bauteil). Bei sehr komplexen oder organischen Designs ggf. Vorab-Telefon-Termin zur Spec-Klärung.',
     },
     {
       question: 'Wie lange dauert eine Einzelanfertigung?',

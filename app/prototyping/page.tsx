@@ -10,14 +10,14 @@ import {
 
 /**
  * Title-Schärfung 2026-05-27: Position 1.2 in GSC, aber 0 Klicks für "3d druck prototypen".
- * Hypothese: alter Title zu generisch ("Rapid Prototyping Österreich") — kein konkreter Hook.
+ * Hypothese: alter Title zu generisch ("Rapid Prototyping Österreich") · kein konkreter Hook.
  * Neuer Title: Spezifisch (24h Express), Social Proof (★5,0), Pain-Mitigation (ab €20).
  * Description: Pain-Pull-Format (Spritzguss 6 Wochen → 24h Prototyp) statt Feature-Dump.
  */
 
-const TITLE = '3D-Druck Prototypen in 24h ★5,0 — Funktionsmuster | ekdruck'
+const TITLE = '3D-Druck Prototypen in 24h ★5,0 · Funktionsmuster | ekdruck'
 const DESCRIPTION =
-  'Spritzguss braucht 6 Wochen — wir liefern Prototyp in 24-48h. PLA, PETG, ABS, Carbon-PA. Toleranz ±0,1mm. Festpreis in 6h. ★5,0 (31 Reviews).'
+  'Spritzguss braucht 6 Wochen · wir liefern Prototyp in 24-48h. PLA, PETG, ABS, Carbon-PA. Toleranz ±0,1mm. Festpreis in 6h. ★5,0 (31 Reviews).'
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -28,10 +28,10 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: 'https://www.ek-druck.at/prototyping',
-    siteName: 'ekdruck – 3D-Druck Österreich',
+    siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'website',
-    images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630, alt: 'ekdruck – 3D-Druck Prototypen 24h Express' }],
+    images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630, alt: 'ekdruck · 3D-Druck Prototypen 24h Express' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -57,7 +57,7 @@ const FAQ_LD = faqSchema([
   },
   {
     q: 'Welche Toleranzen sind beim Prototypen-Druck realistisch?',
-    a: 'Bei FDM ±0,1-0,2mm, bei SLA bis ±0,05mm, bei SLS ±0,1mm isotrop. Wir empfehlen das passende Verfahren basierend auf Ihren Anforderungen — kostenfreie Vorab-Beratung in 6h.',
+    a: 'Bei FDM ±0,1-0,2mm, bei SLA bis ±0,05mm, bei SLS ±0,1mm isotrop. Wir empfehlen das passende Verfahren basierend auf Ihren Anforderungen · kostenfreie Vorab-Beratung in 6h.',
   },
   {
     q: 'Welche Materialien für mechanisch belastete Prototypen?',

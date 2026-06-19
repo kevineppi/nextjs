@@ -21,7 +21,7 @@ import AuthorByline from '@/components/AuthorByline'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 import { BRAND } from '@/data/brandVoice'
 
-const TITLE = 'Messemodelle Elektrotechnik — Schaltschrank · Trafo · MV'
+const TITLE = 'Messemodelle Elektrotechnik · Schaltschrank · Trafo · MV'
 const DESCRIPTION =
   'Messemodelle für Elektrotechnik-Aussteller: Schaltschränke mit korrekter DIN 2403 / IEC 60446 Farbcodierung, Messwandler-Modelle, Komponenten-Schnittmodelle. Hannover Messe, electronica, embedded world, SPS.'
 
@@ -38,10 +38,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: TITLE, description: DESCRIPTION,
     url: 'https://www.ek-druck.at/ratgeber/messemodell-elektrotechnik',
-    siteName: 'ekdruck – 3D-Druck Österreich', locale: 'de_AT', type: 'article',
+    siteName: 'ekdruck · 3D-Druck Österreich', locale: 'de_AT', type: 'article',
     publishedTime: '2026-05-31T00:00:00.000Z', modifiedTime: '2026-05-31T00:00:00.000Z',
     authors: ['Kevin Eppensteiner'],
-    images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630, alt: 'Messemodelle Elektrotechnik — ekdruck' }],
+    images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630, alt: 'Messemodelle Elektrotechnik · ekdruck' }],
   },
   twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION },
   robots: STANDARD_ROBOTS,
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org', '@type': 'TechArticle',
-  headline: 'Messemodelle für Elektrotechnik-Aussteller — Schaltschränke, Messwandler, Komponenten',
+  headline: 'Messemodelle für Elektrotechnik-Aussteller · Schaltschränke, Messwandler, Komponenten',
   description: DESCRIPTION, datePublished: '2026-05-31', dateModified: '2026-05-31',
   author: { '@type': 'Person', name: BRAND.founderName, url: 'https://www.ek-druck.at/ueber-uns', jobTitle: 'Inhaber & Gründer ekdruck e.U.' },
   publisher: { '@type': 'Organization', name: BRAND.companyName, logo: { '@type': 'ImageObject', url: 'https://www.ek-druck.at/icon-192.png' } },
@@ -66,7 +66,7 @@ const articleSchema = {
 const faqs = [
   {
     question: 'Was unterscheidet Elektrotechnik-Modelle von Energietechnik-Modellen?',
-    answer: 'Energietechnik fokussiert auf Strom-Erzeugung und -Verteilung im Großmaßstab (Windturbinen, Trafostationen, Vollumspannwerke für Energieversorger). Elektrotechnik fokussiert auf Komponenten und Schaltanlagen-Hersteller — Schaltschränke, Industrie-PCs, Klemmensysteme, Messwandler. Maßstab tendenziell kleiner (1:5 bis 1:10), Detail-Tiefe wichtiger, Zielgruppe sind Industrie-Einkäufer und Maschinenbauer als Endkunden der Komponenten.',
+    answer: 'Energietechnik fokussiert auf Strom-Erzeugung und -Verteilung im Großmaßstab (Windturbinen, Trafostationen, Vollumspannwerke für Energieversorger). Elektrotechnik fokussiert auf Komponenten und Schaltanlagen-Hersteller · Schaltschränke, Industrie-PCs, Klemmensysteme, Messwandler. Maßstab tendenziell kleiner (1:5 bis 1:10), Detail-Tiefe wichtiger, Zielgruppe sind Industrie-Einkäufer und Maschinenbauer als Endkunden der Komponenten.',
   },
   {
     question: 'Welche Maßstäbe funktionieren für Schaltschrank-Modelle?',
@@ -74,15 +74,15 @@ const faqs = [
   },
   {
     question: 'Wie kritisch ist die DIN 2403 / IEC 60446 Farbcodierung am Modell?',
-    answer: 'Für Elektrotechnik-Engineers ist sie absolut kritisch. Korrekte Farbcodierung am Modell signalisiert sofort: "der versteht unsere Branche". Falsche Codierung signalisiert: "der hat das nur visuell zusammengebaut, nicht verstanden". IEC 60446 für AC: L1 braun, L2 schwarz, L3 grau, N hellblau, PE grüngelb. DC: L+ rot, L- grau, M hellblau. Bei Rohrleitungen DIN 2403 für Hilfsmedien-Codierung. Wir gravieren oder lackieren — beides hält Multi-Messen-Einsatz problemlos durch.',
+    answer: 'Für Elektrotechnik-Engineers ist sie absolut kritisch. Korrekte Farbcodierung am Modell signalisiert sofort: "der versteht unsere Branche". Falsche Codierung signalisiert: "der hat das nur visuell zusammengebaut, nicht verstanden". IEC 60446 für AC: L1 braun, L2 schwarz, L3 grau, N hellblau, PE grüngelb. DC: L+ rot, L- grau, M hellblau. Bei Rohrleitungen DIN 2403 für Hilfsmedien-Codierung. Wir gravieren oder lackieren · beides hält Multi-Messen-Einsatz problemlos durch.',
   },
   {
     question: 'Lassen sich Klemmensystem-Details realistisch darstellen?',
-    answer: 'Ja, aber mit Maßstabs-Anpassung. Bei 1:5-Schaltschrank-Modellen ist die einzelne Reihenklemme 1-2 mm — die Form ist dann angedeutet, einzelne Schraubenköpfe als Mini-Details erkennbar. Bei 1:1-Detail-Modellen einzelner Klemmen oder Klemmenreihen kommen wir auf 0,2 mm Detailtreue — alle Funktionsbeschriftungen, Hersteller-Logos, Anschluss-Quirschnitte sind sichtbar. Diese Detail-Modelle sind typisch für Klemmen-Hersteller (Phoenix Contact, Weidmüller, Wago) als Premium-Showcase auf SPS und Hannover Messe.',
+    answer: 'Ja, aber mit Maßstabs-Anpassung. Bei 1:5-Schaltschrank-Modellen ist die einzelne Reihenklemme 1-2 mm · die Form ist dann angedeutet, einzelne Schraubenköpfe als Mini-Details erkennbar. Bei 1:1-Detail-Modellen einzelner Klemmen oder Klemmenreihen kommen wir auf 0,2 mm Detailtreue · alle Funktionsbeschriftungen, Hersteller-Logos, Anschluss-Quirschnitte sind sichtbar. Diese Detail-Modelle sind typisch für Klemmen-Hersteller (Phoenix Contact, Weidmüller, Wago) als Premium-Showcase auf SPS und Hannover Messe.',
   },
   {
     question: 'Welche Brennstoffklasse ist auf der electronica München erforderlich?',
-    answer: 'electronica München (Messe München) folgt der Münchner Standabnahme — B1 für tragende Stand-Komponenten Pflicht, für Modell-Exponate über 1m² Standfläche. Bei den Standard-Schaltschrank-Modellen (typisch 30-50 cm Höhe, kleinere Standfläche) wird häufig B2 toleriert, aber B1-Material-Nachweis sollte bereitliegen. Wir empfehlen B1-fähiges PLA mit Flammschutz-Additiv oder Polycarbonat-FR. Material-Zertifikat liegt jedem Auftrag bei.',
+    answer: 'electronica München (Messe München) folgt der Münchner Standabnahme · B1 für tragende Stand-Komponenten Pflicht, für Modell-Exponate über 1m² Standfläche. Bei den Standard-Schaltschrank-Modellen (typisch 30-50 cm Höhe, kleinere Standfläche) wird häufig B2 toleriert, aber B1-Material-Nachweis sollte bereitliegen. Wir empfehlen B1-fähiges PLA mit Flammschutz-Additiv oder Polycarbonat-FR. Material-Zertifikat liegt jedem Auftrag bei.',
   },
   {
     question: 'Sind interaktive Demonstrationen wie LED-Anzeigen oder Schaltbewegungen möglich?',
@@ -149,12 +149,12 @@ export default function MesseModellElektrotechnikPage() {
 
         <section className="px-4 py-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Das Elektrotechnik-Showcase-Problem — Detail-Genauigkeit entscheidet</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Das Elektrotechnik-Showcase-Problem · Detail-Genauigkeit entscheidet</h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Im Gegensatz zu Maschinenbau- oder Schiffbau-Messen geht es bei Elektrotechnik nicht um die "8-Tonnen-Maschine
               die nicht in die Halle passt". Schaltschränke kann man mitnehmen. Das eigentliche Problem ist anders: Schaltschränke
-              im Original sind <em>geschlossene Kästen</em>. Was den Buyer interessiert — die Innenausstattung, Klemmen-Layout,
-              Komponenten-Anordnung — ist im normalen Standzustand nicht sichtbar.
+              im Original sind <em>geschlossene Kästen</em>. Was den Buyer interessiert · die Innenausstattung, Klemmen-Layout,
+              Komponenten-Anordnung · ist im normalen Standzustand nicht sichtbar.
             </p>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Klar, Sie können einen Schrank auf der Messe offen lassen. Aber jeder Buyer sieht dann GENAU IHREN Schrank.
@@ -162,7 +162,7 @@ export default function MesseModellElektrotechnikPage() {
               die explosionsgeschützte Version für Chemie-Anwendungen". Modelle ermöglichen Varianten-Showcase parallel.
             </p>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Plus: 1:5-Modelle mit klappbaren Türen erlauben dem Buyer, selbst zu öffnen und das Innere zu erkunden — ein
+              Plus: 1:5-Modelle mit klappbaren Türen erlauben dem Buyer, selbst zu öffnen und das Innere zu erkunden · ein
               psychologischer Akt der Beteiligung, der die Aufenthaltsdauer am Stand verdreifacht.
             </p>
             <div className="grid md:grid-cols-3 gap-6 my-8">
@@ -196,7 +196,7 @@ export default function MesseModellElektrotechnikPage() {
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Jährlich, Hallen 9-17 fokussiert auf Industrieautomation, Antriebstechnik, Energieübertragung, Smart Grid. Internationales
-                  Publikum, B1-Standard, Material-Nachweis verlangt. Schaltschrank-Hersteller wie Rittal, Eaton, Schneider Electric Standard-Aussteller —
+                  Publikum, B1-Standard, Material-Nachweis verlangt. Schaltschrank-Hersteller wie Rittal, Eaton, Schneider Electric Standard-Aussteller -
                   3D-Druck-Modelle inzwischen etabliert bei Tier-2-Zulieferern und Spezialhersteller.
                 </p>
               </div>
@@ -207,7 +207,7 @@ export default function MesseModellElektrotechnikPage() {
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Alle 2 Jahre, ~80.000 Fachbesucher aus weltweiter Elektronik-Industrie. Halbleiter, Komponenten, Embedded Systems,
-                  Stromversorgung. Standabnahme Messe München — B1 für Stand-Komponenten Pflicht. Komponenten-Detail-Modelle (1:1, 2:1)
+                  Stromversorgung. Standabnahme Messe München · B1 für Stand-Komponenten Pflicht. Komponenten-Detail-Modelle (1:1, 2:1)
                   performen hier am besten, weniger Schaltschrank-Showcase.
                 </p>
               </div>
@@ -274,7 +274,7 @@ export default function MesseModellElektrotechnikPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Norm-Korrektheit als Verkaufsargument</h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Elektrotechnik-Engineers haben einen geübten Blick für Norm-Konformität. Ein Modell mit falsch codierten Phasen
-              oder vertauschten Farben ist sofort als nicht-fachlich erkennbar — und nimmt dem Aussteller die Glaubwürdigkeit.
+              oder vertauschten Farben ist sofort als nicht-fachlich erkennbar · und nimmt dem Aussteller die Glaubwürdigkeit.
               Wir achten standardmäßig auf:
             </p>
             <div className="bg-card border border-border rounded-lg p-6">
@@ -314,10 +314,10 @@ export default function MesseModellElektrotechnikPage() {
 
         <section className="px-4 py-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Case-Pattern — Variantenvergleich am Stand</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Case-Pattern · Variantenvergleich am Stand</h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Häufiges Anfrage-Pattern aus dem Elektrotechnik-Cluster: ein Schaltschrank-Hersteller will auf SPS Nürnberg
-              drei Konfigurations-Varianten zeigen — Standard-Industrie-Schrank, Premium-Variante mit Smart-Grid-Kommunikation,
+              drei Konfigurations-Varianten zeigen · Standard-Industrie-Schrank, Premium-Variante mit Smart-Grid-Kommunikation,
               explosionsgeschützte Ex-Variante für Chemie-Anwendungen.
             </p>
             <div className="bg-card border border-border rounded-lg p-6">
@@ -360,7 +360,7 @@ export default function MesseModellElektrotechnikPage() {
               <div className="bg-card border border-border rounded-lg p-6">
                 <Target className="w-8 h-8 text-primary mb-3" />
                 <h3 className="font-bold text-lg mb-2">Komponenten-Detail-Showcase</h3>
-                <p className="text-sm text-muted-foreground">1:1-Klemmen-Modelle und 2:1-Schalter-Details zeigen Hersteller-Logos, Anschluss-Querschnitte, Funktions-Beschriftungen — Premium-Glaubwürdigkeit ohne Original-Komponente.</p>
+                <p className="text-sm text-muted-foreground">1:1-Klemmen-Modelle und 2:1-Schalter-Details zeigen Hersteller-Logos, Anschluss-Querschnitte, Funktions-Beschriftungen · Premium-Glaubwürdigkeit ohne Original-Komponente.</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
                 <Clock className="w-8 h-8 text-primary mb-3" />
@@ -381,7 +381,7 @@ export default function MesseModellElektrotechnikPage() {
 
         <section className="px-4 py-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Häufige Fragen — Elektrotechnik-Messemodelle</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Häufige Fragen · Elektrotechnik-Messemodelle</h2>
             <div className="space-y-4">
               {faqs.map((faq, i) => (
                 <details key={i} className="group bg-card border border-border rounded-lg">

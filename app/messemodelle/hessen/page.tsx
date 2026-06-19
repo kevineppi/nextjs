@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Messemodelle Hessen: Automechanika, Ambiente, Buchmesse',
     description: 'Hessische Aussteller: Automechanika Frankfurt, Ambiente, Buchmesse, Achema. Versand 48h aus Österreich. Ab €30.',
     url: 'https://www.ek-druck.at/messemodelle/hessen',
-    siteName: 'ekdruck – 3D-Druck Österreich',
+    siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'website',
   },

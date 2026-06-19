@@ -1,9 +1,9 @@
 /**
- * Reale Cases (anonymisiert) — ek-druck
+ * Reale Cases (anonymisiert) · ek-druck
  * ──────────────────────────────────────────────────────────────────
  *
  * Echte Projekt-Stories aus Kevin's Werkstatt. Anonymisiert wo nötig,
- * aber technisch konkret. Diese Cases verkaufen — keine Marketing-
+ * aber technisch konkret. Diese Cases verkaufen · keine Marketing-
  * Phrasen, sondern "ja so machen wir das"-Substance.
  *
  * Verwendet von:
@@ -22,7 +22,7 @@ export interface RealCase {
   slug: string
   // Header
   title: string
-  customerLabel: string // "Werkzeugmaschinen-Hersteller, Wels" — nicht "Großkunde"
+  customerLabel: string // "Werkzeugmaschinen-Hersteller, Wels" · nicht "Großkunde"
   branchen: string[] // matched against /branchen/<slug>
   region?: string // Bundesland für Cross-Linking
   year: number
@@ -58,7 +58,7 @@ export interface RealCase {
 export const cases: RealCase[] = [
 
   // ═══════════════════════════════════════════════════════════════
-  //   CASE 1 — RITZ Dubai (NDA-konform, bestehender Auftrag)
+  //   CASE 1 · RITZ Dubai (NDA-konform, bestehender Auftrag)
   // ═══════════════════════════════════════════════════════════════
   {
     slug: 'industriemodell-mittelspannungs-anlage-dubai',
@@ -69,12 +69,12 @@ export const cases: RealCase[] = [
     year: 2025,
     status: 'completed',
 
-    metaTitle: 'Case: MV-Schaltanlage 1:25 für Dubai-Messe — 3D-Druck ekdruck',
+    metaTitle: 'Case: MV-Schaltanlage 1:25 für Dubai-Messe · 3D-Druck ekdruck',
     metaDescription: 'Wie wir eine 3-stöckige MV-Schaltanlage als Tischmodell für eine Energie-Messe in Dubai gedruckt haben. Maßstab 1:25, lackiert RAL 7035, segmentiert mit Magnetverbindungen.',
     primaryKeyword: 'Mittelspannungs-Schaltanlage Messemodell',
 
     challenge:
-      'Der Kunde — ein Messwandler-Hersteller mit Hauptkunden im Stromnetz-Ausbau — musste auf einer Energie-Fachmesse in Dubai seine Mittelspannungs-Schaltanlage zeigen. Die Originalanlage wiegt 2,8 Tonnen, ist 3 Stockwerke hoch, kostet 6-stellig pro Stück und hätte für die Demo ein extra Container-Setup gebraucht. Logistik-Kosten allein wären 18.000 € gewesen — nur für eine 4-Tages-Messe.',
+      'Der Kunde · ein Messwandler-Hersteller mit Hauptkunden im Stromnetz-Ausbau · musste auf einer Energie-Fachmesse in Dubai seine Mittelspannungs-Schaltanlage zeigen. Die Originalanlage wiegt 2,8 Tonnen, ist 3 Stockwerke hoch, kostet 6-stellig pro Stück und hätte für die Demo ein extra Container-Setup gebraucht. Logistik-Kosten allein wären 18.000 € gewesen · nur für eine 4-Tages-Messe.',
 
     approach: [
       {
@@ -110,13 +110,13 @@ export const cases: RealCase[] = [
     ],
 
     outcome:
-      'Modell am Stand der zentrale Eyecatcher der Messe. Nach Kunden-Feedback >40 qualifizierte Lead-Gespräche entlang des Modells geführt — Lead-Capture-Rate 3× höher als bei den 2D-Roll-ups daneben. Folgeauftrag für eine Variante zur AMPEC Indien.',
+      'Modell am Stand der zentrale Eyecatcher der Messe. Nach Kunden-Feedback >40 qualifizierte Lead-Gespräche entlang des Modells geführt · Lead-Capture-Rate 3× höher als bei den 2D-Roll-ups daneben. Folgeauftrag für eine Variante zur AMPEC Indien.',
 
     lessons:
-      'Was ich beim nächsten Mal anders machen würde: Die Magnetverbindungen hatten zu viel Spielraum bei einem der Übergänge — manuelle Nachjustierung am Aufbautag nötig. Heute fixiere ich kritische Verbindungen mit Konus-Steckung + Magnet kombiniert.',
+      'Was ich beim nächsten Mal anders machen würde: Die Magnetverbindungen hatten zu viel Spielraum bei einem der Übergänge · manuelle Nachjustierung am Aufbautag nötig. Heute fixiere ich kritische Verbindungen mit Konus-Steckung + Magnet kombiniert.',
 
     customerQuote: {
-      text: 'Die Genauigkeit der Detailwiedergabe hat selbst unsere Engineering-Kollegen überrascht. Das war kein Modell — das war eine glaubwürdige 1:25-Replik unserer Anlage.',
+      text: 'Die Genauigkeit der Detailwiedergabe hat selbst unsere Engineering-Kollegen überrascht. Das war kein Modell · das war eine glaubwürdige 1:25-Replik unserer Anlage.',
       attribution: 'Marketing-Leitung (auf Wunsch anonymisiert)',
     },
 
@@ -124,7 +124,7 @@ export const cases: RealCase[] = [
   },
 
   // ═══════════════════════════════════════════════════════════════
-  //   CASE 2 — Generali Keksausstecher (passiv-Stammkunde, explizit OK)
+  //   CASE 2 · Generali Keksausstecher (passiv-Stammkunde, explizit OK)
   // ═══════════════════════════════════════════════════════════════
   {
     slug: 'generali-firmen-keksausstecher-3500-stueck',
@@ -135,17 +135,17 @@ export const cases: RealCase[] = [
     year: 2024,
     status: 'completed',
 
-    metaTitle: 'Case: 3.500 Custom-Keksausstecher für Generali Weihnachten — 3D-Druck',
+    metaTitle: 'Case: 3.500 Custom-Keksausstecher für Generali Weihnachten · 3D-Druck',
     metaDescription: 'Wie wir in 3 Wochen 3.500 individuelle Keksausstecher mit Generali-Logo für die Mitarbeiter-Aktion produziert haben. Lebensmittelechtes PETG, kombinierte Druckfarmen.',
     primaryKeyword: 'Custom Keksausstecher 3D-Druck',
 
     challenge:
-      'Generali plante eine Mitarbeiter-Weihnachts-Aktion: 3.500 personalisierte Keksausstecher in Generali-Brand mit dem Firmenlogo zum Verteilen an alle österreichischen Standorte. Lead-Time: 3 Wochen ab Auftragsfreigabe — inkl. Verpackung. Die meisten 3D-Druck-Anbieter haben Stückzahlen >2.000 abgelehnt oder Lead-Times von 6-8 Wochen genannt.',
+      'Generali plante eine Mitarbeiter-Weihnachts-Aktion: 3.500 personalisierte Keksausstecher in Generali-Brand mit dem Firmenlogo zum Verteilen an alle österreichischen Standorte. Lead-Time: 3 Wochen ab Auftragsfreigabe · inkl. Verpackung. Die meisten 3D-Druck-Anbieter haben Stückzahlen >2.000 abgelehnt oder Lead-Times von 6-8 Wochen genannt.',
 
     approach: [
       {
         label: 'CAD-Optimierung für Druck-Effizienz',
-        detail: 'Eigene CAD-Variation mit erhabenem Logo (statt graviertem) — reduziert Druckzeit pro Stück um 40%, weil keine zusätzlichen Verfahrwege für die Logo-Gravur nötig sind.',
+        detail: 'Eigene CAD-Variation mit erhabenem Logo (statt graviertem) · reduziert Druckzeit pro Stück um 40%, weil keine zusätzlichen Verfahrwege für die Logo-Gravur nötig sind.',
       },
       {
         label: 'Druckfarm-Parallelisierung',
@@ -174,10 +174,10 @@ export const cases: RealCase[] = [
       'Auslieferung 4 Tage vor Weihnachts-Aktion fertig. Generali setzt seitdem ekdruck für regelmäßige Mitarbeiter-Aktionen als Stammlieferant ein. Aus dem Auftrag entstand das Sub-Format "Klein-Serie 100-5.000 Stück" das jetzt ein eigener Service-Bereich ist.',
 
     lessons:
-      'Lehre für Klein-Serie: NICHT alle Drucker gleichmäßig auslasten, sondern einen als "Reserve" laufen lassen für Ausfall-Risiko. Beim Generali-Auftrag fiel an Tag 12 ein Druckbett aus (verstopfte Düse) — ohne Reserve hätten wir 2 Tage verloren.',
+      'Lehre für Klein-Serie: NICHT alle Drucker gleichmäßig auslasten, sondern einen als "Reserve" laufen lassen für Ausfall-Risiko. Beim Generali-Auftrag fiel an Tag 12 ein Druckbett aus (verstopfte Düse) · ohne Reserve hätten wir 2 Tage verloren.',
 
     customerQuote: {
-      text: 'Wir hatten in 3 Wochen eine ganze Charge in Weihnachts-Qualität — das schaffen sonst nicht mal die Spritzguss-Anbieter mit Werkzeugbau-Vorlauf.',
+      text: 'Wir hatten in 3 Wochen eine ganze Charge in Weihnachts-Qualität · das schaffen sonst nicht mal die Spritzguss-Anbieter mit Werkzeugbau-Vorlauf.',
       attribution: 'Marketing-Verantwortliche Generali Österreich',
     },
 
@@ -185,7 +185,7 @@ export const cases: RealCase[] = [
   },
 
   // ═══════════════════════════════════════════════════════════════
-  //   CASE 3 — Werkzeugmaschine Schnittmodell (anonymisierter Maschinenbau-Kunde)
+  //   CASE 3 · Werkzeugmaschine Schnittmodell (anonymisierter Maschinenbau-Kunde)
   // ═══════════════════════════════════════════════════════════════
   {
     slug: 'maschinenbau-werkzeugmaschine-schnitt',
@@ -201,7 +201,7 @@ export const cases: RealCase[] = [
     primaryKeyword: 'Werkzeugmaschine Schnittmodell EMO',
 
     challenge:
-      'Der Kunde — ein NÖ-Hersteller von Bearbeitungszentren — hatte eine Neuentwicklung für die EMO Hannover am Stand. Das Original wiegt 8 Tonnen, hätte den halben Stand belegt und wäre für die Engineering-Konversation eher abgelenkt als geholfen. Gesucht: ein Tisch-Modell, das den USP der Maschine (innovative 5-Achs-Kinematik mit kompakter Bauweise) auf einen Blick zeigt.',
+      'Der Kunde · ein NÖ-Hersteller von Bearbeitungszentren · hatte eine Neuentwicklung für die EMO Hannover am Stand. Das Original wiegt 8 Tonnen, hätte den halben Stand belegt und wäre für die Engineering-Konversation eher abgelenkt als geholfen. Gesucht: ein Tisch-Modell, das den USP der Maschine (innovative 5-Achs-Kinematik mit kompakter Bauweise) auf einen Blick zeigt.',
 
     approach: [
       {
@@ -236,18 +236,18 @@ export const cases: RealCase[] = [
       'Maschinenmodell verbrachte 4 Messetage als zentraler Diskussionspunkt am Stand. 28 qualifizierte Engineering-Gespräche entlang des Modells. Zwei Folgeprojekte zur AMB Stuttgart 2026 bereits geplant.',
 
     customerQuote: {
-      text: 'Wir hatten erwartet ein "nettes Beigabe-Modell" — bekommen haben wir ein Werkzeug für die Verkaufs-Diskussion. Jeder Engineer der den Stand besucht hat, hat sich am Modell aufgehalten.',
+      text: 'Wir hatten erwartet ein "nettes Beigabe-Modell" · bekommen haben wir ein Werkzeug für die Verkaufs-Diskussion. Jeder Engineer der den Stand besucht hat, hat sich am Modell aufgehalten.',
       attribution: 'Vertriebs-Leitung (anonymisiert)',
     },
 
     lessons:
-      'Schnittebenen-Markierung in Kontrastfarbe ist ein Game-Changer — der Pain "ich erkenne nicht was die Schnittfläche zeigt" verschwindet sofort. Mache ich jetzt bei allen Cutaway-Modellen standardmäßig.',
+      'Schnittebenen-Markierung in Kontrastfarbe ist ein Game-Changer · der Pain "ich erkenne nicht was die Schnittfläche zeigt" verschwindet sofort. Mache ich jetzt bei allen Cutaway-Modellen standardmäßig.',
 
     relatedCases: ['anlagenbau-pumpen-schnittmodell', 'industriemodell-mittelspannungs-anlage-dubai'],
   },
 
   // ═══════════════════════════════════════════════════════════════
-  //   CASE 4 — Pumpen-Schnittmodell für Vertriebs-Schulung
+  //   CASE 4 · Pumpen-Schnittmodell für Vertriebs-Schulung
   // ═══════════════════════════════════════════════════════════════
   {
     slug: 'anlagenbau-pumpen-schnittmodell',
@@ -258,7 +258,7 @@ export const cases: RealCase[] = [
     year: 2025,
     status: 'completed',
 
-    metaTitle: 'Case: Kreiselpumpen-Schnittmodell mit drehbarem Laufrad — 3D-Druck',
+    metaTitle: 'Case: Kreiselpumpen-Schnittmodell mit drehbarem Laufrad · 3D-Druck',
     metaDescription: 'Wie wir 6 Stück Kreiselpumpen-Schnittmodelle für die deutschsprachige Vertriebs-Tournee eines OÖ-Herstellers gedruckt haben. PLA, drehbar, mechanisch belastbar.',
     primaryKeyword: 'Pumpe Schnittmodell 3D-Druck',
 
@@ -276,7 +276,7 @@ export const cases: RealCase[] = [
       },
       {
         label: 'Material-Wahl PETG',
-        detail: 'PETG statt PLA wegen mechanischer Belastung — Vertriebs-Demos bedeuten 100+ Anfass-Zyklen pro Modell. PETG hält das ohne Spannungsrisse.',
+        detail: 'PETG statt PLA wegen mechanischer Belastung · Vertriebs-Demos bedeuten 100+ Anfass-Zyklen pro Modell. PETG hält das ohne Spannungsrisse.',
       },
       {
         label: 'Transportkoffer + Reset-Anleitung',
@@ -306,7 +306,7 @@ export const cases: RealCase[] = [
   },
 
   // ═══════════════════════════════════════════════════════════════
-  //   CASE 5 — Architekturmodell Stadtentwicklung Wien
+  //   CASE 5 · Architekturmodell Stadtentwicklung Wien
   // ═══════════════════════════════════════════════════════════════
   {
     slug: 'wien-stadtentwicklung-1-500-stadtmodell',
@@ -317,17 +317,17 @@ export const cases: RealCase[] = [
     year: 2025,
     status: 'completed',
 
-    metaTitle: 'Case: Stadtmodell 1:500 Wien Stadtentwicklung — Architekturmodell 3D-Druck',
+    metaTitle: 'Case: Stadtmodell 1:500 Wien Stadtentwicklung · Architekturmodell 3D-Druck',
     metaDescription: 'Wie wir ein 80×60cm Stadtmodell 1:500 mit umliegender Bebauung in 11 Werktagen für ein Wiener Architekturbüro gedruckt haben.',
     primaryKeyword: 'Stadtmodell 1:500 Wien',
 
     challenge:
-      'Wiener Architekturbüro hatte einen Behördentermin bei der MA21 zur Stadtentwicklungs-Projekt-Vorstellung. Ein 80×60cm Stadtmodell im Maßstab 1:500 wurde gebraucht — Hauptobjekt + umliegende Bebauung (ca. 4 Blocks) zur Kontext-Darstellung. Zeitfenster: 11 Werktage von Auftrag bis Termin.',
+      'Wiener Architekturbüro hatte einen Behördentermin bei der MA21 zur Stadtentwicklungs-Projekt-Vorstellung. Ein 80×60cm Stadtmodell im Maßstab 1:500 wurde gebraucht · Hauptobjekt + umliegende Bebauung (ca. 4 Blocks) zur Kontext-Darstellung. Zeitfenster: 11 Werktage von Auftrag bis Termin.',
 
     approach: [
       {
         label: 'CAD-Aufbereitung aus ArchiCAD',
-        detail: 'Direkt-Import aus ArchiCAD. Reduktion der Geometrie-Details auf maßstabsrelevante Ebene (Dächer, Fenster-Strukturen, Erdgeschoss-Eingänge — keine Ornamente die im 1:500 nicht erkennbar sind).',
+        detail: 'Direkt-Import aus ArchiCAD. Reduktion der Geometrie-Details auf maßstabsrelevante Ebene (Dächer, Fenster-Strukturen, Erdgeschoss-Eingänge · keine Ornamente die im 1:500 nicht erkennbar sind).',
       },
       {
         label: 'Segmentierung',

@@ -1,5 +1,5 @@
 /**
- * Branchen-Übersicht — Premium-Page mit Hub-and-Spoke-Architektur
+ * Branchen-Übersicht · Premium-Page mit Hub-and-Spoke-Architektur
  * /branchen
  *
  * 2026-05-31: Komplett-Redesign der bisherigen 6-Cards-Übersicht.
@@ -23,7 +23,7 @@ import { branchen } from '@/data/branchenData'
 import { buildDachAlternates, STANDARD_ROBOTS, breadcrumbSchema } from '@/lib/seo'
 
 const TITLE =
-  'Branchen-Lösungen — 3D-Druck Messemodelle für 6 Industrien | ekdruck'
+  'Branchen-Lösungen · 3D-Druck Messemodelle für 6 Industrien | ekdruck'
 const DESCRIPTION =
   '3D-gedruckte Messemodelle für Maschinenbau, Schiffbau, Energietechnik, Anlagenbau, Automotive, Elektrotechnik. Branchen-Guides, echte Cases, Festpreis in 6h. ★5,0'
 
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: 'https://www.ek-druck.at/branchen',
-    siteName: 'ekdruck – 3D-Druck Österreich',
+    siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'website',
     images: [
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
         url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png',
         width: 1200,
         height: 630,
-        alt: 'ekdruck – Branchen-Messemodelle 6 Industrie-Cluster',
+        alt: 'ekdruck · Branchen-Messemodelle 6 Industrie-Cluster',
       },
     ],
   },
@@ -174,7 +174,7 @@ export default function BranchenPage() {
         <Breadcrumbs items={[{ name: 'Branchen', url: '/branchen' }]} />
 
         {/* ═══════════════════════════════════════════════════════════
-            HERO — animated stats, gradient background
+            HERO · animated stats, gradient background
         ═══════════════════════════════════════════════════════════ */}
         <section className="relative py-20 md:py-28 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
           {/* Decorative gradient orbs */}
@@ -196,7 +196,7 @@ export default function BranchenPage() {
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mb-10">
-                Maschinenbau, Schiffbau, Energietechnik, Anlagenbau, Automotive, Elektrotechnik —
+                Maschinenbau, Schiffbau, Energietechnik, Anlagenbau, Automotive, Elektrotechnik -
                 jede Branche hat eigene Maßstäbe, Materialien, Brennstoffklassen-Anforderungen
                 und Leitmessen. Wir kennen sie alle. Pro Branche: Service-Übersicht, vollständiger
                 Fach-Guide, echte Cases aus 2024-2026.
@@ -238,7 +238,7 @@ export default function BranchenPage() {
                 </div>
                 <div className="group p-6 rounded-2xl bg-card border border-border hover:border-primary/40 transition-all hover:-translate-y-1">
                   <div className="text-4xl font-bold text-primary mb-1 transition-transform group-hover:scale-110 origin-left">
-                    1:1—1:500
+                    1:1-1:500
                   </div>
                   <div className="text-sm text-muted-foreground">Maßstabs-Range</div>
                 </div>
@@ -254,7 +254,7 @@ export default function BranchenPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════
-            BRANCHEN-CLUSTER — Premium-Cards mit Multi-CTA
+            BRANCHEN-CLUSTER · Premium-Cards mit Multi-CTA
         ═══════════════════════════════════════════════════════════ */}
         <section className="py-20 md:py-24 bg-muted/20">
           <div className="container mx-auto px-4">
@@ -388,7 +388,7 @@ export default function BranchenPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════
-            COMPARISON — wir vs klassische Modellbauer
+            COMPARISON · wir vs klassische Modellbauer
         ═══════════════════════════════════════════════════════════ */}
         <section className="py-20 md:py-24">
           <div className="container mx-auto px-4">
@@ -489,7 +489,7 @@ export default function BranchenPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════
-            PROCESS — Wie wir arbeiten (5 Schritte)
+            PROCESS · Wie wir arbeiten (5 Schritte)
         ═══════════════════════════════════════════════════════════ */}
         <section className="py-20 md:py-24 bg-muted/20">
           <div className="container mx-auto px-4">
@@ -560,7 +560,7 @@ export default function BranchenPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════
-            TRUST BLOCK — Cases preview + Authority
+            TRUST BLOCK · Cases preview + Authority
         ═══════════════════════════════════════════════════════════ */}
         <section className="py-20 md:py-24">
           <div className="container mx-auto px-4">
@@ -623,7 +623,7 @@ export default function BranchenPage() {
                 <span className="text-primary">Wir drucken auch das.</span>
               </h2>
               <p className="text-lg text-background/70 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Bauwesen, Luftfahrt, Medizintechnik, Pharma-Verpackung — wenn Ihre Branche oben nicht
+                Bauwesen, Luftfahrt, Medizintechnik, Pharma-Verpackung · wenn Ihre Branche oben nicht
                 gelistet ist, schicken Sie kurz CAD oder Skizze. Wir prüfen die Machbarkeit ehrlich
                 und sagen auch klar, wenn FDM-Druck nicht passt.
               </p>
@@ -633,7 +633,7 @@ export default function BranchenPage() {
                   className="group inline-flex items-center gap-2 bg-primary text-primary-foreground rounded-full px-8 py-4 font-bold hover:opacity-90 transition-all hover:gap-3"
                 >
                   <Calculator className="w-5 h-5" />
-                  STL hochladen — Preis sofort
+                  STL hochladen · Preis sofort
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link

@@ -20,7 +20,7 @@ import AuthorByline from '@/components/AuthorByline'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 import { BRAND } from '@/data/brandVoice'
 
-const TITLE = 'Messemodelle Energietechnik — MV-Schaltanlage, Windturbine, Trafo [Guide]'
+const TITLE = 'Messemodelle Energietechnik · MV-Schaltanlage, Windturbine, Trafo [Guide]'
 const DESCRIPTION =
   'Messemodelle für Energietechnik-Aussteller: Mittelspannungs-Schaltanlagen mit klappbaren Türen, Windturbinen 1:50, Trafostationen, PV-Landschaftsmodelle. E-world Essen, Hannover Messe, WindEnergy. Konkrete Cases + ROI.'
 
@@ -37,10 +37,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: TITLE, description: DESCRIPTION,
     url: 'https://www.ek-druck.at/ratgeber/messemodell-energietechnik',
-    siteName: 'ekdruck – 3D-Druck Österreich', locale: 'de_AT', type: 'article',
+    siteName: 'ekdruck · 3D-Druck Österreich', locale: 'de_AT', type: 'article',
     publishedTime: '2026-05-31T00:00:00.000Z', modifiedTime: '2026-05-31T00:00:00.000Z',
     authors: ['Kevin Eppensteiner'],
-    images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630, alt: 'Messemodelle Energietechnik — ekdruck' }],
+    images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630, alt: 'Messemodelle Energietechnik · ekdruck' }],
   },
   twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION },
   robots: STANDARD_ROBOTS,
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org', '@type': 'TechArticle',
-  headline: 'Messemodelle für Energietechnik-Aussteller — MV-Schaltanlagen, Windturbinen, Trafos',
+  headline: 'Messemodelle für Energietechnik-Aussteller · MV-Schaltanlagen, Windturbinen, Trafos',
   description: DESCRIPTION, datePublished: '2026-05-31', dateModified: '2026-05-31',
   author: { '@type': 'Person', name: BRAND.founderName, url: 'https://www.ek-druck.at/ueber-uns', jobTitle: 'Inhaber & Gründer ekdruck e.U.' },
   publisher: { '@type': 'Organization', name: BRAND.companyName, logo: { '@type': 'ImageObject', url: 'https://www.ek-druck.at/icon-192.png' } },
@@ -65,19 +65,19 @@ const articleSchema = {
 const faqs = [
   {
     question: 'Welcher Maßstab funktioniert für Mittelspannungs-Schaltanlagen?',
-    answer: '1:25 ist Sweet-Spot für 3-stöckige MV-Schaltanlagen (Original ~3,5 m hoch, ~12 m lang). Ergibt Modell-Aufbau von ~14×48×35 cm — tisch-tauglich, alle Schaltfelder unterscheidbar. Bei Trafostationen (kompakter, ~2,5 m) reicht 1:10. Bei Vollumspannwerken mit Schaltanlage + Trafo + Schaltleiste: 1:50, sonst wird das Modell zu groß für Standard-Tische.',
+    answer: '1:25 ist Sweet-Spot für 3-stöckige MV-Schaltanlagen (Original ~3,5 m hoch, ~12 m lang). Ergibt Modell-Aufbau von ~14×48×35 cm · tisch-tauglich, alle Schaltfelder unterscheidbar. Bei Trafostationen (kompakter, ~2,5 m) reicht 1:10. Bei Vollumspannwerken mit Schaltanlage + Trafo + Schaltleiste: 1:50, sonst wird das Modell zu groß für Standard-Tische.',
   },
   {
     question: 'Wie zeigen Sie das Innere von Schaltschränken am Stand?',
-    answer: 'Über klappbare Front-Türen mit Innenansicht des Sammelschienen-Systems, Leistungsschaltern, Stromwandlern. Wir konstruieren die Türen über Magnetscharniere — Stand-Besucher kann selbst öffnen und schließen, ohne dass etwas kaputt geht. Innen-Komponenten sind farblich nach IEC 60446 codiert (L1 braun, L2 schwarz, L3 grau, N hellblau, PE grüngelb) — Engineering-Glaubwürdigkeit auf einen Blick.',
+    answer: 'Über klappbare Front-Türen mit Innenansicht des Sammelschienen-Systems, Leistungsschaltern, Stromwandlern. Wir konstruieren die Türen über Magnetscharniere · Stand-Besucher kann selbst öffnen und schließen, ohne dass etwas kaputt geht. Innen-Komponenten sind farblich nach IEC 60446 codiert (L1 braun, L2 schwarz, L3 grau, N hellblau, PE grüngelb) · Engineering-Glaubwürdigkeit auf einen Blick.',
   },
   {
     question: 'Welche Brennstoffklasse verlangt die E-world Essen?',
-    answer: 'E-world Essen folgt der Messe Essen Standabnahme — B1 ist für tragende Stand-Elemente Pflicht, für Modell-Exponate über 1m² Standfläche. Bei MV-Schaltanlagen-Modellen (1:25) sind die typischen Aufbauten 30-50 cm hoch — Material-Nachweis wird verlangt. Wir liefern das Hersteller-Zertifikat des B1-Materials (additiviertes PLA oder Polycarbonat-FR) zur Standabnahme.',
+    answer: 'E-world Essen folgt der Messe Essen Standabnahme · B1 ist für tragende Stand-Elemente Pflicht, für Modell-Exponate über 1m² Standfläche. Bei MV-Schaltanlagen-Modellen (1:25) sind die typischen Aufbauten 30-50 cm hoch · Material-Nachweis wird verlangt. Wir liefern das Hersteller-Zertifikat des B1-Materials (additiviertes PLA oder Polycarbonat-FR) zur Standabnahme.',
   },
   {
     question: 'Sind Lasergravierte Typenschilder am Modell möglich?',
-    answer: 'Ja — wir kombinieren 3D-Druck mit lasergravierten Metall- oder Acryl-Inlays für Typenschilder. Typische Auflösung 0,2 mm Linienbreite, komplette Hersteller-Logos und Typen-Bezeichnungen lesbar. Macht Engineering-Glaubwürdigkeit nochmal eine Stufe besser — der Engineer am Stand erkennt direkt die Komponenten-Typen. Aufpreis pro Typenschild ~€80-150.',
+    answer: 'Ja · wir kombinieren 3D-Druck mit lasergravierten Metall- oder Acryl-Inlays für Typenschilder. Typische Auflösung 0,2 mm Linienbreite, komplette Hersteller-Logos und Typen-Bezeichnungen lesbar. Macht Engineering-Glaubwürdigkeit nochmal eine Stufe besser · der Engineer am Stand erkennt direkt die Komponenten-Typen. Aufpreis pro Typenschild ~€80-150.',
   },
   {
     question: 'Lassen sich Windturbinen mit beweglichen Rotorblättern bauen?',
@@ -85,7 +85,7 @@ const faqs = [
   },
   {
     question: 'Wie werden PV-Anlagen-Modelle umgesetzt?',
-    answer: 'Zwei Typen: (1) Modul-Schnittmodell — eine PV-Zelle 1:1 oder 2:1 als Schnittansicht mit sichtbarer Multilayer-Struktur (Glas, Antireflex, Si-Wafer, Kontakt-Folie, Backsheet). Ideal für Komponenten-Hersteller. (2) Landschaftsmodell — PV-Feld mit 50-200 Modulen auf modellierter Landschaft, 1:200 bis 1:500. Module einzeln, Anordnung nach realer Reihenplanung. Trafostation + Wechselrichter-Container als Detail dazu. Aufstellungsoptionen für Aufdach-PV, Freiflächen-PV, Floating-PV.',
+    answer: 'Zwei Typen: (1) Modul-Schnittmodell · eine PV-Zelle 1:1 oder 2:1 als Schnittansicht mit sichtbarer Multilayer-Struktur (Glas, Antireflex, Si-Wafer, Kontakt-Folie, Backsheet). Ideal für Komponenten-Hersteller. (2) Landschaftsmodell · PV-Feld mit 50-200 Modulen auf modellierter Landschaft, 1:200 bis 1:500. Module einzeln, Anordnung nach realer Reihenplanung. Trafostation + Wechselrichter-Container als Detail dazu. Aufstellungsoptionen für Aufdach-PV, Freiflächen-PV, Floating-PV.',
   },
   {
     question: 'Was kostet ein typisches Energietechnik-Showcase-Modell?',
@@ -138,7 +138,7 @@ export default function MesseModellEnergietechnikPage() {
           <div className="max-w-4xl mx-auto bg-primary/5 border-l-4 border-primary p-8 rounded-r-lg">
             <h2 className="text-sm font-bold uppercase tracking-wider text-primary mb-4">In 30 Sekunden</h2>
             <ul className="space-y-3 text-lg leading-relaxed">
-              <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" /><span><strong>Hauptattraktor:</strong> klappbare Schaltschrank-Türen — Stand-Besucher öffnet selbst und sieht das Innere.</span></li>
+              <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" /><span><strong>Hauptattraktor:</strong> klappbare Schaltschrank-Türen · Stand-Besucher öffnet selbst und sieht das Innere.</span></li>
               <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" /><span><strong>Maßstab:</strong> 1:25 für MV-Schaltanlagen, 1:50 für Windturbinen, 1:10 für Trafos.</span></li>
               <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" /><span><strong>Engineering-Trust:</strong> Farbcodierung nach IEC 60446, lasergravierte Typenschilder, ABS-lackiert in RAL 7035.</span></li>
               <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" /><span><strong>Preisbereich:</strong> €4.500-12.000 für Standard-Energie-Showcase-Modelle.</span></li>
@@ -151,13 +151,13 @@ export default function MesseModellEnergietechnikPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Das Energie-Aussteller-Showcase-Problem</h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Eine 3-stöckige Mittelspannungs-Schaltanlage ist 12 m breit, 3,5 m hoch, wiegt 2,8 Tonnen, kostet 6-stellig pro Stück.
-              Auf eine Energie-Fachmesse zu transportieren? Theoretisch möglich, praktisch sinnlos — Logistik €15-25k pro Veranstaltung,
+              Auf eine Energie-Fachmesse zu transportieren? Theoretisch möglich, praktisch sinnlos · Logistik €15-25k pro Veranstaltung,
               Auf-/Abbau-Kosten dazu, Versicherung, Lkw mit Schwerlast-Anmeldung.
             </p>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Was wirklich passiert auf den Energie-Messen: ein 60-Zoll-Bildschirm zeigt CAD-Renderings im Loop. Daneben stehen
               Datenblätter. Der Energieversorger-Einkäufer geht vorbei, schaut 4 Sekunden, geht weiter. Genau das was wirklich
-              interessiert — wie sieht das Sammelschienen-System aus? wo sitzen die Stromwandler? — ist nicht sichtbar.
+              interessiert · wie sieht das Sammelschienen-System aus? wo sitzen die Stromwandler? · ist nicht sichtbar.
             </p>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Das maßstabsgetreue Modell mit klappbarer Front-Tür löst genau das. Der Einkäufer öffnet selbst. Sieht das Innere.
@@ -214,7 +214,7 @@ export default function MesseModellEnergietechnikPage() {
                   <span className="text-sm px-3 py-1 bg-primary/10 text-primary rounded-full">Onshore + Offshore Wind</span>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Alle 2 Jahre in Hamburg. Spezialisiert auf Wind-Industrie — Turbinen-Hersteller, Komponenten-Zulieferer, EPC-Contractor,
+                  Alle 2 Jahre in Hamburg. Spezialisiert auf Wind-Industrie · Turbinen-Hersteller, Komponenten-Zulieferer, EPC-Contractor,
                   Wartungsdienstleister. Windturbinen-Modelle mit beweglichem Rotor sind hier Standard, kein Sonderfeature.
                 </p>
               </div>
@@ -268,7 +268,7 @@ export default function MesseModellEnergietechnikPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Engineering-Glaubwürdigkeits-Stack</h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Energie-Engineers haben einen scharfen Blick für Stimmigkeit — Farbcodierung, Komponenten-Anordnung, Typenschild-Konventionen
+              Energie-Engineers haben einen scharfen Blick für Stimmigkeit · Farbcodierung, Komponenten-Anordnung, Typenschild-Konventionen
               müssen passen, sonst verliert das Modell sofort den Trust. Was wir standardmäßig integrieren:
             </p>
             <div className="bg-card border border-border rounded-lg p-6">
@@ -376,7 +376,7 @@ export default function MesseModellEnergietechnikPage() {
 
         <section className="px-4 py-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Häufige Fragen — Energietechnik-Messemodelle</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Häufige Fragen · Energietechnik-Messemodelle</h2>
             <div className="space-y-4">
               {faqs.map((faq, i) => (
                 <details key={i} className="group bg-card border border-border rounded-lg">

@@ -4,7 +4,7 @@ import { regionalArchitekturData } from '@/data/regionalArchitekturData'
 import { germanArchitekturData } from '@/data/germanArchitekturData'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 
-// 2026-06-04: Welle 9 — generateMetadata Server-Component für unique titles pro Region.
+// 2026-06-04: Welle 9 · generateMetadata Server-Component für unique titles pro Region.
 // Vorher: 'use client' page ohne metadata-Export → alle Sub-Regions erbten Default-Title
 // (Semrush: 4 duplicate titles auf /kaernten, /steiermark, /vorarlberg, /wien).
 // Jetzt: Server-Component generiert Region-Title aus regionalArchitekturData,
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 
   if (!data) {
     return {
-      title: 'Architekturmodelle — Region nicht gefunden | ekdruck',
+      title: 'Architekturmodelle · Region nicht gefunden | ekdruck',
       robots: { index: false, follow: false },
     }
   }
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       title,
       description,
       url,
-      siteName: 'ekdruck – 3D-Druck Österreich',
+      siteName: 'ekdruck · 3D-Druck Österreich',
       locale: 'de_AT',
       type: 'website',
     },

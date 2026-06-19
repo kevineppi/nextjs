@@ -20,7 +20,7 @@ import AuthorByline from '@/components/AuthorByline'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 import { BRAND } from '@/data/brandVoice'
 
-const TITLE = 'Messemodelle Maschinenbau — Werkzeugmaschinen, CNC, Spindeln [Guide]'
+const TITLE = 'Messemodelle Maschinenbau · Werkzeugmaschinen, CNC, Spindeln [Guide]'
 const DESCRIPTION =
   'Messemodelle für Maschinenbau-Aussteller: Werkzeugmaschinen-Schnittmodelle, bewegliche Spindeln, EMO/AMB-Spezifika. Maßstab 1:8 bis 1:10, Materialwahl PETG/PA-CF, konkrete ROI-Beispiele.'
 
@@ -39,13 +39,13 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: 'https://www.ek-druck.at/ratgeber/messemodell-maschinenbau',
-    siteName: 'ekdruck – 3D-Druck Österreich',
+    siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'article',
     publishedTime: '2026-05-31T00:00:00.000Z',
     modifiedTime: '2026-05-31T00:00:00.000Z',
     authors: ['Kevin Eppensteiner'],
-    images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630, alt: 'Messemodelle Maschinenbau — ekdruck' }],
+    images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630, alt: 'Messemodelle Maschinenbau · ekdruck' }],
   },
   twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION },
   robots: STANDARD_ROBOTS,
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'TechArticle',
-  headline: 'Messemodelle für Maschinenbau-Aussteller — Werkzeugmaschinen, CNC, Spindeln',
+  headline: 'Messemodelle für Maschinenbau-Aussteller · Werkzeugmaschinen, CNC, Spindeln',
   description: DESCRIPTION,
   datePublished: '2026-05-31',
   dateModified: '2026-05-31',
@@ -78,11 +78,11 @@ const articleSchema = {
 const faqs = [
   {
     question: 'Welcher Maßstab ist optimal für Werkzeugmaschinen-Messemodelle?',
-    answer: '1:8 bis 1:10 ist Sweet-Spot. Eine Standard-CNC-Fräse mit Originalmaßen 2,5×1,8×2,2 m wird im Maßstab 1:10 zu einem Modell mit 25×18×22 cm — passt auf jeden Stand-Tisch, lässt aber die Spindel-Bewegung erkennbar. Bei sehr großen 5-Achs-Fräsen (über 4 m Originalbreite) wechseln wir zu 1:15 oder 1:20, sonst wird das Modell zu groß für Standard-Vitrinen.',
+    answer: '1:8 bis 1:10 ist Sweet-Spot. Eine Standard-CNC-Fräse mit Originalmaßen 2,5×1,8×2,2 m wird im Maßstab 1:10 zu einem Modell mit 25×18×22 cm · passt auf jeden Stand-Tisch, lässt aber die Spindel-Bewegung erkennbar. Bei sehr großen 5-Achs-Fräsen (über 4 m Originalbreite) wechseln wir zu 1:15 oder 1:20, sonst wird das Modell zu groß für Standard-Vitrinen.',
   },
   {
     question: 'Können Sie bewegliche Spindeln und Werkzeugwechsler einbauen?',
-    answer: 'Ja, das ist DAS Standard-Feature für Werkzeugmaschinen-Modelle. Spindel-Bewegung über Y/Z-Achse als per Drehknopf steuerbarer Mechanismus, Werkzeugmagazin-Karussell rotierbar, manchmal mit Servo-Motor angetrieben. Wir setzen PA-CF (Carbon-Faser-Polyamid) für die belasteten Komponenten ein — Lebensdauer bei normaler Messe-Demonstration: 50-100+ Bewegungs-Zyklen pro Tag ohne Verschleiß.',
+    answer: 'Ja, das ist DAS Standard-Feature für Werkzeugmaschinen-Modelle. Spindel-Bewegung über Y/Z-Achse als per Drehknopf steuerbarer Mechanismus, Werkzeugmagazin-Karussell rotierbar, manchmal mit Servo-Motor angetrieben. Wir setzen PA-CF (Carbon-Faser-Polyamid) für die belasteten Komponenten ein · Lebensdauer bei normaler Messe-Demonstration: 50-100+ Bewegungs-Zyklen pro Tag ohne Verschleiß.',
   },
   {
     question: 'Welche Brennstoffklasse ist auf der EMO Hannover erforderlich?',
@@ -90,7 +90,7 @@ const faqs = [
   },
   {
     question: 'Lohnt sich ein Schnittmodell oder lieber komplett geschlossen?',
-    answer: 'Schnittmodelle ziehen Engineers 3-5x länger an den Stand als geschlossene Modelle. Mein Vorschlag für Werkzeugmaschinen: halb-geschlossen — eine Seite zeigt die Außen-Designlinie (Verkaufs-Aspekt), die andere ist als Schnitt aufgebaut und zeigt Antrieb, Spindel-Aufnahme, Werkzeug-Wechsler. So bekommt der Marketing-Mensch das schöne Bild für das Standort-Foto UND der Ingenieur die technische Tiefe.',
+    answer: 'Schnittmodelle ziehen Engineers 3-5x länger an den Stand als geschlossene Modelle. Mein Vorschlag für Werkzeugmaschinen: halb-geschlossen · eine Seite zeigt die Außen-Designlinie (Verkaufs-Aspekt), die andere ist als Schnitt aufgebaut und zeigt Antrieb, Spindel-Aufnahme, Werkzeug-Wechsler. So bekommt der Marketing-Mensch das schöne Bild für das Standort-Foto UND der Ingenieur die technische Tiefe.',
   },
   {
     question: 'Wie zeigen Sie die typischen Genauigkeiten und Toleranzen am Modell?',
@@ -146,7 +146,7 @@ export default function MesseModellMaschinenbauPage() {
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Wie wir Werkzeugmaschinen, CNC-Fräsen und Bearbeitungszentren für EMO, AMB und Intec
-              als bewegliche, anfassbare Stand-Eyecatcher übersetzen — Spindel-Bewegung, Schnittansicht
+              als bewegliche, anfassbare Stand-Eyecatcher übersetzen · Spindel-Bewegung, Schnittansicht
               Antriebsbereich, lackierte Verschalung in Original-RAL.
             </p>
             <AuthorByline variant="card" showDate publishedAt="2026-05-31" updatedAt="2026-05-31" />
@@ -159,7 +159,7 @@ export default function MesseModellMaschinenbauPage() {
             <h2 className="text-sm font-bold uppercase tracking-wider text-primary mb-4">In 30 Sekunden</h2>
             <ul className="space-y-3 text-lg leading-relaxed">
               <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" /><span><strong>Maßstab:</strong> 1:8 bis 1:10 für Standard-Werkzeugmaschinen, 1:15 für 5-Achs-Großbearbeitungszentren.</span></li>
-              <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" /><span><strong>Hauptattraktor:</strong> bewegliche Spindel — zieht Engineers an den Stand, hält sie 3-5x länger als statische Modelle.</span></li>
+              <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" /><span><strong>Hauptattraktor:</strong> bewegliche Spindel · zieht Engineers an den Stand, hält sie 3-5x länger als statische Modelle.</span></li>
               <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" /><span><strong>Material:</strong> PETG-Hauptkorpus, PA-CF-Spindel, ABS-Detail-Inlays.</span></li>
               <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" /><span><strong>Preisbereich:</strong> €3.500-7.500 für 1:10-Modell mit beweglicher Spindel und Schnittansicht.</span></li>
             </ul>
@@ -206,7 +206,7 @@ export default function MesseModellMaschinenbauPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Die wichtigen Maschinenbau-Messen in DACH + Europa</h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Wir kennen die Standabnahme-Anforderungen der DACH-Maschinenbau-Messen aus erster Hand —
+              Wir kennen die Standabnahme-Anforderungen der DACH-Maschinenbau-Messen aus erster Hand -
               hier die Spezifika pro Leitmesse:
             </p>
 
@@ -217,7 +217,7 @@ export default function MesseModellMaschinenbauPage() {
                   <span className="text-sm px-3 py-1 bg-primary/10 text-primary rounded-full">Weltleitmesse Metallbearbeitung</span>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Alle 2 Jahre, ~2.200 Aussteller, ~120.000 Fachbesucher. Standabnahme über Hannover-Messe AG — B1 ist Pflicht
+                  Alle 2 Jahre, ~2.200 Aussteller, ~120.000 Fachbesucher. Standabnahme über Hannover-Messe AG · B1 ist Pflicht
                   für Standbau-Komponenten, Modell-Exponate über 1m² brauchen Material-Nachweis. Engineering-Publikum dominant,
                   Spindel-Bewegung ist Standard-Attraktor.
                 </p>
@@ -229,7 +229,7 @@ export default function MesseModellMaschinenbauPage() {
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Alle 2 Jahre (Zwischen-EMO), Standabnahme über Messe Stuttgart. B2 für die meisten Modell-Exponate ausreichend.
-                  Mehr Mittelstand-Publikum als EMO — ROI-orientierte Gespräche, Pricing-Talks häufig direkt am Modell.
+                  Mehr Mittelstand-Publikum als EMO · ROI-orientierte Gespräche, Pricing-Talks häufig direkt am Modell.
                 </p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
@@ -248,7 +248,7 @@ export default function MesseModellMaschinenbauPage() {
                   <span className="text-sm px-3 py-1 bg-primary/10 text-primary rounded-full">Metallbearbeitungs-Spezialmesse</span>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  NRW-fokussiert, mittelständische Aussteller-Basis. Standabnahme moderat — B2 reicht meist, B1 bei größeren Ständen.
+                  NRW-fokussiert, mittelständische Aussteller-Basis. Standabnahme moderat · B2 reicht meist, B1 bei größeren Ständen.
                   Pricing-Klasse Modelle ähnlich AMB.
                 </p>
               </div>
@@ -385,7 +385,7 @@ export default function MesseModellMaschinenbauPage() {
               <div className="bg-card border border-border rounded-lg p-6">
                 <Gauge className="w-8 h-8 text-primary mb-3" />
                 <h3 className="font-bold text-lg mb-2">Multi-Messen-Investition</h3>
-                <p className="text-sm text-muted-foreground">Ein €4.800-Modell hält 15-20 Messen durch. Pro Messe entstehen €240-320 Modell-Kosten — bei 4 Messen/Jahr × 3 Jahre = 12 Einsätze.</p>
+                <p className="text-sm text-muted-foreground">Ein €4.800-Modell hält 15-20 Messen durch. Pro Messe entstehen €240-320 Modell-Kosten · bei 4 Messen/Jahr × 3 Jahre = 12 Einsätze.</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
                 <TrendingUp className="w-8 h-8 text-primary mb-3" />
@@ -395,13 +395,13 @@ export default function MesseModellMaschinenbauPage() {
               <div className="bg-card border border-border rounded-lg p-6">
                 <Clock className="w-8 h-8 text-primary mb-3" />
                 <h3 className="font-bold text-lg mb-2">Schnell verfügbar</h3>
-                <p className="text-sm text-muted-foreground">4-5 Wochen ab CAD-Eingang ist Standard. Klassische Modellbauer brauchen 12-16 Wochen. Wenn Ihre nächste Messe in 8 Wochen ist — wir liefern. Sie nicht.</p>
+                <p className="text-sm text-muted-foreground">4-5 Wochen ab CAD-Eingang ist Standard. Klassische Modellbauer brauchen 12-16 Wochen. Wenn Ihre nächste Messe in 8 Wochen ist · wir liefern. Sie nicht.</p>
               </div>
             </div>
             <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mt-8">
               <p className="text-lg leading-relaxed">
                 <strong>Konkret kalkuliert:</strong> wenn Sie pro Messe-Saison 4 Messen besuchen und das Modell
-                Ihre durchschnittliche Anfrage-Quote von 6 auf 12 hebt — das sind 24 zusätzliche qualifizierte
+                Ihre durchschnittliche Anfrage-Quote von 6 auf 12 hebt · das sind 24 zusätzliche qualifizierte
                 Anfragen/Jahr. Bei einer typischen 25% Konversionsrate und €120k Ø-Auftragswert: 6 zusätzliche
                 Abschlüsse × €120k = <strong className="text-primary">+€720k Mehrumsatz/Jahr</strong>. ROI eines €5.000-Modells:
                 <strong className="text-primary"> 14.300% im ersten Jahr</strong>.
@@ -413,7 +413,7 @@ export default function MesseModellMaschinenbauPage() {
         {/* FAQ */}
         <section className="px-4 py-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Häufige Fragen — Maschinenbau-Messemodelle</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Häufige Fragen · Maschinenbau-Messemodelle</h2>
             <div className="space-y-4">
               {faqs.map((faq, i) => (
                 <details key={i} className="group bg-card border border-border rounded-lg">

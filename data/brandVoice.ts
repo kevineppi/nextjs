@@ -1,5 +1,5 @@
 /**
- * Brand-Voice — ek-druck
+ * Brand-Voice · ek-druck
  * ──────────────────────────────────────────────────────────────────
  *
  * Single Source of Truth für die ek-druck-Erzählweise auf der Website.
@@ -10,7 +10,7 @@
  * Damit nicht in 30 Pages "12+ Jahre Erfahrung" steht, wenn Kevin
  * tatsächlich seit 2 Jahren am Markt ist. Hier ist die Wahrheit.
  *
- * Diese Datei ist von Kevin redaktionell verantwortet — generative
+ * Diese Datei ist von Kevin redaktionell verantwortet · generative
  * Inhaltsänderungen nur mit Kevin's expliziter Freigabe.
  */
 
@@ -57,7 +57,7 @@ export const BRAND = {
   },
 
   // ─── Echte Bestandskunden (Public-OK-To-Mention) ────────────────
-  // Diese können in Cases referenziert werden — sind explizit OK
+  // Diese können in Cases referenziert werden · sind explizit OK
   // Generali = passiv-Stammkunde, Gastrotopcard = aktiv-Stammkunde
   knownCustomers: {
     publicMentionOk: ['Generali Versicherung (passiv)', 'Gastrotopcard (aktiv)'],
@@ -66,28 +66,28 @@ export const BRAND = {
 
   // ─── Brand-Voice Phrasen (Building Blocks) ──────────────────────
   voice: {
-    // Bei Erfahrung — KEIN "12+ Jahre" mehr. Stattdessen Wahrheit:
-    experienceAccurate: 'Seit 2024 ekdruck e.U. — davor jahrelang B2B-Operations',
+    // Bei Erfahrung · KEIN "12+ Jahre" mehr. Stattdessen Wahrheit:
+    experienceAccurate: 'Seit 2024 ekdruck e.U. · davor jahrelang B2B-Operations',
     experienceShort: 'Seit 2024',
-    experiencePremium: 'Aus 2 Jahren intensiver Werkstatt-Praxis — bisher >300 abgeschlossene Aufträge',
+    experiencePremium: 'Aus 2 Jahren intensiver Werkstatt-Praxis · bisher >300 abgeschlossene Aufträge',
 
-    // Bei Authority — Persönlich, nicht corporate:
+    // Bei Authority · Persönlich, nicht corporate:
     authorityPersonal: 'Persönlich gedruckt von Kevin Eppensteiner, dem Inhaber. Kein Vertrieb, kein Callcenter, kein Outsourcing.',
     authorityShort: 'Made by Kevin in Gunskirchen, OÖ',
 
-    // Bei Process — Konkret, ehrlich:
-    processCAD: 'Sie schicken STEP oder STL — falls keine CAD-Datei: kurzer Skizze-Upload reicht, wir modellieren.',
-    processQuote: 'Sie bekommen Festpreis binnen 6 Stunden — direkt von mir, keine Hierarchie dazwischen.',
+    // Bei Process · Konkret, ehrlich:
+    processCAD: 'Sie schicken STEP oder STL · falls keine CAD-Datei: kurzer Skizze-Upload reicht, wir modellieren.',
+    processQuote: 'Sie bekommen Festpreis binnen 6 Stunden · direkt von mir, keine Hierarchie dazwischen.',
     processProduction: 'Druck startet noch am gleichen Tag bei Express. Bei Standard binnen 48h.',
     processQA: 'Jedes Modell wird manuell QA-geprüft, fotografiert, dann verpackt. Sie bekommen Foto-Bestätigung vor Versand.',
 
-    // Bei Pricing — Klar:
-    pricingAnchor: 'Festpreis vor dem Druck — keine Überraschung am Ende.',
+    // Bei Pricing · Klar:
+    pricingAnchor: 'Festpreis vor dem Druck · keine Überraschung am Ende.',
 
-    // Bei Trust — Spezifisch:
+    // Bei Trust · Spezifisch:
     trustGeo: 'Werkstatt in Gunskirchen (OÖ, zwischen Wels und Linz)',
     trustReviews: '★5,0 von 31 Google-Bewertungen',
-    trustOwnership: 'Eigentümergeführt — Sie sprechen mit dem, der druckt',
+    trustOwnership: 'Eigentümergeführt · Sie sprechen mit dem, der druckt',
     trustReachable: 'Antwortzeit Werktags <2h auf Mail, WhatsApp & Telefon',
   },
 
@@ -97,9 +97,9 @@ export const BRAND = {
       'Konkrete Zahlen statt vager Adjektive ("24h" statt "schnell")',
       'Du-Anrede in Body, Sie-Anrede in Headlines (Mischung wie im DACH-B2B üblich)',
       'Pain zuerst benennen, dann Lösung',
-      'Authentisch — was ek-druck NICHT macht, auch sagen (keine Schattenkunden, keine mechanischen Bauteile bis Studium)',
+      'Authentisch · was ek-druck NICHT macht, auch sagen (keine Schattenkunden, keine mechanischen Bauteile bis Studium)',
       'Lokale Referenzpunkte ("zwischen Wels und Linz", "20 Min von Linz")',
-      'Kevin als Person sichtbar — "Ich druck das selbst"',
+      'Kevin als Person sichtbar · "Ich druck das selbst"',
     ],
     dont: [
       'Falsche Erfahrungsangaben ("12+ Jahre", "Jahrzehnte")',

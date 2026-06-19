@@ -78,7 +78,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
     ],
     industryFocus: "Bau, Industrie & Präsentation in Bayern",
     uniqueSellingPoints: [
-      "Grenznahe Fertigung – schnellste Lieferung nach Bayern",
+      "Grenznahe Fertigung · schnellste Lieferung nach Bayern",
       "Erfahrung mit bauma und Messe München",
       "Funktionsmodelle mit beweglichen Teilen"
     ]
@@ -268,7 +268,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         material: "PLA grau + Akzente",
         time: "6 Werktage + Versand"
       },
-      quote: "Komplexe Technik einfach erklärt – das Modell war Gold wert für unsere Vertriebsgespräche."
+      quote: "Komplexe Technik einfach erklärt · das Modell war Gold wert für unsere Vertriebsgespräche."
     },
     materials: defaultMaterials,
     industryFocus: "Fertigungstechnik & Halbleiter in Sachsen",
@@ -333,7 +333,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         material: "PETG transparent + PLA farbig",
         time: "8 Werktage + 3 Tage Versand"
       },
-      quote: "Komplexe Verfahrenstechnik verständlich gemacht – das Modell war unser überzeugenstes Verkaufsargument."
+      quote: "Komplexe Verfahrenstechnik verständlich gemacht · das Modell war unser überzeugenstes Verkaufsargument."
     },
     materials: [
       {
@@ -357,7 +357,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
     ],
     industryFocus: "Umwelttechnik, Bau & Elektronik in München",
     uniqueSellingPoints: [
-      "Grenznahe Fertigung – schnellste Lieferung nach München",
+      "Grenznahe Fertigung · schnellste Lieferung nach München",
       "Erfahrung mit IFAT, BAU und bauma",
       "Persönliche Lieferung möglich"
     ]
@@ -375,12 +375,12 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         material: "PLA mehrfarbig, beschriftet",
         time: "6 Werktage + Expressversand"
       },
-      quote: "Ein Bild sagt mehr als tausend Worte – ein 3D-Modell sagt mehr als tausend Bilder. Genau so war es auf der Automechanika."
+      quote: "Ein Bild sagt mehr als tausend Worte · ein 3D-Modell sagt mehr als tausend Bilder. Genau so war es auf der Automechanika."
     },
     materials: defaultMaterials,
     industryFocus: "Präsentation, Gebäudetechnik & Konsumgüter in Frankfurt",
     uniqueSellingPoints: [
-      "Erfahrung mit Messe Frankfurt – eine der größten weltweit",
+      "Erfahrung mit Messe Frankfurt · eine der größten weltweit",
       "Express-Versand für internationale Leitmessen",
       "Kompetenz für alle Branchen"
     ]
@@ -444,7 +444,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         material: "PLA + PETG, mehrfarbig, modular",
         time: "12 Werktage + Versand"
       },
-      quote: "Die modulare Bauweise war genial – wir konnten die Smart Factory Schritt für Schritt erklären."
+      quote: "Die modulare Bauweise war genial · wir konnten die Smart Factory Schritt für Schritt erklären."
     },
     materials: defaultMaterials,
     industryFocus: "Industrie 4.0, Logistik & Landtechnik in Hannover",
@@ -524,7 +524,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         material: "PLA + farbige Sicherheitsmarkierungen",
         time: "6 Werktage + Versand"
       },
-      quote: "Arbeitsschutz zum Anfassen – genau so muss eine Messepräsentation sein."
+      quote: "Arbeitsschutz zum Anfassen · genau so muss eine Messepräsentation sein."
     },
     materials: defaultMaterials,
     industryFocus: "Arbeitsschutz, Modellbau & Kreativ in Dortmund",
@@ -592,7 +592,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         material: "PLA zweifarbig",
         time: "8 Werktage + Versand"
       },
-      quote: "Alt und Neu in einem Modell – genau das brauchten wir, um unsere Kunden zu überzeugen."
+      quote: "Alt und Neu in einem Modell · genau das brauchten wir, um unsere Kunden zu überzeugen."
     },
     materials: defaultMaterials,
     industryFocus: "Denkmalpflege, Buch & Fertigungstechnik in Leipzig",

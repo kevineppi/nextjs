@@ -20,7 +20,7 @@ import AuthorByline from '@/components/AuthorByline'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 import { BRAND } from '@/data/brandVoice'
 
-const TITLE = 'Messemodelle Schiffbau — Vollschiff, Antriebe, Propeller [Guide]'
+const TITLE = 'Messemodelle Schiffbau · Vollschiff, Antriebe, Propeller [Guide]'
 const DESCRIPTION =
   'Messemodelle für Schiffbau-Aussteller: Vollschiff 1:50-1:100, Propeller-Detail, Antriebs-Schnittmodelle, segmentiert mit Magnetverbindungen. SMM Hamburg, Europort Rotterdam, Posidonia. Konkrete Cases + ROI.'
 
@@ -37,10 +37,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: TITLE, description: DESCRIPTION,
     url: 'https://www.ek-druck.at/ratgeber/messemodell-schiffbau',
-    siteName: 'ekdruck – 3D-Druck Österreich', locale: 'de_AT', type: 'article',
+    siteName: 'ekdruck · 3D-Druck Österreich', locale: 'de_AT', type: 'article',
     publishedTime: '2026-05-31T00:00:00.000Z', modifiedTime: '2026-05-31T00:00:00.000Z',
     authors: ['Kevin Eppensteiner'],
-    images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630, alt: 'Messemodelle Schiffbau — ekdruck' }],
+    images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630, alt: 'Messemodelle Schiffbau · ekdruck' }],
   },
   twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION },
   robots: STANDARD_ROBOTS,
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org', '@type': 'TechArticle',
-  headline: 'Messemodelle für Schiffbau-Aussteller — Vollschiff, Antriebe, Propeller',
+  headline: 'Messemodelle für Schiffbau-Aussteller · Vollschiff, Antriebe, Propeller',
   description: DESCRIPTION, datePublished: '2026-05-31', dateModified: '2026-05-31',
   author: { '@type': 'Person', name: BRAND.founderName, url: 'https://www.ek-druck.at/ueber-uns', jobTitle: 'Inhaber & Gründer ekdruck e.U.' },
   publisher: { '@type': 'Organization', name: BRAND.companyName, logo: { '@type': 'ImageObject', url: 'https://www.ek-druck.at/icon-192.png' } },
@@ -65,11 +65,11 @@ const articleSchema = {
 const faqs = [
   {
     question: 'Welcher Maßstab passt für ein Vollschiff-Modell?',
-    answer: 'Bei Standardschiffen 80-120 m Länge (Container-Feeder, Schlepper, Bulker) sind 1:50 bis 1:100 üblich. Das ergibt Modell-Längen von 80 cm bis 2,4 m. Bei längeren Schiffen (Tanker, Cruise-Liner über 200 m) gehen wir auf 1:150 oder 1:200, sonst wird das Modell nicht transportabel. Für Komponenten-Modelle (nur Heck, nur Antrieb) sind 1:25 bis 1:50 sinnvoll — Detail bleibt sichtbar, Standfläche begrenzt.',
+    answer: 'Bei Standardschiffen 80-120 m Länge (Container-Feeder, Schlepper, Bulker) sind 1:50 bis 1:100 üblich. Das ergibt Modell-Längen von 80 cm bis 2,4 m. Bei längeren Schiffen (Tanker, Cruise-Liner über 200 m) gehen wir auf 1:150 oder 1:200, sonst wird das Modell nicht transportabel. Für Komponenten-Modelle (nur Heck, nur Antrieb) sind 1:25 bis 1:50 sinnvoll · Detail bleibt sichtbar, Standfläche begrenzt.',
   },
   {
     question: 'Wie werden 2-m-Vollschiffmodelle transportiert?',
-    answer: 'Segmentiert mit Magnetverbindungen. Wir konstruieren Modelle ab ~1,5 m bewusst in 3-5 Hauptsegmente — Bug, Vorderschiff, Mittelschiff, Achterschiff, Aufbau. Trennstellen entlang natürlicher Schiffslinien (Brücken-Front, Schott-Übergänge) und mit Magnet-Verbindungen die im Stand-Aufbau zusammenrasten. Transport in maßgefertigter Holzkiste mit Schaumstoff-Inserts pro Segment. Aufbauzeit am Messestand: 10-20 Minuten.',
+    answer: 'Segmentiert mit Magnetverbindungen. Wir konstruieren Modelle ab ~1,5 m bewusst in 3-5 Hauptsegmente · Bug, Vorderschiff, Mittelschiff, Achterschiff, Aufbau. Trennstellen entlang natürlicher Schiffslinien (Brücken-Front, Schott-Übergänge) und mit Magnet-Verbindungen die im Stand-Aufbau zusammenrasten. Transport in maßgefertigter Holzkiste mit Schaumstoff-Inserts pro Segment. Aufbauzeit am Messestand: 10-20 Minuten.',
   },
   {
     question: 'Welche Brennstoffklasse ist auf der SMM Hamburg Pflicht?',
@@ -77,11 +77,11 @@ const faqs = [
   },
   {
     question: 'Können Propeller und Ruder bewegliche Komponenten sein?',
-    answer: 'Ja — bewegliche Propeller und Ruder sind eines der häufigsten Sonderwünsche bei Schiff-Modellen. Bei Azimuth-Thrustern: rotierende 360°-Schwenk-Mechanik mit POM-Lagern oder Messing-Buchsen. Bei Festpropellern: drehbare Achse mit kleinem Servo-Motor (USB-powered). Bei Ruderblättern: manueller Schwenk-Mechanismus über Drehknopf am Sockel. PA-CF für die belasteten Drehkomponenten — hält 50-100 Demonstrations-Zyklen pro Messetag durch.',
+    answer: 'Ja · bewegliche Propeller und Ruder sind eines der häufigsten Sonderwünsche bei Schiff-Modellen. Bei Azimuth-Thrustern: rotierende 360°-Schwenk-Mechanik mit POM-Lagern oder Messing-Buchsen. Bei Festpropellern: drehbare Achse mit kleinem Servo-Motor (USB-powered). Bei Ruderblättern: manueller Schwenk-Mechanismus über Drehknopf am Sockel. PA-CF für die belasteten Drehkomponenten · hält 50-100 Demonstrations-Zyklen pro Messetag durch.',
   },
   {
     question: 'Eignen sich 3D-Druck-Modelle für Premium-Schiffbau-Aussteller wie Meyer Werft oder Lürssen?',
-    answer: 'Für Komponenten und Detail-Showcases klar ja — Antriebsmodelle, Propeller-Detail, Schnittmodelle Schiffsdiesel. Für Premium-Vollschiff-Modelle (Yachten, Cruise-Liner) mit Spritzguss-Look und Glanz-Lackierung ist die Kombination 3D-Druck + manuelle Veredelung (Aceton-Glättung, mehrlagige Premium-Lackierung) Standard — aber Lieferzeit verlängert sich auf 6-9 Wochen. Für absolute Showcase-Spitze (Werfteröffnungs-Modelle, Konzern-Repräsentation) sind klassische Modellbauer mit Acryl-Klarsicht-Glas-Elementen oft noch überlegen.',
+    answer: 'Für Komponenten und Detail-Showcases klar ja · Antriebsmodelle, Propeller-Detail, Schnittmodelle Schiffsdiesel. Für Premium-Vollschiff-Modelle (Yachten, Cruise-Liner) mit Spritzguss-Look und Glanz-Lackierung ist die Kombination 3D-Druck + manuelle Veredelung (Aceton-Glättung, mehrlagige Premium-Lackierung) Standard · aber Lieferzeit verlängert sich auf 6-9 Wochen. Für absolute Showcase-Spitze (Werfteröffnungs-Modelle, Konzern-Repräsentation) sind klassische Modellbauer mit Acryl-Klarsicht-Glas-Elementen oft noch überlegen.',
   },
   {
     question: 'Was kostet ein Vollschiff-Modell mit Antrieb-Detail?',
@@ -89,7 +89,7 @@ const faqs = [
   },
   {
     question: 'Können Sie auch Hafenmodelle oder Werft-Layouts bauen?',
-    answer: 'Ja, das ist ein eigener Teilbereich — Hafenmodelle mit Anlegestellen, Kran-Anlagen, Container-Stapel, Wasserflächen-Andeutung. Maßstäbe 1:200 bis 1:500. Wasserflächen werden über farbig lasiertes Acrylglas simuliert (3-5 mm Dicke). Stilisierte Kran-Anlagen mit drehbaren Auslegern, Container in verschiedenen Reederei-Farben. Preisbereich €8.000-22.000 je nach Detail-Tiefe und Modell-Größe. Typische Kundengruppe: Hafenbetreiber, Werft-Betreiber, Logistik-Anbieter.',
+    answer: 'Ja, das ist ein eigener Teilbereich · Hafenmodelle mit Anlegestellen, Kran-Anlagen, Container-Stapel, Wasserflächen-Andeutung. Maßstäbe 1:200 bis 1:500. Wasserflächen werden über farbig lasiertes Acrylglas simuliert (3-5 mm Dicke). Stilisierte Kran-Anlagen mit drehbaren Auslegern, Container in verschiedenen Reederei-Farben. Preisbereich €8.000-22.000 je nach Detail-Tiefe und Modell-Größe. Typische Kundengruppe: Hafenbetreiber, Werft-Betreiber, Logistik-Anbieter.',
   },
 ]
 
@@ -143,7 +143,7 @@ export default function MesseModellSchiffbauPage() {
             <ul className="space-y-3 text-lg leading-relaxed">
               <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" /><span><strong>Maßstab:</strong> 1:50 bis 1:100 für Standard-Schiffe (80-120 m Original), 1:150 bei Großschiffen.</span></li>
               <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" /><span><strong>Segmentierung:</strong> Modelle über 1,5 m grundsätzlich in 3-5 Magnet-Module aufgeteilt für Transport.</span></li>
-              <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" /><span><strong>Brennstoffklasse:</strong> B1 international Standard auf maritimen Messen — wir liefern Material-Zertifikat.</span></li>
+              <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" /><span><strong>Brennstoffklasse:</strong> B1 international Standard auf maritimen Messen · wir liefern Material-Zertifikat.</span></li>
               <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" /><span><strong>Preisbereich:</strong> €5.500-18.000 für Vollschiff je nach Maßstab und Komponenten-Detail.</span></li>
             </ul>
           </div>
@@ -155,7 +155,7 @@ export default function MesseModellSchiffbauPage() {
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Eine 12.000-DWT-Bulker-Werft präsentiert auf der SMM ihre neue Schiffsklasse. Das Original-Schiff ist 145 m lang,
               wiegt leer 4.800 Tonnen, kostet €28-35 Mio. Es kommt nicht in die Hamburger Messehalle. Was den Stand der Werft
-              ausmacht, sind Renderings, ein paar Bauteile aus dem Antriebsstrang — und seit 2019 zunehmend maßstabsgetreue
+              ausmacht, sind Renderings, ein paar Bauteile aus dem Antriebsstrang · und seit 2019 zunehmend maßstabsgetreue
               3D-gedruckte Vollschiffmodelle.
             </p>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
@@ -185,7 +185,7 @@ export default function MesseModellSchiffbauPage() {
 
         <section className="px-4 py-12 bg-muted/30">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Die maritimen Leitmessen — was wo verlangt wird</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Die maritimen Leitmessen · was wo verlangt wird</h2>
             <div className="space-y-4">
               <div className="bg-card border border-border rounded-lg p-6">
                 <div className="flex items-center justify-between flex-wrap gap-2 mb-3">
@@ -195,7 +195,7 @@ export default function MesseModellSchiffbauPage() {
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Alle 2 Jahre, ~2.200 Aussteller aus 70 Nationen, ~50.000 Fachbesucher. Internationale Reeder-Einkäufer-Basis,
                   Schiffsklassifikations-Gesellschaften (DNV, Lloyd's, BV) als Auditoren mit am Stand. B1-Standard, Material-Nachweis
-                  zwingend. Modell-Qualität wird hier mit dem höchsten Maßstab gemessen — Schraubendetails, Propeller-Geometrie,
+                  zwingend. Modell-Qualität wird hier mit dem höchsten Maßstab gemessen · Schraubendetails, Propeller-Geometrie,
                   Brücken-Aufbau müssen exakt sein.
                 </p>
               </div>
@@ -206,7 +206,7 @@ export default function MesseModellSchiffbauPage() {
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Alle 2 Jahre (Zwischenjahr zu SMM), Fokus auf Offshore, Workboats, Specialized Vessels. Standabnahme über Ahoy
-                  Rotterdam — niederländischer Brandschutz-Standard, B1 für tragende Komponenten. Stark technisches Publikum,
+                  Rotterdam · niederländischer Brandschutz-Standard, B1 für tragende Komponenten. Stark technisches Publikum,
                   Antriebs- und Manövriersystem-Details sind hier die Diskussions-Themen.
                 </p>
               </div>
@@ -218,7 +218,7 @@ export default function MesseModellSchiffbauPage() {
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Alle 2 Jahre, höchste Konzentration internationaler Reederei-Entscheidungsträger weltweit (griechische Reeder
                   besitzen ~17% der weltweiten Handelsflotte). Standabnahme moderater als Hamburg, B2 mit Material-Nachweis akzeptiert.
-                  Hier zählt visuelle Premium-Wirkung — Lackier-Qualität entscheidet.
+                  Hier zählt visuelle Premium-Wirkung · Lackier-Qualität entscheidet.
                 </p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
@@ -227,7 +227,7 @@ export default function MesseModellSchiffbauPage() {
                   <span className="text-sm px-3 py-1 bg-primary/10 text-primary rounded-full">Nordeuropa-Maritime</span>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Alle 2 Jahre, Fokus auf nordische Schiffstechnik — Offshore, Fishing, Green-Shipping. Hohe Innovations-Erwartung,
+                  Alle 2 Jahre, Fokus auf nordische Schiffstechnik · Offshore, Fishing, Green-Shipping. Hohe Innovations-Erwartung,
                   Modelle für Hybrid- und E-Antriebe besonders nachgefragt. B1-Standard, strenger Brandschutz wegen norwegischer
                   Bauvorschriften.
                 </p>
@@ -308,7 +308,7 @@ export default function MesseModellSchiffbauPage() {
 
         <section className="px-4 py-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Case: Aktiv in Arbeit — Querschnitt-Schiffsmodell für Hamburger Eventagentur</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Case: Aktiv in Arbeit · Querschnitt-Schiffsmodell für Hamburger Eventagentur</h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Aktuell in unserer Werkstatt: Querschnitt-Schiffsmodell mit Antriebsbereich (Schottel-Antrieb) und
               Elektronik-Steuerung (Elkon-Komponenten) für eine Hamburger Eventagentur. Auftragswert ~€30.000. Fertigstellung
@@ -344,7 +344,7 @@ export default function MesseModellSchiffbauPage() {
               <div className="bg-card border border-border rounded-lg p-6">
                 <Target className="w-8 h-8 text-primary mb-3" />
                 <h3 className="font-bold text-lg mb-2">Linien-Wahrheit am Stand</h3>
-                <p className="text-sm text-muted-foreground">Reeder-Einkäufer sehen die echte Hydrodynamik-Form, den Wulstbug, die Propeller-Tunnel-Geometrie. Renderings können das nicht — physische Modelle schon.</p>
+                <p className="text-sm text-muted-foreground">Reeder-Einkäufer sehen die echte Hydrodynamik-Form, den Wulstbug, die Propeller-Tunnel-Geometrie. Renderings können das nicht · physische Modelle schon.</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
                 <Globe className="w-8 h-8 text-primary mb-3" />
@@ -359,13 +359,13 @@ export default function MesseModellSchiffbauPage() {
               <div className="bg-card border border-border rounded-lg p-6">
                 <Clock className="w-8 h-8 text-primary mb-3" />
                 <h3 className="font-bold text-lg mb-2">Geschwindigkeits-Vorteil</h3>
-                <p className="text-sm text-muted-foreground">5-7 Wochen Lieferzeit für Vollschiff-Modelle inkl. Premium-Lackierung. Klassische Modellbauer: 14-22 Wochen. Wenn die SMM in 10 Wochen startet — wir liefern.</p>
+                <p className="text-sm text-muted-foreground">5-7 Wochen Lieferzeit für Vollschiff-Modelle inkl. Premium-Lackierung. Klassische Modellbauer: 14-22 Wochen. Wenn die SMM in 10 Wochen startet · wir liefern.</p>
               </div>
             </div>
             <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mt-8">
               <p className="text-lg leading-relaxed">
                 <strong>Konkret kalkuliert:</strong> ein €8.500-Vollschiff-Modell für 4 internationale Leitmessen über
-                2 Jahre. Wenn die Anfrage-Quote von 8 auf 15 pro Messe steigt — das sind 28 zusätzliche qualifizierte
+                2 Jahre. Wenn die Anfrage-Quote von 8 auf 15 pro Messe steigt · das sind 28 zusätzliche qualifizierte
                 Reeder-Anfragen über die Lebenszeit. Bei einem 15%-Konversions-Schnitt und €4-12 Mio Ø-Schiffspreis:
                 4 zusätzliche Abschlüsse = <strong className="text-primary">+€16-48 Mio Mehrumsatz</strong>.
               </p>
@@ -375,7 +375,7 @@ export default function MesseModellSchiffbauPage() {
 
         <section className="px-4 py-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Häufige Fragen — Schiffbau-Messemodelle</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Häufige Fragen · Schiffbau-Messemodelle</h2>
             <div className="space-y-4">
               {faqs.map((faq, i) => (
                 <details key={i} className="group bg-card border border-border rounded-lg">

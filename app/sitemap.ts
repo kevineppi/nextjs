@@ -1,10 +1,10 @@
 /**
- * Dynamische Sitemap — Next.js native Sitemap-Generator
+ * Dynamische Sitemap · Next.js native Sitemap-Generator
  * ──────────────────────────────────────────────────────────────────
  *
  * 2026-05-26 (K5-Refactor aus 5-Instanzen-Audit):
  *   Statt statischer public/sitemap.xml liefert Next.js bei /sitemap.xml
- *   diese dynamisch generierte Sitemap aus — mit aktuellem lastmod-Datum
+ *   diese dynamisch generierte Sitemap aus · mit aktuellem lastmod-Datum
  *   pro URL. Verbessert Crawl-Effizienz (Google priorisiert frische URLs).
  *
  * Konvention:
@@ -48,7 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/checkliste`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.85 },
   ]
 
-  // ─── CASE-DETAIL-PAGES — aus realCases.ts generiert ───────────
+  // ─── CASE-DETAIL-PAGES · aus realCases.ts generiert ───────────
   const caseDetailPages: MetadataRoute.Sitemap = cases.map((c) => ({
     url: `${SITE}/cases/${c.slug}`,
     lastModified: buildDate,
@@ -56,7 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  // ─── BRANCHEN-CLUSTER — aus branchenData.ts generiert ─────────
+  // ─── BRANCHEN-CLUSTER · aus branchenData.ts generiert ─────────
   const branchenHub: MetadataRoute.Sitemap = [
     { url: `${SITE}/branchen`, lastModified: buildDate, changeFrequency: 'weekly', priority: 0.9 },
   ]
@@ -79,7 +79,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/ratgeber/prototyping-guide`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.5 },
     // Skyscraper-Guide 2026-05-27: high-priority Long-Tail-Anchor für Material-Vergleichs-Cluster
     { url: `${SITE}/ratgeber/fdm-material-vergleich`, lastModified: buildDate, changeFrequency: 'weekly', priority: 0.95 },
-    // Messemodell-Branchen-Spokes 2026-05-31 — Hub-and-Spoke-Architektur
+    // Messemodell-Branchen-Spokes 2026-05-31 · Hub-and-Spoke-Architektur
     { url: `${SITE}/ratgeber/messemodell-maschinenbau`, lastModified: buildDate, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${SITE}/ratgeber/messemodell-schiffbau`, lastModified: buildDate, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${SITE}/ratgeber/messemodell-energietechnik`, lastModified: buildDate, changeFrequency: 'weekly', priority: 0.9 },

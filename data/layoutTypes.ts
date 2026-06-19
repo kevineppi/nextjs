@@ -380,7 +380,7 @@ export interface CTAConfig {
 
 export const architekturCTAByType: Record<ArchitekturLayoutType, (regionName: string, deliveryTime: string) => CTAConfig> = {
   wettbewerb: (r, d) => ({
-    headline: `Wettbewerbsmodell für ${r} – Angebot in 6h`,
+    headline: `Wettbewerbsmodell für ${r} · Angebot in 6h`,
     subline: `Deadline in Sicht? Wir fertigen Ihr Wettbewerbsmodell mit Express-Lieferung nach ${r}. CAD-Datei senden, Angebot erhalten, Modell gewinnen.`,
     ctaLabel: 'Wettbewerbsmodell anfragen',
     secondaryLabel: 'Express-Optionen ansehen',
@@ -389,7 +389,7 @@ export const architekturCTAByType: Record<ArchitekturLayoutType, (regionName: st
     variant: 'filled'
   }),
   kosten: (r, d) => ({
-    headline: `Architekturmodell ${r} – transparent kalkuliert`,
+    headline: `Architekturmodell ${r} · transparent kalkuliert`,
     subline: `Klare Preise ohne versteckte Kosten. Ab €20 für Studienmodelle, Mengenrabatt ab 3 Stück. Lieferung nach ${r}: ${d}.`,
     ctaLabel: 'Kostenloses Angebot anfordern',
     secondaryLabel: 'Preisbeispiele ansehen',
@@ -398,7 +398,7 @@ export const architekturCTAByType: Record<ArchitekturLayoutType, (regionName: st
     variant: 'card'
   }),
   express: (r, d) => ({
-    headline: `Express-Modell für ${r} – morgen bei Ihnen`,
+    headline: `Express-Modell für ${r} · morgen bei Ihnen`,
     subline: `Dringendes Projekt? Bestellung bis 10 Uhr = Versand am selben Tag. In 24h in ${r}.`,
     ctaLabel: 'Express jetzt beauftragen',
     secondaryLabel: 'Standard-Lieferung wählen',
@@ -465,7 +465,7 @@ export const messeCTAByType: Record<MesseLayoutType, (regionName: string, delive
   }),
   branche: (r, d) => ({
     headline: `Branchenspezifische Messemodelle für ${r}`,
-    subline: `Wir kennen die Messen in ${r}. Ob Industriemesse oder Fachmesse – Ihr Modell passt perfekt zum Branchenumfeld.`,
+    subline: `Wir kennen die Messen in ${r}. Ob Industriemesse oder Fachmesse · Ihr Modell passt perfekt zum Branchenumfeld.`,
     ctaLabel: 'Branchenmodell anfragen',
     secondaryLabel: 'Messen in der Region',
     badge: `Branchen-Expertise`,
@@ -473,7 +473,7 @@ export const messeCTAByType: Record<MesseLayoutType, (regionName: string, delive
     variant: 'card'
   }),
   grossmodell: (r, d) => ({
-    headline: `XXL-Messemodelle für ${r} – bis 2 Meter`,
+    headline: `XXL-Messemodelle für ${r} · bis 2 Meter`,
     subline: `Großformatige Modelle, die beeindrucken. Modulare Konstruktion für einfachen Transport. Lieferung nach ${r}: ${d}.`,
     ctaLabel: 'Großmodell anfragen',
     secondaryLabel: 'Größen & Preise',
@@ -491,7 +491,7 @@ export const messeCTAByType: Record<MesseLayoutType, (regionName: string, delive
     variant: 'card'
   }),
   budget: (r, d) => ({
-    headline: `Messemodelle ${r} – professionell ab €30`,
+    headline: `Messemodelle ${r} · professionell ab €30`,
     subline: `Messebudget schonen ohne Qualitätsverlust. Professionelle Modelle ab €30. Transparent kalkuliert, pünktlich geliefert.`,
     ctaLabel: 'Budget-Angebot anfordern',
     secondaryLabel: 'Preisbeispiele',
@@ -513,7 +513,7 @@ export const messeCTAByType: Record<MesseLayoutType, (regionName: string, delive
 export const druckCTAByType: Record<DruckLayoutType, (regionName: string, deliveryTime: string) => CTAConfig> = {
   startup: (r, d) => ({
     headline: `3D-Druck für Startups in ${r}`,
-    subline: `Pitch-Modelle, Designstudien, Prototypen-Visualisierung. Von der Idee zum greifbaren Modell – schnell und professionell.`,
+    subline: `Pitch-Modelle, Designstudien, Prototypen-Visualisierung. Von der Idee zum greifbaren Modell · schnell und professionell.`,
     ctaLabel: 'Pitch-Modell anfragen',
     secondaryLabel: 'Startup-Referenzen',
     badge: `Startups ${r}`,
@@ -540,7 +540,7 @@ export const druckCTAByType: Record<DruckLayoutType, (regionName: string, delive
   }),
   bildung: (r, d) => ({
     headline: `3D-Druck für Bildung & Forschung in ${r}`,
-    subline: `Lehrmittel, Anschauungsobjekte, Studienmodelle. Ab €20 – perfekt für Universitäten, Schulen und Forschungsinstitute.`,
+    subline: `Lehrmittel, Anschauungsobjekte, Studienmodelle. Ab €20 · perfekt für Universitäten, Schulen und Forschungsinstitute.`,
     ctaLabel: 'Lehrmittel anfragen',
     secondaryLabel: 'Bildungs-Referenzen',
     badge: `Bildung ${r}`,
@@ -548,7 +548,7 @@ export const druckCTAByType: Record<DruckLayoutType, (regionName: string, delive
     variant: 'card'
   }),
   express: (r, d) => ({
-    headline: `Express 3D-Druck für ${r} – in 24h`,
+    headline: `Express 3D-Druck für ${r} · in 24h`,
     subline: `Dringendes Projekt? Bestellung bis 10 Uhr = Versand am selben Tag. Morgen bei Ihnen in ${r}.`,
     ctaLabel: 'Express beauftragen',
     secondaryLabel: 'Standard wählen',

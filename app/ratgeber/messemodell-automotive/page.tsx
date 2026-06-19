@@ -20,7 +20,7 @@ import AuthorByline from '@/components/AuthorByline'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 import { BRAND } from '@/data/brandVoice'
 
-const TITLE = 'Messemodelle Automotive — Karosserie, E-Antrieb, Konzeptfahrzeug [Guide]'
+const TITLE = 'Messemodelle Automotive · Karosserie, E-Antrieb, Konzeptfahrzeug [Guide]'
 const DESCRIPTION =
   'Messemodelle für Automotive-Aussteller: Karosserie-Schnittmodelle, E-Antrieb-Showcase, Konzeptfahrzeuge in Spritzguss-Optik durch ABS + Aceton-Glättung. IAA Mobility, Vienna Autoshow, Auto Zürich.'
 
@@ -37,10 +37,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: TITLE, description: DESCRIPTION,
     url: 'https://www.ek-druck.at/ratgeber/messemodell-automotive',
-    siteName: 'ekdruck – 3D-Druck Österreich', locale: 'de_AT', type: 'article',
+    siteName: 'ekdruck · 3D-Druck Österreich', locale: 'de_AT', type: 'article',
     publishedTime: '2026-05-31T00:00:00.000Z', modifiedTime: '2026-05-31T00:00:00.000Z',
     authors: ['Kevin Eppensteiner'],
-    images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630, alt: 'Messemodelle Automotive — ekdruck' }],
+    images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630, alt: 'Messemodelle Automotive · ekdruck' }],
   },
   twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION },
   robots: STANDARD_ROBOTS,
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org', '@type': 'TechArticle',
-  headline: 'Messemodelle für Automotive-Aussteller — Karosserie, E-Antrieb, Konzeptfahrzeuge',
+  headline: 'Messemodelle für Automotive-Aussteller · Karosserie, E-Antrieb, Konzeptfahrzeuge',
   description: DESCRIPTION, datePublished: '2026-05-31', dateModified: '2026-05-31',
   author: { '@type': 'Person', name: BRAND.founderName, url: 'https://www.ek-druck.at/ueber-uns', jobTitle: 'Inhaber & Gründer ekdruck e.U.' },
   publisher: { '@type': 'Organization', name: BRAND.companyName, logo: { '@type': 'ImageObject', url: 'https://www.ek-druck.at/icon-192.png' } },
@@ -65,19 +65,19 @@ const articleSchema = {
 const faqs = [
   {
     question: 'Welcher Maßstab funktioniert für Karosserie-Showcases?',
-    answer: 'Für komplette Fahrzeug-Modelle 1:8 bis 1:10 — ergibt Modell-Längen von 45-55 cm bei Standard-PKW. Karosserie-Schnittmodelle für Engineering-Details: 1:5 — zeigt Schweißpunkte, Doppelboden-Struktur, Crash-Zone-Details. Komponenten-Modelle (E-Antrieb-Einheit, Achsbaugruppe, Front-Modul): 1:3 bis 1:5. Für Konzeptfahrzeug-Premieren in Premium-Lackierung: 1:5 für visuelle Wirkung.',
+    answer: 'Für komplette Fahrzeug-Modelle 1:8 bis 1:10 · ergibt Modell-Längen von 45-55 cm bei Standard-PKW. Karosserie-Schnittmodelle für Engineering-Details: 1:5 · zeigt Schweißpunkte, Doppelboden-Struktur, Crash-Zone-Details. Komponenten-Modelle (E-Antrieb-Einheit, Achsbaugruppe, Front-Modul): 1:3 bis 1:5. Für Konzeptfahrzeug-Premieren in Premium-Lackierung: 1:5 für visuelle Wirkung.',
   },
   {
     question: 'Wie erreicht man Spritzguss-Look mit 3D-Druck?',
-    answer: 'Aceton-Dampfglättung ist das Standard-Verfahren. ABS-Modelle werden in einer Aceton-gesättigten Atmosphäre 30-90 Minuten geglättet — die Schicht-Struktur des FDM-Drucks verschmilzt, das Ergebnis ist eine homogene Glanzoberfläche die optisch nicht von Spritzguss unterscheidbar ist. Danach 2K-Premium-Lack in der gewünschten Farbgebung. Bei Premium-Konzeptfahrzeug-Modellen kommt Klarlack-Versiegelung hinzu — Hochglanz-Finish wie auf einer echten Karosserie.',
+    answer: 'Aceton-Dampfglättung ist das Standard-Verfahren. ABS-Modelle werden in einer Aceton-gesättigten Atmosphäre 30-90 Minuten geglättet · die Schicht-Struktur des FDM-Drucks verschmilzt, das Ergebnis ist eine homogene Glanzoberfläche die optisch nicht von Spritzguss unterscheidbar ist. Danach 2K-Premium-Lack in der gewünschten Farbgebung. Bei Premium-Konzeptfahrzeug-Modellen kommt Klarlack-Versiegelung hinzu · Hochglanz-Finish wie auf einer echten Karosserie.',
   },
   {
     question: 'Welche Brennstoffklasse ist auf der IAA Mobility erforderlich?',
-    answer: 'IAA München (Messe München) verlangt B1 für alle Stand-Komponenten — bei Großständen der Automobil-Hersteller wird das strikt durchgesetzt. Für Modell-Exponate brauchen wir B1-Material. Wir empfehlen B1-fähiges Polycarbonat-FR für die Hauptkarosserie und additiviertes ABS für die Spritzguss-Look-Details. Material-Zertifikat wird vor Standabnahme bereitgestellt.',
+    answer: 'IAA München (Messe München) verlangt B1 für alle Stand-Komponenten · bei Großständen der Automobil-Hersteller wird das strikt durchgesetzt. Für Modell-Exponate brauchen wir B1-Material. Wir empfehlen B1-fähiges Polycarbonat-FR für die Hauptkarosserie und additiviertes ABS für die Spritzguss-Look-Details. Material-Zertifikat wird vor Standabnahme bereitgestellt.',
   },
   {
     question: 'Sind funktionsfähige Türen oder Hauben am Modell möglich?',
-    answer: 'Ja — bewegliche Türen, Hauben, Heckklappen sind häufige Anforderungen. Mini-Scharniere aus POM oder Messing-Buchsen für 200+ Öffnungs-Zyklen pro Messetag ohne Verschleiß. Bei Premium-Konzeptmodellen mit Aceton-Glättung müssen die Scharniere VOR der Glättung eingebaut werden — Glättung der Außenflächen, dann finale Montage. Servo-aktivierte Öffnung (Knopfdruck) ist möglich, aber Aufpreis ~€800-1.500.',
+    answer: 'Ja · bewegliche Türen, Hauben, Heckklappen sind häufige Anforderungen. Mini-Scharniere aus POM oder Messing-Buchsen für 200+ Öffnungs-Zyklen pro Messetag ohne Verschleiß. Bei Premium-Konzeptmodellen mit Aceton-Glättung müssen die Scharniere VOR der Glättung eingebaut werden · Glättung der Außenflächen, dann finale Montage. Servo-aktivierte Öffnung (Knopfdruck) ist möglich, aber Aufpreis ~€800-1.500.',
   },
   {
     question: 'Können E-Antriebe und Batterie-Module gut gezeigt werden?',
@@ -85,7 +85,7 @@ const faqs = [
   },
   {
     question: 'Lohnt sich ein Showcase-Modell für Zulieferer oder nur OEMs?',
-    answer: 'Besonders für Zulieferer lohnt es sich. OEMs (BMW, Audi, VW) haben in der Regel klassische Modellbauer als Lieferanten und sind nicht primär unsere Zielgruppe. Tier-1- und Tier-2-Zulieferer (Front-Modul-Hersteller, E-Antrieb-Zulieferer, Innenraum-Komponenten-Spezialisten) zeigen ihre Komponenten oft losgelöst vom Fahrzeug — hier funktionieren 3D-Druck-Modelle besser, kostengünstiger und schneller. Auch Engineering-Dienstleister und Konzept-Studios sind eine wachsende Kundengruppe.',
+    answer: 'Besonders für Zulieferer lohnt es sich. OEMs (BMW, Audi, VW) haben in der Regel klassische Modellbauer als Lieferanten und sind nicht primär unsere Zielgruppe. Tier-1- und Tier-2-Zulieferer (Front-Modul-Hersteller, E-Antrieb-Zulieferer, Innenraum-Komponenten-Spezialisten) zeigen ihre Komponenten oft losgelöst vom Fahrzeug · hier funktionieren 3D-Druck-Modelle besser, kostengünstiger und schneller. Auch Engineering-Dienstleister und Konzept-Studios sind eine wachsende Kundengruppe.',
   },
   {
     question: 'Was kostet ein Premium-Karosserie-Modell mit Spritzguss-Look?',
@@ -147,7 +147,7 @@ export default function MesseModellAutomotivePage() {
 
         <section className="px-4 py-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Das Automotive-Showcase-Dilemma — visuelle Premium-Erwartung</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Das Automotive-Showcase-Dilemma · visuelle Premium-Erwartung</h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Automotive-Buyer sind in puncto visuelle Qualität verwöhnt. Was bei einer Werkzeugmaschinen-Messe als «Engineering-Detail»
               durchgeht, ist auf der IAA das Mindeste. Ein Karosserie-Modell mit sichtbaren FDM-Schichten? Sofort als billig erkannt.
@@ -160,7 +160,7 @@ export default function MesseModellAutomotivePage() {
               klassischer Modellbau.
             </p>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Für Tier-1- und Tier-2-Zulieferer ist der Zeitvorteil entscheidend. Eine E-Antrieb-Variante muss zur nächsten IAA — der
+              Für Tier-1- und Tier-2-Zulieferer ist der Zeitvorteil entscheidend. Eine E-Antrieb-Variante muss zur nächsten IAA · der
               klassische Modellbauer braucht 4 Monate, wir liefern in 6 Wochen. Das ist der Unterschied zwischen «wir zeigen es»
               und «wir verschieben es auf nächstes Jahr».
             </p>
@@ -194,7 +194,7 @@ export default function MesseModellAutomotivePage() {
                   <span className="text-sm px-3 py-1 bg-primary/10 text-primary rounded-full">Internationale Automobil-Leitmesse</span>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Alle 2 Jahre, ~750.000 Besucher, Premium-Buyer-Konzentration weltweit. Standabnahme über Messe München —
+                  Alle 2 Jahre, ~750.000 Besucher, Premium-Buyer-Konzentration weltweit. Standabnahme über Messe München -
                   B1 zwingend, strikt durchgesetzt. Hier zählt visuelle Premium-Wirkung als Mindeststandard. Tier-1-Zulieferer
                   zeigen häufig Komponenten-Modelle (E-Antrieb-Einheiten, Front-Module, ADAS-Demonstratoren) in Premium-Optik.
                 </p>
@@ -227,7 +227,7 @@ export default function MesseModellAutomotivePage() {
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Alle 2 Jahre, Welt-Leitmesse für Automobil-Aftermarket und Zulieferer-Branche. Werkstatt-Ausrüster, Diagnose-Systeme,
-                  Ersatzteil-Hersteller. Engineering-Komponentenmodelle hier sehr willkommen — keine Premium-Hochglanz-Erwartung,
+                  Ersatzteil-Hersteller. Engineering-Komponentenmodelle hier sehr willkommen · keine Premium-Hochglanz-Erwartung,
                   Substance über Optik.
                 </p>
               </div>
@@ -242,7 +242,7 @@ export default function MesseModellAutomotivePage() {
               <div className="bg-card border border-border rounded-lg p-6">
                 <Car className="w-8 h-8 text-primary mb-3" />
                 <h3 className="font-bold text-lg mb-2">Karosserie-Schnittmodelle</h3>
-                <p className="text-sm text-muted-foreground mb-3">Halbseitiges Schnittmodell — Außenseite Premium-Lack, Schnittseite zeigt Konstruktion (Doppelboden, Crash-Zone, Multi-Material).</p>
+                <p className="text-sm text-muted-foreground mb-3">Halbseitiges Schnittmodell · Außenseite Premium-Lack, Schnittseite zeigt Konstruktion (Doppelboden, Crash-Zone, Multi-Material).</p>
                 <div className="text-xs text-muted-foreground">Empfohlener Maßstab: <strong className="text-foreground">1:5</strong></div>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
@@ -269,21 +269,21 @@ export default function MesseModellAutomotivePage() {
 
         <section className="px-4 py-12 bg-muted/30">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Premium-Finishing-Stack — wie Spritzguss-Optik entsteht</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Premium-Finishing-Stack · wie Spritzguss-Optik entsteht</h2>
             <div className="bg-card border border-border rounded-lg p-6">
               <div className="space-y-4">
                 <div className="flex gap-4 items-start">
                   <span className="w-10 h-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center font-bold flex-shrink-0">1</span>
                   <div>
                     <div className="font-bold mb-1">ABS-Druck mit optimierter Schichthöhe</div>
-                    <p className="text-sm text-muted-foreground">0,12 mm Schichthöhe (statt Standard 0,2 mm) — feinere Ausgangsfläche für die Aceton-Glättung. Druckzeit ~80% länger, lohnt sich für Premium-Modelle.</p>
+                    <p className="text-sm text-muted-foreground">0,12 mm Schichthöhe (statt Standard 0,2 mm) · feinere Ausgangsfläche für die Aceton-Glättung. Druckzeit ~80% länger, lohnt sich für Premium-Modelle.</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start">
                   <span className="w-10 h-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center font-bold flex-shrink-0">2</span>
                   <div>
                     <div className="font-bold mb-1">Aceton-Dampfglättung 60-120 Min</div>
-                    <p className="text-sm text-muted-foreground">In geschlossener Aceton-gesättigter Atmosphäre. Schicht-Struktur verschmilzt zu homogener Oberfläche. Keine Schleifarbeit nötig — wäre auch nicht so präzise erreichbar.</p>
+                    <p className="text-sm text-muted-foreground">In geschlossener Aceton-gesättigter Atmosphäre. Schicht-Struktur verschmilzt zu homogener Oberfläche. Keine Schleifarbeit nötig · wäre auch nicht so präzise erreichbar.</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start">
@@ -307,7 +307,7 @@ export default function MesseModellAutomotivePage() {
 
         <section className="px-4 py-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Case-Pattern — Tier-1-Zulieferer-Strategie</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Case-Pattern · Tier-1-Zulieferer-Strategie</h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Tier-1-Zulieferer zeigen ihre Komponenten häufig im Kontext eines Fahrzeug-Modells. Beispiel-Pattern aus aktuellen Anfragen:
               ein E-Antriebs-Spezialist will seine integrierte Antriebs-Einheit (Motor + Getriebe + Inverter) demonstrieren. Statt
@@ -328,7 +328,7 @@ export default function MesseModellAutomotivePage() {
               <div className="mt-6 pt-6 border-t border-border">
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   <strong className="text-foreground">Vorteil dieses Patterns:</strong> der Buyer sieht die Komponente IM Kontext.
-                  Antriebs-Einheit allein wirkt abstrakt — eingebaut in eine erkennbare Heck-Karosserie wird die Integration in
+                  Antriebs-Einheit allein wirkt abstrakt · eingebaut in eine erkennbare Heck-Karosserie wird die Integration in
                   ein reales Fahrzeug greifbar. Premium-Lack signalisiert Premium-OEM-Kompatibilität.
                 </p>
               </div>
@@ -348,7 +348,7 @@ export default function MesseModellAutomotivePage() {
               <div className="bg-card border border-border rounded-lg p-6">
                 <Clock className="w-8 h-8 text-primary mb-3" />
                 <h3 className="font-bold text-lg mb-2">6-Wochen-Premiere-Tauglichkeit</h3>
-                <p className="text-sm text-muted-foreground">Klassische Modellbauer: 14-22 Wochen. Wenn die IAA-Premiere in 10 Wochen ansteht — wir liefern, sie nicht.</p>
+                <p className="text-sm text-muted-foreground">Klassische Modellbauer: 14-22 Wochen. Wenn die IAA-Premiere in 10 Wochen ansteht · wir liefern, sie nicht.</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
                 <Target className="w-8 h-8 text-primary mb-3" />
@@ -374,7 +374,7 @@ export default function MesseModellAutomotivePage() {
 
         <section className="px-4 py-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Häufige Fragen — Automotive-Messemodelle</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Häufige Fragen · Automotive-Messemodelle</h2>
             <div className="space-y-4">
               {faqs.map((faq, i) => (
                 <details key={i} className="group bg-card border border-border rounded-lg">

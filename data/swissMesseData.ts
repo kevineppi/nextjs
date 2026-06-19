@@ -24,11 +24,11 @@ export const swissMesseData: Record<string, SwissMesseData> = {
     name: 'Zürich',
     type: 'stadt',
     title: 'Messemodelle für Zürich',
-    h1Title: 'Messemodelle Zürich – 3D-Druck Express für Schweizer Messen',
+    h1Title: 'Messemodelle Zürich · 3D-Druck Express für Schweizer Messen',
     metaTitle: 'Messemodelle Zürich | 3D-Druck Express · ab €30 | ekdruck',
     metaDescription: 'Messemodelle & Exponate für Messen in Zürich drucken lassen. Express-Fertigung, bruchsichere Lieferung inkl. Zollabwicklung. Ab €30 · ★5,0 (31 Bewertungen).',
-    heroSubtitle: 'Zürich ist das wirtschaftliche Zentrum der Schweiz mit über 40 jährlichen Fachmessen am Messezentrum Zürich, im Kongresshaus und in der Halle 550. Wir liefern Ihre Ausstellungsmodelle, Exponate und Präsentationsmodelle direkt zum Messegelände – inklusive vollständiger Zollabwicklung.',
-    deliveryTime: '3–5 Werktage',
+    heroSubtitle: 'Zürich ist das wirtschaftliche Zentrum der Schweiz mit über 40 jährlichen Fachmessen am Messezentrum Zürich, im Kongresshaus und in der Halle 550. Wir liefern Ihre Ausstellungsmodelle, Exponate und Präsentationsmodelle direkt zum Messegelände · inklusive vollständiger Zollabwicklung.',
+    deliveryTime: '3-5 Werktage',
     deliveryNote: 'Lieferung ab Gunskirchen (AT) via A1/A14 Grenzübergang St. Margrethen. Zolldokumentation durch uns.',
     localMessen: [
       { name: 'ArbeitsSicherheit Schweiz', location: 'Messezentrum Zürich', type: 'Arbeitssicherheit' },
@@ -45,7 +45,7 @@ export const swissMesseData: Record<string, SwissMesseData> = {
       'MWST-konforme Rechnungsstellung (CHF oder EUR)',
     ],
     nearbyRegions: ['basel', 'bern', 'st-gallen', 'luzern'],
-    stats: { messen: '40+', lieferzeit: '3–5 Tage', kunden: '10+' },
+    stats: { messen: '40+', lieferzeit: '3-5 Tage', kunden: '10+' },
   },
 
   'basel': {
@@ -53,11 +53,11 @@ export const swissMesseData: Record<string, SwissMesseData> = {
     name: 'Basel',
     type: 'stadt',
     title: 'Messemodelle für Basel',
-    h1Title: 'Messemodelle Basel – Exponate für die Swissbau, PRODEX & Co.',
+    h1Title: 'Messemodelle Basel · Exponate für die Swissbau, PRODEX & Co.',
     metaTitle: 'Messemodelle Basel | Swissbau · PRODEX · Express | ekdruck',
     metaDescription: 'Messemodelle für Basel: Exponate & Präsentationsmodelle für Swissbau, PRODEX, Fantasy Basel. Express 24h · ab €30 · Zollabwicklung inklusive.',
-    heroSubtitle: 'Die Messe Basel gehört zu den größten Messegeländen Europas und beherbergt internationale Leitmessen wie die Swissbau und die PRODEX. Ob Industriemodell für die Fertigungsindustrie oder Architekturmodell für Bauaussteller – wir liefern Ihr Exponat termingerecht nach Basel.',
-    deliveryTime: '3–5 Werktage',
+    heroSubtitle: 'Die Messe Basel gehört zu den größten Messegeländen Europas und beherbergt internationale Leitmessen wie die Swissbau und die PRODEX. Ob Industriemodell für die Fertigungsindustrie oder Architekturmodell für Bauaussteller · wir liefern Ihr Exponat termingerecht nach Basel.',
+    deliveryTime: '3-5 Werktage',
     deliveryNote: 'Dreiländereck-Vorteil: Schnelle Zustellung via A1/Basel Grenzübergang. Zolldokumentation inklusive.',
     localMessen: [
       { name: 'Swissbau', location: 'Messe Basel', type: 'Bau & Immobilien' },
@@ -68,13 +68,13 @@ export const swissMesseData: Record<string, SwissMesseData> = {
       { name: 'Igeho', location: 'Messe Basel', type: 'Gastronomie & Hotellerie' },
     ],
     localAdvantages: [
-      'Dreiländereck – ideale Lage für internationale Messen',
+      'Dreiländereck · ideale Lage für internationale Messen',
       'Erfahrung mit Swissbau und PRODEX-Ausstellern',
       'Großmodelle bis 2m+ für Messe Basel Hallen',
       'Zollabwicklung und CHF-Fakturierung möglich',
     ],
     nearbyRegions: ['zuerich', 'bern', 'luzern'],
-    stats: { messen: '25+', lieferzeit: '3–5 Tage', kunden: '8+' },
+    stats: { messen: '25+', lieferzeit: '3-5 Tage', kunden: '8+' },
   },
 
   'bern': {
@@ -82,14 +82,14 @@ export const swissMesseData: Record<string, SwissMesseData> = {
     name: 'Bern',
     type: 'stadt',
     title: 'Messemodelle für Bern',
-    h1Title: 'Messemodelle Bern – 3D-Druck für BEA, BERNEXPO & Fachmessen',
+    h1Title: 'Messemodelle Bern · 3D-Druck für BEA, BERNEXPO & Fachmessen',
     metaTitle: 'Messemodelle Bern | BEA · BERNEXPO · Express | ekdruck',
     metaDescription: 'Messemodelle für Bern: Exponate für BEA, BERNEXPO, Suisse Public. Express 24h · ab €30 · bruchsicher · inkl. Zollabwicklung. ★5,0.',
-    heroSubtitle: 'Die BEA ist die größte Frühjahrsmesse der Schweiz und das BERNEXPO-Gelände Schauplatz zahlreicher Fachmessen. Wir fertigen Ihre Ausstellungsmodelle und Präsentationsmodelle für Berner Messen – von der Landwirtschaftsanlage bis zum Architekturmodell.',
-    deliveryTime: '4–6 Werktage',
+    heroSubtitle: 'Die BEA ist die größte Frühjahrsmesse der Schweiz und das BERNEXPO-Gelände Schauplatz zahlreicher Fachmessen. Wir fertigen Ihre Ausstellungsmodelle und Präsentationsmodelle für Berner Messen · von der Landwirtschaftsanlage bis zum Architekturmodell.',
+    deliveryTime: '4-6 Werktage',
     deliveryNote: 'Lieferung via A1/Bern. Zollabwicklung und BERNEXPO-Direktlieferung möglich.',
     localMessen: [
-      { name: 'BEA – Frühjahrsmesse', location: 'BERNEXPO', type: 'Gewerbe & Landwirtschaft' },
+      { name: 'BEA · Frühjahrsmesse', location: 'BERNEXPO', type: 'Gewerbe & Landwirtschaft' },
       { name: 'Suisse Public', location: 'BERNEXPO', type: 'Öffentlicher Sektor' },
       { name: 'Swiss Medtech Expo', location: 'BERNEXPO', type: 'Medizintechnik' },
       { name: 'Ferienmesse Bern', location: 'BERNEXPO', type: 'Tourismus' },
@@ -102,7 +102,7 @@ export const swissMesseData: Record<string, SwissMesseData> = {
       'Schweizer Zollabwicklung inklusive',
     ],
     nearbyRegions: ['zuerich', 'basel', 'luzern'],
-    stats: { messen: '20+', lieferzeit: '4–6 Tage', kunden: '5+' },
+    stats: { messen: '20+', lieferzeit: '4-6 Tage', kunden: '5+' },
   },
 
   'st-gallen': {
@@ -110,11 +110,11 @@ export const swissMesseData: Record<string, SwissMesseData> = {
     name: 'St. Gallen',
     type: 'stadt',
     title: 'Messemodelle für St. Gallen',
-    h1Title: 'Messemodelle St. Gallen – Exponate für OLMA & Ostschweizer Messen',
+    h1Title: 'Messemodelle St. Gallen · Exponate für OLMA & Ostschweizer Messen',
     metaTitle: 'Messemodelle St. Gallen | OLMA · Tier&Technik | ekdruck',
     metaDescription: 'Messemodelle für St. Gallen: Exponate & Schaumodelle für OLMA, Tier&Technik, Offa. Express-Lieferung ab Österreich · ab €30 · ★5,0.',
-    heroSubtitle: 'Die OLMA in St. Gallen ist eine der traditionsreichsten Schweizer Messen und das Messegelände Treffpunkt der Ostschweiz. Von landwirtschaftlichen Anlagenmodellen bis zu Industrieexponate für die Tier&Technik – wir liefern Ihre Messemodelle termingerecht in die Ostschweiz.',
-    deliveryTime: '3–4 Werktage',
+    heroSubtitle: 'Die OLMA in St. Gallen ist eine der traditionsreichsten Schweizer Messen und das Messegelände Treffpunkt der Ostschweiz. Von landwirtschaftlichen Anlagenmodellen bis zu Industrieexponate für die Tier&Technik · wir liefern Ihre Messemodelle termingerecht in die Ostschweiz.',
+    deliveryTime: '3-4 Werktage',
     deliveryNote: 'Kürzester Weg in die Schweiz: Grenzübergang St. Margrethen liegt nur 2h von unserem Standort.',
     localMessen: [
       { name: 'OLMA', location: 'Olma Messen St.Gallen', type: 'Landwirtschaft & Ernährung' },
@@ -124,13 +124,13 @@ export const swissMesseData: Record<string, SwissMesseData> = {
       { name: 'Ostschweizer Personaltag', location: 'Olma Messen St.Gallen', type: 'HR & Personalwesen' },
     ],
     localAdvantages: [
-      'Nur 2h von unserem Standort – schnellste Schweiz-Lieferung',
+      'Nur 2h von unserem Standort · schnellste Schweiz-Lieferung',
       'Persönliche Übergabe in St. Gallen möglich',
       'Erfahrung mit OLMA und Tier&Technik',
       'Grenznahe Lage reduziert Lieferzeiten',
     ],
     nearbyRegions: ['zuerich', 'basel', 'luzern'],
-    stats: { messen: '15+', lieferzeit: '3–4 Tage', kunden: '5+' },
+    stats: { messen: '15+', lieferzeit: '3-4 Tage', kunden: '5+' },
   },
 
   'luzern': {
@@ -138,11 +138,11 @@ export const swissMesseData: Record<string, SwissMesseData> = {
     name: 'Luzern',
     type: 'stadt',
     title: 'Messemodelle für Luzern',
-    h1Title: 'Messemodelle Luzern – 3D-Druck für LUGA, Bauen+Wohnen & mehr',
+    h1Title: 'Messemodelle Luzern · 3D-Druck für LUGA, Bauen+Wohnen & mehr',
     metaTitle: 'Messemodelle Luzern | LUGA · Bauen+Wohnen · Express | ekdruck',
     metaDescription: 'Messemodelle für Luzern: Exponate für LUGA, Bauen+Wohnen, Zentralschweizer Messen. Express 24h · ab €30 · Zollabwicklung inkl. ★5,0.',
-    heroSubtitle: 'Die Messe Luzern ist Drehscheibe der Zentralschweiz mit starken Fachmessen wie der LUGA und Bauen+Wohnen. Ob Gebäudemodell für die Baubranche oder Industriemodell für Gewerbeaussteller – wir bringen Ihre Präsentationsmodelle pünktlich nach Luzern.',
-    deliveryTime: '4–5 Werktage',
+    heroSubtitle: 'Die Messe Luzern ist Drehscheibe der Zentralschweiz mit starken Fachmessen wie der LUGA und Bauen+Wohnen. Ob Gebäudemodell für die Baubranche oder Industriemodell für Gewerbeaussteller · wir bringen Ihre Präsentationsmodelle pünktlich nach Luzern.',
+    deliveryTime: '4-5 Werktage',
     deliveryNote: 'Lieferung via A14/Luzern. Zollabwicklung inklusive.',
     localMessen: [
       { name: 'LUGA', location: 'Messe Luzern', type: 'Gewerbe & Lifestyle' },
@@ -157,7 +157,7 @@ export const swissMesseData: Record<string, SwissMesseData> = {
       'Vollständige Zollabwicklung durch uns',
     ],
     nearbyRegions: ['zuerich', 'bern', 'basel', 'st-gallen'],
-    stats: { messen: '12+', lieferzeit: '4–5 Tage', kunden: '5+' },
+    stats: { messen: '12+', lieferzeit: '4-5 Tage', kunden: '5+' },
   },
 };
 

@@ -8,7 +8,7 @@ import LeadMagnetForm from '@/components/LeadMagnetForm'
 import { checklisteMessemodell } from '@/data/leadMagnets'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 
-const TITLE = 'Messemodell-Checkliste (PDF) — 10 Punkte vor jedem Auftrag | ekdruck'
+const TITLE = 'Messemodell-Checkliste (PDF) · 10 Punkte vor jedem Auftrag | ekdruck'
 const DESCRIPTION =
   'Kostenloses PDF: 10-Punkte-Checkliste für Marketing- und Vertriebsverantwortliche, die ein 3D-gedrucktes Messemodell planen. Maßstab, Material, Lead-Time, CAD-Übergabe.'
 
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: 'https://www.ek-druck.at/checkliste',
-    siteName: 'ekdruck – 3D-Druck Österreich',
+    siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'website',
     images: [
@@ -136,7 +136,7 @@ export default function ChecklistePage() {
                     durchgehen. Spart Ihnen Wochen und mir Rückfragen. Win-Win.
                   </p>
                   <p className="mt-4 mono text-xs uppercase tracking-wider text-primary font-bold">
-                    — Kevin Eppensteiner, ekdruck e.U.
+                    · Kevin Eppensteiner, ekdruck e.U.
                   </p>
                 </div>
               </div>
@@ -198,11 +198,11 @@ export default function ChecklistePage() {
                   },
                   {
                     q: 'Wer hat die Checkliste geschrieben?',
-                    a: 'Kevin Eppensteiner, Inhaber von ekdruck e.U. — die Liste basiert auf den Fragen, die ich seit Gründung 2024 immer wieder von Kunden bekomme. Keine generische Vorlage aus dem Internet.',
+                    a: 'Kevin Eppensteiner, Inhaber von ekdruck e.U. · die Liste basiert auf den Fragen, die ich seit Gründung 2024 immer wieder von Kunden bekomme. Keine generische Vorlage aus dem Internet.',
                   },
                   {
                     q: 'Für welche Branchen ist die Checkliste relevant?',
-                    a: 'Alle Industriegüter-Hersteller: Maschinenbau, Schiffbau, Energietechnik, Automotive, Anlagenbau, Elektrotechnik. Architekturbüros profitieren auch — viele Punkte gelten gleichermaßen für Architekturmodelle.',
+                    a: 'Alle Industriegüter-Hersteller: Maschinenbau, Schiffbau, Energietechnik, Automotive, Anlagenbau, Elektrotechnik. Architekturbüros profitieren auch · viele Punkte gelten gleichermaßen für Architekturmodelle.',
                   },
                   {
                     q: 'Wie aktuell ist die Checkliste?',
@@ -224,7 +224,7 @@ export default function ChecklistePage() {
         </section>
 
         {/* AUTHORITY-PUMP zur Money-Page /messemodelle
-            2026-06-04: /checkliste rankt aktuell auf Pos 13 für "Messemodell 3D Druck Österreich" —
+            2026-06-04: /checkliste rankt aktuell auf Pos 13 für "Messemodell 3D Druck Österreich" -
             statt der eigentlichen /messemodelle Money-Page. Dieser Block lenkt User UND Internal-Link-Equity
             zur Hauptseite mit dem Exact-Match-Anchor "Messemodell 3D Druck". */}
         <section className="py-16 md:py-20 bg-background border-t border-border" aria-label="Messemodell 3D Druck Service">
@@ -238,7 +238,7 @@ export default function ChecklistePage() {
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-2xl mx-auto">
                 Die Checkliste hilft Ihnen vor der Anfrage. Wenn Sie das Modell bereits konkret im Kopf haben:
-                unsere Service-Seite für <Link href="/messemodelle" className="text-primary hover:underline font-bold">Messemodelle aus dem 3D-Druck</Link> zeigt die volle Bandbreite — vom 8-Tonnen-Maschinen-Modell als
+                unsere Service-Seite für <Link href="/messemodelle" className="text-primary hover:underline font-bold">Messemodelle aus dem 3D-Druck</Link> zeigt die volle Bandbreite · vom 8-Tonnen-Maschinen-Modell als
                 Tisch-Exponat über Schnittmodelle bis zum Express-Versand binnen 24 Stunden direkt an Ihren Messestand.
               </p>
 
@@ -251,7 +251,7 @@ export default function ChecklistePage() {
                   </p>
                 </div>
                 <div className="bg-muted/30 rounded-2xl p-5">
-                  <div className="text-3xl font-bold text-primary mb-1">1:5–1:50</div>
+                  <div className="text-3xl font-bold text-primary mb-1">1:5-1:50</div>
                   <p className="text-sm font-bold mb-1">Maßstabs-Bandbreite</p>
                   <p className="text-xs text-muted-foreground leading-relaxed">
                     Vom Tischmodell bis zum Hingucker am Messestand.
@@ -271,7 +271,7 @@ export default function ChecklistePage() {
                   href="/messemodelle"
                   className="group inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground rounded-full px-8 py-4 font-bold hover:opacity-90 transition-all"
                 >
-                  Messemodell 3D Druck — Service ansehen
+                  Messemodell 3D Druck · Service ansehen
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link

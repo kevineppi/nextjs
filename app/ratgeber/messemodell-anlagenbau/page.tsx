@@ -20,7 +20,7 @@ import AuthorByline from '@/components/AuthorByline'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 import { BRAND } from '@/data/brandVoice'
 
-const TITLE = 'Messemodelle Anlagenbau — Verfahrenstechnik, Pumpen, Reaktoren [Guide]'
+const TITLE = 'Messemodelle Anlagenbau · Verfahrenstechnik, Pumpen, Reaktoren [Guide]'
 const DESCRIPTION =
   'Messemodelle für Anlagenbau-Aussteller: Verpackungsanlagen, Förderbänder, Reaktoren, Pumpen-Schnittmodelle. Achema Frankfurt, POWTECH Nürnberg, IFAT München. Segmentierbare Module, ROI-Rechnungen.'
 
@@ -37,10 +37,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: TITLE, description: DESCRIPTION,
     url: 'https://www.ek-druck.at/ratgeber/messemodell-anlagenbau',
-    siteName: 'ekdruck – 3D-Druck Österreich', locale: 'de_AT', type: 'article',
+    siteName: 'ekdruck · 3D-Druck Österreich', locale: 'de_AT', type: 'article',
     publishedTime: '2026-05-31T00:00:00.000Z', modifiedTime: '2026-05-31T00:00:00.000Z',
     authors: ['Kevin Eppensteiner'],
-    images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630, alt: 'Messemodelle Anlagenbau — ekdruck' }],
+    images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630, alt: 'Messemodelle Anlagenbau · ekdruck' }],
   },
   twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION },
   robots: STANDARD_ROBOTS,
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org', '@type': 'TechArticle',
-  headline: 'Messemodelle für Anlagenbau-Aussteller — Verfahrenstechnik, Pumpen, Reaktoren',
+  headline: 'Messemodelle für Anlagenbau-Aussteller · Verfahrenstechnik, Pumpen, Reaktoren',
   description: DESCRIPTION, datePublished: '2026-05-31', dateModified: '2026-05-31',
   author: { '@type': 'Person', name: BRAND.founderName, url: 'https://www.ek-druck.at/ueber-uns', jobTitle: 'Inhaber & Gründer ekdruck e.U.' },
   publisher: { '@type': 'Organization', name: BRAND.companyName, logo: { '@type': 'ImageObject', url: 'https://www.ek-druck.at/icon-192.png' } },
@@ -65,11 +65,11 @@ const articleSchema = {
 const faqs = [
   {
     question: 'Welche Maßstäbe funktionieren für Verfahrenstechnik-Anlagen?',
-    answer: '1:10 bis 1:25 sind Standard. Pumpen-Schnittmodelle: 1:5 — Detail-Bauteile (Laufrad, Lagerschalen, Wellendichtung) gut sichtbar. Komplette Förderanlagen mit Behälter und Steuerung: 1:10. Reaktoren mit Rohrleitungs-System: 1:15 oder 1:20. Vollständige Prozessanlagen (Misch- bis Befüll-Strecke): 1:25 mit Segmentierung in Module.',
+    answer: '1:10 bis 1:25 sind Standard. Pumpen-Schnittmodelle: 1:5 · Detail-Bauteile (Laufrad, Lagerschalen, Wellendichtung) gut sichtbar. Komplette Förderanlagen mit Behälter und Steuerung: 1:10. Reaktoren mit Rohrleitungs-System: 1:15 oder 1:20. Vollständige Prozessanlagen (Misch- bis Befüll-Strecke): 1:25 mit Segmentierung in Module.',
   },
   {
     question: 'Können Sie Materialfluss-Wege im Modell sichtbar machen?',
-    answer: 'Ja — das ist eines der häufigsten Sonderwünsche bei Anlagenbau-Modellen. Über farblich differenzierte Rohrleitungen nach DIN 2403 (Edukte, Produkte, Hilfsmedien, Kühlung). Bei Förderanlagen über farbige Materialfluss-Indikatoren am Sockel (z.B. blaue Linien = Rohstoffe, grün = Endprodukt). Wir gravieren oder lackieren die Indikatoren — beides hält Multi-Messen-Einsatz problemlos durch.',
+    answer: 'Ja · das ist eines der häufigsten Sonderwünsche bei Anlagenbau-Modellen. Über farblich differenzierte Rohrleitungen nach DIN 2403 (Edukte, Produkte, Hilfsmedien, Kühlung). Bei Förderanlagen über farbige Materialfluss-Indikatoren am Sockel (z.B. blaue Linien = Rohstoffe, grün = Endprodukt). Wir gravieren oder lackieren die Indikatoren · beides hält Multi-Messen-Einsatz problemlos durch.',
   },
   {
     question: 'Welche Brennstoffklasse fordert die Achema Frankfurt?',
@@ -77,15 +77,15 @@ const faqs = [
   },
   {
     question: 'Lohnt sich Segmentierung in einzelne Anlagen-Module?',
-    answer: 'Bei Multi-Standort-Strategien klar ja. Wir konstruieren komplexe Prozessanlagen-Modelle in modulare Segmente (z.B. Aufbereitung-Modul + Reaktor-Modul + Abfüll-Modul). Jedes Modul ist eigenständig demonstrierbar. Vorteile: (1) parallele Ausstellung an mehreren Messeständen, (2) zukünftige Erweiterungen — neues Modul für neue Anlagen-Variante einfach dazu drucken, (3) Reparatur einzelner beschädigter Module ohne Komplettverlust.',
+    answer: 'Bei Multi-Standort-Strategien klar ja. Wir konstruieren komplexe Prozessanlagen-Modelle in modulare Segmente (z.B. Aufbereitung-Modul + Reaktor-Modul + Abfüll-Modul). Jedes Modul ist eigenständig demonstrierbar. Vorteile: (1) parallele Ausstellung an mehreren Messeständen, (2) zukünftige Erweiterungen · neues Modul für neue Anlagen-Variante einfach dazu drucken, (3) Reparatur einzelner beschädigter Module ohne Komplettverlust.',
   },
   {
     question: 'Können Sie Pumpen-Schnittmodelle mit drehendem Laufrad bauen?',
-    answer: 'Ja — eines der häufigsten Anfragen für Pumpen-Hersteller. Laufrad dreht über kleinen USB-Servomotor (von der Unterseite unsichtbar versteckt). Realistisches Drehzahl-Reduce auf 10-30 U/min für den visuellen Eyecatcher-Effekt. Gehäuse als Schnittansicht mit eingebauten Schaufeln, Wellendichtung sichtbar, Lagerschalen detailliert. PA-CF für die belasteten Drehkomponenten. Standzeit bei normaler Messe-Demonstration: 50-100 Bewegungs-Zyklen pro Tag ohne Verschleiß.',
+    answer: 'Ja · eines der häufigsten Anfragen für Pumpen-Hersteller. Laufrad dreht über kleinen USB-Servomotor (von der Unterseite unsichtbar versteckt). Realistisches Drehzahl-Reduce auf 10-30 U/min für den visuellen Eyecatcher-Effekt. Gehäuse als Schnittansicht mit eingebauten Schaufeln, Wellendichtung sichtbar, Lagerschalen detailliert. PA-CF für die belasteten Drehkomponenten. Standzeit bei normaler Messe-Demonstration: 50-100 Bewegungs-Zyklen pro Tag ohne Verschleiß.',
   },
   {
     question: 'Wie zeigt man Steuerungs-Systeme und Sensorik am Modell?',
-    answer: 'Über lasergravierte Beschriftungen direkt am Modell und dezente Mini-LED-Indikatoren. Konkret: an Reaktor-Modellen Anzeigen für Druck/Temperatur als gravierte Skalen oder kleine OLED-Mini-Displays (USB-powered). Sensor-Positionen werden mit Mini-LEDs markiert (3mm-LED, USB-Strang). Schaltschränke separat als Modul mit Front-Tür zum Öffnen — innen sind Klemmen und Logos der Steuerung-Komponenten.',
+    answer: 'Über lasergravierte Beschriftungen direkt am Modell und dezente Mini-LED-Indikatoren. Konkret: an Reaktor-Modellen Anzeigen für Druck/Temperatur als gravierte Skalen oder kleine OLED-Mini-Displays (USB-powered). Sensor-Positionen werden mit Mini-LEDs markiert (3mm-LED, USB-Strang). Schaltschränke separat als Modul mit Front-Tür zum Öffnen · innen sind Klemmen und Logos der Steuerung-Komponenten.',
   },
   {
     question: 'Was kostet eine typische Anlagenbau-Modell-Aufstellung?',
@@ -151,11 +151,11 @@ export default function MesseModellAnlagenbauPage() {
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Eine komplette Pharma-Befüll-Linie ist 18 m lang, 4 Module hintereinander, mehrere Tonnen schwer. Auf die Achema
               Frankfurt zu transportieren? Logistisch möglich, wirtschaftlich grenzwertig. Was wirklich passiert: Anlagenbauer
-              stellen einzelne Komponenten aus — eine Befüll-Düse, ein Reaktor-Detail, ein Sektion-Querschnitt. Der Pharma-Einkäufer
+              stellen einzelne Komponenten aus · eine Befüll-Düse, ein Reaktor-Detail, ein Sektion-Querschnitt. Der Pharma-Einkäufer
               muss sich die komplette Linie aus diesen Einzelteilen <em>vorstellen</em>.
             </p>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Genau hier entscheidet sich der Deal — oder eben nicht. Wer sich den Materialfluss visuell vorstellen kann, fragt
+              Genau hier entscheidet sich der Deal · oder eben nicht. Wer sich den Materialfluss visuell vorstellen kann, fragt
               nach Durchsatz-Werten. Wer ihn nicht sieht, zieht weiter. Ein 1:10-Vollanlagen-Modell mit farbcodierten Rohrleitungen
               zeigt den Materialfluss komplett. Vom Eingang bis zum Befüll-Ende.
             </p>
@@ -190,7 +190,7 @@ export default function MesseModellAnlagenbauPage() {
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Alle 3 Jahre, ~3.800 Aussteller, ~140.000 Fachbesucher. Pharma, Chemie, Bio, Lebensmittel-Verfahrenstechnik.
-                  Großstände 100+ m² die Norm — entsprechend strenge Standabnahme über DECHEMA. B1 zwingend für alle Stand-
+                  Großstände 100+ m² die Norm · entsprechend strenge Standabnahme über DECHEMA. B1 zwingend für alle Stand-
                   Komponenten inkl. Modell-Exponate. Modelle hier sind oft Premium-Investitionen für die 3-Jahres-Cycle bis zur nächsten Achema.
                 </p>
               </div>
@@ -200,7 +200,7 @@ export default function MesseModellAnlagenbauPage() {
                   <span className="text-sm px-3 py-1 bg-primary/10 text-primary rounded-full">Pulver- + Schüttgut-Technik</span>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Jährlich, Fokus auf Pulver- und Schüttgut-Verarbeitung — Misch-, Trenn-, Förder-, Lager-Technik. Mittelstands-fokussiert,
+                  Jährlich, Fokus auf Pulver- und Schüttgut-Verarbeitung · Misch-, Trenn-, Förder-, Lager-Technik. Mittelstands-fokussiert,
                   Engineering-Publikum. B2 oft ausreichend, B1 bei Großständen. Modelle mit Förder-Schnecken-Bewegung sind hier
                   besondere Eyecatcher.
                 </p>
@@ -222,7 +222,7 @@ export default function MesseModellAnlagenbauPage() {
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Alle 3 Jahre, die größte Kunststoff-Messe der Welt. Extrusionsanlagen, Spritzgusss, Folien-Extruder, Compoundier-Maschinen.
-                  Für Anlagenbauer eine Goldgrube für Premium-Anfragen — hohe Standabnahme-Anforderungen, B1 strikt durchgesetzt.
+                  Für Anlagenbauer eine Goldgrube für Premium-Anfragen · hohe Standabnahme-Anforderungen, B1 strikt durchgesetzt.
                 </p>
               </div>
             </div>
@@ -263,7 +263,7 @@ export default function MesseModellAnlagenbauPage() {
 
         <section className="px-4 py-12 bg-muted/30">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Modulares Anlagen-Design — Multi-Stand-Strategie</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Modulares Anlagen-Design · Multi-Stand-Strategie</h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Wenn Sie an mehreren Messen parallel ausstellen oder bei Kunden-Vor-Ort-Demonstrationen unabhängig vom Hauptstand
               präsentieren wollen, ist Modularität der entscheidende Hebel. Wir konstruieren Anlagen-Modelle bewusst segmentiert:
@@ -274,7 +274,7 @@ export default function MesseModellAnlagenbauPage() {
                   <span className="w-10 h-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center font-bold flex-shrink-0">1</span>
                   <div>
                     <div className="font-bold mb-1">Logische Anlagen-Sektionen als eigenständige Module</div>
-                    <p className="text-sm text-muted-foreground">Aufbereitung-Modul, Reaktor-Modul, Trenn-Modul, Befüll-Modul — jedes selbst-stehend, mit eigenem Sockel, eigener Beschriftung.</p>
+                    <p className="text-sm text-muted-foreground">Aufbereitung-Modul, Reaktor-Modul, Trenn-Modul, Befüll-Modul · jedes selbst-stehend, mit eigenem Sockel, eigener Beschriftung.</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start">
@@ -288,14 +288,14 @@ export default function MesseModellAnlagenbauPage() {
                   <span className="w-10 h-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center font-bold flex-shrink-0">3</span>
                   <div>
                     <div className="font-bold mb-1">Erweiterbarkeit für zukünftige Anlagen-Varianten</div>
-                    <p className="text-sm text-muted-foreground">Wenn Sie nächstes Jahr eine neue Modul-Variante (z.B. Pulver-Aufbereitung statt Granulat) entwickeln — wir drucken nur das neue Modul, der Rest bleibt.</p>
+                    <p className="text-sm text-muted-foreground">Wenn Sie nächstes Jahr eine neue Modul-Variante (z.B. Pulver-Aufbereitung statt Granulat) entwickeln · wir drucken nur das neue Modul, der Rest bleibt.</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start">
                   <span className="w-10 h-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center font-bold flex-shrink-0">4</span>
                   <div>
                     <div className="font-bold mb-1">Reparatur einzelner Module ohne Komplettverlust</div>
-                    <p className="text-sm text-muted-foreground">Bei Transport-Schaden eines Moduls — Neudruck des einzelnen Moduls in 5-10 Werktagen. Komplettes Vollanlagen-Modell wäre 5-8 Wochen Re-Produktion.</p>
+                    <p className="text-sm text-muted-foreground">Bei Transport-Schaden eines Moduls · Neudruck des einzelnen Moduls in 5-10 Werktagen. Komplettes Vollanlagen-Modell wäre 5-8 Wochen Re-Produktion.</p>
                   </div>
                 </div>
               </div>
@@ -315,7 +315,7 @@ export default function MesseModellAnlagenbauPage() {
               <div className="grid md:grid-cols-2 gap-4 text-sm">
                 <div><span className="text-muted-foreground">Maßstab:</span> <strong>1:5</strong></div>
                 <div><span className="text-muted-foreground">Modell-Größe:</span> <strong>~45×30×35 cm</strong></div>
-                <div><span className="text-muted-foreground">Schnittansicht:</span> <strong>Halbseitig — Detail innen + Außen-Designlinie</strong></div>
+                <div><span className="text-muted-foreground">Schnittansicht:</span> <strong>Halbseitig · Detail innen + Außen-Designlinie</strong></div>
                 <div><span className="text-muted-foreground">Bewegliches Element:</span> <strong>Laufrad rotierbar (USB-Servo)</strong></div>
                 <div><span className="text-muted-foreground">Material:</span> <strong>PETG + PA-CF Laufrad + ABS-Lack-Detail</strong></div>
                 <div><span className="text-muted-foreground">Lackierung:</span> <strong>2K Premium, Aceton-geglättet</strong></div>
@@ -373,7 +373,7 @@ export default function MesseModellAnlagenbauPage() {
 
         <section className="px-4 py-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Häufige Fragen — Anlagenbau-Messemodelle</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Häufige Fragen · Anlagenbau-Messemodelle</h2>
             <div className="space-y-4">
               {faqs.map((faq, i) => (
                 <details key={i} className="group bg-card border border-border rounded-lg">

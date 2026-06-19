@@ -1,9 +1,9 @@
 /**
  * ═══════════════════════════════════════════════════════════════
- * 3D-Druck Kostenrechner – Zentrale Preiskonfiguration
+ * 3D-Druck Kostenrechner · Zentrale Preiskonfiguration
  * ═══════════════════════════════════════════════════════════════
  *
- * Hybrides Kalkulationsmodell – Baseline-Konfiguration.
+ * Hybrides Kalkulationsmodell · Baseline-Konfiguration.
  * Alle Parameter werden von pricingEngine.ts konsumiert.
  */
 

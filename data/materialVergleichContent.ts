@@ -1,5 +1,5 @@
 /**
- * FDM-Material-Vergleichsdaten — wissenschaftliche Grundlage
+ * FDM-Material-Vergleichsdaten · wissenschaftliche Grundlage
  * ──────────────────────────────────────────────────────────────────
  *
  * Quellen für Materialdaten (Werte als technische Richtwerte, jeweils
@@ -66,7 +66,7 @@ export interface MaterialSpec {
 export const materials: MaterialSpec[] = [
 
   // ═══════════════════════════════════════════════════════════════
-  //   PLA — Polylactid
+  //   PLA · Polylactid
   // ═══════════════════════════════════════════════════════════════
   {
     slug: 'pla',
@@ -75,14 +75,14 @@ export const materials: MaterialSpec[] = [
     shortDescription:
       'Biopolymer aus Maisstärke oder Zuckerrohr. Druck-Einsteiger-Standard mit höchster Detailtreue und geringstem Warping-Risiko.',
     density: '1,24 g/cm³',
-    tensileStrength: '50–65 MPa',
-    flexuralModulus: '3,3–3,8 GPa',
-    impactStrength: '3–7 kJ/m²',
-    elongation: '3–6 %',
-    glassTransition: '55–65 °C',
-    heatDeflection: '55–60 °C',
-    printTemp: '190–220 °C',
-    bedTemp: '50–60 °C',
+    tensileStrength: '50-65 MPa',
+    flexuralModulus: '3,3-3,8 GPa',
+    impactStrength: '3-7 kJ/m²',
+    elongation: '3-6 %',
+    glassTransition: '55-65 °C',
+    heatDeflection: '55-60 °C',
+    printTemp: '190-220 °C',
+    bedTemp: '50-60 °C',
     printDifficulty: 1,
     warpingRisk: 'gering',
     needsEnclosure: false,
@@ -105,7 +105,7 @@ export const materials: MaterialSpec[] = [
     ],
     foodSafe: 'mit Filament-Zertifikat',
     priceCategory: '€',
-    pricePerKg: '€18–€28 (Standard) bis €60+ (Spezial/Composite)',
+    pricePerKg: '€18-€28 (Standard) bis €60+ (Spezial/Composite)',
     biodegradable: true,
     recyclable: 'gut',
     ekdruckUsage:
@@ -113,7 +113,7 @@ export const materials: MaterialSpec[] = [
   },
 
   // ═══════════════════════════════════════════════════════════════
-  //   PETG — Polyethylenterephthalat-Glykol
+  //   PETG · Polyethylenterephthalat-Glykol
   // ═══════════════════════════════════════════════════════════════
   {
     slug: 'petg',
@@ -122,14 +122,14 @@ export const materials: MaterialSpec[] = [
     shortDescription:
       'Kunststoff der PET-Flaschen-Familie, glykol-modifiziert für besseres Druckverhalten. Robuster und temperaturbeständiger als PLA.',
     density: '1,27 g/cm³',
-    tensileStrength: '45–55 MPa',
-    flexuralModulus: '2,1–2,5 GPa',
-    impactStrength: '7–11 kJ/m²',
-    elongation: '6–13 %',
-    glassTransition: '80–85 °C',
-    heatDeflection: '70–75 °C',
-    printTemp: '230–250 °C',
-    bedTemp: '70–85 °C',
+    tensileStrength: '45-55 MPa',
+    flexuralModulus: '2,1-2,5 GPa',
+    impactStrength: '7-11 kJ/m²',
+    elongation: '6-13 %',
+    glassTransition: '80-85 °C',
+    heatDeflection: '70-75 °C',
+    printTemp: '230-250 °C',
+    bedTemp: '70-85 °C',
     printDifficulty: 2,
     warpingRisk: 'gering',
     needsEnclosure: false,
@@ -151,7 +151,7 @@ export const materials: MaterialSpec[] = [
     ],
     foodSafe: 'mit Filament-Zertifikat',
     priceCategory: '€€',
-    pricePerKg: '€25–€40 (Standard) bis €70+ (Spezial)',
+    pricePerKg: '€25-€40 (Standard) bis €70+ (Spezial)',
     biodegradable: false,
     recyclable: 'gut',
     ekdruckUsage:
@@ -159,23 +159,23 @@ export const materials: MaterialSpec[] = [
   },
 
   // ═══════════════════════════════════════════════════════════════
-  //   ASA — Acrylester-Styrol-Acrylnitril
+  //   ASA · Acrylester-Styrol-Acrylnitril
   // ═══════════════════════════════════════════════════════════════
   {
     slug: 'asa',
     name: 'ASA',
     fullName: 'Acrylester-Styrol-Acrylnitril',
     shortDescription:
-      'Strukturell ähnlich ABS, jedoch UV-stabil — der Outdoor-Spezialist unter den FDM-Materialien.',
+      'Strukturell ähnlich ABS, jedoch UV-stabil · der Outdoor-Spezialist unter den FDM-Materialien.',
     density: '1,07 g/cm³',
-    tensileStrength: '38–45 MPa',
-    flexuralModulus: '2,0–2,4 GPa',
-    impactStrength: '12–25 kJ/m²',
-    elongation: '15–25 %',
-    glassTransition: '100–110 °C',
-    heatDeflection: '90–100 °C',
-    printTemp: '240–260 °C',
-    bedTemp: '90–110 °C',
+    tensileStrength: '38-45 MPa',
+    flexuralModulus: '2,0-2,4 GPa',
+    impactStrength: '12-25 kJ/m²',
+    elongation: '15-25 %',
+    glassTransition: '100-110 °C',
+    heatDeflection: '90-100 °C',
+    printTemp: '240-260 °C',
+    bedTemp: '90-110 °C',
     printDifficulty: 4,
     warpingRisk: 'mittel',
     needsEnclosure: true,
@@ -196,7 +196,7 @@ export const materials: MaterialSpec[] = [
     ],
     foodSafe: 'nein',
     priceCategory: '€€€',
-    pricePerKg: '€35–€55',
+    pricePerKg: '€35-€55',
     biodegradable: false,
     recyclable: 'mittel',
     ekdruckUsage:
@@ -204,7 +204,7 @@ export const materials: MaterialSpec[] = [
   },
 
   // ═══════════════════════════════════════════════════════════════
-  //   ABS — Acrylnitril-Butadien-Styrol
+  //   ABS · Acrylnitril-Butadien-Styrol
   // ═══════════════════════════════════════════════════════════════
   {
     slug: 'abs',
@@ -213,14 +213,14 @@ export const materials: MaterialSpec[] = [
     shortDescription:
       'Industrie-Klassiker für mechanische Robustheit. Aceton-glättbar zu spritzgussähnlicher Hochglanz-Oberfläche.',
     density: '1,04 g/cm³',
-    tensileStrength: '35–45 MPa',
-    flexuralModulus: '2,0–2,4 GPa',
-    impactStrength: '15–35 kJ/m²',
-    elongation: '15–30 %',
-    glassTransition: '100–110 °C',
-    heatDeflection: '95–105 °C',
-    printTemp: '230–260 °C',
-    bedTemp: '90–110 °C',
+    tensileStrength: '35-45 MPa',
+    flexuralModulus: '2,0-2,4 GPa',
+    impactStrength: '15-35 kJ/m²',
+    elongation: '15-30 %',
+    glassTransition: '100-110 °C',
+    heatDeflection: '95-105 °C',
+    printTemp: '230-260 °C',
+    bedTemp: '90-110 °C',
     printDifficulty: 4,
     warpingRisk: 'hoch',
     needsEnclosure: true,
@@ -245,15 +245,15 @@ export const materials: MaterialSpec[] = [
     ],
     foodSafe: 'nein',
     priceCategory: '€€',
-    pricePerKg: '€28–€45',
+    pricePerKg: '€28-€45',
     biodegradable: false,
     recyclable: 'gut',
     ekdruckUsage:
-      'Standard für Premium-Industriemodelle mit Spritzguss-Anmutung. Aceton-Dampfglättung als Wert-Steigerung — bei Automotive-Konzeptmodellen und High-End-Anlagenbau-Demos der "Go-To"-Stoff.',
+      'Standard für Premium-Industriemodelle mit Spritzguss-Anmutung. Aceton-Dampfglättung als Wert-Steigerung · bei Automotive-Konzeptmodellen und High-End-Anlagenbau-Demos der "Go-To"-Stoff.',
   },
 
   // ═══════════════════════════════════════════════════════════════
-  //   TPU — Thermoplastisches Polyurethan
+  //   TPU · Thermoplastisches Polyurethan
   // ═══════════════════════════════════════════════════════════════
   {
     slug: 'tpu',
@@ -262,21 +262,21 @@ export const materials: MaterialSpec[] = [
     shortDescription:
       'Flexibles Elastomer für gummiartige Bauteile. Drei Härtegrade gängig (Shore 85A weich, 95A standard, 70D hart).',
     density: '1,20 g/cm³',
-    tensileStrength: '25–50 MPa',
-    flexuralModulus: '0,02–0,5 GPa (sehr niedrig — flexibel)',
+    tensileStrength: '25-50 MPa',
+    flexuralModulus: '0,02-0,5 GPa (sehr niedrig · flexibel)',
     impactStrength: 'kein Bruch (elastisch)',
-    elongation: '300–600 %',
+    elongation: '300-600 %',
     glassTransition: '-30 bis -50 °C',
-    heatDeflection: '60–80 °C',
-    printTemp: '210–240 °C',
-    bedTemp: '40–60 °C',
+    heatDeflection: '60-80 °C',
+    printTemp: '210-240 °C',
+    bedTemp: '40-60 °C',
     printDifficulty: 4,
     warpingRisk: 'gering',
     needsEnclosure: false,
     needsHardenedNozzle: false,
     hygroscopic: 'hoch',
     uvResistance: 'mittel',
-    postProcessing: ['Begrenzt — flexibles Material'],
+    postProcessing: ['Begrenzt · flexibles Material'],
     bestFor: [
       'Dichtungen und Dämpfer',
       'Stoßdämpfende Elemente in Demo-Modellen',
@@ -291,15 +291,15 @@ export const materials: MaterialSpec[] = [
     ],
     foodSafe: 'nein',
     priceCategory: '€€€',
-    pricePerKg: '€35–€60',
+    pricePerKg: '€35-€60',
     biodegradable: false,
     recyclable: 'eingeschränkt',
     ekdruckUsage:
-      'Sub-Komponenten in größeren Modellen — z.B. Reifen-Schalen bei Konzeptfahrzeugen, flexible Schläuche bei Anlagenmodellen, weiche Dichtungen die Magnet-Verbindungen ergänzen.',
+      'Sub-Komponenten in größeren Modellen · z.B. Reifen-Schalen bei Konzeptfahrzeugen, flexible Schläuche bei Anlagenmodellen, weiche Dichtungen die Magnet-Verbindungen ergänzen.',
   },
 
   // ═══════════════════════════════════════════════════════════════
-  //   PA-CF — Carbon-Faser-verstärktes Polyamid
+  //   PA-CF · Carbon-Faser-verstärktes Polyamid
   // ═══════════════════════════════════════════════════════════════
   {
     slug: 'pa-cf',
@@ -308,14 +308,14 @@ export const materials: MaterialSpec[] = [
     shortDescription:
       'Hochleistungs-Compound für funktionsfähige Bauteile. Carbon-Fasern erhöhen Steifigkeit und Festigkeit deutlich gegenüber reinem Polyamid.',
     density: '1,15 g/cm³',
-    tensileStrength: '80–120 MPa',
-    flexuralModulus: '7–12 GPa',
-    impactStrength: '4–8 kJ/m²',
-    elongation: '2–5 %',
-    glassTransition: '70–80 °C (PA6-Anteil)',
-    heatDeflection: '150–180 °C (durch CF-Verstärkung)',
-    printTemp: '260–290 °C',
-    bedTemp: '50–80 °C',
+    tensileStrength: '80-120 MPa',
+    flexuralModulus: '7-12 GPa',
+    impactStrength: '4-8 kJ/m²',
+    elongation: '2-5 %',
+    glassTransition: '70-80 °C (PA6-Anteil)',
+    heatDeflection: '150-180 °C (durch CF-Verstärkung)',
+    printTemp: '260-290 °C',
+    bedTemp: '50-80 °C',
     printDifficulty: 5,
     warpingRisk: 'mittel',
     needsEnclosure: true,
@@ -337,11 +337,11 @@ export const materials: MaterialSpec[] = [
     ],
     foodSafe: 'nein',
     priceCategory: '€€€€',
-    pricePerKg: '€80–€150+',
+    pricePerKg: '€80-€150+',
     biodegradable: false,
     recyclable: 'eingeschränkt',
     ekdruckUsage:
-      'Funktionsmuster und Vorserien-Bauteile. Beispiel: Tier-1-Automotive-Zulieferer testet Konstruktions-Variante mit PA-CF-3D-Druck vor Spritzguss-Werkzeugbau — spart €10.000+ pro Iteration.',
+      'Funktionsmuster und Vorserien-Bauteile. Beispiel: Tier-1-Automotive-Zulieferer testet Konstruktions-Variante mit PA-CF-3D-Druck vor Spritzguss-Werkzeugbau · spart €10.000+ pro Iteration.',
   },
 ]
 
@@ -349,7 +349,7 @@ export const getMaterial = (slug: string): MaterialSpec | undefined =>
   materials.find((m) => m.slug === slug)
 
 /**
- * Anwendungs-Entscheidungsmatrix — welches Material wofür?
+ * Anwendungs-Entscheidungsmatrix · welches Material wofür?
  */
 export interface DecisionScenario {
   scenario: string
@@ -364,14 +364,14 @@ export const decisionMatrix: DecisionScenario[] = [
     scenario: 'Architekturmodell für Wettbewerbsabgabe (Indoor)',
     context: 'Maßstab 1:200 bis 1:500, einmaliger Einsatz, höchste Detailtreue gefordert.',
     recommendation:
-      'PLA — bietet beste Schichthöhe-Auflösung (0,1mm) und ist druckseitig konfliktarm. Lackierung optional.',
+      'PLA · bietet beste Schichthöhe-Auflösung (0,1mm) und ist druckseitig konfliktarm. Lackierung optional.',
     recommendedSlug: 'pla',
   },
   {
     scenario: 'Messemodell für 5+ Messen Vertriebs-Tournee',
     context: 'Häufiges Anfassen, Versand-Transport, mehrfache Auf-/Abbau-Zyklen.',
     recommendation:
-      'PETG — robust gegen Druck/Schlag bei häufigem Handling, kein Sprödebruch wie PLA bei Stoß.',
+      'PETG · robust gegen Druck/Schlag bei häufigem Handling, kein Sprödebruch wie PLA bei Stoß.',
     recommendedSlug: 'petg',
     alternatives: ['abs (für Premium-Optik mit Aceton-Glättung)'],
   },
@@ -379,7 +379,7 @@ export const decisionMatrix: DecisionScenario[] = [
     scenario: 'Outdoor-Demo (PV-Landschaftsmodell, Bürger-Info)',
     context: 'Modell steht 6+ Monate teils unter direkter Sonneneinstrahlung.',
     recommendation:
-      'ASA — einziges FDM-Standardmaterial mit dauerhaft UV-stabiler Pigmentierung. PETG nur zweite Wahl wenn UV-stabilisiert.',
+      'ASA · einziges FDM-Standardmaterial mit dauerhaft UV-stabiler Pigmentierung. PETG nur zweite Wahl wenn UV-stabilisiert.',
     recommendedSlug: 'asa',
     alternatives: ['petg (UV-stabilisierte Variante als günstigere Wahl)'],
   },
@@ -387,21 +387,21 @@ export const decisionMatrix: DecisionScenario[] = [
     scenario: 'Premium-Show-Quality mit Spritzguss-Optik',
     context: 'Automotive-Konzept, High-End-Anlagenbau, Investor-Pitch.',
     recommendation:
-      'ABS mit Aceton-Dampfglättung — chemische Oberflächenglättung erzeugt hochglänzende, nahezu schichtlose Anmutung.',
+      'ABS mit Aceton-Dampfglättung · chemische Oberflächenglättung erzeugt hochglänzende, nahezu schichtlose Anmutung.',
     recommendedSlug: 'abs',
   },
   {
     scenario: 'Funktionsmuster für mechanische Tests (DV/PV)',
     context: 'Belastungstests vor Werkzeugbau, Maßhaltigkeit unter Last gefordert.',
     recommendation:
-      'PA-CF — Carbon-Faser-Verstärkung erreicht Aluminium-nahe Steifigkeit, Maßhaltigkeit auch nach Wärme-Zyklen.',
+      'PA-CF · Carbon-Faser-Verstärkung erreicht Aluminium-nahe Steifigkeit, Maßhaltigkeit auch nach Wärme-Zyklen.',
     recommendedSlug: 'pa-cf',
   },
   {
     scenario: 'Flexible Sub-Komponente (Dichtung, Tülle)',
     context: 'Elastisches Verhalten benötigt, kein steifes Bauteil.',
     recommendation:
-      'TPU Shore 95A — Standard-Härtegrad für die meisten Industrie-Dichtungen und Stoßdämpfer.',
+      'TPU Shore 95A · Standard-Härtegrad für die meisten Industrie-Dichtungen und Stoßdämpfer.',
     recommendedSlug: 'tpu',
   },
 ]

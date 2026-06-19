@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Messemodelle Hannover Messe, LIGNA, EMO, AGRITECHNICA',
     description: 'Für die weltgrößte Industriemesse: Hannover Messe, LIGNA, EMO, AGRITECHNICA. Industrie-4.0-Modelle mit beweglichen Teilen möglich.',
     url: 'https://www.ek-druck.at/messemodelle/hannover',
-    siteName: 'ekdruck – 3D-Druck Österreich',
+    siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'website',
   },

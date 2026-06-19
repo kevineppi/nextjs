@@ -9,6 +9,10 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // ═══ Host-Kanonisierung: non-www -> www (301). Behebt doppelte Indexierung.
+      //     Beleg: /ratgeber/material-guide war in GSC unter www UND non-www gelistet. ═══
+      { source: '/:path*', has: [{ type: 'host', value: 'ek-druck.at' }], destination: 'https://www.ek-druck.at/:path*', permanent: true },
+
       // ═══ Prototyping: alte URLs konsolidieren auf /prototyping ═══
       { source: '/prototypen', destination: '/prototyping', permanent: true },
       { source: '/rapid-prototyping', destination: '/prototyping', permanent: true },

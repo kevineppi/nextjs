@@ -1,5 +1,5 @@
 /**
- * Lead-Magnet-Daten — ek-druck
+ * Lead-Magnet-Daten · ek-druck
  * ──────────────────────────────────────────────────────────────────
  *
  * Single Source of Truth für Lead-Magnet-Inhalte. Aktuell 1 Magnet,
@@ -23,7 +23,7 @@ export interface LeadMagnet {
   pdfFile: string // Pfad relativ zu /public/
   pdfSize: string // z.B. "2.4 MB"
   pdfPages: number
-  // Was im PDF drinsteht — als Bullet-List
+  // Was im PDF drinsteht · als Bullet-List
   contents: string[]
   // Für wen ist das Magnet?
   targetAudience: string
@@ -37,13 +37,13 @@ export interface LeadMagnet {
 export const checklisteMessemodell: LeadMagnet = {
   slug: 'messemodell-checkliste',
   title: 'Die Messemodell-Vorbereitungs-Checkliste',
-  subtitle: '10 Punkte die vor jedem Messemodell-Auftrag geklärt sein müssen — sonst kostet die Iteration mehr als der Druck.',
+  subtitle: '10 Punkte die vor jedem Messemodell-Auftrag geklärt sein müssen · sonst kostet die Iteration mehr als der Druck.',
   pdfFile: '/lead-magnets/messemodell-checkliste.pdf',
   pdfSize: '2,4 MB',
   pdfPages: 12,
   targetAudience: 'Marketing- und Vertriebsverantwortliche bei Industriegüter-Herstellern, die zum ersten oder zweiten Mal ein 3D-gedrucktes Messemodell planen.',
   contents: [
-    'Maßstabs-Entscheidungsmatrix (1:5 vs 1:10 vs 1:25 — wann was passt)',
+    'Maßstabs-Entscheidungsmatrix (1:5 vs 1:10 vs 1:25 · wann was passt)',
     'Material-Wahl je nach Messe-Häufigkeit und Anfass-Belastung',
     'Segmentierungs-Planung für Transport-tauglichkeit',
     'Lackierungs-Spezifikation (RAL-Codes, 2K vs Standard)',
@@ -57,11 +57,11 @@ export const checklisteMessemodell: LeadMagnet = {
   preview: [
     {
       point: 'Maßstabs-Entscheidungsmatrix',
-      detail: 'Ab welcher Original-Größe lohnt sich welcher Maßstab? Konkrete Faustregeln: Bei einer 8-Tonnen-Maschine ist 1:7 oft besser als 1:10, obwohl es teurer ist — weil das Modell groß genug bleibt, um Details zu erkennen, aber klein genug, um auf den Standard-Messetisch zu passen.',
+      detail: 'Ab welcher Original-Größe lohnt sich welcher Maßstab? Konkrete Faustregeln: Bei einer 8-Tonnen-Maschine ist 1:7 oft besser als 1:10, obwohl es teurer ist · weil das Modell groß genug bleibt, um Details zu erkennen, aber klein genug, um auf den Standard-Messetisch zu passen.',
     },
     {
       point: 'Material × Messe-Häufigkeit',
-      detail: 'PLA für 1-2 Messen. PETG für 5+ Messen. ABS-aceton-geglättet für Premium-Daueranfass. Carbon-PA für funktionale Demonstratoren mit beweglichen Teilen. Welche Wahl wann — mit Kostenfaktor pro Option.',
+      detail: 'PLA für 1-2 Messen. PETG für 5+ Messen. ABS-aceton-geglättet für Premium-Daueranfass. Carbon-PA für funktionale Demonstratoren mit beweglichen Teilen. Welche Wahl wann · mit Kostenfaktor pro Option.',
     },
     {
       point: 'Segmentierungs-Planung',
@@ -69,7 +69,7 @@ export const checklisteMessemodell: LeadMagnet = {
     },
     {
       point: 'CAD-Übergabe-Realität',
-      detail: 'STEP, IGES, STL, native SolidWorks/Inventor — was schadet, was hilft? Welche Geometrie-Details muss man rausnehmen für 3D-Druck-Tauglichkeit? Mit Pre-Flight-Liste die Sie vor dem Upload abhaken können.',
+      detail: 'STEP, IGES, STL, native SolidWorks/Inventor · was schadet, was hilft? Welche Geometrie-Details muss man rausnehmen für 3D-Druck-Tauglichkeit? Mit Pre-Flight-Liste die Sie vor dem Upload abhaken können.',
     },
     {
       point: 'Lead-Time-Mathematik',

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Messemodelle Berlin: für IFA, ITB, InnoTrans, Grüne Woche',
     description: 'Für Aussteller der Messe Berlin: IFA, ITB, InnoTrans, Grüne Woche, FRUIT LOGISTICA. Versand Berlin in 48h aus OÖ. Ab €30.',
     url: 'https://www.ek-druck.at/messemodelle/berlin',
-    siteName: 'ekdruck – 3D-Druck Österreich',
+    siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'website',
   },

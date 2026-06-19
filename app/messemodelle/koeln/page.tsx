@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Messemodelle Köln: Anuga, gamescom, FIBO, imm cologne, IDS',
     description: 'Koelnmesse-Aussteller: Anuga, gamescom, FIBO, imm cologne, IDS. Versand 48h aus OÖ, mit Aufbau-Service auf Wunsch. Ab €30.',
     url: 'https://www.ek-druck.at/messemodelle/koeln',
-    siteName: 'ekdruck – 3D-Druck Österreich',
+    siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'website',
   },

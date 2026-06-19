@@ -8,7 +8,7 @@ import { cases } from '@/data/realCases'
 import { branchenMap } from '@/data/branchenData'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 
-const TITLE = 'Cases ★5,0 — Echte 3D-Druck-Aufträge | ekdruck'
+const TITLE = 'Cases ★5,0 · Echte 3D-Druck-Aufträge | ekdruck'
 const DESCRIPTION =
   'Projekt-Stories aus der ekdruck-Werkstatt: Maschinenbau-Schnittmodell EMO, MV-Schaltanlage Dubai, 3.500 Custom-Ausstecher Großkunde. Mit Specs.'
 
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: 'https://www.ek-druck.at/cases',
-    siteName: 'ekdruck – 3D-Druck Österreich',
+    siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'website',
     images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630 }],
@@ -63,7 +63,7 @@ export default function CasesPage() {
                 <span className="text-primary">Mit Specs, Lessons & ehrlichen Zahlen.</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mb-10">
-                Marketing zeigt Hochglanz-Renderings. Ich zeige Ihnen die echten Projekte: was war der Pain, wie hab ich's gelöst, was hab ich technisch entschieden, was ist rausgekommen — und manchmal auch was beim nächsten Mal besser geht. So sehen Sie, ob ekdruck zu Ihrem Projekt passt.
+                Marketing zeigt Hochglanz-Renderings. Ich zeige Ihnen die echten Projekte: was war der Pain, wie hab ich's gelöst, was hab ich technisch entschieden, was ist rausgekommen · und manchmal auch was beim nächsten Mal besser geht. So sehen Sie, ob ekdruck zu Ihrem Projekt passt.
               </p>
               <div className="flex flex-wrap gap-3 items-center">
                 <div className="flex items-center gap-2 px-4 py-2 rounded-full border-2 border-border bg-muted/30">
@@ -117,7 +117,7 @@ export default function CasesPage() {
                           <blockquote className="border-l-4 border-primary pl-5 my-5 italic text-base text-foreground/80">
                             "{c.customerQuote.text}"
                             <footer className="not-italic mt-2 text-xs text-muted-foreground uppercase tracking-wider font-bold">
-                              — {c.customerQuote.attribution}
+                              · {c.customerQuote.attribution}
                             </footer>
                           </blockquote>
                         )}
@@ -153,18 +153,18 @@ export default function CasesPage() {
         <section className="py-24 md:py-32 bg-foreground text-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-6">Ihr Projekt — nächstes Case</p>
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-6">Ihr Projekt · nächstes Case</p>
               <h2 className="text-4xl md:text-6xl font-bold leading-[1.0] tracking-[-0.04em] mb-6">
                 Was ist Ihr<br />
                 <span className="text-primary">Modellbau-Pain?</span>
               </h2>
               <p className="text-lg text-background/70 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Schicken Sie CAD, Skizze oder beschreiben Sie Ihr Vorhaben. Sie bekommen das Festpreisangebot in 6h — direkt von mir.
+                Schicken Sie CAD, Skizze oder beschreiben Sie Ihr Vorhaben. Sie bekommen das Festpreisangebot in 6h · direkt von mir.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <Link href="/kostenrechner" className="inline-flex items-center gap-2 bg-primary text-primary-foreground rounded-full px-8 py-4 font-bold hover:opacity-90 transition-all">
                   <Calculator className="w-5 h-5" />
-                  STL hochladen — Preis sofort
+                  STL hochladen · Preis sofort
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link href="/kontakt" className="inline-flex items-center gap-2 border-2 border-background/30 rounded-full px-8 py-4 font-bold hover:bg-background/10 transition-all">

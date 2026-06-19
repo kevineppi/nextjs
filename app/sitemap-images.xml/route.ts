@@ -1,14 +1,14 @@
 /**
- * (C) Dynamische Image-Sitemap — Supabase-gespeist
+ * (C) Dynamische Image-Sitemap · Supabase-gespeist
  * ──────────────────────────────────────────────────────────────────
  *
  * 2026-05-27: Replace der statischen public/sitemap-images.xml.
- * Vorher: 17 Einträge, 16× das gleiche Hero-Bild — Placebo, kein SEO-Wert.
+ * Vorher: 17 Einträge, 16× das gleiche Hero-Bild · Placebo, kein SEO-Wert.
  * Jetzt: pulled aus Supabase-Tabellen (references + reference_images),
  *        listet pro Referenz-Projekt alle echten Fotos mit Caption + Title.
  *
  * Caching:
- *   - revalidate = 3600 (1h ISR) — wenn neue Referenzen in DB landen,
+ *   - revalidate = 3600 (1h ISR) · wenn neue Referenzen in DB landen,
  *     werden sie binnen 1h auch von Google's Image-Bot gesehen,
  *     OHNE neuen Deploy nötig.
  *
@@ -16,7 +16,7 @@
  * Bilder dort im DOM eingebettet sind (Image-Sitemap-Konvention von Google).
  *
  * Falls in Zukunft Referenz-Detail-Pages /referenzen/[slug] kommen,
- * sollte loc auf die Detail-URL umgestellt werden — dann verteilt
+ * sollte loc auf die Detail-URL umgestellt werden · dann verteilt
  * Google die Image-Visibility pro Projekt.
  */
 
@@ -27,7 +27,7 @@ const SITE = 'https://www.ek-druck.at'
 const SUPABASE_URL = 'https://jkzrpjlfdsxvcfwhuoey.supabase.co'
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImprenJwamxmZHN4dmNmd2h1b2V5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc2NjMwNDcsImV4cCI6MjA3MzIzOTA0N30.A2LpuB8Wo7-I9YVIuESbfTsRUkAUGinrRPtHgg-f2rE'
 
-// ISR: Re-fetch alle 60 Min — kompromiss zwischen Aktualität und Supabase-Last
+// ISR: Re-fetch alle 60 Min · kompromiss zwischen Aktualität und Supabase-Last
 export const revalidate = 3600
 
 interface ReferenceRow {
@@ -70,11 +70,11 @@ function escapeXml(input: string | null | undefined): string {
 function buildCaption(ref: ReferenceRow, img: ReferenceImageRow): string {
   if (img.alt_text && img.alt_text.length > 10) return img.alt_text
   const desc = ref.description ? ref.description.slice(0, 120) : ''
-  return `${ref.title} — ${ref.material}, ${ref.industry}${desc ? '. ' + desc : ''}`
+  return `${ref.title} · ${ref.material}, ${ref.industry}${desc ? '. ' + desc : ''}`
 }
 
 function buildTitle(ref: ReferenceRow): string {
-  return `${ref.title} — ekdruck 3D-Druck Referenz`
+  return `${ref.title} · ekdruck 3D-Druck Referenz`
 }
 
 export async function GET() {
@@ -104,13 +104,13 @@ export async function GET() {
     .order('sort_order', { ascending: true })
 
   // 3. XML zusammenbauen
-  // Konvention: alle Bilder unter /referenzen — bis Detail-Pages existieren
+  // Konvention: alle Bilder unter /referenzen · bis Detail-Pages existieren
   const xmlParts: string[] = [
     '<?xml version="1.0" encoding="UTF-8"?>',
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
     '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">',
     '',
-    `  <!-- Image-Sitemap ek-druck.at — generiert ${new Date().toISOString()} -->`,
+    `  <!-- Image-Sitemap ek-druck.at · generiert ${new Date().toISOString()} -->`,
     `  <!-- ${refs.length} Referenzen mit insgesamt ${images?.length || 0} Bildern aus Supabase -->`,
     '',
     '  <url>',
@@ -163,6 +163,6 @@ function emptyXml(): string {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <!-- ekdruck Image-Sitemap — leer (Supabase fetch fehlgeschlagen oder noch keine aktiven Referenzen) -->
+  <!-- ekdruck Image-Sitemap · leer (Supabase fetch fehlgeschlagen oder noch keine aktiven Referenzen) -->
 </urlset>`
 }

@@ -8,7 +8,7 @@ import {
   breadcrumbSchema,
 } from '@/lib/seo'
 
-const TITLE = 'Messemodelle 3D-Druck ★5,0 — Tisch-Exponat in 24h | ekdruck'
+const TITLE = 'Messemodelle 3D-Druck ★5,0 · Tisch-Exponat in 24h | ekdruck'
 const DESCRIPTION = 'Ihr Produkt zu groß für den Messestand? 3D-gedrucktes Messemodell maßstabsgetreu in 24-48h. Bruchsicher, segmentiert, DACH-Express. ab €30 ★5,0 (31 Reviews) →'
 
 export const metadata: Metadata = {
@@ -19,10 +19,10 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: 'https://www.ek-druck.at/messemodelle',
-    siteName: 'ekdruck – 3D-Druck Österreich',
+    siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'website',
-    images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630, alt: 'ekdruck – Messemodelle 3D-Druck' }],
+    images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630, alt: 'ekdruck · Messemodelle 3D-Druck' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -44,11 +44,11 @@ const SERVICE_LD = serviceSchema({
 const FAQ_LD = faqSchema([
   {
     q: 'Wie lange dauert ein Messemodell für einen Industrie-Aussteller?',
-    a: 'Standard-Messemodelle sind in 5–10 Werktagen versandfertig. Bei knappen Messeterminen bieten wir Express-Service ab 48h. Je früher die CAD-Daten kommen, desto entspannter die Produktion.',
+    a: 'Standard-Messemodelle sind in 5-10 Werktagen versandfertig. Bei knappen Messeterminen bieten wir Express-Service ab 48h. Je früher die CAD-Daten kommen, desto entspannter die Produktion.',
   },
   {
     q: 'Können bewegliche Teile (Rotoren, Getriebe) im Modell integriert werden?',
-    a: 'Ja. Wir konstruieren bewegliche Mechaniken direkt in das Modell — Drehgelenke, Schiebemechaniken, Demonstrations-Knöpfe. Multi-Material-Druck auf der Prusa XL erlaubt Funktion + Optik in einem Druckteil.',
+    a: 'Ja. Wir konstruieren bewegliche Mechaniken direkt in das Modell · Drehgelenke, Schiebemechaniken, Demonstrations-Knöpfe. Multi-Material-Druck auf der Prusa XL erlaubt Funktion + Optik in einem Druckteil.',
   },
   {
     q: 'Welche Maßstäbe sind üblich für Messemodelle?',
@@ -56,11 +56,11 @@ const FAQ_LD = faqSchema([
   },
   {
     q: 'Was kostet ein hochwertiges Messemodell?',
-    a: 'Tisch-Modelle ohne Mechanik typisch €800–2.500. Mit beweglichen Komponenten und Multi-Material €1.500–5.000. Vor-Ort-Beratung und CAD-Aufbereitung im Preis enthalten.',
+    a: 'Tisch-Modelle ohne Mechanik typisch €800-2.500. Mit beweglichen Komponenten und Multi-Material €1.500-5.000. Vor-Ort-Beratung und CAD-Aufbereitung im Preis enthalten.',
   },
   {
     q: 'Ist das Modell transportsicher für Messe-Logistik?',
-    a: 'Ja. Wir segmentieren große Modelle in transportfreundliche Module mit Magnet-Verbindungen — Aufbau am Stand in unter 5 Minuten, kein Werkzeug nötig.',
+    a: 'Ja. Wir segmentieren große Modelle in transportfreundliche Module mit Magnet-Verbindungen · Aufbau am Stand in unter 5 Minuten, kein Werkzeug nötig.',
   },
   {
     q: 'Können wir das Modell mehrfach auf verschiedenen Messen einsetzen?',

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Messemodelle Essen: für E-world, SPIEL, Security, Equitana',
     description: 'Aussteller der Messe Essen: E-world (Energie), SPIEL (Brettspiele), Security, Equitana. Branchenspezifische Materialwahl. Ab €30.',
     url: 'https://www.ek-druck.at/messemodelle/essen',
-    siteName: 'ekdruck – 3D-Druck Österreich',
+    siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'website',
   },

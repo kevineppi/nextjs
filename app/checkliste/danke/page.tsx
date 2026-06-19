@@ -25,7 +25,7 @@ function DankeContent() {
   // pdfStatus: 'checking' → 'available' → 'pending-email' (PDF noch nicht hochgeladen)
   const [pdfStatus, setPdfStatus] = useState<'checking' | 'available' | 'pending-email'>('checking')
 
-  // Sanfter Check ob PDF tatsächlich verfügbar ist — kein blinder Auto-Download
+  // Sanfter Check ob PDF tatsächlich verfügbar ist · kein blinder Auto-Download
   useEffect(() => {
     if (!file) {
       setPdfStatus('pending-email')
@@ -103,7 +103,7 @@ function DankeContent() {
             {pdfStatus === 'pending-email' && (
               <>
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-2xl mx-auto">
-                  Sie bekommen das PDF in Kürze persönlich von Kevin per E-Mail — meist innerhalb von 30 Minuten werktags.
+                  Sie bekommen das PDF in Kürze persönlich von Kevin per E-Mail · meist innerhalb von 30 Minuten werktags.
                   So habe ich die Möglichkeit, Ihrer Branche zusätzlich passende Hinweise mitzuschicken.
                 </p>
                 <div className="mb-12 bg-primary/5 border-2 border-primary/20 rounded-2xl p-6 max-w-xl mx-auto">
@@ -135,7 +135,7 @@ function DankeContent() {
                 Was als Nächstes
               </p>
               <h2 className="text-2xl md:text-3xl font-bold leading-tight tracking-[-0.02em] mb-6">
-                Während Sie die Checkliste durchgehen — hier sind 3 relevante Ressourcen:
+                Während Sie die Checkliste durchgehen · hier sind 3 relevante Ressourcen:
               </h2>
 
               <div className="space-y-3">
@@ -159,7 +159,7 @@ function DankeContent() {
                   <div>
                     <p className="font-bold text-base mb-1">Konkrete Preisbereiche</p>
                     <p className="text-sm text-muted-foreground">
-                      Was kosten Modelle in Ihrer Größenordnung — mit Beispielen und Preis-Treibern
+                      Was kosten Modelle in Ihrer Größenordnung · mit Beispielen und Preis-Treibern
                     </p>
                   </div>
                   <ArrowRight className="w-5 h-5 text-primary shrink-0 group-hover:translate-x-1 transition-transform" />
@@ -186,7 +186,7 @@ function DankeContent() {
                 Schon ein konkretes Projekt im Kopf?
               </h2>
               <p className="text-base text-background/70 leading-relaxed mb-6 max-w-xl mx-auto">
-                Schicken Sie CAD oder kurze Beschreibung — Sie bekommen das Festpreisangebot in 6h direkt von mir.
+                Schicken Sie CAD oder kurze Beschreibung · Sie bekommen das Festpreisangebot in 6h direkt von mir.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <Link
@@ -225,7 +225,7 @@ function DankeContent() {
 }
 
 /**
- * Sinnvoller Suspense-Fallback — User sieht sofort "Danke" statt leerer Page,
+ * Sinnvoller Suspense-Fallback · User sieht sofort "Danke" statt leerer Page,
  * auch bevor useSearchParams() den File-Param liest und HEAD-Request startet.
  */
 function DankeFallback() {

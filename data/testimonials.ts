@@ -1,11 +1,11 @@
 /**
- * Testimonials & Customer-Logos — ek-druck
+ * Testimonials & Customer-Logos · ek-druck
  * ──────────────────────────────────────────────────────────────────
  *
  * 2026-05-26 (K2 + K3 aus 5-Instanzen-Audit):
- *   K2 — Echte Quotes aus Google-Reviews als zitierbare Statements
+ *   K2 · Echte Quotes aus Google-Reviews als zitierbare Statements
  *        sitewide einbauen (statt nur ★5,0-Counter).
- *   K3 — Customer-Logo-Strip mit "public-mention OK"-Kunden.
+ *   K3 · Customer-Logo-Strip mit "public-mention OK"-Kunden.
  *
  * WICHTIG: Erste Wave Quotes sind PLATZHALTER für die echten Reviews.
  *   Kevin muss die 31 Google-Reviews durchschauen, die 3-5 stärksten
@@ -43,7 +43,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     source: 'google',
     date: '2025-01-15',
-    consentForName: false, // Initiale, kein voller Name — keine extra Erlaubnis nötig
+    consentForName: false, // Initiale, kein voller Name · keine extra Erlaubnis nötig
   },
   {
     slug: 'arch-buero-wien-2025',
@@ -72,7 +72,7 @@ export const testimonials: Testimonial[] = [
   {
     slug: 'werkzeugmaschinen-no-2025',
     quote:
-      'Wir hatten erwartet ein "nettes Beigabe-Modell" — bekommen haben wir ein Werkzeug für die Verkaufs-Diskussion. Jeder Engineer der den Stand besucht hat, hat sich am Modell aufgehalten.',
+      'Wir hatten erwartet ein "nettes Beigabe-Modell" · bekommen haben wir ein Werkzeug für die Verkaufs-Diskussion. Jeder Engineer der den Stand besucht hat, hat sich am Modell aufgehalten.',
     author: 'Vertriebs-Leitung',
     role: 'Werkzeugmaschinen-Hersteller, Industrieviertel NÖ',
     branche: 'maschinenbau',
@@ -84,7 +84,7 @@ export const testimonials: Testimonial[] = [
   {
     slug: 'generali-marketing-2024',
     quote:
-      'Wir hatten in 3 Wochen eine ganze Charge in Weihnachts-Qualität — das schaffen sonst nicht mal die Spritzguss-Anbieter mit Werkzeugbau-Vorlauf.',
+      'Wir hatten in 3 Wochen eine ganze Charge in Weihnachts-Qualität · das schaffen sonst nicht mal die Spritzguss-Anbieter mit Werkzeugbau-Vorlauf.',
     author: 'Marketing-Verantwortliche',
     company: 'Generali Österreich',
     role: 'Marketing-Verantwortliche',
@@ -103,7 +103,7 @@ export const getFeaturedTestimonials = (count = 3): Testimonial[] =>
   testimonials.slice(0, count)
 
 // ═══════════════════════════════════════════════════════════════════
-//   CUSTOMER-LOGOS — public-mention OK Kunden
+//   CUSTOMER-LOGOS · public-mention OK Kunden
 // ═══════════════════════════════════════════════════════════════════
 //
 // Logos liegen in /public/customer-logos/<slug>.svg
@@ -126,7 +126,7 @@ export const customerLogos: CustomerLogo[] = [
     logoFile: '/customer-logos/generali.svg',
     branche: 'einzelanfertigungen',
     publicMentionOk: true,
-    note: 'Stammkunde — Custom-Keksausstecher Mitarbeiter-Aktion',
+    note: 'Stammkunde · Custom-Keksausstecher Mitarbeiter-Aktion',
   },
   {
     slug: 'ritz',
@@ -142,7 +142,7 @@ export const customerLogos: CustomerLogo[] = [
     logoFile: '/customer-logos/rent-group.svg',
     branche: 'einzelanfertigungen',
     publicMentionOk: true,
-    note: 'Eventbranche-Equipment — Kevin Background-Kontext',
+    note: 'Eventbranche-Equipment · Kevin Background-Kontext',
   },
   {
     slug: 'fokus-konzept',
@@ -150,7 +150,7 @@ export const customerLogos: CustomerLogo[] = [
     logoFile: '/customer-logos/fokus-konzept.webp',
     branche: 'einzelanfertigungen',
     publicMentionOk: true,
-    note: 'Online-Marketing-Agentur Wels — Marketing-Display-Objekte',
+    note: 'Online-Marketing-Agentur Wels · Marketing-Display-Objekte',
   },
 ]
 

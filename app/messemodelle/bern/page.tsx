@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Messemodelle Bern: für BEA, BERNEXPO, Suisse Public',
     description: 'Berner Aussteller: BEA (Frühjahrsmesse), Suisse Public, BERNEXPO. Schweizer Zollabwicklung inklusive, CHF möglich. Ab €30.',
     url: 'https://www.ek-druck.at/messemodelle/bern',
-    siteName: 'ekdruck – 3D-Druck Österreich', locale: 'de_AT', type: 'website',
+    siteName: 'ekdruck · 3D-Druck Österreich', locale: 'de_AT', type: 'website',
   },
 }
 

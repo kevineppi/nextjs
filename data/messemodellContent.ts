@@ -1,5 +1,5 @@
 /**
- * Messemodell-Guide Skyscraper — strukturierter Inhalt
+ * Messemodell-Guide Skyscraper · strukturierter Inhalt
  * ──────────────────────────────────────────────────────────────────
  *
  * 2026-05-31: Daten-Backbone für /ratgeber/messemodell-guide
@@ -51,7 +51,7 @@ export const messemodellMaterials: MesseModelMaterial[] = [
     fullName: 'Polyethylenterephthalat-Glykol',
     brennstoffklasseDIN4102: 'B2',
     brennstoffklasseEN13501: 'E',
-    brennstoffklasseNote: 'Standard-PETG ist B2 (normal entflammbar) — für die meisten DACH-Messen ausreichend bei Stand-Setup unter 30m². Größere Stände (Hannover Messe, Bauma) verlangen oft B1.',
+    brennstoffklasseNote: 'Standard-PETG ist B2 (normal entflammbar) · für die meisten DACH-Messen ausreichend bei Stand-Setup unter 30m². Größere Stände (Hannover Messe, Bauma) verlangen oft B1.',
     standzeitIndex: 9,
     daueranfassResistenz: 'sehr hoch',
     uvStabilitaet: 'mittel',
@@ -79,7 +79,7 @@ export const messemodellMaterials: MesseModelMaterial[] = [
     fullName: 'Acrylnitril-Butadien-Styrol',
     brennstoffklasseDIN4102: 'B2',
     brennstoffklasseEN13501: 'E',
-    brennstoffklasseNote: 'Standard-ABS ist B2. ABS-FR (Flammschutz-Variante) kann B1 erreichen — Mehrpreis ~30%.',
+    brennstoffklasseNote: 'Standard-ABS ist B2. ABS-FR (Flammschutz-Variante) kann B1 erreichen · Mehrpreis ~30%.',
     standzeitIndex: 8,
     daueranfassResistenz: 'hoch',
     uvStabilitaet: 'mittel',
@@ -119,7 +119,7 @@ export const messemodellMaterials: MesseModelMaterial[] = [
 ]
 
 // ─────────────────────────────────────────────────────────────────
-//   Maßstab-Strategie — wann welcher Maßstab
+//   Maßstab-Strategie · wann welcher Maßstab
 // ─────────────────────────────────────────────────────────────────
 
 export interface ScaleStrategy {
@@ -181,7 +181,7 @@ export const scaleStrategies: ScaleStrategy[] = [
 ]
 
 // ─────────────────────────────────────────────────────────────────
-//   ROI-Berechnungs-Beispiele — konkret und nachvollziehbar
+//   ROI-Berechnungs-Beispiele · konkret und nachvollziehbar
 // ─────────────────────────────────────────────────────────────────
 
 export interface ROIExample {
@@ -282,7 +282,7 @@ export function calculateROI(example: ROIExample) {
 }
 
 // ─────────────────────────────────────────────────────────────────
-//   Branchen-Strategien — Cluster pro Industrie
+//   Branchen-Strategien · Cluster pro Industrie
 // ─────────────────────────────────────────────────────────────────
 
 export interface BrancheStrategy {
@@ -306,7 +306,7 @@ export const brancheStrategies: BrancheStrategy[] = [
     empfohlenerMassstab: '1:8 bis 1:10',
     empfohlenesMaterial: 'PETG für Standzeit, PA-CF für bewegliche Spindeln',
     brennstoffklasseAnforderung: 'B2 reicht bei den meisten Fachmessen',
-    besonderheit: 'Bewegliche Spindel als Hauptattraktor — zieht Engineers aktiv zum Stand.',
+    besonderheit: 'Bewegliche Spindel als Hauptattraktor · zieht Engineers aktiv zum Stand.',
     spokeUrl: null, // Wave B
   },
   {
@@ -328,7 +328,7 @@ export const brancheStrategies: BrancheStrategy[] = [
     empfohlenerMassstab: '1:50 bis 1:100',
     empfohlenesMaterial: 'PLA für Detail, PETG für robuste Vollschiffmodelle',
     brennstoffklasseAnforderung: 'B1 international Standard auf maritimen Messen',
-    besonderheit: 'Vollschiffmodelle bis 2 m Länge — segmentiert mit Magnetverbindungen.',
+    besonderheit: 'Vollschiffmodelle bis 2 m Länge · segmentiert mit Magnetverbindungen.',
     spokeUrl: null,
   },
   {
@@ -367,7 +367,7 @@ export const brancheStrategies: BrancheStrategy[] = [
 ]
 
 // ─────────────────────────────────────────────────────────────────
-//   FAQ-Datenbank — strukturiert für FAQPage-Schema
+//   FAQ-Datenbank · strukturiert für FAQPage-Schema
 // ─────────────────────────────────────────────────────────────────
 
 export interface FAQItem {
@@ -384,7 +384,7 @@ export const messeFAQs: FAQItem[] = [
   {
     question: 'Wie lange überlebt ein 3D-Druck-Messemodell typische 4-7 Messetage?',
     answer:
-      'Bei richtiger Materialwahl (PETG, ASA, PC, PA-CF) und sachgemäßer Handhabung: 5-15 Messen ohne Reparatur. PETG ist der Standzeit-Sieger für Multi-Messen-Einsätze — wir haben Modelle die nach 12 Messen noch demonstrationsfähig sind. PLA ist für mehrjährige Messeeinsätze nicht erste Wahl (Detail-Verlust durch Anfassen, Spröde bei Stoßbelastung). Bei beweglichen Komponenten empfehlen wir PA-CF — Carbon-Faser-verstärktes Polyamid hält mechanische Belastung 2-3x länger durch als reine Thermoplaste.',
+      'Bei richtiger Materialwahl (PETG, ASA, PC, PA-CF) und sachgemäßer Handhabung: 5-15 Messen ohne Reparatur. PETG ist der Standzeit-Sieger für Multi-Messen-Einsätze · wir haben Modelle die nach 12 Messen noch demonstrationsfähig sind. PLA ist für mehrjährige Messeeinsätze nicht erste Wahl (Detail-Verlust durch Anfassen, Spröde bei Stoßbelastung). Bei beweglichen Komponenten empfehlen wir PA-CF · Carbon-Faser-verstärktes Polyamid hält mechanische Belastung 2-3x länger durch als reine Thermoplaste.',
   },
   {
     question: 'Was kostet ein typisches Industrie-Messemodell?',
@@ -399,7 +399,7 @@ export const messeFAQs: FAQItem[] = [
   {
     question: 'Können bewegliche Komponenten in ein Messemodell integriert werden?',
     answer:
-      'Ja — bewegliche Mechanismen sind einer der häufigsten Aufträge für Industrie-Messemodelle. Typische Beispiele: rotierende Spindeln in CNC-Fräsen, klappbare Türen an Schaltanlagen, drehende Wellen in Antrieben, segmentierbare Anlagenmodule. Für mechanisch belastete Komponenten verwenden wir PA-CF (Carbon-Faser-verstärktes Polyamid), Lager aus POM oder Messing-Inserts. Toleranzen ±0,1 mm sind im FDM-Druck mit Premium-Maschinen (Prusa XL, Bambulab P1S) erreichbar.',
+      'Ja · bewegliche Mechanismen sind einer der häufigsten Aufträge für Industrie-Messemodelle. Typische Beispiele: rotierende Spindeln in CNC-Fräsen, klappbare Türen an Schaltanlagen, drehende Wellen in Antrieben, segmentierbare Anlagenmodule. Für mechanisch belastete Komponenten verwenden wir PA-CF (Carbon-Faser-verstärktes Polyamid), Lager aus POM oder Messing-Inserts. Toleranzen ±0,1 mm sind im FDM-Druck mit Premium-Maschinen (Prusa XL, Bambulab P1S) erreichbar.',
   },
   {
     question: 'Brauchen Industrie-Messemodelle Zertifikate für DIN 4102 oder DIN EN 13501?',
@@ -422,24 +422,24 @@ export const messeFAQs: FAQItem[] = [
       'NDA-Standard-Verfahren ist Teil unseres Bestellprozesses. Vor CAD-Eingang unterzeichnen wir Ihr NDA (oder unser Standard-NDA), CAD-Daten landen in separatem verschlüsseltem Werkstattbereich. Lieferung kompletter Datenlöschung nach Auftragsabschluss + Lieferung (Standard 90 Tage Sicherheits-Backup, dann vollständige Löschung). Auf Wunsch frühere Datenlöschung mit schriftlicher Bestätigung. Auch für laufende NDA-Aufträge: separates Filament-Spulen-Setup verhindert Material-Kontamination zwischen sensiblen Projekten.',
   },
   {
-    question: 'Lohnen sich Multi-Messen-Strategien — ein Modell für mehrere Messen?',
+    question: 'Lohnen sich Multi-Messen-Strategien · ein Modell für mehrere Messen?',
     answer:
       'Das ist die wirtschaftlich beste Auslegung. Beispielrechnung: Ein €4.500-Modell für eine einzelne Messe = €4.500/Messe. Das gleiche Modell auf 4 Messen pro Jahr × 3 Jahre = 12 Messeeinsätze = €375/Messe. Bei realistischer Anfrage-Steigerung von +50% durch das Modell und durchschnittlichem Auftragswert von €60k macht das einen ROI über 3 Jahre von 800-1500%. Wir konstruieren Modelle bewusst transport-robust und mit modularen Update-Komponenten für Multi-Messen-Tauglichkeit.',
   },
   {
     question: 'Können Sie eigene Konstruktionsdaten erstellen wenn wir nur Skizzen haben?',
     answer:
-      'Ja — Konstruktion ist Teil unseres Service. Sie liefern Skizze, Foto, Maßangaben des Originalprodukts. Wir erstellen die CAD-Konstruktion (Fusion 360, FreeCAD). Aufpreis je nach Komplexität €600-2.500. Bei Skizze-zu-CAD-Aufträgen typische Iteration: 1. Skizze + Reference-Foto, 2. CAD-V1-Vorschlag binnen 5 Werktagen, 3. Feedback-Iteration, 4. Druck-Freigabe. Gesamtdauer 5-7 Wochen. Bei vorhandenen STEP-Dateien aus Ihrer Konstruktion: direkt 3-5 Wochen Produktion.',
+      'Ja · Konstruktion ist Teil unseres Service. Sie liefern Skizze, Foto, Maßangaben des Originalprodukts. Wir erstellen die CAD-Konstruktion (Fusion 360, FreeCAD). Aufpreis je nach Komplexität €600-2.500. Bei Skizze-zu-CAD-Aufträgen typische Iteration: 1. Skizze + Reference-Foto, 2. CAD-V1-Vorschlag binnen 5 Werktagen, 3. Feedback-Iteration, 4. Druck-Freigabe. Gesamtdauer 5-7 Wochen. Bei vorhandenen STEP-Dateien aus Ihrer Konstruktion: direkt 3-5 Wochen Produktion.',
   },
   {
     question: 'Welche CAD-Formate akzeptieren Sie?',
     answer:
-      'Native STEP, IGES, STL — die Standards für Industrie-CAD-Austausch. Aus konkreten Konstruktions-Tools: SolidWorks (.sldprt, .sldasm), Fusion 360 (.f3d), Inventor (.ipt, .iam), Catia (.CATPart). Aus Architektur-Software: ArchiCAD (.pln/.gsm), Revit (.rvt) — bei diesen muss die Detailebene oft auf modellbau-tauglich reduziert werden. Bei Software-Spezifika fragen Sie uns vor Export — wir geben Tipps welcher Export-Modus für 3D-Druck optimal ist.',
+      'Native STEP, IGES, STL · die Standards für Industrie-CAD-Austausch. Aus konkreten Konstruktions-Tools: SolidWorks (.sldprt, .sldasm), Fusion 360 (.f3d), Inventor (.ipt, .iam), Catia (.CATPart). Aus Architektur-Software: ArchiCAD (.pln/.gsm), Revit (.rvt) · bei diesen muss die Detailebene oft auf modellbau-tauglich reduziert werden. Bei Software-Spezifika fragen Sie uns vor Export · wir geben Tipps welcher Export-Modus für 3D-Druck optimal ist.',
   },
   {
     question: 'Was unterscheidet ekdruck von klassischen Modellbauern?',
     answer:
-      'Klassische Modellbauer arbeiten mit Vakuumformen, Tiefziehen, Handarbeit aus Plastik-Platten oder Metall — Lieferzeit 8-16 Wochen, Preise oft €15.000-50.000 für Industriemodelle. Wir kombinieren FDM-3D-Druck mit Handarbeit (Lackierung, Magnet-Verbindungen, Detail-Finish). Vorteile: 3-5 Wochen statt 8-16, €3.000-12.000 statt €15.000-50.000, CAD-Direkt-Verarbeitung ohne Umweg. Trade-off: keine Hochglanz-Acryl-Klarsicht-Komponenten möglich (machen Klassische Modellbauer besser). Für Standard-Industrie-Showcase-Modelle: 3D-Druck deutlich überlegen in Cost-Speed-Detail-Balance.',
+      'Klassische Modellbauer arbeiten mit Vakuumformen, Tiefziehen, Handarbeit aus Plastik-Platten oder Metall · Lieferzeit 8-16 Wochen, Preise oft €15.000-50.000 für Industriemodelle. Wir kombinieren FDM-3D-Druck mit Handarbeit (Lackierung, Magnet-Verbindungen, Detail-Finish). Vorteile: 3-5 Wochen statt 8-16, €3.000-12.000 statt €15.000-50.000, CAD-Direkt-Verarbeitung ohne Umweg. Trade-off: keine Hochglanz-Acryl-Klarsicht-Komponenten möglich (machen Klassische Modellbauer besser). Für Standard-Industrie-Showcase-Modelle: 3D-Druck deutlich überlegen in Cost-Speed-Detail-Balance.',
   },
   {
     question: 'Wie funktioniert die Zusammenarbeit mit unserem Messebauer?',
@@ -454,7 +454,7 @@ export const messeFAQs: FAQItem[] = [
 ]
 
 // ─────────────────────────────────────────────────────────────────
-//   Standzeit-Komponenten — was die Standzeit reduziert
+//   Standzeit-Komponenten · was die Standzeit reduziert
 // ─────────────────────────────────────────────────────────────────
 
 export const standzeitFaktoren = [

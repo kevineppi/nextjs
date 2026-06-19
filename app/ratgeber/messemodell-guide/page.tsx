@@ -1,5 +1,5 @@
 /**
- * Messemodell-Guide Skyscraper — /ratgeber/messemodell-guide
+ * Messemodell-Guide Skyscraper · /ratgeber/messemodell-guide
  * ──────────────────────────────────────────────────────────────────
  *
  * 2026-05-31: Komplett-Replacement des minimalen 28-Zeilen-Vorläufers.
@@ -42,7 +42,7 @@ import { BRAND } from '@/data/brandVoice'
 // ─────────────────────────────────────────────────────────────────
 
 const TITLE =
-  'Messemodelle Industrie — Brennstoffklasse · Standzeit · ROI'
+  'Messemodelle Industrie · Brennstoffklasse · Standzeit · ROI'
 const DESCRIPTION =
   'Vollständiger Industrie-Messemodell-Guide: DIN 4102 Brennstoffklassen-Tabelle, Material-Standzeit-Vergleich, Maßstab-Strategie 1:5 bis 1:100, konkrete ROI-Rechnungen aus 2025-Aufträgen. Aus der ekdruck-Werkstatt.'
 
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: 'https://www.ek-druck.at/ratgeber/messemodell-guide',
-    siteName: 'ekdruck – 3D-Druck Österreich',
+    siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'article',
     publishedTime: '2026-05-31T00:00:00.000Z',
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
         url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png',
         width: 1200,
         height: 630,
-        alt: 'Messemodelle Industrie 3D-Druck Guide — ekdruck',
+        alt: 'Messemodelle Industrie 3D-Druck Guide · ekdruck',
       },
     ],
   },
@@ -83,13 +83,13 @@ export const metadata: Metadata = {
 }
 
 // ─────────────────────────────────────────────────────────────────
-//   STRUKTURIERTE DATEN — Schema.org Master-Stack
+//   STRUKTURIERTE DATEN · Schema.org Master-Stack
 // ─────────────────────────────────────────────────────────────────
 
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'TechArticle',
-  headline: 'Messemodelle für Industrie-Aussteller — Der vollständige Guide 2026',
+  headline: 'Messemodelle für Industrie-Aussteller · Der vollständige Guide 2026',
   description: DESCRIPTION,
   image: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png',
   datePublished: '2026-05-31',
@@ -121,11 +121,11 @@ const articleSchema = {
     { '@type': 'Thing', name: 'FDM-3D-Druck für Showcase-Modelle' },
   ],
   citation: [
-    'DIN 4102-1:1998 Brandverhalten von Baustoffen und Bauteilen — Begriffe, Anforderungen, Prüfungen',
+    'DIN 4102-1:1998 Brandverhalten von Baustoffen und Bauteilen · Begriffe, Anforderungen, Prüfungen',
     'DIN EN 13501-1:2019 Klassifizierung von Bauprodukten zu ihrem Brandverhalten',
-    'VDI 3404:2014 Additive Fertigungsverfahren — Rapid-Technologien',
-    'ISO 527-2:2012 Plastics — Determination of tensile properties',
-    'ISO 178:2019 Plastics — Determination of flexural properties',
+    'VDI 3404:2014 Additive Fertigungsverfahren · Rapid-Technologien',
+    'ISO 527-2:2012 Plastics · Determination of tensile properties',
+    'ISO 178:2019 Plastics · Determination of flexural properties',
   ],
   inLanguage: 'de-AT',
   isAccessibleForFree: true,
@@ -198,7 +198,7 @@ export default function MessemodellGuidePage() {
     <>
       <Navigation />
 
-      {/* Strukturierte Daten — alle 4 Schemas */}
+      {/* Strukturierte Daten · alle 4 Schemas */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -257,7 +257,7 @@ export default function MessemodellGuidePage() {
         <section className="px-4 mb-16">
           <div id="tldr" className="max-w-4xl mx-auto bg-primary/5 border-l-4 border-primary p-8 rounded-r-lg">
             <h2 className="text-sm font-bold uppercase tracking-wider text-primary mb-4">
-              Kurzfassung — in 30 Sekunden
+              Kurzfassung · in 30 Sekunden
             </h2>
             <ul className="space-y-3 text-lg leading-relaxed">
               <li className="flex gap-3">
@@ -265,7 +265,7 @@ export default function MessemodellGuidePage() {
                 <span>
                   <strong>Brennstoffklasse:</strong> Standard-PETG ist B2 (für die meisten
                   DACH-Messen ausreichend). B1 ist Pflicht auf Großmessen wie Hannover Messe
-                  oder Bauma — erreichbar mit Polycarbonat-FR oder additiviertem PLA.
+                  oder Bauma · erreichbar mit Polycarbonat-FR oder additiviertem PLA.
                 </span>
               </li>
               <li className="flex gap-3">
@@ -306,8 +306,8 @@ export default function MessemodellGuidePage() {
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Im Industriegüter-Vertrieb gibt es ein wiederkehrendes Showcase-Problem: das
-              Hauptprodukt — die 8-Tonnen-Maschine, die 3-stöckige Schaltanlage, der
-              12-Meter-Schiffsantrieb — kann auf einer Messe physisch nicht gezeigt werden.
+              Hauptprodukt · die 8-Tonnen-Maschine, die 3-stöckige Schaltanlage, der
+              12-Meter-Schiffsantrieb · kann auf einer Messe physisch nicht gezeigt werden.
               Drei Wege werden typisch versucht. Zwei davon funktionieren nicht.
             </p>
 
@@ -342,7 +342,7 @@ export default function MessemodellGuidePage() {
             </div>
 
             <p className="text-lg leading-relaxed">
-              Das Ziel ist nicht "schönes Exponat" — das Ziel ist <strong>Fachgespräch</strong>.
+              Das Ziel ist nicht "schönes Exponat" · das Ziel ist <strong>Fachgespräch</strong>.
               Wer am Schnittmodell die rotierende Spindel sieht, das aufklappbare Schaltgehäuse
               berührt, die maßstabsgetreue Anlage von allen Seiten umrunden kann, der bleibt
               stehen. Und wer stehenbleibt, fragt nach Specs. Und wer nach Specs fragt, kommt
@@ -352,14 +352,14 @@ export default function MessemodellGuidePage() {
         </section>
 
         {/* ─────────────────────────────────────────────────────────────
-            H2: Brennstoffklasse — DIN 4102 Realität auf Messen
+            H2: Brennstoffklasse · DIN 4102 Realität auf Messen
         ───────────────────────────────────────────────────────────── */}
         <section className="px-4 py-12 bg-muted/30">
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center gap-3 mb-6">
               <Flame className="w-8 h-8 text-primary" />
               <h2 className="text-3xl md:text-4xl font-bold">
-                Brennstoffklasse — DIN 4102 Realität auf Messen
+                Brennstoffklasse · DIN 4102 Realität auf Messen
               </h2>
             </div>
 
@@ -433,7 +433,7 @@ export default function MessemodellGuidePage() {
                   <p className="text-sm leading-relaxed">
                     Bei strenger Standabnahme (TÜV-Prüfer, Brandschutz-Beauftragter der Messe)
                     wird das Hersteller-Material-Zertifikat des Filaments verlangt. Wir liefern
-                    auf Anfrage das Original-Zertifikat des Filament-Herstellers — eigene
+                    auf Anfrage das Original-Zertifikat des Filament-Herstellers · eigene
                     Brand-Tests durch ekdruck sind nicht erforderlich.
                   </p>
                 </div>
@@ -443,14 +443,14 @@ export default function MessemodellGuidePage() {
         </section>
 
         {/* ─────────────────────────────────────────────────────────────
-            H2: Standzeit — was 4-7 Messetage aushält
+            H2: Standzeit · was 4-7 Messetage aushält
         ───────────────────────────────────────────────────────────── */}
         <section className="px-4 py-12">
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center gap-3 mb-6">
               <Hand className="w-8 h-8 text-primary" />
               <h2 className="text-3xl md:text-4xl font-bold">
-                Standzeit — was 4-7 Messetage aushält
+                Standzeit · was 4-7 Messetage aushält
               </h2>
             </div>
 
@@ -583,14 +583,14 @@ export default function MessemodellGuidePage() {
         </section>
 
         {/* ─────────────────────────────────────────────────────────────
-            H2: ROI von Messemodellen — konkrete Zahlen
+            H2: ROI von Messemodellen · konkrete Zahlen
         ───────────────────────────────────────────────────────────── */}
         <section className="px-4 py-12">
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center gap-3 mb-6">
               <TrendingUp className="w-8 h-8 text-primary" />
               <h2 className="text-3xl md:text-4xl font-bold">
-                ROI von Messemodellen — konkrete Zahlen
+                ROI von Messemodellen · konkrete Zahlen
               </h2>
             </div>
 
@@ -735,7 +735,7 @@ export default function MessemodellGuidePage() {
               Echte Case-Studies aus aktuellen Aufträgen
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Drei konkrete Projekte aus den letzten 12 Monaten — anonymisiert wo NDA-relevant,
+              Drei konkrete Projekte aus den letzten 12 Monaten · anonymisiert wo NDA-relevant,
               aber technisch und ergebnis-orientiert konkret.
             </p>
 
@@ -809,7 +809,7 @@ export default function MessemodellGuidePage() {
               Branchen-spezifische Showcase-Strategien
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Jede Branche hat eigene Konventionen — von Hauptmessen über typische Maßstäbe
+              Jede Branche hat eigene Konventionen · von Hauptmessen über typische Maßstäbe
               bis zu Brennstoffklassen-Anforderungen. Übersicht der 6 Industrie-Cluster die
               wir betreuen:
             </p>
@@ -875,19 +875,19 @@ export default function MessemodellGuidePage() {
         </section>
 
         {/* ─────────────────────────────────────────────────────────────
-            H2: Timeline — wann Bestellung starten
+            H2: Timeline · wann Bestellung starten
         ───────────────────────────────────────────────────────────── */}
         <section className="px-4 py-12 bg-muted/30">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-6">
               <Clock className="w-8 h-8 text-primary" />
               <h2 className="text-3xl md:text-4xl font-bold">
-                Timeline — wann mit der Bestellung starten
+                Timeline · wann mit der Bestellung starten
               </h2>
             </div>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Industriemessemodelle sind Custom-Aufträge — die Lieferzeit hängt von Komplexität,
+              Industriemessemodelle sind Custom-Aufträge · die Lieferzeit hängt von Komplexität,
               CAD-Verfügbarkeit und Lackier-Aufwand ab. Realistische Planungs-Faustregel:
               <strong> 8 Wochen vor Messestart starten</strong>.
             </p>
@@ -988,13 +988,13 @@ export default function MessemodellGuidePage() {
         </section>
 
         {/* ─────────────────────────────────────────────────────────────
-            H2: Pricing — was Messemodelle kosten
+            H2: Pricing · was Messemodelle kosten
         ───────────────────────────────────────────────────────────── */}
         <section className="px-4 py-12">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-6">
               <Calculator className="w-8 h-8 text-primary" />
-              <h2 className="text-3xl md:text-4xl font-bold">Pricing — was Messemodelle kosten</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">Pricing · was Messemodelle kosten</h2>
             </div>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
@@ -1094,7 +1094,7 @@ export default function MessemodellGuidePage() {
             </div>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Drei Modelle der Zusammenarbeit haben sich etabliert — jedes hat
+              Drei Modelle der Zusammenarbeit haben sich etabliert · jedes hat
               eigene Kosten-Trade-Offs und Koordinations-Anforderungen.
             </p>
 
@@ -1260,7 +1260,7 @@ export default function MessemodellGuidePage() {
           <div className="max-w-4xl mx-auto text-sm text-muted-foreground">
             <p className="leading-relaxed">
               <strong className="text-foreground">Autor:</strong> Kevin Eppensteiner,
-              Inhaber & Gründer ekdruck e.U. — Spezialisiert auf Industrie-Messemodellbau,
+              Inhaber & Gründer ekdruck e.U. · Spezialisiert auf Industrie-Messemodellbau,
               FDM-3D-Druck für Großbauteile, NDA-konforme Projekt-Abwicklung. Maschinenbau-Studium
               ab Oktober 2026. Werkstatt: Negrellistraße 15, 4623 Gunskirchen, Oberösterreich.
               <br />

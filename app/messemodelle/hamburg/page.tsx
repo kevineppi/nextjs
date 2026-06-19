@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Messemodelle Hamburg: für SMM, WindEnergy, Internorga',
     description: 'Aussteller in Hamburg: SMM (Maritime), WindEnergy, Internorga, hanseboot. Maritime-Spezialmodelle aus Carbon-PA möglich. Ab €30.',
     url: 'https://www.ek-druck.at/messemodelle/hamburg',
-    siteName: 'ekdruck – 3D-Druck Österreich',
+    siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'website',
   },

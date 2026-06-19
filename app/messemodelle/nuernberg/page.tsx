@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Messemodelle Nürnberg: SPS, Spielwarenmesse, embedded world',
     description: 'Aussteller der NürnbergMesse: SPS, Spielwarenmesse, embedded world, BrauBeviale. Direktversand 24h aus OÖ. Ab €30.',
     url: 'https://www.ek-druck.at/messemodelle/nuernberg',
-    siteName: 'ekdruck – 3D-Druck Österreich',
+    siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'website',
   },

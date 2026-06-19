@@ -10,7 +10,7 @@ import Breadcrumbs from '@/components/landing/Breadcrumbs'
 import { BRAND } from '@/data/brandVoice'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 
-const TITLE = 'Preise ★5,0 — Was kostet 3D-Druck wirklich? | ekdruck'
+const TITLE = 'Preise ★5,0 · Was kostet 3D-Druck wirklich? | ekdruck'
 const DESCRIPTION =
   'Konkrete Preisbeispiele: was kostet ein Architekturmodell, ein Messemodell, ein Funktionsmuster? Inkl. Preistreiber & Rabattstaffel. ★5,0.'
 
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: 'https://www.ek-druck.at/preise',
-    siteName: 'ekdruck – 3D-Druck Österreich',
+    siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'website',
     images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630 }],
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 const pricingFaqs = [
   {
     question: 'Warum sind 3D-Druck-Modelle so unterschiedlich teuer?',
-    answer: 'Drei Hauptfaktoren: (1) Material-Verbrauch in Gramm (Modellgröße × Füllgrad), (2) Druckzeit in Stunden (Detailgrad × Schichthöhe), (3) Nachbearbeitung in Personenstunden (Schleifen, Lackieren, Montieren). Ein 50€-Modell hat ~50g Material + 4h Druckzeit + 0,5h Nachbearbeitung. Ein 5.000€-Modell kann 8kg + 200h + 25h Nachbearbeitung haben — das ist der Spread.',
+    answer: 'Drei Hauptfaktoren: (1) Material-Verbrauch in Gramm (Modellgröße × Füllgrad), (2) Druckzeit in Stunden (Detailgrad × Schichthöhe), (3) Nachbearbeitung in Personenstunden (Schleifen, Lackieren, Montieren). Ein 50€-Modell hat ~50g Material + 4h Druckzeit + 0,5h Nachbearbeitung. Ein 5.000€-Modell kann 8kg + 200h + 25h Nachbearbeitung haben · das ist der Spread.',
   },
   {
     question: 'Was kostet ein typisches Messemodell?',
@@ -50,11 +50,11 @@ const pricingFaqs = [
   },
   {
     question: 'Gibt es Mengenrabatte?',
-    answer: 'Ab 10 Stück: 10% Rabatt. Ab 50 Stück: 15%. Ab 100 Stück: 20% — oder individueller Projektpreis wenn besseres Druckbett-Layout möglich. Ab 500 Stück immer individuelle Kalkulation, weil Skaleneffekte deutlich werden.',
+    answer: 'Ab 10 Stück: 10% Rabatt. Ab 50 Stück: 15%. Ab 100 Stück: 20% · oder individueller Projektpreis wenn besseres Druckbett-Layout möglich. Ab 500 Stück immer individuelle Kalkulation, weil Skaleneffekte deutlich werden.',
   },
   {
     question: 'Was ist im Festpreis enthalten?',
-    answer: 'CAD-Sichtung (kleine Anpassungen kostenfrei), Material, Druck, manuelle QA, Standard-Verpackung, Versand innerhalb DACH. Lackierung, Sonder-Verpackung, Express-Aufschlag, persönliche Anlieferung kosten extra — werden aber im Festpreis-Angebot transparent ausgewiesen.',
+    answer: 'CAD-Sichtung (kleine Anpassungen kostenfrei), Material, Druck, manuelle QA, Standard-Verpackung, Versand innerhalb DACH. Lackierung, Sonder-Verpackung, Express-Aufschlag, persönliche Anlieferung kosten extra · werden aber im Festpreis-Angebot transparent ausgewiesen.',
   },
   {
     question: 'Was sind die typischen Aufschläge?',
@@ -86,14 +86,14 @@ export default function PricingPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-6">
-                Pricing — transparent
+                Pricing · transparent
               </p>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.0] tracking-[-0.04em] mb-6">
                 Was kostet 3D-Druck<br />
                 <span className="text-primary">wirklich?</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mb-10">
-                Einzelteile starten ab €20 — aber was kostet ein 2m-Messemodell? Hier sehen Sie ehrliche Preis-Bereiche pro Projekt-Typ, die Treiber hinter den Preisen und Beispiel-Kalkulationen aus echten Aufträgen.
+                Einzelteile starten ab €20 · aber was kostet ein 2m-Messemodell? Hier sehen Sie ehrliche Preis-Bereiche pro Projekt-Typ, die Treiber hinter den Preisen und Beispiel-Kalkulationen aus echten Aufträgen.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link href="/kostenrechner" className="group inline-flex items-center gap-2 bg-primary text-primary-foreground rounded-full px-8 py-4 font-bold hover:opacity-90 transition-all">
@@ -166,7 +166,7 @@ export default function PricingPage() {
                       { label: '100-500 Stück Custom-Geometrie', range: 'ab €10/Stück' },
                       { label: '1.000-5.000 Stück Werbeartikel', range: 'ab €6/Stück' },
                     ],
-                    note: 'Ab 500 Stück Spritzguss-Vergleich rechnen — ab da kann Spritzguss günstiger sein',
+                    note: 'Ab 500 Stück Spritzguss-Vergleich rechnen · ab da kann Spritzguss günstiger sein',
                   },
                   {
                     category: 'Großmodell',
@@ -235,7 +235,7 @@ export default function PricingPage() {
                   {
                     factor: 'Modellgröße',
                     impact: '×1 bis ×20',
-                    detail: 'Material-Verbrauch und Druckzeit skalieren linear mit dem Volumen — verdoppelte Linearabmessung = 8-fache Kosten. Wenn möglich, Maßstab reduzieren (1:50 → 1:100 spart 87% Material). Bei Messe-Hauptmodellen lohnt sich Premium-Maßstab; bei Begleit-Modellen kleinerer Maßstab ausreichend.',
+                    detail: 'Material-Verbrauch und Druckzeit skalieren linear mit dem Volumen · verdoppelte Linearabmessung = 8-fache Kosten. Wenn möglich, Maßstab reduzieren (1:50 → 1:100 spart 87% Material). Bei Messe-Hauptmodellen lohnt sich Premium-Maßstab; bei Begleit-Modellen kleinerer Maßstab ausreichend.',
                   },
                   {
                     factor: 'Material-Wahl',
@@ -255,7 +255,7 @@ export default function PricingPage() {
                   {
                     factor: 'Bewegliche Teile',
                     impact: '+€80 bis +€500 pro Mechanismus',
-                    detail: 'Drehbare Räder, Magnet-Klappen, Servo-Antriebe — jeder Funktions-Mechanismus kostet zwischen €80 und €500 zusätzlich. Magnetverbindungen sind günstig, Servos teuer. Frage vor Auftrag: welche Teile MÜSSEN beweglich sein?',
+                    detail: 'Drehbare Räder, Magnet-Klappen, Servo-Antriebe · jeder Funktions-Mechanismus kostet zwischen €80 und €500 zusätzlich. Magnetverbindungen sind günstig, Servos teuer. Frage vor Auftrag: welche Teile MÜSSEN beweglich sein?',
                   },
                   {
                     factor: 'Express-Aufschlag',

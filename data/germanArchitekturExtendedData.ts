@@ -32,7 +32,7 @@ const defaultMaterials: MaterialRecommendation[] = [
   },
   {
     name: "PLA Leichtbau",
-    description: "Optimiert für großformatige Modelle. Minimales Gewicht bei maximaler Stabilität – ideal für Transport.",
+    description: "Optimiert für großformatige Modelle. Minimales Gewicht bei maximaler Stabilität · ideal für Transport.",
     bestFor: ["Großmodelle", "Städtebaumodelle", "Transportoptimiert"],
     icon: "feather"
   }
@@ -47,11 +47,11 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       solution: "Wir fertigten ein modulares Quartiers-Modell mit farblich codierten Bauphasen. Die Bestandsbebauung in Grau, Neubauten in Weiß. Same-Day über A8.",
       result: "Das Modell überzeugte bei der Bürgerinformation. Das Projekt wurde ohne Einsprüche genehmigt.",
       specs: { size: "100 x 80 x 25 cm", material: "PLA weiß/grau + farbige Akzente", time: "7 Werktage" },
-      quote: "Grenznahe Fertigung aus Österreich war ideal – schnell, günstig und die Qualität stimmt."
+      quote: "Grenznahe Fertigung aus Österreich war ideal · schnell, günstig und die Qualität stimmt."
     },
     materials: defaultMaterials,
     industryFocus: "Stadtentwicklung & Wohnbau in Bayern",
-    uniqueSellingPoints: ["Grenznahe Fertigung – kürzeste Wege", "Erfahrung mit Münchner Büros", "Express über A8"]
+    uniqueSellingPoints: ["Grenznahe Fertigung · kürzeste Wege", "Erfahrung mit Münchner Büros", "Express über A8"]
   },
 
   'baden-wuerttemberg': {
@@ -77,7 +77,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       solution: "Wir fertigten ein zweiteiliges Modell: historische Industriebauten in grauem PLA, neue Einbauten in weißem PLA mit transparenten PETG-Dachflächen.",
       result: "Das Modell gewann den Wettbewerb. Der IBA-Jury überzeugte die sensible Bestandsintegration.",
       specs: { size: "70 x 50 x 30 cm", material: "PLA grau/weiß + PETG", time: "7 Werktage" },
-      quote: "Alt und Neu im selben Modell – genau so haben wir es uns vorgestellt. Express aus Österreich war perfekt."
+      quote: "Alt und Neu im selben Modell · genau so haben wir es uns vorgestellt. Express aus Österreich war perfekt."
     },
     materials: [
       { name: "PLA Grau", description: "Für Bestandsgebäude und Industriebauten. Authentische Darstellung.", bestFor: ["Industriebauten", "Bestandsgebäude", "Kontextmodelle"], icon: "palette" },
@@ -95,7 +95,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       solution: "Wir druckten das Hochhaus mit transparenter PETG-Fassade. Die umliegende Skyline wurde als Silhouette in grauem PLA ergänzt.",
       result: "Die Investoren genehmigten das Projekt. Das transparente Modell zeigte die Etagen und den Gebäudekern.",
       specs: { size: "25 x 25 x 90 cm", material: "PETG transparent + PLA grau", time: "6 Werktage" },
-      quote: "Ein 90cm hohes transparentes Hochhausmodell – das hat selbst erfahrene Investoren beeindruckt."
+      quote: "Ein 90cm hohes transparentes Hochhausmodell · das hat selbst erfahrene Investoren beeindruckt."
     },
     materials: [
       { name: "PETG Transparent", description: "Ideal für Frankfurter Hochhaus-Fassaden. Zeigt Geschossstruktur und Gebäudekern.", bestFor: ["Hochhäuser", "Bürotürme", "Glasfassaden"], icon: "shield" },
@@ -149,7 +149,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       solution: "Wir fertigten ein Geländemodell mit historischem Bestand in Grau und dem modernen Neubau in Weiß. Bäume und Parkanlage wurden stilisiert dargestellt.",
       result: "Die Denkmalbehörde genehmigte den Entwurf. Der historische Kontext war sofort nachvollziehbar.",
       specs: { size: "80 x 60 x 20 cm", material: "PLA grau/weiß + Geländemodell", time: "6 Werktage" },
-      quote: "Alt und Neu im Parkkontext – das Modell hat die Behörde sofort überzeugt."
+      quote: "Alt und Neu im Parkkontext · das Modell hat die Behörde sofort überzeugt."
     },
     materials: defaultMaterials,
     industryFocus: "Denkmalpflege & Stadtentwicklung in Brandenburg",
@@ -192,7 +192,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       solution: "Wir erstellten ein modulares Quartiers-Modell im Maßstab 1:500. Die einzelnen Gebäudegruppen waren herausnehmbar, um Varianten zu zeigen.",
       result: "Das Büro erreichte die engere Auswahl. Die Jury lobte die Qualität des Modells.",
       specs: { size: "100 x 80 x 20 cm", material: "PLA weiß + farbige Akzente", time: "8 Werktage" },
-      quote: "Für den Preis in Berlin ein Modell in dieser Qualität zu bekommen – unmöglich. Danke an ek-druck!"
+      quote: "Für den Preis in Berlin ein Modell in dieser Qualität zu bekommen · unmöglich. Danke an ek-druck!"
     },
     materials: defaultMaterials,
     industryFocus: "Stadtentwicklung & Großprojekte in Berlin",
@@ -232,7 +232,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       solution: "Wir fertigten drei Modelle im Maßstab 1:200 mit identischer Umgebung. Express-Lieferung über A8 in nur 3 Stunden.",
       result: "Variante A wurde gewählt. Der Investor lobte die schnelle Umsetzung und die Möglichkeit, direkt zu vergleichen.",
       specs: { size: "3x 50 x 40 x 20 cm", material: "PLA weiß + PETG Fassaden", time: "5 Werktage" },
-      quote: "Drei Varianten parallel – und in 3 Stunden geliefert. Das gibt's nur grenznahe!"
+      quote: "Drei Varianten parallel · und in 3 Stunden geliefert. Das gibt's nur grenznahe!"
     },
     materials: defaultMaterials,
     industryFocus: "Bürobau & Stadtentwicklung in München",
@@ -261,7 +261,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       solution: "Wir erstellten ein großformatiges Modell im Maßstab 1:500 mit dem neuen Bahnhof und dem geplanten Quartier. Modulare Bauphasen.",
       result: "Das Modell wurde bei der Bürgerbeteiligung eingesetzt und half, das Projekt verständlich zu machen.",
       specs: { size: "120 x 80 x 20 cm", material: "PLA weiß + farbcodiert", time: "8 Werktage" },
-      quote: "Das größte Modell, das wir je in Auftrag gegeben haben – und die Qualität stimmt."
+      quote: "Das größte Modell, das wir je in Auftrag gegeben haben · und die Qualität stimmt."
     },
     materials: defaultMaterials,
     industryFocus: "Stadtplanung & Innovation in Stuttgart",
@@ -326,7 +326,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       solution: "Wir druckten ein 1m hohes Modell mit transparenter PETG-Fassade. Der Gebäudekern und die Geschossebenen waren sichtbar. Express-Versand nach Frankfurt.",
       result: "Die Investoren waren beeindruckt. Das transparente Modell zeigte die Raumstruktur auf allen Ebenen.",
       specs: { size: "30 x 30 x 100 cm", material: "PETG transparent + PLA Kern", time: "7 Werktage" },
-      quote: "Ein Meter hohes transparentes Hochhaus – das hat den Pitch gewonnen!"
+      quote: "Ein Meter hohes transparentes Hochhaus · das hat den Pitch gewonnen!"
     },
     materials: [
       { name: "PETG Transparent", description: "Ideal für Frankfurter Hochhäuser. Zeigt Geschossstruktur und Gebäudekern.", bestFor: ["Hochhäuser", "Skyline-Modelle", "Investoren-Pitches"], icon: "shield" },
@@ -358,7 +358,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       solution: "Wir druckten das Fassadenmodell in höchster Auflösung (0.05mm). Jedes Stuckelement, jede Rosette war detailgetreu dargestellt.",
       result: "Die Denkmalbehörde genehmigte die Sanierung. Die Detailtreue war ausschlaggebend.",
       specs: { size: "60 x 15 x 40 cm", material: "PLA weiß Feinauflösung", time: "6 Werktage" },
-      quote: "0.05mm Auflösung für Barockstuck – unglaublich detailliert. Die Behörde war begeistert."
+      quote: "0.05mm Auflösung für Barockstuck · unglaublich detailliert. Die Behörde war begeistert."
     },
     materials: defaultMaterials,
     industryFocus: "Barockarchitektur & Denkmalpflege in Dresden",

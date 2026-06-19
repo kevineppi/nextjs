@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Messemodelle Zürich: 3D-Druck mit Schweizer Zollabwicklung',
     description: 'Aussteller in Zürich: Messemodelle aus Österreich inkl. Schweizer Zollabwicklung. FINISH, Z-2025, weitere. CHF-Verrechnung möglich.',
     url: 'https://www.ek-druck.at/messemodelle/zuerich',
-    siteName: 'ekdruck – 3D-Druck Österreich', locale: 'de_AT', type: 'website',
+    siteName: 'ekdruck · 3D-Druck Österreich', locale: 'de_AT', type: 'website',
   },
 }
 

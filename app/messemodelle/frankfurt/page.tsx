@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Messemodelle Frankfurt: Automechanika, Ambiente, Achema',
     description: 'Für Aussteller der Messe Frankfurt: Automechanika, Ambiente, Buchmesse, Achema, Light+Building. Versand 48h aus Österreich. Ab €30.',
     url: 'https://www.ek-druck.at/messemodelle/frankfurt',
-    siteName: 'ekdruck – 3D-Druck Österreich',
+    siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'website',
   },

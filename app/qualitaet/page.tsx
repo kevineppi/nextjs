@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: 'https://www.ek-druck.at/qualitaet',
-    siteName: 'ekdruck – 3D-Druck Österreich',
+    siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'website',
     images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630 }],
@@ -39,7 +39,7 @@ const promiseFaqs = [
   },
   {
     question: 'Wie schnell antworten Sie auf eine Anfrage?',
-    answer: 'Werktags <2h auf Mail, WhatsApp und Telefon. Verbindliches Festpreisangebot in 6h nach CAD-Eingang. Bei komplexen Projekten (Segmentierung >5 Teile, Cutaway-Konstruktion) bis zu 24h — aber dann mit Zwischenmeldung wann das Angebot fertig ist.',
+    answer: 'Werktags <2h auf Mail, WhatsApp und Telefon. Verbindliches Festpreisangebot in 6h nach CAD-Eingang. Bei komplexen Projekten (Segmentierung >5 Teile, Cutaway-Konstruktion) bis zu 24h · aber dann mit Zwischenmeldung wann das Angebot fertig ist.',
   },
   {
     question: 'Was kostet eine Modell-Revision nach Erst-Lieferung?',
@@ -55,11 +55,11 @@ const promiseFaqs = [
   },
   {
     question: 'Was passiert, wenn meine Anfrage nicht zu Ihnen passt?',
-    answer: 'Dann sag ich es offen. Mechanische Funktionsbauteile (WKO-Berechtigung erst ab Studium), Spritzguss-Klein-Serien >5.000 Stück, sehr fein detaillierte Resin-Schmuck-Modelle — fallen alle nicht in meine Kernkompetenz. Statt ein schwaches Angebot abzugeben verweise ich auf passende Anbieter aus meinem Netzwerk.',
+    answer: 'Dann sag ich es offen. Mechanische Funktionsbauteile (WKO-Berechtigung erst ab Studium), Spritzguss-Klein-Serien >5.000 Stück, sehr fein detaillierte Resin-Schmuck-Modelle · fallen alle nicht in meine Kernkompetenz. Statt ein schwaches Angebot abzugeben verweise ich auf passende Anbieter aus meinem Netzwerk.',
   },
   {
     question: 'Wie verbindlich ist Ihr Festpreis?',
-    answer: 'Voll verbindlich nach CAD-Freigabe. Sie unterschreiben den Festpreis, der Preis steht. Kein "wir mussten leider 20% draufschlagen weil...". Aufpreise nur wenn Sie nachträglich Specs ändern (z.B. zusätzliche Lackierung) — und dann erst nach Ihrer Schriftlich-Freigabe.',
+    answer: 'Voll verbindlich nach CAD-Freigabe. Sie unterschreiben den Festpreis, der Preis steht. Kein "wir mussten leider 20% draufschlagen weil...". Aufpreise nur wenn Sie nachträglich Specs ändern (z.B. zusätzliche Lackierung) · und dann erst nach Ihrer Schriftlich-Freigabe.',
   },
 ]
 
@@ -99,7 +99,7 @@ const promiseSchema = {
     name: 'Qualitäts-Garantien',
     itemListElement: [
       { '@type': 'Offer', name: '6h-Angebots-Garantie', description: 'Verbindliches Festpreisangebot binnen 6 Stunden nach CAD-Eingang' },
-      { '@type': 'Offer', name: '14-Tage-Reklamation', description: 'Foto-Beleg bei Mängeln innerhalb 14 Tagen — Nachdruck binnen 48h' },
+      { '@type': 'Offer', name: '14-Tage-Reklamation', description: 'Foto-Beleg bei Mängeln innerhalb 14 Tagen · Nachdruck binnen 48h' },
       { '@type': 'Offer', name: 'QA-Foto vor Versand', description: 'Jedes Modell manuell geprüft und fotodokumentiert vor Verpackung' },
       { '@type': 'Offer', name: 'NDA-Konformität', description: 'Verschlüsselter Datentransfer + automatische CAD-Löschung nach Lieferung' },
     ],
@@ -125,10 +125,10 @@ export default function QualityPage() {
               </p>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.0] tracking-[-0.04em] mb-6">
                 So arbeite ich.<br />
-                <span className="text-primary">Versprochen — und überprüfbar.</span>
+                <span className="text-primary">Versprochen · und überprüfbar.</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mb-10">
-                Niemand schickt CAD an einen Fremden und erwartet wundervolle Modelle ohne Sicherheit. Daher: ehrliche Versprechen mit konkreten Zahlen, klare Reklamations-Ablauf, transparente Risiko-Verteilung. Das hier sind die Spielregeln, nach denen ek-druck arbeitet — keine Marketing-Floskeln, sondern operative Realität.
+                Niemand schickt CAD an einen Fremden und erwartet wundervolle Modelle ohne Sicherheit. Daher: ehrliche Versprechen mit konkreten Zahlen, klare Reklamations-Ablauf, transparente Risiko-Verteilung. Das hier sind die Spielregeln, nach denen ek-druck arbeitet · keine Marketing-Floskeln, sondern operative Realität.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link href="/kontakt" className="group inline-flex items-center gap-2 bg-primary text-primary-foreground rounded-full px-8 py-4 font-bold hover:opacity-90 transition-all">
@@ -158,7 +158,7 @@ export default function QualityPage() {
                 {[
                   { icon: Clock, label: 'Angebot in 6h', detail: 'Verbindliches Festpreisangebot binnen 6 Werkstunden nach CAD-Eingang. Bei komplexen Konstruktionen Zwischenmeldung.' },
                   { icon: Camera, label: 'QA-Foto vor Versand', detail: 'Jedes Modell manuell QA-geprüft, fotodokumentiert. Sie sehen das Modell bevor es im Karton ist.' },
-                  { icon: Mail, label: 'Antwort < 2h', detail: 'Werktags Mail/WhatsApp/Telefon — Antwortzeit unter 2 Stunden. Sonntags kein Service.' },
+                  { icon: Mail, label: 'Antwort < 2h', detail: 'Werktags Mail/WhatsApp/Telefon · Antwortzeit unter 2 Stunden. Sonntags kein Service.' },
                   { icon: RotateCw, label: '14 Tage Reklamation', detail: 'Foto-Beleg bei Mängeln. Bei nachweislichem Druck-/Material-Fehler: Nachdruck startet binnen 48h, kostenlos.' },
                   { icon: Shield, label: 'NDA-konform', detail: 'Verschlüsselter Datentransfer, separater Werkstattbereich, CAD-Löschung nach Lieferung vertraglich zugesichert.' },
                 ].map((p, i) => (
@@ -191,9 +191,9 @@ export default function QualityPage() {
               </div>
               <div className="space-y-2">
                 {[
-                  { num: '01', title: 'CAD-Eingang', timing: 'Tag 0', detail: 'Sie senden STEP, STL, IGES, 3MF oder native Format (SolidWorks, Inventor, Fusion 360, ArchiCAD, Revit). Auch nur Skizze + Foto reicht — wir modellieren dann gegen Stundensatz.' },
+                  { num: '01', title: 'CAD-Eingang', timing: 'Tag 0', detail: 'Sie senden STEP, STL, IGES, 3MF oder native Format (SolidWorks, Inventor, Fusion 360, ArchiCAD, Revit). Auch nur Skizze + Foto reicht · wir modellieren dann gegen Stundensatz.' },
                   { num: '02', title: 'Eingangs-Bestätigung', timing: 'innerhalb 2h werktags', detail: 'Ich bestätige Eingang, stelle ggf. Rückfragen zu Maßstab, Material, Lackierung, Lieferort.' },
-                  { num: '03', title: 'Festpreisangebot', timing: 'innerhalb 6h werktags', detail: 'Verbindlich, transparent. Material-Spezifikation, Nachbearbeitung, Lieferzeit, Versandkosten — alles auf einem Blatt.' },
+                  { num: '03', title: 'Festpreisangebot', timing: 'innerhalb 6h werktags', detail: 'Verbindlich, transparent. Material-Spezifikation, Nachbearbeitung, Lieferzeit, Versandkosten · alles auf einem Blatt.' },
                   { num: '04', title: 'Sie bestätigen', timing: 'wann es Ihnen passt', detail: 'Auftragserteilung per Mail oder PDF-Unterschrift. Bei Erstaufträgen Vorkasse möglich (oder Anzahlung 30%), bei Folgeaufträgen Zahlungsziel.' },
                   { num: '05', title: 'Druck startet', timing: 'meist nächster Werktag', detail: 'CAD-Aufbereitung, Slicing, Druckbett-Vorbereitung. Bei Express noch am gleichen Tag starten.' },
                   { num: '06', title: 'Nachbearbeitung', timing: '0-3 Tage nach Druckende', detail: 'Schleifen, Grundieren, Lackieren wenn beauftragt. Logo-Anbringung, Sonder-Details. Manuelle QA jedes Bauteils.' },
@@ -225,10 +225,10 @@ export default function QualityPage() {
               <div className="mb-12 max-w-3xl">
                 <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Wenn etwas schiefläuft</p>
                 <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.0] tracking-[-0.04em] mb-6">
-                  Reklamations-Ablauf<br />— ohne Hürden.
+                  Reklamations-Ablauf<br />- ohne Hürden.
                 </h2>
                 <p className="text-base md:text-lg text-background/70 leading-relaxed">
-                  Ich gehe davon aus, dass Sie sich melden weil etwas wirklich nicht passt — nicht weil Sie das System ausnutzen. Daher: kurzer Ablauf, klare Verantwortlichkeit, schnelle Lösung.
+                  Ich gehe davon aus, dass Sie sich melden weil etwas wirklich nicht passt · nicht weil Sie das System ausnutzen. Daher: kurzer Ablauf, klare Verantwortlichkeit, schnelle Lösung.
                 </p>
               </div>
 
@@ -272,14 +272,14 @@ export default function QualityPage() {
                   <li className="flex items-start gap-2"><X className="w-5 h-5 text-primary mt-0.5 shrink-0" /> "Das ist nicht mein Problem, kontaktieren Sie die Spedition selbst"</li>
                   <li className="flex items-start gap-2"><X className="w-5 h-5 text-primary mt-0.5 shrink-0" /> "Die Reklamationsfrist war 7 Tage" (es sind 14)</li>
                   <li className="flex items-start gap-2"><X className="w-5 h-5 text-primary mt-0.5 shrink-0" /> "Wir bearbeiten Ihre Reklamation in 14 Werktagen" (es sind &lt;24h)</li>
-                  <li className="flex items-start gap-2"><X className="w-5 h-5 text-primary mt-0.5 shrink-0" /> "Bei B-Ware geben wir 80% Gutschrift" (nein — entweder es passt oder Sie bekommen ein neues Modell)</li>
+                  <li className="flex items-start gap-2"><X className="w-5 h-5 text-primary mt-0.5 shrink-0" /> "Bei B-Ware geben wir 80% Gutschrift" (nein · entweder es passt oder Sie bekommen ein neues Modell)</li>
                 </ul>
               </div>
             </div>
           </div>
         </section>
 
-        {/* WHAT WE DON'T DO — Ehrliche Grenzen */}
+        {/* WHAT WE DON'T DO · Ehrliche Grenzen */}
         <section className="py-20 md:py-28 bg-background border-y border-border" aria-label="Was wir nicht machen">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
@@ -289,16 +289,16 @@ export default function QualityPage() {
                   Was wir <span className="text-destructive/70">nicht</span> machen.
                 </h2>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Ein guter Anbieter sagt nicht zu allem ja. Hier ist explizit was nicht in mein Portfolio gehört — Sie sollten lieber wissen wo Sie besser anders suchen.
+                  Ein guter Anbieter sagt nicht zu allem ja. Hier ist explizit was nicht in mein Portfolio gehört · Sie sollten lieber wissen wo Sie besser anders suchen.
                 </p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-3">
                 {[
-                  { title: 'Mechanische Funktionsbauteile', detail: 'WKO-Gewerbeberechtigung dafür habe ich erst nach dem Maschinenbau-Studium (ab Sept 2027). Bis dahin: Anschauungsmodelle, Designstudien, Prototypen, Messemodelle — ja. Lasttragende Maschinenteile — nein.' },
+                  { title: 'Mechanische Funktionsbauteile', detail: 'WKO-Gewerbeberechtigung dafür habe ich erst nach dem Maschinenbau-Studium (ab Sept 2027). Bis dahin: Anschauungsmodelle, Designstudien, Prototypen, Messemodelle · ja. Lasttragende Maschinenteile · nein.' },
                   { title: 'Spritzguss-Großserien >5.000 Stück', detail: 'Ab dieser Stückzahl ist Spritzguss billiger. Ich verweise auf passende Werkzeugbauer aus meinem Netzwerk. Bis 5.000 Stück bin ich konkurrenzfähig.' },
                   { title: 'Resin-Schmuck und Mikro-Detailmodelle', detail: 'SLA/DLP-Druck im Schmuck-Bereich ist eine eigene Disziplin. FDM-Druck (mein Stack) kommt bei Mikro-Details an Grenzen.' },
-                  { title: 'Spielzeug für Kleinkinder', detail: 'Lebensmittel-/Kleinkind-Sicherheits-Zertifizierungen liegen jenseits meiner Kapazität. PETG ist FDA-konform — aber für Spielzeug-Zertifizierung brauchen Sie andere Anbieter.' },
+                  { title: 'Spielzeug für Kleinkinder', detail: 'Lebensmittel-/Kleinkind-Sicherheits-Zertifizierungen liegen jenseits meiner Kapazität. PETG ist FDA-konform · aber für Spielzeug-Zertifizierung brauchen Sie andere Anbieter.' },
                   { title: 'Schattenkunden / Bar-Aufträge ohne Rechnung', detail: 'ekdruck ist eine ehrlich angemeldete e.U. Alle Aufträge laufen ordentlich über Rechnung mit UID-Vermerk. Keine Ausnahmen.' },
                   { title: 'Kostenlose "Test-Modelle" für Privatkunden', detail: 'Für Schulen, Forschungs-Projekte und gemeinnützige Initiativen mache ich Sonderkonditionen. Private "Schau-mal-was-Du-kannst"-Aufträge nicht kostenfrei.' },
                 ].map((g, i) => (
@@ -349,7 +349,7 @@ export default function QualityPage() {
             <div className="max-w-4xl mx-auto text-center">
               <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-6">Jetzt testen statt diskutieren</p>
               <h2 className="text-4xl md:text-6xl font-bold leading-[1.0] tracking-[-0.04em] mb-6">
-                CAD raufladen — bekommen Sie<br />
+                CAD raufladen · bekommen Sie<br />
                 <span className="text-primary">das Angebot in 6h.</span>
               </h2>
               <p className="text-lg text-background/70 mb-10 max-w-2xl mx-auto leading-relaxed">

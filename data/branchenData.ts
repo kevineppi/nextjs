@@ -1,5 +1,5 @@
 /**
- * Branchen-Cluster Daten — ek-druck
+ * Branchen-Cluster Daten · ek-druck
  * ──────────────────────────────────────────────────────────────────────
  * 6 Industriebranchen als SEO-Long-Tail-Pages.
  * Pro Branche: Title, Hero, Pains, Use-Cases, Materials, FAQs, Cross-Links.
@@ -40,7 +40,7 @@ export type Branche = {
   subline: string
   primaryKeyword: string // z.B. "Maschinenbau Messemodell"
   secondaryKeywords: string[] // werden in Body verstreut
-  // Long-Tail SEO-Body — 2-3 Absätze natürliche Prose mit secondaryKeywords
+  // Long-Tail SEO-Body · 2-3 Absätze natürliche Prose mit secondaryKeywords
   // semantisch eingestreut (3-5× pro Keyword statt 1-2×)
   // Dient als SEO-Body-Block direkt nach Hero
   seoLongTailBody: {
@@ -70,13 +70,13 @@ export type Branche = {
 // ═══════════════════════════════════════════════════════════════════
 const maschinenbau: Branche = {
   slug: 'maschinenbau',
-  metaTitle: 'Maschinenbau-Messemodell ★5,0 — CNC-Fräse als Exponat',
+  metaTitle: 'Maschinenbau-Messemodell ★5,0 · CNC-Fräse als Exponat',
   metaDescription:
     '8-Tonnen-CNC-Fräse als 30cm-Modell? Maschinenbau-Messemodelle in 24-48h: maßstabsgetreu, segmentiert, bruchsicher. ★5,0 (31 Reviews).',
   eyebrow: 'Branche · Maschinenbau & Werkzeugbau',
-  h1: 'Maschinenbau-Messemodell aus dem 3D-Druck — Ihre 8-Tonnen-Maschine als Tisch-Exponat',
+  h1: 'Maschinenbau-Messemodell aus dem 3D-Druck · Ihre 8-Tonnen-Maschine als Tisch-Exponat',
   subline:
-    'CNC-Fräsen, Drehmaschinen, Bearbeitungszentren, Werkzeugaufbauten — wenn das Original zu groß, zu schwer oder zu wertvoll für den Messestand ist, drucken wir es maßstabsgetreu. 24-48 Stunden, segmentierbar, lackierfähig, bruchsicher.',
+    'CNC-Fräsen, Drehmaschinen, Bearbeitungszentren, Werkzeugaufbauten · wenn das Original zu groß, zu schwer oder zu wertvoll für den Messestand ist, drucken wir es maßstabsgetreu. 24-48 Stunden, segmentierbar, lackierfähig, bruchsicher.',
   primaryKeyword: 'Maschinenbau Messemodell',
   secondaryKeywords: [
     'Werkzeugmaschine Modell',
@@ -92,20 +92,20 @@ const maschinenbau: Branche = {
   ],
   seoLongTailBody: {
     eyebrow: 'Was wir für den Maschinenbau konkret drucken',
-    h2: 'Maschinenbau-Modelle aus dem 3D-Druck — Spektrum, Maßstäbe, Anwendungen',
+    h2: 'Maschinenbau-Modelle aus dem 3D-Druck · Spektrum, Maßstäbe, Anwendungen',
     paragraphs: [
-      'Im Maschinenbau-3D-Druck reichen unsere Anfragen vom kompakten Komponentenmodell (Werkzeughalter, Spindelaufnahme, Linearführungs-Segment in Originalgröße) bis zur kompletten Werkzeugmaschine als maßstabsgetreues Messemodell. Eine 5-Achs-Fräse wird typisch im Maßstab 1:7 bis 1:20 gedruckt, ein Bearbeitungszentrum im Maßstab 1:10 bis 1:25, eine konventionelle Drehmaschine im Maßstab 1:5 bis 1:10. Bei einer CNC-Fräse als Tisch-Exponat liegen Modellabmessungen typisch bei 30 bis 80 Zentimetern Länge — handhabbar für jeden Messestand, dabei detailliert genug für Engineering-Diskussion.',
-      'Das Schnittmodell Maschinenbau ist eine eigene Disziplin: Wir halbieren das Maschinenmodell entlang einer technischen Trennebene und legen die Innenstruktur frei. Werkstoff-Transport bei einer Drehmaschine, Spindel-Lagerung beim Bearbeitungszentrum, Werkzeug-Schnellwechsel bei der CNC-Fräse — alles als Funktions-Demonstration sichtbar. Ein Schnittmodell-Werkzeugmaschine eignet sich besonders für Engineering-Schulungen und Vertriebs-Tourneen, weil es das verkauft was technische Datenblätter nicht können: die Funktions-Logik selbst.',
-      'Werkzeugbau-Exponate sind die dritte Hauptkategorie: Werkstückbeispiele in Roh- und Fertigbearbeitungs-Zustand, montiert auf einem gedruckten Werkstückträger, der die Bearbeitungs-Schritte als physische Sequenz zeigt. Hier kombinieren wir oft hochdetailliertes PLA für die Schau-Werkstücke mit robustem PETG für den Träger. Ein präzises Maschinenmodell maßstabsgetreu in dieser Qualität war noch vor 5 Jahren ausschließlich im Handmodellbau machbar — heute drucken wir es in 14 Tagen Lead-Time.',
-      'Typischer Workflow bei einem Maschinenbau-3D-Druck-Projekt: Ihr Konstruktions-CAD aus SolidWorks, Inventor, Creo oder NX kommt per STEP-Datei, ich reduziere die Geometrie-Details auf maßstabs-relevante Ebene (Innen-Schraubverbindungen werden weggelassen, sichtbare Anschlussflansche bleiben), wir planen Segmentierung falls nötig, und produzieren. Bei NDA-Projekten — was bei Werkzeugmaschinen-Innovationen Standard ist — läuft der CAD-Transfer verschlüsselt, die Daten werden nach Lieferung vertraglich gelöscht, kein Cloud-Storage zwischengeschaltet.',
+      'Im Maschinenbau-3D-Druck reichen unsere Anfragen vom kompakten Komponentenmodell (Werkzeughalter, Spindelaufnahme, Linearführungs-Segment in Originalgröße) bis zur kompletten Werkzeugmaschine als maßstabsgetreues Messemodell. Eine 5-Achs-Fräse wird typisch im Maßstab 1:7 bis 1:20 gedruckt, ein Bearbeitungszentrum im Maßstab 1:10 bis 1:25, eine konventionelle Drehmaschine im Maßstab 1:5 bis 1:10. Bei einer CNC-Fräse als Tisch-Exponat liegen Modellabmessungen typisch bei 30 bis 80 Zentimetern Länge · handhabbar für jeden Messestand, dabei detailliert genug für Engineering-Diskussion.',
+      'Das Schnittmodell Maschinenbau ist eine eigene Disziplin: Wir halbieren das Maschinenmodell entlang einer technischen Trennebene und legen die Innenstruktur frei. Werkstoff-Transport bei einer Drehmaschine, Spindel-Lagerung beim Bearbeitungszentrum, Werkzeug-Schnellwechsel bei der CNC-Fräse · alles als Funktions-Demonstration sichtbar. Ein Schnittmodell-Werkzeugmaschine eignet sich besonders für Engineering-Schulungen und Vertriebs-Tourneen, weil es das verkauft was technische Datenblätter nicht können: die Funktions-Logik selbst.',
+      'Werkzeugbau-Exponate sind die dritte Hauptkategorie: Werkstückbeispiele in Roh- und Fertigbearbeitungs-Zustand, montiert auf einem gedruckten Werkstückträger, der die Bearbeitungs-Schritte als physische Sequenz zeigt. Hier kombinieren wir oft hochdetailliertes PLA für die Schau-Werkstücke mit robustem PETG für den Träger. Ein präzises Maschinenmodell maßstabsgetreu in dieser Qualität war noch vor 5 Jahren ausschließlich im Handmodellbau machbar · heute drucken wir es in 14 Tagen Lead-Time.',
+      'Typischer Workflow bei einem Maschinenbau-3D-Druck-Projekt: Ihr Konstruktions-CAD aus SolidWorks, Inventor, Creo oder NX kommt per STEP-Datei, ich reduziere die Geometrie-Details auf maßstabs-relevante Ebene (Innen-Schraubverbindungen werden weggelassen, sichtbare Anschlussflansche bleiben), wir planen Segmentierung falls nötig, und produzieren. Bei NDA-Projekten · was bei Werkzeugmaschinen-Innovationen Standard ist · läuft der CAD-Transfer verschlüsselt, die Daten werden nach Lieferung vertraglich gelöscht, kein Cloud-Storage zwischengeschaltet.',
     ],
   },
   pains: [
     {
       problem:
-        'Die echte Werkzeugmaschine wiegt 8 Tonnen und passt nicht in den 30 m²-Messestand — geschweige denn in den Aufzug.',
+        'Die echte Werkzeugmaschine wiegt 8 Tonnen und passt nicht in den 30 m²-Messestand · geschweige denn in den Aufzug.',
       solution:
-        'Wir drucken die Maschine im Maßstab 1:5 bis 1:20. Auf einen Klapptisch reduziert, aber jedes Detail erkennbar — Werkzeugkopf, Linearführung, Spannfutter.',
+        'Wir drucken die Maschine im Maßstab 1:5 bis 1:20. Auf einen Klapptisch reduziert, aber jedes Detail erkennbar · Werkzeugkopf, Linearführung, Spannfutter.',
     },
     {
       problem:
@@ -125,34 +125,34 @@ const maschinenbau: Branche = {
       title: 'Werkzeugmaschinen-Komplettmodell',
       description:
         'CNC-Fräsmaschine, Drehmaschine oder 5-Achs-Bearbeitungszentrum maßstabsgetreu. Inkl. detaillierter Werkzeugaufnahme, Spannfutter, Maschinengestell.',
-      scaleHint: 'Maßstab 1:5–1:20, Modellgröße 30-80 cm',
+      scaleHint: 'Maßstab 1:5-1:20, Modellgröße 30-80 cm',
       materialHint: 'PLA+ für Detailtreue, PETG für Robustheit',
     },
     {
       title: 'Schnittmodell für Funktionsdarstellung',
       description:
-        'Halbiertes Modell mit sichtbaren Innenkomponenten — Spindel, Antrieb, Kühlmittelkanäle. Perfekt für Schulungen und Engineering-Präsentationen.',
-      scaleHint: 'Maßstab 1:3–1:5',
+        'Halbiertes Modell mit sichtbaren Innenkomponenten · Spindel, Antrieb, Kühlmittelkanäle. Perfekt für Schulungen und Engineering-Präsentationen.',
+      scaleHint: 'Maßstab 1:3-1:5',
       materialHint: 'PLA mit nachbearbeiteter Innenstruktur',
     },
     {
       title: 'Komponentenmodell (Spindel, Werkzeughalter, Steuerung)',
       description:
-        'Wenn nur ein Detail erklärt werden soll — z.B. der eigene Spindelantrieb oder die Werkzeugschnellwechselung. Kompakt, mobil, vermarktbar als Werbegeschenk.',
+        'Wenn nur ein Detail erklärt werden soll · z.B. der eigene Spindelantrieb oder die Werkzeugschnellwechselung. Kompakt, mobil, vermarktbar als Werbegeschenk.',
       scaleHint: 'Maßstab 1:1 (Originalgröße) bis 1:2',
       materialHint: 'ABS für lackierfähige Oberfläche',
     },
     {
       title: 'Werkstück-Demo (Vorher/Nachher)',
       description:
-        'Komplexes Werkstück im Roh- und Fertigbearbeitungs-Zustand — visualisiert was die Maschine kann, ohne die Maschine zu zeigen.',
+        'Komplexes Werkstück im Roh- und Fertigbearbeitungs-Zustand · visualisiert was die Maschine kann, ohne die Maschine zu zeigen.',
       scaleHint: 'Originalgröße',
       materialHint: 'PLA in verschiedenen Farben für Kontrast',
     },
     {
       title: 'Linearführung / Antrieb Cutaway',
       description:
-        'Funktionsmuster eigener Komponenten — Kugelumlaufspindel, Linearführung mit Wälzkörpern. Für Vertriebsgespräche zum Anfassen.',
+        'Funktionsmuster eigener Komponenten · Kugelumlaufspindel, Linearführung mit Wälzkörpern. Für Vertriebsgespräche zum Anfassen.',
       scaleHint: 'Originalgröße oder 1:2',
       materialHint: 'PETG für Robustheit beim häufigen Anfassen',
     },
@@ -164,7 +164,7 @@ const maschinenbau: Branche = {
     },
     {
       name: 'PETG',
-      why: 'Mechanisch robust — überlebt 20+ Messen ohne Beschädigung. Lackierfähig in RAL-Firmenfarbe.',
+      why: 'Mechanisch robust · überlebt 20+ Messen ohne Beschädigung. Lackierfähig in RAL-Firmenfarbe.',
     },
     {
       name: 'ABS',
@@ -172,7 +172,7 @@ const maschinenbau: Branche = {
     },
     {
       name: 'PA6-CF (Carbon-PA)',
-      why: 'Für funktionsfähige Demo-Komponenten — Linearführungen, Spindeln. Mechanisch belastbar.',
+      why: 'Für funktionsfähige Demo-Komponenten · Linearführungen, Spindeln. Mechanisch belastbar.',
     },
   ],
   beispielMessen: [
@@ -228,13 +228,13 @@ const maschinenbau: Branche = {
 // ═══════════════════════════════════════════════════════════════════
 const schiffbau: Branche = {
   slug: 'schiffbau',
-  metaTitle: 'Schiffbau-Messemodell ★5,0 — Antrieb·Propeller·Yacht',
+  metaTitle: 'Schiffbau-Messemodell ★5,0 · Antrieb·Propeller·Yacht',
   metaDescription:
-    'Schiffsantrieb, Schraubantrieb, Marine-Komponente zur Messe — ohne 8-Tonnen-Kran. 3D-Druck 1:10–1:50, segmentiert. ★5,0 (31 Reviews).',
+    'Schiffsantrieb, Schraubantrieb, Marine-Komponente zur Messe · ohne 8-Tonnen-Kran. 3D-Druck 1:10-1:50, segmentiert. ★5,0 (31 Reviews).',
   eyebrow: 'Branche · Schiffbau, Marine & Werften',
-  h1: 'Schiffbau-Messemodell aus dem 3D-Druck — Antriebe, Propeller, Yacht-Visualisierung',
+  h1: 'Schiffbau-Messemodell aus dem 3D-Druck · Antriebe, Propeller, Yacht-Visualisierung',
   subline:
-    'Schraubantriebe, Pod-Drives, Wasserstrahlantriebe, Yacht-Designs, Marine-Komponenten — wenn das Original im Hafen liegt und nicht auf die SMM, METSTRADE oder Posidonia mitkommt, drucken wir es. Segmentierbar, in Originalfarben, bis 2 m+ Länge.',
+    'Schraubantriebe, Pod-Drives, Wasserstrahlantriebe, Yacht-Designs, Marine-Komponenten · wenn das Original im Hafen liegt und nicht auf die SMM, METSTRADE oder Posidonia mitkommt, drucken wir es. Segmentierbar, in Originalfarben, bis 2 m+ Länge.',
   primaryKeyword: 'Schiffbau Messemodell',
   secondaryKeywords: [
     'Schiffsantrieb Modell',
@@ -251,12 +251,12 @@ const schiffbau: Branche = {
   ],
   seoLongTailBody: {
     eyebrow: 'Was wir für Schiffbau & Marine konkret drucken',
-    h2: 'Schiffbau-Modelle aus dem 3D-Druck — Antriebe, Vollschiffe, Marine-Komponenten',
+    h2: 'Schiffbau-Modelle aus dem 3D-Druck · Antriebe, Vollschiffe, Marine-Komponenten',
     paragraphs: [
-      'Ein Schiffsantrieb-Modell ist der häufigste Auftrag aus dieser Branche. Ob Pod-Drive, Voith-Schneider-Propeller, Wasserstrahlantrieb oder konventioneller Schraubantrieb — wir reduzieren das tonnenschwere Original auf einen Maßstab 1:10 bis 1:30. Detaillierte Propeller-Blätter, Anschlussflansche, Gehäuse-Geometrie bleiben dabei naturgetreu. Bei einem Pod-Drive-Modell für die SMM Hamburg oder eine Werft-Messe gehen wir typisch bei 30 bis 80 Zentimetern Modellgröße auf eine Lead-Time von 3-5 Wochen.',
+      'Ein Schiffsantrieb-Modell ist der häufigste Auftrag aus dieser Branche. Ob Pod-Drive, Voith-Schneider-Propeller, Wasserstrahlantrieb oder konventioneller Schraubantrieb · wir reduzieren das tonnenschwere Original auf einen Maßstab 1:10 bis 1:30. Detaillierte Propeller-Blätter, Anschlussflansche, Gehäuse-Geometrie bleiben dabei naturgetreu. Bei einem Pod-Drive-Modell für die SMM Hamburg oder eine Werft-Messe gehen wir typisch bei 30 bis 80 Zentimetern Modellgröße auf eine Lead-Time von 3-5 Wochen.',
       'Vollschiff-Modelle (Yachten, Frachter, Spezialschiffe) bis 2 Meter Modelllänge segmentieren wir konstruktiv. Eine Yacht-Messemodell-Anfrage für die Boot Düsseldorf oder Monaco Yacht Show kommt typisch im Maßstab 1:50 bis 1:200, mit abnehmbaren Decks für Innenraum-Demonstration. Hochwertige Marine-RAL-Lackierung simuliert die echte Schiffsfarbe so präzise, dass das Modell aus 1 m Distanz nicht von Gussteilen unterscheidbar ist. Werften-Refit-Designs bekommen oft den vollen NDA-Workflow, weil sie hochsensible Yacht-Innovationen zeigen.',
-      'Eine Schiffsschraube als 3D-Druck-Exponat in Original-Größe ist machbar bis ca. 60 cm Durchmesser. Das ist die häufigste Anfrage von Antriebs-Herstellern, die ihr neues Blatt-Design auf Engineering-Konferenzen zeigen wollen. PETG-Carbon-Filament gibt der gedruckten Schiffsschraube eine realistische maritime Anmutung. Ein Schraubantrieb-3D-Druck-Schnittmodell mit halbierter Getriebestufe zeigt Live am Stand, wie die Welle vom Motor zur Schraube läuft — perfekte Vertriebs-Bühne für komplexe technische Erklärungen.',
-      'Marine-Exponat-Projekte sind oft Werften-Akquisition-Tools. Mini-Schiffsmodelle 15-25 cm dienen als Werbegeschenke für Top-Leads — eine Klein-Serie von 25-100 Stück mit erhabenem 3D-Logo, robust verpackt in Brand-Hüllen. Kosten ab €40 pro Stück bei 50er-Charge. Werften-Kunden nutzen diese als hochwertige Visitenkarten-Ersatz beim Refit-Pitch — und bekommen oft Folge-Anfragen, weil das Modell physisch beim Engineer auf dem Tisch landet, während die Brochure im Stapel verschwindet.',
+      'Eine Schiffsschraube als 3D-Druck-Exponat in Original-Größe ist machbar bis ca. 60 cm Durchmesser. Das ist die häufigste Anfrage von Antriebs-Herstellern, die ihr neues Blatt-Design auf Engineering-Konferenzen zeigen wollen. PETG-Carbon-Filament gibt der gedruckten Schiffsschraube eine realistische maritime Anmutung. Ein Schraubantrieb-3D-Druck-Schnittmodell mit halbierter Getriebestufe zeigt Live am Stand, wie die Welle vom Motor zur Schraube läuft · perfekte Vertriebs-Bühne für komplexe technische Erklärungen.',
+      'Marine-Exponat-Projekte sind oft Werften-Akquisition-Tools. Mini-Schiffsmodelle 15-25 cm dienen als Werbegeschenke für Top-Leads · eine Klein-Serie von 25-100 Stück mit erhabenem 3D-Logo, robust verpackt in Brand-Hüllen. Kosten ab €40 pro Stück bei 50er-Charge. Werften-Kunden nutzen diese als hochwertige Visitenkarten-Ersatz beim Refit-Pitch · und bekommen oft Folge-Anfragen, weil das Modell physisch beim Engineer auf dem Tisch landet, während die Brochure im Stapel verschwindet.',
     ],
   },
   pains: [
@@ -274,7 +274,7 @@ const schiffbau: Branche = {
     },
     {
       problem:
-        'Bei Werft-Akquisition (Refit-Projekte) braucht der Kunde Material zum Mitnehmen — Brochures vergisst er, ein Modell behält er.',
+        'Bei Werft-Akquisition (Refit-Projekte) braucht der Kunde Material zum Mitnehmen · Brochures vergisst er, ein Modell behält er.',
       solution:
         'Mini-Modelle 15-25 cm als Werbegeschenk für Top-Leads. Stückpreis ab €40 in Klein-Serie 25-100 Stück. Markant gebrandet, 3D-Logo erhaben.',
     },
@@ -284,28 +284,28 @@ const schiffbau: Branche = {
       title: 'Schiffsantrieb Komplettmodell',
       description:
         'Pod-Drive, Schottel-Antrieb, Voith-Schneider-Propeller oder Wasserstrahlantrieb maßstabsgetreu. Mit detaillierten Propeller-Blättern, Gehäuse, Anschlussflanschen.',
-      scaleHint: 'Maßstab 1:10–1:30, Modellgröße 30-80 cm',
+      scaleHint: 'Maßstab 1:10-1:30, Modellgröße 30-80 cm',
       materialHint: 'PETG für Robustheit + maritime Anmutung',
     },
     {
       title: 'Schraubantrieb-Schnittmodell',
       description:
         'Halbierter Antrieb mit sichtbarer Getriebestufe, Welle, Lagerung. Ideal für technische Vertriebsgespräche und Schulungen.',
-      scaleHint: 'Maßstab 1:5–1:10',
+      scaleHint: 'Maßstab 1:5-1:10',
       materialHint: 'PLA für Detailtreue, lackiert in 2 Kontrastfarben',
     },
     {
       title: 'Vollschiff-Modell (Yacht / Frachter / Spezialschiff)',
       description:
         'Komplettes Schiff bis 2 m Modelllänge. Rumpf, Aufbauten, Decks abnehmbar für Innenraum-Visualisierung. Speziell für Boot Düsseldorf, Monaco Yacht Show.',
-      scaleHint: 'Maßstab 1:50–1:200 je nach Schiffsgröße',
+      scaleHint: 'Maßstab 1:50-1:200 je nach Schiffsgröße',
       materialHint: 'PLA + lackiert mit Marine-RAL-Farben',
     },
     {
       title: 'Bug- oder Heck-Sektion (Detail-Modell)',
       description:
-        'Wenn nur ein Schiffsdetail relevant ist — Wulstbug, Heckpropeller, Aufbauten-Design — als Teilmodell für Engineering-Diskussion.',
-      scaleHint: 'Maßstab 1:25–1:50',
+        'Wenn nur ein Schiffsdetail relevant ist · Wulstbug, Heckpropeller, Aufbauten-Design · als Teilmodell für Engineering-Diskussion.',
+      scaleHint: 'Maßstab 1:25-1:50',
       materialHint: 'ABS für lackierfähigen Hochglanz',
     },
     {
@@ -354,7 +354,7 @@ const schiffbau: Branche = {
     {
       question: 'Bis zu welcher Größe können Sie Schiffsmodelle drucken?',
       answer:
-        'Einzelne Druckbett-Größe bis 600x600x600mm. Größere Modelle werden segmentiert gedruckt und unsichtbar verbunden — bis 2 m Modelllänge bei Yacht-Vollmodellen problemlos realisierbar, theoretisch unbegrenzt.',
+        'Einzelne Druckbett-Größe bis 600x600x600mm. Größere Modelle werden segmentiert gedruckt und unsichtbar verbunden · bis 2 m Modelllänge bei Yacht-Vollmodellen problemlos realisierbar, theoretisch unbegrenzt.',
     },
     {
       question: 'Werden Propeller-Blätter exakt nach Original-CAD gedruckt?',
@@ -385,13 +385,13 @@ const schiffbau: Branche = {
 // ═══════════════════════════════════════════════════════════════════
 const energietechnik: Branche = {
   slug: 'energietechnik',
-  metaTitle: 'Energietechnik-Messemodell ★5,0 — Wind·Trafo·Kraftwerk',
+  metaTitle: 'Energietechnik-Messemodell ★5,0 · Wind·Trafo·Kraftwerk',
   metaDescription:
     'Windturbine, PV-Anlage, Trafostation, Kraftwerks-Komponente als Messemodell. 3D-Druck maßstabsgetreu in 24-48h. ★5,0 (31 Reviews). STL hochladen →',
   eyebrow: 'Branche · Energietechnik & Erneuerbare',
-  h1: 'Energietechnik-Messemodell aus dem 3D-Druck — Windturbinen, Trafostationen, Kraftwerks-Komponenten',
+  h1: 'Energietechnik-Messemodell aus dem 3D-Druck · Windturbinen, Trafostationen, Kraftwerks-Komponenten',
   subline:
-    'Windkraftanlagen, PV-Strukturen, Trafostationen, Generatoren, Schaltanlagen — Anlagen die meist gigantisch oder verteilt im Feld stehen, brauchen für Messen und Kundengespräche kompakte, greifbare Modelle. Wir drucken sie maßstabsgetreu in 24-48h.',
+    'Windkraftanlagen, PV-Strukturen, Trafostationen, Generatoren, Schaltanlagen · Anlagen die meist gigantisch oder verteilt im Feld stehen, brauchen für Messen und Kundengespräche kompakte, greifbare Modelle. Wir drucken sie maßstabsgetreu in 24-48h.',
   primaryKeyword: 'Energietechnik Messemodell',
   secondaryKeywords: [
     'Windturbine Modell',
@@ -408,12 +408,12 @@ const energietechnik: Branche = {
   ],
   seoLongTailBody: {
     eyebrow: 'Was wir für Energietechnik konkret drucken',
-    h2: 'Energietechnik-Modelle aus dem 3D-Druck — Wind, Solar, Schaltanlagen, Kraftwerke',
+    h2: 'Energietechnik-Modelle aus dem 3D-Druck · Wind, Solar, Schaltanlagen, Kraftwerke',
     paragraphs: [
-      'Eine Windturbine-Modell-Anfrage erreicht uns typisch im Vorfeld einer Messe wie der HUSUM Wind oder WindEnergy Hamburg. Wir drucken Windkraftanlagen im Maßstab 1:50 bis 1:200 — eine moderne 150-Meter-Anlage wird damit zur 1-1,5 m hohen Tisch-Skulptur mit drehbaren Rotorblättern und abnehmbarem Maschinenhaus. Der Windkraftanlage-3D-Druck zeigt den Generator, das Getriebe, die Bremse als greifbare Innenstruktur — was am Stand mehr verkauft als jede Renderbild-Animation. PETG ist hier das Material der Wahl wegen UV-Stabilität.',
+      'Eine Windturbine-Modell-Anfrage erreicht uns typisch im Vorfeld einer Messe wie der HUSUM Wind oder WindEnergy Hamburg. Wir drucken Windkraftanlagen im Maßstab 1:50 bis 1:200 · eine moderne 150-Meter-Anlage wird damit zur 1-1,5 m hohen Tisch-Skulptur mit drehbaren Rotorblättern und abnehmbarem Maschinenhaus. Der Windkraftanlage-3D-Druck zeigt den Generator, das Getriebe, die Bremse als greifbare Innenstruktur · was am Stand mehr verkauft als jede Renderbild-Animation. PETG ist hier das Material der Wahl wegen UV-Stabilität.',
       'Ein Photovoltaik-Modell oder PV-Anlage-Modell für Bürger-Informationsveranstaltungen verändert die Akzeptanz-Dynamik bei Genehmigungs-Verfahren. Wir drucken Solarpark-Landschaftsmodelle im Maßstab 1:200 bis 1:1000 mit topographisch korrektem Untergrund, einzelne PV-Module mit verspiegelter PET-Folie, integrierte Trafostationen und Wechselrichter-Standorte. Ein Solar-Modell dieser Qualität reduziert nachweislich Bürgerwiderstand, weil die geplante Anlage erstmals physisch erfahrbar wird statt nur als CAD-Render auf der Leinwand zu erscheinen.',
-      'Bei Trafostation-Modellen und Schaltanlage-Modellen geht es um eine andere Liga: Schulungsmaterial und Vertriebs-Demos für EVUs und Stadtwerke. Wir drucken MV-Schaltanlagen im Maßstab 1:5 bis 1:25 mit sichtbaren Sammelschienen, Leistungsschaltern, Stromwandlern. Eine Trafostation-Modell-Schnittansicht zeigt Live wie der Schaltvorgang abläuft — auf Drehkurbel betätigt, ohne Hochspannungs-Risiko. ABS in RAL 7035 (Standard MV-Lichtgrau) ist das Material-Setup, mit lasergravierten Typenschildern als authentischem Detail.',
-      'Ein Wasserkraftwerk-Modell oder Generator-Modell mit Turbinen-Sektion ist die anspruchsvollste Kategorie. Hier kombinieren wir PLA-Detailteile (Leitapparat, Laufrad) mit klaren Acryl-Inserts für sichtbare Strömungsführung — manchmal beleuchtet mit Mini-LED zur Visualisierung. Ein Energiespeicher-Modell (BESS-Container-Stack) wird typisch im Maßstab 1:10 bis 1:25 gedruckt, mit aufklappbarer Frontwand für Modul-Innenansicht. Beide Modell-Typen sind häufige Anfragen für E-world Essen und Power-Gen Europe, wo Netzausbau-Visualisierung ein zentrales Thema ist.',
+      'Bei Trafostation-Modellen und Schaltanlage-Modellen geht es um eine andere Liga: Schulungsmaterial und Vertriebs-Demos für EVUs und Stadtwerke. Wir drucken MV-Schaltanlagen im Maßstab 1:5 bis 1:25 mit sichtbaren Sammelschienen, Leistungsschaltern, Stromwandlern. Eine Trafostation-Modell-Schnittansicht zeigt Live wie der Schaltvorgang abläuft · auf Drehkurbel betätigt, ohne Hochspannungs-Risiko. ABS in RAL 7035 (Standard MV-Lichtgrau) ist das Material-Setup, mit lasergravierten Typenschildern als authentischem Detail.',
+      'Ein Wasserkraftwerk-Modell oder Generator-Modell mit Turbinen-Sektion ist die anspruchsvollste Kategorie. Hier kombinieren wir PLA-Detailteile (Leitapparat, Laufrad) mit klaren Acryl-Inserts für sichtbare Strömungsführung · manchmal beleuchtet mit Mini-LED zur Visualisierung. Ein Energiespeicher-Modell (BESS-Container-Stack) wird typisch im Maßstab 1:10 bis 1:25 gedruckt, mit aufklappbarer Frontwand für Modul-Innenansicht. Beide Modell-Typen sind häufige Anfragen für E-world Essen und Power-Gen Europe, wo Netzausbau-Visualisierung ein zentrales Thema ist.',
     ],
   },
   pains: [
@@ -425,13 +425,13 @@ const energietechnik: Branche = {
     },
     {
       problem:
-        'PV-Anlagen sehen auf Visualisierungen alle gleich aus — Behördentermine und Bürger-Infoveranstaltungen brauchen echte Modelle für Akzeptanz.',
+        'PV-Anlagen sehen auf Visualisierungen alle gleich aus · Behördentermine und Bürger-Infoveranstaltungen brauchen echte Modelle für Akzeptanz.',
       solution:
         'Maßstabsgetreue Landschaftsmodelle mit eingebetteten PV-Strukturen, Trafostationen, Wechselrichtern. Skala 1:200-1:500. Reduziert Bürgerwiderstand bei Genehmigungsverfahren.',
     },
     {
       problem:
-        'Trafostationen und Schaltanlagen sind im Original durch Sicherheits-Vorgaben unzugänglich — Schulung und Vertrieb arbeiten mit theoretischen Plänen.',
+        'Trafostationen und Schaltanlagen sind im Original durch Sicherheits-Vorgaben unzugänglich · Schulung und Vertrieb arbeiten mit theoretischen Plänen.',
       solution:
         'Schnittmodelle mit sichtbaren Schaltgassen, Sammelschienen, Leistungsschaltern. Greifbar für Vertriebsgespräche und Schulungen ohne Sicherheitsrisiko.',
     },
@@ -441,42 +441,42 @@ const energietechnik: Branche = {
       title: 'Windturbine maßstabsgetreu',
       description:
         'Komplette Windkraftanlage 1-1,8m hoch. Drehbare Rotorblätter, abnehmbares Maschinenhaus mit sichtbarer Antriebs-Sektion (Generator, Getriebe, Bremse).',
-      scaleHint: 'Maßstab 1:50–1:200',
+      scaleHint: 'Maßstab 1:50-1:200',
       materialHint: 'PETG für UV-Stabilität, weiß lackiert',
     },
     {
       title: 'PV-Landschaftsmodell',
       description:
         'Solarpark oder Aufdach-Anlage mit topographisch korrektem Untergrund. Module einzeln gedruckt, Reflexbeschichtung möglich. Für Genehmigungs-Termine.',
-      scaleHint: 'Maßstab 1:200–1:1000',
+      scaleHint: 'Maßstab 1:200-1:1000',
       materialHint: 'PLA mit verspiegelter PET-Folie als Modul-Oberfläche',
     },
     {
       title: 'Trafostation Schnittmodell',
       description:
         'Mittelspannungs-Schaltanlage mit sichtbaren Leistungsschaltern, Stromwandlern, Sammelschienen. Schulungs-Klassiker für EVUs und Stadtwerke.',
-      scaleHint: 'Maßstab 1:10–1:25',
+      scaleHint: 'Maßstab 1:10-1:25',
       materialHint: 'ABS für Lackierfähigkeit, RAL 7035 (Lichtgrau standard)',
     },
     {
       title: 'Wasserkraftwerk Sektion',
       description:
         'Turbinen-Sektion mit Leitapparat, Laufrad, Saugrohr. Halbiert für Schnittansicht, beleuchtet mit Mini-LED zur Strömungs-Visualisierung.',
-      scaleHint: 'Maßstab 1:25–1:75',
+      scaleHint: 'Maßstab 1:25-1:75',
       materialHint: 'PLA mit Klarteilen für sichtbare Innenführung',
     },
     {
       title: 'Energiespeicher / Batteriecontainer',
       description:
         'BESS (Battery Energy Storage System) Container-Stack maßstabsgetreu. Mit aufklappbarer Frontwand für Modul-Innenansicht.',
-      scaleHint: 'Maßstab 1:10–1:25',
+      scaleHint: 'Maßstab 1:10-1:25',
       materialHint: 'PETG für Robustheit',
     },
   ],
   materialEmpfehlung: [
     {
       name: 'PETG (UV-stabil)',
-      why: 'Erstwahl für Outdoor-Demonstratoren — bleibt jahrelang formstabil und UV-resistent.',
+      why: 'Erstwahl für Outdoor-Demonstratoren · bleibt jahrelang formstabil und UV-resistent.',
     },
     {
       name: 'PLA + Lackierung',
@@ -515,7 +515,7 @@ const energietechnik: Branche = {
     {
       question: 'Können wir Logos und Anlagen-Branding ins Modell integrieren?',
       answer:
-        'Ja. UV-Druck direkt auf der Modelloberfläche, lasergravierte Metallschilder oder erhabene 3D-Beschriftung — je nach Effektwunsch und Größe.',
+        'Ja. UV-Druck direkt auf der Modelloberfläche, lasergravierte Metallschilder oder erhabene 3D-Beschriftung · je nach Effektwunsch und Größe.',
     },
     {
       question: 'Was kostet ein Windturbinen-Messemodell mit drehbaren Rotorblättern?',
@@ -536,13 +536,13 @@ const energietechnik: Branche = {
 // ═══════════════════════════════════════════════════════════════════
 const automotive: Branche = {
   slug: 'automotive',
-  metaTitle: 'Automotive-Messemodell 3D-Druck ★5,0 — Fahrzeug · Mobility',
+  metaTitle: 'Automotive-Messemodell 3D-Druck ★5,0 · Fahrzeug · Mobility',
   metaDescription:
-    'Fahrzeugbauteil, E-Antrieb, Karosseriedetail, Mobility-Studie als Messemodell. 3D-Druck Maßstab 1:1–1:10, lackierbar. ★5,0 (31 Reviews) →',
+    'Fahrzeugbauteil, E-Antrieb, Karosseriedetail, Mobility-Studie als Messemodell. 3D-Druck Maßstab 1:1-1:10, lackierbar. ★5,0 (31 Reviews) →',
   eyebrow: 'Branche · Automotive & Mobility',
-  h1: 'Automotive-Messemodell aus dem 3D-Druck — Bauteile, E-Antriebe, Mobility-Konzepte',
+  h1: 'Automotive-Messemodell aus dem 3D-Druck · Bauteile, E-Antriebe, Mobility-Konzepte',
   subline:
-    'OEM-Zulieferer, Tier-1-Hersteller, Mobility-Startups — von Karosseriedetails über E-Antriebs-Komponenten bis zu Showcase-Modellen neuer Mobilitätskonzepte. 3D-Druck reduziert Werkzeugkosten um 95% und liefert in 24-48h.',
+    'OEM-Zulieferer, Tier-1-Hersteller, Mobility-Startups · von Karosseriedetails über E-Antriebs-Komponenten bis zu Showcase-Modellen neuer Mobilitätskonzepte. 3D-Druck reduziert Werkzeugkosten um 95% und liefert in 24-48h.',
   primaryKeyword: 'Automotive Messemodell',
   secondaryKeywords: [
     'Fahrzeugbauteil Modell',
@@ -557,24 +557,24 @@ const automotive: Branche = {
   ],
   seoLongTailBody: {
     eyebrow: 'Was wir für Automotive & Mobility konkret drucken',
-    h2: 'Automotive-Modelle aus dem 3D-Druck — Bauteile, E-Antriebe, Konzeptfahrzeuge',
+    h2: 'Automotive-Modelle aus dem 3D-Druck · Bauteile, E-Antriebe, Konzeptfahrzeuge',
     paragraphs: [
-      'Ein Fahrzeugbauteil-Modell für die IAA Mobility oder Automechanika ist die typische Tier-1-Zulieferer-Anfrage. Tür-Sektionen, Heckklappen, Stoßfänger-Ausschnitte mit eingebauter Zulieferer-Komponente — das Karosserie-3D-Druck-Modell lackiert in OEM-Originalfarbe (BMW Alpine White, Audi Ibis White, Mercedes-Benz Polarweiß) macht aus dem Schraubenladen-Auftritt eine Storytelling-Bühne. Wir treffen den Original-Farbcode über RAL/Pantone/OEM-Spezifikation. 2K-Profi-Lackierung mit Klarlack-Versiegelung ergibt Show-Quality-Finish.',
-      'Das E-Antrieb-Modell zeigt was unter der Designhaube versteckt ist und kein Endkunde ohne Cutaway versteht: Permanent-Magnet-Motor, Inverter, Differential, Wickelköpfe. Ein E-Achse-Schnittmodell im Maßstab 1:1 oder 1:2 mit lackierten Kontrastflächen erklärt die Funktion in 30 Sekunden — was am Stand sonst eine 20-minütige Erläuterung mit Schnittzeichnungen wäre. Diese Auto-Messemodelle-Kategorie wächst stark mit der E-Mobility-Welle.',
+      'Ein Fahrzeugbauteil-Modell für die IAA Mobility oder Automechanika ist die typische Tier-1-Zulieferer-Anfrage. Tür-Sektionen, Heckklappen, Stoßfänger-Ausschnitte mit eingebauter Zulieferer-Komponente · das Karosserie-3D-Druck-Modell lackiert in OEM-Originalfarbe (BMW Alpine White, Audi Ibis White, Mercedes-Benz Polarweiß) macht aus dem Schraubenladen-Auftritt eine Storytelling-Bühne. Wir treffen den Original-Farbcode über RAL/Pantone/OEM-Spezifikation. 2K-Profi-Lackierung mit Klarlack-Versiegelung ergibt Show-Quality-Finish.',
+      'Das E-Antrieb-Modell zeigt was unter der Designhaube versteckt ist und kein Endkunde ohne Cutaway versteht: Permanent-Magnet-Motor, Inverter, Differential, Wickelköpfe. Ein E-Achse-Schnittmodell im Maßstab 1:1 oder 1:2 mit lackierten Kontrastflächen erklärt die Funktion in 30 Sekunden · was am Stand sonst eine 20-minütige Erläuterung mit Schnittzeichnungen wäre. Diese Auto-Messemodelle-Kategorie wächst stark mit der E-Mobility-Welle.',
       'Konzeptfahrzeug-Modelle für die IAA, Geneva Motor Show oder Auto Shanghai sind unsere Premium-Liga. Statt €50.000-€200.000 für ein Werkzeugbau-Modell und 8-12 Wochen Lead-Time liefern wir ein Show-Quality-Konzeptfahrzeug aus dem 3D-Druck in 1-2 Wochen für €3.000-€12.000. Modell-Maßstab typisch 1:5 bis 1:10, mit drehbaren Rädern, magnetischen Türen, sichtbarem Innenraum durch Klarteile. Diese Mobility-Konzept-Modelle sind oft mit NDA verbunden, weil sie Vorab-Designs zeigen.',
-      'Innenraum-Modelle (Cockpit, Sitzanordnung, HMI-Display-Position) sind die dritte Sub-Kategorie. Sie werden für OEM-Materialien-Konzept-Diskussionen verwendet — Sitze, Dashboard, Interieur-Komponenten im Maßstab 1:5 bis 1:10, oft mit textilbespannten Sitzflächen für realistische Anmutung. Funktionsmuster-Bauteile in Original-Größe für DV/PV-Tests fertigen wir in PA6-CF (Carbon-Polyamid), das mechanisch nahe Aluminium kommt. Eine Showcar-Komponente in dieser Qualität entspricht zu 95% dem späteren Serienteil.',
+      'Innenraum-Modelle (Cockpit, Sitzanordnung, HMI-Display-Position) sind die dritte Sub-Kategorie. Sie werden für OEM-Materialien-Konzept-Diskussionen verwendet · Sitze, Dashboard, Interieur-Komponenten im Maßstab 1:5 bis 1:10, oft mit textilbespannten Sitzflächen für realistische Anmutung. Funktionsmuster-Bauteile in Original-Größe für DV/PV-Tests fertigen wir in PA6-CF (Carbon-Polyamid), das mechanisch nahe Aluminium kommt. Eine Showcar-Komponente in dieser Qualität entspricht zu 95% dem späteren Serienteil.',
     ],
   },
   pains: [
     {
       problem:
-        'Tier-1-Zulieferer können auf IAA und Automechanika nicht das ganze Auto zeigen — nur ihre Komponente. Aber 100 Bauteile in Vitrinen sehen aus wie ein Schraubenladen.',
+        'Tier-1-Zulieferer können auf IAA und Automechanika nicht das ganze Auto zeigen · nur ihre Komponente. Aber 100 Bauteile in Vitrinen sehen aus wie ein Schraubenladen.',
       solution:
         'Storytelling-Modell: Die Komponente in einem Karosserie-Ausschnitt eingebettet, lackiert in OEM-Farbe. Sofort verständlich, was wo verbaut wird.',
     },
     {
       problem:
-        'E-Mobility-Antriebe sind unter Designhauben versteckt — Endkunden verstehen den Mehrwert nicht.',
+        'E-Mobility-Antriebe sind unter Designhauben versteckt · Endkunden verstehen den Mehrwert nicht.',
       solution:
         'Cutaway-Modelle von E-Achsen mit sichtbarem Motor, Inverter, Getriebe. Lackiert in Kontrastfarben für Funktions-Demo.',
     },
@@ -589,7 +589,7 @@ const automotive: Branche = {
     {
       title: 'Karosserie-Detailmodell mit eingebetteter Komponente',
       description:
-        'Tür, Heckklappe oder Stoßfänger-Sektion lackiert mit OEM-Farbe, deine Zulieferer-Komponente sichtbar verbaut — perfekte Storytelling-Bühne für die IAA.',
+        'Tür, Heckklappe oder Stoßfänger-Sektion lackiert mit OEM-Farbe, deine Zulieferer-Komponente sichtbar verbaut · perfekte Storytelling-Bühne für die IAA.',
       scaleHint: 'Maßstab 1:1 bis 1:3',
       materialHint: 'ABS mit Aceton-Glättung + 2K-Lackierung',
     },
@@ -604,14 +604,14 @@ const automotive: Branche = {
       title: 'Konzeptfahrzeug-Modell (Sportwagen, Mobility-Studie)',
       description:
         'Komplettes Fahrzeug in Show-Quality. Lackiert wie ein 1:1-Showcar, Innenraum durch Klarteile sichtbar, Räder drehbar.',
-      scaleHint: 'Maßstab 1:5–1:10',
+      scaleHint: 'Maßstab 1:5-1:10',
       materialHint: 'PLA + Profi-Lackierung + Klar-Acryl-Scheiben',
     },
     {
       title: 'Innenraum-Modell mit Sitz-Elemente',
       description:
         'Cockpit oder Heck-Innenraum maßstäblich. Sitze, Dashboard, HMI-Display-Position. Für Materialien-Konzept-Diskussionen mit OEMs.',
-      scaleHint: 'Maßstab 1:5–1:10',
+      scaleHint: 'Maßstab 1:5-1:10',
       materialHint: 'PLA-Komponenten + textilbespannte Sitzflächen',
     },
     {
@@ -625,7 +625,7 @@ const automotive: Branche = {
   materialEmpfehlung: [
     {
       name: 'ABS + Aceton-Glättung',
-      why: 'Spritzguss-ähnliche Oberfläche — Standard für Automotive-Show-Quality.',
+      why: 'Spritzguss-ähnliche Oberfläche · Standard für Automotive-Show-Quality.',
     },
     {
       name: 'PA6-CF (Carbon-PA)',
@@ -653,7 +653,7 @@ const automotive: Branche = {
     {
       question: 'Sind die gedruckten Bauteile crashfähig oder nur visuell?',
       answer:
-        'Standard ist visuell. Für funktionsfähige Bauteile (DV/PV-Tests) verwenden wir PA6-CF (Carbon-Polyamid), das mechanisch nahe Aluminium kommt — Belastbarkeit auf Anfrage präzise spezifizierbar.',
+        'Standard ist visuell. Für funktionsfähige Bauteile (DV/PV-Tests) verwenden wir PA6-CF (Carbon-Polyamid), das mechanisch nahe Aluminium kommt · Belastbarkeit auf Anfrage präzise spezifizierbar.',
     },
     {
       question: 'Wie schnell kann ein Konzeptmodell für die IAA fertig sein?',
@@ -684,13 +684,13 @@ const automotive: Branche = {
 // ═══════════════════════════════════════════════════════════════════
 const anlagenbau: Branche = {
   slug: 'anlagenbau',
-  metaTitle: 'Anlagenbau-Messemodell ★5,0 — Pumpe·Ventil·Reaktor',
+  metaTitle: 'Anlagenbau-Messemodell ★5,0 · Pumpe·Ventil·Reaktor',
   metaDescription:
-    'Pumpen, Ventile, Reaktoren, Verfahrenstechnik-Anlagen als Messemodell. 3D-Druck Maßstab 1:5–1:50, segmentierbar, lackierbar. ★5,0 (31 Reviews) →',
+    'Pumpen, Ventile, Reaktoren, Verfahrenstechnik-Anlagen als Messemodell. 3D-Druck Maßstab 1:5-1:50, segmentierbar, lackierbar. ★5,0 (31 Reviews) →',
   eyebrow: 'Branche · Anlagenbau & Verfahrenstechnik',
-  h1: 'Anlagenbau-Messemodell aus dem 3D-Druck — Pumpen, Ventile, Reaktoren, Komplettanlagen',
+  h1: 'Anlagenbau-Messemodell aus dem 3D-Druck · Pumpen, Ventile, Reaktoren, Komplettanlagen',
   subline:
-    'Verfahrenstechnik, Chemie-Anlagen, Pharma, Lebensmittelproduktion — wenn die Anlage 20m hoch und 50m breit ist, drucken wir sie auf 1m. Mit Rohrleitungen, Pumpen, Reaktoren in Originalfarben. Für ACHEMA, Pharma-EXPO, Anuga FoodTec.',
+    'Verfahrenstechnik, Chemie-Anlagen, Pharma, Lebensmittelproduktion · wenn die Anlage 20m hoch und 50m breit ist, drucken wir sie auf 1m. Mit Rohrleitungen, Pumpen, Reaktoren in Originalfarben. Für ACHEMA, Pharma-EXPO, Anuga FoodTec.',
   primaryKeyword: 'Anlagenbau Messemodell',
   secondaryKeywords: [
     'Pumpe Modell',
@@ -707,24 +707,24 @@ const anlagenbau: Branche = {
   ],
   seoLongTailBody: {
     eyebrow: 'Was wir für Anlagenbau & Verfahrenstechnik konkret drucken',
-    h2: 'Anlagenbau-Modelle aus dem 3D-Druck — Pumpen, Ventile, Komplettanlagen',
+    h2: 'Anlagenbau-Modelle aus dem 3D-Druck · Pumpen, Ventile, Komplettanlagen',
     paragraphs: [
-      'Ein Pumpe-Modell als Schnittansicht ist der häufigste Auftrag in dieser Branche — typisch Kreiselpumpe, Membranpumpe oder Dosierpumpe halbiert im Maßstab 1:2 bis 1:5. Das Laufrad ist drehbar gelagert, der Antrieb mit Drehkurbel betätigt, Welle und Lagerung sichtbar in Kontrast-Lackierung. Diese Pumpen-Schnittmodelle sind die Standard-Vertriebs-Muster für Pumpenbauer aus Österreich und Bayern, die auf der ACHEMA Frankfurt oder Powtech Nürnberg konkurrenzfähig auftreten müssen. PETG für mechanische Robustheit beim häufigen Anfassen, PLA für höchste Detailtreue.',
-      'Ventil-Modelle und Apparatemodelle für Vertriebs-Demos drucken wir mit beweglichem Verschluss-Mechanismus. Ob Schieber-, Klappen- oder Kugelventil — Mini-Servo oder manueller Drehknauf macht die Funktion am Stand greifbar. Originalgröße bis Maßstab 1:3 ist die häufige Kombination. Bei sehr komplexen Apparate-Anfragen (Mischer, Rührwerksbehälter, Spezialventile) gehen wir bis Original-Größe, wenn das Bauteil unter 60 cm Kantenlänge bleibt.',
-      'Komplettanlagen-Modelle für die Verfahrenstechnik-Messe sind die anspruchsvollste Kategorie: eine ganze Chemieanlage-Modell- oder Pharmaanlage-Modell-Sektion im Maßstab 1:25 bis 1:50 mit allen Hauptkomponenten farbkodiert nach DIN 2403 (Wasser grün, Dampf rot, Erdgas gelb). Behälter, Rohrleitungen, Pumpen, Wärmetauscher, Reaktoren — alles maßstabsgetreu. Eine solche Prozessanlage-Visualisierung kostet €3.000-€10.000, dauert 4-6 Wochen Lead-Time, ersetzt aber 2D-PFD-Schemas die niemand auf der Messe versteht.',
-      'Wärmetauscher-Modelle und Reaktor-Modelle drucken wir als Schnittansicht mit sichtbarem Rohrbündel oder Heizmantel. ABS mit Aceton-Glättung ergibt eine spritzgussähnliche Oberfläche, die für Hochglanz-Pharma-Pitches passt. Behälterbau-Modelle bekommen oft Chrom-Lackierung oder echte Galvanisierung für die Edelstahl-Anmutung — gerade bei Hygienic-Design-Anlagen für Pharma- und Lebensmittel-Kunden ist diese Optik kritisch für die Glaubwürdigkeit. Bei Investor-Pitches und Tendering-Vorlagen liefern wir auch Premium-Versionen mit beleuchteten Sektionen.',
+      'Ein Pumpe-Modell als Schnittansicht ist der häufigste Auftrag in dieser Branche · typisch Kreiselpumpe, Membranpumpe oder Dosierpumpe halbiert im Maßstab 1:2 bis 1:5. Das Laufrad ist drehbar gelagert, der Antrieb mit Drehkurbel betätigt, Welle und Lagerung sichtbar in Kontrast-Lackierung. Diese Pumpen-Schnittmodelle sind die Standard-Vertriebs-Muster für Pumpenbauer aus Österreich und Bayern, die auf der ACHEMA Frankfurt oder Powtech Nürnberg konkurrenzfähig auftreten müssen. PETG für mechanische Robustheit beim häufigen Anfassen, PLA für höchste Detailtreue.',
+      'Ventil-Modelle und Apparatemodelle für Vertriebs-Demos drucken wir mit beweglichem Verschluss-Mechanismus. Ob Schieber-, Klappen- oder Kugelventil · Mini-Servo oder manueller Drehknauf macht die Funktion am Stand greifbar. Originalgröße bis Maßstab 1:3 ist die häufige Kombination. Bei sehr komplexen Apparate-Anfragen (Mischer, Rührwerksbehälter, Spezialventile) gehen wir bis Original-Größe, wenn das Bauteil unter 60 cm Kantenlänge bleibt.',
+      'Komplettanlagen-Modelle für die Verfahrenstechnik-Messe sind die anspruchsvollste Kategorie: eine ganze Chemieanlage-Modell- oder Pharmaanlage-Modell-Sektion im Maßstab 1:25 bis 1:50 mit allen Hauptkomponenten farbkodiert nach DIN 2403 (Wasser grün, Dampf rot, Erdgas gelb). Behälter, Rohrleitungen, Pumpen, Wärmetauscher, Reaktoren · alles maßstabsgetreu. Eine solche Prozessanlage-Visualisierung kostet €3.000-€10.000, dauert 4-6 Wochen Lead-Time, ersetzt aber 2D-PFD-Schemas die niemand auf der Messe versteht.',
+      'Wärmetauscher-Modelle und Reaktor-Modelle drucken wir als Schnittansicht mit sichtbarem Rohrbündel oder Heizmantel. ABS mit Aceton-Glättung ergibt eine spritzgussähnliche Oberfläche, die für Hochglanz-Pharma-Pitches passt. Behälterbau-Modelle bekommen oft Chrom-Lackierung oder echte Galvanisierung für die Edelstahl-Anmutung · gerade bei Hygienic-Design-Anlagen für Pharma- und Lebensmittel-Kunden ist diese Optik kritisch für die Glaubwürdigkeit. Bei Investor-Pitches und Tendering-Vorlagen liefern wir auch Premium-Versionen mit beleuchteten Sektionen.',
     ],
   },
   pains: [
     {
       problem:
-        'Eine Chemie-Anlage besteht aus 100+ Komponenten verteilt über 3 Stockwerke. Auf der ACHEMA zeigen Sie davon nichts — nur 2D-PFDs am Bildschirm.',
+        'Eine Chemie-Anlage besteht aus 100+ Komponenten verteilt über 3 Stockwerke. Auf der ACHEMA zeigen Sie davon nichts · nur 2D-PFDs am Bildschirm.',
       solution:
         'Komplettanlagen-Modell 1:25 bis 1:50 mit allen Hauptkomponenten farbkodiert (Pumpen blau, Wärmetauscher orange, Reaktoren grün). Sofort verständlich, was wo passiert.',
     },
     {
       problem:
-        'Einzelkomponenten-Hersteller (Pumpen, Ventile, Wärmetauscher) konkurrieren auf Messen mit ähnlichen Specs-Tabellen — niemand erinnert sich an die Specs.',
+        'Einzelkomponenten-Hersteller (Pumpen, Ventile, Wärmetauscher) konkurrieren auf Messen mit ähnlichen Specs-Tabellen · niemand erinnert sich an die Specs.',
       solution:
         'Schnittmodell der eigenen Pumpe/Ventil mit sichtbarer Innenstruktur. Mechanisch betätigbar. Bleibt im Gedächtnis und am Tisch des Engineers.',
     },
@@ -746,7 +746,7 @@ const anlagenbau: Branche = {
     {
       title: 'Ventil-Funktionsmodell',
       description:
-        'Schieber-, Klappen-, Kugelventil mit beweglichem Verschluss. Betätigung durch Mini-Servo oder manuell — perfekte Vertriebsmuster.',
+        'Schieber-, Klappen-, Kugelventil mit beweglichem Verschluss. Betätigung durch Mini-Servo oder manuell · perfekte Vertriebsmuster.',
       scaleHint: 'Originalgröße bis 1:3',
       materialHint: 'PETG für Robustheit beim häufigen Öffnen/Schließen',
     },
@@ -761,14 +761,14 @@ const anlagenbau: Branche = {
       title: 'Komplettanlage 1:25 bis 1:50',
       description:
         'Verfahrenstechnik-Komplettanlage mit Behältern, Rohrleitungen (verschiedene Durchmesser), Pumpen, Wärmetauschern, Reaktoren. Farbkodiert nach Medienführung.',
-      scaleHint: 'Maßstab 1:25–1:50',
+      scaleHint: 'Maßstab 1:25-1:50',
       materialHint: 'PLA-Komponenten, lackiert in Medien-Farbcode',
     },
     {
       title: 'Hygienic-Design-Modell (Pharma, Lebensmittel)',
       description:
         'Anlagen mit Edelstahl-Optik (lackiert oder chromiert), totraumfreien Übergängen, CIP/SIP-Anschlüssen. Zeigt Hygienic-Design-Kompetenz.',
-      scaleHint: 'Maßstab 1:5–1:10',
+      scaleHint: 'Maßstab 1:5-1:10',
       materialHint: 'PLA + Chrom-Lackierung oder echte Galvanisierung',
     },
   ],
@@ -835,13 +835,13 @@ const anlagenbau: Branche = {
 // ═══════════════════════════════════════════════════════════════════
 const elektrotechnik: Branche = {
   slug: 'elektrotechnik',
-  metaTitle: 'Elektrotechnik-Messemodell 3D-Druck — Trafo · Schaltschrank',
+  metaTitle: 'Elektrotechnik-Messemodell 3D-Druck · Trafo · Schaltschrank',
   metaDescription:
-    'Schaltschrank, Trafo, Schaltanlage, MV-Komponente als Messemodell. 3D-Druck Maßstab 1:1–1:10, schnittfähig, lackierbar. ★5,0 (31 Reviews) →',
+    'Schaltschrank, Trafo, Schaltanlage, MV-Komponente als Messemodell. 3D-Druck Maßstab 1:1-1:10, schnittfähig, lackierbar. ★5,0 (31 Reviews) →',
   eyebrow: 'Branche · Elektrotechnik & Messwandler',
-  h1: 'Elektrotechnik-Messemodell aus dem 3D-Druck — Schaltschränke, Trafos, MV-Komponenten',
+  h1: 'Elektrotechnik-Messemodell aus dem 3D-Druck · Schaltschränke, Trafos, MV-Komponenten',
   subline:
-    'Mittelspannungs-Schaltanlagen, Schaltschränke, Trafostationen, Messwandler, Schutzgeräte — wenn die Originalkomponente unter Spannung steht oder im Cage festsitzt, machen Sie eine offene, schnittfähige Show-Version. Drucken wir in 24-48h.',
+    'Mittelspannungs-Schaltanlagen, Schaltschränke, Trafostationen, Messwandler, Schutzgeräte · wenn die Originalkomponente unter Spannung steht oder im Cage festsitzt, machen Sie eine offene, schnittfähige Show-Version. Drucken wir in 24-48h.',
   primaryKeyword: 'Elektrotechnik Messemodell',
   secondaryKeywords: [
     'Schaltschrank Modell',
@@ -857,12 +857,12 @@ const elektrotechnik: Branche = {
   ],
   seoLongTailBody: {
     eyebrow: 'Was wir für Elektrotechnik & Messwandler konkret drucken',
-    h2: 'Elektrotechnik-Modelle aus dem 3D-Druck — Schaltanlagen, Trafos, MV-Komponenten',
+    h2: 'Elektrotechnik-Modelle aus dem 3D-Druck · Schaltanlagen, Trafos, MV-Komponenten',
     paragraphs: [
-      'Ein MV-Schaltanlage-Modell als Schnittmodell ist die häufigste Anfrage aus dieser Branche. Wir drucken Mittelspannungs-Schaltanlagen im Maßstab 1:5 bis 1:10 mit sichtbarem Leistungsschalter, Sammelschienen, Erdungs-Schalter — alle drei Schaltstellungen mechanisch demonstrierbar über Drehkurbel. ABS in RAL 7035 (Standard MV-Lichtgrau) ist das Material-Setup. Diese Schaltanlage-3D-Druck-Modelle landen typisch auf der Hannover Messe oder CIRED European Conference, wo Schutzgeräte-Hersteller und EVUs gezielt nach physisch greifbaren Demonstrationen suchen.',
-      'Ein Trafo-Modell oder Messwandler-Modell drucken wir mit detaillierten Kühlrippen, Anschluss-Bushings, Ölausgleichsbehälter. Verteiltrafo im Maßstab 1:5, Leistungstrafo im Maßstab 1:10 bis 1:25, oder Stromwandler/Spannungswandler in Original-Größe als Vertriebs-Tournee-Muster. PETG mit Strukturlackierung simuliert die Gussgehäuse-Oberfläche überzeugend. Lasergravierte Metall-Inlays für authentische Typenschild-Optik sind Standard — gerade bei MV-Komponenten muss das Etikett aussehen wie das Echte.',
-      'Schaltschrank-Innenraum-Modelle für Vertriebs-Pitches drucken wir im Maßstab 1:3 bis 1:10 mit sichtbaren NH-Sicherungen, Stromwandlern, Reihenklemmen — die Tür geöffnet, alles farbkodiert nach IEC 60446 (braun/schwarz/grau für L1/L2/L3). Ein NS-Verteiler-Modell zeigt das Innenleben das im Original immer hinter geschraubten Türen verschwindet. Schulungs-Sets für neue Mitarbeiter sind eine wachsende Nische — zerlegbare MV-Komponenten ohne Hochspannungs-Risiko, oft genutzt, bei Beschädigung in 48h nachgedruckt.',
-      'Eine besondere Spezialität sind IGBT-Modul-Cutaways und Leistungselektronik-Modelle. Geöffnete IGBT-Module mit sichtbarer Bondtechnik, Frequenzumrichter mit Kühlkörper-Innenstruktur, Schutzgerät-Modelle im Maßstab 1:1 bis 1:2 — alles für Engineering-Pitches und CWIEME-Berlin-Auftritte. PLA mit Klarteil-Deckel ergibt den Effekt von durchsichtigem Industriegehäuse mit funktionalem Inneren. Diese hochdetaillierten Modelle landen typisch bei Kunden mit hohem Engineering-IQ, die Specs-Sheets durchschauen — und durch das Modell trotzdem einen anderen, körperlichen Zugang bekommen.',
+      'Ein MV-Schaltanlage-Modell als Schnittmodell ist die häufigste Anfrage aus dieser Branche. Wir drucken Mittelspannungs-Schaltanlagen im Maßstab 1:5 bis 1:10 mit sichtbarem Leistungsschalter, Sammelschienen, Erdungs-Schalter · alle drei Schaltstellungen mechanisch demonstrierbar über Drehkurbel. ABS in RAL 7035 (Standard MV-Lichtgrau) ist das Material-Setup. Diese Schaltanlage-3D-Druck-Modelle landen typisch auf der Hannover Messe oder CIRED European Conference, wo Schutzgeräte-Hersteller und EVUs gezielt nach physisch greifbaren Demonstrationen suchen.',
+      'Ein Trafo-Modell oder Messwandler-Modell drucken wir mit detaillierten Kühlrippen, Anschluss-Bushings, Ölausgleichsbehälter. Verteiltrafo im Maßstab 1:5, Leistungstrafo im Maßstab 1:10 bis 1:25, oder Stromwandler/Spannungswandler in Original-Größe als Vertriebs-Tournee-Muster. PETG mit Strukturlackierung simuliert die Gussgehäuse-Oberfläche überzeugend. Lasergravierte Metall-Inlays für authentische Typenschild-Optik sind Standard · gerade bei MV-Komponenten muss das Etikett aussehen wie das Echte.',
+      'Schaltschrank-Innenraum-Modelle für Vertriebs-Pitches drucken wir im Maßstab 1:3 bis 1:10 mit sichtbaren NH-Sicherungen, Stromwandlern, Reihenklemmen · die Tür geöffnet, alles farbkodiert nach IEC 60446 (braun/schwarz/grau für L1/L2/L3). Ein NS-Verteiler-Modell zeigt das Innenleben das im Original immer hinter geschraubten Türen verschwindet. Schulungs-Sets für neue Mitarbeiter sind eine wachsende Nische · zerlegbare MV-Komponenten ohne Hochspannungs-Risiko, oft genutzt, bei Beschädigung in 48h nachgedruckt.',
+      'Eine besondere Spezialität sind IGBT-Modul-Cutaways und Leistungselektronik-Modelle. Geöffnete IGBT-Module mit sichtbarer Bondtechnik, Frequenzumrichter mit Kühlkörper-Innenstruktur, Schutzgerät-Modelle im Maßstab 1:1 bis 1:2 · alles für Engineering-Pitches und CWIEME-Berlin-Auftritte. PLA mit Klarteil-Deckel ergibt den Effekt von durchsichtigem Industriegehäuse mit funktionalem Inneren. Diese hochdetaillierten Modelle landen typisch bei Kunden mit hohem Engineering-IQ, die Specs-Sheets durchschauen · und durch das Modell trotzdem einen anderen, körperlichen Zugang bekommen.',
     ],
   },
   pains: [
@@ -874,13 +874,13 @@ const elektrotechnik: Branche = {
     },
     {
       problem:
-        'Trafo-Hersteller konkurrieren mit Specs-Sheets — gefühlt austauschbar. Customer kann sich später an niemanden erinnern.',
+        'Trafo-Hersteller konkurrieren mit Specs-Sheets · gefühlt austauschbar. Customer kann sich später an niemanden erinnern.',
       solution:
         'Mini-Trafo als 3D-gedrucktes Tisch-Modell mit Original-Schaltbild, lasergraviertes Hersteller-Logo. Wird mitgenommen und steht im Engineer-Büro.',
     },
     {
       problem:
-        'Schulungen für neue Mitarbeiter brauchen physische Modelle der MV-Komponenten — Originale sind gesperrt unter Hochspannung.',
+        'Schulungen für neue Mitarbeiter brauchen physische Modelle der MV-Komponenten · Originale sind gesperrt unter Hochspannung.',
       solution:
         'Schulungs-Sets mit zerlegbaren MV-Komponenten. Sicher, oft genutzt, bei Beschädigung in 48h nachgedruckt.',
     },
@@ -903,7 +903,7 @@ const elektrotechnik: Branche = {
     {
       title: 'Stromwandler / Spannungswandler 1:1',
       description:
-        'Originalgröße-Modell des eigenen Messwandlers — gedruckt für Vertriebs-Tournee. Tragbar, lasergraviertes Typenschild.',
+        'Originalgröße-Modell des eigenen Messwandlers · gedruckt für Vertriebs-Tournee. Tragbar, lasergraviertes Typenschild.',
       scaleHint: 'Maßstab 1:1',
       materialHint: 'PETG + Strukturlackierung wie Gussgehäuse',
     },
@@ -954,7 +954,7 @@ const elektrotechnik: Branche = {
     {
       question: 'Sind die Schaltvorgänge in einem MV-Modell mechanisch demonstrierbar?',
       answer:
-        'Ja. Leistungsschalter-Trennstellung über Drehkurbel oder Hebel beweglich. Erdungs-Schalter, Wartungs-Trennposition — alle drei Schaltstellungen demonstrierbar.',
+        'Ja. Leistungsschalter-Trennstellung über Drehkurbel oder Hebel beweglich. Erdungs-Schalter, Wartungs-Trennposition · alle drei Schaltstellungen demonstrierbar.',
     },
     {
       question: 'Können wir aus mehreren Modellen einen kompletten Anlagenraum bauen?',

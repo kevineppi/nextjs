@@ -1,9 +1,9 @@
 /**
- * Lokale Kevin-Anchor-Texte pro Bundesland — ek-druck
+ * Lokale Kevin-Anchor-Texte pro Bundesland · ek-druck
  * ──────────────────────────────────────────────────────────────────
  *
  * KERN-DATEN für SEO-Differenzierung: jedes Bundesland bekommt einen
- * substantiellen, unique, persönlichen Content-Block — geschrieben aus
+ * substantiellen, unique, persönlichen Content-Block · geschrieben aus
  * Kevin's Perspektive, mit lokalen Bezugspunkten, ehrlichen Liefer-
  * Realitäten und konkreten Messen-Daten 2026/2027.
  *
@@ -33,7 +33,7 @@ export interface LocalKevinAnchor {
     outcome: string
   }[]
 
-  // Liefer-Realität — ehrlich
+  // Liefer-Realität · ehrlich
   deliveryReality: {
     standardDays: string
     expressOption: string
@@ -50,7 +50,7 @@ export interface LocalKevinAnchor {
   }[]
 
   // Welche Branchen-Cluster sind in dieser Region besonders relevant
-  // (für Cross-Linking-Empfehlung — verweist auf /branchen/<slug>)
+  // (für Cross-Linking-Empfehlung · verweist auf /branchen/<slug>)
   dominantBranchen: string[] // slugs
 
   // Lokale Vokabeln/Begriffe die User in dieser Region nutzen
@@ -66,11 +66,11 @@ export const regionalKevinAnchors: Record<string, LocalKevinAnchor> = {
   'wien': {
     anchorTitle: 'Warum Wien für ekdruck besonders ist',
     whyThisRegion:
-      'Wien ist mein zweitwichtigster Markt nach Oberösterreich — Startups suchen Pitch-Modelle, Architekturbüros liefern wöchentlich CAD-Daten, und die Messen am Messezentrum bringen jeden Herbst und Frühjahr eine konzentrierte Nachfrage-Welle.',
+      'Wien ist mein zweitwichtigster Markt nach Oberösterreich · Startups suchen Pitch-Modelle, Architekturbüros liefern wöchentlich CAD-Daten, und die Messen am Messezentrum bringen jeden Herbst und Frühjahr eine konzentrierte Nachfrage-Welle.',
     personalStory: [
-      'Wien erreiche ich von Gunskirchen aus per ÖPOST oder Express-Kurier zuverlässig in 1-2 Tagen. Bei knappen Deadlines fahre ich auch selbst — die A1 hat keine 200km, das ist eine Tagesreise. Für persönliche Anlieferung gilt: bis Donnerstag 14 Uhr bestellt = Freitag in Wien.',
-      'Die Wiener Architektur-Szene rund um Wettbewerbe und Stadtentwicklungs-Projekte ist einer der konstantesten Abnehmer für Modelle im Maßstab 1:200 bis 1:500. Wenn Sie für einen Wiener Bauträger oder die MA21 ein Modell brauchen — typische Lieferzeit 5-7 Werktage, mit Express auf 3 Tage komprimierbar.',
-      'Wo es bei Wien schwierig wird: Schwere Modelle über 15 kg oder sperrige Yacht-Modelle 2m+ — da macht persönliche Anlieferung mehr Sinn als Speditions-Versand. Sprechen Sie mich an, dann disponiere ich einen Termin.',
+      'Wien erreiche ich von Gunskirchen aus per ÖPOST oder Express-Kurier zuverlässig in 1-2 Tagen. Bei knappen Deadlines fahre ich auch selbst · die A1 hat keine 200km, das ist eine Tagesreise. Für persönliche Anlieferung gilt: bis Donnerstag 14 Uhr bestellt = Freitag in Wien.',
+      'Die Wiener Architektur-Szene rund um Wettbewerbe und Stadtentwicklungs-Projekte ist einer der konstantesten Abnehmer für Modelle im Maßstab 1:200 bis 1:500. Wenn Sie für einen Wiener Bauträger oder die MA21 ein Modell brauchen · typische Lieferzeit 5-7 Werktage, mit Express auf 3 Tage komprimierbar.',
+      'Wo es bei Wien schwierig wird: Schwere Modelle über 15 kg oder sperrige Yacht-Modelle 2m+ · da macht persönliche Anlieferung mehr Sinn als Speditions-Versand. Sprechen Sie mich an, dann disponiere ich einen Termin.',
     ],
     realCaseSnapshot: [
       {
@@ -88,7 +88,7 @@ export const regionalKevinAnchors: Record<string, LocalKevinAnchor> = {
       standardDays: '1-2 Tage per ÖPOST Express',
       expressOption: 'Same-Day-Kurier bis 16 Uhr buchbar (~€80 Aufpreis)',
       personalDelivery: true,
-      personalDeliveryNote: 'Persönliche Übergabe in Wien gegen Spesen-Pauschale €120 — primär für sensible/teure Modelle',
+      personalDeliveryNote: 'Persönliche Übergabe in Wien gegen Spesen-Pauschale €120 · primär für sensible/teure Modelle',
     },
     upcomingMessen2026: [
       { name: 'Vienna Design Week', location: 'Messe Wien', date: 'Sept 2026', relevance: 'Designstudien, Möbel-Mockups' },
@@ -104,14 +104,14 @@ export const regionalKevinAnchors: Record<string, LocalKevinAnchor> = {
   //   OBERÖSTERREICH (Kevin's Home Market!)
   // ═══════════════════════════════════════════════════════════════
   'oberoesterreich': {
-    anchorTitle: 'Oberösterreich — mein Heimatmarkt',
+    anchorTitle: 'Oberösterreich · mein Heimatmarkt',
     whyThisRegion:
-      'Ich bin in Gunskirchen geboren und hier ist die Werkstatt. Oberösterreich ist mein wichtigster Markt — 50%+ aller Aufträge gehen an OÖ-Kunden, und für viele bin ich persönlich erreichbar in unter 30 Minuten. Same-Day-Lieferung ist hier Realität, nicht Marketing.',
+      'Ich bin in Gunskirchen geboren und hier ist die Werkstatt. Oberösterreich ist mein wichtigster Markt · 50%+ aller Aufträge gehen an OÖ-Kunden, und für viele bin ich persönlich erreichbar in unter 30 Minuten. Same-Day-Lieferung ist hier Realität, nicht Marketing.',
     personalStory: [
-      'Mein Standort liegt zwischen Wels und Linz — die A1 ist um die Ecke. Linz-Innenstadt erreiche ich in 20 Minuten, Wels-Zentrum in 8 Minuten. Für viele OÖ-Kunden hole ich CAD-Skizzen persönlich ab oder bringe das fertige Modell zur Übergabe ins Büro. Dieser Service kostet nicht extra — solange Sie in einem 50km-Radius um Gunskirchen sind.',
-      'OÖ ist Industrie-Schwergewicht: voestalpine, KTM, Fronius, BMW Motoren Steyr, Lenzing, Pöttinger — und das ist nur die erste Liga. Tausende KMU im Maschinenbau, Werkzeugbau und Anlagenbau sitzen hier dichter als irgendwo sonst in DACH. Wenn Sie ein Messemodell für die Hannover Messe brauchen und Ihre Konstruktion sitzt in Steyr, Wels, Linz oder Vöcklabruck — wir sind 15-40 Minuten voneinander entfernt.',
+      'Mein Standort liegt zwischen Wels und Linz · die A1 ist um die Ecke. Linz-Innenstadt erreiche ich in 20 Minuten, Wels-Zentrum in 8 Minuten. Für viele OÖ-Kunden hole ich CAD-Skizzen persönlich ab oder bringe das fertige Modell zur Übergabe ins Büro. Dieser Service kostet nicht extra · solange Sie in einem 50km-Radius um Gunskirchen sind.',
+      'OÖ ist Industrie-Schwergewicht: voestalpine, KTM, Fronius, BMW Motoren Steyr, Lenzing, Pöttinger · und das ist nur die erste Liga. Tausende KMU im Maschinenbau, Werkzeugbau und Anlagenbau sitzen hier dichter als irgendwo sonst in DACH. Wenn Sie ein Messemodell für die Hannover Messe brauchen und Ihre Konstruktion sitzt in Steyr, Wels, Linz oder Vöcklabruck · wir sind 15-40 Minuten voneinander entfernt.',
       'Lieblings-Setup für OÖ-Aussteller: Kurzbesprechung bei Ihnen im Büro (oder bei mir in der Werkstatt), CAD am gleichen Tag, Druck startet noch in der gleichen Woche, persönliche Anlieferung 2-3 Wochen später. Das ist nirgends in Österreich so logistisch entspannt wie in OÖ.',
-      'Was OÖ besonders gut funktioniert: Schnitt- und Funktionsmodelle für Werkzeugmaschinen-Hersteller — die EMO, AMB, INTEC sind die Hauptmessen, und ich kenne den typischen Druckumfang (3-7 Komponenten, 4-8 Wochen Vorlauf, oft mit NDA).',
+      'Was OÖ besonders gut funktioniert: Schnitt- und Funktionsmodelle für Werkzeugmaschinen-Hersteller · die EMO, AMB, INTEC sind die Hauptmessen, und ich kenne den typischen Druckumfang (3-7 Komponenten, 4-8 Wochen Vorlauf, oft mit NDA).',
     ],
     realCaseSnapshot: [
       {
@@ -122,7 +122,7 @@ export const regionalKevinAnchors: Record<string, LocalKevinAnchor> = {
       {
         customerType: 'Kunststoff-Cluster-Mitglied, Linz-Land',
         project: 'Designstudie für eine neue Verschluss-Geometrie, 4 Iterationen über 3 Monate',
-        outcome: 'Same-Day-Iteration für 3 von 4 Druck-Zyklen — beschleunigte den internen Entwicklungs-Sprint um 2 Wochen.',
+        outcome: 'Same-Day-Iteration für 3 von 4 Druck-Zyklen · beschleunigte den internen Entwicklungs-Sprint um 2 Wochen.',
       },
       {
         customerType: 'Architekturbüro Linz',
@@ -132,7 +132,7 @@ export const regionalKevinAnchors: Record<string, LocalKevinAnchor> = {
     ],
     deliveryReality: {
       standardDays: 'Same-Day oder Next-Day möglich',
-      expressOption: 'Persönliche Abholung in Gunskirchen jederzeit — Standard kostenfrei für OÖ-Kunden im 50km-Radius',
+      expressOption: 'Persönliche Abholung in Gunskirchen jederzeit · Standard kostenfrei für OÖ-Kunden im 50km-Radius',
       personalDelivery: true,
       personalDeliveryNote: 'Persönliche Anlieferung in Linz, Wels, Steyr, Vöcklabruck, Ried, Schärding kostenfrei (im normalen Lieferzyklus). Bei Express-Sonderfahrten Spesen-Pauschale.',
     },
@@ -150,13 +150,13 @@ export const regionalKevinAnchors: Record<string, LocalKevinAnchor> = {
   //   STEIERMARK
   // ═══════════════════════════════════════════════════════════════
   'steiermark': {
-    anchorTitle: 'Steiermark — Green Tech, TU-Forschung, Automotive-Cluster',
+    anchorTitle: 'Steiermark · Green Tech, TU-Forschung, Automotive-Cluster',
     whyThisRegion:
       'Die Steiermark ist gleichzeitig Automotive-Schwerpunkt (AVL, Magna Steyr, KTM Components) und Green-Tech-Hub. Das macht die Anfrage-Mischung interessant: Konzeptmodelle für E-Mobility-Komponenten neben Forschungsmodellen aus TU Graz und FH Joanneum.',
     personalStory: [
-      'Die Steiermark erreiche ich über die A9 — Lieferung nach Graz dauert per Paketdienst 2 Werktage, per Express 1 Tag. Für persönliche Übergabe-Termine reise ich Mittwochs nach Graz (eingetaktet) oder ad-hoc bei größeren Projekten ab €3.000.',
-      'Was die Steiermark spannend macht: Hier sitzen die Engineering-Teams die echte Engineering-Modelle brauchen. AVL und Magna-Steyr arbeiten an E-Antrieben und Hybridsystemen — wenn Sie für die IAA München oder die Vienna Autoshow ein Cutaway-Modell brauchen, das den Wickelkopf einer E-Maschine zeigt, dann ist das genau meine Liga. PA6-CF für die mechanisch belasteten Sektionen, PLA für die Hochglanz-Show-Oberflächen.',
-      'TU-Graz-Diplomanden und FH-Joanneum-Projekte sind ein kleiner aber feiner Sub-Markt: oft kleine Stückzahlen, oft sehr klare Spezifikationen, manchmal Forschungs-Kooperationen wo ich auch CAD-Inputs gegen Lieferung in Naturalien tausche. Wenn Sie an einer Hochschule arbeiten — fragen Sie nach Sonderkonditionen.',
+      'Die Steiermark erreiche ich über die A9 · Lieferung nach Graz dauert per Paketdienst 2 Werktage, per Express 1 Tag. Für persönliche Übergabe-Termine reise ich Mittwochs nach Graz (eingetaktet) oder ad-hoc bei größeren Projekten ab €3.000.',
+      'Was die Steiermark spannend macht: Hier sitzen die Engineering-Teams die echte Engineering-Modelle brauchen. AVL und Magna-Steyr arbeiten an E-Antrieben und Hybridsystemen · wenn Sie für die IAA München oder die Vienna Autoshow ein Cutaway-Modell brauchen, das den Wickelkopf einer E-Maschine zeigt, dann ist das genau meine Liga. PA6-CF für die mechanisch belasteten Sektionen, PLA für die Hochglanz-Show-Oberflächen.',
+      'TU-Graz-Diplomanden und FH-Joanneum-Projekte sind ein kleiner aber feiner Sub-Markt: oft kleine Stückzahlen, oft sehr klare Spezifikationen, manchmal Forschungs-Kooperationen wo ich auch CAD-Inputs gegen Lieferung in Naturalien tausche. Wenn Sie an einer Hochschule arbeiten · fragen Sie nach Sonderkonditionen.',
     ],
     realCaseSnapshot: [
       {
@@ -174,7 +174,7 @@ export const regionalKevinAnchors: Record<string, LocalKevinAnchor> = {
       standardDays: '2 Tage per ÖPOST',
       expressOption: '1-Tag-Express (DPD Express) ~€25 Aufpreis',
       personalDelivery: true,
-      personalDeliveryNote: 'Persönliche Anlieferung Graz nach Voranmeldung — Mittwochs eingetaktet, ad-hoc gegen Kostenbeteiligung',
+      personalDeliveryNote: 'Persönliche Anlieferung Graz nach Voranmeldung · Mittwochs eingetaktet, ad-hoc gegen Kostenbeteiligung',
     },
     upcomingMessen2026: [
       { name: 'Grazer Herbstmesse', location: 'Messe Graz', date: 'Sept 2026', relevance: 'B2C-Designstudien, Architektur, Holzbau' },
@@ -189,13 +189,13 @@ export const regionalKevinAnchors: Record<string, LocalKevinAnchor> = {
   //   SALZBURG
   // ═══════════════════════════════════════════════════════════════
   'salzburg': {
-    anchorTitle: 'Salzburg — Tourismus, Lichttechnik, kleiner aber präziser Markt',
+    anchorTitle: 'Salzburg · Tourismus, Lichttechnik, kleiner aber präziser Markt',
     whyThisRegion:
-      'Salzburg ist von meinem Standort 1h Fahrt — Lieferung Next-Day per ÖPOST, persönliche Anlieferung nach Voranmeldung. Die Industrie hier ist konzentrierter aber spezialisierter: Lichttechnik (Zumtobel-Spin-offs), Tourismus-Equipment, und überraschend stark Architekturbüros mit Schwerpunkt Adaptive Reuse historischer Bausubstanz.',
+      'Salzburg ist von meinem Standort 1h Fahrt · Lieferung Next-Day per ÖPOST, persönliche Anlieferung nach Voranmeldung. Die Industrie hier ist konzentrierter aber spezialisierter: Lichttechnik (Zumtobel-Spin-offs), Tourismus-Equipment, und überraschend stark Architekturbüros mit Schwerpunkt Adaptive Reuse historischer Bausubstanz.',
     personalStory: [
-      'Salzburg-Stadt erreiche ich verlässlich am Folgetag — die A1/A8-Verbindung ist eine der besten in Österreich. Für persönliche Übergaben gilt: Donnerstag-Fahrten sind aktuell mein Salzburg-Slot.',
-      'Was Salzburg besonders nachfragt: Architekturmodelle für Sanierungs-Projekte historischer Gebäude. Maßstab oft 1:50 bis 1:100, viele kleine Detail-Modelle für Steinmetz-Arbeiten, Stuckdetails, Holzkonstruktionen. Das ist Modellbau-Handwerk im klassischen Sinne — und 3D-Druck kann hier mit kombinierten Verfahren glänzen (gedruckter Rohbau + Handnachbearbeitung der Detail-Oberflächen).',
-      'Für Festspiele-bezogene Auftraggeber (Bühnentechnik-Dienstleister, Set-Designer) habe ich gelegentlich Sonderaufträge — meist sehr kurzfristig, oft mit unklarer Spezifikation. Wenn das Ihre Liga ist, rufen Sie an statt zu mailen, da geht es schneller.',
+      'Salzburg-Stadt erreiche ich verlässlich am Folgetag · die A1/A8-Verbindung ist eine der besten in Österreich. Für persönliche Übergaben gilt: Donnerstag-Fahrten sind aktuell mein Salzburg-Slot.',
+      'Was Salzburg besonders nachfragt: Architekturmodelle für Sanierungs-Projekte historischer Gebäude. Maßstab oft 1:50 bis 1:100, viele kleine Detail-Modelle für Steinmetz-Arbeiten, Stuckdetails, Holzkonstruktionen. Das ist Modellbau-Handwerk im klassischen Sinne · und 3D-Druck kann hier mit kombinierten Verfahren glänzen (gedruckter Rohbau + Handnachbearbeitung der Detail-Oberflächen).',
+      'Für Festspiele-bezogene Auftraggeber (Bühnentechnik-Dienstleister, Set-Designer) habe ich gelegentlich Sonderaufträge · meist sehr kurzfristig, oft mit unklarer Spezifikation. Wenn das Ihre Liga ist, rufen Sie an statt zu mailen, da geht es schneller.',
     ],
     realCaseSnapshot: [
       {
@@ -208,7 +208,7 @@ export const regionalKevinAnchors: Record<string, LocalKevinAnchor> = {
       standardDays: '1 Tag per ÖPOST',
       expressOption: 'Same-Day-Kurier möglich gegen Aufpreis',
       personalDelivery: true,
-      personalDeliveryNote: 'Donnerstags eingetaktet — andere Tage gegen Kostenbeteiligung',
+      personalDeliveryNote: 'Donnerstags eingetaktet · andere Tage gegen Kostenbeteiligung',
     },
     upcomingMessen2026: [
       { name: 'BAUEN + WOHNEN Salzburg', location: 'Messezentrum Salzburg', date: 'Jan 2027', relevance: 'Architektur, Haustechnik' },
@@ -222,13 +222,13 @@ export const regionalKevinAnchors: Record<string, LocalKevinAnchor> = {
   //   KÄRNTEN
   // ═══════════════════════════════════════════════════════════════
   'kaernten': {
-    anchorTitle: 'Kärnten — Holzindustrie, Elektronik, Tauernautobahn',
+    anchorTitle: 'Kärnten · Holzindustrie, Elektronik, Tauernautobahn',
     whyThisRegion:
-      'Kärnten ist ein kleiner Markt für ek-druck — aber ein wichtiger: Infineon, Flex, KELAG haben Engineering-Teams hier, und die Holzindustrie rund um Wolfsberg, St. Veit und Villach bringt regelmäßig Anfragen für Verbindungselement-Studien und Spezialgeräte-Mockups.',
+      'Kärnten ist ein kleiner Markt für ek-druck · aber ein wichtiger: Infineon, Flex, KELAG haben Engineering-Teams hier, und die Holzindustrie rund um Wolfsberg, St. Veit und Villach bringt regelmäßig Anfragen für Verbindungselement-Studien und Spezialgeräte-Mockups.',
     personalStory: [
-      'Kärnten erreiche ich über die A10 — Lieferung dauert 2 Werktage per Standard-Versand. Persönliche Lieferungen sind selten (zu weit für Day-Trip), aber bei größeren Projekten habe ich Klagenfurt-Termine schon gemacht.',
+      'Kärnten erreiche ich über die A10 · Lieferung dauert 2 Werktage per Standard-Versand. Persönliche Lieferungen sind selten (zu weit für Day-Trip), aber bei größeren Projekten habe ich Klagenfurt-Termine schon gemacht.',
       'Was in Kärnten gut läuft: Elektronik-Gehäuse-Mockups und Schaltschrank-Modelle für Engineering-Teams. Aceton-Glättung gibt da den Industrie-Look, den die Lieferanten von Infineon/KELAG erwarten. PETG für robuste Daueranfass-Modelle (Schulungen, Messeauftritte).',
-      'Wenn Sie aus der Holzindustrie kommen: 3D-Druck ergänzt Ihren Modellbau für Sonderverbindungen, Beschläge, Designstudien. Das volle Original-Modell bleibt in Holz — aber für die kleinen, komplexen Details ist FDM-Druck deutlich schneller und günstiger.',
+      'Wenn Sie aus der Holzindustrie kommen: 3D-Druck ergänzt Ihren Modellbau für Sonderverbindungen, Beschläge, Designstudien. Das volle Original-Modell bleibt in Holz · aber für die kleinen, komplexen Details ist FDM-Druck deutlich schneller und günstiger.',
     ],
     realCaseSnapshot: [
       {
@@ -255,13 +255,13 @@ export const regionalKevinAnchors: Record<string, LocalKevinAnchor> = {
   //   NIEDERÖSTERREICH
   // ═══════════════════════════════════════════════════════════════
   'niederoesterreich': {
-    anchorTitle: 'Niederösterreich — KMU-Vielfalt, Wiener Speckgürtel, Agrartechnik',
+    anchorTitle: 'Niederösterreich · KMU-Vielfalt, Wiener Speckgürtel, Agrartechnik',
     whyThisRegion:
       'Niederösterreich ist das größte Bundesland und ein extrem vielfältiger Markt: Wiener Speckgürtel (Technologie-KMU), Industrieviertel (Maschinenbau-Cluster), Mostviertel (Agrartechnik), Waldviertel (Holzverarbeitung, Spezialfertigung). Lieferung erreicht alle Regionen verlässlich.',
     personalStory: [
       'Über die A1 sind St. Pölten und Wiener Neustadt für mich problemlos in 1-2 Tagen erreichbar. Bei größeren Projekten im Speckgürtel (Mödling, Baden, Wiener Neudorf) kombiniere ich Anlieferungen mit Wien-Terminen.',
-      'Was NÖ besonders gut funktioniert: KMU mit 5-50 Mitarbeitern brauchen flexibel kleine Stückzahlen — Konzeptmodelle, Vorabmodelle für Werkstücke, Visualisierungen für Kundengespräche. Die typische NÖ-Anfrage: "Wir brauchen 2 Stück, schnell, in ordentlicher Qualität, ohne ewige Spezifikations-Diskussion". Genau dafür ist FDM-Druck gemacht.',
-      'Die Agrartechnik-Szene im Mostviertel und Marchfeld bringt überraschend regelmäßig Anfragen für Spezialgeräte-Modelle — Maschinen die nur in 50 Stück pro Jahr gefertigt werden, die brauchen oft schnelle Designstudien bevor Stahlguss-Werkzeuge bestellt werden.',
+      'Was NÖ besonders gut funktioniert: KMU mit 5-50 Mitarbeitern brauchen flexibel kleine Stückzahlen · Konzeptmodelle, Vorabmodelle für Werkstücke, Visualisierungen für Kundengespräche. Die typische NÖ-Anfrage: "Wir brauchen 2 Stück, schnell, in ordentlicher Qualität, ohne ewige Spezifikations-Diskussion". Genau dafür ist FDM-Druck gemacht.',
+      'Die Agrartechnik-Szene im Mostviertel und Marchfeld bringt überraschend regelmäßig Anfragen für Spezialgeräte-Modelle · Maschinen die nur in 50 Stück pro Jahr gefertigt werden, die brauchen oft schnelle Designstudien bevor Stahlguss-Werkzeuge bestellt werden.',
     ],
     realCaseSnapshot: [
       {
@@ -293,13 +293,13 @@ export const regionalKevinAnchors: Record<string, LocalKevinAnchor> = {
   //   VORARLBERG
   // ═══════════════════════════════════════════════════════════════
   'vorarlberg': {
-    anchorTitle: 'Vorarlberg — Export-Industrie, hochpräzise Anfragen, weiter Weg',
+    anchorTitle: 'Vorarlberg · Export-Industrie, hochpräzise Anfragen, weiter Weg',
     whyThisRegion:
-      'Vorarlberg ist mein westlichster Markt — geografisch herausfordernd (5h Fahrt von Gunskirchen), aber qualitativ einer der spannendsten. Die exportorientierte Industrie im Rheintal (Hilti CH-Affinität, Liebherr, Doppelmayr, Julius Blum, Hirschmann) hat einen extrem hohen Qualitätsanspruch — und freut sich, wenn ein österreichischer Anbieter das liefert ohne über die deutsche Grenze gehen zu müssen.',
+      'Vorarlberg ist mein westlichster Markt · geografisch herausfordernd (5h Fahrt von Gunskirchen), aber qualitativ einer der spannendsten. Die exportorientierte Industrie im Rheintal (Hilti CH-Affinität, Liebherr, Doppelmayr, Julius Blum, Hirschmann) hat einen extrem hohen Qualitätsanspruch · und freut sich, wenn ein österreichischer Anbieter das liefert ohne über die deutsche Grenze gehen zu müssen.',
     personalStory: [
-      'Lieferung nach Vorarlberg dauert 2-3 Tage per ÖPOST. Persönliche Anlieferung mache ich nur für Großprojekte (>€5.000) — dann übernachte ich in der Region und nutze den Trip für mehrere Termine.',
-      'Was Vorarlberg gut funktioniert: Sehr präzise Spec-Anfragen mit klaren Toleranz-Vorgaben. Doppelmayr und Hirschmann sind technische Schwergewichte — wenn die ein Modell anfragen, dann ist meist sofort klar was nötig ist und das Modell muss eng am Original sein. Hochqualitatives PETG oder PA6-CF, aceton-geglättetes ABS für Hochglanz-Anwendungen.',
-      'Grenznähe heißt: Lieferungen in die Schweiz und nach Süd-Deutschland sind logistisch einfacher als nach Wien. Wenn Sie ein Vorarlberger Unternehmen sind und ein Modell in Liechtenstein oder Schaffhausen brauchen — kein Problem.',
+      'Lieferung nach Vorarlberg dauert 2-3 Tage per ÖPOST. Persönliche Anlieferung mache ich nur für Großprojekte (>€5.000) · dann übernachte ich in der Region und nutze den Trip für mehrere Termine.',
+      'Was Vorarlberg gut funktioniert: Sehr präzise Spec-Anfragen mit klaren Toleranz-Vorgaben. Doppelmayr und Hirschmann sind technische Schwergewichte · wenn die ein Modell anfragen, dann ist meist sofort klar was nötig ist und das Modell muss eng am Original sein. Hochqualitatives PETG oder PA6-CF, aceton-geglättetes ABS für Hochglanz-Anwendungen.',
+      'Grenznähe heißt: Lieferungen in die Schweiz und nach Süd-Deutschland sind logistisch einfacher als nach Wien. Wenn Sie ein Vorarlberger Unternehmen sind und ein Modell in Liechtenstein oder Schaffhausen brauchen · kein Problem.',
     ],
     realCaseSnapshot: [
       {
@@ -326,13 +326,13 @@ export const regionalKevinAnchors: Record<string, LocalKevinAnchor> = {
   //   BURGENLAND
   // ═══════════════════════════════════════════════════════════════
   'burgenland': {
-    anchorTitle: 'Burgenland — Photovoltaik, Wein-Wirtschaft, Sonnenland-Innovation',
+    anchorTitle: 'Burgenland · Photovoltaik, Wein-Wirtschaft, Sonnenland-Innovation',
     whyThisRegion:
-      'Burgenland ist mein kleinster Markt — aber ein wachsender. Die Photovoltaik-Industrie rund um Neusiedl, die Windkraft-Cluster im Nordburgenland und überraschend viele Weingüter mit speziellen Equipment-Anfragen bringen pro Quartal eine Handvoll spannender Projekte.',
+      'Burgenland ist mein kleinster Markt · aber ein wachsender. Die Photovoltaik-Industrie rund um Neusiedl, die Windkraft-Cluster im Nordburgenland und überraschend viele Weingüter mit speziellen Equipment-Anfragen bringen pro Quartal eine Handvoll spannender Projekte.',
     personalStory: [
-      'Burgenland erreiche ich über die A4 — Eisenstadt und Mattersburg sind 2 Tage Versand-Distanz, Oberwart und Güssing 2-3 Tage. Persönliche Lieferung kombiniere ich mit Wien-Terminen.',
+      'Burgenland erreiche ich über die A4 · Eisenstadt und Mattersburg sind 2 Tage Versand-Distanz, Oberwart und Güssing 2-3 Tage. Persönliche Lieferung kombiniere ich mit Wien-Terminen.',
       'Was hier passiert: Energie-Wende-Projekte brauchen Bürger-Visualisierungen. Maßstabsgetreue Modelle einer geplanten PV-Anlage oder eines Windparks helfen bei Genehmigungs-Verfahren mehr als jede PowerPoint-Folie. Das ist ein Nischen-Markt aber genau die Sorte, die ek-druck gerne macht: konkretes Problem, klare Lösung, sichtbarer Impact.',
-      'Weingüter fragen gelegentlich nach Spezial-Equipment — Halterungen, Etiketten-Vorrichtungen, Verkostungs-Displays. Klein, individuell, oft als Einzelstück. Da ist FDM-Druck oft die einzige sinnvolle Fertigungsoption.',
+      'Weingüter fragen gelegentlich nach Spezial-Equipment · Halterungen, Etiketten-Vorrichtungen, Verkostungs-Displays. Klein, individuell, oft als Einzelstück. Da ist FDM-Druck oft die einzige sinnvolle Fertigungsoption.',
     ],
     realCaseSnapshot: [
       {

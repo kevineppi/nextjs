@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Messemodelle Luzern: LUGA, Bauen+Wohnen, Zentralschweizer Messe',
     description: 'Luzerner Aussteller: LUGA, Bauen+Wohnen, Comptoir Suisse, Berufsmesse Luzern. Inkl. Schweizer Zoll, CHF-Verrechnung. Ab €30.',
     url: 'https://www.ek-druck.at/messemodelle/luzern',
-    siteName: 'ekdruck – 3D-Druck Österreich', locale: 'de_AT', type: 'website',
+    siteName: 'ekdruck · 3D-Druck Österreich', locale: 'de_AT', type: 'website',
   },
 }
 
