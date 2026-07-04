@@ -63,7 +63,7 @@ const branchen = [
     icon: Users,
     branche: "Bildung & Kultur",
     titel: "Modelle für Lehre und Ausstellung",
-    text: "Architekturschulen, Tourismusbüros, Stadtmuseen, Heimatmuseen: wir fertigen Anschauungsmodelle für Lehre und kulturelle Vermittlung. Robust genug für Schüler-Hände, präzise genug für Fach-Audiences. Auf Wunsch mit haptischen Höhenlinien für inklusive Vermittlung.",
+    text: "Architekturschulen, Tourismusbüros, Stadtmuseen, Heimatmuseen: wir fertigen Anschauungsmodelle für Lehre und kulturelle Vermittlung. Robust genug für Schüler-Hände, detailtreu genug für Fach-Audiences. Auf Wunsch mit haptischen Höhenlinien für inklusive Vermittlung.",
     typisch: "Lehrmodelle, Museums-Exponate, Touristenmodelle",
   },
 ];
@@ -78,7 +78,7 @@ const faqs = [
   { question: "Können Sie mehrere Varianten gleichzeitig fertigen?", answer: "Ja, das ist sogar einer der größten Vorteile gegenüber klassischem Modellbau. Parallel-Fertigung mehrerer Varianten zu denselben Stückkosten – kein Aufpreis für 'die zweite Variante'. Häufig genutzt bei Wettbewerbsabgaben (4 Konzepte in einem Modellsatz) und Vermarktungs-Modellen (Bestand vs Neubau)." },
   { question: "Bieten Sie persönliche Lieferung an?", answer: "Ja. Innerhalb Oberösterreichs (Linz, Wels, Vöcklabruck, Steyr und Umgebung) liefern wir auf Wunsch persönlich gegen Aufwandsentschädigung ab €40. Wien und Salzburg gegen entsprechenden Aufpreis möglich. Sinnvoll für große, empfindliche Modelle oder Wettbewerbsabgaben mit kurzer Übergabefrist." },
   { question: "Können Sie das CAD-Modell auch für mich erstellen?", answer: "Ja. Reverse Engineering ab €120 pro Stunde: Wir erstellen Ihr 3D-Modell nach Plan, Foto oder Skizze. Auch Bestandsgebäude können wir nach Aufmaß oder vorhandenen Plänen modellieren. Für Restaurierungs- und Sanierungsprojekte besonders interessant: historische Pläne werden zum modernen 3D-Modell." },
-  { question: "Wie steht es um die Maßstabs-Genauigkeit?", answer: "FDM-Druck: ±0,2 mm absolute Toleranz bzw. ±0,3% bei Bauteilen über 50 mm. SLA-Druck (für Detailmodelle): ±0,1 mm bzw. ±0,2%. Bei kritischen Maßen (etwa Wettbewerbsabgaben mit vorgeschriebener Modellgröße) messen wir vor dem Versand mit digitalem Messschieber und dokumentieren auf Wunsch." },
+  { question: "Wie steht es um die Maßstabs-Genauigkeit?", answer: "FDM-Druck: ±0,2 mm absolute Toleranz bzw. ±0,3% bei Objekten über 50 mm. SLA-Druck (für Detailmodelle): ±0,1 mm bzw. ±0,2%. Bei kritischen Maßen (etwa Wettbewerbsabgaben mit vorgeschriebener Modellgröße) messen wir vor dem Versand mit digitalem Messschieber und dokumentieren auf Wunsch." },
   { question: "Sind die Modelle beschriftbar oder bemalbar?", answer: "Ja. Standardoberfläche ist schleifbar, spachtelbar, lackierbar – alle gängigen Künstlerfarben, Acryl, Lack haftet. Beschriftungen auf Wunsch direkt eingelasert (z.B. Straßennamen bei Stadtmodellen) oder als gravierte Plexiglas-Plaketten am Sockel. Auch UV-Druck direkt auf das Modell möglich." },
   { question: "Bekomme ich eine Garantie auf das Modell?", answer: "Ja. 12 Monate Material- und Verarbeitungsgarantie. Bei Wettbewerbsabgaben mit harter Deadline geben wir eine zusätzliche Liefer-Termin-Garantie: wird der zugesagte Liefertermin nicht eingehalten, übernehmen wir 100% der nachweisbaren Folgekosten. Diese Garantie wird schriftlich im Angebot festgehalten." },
   { question: "Wie ist die Vertraulichkeit bei Wettbewerbsprojekten?", answer: "Auf Wunsch unterzeichnen wir eine NDA vor Datenaustausch. Direkte Kommunikation mit dem Inhaber, keine Zwischeninstanzen. Keine Weitergabe an Subunternehmer ohne Ihre Zustimmung. Datenarchivierung optional – auf Wunsch löschen wir Ihre CAD-Daten sofort nach Lieferung des Modells. Wichtig insbesondere für laufende Wettbewerbe wo Vertraulichkeit zwingend ist." },
@@ -87,8 +87,8 @@ const faqs = [
 const Architekturmodelle = () => (
   <>
     <SEOHead
-      title="Architekturmodell drucken lassen – 3D-Druck ab €20 ★5,0 | ekdruck"
-      description="Architekturmodelle aus dem 3D-Druck: Wettbewerb · Bauherr · Stadtmodell. Maßstab 1:50–1:500 · ArchiCAD, Revit, Rhino, SketchUp · Express 24h · ab €20."
+      title="Architekturmodelle im 3D-Druck · Wettbewerbs- & Präsentationsmodelle | ekdruck"
+      description="Architekturmodellbau aus Österreich: Wettbewerbsmodelle, Einreichmodelle, Städtebaumodelle. Direkt aus ArchiCAD, Revit oder IFC. Angebot in 6 h."
       keywords="architekturmodell, architekturmodell drucken, architekturmodell 3d druck, architekturmodellbau, wettbewerbsmodell, präsentationsmodell architektur, städtebauliches modell, bauherrenmodell, stadtmodell drucken, gebäudemodell, architekturmodell wien, architekturmodell österreich, archicad 3d druck, revit modell drucken, sketchup modell drucken, rhino modell, maßstab 1 100, maßstab 1 200, maßstab 1 500, weißes modell"
       path="/architekturmodelle"
     />
@@ -285,6 +285,99 @@ const Architekturmodelle = () => (
       {/* MAßSTÄBE */}
       <ArchitekturScaleSection />
 
+      {/* KOSTEN — targetet "architekturmodell kosten" / "3d-druck architekturmodell kosten" */}
+      <section className="py-24 md:py-32 bg-background" aria-label="Was kostet ein Architekturmodell">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <AnimatedSection animation="fade-in" className="mb-12">
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Preise & Kostenfaktoren</p>
+              <h2 className="text-4xl md:text-6xl font-bold leading-[0.95] tracking-[-0.04em] mb-6">Was kostet ein Architekturmodell?</h2>
+              <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl">
+                Der Preis für ein Architekturmodell hängt vor allem vom Maßstab, der Modellgröße, dem Detailgrad und dem Finish ab. Diese Richtwerte geben Ihnen eine Orientierung, das verbindliche Festpreisangebot erhalten Sie innerhalb von 6 Stunden.
+              </p>
+            </AnimatedSection>
+
+            <AnimatedSection animation="slide-up">
+              <div className="rounded-3xl border-2 border-border overflow-hidden">
+                {[
+                  { typ: "Einfamilienhaus", massstab: "1:100", ab: "ab €280", info: "Kompaktes Hausmodell, ideal fürs Bauherrengespräch" },
+                  { typ: "Detail- und Innenraummodell", massstab: "1:50", ab: "ab €450", info: "Mit Innenausbau, Möblierung und abnehmbarem Dach" },
+                  { typ: "Mehrfamilienhaus", massstab: "1:200", ab: "ab €420", info: "Wohnbau für Vermarktung und Schauraum" },
+                  { typ: "Quartiers- und Wettbewerbsmodell", massstab: "1:500", ab: "ab €780", info: "Städtebau mit Gelände und Umgebung" },
+                  { typ: "Stadtmodell", massstab: "1:1000", ab: "ab €1.890", info: "Stadtteil-Visualisierung, großformatig segmentiert" },
+                ].map((r, i) => (
+                  <div key={r.typ} className={`flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 p-5 md:p-6 ${i > 0 ? 'border-t border-border' : ''}`}>
+                    <div className="sm:w-60 shrink-0">
+                      <p className="font-bold text-foreground">{r.typ}</p>
+                      <p className="mono text-xs text-muted-foreground">Maßstab {r.massstab}</p>
+                    </div>
+                    <p className="text-sm text-muted-foreground flex-1 leading-relaxed">{r.info}</p>
+                    <p className="mono text-2xl font-bold text-primary shrink-0">{r.ab}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-muted-foreground mt-4">Richtwerte netto (Kleinunternehmer, keine USt.). Der Endpreis richtet sich nach Detailgrad, Geländemodell, Finish und Stückzahl.</p>
+            </AnimatedSection>
+
+            <AnimatedSection animation="fade-in" className="mt-12 grid md:grid-cols-2 gap-8 items-start">
+              <div>
+                <h3 className="font-bold text-xl mb-4">Was den Preis bestimmt</h3>
+                <ul className="space-y-2.5 text-sm text-muted-foreground">
+                  {[
+                    "Maßstab und Modellgröße: mehr Material und längere Druckzeit",
+                    "Geländemodell aus DGM-Daten: Höhenlinien und Topografie erhöhen den Aufwand",
+                    "Detailgrad: Fassadenstruktur, Fenster, Möblierung, Beschriftung",
+                    "Finish: weiß matt (Standard), farbig, RAL-Lackierung, Sonderoberflächen",
+                    "Stückzahl: mehrere Varianten parallel, ohne Aufpreis pro Stück",
+                  ].map((t) => (
+                    <li key={t} className="flex gap-2.5"><Check className="w-4 h-4 text-primary shrink-0 mt-0.5" /><span>{t}</span></li>
+                  ))}
+                </ul>
+              </div>
+              <div className="rounded-3xl bg-muted/40 border border-border p-8">
+                <p className="font-bold text-lg mb-2">Genauer Preis in 6 Stunden</p>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-6">Laden Sie Ihre CAD-Datei in den Kostenrechner oder schicken Sie uns Plan, IFC oder Skizze. Sie erhalten ein verbindliches Festpreisangebot inklusive Materialempfehlung und Lieferdatum.</p>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 py-6 font-semibold" asChild>
+                    <Link href="/kostenrechner"><Ruler className="mr-2 w-4 h-4" /> Kosten berechnen</Link>
+                  </Button>
+                  <Button variant="outline" className="rounded-full px-6 py-6 border-2" asChild>
+                    <Link href="#kontakt">Angebot anfragen</Link>
+                  </Button>
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      {/* MODELLTYPEN — je eigene H3 für die realen Suchbegriffe */}
+      <section className="py-24 md:py-32 bg-muted/30 border-y border-border" aria-label="Typen von Architekturmodellen">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <AnimatedSection animation="fade-in" className="mb-12">
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Modelltypen</p>
+              <h2 className="text-4xl md:text-6xl font-bold leading-[0.95] tracking-[-0.04em]">Welches Architekturmodell brauchen Sie?</h2>
+            </AnimatedSection>
+            <div className="grid md:grid-cols-2 gap-4">
+              {[
+                { h: "Wettbewerbsmodell", t: "Für die Jurypräsentation im Architekturwettbewerb. Klassisch weiß matt, im vorgeschriebenen Maßstab (meist 1:200 oder 1:500), auf dem Standardsockel präsentationsfertig. Mehrere Varianten fertigen wir parallel zu denselben Stückkosten, ideal wenn Sie Konzepte gegenüberstellen wollen. Express in 24 Stunden für die Abgabe am Folgetag." },
+                { h: "Einreichmodell & Bestandsmodell", t: "Das Einreichmodell zeigt das geplante Volumen im Bestandskontext, für Baueingabe, Bauverhandlung und Behördentermin. Den Bestand bilden wir als Bestandsmodell ab und setzen den Neubau als entnehmbares Element ein, so wird der Eingriff sofort lesbar. Maßstab 1:200 oder 1:100, auf Wunsch mit beschriftetem Sockel und Transportbox." },
+                { h: "Städtebaumodell & Stadtmodell", t: "Quartiers-, Städtebau- und Stadtmodelle für Bürgerbeteiligungen, städtebauliche Wettbewerbe und Stadtteil-Visualisierungen. Die Topografie extrahieren wir aus DGM-Daten, große Modelle bis über 1,5 m entstehen segmentiert mit unsichtbaren Stoßkanten. Maßstäbe 1:500 bis 1:1000, Straßennamen auf Wunsch eingelasert." },
+                { h: "Schnittmodell", t: "Das Schnittmodell öffnet das Gebäude und zeigt Geschosse, Raumaufteilung und den inneren Aufbau. Ideal für Lehre, Ausstellung und erklärungsintensive Bauherrengespräche. Einzelne Geschosse sind entnehmbar, Innenwände und Treppen werden sichtbar. Maßstab 1:50 bis 1:100, auf Wunsch mit farblich abgesetzten Ebenen." },
+              ].map((m) => (
+                <AnimatedSection key={m.h} animation="slide-up">
+                  <div className="rounded-3xl bg-card border-2 border-border hover:border-primary/30 transition-all duration-500 p-8 h-full">
+                    <h3 className="font-bold text-xl mb-3 text-foreground">{m.h}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{m.t}</p>
+                  </div>
+                </AnimatedSection>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* VERGLEICH */}
       <ArchitekturComparisonSection />
 
@@ -365,7 +458,7 @@ const Architekturmodelle = () => (
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Auch interessant</h3>
-                  <p>Sie suchen <Link href="/messemodelle" className="text-primary font-semibold hover:underline">Messemodelle</Link> für Ihren Auftritt auf Architektur- oder Bauträger-Messen? <Link href="/prototyping" className="text-primary font-semibold hover:underline">Rapid Prototyping</Link> für nicht-architektonische Bauteile? <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">B2B-Konditionen</Link> für regelmäßigen Modellbedarf? Wir bieten das gesamte 3D-Druck-Spektrum aus einer Hand.</p>
+                  <p>Sie suchen <Link href="/messemodelle" className="text-primary font-semibold hover:underline">Messemodelle</Link> für Ihren Auftritt auf Architektur- oder Bauträger-Messen? <Link href="/prototyping" className="text-primary font-semibold hover:underline">Rapid Prototyping</Link> für nicht-architektonische Objekte? <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">B2B-Konditionen</Link> für regelmäßigen Modellbedarf? Wir bieten das gesamte 3D-Druck-Spektrum aus einer Hand.</p>
                 </div>
               </div>
             </AnimatedSection>

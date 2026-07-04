@@ -7,7 +7,7 @@ const alternatives = [
     badge: "DIY",
     badgeColor: "bg-muted text-muted-foreground",
     eyebrow: "Studio-intern",
-    description: "Schnell, günstig, aber unpräzise. Kanten ausgefranst, Maßstabsabweichungen, kein professioneller Eindruck.",
+    description: "Schnell, günstig, aber ungenau. Kanten ausgefranst, Maßstabsabweichungen, kein professioneller Eindruck.",
     rows: [
       { label: "Lieferzeit", value: "1–3 Tage", status: "good" },
       { label: "Detailtreue", value: "Sehr gering", status: "bad" },

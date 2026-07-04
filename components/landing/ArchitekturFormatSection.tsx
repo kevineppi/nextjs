@@ -26,7 +26,7 @@ const services = [
   {
     icon: FileCode,
     title: "BIM-konforme Bearbeitung",
-    text: "Wir behandeln IFC-Daten korrekt: Geschosse, Wände, Fenster, Türen behalten ihre Klassenzuordnung. Auf Wunsch farbliche Differenzierung nach Geschoss oder Bauteilkategorie im fertigen Modell.",
+    text: "Wir behandeln IFC-Daten korrekt: Geschosse, Wände, Fenster, Türen behalten ihre Klassenzuordnung. Auf Wunsch farbliche Differenzierung nach Geschoss oder IFC-Kategorie im fertigen Modell.",
   },
 ];
 
