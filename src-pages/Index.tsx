@@ -72,17 +72,16 @@ const Index = () => {
             <AnimatedSection animation="fade-in" className="mb-14 md:mb-16 max-w-3xl">
               <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Für wen wir drucken</p>
               <TextReveal
-                text="Drei Welten. Drei Lösungen."
+                text="Architekturmodelle oder Messemodelle?"
                 className="text-4xl md:text-6xl font-bold leading-[0.95] tracking-[-0.04em] mb-5"
               />
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-                Architekten, Industrie-Messeaussteller und Firmenkunden, jede Gruppe hat andere Anforderungen,
-                andere Maßstäbe, andere Lead-Times. Wählen Sie Ihre Welt:
+                Zwei Kernleistungen, ein Spezialist. Wählen Sie Ihren Weg, das passende Material und Finish schlagen wir Ihnen vor.
               </p>
             </AnimatedSection>
 
-            {/* 3 gleichwertige Säulen */}
-            <div className="grid md:grid-cols-3 gap-4">
+            {/* 2 gleichwertige Karten */}
+            <div className="grid md:grid-cols-2 gap-4 md:gap-6">
 
               {/* Säule 1: Architekten */}
               <AnimatedSection animation="slide-up" delay={0}>
@@ -116,67 +115,42 @@ const Index = () => {
                 </Link>
               </AnimatedSection>
 
-              {/* Säule 2: Messeaussteller / Industrie */}
+              {/* Karte 2: Messemodelle & Exponate */}
               <AnimatedSection animation="slide-up" delay={100}>
-                <Link href="/branchen" className="group block h-full">
-                  <MagneticCard className="h-full rounded-3xl bg-foreground p-8 md:p-10 relative overflow-hidden
+                <Link href="/messemodelle" className="group block h-full">
+                  <MagneticCard className="h-full rounded-3xl bg-foreground p-8 md:p-12 relative overflow-hidden
                     border-2 border-foreground hover:border-primary transition-all duration-500 group-hover:-translate-y-1" glowColor="hsl(var(--primary) / 0.15)">
-                    <div className="absolute top-6 right-6">
-                      <Presentation className="w-10 h-10 text-primary/30" />
+                    <div className="absolute top-8 right-8">
+                      <Presentation className="w-12 h-12 text-primary/30" />
                     </div>
-                    <p className="mono text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-3">Säule 02 · Messeaussteller &amp; Industrie</p>
-                    <h3 className="text-2xl md:text-3xl font-bold text-background mb-4 tracking-[-0.02em] group-hover:text-primary transition-colors">
-                      Messemodelle für 6 Branchen
+                    <p className="mono text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-3">Für Messeaussteller &amp; Industrie</p>
+                    <h3 className="text-3xl md:text-4xl font-bold text-background mb-4 tracking-[-0.02em] group-hover:text-primary transition-colors">
+                      Messemodelle &amp; Exponate
                     </h3>
-                    <p className="text-background/60 leading-relaxed mb-6 text-sm">
-                      Maschinenbau, Schiffbau, Energietechnik, Automotive, Anlagenbau, Elektrotechnik.
-                      8-Tonnen-Maschine als Tisch-Exponat in 24-48h, segmentiert, bruchsicher, Versand DACH-weit.
+                    <p className="text-background/60 leading-relaxed mb-6">
+                      Produkt-, Schnitt- und Funktionsmodelle bis über 2 m. Der Blickfang, der Besucher stoppt und Gespräche startet: segmentiert, bruchsicher, Versand DACH-weit.
                     </p>
-                    <div className="flex flex-wrap gap-2 mb-6">
-                      {["6 Branchen", "Express 24h", "Bis 2m+", "ab €30"].map(t =>
+                    <div className="flex flex-wrap gap-2 mb-8">
+                      {["Bis 2 m+", "Express 24h", "Eyecatcher", "Transportsicher"].map(t =>
                         <span key={t} className="mono text-[10px] font-bold text-background/40 uppercase tracking-wider">{t}</span>
                       )}
                     </div>
-                    <div className="flex flex-col gap-2 pt-4 border-t border-background/10">
-                      <span className="flex items-center gap-2 text-primary font-bold text-sm group-hover:gap-4 transition-all">
-                        Zu Ihrer Branche <ArrowRight className="w-4 h-4" />
-                      </span>
-                      <Link href="/messemodelle" className="text-xs text-background/50 hover:text-primary transition-colors">
-                        oder: Messemodelle allgemein →
-                      </Link>
-                    </div>
+                    <span className="flex items-center gap-2 text-primary font-bold group-hover:gap-4 transition-all">
+                      Messemodelle ansehen <ArrowRight className="w-5 h-5" />
+                    </span>
                   </MagneticCard>
                 </Link>
               </AnimatedSection>
 
-              {/* Säule 3: B2B Firmenkunden */}
-              <AnimatedSection animation="slide-up" delay={200}>
-                <Link href="/firmenkunden" className="group block h-full">
-                  <MagneticCard className="h-full rounded-3xl border-2 border-border hover:border-primary/40 p-8 md:p-10 transition-all duration-500 group-hover:-translate-y-1 relative overflow-hidden">
-                    <div className="absolute top-6 right-6">
-                      <Users className="w-10 h-10 text-primary/15" />
-                    </div>
-                    <p className="mono text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-3">Säule 03 · B2B-Firmenkunden</p>
-                    <h3 className="text-2xl md:text-3xl font-bold mb-4 tracking-[-0.02em] group-hover:text-primary transition-colors">
-                      Rahmenverträge, NDA, Mengenrabatt
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
-                      Designmuster, Vorserien, Kleinserien 5-5.000 Stück. Zahlungsziel 30 Tage, NDA-Workflow,
-                      Stammkunden-Rabatte ab 5 Stück.
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-6">
-                      {["NDA-fähig", "30 Tage Ziel", "Rabatt ab 5 Stk", "Rahmenvertrag"].map(t =>
-                        <span key={t} className="mono text-[10px] font-bold text-foreground/60 uppercase tracking-wider bg-muted px-2.5 py-1 rounded-full">{t}</span>
-                      )}
-                    </div>
-                    <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                      <span className="flex items-center gap-2 text-primary font-bold text-sm group-hover:gap-4 transition-all">
-                        Zu B2B-Konditionen <ArrowRight className="w-4 h-4" />
-                      </span>                    </div>
-                  </MagneticCard>
-                </Link>
-              </AnimatedSection>
             </div>
+
+            {/* Sekundaerer Link, weitere Leistungen */}
+            <AnimatedSection animation="fade-in" className="mt-8 text-center">
+              <p className="text-sm md:text-base text-muted-foreground">
+                Kleinserien, Prototypen oder Rahmenverträge?{" "}
+                <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">Weitere 3D-Druck-Leistungen für Firmenkunden →</Link>
+              </p>
+            </AnimatedSection>
 
           </div>
         </div>
