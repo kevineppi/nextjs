@@ -4,13 +4,13 @@ import { regionalLocalBusinessSchema, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: '3D-Druck Burgenland · Versand Eisenstadt 24h',
-  description: '3D-Druck mit ÖPOST-Versand nach Eisenstadt, Neusiedl, Mattersburg. Für Weinbau-Modelle, Industriebauteile, Tourismus. Ab €20.',
+  description: '3D-Druck mit ÖPOST-Versand nach Eisenstadt, Neusiedl, Mattersburg. Für Weinbau-Modelle, Industriebauteile, Tourismus.',
   alternates: {
     canonical: 'https://www.ek-druck.at/3d-druck-burgenland',
   },
   openGraph: {
     title: '3D-Druck Burgenland · Versand Eisenstadt 24h',
-    description: '3D-Druck mit ÖPOST-Versand nach Eisenstadt, Neusiedl, Mattersburg. Für Weinbau-Modelle, Industriebauteile, Tourismus. Ab €20.',
+    description: '3D-Druck mit ÖPOST-Versand nach Eisenstadt, Neusiedl, Mattersburg. Für Weinbau-Modelle, Industriebauteile, Tourismus.',
     url: 'https://www.ek-druck.at/3d-druck-burgenland',
     siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '3D-Druck Burgenland · Versand Eisenstadt 24h',
-    description: '3D-Druck mit ÖPOST-Versand nach Eisenstadt, Neusiedl, Mattersburg. Für Weinbau-Modelle, Industriebauteile, Tourismus. Ab €20.',
+    description: '3D-Druck mit ÖPOST-Versand nach Eisenstadt, Neusiedl, Mattersburg. Für Weinbau-Modelle, Industriebauteile, Tourismus.',
   },
 }
 
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 const REGION_LD = regionalLocalBusinessSchema({
   region: 'Burgenland',
   url: 'https://www.ek-druck.at/3d-druck-burgenland',
-  description: '3D-Druck-Service für Kunden in Burgenland. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Kleinserien. Persönliche Antwort in 6h. Ab €20.',
+  description: '3D-Druck-Service für Kunden in Burgenland. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Kleinserien. Persönliche Antwort in 6h.',
 })
 
 const BREADCRUMB_LD = breadcrumbSchema([

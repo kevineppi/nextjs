@@ -4,12 +4,12 @@ import {buildATOnlyAlternates, STANDARD_ROBOTS, regionalLocalBusinessSchema, bre
 
 export const metadata: Metadata = {
   title: '3D-Druck Wien · Versand morgen früh per ÖPOST | ekdruck',
-  description: '3D-Druck-Anbieter mit Lieferung nach Wien: Druck heute, Zustellung morgen früh per ÖPOST. Auch Express-Kurier in 6h möglich. Ab €20.',
+  description: '3D-Druck-Anbieter mit Lieferung nach Wien: Druck heute, Zustellung morgen früh per ÖPOST. Auch Express-Kurier in 6h möglich.',
   alternates: buildATOnlyAlternates('/3d-druck-wien'),
   robots: STANDARD_ROBOTS,
   openGraph: {
     title: '3D-Druck Wien · Versand morgen früh per ÖPOST | ekdruck',
-    description: '3D-Druck-Anbieter mit Lieferung nach Wien: Druck heute, Zustellung morgen früh per ÖPOST. Auch Express-Kurier in 6h möglich. Ab €20.',
+    description: '3D-Druck-Anbieter mit Lieferung nach Wien: Druck heute, Zustellung morgen früh per ÖPOST. Auch Express-Kurier in 6h möglich.',
     url: 'https://www.ek-druck.at/3d-druck-wien',
     siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '3D-Druck Wien · Versand morgen früh per ÖPOST | ekdruck',
-    description: '3D-Druck-Anbieter mit Lieferung nach Wien: Druck heute, Zustellung morgen früh per ÖPOST. Auch Express-Kurier in 6h möglich. Ab €20.',
+    description: '3D-Druck-Anbieter mit Lieferung nach Wien: Druck heute, Zustellung morgen früh per ÖPOST. Auch Express-Kurier in 6h möglich.',
   },
 }
 
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const REGION_LD = regionalLocalBusinessSchema({
   region: 'Wien',
   url: 'https://www.ek-druck.at/3d-druck-wien',
-  description: '3D-Druck-Service für Kunden in Wien. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Kleinserien. Persönliche Antwort in 6h. Ab €20.',
+  description: '3D-Druck-Service für Kunden in Wien. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Kleinserien. Persönliche Antwort in 6h.',
 })
 
 const BREADCRUMB_LD = breadcrumbSchema([

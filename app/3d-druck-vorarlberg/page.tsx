@@ -4,13 +4,13 @@ import { regionalLocalBusinessSchema, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: '3D-Druck Vorarlberg: A14-Versand nach Bregenz in 48h',
-  description: 'Drucken lassen aus OÖ mit Direktversand Bregenz/Dornbirn/Feldkirch. Für Bodensee-Industrie und Architekturbüros. Ab €20.',
+  description: 'Drucken lassen aus OÖ mit Direktversand Bregenz/Dornbirn/Feldkirch. Für Bodensee-Industrie und Architekturbüros.',
   alternates: {
     canonical: 'https://www.ek-druck.at/3d-druck-vorarlberg',
   },
   openGraph: {
     title: '3D-Druck Vorarlberg: A14-Versand nach Bregenz in 48h',
-    description: 'Drucken lassen aus OÖ mit Direktversand Bregenz/Dornbirn/Feldkirch. Für Bodensee-Industrie und Architekturbüros. Ab €20.',
+    description: 'Drucken lassen aus OÖ mit Direktversand Bregenz/Dornbirn/Feldkirch. Für Bodensee-Industrie und Architekturbüros.',
     url: 'https://www.ek-druck.at/3d-druck-vorarlberg',
     siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '3D-Druck Vorarlberg: A14-Versand nach Bregenz in 48h',
-    description: 'Drucken lassen aus OÖ mit Direktversand Bregenz/Dornbirn/Feldkirch. Für Bodensee-Industrie und Architekturbüros. Ab €20.',
+    description: 'Drucken lassen aus OÖ mit Direktversand Bregenz/Dornbirn/Feldkirch. Für Bodensee-Industrie und Architekturbüros.',
   },
 }
 
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 const REGION_LD = regionalLocalBusinessSchema({
   region: 'Vorarlberg',
   url: 'https://www.ek-druck.at/3d-druck-vorarlberg',
-  description: '3D-Druck-Service für Kunden in Vorarlberg. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Kleinserien. Persönliche Antwort in 6h. Ab €20.',
+  description: '3D-Druck-Service für Kunden in Vorarlberg. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Kleinserien. Persönliche Antwort in 6h.',
 })
 
 const BREADCRUMB_LD = breadcrumbSchema([

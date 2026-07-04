@@ -4,12 +4,12 @@ import {buildATOnlyAlternates, STANDARD_ROBOTS, regionalLocalBusinessSchema, bre
 
 export const metadata: Metadata = {
   title: '3D-Druck Oberösterreich: Same-Day-Abholung in Gunskirchen',
-  description: 'Lokaler 3D-Druck-Anbieter in OÖ. Abholung in Gunskirchen am selben Tag, Lieferung nach Linz/Wels/Steyr in 24h. Persönliche Beratung. Ab €20.',
+  description: 'Lokaler 3D-Druck-Anbieter in OÖ. Abholung in Gunskirchen am selben Tag, Lieferung nach Linz/Wels/Steyr in 24h. Persönliche Beratung.',
   alternates: buildATOnlyAlternates('/3d-druck-oberoesterreich'),
   robots: STANDARD_ROBOTS,
   openGraph: {
     title: '3D-Druck Oberösterreich: Same-Day-Abholung in Gunskirchen',
-    description: 'Lokaler 3D-Druck-Anbieter in OÖ. Abholung in Gunskirchen am selben Tag, Lieferung nach Linz/Wels/Steyr in 24h. Persönliche Beratung. Ab €20.',
+    description: 'Lokaler 3D-Druck-Anbieter in OÖ. Abholung in Gunskirchen am selben Tag, Lieferung nach Linz/Wels/Steyr in 24h. Persönliche Beratung.',
     url: 'https://www.ek-druck.at/3d-druck-oberoesterreich',
     siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '3D-Druck Oberösterreich: Same-Day-Abholung in Gunskirchen',
-    description: 'Lokaler 3D-Druck-Anbieter in OÖ. Abholung in Gunskirchen am selben Tag, Lieferung nach Linz/Wels/Steyr in 24h. Persönliche Beratung. Ab €20.',
+    description: 'Lokaler 3D-Druck-Anbieter in OÖ. Abholung in Gunskirchen am selben Tag, Lieferung nach Linz/Wels/Steyr in 24h. Persönliche Beratung.',
   },
 }
 
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const REGION_LD = regionalLocalBusinessSchema({
   region: 'Oberösterreich',
   url: 'https://www.ek-druck.at/3d-druck-oberoesterreich',
-  description: '3D-Druck-Service für Kunden in Oberösterreich. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Kleinserien. Persönliche Antwort in 6h. Ab €20.',
+  description: '3D-Druck-Service für Kunden in Oberösterreich. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Kleinserien. Persönliche Antwort in 6h.',
 })
 
 const BREADCRUMB_LD = breadcrumbSchema([

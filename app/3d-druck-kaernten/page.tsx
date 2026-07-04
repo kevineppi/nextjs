@@ -4,13 +4,13 @@ import { regionalLocalBusinessSchema, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: '3D-Druck Kärnten: A10-Versand nach Klagenfurt & Villach',
-  description: 'Drucken lassen aus OÖ, Lieferung über A10 nach Klagenfurt/Villach in 24-48h. Für Holzindustrie, Tourismus, Maschinenbau. Ab €20.',
+  description: 'Drucken lassen aus OÖ, Lieferung über A10 nach Klagenfurt/Villach in 24-48h. Für Holzindustrie, Tourismus, Maschinenbau.',
   alternates: {
     canonical: 'https://www.ek-druck.at/3d-druck-kaernten',
   },
   openGraph: {
     title: '3D-Druck Kärnten: A10-Versand nach Klagenfurt & Villach',
-    description: 'Drucken lassen aus OÖ, Lieferung über A10 nach Klagenfurt/Villach in 24-48h. Für Holzindustrie, Tourismus, Maschinenbau. Ab €20.',
+    description: 'Drucken lassen aus OÖ, Lieferung über A10 nach Klagenfurt/Villach in 24-48h. Für Holzindustrie, Tourismus, Maschinenbau.',
     url: 'https://www.ek-druck.at/3d-druck-kaernten',
     siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '3D-Druck Kärnten: A10-Versand nach Klagenfurt & Villach',
-    description: 'Drucken lassen aus OÖ, Lieferung über A10 nach Klagenfurt/Villach in 24-48h. Für Holzindustrie, Tourismus, Maschinenbau. Ab €20.',
+    description: 'Drucken lassen aus OÖ, Lieferung über A10 nach Klagenfurt/Villach in 24-48h. Für Holzindustrie, Tourismus, Maschinenbau.',
   },
 }
 
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 const REGION_LD = regionalLocalBusinessSchema({
   region: 'Kärnten',
   url: 'https://www.ek-druck.at/3d-druck-kaernten',
-  description: '3D-Druck-Service für Kunden in Kärnten. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Kleinserien. Persönliche Antwort in 6h. Ab €20.',
+  description: '3D-Druck-Service für Kunden in Kärnten. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Kleinserien. Persönliche Antwort in 6h.',
 })
 
 const BREADCRUMB_LD = breadcrumbSchema([
