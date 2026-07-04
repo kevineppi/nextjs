@@ -51,19 +51,7 @@ const Navigation = () => {
                           <div className="text-xs text-muted-foreground">Rapid Prototyping ab €20</div>
                         </div>
                       </Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild className="p-0 focus:bg-transparent">
-                      <Link href="/einzelanfertigungen" className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/10 hover:scale-[1.02] hover:-translate-y-0.5 active:scale-[0.98] active:translate-y-0 transition-all duration-200 ease-out group cursor-pointer">
-                        <div className="flex-shrink-0 w-9 h-9 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-200">
-                          <Sparkles className="h-4 w-4 text-primary" />
-                        </div>
-                        <div>
-                          <div className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Einzelanfertigungen</div>
-                          <div className="text-xs text-muted-foreground">Unikate & Kunstobjekte</div>
-                        </div>
-                      </Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild className="p-0 focus:bg-transparent">
+                    </DropdownMenuItem>                    <DropdownMenuItem asChild className="p-0 focus:bg-transparent">
                       <Link href="/3d-druck-materialien" className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/10 hover:scale-[1.02] hover:-translate-y-0.5 active:scale-[0.98] active:translate-y-0 transition-all duration-200 ease-out group cursor-pointer">
                         <div className="flex-shrink-0 w-9 h-9 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-200">
                           <FlaskConical className="h-4 w-4 text-primary" />
@@ -239,15 +227,7 @@ const Navigation = () => {
                 >
                   <Layers className="h-4 w-4 text-primary flex-shrink-0" />
                   <span className="text-sm font-medium truncate">Prototypen</span>
-                </Link>
-                <Link href="/einzelanfertigungen" 
-                  className="flex items-center gap-2 p-3 text-foreground rounded-xl hover:bg-primary/10 active:bg-primary/20 active:scale-[0.98] transition-all"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <Sparkles className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span className="text-sm font-medium truncate">Einzelanfertigungen</span>
-                </Link>
-                <Link href="/3d-druck-materialien" 
+                </Link>                <Link href="/3d-druck-materialien" 
                   className="flex items-center gap-2 p-3 text-foreground rounded-xl hover:bg-primary/10 active:bg-primary/20 active:scale-[0.98] transition-all"
                   onClick={() => setIsOpen(false)}
                 >

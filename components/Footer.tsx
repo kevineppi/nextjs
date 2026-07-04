@@ -43,9 +43,7 @@ const Footer = () => {
               <li><Link href="/firmenkunden" className="hover:text-primary transition-colors">Firmenkunden &amp; B2B</Link></li>
               <li><Link href="/architekturmodelle" className="hover:text-primary transition-colors">Architekturmodelle</Link></li>
               <li><Link href="/messemodelle" className="hover:text-primary transition-colors">Messemodelle</Link></li>
-              <li><Link href="/prototypen" className="hover:text-primary transition-colors">Prototypen</Link></li>
-              <li><Link href="/einzelanfertigungen" className="hover:text-primary transition-colors">Einzelanfertigungen</Link></li>
-              <li><Link href="/3d-druck-materialien" className="hover:text-primary transition-colors">Materialien</Link></li>
+              <li><Link href="/prototypen" className="hover:text-primary transition-colors">Prototypen</Link></li>              <li><Link href="/3d-druck-materialien" className="hover:text-primary transition-colors">Materialien</Link></li>
             </ul>
             <h4 className="font-semibold mt-6 mb-3 text-sm">Branchen-Cluster</h4>
             <ul className="space-y-1.5 text-muted-foreground text-sm">

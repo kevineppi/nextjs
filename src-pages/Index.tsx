@@ -161,7 +161,7 @@ const Index = () => {
                       Rahmenverträge, NDA, Mengenrabatt
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
-                      Funktionsmuster, Vorserien, Klein-Serien 5-5.000 Stück. Zahlungsziel 30 Tage, NDA-Workflow,
+                      Designmuster, Vorserien, Kleinserien 5-5.000 Stück. Zahlungsziel 30 Tage, NDA-Workflow,
                       Stammkunden-Rabatte ab 5 Stück.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-6">
@@ -172,11 +172,7 @@ const Index = () => {
                     <div className="flex flex-col gap-2 pt-4 border-t border-border">
                       <span className="flex items-center gap-2 text-primary font-bold text-sm group-hover:gap-4 transition-all">
                         Zu B2B-Konditionen <ArrowRight className="w-4 h-4" />
-                      </span>
-                      <Link href="/einzelanfertigungen" className="text-xs text-muted-foreground hover:text-primary transition-colors">
-                        oder: Einzelanfertigung ab 1 Stück →
-                      </Link>
-                    </div>
+                      </span>                    </div>
                   </MagneticCard>
                 </Link>
               </AnimatedSection>
