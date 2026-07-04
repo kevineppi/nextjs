@@ -73,6 +73,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/ratgeber/verfahrens-vergleich`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${SITE}/ratgeber/architekturmodell-guide`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${SITE}/ratgeber/messemodell-guide`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.7 },
+    // Neue Ratgeber-Artikel 2026-07-04 (SEO v2 Task 8.4)
+    { url: `${SITE}/ratgeber/gelaendemodell-dgm`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${SITE}/ratgeber/messestand-blickfang`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${SITE}/ratgeber/architekturmodell-flatrate`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${SITE}/ratgeber/prototyping-guide`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.5 },
     // Skyscraper-Guide 2026-05-27: high-priority Long-Tail-Anchor für Material-Vergleichs-Cluster

@@ -83,6 +83,8 @@ const Footer = () => {
               <li><Link href="/ratgeber/architekturmodell-flatrate" className="hover:text-primary transition-colors">Flatrate-Guide für Büros</Link></li>
               <li><Link href="/ratgeber/messemodell-guide" className="hover:text-primary transition-colors">Messemodell-Guide</Link></li>
               <li><Link href="/ratgeber/fdm-material-vergleich" className="hover:text-primary transition-colors">FDM-Material-Vergleich</Link></li>
+              <li><Link href="/ratgeber/gelaendemodell-dgm" className="hover:text-primary transition-colors">Geländemodelle (DGM)</Link></li>
+              <li><Link href="/ratgeber/messestand-blickfang" className="hover:text-primary transition-colors">Messestand-Blickfang</Link></li>
               <li className="pt-2 text-xs uppercase tracking-wider text-muted-foreground/70">Branchen-Guides</li>
               <li><Link href="/ratgeber/messemodell-maschinenbau" className="hover:text-primary transition-colors">Maschinenbau</Link></li>
               <li><Link href="/ratgeber/messemodell-anlagenbau" className="hover:text-primary transition-colors">Anlagenbau</Link></li>
