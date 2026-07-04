@@ -541,7 +541,7 @@ const Messemodelle = () => (
         </div>
       </section>
 
-      {/* MODELLTYPEN — Exponat / Produktmodell / Schnittmodell / Funktionsmodell (Cluster B) */}
+      {/* MODELLTYPEN, Exponat / Produktmodell / Schnittmodell / Funktionsmodell (Cluster B) */}
       <section className="py-24 md:py-32 bg-background" aria-label="Exponate und Produktmodelle für Messestände">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
