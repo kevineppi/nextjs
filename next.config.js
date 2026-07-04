@@ -28,6 +28,9 @@ const nextConfig = {
       { source: '/fdm-3d-druck', destination: '/ratgeber/verfahrens-vergleich', permanent: true },
       { source: '/glossar', destination: '/ratgeber', permanent: true },
 
+      // ═══ Alt-URLs Lovable-Aera (2026-07-04, SEO Task 6) ═══
+      { source: '/angebot', destination: '/kontakt', permanent: true },
+
       // ═══ Stadt → Bundesland konsolidieren ═══
       { source: '/3d-druck-linz', destination: '/3d-druck-oberoesterreich', permanent: true },
       { source: '/3d-druck-wels', destination: '/3d-druck-oberoesterreich', permanent: true },

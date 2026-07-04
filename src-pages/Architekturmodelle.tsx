@@ -458,7 +458,7 @@ const Architekturmodelle = () => (
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Auch interessant</h3>
-                  <p>Sie suchen <Link href="/messemodelle" className="text-primary font-semibold hover:underline">Messemodelle</Link> für Ihren Auftritt auf Architektur- oder Bauträger-Messen? <Link href="/prototyping" className="text-primary font-semibold hover:underline">Rapid Prototyping</Link> für nicht-architektonische Objekte? <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">B2B-Konditionen</Link> für regelmäßigen Modellbedarf? Wir bieten das gesamte 3D-Druck-Spektrum aus einer Hand.</p>
+                  <p>Tiefer ins Detail geht unser <Link href="/ratgeber/architekturmodell-guide" className="text-primary font-semibold hover:underline">Architekturmodell-Guide</Link> mit Maßstäben, Materialien und Ablauf. Sie suchen <Link href="/messemodelle" className="text-primary font-semibold hover:underline">Messemodelle</Link> für Ihren Auftritt auf Architektur- oder Bauträger-Messen? <Link href="/prototyping" className="text-primary font-semibold hover:underline">Rapid Prototyping</Link> für nicht-architektonische Objekte? <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">B2B-Konditionen</Link> für regelmäßigen Modellbedarf? Wir bieten das gesamte 3D-Druck-Spektrum aus einer Hand.</p>
                 </div>
               </div>
             </AnimatedSection>
