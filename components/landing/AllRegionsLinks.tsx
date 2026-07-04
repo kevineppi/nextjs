@@ -16,29 +16,38 @@ interface AllRegionsLinksProps {
   type: 'messe' | 'architektur' | 'druck';
 }
 
-const KEPT_MESSE_REGIONS = new Set([
-  'wien', 'oberoesterreich', 'steiermark', 'salzburg', 'graz', 'linz',
-  'bayern', 'muenchen', 'nuernberg', 'baden-wuerttemberg', 'stuttgart',
-  'nordrhein-westfalen', 'duesseldorf', 'koeln', 'essen',
-  'hessen', 'frankfurt', 'niedersachsen', 'hannover', 'berlin', 'hamburg',
-  'zuerich', 'basel', 'bern', 'st-gallen', 'luzern',
+// 2026-07-04 SEO Task 4: Regional-Seiten konsolidiert.
+//  - Messe: ALLE Stadtseiten -> 301 auf /messemodelle, daher hier keine Messe-Regionen mehr.
+//  - Architektur: nur diese 6 bleiben als indexierte Standortseiten.
+const KEPT_MESSE_REGIONS = new Set<string>([]);
+const KEPT_ARCHITEKTUR_REGIONS = new Set<string>([
+  'wien', 'linz', 'graz', 'salzburg', 'muenchen', 'stuttgart',
 ]);
 
 const AllRegionsLinks = ({ currentSlug, type }: AllRegionsLinksProps) => {
   const basePath = type === 'messe' ? '/messemodelle' : type === 'architektur' ? '/architekturmodelle' : '/3d-druck';
-  
+
   const atData = type === 'messe' ? regionalMesseData : type === 'architektur' ? regionalArchitekturData : regionalDruckData;
   const deData = type === 'messe' ? germanMesseData : type === 'architektur' ? germanArchitekturData : {};
   const chData = type === 'messe' ? swissMesseData : {};
 
-  const atRegions = Object.values(atData).filter(r => r.slug !== currentSlug && (type !== 'messe' || KEPT_MESSE_REGIONS.has(r.slug)));
-  const deRegions = Object.values(deData).filter(r => r.slug !== currentSlug && (type !== 'messe' || KEPT_MESSE_REGIONS.has(r.slug)));
-  const chRegions = Object.values(chData).filter((r: any) => r.slug !== currentSlug);
+  // Nur behaltene, indexierbare Regionen verlinken (keine 301-Ziele -> keine internen Redirect-Hops).
+  const keptFilter = (slug: string) => {
+    if (type === 'messe') return KEPT_MESSE_REGIONS.has(slug);
+    if (type === 'architektur') return KEPT_ARCHITEKTUR_REGIONS.has(slug);
+    return true; // druck: Bundesland-Seiten bleiben vollstaendig erhalten
+  };
 
-  // Show ALL regions for maximum internal linking / PageRank signal
+  const atRegions = Object.values(atData).filter(r => r.slug !== currentSlug && keptFilter(r.slug));
+  const deRegions = Object.values(deData).filter(r => r.slug !== currentSlug && keptFilter(r.slug));
+  const chRegions = Object.values(chData).filter((r: any) => r.slug !== currentSlug && keptFilter(r.slug));
+
   const atTop = atRegions;
   const deTop = deRegions;
   const chTop = chRegions;
+
+  // Nichts zu zeigen (z.B. auf /messemodelle nach der Konsolidierung) -> Sektion ausblenden.
+  if (atTop.length + deTop.length + chTop.length === 0) return null;
 
   return (
     <section className="py-16 md:py-20 bg-muted/30">

@@ -74,6 +74,27 @@ const nextConfig = {
         destination: '/messemodelle',
         permanent: true,
       })),
+
+      // ═══ Architekturmodelle Regional-Konsolidierung (2026-07-04, SEO Task 4) ═══
+      //     Nur wien/linz/graz/salzburg/muenchen/stuttgart bleiben als indexierte Standortseiten.
+      //     Alle uebrigen AT- + DE-Regionen (Thin-Content) -> 301 auf /architekturmodelle.
+      ...[
+        // AT (Rest)
+        'niederoesterreich', 'oberoesterreich', 'steiermark', 'kaernten', 'tirol',
+        'vorarlberg', 'burgenland', 'wels', 'klagenfurt', 'villach', 'st-poelten',
+        'innsbruck', 'dornbirn',
+        // DE (Rest)
+        'bayern', 'baden-wuerttemberg', 'nordrhein-westfalen', 'hessen', 'niedersachsen',
+        'sachsen', 'rheinland-pfalz', 'schleswig-holstein', 'brandenburg', 'thueringen',
+        'sachsen-anhalt', 'mecklenburg-vorpommern', 'saarland', 'berlin', 'hamburg',
+        'bremen', 'nuernberg', 'augsburg', 'friedrichshafen', 'karlsruhe', 'duesseldorf',
+        'koeln', 'essen', 'dortmund', 'frankfurt', 'wiesbaden', 'hannover', 'dresden',
+        'leipzig', 'mainz', 'kiel', 'potsdam', 'erfurt', 'magdeburg', 'schwerin', 'saarbruecken',
+      ].map((region) => ({
+        source: `/architekturmodelle/${region}`,
+        destination: '/architekturmodelle',
+        permanent: true,
+      })),
     ]
   },
 };

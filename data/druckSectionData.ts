@@ -625,7 +625,7 @@ const klagenfurt: DruckSectionDataSet = {
   inTextLinks: [
     { anchor: '3D-Druck Forschung Villach', href: '/3d-druck-kaernten', context: 'Infineon-Zulieferer und Tech-Firmen in Villach nutzen unseren Prototypen-Service.' },
     { anchor: 'Industriemodelle aus Graz', href: '/3d-druck-steiermark', context: 'Grazer Industriebetriebe vertrauen auf unsere Serienfertigung.' },
-    { anchor: 'Architekturmodelle Kärnten', href: '/architekturmodelle/kaernten', context: 'Kärntner Architekten setzen auf präzise 3D-gedruckte Wettbewerbsmodelle.' },
+    { anchor: 'Architekturmodelle Kärnten', href: '/architekturmodelle', context: 'Kärntner Architekten setzen auf präzise 3D-gedruckte Wettbewerbsmodelle.' },
   ],
 
 };
@@ -892,7 +892,7 @@ const stpoelten: DruckSectionDataSet = {
   inTextLinks: [
     { anchor: '3D-Druck Wien Startup-Szene', href: '/3d-druck-wien', context: 'Nur 60 km entfernt: Wiener Startups profitieren von Express-Lieferung.' },
     { anchor: 'FDM-Verfahren im Detail', href: '/fdm-3d-druck', context: 'Alle technischen Details zu unserem FDM-Druckverfahren.' },
-    { anchor: 'Architekturmodelle NÖ', href: '/architekturmodelle/niederoesterreich', context: 'Niederösterreichische Architekten nutzen unsere maßstabsgetreuen Modelle.' },
+    { anchor: 'Architekturmodelle NÖ', href: '/architekturmodelle', context: 'Niederösterreichische Architekten nutzen unsere maßstabsgetreuen Modelle.' },
   ],
 
 };
@@ -1245,7 +1245,7 @@ const niederoesterreich: DruckSectionDataSet = {
   inTextLinks: [
     { anchor: '3D-Druck Service St. Pölten', href: '/3d-druck-niederoesterreich', context: 'Studierende und Forscher an der FH St. Pölten nutzen unseren Bildungs-Service.' },
     { anchor: 'Wiener Startup-Modelle', href: '/3d-druck-wien', context: 'Viele NÖ-Unternehmen bestellen gemeinsam mit Wiener Partnern.' },
-    { anchor: 'Architekturmodelle für NÖ-Projekte', href: '/architekturmodelle/niederoesterreich', context: 'Kommunale Bauträger in NÖ setzen auf unsere Behördenmodelle.' },
+    { anchor: 'Architekturmodelle für NÖ-Projekte', href: '/architekturmodelle', context: 'Kommunale Bauträger in NÖ setzen auf unsere Behördenmodelle.' },
   ],
 
 };
@@ -1674,7 +1674,7 @@ const burgenland: DruckSectionDataSet = {
   ],
   inTextLinks: [
     { anchor: '3D-Druck Wien Express', href: '/3d-druck-wien', context: 'Wiener Express-Versand erreicht das Burgenland in 1-2 Tagen.' },
-    { anchor: 'Architekturmodelle für burgenländische Projekte', href: '/architekturmodelle/burgenland', context: 'Kommunale Bauvorhaben im Burgenland mit professionellen 3D-Modellen.' },
+    { anchor: 'Architekturmodelle für burgenländische Projekte', href: '/architekturmodelle', context: 'Kommunale Bauvorhaben im Burgenland mit professionellen 3D-Modellen.' },
     { anchor: 'Outdoor-Modelle für Tourismus', href: '/3d-druck-steiermark', context: 'Auch steirische Tourismusbetriebe nutzen unsere wetterfesten Modelle.' },
   ],
 

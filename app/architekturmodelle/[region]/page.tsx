@@ -48,7 +48,11 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       title,
       description,
     },
-    robots: isAT ? STANDARD_ROBOTS : { index: false, follow: true },
+    // 2026-07-04 SEO Task 4b: nur die 6 behaltenen Standortseiten werden indexiert.
+    // Alle anderen Regionen sind per 301 (next.config) auf /architekturmodelle weitergeleitet.
+    robots: ['wien', 'linz', 'graz', 'salzburg', 'muenchen', 'stuttgart'].includes(region)
+      ? STANDARD_ROBOTS
+      : { index: false, follow: true },
   }
 }
 
