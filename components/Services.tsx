@@ -49,7 +49,7 @@ const Services = () => {
   }, {
     icon: Wrench,
     title: "Konzept-Beratung",
-    description: "Von der Idee zum fertigen Modell – wir beraten bei der Umsetzung.",
+    description: "Von der Idee zum fertigen Modell, wir beraten bei der Umsetzung.",
     features: ["Machbarkeitsanalyse", "Design-Tipps", "Größenoptimierung", "Kosteneffizienz"],
     link: "/kontakt"
   }, {
@@ -72,7 +72,7 @@ const Services = () => {
             Messen, Architektur und Industriepräsentationen.
           </p>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Anschauungsmodelle für jeden Maßstab – termingerecht und präzise gefertigt 
+            Anschauungsmodelle für jeden Maßstab, termingerecht und präzise gefertigt 
             mit nachhaltigen Materialien aus Österreich.
           </p>
         </div>

@@ -26,10 +26,10 @@ const MaterialComparisonTable = () => (
     <div className="container mx-auto px-4">
       <div className="max-w-3xl mx-auto text-center mb-12">
         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-          Materialvergleich – das richtige Material für Ihr Modell
+          Materialvergleich, das richtige Material für Ihr Modell
         </h2>
         <p className="text-muted-foreground leading-relaxed">
-          8 verschiedene FDM-Materialien für unterschiedliche Anforderungen – von der
+          8 verschiedene FDM-Materialien für unterschiedliche Anforderungen, von der
           kostengünstigen Designstudie bis zum Premium-Showmodell mit Carbon-Optik.
           Welches Material optimal passt, besprechen wir gerne persönlich.
         </p>

@@ -10,7 +10,7 @@ const showcases = [
     num: "01",
     industry: "Architektur",
     title: "Wettbewerbsmodell 1:100 in 18 Stunden",
-    desc: "Ein Wiener Architekturbüro benötigte ein maßstabsgetreues Wettbewerbsmodell über Nacht. 3 Gebäude, 2 Brücken, Geländemodellierung – alles in 18h gedruckt und geliefert.",
+    desc: "Ein Wiener Architekturbüro benötigte ein maßstabsgetreues Wettbewerbsmodell über Nacht. 3 Gebäude, 2 Brücken, Geländemodellierung, alles in 18h gedruckt und geliefert.",
     stats: [
       { val: "18h", label: "Lieferzeit" },
       { val: "1:100", label: "Maßstab" },
@@ -23,7 +23,7 @@ const showcases = [
     num: "02",
     industry: "Messe",
     title: "47 Exponate für die VIENNA AUTOSHOW",
-    desc: "Messeaussteller brauchte 47 identische Produktmodelle in Weiß, lackiert und nummeriert. Lieferung 48h vor Messestart – alle 47 Stück identisch.",
+    desc: "Messeaussteller brauchte 47 identische Produktmodelle in Weiß, lackiert und nummeriert. Lieferung 48h vor Messestart, alle 47 Stück identisch.",
     stats: [
       { val: "47", label: "Stück" },
       { val: "48h", label: "vor Messe" },

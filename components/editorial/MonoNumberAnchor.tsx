@@ -1,5 +1,5 @@
 /**
- * MonoNumberAnchor — Magazin-Style Section-Marker
+ * MonoNumberAnchor, Magazin-Style Section-Marker
  * ──────────────────────────────────────────────────────────────────
  * Rendert große Mono-Number mit "/total"-Notation als visueller
  * Anker am Section-Start. Macht Page-Architektur visuell lesbar.

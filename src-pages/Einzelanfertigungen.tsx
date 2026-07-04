@@ -3,7 +3,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ServiceSeoBlock from "@/components/landing/ServiceSeoBlock";
 import SEOHead from "@/components/SEOHead";
-// StructuredData entfernt 2026-06-02 — LocalBusiness läuft jetzt site-wide via app/layout.tsx
+// StructuredData entfernt 2026-06-02, LocalBusiness läuft jetzt site-wide via app/layout.tsx
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceSchema from "@/components/ServiceSchema";
 import CTASection from "@/components/landing/CTASection";
@@ -29,19 +29,19 @@ import {
 const faqs = [
   {
     question: "Was ist der Unterschied zwischen Einzelanfertigung und Seriendruck?",
-    answer: "Einzelanfertigungen sind individuell gestaltete Anschauungsmodelle oder Unikate ab 1 Stück – maßgeschneidert für Ihren genauen Zweck. Im Gegensatz zur Serie geht jedes Projekt durch eine persönliche Beratung, bei der Material, Maßstab, Farbe und Nachbearbeitung optimal abgestimmt werden. Für Messemodelle, Architekturmodelle und spezielle Präsentationsobjekte ist die Einzelanfertigung meist die optimale Wahl."
+    answer: "Einzelanfertigungen sind individuell gestaltete Anschauungsmodelle oder Unikate ab 1 Stück, maßgeschneidert für Ihren genauen Zweck. Im Gegensatz zur Serie geht jedes Projekt durch eine persönliche Beratung, bei der Material, Maßstab, Farbe und Nachbearbeitung optimal abgestimmt werden. Für Messemodelle, Architekturmodelle und spezielle Präsentationsobjekte ist die Einzelanfertigung meist die optimale Wahl."
   },
   {
     question: "Welche Dateiformate werden für Einzelanfertigungen akzeptiert?",
-    answer: "Wir verarbeiten STL, STEP, OBJ, 3MF und alle gängigen 3D-CAD-Exportformate aus ArchiCAD, Revit, Rhino, SolidWorks und Fusion 360. Haben Sie nur eine Skizze, ein Foto oder eine Idee? Unser Team unterstützt auf Anfrage auch bei der 3D-Modellierung Ihres Entwurfs. Senden Sie uns Ihre Idee – wir finden gemeinsam die beste Umsetzung."
+    answer: "Wir verarbeiten STL, STEP, OBJ, 3MF und alle gängigen 3D-CAD-Exportformate aus ArchiCAD, Revit, Rhino, SolidWorks und Fusion 360. Haben Sie nur eine Skizze, ein Foto oder eine Idee? Unser Team unterstützt auf Anfrage auch bei der 3D-Modellierung Ihres Entwurfs. Senden Sie uns Ihre Idee, wir finden gemeinsam die beste Umsetzung."
   },
   {
     question: "Wie lange dauert die Fertigung einer Einzelanfertigung?",
-    answer: "Standardmäßig liefern wir in 3–7 Werktagen. Bei Express-Bedarf auch in 24–48 Stunden möglich. Nach Eingang Ihrer Datei erhalten Sie innerhalb von 6 Arbeitsstunden ein kostenloses Angebot mit konkretem Liefertermin. Der Express-Aufschlag beträgt pauschal 50% – ideal für kurzfristige Messetermine."
+    answer: "Standardmäßig liefern wir in 3–7 Werktagen. Bei Express-Bedarf auch in 24–48 Stunden möglich. Nach Eingang Ihrer Datei erhalten Sie innerhalb von 6 Arbeitsstunden ein kostenloses Angebot mit konkretem Liefertermin. Der Express-Aufschlag beträgt pauschal 50%, ideal für kurzfristige Messetermine."
   },
   {
     question: "Ab welcher Größe sind Einzelanfertigungen möglich?",
-    answer: "Wir fertigen Objekte von wenigen Zentimetern bis zu über 2 Metern Größe. Größere Objekte werden modular konstruiert und nahtlos zusammengefügt. Für XXL-Anschauungsmodelle, Messeblickfänger oder Architekturmodelle im Maßstab 1:50 haben wir die passende Segmentierungsstrategie – unsichtbare Verbindungen und optimierte Fügekanten."
+    answer: "Wir fertigen Objekte von wenigen Zentimetern bis zu über 2 Metern Größe. Größere Objekte werden modular konstruiert und nahtlos zusammengefügt. Für XXL-Anschauungsmodelle, Messeblickfänger oder Architekturmodelle im Maßstab 1:50 haben wir die passende Segmentierungsstrategie, unsichtbare Verbindungen und optimierte Fügekanten."
   },
   {
     question: "Welche Materialien sind für Einzelanfertigungen verfügbar?",
@@ -53,21 +53,21 @@ const faqs = [
   },
   {
     question: "Gibt es Mindestbestellmengen?",
-    answer: "Nein – wir fertigen bereits ab 1 Stück. Das macht uns besonders attraktiv für Unikate, Präsentationsmodelle, Messeexponate und individuelle Ausstellungsstücke. Auch für Kleinstserien von 2–20 Stück sind wir die wirtschaftlichste Wahl – keine Rüstkosten, keine Mindestbestellmengen."
+    answer: "Nein, wir fertigen bereits ab 1 Stück. Das macht uns besonders attraktiv für Unikate, Präsentationsmodelle, Messeexponate und individuelle Ausstellungsstücke. Auch für Kleinstserien von 2–20 Stück sind wir die wirtschaftlichste Wahl, keine Rüstkosten, keine Mindestbestellmengen."
   },
   {
     question: "Wie werden Maßstäbe bei Architekturmodellen umgesetzt?",
-    answer: "Wir fertigen Architekturmodelle in allen gängigen Maßstäben: 1:50, 1:100, 1:200, 1:500 und darüber hinaus. Bei CAD-Daten aus ArchiCAD oder Revit exportieren Sie idealerweise im Maßstab 1:1 als STL – wir skalieren dann präzise auf den gewünschten Ausgabemaßstab. Fassadendetails, Fenster, Balkone und Dachkonstruktionen werden bis ins Detail abgebildet."
+    answer: "Wir fertigen Architekturmodelle in allen gängigen Maßstäben: 1:50, 1:100, 1:200, 1:500 und darüber hinaus. Bei CAD-Daten aus ArchiCAD oder Revit exportieren Sie idealerweise im Maßstab 1:1 als STL, wir skalieren dann präzise auf den gewünschten Ausgabemaßstab. Fassadendetails, Fenster, Balkone und Dachkonstruktionen werden bis ins Detail abgebildet."
   }
 ];
 
 const keywordContent = {
   title: "3D-Druck Einzelanfertigungen: Vom Konzept zur Realität",
-  intro: "Ob Messemodell für Wien, Architekturmodell für ein Wettbewerbsprojekt in Graz oder ein individuelles Präsentationsobjekt für Linz – als österreichischer Spezialist für 3D-Druck Einzelanfertigungen realisieren wir Projekte, die von der Stange nicht erhältlich sind. Jedes Anschauungsmodell entsteht nach Ihren genauen Vorgaben – in Maßstab, Material, Farbe und Oberfläche.",
+  intro: "Ob Messemodell für Wien, Architekturmodell für ein Wettbewerbsprojekt in Graz oder ein individuelles Präsentationsobjekt für Linz, als österreichischer Spezialist für 3D-Druck Einzelanfertigungen realisieren wir Projekte, die von der Stange nicht erhältlich sind. Jedes Anschauungsmodell entsteht nach Ihren genauen Vorgaben, in Maßstab, Material, Farbe und Oberfläche.",
   blocks: [
     {
       title: "Vorteile gegenüber klassischem Modellbau",
-      content: "Traditioneller Modellbau ist teuer, zeitaufwändig und schwer skalierbar. 3D-Druck Einzelanfertigungen starten ab €20, sind in 24h lieferbar und ermöglichen beliebige Geometrien. Änderungswünsche kosten nur eine neue Datei – keine teuren Nachjustierungen an Werkzeugen oder Formen. Für Architekten bedeutet das: Wettbewerbsmodell heute bestellt, übermorgen auf dem Tisch."
+      content: "Traditioneller Modellbau ist teuer, zeitaufwändig und schwer skalierbar. 3D-Druck Einzelanfertigungen starten ab €20, sind in 24h lieferbar und ermöglichen beliebige Geometrien. Änderungswünsche kosten nur eine neue Datei, keine teuren Nachjustierungen an Werkzeugen oder Formen. Für Architekten bedeutet das: Wettbewerbsmodell heute bestellt, übermorgen auf dem Tisch."
     },
     {
       title: "Präzision für anspruchsvolle Projekte",
@@ -75,7 +75,7 @@ const keywordContent = {
     },
     {
       title: "Nachhaltigkeit durch lokale Fertigung",
-      content: "Unsere Einzelanfertigungen entstehen in Gunskirchen, Oberösterreich – mit regionalem Filament aus Europa. Kurze Transportwege schonen die Umwelt. PLA-Materialien sind biologisch abbaubar. Nachhaltiges Wirtschaften ist für uns als österreichisches Unternehmen kein Marketingversprechen, sondern gelebte Praxis: Keine Lagerware, kein Überproduktionsverschnitt."
+      content: "Unsere Einzelanfertigungen entstehen in Gunskirchen, Oberösterreich, mit regionalem Filament aus Europa. Kurze Transportwege schonen die Umwelt. PLA-Materialien sind biologisch abbaubar. Nachhaltiges Wirtschaften ist für uns als österreichisches Unternehmen kein Marketingversprechen, sondern gelebte Praxis: Keine Lagerware, kein Überproduktionsverschnitt."
     },
     {
       title: "Vertraulichkeit & professionelle Abwicklung",
@@ -89,7 +89,7 @@ const useCases = [
     icon: Building,
     title: "Architekturmodelle",
     description: "Maßstabsgetreue Wettbewerbsmodelle, Konzeptstudien und städtebauliche Modelle für Architekten und Planungsbüros. Maßstäbe 1:50 bis 1:500.",
-    details: ["CAD-Export aus ArchiCAD/Revit", "Maßstab 1:50 – 1:500", "Fassadendetails präzise", "Weiß, Grau oder Farbig"],
+    details: ["CAD-Export aus ArchiCAD/Revit", "Maßstab 1:50, 1:500", "Fassadendetails präzise", "Weiß, Grau oder Farbig"],
     link: "/architekturmodelle"
   },
   {
@@ -147,7 +147,7 @@ const materials = [
 ];
 
 const process = [
-  { step: "01", icon: Lightbulb, title: "Anfrage & Beratung", desc: "Datei senden oder Projekt beschreiben – per E-Mail, Telefon oder Kontaktformular. Kostenlose Erstberatung zur Machbarkeit." },
+  { step: "01", icon: Lightbulb, title: "Anfrage & Beratung", desc: "Datei senden oder Projekt beschreiben, per E-Mail, Telefon oder Kontaktformular. Kostenlose Erstberatung zur Machbarkeit." },
   { step: "02", icon: Ruler, title: "Angebot in 6h", desc: "Sie erhalten innerhalb von 6 Arbeitsstunden ein verbindliches Angebot mit Preis, Liefertermin und Materialempfehlung." },
   { step: "03", icon: Cpu, title: "Fertigung", desc: "Nach Bestätigung beginnt die Produktion. Moderne Druckfarm mit parallelen Druckern für kurze Durchlaufzeiten." },
   { step: "04", icon: Truck, title: "Lieferung österreichweit", desc: "Sichere Verpackung, DHL/GLS-Versand mit Tracking. Expresslieferung Wien 24h, ganz Österreich 1–2 Werktage." }
@@ -174,14 +174,14 @@ const Einzelanfertigungen = () => {
       />
       <ProductOfferSchema
         name="3D-Druck Einzelanfertigungen"
-        description="Individuelle Anschauungsmodelle und Unikate per 3D-Druck. Messemodelle, Architekturmodelle, Sonderformen – ab 1 Stück."
+        description="Individuelle Anschauungsmodelle und Unikate per 3D-Druck. Messemodelle, Architekturmodelle, Sonderformen, ab 1 Stück."
         url="https://www.ek-druck.at/einzelanfertigungen"
         lowPrice="20"
         highPrice="500"
         category="Einzelanfertigungen 3D-Druck"
       />
       <SpeakableSchema url="https://www.ek-druck.at/einzelanfertigungen" />
-      {/* StructuredData entfernt — Organization läuft nun site-wide via app/layout.tsx */}
+      {/* StructuredData entfernt, Organization läuft nun site-wide via app/layout.tsx */}
       <BreadcrumbSchema items={[{ name: "Home", url: "/" }, { name: "Einzelanfertigungen", url: "/einzelanfertigungen" }]} />
 
       <Navigation />
@@ -199,14 +199,14 @@ const Einzelanfertigungen = () => {
               <div>
                 <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
                   <Sparkles className="w-4 h-4" />
-                  Jedes Modell ein Unikat – ab 1 Stück
+                  Jedes Modell ein Unikat, ab 1 Stück
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                   Ein einzelnes Bauteil<br />
                   <span className="text-primary">drucken lassen.</span>
                 </h1>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed max-w-xl">
-                  Vom CAD oder Skizze zum fertigen Unikat in 24 Stunden — ohne Mindestmenge,
+                  Vom CAD oder Skizze zum fertigen Unikat in 24 Stunden, ohne Mindestmenge,
                   ohne Aufpreis. Messemodelle, Architekturmodelle, Gehäuse-Sonderformen,
                   Halterungen, Oldtimer-Ersatzteile: alles ab 1 Stück. Angebot in 6h.
                 </p>
@@ -267,7 +267,7 @@ const Einzelanfertigungen = () => {
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Für welche Projekte wir da sind</h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                  Individuelle Anschauungsmodelle für vier Kernbereiche – alle zu Anschauungszwecken
+                  Individuelle Anschauungsmodelle für vier Kernbereiche, alle zu Anschauungszwecken
                 </p>
               </div>
               <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
@@ -343,7 +343,7 @@ const Einzelanfertigungen = () => {
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Materialien für jede Anforderung</h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Von klassischem PLA bis zu Spezialfilamenten – wir beraten Sie zum optimalen Material
+                  Von klassischem PLA bis zu Spezialfilamenten, wir beraten Sie zum optimalen Material
                 </p>
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
@@ -384,7 +384,7 @@ const Einzelanfertigungen = () => {
               <MapPin className="h-10 w-10 text-primary mx-auto mb-4" />
               <h2 className="text-2xl md:text-3xl font-bold mb-4">Österreichweit & nach Deutschland</h2>
               <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-                Gefertigt in Gunskirchen, Oberösterreich – Expresslieferung in ganz Österreich und Deutschland. Persönliche Abholung möglich.
+                Gefertigt in Gunskirchen, Oberösterreich, Expresslieferung in ganz Österreich und Deutschland. Persönliche Abholung möglich.
               </p>
               <div className="flex flex-wrap justify-center gap-2 text-sm">
                 {["Wien", "Graz", "Linz", "Salzburg", "Innsbruck", "Klagenfurt", "Wels", "St. Pölten", "Dornbirn", "München", "Berlin"].map((city) => (
@@ -395,7 +395,7 @@ const Einzelanfertigungen = () => {
           </div>
         </section>
 
-        {/* ── 6-Cases-Editorial-Block — Long-Tail-Acquisition ───────────────────── */}
+        {/* ── 6-Cases-Editorial-Block, Long-Tail-Acquisition ───────────────────── */}
         <section className="py-20 md:py-28 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
@@ -407,7 +407,7 @@ const Einzelanfertigungen = () => {
               <div className="space-y-8">
                 <div>
                   <h3 className="font-bold text-xl mb-2 text-foreground">Gehäuse-Sonderformen für Elektronik-Prototypen</h3>
-                  <p className="text-foreground/85 leading-relaxed">Sie haben eine PCB und brauchen ein passendes Gehäuse — gefräst wäre zu teuer, Spritzguss lohnt sich erst bei tausenden Stück. Wir drucken Ihr <strong>Gehäuse</strong> in PETG oder ABS, mit Schraubdom-Auslegung, Lüftungsschlitzen und Kabelausgängen genau dort wo Sie sie brauchen. Maße bis 300×300×300 mm in einem Stück, größer durch unsichtbares Segmentieren. Ab €25 für einfache Geometrien.</p>
+                  <p className="text-foreground/85 leading-relaxed">Sie haben eine PCB und brauchen ein passendes Gehäuse, gefräst wäre zu teuer, Spritzguss lohnt sich erst bei tausenden Stück. Wir drucken Ihr <strong>Gehäuse</strong> in PETG oder ABS, mit Schraubdom-Auslegung, Lüftungsschlitzen und Kabelausgängen genau dort wo Sie sie brauchen. Maße bis 300×300×300 mm in einem Stück, größer durch unsichtbares Segmentieren. Ab €25 für einfache Geometrien.</p>
                 </div>
 
                 <div>
@@ -417,22 +417,22 @@ const Einzelanfertigungen = () => {
 
                 <div>
                   <h3 className="font-bold text-xl mb-2 text-foreground">Oldtimer-Ersatzteile und historische Bauteile</h3>
-                  <p className="text-foreground/85 leading-relaxed">Ein <strong>Oldtimer-Ersatzteil</strong> dessen Original-Hersteller seit 40 Jahren weg ist. Ein Plastikteil aus den 60er-Jahren das spröde geworden ist. Ein Knopf aus einer alten Industriemaschine. Wir scannen oder rekonstruieren das Originalteil und drucken ein 1:1-Ersatzstück. Für Vereins-Restauratoren, Sammler und Industriebetriebe mit alten Werkzeugmaschinen — ab €40 bei vorhandenem Original, ab €120 bei Reverse-Engineering nach Skizze. Hinweis: rechtlich „Anschauungsstück", nicht offiziell zugelassene Ersatzteile.</p>
+                  <p className="text-foreground/85 leading-relaxed">Ein <strong>Oldtimer-Ersatzteil</strong> dessen Original-Hersteller seit 40 Jahren weg ist. Ein Plastikteil aus den 60er-Jahren das spröde geworden ist. Ein Knopf aus einer alten Industriemaschine. Wir scannen oder rekonstruieren das Originalteil und drucken ein 1:1-Ersatzstück. Für Vereins-Restauratoren, Sammler und Industriebetriebe mit alten Werkzeugmaschinen, ab €40 bei vorhandenem Original, ab €120 bei Reverse-Engineering nach Skizze. Hinweis: rechtlich „Anschauungsstück", nicht offiziell zugelassene Ersatzteile.</p>
                 </div>
 
                 <div>
                   <h3 className="font-bold text-xl mb-2 text-foreground">Präsentations-Unikate für Geschäftsgeschenke</h3>
-                  <p className="text-foreground/85 leading-relaxed">Ein <strong>Pokal</strong> in Form Ihres Produkts. Ein <strong>Pensionsgeschenk</strong> als Miniatur der ersten Maschine die jemand jahrzehntelang bedient hat. Ein <strong>Jubiläumsgeschenk</strong> mit dem Firmenlogo als 3D-Skulptur. Wir entwerfen oder verarbeiten Ihre Vorlage und drucken ein wertiges Unikat — meist in PLA mit Lackier-Finish oder direkt in SLA-Resin für höchste Detailtiefe. Lieferzeit 5-10 Tage, Preis €80-400 je nach Größe und Aufwand.</p>
+                  <p className="text-foreground/85 leading-relaxed">Ein <strong>Pokal</strong> in Form Ihres Produkts. Ein <strong>Pensionsgeschenk</strong> als Miniatur der ersten Maschine die jemand jahrzehntelang bedient hat. Ein <strong>Jubiläumsgeschenk</strong> mit dem Firmenlogo als 3D-Skulptur. Wir entwerfen oder verarbeiten Ihre Vorlage und drucken ein wertiges Unikat, meist in PLA mit Lackier-Finish oder direkt in SLA-Resin für höchste Detailtiefe. Lieferzeit 5-10 Tage, Preis €80-400 je nach Größe und Aufwand.</p>
                 </div>
 
                 <div>
                   <h3 className="font-bold text-xl mb-2 text-foreground">Sondergeometrien aus dem Spritzguss-Konzept</h3>
-                  <p className="text-foreground/85 leading-relaxed">Ein Bauteil das später in Spritzguss gehen soll — Sie brauchen aber jetzt erstmal 1-5 Stück um zu prüfen ob Konstruktion, Maße und Funktion stimmen. Wir drucken die <strong>Vorab-Bemusterung</strong> in vergleichbarem Material (PETG für PA-ähnliche Eigenschaften, ABS für PS-ähnliche), mit ±0,1 mm Toleranz. Sobald die Konstruktion verifiziert ist, ist der Sprung zum Spritzgießer risikoarm — und das gedruckte Erstmuster geht ins Werkzeugbau-Briefing.</p>
+                  <p className="text-foreground/85 leading-relaxed">Ein Bauteil das später in Spritzguss gehen soll, Sie brauchen aber jetzt erstmal 1-5 Stück um zu prüfen ob Konstruktion, Maße und Funktion stimmen. Wir drucken die <strong>Vorab-Bemusterung</strong> in vergleichbarem Material (PETG für PA-ähnliche Eigenschaften, ABS für PS-ähnliche), mit ±0,1 mm Toleranz. Sobald die Konstruktion verifiziert ist, ist der Sprung zum Spritzgießer risikoarm, und das gedruckte Erstmuster geht ins Werkzeugbau-Briefing.</p>
                 </div>
 
                 <div>
                   <h3 className="font-bold text-xl mb-2 text-foreground">Maßanfertigung nach Kunden-Skizze</h3>
-                  <p className="text-foreground/85 leading-relaxed">Sie haben kein CAD, sondern eine <strong>Skizze, Foto oder mündliche Beschreibung</strong>. Wir nehmen Maße auf (telefonisch oder vor Ort in OÖ), erstellen das 3D-Modell, schicken Ihnen eine Vorab-Visualisierung, drucken nach Freigabe. Reverse-Engineering und Konstruktion ab €120/Stunde, der Druck danach ab €20. Für Kunden ohne CAD-Erfahrung oder bei Bauteilen ohne Plan ist das oft der einzige Weg — und ein riesiger Mehrwert im Vergleich zu „bringen Sie uns ein STL".</p>
+                  <p className="text-foreground/85 leading-relaxed">Sie haben kein CAD, sondern eine <strong>Skizze, Foto oder mündliche Beschreibung</strong>. Wir nehmen Maße auf (telefonisch oder vor Ort in OÖ), erstellen das 3D-Modell, schicken Ihnen eine Vorab-Visualisierung, drucken nach Freigabe. Reverse-Engineering und Konstruktion ab €120/Stunde, der Druck danach ab €20. Für Kunden ohne CAD-Erfahrung oder bei Bauteilen ohne Plan ist das oft der einzige Weg, und ein riesiger Mehrwert im Vergleich zu „bringen Sie uns ein STL".</p>
                 </div>
               </div>
             </div>
@@ -450,11 +450,11 @@ const Einzelanfertigungen = () => {
         {/* ── CTA ───────────────────────────────────────────────────────── */}
         <CTASection
           headline="Ihr Anschauungsmodell in 6h kalkuliert"
-          subline="Senden Sie uns Ihre Datei oder beschreiben Sie Ihr Projekt – wir antworten persönlich mit einem verbindlichen Angebot. Kostenlos & unverbindlich."
+          subline="Senden Sie uns Ihre Datei oder beschreiben Sie Ihr Projekt, wir antworten persönlich mit einem verbindlichen Angebot. Kostenlos & unverbindlich."
           ctaLabel="Jetzt Anfrage stellen"
           secondaryLabel="Referenzen ansehen"
           urgencyText="⚡ Express 24h verfügbar · Keine Mindestmenge · Made in Austria"
-          legalNote="Wir fertigen ausschließlich Anschauungsmodelle zu Präsentationszwecken – keine Funktionsteile, keine Ersatzteile."
+          legalNote="Wir fertigen ausschließlich Anschauungsmodelle zu Präsentationszwecken, keine Funktionsteile, keine Ersatzteile."
         />
 
         <RelatedPages currentPage="/einzelanfertigungen" title="Weitere Services" />

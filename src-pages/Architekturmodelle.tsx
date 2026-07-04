@@ -42,7 +42,7 @@ const branchen = [
     icon: Home,
     branche: "Privatkunden",
     titel: "Das Haus zum Anfassen",
-    text: "Bauherrengespräche werden anders wenn das Haus auf dem Tisch steht. Wir fertigen Einfamilienhaus-Modelle aus ArchiCAD oder Revit – mit abnehmbarem Dach, möblierten Geschossen, optional sogar beleuchtet. Geschenkidee oder Planungs-Hilfsmittel in einem.",
+    text: "Bauherrengespräche werden anders wenn das Haus auf dem Tisch steht. Wir fertigen Einfamilienhaus-Modelle aus ArchiCAD oder Revit, mit abnehmbarem Dach, möblierten Geschossen, optional sogar beleuchtet. Geschenkidee oder Planungs-Hilfsmittel in einem.",
     typisch: "Einfamilienhaus 1:50, Hausplanungs-Beratung, Pensions-Geschenke",
   },
   {
@@ -56,7 +56,7 @@ const branchen = [
     icon: Palette,
     branche: "Innenarchitektur",
     titel: "Raum- und Materialstudien",
-    text: "Innenraum-Modelle für Showrooms, Material-Bemusterungs-Studien, Möblierungs-Variantenstudien. Maßstab 1:25 oder 1:50 mit eingearbeiteter Oberflächentextur – Marmor, Holz, Beton-Optik realistisch nachgebildet. Auch einzelne Möbelstücke als Anschauungsobjekt für Endkundengespräche.",
+    text: "Innenraum-Modelle für Showrooms, Material-Bemusterungs-Studien, Möblierungs-Variantenstudien. Maßstab 1:25 oder 1:50 mit eingearbeiteter Oberflächentextur, Marmor, Holz, Beton-Optik realistisch nachgebildet. Auch einzelne Möbelstücke als Anschauungsobjekt für Endkundengespräche.",
     typisch: "Showroom-Modelle, Material-Bemusterung, Möblierungs-Studien",
   },
   {
@@ -69,19 +69,19 @@ const branchen = [
 ];
 
 const faqs = [
-  { question: "Was kostet ein Architekturmodell aus dem 3D-Druck?", answer: "Einfamilienhaus 1:100: ab €280. Mehrfamilienhaus 1:200: ab €420. Quartiersmodell 1:500: ab €780. Stadtmodell 1:1000: ab €1.890. Detailmodelle 1:50 (Innenraum / Möbliert): ab €450. Sie erhalten innerhalb von 6 Stunden ein verbindliches Festpreisangebot – kostenlos und unverbindlich, inklusive Materialempfehlung und Lieferdatum." },
-  { question: "Welche CAD-Datei muss ich liefern?", answer: "Wir verarbeiten alle gängigen Formate: ArchiCAD (.pln, .ifc), Revit (.rvt, .ifc), Rhino (.3dm), SketchUp (.skp), AutoCAD (.dwg, .dxf), Vectorworks (.vwx), Allplan (.pln, .ifc) sowie Standardformate (.stl, .step, .obj, .3mf). Sie müssen Ihre Datei nicht in STL konvertieren oder druckfertig aufbereiten – das übernehmen wir." },
+  { question: "Was kostet ein Architekturmodell aus dem 3D-Druck?", answer: "Einfamilienhaus 1:100: ab €280. Mehrfamilienhaus 1:200: ab €420. Quartiersmodell 1:500: ab €780. Stadtmodell 1:1000: ab €1.890. Detailmodelle 1:50 (Innenraum / Möbliert): ab €450. Sie erhalten innerhalb von 6 Stunden ein verbindliches Festpreisangebot, kostenlos und unverbindlich, inklusive Materialempfehlung und Lieferdatum." },
+  { question: "Welche CAD-Datei muss ich liefern?", answer: "Wir verarbeiten alle gängigen Formate: ArchiCAD (.pln, .ifc), Revit (.rvt, .ifc), Rhino (.3dm), SketchUp (.skp), AutoCAD (.dwg, .dxf), Vectorworks (.vwx), Allplan (.pln, .ifc) sowie Standardformate (.stl, .step, .obj, .3mf). Sie müssen Ihre Datei nicht in STL konvertieren oder druckfertig aufbereiten, das übernehmen wir." },
   { question: "Welcher Maßstab ist der richtige?", answer: "Für Einfamilienhäuser empfehlen wir 1:100, für Detail- und Raumstudien 1:50. Wettbewerbsmodelle sind meist 1:200 (oder die in den Wettbewerbsunterlagen vorgeschriebene Größe), Wohnbauprojekte 1:100 bis 1:200, Quartiersmodelle 1:500 und Stadtmodelle 1:1000. Wir beraten Sie kostenfrei vor der Anfrage zum optimalen Maßstab für Ihr Anwendungsziel." },
-  { question: "Wie lange dauert die Fertigung?", answer: "Standard 3–5 Werktage für Modelle bis Maßstab 1:100, 5–10 Werktage für größere Maßstäbe. Express in 24h möglich gegen Aufpreis (+50%) – insbesondere für Wettbewerbsabgaben am Folgetag. Bei dringenden Projekten rufen Sie an: +43 676 5517197." },
-  { question: "Können Sie auch sehr große Modelle drucken?", answer: "Ja. Einzelteile bis 350 × 350 × 350 mm in einem Stück, größere Modelle durch segmentierten Druck mit unsichtbaren Stoßkanten ohne Größenbegrenzung. Wir haben Modelle bis 1,5 × 1,2 m gefertigt – die Segmentierung erfolgt entlang von Gebäudefugen oder Straßenverläufen, sodass sie auf dem fertigen Modell nicht sichtbar ist." },
+  { question: "Wie lange dauert die Fertigung?", answer: "Standard 3–5 Werktage für Modelle bis Maßstab 1:100, 5–10 Werktage für größere Maßstäbe. Express in 24h möglich gegen Aufpreis (+50%), insbesondere für Wettbewerbsabgaben am Folgetag. Bei dringenden Projekten rufen Sie an: +43 676 5517197." },
+  { question: "Können Sie auch sehr große Modelle drucken?", answer: "Ja. Einzelteile bis 350 × 350 × 350 mm in einem Stück, größere Modelle durch segmentierten Druck mit unsichtbaren Stoßkanten ohne Größenbegrenzung. Wir haben Modelle bis 1,5 × 1,2 m gefertigt, die Segmentierung erfolgt entlang von Gebäudefugen oder Straßenverläufen, sodass sie auf dem fertigen Modell nicht sichtbar ist." },
   { question: "Welche Oberflächen sind möglich?", answer: "Weiße matte Standardoberfläche (Klassiker für Wettbewerbsmodelle), Schwarz matt (modern, kontrastreich), Holzdielen-Optik für Innenraum, Beton-Optik mit Strukturoberfläche, Marmor-Optik für Premium-Modelle. Auf Wunsch RAL-Lackierung in jeder Farbe, mehrfarbige Modelle für verkauft/reserviert/verfügbar-Differenzierung." },
-  { question: "Können Sie mehrere Varianten gleichzeitig fertigen?", answer: "Ja, das ist sogar einer der größten Vorteile gegenüber klassischem Modellbau. Parallel-Fertigung mehrerer Varianten zu denselben Stückkosten – kein Aufpreis für 'die zweite Variante'. Häufig genutzt bei Wettbewerbsabgaben (4 Konzepte in einem Modellsatz) und Vermarktungs-Modellen (Bestand vs Neubau)." },
+  { question: "Können Sie mehrere Varianten gleichzeitig fertigen?", answer: "Ja, das ist sogar einer der größten Vorteile gegenüber klassischem Modellbau. Parallel-Fertigung mehrerer Varianten zu denselben Stückkosten, kein Aufpreis für 'die zweite Variante'. Häufig genutzt bei Wettbewerbsabgaben (4 Konzepte in einem Modellsatz) und Vermarktungs-Modellen (Bestand vs Neubau)." },
   { question: "Bieten Sie persönliche Lieferung an?", answer: "Ja. Innerhalb Oberösterreichs (Linz, Wels, Vöcklabruck, Steyr und Umgebung) liefern wir auf Wunsch persönlich gegen Aufwandsentschädigung ab €40. Wien und Salzburg gegen entsprechenden Aufpreis möglich. Sinnvoll für große, empfindliche Modelle oder Wettbewerbsabgaben mit kurzer Übergabefrist." },
   { question: "Können Sie das CAD-Modell auch für mich erstellen?", answer: "Ja. Reverse Engineering ab €120 pro Stunde: Wir erstellen Ihr 3D-Modell nach Plan, Foto oder Skizze. Auch Bestandsgebäude können wir nach Aufmaß oder vorhandenen Plänen modellieren. Für Restaurierungs- und Sanierungsprojekte besonders interessant: historische Pläne werden zum modernen 3D-Modell." },
   { question: "Wie steht es um die Maßstabs-Genauigkeit?", answer: "FDM-Druck: ±0,2 mm absolute Toleranz bzw. ±0,3% bei Objekten über 50 mm. SLA-Druck (für Detailmodelle): ±0,1 mm bzw. ±0,2%. Bei kritischen Maßen (etwa Wettbewerbsabgaben mit vorgeschriebener Modellgröße) messen wir vor dem Versand mit digitalem Messschieber und dokumentieren auf Wunsch." },
-  { question: "Sind die Modelle beschriftbar oder bemalbar?", answer: "Ja. Standardoberfläche ist schleifbar, spachtelbar, lackierbar – alle gängigen Künstlerfarben, Acryl, Lack haftet. Beschriftungen auf Wunsch direkt eingelasert (z.B. Straßennamen bei Stadtmodellen) oder als gravierte Plexiglas-Plaketten am Sockel. Auch UV-Druck direkt auf das Modell möglich." },
+  { question: "Sind die Modelle beschriftbar oder bemalbar?", answer: "Ja. Standardoberfläche ist schleifbar, spachtelbar, lackierbar, alle gängigen Künstlerfarben, Acryl, Lack haftet. Beschriftungen auf Wunsch direkt eingelasert (z.B. Straßennamen bei Stadtmodellen) oder als gravierte Plexiglas-Plaketten am Sockel. Auch UV-Druck direkt auf das Modell möglich." },
   { question: "Bekomme ich eine Garantie auf das Modell?", answer: "Ja. 12 Monate Material- und Verarbeitungsgarantie. Bei Wettbewerbsabgaben mit harter Deadline geben wir eine zusätzliche Liefer-Termin-Garantie: wird der zugesagte Liefertermin nicht eingehalten, übernehmen wir 100% der nachweisbaren Folgekosten. Diese Garantie wird schriftlich im Angebot festgehalten." },
-  { question: "Wie ist die Vertraulichkeit bei Wettbewerbsprojekten?", answer: "Auf Wunsch unterzeichnen wir eine NDA vor Datenaustausch. Direkte Kommunikation mit dem Inhaber, keine Zwischeninstanzen. Keine Weitergabe an Subunternehmer ohne Ihre Zustimmung. Datenarchivierung optional – auf Wunsch löschen wir Ihre CAD-Daten sofort nach Lieferung des Modells. Wichtig insbesondere für laufende Wettbewerbe wo Vertraulichkeit zwingend ist." },
+  { question: "Wie ist die Vertraulichkeit bei Wettbewerbsprojekten?", answer: "Auf Wunsch unterzeichnen wir eine NDA vor Datenaustausch. Direkte Kommunikation mit dem Inhaber, keine Zwischeninstanzen. Keine Weitergabe an Subunternehmer ohne Ihre Zustimmung. Datenarchivierung optional, auf Wunsch löschen wir Ihre CAD-Daten sofort nach Lieferung des Modells. Wichtig insbesondere für laufende Wettbewerbe wo Vertraulichkeit zwingend ist." },
 ];
 
 const Architekturmodelle = () => (
@@ -116,7 +116,7 @@ const Architekturmodelle = () => (
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
 
-            {/* 2026-06-04: H1 — "Architektur" + "modelle." waren in 2 block-Spans,
+            {/* 2026-06-04: H1, "Architektur" + "modelle." waren in 2 block-Spans,
                 Google las "Architektur modelle." mit Spacing → kein Exact-Match.
                 Jetzt eine Zeile, Exact-Match auf Hauptkeyword "Architekturmodelle". */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-[-0.04em] mb-8">
@@ -147,7 +147,7 @@ const Architekturmodelle = () => (
                 <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">3–5</p>
                 <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
                   <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Werktage</p>
-                  <p className="text-[10px] text-muted-foreground hidden md:inline">— Standard</p>
+                  <p className="text-[10px] text-muted-foreground hidden md:inline">Standard</p>
                 </div>
               </div>
               <div className="relative py-8 md:py-10 px-2 md:px-6 group border-l border-border">
@@ -155,7 +155,7 @@ const Architekturmodelle = () => (
                 <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">24h</p>
                 <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
                   <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Express</p>
-                  <p className="text-[10px] text-muted-foreground hidden md:inline">— Wettbewerb</p>
+                  <p className="text-[10px] text-muted-foreground hidden md:inline">Wettbewerb</p>
                 </div>
               </div>
               <div className="relative py-8 md:py-10 px-2 md:px-6 group border-t md:border-t-0 md:border-l border-border">
@@ -163,7 +163,7 @@ const Architekturmodelle = () => (
                 <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">€280</p>
                 <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
                   <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Ab Preis</p>
-                  <p className="text-[10px] text-muted-foreground hidden md:inline">— EFH 1:100</p>
+                  <p className="text-[10px] text-muted-foreground hidden md:inline">EFH 1:100</p>
                 </div>
               </div>
               <div className="relative py-8 md:py-10 px-2 md:px-6 group border-t md:border-t-0 border-l md:border-l border-border">
@@ -171,7 +171,7 @@ const Architekturmodelle = () => (
                 <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">5,0★</p>
                 <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
                   <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Google</p>
-                  <p className="text-[10px] text-muted-foreground hidden md:inline">— 31 Bewertungen</p>
+                  <p className="text-[10px] text-muted-foreground hidden md:inline">31 Bewertungen</p>
                 </div>
               </div>
             </div>
@@ -207,7 +207,7 @@ const Architekturmodelle = () => (
                   <TextReveal text="Sechs Welten. Ein Verfahren." className="text-5xl md:text-7xl font-bold leading-[0.95] tracking-[-0.04em]" />
                 </div>
                 <p className="text-muted-foreground text-sm max-w-sm leading-relaxed">
-                  Von der Wettbewerbsabgabe bis zum Stadtmodell – wir kennen die unterschiedlichen Anforderungen jeder Disziplin.
+                  Von der Wettbewerbsabgabe bis zum Stadtmodell, wir kennen die unterschiedlichen Anforderungen jeder Disziplin.
                 </p>
               </div>
             </AnimatedSection>
@@ -285,7 +285,7 @@ const Architekturmodelle = () => (
       {/* MAßSTÄBE */}
       <ArchitekturScaleSection />
 
-      {/* KOSTEN — targetet "architekturmodell kosten" / "3d-druck architekturmodell kosten" */}
+      {/* KOSTEN, targetet "architekturmodell kosten" / "3d-druck architekturmodell kosten" */}
       <section className="py-24 md:py-32 bg-background" aria-label="Was kostet ein Architekturmodell">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
@@ -351,7 +351,7 @@ const Architekturmodelle = () => (
         </div>
       </section>
 
-      {/* MODELLTYPEN — je eigene H3 für die realen Suchbegriffe */}
+      {/* MODELLTYPEN, je eigene H3 für die realen Suchbegriffe */}
       <section className="py-24 md:py-32 bg-muted/30 border-y border-border" aria-label="Typen von Architekturmodellen">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
@@ -402,9 +402,9 @@ const Architekturmodelle = () => (
               <h2 className="text-3xl md:text-4xl font-bold tracking-[-0.03em] mb-10">Warum 3D-Druck den Architekturmodellbau verändert hat</h2>
 
               <div className="space-y-8 text-base leading-[1.85] text-foreground/85">
-                <p>Wer als Architekt heute auf <strong>Architekturmodelle aus dem 3D-Druck</strong> setzt, hat einen Vorteil gegenüber Konkurrenten die noch auf klassischen Modellbau warten. Klassische Modellbauwerkstätten brauchen drei bis sechs Wochen für ein Modell – wir liefern in drei bis fünf Werktagen, im Express-Verfahren in 24 Stunden. Das verändert wie Architekturbüros mit Wettbewerben, Bauherren und Vermarktung umgehen.</p>
+                <p>Wer als Architekt heute auf <strong>Architekturmodelle aus dem 3D-Druck</strong> setzt, hat einen Vorteil gegenüber Konkurrenten die noch auf klassischen Modellbau warten. Klassische Modellbauwerkstätten brauchen drei bis sechs Wochen für ein Modell, wir liefern in drei bis fünf Werktagen, im Express-Verfahren in 24 Stunden. Das verändert wie Architekturbüros mit Wettbewerben, Bauherren und Vermarktung umgehen.</p>
 
-                <p>Wir fertigen <strong>Wettbewerbsmodelle</strong> in klassischer weißer Optik, <strong>Bauherrenmodelle</strong> für Beratungsgespräche, <strong>Vermarktungsmodelle</strong> für Wohnbau-Schauräume, <strong>Quartiers- und Stadtmodelle</strong> für städtebauliche Projekte und <strong>Detail-Innenraummodelle</strong> für Materialstudien. Vom Maßstab 1:50 bis 1:1000, aus PLA, PETG, ASA oder hochauflösendem SLA-Resin – je nach Anwendungsziel.</p>
+                <p>Wir fertigen <strong>Wettbewerbsmodelle</strong> in klassischer weißer Optik, <strong>Bauherrenmodelle</strong> für Beratungsgespräche, <strong>Vermarktungsmodelle</strong> für Wohnbau-Schauräume, <strong>Quartiers- und Stadtmodelle</strong> für städtebauliche Projekte und <strong>Detail-Innenraummodelle</strong> für Materialstudien. Vom Maßstab 1:50 bis 1:1000, aus PLA, PETG, ASA oder hochauflösendem SLA-Resin, je nach Anwendungsziel.</p>
 
                 <div className="rounded-3xl bg-card border-2 border-border p-8 md:p-10 not-prose">
                   <h3 className="font-bold text-xl mb-4 text-foreground">Parallel-Fertigung ohne Aufpreis</h3>
@@ -413,17 +413,17 @@ const Architekturmodelle = () => (
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">CAD-Format-Unterstützung für alle Architektur-Tools</h3>
-                  <p>Wir verarbeiten <strong>ArchiCAD (.pln, .ifc), Revit (.rvt, .ifc), Rhino (.3dm), SketchUp (.skp), AutoCAD (.dwg, .dxf), Vectorworks (.vwx), Allplan (.pln, .ifc)</strong> sowie alle Standardformate (.stl, .step, .obj, .3mf). Sie müssen Ihre Datei nicht in STL konvertieren oder druckfertig aufbereiten – das übernehmen wir. Vor dem Druck prüfen wir auf wasserdichte Solids, Wandstärken-Probleme, Anisotropie-Richtung. Bei Optimierungspotenzial melden wir uns mit konkreten Vorschlägen, bevor irgendetwas gedruckt wird.</p>
+                  <p>Wir verarbeiten <strong>ArchiCAD (.pln, .ifc), Revit (.rvt, .ifc), Rhino (.3dm), SketchUp (.skp), AutoCAD (.dwg, .dxf), Vectorworks (.vwx), Allplan (.pln, .ifc)</strong> sowie alle Standardformate (.stl, .step, .obj, .3mf). Sie müssen Ihre Datei nicht in STL konvertieren oder druckfertig aufbereiten, das übernehmen wir. Vor dem Druck prüfen wir auf wasserdichte Solids, Wandstärken-Probleme, Anisotropie-Richtung. Bei Optimierungspotenzial melden wir uns mit konkreten Vorschlägen, bevor irgendetwas gedruckt wird.</p>
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-xl mb-3 text-foreground">Maßstäbe – welcher passt zu welchem Projekt?</h3>
+                  <h3 className="font-bold text-xl mb-3 text-foreground">Maßstäbe, welcher passt zu welchem Projekt?</h3>
                   <p>Für <strong>Einfamilienhäuser</strong> empfehlen wir Maßstab 1:100 (12×10 m Haus wird zu 12×10 cm Modell). Für <strong>Detailmodelle</strong> mit Innenausbau und Möblierung 1:50 (ein Geschoss EFH wird zu 60×40 cm). <strong>Wettbewerbsmodelle</strong> sind meist 1:200, oder der in den Wettbewerbsunterlagen vorgeschriebene Maßstab. <strong>Wohnbauprojekte</strong> für die Vermarktung im Schauraum: 1:100 bis 1:200. <strong>Quartiersmodelle</strong> für städtebauliche Wettbewerbe 1:500. <strong>Stadtmodelle</strong> für Stadtteil-Visualisierungen 1:1000. Wir beraten Sie kostenfrei zum richtigen Maßstab.</p>
                 </div>
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Oberflächen-Optionen</h3>
-                  <p>Standardoberfläche ist weiße matte Optik – klassisch für Wettbewerbspräsentationen und Jurybewertungen. Auf Wunsch <strong>schwarz matt</strong> (modern, kontrastreich für Bauträger-Vermarktung), <strong>Holzdielen-Optik</strong> für Innenraum-Modelle, <strong>Beton-Optik</strong> mit Strukturoberfläche, <strong>Marmor-Optik</strong> für Premium-Modelle. <strong>RAL-Lackierung</strong> in jeder Farbe möglich, mehrfarbige Modelle für Differenzierung verkaufter Wohnungen, Geschoss-Markierungen, Material-Bemusterungen. Beschriftungen direkt eingelasert oder als gravierte Plexiglas-Plaketten am Sockel.</p>
+                  <p>Standardoberfläche ist weiße matte Optik, klassisch für Wettbewerbspräsentationen und Jurybewertungen. Auf Wunsch <strong>schwarz matt</strong> (modern, kontrastreich für Bauträger-Vermarktung), <strong>Holzdielen-Optik</strong> für Innenraum-Modelle, <strong>Beton-Optik</strong> mit Strukturoberfläche, <strong>Marmor-Optik</strong> für Premium-Modelle. <strong>RAL-Lackierung</strong> in jeder Farbe möglich, mehrfarbige Modelle für Differenzierung verkaufter Wohnungen, Geschoss-Markierungen, Material-Bemusterungen. Beschriftungen direkt eingelasert oder als gravierte Plexiglas-Plaketten am Sockel.</p>
                 </div>
 
                 <div>
@@ -433,22 +433,22 @@ const Architekturmodelle = () => (
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Vertraulichkeit bei Wettbewerbsprojekten</h3>
-                  <p>Auf Wunsch unterzeichnen wir eine <strong>NDA</strong>, bevor Daten ausgetauscht werden. Direkte Kommunikation mit dem Inhaber, keine Zwischeninstanzen. Keine Weitergabe an Subunternehmer ohne ausdrückliche Zustimmung. Datenarchivierung nach Projektabschluss optional – auf Wunsch löschen wir CAD-Daten sofort nach Lieferung. Wichtig insbesondere für laufende Wettbewerbe wo Vertraulichkeit zwingend ist, und für Bauträger-Projekte in der Pre-Marketing-Phase.</p>
+                  <p>Auf Wunsch unterzeichnen wir eine <strong>NDA</strong>, bevor Daten ausgetauscht werden. Direkte Kommunikation mit dem Inhaber, keine Zwischeninstanzen. Keine Weitergabe an Subunternehmer ohne ausdrückliche Zustimmung. Datenarchivierung nach Projektabschluss optional, auf Wunsch löschen wir CAD-Daten sofort nach Lieferung. Wichtig insbesondere für laufende Wettbewerbe wo Vertraulichkeit zwingend ist, und für Bauträger-Projekte in der Pre-Marketing-Phase.</p>
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-xl mb-3 text-foreground">Reverse Engineering – wenn kein CAD vorhanden ist</h3>
-                  <p>Sie haben Pläne, aber kein 3D-CAD-Modell? Wir erstellen Ihr <strong>3D-Modell nach Plan, Foto oder Skizze</strong>. Auch Bestandsgebäude können wir nach Aufmaß oder vorhandenen Plänen modellieren – ab €120 pro Stunde. Für <strong>Restaurierungs- und Sanierungsprojekte</strong> besonders interessant: historische Pläne werden zum modernen 3D-Modell. Auch für Touristenmodelle historischer Stadtkerne oder Museums-Exponate von Altbestand häufig genutzt.</p>
+                  <h3 className="font-bold text-xl mb-3 text-foreground">Reverse Engineering, wenn kein CAD vorhanden ist</h3>
+                  <p>Sie haben Pläne, aber kein 3D-CAD-Modell? Wir erstellen Ihr <strong>3D-Modell nach Plan, Foto oder Skizze</strong>. Auch Bestandsgebäude können wir nach Aufmaß oder vorhandenen Plänen modellieren, ab €120 pro Stunde. Für <strong>Restaurierungs- und Sanierungsprojekte</strong> besonders interessant: historische Pläne werden zum modernen 3D-Modell. Auch für Touristenmodelle historischer Stadtkerne oder Museums-Exponate von Altbestand häufig genutzt.</p>
                 </div>
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Architekturmodelle für Baueingabe & Bauverhandlung</h3>
-                  <p>Für die <strong>Baueingabe bei der Gemeinde</strong> oder die <strong>Bauverhandlung mit Nachbarn</strong> ist ein physisches Modell oft der entscheidende Unterschied zwischen Genehmigung und Vertagung. Wir liefern <strong>Baueingabe-Modelle</strong> im Maßstab 1:200 oder 1:100, die das geplante Volumen im Bestandskontext klar zeigen — wichtig bei sensiblen Bauplätzen, hangseitiger Bebauung oder bei Sichtachsen-Diskussionen. <strong>Verschattungs-Studien</strong> werden durch das gedruckte Modell sofort begreifbar, die abstrakte Diskussion „der Nachbar verliert 20 Minuten Sonne" wird durch das echte Modell zur sichtbaren Tatsache. Übergabe inklusive transportabler Hartschaum-Box, beschriftete Sockel auf Wunsch.</p>
+                  <p>Für die <strong>Baueingabe bei der Gemeinde</strong> oder die <strong>Bauverhandlung mit Nachbarn</strong> ist ein physisches Modell oft der entscheidende Unterschied zwischen Genehmigung und Vertagung. Wir liefern <strong>Baueingabe-Modelle</strong> im Maßstab 1:200 oder 1:100, die das geplante Volumen im Bestandskontext klar zeigen, wichtig bei sensiblen Bauplätzen, hangseitiger Bebauung oder bei Sichtachsen-Diskussionen. <strong>Verschattungs-Studien</strong> werden durch das gedruckte Modell sofort begreifbar, die abstrakte Diskussion „der Nachbar verliert 20 Minuten Sonne" wird durch das echte Modell zur sichtbaren Tatsache. Übergabe inklusive transportabler Hartschaum-Box, beschriftete Sockel auf Wunsch.</p>
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-xl mb-3 text-foreground">Geländemodelle aus Höhenlinien — DTM/DGM zu 3D-Druck</h3>
-                  <p>Für hangseitige Baugrundstücke, alpine Lagen, Hochwasserschutz-Projekte oder Landschaftsplanung liefern wir <strong>Geländemodelle direkt aus DTM/DGM-Daten</strong>. Höhenlinien aus dem Vermessungsplan, ÖKO-1m-DTM, ALS-Punktwolken oder QGIS-Exports werden in 3D-Modelle überführt — wahlweise mit aufgesetztem Gebäude für Hangbebauungs-Analyse, oder als reines Landschaftsmodell für Behördentermine. Maßstäbe 1:500 für Einzelgrundstücke, 1:1000 bis 1:2000 für Quartiers- und Erschließungsplanungen. Höhen-Übertreibung optional (Faktor 2-3) für bessere Lesbarkeit bei flachem Gelände. Auch farbcodierte Geologie-Schichtmodelle möglich für Geotechnik-Begutachtungen.</p>
+                  <h3 className="font-bold text-xl mb-3 text-foreground">Geländemodelle aus Höhenlinien, DTM/DGM zu 3D-Druck</h3>
+                  <p>Für hangseitige Baugrundstücke, alpine Lagen, Hochwasserschutz-Projekte oder Landschaftsplanung liefern wir <strong>Geländemodelle direkt aus DTM/DGM-Daten</strong>. Höhenlinien aus dem Vermessungsplan, ÖKO-1m-DTM, ALS-Punktwolken oder QGIS-Exports werden in 3D-Modelle überführt, wahlweise mit aufgesetztem Gebäude für Hangbebauungs-Analyse, oder als reines Landschaftsmodell für Behördentermine. Maßstäbe 1:500 für Einzelgrundstücke, 1:1000 bis 1:2000 für Quartiers- und Erschließungsplanungen. Höhen-Übertreibung optional (Faktor 2-3) für bessere Lesbarkeit bei flachem Gelände. Auch farbcodierte Geologie-Schichtmodelle möglich für Geotechnik-Begutachtungen.</p>
                 </div>
 
                 <div>

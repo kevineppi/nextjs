@@ -17,7 +17,7 @@ const UeberUns = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SEOHead
-        title="Über uns — Kevin Eppensteiner, ekdruck e.U. aus Gunskirchen | ekdruck"
+        title="Über uns, Kevin Eppensteiner, ekdruck e.U. aus Gunskirchen | ekdruck"
         description="Wer hinter ekdruck steht: Kevin Eppensteiner, 21, Maschinenbau-Student und Inhaber. Werkstatt in Gunskirchen, OÖ. 3 industrielle FDM-Drucker. ★5,0 (31 Bewertungen)."
         keywords="ekdruck über uns, kevin eppensteiner, ekdruck e.u., 3d druck gunskirchen, 3d druck inhaber oberösterreich, 3d druck werkstatt"
         path="/ueber-uns"
@@ -121,7 +121,7 @@ const UeberUns = () => {
           </div>
         </section>
 
-        {/* ══ KEVIN-STORY-BLOCK — Hauptinhalt ══ */}
+        {/* ══ KEVIN-STORY-BLOCK, Hauptinhalt ══ */}
         <KevinStorySection />
 
         {/* ── WKO TRUST ─────────────────────────────────────────── */}
@@ -197,7 +197,7 @@ const UeberUns = () => {
                 <Badge variant="outline" className="mb-4 text-xs">Technik & Kapazität</Badge>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Der Maschinenpark</h2>
                 <p className="text-muted-foreground max-w-xl mx-auto">
-                  Drei industrielle FDM-Drucker — bewusst gewählt für Spezialisierung statt Massendurchsatz.
+                  Drei industrielle FDM-Drucker, bewusst gewählt für Spezialisierung statt Massendurchsatz.
                   Im 24/7-Parallelbetrieb für kurze Lieferzeiten auch bei größeren Aufträgen.
                 </p>
               </AnimatedSection>
@@ -212,7 +212,7 @@ const UeberUns = () => {
                   {
                     icon: Package,
                     title: "1× Prusa XL (5-Toolhead)",
-                    description: "Großformat-FDM bis 360×360×360mm. Multi-Material-Druck mit bis zu 5 Filamenten gleichzeitig — perfekt für mehrfarbige Modelle ohne Maskierung.",
+                    description: "Großformat-FDM bis 360×360×360mm. Multi-Material-Druck mit bis zu 5 Filamenten gleichzeitig, perfekt für mehrfarbige Modelle ohne Maskierung.",
                   },
                   {
                     icon: Clock,
@@ -281,7 +281,7 @@ const UeberUns = () => {
                       ist im Vergleich zu Standard-Importware aus Asien ca. 80% niedriger.
                     </p>
                     <p>
-                      Das ist nicht nur Greenwashing-Marketing — die Lieferkette ist tatsächlich kurz: Hersteller
+                      Das ist nicht nur Greenwashing-Marketing, die Lieferkette ist tatsächlich kurz: Hersteller
                       in OÖ, ich in OÖ, viele Kunden in OÖ. Bei DACH-weiten Aufträgen schickt der Versand das
                       Modell maximal 1.000 km. Im internationalen Vergleich ein Bruchteil der CO₂-Last.
                     </p>
@@ -299,7 +299,7 @@ const UeberUns = () => {
                       { stat: "~80%", label: "weniger CO₂ vs. Asien-Import" },
                       { stat: "100%", label: "Ökostrom in der Produktion" },
                       { stat: "<200 km", label: "Material-Transport bis Werkstatt" },
-                      { stat: "0", label: "Kunststoff-Neu-Granulat — alles recycelt" },
+                      { stat: "0", label: "Kunststoff-Neu-Granulat, alles recycelt" },
                     ].map(({ stat, label }) => (
                       <div key={stat} className="flex items-center gap-4 p-4 rounded-xl bg-background border border-primary/20">
                         <div className="text-2xl font-bold text-primary min-w-[100px]">{stat}</div>

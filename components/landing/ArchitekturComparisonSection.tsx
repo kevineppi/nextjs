@@ -23,7 +23,7 @@ const alternatives = [
     badge: "Werkstatt",
     badgeColor: "bg-muted text-muted-foreground",
     eyebrow: "MDF / Acryl",
-    description: "Gute Kanten, aber zweidimensional. Stapelweise zusammengeklebt – Fassadendetails fehlen, Komplexität limitiert.",
+    description: "Gute Kanten, aber zweidimensional. Stapelweise zusammengeklebt, Fassadendetails fehlen, Komplexität limitiert.",
     rows: [
       { label: "Lieferzeit", value: "5–10 Tage", status: "mid" },
       { label: "Detailtreue", value: "Mittel (2,5D)", status: "mid" },
@@ -39,7 +39,7 @@ const alternatives = [
     badge: "Manufaktur",
     badgeColor: "bg-muted text-muted-foreground",
     eyebrow: "Handwerklich",
-    description: "Höchste Qualität, aber teuer und langsam. Für Premium-Großprojekte – nicht für mehrere Iterationen oder Wettbewerbsabgaben.",
+    description: "Höchste Qualität, aber teuer und langsam. Für Premium-Großprojekte, nicht für mehrere Iterationen oder Wettbewerbsabgaben.",
     rows: [
       { label: "Lieferzeit", value: "3–6 Wochen", status: "bad" },
       { label: "Detailtreue", value: "Sehr hoch", status: "good" },
@@ -86,7 +86,7 @@ const ArchitekturComparisonSection = () => (
               Warum 3D-Druck<br/><span className="text-gradient">den Modellbau revolutioniert.</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
-              Vier Wege ein Architekturmodell zu bauen – mit sehr unterschiedlichen Ergebnissen für Bauherren, Wettbewerbsjurys und Ihr Budget.
+              Vier Wege ein Architekturmodell zu bauen, mit sehr unterschiedlichen Ergebnissen für Bauherren, Wettbewerbsjurys und Ihr Budget.
             </p>
           </div>
         </AnimatedSection>

@@ -1,9 +1,9 @@
 /**
- * KevinNote — Persönliche Inline-Side-Card
+ * KevinNote, Persönliche Inline-Side-Card
  * ──────────────────────────────────────────────────────────────────
  * Side-Card mit Avatar-Kreis + handschriftlich wirkender Caption
  * + Kevin-Signatur. Eingesetzt in Long-Body-Sections als Skim-Anker
- * + persönlicher Touch — bricht Block-an-Block-Monotonie auf.
+ * + persönlicher Touch, bricht Block-an-Block-Monotonie auf.
  *
  * Design-Quelle: StoryBrand "Guide-Persona", Brand-Voice ek-druck.
  *
@@ -23,7 +23,7 @@ interface KevinNoteProps {
 
 const KevinNote = ({ children, variant = 'inline' }: KevinNoteProps) => {
   if (variant === 'aside') {
-    // Vertical aside variant — sits in side-column
+    // Vertical aside variant, sits in side-column
     return (
       <aside className="relative bg-primary/[0.04] border-l-4 border-primary p-5 my-6 rounded-r-xl">
         <div className="flex items-start gap-3">
@@ -39,7 +39,7 @@ const KevinNote = ({ children, variant = 'inline' }: KevinNoteProps) => {
               {children}
             </div>
             <p className="mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mt-3">
-              — Kevin
+             , Kevin
             </p>
           </div>
         </div>
@@ -47,7 +47,7 @@ const KevinNote = ({ children, variant = 'inline' }: KevinNoteProps) => {
     )
   }
 
-  // Inline variant — fits in body-flow
+  // Inline variant, fits in body-flow
   return (
     <div className="relative my-8 bg-muted/30 border-2 border-primary/20 rounded-2xl p-5 md:p-6">
       <div className="absolute -top-3 left-5 bg-background px-2">
@@ -65,7 +65,7 @@ const KevinNote = ({ children, variant = 'inline' }: KevinNoteProps) => {
             {children}
           </div>
           <p className="mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground mt-3 font-bold">
-            — Kevin Eppensteiner
+           , Kevin Eppensteiner
           </p>
         </div>
       </div>

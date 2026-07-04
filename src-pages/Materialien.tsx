@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
-// StructuredData entfernt 2026-06-02 — LocalBusiness läuft jetzt site-wide via app/layout.tsx
+// StructuredData entfernt 2026-06-02, LocalBusiness läuft jetzt site-wide via app/layout.tsx
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import Contact from "@/components/Contact";
 import AIChatWidget from "@/components/AIChatWidget";
@@ -32,7 +32,7 @@ const Materialien = () => {
           {href: "/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png", as: "image", type: "image/png"}
         ]}
       />
-      {/* StructuredData entfernt — site-wide Organization läuft via app/layout.tsx */}
+      {/* StructuredData entfernt, site-wide Organization läuft via app/layout.tsx */}
       <BreadcrumbSchema items={[
         {name: "Home", url: "/"},
         {name: "3D-Druck Materialien", url: "/3d-druck-materialien"}
@@ -61,7 +61,7 @@ const Materialien = () => {
                 <span className="block text-2xl lg:text-3xl mt-2 text-accent font-normal">Nachhaltig. Regional. Hochwertig.</span>
               </h1>
               <p className="text-xl lg:text-2xl mb-8 text-muted-foreground max-w-3xl mx-auto">
-                <strong className="text-foreground">Nachhaltiges AT-Filament</strong> – Premium 3D-Druck Materialien aus österreichischer Produktion. 
+                <strong className="text-foreground">Nachhaltiges AT-Filament</strong>, Premium 3D-Druck Materialien aus österreichischer Produktion. 
                 Unser <strong className="text-foreground">österreichisches Filament</strong> wird aus recycelten Industrieabfällen hergestellt 
                 für höchste Qualität und Nachhaltigkeit.
               </p>
@@ -149,7 +149,7 @@ const Materialien = () => {
               <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-4xl font-bold mb-6">Unsere Material-Auswahl</h2>
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                  Für jede Anwendung das passende Material – von Konzeptmodellen bis zu anspruchsvollen Präsentationsobjekten
+                  Für jede Anwendung das passende Material, von Konzeptmodellen bis zu anspruchsvollen Präsentationsobjekten
                 </p>
               </div>
 

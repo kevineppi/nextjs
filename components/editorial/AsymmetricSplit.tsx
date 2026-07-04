@@ -1,5 +1,5 @@
 /**
- * AsymmetricSplit — 60/40 oder 70/30 statt 50/50
+ * AsymmetricSplit, 60/40 oder 70/30 statt 50/50
  * ──────────────────────────────────────────────────────────────────
  * Bricht Standard-Grid-Layouts. Eine Seite dominant (Story), andere
  * sekundär (Stats/Avatar/Mini-Card). Optisch interessanter, Lese-

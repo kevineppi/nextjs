@@ -88,9 +88,9 @@ const ArchitekturmodellRegion = () => {
   const fallbackFaqs = [
     { question: `Was kostet ein Architekturmodell in ${regionData.name}?`, answer: `Studienmodelle ab €20, Wettbewerbsmodelle ab €60. Lieferung nach ${regionData.name}: ${regionData.deliveryTime}. Kostenloses Angebot in 6h.` },
     { question: `Welche Maßstäbe sind möglich?`, answer: `Von 1:50 (Detailmodelle) bis 1:500 (Städtebau). Die gängigsten: 1:100 für Wettbewerbe, 1:200 für Stadtplanungsmodelle.` },
-    { question: `Können CAD-Dateien direkt verarbeitet werden?`, answer: `Ja – STL, OBJ, 3MF und STEP. Auch Exporte aus ArchiCAD, Revit, Rhino und SketchUp.` },
+    { question: `Können CAD-Dateien direkt verarbeitet werden?`, answer: `Ja, STL, OBJ, 3MF und STEP. Auch Exporte aus ArchiCAD, Revit, Rhino und SketchUp.` },
     { question: `Wie schnell ist die Lieferung nach ${regionData.name}?`, answer: `Standard: ${regionData.deliveryTime}. Express: 24h (Aufpreis 50%). ${regionData.deliveryNote}.` },
-    { question: `Kann Umgebungsbebauung dargestellt werden?`, answer: `Ja – modulare Stadtmodelle mit farblich differenzierter Bestandsbebauung. Ideal für Wettbewerbe und Bürgerbeteiligungen.` },
+    { question: `Kann Umgebungsbebauung dargestellt werden?`, answer: `Ja, modulare Stadtmodelle mit farblich differenzierter Bestandsbebauung. Ideal für Wettbewerbe und Bürgerbeteiligungen.` },
   ];
   const faqs = extendedData.faqs || fallbackFaqs;
 
@@ -119,7 +119,7 @@ const ArchitekturmodellRegion = () => {
     .filter(Boolean).slice(0, 4);
 
   // ═══════════════════════════════════════════
-  // SECTION RENDERER – renders sections based on layoutType order
+  // SECTION RENDERER, renders sections based on layoutType order
   // ═══════════════════════════════════════════
   const renderSection = (sectionId: SectionId) => {
     switch (sectionId) {
@@ -259,7 +259,7 @@ const ArchitekturmodellRegion = () => {
         return (
           <CTASection
             key="cta2"
-            headline={`Express für ${regionData.name} – Angebot in 6h`}
+            headline={`Express für ${regionData.name}, Angebot in 6h`}
             subline="CAD-Datei senden, Preis erhalten, Modell drucken. So einfach ist das."
             ctaLabel="Jetzt Express anfragen"
             ctaHref="/kontakt"

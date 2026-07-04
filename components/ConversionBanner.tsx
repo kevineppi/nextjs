@@ -4,7 +4,7 @@ import { ArrowRight, Calculator, Clock, ShieldCheck } from "lucide-react";
 interface ConversionBannerProps {
   /** Headline mit Buying-Intent (z.B. "Sofort 3D drucken lassen") */
   headline: string;
-  /** Subline – konkretisiert den Nutzen (1 Satz) */
+  /** Subline, konkretisiert den Nutzen (1 Satz) */
   subline: string;
   /** Primärer CTA-Text */
   primaryLabel: string;
@@ -19,7 +19,7 @@ interface ConversionBannerProps {
  * Conversion-Banner für Ratgeber/Guide-Seiten.
  *
  * Zweck: User mit Kaufintention, die auf einem Guide landen, sofort
- * zur passenden Money-Page weiterleiten – BEVOR sie den Artikel lesen.
+ * zur passenden Money-Page weiterleiten, BEVOR sie den Artikel lesen.
  *
  * Platzierung: Direkt nach dem H1 des Guides.
  */

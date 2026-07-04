@@ -1,12 +1,12 @@
 import { Palette, Eye, Trophy, UserCheck, Sparkles, Boxes } from "lucide-react";
 
 const items = [
-  { icon: Eye, title: "Präsentationsmodelle", desc: "Dreidimensionale Modelle für Kundenpräsentationen, Besprechungen und Entscheidungsprozesse – greifbar statt digital." },
+  { icon: Eye, title: "Präsentationsmodelle", desc: "Dreidimensionale Modelle für Kundenpräsentationen, Besprechungen und Entscheidungsprozesse, greifbar statt digital." },
   { icon: Palette, title: "Designstudien & Entwürfe", desc: "Haptische Formentwürfe, um Proportionen, Oberflächen und Materialwirkung erlebbar zu machen." },
-  { icon: Trophy, title: "Messe- & Ausstellungsmodelle", desc: "Hochwertige Showmodelle, die am Messestand überzeugen – vom Architekturmodell bis zum Produktentwurf." },
-  { icon: Boxes, title: "Kleinauflagen & Projektmengen", desc: "Auch größere Stückzahlen sind möglich – ob 10, 50 oder 200+ Modelle. Mengenrabatte ab 10 Stück." },
+  { icon: Trophy, title: "Messe- & Ausstellungsmodelle", desc: "Hochwertige Showmodelle, die am Messestand überzeugen, vom Architekturmodell bis zum Produktentwurf." },
+  { icon: Boxes, title: "Kleinauflagen & Projektmengen", desc: "Auch größere Stückzahlen sind möglich, ob 10, 50 oder 200+ Modelle. Mengenrabatte ab 10 Stück." },
   { icon: UserCheck, title: "Persönliche Prüfung", desc: "Kein automatisierter Prozess. Jedes Projekt wird individuell von unseren Fachleuten begutachtet und beraten." },
-  { icon: Sparkles, title: "Individuelle Beratung", desc: "Material, Oberflächenfinish, Maßstab – wir besprechen jedes Detail persönlich, bevor wir starten." },
+  { icon: Sparkles, title: "Individuelle Beratung", desc: "Material, Oberflächenfinish, Maßstab, wir besprechen jedes Detail persönlich, bevor wir starten." },
 ];
 
 const CalculatorInfoSection = () => (
@@ -18,7 +18,7 @@ const CalculatorInfoSection = () => (
         </h2>
         <p className="text-muted-foreground leading-relaxed">
           Wir fertigen <strong className="text-foreground">nicht-technische Modelle</strong> für
-          Präsentation, Gestaltung und Ausstellung – von der ersten Idee bis zum fertigen Objekt.
+          Präsentation, Gestaltung und Ausstellung, von der ersten Idee bis zum fertigen Objekt.
           Keine mechanischen Bauteile, keine industrielle Massenfertigung –
           dafür handwerkliche Qualität und persönliche Betreuung.
         </p>

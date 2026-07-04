@@ -184,7 +184,7 @@ const Referenzen = () => {
                 Unsere <span className="text-gradient">Referenzen</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-                Von Architekturmodellen bis Deko-Objekten – entdecken Sie ausgewählte Projekte mit 
+                Von Architekturmodellen bis Deko-Objekten, entdecken Sie ausgewählte Projekte mit 
                 technischen Details, Druckzeiten und Kundenfeedback.
               </p>
               <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
@@ -694,7 +694,7 @@ const Referenzen = () => {
                     </blockquote>
                     {selectedProject.customer_name && (
                       <p className="text-sm text-muted-foreground font-medium">
-                        — {selectedProject.customer_name}
+                       , {selectedProject.customer_name}
                       </p>
                     )}
                   </div>

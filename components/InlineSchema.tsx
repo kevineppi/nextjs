@@ -1,6 +1,6 @@
 /**
- * InlineSchema — Server-side inline JSON-LD helper
- * 2026-05-26: K1-Refactor — von 'use client' + useEffect zu Server Component
+ * InlineSchema, Server-side inline JSON-LD helper
+ * 2026-05-26: K1-Refactor, von 'use client' + useEffect zu Server Component
  *
  * Verwendung:
  *   <InlineSchema id="my-schema-id" schema={{ "@context": ..., "@type": ..., ... }} />

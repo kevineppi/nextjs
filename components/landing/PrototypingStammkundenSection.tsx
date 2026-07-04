@@ -7,18 +7,18 @@ import { Check, ArrowRight, Clock, AlertTriangle, Wallet, TrendingDown, Zap, Pac
 const painPoints = [
   {
     icon: Clock,
-    title: "5 Tage Wartezeit – mitten in der Iteration",
-    text: "Ihre Konstruktion ist fertig, der Sprint läuft. Aber Sie warten 4–5 Werktage auf den Druck. Beim nächsten Druckdienstleister dasselbe Spiel. Das Sprint-Ziel verschiebt sich – und mit ihm die Roadmap.",
+    title: "5 Tage Wartezeit, mitten in der Iteration",
+    text: "Ihre Konstruktion ist fertig, der Sprint läuft. Aber Sie warten 4–5 Werktage auf den Druck. Beim nächsten Druckdienstleister dasselbe Spiel. Das Sprint-Ziel verschiebt sich, und mit ihm die Roadmap.",
   },
   {
     icon: AlertTriangle,
     title: "Pro Anfrage ein neuer Preis, eine neue Lieferzeit",
-    text: "Mal €45, mal €120, mal €230 – für ähnliche Bauteile. Manchmal in 3 Tagen, manchmal in 10. Sie können Ihrem Vorstand kein verlässliches Iterationsbudget vorlegen, weil die Kosten pro Zyklus springen.",
+    text: "Mal €45, mal €120, mal €230, für ähnliche Bauteile. Manchmal in 3 Tagen, manchmal in 10. Sie können Ihrem Vorstand kein verlässliches Iterationsbudget vorlegen, weil die Kosten pro Zyklus springen.",
   },
   {
     icon: Wallet,
     title: "Zur Deadline immer noch ohne Slot",
-    text: "Freitag soll der Funktionstest stattfinden, Donnerstag ruft der Konstrukteur an: 'Wir brauchen noch eine Variante.' Sie versuchen einen Express-Slot zu bekommen – der ist belegt. Wieder kein Test, wieder eine Woche verloren.",
+    text: "Freitag soll der Funktionstest stattfinden, Donnerstag ruft der Konstrukteur an: 'Wir brauchen noch eine Variante.' Sie versuchen einen Express-Slot zu bekommen, der ist belegt. Wieder kein Test, wieder eine Woche verloren.",
   },
 ];
 
@@ -28,7 +28,7 @@ const loyaltyOptions = [
     icon: TrendingDown,
     eyebrow: "Für regelmäßige Bedarfe",
     headline: "Mehr Aufträge, weniger Stückkosten",
-    text: "Ab dem 5. Auftrag im Quartal sparen Sie automatisch. Keine Karte, keine Anmeldung, kein Vertrag – wir erkennen Sie über Ihre Auftraggeber-Daten und rechnen den Rabatt direkt auf der Rechnung an.",
+    text: "Ab dem 5. Auftrag im Quartal sparen Sie automatisch. Keine Karte, keine Anmeldung, kein Vertrag, wir erkennen Sie über Ihre Auftraggeber-Daten und rechnen den Rabatt direkt auf der Rechnung an.",
     stufen: [
       { volume: "5+ Aufträge / Quartal", rabatt: "10%", desc: "Automatisch ab dem 5. Auftrag" },
       { volume: "10+ Aufträge / Quartal", rabatt: "15%", desc: "Premium-Stammkunden-Status" },
@@ -42,7 +42,7 @@ const loyaltyOptions = [
     icon: Zap,
     eyebrow: "Für Deadline-Druck-Sicherheit",
     headline: "3 Express-Slots auf Abruf",
-    text: "Einmalig €149 sichert Ihnen drei 24h-Express-Slots in den nächsten 6 Monaten. Sie rufen an, wir produzieren in 24 Stunden – garantiert verfügbar, auch wenn unsere Maschinen sonst ausgelastet sind.",
+    text: "Einmalig €149 sichert Ihnen drei 24h-Express-Slots in den nächsten 6 Monaten. Sie rufen an, wir produzieren in 24 Stunden, garantiert verfügbar, auch wenn unsere Maschinen sonst ausgelastet sind.",
     stufen: [
       { volume: "Einmal-Zahlung €149", rabatt: "3 Slots", desc: "Gültig 6 Monate ab Buchung" },
       { volume: "Druck pro Slot zusätzlich", rabatt: "Normalpreis", desc: "Express-Aufschlag entfällt" },
@@ -57,7 +57,7 @@ const loyaltyOptions = [
     icon: Package,
     eyebrow: "Für Entwicklungsphasen",
     headline: "10 Iterationen in 3 Monaten",
-    text: "Sie sind mitten in der Hardware-Entwicklung und brauchen über 3 Monate intensiv Prototypen? Das Sprint-Paket bündelt 10 Aufträge zum Festpreis – inklusive Produktionspriorität und persönlichem Ansprechpartner.",
+    text: "Sie sind mitten in der Hardware-Entwicklung und brauchen über 3 Monate intensiv Prototypen? Das Sprint-Paket bündelt 10 Aufträge zum Festpreis, inklusive Produktionspriorität und persönlichem Ansprechpartner.",
     stufen: [
       { volume: "Festpreis €1.490", rabatt: "10 Drucke", desc: "Standard-Größe bis 18×18×18 cm" },
       { volume: "Gültigkeitsdauer", rabatt: "3 Monate", desc: "Auf Wunsch verlängerbar" },
@@ -83,7 +83,7 @@ const PrototypingStammkundenSection = () => (
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
               Drei Pain Points, die jeder Hardware-Entwickler kennt.
-              Drei Loyalty-Konditionen, die helfen – ohne Abo-Zwang.
+              Drei Loyalty-Konditionen, die helfen, ohne Abo-Zwang.
             </p>
           </div>
 
@@ -109,7 +109,7 @@ const PrototypingStammkundenSection = () => (
             Stammkunden-Konditionen<br/><span className="text-gradient">statt Abo-Zwang.</span>
           </h3>
           <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
-            Sie zahlen weiterhin pro Auftrag – nicht monatlich. Aber je nach Bedarfsmuster bieten wir drei Konditionen, die Ihnen Geld, Wartezeit oder beides sparen.
+            Sie zahlen weiterhin pro Auftrag, nicht monatlich. Aber je nach Bedarfsmuster bieten wir drei Konditionen, die Ihnen Geld, Wartezeit oder beides sparen.
           </p>
         </AnimatedSection>
 
@@ -182,7 +182,7 @@ const PrototypingStammkundenSection = () => (
                 <div>
                   <p className="font-bold text-sm mb-1">Direkter Inhaber-Kontakt</p>
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    Ab 20 Aufträgen pro Quartal kommunizieren Sie direkt mit dem Inhaber – Express-Slots per WhatsApp möglich.
+                    Ab 20 Aufträgen pro Quartal kommunizieren Sie direkt mit dem Inhaber, Express-Slots per WhatsApp möglich.
                   </p>
                 </div>
               </div>

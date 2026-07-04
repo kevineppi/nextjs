@@ -36,23 +36,23 @@ const RegionalUniqueContent = ({
                   <Zap className="w-5 h-5 text-primary" />
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold">
-                  3D-Druck für Unternehmen in {regionName} – Alles Wichtige auf einen Blick
+                  3D-Druck für Unternehmen in {regionName}, Alles Wichtige auf einen Blick
                 </h2>
               </div>
 
               <div className="prose prose-lg max-w-none text-foreground space-y-5">
                 <p className="text-muted-foreground leading-relaxed">
-                  Unternehmen in {regionName} setzen zunehmend auf 3D-Druck, um Designstudien schneller zu realisieren, Präsentationsmodelle kosteneffizient zu fertigen und Konzepte greifbar zu machen. ekdruck e.U. bietet als spezialisierter FDM-Druckservice {countryPrep} die passende Lösung: Von der ersten Idee bis zum fertigen Modell – unkompliziert, schnell und in professioneller Qualität.
+                  Unternehmen in {regionName} setzen zunehmend auf 3D-Druck, um Designstudien schneller zu realisieren, Präsentationsmodelle kosteneffizient zu fertigen und Konzepte greifbar zu machen. ekdruck e.U. bietet als spezialisierter FDM-Druckservice {countryPrep} die passende Lösung: Von der ersten Idee bis zum fertigen Modell, unkompliziert, schnell und in professioneller Qualität.
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  Unser Leistungsspektrum umfasst Designstudien, Präsentationsmodelle, Konzeptmodelle, Projektmengen und Einzelanfertigungen. Wir verarbeiten hochwertige Materialien wie PLA+, PETG, ASA und TPU – je nach Anforderung an Oberfläche, Haltbarkeit oder Flexibilität. Die Lieferung nach {regionName} erfolgt innerhalb von {deliveryTime}. Für zeitkritische Projekte steht unser Express-Service mit 24-Stunden-Fertigung bereit.
+                  Unser Leistungsspektrum umfasst Designstudien, Präsentationsmodelle, Konzeptmodelle, Projektmengen und Einzelanfertigungen. Wir verarbeiten hochwertige Materialien wie PLA+, PETG, ASA und TPU, je nach Anforderung an Oberfläche, Haltbarkeit oder Flexibilität. Die Lieferung nach {regionName} erfolgt innerhalb von {deliveryTime}. Für zeitkritische Projekte steht unser Express-Service mit 24-Stunden-Fertigung bereit.
                 </p>
 
                 <div className="grid sm:grid-cols-3 gap-4 mt-6 not-prose">
                   {[
                     { icon: Zap, title: "Express 24h", desc: `Für dringende Projekte in ${regionName}` },
-                    { icon: Layers, title: "4 Materialien", desc: "PLA+, PETG, ASA, TPU – nach Bedarf" },
+                    { icon: Layers, title: "4 Materialien", desc: "PLA+, PETG, ASA, TPU, nach Bedarf" },
                     { icon: Award, title: "Ab Stückzahl 1", desc: "Einzelteile bis Kleinserien" },
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3 p-4 rounded-xl bg-muted/40 border border-border/40">
@@ -68,7 +68,7 @@ const RegionalUniqueContent = ({
                 </div>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  Der Prozess ist einfach: Sie senden uns Ihre 3D-Datei (STL, OBJ oder STEP), wir prüfen die Druckbarkeit und erstellen innerhalb von 6 Stunden ein Angebot. Nach Freigabe starten wir die Produktion – je nach Modellgröße und Komplexität dauert der Druck wenige Stunden bis maximal 3 Tage. Der Versand nach {regionName} erfolgt versichert mit Sendungsverfolgung.
+                  Der Prozess ist einfach: Sie senden uns Ihre 3D-Datei (STL, OBJ oder STEP), wir prüfen die Druckbarkeit und erstellen innerhalb von 6 Stunden ein Angebot. Nach Freigabe starten wir die Produktion, je nach Modellgröße und Komplexität dauert der Druck wenige Stunden bis maximal 3 Tage. Der Versand nach {regionName} erfolgt versichert mit Sendungsverfolgung.
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
@@ -94,7 +94,7 @@ const RegionalUniqueContent = ({
                   <FileText className="w-5 h-5 text-primary" />
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold">
-                  3D-Messemodelle für {regionName} – Was Sie wissen sollten
+                  3D-Messemodelle für {regionName}, Was Sie wissen sollten
                 </h2>
               </div>
 
@@ -104,12 +104,12 @@ const RegionalUniqueContent = ({
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  Wir produzieren Messemodelle nach Maß – von kleinen Produktmodellen im Tischformat bis zu spektakulären Exponaten mit über einem Meter Kantenlänge. Jedes Modell wird individuell nach Ihren CAD-Daten oder Zeichnungen gefertigt, sodass die Genauigkeit stimmt. Die Lieferung nach {regionName} erfolgt in der Regel innerhalb von {deliveryTime}. Für kurzfristige Messetermine bieten wir Express-Fertigung in 24 Stunden an.
+                  Wir produzieren Messemodelle nach Maß, von kleinen Produktmodellen im Tischformat bis zu spektakulären Exponaten mit über einem Meter Kantenlänge. Jedes Modell wird individuell nach Ihren CAD-Daten oder Zeichnungen gefertigt, sodass die Genauigkeit stimmt. Die Lieferung nach {regionName} erfolgt in der Regel innerhalb von {deliveryTime}. Für kurzfristige Messetermine bieten wir Express-Fertigung in 24 Stunden an.
                 </p>
 
                 {topMessen.length > 0 && (
                   <p className="text-muted-foreground leading-relaxed">
-                    In {regionName} finden regelmäßig bedeutende Fachveranstaltungen statt – darunter{' '}
+                    In {regionName} finden regelmäßig bedeutende Fachveranstaltungen statt, darunter{' '}
                     {topMessen.map((m, i) => (
                       <span key={i}>
                         <strong>{m.name}</strong> ({m.type}){i < topMessen.length - 2 ? ', ' : i === topMessen.length - 2 ? ' und ' : ''}
@@ -120,13 +120,13 @@ const RegionalUniqueContent = ({
                 )}
 
                 <p className="text-muted-foreground leading-relaxed">
-                  Unsere Messemodelle werden aus hochwertigen Materialien wie PLA+, PETG und ASA im FDM-Verfahren gedruckt. Das Ergebnis: leichte, robuste und detailgetreue Modelle, die den Transportbelastungen standhalten und am Messestand professionell wirken. Auf Wunsch lackieren und nachbearbeiten wir die Objekte – für ein messeoptimiertes Finish. Kunden aus {regionName} schätzen besonders die kurzen Reaktionszeiten und die persönliche Betreuung durch unser Team.
+                  Unsere Messemodelle werden aus hochwertigen Materialien wie PLA+, PETG und ASA im FDM-Verfahren gedruckt. Das Ergebnis: leichte, robuste und detailgetreue Modelle, die den Transportbelastungen standhalten und am Messestand professionell wirken. Auf Wunsch lackieren und nachbearbeiten wir die Objekte, für ein messeoptimiertes Finish. Kunden aus {regionName} schätzen besonders die kurzen Reaktionszeiten und die persönliche Betreuung durch unser Team.
                 </p>
 
                 <div className="grid sm:grid-cols-3 gap-4 mt-6 not-prose">
                   {[
                     { icon: Zap, title: "Express 24h", desc: `Für dringende Messetermine in ${regionName}` },
-                    { icon: Layers, title: "Alle Materialien", desc: "PLA+, PETG, ASA – je nach Anforderung" },
+                    { icon: Layers, title: "Alle Materialien", desc: "PLA+, PETG, ASA, je nach Anforderung" },
                     { icon: Award, title: "Maßgefertigt", desc: "Aus Ihren CAD-Daten, STL oder OBJ-Dateien" },
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3 p-4 rounded-xl bg-muted/40 border border-border/40">
@@ -142,7 +142,7 @@ const RegionalUniqueContent = ({
                 </div>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  Der Bestellprozess ist einfach: Sie senden uns Ihre Dateien (STL, OBJ oder CAD-Daten), wir erstellen binnen 6 Stunden ein unverbindliches Angebot. Nach Freigabe beginnen wir sofort mit der Produktion. Der Versand nach {regionName} erfolgt mit Track & Trace – Sie wissen immer, wo Ihr Modell gerade ist. Bei Bestellungen ab €100 entfallen die Versandkosten.
+                  Der Bestellprozess ist einfach: Sie senden uns Ihre Dateien (STL, OBJ oder CAD-Daten), wir erstellen binnen 6 Stunden ein unverbindliches Angebot. Nach Freigabe beginnen wir sofort mit der Produktion. Der Versand nach {regionName} erfolgt mit Track & Trace, Sie wissen immer, wo Ihr Modell gerade ist. Bei Bestellungen ab €100 entfallen die Versandkosten.
                 </p>
               </div>
             </AnimatedSection>
@@ -171,10 +171,10 @@ const RegionalUniqueContent = ({
 
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Architekten und Planungsbüros in {regionName} stehen im Wettbewerb unter echtem Zeitdruck: Wettbewerbsabgaben, Bauherren-Präsentationen, Behördengespräche – alles will pünktlich und überzeugend sein. Ein maßstabsgetreues 3D-gedrucktes Architekturmodell ist dabei kein Luxus, sondern ein professionelles Arbeitsmittel. Es vermittelt Bauherren, Investoren und Genehmigungsbehörden auf einen Blick, was kein Grundriss und kein Rendering je so klar zeigen kann: das echte Raum- und Proportionsgefühl des Entwurfs.
+                Architekten und Planungsbüros in {regionName} stehen im Wettbewerb unter echtem Zeitdruck: Wettbewerbsabgaben, Bauherren-Präsentationen, Behördengespräche, alles will pünktlich und überzeugend sein. Ein maßstabsgetreues 3D-gedrucktes Architekturmodell ist dabei kein Luxus, sondern ein professionelles Arbeitsmittel. Es vermittelt Bauherren, Investoren und Genehmigungsbehörden auf einen Blick, was kein Grundriss und kein Rendering je so klar zeigen kann: das echte Raum- und Proportionsgefühl des Entwurfs.
               </p>
               <p>
-                ekdruck e.U. fertigt Architekturmodelle speziell für Architekturbüros in {regionName} – in allen gängigen Maßstäben von 1:500 (städtebauliche Übersichten) bis 1:50 (detaillierte Gebäudeschnitte). Wir verarbeiten direkte CAD-Exporte aus ArchiCAD, Autodesk Revit, SketchUp, Rhino und Vectorworks. Lieferung nach {regionName}: {deliveryTime}. Bei Wettbewerbsabgaben ist Express-Fertigung in 24 Stunden möglich.
+                ekdruck e.U. fertigt Architekturmodelle speziell für Architekturbüros in {regionName}, in allen gängigen Maßstäben von 1:500 (städtebauliche Übersichten) bis 1:50 (detaillierte Gebäudeschnitte). Wir verarbeiten direkte CAD-Exporte aus ArchiCAD, Autodesk Revit, SketchUp, Rhino und Vectorworks. Lieferung nach {regionName}: {deliveryTime}. Bei Wettbewerbsabgaben ist Express-Fertigung in 24 Stunden möglich.
               </p>
             </div>
           </AnimatedSection>
@@ -190,7 +190,7 @@ const RegionalUniqueContent = ({
                 {
                   type: "Wettbewerbsmodell",
                   scale: "1:100 bis 1:200",
-                  desc: "Weiß, matt, mit Umgebungsmodell. Für Jurys und Wettbewerbsabgaben – Express 24h verfügbar.",
+                  desc: "Weiß, matt, mit Umgebungsmodell. Für Jurys und Wettbewerbsabgaben, Express 24h verfügbar.",
                   icon: Trophy,
                 },
                 {
@@ -250,13 +250,13 @@ const RegionalUniqueContent = ({
             </h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Der klassische Modellbauer ist in {regionName} zunehmend schwer zu finden – und wenn, dann oft mit Vorlaufzeiten von zwei bis vier Wochen. 3D-gedruckte Architekturmodelle schließen diese Lücke: Innerhalb von 3–5 Werktagen liegt das fertige Modell auf dem Tisch. Für Wettbewerbe mit knappen Deadlines: Express-Lieferung in 24 Stunden. Wer heute bestellt, hat das Modell morgen.
+                Der klassische Modellbauer ist in {regionName} zunehmend schwer zu finden, und wenn, dann oft mit Vorlaufzeiten von zwei bis vier Wochen. 3D-gedruckte Architekturmodelle schließen diese Lücke: Innerhalb von 3–5 Werktagen liegt das fertige Modell auf dem Tisch. Für Wettbewerbe mit knappen Deadlines: Express-Lieferung in 24 Stunden. Wer heute bestellt, hat das Modell morgen.
               </p>
               <p>
-                Die Kostenersparnis gegenüber traditionellem Modellbau beträgt typischerweise 60–80 %. Ein Modell, das beim Modellbauer €800 kostet, liegt bei uns zwischen €100 und €200 – bei gleicher oder besserer Detailgenauigkeit. Das ermöglicht es Büros in {regionName}, auch mehrere Varianten parallel zu bestellen: Drei Entwürfe, drei Modelle, direkter Vergleich beim Bauherrn.
+                Die Kostenersparnis gegenüber traditionellem Modellbau beträgt typischerweise 60–80 %. Ein Modell, das beim Modellbauer €800 kostet, liegt bei uns zwischen €100 und €200, bei gleicher oder besserer Detailgenauigkeit. Das ermöglicht es Büros in {regionName}, auch mehrere Varianten parallel zu bestellen: Drei Entwürfe, drei Modelle, direkter Vergleich beim Bauherrn.
               </p>
               <p>
-                Besonders für Büros, die regelmäßig Wettbewerbe einreichen oder viele Bauherrengespräche führen, rechnet sich die Umstellung schnell. Mehrere Architekturbüros {countryPrep} berichten, dass physische Modelle die Abschlussrate bei Bauherren-Präsentationen spürbar gesteigert haben – weil Bauherren Proportionen und Raum im Modell sofort begreifen, was Pläne und Visualisierungen nie leisten können.
+                Besonders für Büros, die regelmäßig Wettbewerbe einreichen oder viele Bauherrengespräche führen, rechnet sich die Umstellung schnell. Mehrere Architekturbüros {countryPrep} berichten, dass physische Modelle die Abschlussrate bei Bauherren-Präsentationen spürbar gesteigert haben, weil Bauherren Proportionen und Raum im Modell sofort begreifen, was Pläne und Visualisierungen nie leisten können.
               </p>
             </div>
           </AnimatedSection>
@@ -271,7 +271,7 @@ const RegionalUniqueContent = ({
               <div className="grid sm:grid-cols-4 gap-4 mb-6">
                 {[
                   { step: "1", title: "CAD exportieren", desc: "STL/OBJ aus ArchiCAD, Revit, SketchUp oder Rhino" },
-                  { step: "2", title: "Datei senden", desc: "Per E-Mail oder Uploadformular – Angebot in 6h" },
+                  { step: "2", title: "Datei senden", desc: "Per E-Mail oder Uploadformular, Angebot in 6h" },
                   { step: "3", title: "Fertigung", desc: "3–5 Werktage Standard, 24h Express möglich" },
                   { step: "4", title: `Lieferung nach ${regionName}`, desc: `${deliveryTime} Lieferzeit, Tracking inklusive` },
                 ].map((s, i) => (
@@ -309,10 +309,10 @@ const RegionalUniqueContent = ({
             </h3>
             <div className="space-y-3 text-muted-foreground leading-relaxed">
               <p>
-                Für Architekturmodelle empfehlen wir je nach Einsatzzweck unterschiedliche Materialien: <strong className="text-foreground">PLA Premium Weiß</strong> ist der Klassiker für Wettbewerbsmodelle – saubere matte Oberfläche, einfach nachzubearbeiten, ideale Grundlage für weitere Lackierung. <strong className="text-foreground">PETG Transparent</strong> eignet sich hervorragend für Glasfassaden, Dachverglasungen und Fensterbänder – der halbtransparente Effekt ist bei modernen Gebäuden äußerst wirkungsvoll.
+                Für Architekturmodelle empfehlen wir je nach Einsatzzweck unterschiedliche Materialien: <strong className="text-foreground">PLA Premium Weiß</strong> ist der Klassiker für Wettbewerbsmodelle, saubere matte Oberfläche, einfach nachzubearbeiten, ideale Grundlage für weitere Lackierung. <strong className="text-foreground">PETG Transparent</strong> eignet sich hervorragend für Glasfassaden, Dachverglasungen und Fensterbänder, der halbtransparente Effekt ist bei modernen Gebäuden äußerst wirkungsvoll.
               </p>
               <p>
-                Für alpine Architektur und Holzbau-Projekte – besonders relevant in {regionName} – bieten wir <strong className="text-foreground">PLA Holzoptik</strong> an, das eine authentische Holzmaserung erzeugt. Städtebauliche Modelle mit Bestandsbebauung werden typischerweise zweiteilig gefertigt: Bestand in Grau, Neubau in Weiß – der Klassiker für Gemeinde- und Bebauungsplanpräsentationen.
+                Für alpine Architektur und Holzbau-Projekte, besonders relevant in {regionName}, bieten wir <strong className="text-foreground">PLA Holzoptik</strong> an, das eine authentische Holzmaserung erzeugt. Städtebauliche Modelle mit Bestandsbebauung werden typischerweise zweiteilig gefertigt: Bestand in Grau, Neubau in Weiß, der Klassiker für Gemeinde- und Bebauungsplanpräsentationen.
               </p>
               <p>
                 Alle Modelle werden mit 0,1–0,2 mm Schichtauflösung gedruckt. Das entspricht einer Detailgenauigkeit, die selbst filigrane Fassadenelemente, Treppen und Geländer sichtbar macht. Auf Wunsch schleifen, grundieren und lackieren wir die Modelle für ein perfektes Finish.

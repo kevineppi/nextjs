@@ -32,10 +32,10 @@ const LegalDisclaimer = ({ variant = "full", className = "" }: LegalDisclaimerPr
           Gemäß unserer Gewerbeberechtigung fertigen wir <strong className="text-foreground">ausschließlich</strong>:
         </p>
         <ul className="list-disc list-inside space-y-1 ml-2">
-          <li><strong className="text-foreground">Messemodelle & Präsentationsobjekte</strong> – Exponate, Showpieces, Standdekorationen</li>
-          <li><strong className="text-foreground">Architekturmodelle</strong> – Maßstabsmodelle, Gebäudemodelle, Stadtmodelle</li>
-          <li><strong className="text-foreground">Industrielle Anschauungsmodelle</strong> – Produktvisualisierungen, Konzeptdarstellungen</li>
-          <li><strong className="text-foreground">Kunst- und Ziergegenstände</strong> – Skulpturen, künstlerische Objekte, Unikate</li>
+          <li><strong className="text-foreground">Messemodelle & Präsentationsobjekte</strong>, Exponate, Showpieces, Standdekorationen</li>
+          <li><strong className="text-foreground">Architekturmodelle</strong>, Maßstabsmodelle, Gebäudemodelle, Stadtmodelle</li>
+          <li><strong className="text-foreground">Industrielle Anschauungsmodelle</strong>, Produktvisualisierungen, Konzeptdarstellungen</li>
+          <li><strong className="text-foreground">Kunst- und Ziergegenstände</strong>, Skulpturen, künstlerische Objekte, Unikate</li>
         </ul>
         <div className="bg-muted/50 rounded-lg p-3 mt-4">
           <p className="font-semibold text-foreground">

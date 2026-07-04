@@ -148,7 +148,7 @@ const Contact = () => {
             Ihr Angebot <span className="text-primary">in 6h.</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-            Projekt beschreiben, Datei hochladen – fertig. Wir melden uns noch heute persönlich
+            Projekt beschreiben, Datei hochladen, fertig. Wir melden uns noch heute persönlich
             aus Gunskirchen, Oberösterreich.
           </p>
         </AnimatedSection>
@@ -158,7 +158,7 @@ const Contact = () => {
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 xl:gap-16 items-start">
 
-          {/* LEFT – Trust & Info (2 of 5 cols) */}
+          {/* LEFT, Trust & Info (2 of 5 cols) */}
           <AnimatedSection animation="slide-up" className="lg:col-span-2 flex flex-col gap-6">
 
             {/* 6h promise card */}
@@ -190,7 +190,7 @@ const Contact = () => {
                 31 verifizierte Google-Bewertungen von Kunden aus ganz Österreich.
               </p>
               <blockquote className="text-sm italic text-foreground/80 border-l-2 border-primary pl-3">
-                „Superschnelle Lieferung, top Qualität – absolut empfehlenswert!"
+                „Superschnelle Lieferung, top Qualität, absolut empfehlenswert!"
               </blockquote>
             </div>
 
@@ -240,7 +240,7 @@ const Contact = () => {
             </div>
           </AnimatedSection>
 
-          {/* RIGHT – Form (3 of 5 cols) */}
+          {/* RIGHT, Form (3 of 5 cols) */}
           <AnimatedSection animation="slide-up" className="lg:col-span-3">
             {isSubmitted ? (
               <div className="rounded-2xl border border-border bg-card p-10 text-center">
@@ -268,7 +268,7 @@ const Contact = () => {
                 {/* Form header */}
                 <div className="px-8 pt-8 pb-6 border-b border-border">
                   <h2 className="text-2xl font-bold mb-1">Kostenloses Angebot anfragen</h2>
-                  <p className="text-muted-foreground text-sm">Füllen Sie das Formular aus – wir antworten innerhalb von 6 Stunden.</p>
+                  <p className="text-muted-foreground text-sm">Füllen Sie das Formular aus, wir antworten innerhalb von 6 Stunden.</p>
 
                   {/* Step indicator */}
                   <div className="mt-5">
@@ -331,7 +331,7 @@ const Contact = () => {
 
                         <div className="flex items-center gap-2 p-3 bg-primary/5 rounded-lg border border-primary/10">
                           <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
-                          <p className="text-xs text-muted-foreground">100% kostenlos & unverbindlich – kein Spam, keine Weitergabe Ihrer Daten</p>
+                          <p className="text-xs text-muted-foreground">100% kostenlos & unverbindlich, kein Spam, keine Weitergabe Ihrer Daten</p>
                         </div>
 
                         <Button type="button" onClick={handleNextStep} className="w-full h-12 text-base font-semibold">
@@ -359,7 +359,7 @@ const Contact = () => {
                           <div className="text-center">
                             <Upload className="mx-auto h-7 w-7 text-muted-foreground mb-2" />
                             <p className="text-sm font-medium mb-1">3D-Dateien hochladen <span className="text-muted-foreground font-normal">(optional)</span></p>
-                            <p className="text-xs text-muted-foreground mb-4">STL, OBJ, 3MF, STEP, PDF, Bilder – max. 50 MB</p>
+                            <p className="text-xs text-muted-foreground mb-4">STL, OBJ, 3MF, STEP, PDF, Bilder, max. 50 MB</p>
                             <input type="file" multiple accept=".stl,.obj,.3mf,.step,.stp,.pdf,image/*" onChange={handleFileChange} className="hidden" id="file-upload" disabled={isSubmitting} />
                             <label htmlFor="file-upload">
                               <Button variant="outline" type="button" size="sm" disabled={isSubmitting} asChild>
@@ -400,7 +400,7 @@ const Contact = () => {
             )}
           </AnimatedSection>
 
-          {/* Made in Austria – ebenbündig unter dem Formular, rechte Spalte */}
+          {/* Made in Austria, ebenbündig unter dem Formular, rechte Spalte */}
           <div className="lg:col-span-3 lg:col-start-3">
             <div className="rounded-2xl border border-border bg-card p-6">
               <div className="flex items-center gap-3 mb-4">

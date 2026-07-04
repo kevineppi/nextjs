@@ -21,7 +21,7 @@ const services = [
   {
     icon: Shield,
     title: "Reverse Engineering bei Bedarf",
-    text: "Kein CAD vorhanden? Wir erstellen Ihr 3D-Modell nach Plan, Foto oder Skizze. Auch Bestandsgebäude können wir nach Aufmaß oder vorhandenen Plänen modellieren – ab €120 pro Stunde.",
+    text: "Kein CAD vorhanden? Wir erstellen Ihr 3D-Modell nach Plan, Foto oder Skizze. Auch Bestandsgebäude können wir nach Aufmaß oder vorhandenen Plänen modellieren, ab €120 pro Stunde.",
   },
   {
     icon: FileCode,
@@ -44,7 +44,7 @@ const ArchitekturFormatSection = () => (
               </h2>
             </div>
             <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
-              Wir verarbeiten alle gängigen Architektur-CAD-Formate. Sie müssen Ihre Datei nicht in STL konvertieren oder druckfertig aufbereiten – das übernehmen wir.
+              Wir verarbeiten alle gängigen Architektur-CAD-Formate. Sie müssen Ihre Datei nicht in STL konvertieren oder druckfertig aufbereiten, das übernehmen wir.
             </p>
           </div>
         </AnimatedSection>

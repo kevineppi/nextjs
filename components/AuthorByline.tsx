@@ -1,12 +1,12 @@
 /**
- * AuthorByline — Person-Schema + sichtbare Autor-Markierung
+ * AuthorByline, Person-Schema + sichtbare Autor-Markierung
  * ──────────────────────────────────────────────────────────────────
  *
  * 2026-05-26 (K9 aus 5-Instanzen-Audit):
  *   E-E-A-T-Boost durch sichtbare Autor-Markierung + Person-Schema
  *   auf jeder Content-Page (Ratgeber, Cases, Branchen, Pricing-Guides).
  *
- * Server Component — inline Person-Schema rendert beim First-Render.
+ * Server Component, inline Person-Schema rendert beim First-Render.
  *
  * Verwendung:
  *   <AuthorByline />                              // default Kevin
@@ -63,7 +63,7 @@ const AuthorByline = ({
   }
 
   if (variant === 'card') {
-    // Card-Variant — sichtbarer Author-Block z.B. unter Article-H1
+    // Card-Variant, sichtbarer Author-Block z.B. unter Article-H1
     return (
       <>
         <script
@@ -103,7 +103,7 @@ const AuthorByline = ({
     )
   }
 
-  // Inline-Variant — minimal, für oben/unten von Pages
+  // Inline-Variant, minimal, für oben/unten von Pages
   return (
     <>
       <script

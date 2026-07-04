@@ -5,7 +5,7 @@ const fallbeispiele = [
   {
     branche: "Sondermaschinenbau",
     titel: "Greiferarm-Iteration für Pick-and-Place-Anwendung",
-    challenge: "Ein OÖ-Maschinenbauer brauchte einen Greiferarm für variable Werkstückgrößen. Konventionelle Fertigung im Werkzeugbau hätte 4–6 Wochen und €8.000 gekostet – bei unsicherem Endergebnis.",
+    challenge: "Ein OÖ-Maschinenbauer brauchte einen Greiferarm für variable Werkstückgrößen. Konventionelle Fertigung im Werkzeugbau hätte 4–6 Wochen und €8.000 gekostet, bei unsicherem Endergebnis.",
     loesung: "Fünf Iterationen aus Carbon-PA in 14 Tagen. Jede Variante getestet, optimiert, neu gedruckt. Die finale Version ging direkt in Kleinserie (12 Stück, SLS PA12 glasgefüllt).",
     ergebnis: [
       { label: "Iterationen", value: "5×" },
@@ -26,12 +26,12 @@ const fallbeispiele = [
       { label: "Stückpreis", value: "€48" },
       { label: "Material", value: "PLA+ matt, lackiert" },
     ],
-    quote: "Vor dem Crowdfunding zu wissen, welches Design wirklich konvertiert – unbezahlbar. Die Kampagne war 280% überfinanziert.",
+    quote: "Vor dem Crowdfunding zu wissen, welches Design wirklich konvertiert, unbezahlbar. Die Kampagne war 280% überfinanziert.",
   },
   {
     branche: "Medizintechnik",
     titel: "Anatomisches Trainingsmodell für Chirurgie-Workshops",
-    challenge: "Eine Wiener Klinik wollte ein anatomisch korrektes Trainingsmodell für minimalinvasive Eingriffe – realistisch, robust gegen wiederholten Einsatz, mit aufklappbarer Struktur. NDA-Pflicht.",
+    challenge: "Eine Wiener Klinik wollte ein anatomisch korrektes Trainingsmodell für minimalinvasive Eingriffe, realistisch, robust gegen wiederholten Einsatz, mit aufklappbarer Struktur. NDA-Pflicht.",
     loesung: "Hybride Fertigung: tragende Struktur aus FDM-PETG, weichere Gewebeschichten aus SLA-Tough-Resin, Verbindungselemente aus TPU. Nach drei Wochen Entwicklung wurde das Modell in einer Serie von 8 Stück gedruckt.",
     ergebnis: [
       { label: "Materialkombination", value: "3 Verfahren" },
@@ -54,7 +54,7 @@ const PrototypingFallbeispieleSection = () => (
               <h2 className="text-5xl md:text-6xl font-bold tracking-[-0.04em] leading-[0.95]">Drei Projekte.<br/><span className="text-gradient">Drei Resultate.</span></h2>
             </div>
             <p className="text-muted-foreground text-sm max-w-sm leading-relaxed">
-              Konkrete Beispiele aus dem Tagesgeschäft – mit Zahlen, Material­wahl und realer Lieferzeit. Branchen und Namen anonymisiert auf Wunsch der Auftraggeber.
+              Konkrete Beispiele aus dem Tagesgeschäft, mit Zahlen, Material­wahl und realer Lieferzeit. Branchen und Namen anonymisiert auf Wunsch der Auftraggeber.
             </p>
           </div>
         </AnimatedSection>

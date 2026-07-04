@@ -268,7 +268,7 @@ const DebugPanel = ({ result, input }: Props) => {
             {/* ══════════ Referenzvergleich ══════════ */}
             <div>
               <h4 className="font-semibold text-foreground mb-3 text-sm">
-                📐 Referenzvergleich – Geometriedaten
+                📐 Referenzvergleich, Geometriedaten
               </h4>
               <p className="text-muted-foreground mb-3 font-sans text-xs">
                 Tragen Sie die Referenzwerte eines externen Kalkulators ein, um die Abweichung zu prüfen.

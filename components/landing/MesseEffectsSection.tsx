@@ -3,9 +3,9 @@
 import AnimatedSection from "@/components/AnimatedSection";
 
 const effects = [
-  { num: "01", title: "Der Stopper-Effekt", text: "Besucher laufen an 90% der Stände vorbei. Ein physisches Modell unterbricht den Gang – das Auge bleibt hängen, die Füße folgen. Kein Rollup der Welt kann das.", stat: "3,2 Sek.", statLabel: "Ø Reaktionszeit bis zum Stopp" },
-  { num: "02", title: "Der Anfass-Reflex", text: "Menschen sind hardwired zum Greifen. Wer ein Modell anfasst, investiert emotional. Die Hemmschwelle für ein Gespräch sinkt auf Null – der Besucher stellt die erste Frage.", stat: "70%", statLabel: "kürzere Erklärzeit" },
-  { num: "03", title: "Der Anker-Effekt", text: "Ihr Modell bleibt im Kopf. Wenn der Besucher 3 Tage später 200 Visitenkarten durchgeht, erinnert er sich an \"den Stand mit dem Modell\" – nicht an \"den mit dem Rollup\".", stat: "6×", statLabel: "höhere Recall-Rate nach 7 Tagen" },
+  { num: "01", title: "Der Stopper-Effekt", text: "Besucher laufen an 90% der Stände vorbei. Ein physisches Modell unterbricht den Gang, das Auge bleibt hängen, die Füße folgen. Kein Rollup der Welt kann das.", stat: "3,2 Sek.", statLabel: "Ø Reaktionszeit bis zum Stopp" },
+  { num: "02", title: "Der Anfass-Reflex", text: "Menschen sind hardwired zum Greifen. Wer ein Modell anfasst, investiert emotional. Die Hemmschwelle für ein Gespräch sinkt auf Null, der Besucher stellt die erste Frage.", stat: "70%", statLabel: "kürzere Erklärzeit" },
+  { num: "03", title: "Der Anker-Effekt", text: "Ihr Modell bleibt im Kopf. Wenn der Besucher 3 Tage später 200 Visitenkarten durchgeht, erinnert er sich an \"den Stand mit dem Modell\", nicht an \"den mit dem Rollup\".", stat: "6×", statLabel: "höhere Recall-Rate nach 7 Tagen" },
 ];
 
 const MesseEffectsSection = () => (

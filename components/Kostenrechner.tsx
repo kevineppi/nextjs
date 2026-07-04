@@ -26,12 +26,12 @@ import {
 const MATERIAL_META: Record<string, { desc: string; color: string }> = {
   PLA:      { desc: "Glatte Oberfläche, ideal für Präsentationsmodelle", color: "bg-blue-500" },
   "PLA+":   { desc: "Verstärkt, höhere Schlagzähigkeit als Standard-PLA", color: "bg-indigo-500" },
-  PETG:     { desc: "UV-stabil & schlagfest — perfekt für Messemodelle", color: "bg-emerald-500" },
+  PETG:     { desc: "UV-stabil & schlagfest, perfekt für Messemodelle", color: "bg-emerald-500" },
   ABS:      { desc: "Glätt- und lackierbar für Ausstellungsobjekte", color: "bg-amber-500" },
   ASA:      { desc: "Wetterfest & UV-beständig für Außenanwendungen", color: "bg-cyan-500" },
-  TPU:      { desc: "Flexibel & gummiartig — für biegbare Teile", color: "bg-rose-500" },
-  "PA6-CF": { desc: "Carbon-Look, ultraleicht — Premium-Showmodelle", color: "bg-slate-800" },
-  PC:       { desc: "Polycarbonat — extrem schlagfest & hitzebeständig", color: "bg-violet-500" },
+  TPU:      { desc: "Flexibel & gummiartig, für biegbare Teile", color: "bg-rose-500" },
+  "PA6-CF": { desc: "Carbon-Look, ultraleicht, Premium-Showmodelle", color: "bg-slate-800" },
+  PC:       { desc: "Polycarbonat, extrem schlagfest & hitzebeständig", color: "bg-violet-500" },
 };
 
 const QUALITY_PRESETS = [
@@ -203,7 +203,7 @@ export default function Kostenrechner() {
 
   // ── FAQ data ──
   const faqs = [
-    { q: "Was kostet ein 3D-Druck Modell bei ekdruck?", a: "Die 3D-Druck Kosten beginnen bei ekdruck ab €20 pro Teil. Der genaue Preis hängt von Modellgröße, Material und Qualitätsstufe ab. Nutzen Sie unseren Online-Kostenrechner für eine sofortige Richtpreisberechnung — kostenlos und ohne Anmeldung. Für jedes Projekt erstellen wir zusätzlich ein persönlich geprüftes Festpreisangebot innerhalb von 6 Stunden." },
+    { q: "Was kostet ein 3D-Druck Modell bei ekdruck?", a: "Die 3D-Druck Kosten beginnen bei ekdruck ab €20 pro Teil. Der genaue Preis hängt von Modellgröße, Material und Qualitätsstufe ab. Nutzen Sie unseren Online-Kostenrechner für eine sofortige Richtpreisberechnung, kostenlos und ohne Anmeldung. Für jedes Projekt erstellen wir zusätzlich ein persönlich geprüftes Festpreisangebot innerhalb von 6 Stunden." },
     { q: "Welche 3D-Druck Materialien kann ich wählen?", a: "Wir bieten 8 FDM-Materialien an: PLA (ideal für Präsentationsmodelle), PETG (UV-beständig, perfekt für Messemodelle), ABS (glätt- und lackierbar), PLA+ (verstärkt), ASA (wetterfest), TPU (flexibel), Polycarbonat (extrem schlagfest) und PA6-CF mit Carbonfaser für Premium-Showmodelle. Alle Filamente stammen aus österreichischer Produktion." },
     { q: "Wie genau ist der Richtpreis aus dem Kostenrechner?", a: "Der Richtpreis basiert auf der realen Geometrie Ihrer STL-Datei und berücksichtigt Materialverbrauch, Druckzeit, Baugröße und Setup-Aufwand. Typische Abweichung zum Endpreis: ±10 bis 15 %. Der verbindliche Festpreis wird nach persönlicher technischer Prüfung festgelegt und per E-Mail zugesendet." },
     { q: "Kann ich mehrere 3D-Modelle gleichzeitig kalkulieren?", a: "Ja, unser Kostenrechner unterstützt Multi-File-Upload. Sie können beliebig viele STL-Dateien hochladen, jeweils mit eigenem Material und eigener Stückzahl konfigurieren und erhalten einen Gesamtrichtpreis mit automatischem Mengenvorteil ab 10 Stück." },
@@ -221,7 +221,7 @@ export default function Kostenrechner() {
           Was kostet Ihr 3D-Druck?
         </h1>
         <p className="text-base text-muted-foreground">
-          STL-Datei hochladen, Material wählen — Richtpreis in Echtzeit.
+          STL-Datei hochladen, Material wählen, Richtpreis in Echtzeit.
           Verbindliches Festpreisangebot in 6h.
         </p>
         <div className="flex gap-2 justify-center flex-wrap mt-4">
@@ -278,7 +278,7 @@ export default function Kostenrechner() {
                       <div className="flex-1 min-w-0">
                         <p className="text-sm font-medium truncate">{p.fileName || `Teil ${i + 1} (Standard)`}</p>
                         <p className="text-[11px] text-muted-foreground">
-                          {g.volumeCm3.toFixed(1)} cm³ — {Math.round(g.boundingBoxMm.x)}×{Math.round(g.boundingBoxMm.y)}×{Math.round(g.boundingBoxMm.z)} mm · {p.materialKey}
+                          {g.volumeCm3.toFixed(1)} cm³, {Math.round(g.boundingBoxMm.x)}×{Math.round(g.boundingBoxMm.y)}×{Math.round(g.boundingBoxMm.z)} mm · {p.materialKey}
                         </p>
                       </div>
                       <Badge variant="secondary" className="text-[11px]">{p.qty}×</Badge>
@@ -501,7 +501,7 @@ export default function Kostenrechner() {
                   Unverbindliches Angebot anfordern
                 </Button>
                 <p className="text-center text-[11px] text-muted-foreground mt-2">
-                  Persönliche Prüfung — Antwort in 6 h — kein Account nötig
+                  Persönliche Prüfung, Antwort in 6 h, kein Account nötig
                 </p>
               </>
             )}
@@ -529,8 +529,8 @@ export default function Kostenrechner() {
       <section className="max-w-5xl mx-auto px-4 py-16">
         {/* Factors */}
         <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-3xl font-bold mb-2">3D-Druck Kosten berechnen — transparent & fair</h2>
-          <p className="text-muted-foreground max-w-xl mx-auto">5 Faktoren bestimmen den Preis Ihres Modells. So kalkulieren wir — und so behalten Sie die Kontrolle.</p>
+          <h2 className="text-2xl md:text-3xl font-bold mb-2">3D-Druck Kosten berechnen, transparent & fair</h2>
+          <p className="text-muted-foreground max-w-xl mx-auto">5 Faktoren bestimmen den Preis Ihres Modells. So kalkulieren wir, und so behalten Sie die Kontrolle.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
@@ -539,7 +539,7 @@ export default function Kostenrechner() {
             { icon: Clock, n: "02", t: "Druckzeit", d: "Je länger der FDM-Drucker arbeitet, desto höher die Kosten. Premium-Qualität (0,08 mm Schichtdicke) dauert rund 25 % länger als Standard." },
             { icon: Scale, n: "03", t: "Baugröße", d: "Große Modelle ab 170 mm erhalten einen Zuschlag: mehr Plattenbelegung, längere Aufwärmphase und erhöhtes Fehlerrisiko." },
             { icon: Wrench, n: "04", t: "Setup & Vorbereitung", d: `Jedes Projekt wird manuell vorbereitet: Slicing, Druckoptimierung, Bauteilorientierung. Setup-Pauschale: ${fmt(cfg.setupCost)}.` },
-            { icon: Layers, n: "05", t: "Nachbearbeitung", d: "Stützstrukturen entfernen, Oberflächen glätten oder lackieren — diese Arbeiten werden separat im Festpreisangebot kalkuliert." },
+            { icon: Layers, n: "05", t: "Nachbearbeitung", d: "Stützstrukturen entfernen, Oberflächen glätten oder lackieren, diese Arbeiten werden separat im Festpreisangebot kalkuliert." },
             { icon: Users, n: "+", t: "Mengenvorteil", d: "Ab 10 Teilen 5 %, ab 50 Teilen 8 %, ab 100 Teilen 10 % Rabatt. Ideal für Messemodelle in Serie oder Schulungsmodelle." },
           ].map(({ icon: Icon, n, t, d }) => (
             <div key={n} className="bg-card border border-border rounded-xl p-5">
@@ -561,10 +561,10 @@ export default function Kostenrechner() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
           {[
-            { icon: Building2, t: "Architektur & Planung", d: "Sofortige Kosteneinschätzung für maßstabsgetreue Architekturmodelle und städtebauliche Studien. Ob Wettbewerbsmodell 1:200 oder Detailmodell 1:50 — der Rechner kalkuliert auf Basis der realen STL-Geometrie.", link: "/architekturmodelle" },
-            { icon: Star, t: "Messe & Ausstellung", d: "Budgetplanung für 3D-gedruckte Messemodelle und Standexponate — auch in größeren Auflagen. Wir beraten bei Materialwahl und Oberflächenfinish für den Messestand.", link: "/messemodelle" },
+            { icon: Building2, t: "Architektur & Planung", d: "Sofortige Kosteneinschätzung für maßstabsgetreue Architekturmodelle und städtebauliche Studien. Ob Wettbewerbsmodell 1:200 oder Detailmodell 1:50, der Rechner kalkuliert auf Basis der realen STL-Geometrie.", link: "/architekturmodelle" },
+            { icon: Star, t: "Messe & Ausstellung", d: "Budgetplanung für 3D-gedruckte Messemodelle und Standexponate, auch in größeren Auflagen. Wir beraten bei Materialwahl und Oberflächenfinish für den Messestand.", link: "/messemodelle" },
             { icon: Palette, t: "Design & Produktentwicklung", d: "Richtpreise für haptische Designstudien, Formentwürfe und Proportionsmodelle. PA6-CF für Premium-Look, TPU für flexible Modelle.", link: null },
-            { icon: GraduationCap, t: "Schulung & Lehre", d: "Transparente Preisübersicht für Lehr- und Schulungsmodelle — ideal bei größeren Projektmengen für Klassen, Kurse oder Workshops.", link: null },
+            { icon: GraduationCap, t: "Schulung & Lehre", d: "Transparente Preisübersicht für Lehr- und Schulungsmodelle, ideal bei größeren Projektmengen für Klassen, Kurse oder Workshops.", link: null },
           ].map(({ icon: Icon, t, d, link }) => (
             <div key={t} className="bg-card border border-border rounded-xl p-5">
               <div className="flex items-center gap-2 mb-2">
@@ -585,14 +585,14 @@ export default function Kostenrechner() {
 
         {/* Long-form SEO prose */}
         <article className="max-w-3xl mx-auto mb-16 space-y-6">
-          <h2 className="text-2xl font-bold">3D-Druck Preise in Österreich — was kosten Modelle wirklich?</h2>
+          <h2 className="text-2xl font-bold">3D-Druck Preise in Österreich, was kosten Modelle wirklich?</h2>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Die Frage „Was kostet ein 3D-Druck?" steht am Anfang jedes Projekts. Anders als bei standardisierten Fertigungsverfahren hängen die 3D-Druck Kosten von zahlreichen Faktoren ab: Modellgröße, Materialwahl, Druckqualität, Geometriekomplexität und gewünschte Stückzahl. Unser Online-Kostenrechner analysiert die tatsächliche Geometrie Ihrer STL-Datei direkt in Ihrem Browser und berechnet daraus einen fundierten Richtpreis — kostenlos, ohne Anmeldung und in Echtzeit.
+            Die Frage „Was kostet ein 3D-Druck?" steht am Anfang jedes Projekts. Anders als bei standardisierten Fertigungsverfahren hängen die 3D-Druck Kosten von zahlreichen Faktoren ab: Modellgröße, Materialwahl, Druckqualität, Geometriekomplexität und gewünschte Stückzahl. Unser Online-Kostenrechner analysiert die tatsächliche Geometrie Ihrer STL-Datei direkt in Ihrem Browser und berechnet daraus einen fundierten Richtpreis, kostenlos, ohne Anmeldung und in Echtzeit.
           </p>
 
           <h3 className="text-lg font-semibold pt-2">Warum kein Sofortkauf? Warum persönliche Prüfung?</h3>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Viele 3D-Druck Dienstleister bieten vollautomatisierte Bestellprozesse an. Bei ekdruck haben wir uns bewusst dagegen entschieden — aus Qualitätsgründen. Nicht jedes 3D-Modell ist ohne weiteres druckbar. Überhänge, zu dünne Wandstärken oder geschlossene Hohlräume verursachen Probleme, die kein Algorithmus zuverlässig erkennt. Die Bauteilorientierung auf der Druckplatte beeinflusst Oberfläche, Stabilität und Stützstruktur-Aufwand erheblich.
+            Viele 3D-Druck Dienstleister bieten vollautomatisierte Bestellprozesse an. Bei ekdruck haben wir uns bewusst dagegen entschieden, aus Qualitätsgründen. Nicht jedes 3D-Modell ist ohne weiteres druckbar. Überhänge, zu dünne Wandstärken oder geschlossene Hohlräume verursachen Probleme, die kein Algorithmus zuverlässig erkennt. Die Bauteilorientierung auf der Druckplatte beeinflusst Oberfläche, Stabilität und Stützstruktur-Aufwand erheblich.
           </p>
 
           <h3 className="text-lg font-semibold pt-2">FDM 3D-Druck: Das Verfahren hinter unseren Modellen</h3>
@@ -600,12 +600,12 @@ export default function Kostenrechner() {
             Wir arbeiten ausschließlich mit FDM-Technologie (Fused Deposition Modeling), dem bewährtesten additiven Fertigungsverfahren für großformatige Präsentationsmodelle. Thermoplastisches Filament wird schichtweise aufgetragen und verschmilzt zu einem stabilen Objekt. Unsere Drucker erreichen Schichtauflösungen bis 0,08 mm für feinste Detailtreue. Das Ergebnis: maßstabsgetreue{" "}
             <Link href="/architekturmodelle" className="text-primary hover:underline">Architekturmodelle</Link>, überzeugende{" "}
             <Link href="/messemodelle" className="text-primary hover:underline">Messemodelle</Link>{" "}
-            und hochwertige Designstudien — gefertigt aus nachhaltigen Materialien österreichischer Produktion.
+            und hochwertige Designstudien, gefertigt aus nachhaltigen Materialien österreichischer Produktion.
           </p>
 
-          <h3 className="text-lg font-semibold pt-2">3D-Druck aus Oberösterreich — persönlich, regional, verlässlich</h3>
+          <h3 className="text-lg font-semibold pt-2">3D-Druck aus Oberösterreich, persönlich, regional, verlässlich</h3>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            ekdruck fertigt in Gunskirchen (Bezirk Wels-Land) mit 100 % österreichischem Filament aus recycelten Industrieabfällen. Wir versenden versichert per Post in ganz Österreich — nach{" "}
+            ekdruck fertigt in Gunskirchen (Bezirk Wels-Land) mit 100 % österreichischem Filament aus recycelten Industrieabfällen. Wir versenden versichert per Post in ganz Österreich, nach{" "}
             <Link href="/3d-druck-wien" className="text-primary hover:underline">Wien</Link>,{" "}
             <Link href="/3d-druck-oberoesterreich" className="text-primary hover:underline">Oberösterreich</Link>,{" "}
             <Link href="/3d-druck-steiermark" className="text-primary hover:underline">Steiermark</Link>,{" "}

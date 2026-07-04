@@ -20,7 +20,7 @@ interface SEOHeadProps {
 }
 
 const SEOHead = ({
-  title = "3D-Druck Service Österreich – Angebot in 6h, Lieferung in 5–7 Tagen",
+  title = "3D-Druck Service Österreich, Angebot in 6h, Lieferung in 5–7 Tagen",
   description = "3D-Druck Service in Österreich: Modelle, Prototypen und Architekturmodelle drucken lassen. Angebot in 6h, Express 24h. Anbieter aus Gunskirchen, OÖ.",
   keywords = "3d druck österreich, 3d druck service, 3d druck firma, 3d druck anbieter, 3d druck dienstleister, 3d druck oberösterreich, 3d druck prototypen, architekturmodell drucken lassen, messemodell anfertigen",
   path = "",
@@ -37,7 +37,7 @@ const SEOHead = ({
     // ════════════════════════════════════════════════════════════════════
     // 2026-06-04: SEOHead-Konsolidierung
     // Vorher: Diese Komponente überschrieb client-side document.title,
-    // meta description, canonical, OG, Twitter — und cancelte damit die
+    // meta description, canonical, OG, Twitter, und cancelte damit die
     // Next.js metadata aus den app/*/page.tsx Files.
     // Konsequenz: Google sah die SSR-Version (Next.js metadata), User sah
     // die Client-überschriebene Version → inkonsistent + Patches wirkungslos.
@@ -51,7 +51,7 @@ const SEOHead = ({
 
     const fullUrl = `https://www.ek-druck.at${path}`;
 
-    // Hreflang – update existing tags from index.html (never duplicate)
+    // Hreflang, update existing tags from index.html (never duplicate)
     const hreflangMap: Record<string, string> = {
       'de-AT': fullUrl,
       'de-DE': fullUrl,

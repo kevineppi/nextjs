@@ -12,7 +12,7 @@ interface LeadMagnetFormProps {
 }
 
 /**
- * LeadMagnetForm — Email-Capture mit Supabase-Insert
+ * LeadMagnetForm, Email-Capture mit Supabase-Insert
  * ──────────────────────────────────────────────────────────────────
  *
  * Workflow:
@@ -82,12 +82,12 @@ export default function LeadMagnetForm({
         })
 
       if (insertError) {
-        // Wenn Tabelle noch nicht existiert: silent fallthrough — User bekommt trotzdem PDF
+        // Wenn Tabelle noch nicht existiert: silent fallthrough, User bekommt trotzdem PDF
         console.warn('Lead-Magnet-Insert-Fehler:', insertError.message)
       }
 
       // Auch bei DB-Fehler → User bekommt das PDF. Die Mail-Adresse ist dann nur nicht
-      // im Funnel — aber der primäre Versprechen (PDF) wird eingehalten.
+      // im Funnel, aber der primäre Versprechen (PDF) wird eingehalten.
       router.push(`/checkliste/danke?file=${encodeURIComponent(pdfDownloadPath)}&magnet=${magnetSlug}`)
     } catch (err) {
       console.error(err)
@@ -165,7 +165,7 @@ export default function LeadMagnetForm({
           onChange={(e) => setBranche(e.target.value)}
           className="w-full px-4 py-3 border-2 border-border rounded-xl bg-background text-base focus:outline-none focus:border-primary"
         >
-          <option value="">— bitte wählen —</option>
+          <option value="">bitte wählen</option>
           <option value="maschinenbau">Maschinenbau & Werkzeugbau</option>
           <option value="schiffbau">Schiffbau & Marine</option>
           <option value="energietechnik">Energietechnik & Erneuerbare</option>

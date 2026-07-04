@@ -12,7 +12,7 @@ interface CrossLinkSectionProps {
 }
 
 // Whitelist der Pages die tatsächlich als /messemodelle/{slug} bzw. /architekturmodelle/{slug}
-// existieren (Welle 9 — Semrush hatte 4xx-Reports für nicht-existente Region-Pages).
+// existieren (Welle 9, Semrush hatte 4xx-Reports für nicht-existente Region-Pages).
 const EXISTING_MESSE_PAGES = new Set([
   'wien', 'linz', 'graz', 'salzburg', 'oberoesterreich', 'steiermark',
   'baden-wuerttemberg', 'bayern', 'berlin', 'duesseldorf', 'essen',
@@ -31,7 +31,7 @@ const CrossLinkSection = ({ regionName, regionSlug, currentType }: CrossLinkSect
       type: 'druck' as const,
       icon: Printer,
       title: `3D-Druck ${regionName}`,
-      description: "Designstudien, Präsentationsmodelle und Einzelstücke für alle Branchen – von der Konzeptstudie bis zur Projektmenge.",
+      description: "Designstudien, Präsentationsmodelle und Einzelstücke für alle Branchen, von der Konzeptstudie bis zur Projektmenge.",
       href: `/3d-druck-${regionSlug}`,
       keywords: "Designstudien · Modelle · Einzelstücke",
       existsAt: true,
@@ -40,7 +40,7 @@ const CrossLinkSection = ({ regionName, regionSlug, currentType }: CrossLinkSect
       type: 'messe' as const,
       icon: Presentation,
       title: `Messemodelle ${regionName}`,
-      description: "Beeindruckende 3D-Modelle für Ihren Messestand – leicht, robust und maßgefertigt für Events.",
+      description: "Beeindruckende 3D-Modelle für Ihren Messestand, leicht, robust und maßgefertigt für Events.",
       href: `/messemodelle/${regionSlug}`,
       keywords: "Messestand · Events · Exponate",
       existsAt: EXISTING_MESSE_PAGES.has(regionSlug),

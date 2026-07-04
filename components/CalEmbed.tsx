@@ -5,7 +5,7 @@ import Cal, { getCalApi } from "@calcom/embed-react";
 import { CONTACT } from "@/lib/contactConfig";
 
 interface CalEmbedProps {
-  /** z. B. "kevin-eppensteiner-nktcfi/15min" – wird automatisch aus contactConfig gelesen */
+  /** z. B. "kevin-eppensteiner-nktcfi/15min", wird automatisch aus contactConfig gelesen */
   calLink?: string;
   /** Höhe des Embeds (default: responsive). */
   height?: string;

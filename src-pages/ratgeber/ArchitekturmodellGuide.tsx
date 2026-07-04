@@ -20,27 +20,27 @@ const ArchitekturmodellGuide = () => {
   const faqs = [
     {
       question: "Was kostet ein 3D-gedrucktes Architekturmodell?",
-      answer: "Einfache Studienmodelle (Baukörperstudie, Maßstab 1:500) starten ab ca. €20–50. Präsentationsmodelle im Maßstab 1:100 kosten typischerweise €80–200. Wettbewerbsmodelle mit Umgebung €150–400. Städtebauliche Modelle mit mehreren Gebäuden €300–1.000+. Der genaue Preis hängt von Volumen, Detailgrad und Material ab – wir erstellen in 6h ein kostenfreies Angebot."
+      answer: "Einfache Studienmodelle (Baukörperstudie, Maßstab 1:500) starten ab ca. €20–50. Präsentationsmodelle im Maßstab 1:100 kosten typischerweise €80–200. Wettbewerbsmodelle mit Umgebung €150–400. Städtebauliche Modelle mit mehreren Gebäuden €300–1.000+. Der genaue Preis hängt von Volumen, Detailgrad und Material ab, wir erstellen in 6h ein kostenfreies Angebot."
     },
     {
       question: "Welcher Maßstab eignet sich am besten für Architekturmodelle?",
-      answer: "1:50 für detaillierte Innenraumdarstellungen und Schnittmodelle. 1:100 für Gesamtgebäude und Bauherren-Präsentationen – das universell beliebteste Format. 1:200 bis 1:500 für städtebauliche Quartiersentwicklungen und Wettbewerbe mit Umgebung. Für Wettbewerbe empfehlen wir oft 1:200, um die Umgebungsbebauung einzubeziehen."
+      answer: "1:50 für detaillierte Innenraumdarstellungen und Schnittmodelle. 1:100 für Gesamtgebäude und Bauherren-Präsentationen, das universell beliebteste Format. 1:200 bis 1:500 für städtebauliche Quartiersentwicklungen und Wettbewerbe mit Umgebung. Für Wettbewerbe empfehlen wir oft 1:200, um die Umgebungsbebauung einzubeziehen."
     },
     {
       question: "Wie exportiere ich mein CAD-Modell für den 3D-Druck?",
-      answer: "ArchiCAD: Datei → Speichern unter → Format STL, Qualitätsstufe 'Fein'. Revit: kostenloses STL Exporter Add-In → Exportieren → STL. SketchUp: Datei → Exportieren → 3D-Modell → STL (Einheiten auf mm). Rhino: Datei → Export selected → STL, Toleranz 0.01mm. Bei Problemen schicken Sie uns Ihre native Datei – wir helfen kostenlos beim Export."
+      answer: "ArchiCAD: Datei → Speichern unter → Format STL, Qualitätsstufe 'Fein'. Revit: kostenloses STL Exporter Add-In → Exportieren → STL. SketchUp: Datei → Exportieren → 3D-Modell → STL (Einheiten auf mm). Rhino: Datei → Export selected → STL, Toleranz 0.01mm. Bei Problemen schicken Sie uns Ihre native Datei, wir helfen kostenlos beim Export."
     },
     {
       question: "Wie schnell liefern Sie für Wettbewerbs-Deadlines?",
-      answer: "Express-Service: 24–48h nach Auftragsbestätigung (50% Aufpreis). Standard: 3–5 Werktage. Wir empfehlen mindestens 7 Tage Vorlauf für entspannte Planung – für einen Puffer bei Revisionen. Persönliche Abholung in Gunskirchen, OÖ ist jederzeit möglich."
+      answer: "Express-Service: 24–48h nach Auftragsbestätigung (50% Aufpreis). Standard: 3–5 Werktage. Wir empfehlen mindestens 7 Tage Vorlauf für entspannte Planung, für einen Puffer bei Revisionen. Persönliche Abholung in Gunskirchen, OÖ ist jederzeit möglich."
     },
     {
       question: "Können Glasfassaden und transparente Elemente dargestellt werden?",
-      answer: "Ja – mit PETG Transparent können Glasfassaden, Fenster, Glasdächer und Atrien halbtransparent dargestellt werden. Typischerweise werden Glaselemente separat gedruckt und nachträglich eingesetzt. Das Ergebnis ist bei modernen Gebäuden mit großen Glasflächen besonders überzeugend."
+      answer: "Ja, mit PETG Transparent können Glasfassaden, Fenster, Glasdächer und Atrien halbtransparent dargestellt werden. Typischerweise werden Glaselemente separat gedruckt und nachträglich eingesetzt. Das Ergebnis ist bei modernen Gebäuden mit großen Glasflächen besonders überzeugend."
     },
     {
       question: "Kann ich mehrere Entwurfsvarianten gleichzeitig bestellen?",
-      answer: "Ja, das ist einer der größten Vorteile gegenüber traditionellem Modellbau. Wir drucken mehrere Varianten parallel – für direkten Vergleich beim Bauherrn oder bei der Wettbewerbspräsentation. Bei Mehrfachbestellungen bieten wir Mengenrabatt an."
+      answer: "Ja, das ist einer der größten Vorteile gegenüber traditionellem Modellbau. Wir drucken mehrere Varianten parallel, für direkten Vergleich beim Bauherrn oder bei der Wettbewerbspräsentation. Bei Mehrfachbestellungen bieten wir Mengenrabatt an."
     },
     {
       question: "Was ist bei der Dateivorbereitung zu beachten?",
@@ -55,7 +55,7 @@ const ArchitekturmodellGuide = () => {
   const masstabsGuide = [
     { scale: "1:20", use: "Innenraum-Detail", example: "Einzelner Raum, Treppe, Fassadenausschnitt", size: "EFH: 50×40 cm", tipp: "Für Detail-Pitches, selten bei Wettbewerben" },
     { scale: "1:50", use: "Innenarchitektur", example: "Wohnung, Einzelgeschoss, Schnittmodell", size: "EFH: 20×16 cm", tipp: "Ideal für Bauherren-Präsentation, sichtbare Details" },
-    { scale: "1:100", use: "Gebäudepräsentation", example: "Gesamtgebäude – häufigstes Format", size: "EFH: 10×8 cm", tipp: "Universell: Wettbewerb, Bauherr, Behörde" },
+    { scale: "1:100", use: "Gebäudepräsentation", example: "Gesamtgebäude, häufigstes Format", size: "EFH: 10×8 cm", tipp: "Universell: Wettbewerb, Bauherr, Behörde" },
     { scale: "1:200", use: "Quartier / Wettbewerb", example: "Mehrere Gebäude, Umgebung", size: "EFH: 5×4 cm", tipp: "Für Wettbewerbe mit Kontextdarstellung" },
     { scale: "1:500", use: "Städtebau / Masterplan", example: "Ganzes Quartier, Stadtentwicklung", size: "EFH: 2×1,6 cm", tipp: "Konzeptstudien, Bürgerbeteiligung" },
   ];
@@ -64,12 +64,12 @@ const ArchitekturmodellGuide = () => {
     {
       mistake: "Maßstab zu groß gewählt",
       consequence: "Modell wird zu groß, teuer, schwer zu transportieren",
-      solution: "Für Wettbewerbe oft 1:200 statt 1:100 – Jury sieht dann auch den Kontext"
+      solution: "Für Wettbewerbe oft 1:200 statt 1:100, Jury sieht dann auch den Kontext"
     },
     {
       mistake: "Zu feine Details (<0.8mm)",
       consequence: "Feine Stäbe, Geländer oder Zierleisten brechen ab oder werden nicht sauber gedruckt",
-      solution: "Details unter 0.8mm in der CAD-Datei leicht aufdicken – wirkt im Modell trotzdem zart"
+      solution: "Details unter 0.8mm in der CAD-Datei leicht aufdicken, wirkt im Modell trotzdem zart"
     },
     {
       mistake: "Einzel-STL statt separate Teile",
@@ -79,12 +79,12 @@ const ArchitekturmodellGuide = () => {
     {
       mistake: "Keine Varianten geplant",
       consequence: "Nach Bauherrengespräch beginnt teurer Modellbau-Kreislauf von vorne",
-      solution: "2–3 Varianten parallel bestellen – kostet 20% mehr, spart 80% an Zeit"
+      solution: "2–3 Varianten parallel bestellen, kostet 20% mehr, spart 80% an Zeit"
     },
     {
       mistake: "Zu spät bestellt",
       consequence: "Express-Service nötig: 50% Aufpreis, Stress für alle Beteiligten",
-      solution: "7 Tage Vorlauf als Standard einplanen – dann Standard-Service, kein Stress"
+      solution: "7 Tage Vorlauf als Standard einplanen, dann Standard-Service, kein Stress"
     }
   ];
 
@@ -123,7 +123,7 @@ const ArchitekturmodellGuide = () => {
     <>
       <SEOHead
         title="Architekturmodell 3D-Druck: Kosten, Maßstäbe & CAD [2026]"
-        description="Alles für Architekturbüros: Welcher Maßstab, welches Material, CAD-Export (ArchiCAD, Revit, SketchUp) – plus 5 teure Fehler beim Bestellen vermeiden."
+        description="Alles für Architekturbüros: Welcher Maßstab, welches Material, CAD-Export (ArchiCAD, Revit, SketchUp), plus 5 teure Fehler beim Bestellen vermeiden."
         keywords="architekturmodell 3d druck kosten, architekturmodell maßstab, architekturmodell cad export, architekturmodell bestellen, wettbewerbsmodell 3d druck, architekturmodell revit export"
         path="/ratgeber/architekturmodell-guide"
         type="article"
@@ -141,7 +141,7 @@ const ArchitekturmodellGuide = () => {
       <FAQSchema faqs={faqs} />
       <HowToSchema
         name="Architekturmodell per 3D-Druck bestellen"
-        description="So bestellen Sie ein maßstabsgetreues Architekturmodell per 3D-Druck – von der CAD-Datei bis zum fertigen Modell."
+        description="So bestellen Sie ein maßstabsgetreues Architekturmodell per 3D-Druck, von der CAD-Datei bis zum fertigen Modell."
         totalTime="PT15M"
         steps={[
           { name: "Maßstab wählen", text: "1:50 für Innenraum, 1:100 für Gesamtgebäude (beliebtester Maßstab), 1:200–1:500 für Städtebau und Wettbewerbe mit Umgebung." },
@@ -172,7 +172,7 @@ const ArchitekturmodellGuide = () => {
               <span className="text-primary">Der komplette Guide für Architekten</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
-              Maßstäbe, Kosten, CAD-Export aus ArchiCAD & Revit, Materialwahl, 5 typische Fehler – 
+              Maßstäbe, Kosten, CAD-Export aus ArchiCAD & Revit, Materialwahl, 5 typische Fehler, 
               alles was Architekten und Planer wissen müssen, um das Maximum aus 3D-gedruckten Modellen herauszuholen.
             </p>
 
@@ -252,9 +252,9 @@ const ArchitekturmodellGuide = () => {
                     <div>
                       <p className="font-semibold text-sm mb-1">Profi-Empfehlung</p>
                       <p className="text-sm text-muted-foreground">
-                        Für die meisten Bauherren-Präsentationen: <strong className="text-foreground">1:100</strong> – groß genug für Details, klein genug für den Tisch. 
-                        Für Wettbewerbe mit Kontext: <strong className="text-foreground">1:200</strong> – zeigt das Gebäude in seiner Umgebung, was Jurys schätzen. 
-                        Für interne Entwurfsstudien: <strong className="text-foreground">1:500</strong> – günstig, schnell, ideal für frühe Iterationen.
+                        Für die meisten Bauherren-Präsentationen: <strong className="text-foreground">1:100</strong>, groß genug für Details, klein genug für den Tisch. 
+                        Für Wettbewerbe mit Kontext: <strong className="text-foreground">1:200</strong>, zeigt das Gebäude in seiner Umgebung, was Jurys schätzen. 
+                        Für interne Entwurfsstudien: <strong className="text-foreground">1:500</strong>, günstig, schnell, ideal für frühe Iterationen.
                       </p>
                     </div>
                   </div>
@@ -270,7 +270,7 @@ const ArchitekturmodellGuide = () => {
                   <h2 className="text-3xl font-bold">Kosten: Was kostet welches Modell?</h2>
                 </div>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Transparente Preisgestaltung ist uns wichtig. Hier sind realistische Preisspannen – basierend auf hunderten Aufträgen von Architekten:
+                  Transparente Preisgestaltung ist uns wichtig. Hier sind realistische Preisspannen, basierend auf hunderten Aufträgen von Architekten:
                 </p>
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   {[
@@ -347,12 +347,12 @@ const ArchitekturmodellGuide = () => {
                       prog: "ArchiCAD",
                       badge: "Häufig",
                       steps: [
-                        "3D-Fenster öffnen – nur die Elemente sichtbar, die gedruckt werden sollen",
+                        "3D-Fenster öffnen, nur die Elemente sichtbar, die gedruckt werden sollen",
                         "Datei → Speichern unter → Format: STL",
                         "Qualitätsstufe: 'Fein', Maßstab: 1:1 (original), Einheit: mm",
                         "Datei prüfen: sollte zwischen 1–50 MB sein"
                       ],
-                      tip: "Tipp: Innenausbau, Möbel und Haustechnik ausblenden – nur Rohbau und Fassade exportieren"
+                      tip: "Tipp: Innenausbau, Möbel und Haustechnik ausblenden, nur Rohbau und Fassade exportieren"
                     },
                     {
                       prog: "Autodesk Revit",
@@ -395,7 +395,7 @@ const ArchitekturmodellGuide = () => {
                         "Datei → Exportieren → STL",
                         "Einheiten: mm, NURBS zu Polygonen konvertieren"
                       ],
-                      tip: "Tipp: Komplexe NURBS-Geometrien können groß werden – ggf. Polygonanzahl reduzieren"
+                      tip: "Tipp: Komplexe NURBS-Geometrien können groß werden, ggf. Polygonanzahl reduzieren"
                     },
                   ].map((item, i) => (
                     <Card key={i}>
@@ -430,7 +430,7 @@ const ArchitekturmodellGuide = () => {
                 <div className="bg-primary/5 border border-primary/20 rounded-xl p-5">
                   <p className="text-sm text-muted-foreground">
                     <strong className="text-foreground">Kein 3D-Modell vorhanden?</strong> Wir erstellen das 3D-Modell basierend auf Grundrissen, 
-                    Ansichten oder PDFs. Oder schicken Sie uns Ihr natives Dateiformat – wir konvertieren kostenlos.{" "}
+                    Ansichten oder PDFs. Oder schicken Sie uns Ihr natives Dateiformat, wir konvertieren kostenlos.{" "}
                     <Link href="/kontakt" className="text-primary hover:underline font-medium">Jetzt fragen →</Link>
                   </p>
                 </div>
@@ -494,10 +494,10 @@ const ArchitekturmodellGuide = () => {
               <AnimatedSection animation="fade-in">
                 <div className="flex items-center gap-3 mb-2">
                   <span className="text-4xl font-black text-primary/20">05</span>
-                  <h2 className="text-3xl font-bold">5 typische Fehler – und wie man sie vermeidet</h2>
+                  <h2 className="text-3xl font-bold">5 typische Fehler, und wie man sie vermeidet</h2>
                 </div>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Aus hunderten Aufträgen von Architekten wissen wir, welche Fehler immer wieder passieren – und wie teuer sie werden können:
+                  Aus hunderten Aufträgen von Architekten wissen wir, welche Fehler immer wieder passieren, und wie teuer sie werden können:
                 </p>
                 <div className="space-y-4">
                   {commonMistakes.map((item, i) => (
@@ -549,7 +549,7 @@ const ArchitekturmodellGuide = () => {
                     },
                     {
                       title: "Varianten parallel bestellen",
-                      desc: "Drei Entwurfsvarianten kosten 20% mehr als eine – ermöglichen aber direkten Vergleich beim Bauherrn. Entscheidungen fallen schneller, Feedback-Schleifen werden kürzer.",
+                      desc: "Drei Entwurfsvarianten kosten 20% mehr als eine, ermöglichen aber direkten Vergleich beim Bauherrn. Entscheidungen fallen schneller, Feedback-Schleifen werden kürzer.",
                       icon: Layers
                     },
                     {
@@ -564,12 +564,12 @@ const ArchitekturmodellGuide = () => {
                     },
                     {
                       title: "Bestand + Neubau zweifarbig",
-                      desc: "Bestandsbebauung in Grau, Neubau in Weiß – dieser Klassiker funktioniert immer für Städtebaumodelle und Bebauungsplandarstellungen. Kein Mehrpreis, maximale Klarheit.",
+                      desc: "Bestandsbebauung in Grau, Neubau in Weiß, dieser Klassiker funktioniert immer für Städtebaumodelle und Bebauungsplandarstellungen. Kein Mehrpreis, maximale Klarheit.",
                       icon: Building2
                     },
                     {
                       title: "Sockel standardisieren",
-                      desc: "Ein einheitlicher Sockel (A3-Format, 3cm hoch) macht alle Ihre Modelle transportierbar und präsentierbar. Kann wiederverwendet werden – Gebäude einfach tauschen.",
+                      desc: "Ein einheitlicher Sockel (A3-Format, 3cm hoch) macht alle Ihre Modelle transportierbar und präsentierbar. Kann wiederverwendet werden, Gebäude einfach tauschen.",
                       icon: Ruler
                     },
                   ].map((item, i) => (
@@ -591,7 +591,7 @@ const ArchitekturmodellGuide = () => {
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                   <div className="flex-1">
                     <div className="text-xs font-bold uppercase tracking-wider text-primary mb-1">Tipp für regelmäßige Auftraggeber</div>
-                    <h3 className="text-xl font-bold mb-2">Architekturmodell-Flatrate – Fixpreis statt Einzelkalkulation</h3>
+                    <h3 className="text-xl font-bold mb-2">Architekturmodell-Flatrate, Fixpreis statt Einzelkalkulation</h3>
                     <p className="text-sm text-muted-foreground">Büros, die mehr als 1–2 Modelle pro Monat beauftragen, sparen mit der Flatrate bis zu 40% gegenüber Einzelpreisen. Kein Vertrag, monatlich kündbar. <strong>Erstes Modell kostenlos testen.</strong></p>
                   </div>
                   <Link href="/architekturmodelle-abo" className="shrink-0 inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold px-5 py-3 rounded-xl hover:bg-primary/90 transition-colors text-sm whitespace-nowrap">
@@ -609,14 +609,14 @@ const ArchitekturmodellGuide = () => {
                   <h2 className="text-3xl font-bold">Geländemodelle & Topografie</h2>
                 </div>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Geländemodelle sind besonders wertvoll für alpine Architektur, Hangbauten und Baueinreichungen bei Behörden. Sie zeigen auf einen Blick, wie sich ein Gebäude in die Topografie einbettet – etwas, das kein Grundriss und keine Visualisierung so überzeugend leisten kann.
+                  Geländemodelle sind besonders wertvoll für alpine Architektur, Hangbauten und Baueinreichungen bei Behörden. Sie zeigen auf einen Blick, wie sich ein Gebäude in die Topografie einbettet, etwas, das kein Grundriss und keine Visualisierung so überzeugend leisten kann.
                 </p>
                 <div className="bg-muted/40 rounded-xl p-6 space-y-3">
                   {[
                     { q: "Welche Datengrundlage?", a: "Digitales Geländemodell (DGM/DEM), GIS-Daten, eigene Geländepläne oder Vermessungsdaten. Wir helfen bei der Beschaffung freier Höhendaten." },
-                    { q: "Kann das Gebäude abnehmbar sein?", a: "Ja – das ist bei Baueinreichungen oft sehr wertvoll. Das Geländemodell kann ohne Gebäude gezeigt werden, um die Topografie vor und nach dem Eingriff zu vergleichen." },
+                    { q: "Kann das Gebäude abnehmbar sein?", a: "Ja, das ist bei Baueinreichungen oft sehr wertvoll. Das Geländemodell kann ohne Gebäude gezeigt werden, um die Topografie vor und nach dem Eingriff zu vergleichen." },
                     { q: "Wie groß werden Geländemodelle?", a: "Typischerweise A3 (30×42 cm) bis A1 (60×84 cm) als Sockel. Das aufgesetzte Gebäude kommt je nach Maßstab dazu. Mehrteilige Modelle für größere Areale sind möglich." },
-                    { q: "Für welche Regionen besonders relevant?", a: "Besonders für alpine Regionen (Tirol, Vorarlberg, Salzburg, Steiermark, Kärnten) – aber auch für Hangbauten in Wien, NÖ oder Bayern ist ein Geländemodell oft überzeugender als jede Visualisierung." },
+                    { q: "Für welche Regionen besonders relevant?", a: "Besonders für alpine Regionen (Tirol, Vorarlberg, Salzburg, Steiermark, Kärnten), aber auch für Hangbauten in Wien, NÖ oder Bayern ist ein Geländemodell oft überzeugender als jede Visualisierung." },
                   ].map((item, i) => (
                     <div key={i} className="border-b border-border/40 last:border-0 pb-3 last:pb-0">
                       <div className="font-semibold text-sm mb-1">{item.q}</div>
@@ -635,7 +635,7 @@ const ArchitekturmodellGuide = () => {
                   {[
                     { quote: "Das Modell hat sich in der Wettbewerbspräsentation sofort bezahlt gemacht. Die Jury konnte das Projekt greifen.", author: "Architekturbüro, Wien", project: "Wohnbau-Wettbewerb 1:200" },
                     { quote: "Drei Varianten parallel bestellt, in 5 Tagen alle auf dem Tisch. Beim Modellbauer hätten wir 6 Wochen gewartet.", author: "Stadtplanungsbüro, Linz", project: "Städtebauliche Studie 1:500" },
-                    { quote: "Der Bauherr hat nach der Modellpräsentation sofort zugestimmt. Das Modell war €150 wert – die Entscheidung Millionen.", author: "Planungsbüro, Graz", project: "EFH Präsentationsmodell 1:50" },
+                    { quote: "Der Bauherr hat nach der Modellpräsentation sofort zugestimmt. Das Modell war €150 wert, die Entscheidung Millionen.", author: "Planungsbüro, Graz", project: "EFH Präsentationsmodell 1:50" },
                   ].map((t, i) => (
                     <Card key={i} className="border-border/50">
                       <CardContent className="p-5">
@@ -683,7 +683,7 @@ const ArchitekturmodellGuide = () => {
               <div className="grid md:grid-cols-3 gap-4">
                 {[
                   { title: "Messemodell Guide", link: "/ratgeber/messemodell-guide", desc: "Kosten, Timing & Tipps für Messeaussteller" },
-                  { title: "Material-Guide", link: "/ratgeber/material-guide", desc: "PLA vs. PETG – welches Material wofür?" },
+                  { title: "Material-Guide", link: "/ratgeber/material-guide", desc: "PLA vs. PETG, welches Material wofür?" },
                   { title: "Kosten-Guide", link: "/ratgeber/kosten-guide", desc: "3D-Druck Preise in Österreich erklärt" },
                 ].map((r, i) => (
                   <Link key={i} href={r.link} className="block border border-border rounded-xl p-4 hover:border-primary/50 hover:shadow-sm transition-all group">
@@ -698,8 +698,8 @@ const ArchitekturmodellGuide = () => {
         </article>
 
         <CTASection
-          headline="Architekturmodell anfragen – Angebot in 6h"
-          subline="Schicken Sie uns Ihre CAD-Datei (STL, OBJ, 3MF) oder beschreiben Sie Ihr Projekt kurz. Wir antworten persönlich mit einem verbindlichen Angebot – kostenlos und unverbindlich."
+          headline="Architekturmodell anfragen, Angebot in 6h"
+          subline="Schicken Sie uns Ihre CAD-Datei (STL, OBJ, 3MF) oder beschreiben Sie Ihr Projekt kurz. Wir antworten persönlich mit einem verbindlichen Angebot, kostenlos und unverbindlich."
           ctaLabel="Kostenlos anfragen"
           ctaHref="/kontakt"
           secondaryLabel="Architektur-Flatrate ab €199/Monat"

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const steps = [
-  { icon: Upload, num: "01", title: "Anfrage senden", desc: "CAD-Datei, Skizze oder Beschreibung – wir brauchen nur eine grobe Idee.", time: "2 Min" },
+  { icon: Upload, num: "01", title: "Anfrage senden", desc: "CAD-Datei, Skizze oder Beschreibung, wir brauchen nur eine grobe Idee.", time: "2 Min" },
   { icon: FileCheck, num: "02", title: "Festpreis erhalten", desc: "Transparentes Angebot in unter 6 Stunden. Kostenlos und unverbindlich.", time: "< 6h" },
   { icon: Package, num: "03", title: "Modell erhalten", desc: "Express 24h oder Standard 5–7 Tage. Versandkostenfrei ab €100.", time: "Ab 24h" },
 ];

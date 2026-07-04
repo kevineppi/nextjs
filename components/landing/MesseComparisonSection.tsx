@@ -76,7 +76,7 @@ const MesseComparisonSection = () => (
         <AnimatedSection animation="fade-in" className="mb-12">
           <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Warum ein physisches Modell?</p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-[-0.03em] mb-3">Messemodell vs. Rollup, Leinwand & Monitor</h2>
-          <p className="text-muted-foreground max-w-lg">Was bleibt beim Besucher hängen – ein Flachbild oder ein Objekt zum Anfassen?</p>
+          <p className="text-muted-foreground max-w-lg">Was bleibt beim Besucher hängen, ein Flachbild oder ein Objekt zum Anfassen?</p>
         </AnimatedSection>
 
         <AnimatedSection animation="slide-up">

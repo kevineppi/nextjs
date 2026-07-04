@@ -58,32 +58,32 @@ const ProblemSolutionSection = ({ regionName, category, data }: ProblemSolutionS
   const content = category === 'architektur' ? {
     problemTitle: 'Das Dilemma vieler Architekturbüros',
     problems: [
-      `Wettbewerbstermin in 5 Tagen – lokaler Modellbauer in ${regionName} braucht 3 Wochen`,
+      `Wettbewerbstermin in 5 Tagen, lokaler Modellbauer in ${regionName} braucht 3 Wochen`,
       'Handgefertigte Modelle kosten schnell €500+ für einfache Studienmodelle',
       'Änderungen am Entwurf = komplett neues Modell = doppelte Kosten',
       'Maßstabstreue ist bei Handarbeit schwer reproduzierbar',
     ],
     solutionTitle: 'Unsere Antwort: Digitaler Modellbau',
     solutions: [
-      'Express-Fertigung in 24h – auch für kurzfristige Wettbewerbstermine',
-      'Ab €20 für Studienmodelle – CAD-basiert, reproduzierbar, präzise',
+      'Express-Fertigung in 24h, auch für kurzfristige Wettbewerbstermine',
+      'Ab €20 für Studienmodelle, CAD-basiert, reproduzierbar, präzise',
       'Änderungen? Neuer Druck in Stunden, nicht Wochen',
       'Digitale Präzision: ±0.2mm Toleranz, maßstabsgetreu aus der CAD-Datei',
     ],
   } : {
     problemTitle: 'Typische Probleme bei der Messe-Vorbereitung',
     problems: [
-      `Modellbauer in ${regionName} liefern oft zu spät – Stress vor der Messe`,
+      `Modellbauer in ${regionName} liefern oft zu spät, Stress vor der Messe`,
       'Klassische Modelle sind schwer und brechen beim Transport',
       'Spontane Design-Änderungen kurz vor der Messe unmöglich',
       'Hohe Kosten bei traditionellem Modellbau für einmalige Messe-Auftritte',
     ],
     solutionTitle: '3D-Druck löst diese Probleme',
     solutions: [
-      'Express-Fertigung in 24h – auch Last-Minute-Bestellungen möglich',
-      'Bis 70% leichter als Holz/Metall – einfacher Transport, kein Bruchrisiko',
+      'Express-Fertigung in 24h, auch Last-Minute-Bestellungen möglich',
+      'Bis 70% leichter als Holz/Metall, einfacher Transport, kein Bruchrisiko',
       'Digitale Datei = schnelle Varianten in Stunden statt Wochen',
-      'Ab €30 für professionelle Display-Modelle – effizient produziert',
+      'Ab €30 für professionelle Display-Modelle, effizient produziert',
     ],
   };
 

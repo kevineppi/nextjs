@@ -26,7 +26,7 @@ const MessemodellGuide = () => {
     },
     {
       question: "Können Messemodelle transportiert werden?",
-      answer: "Ja – PLA und PETG-Modelle sind bis zu 70% leichter als Holz oder Metall. Große Objekte werden mehrteilig gefertigt und lassen sich einfach demontieren. Wir verwenden bruchsichere Verpackung für den Versand."
+      answer: "Ja, PLA und PETG-Modelle sind bis zu 70% leichter als Holz oder Metall. Große Objekte werden mehrteilig gefertigt und lassen sich einfach demontieren. Wir verwenden bruchsichere Verpackung für den Versand."
     },
     {
       question: "Wie exakt können Firmenfarben umgesetzt werden?",
@@ -38,7 +38,7 @@ const MessemodellGuide = () => {
     <>
       <SEOHead
         title="Messemodell planen: Kosten, Timeline & Material [2026]"
-        description="Wie früh bestellen, welches Material, was Express kostet: die Checkliste für die Messevorbereitung. Messemodell ab €30 – pünktlich zur Messe."
+        description="Wie früh bestellen, welches Material, was Express kostet: die Checkliste für die Messevorbereitung. Messemodell ab €30, pünktlich zur Messe."
         keywords="messemodell kosten, messemodell planen, messemodell 3d druck, messemodell erstellen lassen, messemodell material, 3d druck messe guide"
         path="/ratgeber/messemodell-guide"
         type="article"
@@ -55,7 +55,7 @@ const MessemodellGuide = () => {
 
       <FAQSchema faqs={faqs} />
       <HowToSchema
-        name="Messemodell im 3D-Druck bestellen – Schritt für Schritt"
+        name="Messemodell im 3D-Druck bestellen, Schritt für Schritt"
         description="So planen und bestellen Sie Ihr 3D-gedrucktes Messemodell rechtzeitig und stressfrei."
         totalTime="PT15M"
         steps={[
@@ -87,7 +87,7 @@ const MessemodellGuide = () => {
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Wie plane ich ein Messemodell? Was kostet es? Und wie bekomme ich es rechtzeitig zur Messe? 
-              Dieser Guide beantwortet alle Fragen – inklusive echter Preisbeispiele aus der Praxis.
+              Dieser Guide beantwortet alle Fragen, inklusive echter Preisbeispiele aus der Praxis.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg">
@@ -122,11 +122,11 @@ const MessemodellGuide = () => {
             <section>
               <h2 className="text-3xl font-bold mb-6">Warum 3D-Druck für Messemodelle?</h2>
               <p className="text-muted-foreground mb-6 leading-relaxed text-lg">
-                Auf Messen zählt der erste Eindruck. Physische Modelle ziehen Blicke an, bleiben im Gedächtnis und ermöglichen es Besuchern, Produkte und Konzepte zu erleben – nicht nur auf Bildschirmen zu sehen.
+                Auf Messen zählt der erste Eindruck. Physische Modelle ziehen Blicke an, bleiben im Gedächtnis und ermöglichen es Besuchern, Produkte und Konzepte zu erleben, nicht nur auf Bildschirmen zu sehen.
               </p>
               <div className="grid md:grid-cols-2 gap-4 mb-6">
                 {[
-                  { title: "70% leichter", desc: "als Holz- oder Metallmodelle – ideal für Messetransport und Aufbau" },
+                  { title: "70% leichter", desc: "als Holz- oder Metallmodelle, ideal für Messetransport und Aufbau" },
                   { title: "24h möglich", desc: "Express-Fertigung auch bei kurzfristigen Messeterminen" },
                   { title: "Ab €30", desc: "Kleine Produktmodelle deutlich günstiger als beim traditionellen Modellbauer" },
                   { title: "Identische Kopien", desc: "Mehrere Messestandorte? Digitale Fertigung ermöglicht exakte Reproduktionen" }
@@ -191,7 +191,7 @@ const MessemodellGuide = () => {
                 {[
                   { time: "4+ Wochen vor Messe", action: "Planung starten, Konzept und Größe festlegen, 3D-Datei erstellen lassen", color: "bg-green-500/10 border-green-500/30" },
                   { time: "2–3 Wochen vorher", action: "Angebot einholen, Auftrag bestätigen, Standard-Produktion startet", color: "bg-primary/10 border-primary/30" },
-                  { time: "1 Woche vorher", action: "Letzte Chance für Standard-Service – oder Express mit Aufpreis", color: "bg-destructive/10 border-destructive/30" },
+                  { time: "1 Woche vorher", action: "Letzte Chance für Standard-Service, oder Express mit Aufpreis", color: "bg-destructive/10 border-destructive/30" },
                   { time: "3–5 Tage vorher", action: "Nur noch Express 24–48h möglich (50% Aufpreis)", color: "bg-red-500/10 border-red-500/30" },
                 ].map((item, i) => (
                   <div key={i} className={`border rounded-xl p-4 ${item.color}`}>
@@ -215,7 +215,7 @@ const MessemodellGuide = () => {
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  { mat: "PLA", use: "Allrounder – leicht, günstig, viele Farben", best: "Produktmodelle, Logos, Dekorationen", icon: Package },
+                  { mat: "PLA", use: "Allrounder, leicht, günstig, viele Farben", best: "Produktmodelle, Logos, Dekorationen", icon: Package },
                   { mat: "PETG", use: "Robuster, etwas flexibler als PLA", best: "Modelle mit beweglichen Teilen, häufige Handhabung", icon: CheckCircle },
                   { mat: "PLA+ / Tough PLA", use: "Verbesserte Schlagfestigkeit", best: "Modelle die oft angefasst werden", icon: Zap },
                   { mat: "Holz-/Metallfüllung", use: "Optisch edel, besonderes Finish", best: "Hochwertige Präsentation, Premium-Anmutung", icon: CheckCircle },
@@ -273,7 +273,7 @@ const MessemodellGuide = () => {
               <div className="grid md:grid-cols-3 gap-4">
                 {[
                   { title: "Architekturmodell Guide", link: "/ratgeber/architekturmodell-guide", desc: "Kosten, Maßstäbe & Materialien für Architekten" },
-                  { title: "Material-Guide", link: "/ratgeber/material-guide", desc: "PLA vs. PETG vs. ASA – wissenschaftlich erklärt" },
+                  { title: "Material-Guide", link: "/ratgeber/material-guide", desc: "PLA vs. PETG vs. ASA, wissenschaftlich erklärt" },
                   { title: "Kosten-Guide", link: "/ratgeber/kosten-guide", desc: "Was kostet 3D-Druck wirklich?" },
                 ].map((r, i) => (
                   <Link key={i} href={r.link} className="block border border-border rounded-xl p-4 hover:border-primary/50 hover:shadow-sm transition-all group">

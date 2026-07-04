@@ -30,11 +30,11 @@ const StickyCTA = ({ regionName, deliveryTime, context }: StickyCTAProps) => {
 
   const headline = regionName
     ? `3D-Druck für ${regionName}`
-    : "Direkt starten – Sie wählen den Weg";
+    : "Direkt starten, Sie wählen den Weg";
 
   const subline = deliveryTime
     ? `${deliveryTime} Lieferzeit · Express 24h möglich`
-    : "Anrufen · WhatsApp · Termin · Anfrage – Antwort in 6h";
+    : "Anrufen · WhatsApp · Termin · Anfrage, Antwort in 6h";
 
   const waMsg = context
     ? `Hallo ekdruck, ich hätte eine Anfrage zu: ${context}.`

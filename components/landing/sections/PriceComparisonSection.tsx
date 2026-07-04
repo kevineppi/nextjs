@@ -78,7 +78,7 @@ const PriceComparisonSection = ({ regionName, category, data }: PriceComparisonS
             Was kostet {category === 'architektur' ? 'ein Architekturmodell' : 'ein Messemodell'} in {regionName}?
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Transparente Richtwerte – Ihr individuelles Angebot erhalten Sie kostenlos in 6h.
+            Transparente Richtwerte, Ihr individuelles Angebot erhalten Sie kostenlos in 6h.
           </p>
         </AnimatedSection>
 

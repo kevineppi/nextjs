@@ -1,5 +1,5 @@
 /**
- * EditorialPullQuote — Section-Bridge mit großem Zitat
+ * EditorialPullQuote, Section-Bridge mit großem Zitat
  * ──────────────────────────────────────────────────────────────────
  * Wird ZWISCHEN zwei Hauptsections eingesetzt als visuelle Atempause
  * + emotionaler Hook. Magazine-Narrow-Layout, viel Whitespace.
@@ -62,7 +62,7 @@ const EditorialPullQuote = ({
             </p>
             {attribution && (
               <footer className={`mono text-xs font-bold uppercase tracking-[0.3em] ${isDark ? 'text-primary' : 'text-primary'}`}>
-                — {attribution}
+               , {attribution}
               </footer>
             )}
           </blockquote>

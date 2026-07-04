@@ -1,6 +1,6 @@
 /**
- * OrganizationSchema — Server-side inline JSON-LD
- * 2026-05-26: K1-Refactor — von 'use client' + useEffect zu Server Component
+ * OrganizationSchema, Server-side inline JSON-LD
+ * 2026-05-26: K1-Refactor, von 'use client' + useEffect zu Server Component
  */
 
 const OrganizationSchema = () => {
@@ -12,7 +12,7 @@ const OrganizationSchema = () => {
     url: 'https://www.ek-druck.at',
     logo: 'https://www.ek-druck.at/lovable-uploads/40dc02c2-6cc2-46bb-aff9-6f06079f1f77.png',
     description:
-      'Spezialist für Architektur- und Messemodelle aus dem 3D-Druck. B2B-Service für Industriegüter-Hersteller und Architekturbüros in ganz Österreich – Angebot in 6h, Express 24h.',
+      'Spezialist für Architektur- und Messemodelle aus dem 3D-Druck. B2B-Service für Industriegüter-Hersteller und Architekturbüros in ganz Österreich, Angebot in 6h, Express 24h.',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Negrellistraße 15',
@@ -95,7 +95,7 @@ const OrganizationSchema = () => {
           itemOffered: {
             '@type': 'Service',
             name: 'Architekturmodell-Flatrate',
-            description: 'Monatliche Flatrate für Architekturbüros ab €199/Monat – erstes Modell kostenlos',
+            description: 'Monatliche Flatrate für Architekturbüros ab €199/Monat, erstes Modell kostenlos',
           },
         },
         {

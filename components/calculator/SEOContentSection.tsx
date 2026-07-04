@@ -8,7 +8,7 @@ const SEOContentSection = () => (
         {/* ── Lead ─────────────────────────────── */}
         <div>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-5">
-            3D-Druck Kosten berechnen – was kostet Ihr Modell?
+            3D-Druck Kosten berechnen, was kostet Ihr Modell?
           </h2>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
             Die Frage nach den Kosten steht bei jedem 3D-Druck-Projekt am Anfang. Unser
@@ -16,7 +16,7 @@ const SEOContentSection = () => (
             basierend auf der tatsächlichen Geometrie Ihrer STL-Datei, dem gewählten Material und
             Ihren Druckparametern. Ob Einzelstück oder Kleinauflage mit 50, 100 oder mehr
             Exemplaren: Die Kalkulation passt sich automatisch an. Jede Preisindikation ist
-            unverbindlich – der endgültige Preis wird erst nach persönlicher Prüfung durch
+            unverbindlich, der endgültige Preis wird erst nach persönlicher Prüfung durch
             unser Team festgelegt.
           </p>
         </div>
@@ -31,7 +31,7 @@ const SEOContentSection = () => (
               <h4 className="font-semibold text-foreground">1. Materialverbrauch</h4>
               <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
                 Der größte Kostentreiber ist das Volumen Ihres Modells. Dabei zählt nicht nur das
-                Gesamtvolumen, sondern auch der tatsächliche Materialanteil – bestimmt durch
+                Gesamtvolumen, sondern auch der tatsächliche Materialanteil, bestimmt durch
                 Wandstärke und Infill-Anteil. Ein Modell mit 15 % Infill verbraucht deutlich
                 weniger Material als eines mit 100 %. Die Materialpreise reichen von €25/kg (PLA)
                 bis €120/kg (PA6-CF mit Carbonfaser).
@@ -60,14 +60,14 @@ const SEOContentSection = () => (
               <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
                 Für jedes Projekt fällt eine Setup-Pauschale von €12,99 an. Diese deckt die
                 technische Vorbereitung: Slicing, Druckoptimierung, Bauteilorientierung und
-                Qualitätskontrolle. Bei uns ist das kein automatisierter Prozess – jedes Modell
+                Qualitätskontrolle. Bei uns ist das kein automatisierter Prozess, jedes Modell
                 wird von einem Fachmann vorbereitet.
               </p>
             </div>
             <div className="border-l-2 border-primary/30 pl-4">
               <h4 className="font-semibold text-foreground">5. Nachbearbeitung</h4>
               <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
-                Stützstrukturen entfernen, Oberflächen glätten, Grundierung oder Lackierung – all
+                Stützstrukturen entfernen, Oberflächen glätten, Grundierung oder Lackierung, all
                 das beeinflusst den Endpreis, wird aber im Rechner nicht automatisch erfasst. Diese
                 Arbeiten besprechen wir individuell mit Ihnen und kalkulieren sie separat.
               </p>
@@ -113,7 +113,7 @@ const SEOContentSection = () => (
           </h3>
           <p className="text-sm text-muted-foreground leading-relaxed mb-4">
             Viele Online-3D-Druckdienste bieten automatisierte Bestellungen an. Wir haben uns
-            bewusst dagegen entschieden – und zwar aus Qualitätsgründen:
+            bewusst dagegen entschieden, und zwar aus Qualitätsgründen:
           </p>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li className="flex items-start gap-2">
@@ -136,7 +136,7 @@ const SEOContentSection = () => (
               <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/60 shrink-0" />
               <span>
                 <strong className="text-foreground">Materialberatung:</strong> Ob PLA, PETG oder
-                Carbon – die Materialwahl hängt von Einsatzzweck, Umgebung und ästhetischen
+                Carbon, die Materialwahl hängt von Einsatzzweck, Umgebung und ästhetischen
                 Anforderungen ab. Das klären wir im persönlichen Gespräch.
               </span>
             </li>
@@ -145,7 +145,7 @@ const SEOContentSection = () => (
               <span>
                 <strong className="text-foreground">Ehrliche Einschätzung:</strong> Wir fertigen
                 nicht-technische Modelle für Präsentation und Gestaltung. Wenn Ihr Vorhaben
-                eher in Richtung mechanische Bauteile geht, sagen wir das offen – statt
+                eher in Richtung mechanische Bauteile geht, sagen wir das offen, statt
                 einfach zu drucken und Probleme in Kauf zu nehmen.
               </span>
             </li>
@@ -175,7 +175,7 @@ const SEOContentSection = () => (
                 <Link href="/messemodelle" className="text-primary hover:underline">
                   Messemodelle
                 </Link>{" "}
-                und Standexponate – auch in größeren Auflagen. Für den Außenbereich empfehlen wir ASA oder PETG.
+                und Standexponate, auch in größeren Auflagen. Für den Außenbereich empfehlen wir ASA oder PETG.
               </p>
             </div>
             <div className="border border-border/60 rounded-xl p-5">
@@ -188,7 +188,7 @@ const SEOContentSection = () => (
             <div className="border border-border/60 rounded-xl p-5">
               <h4 className="font-semibold text-foreground mb-2">Schulung & Lehre</h4>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Transparente Preisübersicht für Lehr- und Schulungsmodelle – auch bei
+                Transparente Preisübersicht für Lehr- und Schulungsmodelle, auch bei
                 größeren Projektmengen für Klassen oder Kurse.
               </p>
             </div>
@@ -198,7 +198,7 @@ const SEOContentSection = () => (
         {/* ── Regionales Vertrauen ────────────── */}
         <div>
           <h3 className="text-xl font-bold text-foreground mb-4">
-            3D-Druck aus Oberösterreich – persönlich, regional, verlässlich
+            3D-Druck aus Oberösterreich, persönlich, regional, verlässlich
           </h3>
           <p className="text-sm text-muted-foreground leading-relaxed">
             Wir drucken in Gunskirchen (Bezirk Wels-Land) mit österreichischem Filament und
@@ -238,7 +238,7 @@ const SEOContentSection = () => (
           <Link href="/kontakt" className="text-primary font-medium hover:underline">
             kontaktieren Sie uns direkt
           </Link>{" "}
-          – wir beraten Sie persönlich und unverbindlich.
+         , wir beraten Sie persönlich und unverbindlich.
         </p>
 
       </article>

@@ -3,7 +3,7 @@ import { Star, MapPin, Clock, Award, Shield, Zap } from "lucide-react";
 /**
  * Konservative, ehrliche Trust-Bar mit Social-Proof-Signalen.
  * Wird direkt unter Hero auf Startseite + Money-Pages eingesetzt.
- * Keine erfundenen Zahlen – nur überprüfbare Aussagen.
+ * Keine erfundenen Zahlen, nur überprüfbare Aussagen.
  */
 const TrustBarSocialProof = () => {
   const trustItems = [

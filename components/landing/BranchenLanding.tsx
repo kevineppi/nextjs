@@ -1,5 +1,5 @@
 /**
- * BranchenLanding — Server Component für Branchen-Cluster-Landing-Pages
+ * BranchenLanding, Server Component für Branchen-Cluster-Landing-Pages
  * ────────────────────────────────────────────────────────────────────
  *
  * Wird verwendet von:
@@ -131,7 +131,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
         />
 
         {/* ══════════════════════════════════════════════════════
-            HERO — Pain-First Hook
+            HERO, Pain-First Hook
            ══════════════════════════════════════════════════════ */}
         <section className="relative py-20 md:py-32 bg-background overflow-hidden" aria-label="Hero">
           <div className="container mx-auto px-4">
@@ -174,7 +174,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
                   className="group inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground rounded-full px-8 py-4 font-bold hover:opacity-90 transition-all"
                 >
                   <Calculator className="w-5 h-5" />
-                  STL hochladen — Preis in 60 Sek.
+                  STL hochladen, Preis in 60 Sek.
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link
@@ -190,7 +190,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
         </section>
 
         {/* ══════════════════════════════════════════════════════
-            SEO LONG-TAIL BODY — Keyword-reicher Prose-Block
+            SEO LONG-TAIL BODY, Keyword-reicher Prose-Block
             (semantisch eingestreut, 3-5× pro Secondary-Keyword)
            ══════════════════════════════════════════════════════ */}
         <section className="py-16 md:py-24 bg-background" aria-label="Branchen-Detail">
@@ -214,7 +214,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
         </section>
 
         {/* ══════════════════════════════════════════════════════
-            PAIN-SOLUTION SECTION — Branchen-spezifisch
+            PAIN-SOLUTION SECTION, Branchen-spezifisch
            ══════════════════════════════════════════════════════ */}
         <section className="py-20 md:py-32 bg-muted/30 border-y border-border" aria-label="Typische Probleme">
           <div className="container mx-auto px-4">
@@ -261,7 +261,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
         </section>
 
         {/* ══════════════════════════════════════════════════════
-            INHABER-AUTHORITY-BLOCK — Persönlicher Anker (gegen KI-Look)
+            INHABER-AUTHORITY-BLOCK, Persönlicher Anker (gegen KI-Look)
            ══════════════════════════════════════════════════════ */}
         <section className="py-16 md:py-20 bg-background" aria-label="Wer hier druckt">
           <div className="container mx-auto px-4">
@@ -281,13 +281,13 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
                 </div>
                 <div className="md:col-span-8 space-y-4 text-base md:text-lg leading-relaxed">
                   <p>
-                    Ich bin {BRAND.founderAge}, gegründet habe ich ekdruck {new Date().getFullYear() - BRAND.yearFounded} Jahre vor diesem Text — neben einem Vollzeitjob in der Eventbranche. Im Oktober beginnt mein Maschinenbau-Studium und ek-druck wird Vollzeit.
+                    Ich bin {BRAND.founderAge}, gegründet habe ich ekdruck {new Date().getFullYear() - BRAND.yearFounded} Jahre vor diesem Text, neben einem Vollzeitjob in der Eventbranche. Im Oktober beginnt mein Maschinenbau-Studium und ek-druck wird Vollzeit.
                   </p>
                   <p className="text-muted-foreground">
-                    Was das für Sie heißt: Wenn Sie hier eine Anfrage stellen, landet sie in <strong>meinem Posteingang</strong>. Nicht bei einem Vertriebsteam, nicht in einer Hotline-Queue. Sie schreiben — ich antworte. Sie senden CAD — ich kalkuliere. Ich drucke. Ich verpacke. Ich versende. Wenn etwas nicht passt: Sie haben einen einzigen Ansprechpartner.
+                    Was das für Sie heißt: Wenn Sie hier eine Anfrage stellen, landet sie in <strong>meinem Posteingang</strong>. Nicht bei einem Vertriebsteam, nicht in einer Hotline-Queue. Sie schreiben, ich antworte. Sie senden CAD, ich kalkuliere. Ich drucke. Ich verpacke. Ich versende. Wenn etwas nicht passt: Sie haben einen einzigen Ansprechpartner.
                   </p>
                   <p className="text-muted-foreground">
-                    Klare Grenze: <strong>Mechanische Funktionsbauteile</strong> mache ich aktuell nicht — meine WKO-Gewerbeberechtigung dafür kommt erst mit dem Maschinenbau-Abschluss. Was ich mache: <strong>Modelle, Anschauungsobjekte, Designstudien, Prototypen, Messemodelle, Architekturmodelle</strong>. Wenn Ihre Anfrage in der Grauzone liegt, sag ich's offen statt ein Phantasieangebot zu schicken.
+                    Klare Grenze: <strong>Mechanische Funktionsbauteile</strong> mache ich aktuell nicht, meine WKO-Gewerbeberechtigung dafür kommt erst mit dem Maschinenbau-Abschluss. Was ich mache: <strong>Modelle, Anschauungsobjekte, Designstudien, Prototypen, Messemodelle, Architekturmodelle</strong>. Wenn Ihre Anfrage in der Grauzone liegt, sag ich's offen statt ein Phantasieangebot zu schicken.
                   </p>
                   <div className="flex flex-wrap gap-2 pt-3">
                     <span className="inline-flex items-center gap-2 text-xs font-bold px-3 py-1.5 rounded-full bg-muted/50">
@@ -310,7 +310,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
         </section>
 
         {/* ══════════════════════════════════════════════════════
-            USE CASES — Modell-Typen für diese Branche
+            USE CASES, Modell-Typen für diese Branche
            ══════════════════════════════════════════════════════ */}
         <section className="py-20 md:py-32 bg-background" aria-label="Use-Cases">
           <div className="container mx-auto px-4">
@@ -323,7 +323,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
                   Was wir konkret drucken.
                 </h2>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Diese {branche.useCases.length} Modell-Typen fragen Kunden aus dieser Branche bei mir am häufigsten an. Realistisch beschrieben — mit Maßstab und Material-Empfehlung, nicht in Marketing-Sprech.
+                  Diese {branche.useCases.length} Modell-Typen fragen Kunden aus dieser Branche bei mir am häufigsten an. Realistisch beschrieben, mit Maßstab und Material-Empfehlung, nicht in Marketing-Sprech.
                 </p>
               </div>
 
@@ -371,7 +371,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
         </section>
 
         {/* ══════════════════════════════════════════════════════
-            MATERIAL-EMPFEHLUNG — Branchen-spezifisch
+            MATERIAL-EMPFEHLUNG, Branchen-spezifisch
            ══════════════════════════════════════════════════════ */}
         <section className="py-20 md:py-32 bg-muted/30 border-y border-border" aria-label="Material-Empfehlung">
           <div className="container mx-auto px-4">
@@ -384,7 +384,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
                   Welches Material für {branche.eyebrow.replace('Branche · ', '')}?
                 </h2>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Aus unserer Erfahrung mit dieser Branche — die richtige Wahl entscheidet über Lebensdauer und Look.
+                  Aus unserer Erfahrung mit dieser Branche, die richtige Wahl entscheidet über Lebensdauer und Look.
                 </p>
               </div>
 
@@ -419,7 +419,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
         </section>
 
         {/* ══════════════════════════════════════════════════════
-            BEISPIEL-MESSEN — Trust + Branchen-Relevanz
+            BEISPIEL-MESSEN, Trust + Branchen-Relevanz
            ══════════════════════════════════════════════════════ */}
         <section className="py-16 md:py-24 bg-background" aria-label="Branchen-Messen">
           <div className="container mx-auto px-4">
@@ -448,7 +448,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
         </section>
 
         {/* ══════════════════════════════════════════════════════
-            PROZESS — 4-Schritte (Reassurance)
+            PROZESS, 4-Schritte (Reassurance)
            ══════════════════════════════════════════════════════ */}
         <section className="py-20 md:py-32 bg-foreground text-background" aria-label="Prozess">
           <div className="container mx-auto px-4">
@@ -458,7 +458,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
                   So läuft's
                 </p>
                 <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.0] tracking-[-0.04em] mb-6">
-                  Von der Anfrage zum Modell — in 4 Schritten.
+                  Von der Anfrage zum Modell, in 4 Schritten.
                 </h2>
               </div>
 
@@ -467,7 +467,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
                   {
                     step: '01',
                     title: 'CAD oder Skizze',
-                    body: 'STL, STEP, IGES — oder einfach Skizze und Bilder. Wir modellieren falls nötig.',
+                    body: 'STL, STEP, IGES, oder einfach Skizze und Bilder. Wir modellieren falls nötig.',
                   },
                   {
                     step: '02',
@@ -497,7 +497,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
         </section>
 
         {/* ══════════════════════════════════════════════════════
-            FAQ — Branchen-spezifisch (mit FAQSchema)
+            FAQ, Branchen-spezifisch (mit FAQSchema)
            ══════════════════════════════════════════════════════ */}
         <section className="py-20 md:py-32 bg-background" aria-label="FAQ">
           <div className="container mx-auto px-4">
@@ -533,7 +533,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
         </section>
 
         {/* ══════════════════════════════════════════════════════
-            CROSS-LINKS — verwandte Branchen
+            CROSS-LINKS, verwandte Branchen
            ══════════════════════════════════════════════════════ */}
         <section className="py-20 md:py-24 bg-muted/30 border-y border-border" aria-label="Verwandte Branchen">
           <div className="container mx-auto px-4">
@@ -593,11 +593,11 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
                 Bereit für Ihr nächstes Messe-Modell?
               </p>
               <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.0] tracking-[-0.04em] mb-6">
-                {branche.primaryKeyword.split(' ')[0]} 3D-Druck —<br />
+                {branche.primaryKeyword.split(' ')[0]} 3D-Druck<br />
                 <span className="text-primary">Festpreis in 6 Stunden.</span>
               </h2>
               <p className="text-lg text-background/70 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Schicken Sie CAD (STEP/STL) oder eine kurze Skizze an <a href={`mailto:${BRAND.email}`} className="text-primary underline-offset-4 hover:underline">{BRAND.email}</a>. Sie bekommen das Festpreisangebot binnen 6h direkt von mir — Kevin, dem Inhaber. Kein Vertriebsfilter, keine Hierarchie dazwischen.
+                Schicken Sie CAD (STEP/STL) oder eine kurze Skizze an <a href={`mailto:${BRAND.email}`} className="text-primary underline-offset-4 hover:underline">{BRAND.email}</a>. Sie bekommen das Festpreisangebot binnen 6h direkt von mir, Kevin, dem Inhaber. Kein Vertriebsfilter, keine Hierarchie dazwischen.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8">

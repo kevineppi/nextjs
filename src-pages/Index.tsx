@@ -10,7 +10,7 @@ import CustomerLogoStrip from "@/components/CustomerLogoStrip";
 import Footer from "@/components/Footer";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import FAQSchema from "@/components/FAQSchema";
-// 2026-06-02: OrganizationSchema, StructuredData & AggregateRatingSchema entfernt —
+// 2026-06-02: OrganizationSchema, StructuredData & AggregateRatingSchema entfernt
 // orgSchema() in lib/seo.ts (eingebunden via app/layout.tsx) ist jetzt die einzige Quelle
 // für LocalBusiness + Organization + AggregateRating + Reviews. Dadurch reduzieren sich
 // die LocalBusiness-Duplikate von 5 auf 1 im Rich-Results-Test.
@@ -43,7 +43,7 @@ const Index = () => {
       path="/"
     />
     {/* Site-wide LocalBusiness + Organization + Reviews + AggregateRating sind jetzt
-        in app/layout.tsx via orgSchema() aus lib/seo.ts — hier nur noch FAQ + Breadcrumb. */}
+        in app/layout.tsx via orgSchema() aus lib/seo.ts, hier nur noch FAQ + Breadcrumb. */}
     <FAQSchema faqs={[
       { question: "Was kostet 3D-Druck bei ekdruck?", answer: "Ab €20 pro Modell. Der Preis hängt von Material, Volumen und Qualitätsstufe ab. Festpreisangebot in unter 6 Stunden." },
       { question: "Wie schnell erhalte ich mein 3D-Modell?", answer: "Standard: 3–5 Werktage. Express: 24–48 Stunden. Versandkostenfrei ab €100." },
@@ -58,11 +58,11 @@ const Index = () => {
       <Navigation />
       <Hero />
 
-      {/* ══ Customer-Logo-Strip direkt unter Hero — Trust-Signal ══ */}
+      {/* ══ Customer-Logo-Strip direkt unter Hero, Trust-Signal ══ */}
       <CustomerLogoStrip />
 
       {/* ══════════════════════════════════════════════════════
-          ZIELGRUPPEN — 3 gleichwertige Säulen (Funnel-Stufe: INTEREST)
+          ZIELGRUPPEN, 3 gleichwertige Säulen (Funnel-Stufe: INTEREST)
           User entscheidet hier zu welcher Page er weiter will.
          ══════════════════════════════════════════════════════ */}
       <section id="zielgruppen" className="py-24 md:py-32 bg-background relative" aria-label="3D-Druck Lösungen für Architekten, Messeaussteller, Industriekunden">
@@ -76,7 +76,7 @@ const Index = () => {
                 className="text-4xl md:text-6xl font-bold leading-[0.95] tracking-[-0.04em] mb-5"
               />
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-                Architekten, Industrie-Messeaussteller und Firmenkunden — jede Gruppe hat andere Anforderungen,
+                Architekten, Industrie-Messeaussteller und Firmenkunden, jede Gruppe hat andere Anforderungen,
                 andere Maßstäbe, andere Lead-Times. Wählen Sie Ihre Welt:
               </p>
             </AnimatedSection>
@@ -183,7 +183,7 @@ const Index = () => {
       </section>
 
       {/* ══════════════════════════════════════════════════════
-          ARCHITEKTUR-FLATRATE CALLOUT — Höchster LTV, eigene Sektion
+          ARCHITEKTUR-FLATRATE CALLOUT, Höchster LTV, eigene Sektion
          ══════════════════════════════════════════════════════ */}
       <section className="bg-primary/[0.04] border-y border-border py-12" aria-label="Architekturmodell Flatrate">
         <div className="container mx-auto px-4">
@@ -196,7 +196,7 @@ const Index = () => {
                   <div className="md:col-span-2">
                     <div className="flex items-center gap-3 mb-4">
                       <span className="inline-flex items-center gap-1.5 bg-primary text-primary-foreground text-xs font-bold px-3 py-1.5 rounded-full">
-                        <Zap className="w-3 h-3" /> NEU – Für Architekturbüros
+                        <Zap className="w-3 h-3" /> NEU, Für Architekturbüros
                       </span>
                       <span className="mono text-[10px] font-bold text-muted-foreground uppercase tracking-[0.2em]">ab €199/Monat</span>
                     </div>
@@ -205,7 +205,7 @@ const Index = () => {
                       <span className="text-primary">Erstes Modell kostenlos testen</span>
                     </h2>
                     <p className="text-muted-foreground text-sm leading-relaxed max-w-xl">
-                      Schluss mit Einzelanfragen und unkalkulierbaren Kosten. Die ekdruck Büro-Flatrate: bis zu 15 Modelle/Monat, 48h-Lieferung, persönlicher Ansprechpartner – monatlich kündbar.
+                      Schluss mit Einzelanfragen und unkalkulierbaren Kosten. Die ekdruck Büro-Flatrate: bis zu 15 Modelle/Monat, 48h-Lieferung, persönlicher Ansprechpartner, monatlich kündbar.
                     </p>
                   </div>
                   <div className="flex flex-col gap-3">
@@ -234,12 +234,12 @@ const Index = () => {
       </section>
 
       {/* ══════════════════════════════════════════════════════
-          PLAN — 3 SCHRITTE (Funnel-Stufe: PLAN — "So läuft's ab")
+          PLAN, 3 SCHRITTE (Funnel-Stufe: PLAN, "So läuft's ab")
          ══════════════════════════════════════════════════════ */}
       <ThreeStepProcess />
 
       {/* ══════════════════════════════════════════════════════
-          WARUM EKDRUCK — Big numbers + comparison
+          WARUM EKDRUCK, Big numbers + comparison
          ══════════════════════════════════════════════════════ */}
       <section className="py-32 bg-background relative" aria-label="Vorteile 3D-Druck">
         <div className="container mx-auto px-4">
@@ -323,16 +323,16 @@ const Index = () => {
       </section>
 
       {/* ══════════════════════════════════════════════════════
-          PROOF — REFERENZEN (Funnel-Stufe: PROOF)
+          PROOF, REFERENZEN (Funnel-Stufe: PROOF)
          ══════════════════════════════════════════════════════ */}
       <ReferencesTeaser />
 
       {/* ══════════════════════════════════════════════════════
-          EDITORIAL — "Was 3D-Druck bei ek-druck konkret bedeutet"
+          EDITORIAL, "Was 3D-Druck bei ek-druck konkret bedeutet"
           (2026-06-04 SEO-Pass: erhöht Content-Tiefe von 620 auf ~1.300 Wörter,
            hebt Hauptkeyword "3D-Druck Österreich" 4× natürlich, schafft 7 Internal-Links zu Service- und Branchen-Seiten)
          ══════════════════════════════════════════════════════ */}
-      <section className="py-24 md:py-32 bg-background relative" aria-label="3D-Druck Österreich — Werkstatt, Materialien, Branchen">
+      <section className="py-24 md:py-32 bg-background relative" aria-label="3D-Druck Österreich, Werkstatt, Materialien, Branchen">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <AnimatedSection animation="fade-in">
@@ -347,7 +347,7 @@ const Index = () => {
               <AnimatedSection animation="slide-up" delay={0.1}>
                 <h3 className="text-2xl md:text-3xl font-bold mb-5 tracking-[-0.02em]">Werkstatt &amp; Maschinenpark.</h3>
                 <p className="text-base leading-[1.85] text-foreground/85 mb-4">
-                  Unser <strong>3D-Druck Service in Österreich</strong> läuft auf drei industriellen FDM-Druckern: zwei <strong>Bambulab P1S</strong> für schnelle Standard-Aufträge und ein <strong>Prusa XL 5-Toolhead</strong> für Multi-Material-Drucke bis 360×360×360&nbsp;mm. Maschinen, Material und Service kontrollieren wir komplett selbst — kein White-Label, kein Sublieferant, kein „wir geben das weiter".
+                  Unser <strong>3D-Druck Service in Österreich</strong> läuft auf drei industriellen FDM-Druckern: zwei <strong>Bambulab P1S</strong> für schnelle Standard-Aufträge und ein <strong>Prusa XL 5-Toolhead</strong> für Multi-Material-Drucke bis 360×360×360&nbsp;mm. Maschinen, Material und Service kontrollieren wir komplett selbst, kein White-Label, kein Sublieferant, kein „wir geben das weiter".
                 </p>
                 <p className="text-base leading-[1.85] text-foreground/85">
                   Werkstatt in Gunskirchen, Oberösterreich. Anrufe nimmt <Link href="/ueber-uns" className="text-primary hover:underline font-semibold">Kevin Eppensteiner</Link> persönlich ab. Anfragen beantworten wir innerhalb von 6 Stunden mit Festpreis. Lieferung in ganz Österreich in 24–48&nbsp;Stunden, nach Deutschland 2–4 Werktage, in die Schweiz mit DHL-Express-Zollabwicklung.
@@ -357,10 +357,10 @@ const Index = () => {
               <AnimatedSection animation="slide-up" delay={0.2}>
                 <h3 className="text-2xl md:text-3xl font-bold mb-5 tracking-[-0.02em]">Acht Materialien für jeden Einsatz.</h3>
                 <p className="text-base leading-[1.85] text-foreground/85 mb-4">
-                  <strong>PLA</strong> für Anschauungsmodelle, <strong>PETG</strong> für Funktionsteile, <strong>ASA</strong> für UV-beständige Außenanwendungen, <strong>ABS</strong> mit Aceton-Glättung für Spritzguss-Optik, <strong>TPU</strong> für flexible Dichtungen, <strong>PETG-CF</strong> und <strong>PA-CF</strong> mit Carbonfaser für mechanisch belastbare Bauteile sowie <strong>SLA-Resin</strong> für hochfeine Detailmodelle und Schmuckguss.
+                  <strong>PLA</strong> für Anschauungsmodelle, <strong>PETG</strong> für robuste Gebrauchsmodelle, <strong>ASA</strong> für UV-beständige Außenanwendungen, <strong>ABS</strong> mit Aceton-Glättung für Spritzguss-Optik, <strong>TPU</strong> für flexible, biegbare Elemente, <strong>PETG-CF</strong> und <strong>PA-CF</strong> mit Carbonfaser für mechanisch belastbare Modelle sowie <strong>SLA-Resin</strong> für hochfeine Detailmodelle und Schmuckguss.
                 </p>
                 <p className="text-base leading-[1.85] text-foreground/85">
-                  Welches Material wann — ehrlich beraten, nicht verkauft. Wenn ein Wunsch nicht zum Bauteil passt, weisen wir vor dem Auftrag auf die bessere Alternative hin. Der <Link href="/3d-druck-materialien" className="text-primary hover:underline font-semibold">Detailvergleich aller Materialien</Link> zeigt Festigkeit, Temperaturverhalten und Preis pro Gramm.
+                  Welches Material wann, ehrlich beraten, nicht verkauft. Wenn ein Wunsch nicht zum Objekt passt, weisen wir vor dem Auftrag auf die bessere Alternative hin. Der <Link href="/3d-druck-materialien" className="text-primary hover:underline font-semibold">Detailvergleich aller Materialien</Link> zeigt Festigkeit, Temperaturverhalten und Preis pro Gramm.
                 </p>
               </AnimatedSection>
             </div>
@@ -369,20 +369,20 @@ const Index = () => {
               <AnimatedSection animation="slide-up" delay={0.1}>
                 <h3 className="text-2xl md:text-3xl font-bold mb-5 tracking-[-0.02em]">Sechs Branchen, sechs Sprachen.</h3>
                 <p className="text-base leading-[1.85] text-foreground/85 mb-4">
-                  Ein Maschinenbau-Konstrukteur fragt anders als ein Bauträger, eine Werbeagentur anders als ein Anlagenbauer. Wir kennen die Spezifika für <Link href="/branchen/maschinenbau" className="text-primary hover:underline font-semibold">Maschinenbau</Link> (Messemodelle, Funktionsprototypen), <Link href="/branchen/schiffbau" className="text-primary hover:underline font-semibold">Schiffbau</Link> (Antriebs-Schnittmodelle), <Link href="/branchen/energietechnik" className="text-primary hover:underline font-semibold">Energietechnik</Link> (Schaltanlagen-Demonstrationen), <Link href="/branchen/anlagenbau" className="text-primary hover:underline font-semibold">Anlagenbau</Link>, <Link href="/branchen/automotive" className="text-primary hover:underline font-semibold">Automotive</Link> und <Link href="/branchen/elektrotechnik" className="text-primary hover:underline font-semibold">Elektrotechnik</Link>.
+                  Ein Maschinenbau-Konstrukteur fragt anders als ein Bauträger, eine Werbeagentur anders als ein Anlagenbauer. Wir kennen die Spezifika für <Link href="/branchen/maschinenbau" className="text-primary hover:underline font-semibold">Maschinenbau</Link> (Messemodelle, Designprototypen), <Link href="/branchen/schiffbau" className="text-primary hover:underline font-semibold">Schiffbau</Link> (Antriebs-Schnittmodelle), <Link href="/branchen/energietechnik" className="text-primary hover:underline font-semibold">Energietechnik</Link> (Schaltanlagen-Demonstrationen), <Link href="/branchen/anlagenbau" className="text-primary hover:underline font-semibold">Anlagenbau</Link>, <Link href="/branchen/automotive" className="text-primary hover:underline font-semibold">Automotive</Link> und <Link href="/branchen/elektrotechnik" className="text-primary hover:underline font-semibold">Elektrotechnik</Link>.
                 </p>
                 <p className="text-base leading-[1.85] text-foreground/85">
-                  Pro Branche eine eigene Seite mit echten Cases, Material-Empfehlungen für die jeweiligen Anforderungen, Brennstoffklassen-Hinweisen wo relevant und Mess-Toleranzen, die im Fertigungsalltag wirklich zählen — nicht nur auf dem Datenblatt.
+                  Pro Branche eine eigene Seite mit echten Cases, Material-Empfehlungen für die jeweiligen Anforderungen, Brennstoffklassen-Hinweisen wo relevant und Mess-Toleranzen, die im Fertigungsalltag wirklich zählen, nicht nur auf dem Datenblatt.
                 </p>
               </AnimatedSection>
 
               <AnimatedSection animation="slide-up" delay={0.2}>
                 <h3 className="text-2xl md:text-3xl font-bold mb-5 tracking-[-0.02em]">Was wir nicht machen.</h3>
                 <p className="text-base leading-[1.85] text-foreground/85 mb-4">
-                  Mechanisch lasttragende Bauteile mit Personensicherheits-Anspruch — dafür fehlt aktuell die WKO-Gewerbeberechtigung. Das ändert sich mit dem Maschinenbau-Studium-Abschluss. Spritzguss-Großserien über 5.000 Stück — ab dieser Stückzahl ist 3D-Druck wirtschaftlich nicht mehr sinnvoll, wir verweisen ehrlich an Spritzgießer.
+                  Mechanisch lasttragende Anwendungen mit Personensicherheits-Anspruch, dafür fehlt aktuell die WKO-Gewerbeberechtigung. Das ändert sich mit dem Maschinenbau-Studium-Abschluss. Spritzguss-Großserien über 5.000 Stück, ab dieser Stückzahl ist 3D-Druck wirtschaftlich nicht mehr sinnvoll, wir verweisen ehrlich an Spritzgießer.
                 </p>
                 <p className="text-base leading-[1.85] text-foreground/85">
-                  Lieber „nein, das passt nicht zu uns" als ein halbgares Ja. Das ist keine Marketing-Phrase — wir lehnen ungefähr 10 % der Anfragen aktiv ab. Mehr Transparenz dazu auf <Link href="/ueber-uns" className="text-primary hover:underline font-semibold">Über uns</Link> und in der <Link href="/qualitaet" className="text-primary hover:underline font-semibold">Qualitäts-Selbstverpflichtung</Link>.
+                  Lieber „nein, das passt nicht zu uns" als ein halbgares Ja. Das ist keine Marketing-Phrase, wir lehnen ungefähr 10 % der Anfragen aktiv ab. Mehr Transparenz dazu auf <Link href="/ueber-uns" className="text-primary hover:underline font-semibold">Über uns</Link> und in der <Link href="/qualitaet" className="text-primary hover:underline font-semibold">Qualitäts-Selbstverpflichtung</Link>.
                 </p>
               </AnimatedSection>
             </div>
@@ -392,7 +392,7 @@ const Index = () => {
               <div className="border-t border-border pt-12 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
                 <div>
                   <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary mb-2">Bereit?</p>
-                  <p className="text-2xl md:text-3xl font-bold tracking-[-0.02em]">3D-Druck Österreich — STL hoch, Preis in 60 Sekunden.</p>
+                  <p className="text-2xl md:text-3xl font-bold tracking-[-0.02em]">3D-Druck Österreich, STL hoch, Preis in 60 Sekunden.</p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 shrink-0">
                   <Button size="lg" variant="cta" className="rounded-full px-8 py-7 font-semibold" asChild>
@@ -409,8 +409,8 @@ const Index = () => {
       </section>
 
       {/* ══════════════════════════════════════════════════════
-          DECISION — PRICING-INDIKATOR + KOSTENRECHNER-CTA
-          (Funnel-Stufe: DECISION — "Was kostet's")
+          DECISION, PRICING-INDIKATOR + KOSTENRECHNER-CTA
+          (Funnel-Stufe: DECISION, "Was kostet's")
          ══════════════════════════════════════════════════════ */}
       <section className="py-24 md:py-32 bg-muted/30 border-y border-border" aria-label="Preise & Kostenrechner">
         <div className="container mx-auto px-4">
@@ -421,13 +421,13 @@ const Index = () => {
                 Zwei Wege zum Preis.
               </h2>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Wenn Sie das Modell schon konkret im Kopf haben — Sofort-Preis berechnen.
-                Wenn Sie erst Orientierung wollen — Preisbeispiele aus echten Aufträgen.
+                Wenn Sie das Modell schon konkret im Kopf haben, Sofort-Preis berechnen.
+                Wenn Sie erst Orientierung wollen, Preisbeispiele aus echten Aufträgen.
               </p>
             </AnimatedSection>
 
             <div className="grid md:grid-cols-2 gap-4">
-              {/* Pfad 1: Kostenrechner — schnell, transaktional */}
+              {/* Pfad 1: Kostenrechner, schnell, transaktional */}
               <AnimatedSection animation="slide-up">
                 <Link href="/kostenrechner" className="group block h-full">
                   <div className="h-full rounded-3xl bg-background border-2 border-foreground p-8 md:p-10 transition-all duration-500 group-hover:-translate-y-1 group-hover:border-primary relative overflow-hidden">
@@ -459,7 +459,7 @@ const Index = () => {
                 </Link>
               </AnimatedSection>
 
-              {/* Pfad 2: Preise-Seite — Orientierung */}
+              {/* Pfad 2: Preise-Seite, Orientierung */}
               <AnimatedSection animation="slide-up" delay={100}>
                 <Link href="/preise" className="group block h-full">
                   <div className="h-full rounded-3xl border-2 border-border bg-background p-8 md:p-10 transition-all duration-500 group-hover:-translate-y-1 group-hover:border-primary/40 relative overflow-hidden">
@@ -473,7 +473,7 @@ const Index = () => {
                       Preisbeispiele pro Projekt-Typ
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
-                      Was kostet ein Architekturmodell? Ein Messemodell? Ein Funktionsmuster?
+                      Was kostet ein Architekturmodell? Ein Messemodell? Ein Prototyp?
                       Konkrete Preisbereiche, Treiber-Übersicht, Rabattstaffel.
                     </p>
                     <ul className="space-y-2 mb-8">
@@ -496,16 +496,16 @@ const Index = () => {
       </section>
 
       {/* ══════════════════════════════════════════════════════
-          SOCIAL PROOF — TESTIMONIALS mit Quotes (K2)
+          SOCIAL PROOF, TESTIMONIALS mit Quotes (K2)
           (Funnel-Stufe: TRUST-VERSTÄRKUNG nach Pricing)
          ══════════════════════════════════════════════════════ */}
       <TestimonialsSection
         limit={3}
         title="Stimmen aus echten Projekten."
-        subtitle="Quotes aus dem letzten Jahr — direkt von Auftraggebern, anonymisiert wo nötig."
+        subtitle="Quotes aus dem letzten Jahr, direkt von Auftraggebern, anonymisiert wo nötig."
       />
 
-      {/* Google-Reviews entfernt am 2026-05-31 — Trust kommt über Testimonials oben */}
+      {/* Google-Reviews entfernt am 2026-05-31, Trust kommt über Testimonials oben */}
 
       {/* ══════════════════════════════════════════════════════
           FAQ
@@ -544,7 +544,7 @@ const Index = () => {
                   {[
                     { q: "Was kostet 3D-Druck bei ekdruck?", a: "Ab €20 pro Modell. Preis hängt von Material, Volumen und Qualitätsstufe ab. Festpreis in unter 6h.", link: { to: "/ratgeber/kosten-guide", text: "Preis-Ratgeber →" } },
                     { q: "Wie schnell bekomme ich mein Modell?", a: "Standard: 3–5 Werktage (versandkostenfrei ab €100). Express: 24–48h.", link: null },
-                    { q: "Welche Dateiformate?", a: "STL, OBJ, STEP, 3MF, ArchiCAD, Revit, SolidWorks, Rhino, Fusion 360. Oder wir modellieren nach Skizze – kostenlos.", link: null },
+                    { q: "Welche Dateiformate?", a: "STL, OBJ, STEP, 3MF, ArchiCAD, Revit, SolidWorks, Rhino, Fusion 360. Oder wir modellieren nach Skizze, kostenlos.", link: null },
                     { q: "Für welche Branchen?", a: "Architekten (1:50–1:500), Messeaussteller (Express 24h), Produktentwickler, Firmenkunden (NDA, Mengenrabatte, Rahmenverträge).", link: null },
                     { q: "Welche Nachbearbeitung?", a: "Schleifen, Grundierung, Lackierung RAL/Pantone, Aceton-Dampfglättung, Segmentierung. Manuelle QA.", link: null },
                     { q: "Warum österreichisches Filament?", a: "Recycelte Industrieabfälle, Ökostrom. 80% weniger CO₂. Toleranz ±0,02 mm.", link: { to: "/ratgeber/material-guide", text: "Material-Guide →" } },
@@ -573,11 +573,11 @@ const Index = () => {
         </div>
       </section>
 
-      {/* "Welche Lösung passt zu Ihrem Projekt?" — komplett entfernt am 2026-05-31 (redundant mit Services-Übersicht) */}
+      {/* "Welche Lösung passt zu Ihrem Projekt?", komplett entfernt am 2026-05-31 (redundant mit Services-Übersicht) */}
       {false && (<ContextualLinks
         eyebrow="3D-Druck im Detail"
         heading="Welche Lösung passt zu Ihrem Projekt?"
-        description="Ob Architekturmodell, Messeexponat oder Prototyp – jedes Projekt beginnt mit der richtigen Strategie. Hier finden Sie den direkten Einstieg."
+        description="Ob Architekturmodell, Messeexponat oder Prototyp, jedes Projekt beginnt mit der richtigen Strategie. Hier finden Sie den direkten Einstieg."
         paragraphs={[
           {
             title: "Sofort den Preis berechnen",
@@ -586,7 +586,7 @@ const Index = () => {
                 before: "Sie wissen bereits, was Sie brauchen? Mit unserem ",
                 anchor: "3D-Druck Kostenrechner",
                 href: "/kostenrechner",
-                after: " ermitteln Sie in unter 60 Sekunden den Richtpreis Ihres Modells. STL-Datei hochladen, Material wählen, Preisindikation erhalten – ohne Anmeldung. Anschließend können Sie über das integrierte Formular direkt eine ",
+                after: " ermitteln Sie in unter 60 Sekunden den Richtpreis Ihres Modells. STL-Datei hochladen, Material wählen, Preisindikation erhalten, ohne Anmeldung. Anschließend können Sie über das integrierte Formular direkt eine ",
               },
               {
                 anchor: "verbindliche 3D-Druck Anfrage",
@@ -628,7 +628,7 @@ const Index = () => {
                 before: "Last-Minute vor der Messe? Unsere ",
                 anchor: "Messemodelle und Exponate",
                 href: "/messemodelle",
-                after: " sind in 24–48 Stunden fertig – inklusive Versand österreichweit. Auch für ",
+                after: " sind in 24–48 Stunden fertig, inklusive Versand österreichweit. Auch für ",
               },
               {
                 anchor: "Rapid Prototyping",
@@ -649,7 +649,7 @@ const Index = () => {
               {
                 anchor: "professionellen 3D-Druck Materialien",
                 href: "/3d-druck-materialien",
-                after: " – von PLA über PETG bis Carbon-PA.",
+                after: ", von PLA über PETG bis Carbon-PA.",
               },
             ],
           },
@@ -671,7 +671,7 @@ const Index = () => {
               3D-Druck für <span className="text-primary">ganz Österreich & Deutschland</span>
             </h2>
             <p className="text-muted-foreground text-sm">
-              Standort Gunskirchen (OÖ) – Express österreichweit 24–48h, Deutschland 2–4 Tage.
+              Standort Gunskirchen (OÖ), Express österreichweit 24–48h, Deutschland 2–4 Tage.
             </p>
           </AnimatedSection>
           <div className="grid md:grid-cols-3 gap-8">
@@ -708,8 +708,8 @@ const Index = () => {
       </section>)}
 
       {/* ══════════════════════════════════════════════════════
-          ACTION — FINALER CTA mit 2-Pfad-Logik
-          (Funnel-Stufe: ACTION — klare Entscheidungs-Hilfe)
+          ACTION, FINALER CTA mit 2-Pfad-Logik
+          (Funnel-Stufe: ACTION, klare Entscheidungs-Hilfe)
          ══════════════════════════════════════════════════════ */}
       <section className="py-32 bg-foreground relative overflow-hidden" aria-label="Jetzt anfragen">
         <div className="container mx-auto px-4 relative">
@@ -720,7 +720,7 @@ const Index = () => {
                 Bereit für Ihr<br />nächstes Modell<span className="text-primary">?</span>
               </h2>
               <p className="text-background/50 text-base md:text-lg mb-12 max-w-xl mx-auto leading-relaxed">
-                Zwei Wege — Sie entscheiden, welcher passt. Beide landen direkt beim Inhaber.
+                Zwei Wege, Sie entscheiden, welcher passt. Beide landen direkt beim Inhaber.
               </p>
 
               {/* 2-Pfad-Logik klar getrennt */}
@@ -748,10 +748,10 @@ const Index = () => {
                   <div className="bg-background/10 border-2 border-background/20 text-background rounded-3xl p-7 hover:bg-background/15 hover:border-background/30 hover:-translate-y-0.5 transition-all">
                     <p className="mono text-[10px] font-bold uppercase tracking-[0.25em] text-primary mb-3">Pfad B · persönlich</p>
                     <h3 className="text-xl md:text-2xl font-bold mb-2 leading-tight">
-                      Kurz besprechen — Festpreis in 6h
+                      Kurz besprechen, Festpreis in 6h
                     </h3>
                     <p className="text-sm text-background/70 mb-5 leading-relaxed">
-                      Wenn Sie noch unsicher sind oder NDA/Sonderfall haben — rufen Sie an.
+                      Wenn Sie noch unsicher sind oder NDA/Sonderfall haben, rufen Sie an.
                     </p>
                     <span className="inline-flex items-center gap-2 font-bold text-sm text-background group-hover:gap-4 transition-all">
                       <Phone className="w-4 h-4" />

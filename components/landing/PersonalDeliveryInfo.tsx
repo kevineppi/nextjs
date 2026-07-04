@@ -20,7 +20,7 @@ const PersonalDeliveryInfo = ({ regionName }: PersonalDeliveryInfoProps) => {
     {
       icon: Handshake,
       title: "Persönliche Übergabe",
-      description: "Wir bringen Ihr Messemodell nach Terminvereinbarung direkt zu Ihnen – für einen reibungslosen Start in die Messewoche."
+      description: "Wir bringen Ihr Messemodell nach Terminvereinbarung direkt zu Ihnen, für einen reibungslosen Start in die Messewoche."
     },
     {
       icon: Settings,
@@ -35,7 +35,7 @@ const PersonalDeliveryInfo = ({ regionName }: PersonalDeliveryInfoProps) => {
     {
       icon: MessageCircle,
       title: "Pflegehinweise vor Ort",
-      description: "Tipps zur Reinigung, zum Transport zwischen Messehallen und zur Aufbewahrung – damit Ihr Modell auch nach mehreren Einsätzen perfekt aussieht."
+      description: "Tipps zur Reinigung, zum Transport zwischen Messehallen und zur Aufbewahrung, damit Ihr Modell auch nach mehreren Einsätzen perfekt aussieht."
     }
   ];
 
@@ -57,7 +57,7 @@ const PersonalDeliveryInfo = ({ regionName }: PersonalDeliveryInfoProps) => {
               Wir kommen auch persönlich vorbei
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Auf Wunsch liefern wir Ihre Messemodelle persönlich nach {regionName} – 
+              Auf Wunsch liefern wir Ihre Messemodelle persönlich nach {regionName}, 
               und nehmen uns Zeit für eine ausführliche Einweisung vor Ort.
             </p>
           </div>

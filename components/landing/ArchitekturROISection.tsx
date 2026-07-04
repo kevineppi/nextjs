@@ -3,7 +3,7 @@ import { TrendingUp, Users, Clock, Award } from "lucide-react";
 
 const stats = [
   { v: "+47%", l: "Entscheidungs-Tempo", sub: "Bauherren entscheiden schneller wenn sie das Projekt physisch sehen", icon: TrendingUp },
-  { v: "8×", l: "Erinnerungsrate", sub: "Modelle bleiben Wochen nach dem Termin im Gedächtnis – Renderings nicht", icon: Users },
+  { v: "8×", l: "Erinnerungsrate", sub: "Modelle bleiben Wochen nach dem Termin im Gedächtnis, Renderings nicht", icon: Users },
   { v: "−65%", l: "Iterations-Zeit", sub: "Drei Varianten parallel drucken statt einzeln nachzubauen", icon: Clock },
   { v: "+34%", l: "Wettbewerbs-Quote", sub: "Architekturbüros mit Modell gewinnen Wettbewerbe häufiger", icon: Award },
 ];
@@ -52,7 +52,7 @@ const ArchitekturROISection = () => (
                   Bauträger entwickelt 30-Einheiten-Wohnbauprojekt. Vermarktung mit Renderings führt zu langer Vermarktungsphase, viele Rückfragen, langsame Reservierungen.
                 </p>
                 <p className="text-background/70 leading-relaxed">
-                  Mit physischem 1:100-Modell im Schauraum: Käufer verstehen Lage, Ausrichtung, Wohnungsgrößen sofort. Reservierungsquote steigt, Vermarktungsdauer sinkt – das eingesparte Marketingbudget übersteigt die Modellkosten innerhalb von zwei Wochen.
+                  Mit physischem 1:100-Modell im Schauraum: Käufer verstehen Lage, Ausrichtung, Wohnungsgrößen sofort. Reservierungsquote steigt, Vermarktungsdauer sinkt, das eingesparte Marketingbudget übersteigt die Modellkosten innerhalb von zwei Wochen.
                 </p>
               </div>
 

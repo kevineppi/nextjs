@@ -13,7 +13,7 @@ const Ratgeber = () => {
   const articles = [
     {
       title: "Architekturmodell Flatrate vs. Einzelauftrag: Wann lohnt sich ein Abo?",
-      description: "Break-even-Tabelle, Praxisbeispiele und ehrlicher Kostenvergleich – ab wann sich die Architektur-Flatrate für Ihr Büro rechnet. Mit Preistabelle 2026.",
+      description: "Break-even-Tabelle, Praxisbeispiele und ehrlicher Kostenvergleich, ab wann sich die Architektur-Flatrate für Ihr Büro rechnet. Mit Preistabelle 2026.",
       link: "/ratgeber/architekturmodell-flatrate",
       icon: Wallet,
       category: "Architektur-Flatrate",
@@ -86,7 +86,7 @@ const Ratgeber = () => {
       date: "Mai 2026"
     },
     {
-      title: "PLA vs PETG vs ASA vs ABS — FDM-Material-Vergleich 2026",
+      title: "PLA vs PETG vs ASA vs ABS, FDM-Material-Vergleich 2026",
       description: "Wissenschaftlicher Material-Vergleich nach ISO 527/178/75: Zugfestigkeit, Biegefestigkeit, Wärmeformbeständigkeit. Decision-Matrix für 6 Anwendungsfälle.",
       link: "/ratgeber/fdm-material-vergleich",
       icon: Beaker,
@@ -106,7 +106,7 @@ const Ratgeber = () => {
     },
     {
       title: "Rapid Prototyping mit 3D-Druck: Der ultimative Guide 2026",
-      description: "Funktionsprototypen in 24h, Materialwahl für Ingenieure, CAD-Formate und Toleranzen – alles was Produktentwickler wissen müssen.",
+      description: "Funktionsprototypen in 24h, Materialwahl für Ingenieure, CAD-Formate und Toleranzen, alles was Produktentwickler wissen müssen.",
       link: "/rapid-prototyping",
       icon: Wrench,
       category: "Prototypen",
@@ -133,7 +133,7 @@ const Ratgeber = () => {
     },
     {
       title: "PLA, PETG oder ASA? Der wissenschaftliche Material-Guide",
-      description: "Fundierter Vergleich der wichtigsten FDM-Materialien mit mechanischen Eigenschaften, Temperaturbeständigkeit und Anwendungsbereichen – wissenschaftlich belegt.",
+      description: "Fundierter Vergleich der wichtigsten FDM-Materialien mit mechanischen Eigenschaften, Temperaturbeständigkeit und Anwendungsbereichen, wissenschaftlich belegt.",
       link: "/ratgeber/material-guide",
       icon: BookOpen,
       category: "Materialien",

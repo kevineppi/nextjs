@@ -1,5 +1,5 @@
 /**
- * FAQSchema — Server-side inline JSON-LD
+ * FAQSchema, Server-side inline JSON-LD
  * ──────────────────────────────────────────────────────────────────
  *
  * 2026-05-26 Refactor (K1 aus 5-Instanzen-Audit):

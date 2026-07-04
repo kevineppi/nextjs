@@ -12,7 +12,7 @@ interface DominantBranchenSectionProps {
 }
 
 /**
- * DominantBranchenSection — Cross-Link Bundesland → Branchen-Cluster
+ * DominantBranchenSection, Cross-Link Bundesland → Branchen-Cluster
  * ───────────────────────────────────────────────────────────────────
  * Bringt die SEO-relevantesten Branchen-Cluster pro Region prominent
  * ins Spiel. Verteilt Bundesland-Link-Juice auf die dominanten Branchen-

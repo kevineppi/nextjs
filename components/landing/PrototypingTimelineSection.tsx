@@ -11,7 +11,7 @@ const steps = [
 ];
 
 const checklist = [
-  { item: "CAD-Datei oder Skizze", sub: "STL, STEP – oder ein Foto" },
+  { item: "CAD-Datei oder Skizze", sub: "STL, STEP, oder ein Foto" },
   { item: "Verfahren-Empfehlung?", sub: "FDM, SLA oder SLS" },
   { item: "Stückzahl", sub: "Von 1 bis 200+ möglich" },
   { item: "Material & Anwendung", sub: "Funktion, Optik, Outdoor?" },
@@ -84,7 +84,7 @@ const PrototypingTimelineSection = () => (
                 </div>
               </div>
               <div className="mt-3 text-center">
-                <a href="tel:+436765517197" className="text-primary font-semibold hover:underline inline-flex items-center gap-1.5 text-sm"><Phone className="w-4 h-4" />+43 676 5517197 – direkt mit dem Inhaber sprechen</a>
+                <a href="tel:+436765517197" className="text-primary font-semibold hover:underline inline-flex items-center gap-1.5 text-sm"><Phone className="w-4 h-4" />+43 676 5517197, direkt mit dem Inhaber sprechen</a>
               </div>
             </AnimatedSection>
           </div>

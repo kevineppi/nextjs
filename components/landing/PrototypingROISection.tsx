@@ -51,7 +51,7 @@ const PrototypingROISection = () => (
                 )
               )}
             </div>
-            <p className="text-sm text-background/60 text-center max-w-3xl mx-auto">Drei FDM-Iterationen à €120, eine SLS-Vorserie à 30 Stück. Konstruktion validiert vor Werkzeugbau – das Werkzeug greift im ersten Schuss. Bei kritischen Bauteilen mit Sicherheitsanforderungen: <strong className="text-primary">ROI nach einem einzigen vermiedenen Werkzeug-Eingriff</strong>.</p>
+            <p className="text-sm text-background/60 text-center max-w-3xl mx-auto">Drei FDM-Iterationen à €120, eine SLS-Vorserie à 30 Stück. Konstruktion validiert vor Werkzeugbau, das Werkzeug greift im ersten Schuss. Bei kritischen Bauteilen mit Sicherheitsanforderungen: <strong className="text-primary">ROI nach einem einzigen vermiedenen Werkzeug-Eingriff</strong>.</p>
           </div>
         </AnimatedSection>
       </div>

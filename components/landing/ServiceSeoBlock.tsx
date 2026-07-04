@@ -9,7 +9,7 @@ interface ServiceSeoBlockProps {
 }
 
 /**
- * ServiceSeoBlock — Long-Tail-Body + FAQ + FAQPage-Schema
+ * ServiceSeoBlock, Long-Tail-Body + FAQ + FAQPage-Schema
  * ──────────────────────────────────────────────────────────────────
  *
  * Rendert pro Service-Slug:
@@ -38,7 +38,7 @@ const ServiceSeoBlock = ({ serviceSlug }: ServiceSeoBlockProps) => {
 
   return (
     <>
-      {/* Inline FAQPage Schema — Server-side render für SEO */}
+      {/* Inline FAQPage Schema, Server-side render für SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

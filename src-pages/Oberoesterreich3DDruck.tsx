@@ -6,7 +6,7 @@ import DruckRegion from "./DruckRegion";
 const Oberoesterreich3DDruck = () => {
   useEffect(() => {
     // noindex: avoids keyword cannibalization with the main homepage
-    // (company is based in OÖ — this page would compete with the homepage for core terms)
+    // (company is based in OÖ, this page would compete with the homepage for core terms)
     const metaRobots = document.querySelector('meta[name="robots"]');
     if (metaRobots) {
       metaRobots.setAttribute('content', 'noindex, follow');

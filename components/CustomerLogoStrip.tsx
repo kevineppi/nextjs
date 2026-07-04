@@ -1,5 +1,5 @@
 /**
- * CustomerLogoStrip — Trust-Bar im dunklen Marquee-Style
+ * CustomerLogoStrip, Trust-Bar im dunklen Marquee-Style
  * ──────────────────────────────────────────────────────────────────
  *
  * 2026-05-27 v2: Schwarzer BG (wie der bestehende Achievement-Marquee),
@@ -40,7 +40,7 @@ const CustomerLogoStrip = ({
             {eyebrow}
           </p>
 
-          {/* Logo-Strip — flex-wrap, einheitliche Höhe, dezent grayscale + invert für Schwarz-BG */}
+          {/* Logo-Strip, flex-wrap, einheitliche Höhe, dezent grayscale + invert für Schwarz-BG */}
           <div className="flex flex-wrap items-center justify-center md:justify-between gap-x-8 md:gap-x-10 gap-y-6">
             {logos.map((logo) => (
               <div

@@ -1,12 +1,12 @@
 /**
- * B2BTrustSignals — Verbands- & Compliance-Trust-Bar für B2B-Buyer
+ * B2BTrustSignals, Verbands- & Compliance-Trust-Bar für B2B-Buyer
  * ──────────────────────────────────────────────────────────────────
  *
  * 2026-05-26 (K7 aus 5-Instanzen-Audit):
  *   B2B-Großkunden checken vor €5.000+-Aufträgen reflexartig nach:
  *     - WKO-Eintrag (haben)
- *     - DUNS-Nummer (Bonität, fehlt — wird beantragt)
- *     - Verbandsmitgliedschaften (Cluster, FHKÖ — geplant)
+ *     - DUNS-Nummer (Bonität, fehlt, wird beantragt)
+ *     - Verbandsmitgliedschaften (Cluster, FHKÖ, geplant)
  *     - UID-Nummer (haben implizit)
  *     - LinkedIn-Company-Page (Vertrauen durch Sichtbarkeit)
  *
@@ -28,7 +28,7 @@ interface B2BTrustSignalsProps {
 }
 
 const B2BTrustSignals = ({ variant = 'inline', className = '' }: B2BTrustSignalsProps) => {
-  // Items werden nur gerendert wenn relevant — keine leeren Placeholders
+  // Items werden nur gerendert wenn relevant, keine leeren Placeholders
   const items = [
     {
       icon: Shield,
@@ -50,7 +50,7 @@ const B2BTrustSignals = ({ variant = 'inline', className = '' }: B2BTrustSignals
     },
     {
       icon: Linkedin,
-      label: 'LinkedIn — direkter Kontakt zum Inhaber',
+      label: 'LinkedIn, direkter Kontakt zum Inhaber',
       detail: 'Profil unter linkedin.com/in/3d-druck',
       visible: true,
       href: 'https://www.linkedin.com/in/3d-druck/',
@@ -95,7 +95,7 @@ const B2BTrustSignals = ({ variant = 'inline', className = '' }: B2BTrustSignals
     )
   }
 
-  // Inline-Variant — schmale Strip-Variante
+  // Inline-Variant, schmale Strip-Variante
   return (
     <div className={`bg-muted/40 border-y border-border py-4 ${className}`}>
       <div className="container mx-auto px-4">

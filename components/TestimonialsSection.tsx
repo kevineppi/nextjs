@@ -1,5 +1,5 @@
 /**
- * TestimonialsSection — echte Quote-Cards sitewide
+ * TestimonialsSection, echte Quote-Cards sitewide
  * ──────────────────────────────────────────────────────────────────
  *
  * 2026-05-26 (K2 aus 5-Instanzen-Audit):

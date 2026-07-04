@@ -5,11 +5,11 @@ import Link from 'next/link'
 import { ArrowRight, X, Calculator } from 'lucide-react'
 
 /**
- * SmartStickyCTA — kontextuelle Bottom-Bar
+ * SmartStickyCTA, kontextuelle Bottom-Bar
  * ──────────────────────────────────────────────────────────────────
  * Slides up nach 600px Scroll. Dismissable per Session.
  * Aufgabe: User der durch die Page scrollt einen schwebenden, immer
- * sichtbaren primären Conversion-Pfad anbieten — ohne dass dauernd
+ * sichtbaren primären Conversion-Pfad anbieten, ohne dass dauernd
  * eine CTA-Section wiederholt werden muss.
  *
  * Design-Quelle:
@@ -20,7 +20,7 @@ import { ArrowRight, X, Calculator } from 'lucide-react'
  *   <SmartStickyCTA
  *     primaryLabel="STL hochladen"
  *     primaryHref="/kostenrechner"
- *     context="Festpreis in 6h — direkt vom Inhaber"
+ *     context="Festpreis in 6h, direkt vom Inhaber"
  *   />
  */
 
@@ -30,13 +30,13 @@ interface SmartStickyCTAProps {
   context?: string
   secondaryLabel?: string
   secondaryHref?: string
-  dismissKey?: string // sessionStorage-key — anders pro Page
+  dismissKey?: string // sessionStorage-key, anders pro Page
 }
 
 const SmartStickyCTA = ({
   primaryLabel,
   primaryHref,
-  context = 'Festpreis in 6h — direkt vom Inhaber',
+  context = 'Festpreis in 6h, direkt vom Inhaber',
   secondaryLabel,
   secondaryHref,
   dismissKey = 'smart-cta-dismissed',
@@ -79,7 +79,7 @@ const SmartStickyCTA = ({
     >
       <div className="bg-foreground text-background rounded-2xl shadow-2xl border border-background/10 px-4 md:px-6 py-3 md:py-4 flex items-center gap-3 md:gap-4">
 
-        {/* Context-Text — hidden on small mobile */}
+        {/* Context-Text, hidden on small mobile */}
         <div className="hidden sm:flex flex-col flex-1 min-w-0">
           <p className="mono text-[9px] font-bold uppercase tracking-[0.25em] text-primary">
             Bereit für Ihr Modell?
@@ -99,7 +99,7 @@ const SmartStickyCTA = ({
           <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
         </Link>
 
-        {/* Secondary (optional) — text-only */}
+        {/* Secondary (optional), text-only */}
         {secondaryLabel && secondaryHref && (
           <Link
             href={secondaryHref}

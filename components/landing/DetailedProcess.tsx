@@ -69,7 +69,7 @@ const defaultSteps: ProcessStep[] = [
 
 const DetailedProcess = ({ 
   title = "Der Weg zu Ihrem 3D-Druck", 
-  subtitle = "Von der Datei zum fertigen Objekt – transparent und nachvollziehbar",
+  subtitle = "Von der Datei zum fertigen Objekt, transparent und nachvollziehbar",
   steps = defaultSteps
 }: DetailedProcessProps) => {
   return (

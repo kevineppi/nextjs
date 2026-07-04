@@ -92,7 +92,7 @@ const ExpressTimelineSection = ({ regionName, deliveryTime, data }: ExpressTimel
             Express-Service
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Von der Anfrage zum fertigen Modell – in 24 Stunden
+            Von der Anfrage zum fertigen Modell, in 24 Stunden
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Unser Express-Prozess für dringende Projekte in {regionName}

@@ -160,7 +160,7 @@ const CalculatorForm = ({
             <div>
               <h3 className="text-lg font-semibold text-foreground mb-1">3D-Datei hochladen</h3>
               <p className="text-sm text-muted-foreground">
-                Laden Sie Ihre STL-Datei hoch – Volumen, Oberfläche und Maße werden
+                Laden Sie Ihre STL-Datei hoch, Volumen, Oberfläche und Maße werden
                 automatisch analysiert. Ohne Datei rechnen wir mit Standardmaßen (50×50×50 mm).
               </p>
             </div>
@@ -217,7 +217,7 @@ const CalculatorForm = ({
                 <SelectContent>
                   {materials.map((key) => (
                     <SelectItem key={key} value={key}>
-                      {cfg.materialLabels[key]} – €{cfg.pricePerKg[key]}/kg
+                      {cfg.materialLabels[key]}, €{cfg.pricePerKg[key]}/kg
                     </SelectItem>
                   ))}
                 </SelectContent>
@@ -292,9 +292,9 @@ const CalculatorForm = ({
                 className="w-full"
               />
               <div className="flex justify-between text-xs text-muted-foreground">
-                <span>10 % – Leicht</span>
-                <span>50 % – Stabil</span>
-                <span>100 % – Massiv</span>
+                <span>10 %, Leicht</span>
+                <span>50 %, Stabil</span>
+                <span>100 %, Massiv</span>
               </div>
             </div>
 
@@ -359,7 +359,7 @@ const CalculatorForm = ({
           </div>
         )}
 
-        {/* Testkonfigurationen – always visible at bottom */}
+        {/* Testkonfigurationen, always visible at bottom */}
         <div className="pt-4 mt-4 border-t border-border/30">
           <button
             type="button"

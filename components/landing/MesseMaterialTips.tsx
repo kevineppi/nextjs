@@ -139,7 +139,7 @@ const MesseMaterialTips = ({ materials, regionName, industryFocus }: MesseMateri
                       Unsicher welches Material?
                     </h3>
                     <p className="text-muted-foreground mb-6 leading-relaxed">
-                      Wir beraten Sie kostenlos und unverbindlich – basierend auf Ihren 
+                      Wir beraten Sie kostenlos und unverbindlich, basierend auf Ihren 
                       Anforderungen an Größe, Optik, Haptik und Budget. Bei komplexen 
                       Projekten senden wir Ihnen gerne <strong>Materialproben</strong> zu.
                     </p>

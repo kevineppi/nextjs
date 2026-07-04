@@ -150,7 +150,7 @@ const ReferencesTeaser = () => {
                         {featured.customer_quote && (
                           <div className="border-l-2 border-primary pl-3 mb-4">
                             <p className="text-xs text-foreground/70 italic leading-relaxed">"{featured.customer_quote}"</p>
-                            {featured.customer_name && <p className="text-[10px] text-muted-foreground mt-1">— {featured.customer_name}</p>}
+                            {featured.customer_name && <p className="text-[10px] text-muted-foreground mt-1">{featured.customer_name}</p>}
                           </div>
                         )}
                         <div className="flex flex-wrap gap-2">

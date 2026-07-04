@@ -1,6 +1,6 @@
 /**
- * StructuredData — Server-side inline JSON-LD
- * 2026-05-26: K1-Refactor — von 'use client' + useEffect zu Server Component
+ * StructuredData, Server-side inline JSON-LD
+ * 2026-05-26: K1-Refactor, von 'use client' + useEffect zu Server Component
  * Schema-Builder-Logik bleibt erhalten, nur Render-Pfad wechselt.
  */
 

@@ -1,6 +1,6 @@
 /**
- * ProductSchema — Server-side inline JSON-LD
- * 2026-05-26: K1-Refactor — von 'use client' + useEffect zu Server Component
+ * ProductSchema, Server-side inline JSON-LD
+ * 2026-05-26: K1-Refactor, von 'use client' + useEffect zu Server Component
  */
 
 interface ProductSchemaProps {

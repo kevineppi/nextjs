@@ -47,19 +47,19 @@ const messeKalender = [
 ];
 
 const branchenUseCases = [
-  { icon: Factory, branche: "Maschinenbau & Industrie", titel: "Industrieanlage als Anschauungsmodell", text: "Ihre Maschine wiegt 8 Tonnen und passt in keine Messehalle? Wir fertigen maßstabsgetreue Industriemodelle, die komplexe Anlagen auf Tischgröße bringen. Schnittmodelle zeigen das Innenleben, bewegliche Teile verdeutlichen Funktionsabläufe. Von der Fräsmaschine bis zur kompletten Produktionslinie.", beispiel: "Sägeanlage 1:20 für die LIGNA – 47 Einzelteile, funktionsfähige Kanzel" },
-  { icon: Building2, branche: "Immobilien & Bau", titel: "Immobilienprojekt als Präsentationsmodell", text: "Bauträger, Projektentwickler und Architekten nutzen unsere Präsentationsmodelle für Verkaufsgespräche, Baueinreichungen und Messeauftritte. Maßstab 1:50 bis 1:500, mit Geländemodellierung und optionaler Beleuchtung. Abnehmbares Dach zeigt den Grundriss.", beispiel: "Wohnbauprojekt 1:100 für BAUEN & WOHNEN Wien – 3 Gebäude mit Umgebung" },
-  { icon: Wrench, branche: "Automotive & Zulieferer", titel: "Fahrzeugkomponenten als Exponat", text: "Von der Einzelkomponente bis zum Cutaway-Modell: Vergrößerte Darstellungen machen filigrane Bauteile sichtbar, verkleinerte Gesamtfahrzeuge sparen Standfläche. Farbcodierung nach CI-Richtlinien ist Standard.", beispiel: "Bremsanlage 3:1 für die Automechanika Frankfurt – Schnittdarstellung mit CI-Farben" },
-  { icon: Lightbulb, branche: "Medizintechnik & Pharma", titel: "Medizinprodukt greifbar machen", text: "Erklärungsbedürftige Medizingeräte werden als Demonstrationsmodell sofort verständlich. Chirurgische Instrumente, Diagnostikgeräte oder Implantate in vergrößerter Darstellung erzeugen den entscheidenden Aha-Effekt. Aufklappbare Gehäuse zeigen das Innenleben.", beispiel: "Insulinpumpe 5:1 für die MEDICA Düsseldorf – mit aufklappbarem Gehäuse" },
-  { icon: Globe, branche: "Energie & Umwelttechnik", titel: "Infrastrukturprojekt visualisieren", text: "Windparks, Solaranlagen, Kläranlagen oder Wasserkraftwerke: Wir erstellen Schaumodelle mit farbigen Markierungen für Flussrichtungen, Energieströme oder Reinigungsstufen – ideal für Fachmessen wie die IFAT.", beispiel: "Kläranlage 1:50 für die IFAT München – mit Fließrichtungspfeilen" },
-  { icon: Briefcase, branche: "Start-ups & Dienstleister", titel: "Abstrakte Produkte physisch erlebbar", text: "Kein physisches Produkt? Kein Problem. Wir übersetzen Software, Prozesse oder Dienstleistungen in symbolische Exponatmodelle, die als Gesprächsstarter am Messestand funktionieren. Modulare Bauweise lädt zum Interagieren ein.", beispiel: "Symbolisches Prozessmodell für ein FinTech – modularer Aufbau zum Zusammenstecken" },
+  { icon: Factory, branche: "Maschinenbau & Industrie", titel: "Industrieanlage als Anschauungsmodell", text: "Ihre Maschine wiegt 8 Tonnen und passt in keine Messehalle? Wir fertigen maßstabsgetreue Industriemodelle, die komplexe Anlagen auf Tischgröße bringen. Schnittmodelle zeigen das Innenleben, bewegliche Teile verdeutlichen Funktionsabläufe. Von der Fräsmaschine bis zur kompletten Produktionslinie.", beispiel: "Sägeanlage 1:20 für die LIGNA, 47 Einzelteile, funktionsfähige Kanzel" },
+  { icon: Building2, branche: "Immobilien & Bau", titel: "Immobilienprojekt als Präsentationsmodell", text: "Bauträger, Projektentwickler und Architekten nutzen unsere Präsentationsmodelle für Verkaufsgespräche, Baueinreichungen und Messeauftritte. Maßstab 1:50 bis 1:500, mit Geländemodellierung und optionaler Beleuchtung. Abnehmbares Dach zeigt den Grundriss.", beispiel: "Wohnbauprojekt 1:100 für BAUEN & WOHNEN Wien, 3 Gebäude mit Umgebung" },
+  { icon: Wrench, branche: "Automotive & Zulieferer", titel: "Fahrzeugmodelle als Exponat", text: "Vom Detailmodell bis zum Cutaway-Modell: Vergrößerte Darstellungen machen filigrane Details sichtbar, verkleinerte Gesamtfahrzeuge sparen Standfläche. Farbcodierung nach CI-Richtlinien ist Standard.", beispiel: "Cutaway-Modell 3:1 für die Automechanika Frankfurt, Schnittdarstellung mit CI-Farben" },
+  { icon: Lightbulb, branche: "Medizintechnik & Pharma", titel: "Medizinprodukt greifbar machen", text: "Erklärungsbedürftige Medizingeräte werden als Demonstrationsmodell sofort verständlich. Chirurgische Instrumente, Diagnostikgeräte oder Implantate in vergrößerter Darstellung erzeugen den entscheidenden Aha-Effekt. Aufklappbare Gehäuse zeigen das Innenleben.", beispiel: "Insulinpumpe 5:1 für die MEDICA Düsseldorf, mit aufklappbarem Gehäuse" },
+  { icon: Globe, branche: "Energie & Umwelttechnik", titel: "Infrastrukturprojekt visualisieren", text: "Windparks, Solaranlagen, Kläranlagen oder Wasserkraftwerke: Wir erstellen Schaumodelle mit farbigen Markierungen für Flussrichtungen, Energieströme oder Reinigungsstufen, ideal für Fachmessen wie die IFAT.", beispiel: "Kläranlage 1:50 für die IFAT München, mit Fließrichtungspfeilen" },
+  { icon: Briefcase, branche: "Start-ups & Dienstleister", titel: "Abstrakte Produkte physisch erlebbar", text: "Kein physisches Produkt? Kein Problem. Wir übersetzen Software, Prozesse oder Dienstleistungen in symbolische Exponatmodelle, die als Gesprächsstarter am Messestand funktionieren. Modulare Bauweise lädt zum Interagieren ein.", beispiel: "Symbolisches Prozessmodell für ein FinTech, modularer Aufbau zum Zusammenstecken" },
 ];
 
 const preisstufen = [
   { typ: "Display-Modell", preis: "ab €30", groesse: "bis 15 cm", beschreibung: "Tischmodelle für Besprechungsräume, POS oder als Geschenk für Messebesucher.", lieferzeit: "3–5 Tage", material: "PLA / PLA+", icon: Box },
   { typ: "Standmodell", preis: "ab €80", groesse: "15–40 cm", beschreibung: "Produktmodelle, verkleinerte Maschinen oder Architekturmodelle für den Messestand.", lieferzeit: "5–7 Tage", material: "PETG / ASA", icon: Layers },
   { typ: "Eyecatcher", preis: "ab €180", groesse: "40–80 cm", beschreibung: "Großformatige Präsentationsmodelle als Blickfang. Segmentiert gedruckt, lackierbar.", lieferzeit: "7–10 Tage", material: "PETG / ASA / ABS", icon: Eye, popular: true },
-  { typ: "Großmodell", preis: "auf Anfrage", groesse: "80 cm – 2m+", beschreibung: "Maßstabsgetreue Industriemodelle und Anlagenmodelle mit Transportkiste.", lieferzeit: "2–4 Wochen", material: "nach Anforderung", icon: Factory },
+  { typ: "Großmodell", preis: "auf Anfrage", groesse: "80 cm, 2m+", beschreibung: "Maßstabsgetreue Industriemodelle und Anlagenmodelle mit Transportkiste.", lieferzeit: "2–4 Wochen", material: "nach Anforderung", icon: Factory },
 ];
 
 const materialGuide = [
@@ -85,12 +85,12 @@ const testimonials = [
 ];
 
 const faqs = [
-  { question: "Was kostet ein 3D-gedrucktes Messemodell?", answer: "Display-Modelle starten ab €30, Standmodelle ab €80, Eyecatcher-Exponate ab €180. Großmodelle werden individuell kalkuliert. Sie erhalten ein verbindliches Festpreisangebot innerhalb von 6 Stunden – kostenlos und unverbindlich." },
+  { question: "Was kostet ein 3D-gedrucktes Messemodell?", answer: "Display-Modelle starten ab €30, Standmodelle ab €80, Eyecatcher-Exponate ab €180. Großmodelle werden individuell kalkuliert. Sie erhalten ein verbindliches Festpreisangebot innerhalb von 6 Stunden, kostenlos und unverbindlich." },
   { question: "Wie schnell kann ein Messemodell gefertigt werden?", answer: "Express-Fertigung in 24–48 Stunden ist möglich. Standard-Lieferzeit beträgt 5–10 Werktage, bei Großmodellen 2–4 Wochen. Wir empfehlen, 4–6 Wochen vor der Messe zu bestellen." },
   { question: "Welche Dateiformate werden akzeptiert?", answer: "STL, OBJ, STEP, IGES und 3MF. Auch native CAD-Formate aus SolidWorks, Inventor, Fusion 360 und Rhino. Kein 3D-Modell vorhanden? Wir erstellen Ihr Exponat auch nach Skizze, Foto oder technischer Zeichnung." },
-  { question: "Kann ich mein Exponat in unserer CI-Farbe erhalten?", answer: "Ja. Über 20 Filamentfarben ab Lager, oder Lackierung nach RAL-, Pantone- oder HEX-Farbwerten – exakt nach Ihrem Corporate Design." },
+  { question: "Kann ich mein Exponat in unserer CI-Farbe erhalten?", answer: "Ja. Über 20 Filamentfarben ab Lager, oder Lackierung nach RAL-, Pantone- oder HEX-Farbwerten, exakt nach Ihrem Corporate Design." },
   { question: "Wie wird das Exponat bruchsicher geliefert?", answer: "Individuelle Schaumstoffverpackung mit doppelwandigem Karton. Großmodelle in Holzkisten. Lieferung direkt zum Messestand in Wien, München, Düsseldorf, Basel und weiteren Messestädten." },
-  { question: "3D-Druck vs. klassischer Modellbau – was ist besser?", answer: "3D-Druck ist 5–10× schneller, 60–80% günstiger und erlaubt unbegrenzte geometrische Komplexität. Digital reproduzierbar – Korrekturen kosten nur eine Dateiänderung. Handmodellbau hat Vorteile bei Oberfläche und Haptik." },
+  { question: "3D-Druck vs. klassischer Modellbau, was ist besser?", answer: "3D-Druck ist 5–10× schneller, 60–80% günstiger und erlaubt unbegrenzte geometrische Komplexität. Digital reproduzierbar, Korrekturen kosten nur eine Dateiänderung. Handmodellbau hat Vorteile bei Oberfläche und Haptik." },
   { question: "Bieten Sie Express für kurzfristige Messetermine?", answer: "Ja. 24–48h Express-Fertigung. Freitag bestellt, Montag auf der Messe. Rufen Sie an: +43 676 5517197." },
   { question: "Für welche DACH-Messen liefern Sie?", answer: "Alle Messen: Wien, München (BAU, IFAT), Düsseldorf (MEDICA), Hannover, Frankfurt (Automechanika), Nürnberg (SPS), Basel (Swissbau), St. Gallen (OLMA), Zürich und viele weitere." },
   { question: "Kann ein Modell mehrfach eingesetzt werden?", answer: "Ja. PETG oder ASA überstehen 5–10 Messeeinsätze. Wir empfehlen eine Transportbox für sichere Lagerung." },
@@ -109,7 +109,7 @@ const Messemodelle = () => (
     <main className="min-h-screen bg-background pt-28 md:pt-32">
 
       {/* ════════════════════════════════════════════
-          HERO – Editorial, bold, nicht abgeschnitten
+          HERO, Editorial, bold, nicht abgeschnitten
           ════════════════════════════════════════════ */}
       <section className="relative py-16 md:py-24 overflow-hidden">
         {/* Messe: Spotlight-Atmosphäre mit konzentrischen Kreisen */}
@@ -127,7 +127,7 @@ const Messemodelle = () => (
                 <span className="sticker border-foreground/20 text-foreground/60">Express 24h</span>
               </div>
 
-              {/* 2026-06-04: H1-Hook schärfen — vorher "Messemodelle & Exponate drucken" (kein USP).
+              {/* 2026-06-04: H1-Hook schärfen, vorher "Messemodelle & Exponate drucken" (kein USP).
                   Jetzt: Hauptkeyword + USP-Pull "24h" als 2-Zeiler. Begründung in SEO-Sofortmaßnahmen §3.3 */}
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-[-0.04em] mb-8">
                 Messemodelle,<br/>
@@ -151,7 +151,7 @@ const Messemodelle = () => (
               </div>
             </AnimatedSection>
 
-            {/* Big number stats – editorial style */}
+            {/* Big number stats, editorial style */}
             <AnimatedSection animation="slide-up" delay={200}>
               <div className="mt-24 md:mt-32 grid grid-cols-4 gap-0 border-t border-border pt-10 md:pt-12">
                 {[
@@ -172,7 +172,7 @@ const Messemodelle = () => (
       </section>
 
       {/* ════════════════════════════════════════════
-          SCROLLING TICKER – Dynamik, Energie
+          SCROLLING TICKER, Dynamik, Energie
           ════════════════════════════════════════════ */}
       <div className="border-y border-border py-4 overflow-hidden" aria-hidden="true">
         <div className="animate-marquee inline-flex">
@@ -190,7 +190,7 @@ const Messemodelle = () => (
       </div>
 
       {/* ════════════════════════════════════════════
-          BRANCHEN – Staggered layout, nicht 3x2 grid
+          BRANCHEN, Staggered layout, nicht 3x2 grid
           ════════════════════════════════════════════ */}
       <section className="py-32">
         <div className="container mx-auto px-4">
@@ -202,7 +202,7 @@ const Messemodelle = () => (
                   <TextReveal text="Ihr Produkt als Exponat." className="text-5xl md:text-7xl font-bold leading-[0.95] tracking-[-0.04em]" />
                 </div>
                 <p className="text-muted-foreground text-sm max-w-sm leading-relaxed">
-                  Von der 8-Tonnen-Maschine bis zum abstrakten Software-Modell – wir machen jedes Produkt greifbar.
+                  Von der 8-Tonnen-Maschine bis zum abstrakten Software-Modell, wir machen jedes Produkt greifbar.
                 </p>
               </div>
             </AnimatedSection>
@@ -280,7 +280,7 @@ const Messemodelle = () => (
       </section>
 
       {/* ════════════════════════════════════════════
-          TESTIMONIALS – Full-width editorial band
+          TESTIMONIALS, Full-width editorial band
           ════════════════════════════════════════════ */}
       <section className="py-20 md:py-28 bg-foreground text-background">
         <div className="container mx-auto px-4">
@@ -312,7 +312,7 @@ const Messemodelle = () => (
       </section>
 
       {/* ════════════════════════════════════════════
-          PREISE – Clean pricing cards
+          PREISE, Clean pricing cards
           ════════════════════════════════════════════ */}
       <section id="preise" className="py-32 scroll-mt-20">
         <div className="container mx-auto px-4">
@@ -380,7 +380,7 @@ const Messemodelle = () => (
       </section>
 
       {/* ════════════════════════════════════════════
-          MATERIAL-RATGEBER – Visual comparison
+          MATERIAL-RATGEBER, Visual comparison
           ════════════════════════════════════════════ */}
       <section className="py-32 bg-muted/30 border-y border-border">
         <div className="container mx-auto px-4">
@@ -427,7 +427,7 @@ const Messemodelle = () => (
       <MesseComparisonSection />
 
       {/* ════════════════════════════════════════════
-          ROI – Warum sich ein Modell rechnet
+          ROI, Warum sich ein Modell rechnet
           ════════════════════════════════════════════ */}
       <MesseROISection />
 
@@ -443,14 +443,14 @@ const Messemodelle = () => (
 
 
       {/* ════════════════════════════════════════════
-          MESSEKALENDER – Responsive cards, links to regional pages
+          MESSEKALENDER, Responsive cards, links to regional pages
           ════════════════════════════════════════════ */}
       <section className="py-32 bg-muted/30 border-y border-border">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <AnimatedSection animation="fade-in" className="mb-16">
               <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Messekalender DACH 2026/2027</p>
-              <h2 className="text-4xl md:text-5xl font-bold tracking-[-0.03em] mb-4">Ihre Messe – <span className="text-gradient">wann bestellen?</span></h2>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-[-0.03em] mb-4">Ihre Messe, <span className="text-gradient">wann bestellen?</span></h2>
               <p className="text-muted-foreground max-w-lg">Optimale Vorlaufzeit: 4–6 Wochen. Express bis 48h vor Aufbau. Alle Messen finden Sie auf den jeweiligen Regionsseiten.</p>
             </AnimatedSection>
 
@@ -497,7 +497,7 @@ const Messemodelle = () => (
       <ReferencesTeaser />
 
       {/* ════════════════════════════════════════════
-          SEO CONTENT – Deep, keyword-rich
+          SEO CONTENT, Deep, keyword-rich
           ════════════════════════════════════════════ */}
       <section className="py-32">
         <div className="container mx-auto px-4">
@@ -507,9 +507,9 @@ const Messemodelle = () => (
               <h2 className="text-3xl md:text-4xl font-bold tracking-[-0.03em] mb-10">Warum 3D-gedruckte Exponate Ihren Messeauftritt verändern</h2>
 
               <div className="space-y-8 text-base leading-[1.85] text-foreground/85">
-                <p>Ein physisches Modell am Messestand erzeugt mehr Aufmerksamkeit als jeder Bildschirm. Besucher bleiben stehen, greifen zu, stellen Fragen – und erinnern sich. Studien zeigen: Haptische Erlebnisse bleiben bis zu 6× länger im Gedächtnis als rein visuelle Reize. <strong>Messemodelle und Exponate aus dem 3D-Druck</strong> machen genau das möglich.</p>
+                <p>Ein physisches Modell am Messestand erzeugt mehr Aufmerksamkeit als jeder Bildschirm. Besucher bleiben stehen, greifen zu, stellen Fragen, und erinnern sich. Studien zeigen: Haptische Erlebnisse bleiben bis zu 6× länger im Gedächtnis als rein visuelle Reize. <strong>Messemodelle und Exponate aus dem 3D-Druck</strong> machen genau das möglich.</p>
 
-                <p>Ob maßstabsgetreues <strong className="text-foreground">Anschauungsmodell für die BAU München</strong>, ein Schnittmodell für die <strong className="text-foreground">Hannover Messe</strong>, ein Exponat für die <strong className="text-foreground">FINANZ Zürich</strong> oder ein Demonstrationsmodell für die <strong className="text-foreground">MEDICA Düsseldorf</strong> – wir fertigen Ihr Messemodell termingerecht und bruchsicher.</p>
+                <p>Ob maßstabsgetreues <strong className="text-foreground">Anschauungsmodell für die BAU München</strong>, ein Schnittmodell für die <strong className="text-foreground">Hannover Messe</strong>, ein Exponat für die <strong className="text-foreground">FINANZ Zürich</strong> oder ein Demonstrationsmodell für die <strong className="text-foreground">MEDICA Düsseldorf</strong>, wir fertigen Ihr Messemodell termingerecht und bruchsicher.</p>
 
                 <div className="rounded-3xl bg-muted/50 border border-border/50 p-8 md:p-10 not-prose">
                   <h3 className="font-bold text-xl mb-4 text-foreground">Ausstellungsmodelle für den gesamten DACH-Raum</h3>
@@ -528,12 +528,12 @@ const Messemodelle = () => (
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Unsere Kunden</h3>
-                  <p><strong>Messeaussteller und Marketing-Abteilungen</strong> aus dem DACH-Raum – Eventagenturen, Produktmanager, Maschinenbau, Baubranche, Medizintechnik, Automotive und Energiesektor. B2B-Konditionen unter <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">Firmenkunden</Link>. Unsere <Link href="/architekturmodelle" className="text-primary font-semibold hover:underline">Architekturmodelle</Link> finden Sie auf der eigenen Serviceseite. Mehr zu Materialien, Größen und Ablauf steht im <Link href="/ratgeber/messemodell-guide" className="text-primary font-semibold hover:underline">Messemodell-Guide</Link>, den Richtpreis liefert Ihnen der <Link href="/kostenrechner" className="text-primary font-semibold hover:underline">Kostenrechner</Link>.</p>
+                  <p><strong>Messeaussteller und Marketing-Abteilungen</strong> aus dem DACH-Raum, Eventagenturen, Produktmanager, Maschinenbau, Baubranche, Medizintechnik, Automotive und Energiesektor. B2B-Konditionen unter <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">Firmenkunden</Link>. Unsere <Link href="/architekturmodelle" className="text-primary font-semibold hover:underline">Architekturmodelle</Link> finden Sie auf der eigenen Serviceseite. Mehr zu Materialien, Größen und Ablauf steht im <Link href="/ratgeber/messemodell-guide" className="text-primary font-semibold hover:underline">Messemodell-Guide</Link>, den Richtpreis liefert Ihnen der <Link href="/kostenrechner" className="text-primary font-semibold hover:underline">Kostenrechner</Link>.</p>
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-xl mb-3 text-foreground">Industriemessen, Roadshows & Showrooms — die gleiche Modell-Qualität in robusterer Variante</h3>
-                  <p>Ein Messemodell für eine einzelne <strong>Industriemesse</strong> wie die SMART Automation Linz, die Intertool Wien oder die Hannover Messe ist der Klassiker — aber viele Aussteller verwenden das Modell danach weiter. Für <strong>Roadshows mit mehreren Stationen</strong> drucken wir aus widerstandsfähigerem Material (PETG-CF statt PLA), liefern stabile Transport-Boxen mit Schaumstoff-Einlagen und stellen Ersatzteile vor — wenn nach Stadt 4 ein Detail bricht, ist innerhalb von 48h Ersatz da. Für <strong>permanente Showrooms</strong> verwenden wir UV-stabiles ASA mit RAL-Lackierung, damit das Modell auch nach drei Jahren Sonnenlicht noch wie am ersten Tag aussieht. Same Modell-Datei — drei verschiedene Material-Spezifikationen, je nach Einsatz-Profil.</p>
+                  <h3 className="font-bold text-xl mb-3 text-foreground">Industriemessen, Roadshows & Showrooms, die gleiche Modell-Qualität in robusterer Variante</h3>
+                  <p>Ein Messemodell für eine einzelne <strong>Industriemesse</strong> wie die SMART Automation Linz, die Intertool Wien oder die Hannover Messe ist der Klassiker, aber viele Aussteller verwenden das Modell danach weiter. Für <strong>Roadshows mit mehreren Stationen</strong> drucken wir aus widerstandsfähigerem Material (PETG-CF statt PLA), liefern stabile Transport-Boxen mit Schaumstoff-Einlagen und drucken einzelne Details nach, wenn nach Stadt 4 etwas bricht, ist innerhalb von 48h Nachschub da. Für <strong>permanente Showrooms</strong> verwenden wir UV-stabiles ASA mit RAL-Lackierung, damit das Modell auch nach drei Jahren Sonnenlicht noch wie am ersten Tag aussieht. Same Modell-Datei, drei verschiedene Material-Spezifikationen, je nach Einsatz-Profil.</p>
                 </div>
               </div>
             </AnimatedSection>
@@ -545,7 +545,7 @@ const Messemodelle = () => (
       <FAQSection faqs={faqs} title="Häufige Fragen zu Messemodellen & Exponaten" subtitle="Alles was Sie vor der Bestellung wissen sollten" schemaId="messemodelle-faq" />
 
       {/* ════════════════════════════════════════════
-          REGIONEN – Compact, no duplicate coverage
+          REGIONEN, Compact, no duplicate coverage
           ════════════════════════════════════════════ */}
       <AllRegionsLinks currentSlug="" type="messe" />
 

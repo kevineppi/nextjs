@@ -7,7 +7,7 @@ import { useEffect, useState, useRef } from "react";
 import MarqueeTicker from "@/components/MarqueeTicker";
 
 // 2026-06-04: Typewriter SSR-konform.
-// VORHER (Bug): Initial `displayed = ""` mit Fallback `{displayed || "X"}` —
+// VORHER (Bug): Initial `displayed = ""` mit Fallback `{displayed || "X"}`
 // im selben useEffect-Render-Cycle setze started=true → setDisplayed("3") → React-Reconciler
 // sah unterschiedliches Text-Content vs SSR-HTML → Hydration-Mismatch (React #418, 5×).
 //
@@ -82,7 +82,7 @@ const Hero = () => {
 
   return (
     <section ref={sectionRef} className="relative min-h-[100svh] flex flex-col justify-end bg-background overflow-hidden pt-24">
-      {/* Background grid pattern — with parallax */}
+      {/* Background grid pattern, with parallax */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div className="absolute inset-0" style={{
           ...parallax(0.05),
@@ -92,7 +92,7 @@ const Hero = () => {
           `,
           backgroundSize: '80px 80px',
         }} />
-        {/* Accent blobs — with deeper parallax */}
+        {/* Accent blobs, with deeper parallax */}
         <div className="absolute top-[20%] right-[10%] w-[500px] h-[500px] rounded-full bg-primary/[0.06] blur-[120px]" style={parallax(-0.08)} />
         <div className="absolute bottom-[30%] left-[5%] w-[300px] h-[300px] rounded-full bg-accent/[0.04] blur-[80px]" style={parallax(-0.12)} />
       </div>
@@ -115,10 +115,10 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Massive headline — typewriter */}
+          {/* Massive headline, typewriter */}
           <div style={t(0.2)}>
             <h1 className="text-[clamp(3rem,9vw,8.5rem)] font-bold leading-[1] tracking-[-0.05em] mb-4">
-              {/* 2026-06-04: Fallback-Pattern entfernt — der Hook gibt jetzt SSR/initial
+              {/* 2026-06-04: Fallback-Pattern entfernt, der Hook gibt jetzt SSR/initial
                   den vollen Text + done=true zurück. Nach Mount läuft die Animation sauber.
                   case-Feature + leading-1.1 lösen Ö-Umlaut-Engstand bei Space Grotesk. */}
               <span className="block">

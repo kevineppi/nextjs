@@ -28,7 +28,7 @@ interface QuickContactBarProps {
 const QuickContactBar = ({
   context = "Ihr Projekt",
   title = "Wie möchten Sie starten?",
-  subtitle = "Wählen Sie den schnellsten Weg – wir antworten persönlich, kein Callcenter.",
+  subtitle = "Wählen Sie den schnellsten Weg, wir antworten persönlich, kein Callcenter.",
   variant = "section",
 }: QuickContactBarProps) => {
   const waMessage = `Hallo ekdruck, ich hätte eine Anfrage zu: ${context}. Können wir kurz sprechen?`;
@@ -175,7 +175,7 @@ const QuickContactBar = ({
             </div>
             <div className="flex items-center gap-2">
               <Check className="w-3.5 h-3.5 text-primary" />
-              <span>Kein Callcenter – direkter Kontakt zum Inhaber</span>
+              <span>Kein Callcenter, direkter Kontakt zum Inhaber</span>
             </div>
             <div className="flex items-center gap-2">
               <Check className="w-3.5 h-3.5 text-primary" />

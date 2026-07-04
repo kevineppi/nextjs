@@ -7,7 +7,7 @@ const Impressum = () => {
     <>
       <SEOHead
         title="Impressum | ekdruck e.U."
-        description="Impressum und Anbieterkennzeichnung von ekdruck e.U. – 3D-Druck Service Österreich."
+        description="Impressum und Anbieterkennzeichnung von ekdruck e.U., 3D-Druck Service Österreich."
         path="/impressum"
         noIndex={true}
       />

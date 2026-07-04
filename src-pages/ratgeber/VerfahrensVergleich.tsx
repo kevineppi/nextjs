@@ -53,7 +53,7 @@ const VerfahrensVergleich = () => {
   const slsAdvantages = ["Keine Stützstrukturen erforderlich", "Hohe mechanische Festigkeit", "Exzellente Oberflächenqualität", "Geeignet für Anschauungsmodelle und hochwertige Einzelstücke"];
   const slsDisadvantages = ["Sehr hohe Anschaffungskosten", "Höherer Energieverbrauch", "Begrenzte Materialauswahl", "Pulverentsorgung und -handhabung komplex"];
   return <>
-      <SEOHead title="FDM vs SLA vs SLS – Welches Verfahren passt? [2026]" description="Falsches Verfahren kostet doppelt. FDM (günstig, robust), SLA (glatt, präzise), SLS (komplex, stark) – Vergleichstabelle und Empfehlung für Ihren konkreten Projekttyp." keywords="fdm vs sla, 3d druckverfahren vergleich, fdm vs sls, sla vs sls, welches 3d druckverfahren, 3d druck verfahren auswählen" path="/ratgeber/verfahrens-vergleich" schemaType="article" datePublished="2025-10-20" dateModified="2026-05-01" />
+      <SEOHead title="FDM vs SLA vs SLS, Welches Verfahren passt? [2026]" description="Falsches Verfahren kostet doppelt. FDM (günstig, robust), SLA (glatt, präzise), SLS (komplex, stark), Vergleichstabelle und Empfehlung für Ihren konkreten Projekttyp." keywords="fdm vs sla, 3d druckverfahren vergleich, fdm vs sls, sla vs sls, welches 3d druckverfahren, 3d druck verfahren auswählen" path="/ratgeber/verfahrens-vergleich" schemaType="article" datePublished="2025-10-20" dateModified="2026-05-01" />
       <HowToSchema
         name="Das richtige 3D-Druckverfahren wählen"
         description="So finden Sie das optimale 3D-Druckverfahren für Ihr Projekt."
@@ -117,7 +117,7 @@ const VerfahrensVergleich = () => {
                 Additive Fertigung, allgemein als 3D-Druck bekannt, beschreibt Verfahren, bei denen dreidimensionale Objekte durch schichtweises Auftragen von Material erstellt werden. Im Gegensatz zu subtraktiven Fertigungsverfahren wie Fräsen oder Drehen wird Material gezielt hinzugefügt statt abgetragen, was Materialverschwendung reduziert und komplexe Geometrien ermöglicht.
               </p>
               <p className="text-muted-foreground mb-6">
-                Die drei verbreitetsten Technologien – FDM (Fused Deposition Modeling), SLA (Stereolithography) und SLS (Selective Laser Sintering) – nutzen unterschiedliche Materialien und physikalische Prozesse, was zu erheblichen Unterschieden in Detailgenauigkeit, mechanischer Festigkeit und Kosten führt.
+                Die drei verbreitetsten Technologien, FDM (Fused Deposition Modeling), SLA (Stereolithography) und SLS (Selective Laser Sintering), nutzen unterschiedliche Materialien und physikalische Prozesse, was zu erheblichen Unterschieden in Detailgenauigkeit, mechanischer Festigkeit und Kosten führt.
               </p>
             </section>
 

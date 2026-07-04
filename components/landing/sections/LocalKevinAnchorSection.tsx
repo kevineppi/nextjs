@@ -11,7 +11,7 @@ interface LocalKevinAnchorSectionProps {
 }
 
 /**
- * LocalKevinAnchorSection — Persönlicher Anker pro Bundesland
+ * LocalKevinAnchorSection, Persönlicher Anker pro Bundesland
  * ──────────────────────────────────────────────────────────────
  * Liefert ~300-500 Wörter unique Kevin-Content pro Region.
  * Wenn keine Anchor-Daten für die Region existieren → null (fail-safe).
@@ -48,7 +48,7 @@ const LocalKevinAnchorSection = ({ regionSlug }: LocalKevinAnchorSectionProps) =
                   {anchor.whyThisRegion}
                 </p>
                 <p className="text-xs text-muted-foreground uppercase tracking-wider font-bold">
-                  — Kevin Eppensteiner, Inhaber ekdruck e.U.
+                 , Kevin Eppensteiner, Inhaber ekdruck e.U.
                 </p>
               </div>
             </div>
@@ -105,7 +105,7 @@ const LocalKevinAnchorSection = ({ regionSlug }: LocalKevinAnchorSectionProps) =
           <AnimatedSection animation="slide-up" delay={300}>
             <div className="bg-foreground text-background rounded-3xl p-8 md:p-10">
               <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">
-                Liefer-Realität — ehrlich
+                Liefer-Realität, ehrlich
               </p>
               <div className="grid md:grid-cols-3 gap-6 md:gap-8">
                 <div>

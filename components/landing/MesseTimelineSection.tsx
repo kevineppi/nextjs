@@ -6,14 +6,14 @@ import { Button } from "@/components/ui/button";
 import { Target, Calculator, Wrench, Truck, Zap, Phone, ArrowRight, BadgeCheck } from "lucide-react";
 
 const steps = [
-  { num: "01", title: "Anfrage senden", time: "2 Min", icon: Target, desc: "CAD-Datei, Skizze oder Produktbeschreibung – und Ihren Messetermin. Kein 3D-Modell? Wir erstellen es nach Foto oder Zeichnung. Antwort garantiert am selben Tag." },
+  { num: "01", title: "Anfrage senden", time: "2 Min", icon: Target, desc: "CAD-Datei, Skizze oder Produktbeschreibung, und Ihren Messetermin. Kein 3D-Modell? Wir erstellen es nach Foto oder Zeichnung. Antwort garantiert am selben Tag." },
   { num: "02", title: "Festpreis in 6h", time: "< 6h", icon: Calculator, desc: "Verbindliches Angebot mit Visualisierung, Materialempfehlung und Zeitplan. Keine versteckten Kosten. Kostenlos und unverbindlich." },
   { num: "03", title: "Fertigung & Qualitätskontrolle", time: "1–14 Tage", icon: Wrench, desc: "Druck, Nachbearbeitung, Farbgebung nach Ihrem CI. Zwischenfoto zur Freigabe. Jedes Modell durchläuft 3-Punkt-Qualitätskontrolle." },
   { num: "04", title: "Lieferung direkt zur Messe", time: "1–3 Tage", icon: Truck, desc: "Bruchsichere Individualverpackung mit Schaumstoff-Inlay. Tracking und Versicherung inklusive. Direkte Standlieferung mit Hallennummer." },
 ];
 
 const checklist = [
-  { item: "3D-Datei oder Skizze", sub: "STL, STEP – oder ein Foto" },
+  { item: "3D-Datei oder Skizze", sub: "STL, STEP, oder ein Foto" },
   { item: "Maßstab & Größe", sub: "Wie viel Platz am Stand?" },
   { item: "Farbwunsch", sub: "RAL, Pantone oder Hex" },
   { item: "Messetermin & Ort", sub: "Wir planen rückwärts" },

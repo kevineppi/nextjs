@@ -5,7 +5,7 @@ const steps = [
     num: "01",
     icon: Upload,
     title: "3D-Datei hochladen",
-    desc: "Laden Sie Ihre STL-Datei hoch. Volumen, Oberfläche und Abmessungen werden sekundenschnell im Browser analysiert – Ihre Datei verlässt nie Ihren Rechner.",
+    desc: "Laden Sie Ihre STL-Datei hoch. Volumen, Oberfläche und Abmessungen werden sekundenschnell im Browser analysiert, Ihre Datei verlässt nie Ihren Rechner.",
   },
   {
     num: "02",
@@ -35,7 +35,7 @@ const ProcessSection = () => (
           In 4 Schritten zum individuellen Angebot
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          Vom Upload bis zum persönlichen Angebot – transparent, schnell und ohne Verpflichtung.
+          Vom Upload bis zum persönlichen Angebot, transparent, schnell und ohne Verpflichtung.
         </p>
       </div>
 

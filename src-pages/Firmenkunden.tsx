@@ -95,7 +95,7 @@ const Firmenkunden = () => {
     {
       icon: Package,
       title: "Flexible Bestellmengen",
-      description: "Vom Einzelstück bis zur Serie – wir skalieren mit Ihren Anforderungen.",
+      description: "Vom Einzelstück bis zur Serie, wir skalieren mit Ihren Anforderungen.",
       highlight: "Keine Mindestbestellmenge",
       stats: "Ab 1 Stück"
     }
@@ -189,7 +189,7 @@ const Firmenkunden = () => {
       highlight: "Express-Service"
     },
     {
-      quote: "Einfache Abwicklung und faire Preise. Genau was wir als Agentur brauchen – kein unnötiger Overhead, einfach professionelle Umsetzung.",
+      quote: "Einfache Abwicklung und faire Preise. Genau was wir als Agentur brauchen, kein unnötiger Overhead, einfach professionelle Umsetzung.",
       author: "Kreativagentur",
       industry: "Werbung",
       location: "Salzburg",
@@ -201,7 +201,7 @@ const Firmenkunden = () => {
   const pricingAdvantages = [
     { 
       title: "Keine Mindestbestellmenge", 
-      desc: "Auch Einzelstücke ohne Aufpreis – Sie zahlen nur was Sie brauchen",
+      desc: "Auch Einzelstücke ohne Aufpreis, Sie zahlen nur was Sie brauchen",
       icon: Package
     },
     { 
@@ -221,12 +221,12 @@ const Firmenkunden = () => {
     },
     { 
       title: "Schnelle Reaktionszeit", 
-      desc: "Antwort innerhalb von 24h garantiert – meist deutlich schneller",
+      desc: "Antwort innerhalb von 24h garantiert, meist deutlich schneller",
       icon: MessageSquare
     },
     { 
       title: "Express-Fertigung", 
-      desc: "24-48h bei dringenden Projekten – wir sind flexibel",
+      desc: "24-48h bei dringenden Projekten, wir sind flexibel",
       icon: Zap
     }
   ];
@@ -251,7 +251,7 @@ const Firmenkunden = () => {
     },
     {
       question: "Wie schnell erhalte ich eine Antwort auf Anfragen?",
-      answer: "Wir garantieren eine Rückmeldung innerhalb von 24 Stunden an Werktagen – meist antworten wir aber deutlich schneller. Bei dringenden Projekten erreichen Sie uns auch telefonisch für sofortige Beratung."
+      answer: "Wir garantieren eine Rückmeldung innerhalb von 24 Stunden an Werktagen, meist antworten wir aber deutlich schneller. Bei dringenden Projekten erreichen Sie uns auch telefonisch für sofortige Beratung."
     },
     {
       question: "Welche Branchen bedienen Sie als B2B-Partner?",
@@ -259,7 +259,7 @@ const Firmenkunden = () => {
     },
     {
       question: "Kann ich einen persönlichen Ansprechpartner bekommen?",
-      answer: "Ja, für Firmenkunden gibt es direkte Kommunikation per E-Mail und Telefon – ohne Warteschleifen, Tickets oder Chatbots. Sie erhalten persönliche Beratung und schnelle Antworten auf Ihre Fragen. Bei regelmäßigen Projekten kennen wir Ihre Präferenzen."
+      answer: "Ja, für Firmenkunden gibt es direkte Kommunikation per E-Mail und Telefon, ohne Warteschleifen, Tickets oder Chatbots. Sie erhalten persönliche Beratung und schnelle Antworten auf Ihre Fragen. Bei regelmäßigen Projekten kennen wir Ihre Präferenzen."
     },
     {
       question: "Wie erhalte ich Express-Fertigung?",
@@ -275,7 +275,7 @@ const Firmenkunden = () => {
   return (
     <>
       <SEOHead
-        title="3D-Druck B2B Österreich ★5,0 – Rahmenverträge · NDA · Angebot in 6h"
+        title="3D-Druck B2B Österreich ★5,0, Rahmenverträge · NDA · Angebot in 6h"
         description="3D-Druck für Unternehmen ✓ Mengenrabatt ab 5 Stück ✓ NDA möglich ✓ Rahmenverträge ✓ Express 24h ✓ Angebot in 6h. ★ 5,0 (31 Bewertungen) | ekdruck"
         keywords="3d druck service österreich, 3d druck firma österreich, professioneller 3d druck b2b, 3d druck dienstleister österreich, 3d druck anbieter firma, 3d druck unternehmen österreich, b2b 3d druck service"
         path="/firmenkunden"
@@ -440,7 +440,7 @@ const Firmenkunden = () => {
         <QuickContactBar
           context="B2B / Firmenkundenanfrage"
           title="B2B-Anfrage: Wählen Sie Ihren Kanal"
-          subtitle="NDA, Mengenrabatte und Rahmenverträge ab Stück 1. Direkter Kontakt zum Inhaber – keine Vertriebsschleife."
+          subtitle="NDA, Mengenrabatte und Rahmenverträge ab Stück 1. Direkter Kontakt zum Inhaber, keine Vertriebsschleife."
         />
 
         {/* Benefits Section - Premium Cards */}
@@ -455,7 +455,7 @@ const Firmenkunden = () => {
                 Warum Unternehmen uns wählen
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                Was uns als B2B-Partner auszeichnet – professionelle Abwicklung für Ihr Unternehmen
+                Was uns als B2B-Partner auszeichnet, professionelle Abwicklung für Ihr Unternehmen
               </p>
             </div>
 
@@ -572,7 +572,7 @@ const Firmenkunden = () => {
                 So einfach funktioniert's
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                Von der Anfrage bis zur Lieferung – ein transparenter, effizienter Prozess
+                Von der Anfrage bis zur Lieferung, ein transparenter, effizienter Prozess
               </p>
             </div>
 
@@ -673,14 +673,14 @@ const Firmenkunden = () => {
               </h2>
 
               <div className="prose prose-lg max-w-none text-foreground/85">
-                <p>Ein <strong>Rahmenvertrag</strong> bei ekdruck enthält fünf Bausteine, die wir mit Ihnen individuell verhandeln: <strong>Mengenstaffel</strong> (Preise nach erwartetem Quartals-Volumen), <strong>Lieferplan</strong> (garantierte Express-Slots pro Monat, oder Abruf nach Bedarf), <strong>Reaktionszeit</strong> (typisch 4 h Angebot, 24-48 h Fertigung, 1-4 Tage Versand DACH), <strong>Schlüssel-Konto</strong> (direkter Inhaber-Kontakt, eine Person für alle Fragen) und <strong>Reporting</strong> (Quartals-Übersicht über alle Aufträge, Material-Verbrauch, durchschnittliche Lieferzeit). Mindestlaufzeit 6 Monate, kein automatischer Vertragsabschluss — Sie können jederzeit kündigen, wir genauso. Für Kleinserien ab 5 Stück gibt es bereits Staffel-Preise, ab Rahmenvertrag-Status kommen Volumenrabatte oben drauf.</p>
+                <p>Ein <strong>Rahmenvertrag</strong> bei ekdruck enthält fünf Bausteine, die wir mit Ihnen individuell verhandeln: <strong>Mengenstaffel</strong> (Preise nach erwartetem Quartals-Volumen), <strong>Lieferplan</strong> (garantierte Express-Slots pro Monat, oder Abruf nach Bedarf), <strong>Reaktionszeit</strong> (typisch 4 h Angebot, 24-48 h Fertigung, 1-4 Tage Versand DACH), <strong>Schlüssel-Konto</strong> (direkter Inhaber-Kontakt, eine Person für alle Fragen) und <strong>Reporting</strong> (Quartals-Übersicht über alle Aufträge, Material-Verbrauch, durchschnittliche Lieferzeit). Mindestlaufzeit 6 Monate, kein automatischer Vertragsabschluss, Sie können jederzeit kündigen, wir genauso. Für Kleinserien ab 5 Stück gibt es bereits Staffel-Preise, ab Rahmenvertrag-Status kommen Volumenrabatte oben drauf.</p>
 
                 <p>Was wir nicht machen: künstliche Mindestabnahmen, versteckte Kostenpositionen, Setup-Gebühren oder Eilzuschläge ohne klare Kommunikation vorab. Wenn ein Express-Termin nur mit Aufpreis machbar ist, sagen wir das im Angebot in der ersten Zeile.</p>
               </div>
 
-              <h3 className="text-2xl md:text-3xl font-bold mt-12 mb-5 tracking-[-0.02em]">Kleinserie 5-500 Stück — wann FDM, wann SLS, wann Spritzguss</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mt-12 mb-5 tracking-[-0.02em]">Kleinserie 5-500 Stück, wann FDM, wann SLS, wann Spritzguss</h3>
               <div className="prose prose-lg max-w-none text-foreground/85">
-                <p>Bei <strong>Kleinserienfertigung</strong> hängt das wirtschaftliche Verfahren von Stückzahl und Geometrie ab. <strong>FDM in-house</strong> ist die Standard-Wahl für 1-100 Stück bei einfachen Geometrien — wir können bis zu 6 Bauteile parallel auf den drei Druckern fahren, die Stückkosten bleiben konstant. Ab <strong>50-500 Stück</strong> und höheren Festigkeitsanforderungen lohnt sich <strong>SLS oder MJF über Partner</strong> — etwa €4-12 pro Bauteil je nach Größe. Ab <strong>1.000-5.000 Stück</strong> wird klassischer <strong>Spritzguss</strong> wirtschaftlich, dann verweisen wir ehrlich an einen Spritzgießer und übernehmen optional die Urmodell-Fertigung. Diese Schwellen sind in Realität fließend — wir kalkulieren beide Verfahren und legen Ihnen den Vergleich offen, damit Sie die Entscheidung treffen können.</p>
+                <p>Bei <strong>Kleinserienfertigung</strong> hängt das wirtschaftliche Verfahren von Stückzahl und Geometrie ab. <strong>FDM in-house</strong> ist die Standard-Wahl für 1-100 Stück bei einfachen Geometrien, wir können bis zu 6 Bauteile parallel auf den drei Druckern fahren, die Stückkosten bleiben konstant. Ab <strong>50-500 Stück</strong> und höheren Festigkeitsanforderungen lohnt sich <strong>SLS oder MJF über Partner</strong>, etwa €4-12 pro Bauteil je nach Größe. Ab <strong>1.000-5.000 Stück</strong> wird klassischer <strong>Spritzguss</strong> wirtschaftlich, dann verweisen wir ehrlich an einen Spritzgießer und übernehmen optional die Urmodell-Fertigung. Diese Schwellen sind in Realität fließend, wir kalkulieren beide Verfahren und legen Ihnen den Vergleich offen, damit Sie die Entscheidung treffen können.</p>
 
                 <p>Für viele <strong>Innovation-Projekte und Vorseriendrucke</strong> sind 20-100 Stück FDM-Kleinserien genau richtig: schnelle Iteration, niedriges Risiko, keine Tool-Investition. Wenn das Produkt sich bewährt, geht es in Spritzguss; wenn nicht, ist nur ein Bruchteil des Geldes weg.</p>
               </div>
@@ -884,7 +884,7 @@ const Firmenkunden = () => {
         {/* Regional Coverage */}
         <RegionalCoverage 
           serviceName="3D-Druck für Unternehmen"
-          description="Wir arbeiten mit Unternehmen in ganz Österreich zusammen. Von Kleinbetrieben bis zu Konzernen – professionelle Abwicklung und zuverlässige Lieferung in alle Bundesländer."
+          description="Wir arbeiten mit Unternehmen in ganz Österreich zusammen. Von Kleinbetrieben bis zu Konzernen, professionelle Abwicklung und zuverlässige Lieferung in alle Bundesländer."
         />
 
         {/* FAQ Section */}

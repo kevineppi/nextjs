@@ -61,7 +61,7 @@ const MaterialGuide = () => {
     unit: "Pro Kilogramm"
   }];
   return <>
-      <SEOHead title="PLA vs PETG vs ASA: Filament Vergleich [2026 Guide]" description="Falsches Filament = weggeworfenes Geld. PLA (Modellbau), PETG (Outdoor & technisch), ASA (UV-beständig) – Vergleich mit Temperaturen, Kosten & klarer Materialempfehlung." keywords="pla vs petg, asa vs pla, asa vs petg, filament vergleich, 3d-druck materialien, pla vs asa, welches filament" path="/ratgeber/material-guide" schemaType="article" datePublished="2025-10-15" dateModified="2026-05-01" />
+      <SEOHead title="PLA vs PETG vs ASA: Filament Vergleich [2026 Guide]" description="Falsches Filament = weggeworfenes Geld. PLA (Modellbau), PETG (Outdoor & technisch), ASA (UV-beständig), Vergleich mit Temperaturen, Kosten & klarer Materialempfehlung." keywords="pla vs petg, asa vs pla, asa vs petg, filament vergleich, 3d-druck materialien, pla vs asa, welches filament" path="/ratgeber/material-guide" schemaType="article" datePublished="2025-10-15" dateModified="2026-05-01" />
       <HowToSchema
         name="Das richtige 3D-Druck Material wählen"
         description="In 4 Schritten zum optimalen Filament für Ihr 3D-Druck-Projekt."
@@ -118,10 +118,10 @@ const MaterialGuide = () => {
               </p>
             </div>
 
-            {/* Conversion Banner – User mit Buying-Intent direkt zum Rechner */}
+            {/* Conversion Banner, User mit Buying-Intent direkt zum Rechner */}
             <ConversionBanner
               headline="Material schon gewählt? Direkt 3D drucken lassen."
-              subline="Wenn Sie Ihr Material kennen: Material wählen, STL-Datei hochladen, Festpreis erhalten – Angebot in 6h."
+              subline="Wenn Sie Ihr Material kennen: Material wählen, STL-Datei hochladen, Festpreis erhalten, Angebot in 6h."
               primaryLabel="Jetzt anfragen"
               primaryHref="/kostenrechner"
               secondaryLabel="B2B-Konditionen"
@@ -132,7 +132,7 @@ const MaterialGuide = () => {
             <section className="prose prose-lg max-w-none mb-12">
               <p className="text-3xl font-bold mb-6 text-foreground">Thermoplastische Kunststoffe im FDM-Druck</p>
               <p className="text-muted-foreground mb-4">
-                FDM-3D-Druck verwendet thermoplastische Polymere, die sich bei Erwärmung verformen lassen und beim Abkühlen ihre Form behalten. Die drei am häufigsten verwendeten Materialien – PLA (Polylactid), PETG (Polyethylenterephthalat-Glycol) und ASA (Acrylnitril-Styrol-Acrylat) – unterscheiden sich fundamental in ihrer chemischen Struktur und damit in ihren physikalischen Eigenschaften.
+                FDM-3D-Druck verwendet thermoplastische Polymere, die sich bei Erwärmung verformen lassen und beim Abkühlen ihre Form behalten. Die drei am häufigsten verwendeten Materialien, PLA (Polylactid), PETG (Polyethylenterephthalat-Glycol) und ASA (Acrylnitril-Styrol-Acrylat), unterscheiden sich fundamental in ihrer chemischen Struktur und damit in ihren physikalischen Eigenschaften.
               </p>
               <p className="text-muted-foreground mb-6">
                 Wissenschaftliche Studien zeigen, dass die Wahl des Materials die mechanischen Eigenschaften eines gedruckten Bauteils um bis zu 300% beeinflussen kann. Daher ist fundiertes Wissen über Materialeigenschaften essentiell für erfolgreiche Projekte.

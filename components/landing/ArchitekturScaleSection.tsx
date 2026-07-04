@@ -70,7 +70,7 @@ const ArchitekturScaleSection = () => (
               </h2>
             </div>
             <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
-              Vom Innenraum-Detailmodell bis zum Stadtmodell – jeder Maßstab transportiert andere Information. Wir beraten Sie zum richtigen Maßstab für Ihr Anwendungsziel und kombinieren auf Wunsch mehrere Maßstäbe in einem Projekt.
+              Vom Innenraum-Detailmodell bis zum Stadtmodell, jeder Maßstab transportiert andere Information. Wir beraten Sie zum richtigen Maßstab für Ihr Anwendungsziel und kombinieren auf Wunsch mehrere Maßstäbe in einem Projekt.
             </p>
           </div>
         </AnimatedSection>

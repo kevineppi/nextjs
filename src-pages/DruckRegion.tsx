@@ -241,7 +241,7 @@ const DruckRegion = ({ region }: DruckRegionProps) => {
           paragraphs={[
             {
               parts: [
-                { before: `Für eine schnelle Preisindikation Ihres Projekts in ${regionData.name} nutzen Sie unseren `, anchor: "kostenlosen 3D-Druck Kostenrechner", href: "/kostenrechner", after: " – STL-Datei hochladen, Material wählen, Richtpreis in 60 Sekunden erhalten. Anschließend können Sie direkt eine " },
+                { before: `Für eine schnelle Preisindikation Ihres Projekts in ${regionData.name} nutzen Sie unseren `, anchor: "kostenlosen 3D-Druck Kostenrechner", href: "/kostenrechner", after: ", STL-Datei hochladen, Material wählen, Richtpreis in 60 Sekunden erhalten. Anschließend können Sie direkt eine " },
                 { anchor: "verbindliche Anfrage stellen", href: "/kontakt", after: ` und erhalten Ihr Festpreisangebot innerhalb von 6 Stunden.` },
               ],
             },

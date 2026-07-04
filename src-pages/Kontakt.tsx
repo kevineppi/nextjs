@@ -14,7 +14,7 @@ const contactLinks = [
   { to: "/rapid-prototyping", label: "Rapid Prototyping", description: "Funktionale Prototypen in 24–48 Stunden" },
   { to: "/firmenkunden", label: "Firmenkunden-Service", description: "NDA & Mengenrabatte für Unternehmen, direkter Kontakt zum Inhaber" },
   { to: "/ratgeber/kosten-guide", label: "Was kostet 3D-Druck?", description: "Transparenter Kosten-Guide mit Preisbeispielen" },
-  { to: "/3d-druck-materialien", label: "Material-Vergleich", description: "PLA vs PETG vs ABS – welches Material passt?" },
+  { to: "/3d-druck-materialien", label: "Material-Vergleich", description: "PLA vs PETG vs ABS, welches Material passt?" },
 ];
 
 const Kontakt = () => {
@@ -36,7 +36,7 @@ const Kontakt = () => {
         <Breadcrumbs items={[
           { name: "Kontakt & Anfrage", url: "/kontakt" }
         ]} />
-        <h1 className="sr-only">3D-Druck-Anfrage stellen — verbindliches Angebot in 6 Stunden</h1>
+        <h1 className="sr-only">3D-Druck-Anfrage stellen, verbindliches Angebot in 6 Stunden</h1>
         <Contact />
 
         {/* Cal.com Inline-Embed: Termin direkt auf der Seite buchen */}
@@ -48,11 +48,11 @@ const Kontakt = () => {
                   Lieber direkt sprechen?
                 </p>
                 <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-tight">
-                  15-Min Beratung – online buchen
+                  15-Min Beratung, online buchen
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
                   Wählen Sie einen freien Slot. Sie erhalten sofort einen Cal-Video-Link.
-                  Kein Sales-Pitch – nur Klartext zu Machbarkeit, Material, Preis und Lieferzeit.
+                  Kein Sales-Pitch, nur Klartext zu Machbarkeit, Material, Preis und Lieferzeit.
                 </p>
                 <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-muted-foreground">
                   <div className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5 text-primary" /> 15 Minuten</div>

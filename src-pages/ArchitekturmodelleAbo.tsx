@@ -31,7 +31,7 @@ import { toast } from "sonner";
 const SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Product",
-  name: "Architekturmodell Flatrate – ekdruck e.U.",
+  name: "Architekturmodell Flatrate, ekdruck e.U.",
   description:
     "Monatliches Abo für Architekturbüros: 3D-gedruckte Architekturmodelle im Fixpreis, 48h-Lieferung, keine Mindestlaufzeit. Erstes Modell kostenlos.",
   brand: { "@type": "Brand", name: "ekdruck e.U." },
@@ -76,22 +76,22 @@ const FAQ_SCHEMA = {
   "@type": "FAQPage",
   mainEntity: [
     { "@type": "Question", name: "Was kostet die Architekturmodell-Flatrate?", acceptedAnswer: { "@type": "Answer", text: "Die Flatrate startet ab €490/Monat (Starter: 2 Modelle inklusive), Professional bei €890/Monat (4 Modelle inklusive), Studio bei €2.500/Monat (8 Modelle inklusive). Alle Pakete sind monatlich kündbar, ohne Mindestlaufzeit." } },
-    { "@type": "Question", name: "Was bedeutet 'Erstes Modell kostenlos'?", acceptedAnswer: { "@type": "Answer", text: "Neue Flatrate-Kunden erhalten ihr erstes Architekturmodell kostenlos gedruckt – als Qualitätstest ohne Risiko. Das Testmodell wird nach Auftragsbestätigung der Flatrate produziert und in 48 Stunden geliefert." } },
+    { "@type": "Question", name: "Was bedeutet 'Erstes Modell kostenlos'?", acceptedAnswer: { "@type": "Answer", text: "Neue Flatrate-Kunden erhalten ihr erstes Architekturmodell kostenlos gedruckt, als Qualitätstest ohne Risiko. Das Testmodell wird nach Auftragsbestätigung der Flatrate produziert und in 48 Stunden geliefert." } },
     { "@type": "Question", name: "Welche CAD-Programme werden unterstützt?", acceptedAnswer: { "@type": "Answer", text: "Wir akzeptieren alle gängigen Formate: STL, OBJ, STEP, 3DM (Rhino), DWG/DXF sowie native Formate aus ArchiCAD, Revit, SketchUp und anderen Architekturprogrammen." } },
-    { "@type": "Question", name: "Wie schnell wird geliefert?", acceptedAnswer: { "@type": "Answer", text: "Flatrate-Kunden genießen Produktionspriorität – Lieferung garantiert in 48 Stunden österreichweit. Auch nach Deutschland in 48–72 Stunden." } },
+    { "@type": "Question", name: "Wie schnell wird geliefert?", acceptedAnswer: { "@type": "Answer", text: "Flatrate-Kunden genießen Produktionspriorität, Lieferung garantiert in 48 Stunden österreichweit. Auch nach Deutschland in 48–72 Stunden." } },
   ],
 };
 
 const PAIN_POINTS = [
   { title: "Zeitdruck vor Wettbewerben", text: "Sie brauchen das Modell für Freitag. Der Modellbauer hat drei Wochen Wartezeit. Der 3D-Druck-Anbieter antwortet nicht auf Ihre Anfrage." },
-  { title: "Unkalkulierbare Kosten", text: "Jede Anfrage ein neues Angebot. Mal €180, mal €420 – für scheinbar ähnliche Modelle. Keine Planungssicherheit für Ihr Budget." },
+  { title: "Unkalkulierbare Kosten", text: "Jede Anfrage ein neues Angebot. Mal €180, mal €420, für scheinbar ähnliche Modelle. Keine Planungssicherheit für Ihr Budget." },
   { title: "Qualität trifft Kompromiss", text: "Günstige Anbieter liefern schlechte Qualität. Gute Qualität kostet Zeit und Geld. Beides gleichzeitig scheint unmöglich." },
 ];
 
 const STEPS = [
-  { n: "01", title: "Modell anfragen", text: "Schicken Sie uns Ihre CAD-Datei (ArchiCAD, Revit, Rhino, SketchUp, STL) per E-Mail oder über unser Portal. Keine Rückfragen, keine Formulare – einfach senden." },
+  { n: "01", title: "Modell anfragen", text: "Schicken Sie uns Ihre CAD-Datei (ArchiCAD, Revit, Rhino, SketchUp, STL) per E-Mail oder über unser Portal. Keine Rückfragen, keine Formulare, einfach senden." },
   { n: "02", title: "Angebot in 6h", text: "Sie erhalten ein verbindliches Festpreisangebot innerhalb von 6 Arbeitsstunden. Kein Kleingedrucktes, keine Nachberechnung." },
-  { n: "03", title: "Produktion startet sofort", text: "Flatrate-Kunden haben Produktionspriorität. Ihr Modell wird vor allen Einzelaufträgen gefertigt – garantiert." },
+  { n: "03", title: "Produktion startet sofort", text: "Flatrate-Kunden haben Produktionspriorität. Ihr Modell wird vor allen Einzelaufträgen gefertigt, garantiert." },
   { n: "04", title: "Lieferung in 48 Stunden", text: "Österreichweit. Sicher verpackt. Direkt ins Büro oder an die Baustelle." },
 ];
 
@@ -107,7 +107,7 @@ const TIERS = [
       { text: "Maximale Druckfläche: 35×35×35 cm pro Modell", included: true },
       { text: "48h Express-Lieferung inklusive", included: true },
       { text: "Persönlicher Ansprechpartner", included: true },
-      { text: "Keine Mindestlaufzeit – monatlich kündbar", included: true },
+      { text: "Keine Mindestlaufzeit, monatlich kündbar", included: true },
       { text: "Produktionspriorität", included: false },
       { text: "Mehrfarbiger Druck", included: false },
       { text: "Unlimitierte Revisionen", included: false },
@@ -125,7 +125,7 @@ const TIERS = [
       { text: "Maximale Druckfläche: 35×35×35 cm pro Modell", included: true },
       { text: "48h Express-Lieferung inklusive", included: true },
       { text: "Persönlicher Ansprechpartner", included: true },
-      { text: "Keine Mindestlaufzeit – monatlich kündbar", included: true },
+      { text: "Keine Mindestlaufzeit, monatlich kündbar", included: true },
       { text: "Produktionspriorität (vor Einzelkunden)", included: true },
       { text: "Mehrfarbiger Druck", included: false },
       { text: "Unlimitierte Revisionen", included: false },
@@ -142,7 +142,7 @@ const TIERS = [
       { text: "Maximale Druckfläche: 35×35×35 cm pro Modell", included: true },
       { text: "48h Express-Lieferung inklusive", included: true },
       { text: "Persönlicher Ansprechpartner", included: true },
-      { text: "Keine Mindestlaufzeit – monatlich kündbar", included: true },
+      { text: "Keine Mindestlaufzeit, monatlich kündbar", included: true },
       { text: "Produktionspriorität (höchste Stufe)", included: true },
       { text: "Mehrfarbiger Druck (Multi-Color)", included: true },
       { text: "Unlimitierte Revisionen & Korrekturen", included: true },
@@ -169,18 +169,18 @@ const TARGET_AUDIENCE = [
 ];
 
 const TESTIMONIALS = [
-  { quote: "Endlich ein Anbieter, der versteht, wie Architekturbüros arbeiten. Das Modell für unseren Wettbewerbsbeitrag war in 36 Stunden da – perfekte Qualität.", author: "M.K., Architekturbüro Wien" },
+  { quote: "Endlich ein Anbieter, der versteht, wie Architekturbüros arbeiten. Das Modell für unseren Wettbewerbsbeitrag war in 36 Stunden da, perfekte Qualität.", author: "M.K., Architekturbüro Wien" },
   { quote: "Die Flatrate rechnet sich bereits ab dem zweiten Modell pro Monat. Wir bestellen jetzt entspannt, statt jedes Mal neu zu verhandeln.", author: "T.H., Planungsbüro Linz" },
-  { quote: "Ich habe das erste Modell kostenlos testen dürfen – die Qualität hat mich überzeugt. Seitdem sind wir Professional-Kunde.", author: "S.R., Architektin, Graz" },
+  { quote: "Ich habe das erste Modell kostenlos testen dürfen, die Qualität hat mich überzeugt. Seitdem sind wir Professional-Kunde.", author: "S.R., Architektin, Graz" },
 ];
 
 const FAQS = [
-  { q: "Welche Dateiformate werden akzeptiert?", a: "Wir akzeptieren STL, OBJ, STEP, 3DM (Rhino), DWG/DXF sowie native Formate aus ArchiCAD, Revit und SketchUp. Falls Sie kein druckfertiges Modell haben, helfen wir bei der Aufbereitung – inklusive im Professional- und Studio-Paket." },
-  { q: "Gibt es eine Mindestlaufzeit?", a: "Nein. Die Flatrate ist monatlich kündbar, ohne Fristen oder Aufwandsentschädigung. Wir sind überzeugt, dass Sie bleiben werden – weil die Qualität stimmt." },
-  { q: "Was passiert, wenn ich mein Modell-Kontingent nicht ausschöpfe?", a: "Nicht genutzte Modelle verfallen am Monatsende. Es gibt jedoch keine Nachberechnung bei Überschreitung – zusätzliche Modelle werden zum günstigen Flatrate-Zusatzpreis abgerechnet." },
-  { q: "Wie groß können die Modelle sein?", a: "Je nach Paket bis zu 35×35×35 cm als Einzeldruck. Größere Modelle fertigen wir als modulares System – ohne Aufpreis im Studio-Paket." },
+  { q: "Welche Dateiformate werden akzeptiert?", a: "Wir akzeptieren STL, OBJ, STEP, 3DM (Rhino), DWG/DXF sowie native Formate aus ArchiCAD, Revit und SketchUp. Falls Sie kein druckfertiges Modell haben, helfen wir bei der Aufbereitung, inklusive im Professional- und Studio-Paket." },
+  { q: "Gibt es eine Mindestlaufzeit?", a: "Nein. Die Flatrate ist monatlich kündbar, ohne Fristen oder Aufwandsentschädigung. Wir sind überzeugt, dass Sie bleiben werden, weil die Qualität stimmt." },
+  { q: "Was passiert, wenn ich mein Modell-Kontingent nicht ausschöpfe?", a: "Nicht genutzte Modelle verfallen am Monatsende. Es gibt jedoch keine Nachberechnung bei Überschreitung, zusätzliche Modelle werden zum günstigen Flatrate-Zusatzpreis abgerechnet." },
+  { q: "Wie groß können die Modelle sein?", a: "Je nach Paket bis zu 35×35×35 cm als Einzeldruck. Größere Modelle fertigen wir als modulares System, ohne Aufpreis im Studio-Paket." },
   { q: "Liefern Sie auch nach Deutschland?", a: "Ja. Wir liefern in ganz Österreich und Deutschland. Die Lieferzeit beträgt 48–72 Stunden nach Deutschland." },
-  { q: "Kann ich das Abo upgraden oder downgraden?", a: "Ja, jederzeit zum nächsten Monatsersten – unkompliziert per E-Mail." },
+  { q: "Kann ich das Abo upgraden oder downgraden?", a: "Ja, jederzeit zum nächsten Monatsersten, unkompliziert per E-Mail." },
   { q: "Was bedeutet \"Produktionspriorität\"?", a: "Flatrate-Kunden werden vor allen Einzelaufträgen produziert. Das garantiert die 48h-Lieferzeit auch in Hochsaison (z.B. vor großen Messen oder Wettbewerbsdeadlines)." },
 ];
 
@@ -207,7 +207,7 @@ const ArchitekturmodelleAbo = () => {
             {/* Urgency-Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-semibold mb-6">
               <Sparkles className="h-3.5 w-3.5" />
-              🎁 Erstes Modell kostenlos – für neue Flatrate-Kunden
+              🎁 Erstes Modell kostenlos, für neue Flatrate-Kunden
             </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-[1.1] tracking-tight">
               Architekturmodelle auf Abruf –{" "}
@@ -229,7 +229,7 @@ const ArchitekturmodelleAbo = () => {
               </Button>
             </div>
 
-            {/* Direct WhatsApp CTA – niedrigste Hürde für 24h Conversion */}
+            {/* Direct WhatsApp CTA, niedrigste Hürde für 24h Conversion */}
             <div className="flex justify-center mb-10">
               <a
                 href={`https://wa.me/436765517197?text=${encodeURIComponent("Hallo ekdruck, ich interessiere mich für die Architekturmodell-Flatrate und möchte gerne mein erstes Modell kostenlos testen.")}`}
@@ -252,14 +252,14 @@ const ArchitekturmodelleAbo = () => {
         </div>
       </section>
 
-      {/* MULTI-CHANNEL KONTAKT – direkt nach Hero, maximale Conversion */}
+      {/* MULTI-CHANNEL KONTAKT, direkt nach Hero, maximale Conversion */}
       <QuickContactBar
         context="Architekturmodell-Flatrate"
         title="Bereit für planbare Architekturmodelle? Wählen Sie Ihren Weg."
-        subtitle="Erstes Modell kostenlos · 48h-Lieferung · Keine Mindestlaufzeit – direkt zum Inhaber, kein Callcenter."
+        subtitle="Erstes Modell kostenlos · 48h-Lieferung · Keine Mindestlaufzeit, direkt zum Inhaber, kein Callcenter."
       />
 
-      {/* SECTION 1 – PAIN POINTS */}
+      {/* SECTION 1, PAIN POINTS */}
       <section className="py-20 md:py-28 bg-muted/40">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-16 tracking-tight">
@@ -282,11 +282,11 @@ const ArchitekturmodelleAbo = () => {
         </div>
       </section>
 
-      {/* SECTION 2 – PROCESS */}
+      {/* SECTION 2, PROCESS */}
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-16 tracking-tight">
-            Die ekdruck Büro-Flatrate – so funktioniert's
+            Die ekdruck Büro-Flatrate, so funktioniert's
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {STEPS.map((s, i) => (
@@ -304,13 +304,13 @@ const ArchitekturmodelleAbo = () => {
         </div>
       </section>
 
-      {/* SECTION 3 – PRICING */}
+      {/* SECTION 3, PRICING */}
       <section id="preise" className="py-20 md:py-28 bg-muted/40 scroll-mt-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-4 tracking-tight">
             Transparente Preise. Keine Überraschungen.
           </h2>
-          <p className="text-center text-muted-foreground mb-16 text-lg">Drei Pakete – für jedes Büro die passende Flatrate.</p>
+          <p className="text-center text-muted-foreground mb-16 text-lg">Drei Pakete, für jedes Büro die passende Flatrate.</p>
 
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {TIERS.map((tier) => (
@@ -368,7 +368,7 @@ const ArchitekturmodelleAbo = () => {
         </div>
       </section>
 
-      {/* SECTION 4 – COMPARISON */}
+      {/* SECTION 4, COMPARISON */}
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-16 tracking-tight">
@@ -406,7 +406,7 @@ const ArchitekturmodelleAbo = () => {
       <section className="py-12 bg-primary">
         <div className="container mx-auto px-4 text-center">
           <p className="text-primary-foreground/90 text-lg font-semibold mb-5">
-            Bereits überzeugt? Das erste Modell ist kostenlos – kein Vertrag.
+            Bereits überzeugt? Das erste Modell ist kostenlos, kein Vertrag.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -428,7 +428,7 @@ const ArchitekturmodelleAbo = () => {
         </div>
       </section>
 
-      {/* SECTION 5 – TARGET AUDIENCE */}
+      {/* SECTION 5, TARGET AUDIENCE */}
       <section className="py-20 md:py-28 bg-muted/40">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-16 tracking-tight">
@@ -448,7 +448,7 @@ const ArchitekturmodelleAbo = () => {
         </div>
       </section>
 
-      {/* SECTION 6 – TESTIMONIALS */}
+      {/* SECTION 6, TESTIMONIALS */}
       <section className="py-20 md:py-28 bg-secondary text-secondary-foreground">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-16 tracking-tight">
@@ -465,14 +465,14 @@ const ArchitekturmodelleAbo = () => {
                 <blockquote className="italic text-secondary-foreground/90 leading-relaxed mb-5">
                   „{t.quote}"
                 </blockquote>
-                <div className="text-sm font-semibold text-secondary-foreground/70">— {t.author}</div>
+                <div className="text-sm font-semibold text-secondary-foreground/70">{t.author}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* SECTION 7 – FAQ */}
+      {/* SECTION 7, FAQ */}
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-16 tracking-tight">
@@ -499,10 +499,10 @@ const ArchitekturmodelleAbo = () => {
         </div>
       </section>
 
-      {/* SECTION 8 – CONTACT */}
+      {/* SECTION 8, CONTACT */}
       <section id="kontakt" className="scroll-mt-20"><Contact /></section>
 
-      {/* SECTION 9 – INTERNAL LINKS */}
+      {/* SECTION 9, INTERNAL LINKS */}
       <section className="py-20 md:py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-4xl font-bold text-center text-foreground mb-12 tracking-tight">
@@ -536,7 +536,7 @@ const ArchitekturmodelleAbo = () => {
         </div>
       </section>
 
-      <StickyCTA context="Architekturmodell-Flatrate – Erstes Modell kostenlos" />
+      <StickyCTA context="Architekturmodell-Flatrate, Erstes Modell kostenlos" />
       <Footer />
     </div>
   );

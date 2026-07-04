@@ -61,16 +61,16 @@ const KostenGuide = () => {
   }];
   const savingTips = ["Optimieren Sie Ihr 3D-Modell: Reduzieren Sie unnötige Wandstärken und Vollmaterial", "Wählen Sie die richtige Auflösung: Nicht jedes Teil benötigt 0.1mm Schichthöhe", "Mehrere Teile kombinieren: Bestellen Sie mehrere Teile gleichzeitig für bessere Konditionen", "Standardmaterialien nutzen: PLA und PETG sind günstiger als Spezialmaterialien", "Auf Express verzichten: Standardlieferzeit spart 30% gegenüber 24h-Service", "Eigenfinish: Nachbearbeitung selbst übernehmen kann 30-50€ sparen"];
   return <>
-      <SEOHead title="3D-Druck Kosten 2026: Echte Preise + 6 Spartipps [Guide]" description="Was kostet 3D-Druck wirklich? Preisbeispiele: Kleinteil ab €25, Messemodell ab €150 – plus 6 Spartipps für bis zu 30% weniger beim nächsten Auftrag." keywords="3d-druck kosten, was kostet 3d-druck, 3d-druck preise, 3d drucken lassen kosten, fdm 3d-druck kosten, 3d-druck preis pro stück" path="/ratgeber/kosten-guide" schemaType="article" datePublished="2025-11-01" dateModified="2026-05-01" />
+      <SEOHead title="3D-Druck Kosten 2026: Echte Preise + 6 Spartipps [Guide]" description="Was kostet 3D-Druck wirklich? Preisbeispiele: Kleinteil ab €25, Messemodell ab €150, plus 6 Spartipps für bis zu 30% weniger beim nächsten Auftrag." keywords="3d-druck kosten, was kostet 3d-druck, 3d-druck preise, 3d drucken lassen kosten, fdm 3d-druck kosten, 3d-druck preis pro stück" path="/ratgeber/kosten-guide" schemaType="article" datePublished="2025-11-01" dateModified="2026-05-01" />
       <HowToSchema
-        name="3D-Druck Kosten berechnen – Schritt für Schritt"
+        name="3D-Druck Kosten berechnen, Schritt für Schritt"
         description="So ermitteln Sie die Kosten für Ihr 3D-Druck Projekt in Österreich."
         totalTime="PT10M"
         steps={[
           { name: "Projektgröße bestimmen", text: "Messen Sie die Abmessungen Ihres gewünschten 3D-Druck-Objekts (Länge × Breite × Höhe in cm). Größere Objekte benötigen mehr Material und Druckzeit." },
           { name: "Material wählen", text: "Wählen Sie das passende Material: PLA (ab €3/100g, ideal für Modellbau), PETG (ab €5/100g, für Outdoor), oder ASA (ab €7/100g, UV-beständig)." },
-          { name: "Qualitätsstufe festlegen", text: "Wählen Sie die Schichthöhe: Standard (0,2mm – günstig), Fine (0,15mm – Präsentation), Ultra Fine (0,1mm – Wettbewerb). Feinere Schichten = längere Druckzeit." },
-          { name: "Express oder Standard?", text: "Standard-Lieferung (3–5 Werktage) ist im Basispreis enthalten. Express 24h kostet ca. 50% Aufpreis – lohnt sich bei Messeterminen und Wettbewerbsabgaben." },
+          { name: "Qualitätsstufe festlegen", text: "Wählen Sie die Schichthöhe: Standard (0,2mm, günstig), Fine (0,15mm, Präsentation), Ultra Fine (0,1mm, Wettbewerb). Feinere Schichten = längere Druckzeit." },
+          { name: "Express oder Standard?", text: "Standard-Lieferung (3–5 Werktage) ist im Basispreis enthalten. Express 24h kostet ca. 50% Aufpreis, lohnt sich bei Messeterminen und Wettbewerbsabgaben." },
           { name: "Kostenloses Angebot anfordern", text: "Senden Sie Ihre 3D-Datei (STL, OBJ, STEP) an office@ek-druck.at oder über das Kontaktformular. Sie erhalten innerhalb von 6 Stunden ein verbindliches Festpreisangebot." }
         ]}
       />
@@ -144,10 +144,10 @@ const KostenGuide = () => {
               </p>
             </div>
 
-            {/* Conversion Banner – fängt User mit Kaufintention sofort ab */}
+            {/* Conversion Banner, fängt User mit Kaufintention sofort ab */}
             <ConversionBanner
               headline="Sie wollen direkt 3D drucken lassen?"
-              subline="STL-Datei hochladen und in 60 Sekunden den exakten Richtpreis für Ihr Modell berechnen – ohne diesen Artikel lesen zu müssen."
+              subline="STL-Datei hochladen und in 60 Sekunden den exakten Richtpreis für Ihr Modell berechnen, ohne diesen Artikel lesen zu müssen."
               primaryLabel="Zum Kostenrechner"
               primaryHref="/kostenrechner"
               secondaryLabel="Persönliches Angebot"
@@ -158,7 +158,7 @@ const KostenGuide = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold mb-6 text-foreground">Wie setzen sich 3D-Druck Kosten zusammen?</h2>
               <p className="text-muted-foreground mb-6">
-                Die Kosten für 3D-gedruckte Teile hängen von mehreren Faktoren ab. Anders als bei traditionellen Fertigungsverfahren spielt die Stückzahl beim FDM 3D-Druck eine untergeordnete Rolle – ein einzelnes Teil kostet pro Stück fast genauso viel wie mehrere Teile. Das macht 3D-Druck besonders attraktiv für Prototypen und Einzelanfertigungen.
+                Die Kosten für 3D-gedruckte Teile hängen von mehreren Faktoren ab. Anders als bei traditionellen Fertigungsverfahren spielt die Stückzahl beim FDM 3D-Druck eine untergeordnete Rolle, ein einzelnes Teil kostet pro Stück fast genauso viel wie mehrere Teile. Das macht 3D-Druck besonders attraktiv für Prototypen und Einzelanfertigungen.
               </p>
             </section>
 
@@ -356,7 +356,7 @@ const KostenGuide = () => {
       <ContextualLinks
         eyebrow="Konkrete nächste Schritte"
         heading="Vom Kostenwissen zur 3D-Druck Anfrage"
-        description="Sie kennen jetzt die Preisfaktoren – nutzen Sie dieses Wissen für Ihr Projekt."
+        description="Sie kennen jetzt die Preisfaktoren, nutzen Sie dieses Wissen für Ihr Projekt."
         paragraphs={[
           {
             parts: [
@@ -374,7 +374,7 @@ const KostenGuide = () => {
           {
             parts: [
               { before: "Firmen mit regelmäßigem 3D-Druck-Bedarf erhalten als ", anchor: "B2B-Firmenkunden", href: "/firmenkunden", after: " Mengenrabatte ab 5 Stück, Zahlungsziel 30 Tage und einen festen Ansprechpartner. Persönliche Beratung jederzeit über das " },
-              { anchor: "Kontaktformular", href: "/kontakt", after: " – wir antworten innerhalb von 6 Stunden." },
+              { anchor: "Kontaktformular", href: "/kontakt", after: ", wir antworten innerhalb von 6 Stunden." },
             ],
           },
         ]}

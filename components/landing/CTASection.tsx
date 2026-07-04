@@ -20,8 +20,8 @@ interface CTASectionProps {
 }
 
 const CTASection = ({
-  headline = "Projekt anfragen – Angebot in 6h",
-  subline = "Schicken Sie uns Ihre CAD-Datei oder beschreiben Sie Ihr Vorhaben. Wir melden uns persönlich mit einem verbindlichen Angebot – kostenlos und unverbindlich.",
+  headline = "Projekt anfragen, Angebot in 6h",
+  subline = "Schicken Sie uns Ihre CAD-Datei oder beschreiben Sie Ihr Vorhaben. Wir melden uns persönlich mit einem verbindlichen Angebot, kostenlos und unverbindlich.",
   ctaLabel = "Jetzt kostenlos anfragen",
   ctaHref = "/kontakt",
   secondaryLabel = "Referenzen ansehen",

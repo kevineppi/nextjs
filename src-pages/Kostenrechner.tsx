@@ -39,12 +39,12 @@ import {
 const MATERIAL_META: Record<string, { desc: string; color: string; colorBg: string }> = {
   PLA:      { desc: "Glatte Oberfläche, ideal für Präsentationsmodelle", color: "text-blue-600", colorBg: "bg-blue-500" },
   "PLA+":   { desc: "Verstärkt, höhere Schlagzähigkeit als Standard-PLA", color: "text-indigo-600", colorBg: "bg-indigo-500" },
-  PETG:     { desc: "UV-stabil & schlagfest — perfekt für Messemodelle", color: "text-emerald-600", colorBg: "bg-emerald-500" },
+  PETG:     { desc: "UV-stabil & schlagfest, perfekt für Messemodelle", color: "text-emerald-600", colorBg: "bg-emerald-500" },
   ABS:      { desc: "Glätt- und lackierbar für Ausstellungsobjekte", color: "text-amber-600", colorBg: "bg-amber-500" },
   ASA:      { desc: "Wetterfest & UV-beständig für Außenanwendungen", color: "text-cyan-600", colorBg: "bg-cyan-500" },
-  TPU:      { desc: "Flexibel & gummiartig — für biegbare Teile", color: "text-rose-600", colorBg: "bg-rose-500" },
-  "PA6-CF": { desc: "Carbon-Look, ultraleicht — Premium-Showmodelle", color: "text-slate-700", colorBg: "bg-slate-800" },
-  PC:       { desc: "Polycarbonat — extrem schlagfest & hitzebeständig", color: "text-violet-600", colorBg: "bg-violet-500" },
+  TPU:      { desc: "Flexibel & gummiartig, für biegbare Teile", color: "text-rose-600", colorBg: "bg-rose-500" },
+  "PA6-CF": { desc: "Carbon-Look, ultraleicht, Premium-Showmodelle", color: "text-slate-700", colorBg: "bg-slate-800" },
+  PC:       { desc: "Polycarbonat, extrem schlagfest & hitzebeständig", color: "text-violet-600", colorBg: "bg-violet-500" },
 };
 
 const QUALITY_PRESETS = [
@@ -117,13 +117,13 @@ function calcPart(p: PartState): PricingResult {
 
 // ─── FAQS ────────────────────────────────────────────────────────
 const calculatorFaqs = [
-  { question: "Was kostet ein 3D-Druck Modell bei ekdruck?", answer: "Die 3D-Druck Kosten beginnen ab €20 pro Teil. Der genaue Preis hängt von Modellgröße, Material und Qualitätsstufe ab. Nutzen Sie unseren Online-Kostenrechner für eine sofortige Richtpreisberechnung — kostenlos und ohne Anmeldung. Für jedes Projekt erstellen wir ein persönlich geprüftes Festpreisangebot innerhalb von 6 Stunden." },
+  { question: "Was kostet ein 3D-Druck Modell bei ekdruck?", answer: "Die 3D-Druck Kosten beginnen ab €20 pro Teil. Der genaue Preis hängt von Modellgröße, Material und Qualitätsstufe ab. Nutzen Sie unseren Online-Kostenrechner für eine sofortige Richtpreisberechnung, kostenlos und ohne Anmeldung. Für jedes Projekt erstellen wir ein persönlich geprüftes Festpreisangebot innerhalb von 6 Stunden." },
   { question: "Wie genau ist der Richtpreis aus dem Kostenrechner?", answer: "Der Richtpreis basiert auf der realen Geometrie Ihrer STL-Datei und berücksichtigt Materialverbrauch, Druckzeit, Baugröße und Setup-Aufwand. Typische Abweichung zum Endpreis: ±10 bis 15 %. Der verbindliche Festpreis wird nach persönlicher technischer Prüfung festgelegt und per E-Mail zugesendet." },
-  { question: "Welche Dateiformate werden unterstützt?", answer: "Aktuell unterstützen wir STL-Dateien bis 100 MB. Die Datei wird direkt im Browser analysiert – Volumen, Oberfläche und Maße werden automatisch berechnet. Für andere Formate (OBJ, STEP, 3MF) kontaktieren Sie uns bitte direkt." },
+  { question: "Welche Dateiformate werden unterstützt?", answer: "Aktuell unterstützen wir STL-Dateien bis 100 MB. Die Datei wird direkt im Browser analysiert, Volumen, Oberfläche und Maße werden automatisch berechnet. Für andere Formate (OBJ, STEP, 3MF) kontaktieren Sie uns bitte direkt." },
   { question: "Welche 3D-Druck Materialien kann ich wählen?", answer: "Wir bieten 8 FDM-Materialien an: PLA (ideal für Präsentationsmodelle), PETG (UV-beständig, perfekt für Messemodelle), ABS (glätt- und lackierbar), PLA+ (verstärkt), ASA (wetterfest), TPU (flexibel), Polycarbonat (extrem schlagfest) und PA6-CF mit Carbonfaser für Premium-Showmodelle. Alle Filamente stammen aus österreichischer Produktion." },
   { question: "Was bedeutet Infill (Füllung)?", answer: "Der Infill-Wert bestimmt, wie dicht das Innere Ihres Modells gedruckt wird. 10–15 % reicht für leichte Präsentationsmodelle, 30–50 % für stabile Showmodelle, 100 % für massive Vollkörper." },
   { question: "Kann ich mehrere Teile gleichzeitig kalkulieren?", answer: "Ja, unser Kostenrechner unterstützt Multi-File-Upload. Sie können beliebig viele STL-Dateien hochladen, jeweils mit eigenem Material und eigener Stückzahl konfigurieren und erhalten einen Gesamtrichtpreis mit automatischem Mengenvorteil ab 10 Stück." },
-  { question: "Kann ich direkt über den Rechner bestellen?", answer: "Nein. Der Rechner dient ausschließlich zur unverbindlichen Preisindikation. Über das integrierte Formular können Sie eine Anfrage senden – Ihr Projekt wird persönlich von uns geprüft. Erst nach individueller Begutachtung erhalten Sie ein verbindliches Angebot." },
+  { question: "Kann ich direkt über den Rechner bestellen?", answer: "Nein. Der Rechner dient ausschließlich zur unverbindlichen Preisindikation. Über das integrierte Formular können Sie eine Anfrage senden, Ihr Projekt wird persönlich von uns geprüft. Erst nach individueller Begutachtung erhalten Sie ein verbindliches Angebot." },
   { question: "Wie schnell ist die Lieferung?", answer: "Standardaufträge fertigen wir in 3 bis 5 Werktagen. Im Express-Service erhalten Sie Ihr 3D-Druck Modell bereits in 24 bis 48 Stunden. Wir liefern versichert per Post in ganz Österreich." },
   { question: "Gibt es Mengenrabatte für größere Projekte?", answer: "Ja. Ab 10 Teilen erhalten Sie automatisch 5 % Mengenvorteil, ab 50 Teilen 8 % und ab 100 Teilen 10 % Rabatt auf den Gesamtpreis. Für größere Projektmengen erstellen wir gerne ein individuelles Angebot." },
 ];
@@ -239,7 +239,7 @@ const Kostenrechner = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="3D-Druck Kosten berechnen – Richtpreis in 60 Sek. | ★5,0"
+        title="3D-Druck Kosten berechnen, Richtpreis in 60 Sek. | ★5,0"
         description="STL hochladen → Richtpreis sofort. Mehrere Teile kalkulieren. Kein Account nötig. Angebot in 6h · ab €20 · ★5,0 (31 Bewertungen) | ekdruck"
         path="/kostenrechner"
         keywords="3d drucken lassen, 3d drucken lassen kosten, 3d druck preis berechnen, 3d druck online bestellen, 3d druck kosten österreich, 3d modell drucken lassen, 3d druck anbieter österreich, kostenrechner 3d druck, 3d druck online rechner"
@@ -247,7 +247,7 @@ const Kostenrechner = () => {
         schemaType="service"
       />
       <HowToSchema
-        name="3D-Druck Richtpreis berechnen – In 3 Schritten zum Angebot"
+        name="3D-Druck Richtpreis berechnen, In 3 Schritten zum Angebot"
         description="So berechnen Sie unverbindlich den Richtpreis für Ihr 3D-gedrucktes Modell und fordern ein persönliches Angebot an."
         totalTime="PT2M"
         steps={[
@@ -269,7 +269,7 @@ const Kostenrechner = () => {
           <div className="container mx-auto px-4 text-center relative">
             <div className="inline-flex items-center gap-2 bg-primary/8 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-6 border border-primary/15">
               <Calculator className="h-4 w-4" />
-              3D drucken lassen – Online-Kostenrechner
+              3D drucken lassen, Online-Kostenrechner
             </div>
 
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-5 tracking-tight leading-[1.1]">
@@ -306,7 +306,7 @@ const Kostenrechner = () => {
         </section>
 
         {/* ══════════════════════════════════════════════════════
-            CALCULATOR — Single-Page Layout
+            CALCULATOR, Single-Page Layout
         ══════════════════════════════════════════════════════ */}
         <section id="calculator" className="py-8 md:py-14 scroll-mt-20">
           <div className="container mx-auto px-4">
@@ -356,7 +356,7 @@ const Kostenrechner = () => {
                             <div className="flex-1 min-w-0">
                               <p className="text-sm font-medium truncate">{p.fileName || `Teil ${i + 1} (Standard)`}</p>
                               <p className="text-[11px] text-muted-foreground">
-                                {g.volumeCm3.toFixed(1)} cm³ — {Math.round(g.boundingBoxMm.x)}×{Math.round(g.boundingBoxMm.y)}×{Math.round(g.boundingBoxMm.z)} mm · {p.materialKey}
+                                {g.volumeCm3.toFixed(1)} cm³, {Math.round(g.boundingBoxMm.x)}×{Math.round(g.boundingBoxMm.y)}×{Math.round(g.boundingBoxMm.z)} mm · {p.materialKey}
                               </p>
                             </div>
                             <Badge variant="secondary" className="text-[11px] font-semibold">{p.qty}×</Badge>
@@ -409,7 +409,7 @@ const Kostenrechner = () => {
                 {/* Material + Quality + Qty */}
                 <div className="bg-card border border-border rounded-2xl p-5">
                   <p className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground mb-3 font-semibold">
-                    Material{parts.length > 1 ? ` — ${current.fileName || `Teil ${activePart + 1}`}` : ""}
+                    Material{parts.length > 1 ? `, ${current.fileName || `Teil ${activePart + 1}`}` : ""}
                   </p>
                   <div className="grid grid-cols-2 gap-1.5 mb-5">
                     {cfg.materialKeys.map(key => {
@@ -561,7 +561,7 @@ const Kostenrechner = () => {
                         Unverbindliches Angebot anfordern
                       </Button>
                       <p className="text-center text-[11px] text-muted-foreground mt-2">
-                        Persönliche Prüfung — Antwort in 6 h — kein Account nötig
+                        Persönliche Prüfung, Antwort in 6 h, kein Account nötig
                       </p>
                     </>
                   )}
@@ -590,7 +590,7 @@ const Kostenrechner = () => {
         {/* ── Trust Strip ── */}
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-muted-foreground">
-            <span className="flex items-center gap-1.5"><ShieldCheck className="h-4 w-4 text-primary" />Kein Webshop – keine Bestellung</span>
+            <span className="flex items-center gap-1.5"><ShieldCheck className="h-4 w-4 text-primary" />Kein Webshop, keine Bestellung</span>
             <span className="flex items-center gap-1.5"><UserCheck className="h-4 w-4 text-primary" />Persönliche Prüfung jeder Anfrage</span>
             <span className="flex items-center gap-1.5"><Clock className="h-4 w-4 text-primary" />Angebot in 6h</span>
             <span className="flex items-center gap-1.5"><Star className="h-4 w-4 text-primary" />5,0 ★ Google (31 Bewertungen)</span>

@@ -232,7 +232,7 @@ const PriceSummary = ({ result, input, stlFile, hideInquiry = false }: Props) =>
 
         {/* Disclaimer */}
         <p className="text-xs text-muted-foreground text-center leading-relaxed">
-          Unverbindliche Preisindikation – keine Garantie auf Preis oder Machbarkeit.
+          Unverbindliche Preisindikation, keine Garantie auf Preis oder Machbarkeit.
           Jede Anfrage wird persönlich geprüft.
         </p>
 

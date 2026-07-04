@@ -10,7 +10,7 @@ interface LocalMessen2026SectionProps {
 }
 
 /**
- * LocalMessen2026Section — Aktuelle Messen pro Region (2026/2027)
+ * LocalMessen2026Section, Aktuelle Messen pro Region (2026/2027)
  * ──────────────────────────────────────────────────────────────
  * SEO-Wert: Long-Tail-Keywords mit aktuellen Messe-Namen pro Region.
  * Conversion-Wert: triggert "Ich brauche ein Modell für genau diese Messe"-Pain.
@@ -31,7 +31,7 @@ const LocalMessen2026Section = ({ regionSlug, regionName }: LocalMessen2026Secti
               Aktuelle Messen
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.05] tracking-[-0.03em] mb-4">
-              Messen in {regionName} — wo Ihr Modell brillieren kann.
+              Messen in {regionName}, wo Ihr Modell brillieren kann.
             </h2>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               Diese Messen sind in den nächsten 6-18 Monaten relevant. Wenn Sie aussteller sind: rechnen Sie 6-8 Wochen Vorlauf für ein hochwertiges Messemodell ein. Bei Express auch 2-3 Wochen machbar.

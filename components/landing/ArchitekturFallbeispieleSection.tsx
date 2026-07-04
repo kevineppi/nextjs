@@ -15,7 +15,7 @@ const cases = [
       { l: "Maßstab", v: "1:200" },
       { l: "Gesamtkosten", v: "€2.840" },
     ],
-    quote: "Mit klassischem Modellbau hätten wir nur eine Variante in der Abgabe gehabt. Vier Varianten parallel haben das Konzept der Jury klar gemacht – wir haben gewonnen.",
+    quote: "Mit klassischem Modellbau hätten wir nur eine Variante in der Abgabe gehabt. Vier Varianten parallel haben das Konzept der Jury klar gemacht, wir haben gewonnen.",
     quotePosition: "Wettbewerbsleiter, Architekturbüro Wien",
   },
   {
@@ -23,14 +23,14 @@ const cases = [
     icon: Building2,
     titel: "60-Einheiten-Wohnbauprojekt · Schauraum-Modell",
     challenge: "Bauträger entwickelt Wohnhausanlage mit 60 Einheiten in 5 Stiegen. Vorverkaufsphase startet, Interessenten verstehen die Orientierung der Wohnungen am Rendering nicht. Konversionsrate niedrig.",
-    solution: "Modell 1:100 für den Schauraum – 1,2×0,8 m groß, alle Stiegen einzeln entnehmbar zur Geschossansicht. Wohnungen farblich nach Größenklasse markiert. Topografie und Grünflächen mit dargestellt. Sonnenstand-Visualisierung über Markierung an der Modellbasis.",
+    solution: "Modell 1:100 für den Schauraum, 1,2×0,8 m groß, alle Stiegen einzeln entnehmbar zur Geschossansicht. Wohnungen farblich nach Größenklasse markiert. Topografie und Grünflächen mit dargestellt. Sonnenstand-Visualisierung über Markierung an der Modellbasis.",
     result: [
       { l: "Modellgröße", v: "1,2 × 0,8 m" },
       { l: "Lieferzeit", v: "14 Werktage" },
       { l: "Maßstab", v: "1:100 segmentiert" },
       { l: "Investition", v: "€4.890" },
     ],
-    quote: "Seit das Modell im Schauraum steht, kommen Interessenten besser vorbereitet ins Gespräch. Sie zeigen direkt auf 'ihre' Wohnung – das verkürzt unsere Beratungsgespräche um die Hälfte.",
+    quote: "Seit das Modell im Schauraum steht, kommen Interessenten besser vorbereitet ins Gespräch. Sie zeigen direkt auf 'ihre' Wohnung, das verkürzt unsere Beratungsgespräche um die Hälfte.",
     quotePosition: "Vermarktungsleitung Bauträger, Linz",
   },
   {
@@ -62,7 +62,7 @@ const ArchitekturFallbeispieleSection = () => (
               Vom Wettbewerb<br/><span className="text-gradient">bis zum Pensionsgeschenk.</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
-              Jedes Architekturmodell hat einen anderen Zweck – und braucht eine andere Strategie. Drei reale Konstellationen aus den letzten zwölf Monaten.
+              Jedes Architekturmodell hat einen anderen Zweck, und braucht eine andere Strategie. Drei reale Konstellationen aus den letzten zwölf Monaten.
             </p>
           </div>
         </AnimatedSection>
@@ -84,7 +84,7 @@ const ArchitekturFallbeispieleSection = () => (
                     <div className="mt-auto pt-6 border-t border-border/50">
                       <Quote className="w-5 h-5 text-primary/30 mb-3" />
                       <p className="text-sm italic leading-relaxed mb-3 text-foreground/80">"{c.quote}"</p>
-                      <p className="text-[11px] text-muted-foreground">— {c.quotePosition}</p>
+                      <p className="text-[11px] text-muted-foreground">{c.quotePosition}</p>
                     </div>
                   </div>
 
