@@ -687,8 +687,8 @@ const Index = () => {
                 { n: "Vorarlberg", u: "/3d-druck-vorarlberg" }, { n: "Burgenland", u: "/3d-druck-burgenland" },
               ]},
               { title: "Deutschland", links: [
-                { n: "München", u: "/messemodelle/muenchen" }, { n: "Stuttgart", u: "/messemodelle/stuttgart" },
-                { n: "Nürnberg", u: "/messemodelle/nuernberg" }, { n: "Frankfurt", u: "/messemodelle/frankfurt" },
+                { n: "München", u: "/messemodelle" }, { n: "Stuttgart", u: "/messemodelle" },
+                { n: "Nürnberg", u: "/messemodelle" }, { n: "Frankfurt", u: "/messemodelle" },
               ]},
             ].map(({ title, links }) => (
               <div key={title}>

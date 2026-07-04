@@ -60,8 +60,20 @@ const nextConfig = {
 
       // ═══ Phantom-URLs aus GSC-Coverage (2026-05-27) ═══
       // Diese URLs werden von Google indiziert aber existieren nicht / liefern 404.
-      // Statt 404 → 301 zur thematisch nächsten Seite, damit Link-Equity erhalten bleibt.
-      { source: '/messemodelle/dortmund', destination: '/messemodelle/koeln', permanent: true },
+
+      // ═══ Messemodelle Regional-Konsolidierung (2026-07-04, SEO Task 4) ═══
+      //     Alle 26 messemodelle/{stadt}-Seiten waren Thin-Content (fast identisch) -> 301 auf /messemodelle.
+      //     Buendelt Link-Equity, beendet die Keyword-Kannibalisierung. dortmund-Phantom inklusive.
+      ...[
+        'baden-wuerttemberg', 'basel', 'bayern', 'berlin', 'bern', 'duesseldorf', 'essen',
+        'frankfurt', 'graz', 'hamburg', 'hannover', 'hessen', 'koeln', 'linz', 'luzern',
+        'muenchen', 'niedersachsen', 'nordrhein-westfalen', 'nuernberg', 'oberoesterreich',
+        'salzburg', 'st-gallen', 'steiermark', 'stuttgart', 'wien', 'zuerich', 'dortmund',
+      ].map((stadt) => ({
+        source: `/messemodelle/${stadt}`,
+        destination: '/messemodelle',
+        permanent: true,
+      })),
     ]
   },
 };

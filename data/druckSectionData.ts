@@ -176,7 +176,7 @@ const wien: DruckSectionDataSet = {
   ],
   inTextLinks: [
     { anchor: '3D-Druck Expressfertigung in Linz', href: '/3d-druck-oberoesterreich', context: 'Für zeitkritische Projekte bietet unser Standort in Linz Same-Day-Abholung.' },
-    { anchor: 'Designstudien für Messestände', href: '/messemodelle/wien', context: 'Wiener Messemodelle mit kreativer Gestaltung für Ihr nächstes Event.' },
+    { anchor: 'Designstudien für Messestände', href: '/messemodelle', context: 'Wiener Messemodelle mit kreativer Gestaltung für Ihr nächstes Event.' },
     { anchor: '3D-gedruckte Architekturmodelle Wien', href: '/architekturmodelle/wien', context: 'Architekten in Wien vertrauen auf unsere maßstabsgetreuen Wettbewerbsmodelle.' },
     { anchor: 'Modelldruck für Grazer Industriebetriebe', href: '/3d-druck-steiermark', context: 'Für Serienfertigung und Industrieanwendungen ist unser Grazer Service ideal.' },
   ],
@@ -267,7 +267,7 @@ const linz: DruckSectionDataSet = {
   inTextLinks: [
     { anchor: 'Direktabholung am Standort Gunskirchen', href: '/3d-druck-oberoesterreich', context: 'Nur 20 Minuten von Linz: persönliche Abholung mit Qualitätsprüfung vor Ort.' },
     { anchor: '3D-Druck Service für Wiener Startups', href: '/3d-druck-wien', context: 'Pitch-Modelle für die Wiener Startup-Szene · Express-Versand über Nacht.' },
-    { anchor: 'Messemodelle für OÖ-Messen', href: '/messemodelle/oberoesterreich', context: 'Maßgefertigte Messeexponate für Messen in Oberösterreich.' },
+    { anchor: 'Messemodelle für OÖ-Messen', href: '/messemodelle', context: 'Maßgefertigte Messeexponate für Messen in Oberösterreich.' },
     { anchor: 'Wetterfeste Outdoor-Modelle Dornbirn', href: '/3d-druck-vorarlberg', context: 'ASA-Modelle für Außenanwendungen aus unserem Vorarlberg-Service.' },
   ],
 
@@ -445,7 +445,7 @@ const salzburg: DruckSectionDataSet = {
   ],
   inTextLinks: [
     { anchor: '3D-Druck Express Oberösterreich', href: '/3d-druck-oberoesterreich', context: 'Über die A1 in 1-2 Tagen · Express aus Gunskirchen nach Salzburg.' },
-    { anchor: 'Messemodelle für Salzburger Events', href: '/messemodelle/salzburg', context: 'Vom Kongresshaus bis zur Messehalle: Event-Modelle nach Maß.' },
+    { anchor: 'Messemodelle für Salzburger Events', href: '/messemodelle', context: 'Vom Kongresshaus bis zur Messehalle: Event-Modelle nach Maß.' },
     { anchor: 'Kreativprojekte in Innsbruck', href: '/3d-druck-vorarlberg', context: 'Auch Tiroler Kreative profitieren von unserer Designkompetenz.' },
     { anchor: 'Filialmodelle für Salzburger Ketten', href: '/3d-druck-oberoesterreich', context: 'Express-Fertigung identischer Modelle für alle Filialen.' },
   ],
@@ -536,7 +536,7 @@ const innsbruck: DruckSectionDataSet = {
   inTextLinks: [
     { anchor: '3D-Druck Lehrmittel Salzburg', href: '/3d-druck-salzburg', context: 'Universitäten in Salzburg nutzen ebenfalls unsere Lehrmittelfertigung.' },
     { anchor: 'Outdoor-Modelle für Alpen-Projekte', href: '/3d-druck-vorarlberg', context: 'Wetterfeste ASA-Modelle für touristische Installationen im Alpenraum.' },
-    { anchor: 'Messemodelle Innsbruck', href: '/messemodelle/salzburg', context: 'Interaktive Messeexponate für Tiroler Fachmessen und Events.' },
+    { anchor: 'Messemodelle Innsbruck', href: '/messemodelle', context: 'Interaktive Messeexponate für Tiroler Fachmessen und Events.' },
   ],
 
 };
@@ -714,7 +714,7 @@ const villach: DruckSectionDataSet = {
   inTextLinks: [
     { anchor: 'Startup-Modelle Klagenfurt', href: '/3d-druck-kaernten', context: 'Klagenfurter Startups aus dem Lakeside Park nutzen unsere Pitch-Modelle.' },
     { anchor: 'Serienproduktion in Graz', href: '/3d-druck-steiermark', context: 'Für größere Serien bietet Graz optimale Industrieanbindung.' },
-    { anchor: 'Messemodelle für Kärntner Events', href: '/messemodelle/steiermark', context: 'Professionelle Messeexponate für Kärntner Fachmessen.' },
+    { anchor: 'Messemodelle für Kärntner Events', href: '/messemodelle', context: 'Professionelle Messeexponate für Kärntner Fachmessen.' },
   ],
 
 };
@@ -981,7 +981,7 @@ const dornbirn: DruckSectionDataSet = {
   inTextLinks: [
     { anchor: '3D-Druck Textilmuster Vorarlberg', href: '/3d-druck-vorarlberg', context: 'Vorarlberger Textilbranche setzt auf 3D-gedruckte Prototypen.' },
     { anchor: 'Express nach Innsbruck', href: '/3d-druck-vorarlberg', context: 'Tiroler Kunden profitieren vom selben Alpen-Expressservice.' },
-    { anchor: 'Messemodelle für Dornbirner Messe', href: '/messemodelle/muenchen', context: 'Maßgefertigte Exponate für die Dornbirner Herbstmesse und andere Events.' },
+    { anchor: 'Messemodelle für Dornbirner Messe', href: '/messemodelle', context: 'Maßgefertigte Exponate für die Dornbirner Herbstmesse und andere Events.' },
   ],
 
 };
@@ -1159,7 +1159,7 @@ const oberoesterreich: DruckSectionDataSet = {
   inTextLinks: [
     { anchor: 'Direktabholung Gunskirchen', href: '/3d-druck-oberoesterreich', context: 'Unser Standort in Gunskirchen bietet persönliche Beratung und Sofort-Abholung.' },
     { anchor: '3D-Druck Linz Express', href: '/3d-druck-oberoesterreich', context: 'Same-Day Service für Linzer Unternehmen und Bildungseinrichtungen.' },
-    { anchor: 'Messemodelle für OÖ Industriemessen', href: '/messemodelle/oberoesterreich', context: 'Professionelle Exponate für die Welser Messe und andere OÖ-Events.' },
+    { anchor: 'Messemodelle für OÖ Industriemessen', href: '/messemodelle', context: 'Professionelle Exponate für die Welser Messe und andere OÖ-Events.' },
   ],
 
 };
@@ -1331,7 +1331,7 @@ const steiermark: DruckSectionDataSet = {
   inTextLinks: [
     { anchor: '3D-Druck Graz Serienfertigung', href: '/3d-druck-steiermark', context: 'Für Grazer Industriebetriebe bieten wir Kleinserien ab 10 Stück.' },
     { anchor: 'Outdoor-Installationen Kärnten', href: '/3d-druck-kaernten', context: 'Wetterfeste ASA-Modelle für touristische Anwendungen auch in Kärnten.' },
-    { anchor: 'Messemodelle Steiermark', href: '/messemodelle/steiermark', context: 'Großformat-Exponate für steirische Industriemessen und Fachmessen.' },
+    { anchor: 'Messemodelle Steiermark', href: '/messemodelle', context: 'Großformat-Exponate für steirische Industriemessen und Fachmessen.' },
   ],
 
 };
@@ -1589,7 +1589,7 @@ const vorarlberg: DruckSectionDataSet = {
   inTextLinks: [
     { anchor: 'Designobjekte Dornbirn', href: '/3d-druck-vorarlberg', context: 'Dornbirner Designer und Textilunternehmen als Stammkunden.' },
     { anchor: '3D-Druck Express Tirol', href: '/3d-druck-vorarlberg', context: 'Tiroler Kunden profitieren vom selben Alpen-Expressservice.' },
-    { anchor: 'Messemodelle Vorarlberg', href: '/messemodelle/muenchen', context: 'Branchenspezifische Exponate für Vorarlberger Fachmessen.' },
+    { anchor: 'Messemodelle Vorarlberg', href: '/messemodelle', context: 'Branchenspezifische Exponate für Vorarlberger Fachmessen.' },
   ],
 
 };

@@ -99,43 +99,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   // ─── MESSE-STADT-PAGES ────────────────────────────────────────
-  const messeRegions = [
-    // AT
-    { slug: 'wien', prio: 0.7 },
-    { slug: 'oberoesterreich', prio: 0.65 },
-    { slug: 'steiermark', prio: 0.6 },
-    { slug: 'salzburg', prio: 0.6 },
-    { slug: 'graz', prio: 0.6 },
-    { slug: 'linz', prio: 0.6 },
-    // DE
-    { slug: 'bayern', prio: 0.6 },
-    { slug: 'muenchen', prio: 0.7 },
-    { slug: 'nuernberg', prio: 0.6 },
-    { slug: 'baden-wuerttemberg', prio: 0.6 },
-    { slug: 'stuttgart', prio: 0.65 },
-    { slug: 'nordrhein-westfalen', prio: 0.6 },
-    { slug: 'duesseldorf', prio: 0.7 },
-    { slug: 'koeln', prio: 0.6 },
-    { slug: 'essen', prio: 0.6 },
-    { slug: 'hessen', prio: 0.6 },
-    { slug: 'frankfurt', prio: 0.7 },
-    { slug: 'niedersachsen', prio: 0.6 },
-    { slug: 'hannover', prio: 0.7 },
-    { slug: 'berlin', prio: 0.7 },
-    { slug: 'hamburg', prio: 0.6 },
-    // CH
-    { slug: 'zuerich', prio: 0.7 },
-    { slug: 'basel', prio: 0.65 },
-    { slug: 'bern', prio: 0.6 },
-    { slug: 'st-gallen', prio: 0.6 },
-    { slug: 'luzern', prio: 0.6 },
-  ]
-  const messeStadtPages: MetadataRoute.Sitemap = messeRegions.map((m) => ({
-    url: `${SITE}/messemodelle/${m.slug}`,
-    lastModified: buildDate,
-    changeFrequency: 'monthly' as const,
-    priority: m.prio,
-  }))
+  // MESSE-STADT-PAGES entfernt (2026-07-04, SEO Task 4): alle 26 messemodelle/{stadt}
+  // sind jetzt 301 -> /messemodelle (siehe next.config.js). Nicht mehr in der Sitemap.
 
   return [
     ...corePages,
@@ -145,6 +110,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...caseDetailPages,
     ...ratgeberPages,
     ...bundeslandPages,
-    ...messeStadtPages,
   ]
 }
