@@ -213,84 +213,42 @@ const Index = () => {
       <ThreeStepProcess />
 
       {/* ══════════════════════════════════════════════════════
-          WARUM EKDRUCK, Big numbers + comparison
+          AKTUELLES PROJEKT, Theater Zackbumm (Fotos: Hanna Naske)
          ══════════════════════════════════════════════════════ */}
-      <section className="py-32 bg-background relative" aria-label="Vorteile 3D-Druck">
+      <section className="py-24 md:py-32 bg-background relative" aria-label="Aktuelles Projekt, Theater Zackbumm">
         <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto">
-            <AnimatedSection animation="fade-in" className="mb-20">
-              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Warum ekdruck?</p>
-              <TextReveal
-                text="Zahlen, die überzeugen."
-                className="text-5xl md:text-7xl font-bold leading-[0.95] tracking-[-0.04em] mb-16"
-              />
-              {/* Giant stats with animated counters */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                {[
-                  { val: "95%", label: "günstiger als Handmodellbau" },
-                  { val: "24h", label: "Express österreichweit" },
-                  { val: "0.1mm", label: "Schichtauflösung" },
-                  { val: "5.0", label: "Google Rating" },
-                ].map(({ val, label }) =>
-                  <div key={val}>
-                    <AnimatedCounter target={val} className="mono text-5xl md:text-7xl font-bold text-foreground leading-none tracking-tighter" />
-                    <p className="text-sm text-muted-foreground mt-3 max-w-[160px]">{label}</p>
-                  </div>
-                )}
-              </div>
+          <div className="max-w-6xl mx-auto">
+            <AnimatedSection animation="fade-in" className="mb-10">
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Aktuelles Projekt</p>
+              <h2 className="text-4xl md:text-6xl font-bold leading-[0.95] tracking-[-0.04em]">Bühnenbild für die Theaterproduktion Zackbumm</h2>
             </AnimatedSection>
-
-            {/* Advantages */}
-            <AnimatedSection animation="slide-up" delay={100} className="grid md:grid-cols-2 gap-3 mb-16">
-              {[
-                { icon: TrendingDown, title: "Keine Werkzeugkosten", desc: "Spritzguss ab €10.000. Bei ekdruck ab €20." },
-                { icon: Clock, title: "10x schneller", desc: "Handmodellbau: 1–4 Wochen. ekdruck Express: 24h." },
-                { icon: Repeat2, title: "Digital reproduzierbar", desc: "Jede Kopie identisch. Korrekturen = Dateiänderung." },
-                { icon: Leaf, title: "Nachhaltig aus Österreich", desc: "Filament aus Industrieabfällen, 80% weniger CO₂." },
-              ].map(({ icon: Icon, title, desc }) =>
-                <div key={title} className="flex gap-4 p-6 rounded-2xl border-2 border-border hover:border-primary/30 transition-all duration-300 hover:-translate-y-0.5">
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                    <Icon className="w-5 h-5 text-primary" />
+            <AnimatedSection animation="slide-up">
+              <Link href="/cases/theater-zackbumm-buehnenbild-verbinder" className="group block">
+                <div className="grid md:grid-cols-2 rounded-3xl overflow-hidden border-2 border-border hover:border-primary/40 transition-all duration-500">
+                  <div className="aspect-[4/3] md:aspect-auto bg-muted overflow-hidden">
+                    <img
+                      src="/cases/zackbumm-vogel-marionette.jpg"
+                      alt="Bühnenbild-Verbindungsstücke der Theaterproduktion Zackbumm, Foto Hanna Naske"
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
                   </div>
-                  <div>
-                    <p className="font-bold text-sm mb-1 tracking-tight">{title}</p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
+                  <div className="p-8 md:p-12 flex flex-col justify-center">
+                    <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                      170 grüne Verbindungsstücke in vier Typen, mit denen aus schlanken Bambusstäben mannshohe, verzweigte Baum-Strukturen für die Bühne entstehen. Ein Stück Handwerk abseits der Industrie.
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-8">
+                      {["170 Stück", "4 Typen", "Werkzeugloses Stecksystem", "Kleinserie"].map(t =>
+                        <span key={t} className="mono text-[10px] font-bold text-foreground/60 uppercase tracking-wider bg-muted px-2.5 py-1 rounded-full">{t}</span>
+                      )}
+                    </div>
+                    <span className="flex items-center gap-2 text-primary font-bold group-hover:gap-4 transition-all">
+                      Zum Fallbeispiel <ArrowRight className="w-5 h-5" />
+                    </span>
+                    <p className="mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mt-6">Fotos © Hanna Naske</p>
                   </div>
                 </div>
-              )}
-            </AnimatedSection>
-
-            {/* Comparison table */}
-            <AnimatedSection animation="fade-in" delay={200}>
-              <div className="rounded-3xl overflow-hidden border-2 border-foreground">
-                <div className="grid grid-cols-3 bg-foreground">
-                  <div className="p-5 mono text-[10px] font-bold text-background/40 uppercase tracking-[0.2em]">Kriterium</div>
-                  <div className="p-5 font-bold text-primary flex items-center justify-center gap-2 text-sm border-x border-background/10">
-                    <span className="w-2 h-2 rounded-full bg-primary animate-pulse" /> ekdruck
-                  </div>
-                  <div className="p-5 mono text-[10px] font-bold text-background/40 uppercase tracking-[0.2em] text-center">Traditionell</div>
-                </div>
-                {[
-                  { label: "Kosten", good: "ab €20", bad: "€200–€10.000+" },
-                  { label: "Lieferzeit", good: "24h Express", bad: "1–4 Wochen" },
-                  { label: "Geometrien", good: "Unbegrenzt", bad: "Stark limitiert" },
-                  { label: "Reproduzierbarkeit", good: "1:1 identisch", bad: "Variiert" },
-                ].map(({ label, good, bad }) =>
-                  <div key={label} className="grid grid-cols-3 border-t border-border hover:bg-muted/30 transition-colors">
-                    <div className="p-5 font-medium text-sm">{label}</div>
-                    <div className="p-5 text-center border-x border-border/30">
-                      <span className="inline-flex items-center gap-1.5 text-primary font-bold text-sm">
-                        <Check className="w-4 h-4" />{good}
-                      </span>
-                    </div>
-                    <div className="p-5 text-center">
-                      <span className="inline-flex items-center gap-1.5 text-muted-foreground text-sm">
-                        <X className="w-4 h-4 text-destructive/50" />{bad}
-                      </span>
-                    </div>
-                  </div>
-                )}
-              </div>
+              </Link>
             </AnimatedSection>
           </div>
         </div>
@@ -541,11 +499,7 @@ const Index = () => {
       {/* ══════════════════════════════════════════════════════
           TRUST
          ══════════════════════════════════════════════════════ */}
-      <section className="py-16 border-y border-border" aria-label="Vertrauen">
-        <div className="container mx-auto px-4">
-          <TrustBadges variant="full" />
-        </div>
-      </section>
+      {/* Trust-Sektion 2026-07-04 fuer mehr Ruhe entfernt (redundant zu Referenzen-Stats + Logo-Strip) */}
 
       {/* "Welche Lösung passt zu Ihrem Projekt?", komplett entfernt am 2026-05-31 (redundant mit Services-Übersicht) */}
       {false && (<ContextualLinks
