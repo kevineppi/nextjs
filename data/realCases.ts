@@ -53,6 +53,10 @@ export interface RealCase {
 
   // Optional Cross-Links
   relatedCases?: string[] // slugs
+
+  // Optional echte Projektfotos + Fotocredit
+  images?: { src: string; alt: string }[]
+  photoCredit?: string
 }
 
 export const cases: RealCase[] = [
@@ -361,6 +365,73 @@ export const cases: RealCase[] = [
     },
 
     relatedCases: ['wien-stadtentwicklung-1-500-stadtmodell'],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  //   CASE 6 · Theater Zackbumm · Bühnenbild-Verbinder (mit Fotos)
+  // ═══════════════════════════════════════════════════════════════
+  {
+    slug: 'theater-zackbumm-buehnenbild-verbinder',
+    title: 'Bühnenbild für die Theaterproduktion Zackbumm, 170 Verbindungsstücke aus dem 3D-Druck',
+    customerLabel: 'Theaterproduktion Zackbumm',
+    branchen: [],
+    year: 2026,
+    status: 'completed',
+
+    metaTitle: 'Case: Bühnenbild-Verbinder für die Theaterproduktion Zackbumm · 3D-Druck',
+    metaDescription:
+      'Wie ek-druck 170 Verbindungsstücke in vier Typen für die verzweigten Baum-Strukturen im Bühnenbild der Theaterproduktion Zackbumm gefertigt hat. Kleinserie aus dem 3D-Druck.',
+    primaryKeyword: 'Bühnenbild 3D-Druck',
+
+    challenge:
+      'Für das Bühnenbild der Theaterproduktion Zackbumm sollten mehrere mannshohe, verzweigte Baum-Strukturen entstehen, aufgebaut aus schlanken Bambusstäben. Das Problem: für die vielen organischen Verzweigungswinkel gibt es keine fertigen Verbinder. Jeder Ast zweigt in einem anderen Winkel ab, stabil genug für den Bühnenbetrieb und leicht genug, damit die Struktur nicht kippt.',
+
+    approach: [
+      {
+        label: 'Vier Verbinder-Typen aus der Skizze',
+        detail:
+          'Aus der Handskizze der Ausstattung habe ich vier Typen abgeleitet, nach Verzweigung geordnet: gerade Verlängerung, einfache Gabelung, Dreifach-Knoten und der große Verzweiger. Jeder Typ nimmt die Bambusstäbe im passenden Winkel auf.',
+      },
+      {
+        label: 'Hohl gedruckt, leicht und stabil',
+        detail:
+          'Die Stücke sind hohl ausgelegt, circa 15 cm groß. So bleiben die Baum-Strukturen leicht und stehen trotzdem sicher. Grün eingefärbt, damit die Verbinder im Bühnenlicht mit den Ästen verschmelzen.',
+      },
+      {
+        label: 'Kleinserie mit 170 Stück',
+        detail:
+          '170 Stücke in Mehrfachfertigung: 45 vom Typ I, 15 vom Typ II, 45 vom Typ III und 65 vom Typ IV. Alle Schicht für Schicht aus dem 3D-Druck, in gleichbleibender Qualität.',
+      },
+      {
+        label: 'Werkzeugloses Stecksystem',
+        detail:
+          'Die Verbinder funktionieren als Stecksystem. Die Bühnentechnik setzt die Baum-Strukturen ohne Werkzeug zusammen, baut sie um und zerlegt sie für den Transport wieder.',
+      },
+    ],
+
+    technicalSpecs: [
+      { label: 'Einsatz', value: 'Bühnenbild und Requisiten' },
+      { label: 'Typen', value: '4 Verbinder-Typen' },
+      { label: 'Stückzahl', value: '170 Stück (45 / 15 / 45 / 65)' },
+      { label: 'Größe', value: 'circa 15 cm je Stück, hohl' },
+      { label: 'Farbe', value: 'Grün eingefärbt' },
+      { label: 'Fertigung', value: 'Kleinserie aus dem 3D-Druck (FDM)' },
+      { label: 'Aufbau', value: 'Werkzeugloses Stecksystem für Bambusstäbe' },
+    ],
+
+    outcome:
+      'Aus den 170 Verbindungsstücken und den Bambusstäben sind die verzweigten Baum-Strukturen entstanden, die das Bühnenbild der Produktion prägen. Ein Projekt abseits der Industrie, das zeigt, wie vielseitig 3D-Druck im Bühnen- und Ausstattungsbereich ist.',
+
+    lessons:
+      'Organische, verzweigte Formen lassen sich mit wenigen klug gewählten Verbinder-Typen erstaunlich flexibel aufbauen. Vier Typen haben für die ganze Bühne gereicht.',
+
+    images: [
+      { src: '/cases/zackbumm-vogel-marionette.jpg', alt: 'Vogelfigur mit gedrucktem Kopf im Bühnenbild der Theaterproduktion Zackbumm' },
+      { src: '/cases/zackbumm-buehne.jpg', alt: 'Bühne mit verzweigten Baum-Strukturen aus Bambus und gedruckten Verbindungsstücken' },
+      { src: '/cases/zackbumm-musiker.jpg', alt: 'Musikerinnen und Figuren im Bühnenbild der Produktion Zackbumm' },
+      { src: '/cases/zackbumm-detail.jpg', alt: 'Detail der verzweigten Ast-Strukturen im Bühnenbild' },
+    ],
+    photoCredit: 'Hanna Naske',
   },
 
 ]

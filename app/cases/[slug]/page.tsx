@@ -108,6 +108,32 @@ export default async function CaseDetailPage({ params }: CasePageProps) {
           </div>
         </section>
 
+        {/* PROJEKTFOTOS */}
+        {c.images && c.images.length > 0 && (
+          <section className="pb-4 md:pb-8 bg-background" aria-label="Projektfotos">
+            <div className="container mx-auto px-4">
+              <div className="max-w-5xl mx-auto">
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {c.images.map((img, i) => (
+                    <img
+                      key={i}
+                      src={img.src}
+                      alt={img.alt}
+                      loading="lazy"
+                      className="w-full h-auto rounded-2xl border border-border object-cover"
+                    />
+                  ))}
+                </div>
+                {c.photoCredit && (
+                  <p className="mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mt-4 text-right">
+                    Fotos © {c.photoCredit}
+                  </p>
+                )}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* CHALLENGE + SPECS */}
         <section className="py-16 md:py-24 bg-muted/30 border-y border-border">
           <div className="container mx-auto px-4">
