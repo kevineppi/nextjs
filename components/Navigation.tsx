@@ -4,10 +4,18 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
-import { Menu, X, ChevronDown, Sparkles, Layers, Building2, Presentation, Building, Calculator, MessageCircle, Calendar, Phone, BookOpen, FlaskConical } from "lucide-react";
+import { Menu, X, MessageCircle, Calendar, Phone, Calculator } from "lucide-react";
 import { CONTACT, getWhatsAppUrl } from "@/lib/contactConfig";
 import { trackContactClick } from "@/lib/tracking";
+
+// 2026-07-04 (SEO v2 Task 3): flache 5-Punkt-Nav statt Mega-Menue.
+// Kernleistungen direkt sichtbar, kein "Services"-Dropdown, in dem sie versteckt waren.
+const NAV_LINKS = [
+  { href: "/architekturmodelle", label: "Architekturmodelle" },
+  { href: "/messemodelle", label: "Messemodelle & Exponate" },
+  { href: "/referenzen", label: "Referenzen" },
+  { href: "/ratgeber", label: "Ratgeber" },
+];
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,140 +38,20 @@ const Navigation = () => {
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-10">
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center text-foreground/80 hover:text-primary transition-all duration-300 font-medium hover:scale-105">
-                Services <ChevronDown className="ml-1 h-4 w-4" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent sideOffset={12} className="w-[520px] p-4 bg-background border border-border/50 shadow-2xl z-[110] animate-scale-in">
-                <div className="grid grid-cols-2 gap-x-6 gap-y-1">
-                  {/* Linke Spalte - Services */}
-                  <div className="space-y-0.5">
-                    <div className="px-2 py-1.5 text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Services</div>
-                    <DropdownMenuItem asChild className="p-0 focus:bg-transparent">
-                      <Link href="/prototypen" className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/10 hover:scale-[1.02] hover:-translate-y-0.5 active:scale-[0.98] active:translate-y-0 transition-all duration-200 ease-out group cursor-pointer">
-                        <div className="flex-shrink-0 w-9 h-9 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-200">
-                          <Layers className="h-4 w-4 text-primary" />
-                        </div>
-                        <div>
-                          <div className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Prototypen</div>
-                          <div className="text-xs text-muted-foreground">Rapid Prototyping ab €20</div>
-                        </div>
-                      </Link>
-                    </DropdownMenuItem>                    <DropdownMenuItem asChild className="p-0 focus:bg-transparent">
-                      <Link href="/3d-druck-materialien" className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/10 hover:scale-[1.02] hover:-translate-y-0.5 active:scale-[0.98] active:translate-y-0 transition-all duration-200 ease-out group cursor-pointer">
-                        <div className="flex-shrink-0 w-9 h-9 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-200">
-                          <FlaskConical className="h-4 w-4 text-primary" />
-                        </div>
-                        <div>
-                          <div className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Materialien</div>
-                          <div className="text-xs text-muted-foreground">PLA, PETG, ABS & mehr</div>
-                        </div>
-                      </Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild className="p-0 focus:bg-transparent">
-                      <Link href="/ratgeber" className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/10 hover:scale-[1.02] hover:-translate-y-0.5 active:scale-[0.98] active:translate-y-0 transition-all duration-200 ease-out group cursor-pointer">
-                        <div className="flex-shrink-0 w-9 h-9 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-200">
-                          <BookOpen className="h-4 w-4 text-primary" />
-                        </div>
-                        <div>
-                          <div className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Ratgeber</div>
-                          <div className="text-xs text-muted-foreground">Guides & Fachwissen</div>
-                        </div>
-                      </Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild className="p-0 focus:bg-transparent">
-                      <Link href="/referenzen" className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/10 hover:scale-[1.02] hover:-translate-y-0.5 active:scale-[0.98] active:translate-y-0 transition-all duration-200 ease-out group cursor-pointer">
-                        <div className="flex-shrink-0 w-9 h-9 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-200">
-                          <Sparkles className="h-4 w-4 text-primary" />
-                        </div>
-                        <div>
-                          <div className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Referenzen & Projekte</div>
-                          <div className="text-xs text-muted-foreground">Erfolgreiche Kundenprojekte</div>
-                        </div>
-                      </Link>
-                    </DropdownMenuItem>
-                  </div>
-                  
-                  {/* Rechte Spalte - Zielgruppen */}
-                  <div className="space-y-0.5">
-                    <div className="px-2 py-1.5 text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Zielgruppen</div>
-                    <DropdownMenuItem asChild className="p-0 focus:bg-transparent">
-                      <Link href="/architekturmodelle" className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/10 hover:scale-[1.02] hover:-translate-y-0.5 active:scale-[0.98] active:translate-y-0 transition-all duration-200 ease-out group cursor-pointer">
-                        <div className="flex-shrink-0 w-9 h-9 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-200">
-                          <Building2 className="h-4 w-4 text-primary" />
-                        </div>
-                        <div>
-                          <div className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Architekturmodelle</div>
-                          <div className="text-xs text-muted-foreground">Für Architekten & Planer</div>
-                        </div>
-                      </Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild className="p-0 focus:bg-transparent">
-                      <Link href="/architekturmodelle-abo" className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/10 hover:scale-[1.02] hover:-translate-y-0.5 active:scale-[0.98] active:translate-y-0 transition-all duration-200 ease-out group cursor-pointer border border-primary/20 bg-primary/5">
-                        <div className="flex-shrink-0 w-9 h-9 bg-primary/20 rounded-lg flex items-center justify-center group-hover:bg-primary/30 group-hover:scale-110 transition-all duration-200">
-                          <Sparkles className="h-4 w-4 text-primary" />
-                        </div>
-                        <div>
-                          <div className="font-semibold text-sm text-primary flex items-center gap-1.5">
-                            Architektur-Flatrate
-                            <span className="text-[9px] font-bold bg-primary text-primary-foreground px-1.5 py-0.5 rounded-full">NEU</span>
-                          </div>
-                          <div className="text-xs text-muted-foreground">Ab €199/Monat · Erstes Modell gratis</div>
-                        </div>
-                      </Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild className="p-0 focus:bg-transparent">
-                      <Link href="/messemodelle" className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/10 hover:scale-[1.02] hover:-translate-y-0.5 active:scale-[0.98] active:translate-y-0 transition-all duration-200 ease-out group cursor-pointer">
-                        <div className="flex-shrink-0 w-9 h-9 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-200">
-                          <Presentation className="h-4 w-4 text-primary" />
-                        </div>
-                        <div>
-                          <div className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Messemodelle</div>
-                          <div className="text-xs text-muted-foreground">Express 24h für Events</div>
-                        </div>
-                      </Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild className="p-0 focus:bg-transparent">
-                      <Link href="/firmenkunden" className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/10 hover:scale-[1.02] hover:-translate-y-0.5 active:scale-[0.98] active:translate-y-0 transition-all duration-200 ease-out group cursor-pointer">
-                        <div className="flex-shrink-0 w-9 h-9 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-200">
-                          <Building className="h-4 w-4 text-primary" />
-                        </div>
-                        <div>
-                          <div className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Firmenkunden</div>
-                          <div className="text-xs text-muted-foreground">B2B Projekte & Aufträge</div>
-                        </div>
-                      </Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild className="p-0 focus:bg-transparent">
-                      <Link href="/branchen" className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/10 hover:scale-[1.02] hover:-translate-y-0.5 active:scale-[0.98] active:translate-y-0 transition-all duration-200 ease-out group cursor-pointer border border-primary/20 bg-primary/5">
-                        <div className="flex-shrink-0 w-9 h-9 bg-primary/20 rounded-lg flex items-center justify-center group-hover:bg-primary/30 group-hover:scale-110 transition-all duration-200">
-                          <Layers className="h-4 w-4 text-primary" />
-                        </div>
-                        <div>
-                          <div className="font-semibold text-sm text-primary flex items-center gap-1.5">
-                            Branchen-Lösungen
-                            <span className="text-[9px] font-bold bg-primary text-primary-foreground px-1.5 py-0.5 rounded-full">NEU</span>
-                          </div>
-                          <div className="text-xs text-muted-foreground">Maschinenbau · Schiffbau · Energie · Auto …</div>
-                        </div>
-                      </Link>
-                    </DropdownMenuItem>
-                  </div>
-                </div>
-              </DropdownMenuContent>
-            </DropdownMenu>
-            <Link href="/kostenrechner" className="flex items-center gap-1.5 text-foreground/80 hover:text-primary transition-all duration-300 font-medium hover:scale-105">
-              <Calculator className="h-4 w-4" />
-              Rechner
-            </Link>
-            <Link href="/cases" className="text-foreground/80 hover:text-primary transition-all duration-300 font-medium hover:scale-105">Cases</Link>
-            <Link href="/preise" className="text-foreground/80 hover:text-primary transition-all duration-300 font-medium hover:scale-105">Preise</Link>
-            <Link href="/ueber-uns" className="text-foreground/80 hover:text-primary transition-all duration-300 font-medium hover:scale-105">Über uns</Link>
+          {/* Desktop Navigation, flach */}
+          <div className="hidden md:flex items-center space-x-7 lg:space-x-9">
+            {NAV_LINKS.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="text-foreground/80 hover:text-primary transition-colors duration-300 font-medium"
+              >
+                {l.label}
+              </Link>
+            ))}
 
             {/* Quick Contact Icons */}
-            <div className="flex items-center gap-1 ml-2 pl-3 border-l border-border/50">
+            <div className="flex items-center gap-1 ml-1 pl-3 border-l border-border/50">
               <a
                 href={getWhatsAppUrl()}
                 target="_blank"
@@ -197,106 +85,50 @@ const Navigation = () => {
               </a>
             </div>
 
-            <Button variant="hero" size="sm" className="ml-1 hover:scale-105 transition-transform duration-300 text-xs md:text-base px-2 md:px-6 py-1 md:py-2" asChild>
+            <Button variant="hero" size="sm" className="ml-1 hover:scale-105 transition-transform duration-300 text-sm md:text-base px-4 md:px-6 py-2" asChild>
               <Link href="/kontakt">Angebot</Link>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsOpen(!isOpen)}
-            >
+            <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)} aria-label="Menü öffnen">
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation, flach */}
         {isOpen && (
           <div className="md:hidden pb-6 animate-fade-in max-h-[80vh] overflow-y-auto">
-            {/* Services Section */}
-            <div className="mb-4">
-              <div className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest px-3 py-2">Services</div>
-              <div className="grid grid-cols-2 gap-1">
-                <Link href="/prototypen" 
-                  className="flex items-center gap-2 p-3 text-foreground rounded-xl hover:bg-primary/10 active:bg-primary/20 active:scale-[0.98] transition-all"
+            <div className="flex flex-col gap-1 mt-2">
+              {NAV_LINKS.map((l) => (
+                <Link
+                  key={l.href}
+                  href={l.href}
                   onClick={() => setIsOpen(false)}
+                  className="px-3 py-3 text-foreground font-medium rounded-xl hover:bg-primary/10 active:bg-primary/20 active:scale-[0.98] transition-all"
                 >
-                  <Layers className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span className="text-sm font-medium truncate">Prototypen</span>
-                </Link>                <Link href="/3d-druck-materialien" 
-                  className="flex items-center gap-2 p-3 text-foreground rounded-xl hover:bg-primary/10 active:bg-primary/20 active:scale-[0.98] transition-all"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <FlaskConical className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span className="text-sm font-medium truncate">Materialien</span>
+                  {l.label}
                 </Link>
-                <Link href="/ratgeber" 
-                  className="flex items-center gap-2 p-3 text-foreground rounded-xl hover:bg-primary/10 active:bg-primary/20 active:scale-[0.98] transition-all"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <BookOpen className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span className="text-sm font-medium truncate">Ratgeber</span>
-                </Link>
-                <Link href="/referenzen" 
-                  className="flex items-center gap-2 p-3 text-foreground rounded-xl hover:bg-primary/10 active:bg-primary/20 active:scale-[0.98] transition-all"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <Sparkles className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span className="text-sm font-medium truncate">Referenzen</span>
-                </Link>
-              </div>
-            </div>
-
-            {/* Zielgruppen Section */}
-            <div className="mb-4">
-              <div className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest px-3 py-2">Zielgruppen</div>
-              <div className="grid grid-cols-2 gap-1">
-                <Link href="/architekturmodelle" 
-                  className="flex items-center gap-2 p-3 text-foreground rounded-xl hover:bg-primary/10 active:bg-primary/20 active:scale-[0.98] transition-all"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <Building2 className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span className="text-sm font-medium truncate">Architektur</span>
-                </Link>
-                <Link href="/messemodelle" 
-                  className="flex items-center gap-2 p-3 text-foreground rounded-xl hover:bg-primary/10 active:bg-primary/20 active:scale-[0.98] transition-all"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <Presentation className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span className="text-sm font-medium truncate">Messe</span>
-                </Link>
-                <Link href="/firmenkunden" 
-                  className="flex items-center gap-2 p-3 text-foreground rounded-xl hover:bg-primary/10 active:bg-primary/20 active:scale-[0.98] transition-all"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <Building className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span className="text-sm font-medium truncate">Firmenkunden</span>
-                </Link>
-                <Link href="/architekturmodelle-abo"
-                  className="flex items-center gap-2 p-3 text-foreground rounded-xl border border-primary/20 bg-primary/5 hover:bg-primary/10 active:bg-primary/20 active:scale-[0.98] transition-all"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <Sparkles className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span className="text-sm font-medium truncate text-primary">Flatrate NEU</span>
-                </Link>
-                <Link href="/branchen"
-                  className="flex items-center gap-2 p-3 text-foreground rounded-xl border border-primary/20 bg-primary/5 hover:bg-primary/10 active:bg-primary/20 active:scale-[0.98] transition-all col-span-2"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <Layers className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span className="text-sm font-medium truncate text-primary">Branchen-Lösungen NEU</span>
-                  <span className="text-[10px] text-muted-foreground ml-auto">Maschinenbau · Schiffbau · Energie …</span>
-                </Link>
-              </div>
+              ))}
             </div>
 
             {/* Quick Actions */}
-            <div className="border-t border-border/50 pt-4 space-y-2">
-              <div className="grid grid-cols-3 gap-2 mb-2">
+            <div className="border-t border-border/50 pt-4 mt-4 space-y-2">
+              <Link
+                href="/kostenrechner"
+                className="flex items-center gap-3 p-3 bg-primary/5 text-foreground rounded-xl hover:bg-primary/10 active:scale-[0.98] transition-all"
+                onClick={() => setIsOpen(false)}
+              >
+                <Calculator className="h-5 w-5 text-primary" />
+                <div>
+                  <div className="font-semibold text-sm">Kostenrechner</div>
+                  <div className="text-xs text-muted-foreground">Preis sofort berechnen</div>
+                </div>
+              </Link>
+
+              <div className="grid grid-cols-3 gap-2">
                 <a
                   href={`tel:${CONTACT.phone}`}
                   className="flex flex-col items-center gap-1 p-3 bg-primary/5 text-foreground rounded-xl hover:bg-primary/10 active:scale-[0.98] transition-all"
@@ -326,46 +158,10 @@ const Navigation = () => {
                   <span className="text-[11px] font-semibold">Termin</span>
                 </a>
               </div>
-
-              <Link href="/kostenrechner"
-                className="flex items-center gap-3 p-3 bg-primary/5 text-foreground rounded-xl hover:bg-primary/10 active:scale-[0.98] transition-all"
-                onClick={() => setIsOpen(false)}
-              >
-                <Calculator className="h-5 w-5 text-primary" />
-                <div>
-                  <div className="font-semibold text-sm">Kostenrechner</div>
-                  <div className="text-xs text-muted-foreground">Preis sofort berechnen</div>
-                </div>
-              </Link>
-
-              <div className="grid grid-cols-3 gap-2 mt-2">
-                <Link href="/cases" onClick={() => setIsOpen(false)}
-                  className="flex flex-col items-center gap-1 p-3 bg-muted/40 text-foreground rounded-xl hover:bg-primary/10 active:scale-[0.98] transition-all">
-                  <span className="text-[11px] font-bold uppercase tracking-wider">Cases</span>
-                  <span className="text-[9px] text-muted-foreground">Projekt-Stories</span>
-                </Link>
-                <Link href="/preise" onClick={() => setIsOpen(false)}
-                  className="flex flex-col items-center gap-1 p-3 bg-muted/40 text-foreground rounded-xl hover:bg-primary/10 active:scale-[0.98] transition-all">
-                  <span className="text-[11px] font-bold uppercase tracking-wider">Preise</span>
-                  <span className="text-[9px] text-muted-foreground">Echte Beispiele</span>
-                </Link>
-                <Link href="/qualitaet" onClick={() => setIsOpen(false)}
-                  className="flex flex-col items-center gap-1 p-3 bg-muted/40 text-foreground rounded-xl hover:bg-primary/10 active:scale-[0.98] transition-all">
-                  <span className="text-[11px] font-bold uppercase tracking-wider">Qualität</span>
-                  <span className="text-[9px] text-muted-foreground">Garantien</span>
-                </Link>
-              </div>
             </div>
 
-            <Button
-              variant="hero"
-              size="sm"
-              className="w-full mt-4"
-              asChild
-            >
-              <Link href="/kontakt" onClick={() => setIsOpen(false)}>
-                Angebot erhalten
-              </Link>
+            <Button variant="hero" size="sm" className="w-full mt-4" asChild>
+              <Link href="/kontakt" onClick={() => setIsOpen(false)}>Angebot erhalten</Link>
             </Button>
           </div>
         )}
