@@ -144,8 +144,8 @@ const FunnelHero = () => {
                   {/* Mini-Stats, vertical stack */}
                   <div className="space-y-4">
                     <div className="flex items-baseline justify-between">
-                      <span className="mono text-xs uppercase tracking-wider text-background/60">FDM-Drucker</span>
-                      <span className="font-mono text-2xl font-bold text-primary">{BRAND.printers.fdm}</span>
+                      <span className="mono text-xs uppercase tracking-wider text-background/60">Modellgröße</span>
+                      <span className="font-mono text-2xl font-bold text-primary">2 m+</span>
                     </div>
                     <div className="flex items-baseline justify-between">
                       <span className="mono text-xs uppercase tracking-wider text-background/60">Express möglich</span>

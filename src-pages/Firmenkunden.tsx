@@ -158,7 +158,7 @@ const Firmenkunden = () => {
     { 
       step: "3", 
       title: "Produktion", 
-      description: "Bei Bestätigung starten wir sofort. Moderne Druckfarm mit paralleler Fertigung für schnelle Lieferung.",
+      description: "Bei Bestätigung starten wir sofort. Parallelfertigung für schnelle Lieferung.",
       icon: Factory,
       time: "3-7 Werktage"
     },
@@ -680,7 +680,7 @@ const Firmenkunden = () => {
 
               <h3 className="text-2xl md:text-3xl font-bold mt-12 mb-5 tracking-[-0.02em]">Kleinserie 5-500 Stück, wann FDM, wann SLS, wann Spritzguss</h3>
               <div className="prose prose-lg max-w-none text-foreground/85">
-                <p>Bei <strong>Kleinserienfertigung</strong> hängt das wirtschaftliche Verfahren von Stückzahl und Geometrie ab. <strong>FDM in-house</strong> ist die Standard-Wahl für 1-100 Stück bei einfachen Geometrien, wir können bis zu 6 Bauteile parallel auf den drei Druckern fahren, die Stückkosten bleiben konstant. Ab <strong>50-500 Stück</strong> und höheren Festigkeitsanforderungen lohnt sich <strong>SLS oder MJF über Partner</strong>, etwa €4-12 pro Bauteil je nach Größe. Ab <strong>1.000-5.000 Stück</strong> wird klassischer <strong>Spritzguss</strong> wirtschaftlich, dann verweisen wir ehrlich an einen Spritzgießer und übernehmen optional die Urmodell-Fertigung. Diese Schwellen sind in Realität fließend, wir kalkulieren beide Verfahren und legen Ihnen den Vergleich offen, damit Sie die Entscheidung treffen können.</p>
+                <p>Bei <strong>Kleinserienfertigung</strong> hängt das wirtschaftliche Verfahren von Stückzahl und Geometrie ab. <strong>FDM in-house</strong> ist die Standard-Wahl für 1-100 Stück bei einfachen Geometrien, wir fertigen mehrere Objekte parallel, die Stückkosten bleiben konstant. Ab <strong>50-500 Stück</strong> und höheren Festigkeitsanforderungen lohnt sich <strong>SLS oder MJF über Partner</strong>, etwa €4-12 pro Bauteil je nach Größe. Ab <strong>1.000-5.000 Stück</strong> wird klassischer <strong>Spritzguss</strong> wirtschaftlich, dann verweisen wir ehrlich an einen Spritzgießer und übernehmen optional die Urmodell-Fertigung. Diese Schwellen sind in Realität fließend, wir kalkulieren beide Verfahren und legen Ihnen den Vergleich offen, damit Sie die Entscheidung treffen können.</p>
 
                 <p>Für viele <strong>Innovation-Projekte und Vorseriendrucke</strong> sind 20-100 Stück FDM-Kleinserien genau richtig: schnelle Iteration, niedriges Risiko, keine Tool-Investition. Wenn das Produkt sich bewährt, geht es in Spritzguss; wenn nicht, ist nur ein Bruchteil des Geldes weg.</p>
               </div>

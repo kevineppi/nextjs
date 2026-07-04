@@ -140,7 +140,7 @@ export const cases: RealCase[] = [
     status: 'completed',
 
     metaTitle: 'Case: 3.500 Custom-Keksausstecher für Generali Weihnachten · 3D-Druck',
-    metaDescription: 'Wie wir in 3 Wochen 3.500 individuelle Keksausstecher mit Generali-Logo für die Mitarbeiter-Aktion produziert haben. Lebensmittelechtes PETG, kombinierte Druckfarmen.',
+    metaDescription: 'Wie wir in 3 Wochen 3.500 individuelle Keksausstecher mit Generali-Logo für die Mitarbeiter-Aktion produziert haben. Lebensmittelechtes PETG, kombinierte Parallelfertigung.',
     primaryKeyword: 'Custom Keksausstecher 3D-Druck',
 
     challenge:
@@ -152,8 +152,8 @@ export const cases: RealCase[] = [
         detail: 'Eigene CAD-Variation mit erhabenem Logo (statt graviertem) · reduziert Druckzeit pro Stück um 40%, weil keine zusätzlichen Verfahrwege für die Logo-Gravur nötig sind.',
       },
       {
-        label: 'Druckfarm-Parallelisierung',
-        detail: 'Alle 3 FDM-Drucker 24/7 in Parallel-Betrieb. Pro Druckbett 28 Ausstecher gleichzeitig. Ø-Ausstoß 850 Stück/Tag in Spitzenphasen.',
+        label: 'Parallelfertigung',
+        detail: 'Alle FDM-Anlagen 24/7 in Parallel-Betrieb. Pro Druckbett 28 Ausstecher gleichzeitig. Ø-Ausstoß 850 Stück/Tag in Spitzenphasen.',
       },
       {
         label: 'Material: lebensmittelechtes PETG',
@@ -272,7 +272,7 @@ export const cases: RealCase[] = [
     approach: [
       {
         label: 'Mehrfach-Produktion in Klein-Serie',
-        detail: '6 identische Modelle aus dem gleichen CAD. Parallel-Druck auf 2 Druckern, identische Druck-Parameter für 1:1-Reproduzierbarkeit.',
+        detail: '6 identische Modelle aus dem gleichen CAD. Parallel-Druck mit identischen Druck-Parametern für 1:1-Reproduzierbarkeit.',
       },
       {
         label: 'Drehbares Laufrad',

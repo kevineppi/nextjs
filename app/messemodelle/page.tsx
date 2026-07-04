@@ -48,7 +48,7 @@ const FAQ_LD = faqSchema([
   },
   {
     q: 'Können bewegliche Elemente (Rotoren, Getriebe) im Modell integriert werden?',
-    a: 'Ja. Wir integrieren bewegliche Mechaniken direkt ins Modell: Drehgelenke, Schiebemechaniken, Demonstrations-Knöpfe. Multi-Material-Druck auf der Prusa XL vereint Bewegung und Optik in einem Stück.',
+    a: 'Ja. Wir integrieren bewegliche Mechaniken direkt ins Modell: Drehgelenke, Schiebemechaniken, Demonstrations-Knöpfe. Multi-Material-Druck vereint Bewegung und Optik in einem Stück.',
   },
   {
     q: 'Welche Maßstäbe sind üblich für Messemodelle?',

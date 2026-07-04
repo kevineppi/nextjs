@@ -149,7 +149,7 @@ const materials = [
 const process = [
   { step: "01", icon: Lightbulb, title: "Anfrage & Beratung", desc: "Datei senden oder Projekt beschreiben, per E-Mail, Telefon oder Kontaktformular. Kostenlose Erstberatung zur Machbarkeit." },
   { step: "02", icon: Ruler, title: "Angebot in 6h", desc: "Sie erhalten innerhalb von 6 Arbeitsstunden ein verbindliches Angebot mit Preis, Liefertermin und Materialempfehlung." },
-  { step: "03", icon: Cpu, title: "Fertigung", desc: "Nach Bestätigung beginnt die Produktion. Moderne Druckfarm mit parallelen Druckern für kurze Durchlaufzeiten." },
+  { step: "03", icon: Cpu, title: "Fertigung", desc: "Nach Bestätigung beginnt die Produktion. Parallelfertigung für kurze Durchlaufzeiten." },
   { step: "04", icon: Truck, title: "Lieferung österreichweit", desc: "Sichere Verpackung, DHL/GLS-Versand mit Tracking. Expresslieferung Wien 24h, ganz Österreich 1–2 Werktage." }
 ];
 

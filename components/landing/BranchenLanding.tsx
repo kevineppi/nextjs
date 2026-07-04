@@ -276,7 +276,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
                     <span className="text-primary">Selbst.</span>
                   </h2>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Werkstatt in {BRAND.location}. {BRAND.printers.fdm} Industrie-FDM-Drucker im Dauerbetrieb.
+                    Werkstatt in {BRAND.location}. Industrielle FDM-Fertigung im Dauerbetrieb.
                   </p>
                 </div>
                 <div className="md:col-span-8 space-y-4 text-base md:text-lg leading-relaxed">

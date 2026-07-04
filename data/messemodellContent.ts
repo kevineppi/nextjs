@@ -399,7 +399,7 @@ export const messeFAQs: FAQItem[] = [
   {
     question: 'Können bewegliche Komponenten in ein Messemodell integriert werden?',
     answer:
-      'Ja · bewegliche Mechanismen sind einer der häufigsten Aufträge für Industrie-Messemodelle. Typische Beispiele: rotierende Spindeln in CNC-Fräsen, klappbare Türen an Schaltanlagen, drehende Wellen in Antrieben, segmentierbare Anlagenmodule. Für mechanisch belastete Komponenten verwenden wir PA-CF (Carbon-Faser-verstärktes Polyamid), Lager aus POM oder Messing-Inserts. Toleranzen ±0,1 mm sind im FDM-Druck mit Premium-Maschinen (Prusa XL, Bambulab P1S) erreichbar.',
+      'Ja · bewegliche Mechanismen sind einer der häufigsten Aufträge für Industrie-Messemodelle. Typische Beispiele: rotierende Spindeln in CNC-Fräsen, klappbare Türen an Schaltanlagen, drehende Wellen in Antrieben, segmentierbare Anlagenmodule. Für mechanisch belastete Komponenten verwenden wir PA-CF (Carbon-Faser-verstärktes Polyamid), Lager aus POM oder Messing-Inserts. Toleranzen ±0,1 mm sind im FDM-Druck mit unseren Premium-FDM-Anlagen erreichbar.',
   },
   {
     question: 'Brauchen Industrie-Messemodelle Zertifikate für DIN 4102 oder DIN EN 13501?',

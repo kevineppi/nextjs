@@ -523,7 +523,7 @@ export default function BranchenPage() {
                   {
                     step: '03',
                     title: 'Druck-Phase',
-                    desc: 'Parallel-Druck auf 3 Industriedruckern (2× Bambulab P1S + Prusa XL 5T). Tagaufträge möglich.',
+                    desc: 'Parallelfertigung auf industriellen FDM-Anlagen. Tagaufträge möglich.',
                     Icon: Layers,
                   },
                   {
