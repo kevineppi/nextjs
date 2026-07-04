@@ -46,7 +46,7 @@ const FAQ_LD = faqSchema([
   },
   {
     q: 'Welche Materialien verwendet ihr für Architekturmodelle?',
-    a: 'Standardmäßig PLA matt (cremeweiß oder anthrazit) und PETG für transparente Elemente. Für Outdoor-Modelle ASA. Multi-Material-Druck mit der Prusa XL ermöglicht bis zu 5 Farben in einem Druckteil.',
+    a: 'Standardmäßig PLA matt (cremeweiß oder anthrazit) und PETG für transparente Elemente. Für Outdoor-Modelle ASA. Multi-Material-Druck ermöglicht bis zu 5 Farben in einem Modell.',
   },
   {
     q: 'Was kostet ein Architekturmodell für Wettbewerbe?',

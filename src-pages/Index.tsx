@@ -349,7 +349,7 @@ const Index = () => {
 
             <div className="grid md:grid-cols-2 gap-12 md:gap-16 mb-20">
               <AnimatedSection animation="slide-up" delay={0.1}>
-                <h3 className="text-2xl md:text-3xl font-bold mb-5 tracking-[-0.02em]">Werkstatt &amp; Maschinenpark.</h3>
+                <h3 className="text-2xl md:text-3xl font-bold mb-5 tracking-[-0.02em]">Werkstatt &amp; Technik.</h3>
                 <p className="text-base leading-[1.85] text-foreground/85 mb-4">
                   Unser <strong>3D-Druck Service in Österreich</strong> läuft auf industriellen FDM-Anlagen: schnelle Standard-Fertigung und <strong>Multi-Material-Druck</strong> bis 360×360×360&nbsp;mm. Anlagen, Material und Service kontrollieren wir komplett selbst, kein White-Label, kein Sublieferant, kein „wir geben das weiter".
                 </p>

@@ -925,8 +925,8 @@ export default function MessemodellGuidePage() {
                   <div>
                     <h4 className="font-bold mb-1">Hauptdruck-Phase</h4>
                     <p className="text-sm text-muted-foreground">
-                      Druck der Hauptkorpus-Komponenten parallel auf 3 Industriedruckern
-                      (2× Bambulab P1S, 1× Prusa XL 5T).
+                      Druck der Hauptkorpus-Komponenten parallel auf mehreren FDM-Anlagen
+                      (industrielle FDM-Anlagen).
                     </p>
                   </div>
                 </div>

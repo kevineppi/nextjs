@@ -39,7 +39,7 @@ const wien: ExtendedArchitekturSections = {
     steps: [
       { title: 'CAD-Datei & Maßstab klären', description: 'Wir prüfen Ihren Export aus ArchiCAD, Revit oder Rhino. Maßstab, Detailgrad und Farbkonzept werden gemeinsam festgelegt.', context: 'Wiener Büros liefern meist ArchiCAD-Exporte. STEP und STL funktionieren ebenso.' },
       { title: 'Modellvorbereitung & Druckplanung', description: 'Wir teilen das Modell in druckbare Segmente, planen Stützstrukturen und optimieren die Druckorientierung für maximale Detailschärfe.', context: 'Bei 1:200 entscheidet die Druckorientierung über die Sichtbarkeit von Fensterlaibungen.' },
-      { title: 'Paralleldruck auf mehreren Druckern', description: 'Gebäude, Umgebung und Grundplatte werden parallel gefertigt. So sind auch komplexe Stadtmodelle in 48h fertig.', context: 'Wir setzen bis zu 8 Drucker gleichzeitig ein · das macht den Express-Service erst möglich.' },
+      { title: 'Paralleldruck auf mehreren Druckern', description: 'Gebäude, Umgebung und Grundplatte werden parallel gefertigt. So sind auch komplexe Stadtmodelle in 48h fertig.', context: 'Wir setzen mehrere Komponenten parallel · das macht den Express-Service erst möglich.' },
       { title: 'Montage & Qualitätskontrolle', description: 'Alle Teile werden montiert, geprüft und für den Transport nach Wien bruchsicher verpackt.', context: 'Persönliche Übergabe in Wien ist auf Anfrage möglich · ideal bei großen Modellen.' },
     ],
   },

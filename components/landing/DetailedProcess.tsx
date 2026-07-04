@@ -40,7 +40,7 @@ const defaultSteps: ProcessStep[] = [
     title: "Produktion",
     description: "Ihre Objekte werden auf professionellen FDM-Druckern gefertigt",
     details: [
-      "Moderne Bambu Lab und Prusa Drucker",
+      "Moderne industrielle FDM-Anlagen",
       "Qualitätskontrolle bei jedem Druckvorgang",
       "Optimierte Druckparameter für beste Ergebnisse"
     ]

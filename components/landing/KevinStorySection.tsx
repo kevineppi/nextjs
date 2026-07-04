@@ -93,7 +93,7 @@ const KevinStorySection = () => {
                   time: '08:00 – 17:00',
                   title: 'Vollzeitjob — Drucker laufen automatisch',
                   detail:
-                    'Während ich bei rent.group bin, laufen die FDM-Drucker im 24/7-Betrieb. Bambu-Studio-Setup mit Failure-Detection: wenn ein Druck schiefgeht, bekomme ich Push-Benachrichtigung. Mittagspause = oft auch Werkstatt-Check, je nach Auftragslage.',
+                    'Während ich bei rent.group bin, laufen die FDM-Drucker im 24/7-Betrieb. Failure-Detection-Setup: wenn ein Druck schiefgeht, bekomme ich Push-Benachrichtigung. Mittagspause = oft auch Werkstatt-Check, je nach Auftragslage.',
                 },
                 {
                   time: '17:30 – 22:00',

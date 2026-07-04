@@ -4,12 +4,12 @@ import { buildDachAlternates, STANDARD_ROBOTS, breadcrumbSchema, ORG_ID } from '
 
 export const metadata: Metadata = {
   title: 'Über uns · Kevin Eppensteiner, Gründer von ek-druck',
-  description: 'Wer hinter ekdruck steht: Kevin Eppensteiner, 21, Maschinenbau-Student und Inhaber. Werkstatt in Gunskirchen, OÖ. 3 industrielle FDM-Drucker. ★5,0 (31 Bewertungen).',
+  description: 'Wer hinter ekdruck steht: Kevin Eppensteiner, 21, Maschinenbau-Student und Inhaber. Werkstatt in Gunskirchen, OÖ. Großformat-Fertigung bis 2 m. ★5,0 (31 Bewertungen).',
   alternates: buildDachAlternates('/ueber-uns'),
   robots: STANDARD_ROBOTS,
   openGraph: {
     title: 'Über uns · Kevin Eppensteiner, Gründer von ek-druck',
-    description: 'Wer hinter ekdruck steht: Kevin Eppensteiner, 21, Maschinenbau-Student und Inhaber. Werkstatt in Gunskirchen, OÖ. 3 industrielle FDM-Drucker. ★5,0 (31 Bewertungen).',
+    description: 'Wer hinter ekdruck steht: Kevin Eppensteiner, 21, Maschinenbau-Student und Inhaber. Werkstatt in Gunskirchen, OÖ. Großformat-Fertigung bis 2 m. ★5,0 (31 Bewertungen).',
     url: 'https://www.ek-druck.at/ueber-uns',
     siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',

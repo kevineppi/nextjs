@@ -47,8 +47,8 @@ const FAQ_LD = faqSchema([
     a: 'Standard-Messemodelle sind in 5-10 Werktagen versandfertig. Bei knappen Messeterminen bieten wir Express-Service ab 48h. Je früher die CAD-Daten kommen, desto entspannter die Produktion.',
   },
   {
-    q: 'Können bewegliche Teile (Rotoren, Getriebe) im Modell integriert werden?',
-    a: 'Ja. Wir konstruieren bewegliche Mechaniken direkt in das Modell · Drehgelenke, Schiebemechaniken, Demonstrations-Knöpfe. Multi-Material-Druck auf der Prusa XL erlaubt Funktion + Optik in einem Druckteil.',
+    q: 'Können bewegliche Elemente (Rotoren, Getriebe) im Modell integriert werden?',
+    a: 'Ja. Wir integrieren bewegliche Mechaniken direkt ins Modell: Drehgelenke, Schiebemechaniken, Demonstrations-Knöpfe. Multi-Material-Druck vereint Bewegung und Optik in einem Stück.',
   },
   {
     q: 'Welche Maßstäbe sind üblich für Messemodelle?',

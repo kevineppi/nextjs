@@ -17,8 +17,8 @@ const UeberUns = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SEOHead
-        title="Über uns — Kevin Eppensteiner, ekdruck e.U. aus Gunskirchen | ekdruck"
-        description="Wer hinter ekdruck steht: Kevin Eppensteiner, 21, Maschinenbau-Student und Inhaber. Werkstatt in Gunskirchen, OÖ. 3 industrielle FDM-Drucker. ★5,0 (31 Bewertungen)."
+        title="Über uns, Kevin Eppensteiner, ekdruck e.U. aus Gunskirchen | ekdruck"
+        description="Wer hinter ekdruck steht: Kevin Eppensteiner, 21, Maschinenbau-Student und Inhaber. Werkstatt in Gunskirchen, OÖ. Großformat-Fertigung bis 2 m. ★5,0 (31 Bewertungen)."
         keywords="ekdruck über uns, kevin eppensteiner, ekdruck e.u., 3d druck gunskirchen, 3d druck inhaber oberösterreich, 3d druck werkstatt"
         path="/ueber-uns"
       />
@@ -76,13 +76,13 @@ const UeberUns = () => {
                 steht eine Person.
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Kein anonymes 3D-Druck-Portal mit Vertriebsteam. Eine kleine Werkstatt in Gunskirchen, drei
-                industrielle FDM-Drucker, ein Inhaber: Kevin Eppensteiner, {BRAND.founderAge}.
+                Kein anonymes 3D-Druck-Portal mit Vertriebsteam. Eine kleine, spezialisierte
+                FDM-Werkstatt in Gunskirchen, ein Inhaber: Kevin Eppensteiner, {BRAND.founderAge}.
                 Maschinenbau-Student ab Oktober {BRAND.yearFounded + 2}.
               </p>
               <div className="flex flex-wrap gap-3 justify-center mt-8">
                 {[
-                  `${BRAND.printers.fdm} industrielle FDM-Drucker`,
+                  "Großformat bis 2 m",
                   "Angebot in 6h",
                   "Made in Austria",
                   `★5,0 · ${BRAND.reviews.count} Bewertungen`,
@@ -96,12 +96,12 @@ const UeberUns = () => {
           </div>
         </section>
 
-        {/* ── KENNZAHLEN (korrigiert: 3 statt 10+ Drucker) ──── */}
+        {/* ── KENNZAHLEN ──── */}
         <section className="py-14 border-y border-border/50 bg-card/40 backdrop-blur-sm">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
               {[
-                { value: `${BRAND.printers.fdm}`, label: "FDM-Drucker", sublabel: "2× Bambu P1S + 1× Prusa XL", icon: Printer },
+                { value: "2 m+", label: "Modellgröße", sublabel: "Großformat-Fertigung", icon: Printer },
                 { value: `${BRAND.yearFounded}`, label: "Firmengründung", sublabel: "ekdruck e.U.", icon: Award },
                 { value: "6h", label: "Angebots-Garantie", sublabel: "Verbindlich & kostenlos", icon: Zap },
                 { value: `★${BRAND.reviews.rating}`, label: "Google-Rating", sublabel: `${BRAND.reviews.count} Bewertungen`, icon: Users },
@@ -189,15 +189,15 @@ const UeberUns = () => {
           </div>
         </section>
 
-        {/* ── MASCHINENPARK (korrigiert: ehrlich 3 Drucker) ── */}
+        {/* ── TECHNIK & KAPAZITAET ── */}
         <section className="py-20 md:py-28">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <AnimatedSection animation="fade-in" className="text-center mb-14">
                 <Badge variant="outline" className="mb-4 text-xs">Technik & Kapazität</Badge>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Der Maschinenpark</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Technik & Kapazität</h2>
                 <p className="text-muted-foreground max-w-xl mx-auto">
-                  Drei industrielle FDM-Drucker — bewusst gewählt für Spezialisierung statt Massendurchsatz.
+                  Industrielle FDM-Technik, bewusst gewählt für Spezialisierung statt Massendurchsatz.
                   Im 24/7-Parallelbetrieb für kurze Lieferzeiten auch bei größeren Aufträgen.
                 </p>
               </AnimatedSection>
@@ -206,13 +206,13 @@ const UeberUns = () => {
                 {[
                   {
                     icon: Printer,
-                    title: "2× Bambulab P1S",
-                    description: "Highspeed-FDM für Standard-Modelle, Detailgrade bis 0,1mm Schichthöhe, Bauvolumen 256×256×256mm. Hauptarbeitstier.",
+                    title: "Highspeed-FDM",
+                    description: "Für Standard-Modelle, Detailgrade bis 0,1 mm Schichthöhe, Bauvolumen bis 256×256×256 mm. Unser Arbeitstier für schnelle Durchlaufzeiten.",
                   },
                   {
                     icon: Package,
-                    title: "1× Prusa XL (5-Toolhead)",
-                    description: "Großformat-FDM bis 360×360×360mm. Multi-Material-Druck mit bis zu 5 Filamenten gleichzeitig — perfekt für mehrfarbige Modelle ohne Maskierung.",
+                    title: "Großformat & Multi-Material",
+                    description: "Großformat-FDM bis 360×360×360 mm, Multi-Material-Druck mit bis zu 5 Filamenten gleichzeitig, perfekt für mehrfarbige Modelle ohne Maskierung.",
                   },
                   {
                     icon: Clock,

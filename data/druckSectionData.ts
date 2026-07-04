@@ -1038,7 +1038,7 @@ const gunskirchen: DruckSectionDataSet = {
     headline: 'Direkt aus unserer Werkstatt',
     subheadline: 'Erleben Sie FDM-3D-Druck hautnah · vom Drucker direkt in Ihre Hand',
     specs: [
-      { label: 'Druckerpark', value: '8 FDM-Drucker', detail: 'Parallele Fertigung mehrerer Aufträge' },
+      { label: 'Kapazität', value: 'Parallelfertigung', detail: 'Mehrere Aufträge gleichzeitig' },
       { label: 'Materialien vor Ort', value: 'PLA+ PETG ASA TPU', detail: 'Alle Materialien zum Anfassen' },
       { label: 'Sofortfertigung', value: 'Ab 2 Stunden', detail: 'Für einfache Geometrien' },
       { label: 'Co-Design', value: 'Gemeinsam am PC', detail: 'Wir konstruieren mit Ihnen zusammen' },
@@ -1127,7 +1127,7 @@ const oberoesterreich: DruckSectionDataSet = {
     headline: 'Technische Daten unserer Fertigung',
     subheadline: 'FDM-Druck am Standort Gunskirchen · robust, reproduzierbar, professionell',
     specs: [
-      { label: 'Druckerpark', value: '8 FDM-Drucker', detail: 'Hohe Parallelkapazität' },
+      { label: 'Kapazität', value: 'Parallelfertigung', detail: 'Hohe Parallelkapazität' },
       { label: 'Materialien', value: 'PLA+ PETG ASA TPU', detail: 'Für jeden Einsatzzweck' },
       { label: 'Serienfertigung', value: 'Bis 80/Woche', detail: 'Identische Qualität pro Stück' },
       { label: 'Oberfläche', value: 'Roh bis lackiert', detail: 'Je nach Präsentationslevel' },
@@ -1153,7 +1153,7 @@ const oberoesterreich: DruckSectionDataSet = {
   expressTimeline: [
     { time: '0h', title: 'Anfrage per E-Mail/Telefon', description: 'CAD-Daten, Stückzahl, Terminwunsch.', highlight: false },
     { time: '4h', title: 'B2B-Angebot', description: 'Staffelpreis, Firmenrechnung, Terminbestätigung.', highlight: false },
-    { time: '1-3 Tage', title: 'Serienfertigung', description: 'Paralleldruck auf 8 Maschinen.', highlight: true },
+    { time: '1-3 Tage', title: 'Mehrfachfertigung', description: 'Parallelfertigung mehrerer Aufträge.', highlight: true },
     { time: '5-7 Tage', title: 'Abholung oder Versand', description: 'Persönlich in Gunskirchen oder OÖ-weiter Versand.', highlight: true },
   ],
   inTextLinks: [
