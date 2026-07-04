@@ -9,13 +9,13 @@ import {
 } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Architekturmodelle im 3D-Druck · Wettbewerbs- & Präsentationsmodelle | ekdruck',
-  description: 'Architekturmodellbau aus Österreich: Wettbewerbsmodelle, Einreichmodelle, Städtebaumodelle. Direkt aus ArchiCAD, Revit oder IFC. Angebot in 6 h.',
+  title: 'Architekturmodelle im 3D-Druck · Architekturmodellbau aus Österreich | ekdruck',
+  description: 'Architekturmodellbau: Wettbewerbsmodelle, Einreichmodelle, Städtebaumodelle im 3D-Druck. Direkt aus ArchiCAD, Revit oder IFC. Angebot in 6 h, Lieferung DACH-weit.',
   keywords: 'architekturmodell, architekturmodell drucken, architekturmodell 3d druck, architekturmodellbau, wettbewerbsmodell, präsentationsmodell architektur, städtebauliches modell, bauherrenmodell, stadtmodell drucken, gebäudemodell, architekturmodell wien, architekturmodell österreich, modellbau architektur, archicad 3d druck, revit modell drucken, sketchup modell drucken, rhino modell, maßstab 1 100, maßstab 1 200, maßstab 1 500, weißes modell, präsentationsmodell',
   alternates: buildDachAlternates('/architekturmodelle'),
   openGraph: {
-    title: 'Architekturmodelle im 3D-Druck · Wettbewerbs- & Präsentationsmodelle | ekdruck',
-    description: 'Architekturmodellbau aus Österreich: Wettbewerbsmodelle, Einreichmodelle, Städtebaumodelle. Direkt aus ArchiCAD, Revit oder IFC. Angebot in 6 h.',
+    title: 'Architekturmodelle im 3D-Druck · Architekturmodellbau aus Österreich | ekdruck',
+    description: 'Architekturmodellbau: Wettbewerbsmodelle, Einreichmodelle, Städtebaumodelle im 3D-Druck. Direkt aus ArchiCAD, Revit oder IFC. Angebot in 6 h, Lieferung DACH-weit.',
     url: 'https://www.ek-druck.at/architekturmodelle',
     siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Architekturmodelle im 3D-Druck · Wettbewerbs- & Präsentationsmodelle | ekdruck',
-    description: 'Architekturmodellbau aus Österreich: Wettbewerbsmodelle, Einreichmodelle, Städtebaumodelle. Direkt aus ArchiCAD, Revit oder IFC. Angebot in 6 h.',
+    title: 'Architekturmodelle im 3D-Druck · Architekturmodellbau aus Österreich | ekdruck',
+    description: 'Architekturmodellbau: Wettbewerbsmodelle, Einreichmodelle, Städtebaumodelle im 3D-Druck. Direkt aus ArchiCAD, Revit oder IFC. Angebot in 6 h, Lieferung DACH-weit.',
   },
   robots: STANDARD_ROBOTS,
 }

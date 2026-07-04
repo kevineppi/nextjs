@@ -8,8 +8,8 @@ import {
   breadcrumbSchema,
 } from '@/lib/seo'
 
-const TITLE = 'Messemodelle vom Spezialisten · Maßstabsmodelle für Ihren Messestand | ekdruck'
-const DESCRIPTION = 'Maßstabsgetreue Messemodelle aus Österreich: Produktmodelle, Schnittmodelle, bewegliche Modelle bis 2 m. Angebot in 6 h, Express-Fertigung, DACH-weite Lieferung.'
+const TITLE = 'Messemodelle & Exponate vom Spezialisten · Maßstabsmodelle für Ihren Messestand | ekdruck'
+const DESCRIPTION = 'Maßstabsgetreue Messemodelle und Exponate aus Österreich: Produktmodelle, Schnittmodelle, Funktionsmodelle bis 2 m. Angebot in 6 h, DACH-weite Lieferung.'
 
 export const metadata: Metadata = {
   title: TITLE,

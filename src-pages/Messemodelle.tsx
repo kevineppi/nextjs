@@ -103,7 +103,7 @@ const faqs = [
 
 const Messemodelle = () => (
   <>
-    <SEOHead title="Messemodelle, Exponate & Präsentationsmodelle | 3D-Druck Express | ekdruck" description="Messemodelle drucken lassen: Ausstellungsmodelle, Exponate & Schaumodelle für DACH-Messen. Express 24h · ab €30 · bruchsicher · ★5,0 (31 Bewertungen)" keywords="messemodelle, messemodell drucken lassen, messeexponat, ausstellungsmodell, präsentationsmodell, exponat, schaumodell, anschauungsmodell, industriemodell, messemodelle kosten, 3d druck messe, messestand modell, produktmodell messe, demonstrationsmodell, standmodell, eyecatcher messestand, modellbau messe, messebau modell" path="/messemodelle" />
+    <SEOHead title="Messemodelle & Exponate vom Spezialisten · Maßstabsmodelle für Ihren Messestand | ekdruck" description="Maßstabsgetreue Messemodelle und Exponate aus Österreich: Produktmodelle, Schnittmodelle, Funktionsmodelle bis 2 m. Angebot in 6 h, DACH-weite Lieferung." keywords="messemodelle, messemodell drucken lassen, messeexponat, ausstellungsmodell, präsentationsmodell, exponat, schaumodell, anschauungsmodell, industriemodell, messemodelle kosten, 3d druck messe, messestand modell, produktmodell messe, demonstrationsmodell, standmodell, eyecatcher messestand, modellbau messe, messebau modell" path="/messemodelle" />
     <ProductOfferSchema name="Messemodelle & Exponate 3D-Druck" description="3D-gedruckte Messemodelle, Exponate und Präsentationsmodelle für Fachmessen in Österreich, Deutschland und der Schweiz. Express 24h." price="30" image="https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png" />
     <Navigation />
     <main className="min-h-screen bg-background pt-28 md:pt-32">
@@ -137,7 +137,7 @@ const Messemodelle = () => (
               <div className="grid md:grid-cols-2 gap-12 items-end">
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                   Ihr Produkt ist zu groß, zu schwer oder zu teuer für den Messetransport?
-                  Wir fertigen maßstabsgetreue Messemodelle, Ausstellungs- und
+                  Wir fertigen maßstabsgetreue Messemodelle und Exponate, Ausstellungs- und
                   Präsentationsmodelle aus dem 3D-Druck, die Ihren Messestand zum Blickfang machen.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">

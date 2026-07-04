@@ -87,8 +87,8 @@ const faqs = [
 const Architekturmodelle = () => (
   <>
     <SEOHead
-      title="Architekturmodelle im 3D-Druck · Wettbewerbs- & Präsentationsmodelle | ekdruck"
-      description="Architekturmodellbau aus Österreich: Wettbewerbsmodelle, Einreichmodelle, Städtebaumodelle. Direkt aus ArchiCAD, Revit oder IFC. Angebot in 6 h."
+      title="Architekturmodelle im 3D-Druck · Architekturmodellbau aus Österreich | ekdruck"
+      description="Architekturmodellbau: Wettbewerbsmodelle, Einreichmodelle, Städtebaumodelle im 3D-Druck. Direkt aus ArchiCAD, Revit oder IFC. Angebot in 6 h, Lieferung DACH-weit."
       keywords="architekturmodell, architekturmodell drucken, architekturmodell 3d druck, architekturmodellbau, wettbewerbsmodell, präsentationsmodell architektur, städtebauliches modell, bauherrenmodell, stadtmodell drucken, gebäudemodell, architekturmodell wien, architekturmodell österreich, archicad 3d druck, revit modell drucken, sketchup modell drucken, rhino modell, maßstab 1 100, maßstab 1 200, maßstab 1 500, weißes modell"
       path="/architekturmodelle"
     />
