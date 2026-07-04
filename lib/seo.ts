@@ -1,10 +1,10 @@
 /**
- * SEO Helpers — Single Source of Truth für sitewide SEO-Patterns
+ * SEO Helpers, Single Source of Truth für sitewide SEO-Patterns
  * ──────────────────────────────────────────────────────────────────
  *
  * Hauptzweck:
- *   1. buildAlternates() — kanonische Hreflang-Setzung für DACH
- *   2. SITE_BASE — eine Stelle für die Domain
+ *   1. buildAlternates(), kanonische Hreflang-Setzung für DACH
+ *   2. SITE_BASE, eine Stelle für die Domain
  *   3. Canonical-Konsistenz: jede Page-Builder-Funktion nutzt dieses File
  *
  * Hreflang-Strategie für ek-druck (Stand 2026-05-26):
@@ -28,7 +28,7 @@ export const SITE_BASE = 'https://www.ek-druck.at' as const
 export type Locale = 'de-AT' | 'de-DE' | 'de-CH' | 'x-default'
 
 /**
- * Generic DACH-wide alternates — für Service-, Branchen-, Trust-Pages.
+ * Generic DACH-wide alternates, für Service-, Branchen-, Trust-Pages.
  * Selbe URL wird für alle 3 Locales gemeldet (Content sprach-identisch).
  *
  * @param path z.B. '/branchen/maschinenbau' (mit führendem Slash)
@@ -47,9 +47,9 @@ export const buildDachAlternates = (path: string) => {
 }
 
 /**
- * AT-exklusive alternates — für Bundesland-Pages oder Stadt-Pages
+ * AT-exklusive alternates, für Bundesland-Pages oder Stadt-Pages
  * mit explizitem AT-Geo-Bezug. Diese werden NICHT für DE/CH-User
- * ausgespielt — Google soll diese URLs nur für AT-Suchen ranken.
+ * ausgespielt, Google soll diese URLs nur für AT-Suchen ranken.
  */
 export const buildATOnlyAlternates = (path: string) => {
   const url = `${SITE_BASE}${path}`
@@ -63,7 +63,7 @@ export const buildATOnlyAlternates = (path: string) => {
 }
 
 /**
- * DE-exklusive alternates — für DE-Messe-Städte (München, Berlin, etc.)
+ * DE-exklusive alternates, für DE-Messe-Städte (München, Berlin, etc.)
  */
 export const buildDEOnlyAlternates = (path: string) => {
   const url = `${SITE_BASE}${path}`
@@ -77,7 +77,7 @@ export const buildDEOnlyAlternates = (path: string) => {
 }
 
 /**
- * CH-exklusive alternates — für CH-Messe-Städte (Zürich, Basel, etc.)
+ * CH-exklusive alternates, für CH-Messe-Städte (Zürich, Basel, etc.)
  */
 export const buildCHOnlyAlternates = (path: string) => {
   const url = `${SITE_BASE}${path}`
@@ -91,7 +91,7 @@ export const buildCHOnlyAlternates = (path: string) => {
 }
 
 /**
- * Robots-Defaults — überall gleich
+ * Robots-Defaults, überall gleich
  */
 export const STANDARD_ROBOTS = {
   index: true,
@@ -105,7 +105,7 @@ export const STANDARD_ROBOTS = {
 } as const
 
 // ═══════════════════════════════════════════════════════════════════
-// Schema.org JSON-LD Builders — Single Source of Truth
+// Schema.org JSON-LD Builders, Single Source of Truth
 // ═══════════════════════════════════════════════════════════════════
 //
 // Diese Funktionen erzeugen produktionsreife JSON-LD Objekte mit korrekt
@@ -117,8 +117,8 @@ export const STANDARD_ROBOTS = {
 export const ORG_ID = `${SITE_BASE}/#org` as const
 
 /**
- * LocalBusiness + Organization — site-weit im Root-Layout einbinden.
- * Setzt @id auf ORG_ID — andere Schemas können darauf referenzieren.
+ * LocalBusiness + Organization, site-weit im Root-Layout einbinden.
+ * Setzt @id auf ORG_ID, andere Schemas können darauf referenzieren.
  *
  * 2026-06-02: Konsolidiert die früher in OrganizationSchema.tsx, StructuredData.tsx und
  * AggregateRatingSchema.tsx verstreuten Schemas in EIN Master-Schema mit @id-Anker.
@@ -236,13 +236,13 @@ export const orgSchema = () => ({
 })
 
 /**
- * WebSite + SearchAction — für SiteLinks-Searchbox in SERPs.
+ * WebSite + SearchAction, für SiteLinks-Searchbox in SERPs.
  */
 export const websiteSchema = () => ({
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   '@id': `${SITE_BASE}/#website`,
-  name: 'ekdruck — 3D-Druck Österreich',
+  name: 'ekdruck, 3D-Druck Österreich',
   url: SITE_BASE,
   publisher: { '@id': ORG_ID },
   inLanguage: 'de-AT',
@@ -295,7 +295,7 @@ export const regionalLocalBusinessSchema = (params: {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   '@id': `${params.url}#localbusiness`,
-  name: `ekdruck e.U. — 3D-Druck für ${params.region}`,
+  name: `ekdruck e.U., 3D-Druck für ${params.region}`,
   parentOrganization: { '@id': ORG_ID },
   url: params.url,
   description: params.description,
@@ -317,7 +317,7 @@ export const regionalLocalBusinessSchema = (params: {
 })
 
 /**
- * FAQ-Schema — verwendet für Service-Seiten mit FAQ-Block
+ * FAQ-Schema, verwendet für Service-Seiten mit FAQ-Block
  */
 export const faqSchema = (faqs: Array<{ q: string; a: string }>) => ({
   '@context': 'https://schema.org',
@@ -333,7 +333,7 @@ export const faqSchema = (faqs: Array<{ q: string; a: string }>) => ({
 })
 
 /**
- * Breadcrumb-Schema — pro Unterseite
+ * Breadcrumb-Schema, pro Unterseite
  */
 export const breadcrumbSchema = (
   trail: Array<{ name: string; url: string }>,

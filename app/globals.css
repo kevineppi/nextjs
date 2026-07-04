@@ -1,5 +1,5 @@
 /* 2026-06-04: Google Fonts wurden auf next/font/google migriert (app/layout.tsx).
-   Vorher: @import url('https://fonts.googleapis.com/css2?family=...') — render-blocking.
+   Vorher: @import url('https://fonts.googleapis.com/css2?family=...'), render-blocking.
    Jetzt: self-gehostet via next/font mit automatischem preload + display: swap. */
 
 @tailwind base;
