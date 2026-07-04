@@ -4,6 +4,24 @@
 > Branch: `seo-umsetzung-jul`. Alle Aenderungen verifiziert mit `npm run build` (gruen) und curl gegen server-gerendertes HTML.
 > Diese Datei ist die Grundlage fuer die GSC-Nacharbeit (siehe unten).
 
+## 0. SICHERHEIT, DRINGEND (Task 0)
+
+**Befund:** Selbst-Registrierung war offen. Jeder konnte ein Konto anlegen; der Schutz des Admin-Bereichs haengt allein an den Supabase-Einstellungen.
+
+**Im Code erledigt (Defense-in-Depth):**
+- `src-pages/Auth.tsx`: Selbst-Registrierung deaktiviert (kein `supabase.auth.signUp` mehr, Register-Tab entfernt).
+- Admin-Gate (`src-pages/Admin.tsx`) prueft bereits `isAdmin` gegen die `user_roles`-Tabelle (nicht `user_metadata`, das ist korrekt). Kein `service_role`-Key im Client (geprueft, nicht vorhanden).
+
+**DRINGEND, nur DU kannst das im Supabase-Dashboard, das ist der eigentliche Schutz:**
+1. **Auth -> Sign In / Providers -> "Allow new users to sign up" AUSSCHALTEN.** Der anon-Key steht oeffentlich im Browser-Bundle; ohne diesen Schalter kann man `signUp` weiter direkt aufrufen, egal was im Frontend steht. DAS ist der eigentliche Fix.
+2. **Auth -> Users:** alle Accounts durchsehen, jeden unbekannten Account loeschen. Danach fuer deinen Admin-Account das Passwort aendern.
+3. **RLS auf ALLEN Tabellen pruefen** (Database -> Tables). Besonders `user_roles`: es darf KEINE Policy geben, die normale User dort schreiben laesst (sonst macht sich jeder selbst zum Admin). Jede Tabelle mit Kundendaten (Anfragen, Newsletter): RLS an, nur Admin-Rolle liest.
+4. Falls unbekannte Accounts existierten: pruefen, was sichtbar war (Kundendaten?), und Supabase-/Vercel-Keys rotieren.
+
+**Architektur-Hinweis:** Die App nutzt localStorage-Auth (kein Cookie), deshalb kann eine reine Next.js-Middleware die Session NICHT serverseitig pruefen. Fuer echten Server-Schutz muesste auf `@supabase/ssr` (Cookie-Auth) migriert werden, eigener groesserer Task. Aktuell traegt RLS die Sicherheit (Punkt 3).
+
+**Diesen Branch bitte ZUERST pushen/mergen, damit die deaktivierte Registrierung live geht.**
+
 ## 1. Geaenderte Titles + Meta (Task 1)
 
 | Seite | Title neu |

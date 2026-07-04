@@ -93,43 +93,15 @@ const Auth = () => {
     return () => subscription.unsubscribe();
   }, [router]);
 
-  const handleSignUp = async (values: RegisterFormData) => {
-    setLoading(true);
-    setError("");
-
-    try {
-      const redirectUrl = `${window.location.origin}/`;
-      
-      const { error } = await supabase.auth.signUp({
-        email: values.email,
-        password: values.password,
-        options: {
-          emailRedirectTo: redirectUrl
-        }
-      });
-
-      if (error) {
-        if (error.message.includes("already registered")) {
-          setError("Diese E-Mail-Adresse ist bereits registriert. Versuchen Sie sich anzumelden.");
-        } else if (error.message.includes("User already registered")) {
-          setError("Diese E-Mail-Adresse ist bereits registriert. Versuchen Sie sich anzumelden.");
-        } else if (error.message.includes("signature")) {
-          setError("Authentifizierungsfehler. Bitte kontaktieren Sie den Administrator.");
-          console.error("Signature error - check Supabase JWT secret configuration:", error);
-        } else {
-          setError(error.message);
-        }
-      } else {
-        toast.success("Registrierung erfolgreich!", {
-          description: "Prüfen Sie Ihre E-Mails für den Bestätigungslink. Falls Sie keine Email erhalten, wurde Ihr Account möglicherweise direkt aktiviert.",
-        });
-        registerForm.reset();
-      }
-    } catch (err) {
-      setError("Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.");
-    } finally {
-      setLoading(false);
-    }
+  // 2026-07-04 SECURITY (Task 0): Selbst-Registrierung deaktiviert.
+  // Der Aufruf von supabase.auth.signUp wurde bewusst entfernt. Admin-Accounts
+  // werden ausschliesslich manuell im Supabase-Dashboard angelegt.
+  // WICHTIG: Der autoritative Schutz ist Supabase -> Auth -> "Allow new users to
+  // sign up" AUS + RLS auf allen Tabellen. Der anon-Key ist oeffentlich, daher
+  // reicht das Deaktivieren im Frontend allein NICHT.
+  const handleSignUp = async (_values: RegisterFormData) => {
+    setError("Registrierung ist deaktiviert. Dieser Bereich ist nur für Administratoren.");
+    toast.error("Registrierung ist deaktiviert.");
   };
 
   const handleSignIn = async (values: LoginFormData) => {
@@ -188,7 +160,7 @@ const Auth = () => {
                 </span>
               </CardTitle>
               <CardDescription className="text-base">
-                Melden Sie sich an oder erstellen Sie ein Konto
+                Interner Bereich. Bitte melden Sie sich an.
               </CardDescription>
             </CardHeader>
             
@@ -201,14 +173,10 @@ const Auth = () => {
               )}
 
               <Tabs defaultValue="login" className="w-full">
-                <TabsList className="grid w-full grid-cols-2 mb-6">
+                <TabsList className="grid w-full grid-cols-1 mb-6">
                   <TabsTrigger value="login" className="flex items-center gap-2">
                     <LogIn className="h-4 w-4" />
                     Anmelden
-                  </TabsTrigger>
-                  <TabsTrigger value="register" className="flex items-center gap-2">
-                    <UserPlus className="h-4 w-4" />
-                    Registrieren
                   </TabsTrigger>
                 </TabsList>
 
@@ -403,8 +371,7 @@ const Auth = () => {
 
           <div className="mt-6 text-center">
             <p className="text-sm text-muted-foreground">
-              Hinweis: Nach der Registrierung erhalten Sie eine Bestätigungs-E-Mail.<br />
-              Bitte prüfen Sie auch Ihren Spam-Ordner.
+              Zugang nur für Administratoren. Konten werden nicht öffentlich vergeben.
             </p>
           </div>
         </div>
