@@ -8,8 +8,8 @@ import {
   breadcrumbSchema,
 } from '@/lib/seo'
 
-const TITLE = 'Messemodelle 3D-Druck ★5,0 · Tisch-Exponat in 24h | ekdruck'
-const DESCRIPTION = 'Ihr Produkt zu groß für den Messestand? 3D-gedrucktes Messemodell maßstabsgetreu in 24-48h. Bruchsicher, segmentiert, DACH-Express. ab €30 ★5,0 (31 Reviews) →'
+const TITLE = 'Messemodelle vom Spezialisten · Maßstabsmodelle für Ihren Messestand | ekdruck'
+const DESCRIPTION = 'Maßstabsgetreue Messemodelle aus Österreich: Produktmodelle, Schnittmodelle, bewegliche Modelle bis 2 m. Angebot in 6 h, Express-Fertigung, DACH-weite Lieferung.'
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 const SERVICE_LD = serviceSchema({
   serviceType: 'Messemodelle 3D-Druck',
   description:
-    'Bewegliche, miniaturisierte oder funktionale Messemodelle für Industrie-Aussteller. 8-Tonnen-Maschine als Tisch-Exponat. Express-Lieferung zu Messeterminen. Maschinenbau, Anlagenbau, Energietechnik.',
+    'Bewegliche, miniaturisierte Messemodelle für Industrie-Aussteller. 8-Tonnen-Maschine als Tisch-Exponat. Express-Lieferung zu Messeterminen. Maschinenbau, Anlagenbau, Energietechnik.',
   url: 'https://www.ek-druck.at/messemodelle',
   lowPrice: '30',
   highPrice: '8000',
@@ -47,8 +47,8 @@ const FAQ_LD = faqSchema([
     a: 'Standard-Messemodelle sind in 5-10 Werktagen versandfertig. Bei knappen Messeterminen bieten wir Express-Service ab 48h. Je früher die CAD-Daten kommen, desto entspannter die Produktion.',
   },
   {
-    q: 'Können bewegliche Teile (Rotoren, Getriebe) im Modell integriert werden?',
-    a: 'Ja. Wir konstruieren bewegliche Mechaniken direkt in das Modell · Drehgelenke, Schiebemechaniken, Demonstrations-Knöpfe. Multi-Material-Druck auf der Prusa XL erlaubt Funktion + Optik in einem Druckteil.',
+    q: 'Können bewegliche Elemente (Rotoren, Getriebe) im Modell integriert werden?',
+    a: 'Ja. Wir integrieren bewegliche Mechaniken direkt ins Modell: Drehgelenke, Schiebemechaniken, Demonstrations-Knöpfe. Multi-Material-Druck auf der Prusa XL vereint Bewegung und Optik in einem Stück.',
   },
   {
     q: 'Welche Maßstäbe sind üblich für Messemodelle?',

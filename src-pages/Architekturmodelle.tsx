@@ -121,13 +121,14 @@ const Architekturmodelle = () => (
                 Jetzt eine Zeile, Exact-Match auf Hauptkeyword "Architekturmodelle". */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-[-0.04em] mb-8">
               <span className="block text-gradient">Architekturmodelle.</span>
-              <span className="block text-3xl md:text-5xl lg:text-6xl mt-3 text-outline">Aus dem 3D-Druck.</span>
+              <span className="block text-3xl md:text-5xl lg:text-6xl mt-3 text-outline">1:50 bis 1:500 aus Ihren CAD-Daten.</span>
             </h1>
 
             <div className="grid md:grid-cols-2 gap-12 items-end mb-24 md:mb-32">
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                Vom CAD-File zum Modell auf dem Tisch in <strong className="text-foreground">3–5 Werktagen</strong>.
-                Wettbewerbsmodelle, Bauträger-Modelle, Stadtmodelle und Privatkunden-Projekte – im Maßstab <span className="mono font-bold text-primary">1:50 bis 1:1000</span>.
+                Professioneller <strong className="text-foreground">Architekturmodellbau</strong> aus Österreich:
+                vom CAD-File zum fertigen Modell auf dem Tisch in <strong className="text-foreground">3 bis 5 Werktagen</strong>.
+                Wettbewerbsmodelle, Einreichmodelle und Städtebaumodelle im Maßstab <span className="mono font-bold text-primary">1:50 bis 1:1000</span>, direkt aus ArchiCAD, Revit oder IFC.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-10 py-7 text-base font-semibold shadow-lg shadow-primary/20" asChild>

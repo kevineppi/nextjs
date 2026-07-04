@@ -9,13 +9,13 @@ import {
 } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Architekturmodell drucken lassen · 3D-Druck ★5,0 | ekdruck',
-  description: 'Architekturmodelle 3D-Druck: Wettbewerb · Bauherr · Stadtmodell. 1:50-1:500. ArchiCAD/Revit/Rhino. Express 24h. ab €20. ★5,0 (31 Bewertungen).',
+  title: 'Architekturmodelle im 3D-Druck · Wettbewerbs- & Präsentationsmodelle | ekdruck',
+  description: 'Architekturmodellbau aus Österreich: Wettbewerbsmodelle, Einreichmodelle, Städtebaumodelle. Direkt aus ArchiCAD, Revit oder IFC. Angebot in 6 h.',
   keywords: 'architekturmodell, architekturmodell drucken, architekturmodell 3d druck, architekturmodellbau, wettbewerbsmodell, präsentationsmodell architektur, städtebauliches modell, bauherrenmodell, stadtmodell drucken, gebäudemodell, architekturmodell wien, architekturmodell österreich, modellbau architektur, archicad 3d druck, revit modell drucken, sketchup modell drucken, rhino modell, maßstab 1 100, maßstab 1 200, maßstab 1 500, weißes modell, präsentationsmodell',
   alternates: buildDachAlternates('/architekturmodelle'),
   openGraph: {
-    title: 'Architekturmodell drucken lassen · 3D-Druck ★5,0 | ekdruck',
-    description: 'Architekturmodelle 3D-Druck: Wettbewerb · Bauherr · Stadtmodell. 1:50-1:500. ArchiCAD/Revit/Rhino. Express 24h. ab €20. ★5,0 (31 Bewertungen).',
+    title: 'Architekturmodelle im 3D-Druck · Wettbewerbs- & Präsentationsmodelle | ekdruck',
+    description: 'Architekturmodellbau aus Österreich: Wettbewerbsmodelle, Einreichmodelle, Städtebaumodelle. Direkt aus ArchiCAD, Revit oder IFC. Angebot in 6 h.',
     url: 'https://www.ek-druck.at/architekturmodelle',
     siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Architekturmodell drucken lassen · 3D-Druck ★5,0 | ekdruck',
-    description: 'Architekturmodelle 3D-Druck: Wettbewerb · Bauherr · Stadtmodell. Maßstab 1:50-1:500 ✓ Express 24h ✓ ab €20 ✓ ★5,0 (31 Bewertungen).',
+    title: 'Architekturmodelle im 3D-Druck · Wettbewerbs- & Präsentationsmodelle | ekdruck',
+    description: 'Architekturmodellbau aus Österreich: Wettbewerbsmodelle, Einreichmodelle, Städtebaumodelle. Direkt aus ArchiCAD, Revit oder IFC. Angebot in 6 h.',
   },
   robots: STANDARD_ROBOTS,
 }
@@ -46,7 +46,7 @@ const FAQ_LD = faqSchema([
   },
   {
     q: 'Welche Materialien verwendet ihr für Architekturmodelle?',
-    a: 'Standardmäßig PLA matt (cremeweiß oder anthrazit) und PETG für transparente Elemente. Für Outdoor-Modelle ASA. Multi-Material-Druck mit der Prusa XL ermöglicht bis zu 5 Farben in einem Druckteil.',
+    a: 'Standardmäßig PLA matt (cremeweiß oder anthrazit) und PETG für transparente Elemente. Für Outdoor-Modelle ASA. Multi-Material-Druck mit der Prusa XL ermöglicht bis zu 5 Farben in einem Modell.',
   },
   {
     q: 'Was kostet ein Architekturmodell für Wettbewerbe?',

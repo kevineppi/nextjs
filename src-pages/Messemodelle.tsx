@@ -130,15 +130,15 @@ const Messemodelle = () => (
               {/* 2026-06-04: H1-Hook schärfen — vorher "Messemodelle & Exponate drucken" (kein USP).
                   Jetzt: Hauptkeyword + USP-Pull "24h" als 2-Zeiler. Begründung in SEO-Sofortmaßnahmen §3.3 */}
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-[-0.04em] mb-8">
-                Messemodelle.<br/>
-                <span className="text-gradient">Der Hingucker am Messestand.</span>
+                Messemodelle,<br/>
+                <span className="text-gradient">die Ihr Produkt zum Messe-Highlight machen.</span>
               </h1>
 
               <div className="grid md:grid-cols-2 gap-12 items-end">
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                   Ihr Produkt ist zu groß, zu schwer oder zu teuer für den Messetransport?
-                  Wir fertigen maßstabsgetreue Ausstellungsmodelle, Schaumodelle und
-                  Präsentationsmodelle aus dem 3D-Druck.
+                  Wir fertigen maßstabsgetreue Messemodelle, Ausstellungs- und
+                  Präsentationsmodelle aus dem 3D-Druck, die Ihren Messestand zum Blickfang machen.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-10 py-7 text-base font-semibold shadow-lg" asChild>

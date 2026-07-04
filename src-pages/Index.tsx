@@ -37,8 +37,8 @@ import MagneticCard from "@/components/MagneticCard";
 const Index = () => {
   return <>
     <SEOHead
-      title="3D-Druck Österreich ★5,0 – Architekturmodelle & Messemodelle | ekdruck"
-      description="Österreichs Spezialist für Architekturmodelle & Messemodelle. ★ 5,0 Google (31 Bewertungen) · Angebot in 6h · Express 24h · ab €20 · Flatrate für Architekturbüros ab €199/Mon."
+      title="ekdruck · Architekturmodelle & Messemodelle aus dem 3D-Druck | Österreich"
+      description="Österreichs Spezialist für Architektur- und Messemodelle aus dem 3D-Druck. Von CAD/IFC bis zum fertigen Modell: Angebot in 6 h, Express-Fertigung."
       keywords="3d druck, 3d druck österreich, 3d druck service, 3d druck firma, 3d druck anbieter, 3d druck dienstleister, 3d druck oberösterreich, 3d druck prototypen"
       path="/"
     />

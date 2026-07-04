@@ -64,10 +64,11 @@ const Hero = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // 2026-06-04: H1 auf Hauptkeyword fokussiert (vorher: "Architektur- & Messemodelle.").
-  // Begründung in (C) SEO-Sofortmaßnahmen 2026-06-04 §1.1
-  const line1 = useTypewriter("3D-Druck.", 600, 70);
-  const line2 = useTypewriter("Aus Österreich.", 600 + 9 * 70 + 200, 65);
+  // 2026-07-04: H1 zurück auf die zwei Geldkeywords "Architekturmodelle & Messemodelle"
+  // (SEO-Umsetzung Task 1.3). "3D-Druck Österreich" bleibt sekundär in Subline + Meta,
+  // um die Homepage-Kannibalisierung mit /messemodelle auf "3D-Druck Österreich" aufzulösen.
+  const line1 = useTypewriter("Architekturmodelle", 600, 70);
+  const line2 = useTypewriter("& Messemodelle.", 600 + 18 * 70 + 200, 65);
 
   const t = (delay: number) => ({
     opacity: loaded ? 1 : 0,

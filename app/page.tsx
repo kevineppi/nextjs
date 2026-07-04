@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Index from '@/src-pages/Index'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 
-const TITLE = '3D-Druck Österreich ★5,0 · Express 24h ab €20 | ekdruck'
-const DESCRIPTION = 'Architekturmodelle · Messemodelle · Prototypen aus dem 3D-Druck. STL → Festpreis in 6h, Lieferung morgen. ★5,0 · Made in Gunskirchen →'
+const TITLE = 'ekdruck · Architekturmodelle & Messemodelle aus dem 3D-Druck | Österreich'
+const DESCRIPTION = 'Österreichs Spezialist für Architektur- und Messemodelle aus dem 3D-Druck. Von CAD/IFC bis zum fertigen Modell: Angebot in 6 h, Express-Fertigung.'
 
 export const metadata: Metadata = {
   title: TITLE,
