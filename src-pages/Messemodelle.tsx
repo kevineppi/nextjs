@@ -541,6 +541,33 @@ const Messemodelle = () => (
         </div>
       </section>
 
+      {/* MODELLTYPEN — Exponat / Produktmodell / Schnittmodell / Funktionsmodell (Cluster B) */}
+      <section className="py-24 md:py-32 bg-background" aria-label="Exponate und Produktmodelle für Messestände">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <AnimatedSection animation="fade-in" className="mb-12">
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Modelltypen</p>
+              <h2 className="text-4xl md:text-6xl font-bold leading-[0.95] tracking-[-0.04em]">Exponate &amp; Produktmodelle für Messestände</h2>
+            </AnimatedSection>
+            <div className="grid md:grid-cols-2 gap-4">
+              {[
+                { h: "Produktmodell", t: "Ihr Produkt maßstabsgetreu als Exponat, vergrößert für filigrane Details oder verkleinert, wenn das Original zu groß für den Stand ist. Der Klassiker: Besucher begreifen in Sekunden, was Sie herstellen, und bleiben stehen." },
+                { h: "Schnittmodell", t: "Das Schnittmodell öffnet Ihr Produkt und zeigt das Innenleben, ideal für erklärungsintensive Technik. Farblich abgesetzte Ebenen und aufklappbare Gehäuse machen Funktionsweisen sofort verständlich, ganz ohne Datenblatt." },
+                { h: "Funktionsmodell", t: "Bewegliche Exponate mit Dreh-, Schiebe- oder Klappmechanik, die Abläufe am Stand vorführen. Demonstrations-Knöpfe und bewegliche Elemente laden zum Anfassen ein und verlängern die Verweildauer, der stärkste Hebel für Standgespräche." },
+                { h: "Eyecatcher & Großmodell", t: "Großformatige Blickfang-Modelle bis über 2 m, segmentiert gefertigt und mit unsichtbaren Stoßkanten zusammengesetzt. Der Hingucker, der Ihren Stand aus der Halle heraushebt und für Fotos sorgt, die geteilt werden." },
+              ].map((m) => (
+                <AnimatedSection key={m.h} animation="slide-up">
+                  <div className="rounded-3xl bg-card border-2 border-border hover:border-primary/30 transition-all duration-500 p-8 h-full">
+                    <h3 className="font-bold text-xl mb-3 text-foreground">{m.h}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{m.t}</p>
+                  </div>
+                </AnimatedSection>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <FAQSection faqs={faqs} title="Häufige Fragen zu Messemodellen & Exponaten" subtitle="Alles was Sie vor der Bestellung wissen sollten" schemaId="messemodelle-faq" />
 
