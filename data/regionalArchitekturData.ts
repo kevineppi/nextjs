@@ -35,7 +35,7 @@ export const regionalArchitekturData: Record<string, RegionalArchitekturData> = 
     h1Title: '3D-Druck Architekturmodelle Wien · Express-Fertigung',
     metaTitle: 'Architekturmodelle Wien ★5,0 · 24h Express · Angebot in 6h',
     metaDescription: 'Architekturmodelle für Wien ✓ Wettbewerbsmodelle ✓ Stadtplanung ✓ Express 24h ✓ Angebot in 6h. ★ 5,0 (31 Bewertungen) · Österreichs Spezialist für Architekturbüros.',
-    heroSubtitle: 'Präzise Architekturmodelle für Wiener Architekturbüros. Wettbewerbsmodelle, Präsentationsmodelle und Studienmodelle · Express-Lieferung nach Wien.',
+    heroSubtitle: 'Maßstabsgetreue Architekturmodelle für Wiener Architekturbüros. Wettbewerbsmodelle, Präsentationsmodelle und Studienmodelle · Express-Lieferung nach Wien.',
     deliveryTime: '5-7 Tage',
     deliveryNote: 'Express-Versand direkt nach Wien möglich',
     localArchitekturContext: [
@@ -143,7 +143,7 @@ export const regionalArchitekturData: Record<string, RegionalArchitekturData> = 
     h1Title: '3D-Druck Architekturmodelle Kärnten',
     metaTitle: 'Architekturmodelle Kärnten · Holzbau & Alpin | ekdruck',
     metaDescription: 'Kärntner Architekten: Holzbau-Modelle, Tourismusbauten & alpine Wettbewerbsmodelle. Robuste Alpenlogistik über A10. Jetzt Modell anfragen.',
-    heroSubtitle: 'Präzise Architekturmodelle für Kärntner Architekturbüros. Holzbau-Modelle, Tourismusbauten und alpine Architektur.',
+    heroSubtitle: 'Maßstabsgetreue Architekturmodelle für Kärntner Architekturbüros. Holzbau-Modelle, Tourismusbauten und alpine Architektur.',
     deliveryTime: '5-7 Tage',
     deliveryNote: 'Versand über A10 Tauernautobahn',
     localArchitekturContext: [
@@ -167,7 +167,7 @@ export const regionalArchitekturData: Record<string, RegionalArchitekturData> = 
     name: 'Salzburg',
     type: 'bundesland',
     title: 'Architekturmodelle für Salzburg',
-    h1Title: '3D-Druck Architekturmodelle Salzburg · Präzision für Architekten',
+    h1Title: '3D-Druck Architekturmodelle Salzburg · Detailtreue für Architekten',
     metaTitle: 'Architekturmodelle Salzburg ★5,0 · UNESCO · 24h Express',
     metaDescription: 'Architekturmodelle für Salzburg ✓ Altstadt ✓ Hotels ✓ Festspiele ✓ Express via A1 ✓ Angebot in 6h. ★ 5,0 (31 Bewertungen) | ekdruck',
     heroSubtitle: 'Hochwertige Architekturmodelle für Salzburger Architekten. Von historischen Sanierungen bis zu modernen Neubauten.',
