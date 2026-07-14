@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BookOpen, TrendingUp, Clock, Award, Palette, Wrench, Wallet, Cog, Ship, Factory, Zap, Car, Lightbulb, Beaker } from "lucide-react";
+import { BookOpen, TrendingUp, Clock, Award, Palette, Wrench, Wallet, Cog, Ship, Factory, Zap, Car, Lightbulb, Beaker, Layers, Ruler } from "lucide-react";
 import StickyCTA from "@/components/landing/StickyCTA";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -11,6 +11,25 @@ import AIChatWidget from "@/components/AIChatWidget";
 
 const Ratgeber = () => {
   const articles = [
+    {
+      title: "Massenmodell, LoD1, LoD2: welche Gebäudedaten brauche ich?",
+      description: "Referenz für Architektur- und Städtebaumodelle: die LoD-Stufen nach CityGML, und wo es in Österreich, Deutschland und der Schweiz die Gebäude- und Geländedaten wirklich gibt. Mit Lizenz, Format und Kosten je Quelle.",
+      link: "/ratgeber/massenmodell-lod-gebaeudedaten",
+      icon: Layers,
+      category: "Daten & Maßstab",
+      readTime: "12 Min. Lesezeit",
+      date: "Juli 2026",
+      highlight: true
+    },
+    {
+      title: "Datenaufbereitung: von CAD und GIS zum druckbaren Architekturmodell",
+      description: "Die Wege aus IFC, Revit, ArchiCAD und CityGML ins druckfertige Modell. Mit Maßstabs-Tabelle, FDM-Grenzen und den acht Fehlern, an denen amtliche Geodaten scheitern.",
+      link: "/ratgeber/datenaufbereitung-architekturmodell",
+      icon: Ruler,
+      category: "Daten & Maßstab",
+      readTime: "11 Min. Lesezeit",
+      date: "Juli 2026"
+    },
     {
       title: "Architekturmodell Flatrate vs. Einzelauftrag: Wann lohnt sich ein Abo?",
       description: "Break-even-Tabelle, Praxisbeispiele und ehrlicher Kostenvergleich – ab wann sich die Architektur-Flatrate für Ihr Büro rechnet. Mit Preistabelle 2026.",
