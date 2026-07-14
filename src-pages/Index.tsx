@@ -383,7 +383,7 @@ const Index = () => {
               <AnimatedSection animation="slide-up" delay={0.2}>
                 <h3 className="text-2xl md:text-3xl font-bold mb-5 tracking-[-0.02em]">Was wir nicht machen.</h3>
                 <p className="text-base leading-[1.85] text-foreground/85 mb-4">
-                  Mechanisch lasttragende Anwendungen mit Personensicherheits-Anspruch, dafür fehlt aktuell die WKO-Gewerbeberechtigung. Das ändert sich mit dem Maschinenbau-Studium-Abschluss. Spritzguss-Großserien über 5.000 Stück, ab dieser Stückzahl ist 3D-Druck wirtschaftlich nicht mehr sinnvoll, wir verweisen ehrlich an Spritzgießer.
+                  Mechanisch lasttragende Anwendungen mit Personensicherheits-Anspruch, dafür fehlt aktuell die WKO-Gewerbeberechtigung. Spritzguss-Großserien über 5.000 Stück, ab dieser Stückzahl ist 3D-Druck wirtschaftlich nicht mehr sinnvoll, wir verweisen ehrlich an Spritzgießer.
                 </p>
                 <p className="text-base leading-[1.85] text-foreground/85">
                   Lieber „nein, das passt nicht zu uns" als ein halbgares Ja. Das ist keine Marketing-Phrase, wir lehnen ungefähr 10 % der Anfragen aktiv ab. Mehr Transparenz dazu auf <Link href="/ueber-uns" className="text-primary hover:underline font-semibold">Über uns</Link> und in der <Link href="/qualitaet" className="text-primary hover:underline font-semibold">Qualitäts-Selbstverpflichtung</Link>.

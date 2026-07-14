@@ -18,7 +18,7 @@ const UeberUns = () => {
     <div className="min-h-screen bg-background text-foreground">
       <SEOHead
         title="Über uns, Kevin Eppensteiner, ekdruck e.U. aus Gunskirchen | ekdruck"
-        description="Wer hinter ekdruck steht: Kevin Eppensteiner, 21, Maschinenbau-Student und Inhaber. Werkstatt in Gunskirchen, OÖ. Großformat-Fertigung bis 2 m. ★5,0 (31 Bewertungen)."
+        description="Wer hinter ekdruck steht: Kevin Eppensteiner, Inhaber. Spezialisierte FDM-Werkstatt in Gunskirchen, OÖ. Architektur- und Messemodelle, Großformat-Fertigung bis 2 m. ★5,0 (31 Bewertungen)."
         keywords="ekdruck über uns, kevin eppensteiner, ekdruck e.u., 3d druck gunskirchen, 3d druck inhaber oberösterreich, 3d druck werkstatt"
         path="/ueber-uns"
       />
@@ -49,7 +49,6 @@ const UeberUns = () => {
                 "addressCountry": "AT"
               }
             },
-            "alumniOf": "Maschinenbau-Studium",
             "telephone": BRAND.phone,
             "email": BRAND.email,
             "url": "https://www.ek-druck.at/ueber-uns"
@@ -77,8 +76,8 @@ const UeberUns = () => {
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                 Kein anonymes 3D-Druck-Portal mit Vertriebsteam. Eine kleine, spezialisierte
-                FDM-Werkstatt in Gunskirchen, ein Inhaber: Kevin Eppensteiner, {BRAND.founderAge}.
-                Maschinenbau-Student ab Oktober {BRAND.yearFounded + 2}.
+                FDM-Werkstatt in Gunskirchen, ein Inhaber: Kevin Eppensteiner. Anfrage,
+                Fertigung und Übergabe laufen über einen Tisch.
               </p>
               <div className="flex flex-wrap gap-3 justify-center mt-8">
                 {[

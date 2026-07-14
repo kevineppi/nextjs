@@ -17,7 +17,9 @@
 export const BRAND = {
   // ─── Hard Facts (Stand 2026-05-26) ──────────────────────────────
   founderName: 'Kevin Eppensteiner',
-  founderAge: 21,
+  // BEWUSST KEIN Alter, kein Ausbildungsstand, kein frueherer Arbeitgeber und
+  // keine Umsatz- oder Wachstumsziele hier. Das sind interne Themen und haben
+  // in der Aussenkommunikation nichts verloren. Repo ist public.
   companyName: 'ekdruck e.U.',
   companyDomain: 'ek-druck.at',
   yearFounded: 2024,
@@ -42,10 +44,8 @@ export const BRAND = {
   // ─── Hintergrund ──────────────────────────────────────────────
   // (verwendbar in About-Page und Branchen-Authority-Block)
   background: {
-    studies: 'Maschinenbau-Studium (Start Oktober 2026)',
-    previousCompany: 'rent.group GmbH (Eventbranche, jahrelang B2B-Operations)',
-    skills: 'CAD-Konstruktion, kaufmännische Abwicklung, B2B-Vertrieb',
-    notDoing: 'mechanische Bauteile (WKO-Gewerbeberechtigung erst ab Studium)',
+    skills: 'CAD-Aufbereitung, kaufmännische Abwicklung, B2B-Vertrieb',
+    notDoing: 'mechanisch lasttragende Teile (Gewerbeberechtigung fehlt aktuell)',
   },
 
   // ─── Reviews (Stand 2026-05) ──────────────────────────────────

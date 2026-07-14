@@ -1,29 +1,32 @@
 'use client'
 
 import Link from 'next/link'
-import { Wrench, GraduationCap, Heart, AlertCircle, Star, Phone, ArrowRight } from 'lucide-react'
+import { Wrench, Heart, AlertCircle, Star, Phone, ArrowRight, MapPin, FileCheck, Layers, Package } from 'lucide-react'
 import AnimatedSection from '@/components/AnimatedSection'
 import { BRAND } from '@/data/brandVoice'
 
 /**
- * KevinStorySection — Substantielle Kevin-Personal-Story für Über-uns
+ * KevinStorySection · Inhaber- und Haltungs-Sektion fuer Ueber-uns
  * ──────────────────────────────────────────────────────────────────
  *
- * Ziel: Anti-KI-Authentizität. B2B-Buyer der "ist das einer dem ich
- * vertrauen kann"-Frage stellt, bekommt hier konkrete Antworten —
- * nicht Corporate-Floskeln.
+ * Ziel: zeigen, dass hinter ek-druck eine greifbare Person steht, ohne
+ * privat zu werden. BEWUSST NICHT auf dieser Seite:
+ *  - Alter, Studium, Abschluss oder Ausbildungsstand
+ *  - frueherer oder aktueller Arbeitgeber
+ *  - Umsatz-, Wachstums- oder Skalierungsziele
+ * Das sind interne Themen und gehoeren nicht in die Aussenkommunikation.
  *
  * Vier Blocks:
- *  1. Warum ek-druck — Motivation, ehrlich
- *  2. Daily Reality — wie ein Werkstatt-Tag tatsächlich aussieht
- *  3. Werte — 4 konkrete, mit ehrlichem Beispiel
- *  4. Was ich NICHT mache — explizite Grenzen
+ *  1. Wer hinter ek-druck steht
+ *  2. Wie ein Auftrag laeuft (Prozess, kein Tagesablauf)
+ *  3. Werte, jeweils mit konkretem Beispiel
+ *  4. Was ich NICHT mache, explizite Grenzen
  */
 const KevinStorySection = () => {
   return (
     <>
-      {/* ═══ WARUM EK-DRUCK ═══ */}
-      <section className="py-20 md:py-28 bg-background border-t border-border" aria-label="Warum ek-druck">
+      {/* ═══ WER HINTER EK-DRUCK STEHT ═══ */}
+      <section className="py-20 md:py-28 bg-background border-t border-border" aria-label="Wer hinter ek-druck steht">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <AnimatedSection animation="fade-in" className="mb-12">
@@ -34,28 +37,31 @@ const KevinStorySection = () => {
                   </p>
                   <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.05] tracking-[-0.03em]">
                     Kevin Eppensteiner.<br />
-                    <span className="text-primary">{BRAND.founderAge}.</span> Aus Gunskirchen.
+                    <span className="text-primary">Inhaber.</span>
                   </h2>
+                  <p className="mono text-[10px] font-bold uppercase tracking-wider text-muted-foreground mt-4 flex items-center gap-2">
+                    <MapPin className="w-3.5 h-3.5" />
+                    Werkstatt in {BRAND.location}
+                  </p>
                 </div>
                 <div className="md:col-span-8 space-y-5 text-base md:text-lg leading-relaxed">
                   <p>
-                    Ich habe ek-druck im Jahr 2024 gegründet — neben einem Vollzeitjob in der Eventbranche bei
-                    rent.group, wo ich die letzten Jahre B2B-Operations gemacht habe. Im Oktober 2026 endet mein
-                    Vollzeitjob, ich starte mit dem Maschinenbau-Studium, und ek-druck wird parallel meine
-                    Vollzeit-Beschäftigung.
+                    Ich habe ek-druck 2024 gegründet und führe die Werkstatt als Inhaber. Anfrage, Angebot,
+                    Datenprüfung, Fertigung, Nachbearbeitung, Übergabe: das läuft alles über meinen Tisch. Wer
+                    hier schreibt, schreibt mit dem, der das Modell am Ende auch baut.
                   </p>
                   <p className="text-muted-foreground">
-                    Warum 3D-Druck? Weil ich technische Konstruktion und kaufmännische Abwicklung gleichzeitig
-                    machen kann. Beides liegt mir. Und weil es kaum eine Branche gibt, in der die
-                    Lücke zwischen "die Anfrage klingt einfach" und "die Lösung ist konstruktiv anspruchsvoll" so
-                    interessant ist. Ich liebe die Arbeit an schweren Problemen — gerade an Messeständen, wo
-                    ein einzelnes Modell entscheidet, ob ein Kunde stehenbleibt oder weitergeht.
+                    Warum 3D-Druck? Weil hier technische Planung und kaufmännische Abwicklung zusammenlaufen,
+                    und beides liegt mir. Und weil kaum eine Arbeit so direkt an der Frage hängt, ob ein Modell
+                    Menschen stehenbleiben lässt oder nicht. Genau die schwierigen Aufgaben sind die
+                    interessanten: ein Ort im Maßstab 1:500, ein Schnittmodell, das eine Maschine erklärt, ein
+                    Eye-Catcher, der einen Messestand trägt.
                   </p>
                   <p className="text-muted-foreground">
-                    Mein Ziel: ekdruck e.U. soll bis Mai 2027 auf 15.000 € Monatsumsatz wachsen. Das ist
-                    ehrgeizig, aber kalkuliert. Der Hebel dafür heißt Spezialisierung auf Industriegüter-Messemodelle
-                    statt austauschbarer 3D-Druck-Online-Aufträge. Wenn Sie hier sind, sind Sie vermutlich
-                    Teil dieser Spezialisierung. Schön, dass es Sie gibt.
+                    ek-druck ist bewusst spezialisiert: Architektur- und Städtebaumodelle, Messemodelle und
+                    Ausstellungsobjekte. Kein austauschbarer Online-Druckservice, bei dem eine Datei in einen
+                    Automaten fällt. Sondern Modelle, bei denen es auf Wirkung ankommt und bei denen jemand
+                    hinschaut, bevor sie rausgehen.
                   </p>
                 </div>
               </div>
@@ -64,8 +70,8 @@ const KevinStorySection = () => {
         </div>
       </section>
 
-      {/* ═══ DAILY REALITY — WIE ICH ARBEITE ═══ */}
-      <section className="py-20 md:py-28 bg-muted/30 border-y border-border" aria-label="Daily Reality">
+      {/* ═══ WIE EIN AUFTRAG LAEUFT ═══ */}
+      <section className="py-20 md:py-28 bg-muted/30 border-y border-border" aria-label="Wie ein Auftrag laeuft">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <AnimatedSection animation="fade-in" className="mb-12 max-w-3xl">
@@ -73,54 +79,59 @@ const KevinStorySection = () => {
                 Wie ich arbeite
               </p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.05] tracking-[-0.03em] mb-4">
-                Ein Werkstatt-Tag bei ek-druck.
+                Wie ein Auftrag bei ek-druck läuft.
               </h2>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Damit Sie wissen, wer dranhängt wenn Sie Ihre Anfrage schicken — und warum die Antwort
-                meist binnen Stunden kommt.
+                Damit Sie wissen, was passiert, nachdem Sie auf Senden geklickt haben, und warum die Antwort
+                meist noch am selben Tag kommt.
               </p>
             </AnimatedSection>
 
             <div className="grid md:grid-cols-2 gap-4">
               {[
                 {
-                  time: '06:30 – 08:00',
-                  title: 'Mail-Check + CAD-Sichtung',
+                  icon: FileCheck,
+                  step: 'Schritt 01',
+                  title: 'Anfrage und Festpreis',
                   detail:
-                    'Bevor der Vollzeitjob startet, durchforste ich neue Anfragen. CAD-Files öffne ich in Fusion 360 / Solidworks, prüfe Geometrie und Druck-Tauglichkeit. Erste Festpreisangebote gehen schon vor 8 Uhr raus — daher bekommen Sie oft die Bestätigung mit Festpreis, bevor Sie überhaupt zum Kaffee gegangen sind.',
+                    'Ihre Anfrage landet direkt bei mir, nicht in einer Vertriebs-Queue. Ich sehe mir die Daten an, prüfe Maßstab und Umfang und schicke Ihnen ein verbindliches Festpreisangebot. In der Regel binnen 6 Stunden, kostenlos und ohne Kleingedrucktes.',
                 },
                 {
-                  time: '08:00 – 17:00',
-                  title: 'Vollzeitjob — Drucker laufen automatisch',
+                  icon: Layers,
+                  step: 'Schritt 02',
+                  title: 'Datenprüfung vor der Fertigung',
                   detail:
-                    'Während ich bei rent.group bin, laufen die FDM-Drucker im 24/7-Betrieb. Failure-Detection-Setup: wenn ein Druck schiefgeht, bekomme ich Push-Benachrichtigung. Mittagspause = oft auch Werkstatt-Check, je nach Auftragslage.',
+                    'Offene Kanten, fehlende Grundflächen, Details, die im gewünschten Maßstab gar nicht darstellbar sind: das klären wir vorher, nicht hinterher. Wenn etwas nicht funktioniert, sage ich es Ihnen, bevor gedruckt wird, und schlage eine Alternative vor.',
                 },
                 {
-                  time: '17:30 – 22:00',
-                  title: 'Werkstatt: Nachbearbeitung + QA + Produktion',
+                  icon: Wrench,
+                  step: 'Schritt 03',
+                  title: 'Fertigung und Handarbeit',
                   detail:
-                    'Manuelle Arbeit: Schleifen, Lackieren, Logos anbringen, Modelle prüfen, fotografieren, verpacken. Hier entsteht der Unterschied zwischen "irgendwie gedruckt" und "Show-Quality". Jedes Modell wird vor Versand fotografiert — Sie bekommen die Bestätigung bevor verpackt wird.',
+                    'Die Anlagen laufen im Parallelbetrieb, auch nachts, mit Failure-Detection. Große Modelle werden aufgeteilt, die Trennlinien lege ich dorthin, wo ohnehin eine Kante sitzt. Danach kommt der Teil, den keine Maschine übernimmt: schleifen, spachteln, lackieren, beschriften.',
                 },
                 {
-                  time: 'Wochenende',
-                  title: 'Anfrage-Spitzen + größere Projekte',
+                  icon: Package,
+                  step: 'Schritt 04',
+                  title: 'Kontrolle und Übergabe',
                   detail:
-                    'Wochenenden sind für komplexe Anfragen, segmentierte Großmodelle, die mehrere Tage am Stück brauchen. Außerdem für die Akquise-Arbeit — wer am Wochenende anschreibt, bekommt oft die schnellste Antwort.',
+                    'Jedes Modell wird vor dem Verpacken geprüft und fotografiert. Sie sehen es also, bevor es das Haus verlässt. Versand sicher verpackt, persönliche Übergabe ist möglich. Bei Rückfragen sprechen Sie mit dem, der das Modell gebaut hat.',
                 },
               ].map((item, i) => (
                 <article
                   key={i}
                   className="bg-background border-2 border-border rounded-2xl p-6 md:p-8 hover:border-primary/30 transition-all"
                 >
-                  <p className="mono text-[10px] font-bold uppercase tracking-wider text-primary mb-2">
-                    {item.time}
-                  </p>
-                  <h3 className="font-bold text-lg md:text-xl tracking-tight mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                    {item.detail}
-                  </p>
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                      <item.icon className="w-5 h-5 text-primary" />
+                    </div>
+                    <p className="mono text-[10px] font-bold uppercase tracking-wider text-primary">
+                      {item.step}
+                    </p>
+                  </div>
+                  <h3 className="font-bold text-lg md:text-xl tracking-tight mb-3">{item.title}</h3>
+                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{item.detail}</p>
                 </article>
               ))}
             </div>
@@ -130,10 +141,10 @@ const KevinStorySection = () => {
                 Was das für Sie heißt
               </p>
               <p className="text-base md:text-lg leading-relaxed">
-                Wenn Sie hier eine Anfrage stellen, landet sie in <strong>meinem Posteingang</strong> — nicht in
+                Wenn Sie hier eine Anfrage stellen, landet sie in <strong>meinem Posteingang</strong>. Nicht in
                 einem Vertriebs-System, nicht in einer Hotline-Queue. Sie schreiben, ich antworte. Sie senden
-                CAD, ich kalkuliere. Ich drucke. Ich verpacke. Ich versende. Bei Reklamationen sprechen
-                Sie mit dem, der das Modell gemacht hat. <strong>Keine Hierarchie zwischen uns.</strong>
+                Daten, ich kalkuliere. Ich fertige, ich prüfe, ich versende. Bei Rückfragen sprechen Sie mit dem,
+                der das Modell gemacht hat. <strong>Keine Hierarchie zwischen uns.</strong>
               </p>
             </div>
           </div>
@@ -149,11 +160,11 @@ const KevinStorySection = () => {
                 Was mir wichtig ist
               </p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.05] tracking-[-0.03em] mb-4">
-                Vier Werte — mit Beispiel statt Floskel.
+                Vier Werte, mit Beispiel statt Floskel.
               </h2>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Jeder behauptet das gleiche ("Qualität", "Kundennähe", "Verlässlichkeit"). Hier ist, was diese
-                Worte bei ek-druck konkret bedeuten — mit jeweils einem echten Beispiel aus der Werkstatt.
+                Jeder behauptet das gleiche: Qualität, Kundennähe, Verlässlichkeit. Hier steht, was diese Worte
+                bei ek-druck konkret bedeuten, mit jeweils einem echten Beispiel aus der Werkstatt.
               </p>
             </AnimatedSection>
 
@@ -161,35 +172,35 @@ const KevinStorySection = () => {
               {[
                 {
                   icon: Heart,
-                  value: 'Persönlichkeit über Skalierung',
+                  value: 'Persönlich statt anonym',
                   meaning:
-                    'Ich will ekdruck nicht zu einem anonymen Drucker-Anbieter machen. Auch wenn ich auf 15k€/Monat wachse, bleibe ich der Ansprechpartner. Lieber langsamer wachsen und persönliche Beziehung halten, als 100 Aufträge pro Monat ohne Gesichter.',
+                    'ek-druck soll kein anonymes Druck-Portal werden. Sie sprechen vom ersten Mail bis zur Übergabe mit derselben Person. Lieber weniger Aufträge mit echtem Kontakt als viele, bei denen niemand mehr weiß, wer das Modell gebaut hat.',
                   example:
-                    'Beispiel: Vor 2 Monaten hatte ein Kunde aus dem Mostviertel eine Last-Minute-Anfrage Freitag 18 Uhr. Ich bin selbst nach NÖ gefahren am Samstag und habe das Modell persönlich übergeben. Hätte ich nicht machen müssen — wollte ich, weil der Kunde mir wichtig ist.',
+                    'Beispiel: Ein Kunde aus dem Mostviertel hatte an einem Freitagabend eine Last-Minute-Anfrage. Ich bin am Samstag selbst nach Niederösterreich gefahren und habe das Modell persönlich übergeben. Hätte ich nicht machen müssen. Wollte ich, weil der Termin für den Kunden wichtig war.',
                 },
                 {
                   icon: AlertCircle,
                   value: 'Ehrlich Nein sagen',
                   meaning:
-                    'Ein guter Anbieter sagt nicht zu allem ja. Wenn Ihre Anfrage nicht zu meiner Kompetenz passt (z.B. mechanische Funktionsbauteile, Spritzguss-Großserien >5.000 Stück, Resin-Schmuck), sage ich Ihnen das offen — und vermittle Sie an passende Anbieter aus meinem Netzwerk.',
+                    'Ein guter Anbieter sagt nicht zu allem ja. Wenn eine Anfrage nicht zu dem passt, was ich verantworten kann, sage ich das offen und vermittle weiter. Ein ehrliches Nein kostet mich einen Auftrag und bringt mir einen Kunden, der wiederkommt.',
                   example:
-                    'Beispiel: Letzten Monat eine Anfrage für 8.000 Werbeartikel — habe ich dem Kunden gesagt: bei dieser Stückzahl ist Spritzguss günstiger, hier sind 2 Werkzeugbauer aus OÖ die ihm helfen können. Kein Auftrag für mich, aber Vertrauen für die Zukunft.',
+                    'Beispiel: Ein Architekturbüro wollte ein Wettbewerbsmodell inklusive Datenaufbereitung in 48 Stunden. Machbar wäre es gewesen, gut geworden wäre es nicht. Ich habe abgesagt und erklärt, woran es scheitert. Beim nächsten Wettbewerb kamen sie mit sechs Tagen Vorlauf wieder.',
                 },
                 {
                   icon: Wrench,
                   value: 'Handwerk vor Automation',
                   meaning:
-                    'Es gibt Anbieter, die FDM-Druck als reine Online-Plattform betreiben — Upload, Algorithmus, Versand. Ich nicht. Jedes Modell wird manuell QA-geprüft, oft manuell nachbearbeitet, manuell fotografiert. Das ist nicht skalierbar wie bei Online-Anbietern, aber qualitativ messbar besser.',
+                    'Es gibt Anbieter, die FDM-Druck als reine Online-Plattform betreiben: hochladen, Algorithmus, Versand. Ich nicht. Jedes Modell wird von Hand geprüft, oft von Hand nachgearbeitet und vor dem Versand fotografiert. Das ist weniger skalierbar und sichtbar besser.',
                   example:
-                    'Beispiel: Bei einem Maschinenmodell für die EMO Hannover habe ich 12 Stunden nachträglich an der Schnittfläche gearbeitet — Schleifen, Spachteln, Lackieren in Kontrastfarbe. Ein Online-Anbieter hätte ein rohes FDM-Schnittbild geliefert. Der Unterschied war auf der Messe sichtbar.',
+                    'Beispiel: Bei einem Maschinenmodell für die EMO Hannover habe ich zwölf Stunden allein an der Schnittfläche gearbeitet: schleifen, spachteln, in Kontrastfarbe lackieren. Ein Online-Anbieter hätte eine rohe Druckfläche geliefert. Der Unterschied war auf der Messe sichtbar.',
                 },
                 {
-                  icon: GraduationCap,
-                  value: 'Made in Austria — wörtlich',
+                  icon: MapPin,
+                  value: 'Made in Austria, wörtlich genommen',
                   meaning:
-                    'Werkstatt in Gunskirchen, Filament aus österreichischer Produktion (recycelte Industrieabfälle, Ökostrom, ~80% weniger CO₂ als Standard-Importware), Verpackung aus AT. Das ist nicht Marketing-Bullshit — die Lieferketten sind kurz, das macht ekdruck unabhängig von globalen Verwerfungen.',
+                    'Werkstatt in Gunskirchen, Filament aus österreichischer Produktion (recycelte Industrieabfälle, Ökostrom, rund 80 % weniger CO₂ als Standard-Importware), Verpackung aus Österreich. Das ist keine Marketing-Floskel, sondern eine kurze Lieferkette. Und kurze Lieferketten sind der Grund, warum Termine halten.',
                   example:
-                    'Beispiel: Während Konkurrenz im April 2025 wegen Material-Engpässen aus China 4-6 Wochen Lieferzeit verkünden musste, haben meine österreichischen Filament-Lieferanten ohne Unterbrechung geliefert. Lead-Time-Vorteil für ek-druck-Kunden in der ganzen Phase.',
+                    'Beispiel: Als im Frühjahr 2025 wegen Material-Engpässen aus Übersee vielerorts vier bis sechs Wochen Lieferzeit angekündigt wurden, haben meine österreichischen Filament-Lieferanten ohne Unterbrechung geliefert. Für ek-druck-Kunden hat sich in dieser Phase nichts verschoben.',
                 },
               ].map((v, i) => (
                 <article
@@ -228,42 +239,42 @@ const KevinStorySection = () => {
                 Was ich <span className="text-primary">nicht</span> mache.
               </h2>
               <p className="text-base md:text-lg text-background/70 leading-relaxed">
-                Damit Sie nicht enttäuscht werden — die Grenzen meines Portfolios sind klar definiert.
-                Wenn Ihre Anfrage hier landet, verweise ich Sie auf passende Spezialisten.
+                Die Grenzen meines Portfolios sind klar definiert, damit niemand enttäuscht wird. Wenn Ihre
+                Anfrage hier landet, verweise ich Sie auf passende Spezialisten.
               </p>
             </AnimatedSection>
 
             <div className="grid md:grid-cols-2 gap-3">
               {[
                 {
-                  point: 'Mechanische Funktionsbauteile',
+                  point: 'Mechanisch lasttragende Teile',
                   detail:
-                    'WKO-Gewerbeberechtigung dafür kommt erst nach meinem Maschinenbau-Studium (Abschluss ~2030). Bis dahin nur Anschauungsmodelle, Designstudien, Prototypen, Messemodelle, Architekturmodelle.',
+                    'Dafür fehlt aktuell die Gewerbeberechtigung, und darum nehme ich solche Aufträge nicht an. Was ich mache: Anschauungsmodelle, Designstudien, Prototypen, Messemodelle, Architektur- und Städtebaumodelle.',
                 },
                 {
-                  point: 'Spritzguss-Großserien >5.000 Stück',
+                  point: 'Spritzguss-Großserien über 5.000 Stück',
                   detail:
-                    'Ab dieser Stückzahl ist Spritzguss billiger und qualitativ besser für identische Serie. Bis 5.000 Stück bin ich konkurrenzfähig. Darüber: ich vermittle an Werkzeugbauer aus meinem Netzwerk.',
+                    'Ab dieser Stückzahl ist Spritzguss günstiger und für identische Stücke die bessere Wahl. Darunter bin ich konkurrenzfähig. Darüber vermittle ich an Werkzeugbauer aus meinem Netzwerk.',
                 },
                 {
-                  point: 'Resin-/SLA-Schmuck und Mikro-Detail',
+                  point: 'Resin- und SLA-Schmuck, Mikro-Detail',
                   detail:
-                    'SLA-Druck im Schmuck-Bereich ist eine eigene Disziplin mit anderen Druckern. Mein Stack ist FDM — kommt bei Mikro-Details unter 0,3mm Wandstärke an Grenzen.',
+                    'SLA-Druck im Schmuck-Bereich ist eine eigene Disziplin mit eigenem Anlagenpark. Mein Verfahren ist FDM und kommt bei Details unter 0,3 mm Wandstärke an seine Grenzen.',
                 },
                 {
                   point: 'Spielzeug für Kleinkinder',
                   detail:
-                    'EN 71 / Spielzeug-Sicherheits-Zertifizierungen liegen jenseits meiner Kapazität. Mein PETG ist FDA-konform für Lebensmittelkontakt — aber für formale Spielzeug-Zertifizierung brauchen Sie andere Anbieter.',
+                    'Zertifizierungen nach EN 71 liegen außerhalb meiner Kapazität. Mein PETG ist zwar FDA-konform für Lebensmittelkontakt, für eine formale Spielzeug-Zertifizierung brauchen Sie aber einen anderen Anbieter.',
                 },
                 {
-                  point: 'Schattenkunden / Bar-Aufträge',
+                  point: 'Aufträge ohne Rechnung',
                   detail:
-                    'ekdruck ist eine ordentlich angemeldete e.U. mit UID. Alle Aufträge laufen über Rechnung. Keine Ausnahmen — nicht aus Prinzip-Reiterei, sondern weil ich keine Steuerprobleme will.',
+                    'ek-druck ist eine angemeldete e.U. mit UID. Alle Aufträge laufen über Rechnung, ohne Ausnahme. Das ist keine Verhandlungssache.',
                 },
                 {
-                  point: 'Kostenlose "Test-Modelle" für Privatkunden',
+                  point: 'Kostenlose Probemodelle',
                   detail:
-                    'Für Schulen, Forschungsprojekte und gemeinnützige Initiativen mache ich Sonderkonditionen. Private "Schauen-was-Du-kannst"-Aufträge nicht kostenfrei — meine Zeit hat einen Wert.',
+                    'Für Schulen, Forschungsprojekte und gemeinnützige Initiativen gibt es Sonderkonditionen, dafür bin ich gerne zu haben. Kostenlose Aufträge zum Ausprobieren nicht.',
                 },
               ].map((g, i) => (
                 <div key={i} className="bg-background/5 border-2 border-background/10 rounded-2xl p-5 hover:border-primary/30 transition-all">
@@ -294,15 +305,15 @@ const KevinStorySection = () => {
               <span className="text-primary">mit dem Sie arbeiten möchten?</span>
             </h2>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
-              Schicken Sie CAD, Skizze oder kurze Beschreibung. Sie bekommen das Festpreisangebot binnen
-              6 Stunden — direkt von mir. Keine Hierarchie dazwischen.
+              Schicken Sie Daten, Skizze oder eine kurze Beschreibung. Sie bekommen das Festpreisangebot binnen
+              6 Stunden, direkt von mir. Keine Hierarchie dazwischen.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <Link
                 href="/kostenrechner"
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground rounded-full px-8 py-4 font-bold hover:opacity-90 transition-all"
               >
-                STL hochladen
+                Daten hochladen
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <a

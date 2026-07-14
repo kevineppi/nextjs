@@ -101,7 +101,7 @@ const articleSchema = {
     jobTitle: 'Inhaber & Gründer ekdruck e.U.',
     knowsAbout: [
       'Industrie-Messemodellbau',
-      'FDM-3D-Druck für Großbauteile',
+      'FDM-3D-Druck für Großformat-Modelle',
       'DIN 4102 Brennstoffklassen',
       'Industriegüter-Showcase-Strategien',
     ],
@@ -1261,8 +1261,7 @@ export default function MessemodellGuidePage() {
             <p className="leading-relaxed">
               <strong className="text-foreground">Autor:</strong> Kevin Eppensteiner,
               Inhaber & Gründer ekdruck e.U. · Spezialisiert auf Industrie-Messemodellbau,
-              FDM-3D-Druck für Großbauteile, NDA-konforme Projekt-Abwicklung. Maschinenbau-Studium
-              ab Oktober 2026. Werkstatt: Negrellistraße 15, 4623 Gunskirchen, Oberösterreich.
+              FDM-3D-Druck im Großformat, NDA-konforme Projekt-Abwicklung. Werkstatt: Negrellistraße 15, 4623 Gunskirchen, Oberösterreich.
               <br />
               <br />
               <strong className="text-foreground">Letzte Aktualisierung:</strong> 2026-05-31

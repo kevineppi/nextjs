@@ -294,7 +294,7 @@ export default function QualityPage() {
 
               <div className="grid md:grid-cols-2 gap-3">
                 {[
-                  { title: 'Mechanische Funktionsbauteile', detail: 'WKO-Gewerbeberechtigung dafür habe ich erst nach dem Maschinenbau-Studium (ab Sept 2027). Bis dahin: Anschauungsmodelle, Designstudien, Prototypen, Messemodelle · ja. Lasttragende Maschinenteile · nein.' },
+                  { title: 'Mechanisch lasttragende Teile', detail: 'Dafür fehlt aktuell die Gewerbeberechtigung, solche Aufträge nehme ich nicht an. Anschauungsmodelle, Designstudien, Prototypen, Messemodelle, Architektur- und Städtebaumodelle · ja. Lasttragende Teile · nein.' },
                   { title: 'Spritzguss-Großserien >5.000 Stück', detail: 'Ab dieser Stückzahl ist Spritzguss billiger. Ich verweise auf passende Werkzeugbauer aus meinem Netzwerk. Bis 5.000 Stück bin ich konkurrenzfähig.' },
                   { title: 'Resin-Schmuck und Mikro-Detailmodelle', detail: 'SLA/DLP-Druck im Schmuck-Bereich ist eine eigene Disziplin. FDM-Druck (mein Stack) kommt bei Mikro-Details an Grenzen.' },
                   { title: 'Spielzeug für Kleinkinder', detail: 'Lebensmittel-/Kleinkind-Sicherheits-Zertifizierungen liegen jenseits meiner Kapazität. PETG ist FDA-konform · aber für Spielzeug-Zertifizierung brauchen Sie andere Anbieter.' },

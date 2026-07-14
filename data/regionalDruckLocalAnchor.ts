@@ -12,7 +12,7 @@
  * exakt so nirgends sonst im Web steht.
  *
  * Wichtig: Wahrheitstreu. Wenn Kevin nicht nach Vorarlberg fährt,
- * dann steht das hier so drin. Authentizität schlägt Marketing-Bullshit.
+ * dann steht das hier so drin. Authentizität schlägt Marketing-Floskeln.
  */
 
 export interface LocalKevinAnchor {

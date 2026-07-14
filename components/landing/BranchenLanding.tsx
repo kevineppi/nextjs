@@ -281,10 +281,10 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
                 </div>
                 <div className="md:col-span-8 space-y-4 text-base md:text-lg leading-relaxed">
                   <p>
-                    Ich bin {BRAND.founderAge}, gegründet habe ich ekdruck {new Date().getFullYear() - BRAND.yearFounded} Jahre vor diesem Text — neben einem Vollzeitjob in der Eventbranche. Im Oktober beginnt mein Maschinenbau-Studium und ek-druck wird Vollzeit.
+                    Ich habe ek-druck 2024 gegründet und führe die Werkstatt als Inhaber. Spezialisiert auf Architektur- und Städtebaumodelle, Messemodelle und Ausstellungsobjekte. Kein Online-Automat, sondern Modelle, bei denen jemand hinschaut, bevor sie rausgehen.
                   </p>
                   <p className="text-muted-foreground">
-                    Was das für Sie heißt: Wenn Sie hier eine Anfrage stellen, landet sie in <strong>meinem Posteingang</strong>. Nicht bei einem Vertriebsteam, nicht in einer Hotline-Queue. Sie schreiben — ich antworte. Sie senden CAD — ich kalkuliere. Ich drucke. Ich verpacke. Ich versende. Wenn etwas nicht passt: Sie haben einen einzigen Ansprechpartner.
+                    Was das für Sie heißt: Wenn Sie hier eine Anfrage stellen, landet sie in <strong>meinem Posteingang</strong>. Nicht bei einem Vertriebsteam, nicht in einer Hotline-Queue. Sie schreiben, ich antworte. Sie senden Daten, ich kalkuliere. Ich fertige, ich prüfe, ich versende. Wenn etwas nicht passt: Sie haben einen einzigen Ansprechpartner.
                   </p>
                   <p className="text-muted-foreground">
                     Klare Grenze: <strong>Mechanische Funktionsbauteile</strong> mache ich aktuell nicht — meine WKO-Gewerbeberechtigung dafür kommt erst mit dem Maschinenbau-Abschluss. Was ich mache: <strong>Modelle, Anschauungsobjekte, Designstudien, Prototypen, Messemodelle, Architekturmodelle</strong>. Wenn Ihre Anfrage in der Grauzone liegt, sag ich's offen statt ein Phantasieangebot zu schicken.
