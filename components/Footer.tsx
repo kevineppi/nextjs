@@ -278,6 +278,12 @@ const Footer = () => {
               Impressum
             </Link>
             <Link
+              href="/datenschutz"
+              className="text-sm text-muted-foreground hover:text-primary transition-colors"
+            >
+              Datenschutz
+            </Link>
+            <Link
               href="/kontakt"
               className="text-sm text-muted-foreground hover:text-primary transition-colors"
             >
