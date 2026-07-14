@@ -49,7 +49,7 @@ const Index = () => {
       { question: "Wie schnell erhalte ich mein 3D-Modell?", answer: "Standard: 3–5 Werktage. Express: 24–48 Stunden. Versandkostenfrei ab €100." },
       { question: "Welche Dateiformate werden akzeptiert?", answer: "STL, OBJ, STEP, 3MF, ArchiCAD, Revit, SolidWorks. Keine Datei? Wir modellieren kostenlos nach Skizze." },
       { question: "Für welche Branchen eignet sich ekdruck?", answer: "Architekten, Messeaussteller, Produktentwickler und Firmenkunden mit B2B-Konditionen." },
-      { question: "Warum österreichisches Filament?", answer: "Recycelte Industrieabfälle, Ökostrom, 80% weniger CO₂. Extrusionstoleranz ±0,02 mm." },
+      { question: "Warum österreichisches Filament?", answer: "Recycelte Industrieabfälle, Ökostrom, 80% weniger CO₂. Gleichmäßiger Filament-Durchmesser ±0,02 mm." },
       { question: "Welche Nachbearbeitungs-Optionen gibt es?", answer: "Schleifen, Grundierung, Lackierung RAL/Pantone, Aceton-Dampfglättung, Segmentierung." },
     ]} />
     <BreadcrumbSchema items={[{ name: "Home", url: "/" }]} />
@@ -76,7 +76,7 @@ const Index = () => {
                 className="text-4xl md:text-6xl font-bold leading-[0.95] tracking-[-0.04em] mb-5"
               />
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-                Architekten, Industrie-Messeaussteller und Firmenkunden — jede Gruppe hat andere Anforderungen,
+                Architekten, Industrie-Messeaussteller und Firmenkunden, jede Gruppe hat andere Anforderungen,
                 andere Maßstäbe, andere Lead-Times. Wählen Sie Ihre Welt:
               </p>
             </AnimatedSection>
@@ -161,7 +161,7 @@ const Index = () => {
                       Rahmenverträge, NDA, Mengenrabatt
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
-                      Funktionsmuster, Vorserien, Klein-Serien 5-5.000 Stück. Zahlungsziel 30 Tage, NDA-Workflow,
+                      Anschauungsmuster, Design-Prototypen, Mehrfachfertigung 5-5.000 Stück. Zahlungsziel 30 Tage, NDA-Workflow,
                       Stammkunden-Rabatte ab 5 Stück.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-6">
@@ -351,7 +351,7 @@ const Index = () => {
               <AnimatedSection animation="slide-up" delay={0.1}>
                 <h3 className="text-2xl md:text-3xl font-bold mb-5 tracking-[-0.02em]">Werkstatt &amp; Maschinenpark.</h3>
                 <p className="text-base leading-[1.85] text-foreground/85 mb-4">
-                  Unser <strong>3D-Druck Service in Österreich</strong> läuft auf drei industriellen FDM-Druckern: zwei <strong>Bambulab P1S</strong> für schnelle Standard-Aufträge und ein <strong>Prusa XL 5-Toolhead</strong> für Multi-Material-Drucke bis 360×360×360&nbsp;mm. Maschinen, Material und Service kontrollieren wir komplett selbst — kein White-Label, kein Sublieferant, kein „wir geben das weiter".
+                  Unser <strong>3D-Druck Service in Österreich</strong> läuft auf industriellen FDM-Anlagen: schnelle Standard-Fertigung und <strong>Multi-Material-Druck</strong> bis 360×360×360&nbsp;mm. Anlagen, Material und Service kontrollieren wir komplett selbst, kein White-Label, kein Sublieferant, kein „wir geben das weiter".
                 </p>
                 <p className="text-base leading-[1.85] text-foreground/85">
                   Werkstatt in Gunskirchen, Oberösterreich. Anrufe nimmt <Link href="/ueber-uns" className="text-primary hover:underline font-semibold">Kevin Eppensteiner</Link> persönlich ab. Anfragen beantworten wir innerhalb von 6 Stunden mit Festpreis. Lieferung in ganz Österreich in 24–48&nbsp;Stunden, nach Deutschland 2–4 Werktage, in die Schweiz mit DHL-Express-Zollabwicklung.
@@ -361,10 +361,10 @@ const Index = () => {
               <AnimatedSection animation="slide-up" delay={0.2}>
                 <h3 className="text-2xl md:text-3xl font-bold mb-5 tracking-[-0.02em]">Acht Materialien für jeden Einsatz.</h3>
                 <p className="text-base leading-[1.85] text-foreground/85 mb-4">
-                  <strong>PLA</strong> für Anschauungsmodelle, <strong>PETG</strong> für Funktionsteile, <strong>ASA</strong> für UV-beständige Außenanwendungen, <strong>ABS</strong> mit Aceton-Glättung für Spritzguss-Optik, <strong>TPU</strong> für flexible Dichtungen, <strong>PETG-CF</strong> und <strong>PA-CF</strong> mit Carbonfaser für mechanisch belastbare Bauteile sowie <strong>SLA-Resin</strong> für hochfeine Detailmodelle und Schmuckguss.
+                  <strong>PLA</strong> für Anschauungsmodelle, <strong>PETG</strong> für robuste Gebrauchsmodelle, <strong>ASA</strong> für UV-beständige Außenanwendungen, <strong>ABS</strong> mit Aceton-Glättung für Spritzguss-Optik, <strong>TPU</strong> für flexible, biegbare Elemente, <strong>PETG-CF</strong> und <strong>PA-CF</strong> mit Carbonfaser für besonders robuste Modelle sowie <strong>SLA-Resin</strong> für hochfeine Detailmodelle und Schmuckguss.
                 </p>
                 <p className="text-base leading-[1.85] text-foreground/85">
-                  Welches Material wann — ehrlich beraten, nicht verkauft. Wenn ein Wunsch nicht zum Bauteil passt, weisen wir vor dem Auftrag auf die bessere Alternative hin. Der <Link href="/3d-druck-materialien" className="text-primary hover:underline font-semibold">Detailvergleich aller Materialien</Link> zeigt Festigkeit, Temperaturverhalten und Preis pro Gramm.
+                  Welches Material wann, ehrlich beraten statt verkauft. Wenn ein Wunsch nicht zum Modell passt, weisen wir vor dem Auftrag auf die bessere Alternative hin. Der <Link href="/3d-druck-materialien" className="text-primary hover:underline font-semibold">Detailvergleich aller Materialien</Link> zeigt Festigkeit, Temperaturverhalten und Preis pro Gramm.
                 </p>
               </AnimatedSection>
             </div>
@@ -373,20 +373,20 @@ const Index = () => {
               <AnimatedSection animation="slide-up" delay={0.1}>
                 <h3 className="text-2xl md:text-3xl font-bold mb-5 tracking-[-0.02em]">Sechs Branchen, sechs Sprachen.</h3>
                 <p className="text-base leading-[1.85] text-foreground/85 mb-4">
-                  Ein Maschinenbau-Konstrukteur fragt anders als ein Bauträger, eine Werbeagentur anders als ein Anlagenbauer. Wir kennen die Spezifika für <Link href="/branchen/maschinenbau" className="text-primary hover:underline font-semibold">Maschinenbau</Link> (Messemodelle, Funktionsprototypen), <Link href="/branchen/schiffbau" className="text-primary hover:underline font-semibold">Schiffbau</Link> (Antriebs-Schnittmodelle), <Link href="/branchen/energietechnik" className="text-primary hover:underline font-semibold">Energietechnik</Link> (Schaltanlagen-Demonstrationen), <Link href="/branchen/anlagenbau" className="text-primary hover:underline font-semibold">Anlagenbau</Link>, <Link href="/branchen/automotive" className="text-primary hover:underline font-semibold">Automotive</Link> und <Link href="/branchen/elektrotechnik" className="text-primary hover:underline font-semibold">Elektrotechnik</Link>.
+                  Ein Maschinenbau-Ingenieur fragt anders als ein Bauträger, eine Werbeagentur anders als ein Anlagenbauer. Wir kennen die Spezifika für <Link href="/branchen/maschinenbau" className="text-primary hover:underline font-semibold">Maschinenbau</Link> (Messemodelle, Designprototypen), <Link href="/branchen/schiffbau" className="text-primary hover:underline font-semibold">Schiffbau</Link> (Antriebs-Schnittmodelle), <Link href="/branchen/energietechnik" className="text-primary hover:underline font-semibold">Energietechnik</Link> (Schaltanlagen-Demonstrationen), <Link href="/branchen/anlagenbau" className="text-primary hover:underline font-semibold">Anlagenbau</Link>, <Link href="/branchen/automotive" className="text-primary hover:underline font-semibold">Automotive</Link> und <Link href="/branchen/elektrotechnik" className="text-primary hover:underline font-semibold">Elektrotechnik</Link>.
                 </p>
                 <p className="text-base leading-[1.85] text-foreground/85">
-                  Pro Branche eine eigene Seite mit echten Cases, Material-Empfehlungen für die jeweiligen Anforderungen, Brennstoffklassen-Hinweisen wo relevant und Mess-Toleranzen, die im Fertigungsalltag wirklich zählen — nicht nur auf dem Datenblatt.
+                  Pro Branche eine eigene Seite mit echten Cases, Material-Empfehlungen für die jeweiligen Anforderungen, Brennstoffklassen-Hinweisen wo relevant und den Material-Eigenschaften, die im Alltag wirklich zählen, nicht nur auf dem Datenblatt.
                 </p>
               </AnimatedSection>
 
               <AnimatedSection animation="slide-up" delay={0.2}>
                 <h3 className="text-2xl md:text-3xl font-bold mb-5 tracking-[-0.02em]">Was wir nicht machen.</h3>
                 <p className="text-base leading-[1.85] text-foreground/85 mb-4">
-                  Mechanisch lasttragende Bauteile mit Personensicherheits-Anspruch — dafür fehlt aktuell die WKO-Gewerbeberechtigung. Das ändert sich mit dem Maschinenbau-Studium-Abschluss. Spritzguss-Großserien über 5.000 Stück — ab dieser Stückzahl ist 3D-Druck wirtschaftlich nicht mehr sinnvoll, wir verweisen ehrlich an Spritzgießer.
+                  Mechanisch lasttragende Anwendungen mit Personensicherheits-Anspruch, dafür fehlt aktuell die WKO-Gewerbeberechtigung. Das ändert sich mit dem Maschinenbau-Studium-Abschluss. Spritzguss-Großserien über 5.000 Stück, ab dieser Stückzahl ist 3D-Druck wirtschaftlich nicht mehr sinnvoll, wir verweisen ehrlich an Spritzgießer.
                 </p>
                 <p className="text-base leading-[1.85] text-foreground/85">
-                  Lieber „nein, das passt nicht zu uns" als ein halbgares Ja. Das ist keine Marketing-Phrase — wir lehnen ungefähr 10 % der Anfragen aktiv ab. Mehr Transparenz dazu auf <Link href="/ueber-uns" className="text-primary hover:underline font-semibold">Über uns</Link> und in der <Link href="/qualitaet" className="text-primary hover:underline font-semibold">Qualitäts-Selbstverpflichtung</Link>.
+                  Lieber „nein, das passt nicht zu uns" als ein halbgares Ja. Das ist keine Marketing-Phrase, wir lehnen ungefähr 10 % der Anfragen aktiv ab. Mehr Transparenz dazu auf <Link href="/ueber-uns" className="text-primary hover:underline font-semibold">Über uns</Link> und in der <Link href="/qualitaet" className="text-primary hover:underline font-semibold">Qualitäts-Selbstverpflichtung</Link>.
                 </p>
               </AnimatedSection>
             </div>
@@ -477,7 +477,7 @@ const Index = () => {
                       Preisbeispiele pro Projekt-Typ
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
-                      Was kostet ein Architekturmodell? Ein Messemodell? Ein Funktionsmuster?
+                      Was kostet ein Architekturmodell? Ein Messemodell? Ein Prototyp?
                       Konkrete Preisbereiche, Treiber-Übersicht, Rabattstaffel.
                     </p>
                     <ul className="space-y-2 mb-8">
@@ -551,7 +551,7 @@ const Index = () => {
                     { q: "Welche Dateiformate?", a: "STL, OBJ, STEP, 3MF, ArchiCAD, Revit, SolidWorks, Rhino, Fusion 360. Oder wir modellieren nach Skizze – kostenlos.", link: null },
                     { q: "Für welche Branchen?", a: "Architekten (1:50–1:500), Messeaussteller (Express 24h), Produktentwickler, Firmenkunden (NDA, Mengenrabatte, Rahmenverträge).", link: null },
                     { q: "Welche Nachbearbeitung?", a: "Schleifen, Grundierung, Lackierung RAL/Pantone, Aceton-Dampfglättung, Segmentierung. Manuelle QA.", link: null },
-                    { q: "Warum österreichisches Filament?", a: "Recycelte Industrieabfälle, Ökostrom. 80% weniger CO₂. Toleranz ±0,02 mm.", link: { to: "/ratgeber/material-guide", text: "Material-Guide →" } },
+                    { q: "Warum österreichisches Filament?", a: "Recycelte Industrieabfälle, Ökostrom. 80% weniger CO₂. Filament-Durchmesser ±0,02 mm.", link: { to: "/ratgeber/material-guide", text: "Material-Guide →" } },
                   ].map((item, i) =>
                     <AccordionItem key={i} value={`faq-${i}`}
                       className="border-2 border-border rounded-2xl px-6 hover:border-primary/30 transition-all data-[state=open]:border-primary/30">
