@@ -30,10 +30,10 @@ export const BRAND = {
   email: 'office@ek-druck.at',
 
   // ─── Equipment ──────────────────────────────────────────────────
-  printers: {
-    fdm: 3, // 2× Bambulab P1S + 1× Prusa XL 5T
-    fdmModels: ['Bambulab P1S (2×)', 'Prusa XL 5-Toolhead'],
-  },
+  // BEWUSST KEINE Druckeranzahl und keine Maschinennamen hier.
+  // Nach aussen kommunizieren wir Faehigkeiten (Bauraum, Multi-Material,
+  // 24/7-Parallelfertigung), nicht die Groesse des Maschinenparks.
+  // Repo ist public, also gehoeren solche Angaben auch nicht in den Quellcode.
 
   // ─── Produktions-Kapazität ──────────────────────────────────────
   monthlyCapacity: '~150 Bauteile Standard, ~25-40 Komplettmodelle',
