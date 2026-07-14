@@ -53,6 +53,10 @@ export interface RealCase {
 
   // Optional Cross-Links
   relatedCases?: string[] // slugs
+
+  // Optional echte Projektfotos + Fotocredit
+  images?: { src: string; alt: string }[]
+  photoCredit?: string
 }
 
 export const cases: RealCase[] = [
@@ -359,6 +363,76 @@ export const cases: RealCase[] = [
       text: 'Direkt-CAD-Import aus ArchiCAD ohne Konvertierungs-Drama, persönliche Übergabe in Wien, 11 Werktage Lead-Time. Das ist die Geschwindigkeit die wir brauchen, wenn die Behörde den Termin um 3 Wochen vorzieht.',
       attribution: 'Projekt-Leitung, Architekturbüro Wien',
     },
+
+    relatedCases: ['ortsmodell-1-500-gemeindepraesentation'],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  //   CASE 6 · Ortsmodell 1:500 für Gemeindepräsentation (mit Fotos)
+  // ═══════════════════════════════════════════════════════════════
+  {
+    slug: 'ortsmodell-1-500-gemeindepraesentation',
+    title: 'Ein ganzer Ort als Modell 1:500 für eine Gemeindepräsentation',
+    customerLabel: 'Bauträger und Projektentwickler, Raum Salzburg',
+    branchen: ['architektur'],
+    region: 'salzburg',
+    year: 2026,
+    status: 'completed',
+
+    metaTitle: 'Case: Ortsmodell 1:500 im A1-Format für eine Gemeindepräsentation · 3D-Druck',
+    metaDescription:
+      'Wie wir einen ganzen Ort als Modell im Maßstab 1:500 gedruckt haben. A1-Format 841 × 594 mm, weißes PLA, sechs Teile, rund 80 Stunden Druckzeit, circa 6 Tage Lead-Time.',
+    primaryKeyword: 'Ortsmodell 1:500',
+
+    challenge:
+      'Ein Bauträger aus dem Raum Salzburg musste ein Vorhaben vor einer Gemeinde präsentieren. Pläne und Renderings gab es. Aber bei so einem Termin sitzen Gemeindevertreter und Anrainer im Raum, keine Fachplaner. Gesucht war etwas, das jeder auf den ersten Blick versteht: der ganze Ort mit dem Vorhaben mittendrin, zum Drumherumgehen und Drüberbeugen.',
+
+    approach: [
+      {
+        label: 'Gelände, Straßen und Bestand aufbereiten',
+        detail:
+          'Das Gelände mit allen Höhenlinien, das Straßennetz und die bestehende Bebauung aus den Planungsdaten aufbereitet. Im Maßstab 1:500 fliegt alles raus, was man ohnehin nicht mehr erkennt. Was bleibt, sind saubere Dachkanten, klare Höhenlinien und die Kirche als Orientierungspunkt.',
+      },
+      {
+        label: 'Aufteilung in sechs Teile',
+        detail:
+          'Fertig misst das Modell 841 × 594 mm, also A1, und passt am Stück auf kein Druckbett. Aufgeteilt in sechs Teile, die Trennlinien entlang von Straßen und Geländekanten gelegt, wo sie am wenigsten auffallen.',
+      },
+      {
+        label: 'Weißes PLA, rund 80 Stunden',
+        detail:
+          'Alles in einem durchgehenden Weiß, damit das Auge auf Höhen und Volumen schaut statt auf Farben. Rund 80 Stunden Druckzeit über mehrere Tage, Schicht für Schicht.',
+      },
+      {
+        label: 'Von Hand zu einem Stück zusammengesetzt',
+        detail:
+          'Die sechs Teile von Hand zusammengesetzt und die Übergänge nachgearbeitet, bis der Ort wieder wie aus einem Guss auf dem Tisch liegt. Rund 6 Tage von der fertigen Datei bis zur Übergabe.',
+      },
+    ],
+
+    technicalSpecs: [
+      { label: 'Maßstab', value: '1:500' },
+      { label: 'Modelltyp', value: 'Ortsmodell / Massenmodell (Gebäudevolumen ohne Fassadendetail)' },
+      { label: 'Modell-Maße', value: '841 × 594 × ca. 50 mm (A1)' },
+      { label: 'Material', value: 'Weißes PLA' },
+      { label: 'Aufbau', value: '6 Teile, von Hand zusammengesetzt' },
+      { label: 'Druckzeit', value: 'ca. 80 Stunden' },
+      { label: 'Lead-Time', value: 'ca. 6 Tage plus Dateiaufbereitung' },
+      { label: 'Anlass', value: 'Gemeindepräsentation' },
+    ],
+
+    outcome:
+      'Das Modell lag bei der Gemeindepräsentation auf dem Tisch. Ein Plan braucht Erklärung, ein Modell nicht. Die Anwesenden haben sich drübergebeugt und das Vorhaben im Zusammenhang mit dem ganzen Ort sofort erfasst, mit Geländeverlauf, Nachbarschaft und Wegen. Genau die Diskussion, die man in so einem Termin haben will.',
+
+    lessons:
+      'Im Maßstab 1:500 gewinnt man nichts durch mehr Detail, sondern durch Weglassen. Entscheidend sind ein durchgehendes Weiß, saubere Dachkanten und ein Geländeverlauf, der stimmt. Und die Trennlinien der sechs Teile gehören dorthin, wo ohnehin eine Kante ist. Dann sieht sie später niemand mehr.',
+
+    images: [
+      { src: '/cases/ortsmodell-kirche.jpg', alt: 'Kirche im Zentrum des 3D-gedruckten Ortsmodells im Maßstab 1:500' },
+      { src: '/cases/ortsmodell-uebersicht.jpg', alt: 'Übersicht des weißen Ortsmodells mit Bebauung, Straßen und Gelände' },
+      { src: '/cases/ortsmodell-hoehenlinien.jpg', alt: 'Detail des Ortsmodells mit Höhenlinien, Straßenverlauf und Gebäuden' },
+      { src: '/cases/ortsmodell-tiefe.jpg', alt: 'Blick über das weiße Ortsmodell, Häuser im Maßstab 1:500 aus PLA' },
+    ],
 
     relatedCases: ['wien-stadtentwicklung-1-500-stadtmodell'],
   },
