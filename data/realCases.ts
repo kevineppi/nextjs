@@ -48,7 +48,7 @@ export interface RealCase {
   lessons?: string // "Was wir gelernt haben" - macht authentisch
   customerQuote?: {
     text: string
-    attribution: string // "Konstruktionsleiter, anonymisiert" oder Echtname falls OK
+    attribution: string // "Projektleitung, anonymisiert" oder Echtname falls OK
   }
 
   // Optional Cross-Links
@@ -83,14 +83,14 @@ export const cases: RealCase[] = [
       },
       {
         label: 'Segmentierungs-Planung',
-        detail: 'Aufgrund der 3-Stockwerke-Höhe Modell in 4 Hauptsegmente konstruiert. Unsichtbare Magnet-Verbindungen entlang natürlicher Wand-Übergänge. Trennstellen mit Spachtel und Lackierung kaschiert.',
+        detail: 'Aufgrund der 3-Stockwerke-Höhe Modell in 4 Hauptsegmente aufgeteilt. Unsichtbare Magnet-Verbindungen entlang natürlicher Wand-Übergänge. Trennstellen mit Spachtel und Lackierung kaschiert.',
       },
       {
         label: 'Produktion + Lackierung',
         detail: 'ABS für Lackierfähigkeit, Aceton-Dampfglättung an sichtbaren Sektionen. 2K-Lackierung in RAL 7035 (Standard MV-Lichtgrau). Lasergravierte Typenschilder als Inlay.',
       },
       {
-        label: 'Funktions-Detail',
+        label: 'Detail zum Öffnen',
         detail: 'Eine Sektion mit klappbarer Tür → öffnet die Sicht auf gedruckte Sammelschienen, Stromwandler, Leistungsschalter. Live-Demo am Messestand möglich.',
       },
       {
@@ -116,7 +116,7 @@ export const cases: RealCase[] = [
       'Was ich beim nächsten Mal anders machen würde: Die Magnetverbindungen hatten zu viel Spielraum bei einem der Übergänge · manuelle Nachjustierung am Aufbautag nötig. Heute fixiere ich kritische Verbindungen mit Konus-Steckung + Magnet kombiniert.',
 
     customerQuote: {
-      text: 'Die Genauigkeit der Detailwiedergabe hat selbst unsere Engineering-Kollegen überrascht. Das war kein Modell · das war eine glaubwürdige 1:25-Replik unserer Anlage.',
+      text: 'Die Detailtreue hat selbst unsere Engineering-Kollegen überrascht. Am Stand wirkte es, als stünde unsere Anlage im Maßstab 1:25 vor uns.',
       attribution: 'Marketing-Leitung (auf Wunsch anonymisiert)',
     },
 
@@ -171,10 +171,10 @@ export const cases: RealCase[] = [
     ],
 
     outcome:
-      'Auslieferung 4 Tage vor Weihnachts-Aktion fertig. Generali setzt seitdem ekdruck für regelmäßige Mitarbeiter-Aktionen als Stammlieferant ein. Aus dem Auftrag entstand das Sub-Format "Klein-Serie 100-5.000 Stück" das jetzt ein eigener Service-Bereich ist.',
+      'Auslieferung 4 Tage vor Weihnachts-Aktion fertig. Generali setzt seitdem ekdruck für regelmäßige Mitarbeiter-Aktionen als Stammlieferant ein. Aus dem Auftrag entstand das Sub-Format "Mehrfachfertigung 100-5.000 Stück" das jetzt ein eigener Service-Bereich ist.',
 
     lessons:
-      'Lehre für Klein-Serie: NICHT alle Drucker gleichmäßig auslasten, sondern einen als "Reserve" laufen lassen für Ausfall-Risiko. Beim Generali-Auftrag fiel an Tag 12 ein Druckbett aus (verstopfte Düse) · ohne Reserve hätten wir 2 Tage verloren.',
+      'Lehre für Mehrfachfertigung: NICHT alle Drucker gleichmäßig auslasten, sondern einen als "Reserve" laufen lassen für Ausfall-Risiko. Beim Generali-Auftrag fiel an Tag 12 ein Druckbett aus (verstopfte Düse) · ohne Reserve hätten wir 2 Tage verloren.',
 
     customerQuote: {
       text: 'Wir hatten in 3 Wochen eine ganze Charge in Weihnachts-Qualität · das schaffen sonst nicht mal die Spritzguss-Anbieter mit Werkzeugbau-Vorlauf.',
@@ -205,8 +205,8 @@ export const cases: RealCase[] = [
 
     approach: [
       {
-        label: 'Konstruktions-Übernahme',
-        detail: 'CAD direkt aus dem Konstruktions-System. Reduktion auf die SEO-relevanten Komponenten: Maschinengestell, Werkzeugkopf, Spannfutter, Spindel, Linearführung.',
+        label: 'CAD-Übernahme',
+        detail: 'Daten direkt aus dem CAD-System des Kunden. Reduktion auf die sichtbaren Kern-Komponenten: Maschinengestell, Werkzeugkopf, Spannfutter, Spindel, Linearführung.',
       },
       {
         label: 'Schnittebene-Design',
@@ -259,15 +259,15 @@ export const cases: RealCase[] = [
     status: 'completed',
 
     metaTitle: 'Case: Kreiselpumpen-Schnittmodell mit drehbarem Laufrad · 3D-Druck',
-    metaDescription: 'Wie wir 6 Stück Kreiselpumpen-Schnittmodelle für die deutschsprachige Vertriebs-Tournee eines OÖ-Herstellers gedruckt haben. PLA, drehbar, mechanisch belastbar.',
+    metaDescription: 'Wie wir 6 Stück Kreiselpumpen-Schnittmodelle für die deutschsprachige Vertriebs-Tournee eines OÖ-Herstellers gedruckt haben. PETG, drehbares Laufrad, gemacht für den täglichen Transport.',
     primaryKeyword: 'Pumpe Schnittmodell 3D-Druck',
 
     challenge:
-      'Ein OÖ-Pumpenhersteller stellte 2025 eine neue Kreiselpumpen-Generation vor. 6 Vertriebs-Mitarbeiter starteten eine deutschsprachige Tournee bei Engineering-Kunden in DACH. Jeder brauchte ein griffsicheres, belastbares Schnittmodell zum Auf-den-Tisch-stellen und Erklären. Originale Pumpen-Demos waren zu groß für den Koffer + zu schwer für tägliches Transportieren.',
+      'Ein OÖ-Pumpenhersteller stellte 2025 eine neue Kreiselpumpen-Generation vor. 6 Vertriebs-Mitarbeiter starteten eine deutschsprachige Tournee bei Engineering-Kunden in DACH. Jeder brauchte ein griffsicheres Schnittmodell zum Auf-den-Tisch-stellen und Erklären, das den Reise-Alltag mitmacht. Originale Pumpen-Demos waren zu groß für den Koffer + zu schwer für tägliches Transportieren.',
 
     approach: [
       {
-        label: 'Mehrfach-Produktion in Klein-Serie',
+        label: 'Mehrfachfertigung',
         detail: '6 identische Modelle aus dem gleichen CAD. Parallel-Druck auf 2 Druckern, identische Druck-Parameter für 1:1-Reproduzierbarkeit.',
       },
       {
@@ -276,7 +276,7 @@ export const cases: RealCase[] = [
       },
       {
         label: 'Material-Wahl PETG',
-        detail: 'PETG statt PLA wegen mechanischer Belastung · Vertriebs-Demos bedeuten 100+ Anfass-Zyklen pro Modell. PETG hält das ohne Spannungsrisse.',
+        detail: 'PETG statt PLA, weil die Modelle täglich in die Hand genommen werden · Vertriebs-Demos bedeuten 100+ Anfass-Zyklen pro Modell. PETG steckt das weg.',
       },
       {
         label: 'Transportkoffer + Reset-Anleitung',
