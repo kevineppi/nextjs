@@ -209,27 +209,32 @@ const Kostenrechner = () => {
     }
     setIsSubmitting(true);
     try {
-      const { error } = await supabase.from("anfragen").insert({
+      const configLines = parts.map((p, i) =>
+        `- ${p.fileName || `Teil ${i + 1} (Standard)`} · ${p.materialKey} · ${p.layerHeight} mm · Infill ${p.infillPercent}% · Wand ${p.wallThickness.toFixed(1)} mm · ${p.qty}× · ${fmt(partResults[i]?.finalNet ?? 0)}`
+      ).join("\n");
+      const message = [
+        "Kostenrechner-Anfrage",
+        contactForm.company ? `Firma: ${contactForm.company}` : null,
+        contactForm.phone ? `Telefon: ${contactForm.phone}` : null,
+        `Gesamt-Richtpreis: ${fmt(totalNet)} exkl. MwSt. (${totalQty} ${totalQty === 1 ? "Teil" : "Teile"})`,
+        "",
+        "Konfiguration:",
+        configLines,
+        contactForm.message ? `\nAnmerkungen:\n${contactForm.message}` : null,
+      ].filter(Boolean).join("\n");
+
+      const { error } = await supabase.from("contact_inquiries").insert({
         name: contactForm.name,
         email: contactForm.email,
-        firma: contactForm.company || null,
-        telefon: contactForm.phone || null,
-        nachricht: contactForm.message || null,
-        konfiguration: JSON.stringify(parts.map((p, i) => ({
-          fileName: p.fileName,
-          material: p.materialKey,
-          layerHeight: p.layerHeight,
-          infill: p.infillPercent,
-          wallThickness: p.wallThickness,
-          qty: p.qty,
-          price: partResults[i]?.finalNet,
-        }))),
-        gesamtpreis: totalNet,
+        project_type: "Kostenrechner-Anfrage",
+        message,
+        status: "new",
       });
       if (error) throw error;
       setFormSubmitted(true);
       toast.success("Anfrage erfolgreich gesendet!");
-    } catch {
+    } catch (err) {
+      console.error("Kostenrechner submit failed:", err);
       toast.error("Fehler beim Senden. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.");
     } finally {
       setIsSubmitting(false);
