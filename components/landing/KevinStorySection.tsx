@@ -269,7 +269,7 @@ const KevinStorySection = () => {
                 {
                   point: 'Aufträge ohne Rechnung',
                   detail:
-                    'ek-druck ist eine angemeldete e.U. mit UID. Alle Aufträge laufen über Rechnung, ohne Ausnahme. Das ist keine Verhandlungssache.',
+                    'ek-druck ist eine ordentlich angemeldete e.U. Alle Aufträge laufen über Rechnung, ohne Ausnahme. Das ist keine Verhandlungssache.',
                 },
                 {
                   point: 'Kostenlose Probemodelle',

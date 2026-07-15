@@ -7,7 +7,6 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
-import AIChatWidget from "@/components/AIChatWidget";
 
 const Ratgeber = () => {
   const articles = [
@@ -331,9 +330,7 @@ const Ratgeber = () => {
           </div>
         </section>
 
-        <StickyCTA context="Ratgeber" />
-        <AIChatWidget />
-        <Footer />
+        <StickyCTA context="Ratgeber" />        <Footer />
       </div>
     </>
   );

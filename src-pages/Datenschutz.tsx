@@ -10,16 +10,10 @@ import Link from "next/link";
  * Betroffenenrechte, Aufsichtsbehörde).
  *
  * WICHTIG: Der Inhalt beschreibt, was die Website TATSÄCHLICH verarbeitet
- * (Hosting Vercel, Datenbank + Chat-Backend Supabase, Terminbuchung Cal.com,
- * Karte Google Maps). Kein Analytics, kein Tracking, keine Werbe-Pixel.
- *
- * OFFEN (von Kevin zu ergänzen): Welches KI-Sprachmodell die Supabase-Function
- * 'rag-chat' aufruft. Solange das nicht feststeht, ist KI_UNTERAUFTRAGNEHMER
- * bewusst leer und der Absatz nennt nur, was verifiziert ist.
+ * (Hosting Vercel, Datenbank Supabase, Terminbuchung Cal.com, Karte Google
+ * Maps). Kein Analytics, kein Tracking, keine Werbe-Pixel. Der frühere
+ * KI-Chat wurde entfernt und ist daher nicht mehr aufgeführt.
  */
-
-// Sobald der Anbieter feststeht, hier eintragen (z.B. "OpenAI, Ireland/USA").
-const KI_UNTERAUFTRAGNEHMER = "";
 
 const STAND = "Juli 2026";
 
@@ -156,33 +150,9 @@ const Datenschutz = () => {
               </p>
             </section>
 
-            {/* 5 KI-Chat */}
+            {/* 5 Hosting und Server-Logs */}
             <section className="space-y-3">
-              <h2 className="text-xl font-bold">5. KI-Chat-Assistent</h2>
-              <p className="text-muted-foreground">
-                Auf der Website steht ein Chat-Assistent zur Verfügung, der Fragen zu unseren Leistungen
-                beantwortet. Wenn Sie ihn nutzen, werden Ihre Chat-Nachricht, der bisherige Gesprächsverlauf und
-                eine zufällige Sitzungs-Kennung an unsere Backend-Funktion bei{" "}
-                <strong className="text-foreground">Supabase</strong> übermittelt und dort mit Hilfe eines
-                KI-Sprachmodells beantwortet.
-                {KI_UNTERAUFTRAGNEHMER
-                  ? ` Das Sprachmodell wird von ${KI_UNTERAUFTRAGNEHMER} bereitgestellt.`
-                  : ""}
-              </p>
-              <p className="text-muted-foreground">
-                Bitte geben Sie im Chat <strong className="text-foreground">keine sensiblen Daten</strong> ein. Für
-                verbindliche Angebote und alles Vertrauliche nutzen Sie bitte das Kontaktformular oder schreiben
-                Sie uns direkt.
-              </p>
-              <p className="text-sm text-muted-foreground">
-                Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt darin, Ihre Fragen
-                schnell und rund um die Uhr zu beantworten. Die Nutzung des Chats ist freiwillig.
-              </p>
-            </section>
-
-            {/* 6 Hosting und Server-Logs */}
-            <section className="space-y-3">
-              <h2 className="text-xl font-bold">6. Hosting und Server-Protokolle</h2>
+              <h2 className="text-xl font-bold">5. Hosting und Server-Protokolle</h2>
               <p className="text-muted-foreground">
                 Die Website wird bei <strong className="text-foreground">Vercel</strong> gehostet. Beim Aufruf
                 einer Seite werden technisch notwendige Daten verarbeitet: IP-Adresse, Datum und Uhrzeit, die
@@ -197,7 +167,7 @@ const Datenschutz = () => {
 
             {/* 7 Google Maps */}
             <section className="space-y-3">
-              <h2 className="text-xl font-bold">7. Google Maps</h2>
+              <h2 className="text-xl font-bold">6. Google Maps</h2>
               <p className="text-muted-foreground">
                 Auf der Kontaktseite binden wir eine Karte von{" "}
                 <strong className="text-foreground">Google Maps</strong> ein, damit Sie unsere Werkstatt finden.
@@ -217,7 +187,7 @@ const Datenschutz = () => {
 
             {/* 8 Empfänger */}
             <section className="space-y-3">
-              <h2 className="text-xl font-bold">8. Empfänger und Auftragsverarbeiter</h2>
+              <h2 className="text-xl font-bold">7. Empfänger und Auftragsverarbeiter</h2>
               <p className="text-muted-foreground">
                 Wir geben Ihre Daten nicht zum Zweck der Werbung weiter und verkaufen sie nicht. Für den Betrieb
                 der Website und die Bearbeitung Ihrer Anfrage setzen wir aber technische Dienstleister ein, die
@@ -241,8 +211,8 @@ const Datenschutz = () => {
                       },
                       {
                         n: "Supabase",
-                        w: "Datenbank für Anfragen, Backend des Chat-Assistenten",
-                        d: "Ihre Anfrage- und Kontaktdaten, Chat-Nachrichten",
+                        w: "Datenbank für Anfragen",
+                        d: "Ihre Anfrage- und Kontaktdaten",
                       },
                       {
                         n: "Cal.com",
@@ -278,7 +248,7 @@ const Datenschutz = () => {
 
             {/* 9 Rechte */}
             <section className="space-y-3">
-              <h2 className="text-xl font-bold">9. Ihre Rechte</h2>
+              <h2 className="text-xl font-bold">8. Ihre Rechte</h2>
               <p className="text-muted-foreground">Ihnen stehen nach der DSGVO folgende Rechte zu:</p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 {[
@@ -309,7 +279,7 @@ const Datenschutz = () => {
 
             {/* 10 Beschwerde */}
             <section className="space-y-3">
-              <h2 className="text-xl font-bold">10. Beschwerderecht</h2>
+              <h2 className="text-xl font-bold">9. Beschwerderecht</h2>
               <p className="text-muted-foreground">
                 Wenn Sie glauben, dass wir Ihre Daten nicht rechtmäßig verarbeiten, können Sie sich bei der
                 Aufsichtsbehörde beschweren:
@@ -340,7 +310,7 @@ const Datenschutz = () => {
 
             {/* 11 Änderungen */}
             <section className="space-y-3">
-              <h2 className="text-xl font-bold">11. Änderungen dieser Erklärung</h2>
+              <h2 className="text-xl font-bold">10. Änderungen dieser Erklärung</h2>
               <p className="text-muted-foreground">
                 Wenn sich die Website oder die eingesetzten Dienste ändern, passen wir diese Erklärung an. Es gilt
                 jeweils die hier veröffentlichte Fassung. Stand: {STAND}.

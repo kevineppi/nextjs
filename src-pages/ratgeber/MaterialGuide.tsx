@@ -7,7 +7,6 @@ import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import AIChatWidget from "@/components/AIChatWidget";
 import HowToSchema from "@/components/HowToSchema";
 import ConversionBanner from "@/components/ConversionBanner";
 const MaterialGuide = () => {
@@ -468,10 +467,7 @@ const MaterialGuide = () => {
               </div>
             </section>
           </div>
-        </article>
-
-        <AIChatWidget />
-        <Footer />
+        </article>        <Footer />
       </div>
     </>;
   };

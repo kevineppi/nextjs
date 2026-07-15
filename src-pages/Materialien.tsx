@@ -7,7 +7,6 @@ import SEOHead from "@/components/SEOHead";
 // StructuredData entfernt 2026-06-02 — LocalBusiness läuft jetzt site-wide via app/layout.tsx
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import Contact from "@/components/Contact";
-import AIChatWidget from "@/components/AIChatWidget";
 import InternalLinks from "@/components/landing/InternalLinks";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -562,9 +561,7 @@ const Materialien = () => {
         <Contact />
       </main>
 
-      <StickyCTA context="3D-Druck Materialien" />
-      <AIChatWidget />
-      <Footer />
+      <StickyCTA context="3D-Druck Materialien" />      <Footer />
     </>
   );
 };

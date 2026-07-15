@@ -224,11 +224,11 @@ const firmenkunden: ServiceSeoContent = {
     eyebrow: 'B2B-Konditionen bei ek-druck konkret',
     h2: 'Firmenkunden & B2B · Rahmenverträge, NDA, Mengenrabatt im Detail',
     paragraphs: [
-      'B2B-3D-Druck mit ek-druck bedeutet: Mengenrabatt ab 5 Stück, Zahlungsziel 30 Tage nach Auftragserteilung, NDA-fähige Projektabwicklung mit verschlüsseltem Datentransfer, persönlicher Ansprechpartner ohne Vertriebsfilter. Als österreichisches Einzelunternehmen mit Kleinunternehmer-Regelung stelle ich ohne USt-Aufschlag aus · für B2B-Kunden mit UID neutral, für AT-Privatkunden ist das ein direkter Preisvorteil. Rahmenverträge mit garantierter Mindestabnahme und Sonderkonditionen sind verhandelbar ab €5.000 jährlichem Auftragsvolumen.',
+      'B2B-3D-Druck mit ek-druck bedeutet: Mengenrabatt ab 5 Stück, Zahlungsziel 30 Tage nach Auftragserteilung, NDA-fähige Projektabwicklung mit verschlüsseltem Datentransfer, persönlicher Ansprechpartner ohne Vertriebsfilter. Als österreichisches Einzelunternehmen mit Kleinunternehmer-Regelung stelle ich ohne Umsatzsteuer-Aufschlag aus, der Rechnungsbetrag bleibt für Sie transparent. Rahmenverträge mit garantierter Mindestabnahme und Sonderkonditionen sind verhandelbar ab €5.000 jährlichem Auftragsvolumen.',
       'Rahmenvertrag 3D-Druck B2B funktioniert so: Sie definieren ein jährliches Auftragsvolumen (typisch €5.000-€50.000), wir vereinbaren Sonderkonditionen (Rabattstaffel, Lead-Time-Garantie, persönlicher Ansprechpartner). Zahlungsziele 30 oder 60 Tage nach Lieferung, Quartals-Reporting der bezogenen Leistungen, jährliche Konditions-Review. Bei größeren Industrie-Kunden auch Lagerhaltung gängig genutzter Komponenten gegen Mindestabnahme verhandelbar.',
       'NDA 3D-Druck bei ek-druck heißt: verschlüsselter Datentransfer über separate Strecke (kein Standard-Email-Anhang), separater Werkstattbereich für sensible Projekte, automatische CAD-Löschung nach Lieferung mit vertraglicher Zusicherung. Standard-NDA-Vertrag liegt vor, Sonder-NDA mit branchen-spezifischen Klauseln (z.B. für Verteidigungs- oder Pharma-Projekte) wird auf Anfrage individuell formuliert. NDA-Aufschlag €150 einmalig pro Projekt · deckt den zusätzlichen Verwaltungsaufwand.',
       'Mengenrabatt 3D-Druck startet bei 5 Stück mit 5% · ein praktischer Einstieg für Klein-Serien. Ab 10 Stück 10%, ab 50 Stück 15%, ab 100 Stück 20% Rabatt auf den Listenpreis. Bei Stückzahlen über 500 verlassen wir die Standard-Rabattstaffel und kalkulieren individuell, weil ab da Druckbett-Optimierung und Material-Bulk-Einkauf signifikante Skaleneffekte bringen · oft -30% bis -50% gegenüber Stückpreis. Werbeartikel-Klein-Serien (z.B. 1.000-5.000 Stück gebrandet) ab €6 pro Stück.',
-      'Zahlungsziel 30 Tage ist Standard für etablierte B2B-Kunden ab dem 2. Auftrag. Beim Erstauftrag mit neuem Kunden bevorzugen wir 30% Anzahlung bei Auftragserteilung, 70% bei Lieferung · das reduziert Risiko für beide Seiten. Bei größeren Aufträgen über €5.000 individuelles Zahlungs-Setup verhandelbar (z.B. 30/40/30 in 3 Tranchen). UID-Vermerk auf Rechnung Standard, Reverse-Charge-Verfahren bei EU-B2B-Kunden möglich. Buchhaltungs-Standard nach österreichischer UGB.',
+      'Zahlungsziel 30 Tage ist Standard für etablierte B2B-Kunden ab dem 2. Auftrag. Beim Erstauftrag mit neuem Kunden bevorzugen wir 30% Anzahlung bei Auftragserteilung, 70% bei Lieferung · das reduziert Risiko für beide Seiten. Bei größeren Aufträgen über €5.000 individuelles Zahlungs-Setup verhandelbar (z.B. 30/40/30 in 3 Tranchen). Rechnung als Kleinunternehmer ohne Umsatzsteuer-Aufschlag, Buchhaltung nach österreichischem UGB.',
     ],
   },
   faqs: [
@@ -255,7 +255,7 @@ const firmenkunden: ServiceSeoContent = {
     {
       question: 'Ist ek-druck für österreichische und deutsche B2B-Kunden gleichermaßen?',
       answer:
-        'Ja. AT-Kunden mit UID: Reverse-Charge-Verfahren nicht nötig, Rechnung mit UID-Vermerk. DE-Kunden: EU-Reverse-Charge möglich, USt-IDNr auf Rechnung. CH-Kunden: Export-Lieferung mit ZollPapieren, MWSt-frei.',
+        'Ja. Als Kleinunternehmer nach § 6 Abs. 1 Z 27 UStG stelle ich Rechnungen ohne Umsatzsteuer aus, mit Hinweis auf die Steuerbefreiung. Für Kunden in Österreich, Deutschland und der Schweiz ist der Ablauf unkompliziert. Details zur grenzüberschreitenden Abwicklung klären wir im Angebot.',
     },
     {
       question: 'Welche Branchen bedient ek-druck primär im B2B-Bereich?',

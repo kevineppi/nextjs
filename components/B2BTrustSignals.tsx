@@ -5,17 +5,16 @@
  * 2026-05-26 (K7 aus 5-Instanzen-Audit):
  *   B2B-Großkunden checken vor €5.000+-Aufträgen reflexartig nach:
  *     - WKO-Eintrag (haben)
- *     - DUNS-Nummer (Bonität, fehlt — wird beantragt)
- *     - Verbandsmitgliedschaften (Cluster, FHKÖ — geplant)
- *     - UID-Nummer (haben implizit)
+ *     - DUNS-Nummer (Bonität, fehlt, wird beantragt)
+ *     - Verbandsmitgliedschaften (Cluster, FHKÖ, geplant)
  *     - LinkedIn-Company-Page (Vertrauen durch Sichtbarkeit)
+ *   (Kleinunternehmer nach § 6 Abs. 1 Z 27 UStG, daher KEINE UID.)
  *
  * Server Component, sitewide einsetzbar.
  *
  * TODO Kevin nach Beantragung:
  *   - DUNS-Nummer eintragen in BRAND.duns (data/brandVoice.ts)
  *   - Cluster-Mitgliedschaft eintragen
- *   - UID-Nummer prüfen + eintragen
  */
 
 import Link from 'next/link'
@@ -38,8 +37,8 @@ const B2BTrustSignals = ({ variant = 'inline', className = '' }: B2BTrustSignals
     },
     {
       icon: FileCheck,
-      label: 'AT-UID + Reverse-Charge EU-B2B',
-      detail: 'Saubere Rechnungsstellung für AT/DE/CH B2B-Kunden',
+      label: 'Verbindliches Festpreisangebot in 6 h',
+      detail: 'Schriftlich, kostenlos, keine versteckten Kosten',
       visible: true,
     },
     {

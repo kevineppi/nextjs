@@ -298,7 +298,7 @@ export default function QualityPage() {
                   { title: 'Spritzguss-Großserien >5.000 Stück', detail: 'Ab dieser Stückzahl ist Spritzguss billiger. Ich verweise auf passende Werkzeugbauer aus meinem Netzwerk. Bis 5.000 Stück bin ich konkurrenzfähig.' },
                   { title: 'Resin-Schmuck und Mikro-Detailmodelle', detail: 'SLA/DLP-Druck im Schmuck-Bereich ist eine eigene Disziplin. FDM-Druck (mein Stack) kommt bei Mikro-Details an Grenzen.' },
                   { title: 'Spielzeug für Kleinkinder', detail: 'Lebensmittel-/Kleinkind-Sicherheits-Zertifizierungen liegen jenseits meiner Kapazität. PETG ist FDA-konform · aber für Spielzeug-Zertifizierung brauchen Sie andere Anbieter.' },
-                  { title: 'Schattenkunden / Bar-Aufträge ohne Rechnung', detail: 'ekdruck ist eine ehrlich angemeldete e.U. Alle Aufträge laufen ordentlich über Rechnung mit UID-Vermerk. Keine Ausnahmen.' },
+                  { title: 'Schattenkunden / Bar-Aufträge ohne Rechnung', detail: 'ekdruck ist eine ehrlich angemeldete e.U. Alle Aufträge laufen ordentlich über Rechnung. Keine Ausnahmen.' },
                   { title: 'Kostenlose "Test-Modelle" für Privatkunden', detail: 'Für Schulen, Forschungs-Projekte und gemeinnützige Initiativen mache ich Sonderkonditionen. Private "Schau-mal-was-Du-kannst"-Aufträge nicht kostenfrei.' },
                 ].map((g, i) => (
                   <div key={i} className="bg-background border-2 border-border rounded-2xl p-6 hover:border-destructive/20 transition-all">
