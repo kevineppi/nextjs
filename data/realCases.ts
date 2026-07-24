@@ -434,7 +434,72 @@ export const cases: RealCase[] = [
       { src: '/cases/ortsmodell-tiefe.jpg', alt: 'Blick über das weiße Ortsmodell, Häuser im Maßstab 1:500 aus PLA' },
     ],
 
-    relatedCases: ['wien-stadtentwicklung-1-500-stadtmodell'],
+    relatedCases: ['ortsmodell-express-zwei-tage', 'wien-stadtentwicklung-1-500-stadtmodell'],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  //   CASE 7 · Ortsmodell in 2 Tagen (Express, mit Fotos)
+  // ═══════════════════════════════════════════════════════════════
+  {
+    slug: 'ortsmodell-express-zwei-tage',
+    title: 'Ortsmodell in zwei Tagen: vom Auftrag bis in den Sitzungssaal',
+    customerLabel: 'Auftraggeber mit kurzfristigem Sitzungstermin',
+    branchen: ['architektur'],
+    year: 2026,
+    status: 'completed',
+
+    metaTitle: 'Case: Ortsmodell in 2 Tagen gedruckt, pünktlich zur Sitzung · 3D-Druck',
+    metaDescription:
+      'Auftrag am Sonntagabend, Versand am Dienstagmittag: ein komplettes Ortsmodell in unter zwei Tagen aufbereitet und aus weißem PLA gedruckt, pünktlich zum Sitzungstermin.',
+    primaryKeyword: 'Ortsmodell Express 3D-Druck',
+
+    challenge:
+      'Der Auftraggeber brauchte für einen Sitzungstermin ein Ortsmodell, und zwar sehr kurzfristig. Pläne und Renderings lagen vor, aber im Raum wollte er den Ort greifbar auf den Tisch legen. Das Zeitfenster war eng: zwischen Auftrag und Termin lagen nur zwei Tage, das Wochenende inklusive.',
+
+    approach: [
+      {
+        label: 'Sonntagabend: Auftrag und Daten',
+        detail:
+          'Der Auftrag kam am Sonntagabend. Noch am selben Abend habe ich die Planungsdaten gesichtet, das Gelände und die Bebauung aufbereitet und geprüft, was im Maßstab sinnvoll darstellbar ist.',
+      },
+      {
+        label: 'Alles neu aufbereitet',
+        detail:
+          'Das komplette Ortsmodell wurde in diesem Fenster aufbereitet: Gelände mit Höhenlinien, Straßen und die Baukörper als saubere Volumen. Nichts von der Stange, alles auf dieses Projekt zugeschnitten.',
+      },
+      {
+        label: 'Parallel gedruckt, auch über Nacht',
+        detail:
+          'Damit die zwei Tage reichen, lief der Druck parallel und durchgehend, auch nachts. Weißes PLA, Schicht für Schicht, die Geländeschichten geben dem Relief seine Struktur.',
+      },
+      {
+        label: 'Dienstagmittag: Versand',
+        detail:
+          'Dienstagmittag ging das fertige Modell raus, von Hand zusammengesetzt und kontrolliert. Rechtzeitig, um es zum Termin auf den Tisch zu bringen.',
+      },
+    ],
+
+    technicalSpecs: [
+      { label: 'Modelltyp', value: 'Ortsmodell / Geländemodell (Massenmodell)' },
+      { label: 'Material', value: 'Weißes PLA' },
+      { label: 'Auftragserteilung', value: 'Sonntagabend' },
+      { label: 'Versand', value: 'Dienstagmittag' },
+      { label: 'Turnaround', value: 'Unter 2 Tage, aufbereitet und gedruckt' },
+      { label: 'Anlass', value: 'Kurzfristiger Sitzungstermin' },
+    ],
+
+    outcome:
+      'Der Auftraggeber kam zwei Minuten nach Sitzungsbeginn mit dem fertigen Modell in den Raum. Pünktlich, obwohl der Auftrag erst am Sonntagabend gekommen war. Ein Plan wäre rechtzeitig gewesen, ein Modell zum Angreifen normalerweise nicht. Genau das war hier der Unterschied.',
+
+    lessons:
+      'Ein Ortsmodell in zwei Tagen geht nur, wenn zwei Dinge zusammenkommen: eine saubere, schnelle Datenaufbereitung und Anlagen, die parallel und über Nacht durchlaufen. Beides muss vorher stehen, sonst reicht das Fenster nicht. Wenn es steht, ist auch ein Wochenende kein Hindernis.',
+
+    images: [
+      { src: '/cases/ortsmodell-express-uebersicht.jpg', alt: 'Fertiges 3D-gedrucktes Ortsmodell aus weißem PLA vor weißem Studio-Hintergrund' },
+      { src: '/cases/ortsmodell-express-relief.jpg', alt: 'Reliefartiges Gelände des Ortsmodells mit Höhenschichten und Gebäuden aus dem 3D-Druck' },
+    ],
+
+    relatedCases: ['ortsmodell-1-500-gemeindepraesentation', 'wien-stadtentwicklung-1-500-stadtmodell'],
   },
 
 ]
