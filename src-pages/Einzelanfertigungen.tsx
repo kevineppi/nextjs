@@ -28,7 +28,7 @@ import {
 const faqs = [
   {
     question: "Was ist der Unterschied zwischen Einzelanfertigung und Seriendruck?",
-    answer: "Einzelanfertigungen sind individuell gestaltete Anschauungsmodelle oder Unikate ab 1 Stück – maßgeschneidert für Ihren genauen Zweck. Im Gegensatz zur Serie geht jedes Projekt durch eine persönliche Beratung, bei der Material, Maßstab, Farbe und Nachbearbeitung optimal abgestimmt werden. Für Messemodelle, Architekturmodelle und spezielle Präsentationsobjekte ist die Einzelanfertigung meist die optimale Wahl."
+    answer: "Einzelanfertigungen sind individuell gestaltete Anschauungsmodelle oder Unikate ab 1 Stück – maßgeschneidert für Ihren genauen Zweck. Im Gegensatz zur Massenfertigung geht jedes Projekt durch eine persönliche Beratung, bei der Material, Maßstab, Farbe und Nachbearbeitung optimal abgestimmt werden. Für Messemodelle, Architekturmodelle und spezielle Präsentationsobjekte ist die Einzelanfertigung meist die optimale Wahl."
   },
   {
     question: "Welche Dateiformate werden für Einzelanfertigungen akzeptiert?",
@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     question: "Wie werden Maßstäbe bei Architekturmodellen umgesetzt?",
-    answer: "Wir fertigen Architekturmodelle in allen gängigen Maßstäben: 1:50, 1:100, 1:200, 1:500 und darüber hinaus. Bei CAD-Daten aus ArchiCAD oder Revit exportieren Sie idealerweise im Maßstab 1:1 als STL – wir skalieren dann präzise auf den gewünschten Ausgabemaßstab. Fassadendetails, Fenster, Balkone und Dachkonstruktionen werden bis ins Detail abgebildet."
+    answer: "Wir fertigen Architekturmodelle in allen gängigen Maßstäben: 1:50, 1:100, 1:200, 1:500 und darüber hinaus. Bei CAD-Daten aus ArchiCAD oder Revit exportieren Sie idealerweise im Maßstab 1:1 als STL – wir skalieren dann exakt auf den gewünschten Ausgabemaßstab. Fassadendetails, Fenster, Balkone und Dachformen werden bis ins Detail abgebildet."
   }
 ];
 
@@ -69,7 +69,7 @@ const keywordContent = {
       content: "Traditioneller Modellbau ist teuer, zeitaufwändig und schwer skalierbar. 3D-Druck Einzelanfertigungen starten ab €20, sind in 24h lieferbar und ermöglichen beliebige Geometrien. Änderungswünsche kosten nur eine neue Datei – keine teuren Nachjustierungen an Werkzeugen oder Formen. Für Architekten bedeutet das: Wettbewerbsmodell heute bestellt, übermorgen auf dem Tisch."
     },
     {
-      title: "Präzision für anspruchsvolle Projekte",
+      title: "Detailtreue für anspruchsvolle Projekte",
       content: "Unsere FDM-Drucker erreichen Schichtauflösungen bis 0,1mm und Maßgenauigkeiten von ±0,2mm. Das ist ausreichend für detaillierte Architekturmodelle im Maßstab 1:100, technische Anschauungsobjekte und hochwertige Messepräsentationen. Fassadendetails wie Fensterrahmen, Geländer und Reliefstrukturen werden klar abgebildet."
     },
     {
@@ -78,7 +78,7 @@ const keywordContent = {
     },
     {
       title: "Vertraulichkeit & professionelle Abwicklung",
-      content: "NDA auf Anfrage, sichere Datenhaltung und diskreter Umgang mit Ihren Konstruktionsdaten ist für uns selbstverständlich. Firmenkunden erhalten Rechnung mit ausgewiesener Mehrwertsteuer für den Vorsteuerabzug. Rahmenverträge für regelmäßige Auftraggeber auf Anfrage."
+      content: "NDA auf Anfrage, sichere Datenhaltung und diskreter Umgang mit Ihren CAD-Daten ist für uns selbstverständlich. Firmenkunden erhalten Rechnung mit ausgewiesener Mehrwertsteuer für den Vorsteuerabzug. Rahmenverträge für regelmäßige Auftraggeber auf Anfrage."
     }
   ]
 };
@@ -88,7 +88,7 @@ const useCases = [
     icon: Building,
     title: "Architekturmodelle",
     description: "Maßstabsgetreue Wettbewerbsmodelle, Konzeptstudien und städtebauliche Modelle für Architekten und Planungsbüros. Maßstäbe 1:50 bis 1:500.",
-    details: ["CAD-Export aus ArchiCAD/Revit", "Maßstab 1:50 – 1:500", "Fassadendetails präzise", "Weiß, Grau oder Farbig"],
+    details: ["CAD-Export aus ArchiCAD/Revit", "Maßstab 1:50 – 1:500", "Fassadendetails detailtreu", "Weiß, Grau oder Farbig"],
     link: "/architekturmodelle"
   },
   {
@@ -201,13 +201,13 @@ const Einzelanfertigungen = () => {
                   Jedes Modell ein Unikat – ab 1 Stück
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                  Ein einzelnes Bauteil<br />
+                  Ein Einzelstück<br />
                   <span className="text-primary">drucken lassen.</span>
                 </h1>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed max-w-xl">
-                  Vom CAD oder Skizze zum fertigen Unikat in 24 Stunden — ohne Mindestmenge,
+                  Vom CAD oder Skizze zum fertigen Unikat in 24 Stunden, ohne Mindestmenge,
                   ohne Aufpreis. Messemodelle, Architekturmodelle, Gehäuse-Sonderformen,
-                  Halterungen, Oldtimer-Ersatzteile: alles ab 1 Stück. Angebot in 6h.
+                  Sammler- und Deko-Objekte: alles ab 1 Stück. Angebot in 6h.
                 </p>
 
                 <div className="grid grid-cols-2 gap-3 mb-8">
@@ -415,8 +415,8 @@ const Einzelanfertigungen = () => {
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-xl mb-2 text-foreground">Oldtimer-Ersatzteile und historische Bauteile</h3>
-                  <p className="text-foreground/85 leading-relaxed">Ein <strong>Oldtimer-Ersatzteil</strong> dessen Original-Hersteller seit 40 Jahren weg ist. Ein Plastikteil aus den 60er-Jahren das spröde geworden ist. Ein Knopf aus einer alten Industriemaschine. Wir scannen oder rekonstruieren das Originalteil und drucken ein 1:1-Ersatzstück. Für Vereins-Restauratoren, Sammler und Industriebetriebe mit alten Werkzeugmaschinen — ab €40 bei vorhandenem Original, ab €120 bei Reverse-Engineering nach Skizze. Hinweis: rechtlich „Anschauungsstück", nicht offiziell zugelassene Ersatzteile.</p>
+                  <h3 className="font-bold text-xl mb-2 text-foreground">Historische Vorlagen und Sammlermodelle</h3>
+                  <p className="text-foreground/85 leading-relaxed">Ein markantes Zierteil aus den 60er-Jahren das spröde geworden ist. Ein Knopf oder ein Emblem einer alten Maschine als Anschauungsstück fürs Vereinsheim oder die Vitrine. Wir scannen oder rekonstruieren die Vorlage und drucken ein detailgetreues 1:1-Modell. Für Vereins-Restauratoren, Sammler und Museen — ab €40 bei vorhandenem Original, ab €120 bei Reverse-Engineering nach Skizze. Hinweis: rechtlich „Anschauungsstück", nicht offiziell zugelassene Ersatzteile.</p>
                 </div>
 
                 <div>
@@ -425,13 +425,13 @@ const Einzelanfertigungen = () => {
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-xl mb-2 text-foreground">Sondergeometrien aus dem Spritzguss-Konzept</h3>
-                  <p className="text-foreground/85 leading-relaxed">Ein Bauteil das später in Spritzguss gehen soll — Sie brauchen aber jetzt erstmal 1-5 Stück um zu prüfen ob Konstruktion, Maße und Funktion stimmen. Wir drucken die <strong>Vorab-Bemusterung</strong> in vergleichbarem Material (PETG für PA-ähnliche Eigenschaften, ABS für PS-ähnliche), mit ±0,1 mm Toleranz. Sobald die Konstruktion verifiziert ist, ist der Sprung zum Spritzgießer risikoarm — und das gedruckte Erstmuster geht ins Werkzeugbau-Briefing.</p>
+                  <h3 className="font-bold text-xl mb-2 text-foreground">Design-Vorlagen für die Produktentwicklung</h3>
+                  <p className="text-foreground/85 leading-relaxed">Eine neue Produktform, die Sie vor der weiteren Entwicklung physisch in der Hand halten wollen. Sie brauchen erstmal 1-5 Stück, um Form, Proportion und Anmutung zu prüfen. Wir drucken die <strong>Vorab-Bemusterung</strong> in passendem Material (PETG, ABS) mit sauberer Oberfläche und feinen Details. So sehen und zeigen Sie Ihr Design als greifbares Modell, bevor die nächsten Schritte anstehen.</p>
                 </div>
 
                 <div>
                   <h3 className="font-bold text-xl mb-2 text-foreground">Maßanfertigung nach Kunden-Skizze</h3>
-                  <p className="text-foreground/85 leading-relaxed">Sie haben kein CAD, sondern eine <strong>Skizze, Foto oder mündliche Beschreibung</strong>. Wir nehmen Maße auf (telefonisch oder vor Ort in OÖ), erstellen das 3D-Modell, schicken Ihnen eine Vorab-Visualisierung, drucken nach Freigabe. Reverse-Engineering und Konstruktion ab €120/Stunde, der Druck danach ab €20. Für Kunden ohne CAD-Erfahrung oder bei Bauteilen ohne Plan ist das oft der einzige Weg — und ein riesiger Mehrwert im Vergleich zu „bringen Sie uns ein STL".</p>
+                  <p className="text-foreground/85 leading-relaxed">Sie haben kein CAD, sondern eine <strong>Skizze, Foto oder mündliche Beschreibung</strong>. Wir nehmen Maße auf (telefonisch oder vor Ort in OÖ), erstellen das 3D-Modell, schicken Ihnen eine Vorab-Visualisierung, drucken nach Freigabe. Reverse-Engineering und 3D-Modellierung ab €120/Stunde, der Druck danach ab €20. Für Kunden ohne CAD-Erfahrung oder bei Objekten ohne Plan ist das oft der einzige Weg — und ein riesiger Mehrwert im Vergleich zu „bringen Sie uns ein STL".</p>
                 </div>
               </div>
             </div>

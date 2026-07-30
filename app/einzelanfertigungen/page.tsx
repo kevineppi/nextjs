@@ -3,14 +3,14 @@ import Einzelanfertigungen from '@/src-pages/Einzelanfertigungen'
 import { serviceSchema, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Ein einzelnes Bauteil drucken lassen · ab €20 in 24h',
-  description: 'Nur ein Stück nötig? Kein Mindestauftrag, kein Aufpreis. Vom CAD oder Skizze zum fertigen Unikat in 24h. Auch Ersatzteile, Sonderformen.',
+  title: 'Ein Einzelstück drucken lassen · ab €20 in 24h',
+  description: 'Nur ein Stück nötig? Kein Mindestauftrag, kein Aufpreis. Vom CAD oder Skizze zum fertigen Unikat in 24h. Auch Sonderformen und Modelle.',
   alternates: {
     canonical: 'https://www.ek-druck.at/einzelanfertigungen',
   },
   openGraph: {
-    title: 'Ein einzelnes Bauteil drucken lassen · ab €20 in 24h',
-    description: 'Nur ein Stück nötig? Kein Mindestauftrag, kein Aufpreis. Vom CAD oder Skizze zum fertigen Unikat in 24h. Auch Ersatzteile, Sonderformen.',
+    title: 'Ein Einzelstück drucken lassen · ab €20 in 24h',
+    description: 'Nur ein Stück nötig? Kein Mindestauftrag, kein Aufpreis. Vom CAD oder Skizze zum fertigen Unikat in 24h. Auch Sonderformen und Modelle.',
     url: 'https://www.ek-druck.at/einzelanfertigungen',
     siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
@@ -19,15 +19,15 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ein einzelnes Bauteil drucken lassen · ab €20 in 24h',
-    description: 'Nur ein Stück nötig? Kein Mindestauftrag, kein Aufpreis. Vom CAD oder Skizze zum fertigen Unikat in 24h. Auch Ersatzteile, Sonderformen.',
+    title: 'Ein Einzelstück drucken lassen · ab €20 in 24h',
+    description: 'Nur ein Stück nötig? Kein Mindestauftrag, kein Aufpreis. Vom CAD oder Skizze zum fertigen Unikat in 24h. Auch Sonderformen und Modelle.',
   },
 }
 
 const SERVICE_LD = serviceSchema({
   serviceType: 'Einzelanfertigung 3D-Druck',
   description:
-    'Nur ein Stück nötig? Kein Mindestauftrag, kein Aufpreis. Vom CAD oder Skizze zum fertigen Unikat in 24h. Ersatzteile, Sonderformen, individuelle Bauteile.',
+    'Nur ein Stück nötig? Kein Mindestauftrag, kein Aufpreis. Vom CAD oder Skizze zum fertigen Unikat in 24h. Sonderformen, Modelle und individuelle Einzelstücke.',
   url: 'https://www.ek-druck.at/einzelanfertigungen',
   lowPrice: '20',
   highPrice: '500',
