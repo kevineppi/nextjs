@@ -5,7 +5,7 @@ import { Target, Calculator, Wrench, Truck, Zap, Phone, ArrowRight, BadgeCheck, 
 
 const steps = [
   { num: "01", title: "CAD-Daten oder Skizze senden", time: "2 Min", icon: Target, desc: "STL, STEP, IGES oder native CAD-Dateien. Kein 3D-Modell? Skizze, Foto oder technische Zeichnung reichen für den Start. Auf Wunsch NDA vor Datenaustausch." },
-  { num: "02", title: "Konstruktions-Check & Festpreis", time: "< 6h", icon: Calculator, desc: "Wir prüfen Wandstärken, Stützstrukturen, Anisotropie. Bei Optimierungspotenzial melden wir uns vorher. Verbindliches Festpreisangebot mit Materialempfehlung und Lieferdatum." },
+  { num: "02", title: "Daten-Check & Festpreis", time: "< 6h", icon: Calculator, desc: "Wir prüfen Wandstärken, Stützstrukturen, Anisotropie. Bei Optimierungspotenzial melden wir uns vorher. Verbindliches Festpreisangebot mit Materialempfehlung und Lieferdatum." },
   { num: "03", title: "Fertigung & Qualitätskontrolle", time: "1–14 Tage", icon: Wrench, desc: "FDM startet sofort nach Auftragsbestätigung. SLA und SLS gehen an den passenden Partner. Statusupdates und auf Wunsch Druckfotos zur laufenden Qualitätskontrolle." },
   { num: "04", title: "Versand oder persönliche Zustellung", time: "1–3 Tage", icon: Truck, desc: "Versand österreichweit, EU-weit und auf Anfrage weltweit. In Oberösterreich auf Wunsch persönliche Zustellung. Tracking-Nummer per E-Mail. Folge-Iteration sofort möglich." },
 ];
@@ -14,7 +14,7 @@ const checklist = [
   { item: "CAD-Datei oder Skizze", sub: "STL, STEP – oder ein Foto" },
   { item: "Verfahren-Empfehlung?", sub: "FDM, SLA oder SLS" },
   { item: "Stückzahl", sub: "Von 1 bis 200+ möglich" },
-  { item: "Material & Anwendung", sub: "Funktion, Optik, Outdoor?" },
+  { item: "Material & Anwendung", sub: "Einsatz, Optik, Outdoor?" },
   { item: "Vertraulichkeit", sub: "NDA gewünscht?" },
   { item: "Wunschtermin", sub: "Express möglich" },
 ];
@@ -25,7 +25,7 @@ const PrototypingTimelineSection = () => (
       <div className="max-w-7xl mx-auto">
         <AnimatedSection animation="fade-in" className="mb-12">
           <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Ihr Weg zum Prototyp</p>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-[-0.03em] mb-3">4 Schritte. 1 Ziel: Bauteil in der Hand.</h2>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-[-0.03em] mb-3">4 Schritte. 1 Ziel: Modell in der Hand.</h2>
           <p className="text-muted-foreground max-w-lg">Standardlieferzeit 3–5 Werktage. Express in 24 Stunden möglich. Iteration in Tagen statt Wochen.</p>
         </AnimatedSection>
 

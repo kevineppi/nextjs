@@ -1,10 +1,10 @@
 import AnimatedSection from "@/components/AnimatedSection";
 
 const stats = [
-  { label: "Time-to-Market", value: "−65%", detail: "Konstruktionsfehler vor dem Werkzeugbau erkennen. 5 Monate Markteinführungszeit gewonnen statt verloren." },
+  { label: "Time-to-Market", value: "−65%", detail: "Designfehler vor dem Werkzeugbau erkennen. 5 Monate Markteinführungszeit gewonnen statt verloren." },
   { label: "Iterationskosten pro Zyklus", value: "−92%", detail: "FDM-Iteration ab €30 statt Werkzeugkorrektur ab €5.000. Mehr Iterationen, schnellere Konvergenz zum optimalen Design." },
-  { label: "Werkzeug-Erstkorrekturen", value: "−80%", detail: "Validierte Konstruktion vor Werkzeugbau bedeutet: das Werkzeug greift im ersten Schuss. Werkzeugkorrekturen werden zur Ausnahme." },
-  { label: "Marktrisiko vor Launch", value: "messbar", detail: "Designprototypen ermöglichen echte Nutzerfeedbacks lange vor der Serie. Featuredecisions auf Daten, nicht auf Bauchgefühl." },
+  { label: "Werkzeug-Erstkorrekturen", value: "−80%", detail: "Validiertes Design vor Werkzeugbau bedeutet: das Werkzeug greift im ersten Schuss. Werkzeugkorrekturen werden zur Ausnahme." },
+  { label: "Marktrisiko vor Launch", value: "messbar", detail: "Designprototypen ermöglichen echte Nutzerfeedbacks lange vor der Produktion. Featuredecisions auf Daten, nicht auf Bauchgefühl." },
 ];
 
 const PrototypingROISection = () => (
@@ -14,7 +14,7 @@ const PrototypingROISection = () => (
         <AnimatedSection animation="fade-in" className="mb-12">
           <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Return on Investment</p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-[-0.03em] mb-3">Was Rapid Prototyping wirklich spart.</h2>
-          <p className="text-background/50 max-w-lg">Konstruktionsfehler frühzeitig erkennen statt nach dem Werkzeugbau ausbaden. Eine Beispielrechnung.</p>
+          <p className="text-background/50 max-w-lg">Designfehler frühzeitig erkennen statt nach dem Werkzeugbau ausbaden. Eine Beispielrechnung.</p>
         </AnimatedSection>
 
         <div className="grid sm:grid-cols-2 gap-4 mb-4">
@@ -51,7 +51,7 @@ const PrototypingROISection = () => (
                 )
               )}
             </div>
-            <p className="text-sm text-background/60 text-center max-w-3xl mx-auto">Drei FDM-Iterationen à €120, eine SLS-Vorserie à 30 Stück. Konstruktion validiert vor Werkzeugbau – das Werkzeug greift im ersten Schuss. Bei kritischen Bauteilen mit Sicherheitsanforderungen: <strong className="text-primary">ROI nach einem einzigen vermiedenen Werkzeug-Eingriff</strong>.</p>
+            <p className="text-sm text-background/60 text-center max-w-3xl mx-auto">Drei FDM-Iterationen à €120, eine SLS-Mehrfachfertigung à 30 Stück. Design validiert vor Werkzeugbau, das Werkzeug greift im ersten Schuss. Bei kritischen Modellen mit Sicherheitsanforderungen: <strong className="text-primary">ROI nach einem einzigen vermiedenen Werkzeug-Eingriff</strong>.</p>
           </div>
         </AnimatedSection>
       </div>

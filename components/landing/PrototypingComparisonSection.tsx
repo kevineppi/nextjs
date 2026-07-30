@@ -5,11 +5,11 @@ const alternatives = [
   {
     name: "CNC-Fräsen",
     icon: "🔩",
-    sub: "Subtraktiv, präzise",
+    sub: "Subtraktiv, materialabtragend",
     price: "€500–5k",
     priceSub: "pro Teil",
     items: [
-      { text: "Sehr präzise", status: "yes" },
+      { text: "Sehr detailtreu", status: "yes" },
       { text: "Hohe Werkzeugkosten", status: "no" },
       { text: "Geometrie eingeschränkt", status: "no" },
       { text: "Materialverlust", status: "no" },
@@ -23,7 +23,7 @@ const alternatives = [
     price: "€5–50k",
     priceSub: "Werkzeug + Teil",
     items: [
-      { text: "Serien-Material", status: "yes" },
+      { text: "Endprodukt-Material", status: "yes" },
       { text: "Werkzeug nötig", status: "no" },
       { text: "Nur bei Mengen", status: "mid" },
       { text: "Änderungen teuer", status: "no" },
@@ -33,13 +33,13 @@ const alternatives = [
   {
     name: "Vakuumguss",
     icon: "🧪",
-    sub: "Silikonform, Kleinserien",
+    sub: "Silikonform, kleine Auflagen",
     price: "€800–3k",
     priceSub: "+ Silikonform",
     items: [
       { text: "Gute Oberfläche", status: "yes" },
       { text: "Form-Vorlauf nötig", status: "mid" },
-      { text: "Kleinserien sinnvoll", status: "yes" },
+      { text: "Kleine Auflagen sinnvoll", status: "yes" },
       { text: "Begrenzte Materialien", status: "mid" },
       { text: "2–4 Wochen", status: "mid" },
     ],

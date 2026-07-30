@@ -8,17 +8,17 @@ const painPoints = [
   {
     icon: Clock,
     title: "5 Tage Wartezeit – mitten in der Iteration",
-    text: "Ihre Konstruktion ist fertig, der Sprint läuft. Aber Sie warten 4–5 Werktage auf den Druck. Beim nächsten Druckdienstleister dasselbe Spiel. Das Sprint-Ziel verschiebt sich – und mit ihm die Roadmap.",
+    text: "Ihr Design ist fertig, der Sprint läuft. Aber Sie warten 4–5 Werktage auf den Druck. Beim nächsten Druckdienstleister dasselbe Spiel. Das Sprint-Ziel verschiebt sich – und mit ihm die Roadmap.",
   },
   {
     icon: AlertTriangle,
     title: "Pro Anfrage ein neuer Preis, eine neue Lieferzeit",
-    text: "Mal €45, mal €120, mal €230 – für ähnliche Bauteile. Manchmal in 3 Tagen, manchmal in 10. Sie können Ihrem Vorstand kein verlässliches Iterationsbudget vorlegen, weil die Kosten pro Zyklus springen.",
+    text: "Mal €45, mal €120, mal €230 – für ähnliche Modelle. Manchmal in 3 Tagen, manchmal in 10. Sie können Ihrem Vorstand kein verlässliches Iterationsbudget vorlegen, weil die Kosten pro Zyklus springen.",
   },
   {
     icon: Wallet,
     title: "Zur Deadline immer noch ohne Slot",
-    text: "Freitag soll der Funktionstest stattfinden, Donnerstag ruft der Konstrukteur an: 'Wir brauchen noch eine Variante.' Sie versuchen einen Express-Slot zu bekommen – der ist belegt. Wieder kein Test, wieder eine Woche verloren.",
+    text: "Freitag soll die Bemusterung stattfinden, Donnerstag ruft der Entwickler an: 'Wir brauchen noch eine Variante.' Sie versuchen einen Express-Slot zu bekommen, der ist belegt. Wieder kein Termin, wieder eine Woche verloren.",
   },
 ];
 

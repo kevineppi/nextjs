@@ -6,7 +6,7 @@ const fallbeispiele = [
     branche: "Sondermaschinenbau",
     titel: "Greiferarm-Iteration für Pick-and-Place-Anwendung",
     challenge: "Ein OÖ-Maschinenbauer brauchte einen Greiferarm für variable Werkstückgrößen. Konventionelle Fertigung im Werkzeugbau hätte 4–6 Wochen und €8.000 gekostet – bei unsicherem Endergebnis.",
-    loesung: "Fünf Iterationen aus Carbon-PA in 14 Tagen. Jede Variante getestet, optimiert, neu gedruckt. Die finale Version ging direkt in Kleinserie (12 Stück, SLS PA12 glasgefüllt).",
+    loesung: "Fünf Iterationen aus Carbon-PA in 14 Tagen. Jede Variante getestet, optimiert, neu gedruckt. Die finale Version ging direkt in Mehrfachfertigung (12 Stück, SLS PA12 glasgefüllt).",
     ergebnis: [
       { label: "Iterationen", value: "5×" },
       { label: "Gesamtdauer", value: "14 Tage" },
@@ -19,7 +19,7 @@ const fallbeispiele = [
     branche: "Hardware-Startup",
     titel: "Smart-Home-Sensor: 12 Designvarianten für A/B-Test",
     challenge: "Ein Wiener Hardware-Startup wollte vor dem Crowdfunding-Launch testen, welche Gehäuseform und Farbe beim Endkunden am besten funktioniert. Klassisch unmöglich ohne fünfstellige Werkzeuginvestition.",
-    loesung: "12 Varianten aus PLA+ in drei Wochen. Drei Grundformen × vier Farbschemata. Alle wurden in einer Fokusgruppe mit 30 Probanden getestet, das Gewinner-Design ging in die finale Konstruktion.",
+    loesung: "12 Varianten aus PLA+ in drei Wochen. Drei Grundformen × vier Farbschemata. Alle wurden in einer Fokusgruppe mit 30 Probanden getestet, das Gewinner-Design ging in die finale Umsetzung.",
     ergebnis: [
       { label: "Designvarianten", value: "12" },
       { label: "Gesamtdauer", value: "3 Wochen" },
@@ -32,7 +32,7 @@ const fallbeispiele = [
     branche: "Medizintechnik",
     titel: "Anatomisches Trainingsmodell für Chirurgie-Workshops",
     challenge: "Eine Wiener Klinik wollte ein anatomisch korrektes Trainingsmodell für minimalinvasive Eingriffe – realistisch, robust gegen wiederholten Einsatz, mit aufklappbarer Struktur. NDA-Pflicht.",
-    loesung: "Hybride Fertigung: tragende Struktur aus FDM-PETG, weichere Gewebeschichten aus SLA-Tough-Resin, Verbindungselemente aus TPU. Nach drei Wochen Entwicklung wurde das Modell in einer Serie von 8 Stück gedruckt.",
+    loesung: "Hybride Fertigung: Grundstruktur aus FDM-PETG, weichere Gewebeschichten aus SLA-Tough-Resin, flexible Elemente aus TPU. Nach drei Wochen Entwicklung wurde das Modell in einer Auflage von 8 Stück gedruckt.",
     ergebnis: [
       { label: "Materialkombination", value: "3 Verfahren" },
       { label: "Entwicklung", value: "3 Wochen" },

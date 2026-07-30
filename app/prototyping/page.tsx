@@ -15,14 +15,14 @@ import {
  * Description: Pain-Pull-Format (Spritzguss 6 Wochen → 24h Prototyp) statt Feature-Dump.
  */
 
-const TITLE = '3D-Druck Prototypen in 24h ★5,0 · Funktionsmuster | ekdruck'
+const TITLE = '3D-Druck Prototypen in 24h ★5,0 · Designmuster | ekdruck'
 const DESCRIPTION =
-  'Spritzguss braucht 6 Wochen · wir liefern Prototyp in 24-48h. PLA, PETG, ABS, Carbon-PA. Toleranz ±0,1mm. Festpreis in 6h. ★5,0 (31 Reviews).'
+  'Spritzguss braucht 6 Wochen · Ihr Design-Prototyp in 24-48h. PLA, PETG, ABS, PETG-CF. Feine Details, saubere Oberfläche. Festpreis in 6h. ★5,0 (31).'
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  keywords: 'rapid prototyping, prototyp drucken lassen, 3d druck prototyp, funktionsprototyp, designprototyp, vorserie 3d druck, kleinserienfertigung, fdm prototyp, sla prototyp, sls prototyp, prototyping österreich, prototyp express, konstruktionsprototyp, carbon pa prototyp, pa12 sls, prototyp toleranz, reverse engineering, dfam beratung, 3d druck prototypen 24h, prototyp express österreich',
+  keywords: 'rapid prototyping, prototyp drucken lassen, 3d druck prototyp, designprototyp, anschauungsmuster, konzeptmodell, fdm prototyp, sla prototyp, sls prototyp, prototyping österreich, prototyp express, designmuster 3d druck, pa12 sls, reverse engineering, 3d druck prototypen 24h, prototyp express österreich, mehrfachfertigung 3d druck',
   alternates: buildDachAlternates('/prototyping'),
   openGraph: {
     title: TITLE,
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 const SERVICE_LD = serviceSchema({
   serviceType: 'Rapid Prototyping 3D-Druck',
   description:
-    'Funktionsprototypen in 24-48h aus FDM, SLA, SLS. PLA, PETG, ABS, ASA, PETG-CF, Carbon-PA. Toleranz ±0,1mm. Festpreis-Angebot in 6h. Aus Gunskirchen, OÖ in ganz DACH.',
+    'Design-Prototypen und Anschauungsmuster in 24-48h aus FDM, SLA, SLS. PLA, PETG, ABS, ASA, PETG-CF. Feine Details, saubere Oberfläche. Festpreis-Angebot in 6h. Aus Gunskirchen, OÖ in ganz DACH.',
   url: 'https://www.ek-druck.at/prototyping',
   lowPrice: '20',
   highPrice: '3000',
@@ -52,20 +52,20 @@ const SERVICE_LD = serviceSchema({
 
 const FAQ_LD = faqSchema([
   {
-    q: 'Wie schnell bekomme ich einen Funktionsprototypen aus dem 3D-Druck?',
+    q: 'Wie schnell bekomme ich einen Prototyp aus dem 3D-Druck?',
     a: 'Bei Standardgeometrien und gängigen Materialien (PLA, PETG, ABS) liefern wir innerhalb 24-48 Stunden. Express-Service mit Versand am selben Werktag bei Anfrage vor 10:00 Uhr möglich.',
   },
   {
-    q: 'Welche Toleranzen sind beim Prototypen-Druck realistisch?',
-    a: 'Bei FDM ±0,1-0,2mm, bei SLA bis ±0,05mm, bei SLS ±0,1mm isotrop. Wir empfehlen das passende Verfahren basierend auf Ihren Anforderungen · kostenfreie Vorab-Beratung in 6h.',
+    q: 'Wie fein sind die Details beim Prototypen-Druck?',
+    a: 'Je nach Verfahren sind sehr feine Strukturen möglich: SLA und SLS lösen filigrane Details besonders sauber auf, FDM eignet sich für größere Modelle. Wir empfehlen das passende Verfahren · kostenfreie Vorab-Beratung in 6h.',
   },
   {
-    q: 'Welche Materialien für mechanisch belastete Prototypen?',
-    a: 'PETG-CF (Carbon-verstärkt) für hohe Steifigkeit, ASA für UV- und temperaturbeständige Außenteile, PA12 SLS für isotrope Funktionsteile. Wir beraten zur optimalen Material-Verfahren-Kombination.',
+    q: 'Welche Materialien gibt es für Prototypen?',
+    a: 'PETG-CF (carbonverstärkt) für besonders formstabile Modelle, ASA für UV- und temperaturbeständige Außenmodelle, PA12 SLS für filigrane, robuste Muster. Wir beraten zur passenden Material-Verfahren-Kombination.',
   },
   {
-    q: 'Was kostet ein Funktionsprototyp typischerweise?',
-    a: 'Ab €20 für kleine FDM-Teile, typische Konstruktions-Prototypen zwischen €40-300. Komplexe SLS-Teile mit mechanischer Belastung €150-800. Sofort-Preis im Kostenrechner mit STL-Upload.',
+    q: 'Was kostet ein Prototyp typischerweise?',
+    a: 'Ab €20 für kleine FDM-Modelle, typische Design-Prototypen zwischen €40-300. Komplexe SLS-Muster €150-800. Sofort-Preis im Kostenrechner mit STL-Upload.',
   },
   {
     q: 'Können iterative Design-Anpassungen schnell umgesetzt werden?',

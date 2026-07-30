@@ -162,40 +162,40 @@ const prototyping: ServiceSeoContent = {
   slug: 'prototyping',
   longTailBody: {
     eyebrow: 'Was Rapid Prototyping bei ek-druck konkret bedeutet',
-    h2: 'Rapid Prototyping · Funktionsmuster und Designstudien in 24-48 Stunden',
+    h2: 'Rapid Prototyping · Anschauungsmuster und Designstudien in 24-48 Stunden',
     paragraphs: [
-      'Rapid Prototyping aus dem FDM-3D-Druck heißt: vom CAD zur physischen Komponente in 24-48 Stunden Standard-Express. Funktionsmuster für mechanische Tests, Designstudien für Konzept-Iterationen, Vorabmodelle für Spritzguss-Entscheidungen · der 3D-Druck-Prototyp ersetzt klassische Werkzeugbau-Lead-Times von 6-12 Wochen mit dem Bruchteil der Kosten. Ein typisches Funktionsmuster im PLA kostet €25-€80 pro Stück, ein anspruchsvolles Carbon-PA-Bauteil für mechanische DV/PV-Tests €120-€400.',
-      'Funktionsprototyp drucken bedeutet bei ek-druck konkret: die Geometrie wird so optimiert, dass das Bauteil tatsächlich seine Funktion erfüllt. Wandstärken, Materialwahl, Druckrichtung (Layer-Orientation) · alles wird auf die geplante Belastung abgestimmt. Carbon-PA hat eine Festigkeit nahe Aluminium und eignet sich für mechanisch belastete Funktionsmuster. PETG ist robust und schlagfest für stoßbelastete Komponenten. Für reine Designstudien ohne mechanische Belastung ist PLA ausreichend und detailgetreuer.',
-      'Designprototyp für die Produktentwicklung wird typisch in Iterationen gedruckt · Version 1, Version 2, Version 3 · mit jeweils 3-5 Werktagen Lead-Time pro Iteration. Bei Stammkunden mit regelmäßigem Prototyping-Bedarf vergeben wir bis zu 20% Stammkunden-Rabatt auf Folgeaufträge. Klein-Serien-Fertigung von Vorserien ab 10 Stück mit 10-30% Mengenrabatt machbar. Carbon-PA-Komponenten für DV/PV-Tests vor Spritzguss-Werkzeugbau sind eine häufige Anfrage von Industriegüter-Herstellern.',
-      'Toleranzen beim FDM-Prototyping: typisch ±0,1 mm pro 100 mm Bauteilgröße. Bei kritischen Funktionsdetails (z.B. Lagerungs-Bohrungen, Steck-Verbindungen) erreichen wir ±0,05 mm in einzelnen Bereichen durch Nachbearbeitung. Wenn engere Toleranzen nötig sind (<±0,02 mm), ist FDM-3D-Druck an Grenzen · dann empfehlen wir SLA-Druck über Partner-Netzwerk oder klassische Zerspanung. Reverse Engineering von vorhandenen Bauteilen via 3D-Scan und CAD-Rekonstruktion ist auf Anfrage möglich.',
-      'Prototyp drucken lassen mit Express 24h funktioniert wenn drei Voraussetzungen passen: CAD ist druckreif, Material ist verfügbar, Bauteil ist unter 30 cm Maximalkante. Express 24h kostet 30% Aufpreis auf Standard. Express same-day (Versand am Bestelltag) ist selten möglich und nur für kleine Bauteile bis 15 cm und PLA/PETG. Bei Anfragen sehr kurzfristig: rufen Sie an unter +43 676 5517197, ich prüfe Kapazität live. Stammkunden mit DfAM-Beratung (Design for Additive Manufacturing): konstruktive Pre-Flight-Begleitung der Geometrie für optimale Druck-Tauglichkeit.',
+      'Rapid Prototyping aus dem FDM-3D-Druck heißt: vom CAD zum physischen Modell in 24-48 Stunden Standard-Express. Anschauungsmuster für Bemusterung, Designstudien für Konzept-Iterationen, Vorabmodelle für Spritzguss-Entscheidungen · der 3D-Druck-Prototyp ersetzt klassische Werkzeugbau-Lead-Times von 6-12 Wochen mit dem Bruchteil der Kosten. Ein typisches Anschauungsmuster im PLA kostet €25-€80 pro Stück, ein anspruchsvolles Carbon-PA-Modell für aufwändige Designstudien €120-€400.',
+      'Design-Prototyp drucken bedeutet bei ek-druck konkret: die Geometrie wird so aufbereitet, dass das Modell in Form, Proportion und Detail überzeugt. Wandstärken, Materialwahl, Druckrichtung (Layer-Orientation) · alles wird auf ein sauberes Ergebnis abgestimmt. Carbon-PA ist besonders robust in der Handhabung und formstabil, ideal für Modelle, die oft angefasst werden. PETG ist robust und schlagfest für den Alltagseinsatz. Für reine Designstudien ist PLA ausreichend und besonders detailgetreu.',
+      'Designprototyp für die Produktentwicklung wird typisch in Iterationen gedruckt · Version 1, Version 2, Version 3 · mit jeweils 3-5 Werktagen Lead-Time pro Iteration. Bei Stammkunden mit regelmäßigem Prototyping-Bedarf vergeben wir bis zu 20% Stammkunden-Rabatt auf Folgeaufträge. Mehrfachfertigung ab 10 Stück mit 10-30% Mengenrabatt machbar. Carbon-PA-Modelle als Vorabmuster vor dem Spritzguss-Werkzeugbau sind eine häufige Anfrage von Industriegüter-Herstellern.',
+      'Detailtreue beim FDM-Prototyping: feine Kanten und Details werden sauber aufgelöst und eignen sich für die meisten Design-Prototypen und Anschauungsmodelle. Bei besonders feinen Details arbeiten wir einzelne Bereiche durch Nachbearbeitung sauber aus. Wenn höchste Detailauflösung und besonders glatte Oberflächen gefragt sind, empfehlen wir SLA-Druck über unser Partner-Netzwerk. Reverse Engineering von vorhandenen Modellen via 3D-Scan und CAD-Modellierung ist auf Anfrage möglich.',
+      'Prototyp drucken lassen mit Express 24h funktioniert wenn drei Voraussetzungen passen: CAD ist druckreif, Material ist verfügbar, das Modell ist unter 30 cm Maximalkante. Express 24h kostet 30% Aufpreis auf Standard. Express same-day (Versand am Bestelltag) ist selten möglich und nur für kleine Modelle bis 15 cm und PLA/PETG. Bei Anfragen sehr kurzfristig: rufen Sie an unter +43 676 5517197, ich prüfe Kapazität live. Stammkunden mit DfAM-Beratung (Design for Additive Manufacturing): sorgfältige Pre-Flight-Begleitung der Geometrie für optimale Druck-Tauglichkeit.',
     ],
   },
   faqs: [
     {
       question: 'Was kostet ein 3D-Druck-Prototyp?',
       answer:
-        'Kleines Bauteil PLA (Faustgröße, 1 Stück): €25-€80. Mittleres Bauteil mit Carbon-PA für mechanische Tests: €120-€400 pro Stück. Klein-Serie 10-50 Stück: 15-30% Mengenrabatt. Ab 100 Stück individuelle Kalkulation, oft günstiger durch Druckbett-Optimierung.',
+        'Kleines Modell PLA (Faustgröße, 1 Stück): €25-€80. Mittleres Modell mit Carbon-PA: €120-€400 pro Stück. Mehrfachfertigung 10-50 Stück: 15-30% Mengenrabatt. Ab 100 Stück individuelle Kalkulation, oft günstiger durch Druckbett-Optimierung.',
     },
     {
-      question: 'Wie lange dauert ein Funktionsprototyp?',
+      question: 'Wie lange dauert ein Design-Prototyp?',
       answer:
-        'Standard 3-5 Werktage. Express 24-48h gegen 30% Aufpreis machbar. Bei sehr kleinen Bauteilen unter 15 cm Maximalkante teils auch same-day möglich. Lead-Time abhängig von Material-Verfügbarkeit und aktueller Kapazitäts-Auslastung.',
+        'Standard 3-5 Werktage. Express 24-48h gegen 30% Aufpreis machbar. Bei sehr kleinen Modellen unter 15 cm Maximalkante teils auch same-day möglich. Lead-Time abhängig von Material-Verfügbarkeit und aktueller Kapazitäts-Auslastung.',
     },
     {
-      question: 'Welche Materialien eignen sich für Funktionsprototypen?',
+      question: 'Welche Materialien eignen sich für Design-Prototypen?',
       answer:
-        'PLA für Designstudien ohne mechanische Belastung. PETG für robuste Daueranwendungen und Schlagfestigkeit. ABS für Aceton-Glättung und Spritzguss-ähnliche Oberfläche. Carbon-PA (PA6-CF) für mechanisch belastete Funktionsmuster mit Festigkeit nahe Aluminium. ASA für UV-stabile Outdoor-Anwendungen.',
+        'PLA für detailreiche Designstudien. PETG für robuste Daueranwendungen und Schlagfestigkeit. ABS für Aceton-Glättung und Spritzguss-ähnliche Oberfläche. Carbon-PA (PA6-CF) für besonders robuste, formstabile Modelle. ASA für UV-stabile Outdoor-Anwendungen.',
     },
     {
-      question: 'Welche Toleranzen sind beim FDM-Prototyping erreichbar?',
+      question: 'Wie detailtreu ist der FDM-3D-Druck?',
       answer:
-        'Typisch ±0,1 mm pro 100 mm Bauteilgröße. Bei kritischen Funktionsdetails durch Nachbearbeitung ±0,05 mm in einzelnen Bereichen. Engere Toleranzen unter ±0,02 mm sind mit FDM nicht zuverlässig · dann SLA-Druck über Partner oder klassische Zerspanung empfohlen.',
+        'FDM löst feine Kanten und Details sauber auf und trifft die Optik Ihres Entwurfs zuverlässig. Bei besonders feinen Details arbeiten wir einzelne Bereiche per Nachbearbeitung sauber aus. Wenn höchste Detailauflösung und besonders glatte Oberflächen gefragt sind, empfehlen wir SLA-Druck über unser Partner-Netzwerk.',
     },
     {
       question: 'Können Sie auch nach Skizze oder Foto modellieren?',
       answer:
-        'Ja. CAD-Modellierung nach Skizze, Foto oder Bemaßungs-Zeichnung gegen €80/Stunde. Typisch 2-6 Stunden für ein mittleres Bauteil, 6-20 Stunden für komplexe Maschinen-Geometrien. Reverse Engineering von vorhandenen Bauteilen via 3D-Scan und CAD-Rekonstruktion auf Anfrage.',
+        'Ja. CAD-Modellierung nach Skizze, Foto oder Bemaßungs-Zeichnung gegen €80/Stunde. Typisch 2-6 Stunden für ein mittleres Modell, 6-20 Stunden für komplexe Geometrien. Reverse Engineering von vorhandenen Modellen via 3D-Scan und CAD-Modellierung auf Anfrage.',
     },
     {
       question: 'Gibt es Stammkunden-Rabatte für regelmäßiges Prototyping?',
@@ -203,14 +203,14 @@ const prototyping: ServiceSeoContent = {
         'Ja. Bei regelmäßigen Prototyping-Aufträgen (3+ Projekte pro Quartal) bis zu 20% Stammkunden-Rabatt auf Folgeaufträge. Bei Rahmenverträgen mit garantierter Mindestabnahme zusätzliche Konditionen verhandelbar.',
     },
     {
-      question: 'Können Sie Kleinserien (10-100 Stück) fertigen?',
+      question: 'Können Sie Mehrfachfertigung (10-100 Stück) übernehmen?',
       answer:
-        'Ja. Kleinserien bis 500 Stück über parallelisiertes Drucker-Setup. Ab 10 Stück 10% Rabatt, ab 50 Stück 15%, ab 100 Stück 20%. Druckbett-Optimierung ermöglicht oft zusätzliche Kostenvorteile bei größeren Stückzahlen.',
+        'Ja. Mehrfachfertigung bis 500 Stück über parallelisiertes Drucker-Setup. Ab 10 Stück 10% Rabatt, ab 50 Stück 15%, ab 100 Stück 20%. Druckbett-Optimierung ermöglicht oft zusätzliche Kostenvorteile bei größeren Stückzahlen.',
     },
     {
       question: 'Was ist DfAM-Beratung?',
       answer:
-        'Design for Additive Manufacturing · konstruktive Pre-Flight-Begleitung Ihrer Geometrie für optimale Druck-Tauglichkeit. Wir prüfen vor dem Druck: Wandstärken, Überhänge, Support-Strategien, Layer-Orientation, kritische Funktionsdetails. Beratung gegen Stundensatz oder pauschal im Stammkunden-Rahmen.',
+        'Design for Additive Manufacturing · sorgfältige Pre-Flight-Begleitung Ihrer Geometrie für optimale Druck-Tauglichkeit. Wir prüfen vor dem Druck: Wandstärken, Überhänge, Support-Strategien, Layer-Orientation, kritische Detailbereiche. Beratung gegen Stundensatz oder pauschal im Stammkunden-Rahmen.',
     },
   ],
 }

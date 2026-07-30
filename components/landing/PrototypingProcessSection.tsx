@@ -1,9 +1,9 @@
 import AnimatedSection from "@/components/AnimatedSection";
 
 const effects = [
-  { num: "01", title: "Der Bemusterungs-Effekt", text: "Ein 3D-Rendering überzeugt am Bildschirm. Ein physisches Bauteil überzeugt in der Hand. Wer Investoren, Vorstand oder Kunden mit greifbaren Prototypen abholt, gewinnt die Entscheidung schneller – weil das Produkt schon halb existiert.", stat: "5 Min.", statLabel: "Ø Entscheidungszeit beim Bemustern" },
-  { num: "02", title: "Der Iterations-Effekt", text: "Wer drei Designvarianten parallel druckt und alle drei testet, kommt schneller zum optimalen Bauteil als wer eine einzige Hypothese verteidigt. Die Frage verschiebt sich von 'wird es funktionieren?' zu 'welche Variante funktioniert am besten?'.", stat: "3×", statLabel: "schnellere Designkonvergenz" },
-  { num: "03", title: "Der Validierungs-Effekt", text: "Toleranzen, die im CAD aussehen wie auf dem Datenblatt, sind im Bauteil oft nicht das, was sie zu sein scheinen. Ein gedruckter geometrischer Prototyp zeigt in 5 Minuten, was die Simulation in 5 Wochen nicht zeigt.", stat: "−80%", statLabel: "Werkzeug-Korrekturen im ersten Schuss" },
+  { num: "01", title: "Der Bemusterungs-Effekt", text: "Ein 3D-Rendering überzeugt am Bildschirm. Ein physisches Modell überzeugt in der Hand. Wer Investoren, Vorstand oder Kunden mit greifbaren Prototypen abholt, gewinnt die Entscheidung schneller – weil das Produkt schon halb existiert.", stat: "5 Min.", statLabel: "Ø Entscheidungszeit beim Bemustern" },
+  { num: "02", title: "Der Iterations-Effekt", text: "Wer drei Designvarianten parallel druckt und alle drei testet, kommt schneller zum optimalen Modell als wer eine einzige Hypothese verteidigt. Die Frage verschiebt sich von 'wird es funktionieren?' zu 'welche Variante funktioniert am besten?'.", stat: "3×", statLabel: "schnellere Designkonvergenz" },
+  { num: "03", title: "Der Validierungs-Effekt", text: "Formen und Proportionen, die im CAD überzeugen, wirken im echten Modell oft anders als erwartet. Ein gedruckter geometrischer Prototyp zeigt in 5 Minuten, was die Simulation in 5 Wochen nicht zeigt.", stat: "−80%", statLabel: "Werkzeug-Korrekturen im ersten Schuss" },
 ];
 
 const PrototypingProcessSection = () => (
