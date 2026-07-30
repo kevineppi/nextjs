@@ -104,35 +104,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // ─── MESSE-STADT-PAGES ────────────────────────────────────────
   const messeRegions = [
-    // AT
+    // Nur indexierbare AT-Staedte. Die DE/CH-Messe-Staedte sind noindex
+    // (robots index:false) und duerfen daher nicht in der Sitemap stehen
+    // — widerspruechliches Signal an Google. DE/CH entfernt 2026-07-30.
     { slug: 'wien', prio: 0.7 },
     { slug: 'oberoesterreich', prio: 0.65 },
     { slug: 'steiermark', prio: 0.6 },
     { slug: 'salzburg', prio: 0.6 },
     { slug: 'graz', prio: 0.6 },
     { slug: 'linz', prio: 0.6 },
-    // DE
-    { slug: 'bayern', prio: 0.6 },
-    { slug: 'muenchen', prio: 0.7 },
-    { slug: 'nuernberg', prio: 0.6 },
-    { slug: 'baden-wuerttemberg', prio: 0.6 },
-    { slug: 'stuttgart', prio: 0.65 },
-    { slug: 'nordrhein-westfalen', prio: 0.6 },
-    { slug: 'duesseldorf', prio: 0.7 },
-    { slug: 'koeln', prio: 0.6 },
-    { slug: 'essen', prio: 0.6 },
-    { slug: 'hessen', prio: 0.6 },
-    { slug: 'frankfurt', prio: 0.7 },
-    { slug: 'niedersachsen', prio: 0.6 },
-    { slug: 'hannover', prio: 0.7 },
-    { slug: 'berlin', prio: 0.7 },
-    { slug: 'hamburg', prio: 0.6 },
-    // CH
-    { slug: 'zuerich', prio: 0.7 },
-    { slug: 'basel', prio: 0.65 },
-    { slug: 'bern', prio: 0.6 },
-    { slug: 'st-gallen', prio: 0.6 },
-    { slug: 'luzern', prio: 0.6 },
   ]
   const messeStadtPages: MetadataRoute.Sitemap = messeRegions.map((m) => ({
     url: `${SITE}/messemodelle/${m.slug}`,

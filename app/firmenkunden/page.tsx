@@ -3,13 +3,13 @@ import Firmenkunden from '@/src-pages/Firmenkunden'
 import { serviceSchema, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'B2B-3D-Druck Österreich: Rahmenvertrag, NDA, 30 Tage Zahlungsziel',
+  title: 'B2B 3D-Druck Österreich: Rahmenvertrag, NDA, 30 Tage Ziel',
   description: 'Für Industriekunden: Rahmenverträge, Mengenrabatt ab 5 Stück, NDA möglich, Zahlungsziel 30 Tage. Kleinunternehmer = keine USt für Sie.',
   alternates: {
     canonical: 'https://www.ek-druck.at/firmenkunden',
   },
   openGraph: {
-    title: 'B2B-3D-Druck Österreich: Rahmenvertrag, NDA, 30 Tage Zahlungsziel',
+    title: 'B2B 3D-Druck Österreich: Rahmenvertrag, NDA, 30 Tage Ziel',
     description: 'Für Industriekunden: Rahmenverträge, Mengenrabatt ab 5 Stück, NDA möglich, Zahlungsziel 30 Tage. Kleinunternehmer = keine USt für Sie.',
     url: 'https://www.ek-druck.at/firmenkunden',
     siteName: 'ekdruck · 3D-Druck Österreich',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'B2B-3D-Druck Österreich: Rahmenvertrag, NDA, 30 Tage Zahlungsziel',
+    title: 'B2B 3D-Druck Österreich: Rahmenvertrag, NDA, 30 Tage Ziel',
     description: 'Für Industriekunden: Rahmenverträge, Mengenrabatt ab 5 Stück, NDA möglich, Zahlungsziel 30 Tage. Kleinunternehmer = keine USt für Sie.',
   },
 }

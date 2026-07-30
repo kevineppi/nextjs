@@ -178,7 +178,7 @@ const Referenzen = () => {
           <div className="container mx-auto px-4 relative">
             <div className="max-w-4xl mx-auto text-center">
               <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 text-sm px-4 py-1">
-                Über 500+ erfolgreiche Projekte
+                100+ erfolgreiche Projekte
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
                 Unsere <span className="text-gradient">Referenzen</span>

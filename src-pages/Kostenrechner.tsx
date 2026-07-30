@@ -231,6 +231,10 @@ const Kostenrechner = () => {
         status: "new",
       });
       if (error) throw error;
+      // Conversion-Event (analog components/Contact.tsx) — Kostenrechner-Leads messbar machen
+      (window as any).dataLayer = (window as any).dataLayer || [];
+      (window as any).dataLayer.push({ event: 'form_submit_success', form_name: 'kostenrechner_anfrage', project_type: 'Kostenrechner-Anfrage', timeline: 'nicht angegeben' });
+      (window as any).dataLayer.push({ event: 'contact_channel_click', contact_channel: 'form', contact_source: 'kostenrechner', contact_context: 'kostenrechner', conversion: true });
       setFormSubmitted(true);
       toast.success("Anfrage erfolgreich gesendet!");
     } catch (err) {

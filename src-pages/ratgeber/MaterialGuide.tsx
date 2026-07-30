@@ -107,7 +107,7 @@ const MaterialGuide = () => {
               </h1>
 
               <div className="flex items-center gap-4 text-sm text-muted-foreground mb-8">
-                <span>Zuletzt aktualisiert: Januar 2025</span>
+                <span>Zuletzt aktualisiert: Juli 2026</span>
                 <span>•</span>
                 <span>10 Min. Lesezeit</span>
               </div>
