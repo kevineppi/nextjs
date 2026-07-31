@@ -19,7 +19,7 @@ const massstaebe = [
 ];
 
 const ablauf = [
-  { icon: Upload, t: "1 · Daten schicken", d: "Sie laden Ihre Datei hoch oder mailen sie uns: STL, OBJ, STEP, 3MF oder direkt aus ArchiCAD, Revit, Rhino, SketchUp und Vectorworks. Aufbereiten müssen Sie nichts." },
+  { icon: Upload, t: "1 · Daten schicken", d: "Sie laden Ihre Datei hoch oder mailen sie uns: STL, OBJ, STEP, 3MF oder direkt aus ArchiCAD, Revit, Rhino, SketchUp und Vectorworks. Kein 3D-Modell? Wir wandeln auch Flur- und Grenzpläne mit amtlichen LoD2-Gebäude- und DGM1-Geländedaten in ein druckfertiges 3D-Modell um. Aufbereiten müssen Sie nichts." },
   { icon: FileCheck, t: "2 · Angebot in 6h", d: "Wir sichten die Daten und schicken innerhalb von 6 Stunden ein verbindliches Festpreis-Angebot mit Maßstabs-Empfehlung und Liefertermin." },
   { icon: Zap, t: "3 · Fertigung", d: "Nach Ihrer Freigabe geht das Modell in Fertigung. Weiße matte Optik, bei Bedarf segmentiert und von Hand zusammengesetzt. Express in 24 bis 48 Stunden möglich." },
   { icon: CheckCircle2, t: "4 · Lieferung", d: "Versand ins gesamte DACH-Gebiet, auf Wunsch persönliche Zustellung in Oberösterreich. Rechtzeitig vor dem Abgabetermin auf dem Tisch." },
@@ -50,7 +50,7 @@ const faqs = [
   { q: "Wie kurzfristig geht ein Wettbewerbsmodell noch?", a: "In 24 bis 48 Stunden, wenn die Daten druckreif sind und das Modell in gängiger Größe liegt. Der klassische Modellbau braucht dafür Wochen. Rufen Sie bei knapper Deadline direkt an, dann prüfen wir das Zeitfenster sofort: +43 676 5517197." },
   { q: "Bekomme ich mehrere Entwurfs-Varianten als Modell?", a: "Ja, und das ist ein echter Vorteil gegenüber klassischem Modellbau. Mehrere Varianten laufen parallel zu gleichen Stückkosten, ohne Aufpreis für die zweite oder dritte Variante. So liegen A, B und C zum direkten Vergleich nebeneinander auf dem Tisch." },
   { q: "Was ist der Unterschied zwischen Wettbewerbs- und Präsentationsmodell?", a: "Ein Wettbewerbsmodell ist auf die Jury-Situation zugeschnitten: monochrom, reduziert, auf den Entwurf konzentriert. Ein Präsentationsmodell darf farbiger und detailreicher sein, etwa für Bauherren oder Vermarktung. Beides fertigen wir aus dem gleichen Workflow." },
-  { q: "Welche Daten braucht ihr, und was ist mit dem Umgebungsmodell?", a: "Ihr 3D-Modell in STL, OBJ, STEP oder 3MF, oder die native Datei aus ArchiCAD, Revit, Rhino, SketchUp oder Vectorworks. Die Umgebung ergänzen wir aus Lage- und Höhendaten, wenn ein Umgebungs- oder Städtebaumodell dazu soll." },
+  { q: "Welche Daten braucht ihr, und was ist mit dem Umgebungsmodell?", a: "Ihr 3D-Modell in STL, OBJ, STEP oder 3MF, oder die native Datei aus ArchiCAD, Revit, Rhino, SketchUp oder Vectorworks. Die Umgebung ergänzen wir aus Lage- und Höhendaten. Und wenn gar kein 3D-Modell vorliegt, wandeln wir Flur- und Grenzpläne mit amtlichen LoD2-Gebäude- und DGM1-Geländedaten in ein druckfertiges Modell um, so wie bei allen unseren Modellen, wenn nötig." },
 ];
 
 const Wettbewerbsmodell = () => (
@@ -133,7 +133,8 @@ const Wettbewerbsmodell = () => (
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Auf Wunsch als <strong className="text-foreground">Einsatzplatten</strong>: die Baukörper sitzen auf einer gemeinsamen Grundplatte
                 und lassen sich am fertigen Modell tauschen. Aus einem Sockel wird so eine ganze Varianten-Reihe, die Sie in der Jury-Sitzung
-                nebeneinander legen oder direkt austauschen.
+                nebeneinander legen oder direkt austauschen. Einsatzplatten fertigen wir dabei immer maßstabsgetreu, damit jede Platte
+                austauschbar auf dieselbe Grundplatte passt.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 So fällt die Entwurfs-Entscheidung leichter, ob intern im Team oder in der Diskussion mit der Jury.

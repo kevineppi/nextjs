@@ -21,7 +21,7 @@ const zielgruppen = [
 
 const ablauf = [
   { num: "01", titel: "Maßstab & Umfang klären", text: "1:500 für Orts- und Quartiersmodelle, 1:1000 für größere Areale. Wir klären mit Ihnen, welcher Ausschnitt aufs Modell gehört und wo die sinnvolle Grenze liegt." },
-  { num: "02", titel: "Daten aufbereiten", text: "Aus Lage- und Höhendaten, Gebäudedaten (etwa CityGML/LoD, Kataster oder Vermessung) bereiten wir ein druckfertiges Modell auf: Gelände mit Höhenschichten, Straßen und Baukörper als saubere Volumen." },
+  { num: "02", titel: "Daten aufbereiten", text: "Aus Flur- und Grenzplänen, amtlichen LoD2-Gebäudemodellen und DGM1-Geländedaten (auch CityGML, Kataster oder Vermessung) erstellen wir ein druckfertiges 3D-Modell: Gelände mit Höhenschichten, Straßen und Baukörper als saubere Volumen. Diese Umwandlung in ein 3D-Modell übernehmen wir bei allen Modellen, wenn nötig." },
   { num: "03", titel: "Segmentiert drucken", text: "Große Modelle drucken wir in mehreren Teilen und setzen sie von Hand zusammen. Die Trennkanten liegen dort, wo ohnehin eine Kante ist, danach sieht sie niemand mehr." },
   { num: "04", titel: "Fertig zur Präsentation", text: "Durchgehend weiß, sauber zusammengesetzt und kontrolliert, rechtzeitig zum Termin. Auf Wunsch mit persönlicher Zustellung in Oberösterreich." },
 ];
