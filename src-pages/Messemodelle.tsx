@@ -148,6 +148,9 @@ const Messemodelle = () => (
                     <a href="tel:+436765517197"><Phone className="mr-2 w-4 h-4" /> Anrufen</a>
                   </Button>
                 </div>
+                <p className="mt-4 text-sm">
+                  <Link href="/messemodelle/express" className="text-primary font-semibold hover:underline">Deadline knapp? Express-Messemodell in 24-48h &rarr;</Link>
+                </p>
               </div>
             </AnimatedSection>
 

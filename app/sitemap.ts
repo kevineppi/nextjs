@@ -28,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const corePages: MetadataRoute.Sitemap = [
     { url: `${SITE}/`, lastModified: buildDate, changeFrequency: 'weekly', priority: 1.0 },
     { url: `${SITE}/messemodelle`, lastModified: buildDate, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${SITE}/messemodelle/express`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE}/architekturmodelle`, lastModified: buildDate, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${SITE}/architekturmodelle-abo`, lastModified: buildDate, changeFrequency: 'weekly', priority: 0.85 },
     { url: `${SITE}/architekturmodelle/stadtmodell`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.8 },
