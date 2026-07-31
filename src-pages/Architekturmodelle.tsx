@@ -146,7 +146,7 @@ const Architekturmodelle = () => (
                 <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">3–5</p>
                 <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
                   <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Werktage</p>
-                  <p className="text-[10px] text-muted-foreground hidden md:inline">— Standard</p>
+                  <p className="text-[10px] text-muted-foreground hidden md:inline">Standard</p>
                 </div>
               </div>
               <div className="relative py-8 md:py-10 px-2 md:px-6 group border-l border-border">
@@ -154,7 +154,7 @@ const Architekturmodelle = () => (
                 <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">24h</p>
                 <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
                   <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Express</p>
-                  <p className="text-[10px] text-muted-foreground hidden md:inline">— Wettbewerb</p>
+                  <p className="text-[10px] text-muted-foreground hidden md:inline">Wettbewerb</p>
                 </div>
               </div>
               <div className="relative py-8 md:py-10 px-2 md:px-6 group border-t md:border-t-0 md:border-l border-border">
@@ -162,7 +162,7 @@ const Architekturmodelle = () => (
                 <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">€280</p>
                 <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
                   <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Ab Preis</p>
-                  <p className="text-[10px] text-muted-foreground hidden md:inline">— EFH 1:100</p>
+                  <p className="text-[10px] text-muted-foreground hidden md:inline">EFH 1:100</p>
                 </div>
               </div>
               <div className="relative py-8 md:py-10 px-2 md:px-6 group border-t md:border-t-0 border-l md:border-l border-border">
@@ -170,7 +170,7 @@ const Architekturmodelle = () => (
                 <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">5,0★</p>
                 <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
                   <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Google</p>
-                  <p className="text-[10px] text-muted-foreground hidden md:inline">— 31 Bewertungen</p>
+                  <p className="text-[10px] text-muted-foreground hidden md:inline">31 Bewertungen</p>
                 </div>
               </div>
             </div>
@@ -312,6 +312,11 @@ const Architekturmodelle = () => (
 
                 <p>Wir fertigen <strong>Wettbewerbsmodelle</strong> in klassischer weißer Optik, <strong>Bauherrenmodelle</strong> für Beratungsgespräche, <strong>Vermarktungsmodelle</strong> für Wohnbau-Schauräume, <strong>Quartiers- und Stadtmodelle</strong> für städtebauliche Projekte und <strong>Detail-Innenraummodelle</strong> für Materialstudien. Vom Maßstab 1:50 bis 1:1000, aus PLA, PETG, ASA oder hochauflösendem SLA-Resin – je nach Anwendungsziel.</p>
 
+                <div className="rounded-3xl bg-primary/[0.03] border-2 border-primary/20 p-8 md:p-10 not-prose">
+                  <h3 className="font-bold text-xl mb-3 text-foreground">Wer druckt Architekturmodelle in Österreich?</h3>
+                  <p className="text-muted-foreground leading-relaxed">ekdruck aus Gunskirchen in Oberösterreich fertigt Architekturmodelle aus dem 3D-Druck für Architekten, Planer und Bauträger in ganz DACH, im Maßstab 1:50 bis 1:1000. Das verbindliche Festpreis-Angebot kommt in 6 Stunden, die Fertigung in wenigen Tagen, Express in 24 bis 48 Stunden, ab einem einzelnen Modell. Bewertung: 5,0 von 5 Sternen bei Google.</p>
+                </div>
+
                 <div className="rounded-3xl bg-card border-2 border-border p-8 md:p-10 not-prose">
                   <h3 className="font-bold text-xl mb-4 text-foreground">Parallel-Fertigung ohne Aufpreis</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">Der größte Unterschied zwischen klassischem Modellbau und 3D-Druck-Modellbau: <strong className="text-foreground">parallele Iteration mehrerer Varianten zu denselben Stückkosten</strong>. Wo der klassische Modellbauer für vier Wettbewerbsvarianten vier Kalenderwochen und das Vierfache der Kosten ansetzt, drucken wir alle vier Varianten gleichzeitig in derselben Maschine. Sie können sich auf den Entwurf konzentrieren, nicht auf die Logistik.</p>
@@ -349,12 +354,12 @@ const Architekturmodelle = () => (
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Architekturmodelle für Baueingabe & Bauverhandlung</h3>
-                  <p>Für die <strong>Baueingabe bei der Gemeinde</strong> oder die <strong>Bauverhandlung mit Nachbarn</strong> ist ein physisches Modell oft der entscheidende Unterschied zwischen Genehmigung und Vertagung. Wir liefern <strong>Baueingabe-Modelle</strong> im Maßstab 1:200 oder 1:100, die das geplante Volumen im Bestandskontext klar zeigen — wichtig bei sensiblen Bauplätzen, hangseitiger Bebauung oder bei Sichtachsen-Diskussionen. <strong>Verschattungs-Studien</strong> werden durch das gedruckte Modell sofort begreifbar, die abstrakte Diskussion „der Nachbar verliert 20 Minuten Sonne" wird durch das echte Modell zur sichtbaren Tatsache. Übergabe inklusive transportabler Hartschaum-Box, beschriftete Sockel auf Wunsch.</p>
+                  <p>Für die <strong>Baueingabe bei der Gemeinde</strong> oder die <strong>Bauverhandlung mit Nachbarn</strong> ist ein physisches Modell oft der entscheidende Unterschied zwischen Genehmigung und Vertagung. Wir liefern <strong>Baueingabe-Modelle</strong> im Maßstab 1:200 oder 1:100, die das geplante Volumen im Bestandskontext klar zeigen, wichtig bei sensiblen Bauplätzen, hangseitiger Bebauung oder bei Sichtachsen-Diskussionen. <strong>Verschattungs-Studien</strong> werden durch das gedruckte Modell sofort begreifbar, die abstrakte Diskussion „der Nachbar verliert 20 Minuten Sonne" wird durch das echte Modell zur sichtbaren Tatsache. Übergabe inklusive transportabler Hartschaum-Box, beschriftete Sockel auf Wunsch.</p>
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-xl mb-3 text-foreground">Geländemodelle aus Höhenlinien — DTM/DGM zu 3D-Druck</h3>
-                  <p>Für hangseitige Baugrundstücke, alpine Lagen, Hochwasserschutz-Projekte oder Landschaftsplanung liefern wir <strong>Geländemodelle direkt aus DTM/DGM-Daten</strong>. Höhenlinien aus dem Vermessungsplan, ÖKO-1m-DTM, ALS-Punktwolken oder QGIS-Exports werden in 3D-Modelle überführt — wahlweise mit aufgesetztem Gebäude für Hangbebauungs-Analyse, oder als reines Landschaftsmodell für Behördentermine. Maßstäbe 1:500 für Einzelgrundstücke, 1:1000 bis 1:2000 für Quartiers- und Erschließungsplanungen. Höhen-Übertreibung optional (Faktor 2-3) für bessere Lesbarkeit bei flachem Gelände. Auch farbcodierte Geologie-Schichtmodelle möglich für Geotechnik-Begutachtungen.</p>
+                  <h3 className="font-bold text-xl mb-3 text-foreground">Geländemodelle aus Höhendaten</h3>
+                  <p>Für hangseitige Grundstücke, alpine Lagen oder Landschaftsplanung setzen wir das Gebäude auf den echten Geländeverlauf, gedruckt aus amtlichen Höhendaten. Alles dazu, inklusive der Datenquellen pro Land, steht auf der Seite <Link href="/architekturmodelle/gelaendemodell" className="text-primary font-semibold hover:underline">Geländemodell</Link>.</p>
                 </div>
 
                 <div>
