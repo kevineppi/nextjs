@@ -17,7 +17,7 @@ const FlatrateGuide = () => {
   const faqs = [
     {
       question: "Für welche Büros lohnt sich die Architekturmodell-Flatrate?",
-      answer: "Die Flatrate rechnet sich ab ca. 2 Modellen pro Monat. Für Büros mit laufenden Wettbewerben, mehreren aktiven Bauprojekten oder regelmäßigen Kundenpräsentationen ist der Break-even in der Regel bereits im ersten Monat erreicht. Beim Professional-Paket (€349/Monat, bis 7 Modelle) entspricht das einem Einzelpreis von unter €50 pro Modell."
+      answer: "Die Flatrate rechnet sich ab ca. 2 Modellen pro Monat. Für Büros mit laufenden Wettbewerben, mehreren aktiven Bauprojekten oder regelmäßigen Kundenpräsentationen ist der Break-even in der Regel bereits im ersten Monat erreicht. Beim Professional-Paket (€890/Monat, bis 4 Modelle) entspricht das einem Einzelpreis von rund €220 pro Modell."
     },
     {
       question: "Gibt es eine Mindestlaufzeit bei der ekdruck Flatrate?",
@@ -38,12 +38,12 @@ const FlatrateGuide = () => {
   ];
 
   const breakEvenRows = [
-    { label: "1 Modell/Monat", einzelpreis: "€120–250", starter: "€199", professional: "€349", studio: "€549", winner: "einzeln" },
-    { label: "2 Modelle/Monat", einzelpreis: "€240–500", starter: "€199", professional: "€349", studio: "€549", winner: "starter" },
-    { label: "3 Modelle/Monat", einzelpreis: "€360–750", starter: "€199", professional: "€349", studio: "€549", winner: "starter" },
-    { label: "5 Modelle/Monat", einzelpreis: "€600–1.250", starter: "über Limit", professional: "€349", studio: "€549", winner: "professional" },
-    { label: "7 Modelle/Monat", einzelpreis: "€840–1.750", starter: "über Limit", professional: "€349", studio: "€549", winner: "professional" },
-    { label: "10 Modelle/Monat", einzelpreis: "€1.200–2.500", starter: "über Limit", professional: "über Limit", studio: "€549", winner: "studio" },
+    { label: "1 Modell/Monat", einzelpreis: "€300–600", starter: "€490", professional: "€890", studio: "€2.500", winner: "einzeln" },
+    { label: "2 Modelle/Monat", einzelpreis: "€600–1.200", starter: "€490", professional: "€890", studio: "€2.500", winner: "starter" },
+    { label: "3 Modelle/Monat", einzelpreis: "€900–1.800", starter: "über Limit", professional: "€890", studio: "€2.500", winner: "professional" },
+    { label: "4 Modelle/Monat", einzelpreis: "€1.200–2.400", starter: "über Limit", professional: "€890", studio: "€2.500", winner: "professional" },
+    { label: "6 Modelle/Monat", einzelpreis: "€1.800–3.600", starter: "über Limit", professional: "über Limit", studio: "€2.500", winner: "studio" },
+    { label: "8 Modelle/Monat", einzelpreis: "€2.400–4.800", starter: "über Limit", professional: "über Limit", studio: "€2.500", winner: "studio" },
   ];
 
   const painPoints = [
@@ -72,8 +72,8 @@ const FlatrateGuide = () => {
   const proConRows = [
     {
       aspect: "Preis pro Modell",
-      einzeln: "€80–300 je nach Aufwand",
-      flatrate: "€28–100 effektiv",
+      einzeln: "€300–600 je nach Aufwand",
+      flatrate: "€220–310 effektiv",
       winner: "flatrate"
     },
     {
@@ -164,7 +164,7 @@ const FlatrateGuide = () => {
             <div className="p-6 rounded-2xl bg-primary/5 border border-primary/20">
               <div className="text-xs font-bold uppercase tracking-wider text-primary mb-2">Kurze Antwort</div>
               <p className="text-lg font-semibold text-foreground mb-2">
-                Die Flatrate lohnt sich ab ca. <strong>2 Modellen pro Monat</strong> — schon beim Starter-Paket (€199/Mon.) amortisiert sich das gegenüber Einzelaufträgen, wenn ein Modell im Schnitt mehr als €100 kostet.
+                Die Flatrate lohnt sich ab ca. <strong>2 Modellen pro Monat</strong>: schon beim Starter-Paket (€490/Mon.) amortisiert sich das gegenüber Einzelaufträgen, wenn ein Modell im Schnitt mehr als €245 kostet.
               </p>
               <p className="text-muted-foreground">
                 Für Büros mit laufenden Wettbewerben oder mehreren aktiven Projekten gleichzeitig rechnet sich der Wechsel bereits im ersten Monat. Das erste Modell ist bei ekdruck kostenlos — so können Sie das selbst testen.
@@ -287,9 +287,9 @@ const FlatrateGuide = () => {
                       <tr className="bg-muted/50">
                         <th className="text-left p-4 font-semibold">Modellmenge/Monat</th>
                         <th className="text-left p-4 font-semibold">Einzelauftrag (Schätzung)</th>
-                        <th className="text-left p-4 font-semibold">Starter €199</th>
-                        <th className="text-left p-4 font-semibold text-primary bg-primary/5">Professional €349</th>
-                        <th className="text-left p-4 font-semibold">Studio €549</th>
+                        <th className="text-left p-4 font-semibold">Starter €490</th>
+                        <th className="text-left p-4 font-semibold text-primary bg-primary/5">Professional €890</th>
+                        <th className="text-left p-4 font-semibold">Studio €2.500</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -335,26 +335,26 @@ const FlatrateGuide = () => {
                   {[
                     {
                       name: "Starter",
-                      price: "€199/Monat",
+                      price: "€490/Monat",
                       ideal: "Kleine Büros, Einzelarchitekten",
-                      models: "Bis 3 Modelle/Monat",
+                      models: "Bis 2 Modelle/Monat",
                       desc: "Ideal für Büros mit 1–2 aktiven Projekten gleichzeitig. Auch für Architekturstudenten in der Abschlussphase.",
                       examples: ["1–2 Wohnbauprojekte", "Gelegentliche Wettbewerbe", "Studienmodelle"]
                     },
                     {
                       name: "Professional",
-                      price: "€349/Monat",
+                      price: "€890/Monat",
                       ideal: "Mittlere Büros, 3–10 Mitarbeiter",
-                      models: "Bis 7 Modelle/Monat",
+                      models: "Bis 4 Modelle/Monat",
                       desc: "Der Sweet Spot für die meisten etablierten Büros. Mehrere Projekte gleichzeitig, regelmäßige Kundenpräsentationen.",
                       examples: ["2–4 gleichzeitige Projekte", "Wettbewerbe + laufende Projekte", "Monatliche Baubesprechungen"],
                       highlight: true
                     },
                     {
                       name: "Studio",
-                      price: "€549/Monat",
+                      price: "€2.500/Monat",
                       ideal: "Große Büros, Stadtplanung",
-                      models: "Bis 15 Modelle/Monat",
+                      models: "Bis 8 Modelle/Monat",
                       desc: "Für Büros mit Projektvolumen ab 5 gleichzeitigen Projekten oder mit regelmäßigem Städtebaubedarf.",
                       examples: ["5+ aktive Projekte", "Stadtentwicklung & Bebauungspläne", "Team von 10+ Architekten"]
                     }
@@ -400,7 +400,7 @@ const FlatrateGuide = () => {
                       type: "Kleines Büro, Wien",
                       situation: "2 Architekten, 1–2 Wohnbauprojekte laufend, alle 2 Wochen ein Modell für Baubesprechungen.",
                       vorher: "2 × €180 Einzelauftrag = €360/Monat + 5–7 Tage Lieferzeit",
-                      nachher: "Starter-Flatrate: €199/Monat + 48h-Lieferung",
+                      nachher: "Starter-Flatrate: €490/Monat + 48h-Lieferung",
                       ersparnis: "€161/Monat gespart · 3–5 Tage schneller"
                     },
                     {
@@ -408,7 +408,7 @@ const FlatrateGuide = () => {
                       type: "Mittelgroßes Büro, Graz",
                       situation: "8 Mitarbeiter, 3–4 aktive Projekte, durchschnittlich 5 Modelle pro Monat inklusive Wettbewerbe.",
                       vorher: "5 × €200 Einzelauftrag = €1.000/Monat, davon 2× Express mit Aufpreis = effektiv €1.200/Monat",
-                      nachher: "Professional-Flatrate: €349/Monat, 48h inklusive, kein Express-Aufpreis",
+                      nachher: "Professional-Flatrate: €890/Monat, 48h inklusive, kein Express-Aufpreis",
                       ersparnis: "€851/Monat gespart · Planbare Fixkosten"
                     },
                     {
@@ -416,7 +416,7 @@ const FlatrateGuide = () => {
                       type: "Wettbewerbsphase, Linz",
                       situation: "Büro mit aktiver Wettbewerbsstrategie: in manchen Monaten bis zu 10 Modelle, danach Flaute.",
                       vorher: "Hohe Einzelkosten in Wettbewerbsmonaten, schwer kalkulierbar",
-                      nachher: "Studio-Flatrate (€549) in aktiven Monaten, Starter (€199) in ruhigen Monaten – beide monatlich kündbar",
+                      nachher: "Studio-Flatrate (€2.500) in aktiven Monaten, Starter (€490) in ruhigen Monaten – beide monatlich kündbar",
                       ersparnis: "Flexibles Up-/Downgrade, keine Vertragsbindung"
                     },
                   ].map((ex, i) => (

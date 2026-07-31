@@ -3,14 +3,14 @@ import ArchitekturmodelleAbo from '@/src-pages/ArchitekturmodelleAbo'
 import { serviceSchema, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Architekturmodell-Flatrate für Büros · ab €199/Monat',
-  description: 'Für Architekturbüros mit regelmäßigem Modellbedarf: Festpreis-Flatrate ab €199/Monat. Erstes Modell gratis, kein Lock-In, monatlich kündbar.',
+  title: 'Architekturmodell-Flatrate für Büros · ab €490/Monat',
+  description: 'Für Architekturbüros mit regelmäßigem Modellbedarf: Festpreis-Flatrate ab €490/Monat. Erstes Modell gratis, kein Lock-In, monatlich kündbar.',
   alternates: {
     canonical: 'https://www.ek-druck.at/architekturmodelle-abo',
   },
   openGraph: {
-    title: 'Architekturmodell-Flatrate für Büros · ab €199/Monat',
-    description: 'Für Architekturbüros mit regelmäßigem Modellbedarf: Festpreis-Flatrate ab €199/Monat. Erstes Modell gratis, kein Lock-In, monatlich kündbar.',
+    title: 'Architekturmodell-Flatrate für Büros · ab €490/Monat',
+    description: 'Für Architekturbüros mit regelmäßigem Modellbedarf: Festpreis-Flatrate ab €490/Monat. Erstes Modell gratis, kein Lock-In, monatlich kündbar.',
     url: 'https://www.ek-druck.at/architekturmodelle-abo',
     siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
@@ -19,17 +19,17 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Architekturmodell-Flatrate für Büros · ab €199/Monat',
-    description: 'Für Architekturbüros mit regelmäßigem Modellbedarf: Festpreis-Flatrate ab €199/Monat. Erstes Modell gratis, kein Lock-In, monatlich kündbar.',
+    title: 'Architekturmodell-Flatrate für Büros · ab €490/Monat',
+    description: 'Für Architekturbüros mit regelmäßigem Modellbedarf: Festpreis-Flatrate ab €490/Monat. Erstes Modell gratis, kein Lock-In, monatlich kündbar.',
   },
 }
 
 const SERVICE_LD = serviceSchema({
   serviceType: 'Architekturmodell-Flatrate für Büros',
   description:
-    'Festpreis-Flatrate für Architekturbüros mit regelmäßigem Modellbedarf. Ab €199/Monat, erstes Modell gratis, kein Lock-In, monatlich kündbar.',
+    'Festpreis-Flatrate für Architekturbüros mit regelmäßigem Modellbedarf. Ab €490/Monat, erstes Modell gratis, kein Lock-In, monatlich kündbar.',
   url: 'https://www.ek-druck.at/architekturmodelle-abo',
-  lowPrice: '199',
+  lowPrice: '490',
   highPrice: '999',
 })
 

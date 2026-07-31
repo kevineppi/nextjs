@@ -38,7 +38,7 @@ const Index = () => {
   return <>
     <SEOHead
       title="3D-Druck Österreich ★5,0 – Architekturmodelle & Messemodelle | ekdruck"
-      description="Österreichs Spezialist für Architekturmodelle & Messemodelle. ★ 5,0 Google (31 Bewertungen) · Angebot in 6h · Express 24h · ab €20 · Flatrate für Architekturbüros ab €199/Mon."
+      description="Österreichs Spezialist für Architekturmodelle & Messemodelle. ★ 5,0 Google (31 Bewertungen) · Angebot in 6h · Express 24h · ab €20 · Flatrate für Architekturbüros ab €490/Mon."
       keywords="3d druck, 3d druck österreich, 3d druck service, 3d druck firma, 3d druck anbieter, 3d druck dienstleister, 3d druck oberösterreich, 3d druck prototypen"
       path="/"
     />
@@ -109,7 +109,7 @@ const Index = () => {
                         Zur Architektur-Lösung <ArrowRight className="w-4 h-4" />
                       </span>
                       <Link href="/architekturmodelle-abo" className="text-xs text-muted-foreground hover:text-primary transition-colors">
-                        oder: Flatrate für Büros ab €199/Mon →
+                        oder: Flatrate für Büros ab €490/Mon →
                       </Link>
                     </div>
                   </MagneticCard>
@@ -202,7 +202,7 @@ const Index = () => {
                       <span className="inline-flex items-center gap-1.5 bg-primary text-primary-foreground text-xs font-bold px-3 py-1.5 rounded-full">
                         <Zap className="w-3 h-3" /> NEU – Für Architekturbüros
                       </span>
-                      <span className="mono text-[10px] font-bold text-muted-foreground uppercase tracking-[0.2em]">ab €199/Monat</span>
+                      <span className="mono text-[10px] font-bold text-muted-foreground uppercase tracking-[0.2em]">ab €490/Monat</span>
                     </div>
                     <h2 className="text-2xl md:text-4xl font-bold tracking-[-0.03em] mb-3 group-hover:text-primary transition-colors">
                       Architekturmodelle im Fixpreis-Abo –<br />
@@ -214,9 +214,9 @@ const Index = () => {
                   </div>
                   <div className="flex flex-col gap-3">
                     {[
-                      { label: "Starter", price: "€199/Monat", detail: "bis 3 Modelle" },
-                      { label: "Professional", price: "€349/Monat", detail: "bis 7 Modelle · Beliebteste Wahl", highlight: true },
-                      { label: "Studio", price: "€549/Monat", detail: "bis 15 Modelle" },
+                      { label: "Starter", price: "€490/Monat", detail: "bis 2 Modelle" },
+                      { label: "Professional", price: "€890/Monat", detail: "bis 4 Modelle · Beliebteste Wahl", highlight: true },
+                      { label: "Studio", price: "€2.500/Monat", detail: "bis 8 Modelle" },
                     ].map(({ label, price, detail, highlight }) => (
                       <div key={label} className={`flex items-center justify-between px-4 py-3 rounded-xl text-sm ${highlight ? "bg-primary text-primary-foreground" : "bg-muted"}`}>
                         <span className="font-bold">{label}</span>

@@ -108,7 +108,7 @@ const architekturmodelle: ServiceSeoContent = {
       'CAD-Import für Architekturmodelle bedeutet: wir nehmen Ihre ArchiCAD-, Revit-, Rhino-, SketchUp-, Vectorworks- oder AutoCAD-Datei direkt entgegen. Bei Direkt-Import aus ArchiCAD/Revit kommt es darauf an, dass die Geometrie wasserdicht ist und Details im Maßstabs-relevanten Bereich liegen · eine 8mm-Türklinke wird im Maßstab 1:500 ohnehin nicht sichtbar gedruckt, daher im Detail reduziert. Wir machen diese Reduzierung beim Slicing automatisch, ohne dass Sie das CAD vorher aufräumen müssen.',
       'Wettbewerbsmodell drucken lassen ist die häufigste Anfrage von Architekturbüros bei ek-druck. Ein typisches Wettbewerbsmodell für eine Wohnbau-Abgabe im Maßstab 1:200 mit Hauptgebäude und 2-3 Umgebungsblöcken kostet zwischen €600 und €1.800 und braucht 8-15 Werktage Lead-Time. Express-Wettbewerbsmodelle in 5 Werktagen sind gegen 30% Aufpreis machbar, wenn die Geometrie nicht zu komplex ist. Häufig kombiniert mit Sockel aus Holz oder MDF, den wir auf Wunsch maßgenau zuschneiden lassen.',
       'Stadtmodell drucken im großen Maßstab (60×80cm bis 120×80cm) ist die anspruchsvollste Kategorie. Hier konstruieren wir Segmentierungen entlang natürlicher Straßenführungen, sodass die Stoßstellen optisch unsichtbar bleiben. Hauptobjekt der Visualisierung wird in Kontrast-Lackierung (typisch weiß) gegen die umliegende Bestandsbebauung (matt-grau, "Beton-Look") gedruckt · das macht die visuelle Hierarchie sofort lesbar. Stadtmodelle für Wiener Bauherrenprojekte, Linzer Stadtentwicklung oder Salzburger Sanierungsprojekte sind regelmäßige Aufträge.',
-      'Architekturmodell ab €20 ist eine Untergrenze für sehr kleine Einzelobjekte ohne Umgebung · z.B. ein einzelner Pavillon im Maßstab 1:200 in Weiß. Das deckt selten den tatsächlichen Projektbedarf · die meisten Architekturbüros bestellen Modelle zwischen €400 und €3.500 mit Umgebung, Lackierung und Sockel. Architekturmodell-Flatrate für Architekturbüros mit regelmäßigem Bedarf ab €199 pro Monat · beinhaltet ein freies Modell-Kontingent plus garantierte Lead-Time. Details unter /architekturmodelle-abo.',
+      'Architekturmodell ab €20 ist eine Untergrenze für sehr kleine Einzelobjekte ohne Umgebung · z.B. ein einzelner Pavillon im Maßstab 1:200 in Weiß. Das deckt selten den tatsächlichen Projektbedarf · die meisten Architekturbüros bestellen Modelle zwischen €400 und €3.500 mit Umgebung, Lackierung und Sockel. Architekturmodell-Flatrate für Architekturbüros mit regelmäßigem Bedarf ab €490 pro Monat · beinhaltet ein freies Modell-Kontingent plus garantierte Lead-Time. Details unter /architekturmodelle-abo.',
     ],
   },
   faqs: [
@@ -145,7 +145,7 @@ const architekturmodelle: ServiceSeoContent = {
     {
       question: 'Was ist die Architekturmodell-Flatrate?',
       answer:
-        'Festpreis-Abo für Architekturbüros mit regelmäßigem Modellbedarf: ab €199/Monat. Beinhaltet eine bestimmte Anzahl Modelle pro Monat (je nach Tarif 3-15 Stück), garantierte Lead-Time und persönlichen Ansprechpartner. Erstes Modell kostenlos testen, monatlich kündbar. Details unter /architekturmodelle-abo.',
+        'Festpreis-Abo für Architekturbüros mit regelmäßigem Modellbedarf: ab €490/Monat. Beinhaltet eine bestimmte Anzahl Modelle pro Monat (je nach Tarif 2-8 Stück), garantierte Lead-Time und persönlichen Ansprechpartner. Erstes Modell kostenlos testen, monatlich kündbar. Details unter /architekturmodelle-abo.',
     },
     {
       question: 'Liefern Sie das Architekturmodell mit Sockel?',

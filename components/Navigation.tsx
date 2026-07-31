@@ -122,7 +122,7 @@ const Navigation = () => {
                             Architektur-Flatrate
                             <span className="text-[9px] font-bold bg-primary text-primary-foreground px-1.5 py-0.5 rounded-full">NEU</span>
                           </div>
-                          <div className="text-xs text-muted-foreground">Ab €199/Monat · Erstes Modell gratis</div>
+                          <div className="text-xs text-muted-foreground">Ab €490/Monat · Erstes Modell gratis</div>
                         </div>
                       </Link>
                     </DropdownMenuItem>

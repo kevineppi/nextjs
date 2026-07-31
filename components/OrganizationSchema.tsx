@@ -95,7 +95,7 @@ const OrganizationSchema = () => {
           itemOffered: {
             '@type': 'Service',
             name: 'Architekturmodell-Flatrate',
-            description: 'Monatliche Flatrate für Architekturbüros ab €199/Monat – erstes Modell kostenlos',
+            description: 'Monatliche Flatrate für Architekturbüros ab €490/Monat – erstes Modell kostenlos',
           },
         },
         {

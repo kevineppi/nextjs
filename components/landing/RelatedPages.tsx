@@ -13,7 +13,7 @@ interface RelatedPage {
 const allPages: RelatedPage[] = [
   {
     title: "Flatrate für Architekturbüros",
-    description: "Fixpreis ab €199/Mon. · 48h-Lieferung · erstes Modell kostenlos",
+    description: "Fixpreis ab €490/Mon. · 48h-Lieferung · erstes Modell kostenlos",
     url: "/architekturmodelle-abo",
     icon: CalendarCheck,
     highlight: true
