@@ -25,6 +25,24 @@ const ablauf = [
   { icon: CheckCircle2, t: "4 · Lieferung", d: "Versand ins gesamte DACH-Gebiet, auf Wunsch persönliche Zustellung in Oberösterreich. Rechtzeitig vor dem Abgabetermin auf dem Tisch." },
 ];
 
+const varianten = [
+  { v: "A", name: "Zeile + Kopf", blocks: [
+    { x: 14, y: 46, w: 62, h: 13, accent: true },
+    { x: 14, y: 25, w: 18, h: 21, accent: false },
+  ] },
+  { v: "B", name: "Punkthäuser", blocks: [
+    { x: 20, y: 24, w: 18, h: 18, accent: false },
+    { x: 46, y: 42, w: 18, h: 18, accent: true },
+    { x: 62, y: 22, w: 16, h: 16, accent: false },
+  ] },
+  { v: "C", name: "Blockrand", blocks: [
+    { x: 18, y: 22, w: 56, h: 11, accent: false },
+    { x: 18, y: 33, w: 11, h: 30, accent: false },
+    { x: 63, y: 33, w: 11, h: 30, accent: true },
+    { x: 18, y: 54, w: 56, h: 9, accent: false },
+  ] },
+];
+
 const faqs = [
   { q: "Welcher Maßstab ist für ein Wettbewerbsmodell richtig?", a: "Meist gibt die Auslobung den Maßstab vor. 1:200 ist typisch für einzelne Gebäude, 1:500 für den städtebaulichen Zusammenhang, 1:1000 für große Areale. Steht nichts in den Unterlagen, beraten wir Sie vor der Anfrage kostenfrei zum passenden Maßstab." },
   { q: "Warum sind Wettbewerbsmodelle weiß?", a: "Weiß und monochrom lenkt den Blick der Jury auf Volumen, Proportion und Setzung statt auf Farbe. Üblich ist der Bestand in Grau und der neue Entwurf in Weiß. Wir arbeiten in durchgehendem Weiß mit matter, nicht spiegelnder Oberfläche, so wie es der Jury-Standard erwartet." },
@@ -112,24 +130,37 @@ const Wettbewerbsmodell = () => (
                 Der größte Vorteil gegenüber klassischem Modellbau: mehrere Entwurfs-Varianten laufen zum gleichen Stückaufwand nebeneinander.
                 Kein Aufpreis für die zweite oder dritte Variante.
               </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Auf Wunsch als <strong className="text-foreground">Einsatzplatten</strong>: die Baukörper sitzen auf einer gemeinsamen Grundplatte
+                und lassen sich am fertigen Modell tauschen. Aus einem Sockel wird so eine ganze Varianten-Reihe, die Sie in der Jury-Sitzung
+                nebeneinander legen oder direkt austauschen.
+              </p>
               <p className="text-muted-foreground leading-relaxed">
-                So liegen A, B und C zum direkten Vergleich auf dem Tisch, für die interne Entscheidung im Team oder für die Diskussion mit der Jury.
-                Eine Entwurfs-Entscheidung fällt leichter, wenn man die Varianten nebeneinander in der Hand hält.
+                So fällt die Entwurfs-Entscheidung leichter, ob intern im Team oder in der Diskussion mit der Jury.
+                Man muss die Varianten nur nebeneinander in die Hand nehmen.
               </p>
             </AnimatedSection>
             <AnimatedSection animation="slide-up" delay={100}>
-              <div className="grid grid-cols-3 gap-3">
-                {["A", "B", "C"].map((v, i) => (
-                  <MagneticCard key={v} className="rounded-2xl border-2 border-border bg-card h-full">
-                    <div className="p-5 md:p-7 text-center">
-                      <p className="text-4xl md:text-5xl font-bold text-primary mb-2">{v}</p>
-                      <p className="mono text-[9px] uppercase tracking-[0.15em] text-muted-foreground">Variante</p>
-                      <div className="mt-4 h-16 rounded-lg bg-muted/60 border border-border" style={{ opacity: 1 - i * 0.18 }} />
+              <div className="grid grid-cols-3 gap-3 md:gap-4">
+                {varianten.map((va) => (
+                  <div key={va.v} className="group relative">
+                    <div className="rounded-2xl border-2 border-border bg-card p-3 md:p-4 transition-all duration-300 ease-out group-hover:-translate-y-2 group-hover:border-primary/50 group-hover:shadow-xl group-hover:shadow-primary/10 motion-reduce:transform-none motion-reduce:transition-none">
+                      <svg viewBox="0 0 90 80" className="w-full h-auto" role="img" aria-label={`Baukörper-Anordnung Variante ${va.v}: ${va.name}`}>
+                        <rect x="4" y="4" width="82" height="72" rx="6" style={{ fill: "hsl(var(--muted) / 0.45)", stroke: "hsl(var(--border))" }} strokeWidth="1" />
+                        {va.blocks.map((b, j) => (
+                          <rect key={j} x={b.x} y={b.y} width={b.w} height={b.h} rx="1.5" style={{ fill: b.accent ? "hsl(var(--primary))" : "hsl(var(--foreground) / 0.62)" }} />
+                        ))}
+                      </svg>
+                      <div className="flex items-baseline justify-between mt-2 px-0.5">
+                        <span className="text-xl md:text-2xl font-bold text-primary leading-none">{va.v}</span>
+                        <span className="mono text-[8px] md:text-[9px] uppercase tracking-[0.1em] text-muted-foreground text-right leading-tight">{va.name}</span>
+                      </div>
                     </div>
-                  </MagneticCard>
+                    <div className="absolute inset-x-3 -bottom-1.5 h-2 rounded-full bg-foreground/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 motion-reduce:hidden" />
+                  </div>
                 ))}
               </div>
-              <p className="mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mt-4 text-center">Gleiche Stückkosten · direkter Vergleich</p>
+              <p className="mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mt-5 text-center">Gleiche Stückkosten · als Einsatzplatten tauschbar</p>
             </AnimatedSection>
           </div>
         </div>

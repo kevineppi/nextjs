@@ -30,7 +30,7 @@ const MagneticCard = ({ children, className = "", glowColor }: MagneticCardProps
   return (
     <div
       ref={cardRef}
-      className={`relative overflow-hidden ${className}`}
+      className={`relative overflow-hidden transition-transform duration-300 ease-out hover:-translate-y-1 motion-reduce:transform-none motion-reduce:transition-none ${className}`}
       onMouseMove={handleMove}
       onMouseLeave={handleLeave}
     >
