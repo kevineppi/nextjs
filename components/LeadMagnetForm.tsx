@@ -165,7 +165,7 @@ export default function LeadMagnetForm({
           onChange={(e) => setBranche(e.target.value)}
           className="w-full px-4 py-3 border-2 border-border rounded-xl bg-background text-base focus:outline-none focus:border-primary"
         >
-          <option value="">— bitte wählen —</option>
+          <option value="">bitte wählen</option>
           <option value="maschinenbau">Maschinenbau & Werkzeugbau</option>
           <option value="schiffbau">Schiffbau & Marine</option>
           <option value="energietechnik">Energietechnik & Erneuerbare</option>

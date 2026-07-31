@@ -174,7 +174,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
                   className="group inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground rounded-full px-8 py-4 font-bold hover:opacity-90 transition-all"
                 >
                   <Calculator className="w-5 h-5" />
-                  STL hochladen — Preis in 60 Sek.
+                  STL hochladen, Preis in 60 Sek.
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link
@@ -287,7 +287,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
                     Was das für Sie heißt: Wenn Sie hier eine Anfrage stellen, landet sie in <strong>meinem Posteingang</strong>. Nicht bei einem Vertriebsteam, nicht in einer Hotline-Queue. Sie schreiben, ich antworte. Sie senden Daten, ich kalkuliere. Ich fertige, ich prüfe, ich versende. Wenn etwas nicht passt: Sie haben einen einzigen Ansprechpartner.
                   </p>
                   <p className="text-muted-foreground">
-                    Klare Grenze: <strong>Mechanische Funktionsbauteile</strong> mache ich aktuell nicht — meine WKO-Gewerbeberechtigung dafür kommt erst mit dem Maschinenbau-Abschluss. Was ich mache: <strong>Modelle, Anschauungsobjekte, Designstudien, Prototypen, Messemodelle, Architekturmodelle</strong>. Wenn Ihre Anfrage in der Grauzone liegt, sag ich's offen statt ein Phantasieangebot zu schicken.
+                    Klare Grenze: <strong>Mechanische Funktionsbauteile</strong> mache ich aktuell nicht. Meine WKO-Gewerbeberechtigung dafür kommt erst mit dem Maschinenbau-Abschluss. Was ich mache: <strong>Modelle, Anschauungsobjekte, Designstudien, Prototypen, Messemodelle, Architekturmodelle</strong>. Wenn Ihre Anfrage in der Grauzone liegt, sag ich's offen statt ein Phantasieangebot zu schicken.
                   </p>
                   <div className="flex flex-wrap gap-2 pt-3">
                     <span className="inline-flex items-center gap-2 text-xs font-bold px-3 py-1.5 rounded-full bg-muted/50">
@@ -323,7 +323,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
                   Was wir konkret drucken.
                 </h2>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Diese {branche.useCases.length} Modell-Typen fragen Kunden aus dieser Branche bei mir am häufigsten an. Realistisch beschrieben — mit Maßstab und Material-Empfehlung, nicht in Marketing-Sprech.
+                  Diese {branche.useCases.length} Modell-Typen fragen Kunden aus dieser Branche bei mir am häufigsten an. Realistisch beschrieben, mit Maßstab und Material-Empfehlung, nicht in Marketing-Sprech.
                 </p>
               </div>
 
@@ -384,7 +384,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
                   Welches Material für {branche.eyebrow.replace('Branche · ', '')}?
                 </h2>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Aus unserer Erfahrung mit dieser Branche — die richtige Wahl entscheidet über Lebensdauer und Look.
+                  Aus unserer Erfahrung mit dieser Branche: Die richtige Wahl entscheidet über Lebensdauer und Look.
                 </p>
               </div>
 
@@ -458,7 +458,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
                   So läuft's
                 </p>
                 <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.0] tracking-[-0.04em] mb-6">
-                  Von der Anfrage zum Modell — in 4 Schritten.
+                  Von der Anfrage zum Modell, in 4 Schritten.
                 </h2>
               </div>
 
@@ -467,7 +467,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
                   {
                     step: '01',
                     title: 'CAD oder Skizze',
-                    body: 'STL, STEP, IGES — oder einfach Skizze und Bilder. Wir modellieren falls nötig.',
+                    body: 'STL, STEP, IGES – oder einfach Skizze und Bilder. Wir modellieren falls nötig.',
                   },
                   {
                     step: '02',
@@ -593,11 +593,11 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
                 Bereit für Ihr nächstes Messe-Modell?
               </p>
               <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.0] tracking-[-0.04em] mb-6">
-                {branche.primaryKeyword.split(' ')[0]} 3D-Druck —<br />
+                {branche.primaryKeyword.split(' ')[0]} 3D-Druck.<br />
                 <span className="text-primary">Festpreis in 6 Stunden.</span>
               </h2>
               <p className="text-lg text-background/70 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Schicken Sie CAD (STEP/STL) oder eine kurze Skizze an <a href={`mailto:${BRAND.email}`} className="text-primary underline-offset-4 hover:underline">{BRAND.email}</a>. Sie bekommen das Festpreisangebot binnen 6h direkt von mir — Kevin, dem Inhaber. Kein Vertriebsfilter, keine Hierarchie dazwischen.
+                Schicken Sie CAD (STEP/STL) oder eine kurze Skizze an <a href={`mailto:${BRAND.email}`} className="text-primary underline-offset-4 hover:underline">{BRAND.email}</a>. Sie bekommen das Festpreisangebot binnen 6h direkt von mir, Kevin, dem Inhaber. Kein Vertriebsfilter, keine Hierarchie dazwischen.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8">

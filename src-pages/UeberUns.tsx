@@ -280,7 +280,7 @@ const UeberUns = () => {
                       ist im Vergleich zu Standard-Importware aus Asien ca. 80% niedriger.
                     </p>
                     <p>
-                      Das ist nicht nur Greenwashing-Marketing — die Lieferkette ist tatsächlich kurz: Hersteller
+                      Das ist nicht nur Greenwashing-Marketing. Die Lieferkette ist tatsächlich kurz: Hersteller
                       in OÖ, ich in OÖ, viele Kunden in OÖ. Bei DACH-weiten Aufträgen schickt der Versand das
                       Modell maximal 1.000 km. Im internationalen Vergleich ein Bruchteil der CO₂-Last.
                     </p>
@@ -298,7 +298,7 @@ const UeberUns = () => {
                       { stat: "~80%", label: "weniger CO₂ vs. Asien-Import" },
                       { stat: "100%", label: "Ökostrom in der Produktion" },
                       { stat: "<200 km", label: "Material-Transport bis Werkstatt" },
-                      { stat: "0", label: "Kunststoff-Neu-Granulat — alles recycelt" },
+                      { stat: "0", label: "Kunststoff-Neu-Granulat, alles recycelt" },
                     ].map(({ stat, label }) => (
                       <div key={stat} className="flex items-center gap-4 p-4 rounded-xl bg-background border border-primary/20">
                         <div className="text-2xl font-bold text-primary min-w-[100px]">{stat}</div>

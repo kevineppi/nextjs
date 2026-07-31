@@ -36,7 +36,7 @@ interface SmartStickyCTAProps {
 const SmartStickyCTA = ({
   primaryLabel,
   primaryHref,
-  context = 'Festpreis in 6h — direkt vom Inhaber',
+  context = 'Festpreis in 6h, direkt vom Inhaber',
   secondaryLabel,
   secondaryHref,
   dismissKey = 'smart-cta-dismissed',

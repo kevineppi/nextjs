@@ -336,7 +336,7 @@ const Index = () => {
           (2026-06-04 SEO-Pass: erhöht Content-Tiefe von 620 auf ~1.300 Wörter,
            hebt Hauptkeyword "3D-Druck Österreich" 4× natürlich, schafft 7 Internal-Links zu Service- und Branchen-Seiten)
          ══════════════════════════════════════════════════════ */}
-      <section className="py-24 md:py-32 bg-background relative" aria-label="3D-Druck Österreich — Werkstatt, Materialien, Branchen">
+      <section className="py-24 md:py-32 bg-background relative" aria-label="3D-Druck Österreich, Werkstatt, Materialien, Branchen">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <AnimatedSection animation="fade-in">
@@ -396,7 +396,7 @@ const Index = () => {
               <div className="border-t border-border pt-12 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
                 <div>
                   <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary mb-2">Bereit?</p>
-                  <p className="text-2xl md:text-3xl font-bold tracking-[-0.02em]">3D-Druck Österreich — STL hoch, Preis in 60 Sekunden.</p>
+                  <p className="text-2xl md:text-3xl font-bold tracking-[-0.02em]">3D-Druck Österreich: STL hoch, Preis in 60 Sekunden.</p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 shrink-0">
                   <Button size="lg" variant="cta" className="rounded-full px-8 py-7 font-semibold" asChild>
@@ -425,8 +425,8 @@ const Index = () => {
                 Zwei Wege zum Preis.
               </h2>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Wenn Sie das Modell schon konkret im Kopf haben — Sofort-Preis berechnen.
-                Wenn Sie erst Orientierung wollen — Preisbeispiele aus echten Aufträgen.
+                Wenn Sie das Modell schon konkret im Kopf haben: Sofort-Preis berechnen.
+                Wenn Sie erst Orientierung wollen: Preisbeispiele aus echten Aufträgen.
               </p>
             </AnimatedSection>
 
@@ -506,7 +506,7 @@ const Index = () => {
       <TestimonialsSection
         limit={3}
         title="Stimmen aus echten Projekten."
-        subtitle="Quotes aus dem letzten Jahr — direkt von Auftraggebern, anonymisiert wo nötig."
+        subtitle="Quotes aus dem letzten Jahr, direkt von Auftraggebern, anonymisiert wo nötig."
       />
 
       {/* Google-Reviews entfernt am 2026-05-31 — Trust kommt über Testimonials oben */}
@@ -724,7 +724,7 @@ const Index = () => {
                 Bereit für Ihr<br />nächstes Modell<span className="text-primary">?</span>
               </h2>
               <p className="text-background/50 text-base md:text-lg mb-12 max-w-xl mx-auto leading-relaxed">
-                Zwei Wege — Sie entscheiden, welcher passt. Beide landen direkt beim Inhaber.
+                Zwei Wege: Sie entscheiden, welcher passt. Beide landen direkt beim Inhaber.
               </p>
 
               {/* 2-Pfad-Logik klar getrennt */}
@@ -752,10 +752,10 @@ const Index = () => {
                   <div className="bg-background/10 border-2 border-background/20 text-background rounded-3xl p-7 hover:bg-background/15 hover:border-background/30 hover:-translate-y-0.5 transition-all">
                     <p className="mono text-[10px] font-bold uppercase tracking-[0.25em] text-primary mb-3">Pfad B · persönlich</p>
                     <h3 className="text-xl md:text-2xl font-bold mb-2 leading-tight">
-                      Kurz besprechen — Festpreis in 6h
+                      Kurz besprechen, Festpreis in 6h
                     </h3>
                     <p className="text-sm text-background/70 mb-5 leading-relaxed">
-                      Wenn Sie noch unsicher sind oder NDA/Sonderfall haben — rufen Sie an.
+                      Wenn Sie noch unsicher sind oder NDA/Sonderfall haben, rufen Sie an.
                     </p>
                     <span className="inline-flex items-center gap-2 font-bold text-sm text-background group-hover:gap-4 transition-all">
                       <Phone className="w-4 h-4" />

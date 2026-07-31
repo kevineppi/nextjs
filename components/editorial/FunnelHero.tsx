@@ -24,7 +24,7 @@ const FunnelHero = () => {
   return (
     <section
       className="relative pt-24 md:pt-32 pb-16 md:pb-24 bg-background overflow-hidden"
-      aria-label="Hero — 3D-Druck Österreich"
+      aria-label="Hero, 3D-Druck Österreich"
     >
       {/* Hintergrund-Akzent — subtil */}
       <div className="absolute inset-0 pointer-events-none">
@@ -57,7 +57,7 @@ const FunnelHero = () => {
             {/* Subline — sehr kurz */}
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-xl">
               Maßstabsgetreue Industriemodelle aus dem 3D-Druck. STL hochladen,
-              Festpreisangebot binnen 6 Stunden, Lieferung morgen — direkt aus Gunskirchen, OÖ.
+              Festpreisangebot binnen 6 Stunden, Lieferung morgen, direkt aus Gunskirchen, OÖ.
             </p>
 
             {/* PRIMARY CTA — visuell dominant + SECONDARY als Text-Link */}
@@ -67,7 +67,7 @@ const FunnelHero = () => {
                 className="group inline-flex items-center gap-3 bg-primary text-primary-foreground rounded-full px-8 py-5 font-bold text-base md:text-lg hover:opacity-90 transition-all shadow-[0_6px_20px_-6px_rgba(59,155,110,0.4)] hover:shadow-[0_10px_30px_-6px_rgba(59,155,110,0.5)] hover:-translate-y-0.5"
               >
                 <Calculator className="w-5 h-5" />
-                STL hochladen — Preis in 60 Sek.
+                STL hochladen, Preis in 60 Sek.
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
 
@@ -125,7 +125,7 @@ const FunnelHero = () => {
                   </p>
 
                   <p className="text-2xl md:text-3xl font-bold leading-tight tracking-[-0.02em] mb-8">
-                    "Bei mir landet Ihre Anfrage direkt — kein Vertriebsfilter, keine Hierarchie."
+                    "Bei mir landet Ihre Anfrage direkt, kein Vertriebsfilter, keine Hierarchie."
                   </p>
 
                   {/* Avatar + Signatur */}

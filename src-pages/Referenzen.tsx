@@ -694,7 +694,7 @@ const Referenzen = () => {
                     </blockquote>
                     {selectedProject.customer_name && (
                       <p className="text-sm text-muted-foreground font-medium">
-                        — {selectedProject.customer_name}
+                        – {selectedProject.customer_name}
                       </p>
                     )}
                   </div>

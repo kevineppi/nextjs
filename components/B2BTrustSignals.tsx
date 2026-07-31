@@ -49,7 +49,7 @@ const B2BTrustSignals = ({ variant = 'inline', className = '' }: B2BTrustSignals
     },
     {
       icon: Linkedin,
-      label: 'LinkedIn — direkter Kontakt zum Inhaber',
+      label: 'LinkedIn, direkter Kontakt zum Inhaber',
       detail: 'Profil unter linkedin.com/in/3d-druck',
       visible: true,
       href: 'https://www.linkedin.com/in/3d-druck/',

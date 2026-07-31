@@ -84,7 +84,7 @@ const ArchitekturFallbeispieleSection = () => (
                     <div className="mt-auto pt-6 border-t border-border/50">
                       <Quote className="w-5 h-5 text-primary/30 mb-3" />
                       <p className="text-sm italic leading-relaxed mb-3 text-foreground/80">"{c.quote}"</p>
-                      <p className="text-[11px] text-muted-foreground">— {c.quotePosition}</p>
+                      <p className="text-[11px] text-muted-foreground">– {c.quotePosition}</p>
                     </div>
                   </div>
 

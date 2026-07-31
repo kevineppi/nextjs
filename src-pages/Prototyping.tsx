@@ -191,7 +191,7 @@ const Prototyping = () => (
                 <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">24h</p>
                 <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
                   <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Express</p>
-                  <p className="text-[10px] text-muted-foreground hidden md:inline">— Über Nacht</p>
+                  <p className="text-[10px] text-muted-foreground hidden md:inline">Über Nacht</p>
                 </div>
               </div>
               <div className="relative py-8 md:py-10 px-2 md:px-6 group border-l border-border">
@@ -199,7 +199,7 @@ const Prototyping = () => (
                 <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">€20</p>
                 <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
                   <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Ab Preis</p>
-                  <p className="text-[10px] text-muted-foreground hidden md:inline">— Festpreis</p>
+                  <p className="text-[10px] text-muted-foreground hidden md:inline">Festpreis</p>
                 </div>
               </div>
               <div className="relative py-8 md:py-10 px-2 md:px-6 group border-t md:border-t-0 md:border-l border-border">
@@ -215,7 +215,7 @@ const Prototyping = () => (
                 <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">5,0★</p>
                 <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
                   <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Google</p>
-                  <p className="text-[10px] text-muted-foreground hidden md:inline">— 31 Bewertungen</p>
+                  <p className="text-[10px] text-muted-foreground hidden md:inline">31 Bewertungen</p>
                 </div>
               </div>
             </div>

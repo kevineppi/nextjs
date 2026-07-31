@@ -39,7 +39,7 @@ const KevinNote = ({ children, variant = 'inline' }: KevinNoteProps) => {
               {children}
             </div>
             <p className="mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mt-3">
-              — Kevin
+              – Kevin
             </p>
           </div>
         </div>
@@ -65,7 +65,7 @@ const KevinNote = ({ children, variant = 'inline' }: KevinNoteProps) => {
             {children}
           </div>
           <p className="mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground mt-3 font-bold">
-            — Kevin Eppensteiner
+            – Kevin Eppensteiner
           </p>
         </div>
       </div>

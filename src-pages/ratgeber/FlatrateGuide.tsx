@@ -146,7 +146,7 @@ const FlatrateGuide = () => {
               <span className="text-primary">Wann lohnt sich ein Abo?</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Ein ehrlicher Vergleich mit Preistabelle und Break-even-Analyse — für Architekturbüros, die mehr als ein Modell pro Quartal beauftragen.
+              Ein ehrlicher Vergleich mit Preistabelle und Break-even-Analyse, für Architekturbüros, die mehr als ein Modell pro Quartal beauftragen.
             </p>
             <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
               <span>Verfasst April 2026</span>
@@ -167,7 +167,7 @@ const FlatrateGuide = () => {
                 Die Flatrate lohnt sich ab ca. <strong>2 Modellen pro Monat</strong>: schon beim Starter-Paket (€490/Mon.) amortisiert sich das gegenüber Einzelaufträgen, wenn ein Modell im Schnitt mehr als €245 kostet.
               </p>
               <p className="text-muted-foreground">
-                Für Büros mit laufenden Wettbewerben oder mehreren aktiven Projekten gleichzeitig rechnet sich der Wechsel bereits im ersten Monat. Das erste Modell ist bei ekdruck kostenlos — so können Sie das selbst testen.
+                Für Büros mit laufenden Wettbewerben oder mehreren aktiven Projekten gleichzeitig rechnet sich der Wechsel bereits im ersten Monat. Das erste Modell ist bei ekdruck kostenlos. So können Sie das selbst testen.
               </p>
             </div>
           </div>
@@ -207,7 +207,7 @@ const FlatrateGuide = () => {
                   <h2 className="text-3xl font-bold">Das Problem mit Einzelaufträgen</h2>
                 </div>
                 <p className="text-muted-foreground leading-relaxed mb-8 text-lg">
-                  Architekturbüros, die 3D-Druckmodelle regelmäßig beauftragen, kennen das Problem: Jede Bestellung ist ein kleines Projekt für sich. Anfrage, Angebot, Freigabe, Lieferung — und dann dasselbe wieder von vorn. Das kostet nicht nur Geld, sondern vor allem Zeit.
+                  Architekturbüros, die 3D-Druckmodelle regelmäßig beauftragen, kennen das Problem: Jede Bestellung ist ein kleines Projekt für sich. Anfrage, Angebot, Freigabe, Lieferung, und dann dasselbe wieder von vorn. Das kostet nicht nur Geld, sondern vor allem Zeit.
                 </p>
                 <div className="grid md:grid-cols-2 gap-5">
                   {painPoints.map((p, i) => (
@@ -223,7 +223,7 @@ const FlatrateGuide = () => {
                   ))}
                 </div>
                 <p className="text-muted-foreground leading-relaxed mt-8">
-                  Eine Flatrate löst all diese Probleme auf einmal: Fixpreis, feste Lieferzeit, ein persönlicher Ansprechpartner. Das Modell ist bei einem Abo-Anbieter anders — Sie werden als Partner behandelt, nicht als Einmalkunde.
+                  Eine Flatrate löst all diese Probleme auf einmal: Fixpreis, feste Lieferzeit, ein persönlicher Ansprechpartner. Das Modell ist bei einem Abo-Anbieter anders: Sie werden als Partner behandelt, nicht als Einmalkunde.
                 </p>
               </section>
             </AnimatedSection>
@@ -314,7 +314,7 @@ const FlatrateGuide = () => {
                     <TrendingDown className="h-10 w-10 text-primary shrink-0" />
                     <div className="flex-1 text-center sm:text-left">
                       <p className="font-bold text-lg mb-1">Fazit: Break-even bei 2 Modellen/Monat</p>
-                      <p className="text-sm text-muted-foreground">Wer zwei oder mehr Standardmodelle pro Monat bestellt, zahlt mit der Flatrate weniger als mit Einzelaufträgen — und bekommt 48h-Lieferung dazu.</p>
+                      <p className="text-sm text-muted-foreground">Wer zwei oder mehr Standardmodelle pro Monat bestellt, zahlt mit der Flatrate weniger als mit Einzelaufträgen, und bekommt 48h-Lieferung dazu.</p>
                     </div>
                     <Link href="/architekturmodelle-abo">
                       <Button className="shrink-0">Flatrate testen →</Button>
@@ -472,7 +472,7 @@ const FlatrateGuide = () => {
                 <div className="text-xs font-bold uppercase tracking-wider text-primary mb-3">Jetzt testen – risikofrei</div>
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">Erstes Modell kostenlos drucken lassen</h3>
                 <p className="text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-                  Schicken Sie uns Ihre STL-Datei oder beschreiben Sie Ihr Modell kurz — wir drucken es kostenlos als Qualitätstest. Kein Vertrag, keine Mindestlaufzeit.
+                  Schicken Sie uns Ihre STL-Datei oder beschreiben Sie Ihr Modell kurz. Wir drucken es kostenlos als Qualitätstest. Kein Vertrag, keine Mindestlaufzeit.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/architekturmodelle-abo">

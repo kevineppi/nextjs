@@ -39,12 +39,12 @@ import {
 const MATERIAL_META: Record<string, { desc: string; color: string; colorBg: string }> = {
   PLA:      { desc: "Glatte Oberfläche, ideal für Präsentationsmodelle", color: "text-blue-600", colorBg: "bg-blue-500" },
   "PLA+":   { desc: "Verstärkt, höhere Schlagzähigkeit als Standard-PLA", color: "text-indigo-600", colorBg: "bg-indigo-500" },
-  PETG:     { desc: "UV-stabil & schlagfest — perfekt für Messemodelle", color: "text-emerald-600", colorBg: "bg-emerald-500" },
+  PETG:     { desc: "UV-stabil & schlagfest, perfekt für Messemodelle", color: "text-emerald-600", colorBg: "bg-emerald-500" },
   ABS:      { desc: "Glätt- und lackierbar für Ausstellungsobjekte", color: "text-amber-600", colorBg: "bg-amber-500" },
   ASA:      { desc: "Wetterfest & UV-beständig für Außenanwendungen", color: "text-cyan-600", colorBg: "bg-cyan-500" },
-  TPU:      { desc: "Flexibel & gummiartig — für biegbare Teile", color: "text-rose-600", colorBg: "bg-rose-500" },
-  "PA6-CF": { desc: "Carbon-Look, ultraleicht — Premium-Showmodelle", color: "text-slate-700", colorBg: "bg-slate-800" },
-  PC:       { desc: "Polycarbonat — extrem schlagfest & hitzebeständig", color: "text-violet-600", colorBg: "bg-violet-500" },
+  TPU:      { desc: "Flexibel & gummiartig, für biegbare Teile", color: "text-rose-600", colorBg: "bg-rose-500" },
+  "PA6-CF": { desc: "Carbon-Look, ultraleicht, Premium-Showmodelle", color: "text-slate-700", colorBg: "bg-slate-800" },
+  PC:       { desc: "Polycarbonat: extrem schlagfest & hitzebeständig", color: "text-violet-600", colorBg: "bg-violet-500" },
 };
 
 const QUALITY_PRESETS = [
@@ -117,7 +117,7 @@ function calcPart(p: PartState): PricingResult {
 
 // ─── FAQS ────────────────────────────────────────────────────────
 const calculatorFaqs = [
-  { question: "Was kostet ein 3D-Druck Modell bei ekdruck?", answer: "Die 3D-Druck Kosten beginnen ab €20 pro Teil. Der genaue Preis hängt von Modellgröße, Material und Qualitätsstufe ab. Nutzen Sie unseren Online-Kostenrechner für eine sofortige Richtpreisberechnung — kostenlos und ohne Anmeldung. Für jedes Projekt erstellen wir ein persönlich geprüftes Festpreisangebot innerhalb von 6 Stunden." },
+  { question: "Was kostet ein 3D-Druck Modell bei ekdruck?", answer: "Die 3D-Druck Kosten beginnen ab €20 pro Teil. Der genaue Preis hängt von Modellgröße, Material und Qualitätsstufe ab. Nutzen Sie unseren Online-Kostenrechner für eine sofortige Richtpreisberechnung, kostenlos und ohne Anmeldung. Für jedes Projekt erstellen wir ein persönlich geprüftes Festpreisangebot innerhalb von 6 Stunden." },
   { question: "Wie genau ist der Richtpreis aus dem Kostenrechner?", answer: "Der Richtpreis basiert auf der realen Geometrie Ihrer STL-Datei und berücksichtigt Materialverbrauch, Druckzeit, Baugröße und Setup-Aufwand. Typische Abweichung zum Endpreis: ±10 bis 15 %. Der verbindliche Festpreis wird nach persönlicher technischer Prüfung festgelegt und per E-Mail zugesendet." },
   { question: "Welche Dateiformate werden unterstützt?", answer: "Aktuell unterstützen wir STL-Dateien bis 100 MB. Die Datei wird direkt im Browser analysiert – Volumen, Oberfläche und Maße werden automatisch berechnet. Für andere Formate (OBJ, STEP, 3MF) kontaktieren Sie uns bitte direkt." },
   { question: "Welche 3D-Druck Materialien kann ich wählen?", answer: "Wir bieten 8 FDM-Materialien an: PLA (ideal für Präsentationsmodelle), PETG (UV-beständig, perfekt für Messemodelle), ABS (glätt- und lackierbar), PLA+ (verstärkt), ASA (wetterfest), TPU (flexibel), Polycarbonat (extrem schlagfest) und PA6-CF mit Carbonfaser für Premium-Showmodelle. Alle Filamente stammen aus österreichischer Produktion." },
@@ -365,7 +365,7 @@ const Kostenrechner = () => {
                             <div className="flex-1 min-w-0">
                               <p className="text-sm font-medium truncate">{p.fileName || `Teil ${i + 1} (Standard)`}</p>
                               <p className="text-[11px] text-muted-foreground">
-                                {g.volumeCm3.toFixed(1)} cm³ — {Math.round(g.boundingBoxMm.x)}×{Math.round(g.boundingBoxMm.y)}×{Math.round(g.boundingBoxMm.z)} mm · {p.materialKey}
+                                {g.volumeCm3.toFixed(1)} cm³, {Math.round(g.boundingBoxMm.x)}×{Math.round(g.boundingBoxMm.y)}×{Math.round(g.boundingBoxMm.z)} mm · {p.materialKey}
                               </p>
                             </div>
                             <Badge variant="secondary" className="text-[11px] font-semibold">{p.qty}×</Badge>
@@ -418,7 +418,7 @@ const Kostenrechner = () => {
                 {/* Material + Quality + Qty */}
                 <div className="bg-card border border-border rounded-2xl p-5">
                   <p className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground mb-3 font-semibold">
-                    Material{parts.length > 1 ? ` — ${current.fileName || `Teil ${activePart + 1}`}` : ""}
+                    Material{parts.length > 1 ? `: ${current.fileName || `Teil ${activePart + 1}`}` : ""}
                   </p>
                   <div className="grid grid-cols-2 gap-1.5 mb-5">
                     {cfg.materialKeys.map(key => {
@@ -570,7 +570,7 @@ const Kostenrechner = () => {
                         Unverbindliches Angebot anfordern
                       </Button>
                       <p className="text-center text-[11px] text-muted-foreground mt-2">
-                        Persönliche Prüfung — Antwort in 6 h — kein Account nötig
+                        Persönliche Prüfung, Antwort in 6 h, kein Account nötig
                       </p>
                     </>
                   )}

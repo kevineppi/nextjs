@@ -104,7 +104,7 @@ const Ratgeber = () => {
       date: "Mai 2026"
     },
     {
-      title: "PLA vs PETG vs ASA vs ABS — FDM-Material-Vergleich 2026",
+      title: "PLA vs PETG vs ASA vs ABS: FDM-Material-Vergleich 2026",
       description: "Wissenschaftlicher Material-Vergleich nach ISO 527/178/75: Zugfestigkeit, Biegefestigkeit, Wärmeformbeständigkeit. Decision-Matrix für 6 Anwendungsfälle.",
       link: "/ratgeber/fdm-material-vergleich",
       icon: Beaker,

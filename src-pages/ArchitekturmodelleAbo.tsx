@@ -465,7 +465,7 @@ const ArchitekturmodelleAbo = () => {
                 <blockquote className="italic text-secondary-foreground/90 leading-relaxed mb-5">
                   „{t.quote}"
                 </blockquote>
-                <div className="text-sm font-semibold text-secondary-foreground/70">— {t.author}</div>
+                <div className="text-sm font-semibold text-secondary-foreground/70">– {t.author}</div>
               </div>
             ))}
           </div>
