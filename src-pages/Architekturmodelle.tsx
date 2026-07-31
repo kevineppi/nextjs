@@ -364,7 +364,7 @@ const Architekturmodelle = () => (
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Auch interessant</h3>
-                  <p>Sie suchen ein <Link href="/architekturmodelle/stadtmodell" className="text-primary font-semibold hover:underline">Städtebaumodell</Link> für den ganzen Ort, <Link href="/messemodelle" className="text-primary font-semibold hover:underline">Messemodelle</Link> für Ihren Auftritt auf Architektur- oder Bauträger-Messen, <Link href="/prototyping" className="text-primary font-semibold hover:underline">Rapid Prototyping</Link> für Design-Prototypen und Anschauungsmuster, oder <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">B2B-Konditionen</Link> für regelmäßigen Modellbedarf? Wir bieten das gesamte 3D-Druck-Spektrum aus einer Hand.</p>
+                  <p>Sie suchen ein <Link href="/architekturmodelle/wettbewerbsmodell" className="text-primary font-semibold hover:underline">Wettbewerbsmodell</Link> für die Jury-Abgabe, ein <Link href="/architekturmodelle/stadtmodell" className="text-primary font-semibold hover:underline">Städtebaumodell</Link> für den ganzen Ort, <Link href="/messemodelle" className="text-primary font-semibold hover:underline">Messemodelle</Link> für Ihren Auftritt auf Architektur- oder Bauträger-Messen, <Link href="/prototyping" className="text-primary font-semibold hover:underline">Rapid Prototyping</Link> für Design-Prototypen und Anschauungsmuster, oder <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">B2B-Konditionen</Link> für regelmäßigen Modellbedarf? Wir bieten das gesamte 3D-Druck-Spektrum aus einer Hand.</p>
                 </div>
               </div>
             </AnimatedSection>
