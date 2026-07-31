@@ -107,14 +107,14 @@ export const messemodellMaterials: MesseModelMaterial[] = [
     fullName: 'Carbon-Faser-verstärktes Polyamid',
     brennstoffklasseDIN4102: 'B2',
     brennstoffklasseEN13501: 'E',
-    brennstoffklasseNote: 'Standard PA-CF ist B2. Hauptargument ist mechanische Belastbarkeit, nicht Brandschutz.',
+    brennstoffklasseNote: 'Standard PA-CF ist B2. Hauptargument ist die Robustheit, nicht Brandschutz.',
     standzeitIndex: 10,
     daueranfassResistenz: 'sehr hoch',
     uvStabilitaet: 'mittel',
     lackierbarkeit: 'schwierig',
     preisProKg: '€80-150',
     empfehlungMesseEinsatz: 'Bewegliche Komponenten in Schnittmodellen (Zahnräder, Spindeln, Klappgelenke) wo Plastik-Material reißen würde.',
-    primaryUseCase: 'Belastbare bewegliche Mechanismen',
+    primaryUseCase: 'Robuste bewegliche Mechanismen',
   },
 ]
 
@@ -346,7 +346,7 @@ export const brancheStrategies: BrancheStrategy[] = [
     branche: 'Automotive',
     slug: 'automotive',
     hauptmessen: ['IAA Mobility', 'Vienna Autoshow', 'Auto Zürich'],
-    typischeProdukte: ['Karosseriebauteile', 'E-Antriebe', 'Konzeptfahrzeuge', 'Innenraum-Module'],
+    typischeProdukte: ['Karosserieteile', 'E-Antriebe', 'Konzeptfahrzeuge', 'Innenraum-Module'],
     empfohlenerMassstab: '1:5 bis 1:10',
     empfohlenesMaterial: 'ABS für Premium-Spritzguss-Look mit Aceton-Glättung',
     brennstoffklasseAnforderung: 'B1 bei IAA, B2 bei kleineren Showrooms',
@@ -384,7 +384,7 @@ export const messeFAQs: FAQItem[] = [
   {
     question: 'Wie lange überlebt ein 3D-Druck-Messemodell typische 4-7 Messetage?',
     answer:
-      'Bei richtiger Materialwahl (PETG, ASA, PC, PA-CF) und sachgemäßer Handhabung: 5-15 Messen ohne Reparatur. PETG ist der Standzeit-Sieger für Multi-Messen-Einsätze · wir haben Modelle die nach 12 Messen noch demonstrationsfähig sind. PLA ist für mehrjährige Messeeinsätze nicht erste Wahl (Detail-Verlust durch Anfassen, Spröde bei Stoßbelastung). Bei beweglichen Komponenten empfehlen wir PA-CF · Carbon-Faser-verstärktes Polyamid hält mechanische Belastung 2-3x länger durch als reine Thermoplaste.',
+      'Bei richtiger Materialwahl (PETG, ASA, PC, PA-CF) und sachgemäßer Handhabung: 5-15 Messen ohne Reparatur. PETG ist der Standzeit-Sieger für Multi-Messen-Einsätze · wir haben Modelle die nach 12 Messen noch demonstrationsfähig sind. PLA ist für mehrjährige Messeeinsätze nicht erste Wahl (Detail-Verlust durch Anfassen, spröde bei Stößen). Bei beweglichen Komponenten empfehlen wir PA-CF · Carbon-Faser-verstärktes Polyamid ist deutlich robuster und formstabiler als reine Thermoplaste und hält 2-3x länger.',
   },
   {
     question: 'Was kostet ein typisches Industrie-Messemodell?',
@@ -394,12 +394,12 @@ export const messeFAQs: FAQItem[] = [
   {
     question: 'Wie lange dauert die Herstellung von der Bestellung zur Lieferung?',
     answer:
-      'Standard-Lieferzeit: 3-5 Wochen ab CAD-Eingang für die meisten Industrie-Messemodelle. Bei eigener Konstruktion (Sie liefern Skizze, wir konstruieren CAD) verlängert sich auf 4-7 Wochen. Express-Lieferung 2-3 Wochen ist möglich bei verfügbarer Druckerkapazität (Aufpreis 30-50%). Für Folge-Modelle aus bestehender CAD-Datei: 10-15 Werktage. Empfehlung: 8 Wochen vor Messestart starten, sonst wird der Spielraum für Iterations-Reviews knapp.',
+      'Standard-Lieferzeit: 3-5 Wochen ab CAD-Eingang für die meisten Industrie-Messemodelle. Bei eigener Datenaufbereitung (Sie liefern Skizze, wir bauen die CAD-Datei auf) verlängert sich auf 4-7 Wochen. Express-Lieferung 2-3 Wochen ist möglich bei verfügbarer Druckerkapazität (Aufpreis 30-50%). Für Folge-Modelle aus bestehender CAD-Datei: 10-15 Werktage. Empfehlung: 8 Wochen vor Messestart starten, sonst wird der Spielraum für Iterations-Reviews knapp.',
   },
   {
     question: 'Können bewegliche Komponenten in ein Messemodell integriert werden?',
     answer:
-      'Ja · bewegliche Mechanismen sind einer der häufigsten Aufträge für Industrie-Messemodelle. Typische Beispiele: rotierende Spindeln in CNC-Fräsen, klappbare Türen an Schaltanlagen, drehende Wellen in Antrieben, segmentierbare Anlagenmodule. Für mechanisch belastete Komponenten verwenden wir PA-CF (Carbon-Faser-verstärktes Polyamid), Lager aus POM oder Messing-Inserts. Toleranzen ±0,1 mm sind im FDM-Druck mit unseren Premium-FDM-Anlagen erreichbar.',
+      'Ja · bewegliche Mechanismen sind einer der häufigsten Aufträge für Industrie-Messemodelle. Typische Beispiele: rotierende Spindeln in CNC-Fräsen, klappbare Türen an Schaltanlagen, drehende Wellen in Antrieben, segmentierbare Anlagenmodule. Für stark beanspruchte Komponenten verwenden wir PA-CF (Carbon-Faser-verstärktes Polyamid), Lager aus POM oder Messing-Inserts. Feine Details und saubere Passungen sind im FDM-Druck mit unseren Premium-FDM-Anlagen erreichbar.',
   },
   {
     question: 'Brauchen Industrie-Messemodelle Zertifikate für DIN 4102 oder DIN EN 13501?',
@@ -409,12 +409,12 @@ export const messeFAQs: FAQItem[] = [
   {
     question: 'Können die Modelle nach der Messe noch verändert werden (Folge-Messen, Updates)?',
     answer:
-      'Ja, das ist sogar eine bewusste Auslegungs-Entscheidung. Wir konstruieren bei Multi-Messen-Strategien modular: einzelne Komponenten austauschbar (z.B. neues Produkt-Modul für nächste Messe), Sockel separat von Hauptmodell, segmentierbare Strukturen. Update-Modelle für Folge-Messen ab €300-800 je nach Modifikations-Umfang. CAD-Daten bleiben gespeichert (DSGVO-konform unter Geschäftsbesorgungsvertrag), Neudruck einzelner Teile ist innerhalb 5-10 Werktagen möglich.',
+      'Ja, das ist sogar eine bewusste Auslegungs-Entscheidung. Wir fertigen bei Multi-Messen-Strategien modular: einzelne Komponenten austauschbar (z.B. neues Produkt-Modul für nächste Messe), Sockel separat von Hauptmodell, segmentierbare Strukturen. Update-Modelle für Folge-Messen ab €300-800 je nach Modifikations-Umfang. CAD-Daten bleiben gespeichert (DSGVO-konform unter Geschäftsbesorgungsvertrag), Neudruck einzelner Teile ist innerhalb 5-10 Werktagen möglich.',
   },
   {
     question: 'Was passiert wenn das Modell auf der Messe beschädigt wird?',
     answer:
-      'Realistische Erwartung: bei sachgemäßer Handhabung sind Standard-Messetage ohne Beschädigung. Stoß-Schäden (Modell fällt vom Stand, Transport-Crash) sind durch unsere Materialwahl (PETG, PA-CF) minimiert. Falls doch: Notfall-Reparatur am Messestand möglich mit unserem Reparaturset (Kleber, Ersatz-Komponenten falls vorbereitet). Bei größeren Schäden Neudruck einzelner Komponenten in 3-5 Werktagen. Versicherung deines Modells über deine Messe-Haftpflicht ist üblich, wir liefern Wertangabe auf Anfrage.',
+      'Realistische Erwartung: bei sachgemäßer Handhabung sind Standard-Messetage ohne Beschädigung. Stoß-Schäden (Modell fällt vom Stand, Transportschaden) sind durch unsere Materialwahl (PETG, PA-CF) minimiert. Falls doch: Notfall-Reparatur am Messestand möglich mit unserem Reparaturset (Kleber, Ersatz-Komponenten falls vorbereitet). Bei größeren Schäden Neudruck einzelner Komponenten in 3-5 Werktagen. Versicherung deines Modells über deine Messe-Haftpflicht ist üblich, wir liefern Wertangabe auf Anfrage.',
   },
   {
     question: 'Wie sicher sind meine CAD-Daten? Wir haben Patente und NDA-Pflicht.',
@@ -424,17 +424,17 @@ export const messeFAQs: FAQItem[] = [
   {
     question: 'Lohnen sich Multi-Messen-Strategien · ein Modell für mehrere Messen?',
     answer:
-      'Das ist die wirtschaftlich beste Auslegung. Beispielrechnung: Ein €4.500-Modell für eine einzelne Messe = €4.500/Messe. Das gleiche Modell auf 4 Messen pro Jahr × 3 Jahre = 12 Messeeinsätze = €375/Messe. Bei realistischer Anfrage-Steigerung von +50% durch das Modell und durchschnittlichem Auftragswert von €60k macht das einen ROI über 3 Jahre von 800-1500%. Wir konstruieren Modelle bewusst transport-robust und mit modularen Update-Komponenten für Multi-Messen-Tauglichkeit.',
+      'Das ist die wirtschaftlich beste Auslegung. Beispielrechnung: Ein €4.500-Modell für eine einzelne Messe = €4.500/Messe. Das gleiche Modell auf 4 Messen pro Jahr × 3 Jahre = 12 Messeeinsätze = €375/Messe. Bei realistischer Anfrage-Steigerung von +50% durch das Modell und durchschnittlichem Auftragswert von €60k macht das einen ROI über 3 Jahre von 800-1500%. Wir fertigen Modelle bewusst transport-robust und mit modularen Update-Komponenten für Multi-Messen-Tauglichkeit.',
   },
   {
-    question: 'Können Sie eigene Konstruktionsdaten erstellen wenn wir nur Skizzen haben?',
+    question: 'Können Sie die CAD-Daten aufbauen wenn wir nur Skizzen haben?',
     answer:
-      'Ja · Konstruktion ist Teil unseres Service. Sie liefern Skizze, Foto, Maßangaben des Originalprodukts. Wir erstellen die CAD-Konstruktion (Fusion 360, FreeCAD). Aufpreis je nach Komplexität €600-2.500. Bei Skizze-zu-CAD-Aufträgen typische Iteration: 1. Skizze + Reference-Foto, 2. CAD-V1-Vorschlag binnen 5 Werktagen, 3. Feedback-Iteration, 4. Druck-Freigabe. Gesamtdauer 5-7 Wochen. Bei vorhandenen STEP-Dateien aus Ihrer Konstruktion: direkt 3-5 Wochen Produktion.',
+      'Ja · der Datenaufbau ist Teil unseres Service. Sie liefern Skizze, Foto, Maßangaben des Originalprodukts. Wir bauen die CAD-Datei auf (Fusion 360, FreeCAD). Aufpreis je nach Komplexität €600-2.500. Bei Skizze-zu-CAD-Aufträgen typische Iteration: 1. Skizze + Reference-Foto, 2. CAD-V1-Vorschlag binnen 5 Werktagen, 3. Feedback-Iteration, 4. Druck-Freigabe. Gesamtdauer 5-7 Wochen. Bei vorhandenen STEP-Dateien aus Ihrem Datenbestand: direkt 3-5 Wochen Produktion.',
   },
   {
     question: 'Welche CAD-Formate akzeptieren Sie?',
     answer:
-      'Native STEP, IGES, STL · die Standards für Industrie-CAD-Austausch. Aus konkreten Konstruktions-Tools: SolidWorks (.sldprt, .sldasm), Fusion 360 (.f3d), Inventor (.ipt, .iam), Catia (.CATPart). Aus Architektur-Software: ArchiCAD (.pln/.gsm), Revit (.rvt) · bei diesen muss die Detailebene oft auf modellbau-tauglich reduziert werden. Bei Software-Spezifika fragen Sie uns vor Export · wir geben Tipps welcher Export-Modus für 3D-Druck optimal ist.',
+      'Native STEP, IGES, STL · die Standards für Industrie-CAD-Austausch. Aus konkreten CAD-Tools: SolidWorks (.sldprt, .sldasm), Fusion 360 (.f3d), Inventor (.ipt, .iam), Catia (.CATPart). Aus Architektur-Software: ArchiCAD (.pln/.gsm), Revit (.rvt) · bei diesen muss die Detailebene oft auf modellbau-tauglich reduziert werden. Bei Software-Spezifika fragen Sie uns vor Export · wir geben Tipps welcher Export-Modus für 3D-Druck optimal ist.',
   },
   {
     question: 'Was unterscheidet ekdruck von klassischen Modellbauern?',
@@ -444,7 +444,7 @@ export const messeFAQs: FAQItem[] = [
   {
     question: 'Wie funktioniert die Zusammenarbeit mit unserem Messebauer?',
     answer:
-      'Drei Modelle: 1. Direkt-Bestellung durch Sie als Kunde, der Messebauer integriert das Modell als zugeliefertes Exponat (oft günstigste Lösung). 2. Bestellung durch den Messebauer als White-Label-Partner, wir liefern an die Messebauer-Werkstatt (üblich bei Vollservice-Messeauftritten). 3. Drei-Wege-Abstimmung wo wir gemeinsam Konstruktion und Logistik planen (komplexe Großstände). Für die Modell-Qualität und Lieferzeit-Sicherheit empfehlen wir Modell 1 oder 3. Modell 2 reduziert Koordinations-Aufwand für Sie, kostet aber typisch 15-25% Aufschlag durch Marge des Messebauers.',
+      'Drei Modelle: 1. Direkt-Bestellung durch Sie als Kunde, der Messebauer integriert das Modell als zugeliefertes Exponat (oft günstigste Lösung). 2. Bestellung durch den Messebauer als White-Label-Partner, wir liefern an die Messebauer-Werkstatt (üblich bei Vollservice-Messeauftritten). 3. Drei-Wege-Abstimmung wo wir gemeinsam Aufbau und Logistik planen (komplexe Großstände). Für die Modell-Qualität und Lieferzeit-Sicherheit empfehlen wir Modell 1 oder 3. Modell 2 reduziert Koordinations-Aufwand für Sie, kostet aber typisch 15-25% Aufschlag durch Marge des Messebauers.',
   },
   {
     question: 'Können Sie auch Sonderwünsche wie LED-Beleuchtung oder Animation umsetzen?',
@@ -469,9 +469,9 @@ export const standzeitFaktoren = [
     details: '2K-Lack mit Klarlack-Versiegelung verlängert Anfass-Lebensdauer um 50-100%.',
   },
   {
-    faktor: 'Detail-Toleranzen',
+    faktor: 'Detail-Feinheit',
     impact: 'Hoch',
-    details: 'Filigrane Details (<0,8mm Wandstärke) sind Bruch-Punkte. Schnittmodelle bewusst robust konstruieren.',
+    details: 'Filigrane Details (<0,8mm Wandstärke) sind Bruch-Punkte. Schnittmodelle bewusst robust aufbauen.',
   },
   {
     faktor: 'Transport-Verpackung',

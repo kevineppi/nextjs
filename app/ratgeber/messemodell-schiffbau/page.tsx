@@ -69,15 +69,15 @@ const faqs = [
   },
   {
     question: 'Wie werden 2-m-Vollschiffmodelle transportiert?',
-    answer: 'Segmentiert mit Magnetverbindungen. Wir konstruieren Modelle ab ~1,5 m bewusst in 3-5 Hauptsegmente · Bug, Vorderschiff, Mittelschiff, Achterschiff, Aufbau. Trennstellen entlang natürlicher Schiffslinien (Brücken-Front, Schott-Übergänge) und mit Magnet-Verbindungen die im Stand-Aufbau zusammenrasten. Transport in maßgefertigter Holzkiste mit Schaumstoff-Inserts pro Segment. Aufbauzeit am Messestand: 10-20 Minuten.',
+    answer: 'Segmentiert mit Magnetverbindungen. Wir fertigen Modelle ab ~1,5 m bewusst in 3-5 Hauptsegmente · Bug, Vorderschiff, Mittelschiff, Achterschiff, Aufbau. Trennstellen entlang natürlicher Schiffslinien (Brücken-Front, Schott-Übergänge) und mit Magnet-Verbindungen die im Stand-Aufbau zusammenrasten. Transport in maßgefertigter Holzkiste mit Schaumstoff-Inserts pro Segment. Aufbauzeit am Messestand: 10-20 Minuten.',
   },
   {
     question: 'Welche Brennstoffklasse ist auf der SMM Hamburg Pflicht?',
-    answer: 'SMM Hamburg (Hamburg Messe) verlangt B1 für tragende Stand-Komponenten und für Modell-Exponate über 1 m² Standfläche. Vollschiffmodelle über ~80 cm Länge fallen typisch darunter. Wir empfehlen Polycarbonat-FR für die belasteten Außen-Hüllen und additiviertes PLA für die Detail-Aufbauten. Material-Zertifikat wird auf Anfrage vor Standabnahme bereitgestellt.',
+    answer: 'SMM Hamburg (Hamburg Messe) verlangt B1 für tragende Stand-Komponenten und für Modell-Exponate über 1 m² Standfläche. Vollschiffmodelle über ~80 cm Länge fallen typisch darunter. Wir empfehlen Polycarbonat-FR für die formstabilen Außen-Hüllen und additiviertes PLA für die Detail-Aufbauten. Material-Zertifikat wird auf Anfrage vor Standabnahme bereitgestellt.',
   },
   {
     question: 'Können Propeller und Ruder bewegliche Komponenten sein?',
-    answer: 'Ja · bewegliche Propeller und Ruder sind eines der häufigsten Sonderwünsche bei Schiff-Modellen. Bei Azimuth-Thrustern: rotierende 360°-Schwenk-Mechanik mit POM-Lagern oder Messing-Buchsen. Bei Festpropellern: drehbare Achse mit kleinem Servo-Motor (USB-powered). Bei Ruderblättern: manueller Schwenk-Mechanismus über Drehknopf am Sockel. PA-CF für die belasteten Drehkomponenten · hält 50-100 Demonstrations-Zyklen pro Messetag durch.',
+    answer: 'Ja · bewegliche Propeller und Ruder sind eines der häufigsten Sonderwünsche bei Schiff-Modellen. Bei Azimuth-Thrustern: rotierende 360°-Schwenk-Mechanik mit POM-Lagern oder Messing-Buchsen. Bei Festpropellern: drehbare Achse mit kleinem Servo-Motor (USB-powered). Bei Ruderblättern: manueller Schwenk-Mechanismus über Drehknopf am Sockel. PA-CF für die beweglichen Drehkomponenten · hält 50-100 Demonstrations-Zyklen pro Messetag durch.',
   },
   {
     question: 'Eignen sich 3D-Druck-Modelle für Premium-Schiffbau-Aussteller wie Meyer Werft oder Lürssen?',
@@ -155,7 +155,7 @@ export default function MesseModellSchiffbauPage() {
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Eine 12.000-DWT-Bulker-Werft präsentiert auf der SMM ihre neue Schiffsklasse. Das Original-Schiff ist 145 m lang,
               wiegt leer 4.800 Tonnen, kostet €28-35 Mio. Es kommt nicht in die Hamburger Messehalle. Was den Stand der Werft
-              ausmacht, sind Renderings, ein paar Bauteile aus dem Antriebsstrang · und seit 2019 zunehmend maßstabsgetreue
+              ausmacht, sind Renderings, ein paar Teile aus dem Antriebsstrang · und seit 2019 zunehmend maßstabsgetreue
               3D-gedruckte Vollschiffmodelle.
             </p>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
@@ -171,7 +171,7 @@ export default function MesseModellSchiffbauPage() {
               </div>
               <div className="bg-destructive/5 border border-destructive/20 rounded-lg p-6">
                 <XCircle className="w-8 h-8 text-destructive mb-3" />
-                <h3 className="font-bold text-lg mb-2">Bauteile aus dem Antriebsstrang</h3>
+                <h3 className="font-bold text-lg mb-2">Teile aus dem Antriebsstrang</h3>
                 <p className="text-sm text-muted-foreground">Lagerschalen, Wellen-Stücke. Engineer-relevant, aber Reeder-Einkäufer braucht Schiff-Kontext.</p>
               </div>
               <div className="bg-primary/5 border border-primary/30 rounded-lg p-6">
@@ -329,7 +329,7 @@ export default function MesseModellSchiffbauPage() {
               <div className="mt-6 pt-6 border-t border-border">
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   <strong className="text-foreground">Lehre aus dem Projekt:</strong> bei Mehrkomponenten-Modellen (Schottel + Elkon
-                  = zwei Hersteller integriert) ist die Koordinations-Tiefe in der CAD-Konstruktion der größte Aufwands-Treiber.
+                  = zwei Hersteller integriert) ist die Koordinations-Tiefe in der CAD-Datenaufbereitung der größte Aufwands-Treiber.
                   Die reine Drucker-Zeit ist ~30% der Lieferzeit, der Rest entfällt auf 3-Wege-Abstimmung mit den Komponenten-Lieferanten.
                 </p>
               </div>

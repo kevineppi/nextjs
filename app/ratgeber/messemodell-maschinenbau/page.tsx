@@ -82,7 +82,7 @@ const faqs = [
   },
   {
     question: 'Können Sie bewegliche Spindeln und Werkzeugwechsler einbauen?',
-    answer: 'Ja, das ist DAS Standard-Feature für Werkzeugmaschinen-Modelle. Spindel-Bewegung über Y/Z-Achse als per Drehknopf steuerbarer Mechanismus, Werkzeugmagazin-Karussell rotierbar, manchmal mit Servo-Motor angetrieben. Wir setzen PA-CF (Carbon-Faser-Polyamid) für die belasteten Komponenten ein · Lebensdauer bei normaler Messe-Demonstration: 50-100+ Bewegungs-Zyklen pro Tag ohne Verschleiß.',
+    answer: 'Ja, das ist DAS Standard-Feature für Werkzeugmaschinen-Modelle. Spindel-Bewegung über Y/Z-Achse als per Drehknopf steuerbarer Mechanismus, Werkzeugmagazin-Karussell rotierbar, manchmal mit Servo-Motor angetrieben. Wir setzen PA-CF (Carbon-Faser-Polyamid) für die beweglichen Komponenten ein · Lebensdauer bei normaler Messe-Demonstration: 50-100+ Bewegungs-Zyklen pro Tag ohne Verschleiß.',
   },
   {
     question: 'Welche Brennstoffklasse ist auf der EMO Hannover erforderlich?',
@@ -93,8 +93,8 @@ const faqs = [
     answer: 'Schnittmodelle ziehen Engineers 3-5x länger an den Stand als geschlossene Modelle. Mein Vorschlag für Werkzeugmaschinen: halb-geschlossen · eine Seite zeigt die Außen-Designlinie (Verkaufs-Aspekt), die andere ist als Schnitt aufgebaut und zeigt Antrieb, Spindel-Aufnahme, Werkzeug-Wechsler. So bekommt der Marketing-Mensch das schöne Bild für das Standort-Foto UND der Ingenieur die technische Tiefe.',
   },
   {
-    question: 'Wie zeigen Sie die typischen Genauigkeiten und Toleranzen am Modell?',
-    answer: 'Über laser-gravierte Inlays oder dezente Beschriftungen am Sockel. Konkret: typische Werkzeugmaschinen-Genauigkeiten von ±0,003 mm Positionier-Toleranz als gravierte Zahl am Sockel, Spindel-Drehzahl-Range (1-24.000 U/min) als Beschriftung, Maschinen-Bett-Material als Mini-Tafel. Das ist Engineering-Glaubwürdigkeit ohne den Hauptkorpus zu verunstalten.',
+    question: 'Wie zeigen Sie technische Kennwerte am Modell?',
+    answer: 'Über laser-gravierte Inlays oder dezente Beschriftungen am Sockel. Konkret: typische Werkzeugmaschinen-Kennwerte als gravierte Angabe am Sockel, Spindel-Drehzahl-Range (1-24.000 U/min) als Beschriftung, Maschinen-Bett-Material als Mini-Tafel. Das ist Engineering-Glaubwürdigkeit ohne den Hauptkorpus zu verunstalten.',
   },
   {
     question: 'Welche Material-Kombination ist für Multi-Messen-Strategie ideal?',
@@ -312,7 +312,7 @@ export default function MesseModellMaschinenbauPage() {
                   <span className="w-10 h-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center font-bold flex-shrink-0">2</span>
                   <div>
                     <div className="font-bold mb-1">PA-CF für bewegliche Komponenten</div>
-                    <p className="text-sm text-muted-foreground">Spindel, Spindel-Aufnahme, Werkzeug-Wechsler-Karussell. Carbon-Faser-Verstärkung = mechanische Belastbarkeit, 50-100+ Bewegungs-Zyklen/Tag ohne Verschleiß.</p>
+                    <p className="text-sm text-muted-foreground">Spindel, Spindel-Aufnahme, Werkzeug-Wechsler-Karussell. Carbon-Faser-Verstärkung = robust in der Handhabung, 50-100+ Bewegungs-Zyklen/Tag ohne Verschleiß.</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start">

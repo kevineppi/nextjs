@@ -65,7 +65,7 @@ const articleSchema = {
 const faqs = [
   {
     question: 'Welche Maßstäbe funktionieren für Verfahrenstechnik-Anlagen?',
-    answer: '1:10 bis 1:25 sind Standard. Pumpen-Schnittmodelle: 1:5 · Detail-Bauteile (Laufrad, Lagerschalen, Wellendichtung) gut sichtbar. Komplette Förderanlagen mit Behälter und Steuerung: 1:10. Reaktoren mit Rohrleitungs-System: 1:15 oder 1:20. Vollständige Prozessanlagen (Misch- bis Befüll-Strecke): 1:25 mit Segmentierung in Module.',
+    answer: '1:10 bis 1:25 sind Standard. Pumpen-Schnittmodelle: 1:5 · Detail-Elemente (Laufrad, Lagerschalen, Welle) gut sichtbar. Komplette Förderanlagen mit Behälter und Steuerung: 1:10. Reaktoren mit Rohrleitungs-System: 1:15 oder 1:20. Vollständige Prozessanlagen (Misch- bis Befüll-Strecke): 1:25 mit Segmentierung in Module.',
   },
   {
     question: 'Können Sie Materialfluss-Wege im Modell sichtbar machen?',
@@ -77,11 +77,11 @@ const faqs = [
   },
   {
     question: 'Lohnt sich Segmentierung in einzelne Anlagen-Module?',
-    answer: 'Bei Multi-Standort-Strategien klar ja. Wir konstruieren komplexe Prozessanlagen-Modelle in modulare Segmente (z.B. Aufbereitung-Modul + Reaktor-Modul + Abfüll-Modul). Jedes Modul ist eigenständig demonstrierbar. Vorteile: (1) parallele Ausstellung an mehreren Messeständen, (2) zukünftige Erweiterungen · neues Modul für neue Anlagen-Variante einfach dazu drucken, (3) Reparatur einzelner beschädigter Module ohne Komplettverlust.',
+    answer: 'Bei Multi-Standort-Strategien klar ja. Wir fertigen komplexe Prozessanlagen-Modelle in modulare Segmente (z.B. Aufbereitung-Modul + Reaktor-Modul + Abfüll-Modul). Jedes Modul ist eigenständig demonstrierbar. Vorteile: (1) parallele Ausstellung an mehreren Messeständen, (2) zukünftige Erweiterungen · neues Modul für neue Anlagen-Variante einfach dazu drucken, (3) Reparatur einzelner beschädigter Module ohne Komplettverlust.',
   },
   {
     question: 'Können Sie Pumpen-Schnittmodelle mit drehendem Laufrad bauen?',
-    answer: 'Ja · eines der häufigsten Anfragen für Pumpen-Hersteller. Laufrad dreht über kleinen USB-Servomotor (von der Unterseite unsichtbar versteckt). Realistisches Drehzahl-Reduce auf 10-30 U/min für den visuellen Eyecatcher-Effekt. Gehäuse als Schnittansicht mit eingebauten Schaufeln, Wellendichtung sichtbar, Lagerschalen detailliert. PA-CF für die belasteten Drehkomponenten. Standzeit bei normaler Messe-Demonstration: 50-100 Bewegungs-Zyklen pro Tag ohne Verschleiß.',
+    answer: 'Ja · eines der häufigsten Anfragen für Pumpen-Hersteller. Laufrad dreht über kleinen USB-Servomotor (von der Unterseite unsichtbar versteckt). Realistisches Drehzahl-Reduce auf 10-30 U/min für den visuellen Eyecatcher-Effekt. Gehäuse als Schnittansicht mit eingebauten Schaufeln, Welle sichtbar, Lagerschalen detailliert. PA-CF für die beweglichen Drehkomponenten. Standzeit bei normaler Messe-Demonstration: 50-100 Bewegungs-Zyklen pro Tag ohne Verschleiß.',
   },
   {
     question: 'Wie zeigt man Steuerungs-Systeme und Sensorik am Modell?',
@@ -236,7 +236,7 @@ export default function MesseModellAnlagenbauPage() {
               <div className="bg-card border border-border rounded-lg p-6">
                 <Droplets className="w-8 h-8 text-primary mb-3" />
                 <h3 className="font-bold text-lg mb-2">Pumpen-Schnittmodelle</h3>
-                <p className="text-sm text-muted-foreground mb-3">Premium-Showcase. Laufrad rotierbar, Wellendichtung sichtbar, Gehäuse als Querschnitt. Eyecatcher der Pumpen-Branche.</p>
+                <p className="text-sm text-muted-foreground mb-3">Premium-Showcase. Laufrad rotierbar, Welle sichtbar, Gehäuse als Querschnitt. Eyecatcher der Pumpen-Branche.</p>
                 <div className="text-xs text-muted-foreground">Empfohlener Maßstab: <strong className="text-foreground">1:5</strong></div>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
@@ -266,7 +266,7 @@ export default function MesseModellAnlagenbauPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Modulares Anlagen-Design · Multi-Stand-Strategie</h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Wenn Sie an mehreren Messen parallel ausstellen oder bei Kunden-Vor-Ort-Demonstrationen unabhängig vom Hauptstand
-              präsentieren wollen, ist Modularität der entscheidende Hebel. Wir konstruieren Anlagen-Modelle bewusst segmentiert:
+              präsentieren wollen, ist Modularität der entscheidende Hebel. Wir fertigen Anlagen-Modelle bewusst segmentiert:
             </p>
             <div className="bg-card border border-border rounded-lg p-6">
               <div className="space-y-4">

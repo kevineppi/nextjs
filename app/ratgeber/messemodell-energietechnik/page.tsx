@@ -69,7 +69,7 @@ const faqs = [
   },
   {
     question: 'Wie zeigen Sie das Innere von Schaltschränken am Stand?',
-    answer: 'Über klappbare Front-Türen mit Innenansicht des Sammelschienen-Systems, Leistungsschaltern, Stromwandlern. Wir konstruieren die Türen über Magnetscharniere · Stand-Besucher kann selbst öffnen und schließen, ohne dass etwas kaputt geht. Innen-Komponenten sind farblich nach IEC 60446 codiert (L1 braun, L2 schwarz, L3 grau, N hellblau, PE grüngelb) · Engineering-Glaubwürdigkeit auf einen Blick.',
+    answer: 'Über klappbare Front-Türen mit Innenansicht des Sammelschienen-Systems, Leistungsschaltern, Stromwandlern. Wir fertigen die Türen über Magnetscharniere · Stand-Besucher kann selbst öffnen und schließen, ohne dass etwas kaputt geht. Innen-Komponenten sind farblich nach IEC 60446 codiert (L1 braun, L2 schwarz, L3 grau, N hellblau, PE grüngelb) · Engineering-Glaubwürdigkeit auf einen Blick.',
   },
   {
     question: 'Welche Brennstoffklasse verlangt die E-world Essen?',
@@ -81,7 +81,7 @@ const faqs = [
   },
   {
     question: 'Lassen sich Windturbinen mit beweglichen Rotorblättern bauen?',
-    answer: 'Ja, ist Standard-Anforderung bei Windturbinen-Modellen. Rotor dreht sich über kleinen 3-V-Servomotor (USB-powered, von hinten unsichtbar), Drehzahl realistisch reduziert auf ~10-20 U/min damit die Bewegung visuell langsam genug für die Aufmerksamkeits-Anker-Wirkung ist. Rotorblätter aus PA-CF für mechanische Belastbarkeit, balanciert für ruhigen Lauf. Mast-Höhe bis ~80 cm im 1:50-Maßstab umsetzbar.',
+    answer: 'Ja, ist Standard-Anforderung bei Windturbinen-Modellen. Rotor dreht sich über kleinen 3-V-Servomotor (USB-powered, von hinten unsichtbar), Drehzahl realistisch reduziert auf ~10-20 U/min damit die Bewegung visuell langsam genug für die Aufmerksamkeits-Anker-Wirkung ist. Rotorblätter aus PA-CF, formstabil und balanciert für ruhigen Lauf. Mast-Höhe bis ~80 cm im 1:50-Maßstab umsetzbar.',
   },
   {
     question: 'Wie werden PV-Anlagen-Modelle umgesetzt?',

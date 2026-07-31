@@ -516,7 +516,7 @@ export default function BranchenPage() {
                   },
                   {
                     step: '02',
-                    title: 'Konstruktions-Review',
+                    title: 'Modell-Check',
                     desc: 'Maßstab-Bestätigung, Material-Wahl, Brennstoffklassen-Anforderung, Lackier-Schema.',
                     Icon: BookOpen,
                   },

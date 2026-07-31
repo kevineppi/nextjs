@@ -28,7 +28,7 @@ const ArchitekturmodellGuide = () => {
     },
     {
       question: "Wie exportiere ich mein CAD-Modell für den 3D-Druck?",
-      answer: "ArchiCAD: Datei → Speichern unter → Format STL, Qualitätsstufe 'Fein'. Revit: kostenloses STL Exporter Add-In → Exportieren → STL. SketchUp: Datei → Exportieren → 3D-Modell → STL (Einheiten auf mm). Rhino: Datei → Export selected → STL, Toleranz 0.01mm. Bei Problemen schicken Sie uns Ihre native Datei – wir helfen kostenlos beim Export."
+      answer: "ArchiCAD: Datei → Speichern unter → Format STL, Qualitätsstufe 'Fein'. Revit: kostenloses STL Exporter Add-In → Exportieren → STL. SketchUp: Datei → Exportieren → 3D-Modell → STL (Einheiten auf mm). Rhino: Datei → Export selected → STL, feine Netzauflösung wählen. Bei Problemen schicken Sie uns Ihre native Datei – wir helfen kostenlos beim Export."
     },
     {
       question: "Wie schnell liefern Sie für Wettbewerbs-Deadlines?",
@@ -359,7 +359,7 @@ const ArchitekturmodellGuide = () => {
                       badge: "Häufig",
                       steps: [
                         "Kostenloses 'STL Exporter' Add-In installieren (Autodesk App Store)",
-                        "3D-Ansicht auf relevante Bauteile beschränken",
+                        "3D-Ansicht auf relevante Elemente beschränken",
                         "Add-Ins → Export → STL → Einheiten: mm",
                         "Alternativ: IFC exportieren, wir konvertieren auf Anfrage"
                       ],
@@ -383,7 +383,7 @@ const ArchitekturmodellGuide = () => {
                         "Objekte die gedruckt werden sollen selektieren",
                         "Datei → Export Selected → STL",
                         "Render-Polygonnetz verwenden (nicht Analysenetz)",
-                        "Toleranz: 0.01mm für präzise Ergebnisse"
+                        "Feine Netzauflösung für saubere Ergebnisse"
                       ],
                       tip: "Tipp: Alle Flächen zu einem soliden Polysurface joinen bevor Export"
                     },

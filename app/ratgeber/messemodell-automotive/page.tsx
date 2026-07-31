@@ -217,7 +217,7 @@ export default function MesseModellAutomotivePage() {
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Jährlich im November, Schweizer Premium-Buyer-Klientel. Stark auf Premium- und Luxus-Marken fokussiert. Modelle
-                  müssen visuell auf höchstem Niveau sein. B1-Standard für Stand-Komponenten, präzise Lackier-Qualität entscheidet.
+                  müssen visuell auf höchstem Niveau sein. B1-Standard für Stand-Komponenten, saubere Lackier-Qualität entscheidet.
                 </p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
@@ -227,7 +227,7 @@ export default function MesseModellAutomotivePage() {
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Alle 2 Jahre, Welt-Leitmesse für Automobil-Aftermarket und Zulieferer-Branche. Werkstatt-Ausrüster, Diagnose-Systeme,
-                  Ersatzteil-Hersteller. Engineering-Komponentenmodelle hier sehr willkommen · keine Premium-Hochglanz-Erwartung,
+                  Zubehör-Hersteller. Engineering-Komponentenmodelle hier sehr willkommen · keine Premium-Hochglanz-Erwartung,
                   Substance über Optik.
                 </p>
               </div>
@@ -242,7 +242,7 @@ export default function MesseModellAutomotivePage() {
               <div className="bg-card border border-border rounded-lg p-6">
                 <Car className="w-8 h-8 text-primary mb-3" />
                 <h3 className="font-bold text-lg mb-2">Karosserie-Schnittmodelle</h3>
-                <p className="text-sm text-muted-foreground mb-3">Halbseitiges Schnittmodell · Außenseite Premium-Lack, Schnittseite zeigt Konstruktion (Doppelboden, Crash-Zone, Multi-Material).</p>
+                <p className="text-sm text-muted-foreground mb-3">Halbseitiges Schnittmodell · Außenseite Premium-Lack, Schnittseite zeigt den Aufbau (Doppelboden, Crash-Zone, Multi-Material).</p>
                 <div className="text-xs text-muted-foreground">Empfohlener Maßstab: <strong className="text-foreground">1:5</strong></div>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
@@ -283,7 +283,7 @@ export default function MesseModellAutomotivePage() {
                   <span className="w-10 h-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center font-bold flex-shrink-0">2</span>
                   <div>
                     <div className="font-bold mb-1">Aceton-Dampfglättung 60-120 Min</div>
-                    <p className="text-sm text-muted-foreground">In geschlossener Aceton-gesättigter Atmosphäre. Schicht-Struktur verschmilzt zu homogener Oberfläche. Keine Schleifarbeit nötig · wäre auch nicht so präzise erreichbar.</p>
+                    <p className="text-sm text-muted-foreground">In geschlossener Aceton-gesättigter Atmosphäre. Schicht-Struktur verschmilzt zu homogener Oberfläche. Keine Schleifarbeit nötig · wäre auch nicht so sauber erreichbar.</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start">
@@ -311,7 +311,7 @@ export default function MesseModellAutomotivePage() {
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Tier-1-Zulieferer zeigen ihre Komponenten häufig im Kontext eines Fahrzeug-Modells. Beispiel-Pattern aus aktuellen Anfragen:
               ein E-Antriebs-Spezialist will seine integrierte Antriebs-Einheit (Motor + Getriebe + Inverter) demonstrieren. Statt
-              eines abstrakten Komponenten-Modells haben wir ein 1:5-Karosserie-Heck mit eingebauter Antriebs-Einheit konstruiert.
+              eines abstrakten Komponenten-Modells haben wir ein 1:5-Karosserie-Heck mit eingebauter Antriebs-Einheit aufgebaut.
             </p>
             <div className="bg-card border border-border rounded-lg p-6">
               <h3 className="font-bold text-xl mb-4">Beispiel-Konfiguration für E-Antrieb-Zulieferer</h3>

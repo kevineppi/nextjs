@@ -87,7 +87,7 @@ const maschinenbau: Branche = {
     'Industriemodell Messe',
     'Werkzeugbau Exponat',
     'Maschinenmodell maßstabsgetreu',
-    'Präzisionsmaschine Modell',
+    'Industriemaschine Modell',
     'Schnittmodell Maschinenbau',
   ],
   seoLongTailBody: {
@@ -96,8 +96,8 @@ const maschinenbau: Branche = {
     paragraphs: [
       'Im Maschinenbau-3D-Druck reichen unsere Anfragen vom kompakten Komponentenmodell (Werkzeughalter, Spindelaufnahme, Linearführungs-Segment in Originalgröße) bis zur kompletten Werkzeugmaschine als maßstabsgetreues Messemodell. Eine 5-Achs-Fräse wird typisch im Maßstab 1:7 bis 1:20 gedruckt, ein Bearbeitungszentrum im Maßstab 1:10 bis 1:25, eine konventionelle Drehmaschine im Maßstab 1:5 bis 1:10. Bei einer CNC-Fräse als Tisch-Exponat liegen Modellabmessungen typisch bei 30 bis 80 Zentimetern Länge · handhabbar für jeden Messestand, dabei detailliert genug für Engineering-Diskussion.',
       'Das Schnittmodell Maschinenbau ist eine eigene Disziplin: Wir halbieren das Maschinenmodell entlang einer technischen Trennebene und legen die Innenstruktur frei. Werkstoff-Transport bei einer Drehmaschine, Spindel-Lagerung beim Bearbeitungszentrum, Werkzeug-Schnellwechsel bei der CNC-Fräse · alles als Funktions-Demonstration sichtbar. Ein Schnittmodell-Werkzeugmaschine eignet sich besonders für Engineering-Schulungen und Vertriebs-Tourneen, weil es das verkauft was technische Datenblätter nicht können: die Funktions-Logik selbst.',
-      'Werkzeugbau-Exponate sind die dritte Hauptkategorie: Werkstückbeispiele in Roh- und Fertigbearbeitungs-Zustand, montiert auf einem gedruckten Werkstückträger, der die Bearbeitungs-Schritte als physische Sequenz zeigt. Hier kombinieren wir oft hochdetailliertes PLA für die Schau-Werkstücke mit robustem PETG für den Träger. Ein präzises Maschinenmodell maßstabsgetreu in dieser Qualität war noch vor 5 Jahren ausschließlich im Handmodellbau machbar · heute drucken wir es in 14 Tagen Lead-Time.',
-      'Typischer Workflow bei einem Maschinenbau-3D-Druck-Projekt: Ihr Konstruktions-CAD aus SolidWorks, Inventor, Creo oder NX kommt per STEP-Datei, ich reduziere die Geometrie-Details auf maßstabs-relevante Ebene (Innen-Schraubverbindungen werden weggelassen, sichtbare Anschlussflansche bleiben), wir planen Segmentierung falls nötig, und produzieren. Bei NDA-Projekten · was bei Werkzeugmaschinen-Innovationen Standard ist · läuft der CAD-Transfer verschlüsselt, die Daten werden nach Lieferung vertraglich gelöscht, kein Cloud-Storage zwischengeschaltet.',
+      'Werkzeugbau-Exponate sind die dritte Hauptkategorie: Werkstückbeispiele in Roh- und Fertigbearbeitungs-Zustand, montiert auf einem gedruckten Werkstückträger, der die Bearbeitungs-Schritte als physische Sequenz zeigt. Hier kombinieren wir oft hochdetailliertes PLA für die Schau-Werkstücke mit robustem PETG für den Träger. Ein detailgetreues Maschinenmodell maßstabsgetreu in dieser Qualität war noch vor 5 Jahren ausschließlich im Handmodellbau machbar · heute drucken wir es in 14 Tagen Lead-Time.',
+      'Typischer Workflow bei einem Maschinenbau-3D-Druck-Projekt: Ihr CAD-Datensatz aus SolidWorks, Inventor, Creo oder NX kommt per STEP-Datei, ich reduziere die Geometrie-Details auf maßstabs-relevante Ebene (Innen-Schraubverbindungen werden weggelassen, sichtbare Anschlussflansche bleiben), wir planen Segmentierung falls nötig, und produzieren. Bei NDA-Projekten · was bei Werkzeugmaschinen-Innovationen Standard ist · läuft der CAD-Transfer verschlüsselt, die Daten werden nach Lieferung vertraglich gelöscht, kein Cloud-Storage zwischengeschaltet.',
     ],
   },
   pains: [
@@ -152,7 +152,7 @@ const maschinenbau: Branche = {
     {
       title: 'Linearführung / Antrieb Cutaway',
       description:
-        'Funktionsmuster eigener Komponenten · Kugelumlaufspindel, Linearführung mit Wälzkörpern. Für Vertriebsgespräche zum Anfassen.',
+        'Anschauungsmuster eigener Komponenten · Kugelumlaufspindel, Linearführung mit Wälzkörpern. Für Vertriebsgespräche zum Anfassen.',
       scaleHint: 'Originalgröße oder 1:2',
       materialHint: 'PETG für Robustheit beim häufigen Anfassen',
     },
@@ -164,7 +164,7 @@ const maschinenbau: Branche = {
     },
     {
       name: 'PETG',
-      why: 'Mechanisch robust · überlebt 20+ Messen ohne Beschädigung. Lackierfähig in RAL-Firmenfarbe.',
+      why: 'Robust und formstabil · überlebt 20+ Messen ohne Beschädigung. Lackierfähig in RAL-Firmenfarbe.',
     },
     {
       name: 'ABS',
@@ -172,7 +172,7 @@ const maschinenbau: Branche = {
     },
     {
       name: 'PA6-CF (Carbon-PA)',
-      why: 'Für funktionsfähige Demo-Komponenten · Linearführungen, Spindeln. Mechanisch belastbar.',
+      why: 'Für robuste Anschauungs-Komponenten wie Linearführungen und Spindeln. Formstabil und haltbar in der Handhabung.',
     },
   ],
   beispielMessen: [
@@ -197,12 +197,12 @@ const maschinenbau: Branche = {
     {
       question: 'Kann das Modell zerlegbar gedruckt werden (Schnittansicht)?',
       answer:
-        'Ja. Wir konstruieren bei Bedarf Steck- oder Magnet-Verbindungen für demontierbare Sektionen. Häufig genutzt für Schnittansichten, die auf der Messe geöffnet werden, um Innenstruktur zu zeigen.',
+        'Ja. Wir fertigen bei Bedarf demontierbare Sektionen mit Steck- oder Magnetlösungen. Häufig genutzt für Schnittansichten, die auf der Messe geöffnet werden, um Innenstruktur zu zeigen.',
     },
     {
-      question: 'Wie genau ist die Maßstabstreue?',
+      question: 'Wie detailtreu ist das Modell im Maßstab?',
       answer:
-        'Toleranz typisch ±0,2 mm pro 100 mm Modellgröße. Bei kritischen Funktionsdetails (z.B. Linearführung-Querschnitt) erreichen wir ±0,05 mm in einzelnen Sektionen.',
+        'Feine Details, Kanten und Übergänge bleiben sauber erhalten und sitzen maßstabsgetreu. Auch kleine Merkmale wie ein Linearführungs-Querschnitt werden detailgetreu wiedergegeben, sodass das Modell aus Betrachtungsdistanz stimmig wirkt.',
     },
     {
       question: 'Was kostet ein Maschinenbau-Messemodell?',
@@ -254,9 +254,9 @@ const schiffbau: Branche = {
     h2: 'Schiffbau-Modelle aus dem 3D-Druck · Antriebe, Vollschiffe, Marine-Komponenten',
     paragraphs: [
       'Ein Schiffsantrieb-Modell ist der häufigste Auftrag aus dieser Branche. Ob Pod-Drive, Voith-Schneider-Propeller, Wasserstrahlantrieb oder konventioneller Schraubantrieb · wir reduzieren das tonnenschwere Original auf einen Maßstab 1:10 bis 1:30. Detaillierte Propeller-Blätter, Anschlussflansche, Gehäuse-Geometrie bleiben dabei naturgetreu. Bei einem Pod-Drive-Modell für die SMM Hamburg oder eine Werft-Messe gehen wir typisch bei 30 bis 80 Zentimetern Modellgröße auf eine Lead-Time von 3-5 Wochen.',
-      'Vollschiff-Modelle (Yachten, Frachter, Spezialschiffe) bis 2 Meter Modelllänge segmentieren wir konstruktiv. Eine Yacht-Messemodell-Anfrage für die Boot Düsseldorf oder Monaco Yacht Show kommt typisch im Maßstab 1:50 bis 1:200, mit abnehmbaren Decks für Innenraum-Demonstration. Hochwertige Marine-RAL-Lackierung simuliert die echte Schiffsfarbe so präzise, dass das Modell aus 1 m Distanz nicht von Gussteilen unterscheidbar ist. Werften-Refit-Designs bekommen oft den vollen NDA-Workflow, weil sie hochsensible Yacht-Innovationen zeigen.',
+      'Vollschiff-Modelle (Yachten, Frachter, Spezialschiffe) bis 2 Meter Modelllänge fertigen wir mehrteilig. Eine Yacht-Messemodell-Anfrage für die Boot Düsseldorf oder Monaco Yacht Show kommt typisch im Maßstab 1:50 bis 1:200, mit abnehmbaren Decks für Innenraum-Demonstration. Hochwertige Marine-RAL-Lackierung simuliert die echte Schiffsfarbe so detailgetreu, dass das Modell aus 1 m Distanz nicht von Gussteilen unterscheidbar ist. Werften-Refit-Designs bekommen oft den vollen NDA-Workflow, weil sie hochsensible Yacht-Innovationen zeigen.',
       'Eine Schiffsschraube als 3D-Druck-Exponat in Original-Größe ist machbar bis ca. 60 cm Durchmesser. Das ist die häufigste Anfrage von Antriebs-Herstellern, die ihr neues Blatt-Design auf Engineering-Konferenzen zeigen wollen. PETG-Carbon-Filament gibt der gedruckten Schiffsschraube eine realistische maritime Anmutung. Ein Schraubantrieb-3D-Druck-Schnittmodell mit halbierter Getriebestufe zeigt Live am Stand, wie die Welle vom Motor zur Schraube läuft · perfekte Vertriebs-Bühne für komplexe technische Erklärungen.',
-      'Marine-Exponat-Projekte sind oft Werften-Akquisition-Tools. Mini-Schiffsmodelle 15-25 cm dienen als Werbegeschenke für Top-Leads · eine Klein-Serie von 25-100 Stück mit erhabenem 3D-Logo, robust verpackt in Brand-Hüllen. Kosten ab €40 pro Stück bei 50er-Charge. Werften-Kunden nutzen diese als hochwertige Visitenkarten-Ersatz beim Refit-Pitch · und bekommen oft Folge-Anfragen, weil das Modell physisch beim Engineer auf dem Tisch landet, während die Brochure im Stapel verschwindet.',
+      'Marine-Exponat-Projekte sind oft Werften-Akquisition-Tools. Mini-Schiffsmodelle 15-25 cm dienen als Werbegeschenke für Top-Leads · eine kleine Auflage von 25-100 Stück mit erhabenem 3D-Logo, robust verpackt in Brand-Hüllen. Kosten ab €40 pro Stück bei 50er-Charge. Werften-Kunden nutzen diese als hochwertige Visitenkarten-Ersatz beim Refit-Pitch · und bekommen oft Folge-Anfragen, weil das Modell physisch beim Engineer auf dem Tisch landet, während die Brochure im Stapel verschwindet.',
     ],
   },
   pains: [
@@ -276,7 +276,7 @@ const schiffbau: Branche = {
       problem:
         'Bei Werft-Akquisition (Refit-Projekte) braucht der Kunde Material zum Mitnehmen · Brochures vergisst er, ein Modell behält er.',
       solution:
-        'Mini-Modelle 15-25 cm als Werbegeschenk für Top-Leads. Stückpreis ab €40 in Klein-Serie 25-100 Stück. Markant gebrandet, 3D-Logo erhaben.',
+        'Mini-Modelle 15-25 cm als Werbegeschenk für Top-Leads. Stückpreis ab €40 in kleiner Auflage 25-100 Stück. Markant gebrandet, 3D-Logo erhaben.',
     },
   ],
   useCases: [
@@ -359,12 +359,12 @@ const schiffbau: Branche = {
     {
       question: 'Werden Propeller-Blätter exakt nach Original-CAD gedruckt?',
       answer:
-        'Ja. Komplexe Freiformflächen wie Voith-Schneider-Blätter oder verstellbare Schiffsschrauben sind eine Stärke des FDM-Drucks. Toleranz ±0,1mm pro Blatt.',
+        'Ja. Komplexe Freiformflächen wie Voith-Schneider-Blätter oder verstellbare Schiffsschrauben sind eine Stärke des FDM-Drucks. Feine Details bleiben pro Blatt sauber erhalten.',
     },
     {
       question: 'Was kostet ein Schiffbau-Messemodell?',
       answer:
-        'Mini-Modell Antrieb 15-25cm: €200-€500. Detail-Antriebsmodell mit Schnittansicht: €1.200-€3.500. Vollschiff-Yacht-Modell 1-2m segmentiert: €3.500-€12.000. Werbegeschenk-Mini-Serie 25-100 Stück: ab €40/Stück.',
+        'Mini-Modell Antrieb 15-25cm: €200-€500. Detail-Antriebsmodell mit Schnittansicht: €1.200-€3.500. Vollschiff-Yacht-Modell 1-2m segmentiert: €3.500-€12.000. Werbegeschenk-Mini-Auflage 25-100 Stück: ab €40/Stück.',
     },
     {
       question: 'Liefern Sie auch zur Messe (z.B. SMM Hamburg) direkt?',
@@ -374,7 +374,7 @@ const schiffbau: Branche = {
     {
       question: 'Wie segmentieren Sie ein 2-Meter-Schiffsmodell so, dass die Stöße unsichtbar bleiben?',
       answer:
-        'Konstruierte Trennlinien entlang natürlicher Schiffsmerkmale (z.B. Plankengänge), Magnet- oder Steckverbindungen im Inneren, Spachtelung und Lackierung der Außenkanten. Auf 1m Distanz sind die Stöße nicht sichtbar.',
+        'Angelegte Trennlinien entlang natürlicher Schiffsmerkmale (z.B. Plankengänge), Magnet- oder Stecklösungen im Inneren, Spachtelung und Lackierung der Außenkanten. Auf 1m Distanz sind die Stöße nicht sichtbar.',
     },
   ],
   relatedBranchen: ['energietechnik', 'maschinenbau', 'anlagenbau'],
@@ -525,7 +525,7 @@ const energietechnik: Branche = {
     {
       question: 'Können Sie auch Innen-Komponenten (Generator, Getriebe) detailliert drucken?',
       answer:
-        'Ja. Funktionsschnitt-Modelle mit lackierten Innenteilen sind eine unserer Spezialitäten. Auf Wunsch mit funktional korrekter Wellenkinematik.',
+        'Ja. Schnitt-Modelle mit lackierten Innenteilen sind eine unserer Spezialitäten. Auf Wunsch mit detailgetreu nachgebildeter Wellenkinematik.',
     },
   ],
   relatedBranchen: ['anlagenbau', 'maschinenbau', 'elektrotechnik'],
@@ -538,14 +538,14 @@ const automotive: Branche = {
   slug: 'automotive',
   metaTitle: 'Automotive-Messemodell 3D-Druck ★5,0 · Fahrzeug · Mobility',
   metaDescription:
-    'Fahrzeugbauteil, E-Antrieb, Karosseriedetail, Mobility-Studie als Messemodell. 3D-Druck Maßstab 1:1-1:10, lackierbar. ★5,0 (31 Reviews) →',
+    'Fahrzeugteil, E-Antrieb, Karosseriedetail, Mobility-Studie als Messemodell. 3D-Druck Maßstab 1:1-1:10, lackierbar. ★5,0 (31 Reviews) →',
   eyebrow: 'Branche · Automotive & Mobility',
-  h1: 'Automotive-Messemodell aus dem 3D-Druck · Bauteile, E-Antriebe, Mobility-Konzepte',
+  h1: 'Automotive-Messemodell aus dem 3D-Druck · Modelle, E-Antriebe, Mobility-Konzepte',
   subline:
     'OEM-Zulieferer, Tier-1-Hersteller, Mobility-Startups · von Karosseriedetails über E-Antriebs-Komponenten bis zu Showcase-Modellen neuer Mobilitätskonzepte. 3D-Druck reduziert Werkzeugkosten um 95% und liefert in 24-48h.',
   primaryKeyword: 'Automotive Messemodell',
   secondaryKeywords: [
-    'Fahrzeugbauteil Modell',
+    'Fahrzeugteil Modell',
     'Karosserie 3D-Druck',
     'E-Antrieb Modell',
     'Mobility Konzept Modell',
@@ -557,18 +557,18 @@ const automotive: Branche = {
   ],
   seoLongTailBody: {
     eyebrow: 'Was wir für Automotive & Mobility konkret drucken',
-    h2: 'Automotive-Modelle aus dem 3D-Druck · Bauteile, E-Antriebe, Konzeptfahrzeuge',
+    h2: 'Automotive-Modelle aus dem 3D-Druck · Modelle, E-Antriebe, Konzeptfahrzeuge',
     paragraphs: [
-      'Ein Fahrzeugbauteil-Modell für die IAA Mobility oder Automechanika ist die typische Tier-1-Zulieferer-Anfrage. Tür-Sektionen, Heckklappen, Stoßfänger-Ausschnitte mit eingebauter Zulieferer-Komponente · das Karosserie-3D-Druck-Modell lackiert in OEM-Originalfarbe (BMW Alpine White, Audi Ibis White, Mercedes-Benz Polarweiß) macht aus dem Schraubenladen-Auftritt eine Storytelling-Bühne. Wir treffen den Original-Farbcode über RAL/Pantone/OEM-Spezifikation. 2K-Profi-Lackierung mit Klarlack-Versiegelung ergibt Show-Quality-Finish.',
+      'Ein Fahrzeugteil-Modell für die IAA Mobility oder Automechanika ist die typische Tier-1-Zulieferer-Anfrage. Tür-Sektionen, Heckklappen, Stoßfänger-Ausschnitte mit integrierter Zulieferer-Komponente · das Karosserie-3D-Druck-Modell lackiert in OEM-Originalfarbe (BMW Alpine White, Audi Ibis White, Mercedes-Benz Polarweiß) macht aus dem Schraubenladen-Auftritt eine Storytelling-Bühne. Wir treffen den Original-Farbcode über RAL/Pantone/OEM-Spezifikation. 2K-Profi-Lackierung mit Klarlack-Versiegelung ergibt Show-Quality-Finish.',
       'Das E-Antrieb-Modell zeigt was unter der Designhaube versteckt ist und kein Endkunde ohne Cutaway versteht: Permanent-Magnet-Motor, Inverter, Differential, Wickelköpfe. Ein E-Achse-Schnittmodell im Maßstab 1:1 oder 1:2 mit lackierten Kontrastflächen erklärt die Funktion in 30 Sekunden · was am Stand sonst eine 20-minütige Erläuterung mit Schnittzeichnungen wäre. Diese Auto-Messemodelle-Kategorie wächst stark mit der E-Mobility-Welle.',
       'Konzeptfahrzeug-Modelle für die IAA, Geneva Motor Show oder Auto Shanghai sind unsere Premium-Liga. Statt €50.000-€200.000 für ein Werkzeugbau-Modell und 8-12 Wochen Lead-Time liefern wir ein Show-Quality-Konzeptfahrzeug aus dem 3D-Druck in 1-2 Wochen für €3.000-€12.000. Modell-Maßstab typisch 1:5 bis 1:10, mit drehbaren Rädern, magnetischen Türen, sichtbarem Innenraum durch Klarteile. Diese Mobility-Konzept-Modelle sind oft mit NDA verbunden, weil sie Vorab-Designs zeigen.',
-      'Innenraum-Modelle (Cockpit, Sitzanordnung, HMI-Display-Position) sind die dritte Sub-Kategorie. Sie werden für OEM-Materialien-Konzept-Diskussionen verwendet · Sitze, Dashboard, Interieur-Komponenten im Maßstab 1:5 bis 1:10, oft mit textilbespannten Sitzflächen für realistische Anmutung. Funktionsmuster-Bauteile in Original-Größe für DV/PV-Tests fertigen wir in PA6-CF (Carbon-Polyamid), das mechanisch nahe Aluminium kommt. Eine Showcar-Komponente in dieser Qualität entspricht zu 95% dem späteren Serienteil.',
+      'Innenraum-Modelle (Cockpit, Sitzanordnung, HMI-Display-Position) sind die dritte Sub-Kategorie. Sie werden für OEM-Materialien-Konzept-Diskussionen verwendet · Sitze, Dashboard, Interieur-Komponenten im Maßstab 1:5 bis 1:10, oft mit textilbespannten Sitzflächen für realistische Anmutung. Detailgetreue Anschauungsmodelle in Original-Größe für Design-Reviews und Abnahmen fertigen wir mit sauber ausgeführter, hochwertiger Oberfläche. Eine Showcar-Komponente in dieser Qualität wirkt aus nächster Nähe wie das spätere Original.',
     ],
   },
   pains: [
     {
       problem:
-        'Tier-1-Zulieferer können auf IAA und Automechanika nicht das ganze Auto zeigen · nur ihre Komponente. Aber 100 Bauteile in Vitrinen sehen aus wie ein Schraubenladen.',
+        'Tier-1-Zulieferer können auf IAA und Automechanika nicht das ganze Auto zeigen · nur ihre Komponente. Aber 100 Einzelteile in Vitrinen sehen aus wie ein Schraubenladen.',
       solution:
         'Storytelling-Modell: Die Komponente in einem Karosserie-Ausschnitt eingebettet, lackiert in OEM-Farbe. Sofort verständlich, was wo verbaut wird.',
     },
@@ -615,11 +615,11 @@ const automotive: Branche = {
       materialHint: 'PLA-Komponenten + textilbespannte Sitzflächen',
     },
     {
-      title: 'Funktionsmuster Bauteil (Original-Größe)',
+      title: 'Anschauungsmodell (Original-Größe)',
       description:
-        'Original-große Funktionsmuster für DV/PV-Tests, Design-Reviews, OEM-Abnahmen. Auch in PA-Carbon für funktionsfähige Belastungstests.',
+        'Original-große Anschauungsmodelle für Design-Reviews und OEM-Abstimmungen. Auch in PA-Carbon für robuste, formstabile Modelle.',
       scaleHint: 'Maßstab 1:1',
-      materialHint: 'PA6-CF für Funktion, ABS für Optik',
+      materialHint: 'PA6-CF für robuste Modelle, ABS für Optik',
     },
   ],
   materialEmpfehlung: [
@@ -629,7 +629,7 @@ const automotive: Branche = {
     },
     {
       name: 'PA6-CF (Carbon-PA)',
-      why: 'Für funktionsfähige Bauteile mit mechanischer Belastbarkeit nahe Aluminium.',
+      why: 'Robust und formstabil für Modelle, die viel angefasst werden.',
     },
     {
       name: 'PLA + 2K-Profi-Lackierung',
@@ -651,9 +651,9 @@ const automotive: Branche = {
         'Ja. Wir arbeiten mit RAL- und Pantone-Codes sowie OEM-Original-Farbcodes. 2K-Profi-Lackierung mit Klarlack-Versiegelung für Show-Quality-Finish.',
     },
     {
-      question: 'Sind die gedruckten Bauteile crashfähig oder nur visuell?',
+      question: 'Sind die gedruckten Modelle nur zur Ansicht?',
       answer:
-        'Standard ist visuell. Für funktionsfähige Bauteile (DV/PV-Tests) verwenden wir PA6-CF (Carbon-Polyamid), das mechanisch nahe Aluminium kommt · Belastbarkeit auf Anfrage präzise spezifizierbar.',
+        'Ja, unsere Modelle sind detailgetreue Anschauungsmodelle für Design-Reviews und Messeauftritte. Für Objekte, die viel angefasst werden, verwenden wir das besonders robuste PA6-CF (Carbon-Polyamid). Mechanisch lasttragende Funktionsteile machen wir nicht, dafür fehlt uns die WKO-Gewerbeberechtigung.',
     },
     {
       question: 'Wie schnell kann ein Konzeptmodell für die IAA fertig sein?',
@@ -671,9 +671,9 @@ const automotive: Branche = {
         'Detailmodell Karosserie-Sektion: €600-€2.000. E-Antrieb-Cutaway 1:1: €2.500-€5.500. Komplettes Showcar-Konzeptmodell 1:5 lackiert: €3.500-€12.000.',
     },
     {
-      question: 'Können Räder, Türen und Heckklappen funktional beweglich sein?',
+      question: 'Können Räder, Türen und Heckklappen beweglich sein?',
       answer:
-        'Ja. Magnet-Verbindungen für Türen, Lager für drehbare Räder, ggf. Servo-Motoren für aktive Demonstration auf Knopfdruck.',
+        'Ja. Magnet-Lösungen für Türen, Lager für drehbare Räder, ggf. Servo-Motoren für aktive Demonstration auf Knopfdruck.',
     },
   ],
   relatedBranchen: ['maschinenbau', 'elektrotechnik', 'anlagenbau'],
@@ -710,7 +710,7 @@ const anlagenbau: Branche = {
     h2: 'Anlagenbau-Modelle aus dem 3D-Druck · Pumpen, Ventile, Komplettanlagen',
     paragraphs: [
       'Ein Pumpe-Modell als Schnittansicht ist der häufigste Auftrag in dieser Branche · typisch Kreiselpumpe, Membranpumpe oder Dosierpumpe halbiert im Maßstab 1:2 bis 1:5. Das Laufrad ist drehbar gelagert, der Antrieb mit Drehkurbel betätigt, Welle und Lagerung sichtbar in Kontrast-Lackierung. Diese Pumpen-Schnittmodelle sind die Standard-Vertriebs-Muster für Pumpenbauer aus Österreich und Bayern, die auf der ACHEMA Frankfurt oder Powtech Nürnberg konkurrenzfähig auftreten müssen. PETG für mechanische Robustheit beim häufigen Anfassen, PLA für höchste Detailtreue.',
-      'Ventil-Modelle und Apparatemodelle für Vertriebs-Demos drucken wir mit beweglichem Verschluss-Mechanismus. Ob Schieber-, Klappen- oder Kugelventil · Mini-Servo oder manueller Drehknauf macht die Funktion am Stand greifbar. Originalgröße bis Maßstab 1:3 ist die häufige Kombination. Bei sehr komplexen Apparate-Anfragen (Mischer, Rührwerksbehälter, Spezialventile) gehen wir bis Original-Größe, wenn das Bauteil unter 60 cm Kantenlänge bleibt.',
+      'Ventil-Modelle und Apparatemodelle für Vertriebs-Demos drucken wir mit beweglichem Verschluss-Mechanismus. Ob Schieber-, Klappen- oder Kugelventil · Mini-Servo oder manueller Drehknauf macht die Funktion am Stand greifbar. Originalgröße bis Maßstab 1:3 ist die häufige Kombination. Bei sehr komplexen Apparate-Anfragen (Mischer, Rührwerksbehälter, Spezialventile) gehen wir bis Original-Größe, wenn das Modell unter 60 cm Kantenlänge bleibt.',
       'Komplettanlagen-Modelle für die Verfahrenstechnik-Messe sind die anspruchsvollste Kategorie: eine ganze Chemieanlage-Modell- oder Pharmaanlage-Modell-Sektion im Maßstab 1:25 bis 1:50 mit allen Hauptkomponenten farbkodiert nach DIN 2403 (Wasser grün, Dampf rot, Erdgas gelb). Behälter, Rohrleitungen, Pumpen, Wärmetauscher, Reaktoren · alles maßstabsgetreu. Eine solche Prozessanlage-Visualisierung kostet €3.000-€10.000, dauert 4-6 Wochen Lead-Time, ersetzt aber 2D-PFD-Schemas die niemand auf der Messe versteht.',
       'Wärmetauscher-Modelle und Reaktor-Modelle drucken wir als Schnittansicht mit sichtbarem Rohrbündel oder Heizmantel. ABS mit Aceton-Glättung ergibt eine spritzgussähnliche Oberfläche, die für Hochglanz-Pharma-Pitches passt. Behälterbau-Modelle bekommen oft Chrom-Lackierung oder echte Galvanisierung für die Edelstahl-Anmutung · gerade bei Hygienic-Design-Anlagen für Pharma- und Lebensmittel-Kunden ist diese Optik kritisch für die Glaubwürdigkeit. Bei Investor-Pitches und Tendering-Vorlagen liefern wir auch Premium-Versionen mit beleuchteten Sektionen.',
     ],
@@ -744,7 +744,7 @@ const anlagenbau: Branche = {
       materialHint: 'PLA für Detailtreue, lackiert in 2 Kontrastfarben',
     },
     {
-      title: 'Ventil-Funktionsmodell',
+      title: 'Ventil-Anschauungsmodell',
       description:
         'Schieber-, Klappen-, Kugelventil mit beweglichem Verschluss. Betätigung durch Mini-Servo oder manuell · perfekte Vertriebsmuster.',
       scaleHint: 'Originalgröße bis 1:3',
@@ -779,7 +779,7 @@ const anlagenbau: Branche = {
     },
     {
       name: 'PETG',
-      why: 'Robust für oft benutzte Funktionsmuster (Ventile, Pumpen mit Drehantrieb).',
+      why: 'Robust für oft benutzte Anschauungsmodelle (Ventile, Pumpen mit Drehantrieb).',
     },
     {
       name: 'ABS + Aceton-Glättung',
@@ -804,7 +804,7 @@ const anlagenbau: Branche = {
     {
       question: 'Können Ventile mit echtem Medium (Wasser) demonstriert werden?',
       answer:
-        'Mit speziellem Konstruktions-Ansatz: ja. Wasserdichte Modelle mit Hand-Pumpe + Reservoir realisieren wir auf Anfrage. Standard ist trocken-mechanisch.',
+        'Mit speziellem Aufbau: ja. Wasserdichte Modelle mit Hand-Pumpe + Reservoir realisieren wir auf Anfrage. Standard ist trocken-mechanisch.',
     },
     {
       question: 'Wie farbkodieren Sie komplexe Rohrleitungs-Modelle?',
@@ -814,12 +814,12 @@ const anlagenbau: Branche = {
     {
       question: 'Können wir Anlagenmodelle in mehreren Exemplaren bekommen (z.B. für verschiedene Niederlassungen)?',
       answer:
-        'Ja. Erstmodell €1.500-€8.000, jede weitere identische Kopie nur 30-50% des Erstpreises. Auch in Kleinserie 5-20 Stück.',
+        'Ja. Erstmodell €1.500-€8.000, jede weitere identische Kopie nur 30-50% des Erstpreises. Auch in Mehrfachfertigung 5-20 Stück.',
     },
     {
       question: 'Was kostet ein Anlagenmodell für die ACHEMA?',
       answer:
-        'Pumpen-Schnittmodell: €400-€900. Ventil-Funktionsmuster: €250-€600. Komplettanlagen-Modell 1m mit Detailtreue: €3.000-€10.000. Premium-Pharma-Modell mit beleuchteten Sektionen: bis €15.000.',
+        'Pumpen-Schnittmodell: €400-€900. Ventil-Anschauungsmodell: €250-€600. Komplettanlagen-Modell 1m mit Detailtreue: €3.000-€10.000. Premium-Pharma-Modell mit beleuchteten Sektionen: bis €15.000.',
     },
     {
       question: 'Können Sie Original-Hersteller-Logos lasergraviert ins Modell integrieren?',
@@ -862,7 +862,7 @@ const elektrotechnik: Branche = {
       'Ein MV-Schaltanlage-Modell als Schnittmodell ist die häufigste Anfrage aus dieser Branche. Wir drucken Mittelspannungs-Schaltanlagen im Maßstab 1:5 bis 1:10 mit sichtbarem Leistungsschalter, Sammelschienen, Erdungs-Schalter · alle drei Schaltstellungen mechanisch demonstrierbar über Drehkurbel. ABS in RAL 7035 (Standard MV-Lichtgrau) ist das Material-Setup. Diese Schaltanlage-3D-Druck-Modelle landen typisch auf der Hannover Messe oder CIRED European Conference, wo Schutzgeräte-Hersteller und EVUs gezielt nach physisch greifbaren Demonstrationen suchen.',
       'Ein Trafo-Modell oder Messwandler-Modell drucken wir mit detaillierten Kühlrippen, Anschluss-Bushings, Ölausgleichsbehälter. Verteiltrafo im Maßstab 1:5, Leistungstrafo im Maßstab 1:10 bis 1:25, oder Stromwandler/Spannungswandler in Original-Größe als Vertriebs-Tournee-Muster. PETG mit Strukturlackierung simuliert die Gussgehäuse-Oberfläche überzeugend. Lasergravierte Metall-Inlays für authentische Typenschild-Optik sind Standard · gerade bei MV-Komponenten muss das Etikett aussehen wie das Echte.',
       'Schaltschrank-Innenraum-Modelle für Vertriebs-Pitches drucken wir im Maßstab 1:3 bis 1:10 mit sichtbaren NH-Sicherungen, Stromwandlern, Reihenklemmen · die Tür geöffnet, alles farbkodiert nach IEC 60446 (braun/schwarz/grau für L1/L2/L3). Ein NS-Verteiler-Modell zeigt das Innenleben das im Original immer hinter geschraubten Türen verschwindet. Schulungs-Sets für neue Mitarbeiter sind eine wachsende Nische · zerlegbare MV-Komponenten ohne Hochspannungs-Risiko, oft genutzt, bei Beschädigung in 48h nachgedruckt.',
-      'Eine besondere Spezialität sind IGBT-Modul-Cutaways und Leistungselektronik-Modelle. Geöffnete IGBT-Module mit sichtbarer Bondtechnik, Frequenzumrichter mit Kühlkörper-Innenstruktur, Schutzgerät-Modelle im Maßstab 1:1 bis 1:2 · alles für Engineering-Pitches und CWIEME-Berlin-Auftritte. PLA mit Klarteil-Deckel ergibt den Effekt von durchsichtigem Industriegehäuse mit funktionalem Inneren. Diese hochdetaillierten Modelle landen typisch bei Kunden mit hohem Engineering-IQ, die Specs-Sheets durchschauen · und durch das Modell trotzdem einen anderen, körperlichen Zugang bekommen.',
+      'Eine besondere Spezialität sind IGBT-Modul-Cutaways und Leistungselektronik-Modelle. Geöffnete IGBT-Module mit sichtbarer Bondtechnik, Frequenzumrichter mit Kühlkörper-Innenstruktur, Schutzgerät-Modelle im Maßstab 1:1 bis 1:2 · alles für Engineering-Pitches und CWIEME-Berlin-Auftritte. PLA mit Klarteil-Deckel ergibt den Effekt von durchsichtigem Industriegehäuse mit detailgetreuem Inneren. Diese hochdetaillierten Modelle landen typisch bei Kunden mit hohem Engineering-IQ, die Specs-Sheets durchschauen · und durch das Modell trotzdem einen anderen, körperlichen Zugang bekommen.',
     ],
   },
   pains: [
@@ -974,7 +974,7 @@ const elektrotechnik: Branche = {
     {
       question: 'Können IP-Schutzklassen visuell gezeigt werden (z.B. IP65 vs IP54)?',
       answer:
-        'Ja. Konstruktive Dichtungen, Lüftungsschlitze, Verschluss-Mechanismen werden maßstäblich gedruckt. Macht den IP-Schutz-Unterschied physisch erkennbar.',
+        'Ja. Umlaufende Nut- und Deckelkanten, Lüftungsschlitze und Verschluss-Details werden maßstäblich nachgebildet. Macht den IP-Schutz-Unterschied physisch erkennbar.',
     },
   ],
   relatedBranchen: ['energietechnik', 'anlagenbau', 'maschinenbau'],

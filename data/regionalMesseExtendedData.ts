@@ -18,7 +18,7 @@ const defaultCaseStudy: CaseStudyData = {
   title: "Eyecatcher-Modell für Fachmesse",
   industry: "Messebau",
   challenge: "Ein Aussteller benötigte ein beeindruckendes Präsentationsmodell für seinen Messestand. Das Modell musste leicht transportierbar, aber dennoch robust und detailreich sein.",
-  solution: "Wir fertigten ein mehrteiliges Modell aus hochwertigem PETG. Die modulare Konstruktion ermöglichte einfachen Transport, während die Oberflächenbehandlung eine professionelle Optik garantierte.",
+  solution: "Wir fertigten ein mehrteiliges Modell aus hochwertigem PETG. Der modulare Aufbau ermöglichte einfachen Transport, während die Oberflächenbehandlung eine professionelle Optik garantierte.",
   result: "Das Modell wurde zum Blickfang am Stand. Der Kunde berichtete von deutlich mehr Standbesuchern und qualitativ besseren Gesprächen mit potenziellen Kunden.",
   specs: {
     size: "80 x 60 x 40 cm",
@@ -56,7 +56,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
       title: "Produktmodell-Eyecatcher für FERIEN-MESSE Wien",
       industry: "Tourismus & Messepräsentation",
       challenge: "Ein Wiener Reiseveranstalter wollte auf der FERIEN-MESSE Wien ein aufmerksamkeitsstarkes Modell einer neuen Hotelanlage als Eyecatcher für seinen Stand. Das Modell musste leicht transportierbar und robust genug für 4 Messetage sein.",
-      solution: "Wir fertigten ein farbiges Modell der Hotelanlage mit Pool-Landschaft im Maßstab 1:100. Palmen aus grünem PLA, Wasserflächen aus blau-transparentem PETG. Die modulare Konstruktion passte in zwei Transportkoffer.",
+      solution: "Wir fertigten ein farbiges Modell der Hotelanlage mit Pool-Landschaft im Maßstab 1:100. Palmen aus grünem PLA, Wasserflächen aus blau-transparentem PETG. Der modulare Aufbau passte in zwei Transportkoffer.",
       result: "Der Stand verzeichnete 60% mehr Besucher als im Vorjahr. Das Modell wurde zum meistfotografierten Objekt der Messe und generierte zahlreiche Social-Media-Posts.",
       specs: {
         size: "80 x 60 x 30 cm",
@@ -89,7 +89,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
     uniqueSellingPoints: [
       "Express-Lieferung direkt zur Reed Messe Wien",
       "Erfahrung mit FERIEN-MESSE und BAUEN & WOHNEN Ausstellern",
-      "Modulare Konstruktion für einfachen Messetransport"
+      "Modularer Aufbau für einfachen Messetransport"
     ]
   },
 
@@ -121,7 +121,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
       title: "Großformat-Exponat für Grazer Herbstmesse",
       industry: "Konsumgüter & Messepräsentation",
       challenge: "Ein steirisches Unternehmen wollte auf der Grazer Herbstmesse ein überdimensionales Produktmodell als Eyecatcher einsetzen. Das Modell musste von Weitem sichtbar sein und Messebesucher zum Stand ziehen.",
-      solution: "Wir fertigten ein 1,5 Meter hohes Produktmodell in leuchtenden Firmenfarben. Die mehrteilige Konstruktion erlaubte den Transport im PKW. Vor Ort wurde das Modell in 15 Minuten aufgebaut.",
+      solution: "Wir fertigten ein 1,5 Meter hohes Produktmodell in leuchtenden Firmenfarben. Der mehrteilige Aufbau erlaubte den Transport im PKW. Vor Ort wurde das Modell in 15 Minuten aufgebaut.",
       result: "Der Aussteller berichtete von doppelt so vielen Standbesuchen im Vergleich zum Vorjahr. Das Modell wurde zum Foto-Hotspot der Messe.",
       specs: {
         size: "150 x 60 x 60 cm",
@@ -140,7 +140,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
       {
         name: "PETG Robust",
         description: "Für interaktive Modelle, die häufig angefasst werden. Kratzfest und langlebig für mehrtägige Messen.",
-        bestFor: ["Hands-on Exponate", "Interaktive Standmodelle", "Dauerbelastbare Objekte"],
+        bestFor: ["Hands-on Exponate", "Interaktive Standmodelle", "Robuste Objekte"],
         icon: "shield"
       },
       {
@@ -218,7 +218,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
       {
         name: "PLA Holzoptik",
         description: "Authentische Holzmaserung für Holzbau-Modelle. Ideal für die Internationale Holzmesse.",
-        bestFor: ["Holzkonstruktionen", "Möbeldesign", "Holzarchitektur"],
+        bestFor: ["Holzbauten", "Möbeldesign", "Holzarchitektur"],
         icon: "palette"
       },
       {
@@ -229,8 +229,8 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
       },
       {
         name: "PLA Leichtbau",
-        description: "Für große Konstruktionsmodelle. Leicht zu transportieren über die Tauernautobahn.",
-        bestFor: ["Großbauprojekte", "Gebäudekomplexe", "Dachkonstruktionen"],
+        description: "Für große Baumodelle. Leicht zu transportieren über die Tauernautobahn.",
+        bestFor: ["Großbauprojekte", "Gebäudekomplexe", "Dachaufbauten"],
         icon: "feather"
       }
     ],
@@ -345,7 +345,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
     uniqueSellingPoints: [
       "Erfahrung mit Wieselburger Messe und AB HOF",
       "Zentrale Lage zwischen Wien und Linz",
-      "Funktionsmodelle mit beweglichen Teilen"
+      "Anschauungsmodelle mit beweglichen Teilen"
     ]
   },
 
@@ -401,7 +401,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
       title: "Landmaschinen-Demonstrationsmodell für AGRARIA",
       industry: "Landwirtschaft",
       challenge: "Ein Aussteller auf der AGRARIA Wels benötigte ein maßstabsgetreues Demonstrationsmodell einer neuen Landmaschine. Das Modell sollte alle wichtigen Details anschaulich darstellen.",
-      solution: "Wir fertigten ein detailliertes Modell im Maßstab 1:10 mit beweglichen Elementen. Die Konstruktion ermöglichte das Öffnen wichtiger Komponenten zur Erklärung.",
+      solution: "Wir fertigten ein detailliertes Modell im Maßstab 1:10 mit beweglichen Elementen. Der Aufbau ermöglichte das Öffnen wichtiger Komponenten zur Erklärung.",
       result: "Das Modell war leichter und detaillierter als vergleichbare Metallmodelle. Der Kunde setzte es auch nach der Messe für Kundenbesuche ein.",
       specs: {
         size: "45 x 25 x 20 cm",
@@ -424,7 +424,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
       title: "Produktpräsentation für Grazer Herbstmesse",
       industry: "Konsumgüter & Präsentation",
       challenge: "Ein steirisches Unternehmen wollte auf der Grazer Herbstmesse ein neues Produktsortiment mit einem überdimensionalen Schaumodell bewerben. Das Modell musste von Weitem sichtbar und fotografierbar sein.",
-      solution: "Wir fertigten ein 120cm großes Modell mit leuchtenden Farben und glattem Finish. Die mehrteilige Konstruktion ermöglichte den Transport im Lieferwagen zur Messe Graz.",
+      solution: "Wir fertigten ein 120cm großes Modell mit leuchtenden Farben und glattem Finish. Der mehrteilige Aufbau ermöglichte den Transport im Lieferwagen zur Messe Graz.",
       result: "Der Stand gewann den Publikumspreis für die beste Standgestaltung. Das Modell wird seitdem auf drei weiteren Messen eingesetzt.",
       specs: {
         size: "120 x 60 x 80 cm",
@@ -445,14 +445,14 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
   'klagenfurt': {
     caseStudy: {
       ...defaultCaseStudy,
-      title: "Holzkonstruktions-Modell für Holzmesse Klagenfurt",
+      title: "Holzbau-Modell für Holzmesse Klagenfurt",
       industry: "Holzbau"
     },
     materials: [
       {
         name: "PLA Holzoptik",
         description: "Authentische Holzmaserung für Holzbau-Modelle. Perfekt für die Holzmesse.",
-        bestFor: ["Holzkonstruktionen", "Möbeldesign", "Alpine Architektur"],
+        bestFor: ["Holzbauten", "Möbeldesign", "Alpine Architektur"],
         icon: "palette"
       },
       ...defaultMaterials.slice(1)
@@ -565,7 +565,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
 
 regionalExtendedData['wien'].faqs = [
   { question: "Können Modelle direkt zur Reed Messe Wien geliefert werden?", answer: "Ja · wir liefern direkt an das Messegelände der Reed Messe Wien. Die Zustellung erfolgt über Nacht. Für Messen wie FERIEN-MESSE, BAUEN & WOHNEN oder die Wiener Immobilienmesse haben wir langjährige Logistik-Erfahrung." },
-  { question: "Wie werden große Exponate sicher nach Wien transportiert?", answer: "Großformatige Messemodelle werden mehrteilig konstruiert und in Transportkoffern geliefert. Der Aufbau am Stand dauert typischerweise 15-20 Minuten. Für Wien nutzen wir versicherten Express-Versand." },
+  { question: "Wie werden große Exponate sicher nach Wien transportiert?", answer: "Großformatige Messemodelle werden mehrteilig gefertigt und in Transportkoffern geliefert. Der Aufbau am Stand dauert typischerweise 15-20 Minuten. Für Wien nutzen wir versicherten Express-Versand." },
   { question: "Können Corporate-Farben für Wiener Messe-Aussteller exakt umgesetzt werden?", answer: "Über 20 Standard-Filamentfarben stehen zur Verfügung. Für exakte Corporate-Farben bieten wir professionelle Lackierung nach RAL oder Pantone an. Eine Farbprobe vorab ist auf Wunsch möglich." },
   { question: "Sind transparente Elemente für Messe-Exponate möglich?", answer: "Ja · mit PETG Transparent können Glasflächen, Flüssigkeiten oder Beleuchtungseffekte realistisch dargestellt werden. Das Material ist gleichzeitig schlagfest und transportrobust." },
   { question: "Wie viele Messemodelle können gleichzeitig produziert werden?", answer: "Unsere Kapazität erlaubt die parallele Fertigung beliebig vieler Modelle. Für Aussteller mit mehreren Standorten sind exakte Kopien in gleichbleibender Qualität möglich." },
@@ -582,8 +582,8 @@ regionalExtendedData['oberoesterreich'].faqs = [
 regionalExtendedData['oberoesterreich'].introText = "Direkt vom Hersteller in Gunskirchen · nur 10 Minuten zur Messe Wels. Same-Day-Abholung, lokale Beratung und Express-Service für alle oberösterreichischen Messen.";
 
 regionalExtendedData['steiermark'].faqs = [
-  { question: "Können überdimensionale Eyecatcher für die Grazer Herbstmesse gefertigt werden?", answer: "Ja · wir fertigen Modelle bis 2 Meter Höhe. Mehrteilige Konstruktionen ermöglichen den Transport im PKW. Der Aufbau am Stand ist in wenigen Minuten erledigt." },
-  { question: "Wie wird ein großes Modell sicher zur Messe Graz transportiert?", answer: "Unsere modulare Bauweise mit Steckverbindungen macht den Transport einfach. Jedes Teil wird einzeln in Schaumstoff verpackt. Lieferzeit nach Graz: 1-2 Werktage." },
+  { question: "Können überdimensionale Eyecatcher für die Grazer Herbstmesse gefertigt werden?", answer: "Ja · wir fertigen Modelle bis 2 Meter Höhe. Mehrteilige Aufbauten ermöglichen den Transport im PKW. Der Aufbau am Stand ist in wenigen Minuten erledigt." },
+  { question: "Wie wird ein großes Modell sicher zur Messe Graz transportiert?", answer: "Unsere modulare Bauweise mit Stecklösungen macht den Transport einfach. Jedes Teil wird einzeln in Schaumstoff verpackt. Lieferzeit nach Graz: 1-2 Werktage." },
   { question: "Welche Nachbearbeitung ist für messetaugliche Oberflächen empfehlenswert?", answer: "Für optimale Messeoptik empfehlen wir Schleifen und Grundierung bei großen Flächen, Lackierung für glatte Oberflächen und farbliche Highlights durch Airbrush-Akzente." },
   { question: "Eignen sich 3D-gedruckte Modelle auch für die Häuslbauermesse?", answer: "Ja · besonders für Aussteller, die Gebäudekonzepte oder Produkte greifbar präsentieren möchten. Physische Modelle steigern die Aufmerksamkeit am Stand nachweislich." },
   { question: "Können Modelle für steirische Branchenmessen individuell gestaltet werden?", answer: "Jedes Modell wird individuell nach Ihren Vorgaben gefertigt. Von der Farbe über die Größe bis zur Oberflächenbehandlung · alles wird an Ihre Messepräsentation angepasst." },
@@ -601,7 +601,7 @@ regionalExtendedData['salzburg'].introText = "Hochwertige Exponate für Art & An
 
 regionalExtendedData['kaernten'].faqs = [
   { question: "Können Holzoptik-Modelle für die Internationale Holzmesse gefertigt werden?", answer: "Ja · mit speziellem Holz-PLA erhalten Modelle eine authentische Holzmaserung. Verschiedene Holztöne von hell (Fichte) bis dunkel (Nussbaum) sind verfügbar." },
-  { question: "Sind funktionale Demonstrationsmodelle mit beweglichen Teilen möglich?", answer: "Ja · Scharniere, Steckverbindungen und herausnehmbare Elemente können direkt ins Modell integriert werden. Ideal für die Demonstration von Bausystemen auf der Holzmesse." },
+  { question: "Sind Demonstrationsmodelle mit beweglichen Teilen möglich?", answer: "Ja · Scharniere, Stecklösungen und herausnehmbare Elemente können direkt ins Modell integriert werden. Ideal für die Demonstration von Bausystemen auf der Holzmesse." },
   { question: "Wie lange halten 3D-gedruckte Messemodelle?", answer: "PLA-Modelle sind Indoor praktisch unbegrenzt haltbar. Für Outdoor-Events oder Modelle mit Sonneneinstrahlung empfehlen wir ASA · UV-beständig und witterungsfest." },
   { question: "Können mehrere unterschiedliche Modelle gleichzeitig bestellt werden?", answer: "Ja · unsere Druckkapazität erlaubt die parallele Fertigung verschiedener Modelle. Besonders für Aussteller, die mehrere Produktvarianten zeigen möchten." },
   { question: "Wie ist die Lieferlogistik nach Kärnten?", answer: "Versand über die Tauernautobahn in 2-3 Werktagen. Express-Zustellung über Nacht ist für dringende Messetermine jederzeit möglich." },
@@ -613,7 +613,7 @@ regionalExtendedData['tirol'].faqs = [
   { question: "Wie werden Schneedecken und Pistenflächen im Modell dargestellt?", answer: "Weißes PLA bildet die Schneeoberfläche, grüne Flächen zeigen Almgebiete, blaue Markierungen die Pistenschwierigkeitsgrade. Seilbahnstützen werden als abnehmbare Elemente gefertigt." },
   { question: "Wie wird ein Geländemodell sicher nach Innsbruck transportiert?", answer: "Große Geländemodelle werden mehrteilig gefertigt. Jedes Segment passt in Standardverpackungen. Die Montage am Messestand erfolgt durch einfaches Zusammenstecken." },
   { question: "Wie schwer ist ein großes Geländemodell aus PLA?", answer: "Ein Geländemodell 120x90cm wiegt mit unserer Leichtbau-Technik nur ca. 2-3 kg. Das ist rund 70% leichter als vergleichbare Holz- oder Gipsmodelle." },
-  { question: "Können DGM-Daten als Grundlage für topografische Modelle verwendet werden?", answer: "Ja · wir verarbeiten digitale Geländemodelle direkt. Höhenprofile, Flusssysteme und Geländeformen werden präzise im 3D-Modell umgesetzt." },
+  { question: "Können DGM-Daten als Grundlage für topografische Modelle verwendet werden?", answer: "Ja · wir verarbeiten digitale Geländemodelle direkt. Höhenprofile, Flusssysteme und Geländeformen werden detailgetreu im 3D-Modell umgesetzt." },
 ];
 regionalExtendedData['tirol'].introText = "Topografische Geländemodelle, Skigebiet-Visualisierungen und Bergstation-Modelle für die Interalpin und Tiroler Tourismusmessen · maßstabsgetreu aus Höhendaten.";
 
@@ -621,7 +621,7 @@ regionalExtendedData['vorarlberg'].faqs = [
   { question: "Können organische Designformen für die Gustav-Messe gedruckt werden?", answer: "Ja · 3D-Druck ist ideal für fließende, organische Formen, die mit traditionellen Methoden kaum realisierbar wären. Wir optimieren die Druckausrichtung für perfekte Oberflächen." },
   { question: "Ist eine Lieferung in die Schweiz oder nach Süddeutschland möglich?", answer: "Ja · durch unsere österreichweite Versandlogistik ist auch die Lieferung in grenznahe Gebiete der Schweiz und Süddeutschlands problemlos möglich." },
   { question: "Welche Oberflächenqualität ist für Design-Messen erreichbar?", answer: "Mit 0.1mm Schichthöhe und professioneller Nachbearbeitung erreichen wir Oberflächen, die höchste Design-Ansprüche erfüllen. Matt, seidenmatt oder hochglänzend · nach Wunsch." },
-  { question: "Können maßstabsgetreue Möbelmodelle für Aussteller gefertigt werden?", answer: "Ja · vom Maßstab 1:10 bis 1:1 für kleine Designobjekte. Organische Formen, Texturen und Farbverläufe können präzise umgesetzt werden." },
+  { question: "Können maßstabsgetreue Möbelmodelle für Aussteller gefertigt werden?", answer: "Ja · vom Maßstab 1:10 bis 1:1 für kleine Designobjekte. Organische Formen, Texturen und Farbverläufe können detailgetreu umgesetzt werden." },
   { question: "Wie werden filigrane Designdetails beim Transport geschützt?", answer: "Empfindliche Elemente erhalten Stützstrukturen während des Drucks und werden in maßgefertigten Verpackungen geschützt. Transport zur Gustav-Messe in 2-3 Tagen." },
 ];
 regionalExtendedData['vorarlberg'].introText = "Designmodelle für die Gustav-Messe Dornbirn · organische Formen, edle Oberflächen und grenznahe Lieferung in den Bodenseeraum, nach Liechtenstein und die Ostschweiz.";
@@ -647,9 +647,9 @@ regionalExtendedData['burgenland'].introText = "Messemodelle für die burgenlän
 regionalExtendedData['linz'].faqs = [
   { question: "Können kreative Installationsmodelle für Linzer Events gefertigt werden?", answer: "Ja · von der Tabakfabrik bis zum Lentos: Wir fertigen maßgeschneiderte Modelle für Events und Installationen in Linz. Geometrisch komplexe Formen sind unsere Stärke." },
   { question: "Bieten Sie Same-Day-Service für Linzer Aussteller?", answer: "Ja · unser Standort in Gunskirchen ist nur 20 Minuten von Linz entfernt. Same-Day-Fertigung und persönliche Abholung sind jederzeit möglich." },
-  { question: "Wie groß können Installationsmodelle werden?", answer: "Bis zu 2 Meter und darüber · mehrteilig konstruiert und nahtlos zusammengefügt. Die innere Wabenstruktur reduziert das Gewicht um bis zu 70%." },
+  { question: "Wie groß können Installationsmodelle werden?", answer: "Bis zu 2 Meter und darüber · mehrteilig gefertigt und nahtlos zusammengefügt. Die innere Wabenstruktur reduziert das Gewicht um bis zu 70%." },
   { question: "Sind geometrisch komplexe, unregelmäßige Formen realisierbar?", answer: "Ja · organische, parametrische und mathematisch definierte Formen können ohne Mehrkosten gedruckt werden. Genau hier zeigt FDM-3D-Druck seine Stärke." },
-  { question: "Wie werden mehrteilige Modelle am Standort zusammengebaut?", answer: "Wir konstruieren passgenaue Steckverbindungen oder Magnetsysteme. Der Zusammenbau vor Ort dauert typischerweise 10-20 Minuten · ohne Werkzeug." },
+  { question: "Wie werden mehrteilige Modelle am Standort zusammengebaut?", answer: "Wir fertigen formschlüssige Steck- oder Magnetlösungen. Der Zusammenbau vor Ort dauert typischerweise 10-20 Minuten · ohne Werkzeug." },
 ];
 regionalExtendedData['linz'].introText = "Nur 20 Minuten von Linz · kreative Messemodelle, Installationsobjekte und Express-Exponate mit Same-Day-Abholung für Linzer Aussteller und Events.";
 
@@ -663,7 +663,7 @@ regionalExtendedData['wels'].faqs = [
 regionalExtendedData['wels'].introText = "Direkter Nachbar der Messe Wels · Same-Day-Service, persönliche Abholung und Last-Minute-Express für AGRARIA, Energiesparmesse und Welser Messe.";
 
 regionalExtendedData['graz'].faqs = [
-  { question: "Können XXL-Exponate für die Grazer Messen gefertigt werden?", answer: "Ja · ob Herbstmesse, Häuslbauermesse oder Frühjahrsmesse: Wir fertigen Modelle bis 2m Höhe. Mehrteilige Konstruktionen ermöglichen den Transport im Lieferwagen." },
+  { question: "Können XXL-Exponate für die Grazer Messen gefertigt werden?", answer: "Ja · ob Herbstmesse, Häuslbauermesse oder Frühjahrsmesse: Wir fertigen Modelle bis 2m Höhe. Mehrteilige Aufbauten ermöglichen den Transport im Lieferwagen." },
   { question: "Wie wird die Oberfläche für messetaugliche Optik vorbereitet?", answer: "Je nach Anforderung: Standard-Finish direkt vom Drucker, geschliffen und grundiert, oder professionell lackiert in Wunschfarbe." },
   { question: "Können Modelle in leuchtenden Corporate-Farben gedruckt werden?", answer: "Ja · über 20 Standardfarben verfügbar, darunter Neonfarben und Metallicfilamente. Für exakte Corporate-Farben bieten wir Sonderlackierung nach RAL an." },
   { question: "Eignen sich 3D-Modelle auch als Trophäen für Messepreise?", answer: "Ja · wir fertigen individuelle Trophäen und Awards für Messepreise und Publikumswettbewerbe. Jedes Stück ein Unikat in gewünschter Form und Farbe." },
@@ -691,7 +691,7 @@ regionalExtendedData['villach'].introText = "Tourismusmodelle für Villacher Eve
 
 regionalExtendedData['st-poelten'].faqs = [
   { question: "Können kompakte Tischmodelle für das VAZ St. Pölten gefertigt werden?", answer: "Ja · wir fertigen 360°-optimierte Modelle speziell für Stehtisch-Präsentationen. Gleichmäßig detailliert von allen Seiten, mit stabilem Standfuß." },
-  { question: "Wie werden Modelle für Stehtisch-Präsentationen optimiert?", answer: "Proportionen werden an die Betrachtungshöhe angepasst, der Standfuß extra stabil konstruiert, und alle Seiten erhalten gleichmäßige Detaillierung." },
+  { question: "Wie werden Modelle für Stehtisch-Präsentationen optimiert?", answer: "Proportionen werden an die Betrachtungshöhe angepasst, der Standfuß extra stabil gefertigt, und alle Seiten erhalten gleichmäßige Detaillierung." },
   { question: "Können 3D-Logo-Elemente ins Messemodell integriert werden?", answer: "Ja · Firmenlogos als erhabene 3D-Elemente auf dem Modell oder als separater Aufsatz. In der Corporate-Farbe des Unternehmens." },
   { question: "Eignen sich kompakte Modelle auch für regionale Gewerbeschauen?", answer: "Ja · gerade bei kleineren Messen und Gewerbeausstellungen im VAZ wirken physische Modelle als starke Blickfänger und Gesprächsstarter." },
   { question: "Wie schnell ist die Lieferung nach St. Pölten?", answer: "1-2 Werktage über die A1 Westautobahn. St. Pölten liegt auf unserer direkten Versandroute Richtung Wien." },
@@ -702,17 +702,17 @@ regionalExtendedData['innsbruck'].faqs = [
   { question: "Können Bergstation- und Seilbahnmodelle für die Interalpin gefertigt werden?", answer: "Ja · maßstabsgetreue Modelle von Seilbahnstationen, Bergstationen und Liftanlagen. Abnehmbare Stützen und Gondeln ermöglichen die Demonstration geplanter Erweiterungen." },
   { question: "Wie werden realistische Schnee- und Gletscheroberflächen dargestellt?", answer: "Schnee-weißes PLA mit leichter Textur für Bergflanken, PETG Frost-Optik für Gletscherelemente, und farbige Markierungen für Pisten und Wanderwege." },
   { question: "Können Modelle für Tiroler Tourismusmessen gefertigt werden?", answer: "Ja · von der Interalpin über die Ferienmesse Innsbruck bis zu regionalen Tourismusschauen. Skigebiet-Modelle, Hotelmodelle und Anlagen in höchster Qualität." },
-  { question: "Wie stabil sind Geländemodelle beim Transport nach Tirol?", answer: "Unsere mehrteilige Konstruktion mit Steckverbindungen ist transportoptimiert. Bruchsichere Verpackung mit Schaumstoff-Einlagen schützt auch bei längerem Transport." },
-  { question: "Können Höhenunterschiede realistisch dargestellt werden?", answer: "Ja · basierend auf DGM-Daten werden Höhenprofile, Täler, Grate und Gipfel präzise im Modell umgesetzt. Ideal für Skigebiet-Planungen und Touristik-Präsentationen." },
+  { question: "Wie stabil sind Geländemodelle beim Transport nach Tirol?", answer: "Unser mehrteiliger Aufbau mit Stecklösungen ist transportoptimiert. Bruchsichere Verpackung mit Schaumstoff-Einlagen schützt auch bei längerem Transport." },
+  { question: "Können Höhenunterschiede realistisch dargestellt werden?", answer: "Ja · basierend auf DGM-Daten werden Höhenprofile, Täler, Grate und Gipfel detailgetreu im Modell umgesetzt. Ideal für Skigebiet-Planungen und Touristik-Präsentationen." },
 ];
-regionalExtendedData['innsbruck'].introText = "Interalpin-Modelle, Skigebiet-Visualisierungen und Bergstation-Exponate für Innsbrucker Tourismusmessen · topografisch präzise aus Höhendaten gefertigt.";
+regionalExtendedData['innsbruck'].introText = "Interalpin-Modelle, Skigebiet-Visualisierungen und Bergstation-Exponate für Innsbrucker Tourismusmessen · topografisch detailgetreu aus Höhendaten gefertigt.";
 
 regionalExtendedData['dornbirn'].faqs = [
   { question: "Können Design-Möbelmodelle für die Gustav-Messe gefertigt werden?", answer: "Ja · maßstabsgetreue Modelle von Möbeldesigns, auch mit organischen, fließenden Formen. Matte oder hochglänzende Oberflächen nach Wunsch." },
   { question: "Welche Oberflächenqualität ist für Design-Aussteller erreichbar?", answer: "Mit 0.1mm Schichthöhe und professioneller Nachbearbeitung erreichen wir Oberflächen, die höchste Design-Ansprüche erfüllen. Matt-edel, seidenglanz oder spiegelnd." },
   { question: "Ist eine Lieferung auch nach Lindau, Konstanz oder in die Schweiz möglich?", answer: "Ja · Vorarlbergs Grenzlage ermöglicht unkomplizierte Lieferung in den Bodenseeraum, nach Liechtenstein und in die Ostschweiz." },
   { question: "Wie werden organische Formen ohne sichtbare Drucklinien erreicht?", answer: "Optimierte Druckausrichtung minimiert sichtbare Schichtlinien. Nachbearbeitung durch Schleifen und Grundierung ergibt makellose Oberflächen für Design-Exponate." },
-  { question: "Können Designobjekte in limitierter Auflage für Messe-Besucher produziert werden?", answer: "Ja · identische Serien ab 10 Stück. Ideal als Give-aways oder limitierte Editions für Design-Events und Ausstellungen." },
+  { question: "Können Designobjekte in limitierter Auflage für Messe-Besucher produziert werden?", answer: "Ja · identische Mehrfachfertigung ab 10 Stück. Ideal als Give-aways oder limitierte Editions für Design-Events und Ausstellungen." },
 ];
 regionalExtendedData['dornbirn'].introText = "Design-Exponate für die Gustav-Messe · organische Formen, Premium-Oberflächen und grenznahe Lieferung nach Dornbirn, in die Schweiz und nach Süddeutschland.";
 
