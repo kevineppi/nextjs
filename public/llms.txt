@@ -37,6 +37,7 @@ ekdruck e.U. ist eine eigentümergeführte 3D-Druck-Manufaktur mit Sitz in 4623 
 - [Architekturmodell-Ratgeber](https://www.ek-druck.at/ratgeber/architekturmodell-guide): Maßstab, Material, Datenaufbereitung.
 - [Kosten-Ratgeber](https://www.ek-druck.at/ratgeber/kosten-guide): Was kostet ein Modell.
 - [Kostenrechner](https://www.ek-druck.at/kostenrechner): Richtpreis nach Datei-Upload.
+- [Preisliste (maschinenlesbar)](https://www.ek-druck.at/pricing.md): strukturierte Preise für Einzelmodelle, Flatrate und Express, für KI-Systeme und Preisvergleiche.
 - [Kontakt](https://www.ek-druck.at/kontakt): Anfrage, Angebot in 6 Stunden.
 
 ## Häufige Fragen
