@@ -5,7 +5,7 @@ import { Target, Calculator, Wrench, Truck, Zap, Phone, ArrowRight, BadgeCheck, 
 
 const steps = [
   { num: "01", title: "CAD-Daten oder Skizze senden", time: "2 Min", icon: Target, desc: "STL, STEP, IGES oder native CAD-Dateien. Kein 3D-Modell? Skizze, Foto oder technische Zeichnung reichen für den Start. Auf Wunsch NDA vor Datenaustausch." },
-  { num: "02", title: "Daten-Check & Festpreis", time: "< 6h", icon: Calculator, desc: "Wir prüfen Wandstärken, Stützstrukturen, Anisotropie. Bei Optimierungspotenzial melden wir uns vorher. Verbindliches Festpreisangebot mit Materialempfehlung und Lieferdatum." },
+  { num: "02", title: "Daten-Check & Festpreis", time: "< 6h", icon: Calculator, desc: "Wir prüfen Wandstärken, Stützstrukturen, Oberflächenausrichtung. Bei Optimierungspotenzial melden wir uns vorher. Verbindliches Festpreisangebot mit Materialempfehlung und Lieferdatum." },
   { num: "03", title: "Fertigung & Qualitätskontrolle", time: "1–14 Tage", icon: Wrench, desc: "FDM startet sofort nach Auftragsbestätigung. SLA und SLS gehen an den passenden Partner. Statusupdates und auf Wunsch Druckfotos zur laufenden Qualitätskontrolle." },
   { num: "04", title: "Versand oder persönliche Zustellung", time: "1–3 Tage", icon: Truck, desc: "Versand österreichweit, EU-weit und auf Anfrage weltweit. In Oberösterreich auf Wunsch persönliche Zustellung. Tracking-Nummer per E-Mail. Folge-Iteration sofort möglich." },
 ];
@@ -14,7 +14,7 @@ const checklist = [
   { item: "CAD-Datei oder Skizze", sub: "STL, STEP – oder ein Foto" },
   { item: "Verfahren-Empfehlung?", sub: "FDM, SLA oder SLS" },
   { item: "Stückzahl", sub: "Von 1 bis 200+ möglich" },
-  { item: "Material & Anwendung", sub: "Einsatz, Optik, Outdoor?" },
+  { item: "Material & Anwendung", sub: "Optik, Farbe, Outdoor?" },
   { item: "Vertraulichkeit", sub: "NDA gewünscht?" },
   { item: "Wunschtermin", sub: "Express möglich" },
 ];

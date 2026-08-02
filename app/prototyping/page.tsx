@@ -15,14 +15,14 @@ import {
  * Description: Pain-Pull-Format (Spritzguss 6 Wochen → 24h Prototyp) statt Feature-Dump.
  */
 
-const TITLE = '3D-Druck Prototypen in 24h ★5,0 · Designmuster | ekdruck'
+const TITLE = 'Designprototyp & Anschauungsmodell 3D-Druck ★5,0 | ekdruck'
 const DESCRIPTION =
-  'Spritzguss braucht 6 Wochen · Ihr Design-Prototyp in 24-48h. PLA, PETG, ABS, PETG-CF. Feine Details, saubere Oberfläche. Festpreis in 6h. ★5,0 (31).'
+  'Designprototyp und Anschauungsmodell aus dem 3D-Druck: Form, Optik und Haptik am echten Modell prüfen. Ab 1 Stück, Angebot in 6h, Express 24h in Österreich. ★5,0 (31).'
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  keywords: 'rapid prototyping, prototyp drucken lassen, 3d druck prototyp, designprototyp, anschauungsmuster, konzeptmodell, fdm prototyp, sla prototyp, sls prototyp, prototyping österreich, prototyp express, designmuster 3d druck, pa12 sls, reverse engineering, 3d druck prototypen 24h, prototyp express österreich, mehrfachfertigung 3d druck',
+  keywords: 'designprototyp, designprototyp 3d druck, anschauungsmodell produktdesign, designmodell 3d druck, konzeptmodell 3d druck, anschauungsmuster, designmuster 3d druck, prototyp drucken lassen, modell nach foto drucken lassen, designprototyp österreich, prototyp express österreich, mehrfachfertigung 3d druck',
   alternates: buildDachAlternates('/prototyping'),
   openGraph: {
     title: TITLE,
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
 }
 
 const SERVICE_LD = serviceSchema({
-  serviceType: 'Rapid Prototyping 3D-Druck',
+  serviceType: 'Designprototyp & Anschauungsmodell 3D-Druck',
   description:
-    'Design-Prototypen und Anschauungsmuster in 24-48h aus FDM, SLA, SLS. PLA, PETG, ABS, ASA, PETG-CF. Feine Details, saubere Oberfläche. Festpreis-Angebot in 6h. Aus Gunskirchen, OÖ in ganz DACH.',
+    'Designprototypen und Anschauungsmodelle fürs Produktdesign aus dem 3D-Druck. Fokus auf Form, Optik, Haptik und Ergonomie, Modelle zum Anfassen und Zeigen. FDM in-house, SLA und SLS über Partner. Ab 1 Stück, Festpreis-Angebot in 6h, Express in 24h. Aus Gunskirchen, OÖ in ganz DACH.',
   url: 'https://www.ek-druck.at/prototyping',
   lowPrice: '20',
   highPrice: '3000',
@@ -52,28 +52,28 @@ const SERVICE_LD = serviceSchema({
 
 const FAQ_LD = faqSchema([
   {
-    q: 'Wie schnell bekomme ich einen Prototyp aus dem 3D-Druck?',
-    a: 'Bei Standardgeometrien und gängigen Materialien (PLA, PETG, ABS) liefern wir innerhalb 24-48 Stunden. Express-Service mit Versand am selben Werktag bei Anfrage vor 10:00 Uhr möglich.',
+    q: 'Wer druckt Designprototypen oder Anschauungsmodelle fürs Produktdesign in Österreich?',
+    a: 'ekdruck aus Gunskirchen (Oberösterreich) druckt Designprototypen und Anschauungsmodelle fürs Produktdesign, mit Fokus auf Form, Optik, Haptik und Ergonomie. Modelle zum Anfassen und Zeigen, ab 1 Stück, Angebot in 6 Stunden, Express in 24 Stunden, österreichweit. 5,0 Sterne auf Google.',
   },
   {
-    q: 'Wie fein sind die Details beim Prototypen-Druck?',
-    a: 'Je nach Verfahren sind sehr feine Strukturen möglich: SLA und SLS lösen filigrane Details besonders sauber auf, FDM eignet sich für größere Modelle. Wir empfehlen das passende Verfahren · kostenfreie Vorab-Beratung in 6h.',
+    q: 'Was ist ein Designprototyp?',
+    a: 'Ein Designprototyp ist ein Modell zur Beurteilung von Form, Proportionen, Haptik und Optik, bevor es weitergeht. Anders als ein rein digitaler Entwurf lässt er sich in die Hand nehmen, zeigen und mit anderen Varianten vergleichen.',
   },
   {
-    q: 'Welche Materialien gibt es für Prototypen?',
-    a: 'PETG-CF (carbonverstärkt) für besonders formstabile Modelle, ASA für UV- und temperaturbeständige Außenmodelle, PA12 SLS für filigrane, robuste Muster. Wir beraten zur passenden Material-Verfahren-Kombination.',
+    q: 'Was ist der Unterschied zwischen Designprototyp und Anschauungsmodell?',
+    a: 'Ein Designprototyp dient dem Prüfen und Iterieren von Form und Optik in der Entwicklung. Ein Anschauungsmodell ist das ausgearbeitete Modell zum Zeigen, etwa für Vertrieb, Investoren-Pitch oder Messe. Beides fertigen wir aus dem gleichen Workflow.',
   },
   {
-    q: 'Was kostet ein Prototyp typischerweise?',
-    a: 'Ab €20 für kleine FDM-Modelle, typische Design-Prototypen zwischen €40-300. Komplexe SLS-Muster €150-800. Sofort-Preis im Kostenrechner mit STL-Upload.',
+    q: 'Kann man ein Modell nach Skizze oder Foto machen lassen?',
+    a: 'Ja. Aus einer Skizze, einem Foto oder einer Idee modellieren wir ein druckfertiges 3D-Modell. Eine fertige CAD-Datei ist nicht nötig. So entsteht Ihr Designprototyp oder Anschauungsmodell, ab 1 Stück.',
   },
   {
-    q: 'Können iterative Design-Anpassungen schnell umgesetzt werden?',
-    a: 'Ja, das ist unser Stärkenfeld: Design-Update am Tag, Druck am nächsten Tag. Drei Iterationen in einer Woche sind Standard.',
+    q: 'Wie schnell bekomme ich meinen Designprototyp?',
+    a: 'Bei gängigen Materialien und Größen liefern wir in 24 bis 48 Stunden im Express. Das kostenlose Festpreis-Angebot kommt innerhalb von 6 Stunden. Drei Iterationen in einer Woche sind machbar.',
   },
   {
-    q: 'Liefert ihr DACH-weit für Prototypen-Aufträge?',
-    a: 'Ja. Österreich 24-48h Express, Deutschland 2-4 Tage, Schweiz 3-5 Tage mit Zoll-Abwicklung. DHL Express oder Post je nach Eilbedarf.',
+    q: 'Liefert ihr österreichweit und in die DACH-Region?',
+    a: 'Ja. Österreich in 24 bis 48 Stunden im Express, Deutschland 2 bis 4 Tage, Schweiz 3 bis 5 Tage. Auf Wunsch persönliche Zustellung in Oberösterreich.',
   },
 ])
 

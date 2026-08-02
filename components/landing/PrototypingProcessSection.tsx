@@ -2,8 +2,8 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 const effects = [
   { num: "01", title: "Der Bemusterungs-Effekt", text: "Ein 3D-Rendering überzeugt am Bildschirm. Ein physisches Modell überzeugt in der Hand. Wer Investoren, Vorstand oder Kunden mit greifbaren Prototypen abholt, gewinnt die Entscheidung schneller – weil das Produkt schon halb existiert.", stat: "5 Min.", statLabel: "Ø Entscheidungszeit beim Bemustern" },
-  { num: "02", title: "Der Iterations-Effekt", text: "Wer drei Designvarianten parallel druckt und alle drei testet, kommt schneller zum optimalen Modell als wer eine einzige Hypothese verteidigt. Die Frage verschiebt sich von 'wird es funktionieren?' zu 'welche Variante funktioniert am besten?'.", stat: "3×", statLabel: "schnellere Designkonvergenz" },
-  { num: "03", title: "Der Validierungs-Effekt", text: "Formen und Proportionen, die im CAD überzeugen, wirken im echten Modell oft anders als erwartet. Ein gedruckter geometrischer Prototyp zeigt in 5 Minuten, was die Simulation in 5 Wochen nicht zeigt.", stat: "−80%", statLabel: "Werkzeug-Korrekturen im ersten Schuss" },
+  { num: "02", title: "Der Iterations-Effekt", text: "Wer drei Designvarianten parallel druckt und alle drei vergleicht, kommt schneller zum optimalen Modell als wer eine einzige Hypothese verteidigt. Die Frage verschiebt sich von 'trifft das Design?' zu 'welche Variante überzeugt am meisten?'.", stat: "3×", statLabel: "schnellere Designkonvergenz" },
+  { num: "03", title: "Der Validierungs-Effekt", text: "Formen und Proportionen, die im CAD überzeugen, wirken im echten Modell oft anders als erwartet. Ein gedruckter geometrischer Prototyp zeigt in 5 Minuten, was die Simulation in 5 Wochen nicht zeigt.", stat: "−80%", statLabel: "weniger Nacharbeit nach der Freigabe" },
 ];
 
 const PrototypingProcessSection = () => (
@@ -12,7 +12,7 @@ const PrototypingProcessSection = () => (
       <div className="max-w-7xl mx-auto">
         <AnimatedSection animation="fade-in" className="mb-12">
           <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Was Rapid Prototyping verändert</p>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-[-0.03em] mb-3">Von "wir testen mal eine Idee"<br/>zu "wir wissen, was funktioniert."</h2>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-[-0.03em] mb-3">Von "wir testen mal eine Idee"<br/>zu "wir wissen, was überzeugt."</h2>
           <p className="text-muted-foreground max-w-lg">Drei Effekte, die nur physische Prototypen auslösen – kein Rendering, keine Simulation.</p>
         </AnimatedSection>
 

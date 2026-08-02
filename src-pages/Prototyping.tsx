@@ -27,11 +27,11 @@ import {
 } from "lucide-react";
 
 const branchenUseCases = [
-  { icon: Factory, branche: "Maschinenbau & Produktentwicklung", titel: "Design-Prototypen für die Produktentwicklung", text: "Vor dem Werkzeugbau das Modell in der Hand halten: Form, Proportionen und Details am echten Objekt beurteilen statt nur am Bildschirm. Wir drucken Design-Prototypen aus Carbon-PA und ASA, robust in der Handhabung und fertig zum Vorzeigen, nicht nur für die Schreibtisch-Ansicht.", beispiel: "Design-Prototyp aus Carbon-PA für einen Sondermaschinenbauer, 5 Iterationen in 2 Wochen" },
+  { icon: Factory, branche: "Produktentwicklung & Industriedesign", titel: "Designprototypen für die Produktentwicklung", text: "Vor der Freigabe das Modell in der Hand halten: Form, Proportionen und Details am echten Objekt beurteilen statt nur am Bildschirm. Wir drucken Designprototypen aus Carbon-PA und ASA, formstabil und fertig fürs Design-Review, nicht nur für die Schreibtisch-Ansicht.", beispiel: "Designprototyp aus Carbon-PA für einen Industriedesigner, 5 Iterationen in 2 Wochen" },
   { icon: Lightbulb, branche: "Produktentwicklung & Konsumgüter", titel: "Designmuster für Marktforschung & Investoren", text: "Vom 3D-Rendering zum greifbaren Objekt: Designprototypen für Fokusgruppen, Investorenpitches und Crowdfunding-Vorbereitung. Lackierbare Oberflächen, Materialnachbildungen, fertig zum Vorzeigen. Aus PLA+ oder SLA-Resin – je nach Detailanforderung.", beispiel: "Smart-Home-Gerät: 12 Farbvarianten für A/B-Tests bei Endkunden" },
-  { icon: Cpu, branche: "Elektronik & Gehäusebau", titel: "Custom-Gehäuse und Adapter ab Stückzahl 1", text: "Sonderlösungen für Maker, Hardware-Startups und Elektronik-Entwickler: individuelle Gehäuse für Sensorik, Adapterplatten, Steckergehäuse. Iteration in Tagen statt Wochen. PETG für robusten Innenraum-Einsatz, ASA für Outdoor-Anwendungen.", beispiel: "IoT-Sensor-Gehäuse: 3 Iterationen, fertiges Design in 9 Tagen" },
-  { icon: FlaskConical, branche: "Medizintechnik & Forschung", titel: "Anschauungsmodelle und Labor-Tools", text: "Demonstrationsmodelle für Vertrieb und Training, ergonomische Studien, Halterungen für Laboraufbauten. Bei Bedarf biokompatible SLA-Resine über Partner. NDA-fähige Projektabwicklung, diskrete Bearbeitung vertraulicher Entwicklungsprojekte.", beispiel: "Trainingsmodell für Chirurgen: anatomisch korrektes 1:1-Modell mit aufklappbarer Struktur" },
-  { icon: Wrench, branche: "Automotive & Aftermarket", titel: "Sonderteile, Adapter und Vorrichtungen", text: "Halterungen für Werkstattvorrichtungen, Adapter für Diagnose-Equipment, kleine Sonderteile für Restauration. Mehrfachfertigung bis 50 Stück. ABS für hitzebeständige Anwendungen im Motorraum.", beispiel: "Lüftungsadapter für Oldtimer-Restauration – Einzelstück nach historischer Zeichnung" },
+  { icon: Cpu, branche: "Elektronik & Geräte-Design", titel: "Anschauungsmodelle des Geräts ab Stück 1", text: "Wie sieht das Gerät fertig aus? Anschauungsmodelle für Maker, Hardware-Startups und Elektronik-Entwickler: Erscheinungsbild, Formsprache und Bedienung am greifbaren Modell zeigen. Iteration in Tagen statt Wochen. PETG für saubere Innenraum-Optik, ASA für den Outdoor-Look.", beispiel: "IoT-Gerät: 3 Design-Iterationen, fertiges Anschauungsmodell in 9 Tagen" },
+  { icon: FlaskConical, branche: "Medizintechnik & Forschung", titel: "Vertriebs- und Demonstrationsmodelle", text: "Schaumodelle für Vertrieb, Messe und Training, anatomische Anschauungsmodelle, ergonomische Studien. Bei Bedarf feine SLA-Resine über Partner. NDA-fähige Projektabwicklung, diskrete Bearbeitung vertraulicher Entwicklungsprojekte.", beispiel: "Trainingsmodell für Chirurgen: anatomisch korrektes 1:1-Modell mit aufklappbarer Struktur" },
+  { icon: Layers, branche: "Möbel, Interior & Konsumgüter", titel: "Design-Anschauungsmodelle für Interior & Produkt", text: "Vom Entwurf zum greifbaren Designmodell: Möbeldetails, Interior-Objekte und Konsumgüter als Anschauungsmodell. Form, Proportionen und Oberfläche am echten Objekt zeigen, in mehreren Varianten parallel. Mehrfachfertigung bis 50 Stück für Muster-Sets.", beispiel: "Griff-Design für eine Möbellinie: 6 Formvarianten für die Kundenpräsentation" },
   { icon: Briefcase, branche: "Industriedesign & Agenturen", titel: "Studienmodelle und Mock-ups in 48h", text: "Wenn Deadlines drücken: 3D-Modelle aus dem CAD direkt in die Kundenbesprechung. Studienmodelle für ergonomische Tests, Mock-ups für Pitch-Termine, Designstudien in mehreren Varianten parallel.", beispiel: "Handgerät-Design: 4 ergonomische Varianten für eine Kundenpräsentation in 72h" },
 ];
 
@@ -41,8 +41,8 @@ const verfahren = [
     typ: "In-House",
     typColor: "bg-primary/10 text-primary",
     untertitel: "Fused Deposition Modeling",
-    text: "Das wirtschaftlichste Verfahren für Design-Prototypen, robuste Anschauungsmodelle und Mehrfachfertigung. Direkt in unserer Werkstatt in Gunskirchen, schnellste Reaktionszeit, Express in 24h möglich.",
-    ideal: "Design-Prototypen · Anschauungsmuster · Halterungen · Mehrfachfertigung",
+    text: "Das wirtschaftlichste Verfahren für Designprototypen, robuste Anschauungsmodelle und Mehrfachfertigung. Direkt in unserer Werkstatt in Gunskirchen, schnellste Reaktionszeit, Express in 24h möglich.",
+    ideal: "Designprototypen · Anschauungsmuster · Formmodelle · Mehrfachfertigung",
     features: [
       { label: "Bauraum", value: "bis 350 × 350 × 350 mm" },
       { label: "Schichtstärke", value: "0,1 – 0,3 mm" },
@@ -58,8 +58,8 @@ const verfahren = [
     typ: "Partner",
     typColor: "bg-secondary/10 text-secondary",
     untertitel: "Stereolithographie · Resin",
-    text: "Höchste Detailauflösung für Designprototypen und Modelle mit anspruchsvollen Oberflächen. Glatt, sauber aufgelöst, fast wie spritzgegossen. Über eingespielte Partner-Druckereien, eine Rechnung, ein Ansprechpartner.",
-    ideal: "Designmuster · Sichtteile · Schmuck · Medizinmodelle",
+    text: "Höchste Detailauflösung für Designprototypen und Modelle mit anspruchsvollen Oberflächen. Glatt, sauber aufgelöst, besonders feine Optik. Über eingespielte Partner-Druckereien, eine Rechnung, ein Ansprechpartner.",
+    ideal: "Designmuster · Sichtmodelle · Schmuck · Demonstrationsmodelle",
     features: [
       { label: "Schichtstärke", value: "0,025 – 0,1 mm" },
       { label: "Detailtreue", value: "sehr fein" },
@@ -89,60 +89,64 @@ const verfahren = [
 
 const prototypTypen = [
   { num: "01", title: "Designprototyp", text: "Form, Ergonomie und Erscheinungsbild prüfen. Oberfläche lackierbar, fertig zur Bemusterung in Fokusgruppen.", material: "PLA+ · SLA-Resin", lieferzeit: "2–5 Tage", preis: "ab €20" },
-  { num: "02", title: "Geometrischer Prototyp", text: "Formtreue Fertigung zur Beurteilung von Proportionen und Aufbau. Erste Aussagen zu Erscheinungsbild und Materialwahl.", material: "PETG · ABS · PA12", lieferzeit: "3–7 Tage", preis: "ab €35" },
+  { num: "02", title: "Formmodell", text: "Formtreue Fertigung zur Beurteilung von Proportionen und Aufbau. Erste Aussagen zu Erscheinungsbild und Materialwahl.", material: "PETG · ABS · PA12", lieferzeit: "3–7 Tage", preis: "ab €35" },
   { num: "03", title: "Anschauungsmodell", text: "Detailreiches Modell aus robusten Materialien. Optik, Haptik und Handhabung am echten Objekt beurteilen.", material: "Carbon-PA · ASA · PA12", lieferzeit: "5–10 Tage", preis: "ab €60" },
-  { num: "04", title: "Technischer Prototyp", text: "Letzter Abstimmungsschritt vor der Produktion. Entspricht weitgehend dem Endprodukt in Material und Erscheinungsbild.", material: "SLS PA12 glasgefüllt", lieferzeit: "7–14 Tage", preis: "ab €120" },
+  { num: "04", title: "Feinmodell", text: "Feinste Oberfläche für die finale Optik-Abstimmung vor der Freigabe. Ausführungsmuster, das Farbe, Glanz und Detailtreue am echten Objekt zeigt.", material: "SLA-Resin · SLS PA12", lieferzeit: "7–14 Tage", preis: "ab €120" },
   { num: "05", title: "Mehrfachfertigung", text: "Bis zu 200 Stück additiv gefertigt. Reproduzierbarkeit prüfen, Markttests, kleine Auflagen ohne Werkzeug.", material: "FDM PETG/ASA · SLS PA12", lieferzeit: "2–4 Wochen", preis: "Mengenrabatt ab 5 Stk." },
 ];
 
 const materialGuide = [
-  { material: "PETG", temp: "75°C", zugfest: "50 MPa", schlag: "8 kJ/m²", empfehlung: "Standard-Design-Prototyp", einsatz: "Modelle, Halterungen, Gehäuse", preis: "€€", farben: "15+", color: "text-primary", bg: "bg-primary/10", best: true },
-  { material: "Carbon-PA", temp: "120°C", zugfest: "85 MPa", schlag: "12 kJ/m²", empfehlung: "Robuste, formstabile Modelle", einsatz: "Formstabile Objekte, hohe Haltbarkeit", preis: "€€€", farben: "Schwarz", color: "text-foreground", bg: "bg-foreground/10" },
-  { material: "ASA", temp: "95°C", zugfest: "45 MPa", schlag: "10 kJ/m²", empfehlung: "Outdoor & UV-Exposition", einsatz: "Außenanwendungen, Spotlights", preis: "€€€", farben: "10+", color: "text-amber-500", bg: "bg-amber-500/10" },
+  { material: "PETG", oberflaeche: "seidenmatt", detail: "hoch", lack: "gut", empfehlung: "Standard-Design-Prototyp", einsatz: "Modelle, Anschauungsmuster, Gehäuse-Optik", preis: "€€", farben: "15+", color: "text-primary", bg: "bg-primary/10", best: true },
+  { material: "Carbon-PA", oberflaeche: "matt, edel", detail: "sehr hoch", lack: "sehr gut", empfehlung: "Formstabile Design-Modelle", einsatz: "Formstabile Objekte, edle Haptik", preis: "€€€", farben: "Schwarz", color: "text-foreground", bg: "bg-foreground/10" },
+  { material: "ASA", oberflaeche: "matt", detail: "hoch", lack: "sehr gut", empfehlung: "Outdoor & UV-Exposition", einsatz: "Außenanwendungen, Spotlights", preis: "€€€", farben: "10+", color: "text-amber-500", bg: "bg-amber-500/10" },
 ];
 
 const techSpecs = [
   { label: "Kleinste Detailgröße", fdm: "0,4 mm", sla: "0,025 mm", sls: "0,3 mm" },
   { label: "Wandstärke (min.)", fdm: "0,8 mm", sla: "0,4 mm", sls: "0,7 mm" },
-  { label: "Bohrungen (min. Ø)", fdm: "2,0 mm", sla: "0,5 mm", sls: "1,5 mm" },
-  { label: "Schraubgewinde", fdm: "ab M3", sla: "ab M2", sls: "ab M2" },
-  { label: "Lebensmittelecht", fdm: "PETG-Kontakt", sla: "Bio-Resin", sls: "nicht standard" },
-  { label: "Outdoor-tauglich", fdm: "ASA, ABS", sla: "Tough-Resin", sls: "PA12 ja" },
+  { label: "Oberflächengüte", fdm: "sehr gut", sla: "exzellent", sls: "gleichmäßig" },
+  { label: "Lackierbarkeit", fdm: "ja", sla: "ja", sls: "ja (grundieren)" },
+  { label: "Farboptionen", fdm: "15+ Farben", sla: "einfärbbar", sls: "Färben / Schwarz" },
+  { label: "Outdoor / UV", fdm: "ASA / ABS", sla: "Tough-Resin", sls: "PA12 ja" },
 ];
 
 const faqs = [
+  { question: "Wer druckt Designprototypen oder Anschauungsmodelle fürs Produktdesign in Österreich?", answer: "ekdruck aus Gunskirchen (Oberösterreich) druckt Designprototypen und Anschauungsmodelle fürs Produktdesign, mit Fokus auf Form, Optik, Haptik und Ergonomie. Modelle zum Anfassen und Zeigen, ab 1 Stück, Angebot in 6 Stunden, Express in 24 Stunden, österreichweit. 5,0 Sterne auf Google." },
+  { question: "Was ist ein Designprototyp?", answer: "Ein Designprototyp ist ein greifbares Modell eines Produkts, das Form, Optik, Haptik, Proportionen und Ergonomie zeigt, bevor das Produkt final ist. Sie beurteilen das Design am echten Objekt statt nur am Bildschirm, holen Feedback im Design-Review ein und iterieren schnell. Es geht um das Erscheinungsbild und die Handhabung, nicht um technische Tests." },
+  { question: "Was ist der Unterschied zwischen Designprototyp und Anschauungsmodell?", answer: "Ein Designprototyp begleitet die Entwicklung: Sie prüfen und verändern Form und Optik über mehrere Iterationen. Ein Anschauungsmodell ist das fertig ausgearbeitete Modell zum Zeigen, für Pitch, Investoren, Messe oder Kundengespräch, mit sauberer Oberfläche und finaler Optik. Beides drucken wir aus dem gleichen Workflow, ab 1 Stück." },
+  { question: "Kann man ein Modell nach Skizze oder Foto machen lassen?", answer: "Ja. Kein 3D-Modell vorhanden? Wir modellieren Ihr Objekt am Rechner nach Skizze, Foto oder Zeichnung und drucken es anschließend als Designprototyp oder Anschauungsmodell. Modellieren ab €120, danach greift der normale Druckpreis ab €20. Auf Wunsch stimmen wir Form und Details vor dem Druck mit Ihnen ab." },
   { question: "Was kostet ein 3D-gedruckter Prototyp?", answer: "Einfache Designprototypen starten ab €20, robuste Modelle aus Carbon-PA oder SLS PA12 ab €60–120. Sie erhalten innerhalb von 6 Stunden ein verbindliches Festpreisangebot – kostenlos und unverbindlich, mit Materialempfehlung und Lieferdatum. Ab dem 5. Auftrag pro Quartal erhalten Stammkunden automatisch 10% Rabatt." },
   { question: "Wie schnell ist mein Prototyp lieferbar?", answer: "FDM-Prototypen in 1–5 Werktagen, Express-Fertigung in 24h möglich (+50% Aufpreis). SLA über Partner in 5–7 Werktagen, SLS in 7–10 Werktagen. Bei dringenden Projekten rufen Sie an: +43 676 5517197 – wir reservieren einen Express-Slot direkt am Telefon." },
-  { question: "Wie fein und detailtreu wird mein Modell?", answer: "FDM löst feine Details sauber auf und eignet sich für die meisten Design-Prototypen und Anschauungsmodelle. SLA ist das feinste Verfahren mit besonders glatten Oberflächen, ideal für Sichtteile und Schmuck-Prototypen. SLS liegt dazwischen und punktet mit gleichmäßiger Oberfläche ohne Stützstrukturen. Bei besonders wichtigen Details prüfen wir jedes Modell vor dem Versand und dokumentieren die Ausführung auf Wunsch." },
+  { question: "Wie fein und detailtreu wird mein Modell?", answer: "FDM löst feine Details sauber auf und eignet sich für die meisten Design-Prototypen und Anschauungsmodelle. SLA ist das feinste Verfahren mit besonders glatten Oberflächen, ideal für Sichtmodelle und Schmuck-Prototypen. SLS liegt dazwischen und punktet mit gleichmäßiger Oberfläche ohne Stützstrukturen. Bei besonders wichtigen Details prüfen wir jedes Modell vor dem Versand und dokumentieren die Ausführung auf Wunsch." },
   { question: "Welche 3D-Druck Verfahren bietet ihr an?", answer: "FDM (Fused Deposition Modeling) führen wir direkt in unserer Werkstatt in Gunskirchen aus – schnellste Reaktionszeit, Express in 24h möglich. SLA (Stereolithographie für hochauflösende Resin-Drucke) und SLS (Selective Laser Sintering für lasersinternde Pulver-Drucke) bieten wir über eingespielte Partner-Druckereien an. Die gesamte Abwicklung läuft über uns – ein Ansprechpartner, eine Rechnung, eine NDA." },
   { question: "Welche Materialien sind verfügbar?", answer: "Im FDM-Verfahren: PLA, PLA+, PETG, PETG transparent, ABS, ASA, TPU flexibel, Carbon-PA. Im SLA-Verfahren über Partner: Standard-Resin, ABS-like Resin, Tough Resin, Flexible Resin, biokompatible Resine. Im SLS-Verfahren über Partner: PA12, PA11, glasgefülltes PA, TPU-Pulver. Auf Wunsch auch metallisch beschichtete Oberflächen." },
   { question: "Gibt es eine Mindestbestellmenge?", answer: "Nein. Einzelstücke ohne Aufpreis, transparente Kalkulation ab Stückzahl 1. Mengenrabatte ab 5 Stück, attraktive Konditionen für Mehrfachfertigung ab 20 Stück. Ab 5 Aufträgen pro Quartal werden Sie automatisch Stammkunde mit 10% Rabatt." },
-  { question: "Welche Dateiformate werden akzeptiert?", answer: "STL, STEP, IGES, 3MF, OBJ und alle gängigen CAD-Formate aus SolidWorks, Fusion 360, Inventor, Rhino, CATIA, NX, Creo oder OnShape. Kein 3D-Modell vorhanden? Wir erstellen Ihr CAD nach Skizze, Foto oder technischer Zeichnung – Reverse Engineering ab €120." },
+  { question: "Welche Dateiformate werden akzeptiert?", answer: "STL, STEP, IGES, 3MF, OBJ und alle gängigen CAD-Formate aus SolidWorks, Fusion 360, Inventor, Rhino, CATIA, NX, Creo oder OnShape. Kein 3D-Modell vorhanden? Wir modellieren Ihr Objekt nach Skizze, Foto oder Zeichnung – ab €120." },
   { question: "Wie ist die Vertraulichkeit bei Entwicklungsprojekten geregelt?", answer: "Auf Wunsch unterzeichnen wir eine NDA, bevor Daten ausgetauscht werden. Direkte Kommunikation mit dem Inhaber ohne Zwischeninstanzen. Keine Weitergabe an Subunternehmer ohne Ihre ausdrückliche Zustimmung. Datenarchivierung nach Projektabschluss optional – auf Wunsch löschen wir CAD-Daten sofort nach Lieferung." },
-  { question: "FDM, SLA oder SLS – welches Verfahren ist richtig?", answer: "FDM für robuste Modelle, Halterungen und Design-Prototypen, das wirtschaftlichste Verfahren mit der größten Materialvielfalt. SLA für höchste Detailauflösung, glatte Oberflächen, Designmuster und Sichtteile. SLS für Mehrfachfertigung, Anschauungsmodelle und Objekte mit gleichmäßigen Materialeigenschaften ohne Stützstrukturen." },
-  { question: "Wie groß kann ein Prototyp maximal sein?", answer: "FDM-Einzelstücke bis 350 × 350 × 350 mm in einem Stück. Größere Modelle durch segmentierten Druck mit unsichtbaren Verbindungsstellen ohne Größenbegrenzung. SLS-Bauraum bei Partnern bis 700 × 380 × 380 mm." },
-  { question: "Bietet ihr persönliche Zustellung an?", answer: "Ja. Innerhalb Oberösterreichs (Linz, Wels, Vöcklabruck, Steyr und Umgebung) liefern wir auf Wunsch persönlich gegen Aufwandsentschädigung ab €40. Wien und Salzburg gegen entsprechenden Aufpreis möglich. Sinnvoll bei sehr empfindlichen Modellen, dringenden Wettbewerbsabgaben oder wenn eine kurze technische Einweisung gewünscht ist. Preis vor Abholung verbindlich kalkuliert." },
-  { question: "Bietet ihr Druckoptimierung an?", answer: "Ja. Wir prüfen Ihre Modelle vor dem Druck auf Wandstärken, Stützstrukturen, Auflagepunkte und Anisotropie-Richtung. Bei Optimierungspotenzial melden wir uns mit konkreten Vorschlägen, bevor irgendetwas gedruckt wird. Für komplexere DfAM-Beratung (Design for Additive Manufacturing) ab €80/Stunde." },
+  { question: "FDM, SLA oder SLS – welches Verfahren ist richtig?", answer: "FDM für robuste Modelle, Anschauungsmodelle und Design-Prototypen, das wirtschaftlichste Verfahren mit der größten Materialvielfalt. SLA für höchste Detailauflösung, glatte Oberflächen, Designmuster und Sichtmodelle. SLS für Mehrfachfertigung, Anschauungsmodelle und Objekte mit gleichmäßigen Materialeigenschaften ohne Stützstrukturen." },
+  { question: "Wie groß kann ein Prototyp maximal sein?", answer: "FDM-Einzelstücke bis 350 × 350 × 350 mm in einem Stück. Größere Modelle durch segmentierten Druck mit unsichtbaren Nahtstellen ohne Größenbegrenzung. SLS-Bauraum bei Partnern bis 700 × 380 × 380 mm." },
+  { question: "Bietet ihr persönliche Zustellung an?", answer: "Ja. Innerhalb Oberösterreichs (Linz, Wels, Vöcklabruck, Steyr und Umgebung) liefern wir auf Wunsch persönlich gegen Aufwandsentschädigung ab €40. Wien und Salzburg gegen entsprechenden Aufpreis möglich. Sinnvoll bei sehr empfindlichen Modellen, dringenden Wettbewerbsabgaben oder wenn eine kurze Einweisung gewünscht ist. Preis vor Abholung verbindlich kalkuliert." },
+  { question: "Bietet ihr Druckoptimierung an?", answer: "Ja. Wir prüfen Ihre Modelle vor dem Druck auf Wandstärken, Stützstrukturen, Auflagepunkte und Oberfläche. Bei Optimierungspotenzial melden wir uns mit konkreten Vorschlägen, bevor irgendetwas gedruckt wird. Für ausführliche Design-Optimierung ab €80/Stunde." },
   { question: "Gibt es Rabatte für Stammkunden?", answer: "Ja, automatisch: Ab 5 Aufträgen pro Quartal 10% Rabatt, ab 10 Aufträgen 15%, ab 20 Aufträgen 20% plus direkten Inhaber-Kontakt. Keine Mitgliedschaft, keine Karte – wir erkennen Sie über Ihre Auftraggeber-Daten und rechnen automatisch an. Zusätzlich gibt es das Hardware-Sprint-Paket (10 Iterationen in 3 Monaten zum Festpreis €1.490) und Express-Slot-Vorverträge." },
-  { question: "Bietet ihr Nachbearbeitung an?", answer: "Standard: Stützstrukturen entfernen, Druckkante glätten, feine Details sauber ausarbeiten. Auf Wunsch: Schleifen, Spachteln, Lackieren nach RAL/Pantone/HEX, Heat-Treatment für mehr Formstabilität, Gewinde-Einsätze (M3–M10), Glätten der Oberfläche durch Acetondampf bei ABS. Preise auf Anfrage." },
-  { question: "Welche Branchen betreut ihr typischerweise?", answer: "Maschinenbau und Anlagenbau, Produktentwicklung und Konsumgüter, Elektronik und Hardware-Startups, Medizintechnik und Laborausstattung, Automotive und Aftermarket, Industriedesign und Designagenturen. Auftraggeber aus ganz Österreich, Deutschland und der Schweiz – vom Ein-Personen-Maker bis zum mittelständischen Industriebetrieb." },
+  { question: "Bietet ihr Nachbearbeitung an?", answer: "Standard: Stützstrukturen entfernen, Druckkante glätten, feine Details sauber ausarbeiten. Auf Wunsch: Schleifen, Spachteln, Lackieren nach RAL/Pantone/HEX, Glätten der Oberfläche durch Acetondampf bei ABS für eine Hochglanz-Optik. Preise auf Anfrage." },
+  { question: "Welche Branchen betreut ihr typischerweise?", answer: "Produktentwicklung und Konsumgüter, Elektronik und Hardware-Startups, Medizintechnik und Forschung, Möbel und Interior, Industriedesign und Designagenturen. Auftraggeber aus ganz Österreich, Deutschland und der Schweiz – vom Ein-Personen-Maker bis zum mittelständischen Industriebetrieb." },
 ];
 
 const Prototyping = () => (
   <>
     <SEOHead
-      title="Rapid Prototyping Österreich – 3D-Druck Prototypen ab €20 | ekdruck"
-      description="Design-Prototypen, Designmuster & Mehrfachfertigung aus dem 3D-Druck. FDM in-house, SLA/SLS über Partner. Express 24h · feine Details · ab €20 · ★5,0 (31 Bewertungen)"
-      keywords="rapid prototyping, prototyp drucken lassen, 3d druck prototyp, designprototyp, anschauungsmuster, mehrfachfertigung 3d druck, kleine auflage 3d druck, fdm prototyp, sla prototyp, sls prototyp, prototypenbau, prototyping österreich, prototyp express, konzeptmodell, designmuster, technischer prototyp, additive fertigung prototyp, rapid manufacturing, prototyp gunskirchen, prototyp linz, prototyp wien, prototyp wels, carbon pa prototyp, pa12 sls, dfam beratung, reverse engineering, cad service österreich, prototyp detailtreue, prototyp ohne mindestmenge, prototyp 24 stunden, nda 3d druck, prototyp hardware startup"
+      title="Designprototyp & Anschauungsmodell aus dem 3D-Druck | Österreich | ekdruck"
+      description="Designprototypen und Anschauungsmodelle fürs Produktdesign aus dem 3D-Druck. Form, Optik, Haptik. FDM in-house, SLA/SLS über Partner. Express 24h · ab 1 Stück · ★5,0 (31 Bewertungen)"
+      keywords="designprototyp, anschauungsmodell produktdesign, designmodell, konzeptmodell, anschauungsmodell, designmuster, modell nach foto, modell nach skizze, formmodell, feinmodell, produktdesign modell, prototyp drucken lassen, 3d druck modell, designprototyp österreich, anschauungsmodell österreich, designmodell wien, designprototyp linz, prototyp gunskirchen, mehrfachfertigung 3d druck, fdm modell, sla modell, sls modell, design-review modell, ergonomie modell, investoren modell, messemodell design, prototyp ohne mindestmenge, prototyp 24 stunden, nda 3d druck, hardware startup modell"
       path="/prototyping"
     />
     <ProductOfferSchema
-      name="Rapid Prototyping & 3D-Druck Prototypen"
-      description="3D-gedruckte Design-Prototypen, Designmuster und Mehrfachfertigung. FDM in-house, SLA/SLS über Partner. Angebot in 6h, Express in 24h. Mit feinen Details und sauberer Oberfläche."
+      name="Designprototyp & Anschauungsmodell aus dem 3D-Druck"
+      description="3D-gedruckte Designprototypen, Anschauungsmodelle und Mehrfachfertigung fürs Produktdesign. FDM in-house, SLA/SLS über Partner. Angebot in 6h, Express in 24h. Form, Optik und Haptik am echten Objekt."
       url="https://www.ek-druck.at/prototyping"
       lowPrice="20"
       highPrice="2500"
-      category="Rapid Prototyping"
+      category="Designprototyp"
     />
     <Navigation />
     <main className="min-h-screen bg-background pt-28 md:pt-32">
@@ -160,19 +164,19 @@ const Prototyping = () => (
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
 
-            {/* 2026-06-04: H1 wieder zusammengeführt für Exact-Match "Rapid Prototyping" +
-                USP-Pull "24h statt 6 Wochen" als Differenzierungs-Hook. */}
+            {/* 2026-08-02: H1 auf die Design-Nische umpositioniert (WKO + Modellbau-Strategie).
+                Speed bleibt als Sekundär-Hook, ohne funktional-industriellen Frame. */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-[-0.04em] mb-8">
-              <span className="block text-gradient">Rapid Prototyping.</span>
-              <span className="block text-3xl md:text-5xl lg:text-6xl mt-3 text-outline">24h statt 6 Wochen Spritzguss.</span>
+              <span className="block text-gradient">Designprototyp.</span>
+              <span className="block text-3xl md:text-5xl lg:text-6xl mt-3 text-outline">Vom Bildschirm in die Hand.</span>
             </h1>
 
             {/* Lead + CTA – 2-Spalter */}
             <div className="grid md:grid-cols-2 gap-12 items-end mb-24 md:mb-32">
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                Vom CAD-Modell zum fertigen Prototyp in <strong className="text-foreground">24 Stunden</strong>.
-                Design-Prototypen, Anschauungsmuster und Mehrfachfertigung für Produktentwickler,
-                Entwicklerteams und Industriedesigner. Mit <span className="mono font-bold text-primary">feinen Details</span> und sauberer Oberfläche.
+                Vom CAD-Modell zum Designprototyp in <strong className="text-foreground">24 Stunden</strong>.
+                Designprototypen, Anschauungsmodelle und Mehrfachfertigung für Produktentwickler,
+                Designagenturen und Industriedesigner. Form, Optik und Haptik <span className="mono font-bold text-primary">am echten Objekt</span> beurteilen.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-10 py-7 text-base font-semibold shadow-lg shadow-primary/20" asChild>
@@ -228,7 +232,7 @@ const Prototyping = () => (
         <div className="animate-marquee inline-flex whitespace-nowrap">
           {[...Array(2)].map((_, di) => (
             <span key={di} className="inline-flex whitespace-nowrap">
-              {["RAPID PROTOTYPING","ANSCHAUUNGSMUSTER","DESIGNPROTOTYP","MEHRFACHFERTIGUNG","KONZEPTMODELL","FDM IN-HOUSE","SLA","SLS","CARBON-PA","PA12-SLS","FEINE DETAILS","NDA-FÄHIG","REVERSE ENGINEERING","EXPRESS 24H","ZUSTELLUNG OÖ"].map((w, i) => (
+              {["DESIGNPROTOTYP","ANSCHAUUNGSMODELL","DESIGNMODELL","KONZEPTMODELL","MEHRFACHFERTIGUNG","FORM & OPTIK","FDM IN-HOUSE","SLA","SLS","CARBON-PA","PA12-SLS","FEINE DETAILS","NDA-FÄHIG","MODELL NACH FOTO","EXPRESS 24H","ZUSTELLUNG OÖ"].map((w, i) => (
                 <span key={`${di}-${i}`} className="inline-flex items-center gap-6 mx-6 whitespace-nowrap">
                   <span className="mono text-xs font-bold tracking-[0.2em] text-foreground/40 whitespace-nowrap">{w}</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
@@ -467,7 +471,7 @@ const Prototyping = () => (
                     <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0"><TrendingUp className="w-7 h-7 text-primary" /></div>
                     <div>
                       <p className="text-xl font-bold mb-2">Iteration in Tagen</p>
-                      <p className="text-muted-foreground leading-relaxed text-sm">Drei Designvarianten parallel drucken, in der Hand vergleichen, das beste Design auswählen. Was beim Werkzeugbau Monate kostet, ist hier Tage.</p>
+                      <p className="text-muted-foreground leading-relaxed text-sm">Drei Designvarianten parallel drucken, in der Hand vergleichen, das beste Design auswählen. Was sonst Wochen dauert, ist hier eine Sache von Tagen.</p>
                     </div>
                   </div>
                 </MagneticCard>
@@ -510,9 +514,9 @@ const Prototyping = () => (
                       <p className="mono text-[10px] text-muted-foreground uppercase tracking-wider mb-6">{m.empfehlung}</p>
                       <div className="grid grid-cols-2 gap-3 mb-4">
                         {[
-                          { v: m.temp, l: "Max. Temp." },
-                          { v: m.zugfest, l: "Zugfestigkeit" },
-                          { v: m.schlag, l: "Schlagzähigkeit" },
+                          { v: m.oberflaeche, l: "Oberfläche" },
+                          { v: m.detail, l: "Detailtreue" },
+                          { v: m.lack, l: "Lackierbarkeit" },
                           { v: m.preis, l: "Preislevel" },
                         ].map(d => (
                           <div key={d.l} className={`rounded-xl ${m.bg} p-3 text-center`}>
@@ -554,37 +558,37 @@ const Prototyping = () => (
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <AnimatedSection animation="fade-in">
-              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Rapid Prototyping im Detail</p>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-[-0.03em] mb-10">Warum 3D-Druck-Prototyping moderne Entwicklung beschleunigt</h2>
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Designprototyp im Detail</p>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-[-0.03em] mb-10">Warum ein Modell zum Anfassen jedes Design besser macht</h2>
 
               <div className="space-y-8 text-base leading-[1.85] text-foreground/85">
-                <p>Wer ein neues Produkt entwickelt, kennt die teuersten Fehler: Designs, die erst nach dem Werkzeugbau scheitern. Formen und Proportionen, die am Bildschirm überzeugen, in der Hand aber nicht wirken. Investorenpräsentationen mit Renderings, die der Realität nicht standhalten. <strong>Rapid Prototyping mit 3D-Druck</strong> löst genau diese Probleme.</p>
+                <p>Wer ein neues Produkt entwickelt, kennt die teuersten Fehler: Formen und Proportionen, die am Bildschirm überzeugen, in der Hand aber nicht wirken. Ein Design, das sich erst im Gespräch mit dem Kunden als zu klobig herausstellt. Investorenpräsentationen mit Renderings, die der Realität nicht standhalten. Ein <strong>Designprototyp aus dem 3D-Druck</strong> löst genau diese Probleme: Sie beurteilen Form, Optik und Haptik am echten Objekt.</p>
 
                 <p>Ob <strong>robustes Anschauungsmodell aus Carbon-PA</strong>, <strong>Designmuster aus SLA-Resin</strong> für die Investorenpräsentation, oder eine <strong>SLS-Mehrfachfertigung aus PA12</strong> für den Markttest, wir wählen Verfahren und Material sauber nach Anwendungsziel. <Link href="/ratgeber/prototyping-guide" className="text-primary font-semibold hover:underline">Im Prototyping-Guide</Link> finden Sie eine ausführliche Entscheidungshilfe für Produktentwickler.</p>
 
                 <div className="rounded-3xl bg-muted/50 border border-border/50 p-8 md:p-10 not-prose">
                   <h3 className="font-bold text-xl mb-4 text-foreground">Iteration in Tagen statt Wochen</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">Der entscheidende Vorteil additiver Fertigung: <strong className="text-foreground">parallele Iteration ohne Werkzeugkosten</strong>. Drei Designvarianten am gleichen Tag drucken, alle drei in der Hand vergleichen, die beste auswählen, und alles zu Kosten, die früher eine einzige Werkzeugkorrektur ausgemacht hätten. Produktentwickler nutzen diesen Geschwindigkeitsvorteil zunehmend strategisch: Statt eine Design-Hypothese ein halbes Jahr lang zu verteidigen, validieren sie sie in zwei Wochen. Das nennt sich <strong className="text-foreground">Design for Additive Manufacturing</strong> (DfAM), und ist das zentrale Mindset moderner Produktentwicklung.</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">Der entscheidende Vorteil: <strong className="text-foreground">mehrere Designvarianten parallel</strong>. Drei Formen am gleichen Tag drucken, alle drei in der Hand vergleichen, die beste auswählen, und das ohne Werkzeug. Produktentwickler nutzen diesen Geschwindigkeitsvorteil zunehmend strategisch: Statt eine Design-Idee ein halbes Jahr lang zu verteidigen, beurteilen sie sie am echten Objekt in zwei Wochen. Form, Proportionen und Ergonomie werden dort geprüft, wo sie wirklich zählen, in der Hand des Betrachters.</p>
                 </div>
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Detailtreue und Oberfläche</h3>
-                  <p>Die wichtigste Frage bei anspruchsvollen Modellen: wie fein und sauber wird die Oberfläche wirklich? <strong>FDM löst feine Details zuverlässig auf</strong> und ist die richtige Wahl für die meisten Design-Prototypen, Anschauungsmuster und robusten Modelle. <strong>SLA ist das feinste Verfahren</strong> mit besonders glatten, sauber aufgelösten Oberflächen, ideal für Sichtteile und Schmuck-Prototypen. SLS liegt dazwischen und punktet mit gleichmäßiger Oberfläche ohne Stützstrukturen. Bei besonders wichtigen Details prüfen wir jedes Modell vor dem Versand und dokumentieren die Ausführung auf Wunsch.</p>
+                  <p>Die wichtigste Frage bei anspruchsvollen Modellen: wie fein und sauber wird die Oberfläche wirklich? <strong>FDM löst feine Details zuverlässig auf</strong> und ist die richtige Wahl für die meisten Design-Prototypen, Anschauungsmuster und robusten Modelle. <strong>SLA ist das feinste Verfahren</strong> mit besonders glatten, sauber aufgelösten Oberflächen, ideal für Sichtmodelle und Schmuck-Prototypen. SLS liegt dazwischen und punktet mit gleichmäßiger Oberfläche ohne Stützstrukturen. Bei besonders wichtigen Details prüfen wir jedes Modell vor dem Versand und dokumentieren die Ausführung auf Wunsch.</p>
                 </div>
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Unser Leistungsspektrum</h3>
-                  <p>Wir fertigen: <strong>Designprototypen</strong> für Bemusterung und Marktforschung, <strong>geometrische Prototypen</strong> für die Beurteilung von Form und Proportionen, <strong>Anschauungsmodelle</strong> für Optik und Handhabung, <strong>technische Prototypen</strong> als finalen Abstimmungsschritt vor der Produktion sowie <strong>Mehrfachfertigung</strong> bis 200 Stück ohne Werkzeuginvestition. Ergänzend bieten wir <Link href="/messemodelle" className="text-primary font-semibold hover:underline">Messemodelle</Link> und <Link href="/architekturmodelle" className="text-primary font-semibold hover:underline">Architekturmodelle</Link> aus dem gleichen Workflow.</p>
+                  <p>Wir fertigen: <strong>Designprototypen</strong> für Bemusterung und Marktforschung, <strong>Formmodelle</strong> für die Beurteilung von Form und Proportionen, <strong>Anschauungsmodelle</strong> für Optik und Handhabung, <strong>Feinmodelle</strong> für die finale Optik-Abstimmung vor der Freigabe sowie <strong>Mehrfachfertigung</strong> bis 200 Stück ohne Werkzeuginvestition. Ergänzend bieten wir <Link href="/messemodelle" className="text-primary font-semibold hover:underline">Messemodelle</Link> und <Link href="/architekturmodelle" className="text-primary font-semibold hover:underline">Architekturmodelle</Link> aus dem gleichen Workflow.</p>
                 </div>
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Datenaufbereitung, CAD und Datenhandling</h3>
-                  <p>Wir verarbeiten <strong>STL, STEP, IGES, 3MF, OBJ</strong> sowie native CAD-Daten aus SolidWorks, Fusion 360, Inventor, Rhino, CATIA, NX, Creo und OnShape. Vor dem Druck prüfen wir Ihre Modelle auf Druckbarkeit, Wandstärken, Stützstrukturen und Anisotropie-Richtung. Bei Optimierungspotenzial melden wir uns mit konkreten Vorschlägen, bevor irgendetwas gedruckt wird. Kein 3D-Modell vorhanden? Wir <strong>erstellen Ihr CAD nach Skizze, Foto oder technischer Zeichnung</strong> (Reverse Engineering ab €120). Für komplexere DfAM-Beratung, etwa Topologieoptimierung oder Stützstruktur-vermeidende Geometrie, bieten wir Druckoptimierung ab €80/Stunde.</p>
+                  <p>Wir verarbeiten <strong>STL, STEP, IGES, 3MF, OBJ</strong> sowie native CAD-Daten aus SolidWorks, Fusion 360, Inventor, Rhino, CATIA, NX, Creo und OnShape. Vor dem Druck prüfen wir Ihre Modelle auf Druckbarkeit, Wandstärken, Stützstrukturen und Oberfläche. Bei Optimierungspotenzial melden wir uns mit konkreten Vorschlägen, bevor irgendetwas gedruckt wird. Kein 3D-Modell vorhanden? Wir <strong>modellieren Ihr Objekt nach Skizze, Foto oder Zeichnung</strong> (ab €120). Für ausführliche Design-Optimierung, etwa ruhigere Formübergänge oder eine schönere Oberfläche, bieten wir Druckoptimierung ab €80/Stunde.</p>
                 </div>
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Express-Fertigung und persönliche Zustellung</h3>
-                  <p>Wenn die Deadline drückt: <strong>Express-Fertigung in 24 Stunden</strong> möglich. Über-Nacht-Druck, Nachbearbeitung am Morgen, Versand oder persönliche Zustellung am gleichen Tag. Aufpreis +50%, Slot-Reservierung am besten telefonisch unter <strong>+43 676 5517197</strong>. Innerhalb von Oberösterreich (Wels, Linz, Vöcklabruck, Steyr) bieten wir <strong>persönliche Zustellung</strong> gegen Aufwandsentschädigung ab €40. Wien und Salzburg gegen entsprechenden Aufpreis möglich. Sinnvoll bei sehr empfindlichen Modellen, dringenden Wettbewerbsabgaben oder wenn eine kurze technische Einweisung gewünscht ist – der Preis wird vor Abholung verbindlich kalkuliert.</p>
+                  <p>Wenn die Deadline drückt: <strong>Express-Fertigung in 24 Stunden</strong> möglich. Über-Nacht-Druck, Nachbearbeitung am Morgen, Versand oder persönliche Zustellung am gleichen Tag. Aufpreis +50%, Slot-Reservierung am besten telefonisch unter <strong>+43 676 5517197</strong>. Innerhalb von Oberösterreich (Wels, Linz, Vöcklabruck, Steyr) bieten wir <strong>persönliche Zustellung</strong> gegen Aufwandsentschädigung ab €40. Wien und Salzburg gegen entsprechenden Aufpreis möglich. Sinnvoll bei sehr empfindlichen Modellen, dringenden Wettbewerbsabgaben oder wenn eine kurze Einweisung gewünscht ist – der Preis wird vor Abholung verbindlich kalkuliert.</p>
                 </div>
 
                 <div>
@@ -594,7 +598,7 @@ const Prototyping = () => (
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Vertraulichkeit bei Entwicklungsprojekten</h3>
-                  <p>Auf Wunsch unterzeichnen wir eine <strong>NDA</strong>, bevor Daten ausgetauscht werden. Direkte Kommunikation mit dem Inhaber, keine Zwischeninstanzen. Keine Weitergabe an Subunternehmer ohne Ihre ausdrückliche Zustimmung. Datenarchivierung nach Projektabschluss optional – auf Wunsch löschen wir CAD-Daten sofort nach Lieferung. Diskrete Bearbeitung sensibler Projekte ist für uns Standard, nicht Premium-Feature. Besonders wichtig für Hardware-Startups in der Pre-Patent-Phase, Industriebetriebe mit Wettbewerbsspionage-relevanten Entwicklungen und Auftraggeber im Medizintechnik- und Defense-Sektor.</p>
+                  <p>Auf Wunsch unterzeichnen wir eine <strong>NDA</strong>, bevor Daten ausgetauscht werden. Direkte Kommunikation mit dem Inhaber, keine Zwischeninstanzen. Keine Weitergabe an Subunternehmer ohne Ihre ausdrückliche Zustimmung. Datenarchivierung nach Projektabschluss optional – auf Wunsch löschen wir CAD-Daten sofort nach Lieferung. Diskrete Bearbeitung sensibler Projekte ist für uns Standard, nicht Premium-Feature. Besonders wichtig für Hardware-Startups vor dem Launch, Designagenturen mit vertraulichen Projekten und Auftraggeber im Medizintechnik-Bereich.</p>
                 </div>
 
                 <div>
@@ -604,12 +608,12 @@ const Prototyping = () => (
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Unsere Auftraggeber</h3>
-                  <p><strong>Produktentwickler, Industriebetriebe, Designagenturen und Hardware-Startups</strong> aus dem DACH-Raum. Maschinenbau, Konsumgüter, Elektronik, Medizintechnik, Automotive und Industriedesign. B2B-Konditionen unter <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">Firmenkunden</Link>.</p>
+                  <p><strong>Produktentwickler, Industriebetriebe, Designagenturen und Hardware-Startups</strong> aus dem DACH-Raum. Produktentwicklung, Konsumgüter, Elektronik-Design, Medizintechnik, Interior und Industriedesign. B2B-Konditionen unter <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">Firmenkunden</Link>.</p>
                 </div>
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">MJF & SLS über zertifizierte Partner</h3>
-                  <p>Für besonders anspruchsvolle Modelle mit gleichmäßiger, robuster Oberfläche liefern wir <strong>HP Multi Jet Fusion (MJF)</strong> und <strong>Selective Laser Sintering (SLS)</strong> über zertifizierte Partner aus Deutschland und der Schweiz. PA12, PA12-GF (glasfaserverstärkt) und PA11 (bio-basiert) verfügbar. Stückzahlen ab 1 Stück bis zur Mehrfachfertigung von 500 Stück. <strong>Feine, gleichmäßige Oberflächen</strong>, Finish über Färben (Schwarz, mehrere Farben), Glätten oder Vibrationsschleifen. Lieferzeit MJF/SLS 5-7 Werktage ab Datenfreigabe, Express 3-4 Werktage gegen Aufpreis. Für 80 % aller <strong>Rapid Prototyping</strong>-Anwendungen reicht unser FDM in-house, für besonders feine Oberflächen und größere Auflagen ohne Stützstrukturen nutzen wir die SLS/MJF-Strecke. Die Beratung, welches Verfahren zu welchem Modell passt, ist kostenlos, und wir empfehlen aktiv die günstigere Variante, wenn FDM ausreicht.</p>
+                  <p>Für besonders anspruchsvolle Modelle mit gleichmäßiger, robuster Oberfläche liefern wir <strong>HP Multi Jet Fusion (MJF)</strong> und <strong>Selective Laser Sintering (SLS)</strong> über zertifizierte Partner aus Deutschland und der Schweiz. PA12, PA12-GF (glasfaserverstärkt) und PA11 (bio-basiert) verfügbar. Stückzahlen ab 1 Stück bis zur Mehrfachfertigung von 500 Stück. <strong>Feine, gleichmäßige Oberflächen</strong>, Finish über Färben (Schwarz, mehrere Farben), Glätten oder Vibrationsschleifen. Lieferzeit MJF/SLS 5-7 Werktage ab Datenfreigabe, Express 3-4 Werktage gegen Aufpreis. Für 80 % aller <strong>Modell-Anwendungen</strong> reicht unser FDM in-house, für besonders feine Oberflächen und größere Auflagen ohne Stützstrukturen nutzen wir die SLS/MJF-Strecke. Die Beratung, welches Verfahren zu welchem Modell passt, ist kostenlos, und wir empfehlen aktiv die günstigere Variante, wenn FDM ausreicht.</p>
                 </div>
               </div>
             </AnimatedSection>
@@ -618,7 +622,7 @@ const Prototyping = () => (
       </section>
 
       {/* FAQ */}
-      <FAQSection faqs={faqs} title="Häufige Fragen zu Rapid Prototyping" subtitle="Alles was Entwicklerteams und Produktentwickler wissen wollen" schemaId="prototyping-faq" />
+      <FAQSection faqs={faqs} title="Häufige Fragen zu Designprototypen & Anschauungsmodellen" subtitle="Alles was Produktentwickler und Designagenturen wissen wollen" schemaId="prototyping-faq" />
 
       {/* KONTAKT */}
       <section id="kontakt" className="scroll-mt-20"><Contact /></section>

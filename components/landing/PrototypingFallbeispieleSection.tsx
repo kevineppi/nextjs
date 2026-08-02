@@ -3,43 +3,43 @@ import { Quote, ArrowRight, Clock, Package, TrendingUp } from "lucide-react";
 
 const fallbeispiele = [
   {
-    branche: "Sondermaschinenbau",
-    titel: "Greiferarm-Iteration für Pick-and-Place-Anwendung",
-    challenge: "Ein OÖ-Maschinenbauer brauchte einen Greiferarm für variable Werkstückgrößen. Konventionelle Fertigung im Werkzeugbau hätte 4–6 Wochen und €8.000 gekostet – bei unsicherem Endergebnis.",
-    loesung: "Fünf Iterationen aus Carbon-PA in 14 Tagen. Jede Variante getestet, optimiert, neu gedruckt. Die finale Version ging direkt in Mehrfachfertigung (12 Stück, SLS PA12 glasgefüllt).",
+    branche: "Produktdesign",
+    titel: "Formstudie für ein Consumer-Produkt in fünf Varianten",
+    challenge: "Ein oberösterreichischer Produktentwickler wollte Form, Proportion und Haptik eines neuen Consumer-Produkts am echten Modell festlegen. Am Bildschirm blieb die Ergonomie unsicher, eine falsche Formentscheidung vor der Produktion hätte 4–6 Wochen und €8.000 gekostet.",
+    loesung: "Fünf Design-Varianten aus Carbon-PA in 14 Tagen. Jede Variante in der Hand geprüft, in Form und Haptik optimiert, neu gedruckt. Die finale Version ging direkt in Mehrfachfertigung (12 Anschauungsmuster fürs Vertriebsteam, SLS PA12).",
     ergebnis: [
       { label: "Iterationen", value: "5×" },
       { label: "Gesamtdauer", value: "14 Tage" },
       { label: "Kostenersparnis", value: "€6.200" },
-      { label: "Material", value: "Carbon-PA → SLS PA12-GF" },
+      { label: "Material", value: "Carbon-PA → SLS PA12" },
     ],
-    quote: "Wir konnten zweimal das Design ändern, ohne dass es uns weh tut. Beim Werkzeugbau wäre das undenkbar gewesen.",
+    quote: "Wir konnten zweimal die Form ändern, ohne dass es weh tut. Nach dem Produktionsstart wäre das undenkbar gewesen.",
   },
   {
     branche: "Hardware-Startup",
-    titel: "Smart-Home-Sensor: 12 Designvarianten für A/B-Test",
-    challenge: "Ein Wiener Hardware-Startup wollte vor dem Crowdfunding-Launch testen, welche Gehäuseform und Farbe beim Endkunden am besten funktioniert. Klassisch unmöglich ohne fünfstellige Werkzeuginvestition.",
-    loesung: "12 Varianten aus PLA+ in drei Wochen. Drei Grundformen × vier Farbschemata. Alle wurden in einer Fokusgruppe mit 30 Probanden getestet, das Gewinner-Design ging in die finale Umsetzung.",
+    titel: "Smart-Home-Produkt: 12 Designvarianten für A/B-Test",
+    challenge: "Ein Wiener Hardware-Startup wollte vor dem Crowdfunding-Launch testen, welche Produktform und Farbe beim Endkunden am besten ankommt. Klassisch unmöglich ohne fünfstellige Werkzeuginvestition.",
+    loesung: "12 Varianten aus PLA+ in drei Wochen. Drei Grundformen × vier Farbschemata. Alle wurden in einer Fokusgruppe mit 30 Probanden beurteilt, das Gewinner-Design ging in die finale Umsetzung.",
     ergebnis: [
       { label: "Designvarianten", value: "12" },
       { label: "Gesamtdauer", value: "3 Wochen" },
       { label: "Stückpreis", value: "€48" },
       { label: "Material", value: "PLA+ matt, lackiert" },
     ],
-    quote: "Vor dem Crowdfunding zu wissen, welches Design wirklich konvertiert – unbezahlbar. Die Kampagne war 280% überfinanziert.",
+    quote: "Vor dem Crowdfunding zu wissen, welches Design wirklich überzeugt – unbezahlbar. Die Kampagne war 280% überfinanziert.",
   },
   {
-    branche: "Medizintechnik",
-    titel: "Anatomisches Trainingsmodell für Chirurgie-Workshops",
-    challenge: "Eine Wiener Klinik wollte ein anatomisch korrektes Trainingsmodell für minimalinvasive Eingriffe – realistisch, robust gegen wiederholten Einsatz, mit aufklappbarer Struktur. NDA-Pflicht.",
-    loesung: "Hybride Fertigung: Grundstruktur aus FDM-PETG, weichere Gewebeschichten aus SLA-Tough-Resin, flexible Elemente aus TPU. Nach drei Wochen Entwicklung wurde das Modell in einer Auflage von 8 Stück gedruckt.",
+    branche: "Möbel-Design",
+    titel: "Anschauungsmodelle einer Leuchten-Kollektion für die Messe",
+    challenge: "Ein Wiener Designstudio wollte eine neue Leuchten-Kollektion auf einer Messe zeigen, bevor die Produktion steht. Renderings reichten dem Vertrieb nicht, Kunden wollten Form und Oberfläche in der Hand sehen. NDA-Pflicht.",
+    loesung: "Hybride Fertigung: Grundkörper aus FDM-PETG für formstabile Modelle, feine Sichtflächen aus SLA-Resin, weiche Akzente aus TPU. Nach drei Wochen Entwicklung wurde die Kollektion in einer Auflage von 8 Stück gedruckt und für die Messe lackiert.",
     ergebnis: [
       { label: "Materialkombination", value: "3 Verfahren" },
       { label: "Entwicklung", value: "3 Wochen" },
       { label: "Auflage", value: "8 Stück" },
       { label: "NDA", value: "Vertraulichkeit gewahrt" },
     ],
-    quote: "Diskrete Abwicklung, fachliche Tiefe und ein wirklich beeindruckendes Endprodukt. Wir bestellen jetzt regelmäßig nach.",
+    quote: "Diskrete Abwicklung, ein tolles Auge fürs Detail und ein wirklich beeindruckendes Endergebnis. Wir bestellen jetzt regelmäßig nach.",
   },
 ];
 

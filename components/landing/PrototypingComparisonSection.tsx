@@ -7,7 +7,7 @@ const alternatives = [
     icon: "🔩",
     sub: "Subtraktiv, materialabtragend",
     price: "€500–5k",
-    priceSub: "pro Teil",
+    priceSub: "pro Stück",
     items: [
       { text: "Sehr detailtreu", status: "yes" },
       { text: "Hohe Werkzeugkosten", status: "no" },
@@ -21,7 +21,7 @@ const alternatives = [
     icon: "🛠",
     sub: "Werkzeuggebunden",
     price: "€5–50k",
-    priceSub: "Werkzeug + Teil",
+    priceSub: "Werkzeug + Stück",
     items: [
       { text: "Endprodukt-Material", status: "yes" },
       { text: "Werkzeug nötig", status: "no" },
@@ -74,7 +74,7 @@ const PrototypingComparisonSection = () => (
         <AnimatedSection animation="fade-in" className="mb-12">
           <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Warum 3D-Druck für Prototypen?</p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-[-0.03em] mb-3">3D-Druck vs. CNC, Spritzguss & Vakuumguss</h2>
-          <p className="text-muted-foreground max-w-lg">Was zählt: Geschwindigkeit, Iteration und Kosten ab Stückzahl 1.</p>
+          <p className="text-muted-foreground max-w-lg">Was zählt: das Design am echten Modell beurteilen, schnelle Iteration und Kosten ab Stückzahl 1.</p>
         </AnimatedSection>
 
         <AnimatedSection animation="slide-up">
