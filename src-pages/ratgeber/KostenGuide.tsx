@@ -31,12 +31,12 @@ const KostenGuide = () => {
     description: "Komplexe Geometrien mit vielen Stützstrukturen erhöhen den Materialverbrauch um 20-40%. Nachbearbeitung (Finish, Schleifen, Lackieren) kostet zusätzlich 15-50€ je nach Aufwand."
   }];
   const realProjects = [{
-    title: "Architekturmodell mit Einsatzplatten",
-    kategorie: "Architektur- / Städtebaumodell",
+    title: "Ortsmodell mit Vorher-Nachher-Einsatzplatte",
+    kategorie: "Orts- / Städtebaumodell",
     material: "PLA",
-    detail: "Mehrteilig, mit tauschbaren Einsatzplatten",
+    detail: "Neubau als tauschbare Einsatzplatte",
     price: "950 €",
-    description: "Ein mehrteiliges Modell mit Einsatzplatten, die sich am fertigen Sockel tauschen lassen. Größerer Umfang, entsprechend im oberen Preisbereich."
+    description: "Ein Ortsmodell, bei dem der geplante Neubau als tauschbare Einsatzplatte gefertigt wurde. So lässt sich der Zustand vorher und nachher direkt am Modell vergleichen. Mehrteilig, entsprechend im oberen Preisbereich."
   }, {
     title: "Express-Modell in 48 Stunden",
     kategorie: "Express-Auftrag",
@@ -236,6 +236,10 @@ const KostenGuide = () => {
                     </CardContent>
                   </Card>)}
               </div>
+
+              <p className="text-sm text-muted-foreground mb-12 -mt-6">
+                Diese und weitere echte Projekte mit Fotos, Maßen und Druckzeiten finden Sie in unseren <Link href="/referenzen" className="text-primary font-semibold hover:underline">Referenzen</Link>.
+              </p>
 
               <h3 className="text-xl font-bold mb-4 text-foreground">Richtwerte nach Modellgröße</h3>
               <div className="grid md:grid-cols-2 gap-6">
