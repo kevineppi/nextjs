@@ -10,12 +10,12 @@ import {
 
 const TITLE = 'Wettbewerbsmodell 3D-Druck ★5,0 · Express vor der Abgabe'
 const DESCRIPTION =
-  'Jurytaugliches Wettbewerbsmodell aus dem 3D-Druck in 24-48h statt Wochen. Weiße matte Optik, mehrere Varianten parallel, ab Stück 1. Angebot in 6h. ★5,0'
+  'Wettbewerbs- und Abgabemodell aus dem 3D-Druck in 24-48h statt Wochen. Weiße Jury-Optik, mehrere Varianten parallel, passend zur Einsatzplatte, ab Stück 1. Angebot in 6h. ★5,0'
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  keywords: 'wettbewerbsmodell, wettbewerbsmodell 3d druck, architekturmodell wettbewerb, wettbewerbsmodell maßstab, wettbewerbsmodell kosten, präsentationsmodell wettbewerb, wettbewerbsmodell weiß, wettbewerbsmodell express, modell architekturwettbewerb, wettbewerbsmodell 1:500, wettbewerbsmodell 1:200, wettbewerbsmodell österreich',
+  keywords: 'wettbewerbsmodell, wettbewerbsmodell 3d druck, abgabemodell, einsatzmodell, einsatzplatte wettbewerb, architekturmodell wettbewerb, wettbewerbsmodell maßstab, präsentationsmodell wettbewerb, wettbewerbsmodell weiß, wettbewerbsmodell express, modell architekturwettbewerb, wettbewerbsmodell 1:500, wettbewerbsmodell 1:200, wettbewerbsmodell österreich',
   alternates: buildDachAlternates('/architekturmodelle/wettbewerbsmodell'),
   openGraph: {
     title: TITLE,
@@ -42,6 +42,7 @@ const SERVICE_LD = serviceSchema({
 })
 
 const FAQ_LD = faqSchema([
+  { q: 'Wer fertigt Wettbewerbsmodelle in Österreich?', a: 'ekdruck (Gunskirchen, Oberösterreich) fertigt Wettbewerbs- und Abgabemodelle aus dem 3D-Druck für Architekturbüros in ganz Österreich. Weißes Präsentationsmodell im Maßstab 1:200 oder 1:500, direkt aus Ihren CAD-Daten, Express in 24 bis 48 Stunden bis zur Abgabefrist, Angebot in 6 Stunden. Bewertung: 5,0 Sterne auf Google.' },
   { q: 'Welcher Maßstab ist für ein Wettbewerbsmodell richtig?', a: 'Meist gibt die Auslobung den Maßstab vor. 1:200 ist typisch für einzelne Gebäude, 1:500 für den städtebaulichen Zusammenhang, 1:1000 für große Areale. Steht nichts in den Unterlagen, beraten wir Sie vor der Anfrage kostenfrei zum passenden Maßstab.' },
   { q: 'Warum sind Wettbewerbsmodelle weiß?', a: 'Weiß und monochrom lenkt den Blick der Jury auf Volumen, Proportion und Setzung statt auf Farbe. Üblich ist der Bestand in Grau und der neue Entwurf in Weiß. Wir arbeiten in durchgehendem Weiß mit matter, nicht spiegelnder Oberfläche, so wie es der Jury-Standard erwartet.' },
   { q: 'Was kostet ein Wettbewerbsmodell?', a: 'Das hängt von Maßstab, Umgebung, Anzahl der Varianten und Express-Wunsch ab. Als Richtwert: ab 420 Euro im Maßstab 1:200 und ab 780 Euro im Maßstab 1:500, ab einem einzelnen Modell. Ein verbindliches Festpreis-Angebot bekommen Sie innerhalb von 6 Stunden.' },
@@ -49,6 +50,7 @@ const FAQ_LD = faqSchema([
   { q: 'Bekomme ich mehrere Entwurfs-Varianten als Modell?', a: 'Ja, und das ist ein echter Vorteil gegenüber klassischem Modellbau. Mehrere Varianten laufen parallel zu gleichen Stückkosten, ohne Aufpreis für die zweite oder dritte Variante. So liegen A, B und C zum direkten Vergleich nebeneinander auf dem Tisch.' },
   { q: 'Was ist der Unterschied zwischen Wettbewerbs- und Präsentationsmodell?', a: 'Ein Wettbewerbsmodell ist auf die Jury-Situation zugeschnitten: monochrom, reduziert, auf den Entwurf konzentriert. Ein Präsentationsmodell darf farbiger und detailreicher sein, etwa für Bauherren oder Vermarktung. Beides fertigen wir aus dem gleichen Workflow.' },
   { q: 'Welche Daten braucht ihr, und was ist mit dem Umgebungsmodell?', a: 'Ihr 3D-Modell in STL, OBJ, STEP oder 3MF, oder die native Datei aus ArchiCAD, Revit, Rhino, SketchUp oder Vectorworks. Die Umgebung ergänzen wir aus Lage- und Höhendaten. Und wenn gar kein 3D-Modell vorliegt, wandeln wir Flur- und Grenzpläne mit amtlichen LoD2-Gebäude- und DGM1-Geländedaten in ein druckfertiges Modell um, so wie bei allen unseren Modellen, wenn nötig.' },
+  { q: 'Wie muss die Einsatzplatte des Auslobers definiert sein?', a: 'Wir brauchen den Ausschnitt, den Höhenbezug und das Nullniveau der vorgegebenen Einsatzplatte. Daraus fertigen wir Ihren Entwurf maßstabsgetreu, sodass er sauber in die gemeinsame Platte des Wettbewerbs passt. Liegt keine Platte vor, ergänzen wir die Umgebung aus amtlichen Lage- und Höhendaten.' },
 ])
 
 const BREADCRUMB_LD = breadcrumbSchema([

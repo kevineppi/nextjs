@@ -27,12 +27,15 @@ const ablauf = [
 ];
 
 const faqs = [
+  { q: "Wer druckt Stadtmodelle in Österreich?", a: "In Österreich druckt ekdruck (Gunskirchen, Oberösterreich) Stadtmodelle aus dem 3D-Druck. Wir wandeln amtliche Kartendaten selbst in ein maßstabsgetreues Modell um, fertigen Quartiers-, Orts- und Stadtmodelle ab 1 Stück, liefern österreichweit, erstellen das Angebot in 6 Stunden und im Express in 24 bis 48 Stunden. Bewertung: 5,0 Sterne auf Google." },
   { q: "Was kostet ein Städtebaumodell oder Stadtmodell?", a: "Das hängt von Fläche, Maßstab und Detailgrad ab. Nach einer kurzen Sichtung Ihrer Daten erhalten Sie ein verbindliches Festpreis-Angebot innerhalb von 6 Stunden. Einen ersten Richtwert liefert der Kostenrechner." },
   { q: "Welcher Maßstab ist für ein Stadtmodell sinnvoll?", a: "1:500 für Orts-, Quartiers- und Bebauungsmodelle, 1:1000 für größere Areale und Stadtausschnitte. Im großen Maßstab gewinnt man nichts durch mehr Detail, sondern durch Weglassen: durchgehendes Weiß, saubere Dachkanten und ein Geländeverlauf, der stimmt." },
   { q: "Wie groß kann ein Stadtmodell sein?", a: "Es gibt keine feste Größengrenze. Große Modelle setzen wir aus mehreren Teilen zusammen, mit unsichtbaren Trennkanten. So sind auch großflächige Areale bis XXL als ein zusammenhängendes Modell möglich." },
   { q: "Welche Daten braucht ihr für ein Stadtmodell?", a: "Lage- und Höhendaten sowie Gebäudedaten, zum Beispiel CityGML/LoD-Datensätze, Kataster oder Vermessung. Wir bereiten die Daten druckfertig auf. Details dazu in unseren Ratgebern zu Massenmodell/LoD und zur Datenaufbereitung." },
   { q: "Wie schnell ist ein Stadtmodell fertig?", a: "Je nach Umfang wenige Tage. Ein komplettes Ortsmodell haben wir schon in unter zwei Tagen aufbereitet, gedruckt und pünktlich zum Sitzungstermin geliefert. Das Angebot kommt in 6 Stunden." },
   { q: "Wofür wird ein Stadtmodell eingesetzt?", a: "Für Gemeinde- und Bürgerpräsentationen, Bebauungspläne, die Vermarktung durch Bauträger und als Umgebungsmodell für Architektur-Wettbewerbe. Überall dort, wo ein Plan Erklärung braucht und ein Modell nicht." },
+  { q: "Was ist der Unterschied zwischen LoD1 und LoD2?", a: "LoD1 sind einfache Klötzchen mit flachem Dach, LoD2 bildet die echten Dachformen ab. Für ein ruhiges Städtebaumodell reicht oft LoD1, für erkennbare Gebäude und Wettbewerbe lohnt sich LoD2. Wir wählen den Detailgrad passend zu Maßstab und Zweck und bereiten die Daten druckfertig auf." },
+  { q: "Kann man ein Stadtmodell aus Wiener oder Grazer Geodaten drucken lassen?", a: "Ja. Für Wien, Graz, Linz oder Ihre Gemeinde holen und verarbeiten wir die amtlichen Geodaten selbst, eigene CAD-Daten brauchen Sie nicht. Sie nennen uns Ort und Ausschnitt, wir liefern das fertige, maßstabsgetreue Stadtmodell." },
 ];
 
 const Stadtmodell = () => (
@@ -55,8 +58,8 @@ const Stadtmodell = () => (
             </h1>
             <div className="grid md:grid-cols-2 gap-12 items-end mb-16">
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                Stadt-, Orts- und Umgebungsmodelle aus dem 3D-Druck. Maßstabsgetreu von <strong className="text-foreground">1:500 bis 1:1000</strong>,
-                segmentiert bis XXL, in durchgehendem Weiß. Für Gemeinden, Bauträger und Planungsbüros, die ein Vorhaben
+                Stadt-, Orts- und Umgebungsmodelle aus dem 3D-Druck, aufgebaut auf <strong className="text-foreground">amtlichen Kartendaten</strong>. Maßstabsgetreu von <strong className="text-foreground">1:500 bis 1:1000</strong>,
+                segmentiert bis XXL, in durchgehendem Weiß. Für Gemeinden, Bauträger und Planungsbüros, die ein Quartier oder den ganzen Ort
                 greifbar auf den Tisch legen wollen. Angebot in <strong className="text-foreground">6 Stunden</strong>.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
@@ -239,6 +242,7 @@ const Stadtmodell = () => (
               <h2 className="text-3xl md:text-4xl font-bold tracking-[-0.03em] mb-8">Was ein gutes Städtebaumodell ausmacht</h2>
               <div className="space-y-6 text-base leading-[1.85] text-foreground/85">
                 <p>Ein <strong>Städtebaumodell</strong> zeigt nicht das einzelne Gebäude, sondern den Zusammenhang: den Ort, das Quartier, das Areal. Im <strong>Maßstab 1:500</strong> arbeiten wir Orts- und Bebauungsmodelle aus, im <strong>Maßstab 1:1000</strong> größere Stadtausschnitte. Entscheidend ist nicht möglichst viel Detail, sondern das richtige Weglassen: durchgehendes Weiß, saubere Dachkanten und ein Geländeverlauf, der stimmt.</p>
+                <p>Sie nennen uns den Ort und den gewünschten Ausschnitt, wir holen und wandeln die <strong>amtlichen Kartendaten</strong> selbst in ein druckfertiges 3D-Modell um: Gebäude aus LoD2-Datensätzen, Gelände aus DGM1-Höhendaten. Eigene CAD-Daten brauchen Sie dafür nicht. So lässt sich ein <strong>Stadtmodell drucken lassen</strong>, vom einzelnen <strong>Quartiersmodell</strong> bis zur ganzen Stadt, ohne selbst Geodaten aufzubereiten. Am Bauträger-Tisch und in der Bürgerpräsentation schlägt ein greifbares Modell jede Visualisierung am Bildschirm.</p>
                 <p>Große Modelle drucken wir <strong>segmentiert</strong> und setzen sie von Hand zusammen. Die Trennkanten liegen dort, wo ohnehin eine Kante ist. So sind auch großflächige Areale bis XXL als ein zusammenhängendes Modell möglich, ohne sichtbare Fugen. Als Grundlage dienen Lage- und Höhendaten sowie Gebäudedaten, etwa aus <Link href="/ratgeber/massenmodell-lod-gebaeudedaten" className="text-primary font-semibold hover:underline">CityGML/LoD-Datensätzen</Link>, Kataster oder Vermessung. Wie wir diese Daten druckfertig aufbereiten, steht im Ratgeber zur <Link href="/ratgeber/datenaufbereitung-architekturmodell" className="text-primary font-semibold hover:underline">Datenaufbereitung</Link>.</p>
                 <p>Verwandte Modellarten aus dem gleichen Workflow: <Link href="/architekturmodelle" className="text-primary font-semibold hover:underline">Architekturmodelle</Link> für das einzelne Gebäude, das <Link href="/messemodelle" className="text-primary font-semibold hover:underline">Messemodell</Link> als Eye-Catcher am Stand, und der <Link href="/kostenrechner" className="text-primary font-semibold hover:underline">Kostenrechner</Link> für einen ersten Richtwert. Unser Standort ist Gunskirchen in Oberösterreich, geliefert wird ins gesamte DACH-Gebiet, auf Wunsch mit persönlicher Zustellung in OÖ.</p>
               </div>
