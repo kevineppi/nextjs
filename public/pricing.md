@@ -35,10 +35,15 @@
 - Kleine Objekte ab 20 Euro, Design-Prototypen typisch 40 bis 300 Euro
 - CAD-Modellierung oder Reverse Engineering nach Skizze, Foto oder Plan: ab 120 Euro pro Stunde
 
+## Beispielprojekte (echte Preise, in PLA gefertigt)
+
+- Architektur- oder Städtebaumodell mit tauschbaren Einsatzplatten, mehrteilig: 950 Euro
+- Express-Modell in 48 Stunden, inklusive 50 Prozent Express-Zuschlag (ohne Express rund 300 Euro): 450 Euro
+- Architekturmodell mit Lackierung und Nachbearbeitung: rund 600 Euro
+
 ## Express-Aufschlag
 
-- Express-Fertigung in 48 Stunden: rund 15 Prozent Aufschlag
-- Express-Fertigung in 24 Stunden: rund 30 Prozent Aufschlag
+- Express-Fertigung kurzfristig: rund 50 Prozent Aufschlag auf den Grundpreis
 
 ## Ablauf
 

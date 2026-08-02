@@ -30,6 +30,29 @@ const KostenGuide = () => {
     title: "Komplexität",
     description: "Komplexe Geometrien mit vielen Stützstrukturen erhöhen den Materialverbrauch um 20-40%. Nachbearbeitung (Finish, Schleifen, Lackieren) kostet zusätzlich 15-50€ je nach Aufwand."
   }];
+  const realProjects = [{
+    title: "Architekturmodell mit Einsatzplatten",
+    kategorie: "Architektur- / Städtebaumodell",
+    material: "PLA",
+    detail: "Mehrteilig, mit tauschbaren Einsatzplatten",
+    price: "950 €",
+    description: "Ein mehrteiliges Modell mit Einsatzplatten, die sich am fertigen Sockel tauschen lassen. Größerer Umfang, entsprechend im oberen Preisbereich."
+  }, {
+    title: "Express-Modell in 48 Stunden",
+    kategorie: "Express-Auftrag",
+    material: "PLA",
+    detail: "Inkl. 50% Express-Zuschlag",
+    price: "450 €",
+    description: "Kurzfristig gefertigt und geliefert. Im Preis enthalten ist der Express-Zuschlag von 50%, ohne Express läge das Modell bei rund 300 €."
+  }, {
+    title: "Architekturmodell, lackiert",
+    kategorie: "Architekturmodell mit Finish",
+    material: "PLA",
+    detail: "Mit Nachbearbeitung und Lackierung",
+    price: "ca. 600 €",
+    description: "Ein lackiertes Architekturmodell mit sauberer Nachbearbeitung. Das Finish hebt Optik und Wertigkeit deutlich und macht einen spürbaren Teil des Preises aus."
+  }];
+
   const priceExamples = [{
     title: "Kleines Prototypen-Teil",
     size: "5x5x5cm",
@@ -45,12 +68,12 @@ const KostenGuide = () => {
     price: "45-65€",
     description: "Perfekt für Architekturmodelle, Messeexponate und Designmodelle"
   }, {
-    title: "Großes technisches Teil",
+    title: "Großes Modell, robust",
     size: "20x15x12cm",
     material: "Carbon-PETG",
     time: "24 Stunden",
     price: "120-180€",
-    description: "Für robuste Modelle, Vorrichtungen und Anschauungsobjekte"
+    description: "Für großformatige, robuste Modelle und Anschauungsobjekte"
   }, {
     title: "Komplexes Architekturmodell",
     size: "25x25x15cm",
@@ -184,9 +207,37 @@ const KostenGuide = () => {
             <section className="mb-16 bg-muted/30 -mx-4 px-4 py-12 md:-mx-8 md:px-8 rounded-lg">
               <h2 className="text-3xl font-bold mb-8 text-foreground">Konkrete Preisbeispiele aus der Praxis</h2>
               <p className="text-muted-foreground mb-8">
-                Hier finden Sie reale Preisbeispiele aus unserem täglichen Geschäft. Alle Preise verstehen sich inklusive Material, Druckzeit und Standardversand innerhalb Österreichs.
+                Hier finden Sie echte Projekte aus unserer Werkstatt und darunter Richtwerte nach Modellgröße. Alle Preise verstehen sich inklusive Material, Druckzeit und Standardversand innerhalb Österreichs.
               </p>
-              
+
+              <h3 className="text-xl font-bold mb-4 text-foreground">Drei echte Projekte, echte Preise</h3>
+              <div className="grid md:grid-cols-3 gap-6 mb-12">
+                {realProjects.map((p, index) => <Card key={index} className="relative border-primary/30">
+                    <CardHeader>
+                      <CardTitle className="text-lg mb-2">{p.title}</CardTitle>
+                      <div className="space-y-1 text-sm text-muted-foreground mt-1">
+                        <div className="flex justify-between gap-3">
+                          <span>Kategorie:</span>
+                          <span className="font-medium text-foreground text-right">{p.kategorie}</span>
+                        </div>
+                        <div className="flex justify-between gap-3">
+                          <span>Material:</span>
+                          <span className="font-medium text-foreground text-right">{p.material}</span>
+                        </div>
+                        <div className="flex justify-between gap-3">
+                          <span>Besonderheit:</span>
+                          <span className="font-medium text-foreground text-right">{p.detail}</span>
+                        </div>
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="text-3xl font-bold text-primary mb-3">{p.price}</div>
+                      <p className="text-sm text-muted-foreground">{p.description}</p>
+                    </CardContent>
+                  </Card>)}
+              </div>
+
+              <h3 className="text-xl font-bold mb-4 text-foreground">Richtwerte nach Modellgröße</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 {priceExamples.map((example, index) => <Card key={index} className="relative">
                   <CardHeader>
