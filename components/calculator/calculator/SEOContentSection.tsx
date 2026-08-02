@@ -59,7 +59,7 @@ const SEOContentSection = () => (
               <h4 className="font-semibold text-foreground">4. Setup & Vorbereitung</h4>
               <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
                 Für jedes Projekt fällt eine Setup-Pauschale von €12,99 an. Diese deckt die
-                technische Vorbereitung: Slicing, Druckoptimierung, Bauteilorientierung und
+                technische Vorbereitung: Slicing, Druckoptimierung, Objektausrichtung und
                 Qualitätskontrolle. Bei uns ist das kein automatisierter Prozess – jedes Modell
                 wird von einem Fachmann vorbereitet.
               </p>
@@ -127,7 +127,7 @@ const SEOContentSection = () => (
             <li className="flex items-start gap-2">
               <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/60 shrink-0" />
               <span>
-                <strong className="text-foreground">Orientierung:</strong> Die Bauteilorientierung
+                <strong className="text-foreground">Orientierung:</strong> Die Objektausrichtung
                 auf der Druckplatte beeinflusst Oberfläche, Stabilität und Stützstruktur-Aufwand
                 erheblich. Das lässt sich nicht automatisieren, wenn Qualität das Ziel ist.
               </span>

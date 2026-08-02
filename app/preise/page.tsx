@@ -38,7 +38,7 @@ const pricingFaqs = [
   },
   {
     question: 'Was kostet ein typisches Messemodell?',
-    answer: 'Mini-Komponente (15-25cm, Standard-Material): €150-€500. Mittleres Bauteil-Modell mit Lackierung (30-50cm): €600-€1.800. Größeres Schnittmodell mit beweglichen Teilen (40-70cm): €1.500-€4.500. Komplettanlage segmentiert (1m+): €3.500-€12.000. Premium-Show-Quality mit Beleuchtung und aktiven Funktionen: bis €18.000.',
+    answer: 'Mini-Komponente (15-25cm, Standard-Material): €150-€500. Mittleres Modell mit Lackierung (30-50cm): €600-€1.800. Größeres Schnittmodell mit beweglichen Teilen (40-70cm): €1.500-€4.500. Komplettanlage segmentiert (1m+): €3.500-€12.000. Premium-Show-Quality mit Beleuchtung und aktiven Funktionen: bis €18.000.',
   },
   {
     question: 'Was kostet ein Architekturmodell?',
@@ -46,7 +46,7 @@ const pricingFaqs = [
   },
   {
     question: 'Was kostet ein einfaches Funktionsmuster für die Produktentwicklung?',
-    answer: 'Kleines Bauteil (Faustgröße, PLA, 1 Stück): €25-€80. Mittleres Bauteil mit Carbon-PA für mechanische Tests: €120-€400 pro Stück. Klein-Serie 10-50 Stück: 15-30% Mengenrabatt. Ab 100 Stück individuelle Kalkulation, oft günstiger durch Druckbett-Optimierung.',
+    answer: 'Kleines Stück (Faustgröße, PLA, 1 Stück): €25-€80. Mittleres Stück mit Carbon-PA für technische Tests: €120-€400 pro Stück. Mehrfachfertigung 10-50 Stück: 15-30% Mengenrabatt. Ab 100 Stück individuelle Kalkulation, oft günstiger durch Druckbett-Optimierung.',
   },
   {
     question: 'Gibt es Mengenrabatte?',
@@ -130,10 +130,10 @@ export default function PricingPage() {
                     icon: Layers,
                     examples: [
                       { label: 'Klein, PLA, einfach', range: '€25-€80' },
-                      { label: 'Mittel, Carbon-PA, belastbar', range: '€120-€400' },
+                      { label: 'Mittel, Carbon-PA, robust', range: '€120-€400' },
                       { label: 'Groß, Multi-Material', range: '€350-€900' },
                     ],
-                    note: 'Pro Stück. Klein-Serie 10-50 Stück: -15-30%',
+                    note: 'Pro Stück. Mehrfachfertigung 10-50 Stück: -15-30%',
                   },
                   {
                     category: 'Architekturmodell',
@@ -151,7 +151,7 @@ export default function PricingPage() {
                     icon: TrendingUp,
                     examples: [
                       { label: 'Mini-Komponente (15-25cm)', range: '€150-€500' },
-                      { label: 'Bauteil-Modell mit Lackierung', range: '€600-€1.800' },
+                      { label: 'Modell mit Lackierung', range: '€600-€1.800' },
                       { label: 'Schnittmodell mit beweglichen Teilen', range: '€1.500-€4.500' },
                       { label: 'Komplettanlage segmentiert (1m+)', range: '€3.500-€12.000' },
                       { label: 'Premium-Show-Quality (Licht, aktive Demo)', range: '€8.000-€18.000' },
@@ -159,7 +159,7 @@ export default function PricingPage() {
                     note: 'Express 24h: +30%, Express 48h: +15%',
                   },
                   {
-                    category: 'Kleinserie',
+                    category: 'Mehrfachfertigung',
                     icon: Package,
                     examples: [
                       { label: '25-50 Stück Einzelteil', range: 'ab €15/Stück' },
@@ -240,7 +240,7 @@ export default function PricingPage() {
                   {
                     factor: 'Material-Wahl',
                     impact: '×1 bis ×4',
-                    detail: 'PLA (Bestseller): günstig + detailreich. PETG: +20-30% für Robustheit. ABS + Aceton-Glättung: +40% für Spritzguss-ähnliche Oberfläche. Carbon-PA: ×3-4 für mechanisch belastete Funktionsbauteile. Tipp: nur Schauflächen in Premium-Material, Innenstruktur in PLA.',
+                    detail: 'PLA (Bestseller): günstig + detailreich. PETG: +20-30% für Robustheit. ABS + Aceton-Glättung: +40% für Spritzguss-ähnliche Oberfläche. Carbon-PA: ×3-4 für technisch anspruchsvolle Stücke. Tipp: nur Schauflächen in Premium-Material, Innenstruktur in PLA.',
                   },
                   {
                     factor: 'Detailgrad / Schichthöhe',

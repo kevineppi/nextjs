@@ -42,7 +42,7 @@ const PERSON_LD = {
     'Rapid Prototyping',
     'Architekturmodellbau',
     'Messemodellbau',
-    'Kleinserienfertigung',
+    'Mehrfachfertigung',
     'CAD',
     'Materialwissenschaft Filamente',
   ],

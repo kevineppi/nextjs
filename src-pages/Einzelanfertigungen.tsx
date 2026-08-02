@@ -27,7 +27,7 @@ import {
 
 const faqs = [
   {
-    question: "Was ist der Unterschied zwischen Einzelanfertigung und Seriendruck?",
+    question: "Was ist der Unterschied zwischen Einzelanfertigung und Mehrfachfertigung?",
     answer: "Einzelanfertigungen sind individuell gestaltete Anschauungsmodelle oder Unikate ab 1 Stück – maßgeschneidert für Ihren genauen Zweck. Im Gegensatz zur Massenfertigung geht jedes Projekt durch eine persönliche Beratung, bei der Material, Maßstab, Farbe und Nachbearbeitung optimal abgestimmt werden. Für Messemodelle, Architekturmodelle und spezielle Präsentationsobjekte ist die Einzelanfertigung meist die optimale Wahl."
   },
   {
@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     question: "Ab welcher Größe sind Einzelanfertigungen möglich?",
-    answer: "Wir fertigen Objekte von wenigen Zentimetern bis zu über 2 Metern Größe. Größere Objekte werden modular konstruiert und nahtlos zusammengefügt. Für XXL-Anschauungsmodelle, Messeblickfänger oder Architekturmodelle im Maßstab 1:50 haben wir die passende Segmentierungsstrategie – unsichtbare Verbindungen und optimierte Fügekanten."
+    answer: "Wir fertigen Objekte von wenigen Zentimetern bis zu über 2 Metern Größe. Größere Objekte werden modular aufgebaut und nahtlos zusammengefügt. Für XXL-Anschauungsmodelle, Messeblickfänger oder Architekturmodelle im Maßstab 1:50 haben wir die passende Segmentierungsstrategie – unsichtbare Verbindungen und optimierte Fügekanten."
   },
   {
     question: "Welche Materialien sind für Einzelanfertigungen verfügbar?",
@@ -52,7 +52,7 @@ const faqs = [
   },
   {
     question: "Gibt es Mindestbestellmengen?",
-    answer: "Nein – wir fertigen bereits ab 1 Stück. Das macht uns besonders attraktiv für Unikate, Präsentationsmodelle, Messeexponate und individuelle Ausstellungsstücke. Auch für Kleinstserien von 2–20 Stück sind wir die wirtschaftlichste Wahl – keine Rüstkosten, keine Mindestbestellmengen."
+    answer: "Nein – wir fertigen bereits ab 1 Stück. Das macht uns besonders attraktiv für Unikate, Präsentationsmodelle, Messeexponate und individuelle Ausstellungsstücke. Auch für Mehrfachfertigungen von 2–20 Stück sind wir die wirtschaftlichste Wahl – keine Rüstkosten, keine Mindestbestellmengen."
   },
   {
     question: "Wie werden Maßstäbe bei Architekturmodellen umgesetzt?",

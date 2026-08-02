@@ -5,7 +5,7 @@ const items = [
   "MADE IN AUSTRIA",
   "ANGEBOT IN 6H",
   "31 BEWERTUNGEN",
-  "FDM PRÄZISION",
+  "FDM DETAILTREUE",
   "NACHHALTIG",
 ];
 

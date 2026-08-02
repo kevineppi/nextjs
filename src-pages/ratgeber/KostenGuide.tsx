@@ -16,7 +16,7 @@ const KostenGuide = () => {
   const costFactors = [{
     icon: Package,
     title: "Volumen & Größe",
-    description: "Je größer das Bauteil, desto mehr Material und Druckzeit wird benötigt. Ein kleines Teil (5x5x5cm) kostet typischerweise 15-30€, während größere Teile (20x20x20cm) 80-150€ kosten können."
+    description: "Je größer das Objekt, desto mehr Material und Druckzeit wird benötigt. Ein kleines Teil (5x5x5cm) kostet typischerweise 15-30€, während größere Teile (20x20x20cm) 80-150€ kosten können."
   }, {
     icon: Clock,
     title: "Druckzeit",
@@ -50,7 +50,7 @@ const KostenGuide = () => {
     material: "Carbon-PETG",
     time: "24 Stunden",
     price: "120-180€",
-    description: "Für belastbare Modelle, Vorrichtungen und Anschauungsobjekte"
+    description: "Für robuste Modelle, Vorrichtungen und Anschauungsobjekte"
   }, {
     title: "Komplexes Architekturmodell",
     size: "25x25x15cm",
@@ -92,7 +92,7 @@ const KostenGuide = () => {
           },
           {
             question: "Gibt es Mengenrabatte?",
-            answer: "Ja! Ab 5 identischen Teilen gewähren wir 10% Rabatt, ab 20 Teilen 15% und ab 50 Teilen 20%. Für Großserien (100+ Teile) erstellen wir individuelle Angebote."
+            answer: "Ja! Ab 5 identischen Teilen gewähren wir 10% Rabatt, ab 20 Teilen 15% und ab 50 Teilen 20%. Für größere Stückzahlen (100+ Teile) erstellen wir individuelle Angebote."
           },
           {
             question: "Was kostet der Versand innerhalb Österreichs?",
@@ -259,7 +259,7 @@ const KostenGuide = () => {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Ja! Ab 5 identischen Teilen gewähren wir 10% Rabatt, ab 20 Teilen 15% und ab 50 Teilen 20%. Für Großserien (100+ Teile) erstellen wir individuelle Angebote.
+                    Ja! Ab 5 identischen Teilen gewähren wir 10% Rabatt, ab 20 Teilen 15% und ab 50 Teilen 20%. Für größere Stückzahlen (100+ Teile) erstellen wir individuelle Angebote.
                   </AccordionContent>
                 </AccordionItem>
 

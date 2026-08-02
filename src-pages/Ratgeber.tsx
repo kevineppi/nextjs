@@ -124,7 +124,7 @@ const Ratgeber = () => {
     },
     {
       title: "Rapid Prototyping mit 3D-Druck: Der ultimative Guide 2026",
-      description: "Funktionsprototypen in 24h, Materialwahl für Ingenieure, CAD-Formate und Toleranzen – alles was Produktentwickler wissen müssen.",
+      description: "Designprototypen in 24h, Materialwahl für Ingenieure, CAD-Formate und Detailfragen – alles was Produktentwickler wissen müssen.",
       link: "/rapid-prototyping",
       icon: Wrench,
       category: "Prototypen",

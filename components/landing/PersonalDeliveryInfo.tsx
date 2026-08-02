@@ -30,7 +30,7 @@ const PersonalDeliveryInfo = ({ regionName }: PersonalDeliveryInfoProps) => {
     {
       icon: Shield,
       title: "Haltevorrichtungen & Montage",
-      description: "Wir zeigen Ihnen die integrierten Befestigungspunkte, Magnethalterungen oder Stecksysteme für sicheren Stand während der gesamten Messe."
+      description: "Wir zeigen Ihnen die integrierten Befestigungspunkte, Magnethalterungen oder Formteile für sicheren Stand während der gesamten Messe."
     },
     {
       icon: MessageCircle,

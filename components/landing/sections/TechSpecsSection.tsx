@@ -58,7 +58,7 @@ const TechSpecsSection = ({ regionName, category, data }: TechSpecsSectionProps)
   const specs = category === 'architektur' ? [
     { icon: Ruler, label: 'Maßstäbe', value: '1:50 – 1:500', detail: 'Passend für jede Präsentation' },
     { icon: Layers, label: 'Schichthöhe', value: 'ab 0.12mm', detail: 'Feinste Details sichtbar' },
-    { icon: Settings, label: 'Toleranz', value: '±0.2mm', detail: 'Maßstabsgetreue Genauigkeit' },
+    { icon: Settings, label: 'Abweichung', value: '±0.2mm', detail: 'Maßstabsgetreue Genauigkeit' },
     { icon: Microscope, label: 'Detailgrad', value: 'Fensterraster ab 1mm', detail: 'Fassadenelemente erkennbar' },
     { icon: Shield, label: 'Materialien', value: 'PLA, PETG, ASA', detail: '3 Materialklassen verfügbar' },
     { icon: Thermometer, label: 'Max. Größe', value: '30 x 30 x 40 cm', detail: 'Pro Druckteil, modular erweiterbar' },

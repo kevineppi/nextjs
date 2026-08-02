@@ -407,7 +407,7 @@ const Materialien = () => {
                             <li>• Verschiedene Härtegrade</li>
                           </ul>
                           <div className="text-sm">
-                            <span className="font-medium">Ideal für:</span> Dichtungen, Handyhüllen, Schuhe
+                            <span className="font-medium">Ideal für:</span> flexible Formteile, Handyhüllen, Schuhe
                           </div>
                         </div>
                       </CardContent>

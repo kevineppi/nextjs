@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const REGION_LD = regionalLocalBusinessSchema({
   region: 'Oberösterreich',
   url: 'https://www.ek-druck.at/3d-druck-oberoesterreich',
-  description: '3D-Druck-Service für Kunden in Oberösterreich. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Kleinserien. Persönliche Antwort in 6h. Ab €20.',
+  description: '3D-Druck-Service für Kunden in Oberösterreich. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Mehrfachfertigung. Persönliche Antwort in 6h. Ab €20.',
 })
 
 const BREADCRUMB_LD = breadcrumbSchema([

@@ -134,7 +134,7 @@ const MaterialGuide = () => {
                 FDM-3D-Druck verwendet thermoplastische Polymere, die sich bei Erwärmung verformen lassen und beim Abkühlen ihre Form behalten. Die drei am häufigsten verwendeten Materialien – PLA (Polylactid), PETG (Polyethylenterephthalat-Glycol) und ASA (Acrylnitril-Styrol-Acrylat) – unterscheiden sich fundamental in ihrer chemischen Struktur und damit in ihren physikalischen Eigenschaften.
               </p>
               <p className="text-muted-foreground mb-6">
-                Wissenschaftliche Studien zeigen, dass die Wahl des Materials die mechanischen Eigenschaften eines gedruckten Bauteils um bis zu 300% beeinflussen kann. Daher ist fundiertes Wissen über Materialeigenschaften essentiell für erfolgreiche Projekte.
+                Wissenschaftliche Studien zeigen, dass die Wahl des Materials die mechanischen Eigenschaften eines gedruckten Objekts um bis zu 300% beeinflussen kann. Daher ist fundiertes Wissen über Materialeigenschaften essentiell für erfolgreiche Projekte.
               </p>
             </section>
 
@@ -193,7 +193,7 @@ const MaterialGuide = () => {
                   <CardContent className="space-y-2 text-muted-foreground text-sm">
                     <p>✓ Biobasiert und kompostierbar (industriell)</p>
                     <p>✓ Geruchsneutral beim Drucken</p>
-                    <p>✓ Ausgezeichnete Maßhaltigkeit</p>
+                    <p>✓ Ausgezeichnete Formtreue</p>
                     <p>✓ Keine beheizte Druckplatte erforderlich</p>
                     <p>✓ Niedrigster Energieverbrauch beim Druck</p>
                     <p>✓ Günstigster Preis (20-30€/kg)</p>
@@ -368,7 +368,7 @@ const MaterialGuide = () => {
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                       <Zap className="w-5 h-5 text-primary" />
-                      Wird das Teil mechanisch belastet (Stöße, Biegung)?
+                      Wird das Teil stark beansprucht (Stöße, Biegung)?
                     </CardTitle>
                   </CardHeader>
                   <CardContent>

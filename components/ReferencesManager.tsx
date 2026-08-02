@@ -785,7 +785,7 @@ const ReferencesManager = () => {
                         <Input
                           value={newHighlight}
                           onChange={(e) => setNewHighlight(e.target.value)}
-                          placeholder="z.B. Präzise Toleranzen ±0.2mm"
+                          placeholder="z.B. Feine Details, ±0.2mm Abweichung"
                           onKeyDown={(e) => e.key === 'Enter' && (e.preventDefault(), addHighlight())}
                         />
                         <Button type="button" onClick={addHighlight} variant="outline">

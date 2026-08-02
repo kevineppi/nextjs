@@ -35,7 +35,7 @@ const showcases = [
   {
     num: "03",
     industry: "Produktentwicklung",
-    title: "Prototyp-Serie: 12 Iterationen in 3 Wochen",
+    title: "Prototyp-Reihe: 12 Iterationen in 3 Wochen",
     desc: "Ein Startup testete 12 Gehäuse-Varianten für ihr IoT-Device. Jede Iteration in unter 24h gedruckt, getestet, angepasst. Vom Konzept zum finalen Design in 3 Wochen.",
     stats: [
       { val: "12", label: "Iterationen" },

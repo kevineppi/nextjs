@@ -29,7 +29,7 @@ const FALLBACK_REVIEWS: GoogleReview[] = [
     author_url: "",
     profile_photo_url: "",
     rating: 5,
-    text: "Ich bin absolut begeistert von ekDruck! Die Qualität ist erstklassig, jedes Detail wird sehr präzise und sauber umgesetzt. Die Kommunikation war von Anfang an ausgesprochen freundlich und professionell.",
+    text: "Ich bin absolut begeistert von ekDruck! Die Qualität ist erstklassig, jedes Detail wird sehr detailgetreu und sauber umgesetzt. Die Kommunikation war von Anfang an ausgesprochen freundlich und professionell.",
     time: 1734220800,
     relative_time_description: "vor 3 Monaten",
   },

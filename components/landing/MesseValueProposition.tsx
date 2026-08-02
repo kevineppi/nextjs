@@ -116,7 +116,7 @@ const MesseValueProposition = ({ regionName }: MesseValuePropositionProps) => {
                 { label: "Änderungen", value: "Blitzschnell", icon: RefreshCcw },
                 { label: "Transport", value: "Kostengünstig", icon: Banknote },
                 { label: "Skalierung", value: "Jede Größe", icon: TrendingUp },
-                { label: "Details", value: "Mikro-Präzision", icon: Sparkles }
+                { label: "Details", value: "Mikro-Detailtreue", icon: Sparkles }
               ].map((stat, index) => (
                 <div 
                   key={index}

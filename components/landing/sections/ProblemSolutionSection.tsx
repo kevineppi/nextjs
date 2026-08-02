@@ -66,9 +66,9 @@ const ProblemSolutionSection = ({ regionName, category, data }: ProblemSolutionS
     solutionTitle: 'Unsere Antwort: Digitaler Modellbau',
     solutions: [
       'Express-Fertigung in 24h – auch für kurzfristige Wettbewerbstermine',
-      'Ab €20 für Studienmodelle – CAD-basiert, reproduzierbar, präzise',
+      'Ab €20 für Studienmodelle – CAD-basiert, reproduzierbar, detailgetreu',
       'Änderungen? Neuer Druck in Stunden, nicht Wochen',
-      'Digitale Präzision: ±0.2mm Toleranz, maßstabsgetreu aus der CAD-Datei',
+      'Digitale Detailtreue: ±0.2mm Abweichung, maßstabsgetreu aus der CAD-Datei',
     ],
   } : {
     problemTitle: 'Typische Probleme bei der Messe-Vorbereitung',

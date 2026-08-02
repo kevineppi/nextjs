@@ -208,7 +208,7 @@ export default function Kostenrechner() {
     { q: "Wie genau ist der Richtpreis aus dem Kostenrechner?", a: "Der Richtpreis basiert auf der realen Geometrie Ihrer STL-Datei und berücksichtigt Materialverbrauch, Druckzeit, Baugröße und Setup-Aufwand. Typische Abweichung zum Endpreis: ±10 bis 15 %. Der verbindliche Festpreis wird nach persönlicher technischer Prüfung festgelegt und per E-Mail zugesendet." },
     { q: "Kann ich mehrere 3D-Modelle gleichzeitig kalkulieren?", a: "Ja, unser Kostenrechner unterstützt Multi-File-Upload. Sie können beliebig viele STL-Dateien hochladen, jeweils mit eigenem Material und eigener Stückzahl konfigurieren und erhalten einen Gesamtrichtpreis mit automatischem Mengenvorteil ab 10 Stück." },
     { q: "Wie schnell ist die Lieferung?", a: "Standardaufträge fertigen wir in 3 bis 5 Werktagen. Im Express-Service erhalten Sie Ihr 3D-Druck Modell bereits in 24 bis 48 Stunden. Wir liefern versichert per Post in ganz Österreich. Persönliche Abholung in Gunskirchen (Bezirk Wels-Land) ist ebenfalls möglich." },
-    { q: "Wofür eignet sich euer 3D-Druck Service?", a: "Wir sind spezialisiert auf nicht-technische Präsentationsmodelle: Messemodelle und Standexponate, Architekturmodelle für Wettbewerbe und Kundenpräsentationen, Designstudien und Formentwürfe, Schulungs- und Lehrmodelle sowie Kleinserien ab 10 Stück." },
+    { q: "Wofür eignet sich euer 3D-Druck Service?", a: "Wir sind spezialisiert auf nicht-technische Präsentationsmodelle: Messemodelle und Standexponate, Architekturmodelle für Wettbewerbe und Kundenpräsentationen, Designstudien und Formentwürfe, Schulungs- und Lehrmodelle sowie Mehrfachfertigung ab 10 Stück." },
     { q: "Muss ich einen Account erstellen?", a: "Nein. Der Kostenrechner funktioniert ohne Anmeldung und ohne Account. Ihre STL-Datei wird ausschließlich lokal in Ihrem Browser analysiert und verlässt nie Ihren Rechner." },
     { q: "Gibt es Mengenrabatte für größere Projekte?", a: "Ja. Ab 10 Teilen erhalten Sie automatisch 5 % Mengenvorteil, ab 50 Teilen 8 % und ab 100 Teilen 10 % Rabatt auf den Gesamtpreis. Für größere Projektmengen erstellen wir gerne ein individuelles Angebot." },
   ];
@@ -538,9 +538,9 @@ export default function Kostenrechner() {
             { icon: Package, n: "01", t: "Materialverbrauch", d: "Volumen × Infill × Materialpreis. PLA ab 25 €/kg, PA6-CF mit Carbonfaser ab 120 €/kg. Ein Modell mit 15 % Infill verbraucht deutlich weniger als mit voller Füllung." },
             { icon: Clock, n: "02", t: "Druckzeit", d: "Je länger der FDM-Drucker arbeitet, desto höher die Kosten. Premium-Qualität (0,08 mm Schichtdicke) dauert rund 25 % länger als Standard." },
             { icon: Scale, n: "03", t: "Baugröße", d: "Große Modelle ab 170 mm erhalten einen Zuschlag: mehr Plattenbelegung, längere Aufwärmphase und erhöhtes Fehlerrisiko." },
-            { icon: Wrench, n: "04", t: "Setup & Vorbereitung", d: `Jedes Projekt wird manuell vorbereitet: Slicing, Druckoptimierung, Bauteilorientierung. Setup-Pauschale: ${fmt(cfg.setupCost)}.` },
+            { icon: Wrench, n: "04", t: "Setup & Vorbereitung", d: `Jedes Projekt wird manuell vorbereitet: Slicing, Druckoptimierung, Objektausrichtung. Setup-Pauschale: ${fmt(cfg.setupCost)}.` },
             { icon: Layers, n: "05", t: "Nachbearbeitung", d: "Stützstrukturen entfernen, Oberflächen glätten oder lackieren: Diese Arbeiten werden separat im Festpreisangebot kalkuliert." },
-            { icon: Users, n: "+", t: "Mengenvorteil", d: "Ab 10 Teilen 5 %, ab 50 Teilen 8 %, ab 100 Teilen 10 % Rabatt. Ideal für Messemodelle in Serie oder Schulungsmodelle." },
+            { icon: Users, n: "+", t: "Mengenvorteil", d: "Ab 10 Teilen 5 %, ab 50 Teilen 8 %, ab 100 Teilen 10 % Rabatt. Ideal für Messemodelle in Mehrfachfertigung oder Schulungsmodelle." },
           ].map(({ icon: Icon, n, t, d }) => (
             <div key={n} className="bg-card border border-border rounded-xl p-5">
               <div className="flex items-center gap-2 mb-2">
@@ -592,7 +592,7 @@ export default function Kostenrechner() {
 
           <h3 className="text-lg font-semibold pt-2">Warum kein Sofortkauf? Warum persönliche Prüfung?</h3>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Viele 3D-Druck Dienstleister bieten vollautomatisierte Bestellprozesse an. Bei ekdruck haben wir uns bewusst dagegen entschieden, aus Qualitätsgründen. Nicht jedes 3D-Modell ist ohne weiteres druckbar. Überhänge, zu dünne Wandstärken oder geschlossene Hohlräume verursachen Probleme, die kein Algorithmus zuverlässig erkennt. Die Bauteilorientierung auf der Druckplatte beeinflusst Oberfläche, Stabilität und Stützstruktur-Aufwand erheblich.
+            Viele 3D-Druck Dienstleister bieten vollautomatisierte Bestellprozesse an. Bei ekdruck haben wir uns bewusst dagegen entschieden, aus Qualitätsgründen. Nicht jedes 3D-Modell ist ohne weiteres druckbar. Überhänge, zu dünne Wandstärken oder geschlossene Hohlräume verursachen Probleme, die kein Algorithmus zuverlässig erkennt. Die Objektausrichtung auf der Druckplatte beeinflusst Oberfläche, Stabilität und Stützstruktur-Aufwand erheblich.
           </p>
 
           <h3 className="text-lg font-semibold pt-2">FDM 3D-Druck: Das Verfahren hinter unseren Modellen</h3>

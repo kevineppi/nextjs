@@ -72,7 +72,7 @@ const Services = () => {
             Messen, Architektur und Industriepräsentationen.
           </p>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Anschauungsmodelle für jeden Maßstab – termingerecht und präzise gefertigt 
+            Anschauungsmodelle für jeden Maßstab – termingerecht und sauber gefertigt
             mit nachhaltigen Materialien aus Österreich.
           </p>
         </div>

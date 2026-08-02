@@ -911,7 +911,7 @@ export default function MessemodellGuidePage() {
                     W-6
                   </div>
                   <div>
-                    <h4 className="font-bold mb-1">Konstruktions-Review + Material-Freigabe</h4>
+                    <h4 className="font-bold mb-1">Aufbau-Review + Material-Freigabe</h4>
                     <p className="text-sm text-muted-foreground">
                       Maßstab, Material, Brennstoffklassen-Auswahl bestätigt. Lackierung-Schema
                       definiert.
@@ -979,7 +979,7 @@ export default function MessemodellGuidePage() {
               <div className="bg-primary/5 border border-primary/20 rounded-lg p-5">
                 <h4 className="font-bold mb-2">Folge-Modelle aus CAD</h4>
                 <p className="text-sm">
-                  Wenn die CAD-Konstruktion bereits steht (aus früherem Auftrag), Folge-Modelle
+                  Wenn das CAD-Modell bereits steht (aus früherem Auftrag), Folge-Modelle
                   10-15 Werktage. Ideal für Multi-Messen-Strategie.
                 </p>
               </div>
@@ -1063,7 +1063,7 @@ export default function MessemodellGuidePage() {
               <div className="bg-primary/5 border border-primary/20 rounded-lg p-5">
                 <h4 className="font-bold mb-2">Im Preis enthalten</h4>
                 <ul className="text-sm space-y-1">
-                  <li>Konstruktions-Review</li>
+                  <li>Aufbau-Review</li>
                   <li>Material-Wahl-Beratung</li>
                   <li>Standard-Lackierung</li>
                   <li>QA-Foto-Review</li>
@@ -1139,7 +1139,7 @@ export default function MessemodellGuidePage() {
               <div className="bg-card border border-border rounded-lg p-6">
                 <h3 className="text-xl font-bold mb-2">Modell 3: Drei-Wege-Abstimmung</h3>
                 <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
-                  Sie, der Messebauer und ekdruck arbeiten gemeinsam an Konstruktion,
+                  Sie, der Messebauer und ekdruck arbeiten gemeinsam an Umsetzung,
                   Stand-Integration und Logistik. Üblich bei komplexen Großständen.
                 </p>
                 <div className="grid md:grid-cols-2 gap-3 text-sm">

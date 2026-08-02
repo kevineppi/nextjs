@@ -72,7 +72,7 @@ const faqs = [
   {
     question: 'Wann lohnt sich PA-CF gegenüber PETG oder ABS?',
     answer:
-      'PA-CF (Carbon-Faser-verstärktes Polyamid) hat etwa das 2- bis 3-fache Zugfestigkeitsniveau von PETG/ABS und eine Wärmeformbeständigkeit bis ~180 °C. Es ist die richtige Wahl für Funktionsmuster, die mechanisch belastet werden, in DV/PV-Tests laufen oder bei Wärme maßhaltig bleiben müssen. Der Mehrpreis (€80-€150/kg) und der Bedarf einer gehärteten Düse rechtfertigen sich nur bei Funktions-Anforderungen · für reine Show-Modelle ist PA-CF überdimensioniert.',
+      'PA-CF (Carbon-Faser-verstärktes Polyamid) hat etwa das 2- bis 3-fache Zugfestigkeitsniveau von PETG/ABS und eine Wärmeformbeständigkeit bis ~180 °C. Es ist die richtige Wahl für Funktionsmuster, die mechanisch belastet werden, in DV/PV-Tests laufen oder bei Wärme formstabil bleiben müssen. Der Mehrpreis (€80-€150/kg) und der Bedarf einer gehärteten Düse rechtfertigen sich nur bei Funktions-Anforderungen · für reine Show-Modelle ist PA-CF überdimensioniert.',
   },
   {
     question: 'Welches Material eignet sich für Lebensmittelkontakt?',
@@ -82,7 +82,7 @@ const faqs = [
   {
     question: 'Was bedeutet HDT bei 0.45 MPa, und warum ist es wichtiger als die Glasübergangstemperatur?',
     answer:
-      'HDT (Heat Deflection Temperature) nach ISO 75-2 misst, bei welcher Temperatur sich ein genormter Prüfkörper unter definierter Last (0,45 MPa für die übliche Niedriglast-Methode) um 0,25 mm verformt. Das ist praxisrelevanter als die Glasübergangstemperatur (Tg), weil HDT die reale mechanische Belastung berücksichtigt. Faustregel für ek-druck-Praxis: Wenn ein Modell im Auto-Innenraum im Sommer (~60-70 °C) maßhaltig bleiben muss, braucht es ein Material mit HDT >75 °C · PETG, ASA, ABS oder PA-CF.',
+      'HDT (Heat Deflection Temperature) nach ISO 75-2 misst, bei welcher Temperatur sich ein genormter Prüfkörper unter definierter Last (0,45 MPa für die übliche Niedriglast-Methode) um 0,25 mm verformt. Das ist praxisrelevanter als die Glasübergangstemperatur (Tg), weil HDT die reale mechanische Belastung berücksichtigt. Faustregel für ek-druck-Praxis: Wenn ein Modell im Auto-Innenraum im Sommer (~60-70 °C) formstabil bleiben muss, braucht es ein Material mit HDT >75 °C · PETG, ASA, ABS oder PA-CF.',
   },
   {
     question: 'Ist PLA wirklich biologisch abbaubar · und was bedeutet das praktisch?',
@@ -247,7 +247,7 @@ export default function FdmMaterialVergleichPage() {
                     Anwendungen mit Aceton-Glättung · Spritzguss-ähnliche Oberfläche, aber UV-anfällig und Lüftungsbedarf.
                   </p>
                   <p>
-                    <strong className="text-primary">TPU</strong> ist flexibel (Shore 85A-70D) für Dichtungen
+                    <strong className="text-primary">TPU</strong> ist flexibel (Shore 85A-70D) für biegsame Objekte
                     und Dämpfer. <strong className="text-primary">PA-CF</strong> ist Hochleistung (Aluminium-ähnliche
                     Steifigkeit) für Funktionsmuster mit Last.
                   </p>

@@ -87,7 +87,7 @@ const OrganizationSchema = () => {
           itemOffered: {
             '@type': 'Service',
             name: 'Architekturmodelle',
-            description: 'Präzise 3D-gedruckte Architekturmodelle für Architekturbüros und Planer',
+            description: 'Detailgetreue 3D-gedruckte Architekturmodelle für Architekturbüros und Planer',
           },
         },
         {

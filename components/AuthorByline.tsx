@@ -58,7 +58,7 @@ const AuthorByline = ({
       'Architekturmodelle',
       'Messemodelle',
       'Industriemodelle',
-      'CAD-Konstruktion',
+      'CAD-Modellierung',
     ],
   }
 

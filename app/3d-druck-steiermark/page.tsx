@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 const REGION_LD = regionalLocalBusinessSchema({
   region: 'Steiermark',
   url: 'https://www.ek-druck.at/3d-druck-steiermark',
-  description: '3D-Druck-Service für Kunden in Steiermark. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Kleinserien. Persönliche Antwort in 6h. Ab €20.',
+  description: '3D-Druck-Service für Kunden in Steiermark. Express-Versand 24h aus Gunskirchen, OÖ. Architekturmodelle, Messemodelle, Prototypen, Mehrfachfertigung. Persönliche Antwort in 6h. Ab €20.',
 })
 
 const BREADCRUMB_LD = breadcrumbSchema([

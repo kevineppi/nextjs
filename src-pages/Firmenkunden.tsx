@@ -95,7 +95,7 @@ const Firmenkunden = () => {
     {
       icon: Package,
       title: "Flexible Bestellmengen",
-      description: "Vom Einzelstück bis zur Serie – wir skalieren mit Ihren Anforderungen.",
+      description: "Vom Einzelstück bis zur Mehrfachfertigung – wir skalieren mit Ihren Anforderungen.",
       highlight: "Keine Mindestbestellmenge",
       stats: "Ab 1 Stück"
     }
@@ -315,7 +315,7 @@ const Firmenkunden = () => {
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl">
                   Über 100 Unternehmen in Österreich nutzen unseren <strong>B2B-3D-Druck-Service</strong> mit
                   Rahmenvertrag, Mengenrabatt ab 5 Stück, NDA und Zahlungsziel 30 Tage. Vom Architekturbüro
-                  bis zur Werbeagentur, vom Kleinserien-Auftrag bis zur dauerhaft laufenden Lieferbeziehung.
+                  bis zur Werbeagentur, vom Mehrfachfertigungs-Auftrag bis zur dauerhaft laufenden Lieferbeziehung.
                 </p>
 
                 {/* Key USPs */}
@@ -667,22 +667,22 @@ const Firmenkunden = () => {
         <section className="py-20 md:py-28 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Rahmenvertrag &amp; Kleinserie</p>
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Rahmenvertrag &amp; Mehrfachfertigung</p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 tracking-[-0.03em]">
                 Was ein Rahmenvertrag konkret bedeutet.
               </h2>
 
               <div className="prose prose-lg max-w-none text-foreground/85">
-                <p>Ein <strong>Rahmenvertrag</strong> bei ekdruck enthält fünf Bausteine, die wir mit Ihnen individuell verhandeln: <strong>Mengenstaffel</strong> (Preise nach erwartetem Quartals-Volumen), <strong>Lieferplan</strong> (garantierte Express-Slots pro Monat, oder Abruf nach Bedarf), <strong>Reaktionszeit</strong> (typisch 4 h Angebot, 24-48 h Fertigung, 1-4 Tage Versand DACH), <strong>Schlüssel-Konto</strong> (direkter Inhaber-Kontakt, eine Person für alle Fragen) und <strong>Reporting</strong> (Quartals-Übersicht über alle Aufträge, Material-Verbrauch, durchschnittliche Lieferzeit). Mindestlaufzeit 6 Monate, kein automatischer Vertragsabschluss: Sie können jederzeit kündigen, wir genauso. Für Kleinserien ab 5 Stück gibt es bereits Staffel-Preise, ab Rahmenvertrag-Status kommen Volumenrabatte oben drauf.</p>
+                <p>Ein <strong>Rahmenvertrag</strong> bei ekdruck enthält fünf Bausteine, die wir mit Ihnen individuell verhandeln: <strong>Mengenstaffel</strong> (Preise nach erwartetem Quartals-Volumen), <strong>Lieferplan</strong> (garantierte Express-Slots pro Monat, oder Abruf nach Bedarf), <strong>Reaktionszeit</strong> (typisch 4 h Angebot, 24-48 h Fertigung, 1-4 Tage Versand DACH), <strong>Schlüssel-Konto</strong> (direkter Inhaber-Kontakt, eine Person für alle Fragen) und <strong>Reporting</strong> (Quartals-Übersicht über alle Aufträge, Material-Verbrauch, durchschnittliche Lieferzeit). Mindestlaufzeit 6 Monate, kein automatischer Vertragsabschluss: Sie können jederzeit kündigen, wir genauso. Für Mehrfachfertigungen ab 5 Stück gibt es bereits Staffel-Preise, ab Rahmenvertrag-Status kommen Volumenrabatte oben drauf.</p>
 
                 <p>Was wir nicht machen: künstliche Mindestabnahmen, versteckte Kostenpositionen, Setup-Gebühren oder Eilzuschläge ohne klare Kommunikation vorab. Wenn ein Express-Termin nur mit Aufpreis machbar ist, sagen wir das im Angebot in der ersten Zeile.</p>
               </div>
 
-              <h3 className="text-2xl md:text-3xl font-bold mt-12 mb-5 tracking-[-0.02em]">Kleinserie 5-500 Stück: wann FDM, wann SLS, wann Spritzguss</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mt-12 mb-5 tracking-[-0.02em]">Mehrfachfertigung 5-500 Stück: wann FDM, wann SLS, wann Spritzguss</h3>
               <div className="prose prose-lg max-w-none text-foreground/85">
-                <p>Bei <strong>Kleinserienfertigung</strong> hängt das wirtschaftliche Verfahren von Stückzahl und Geometrie ab. <strong>FDM in-house</strong> ist die Standard-Wahl für 1-100 Stück bei einfachen Geometrien, wir fertigen mehrere Objekte parallel, die Stückkosten bleiben konstant. Ab <strong>50-500 Stück</strong> und höheren Festigkeitsanforderungen lohnt sich <strong>SLS oder MJF über Partner</strong>, etwa €4-12 pro Bauteil je nach Größe. Ab <strong>1.000-5.000 Stück</strong> wird klassischer <strong>Spritzguss</strong> wirtschaftlich, dann verweisen wir ehrlich an einen Spritzgießer und übernehmen optional die Urmodell-Fertigung. Diese Schwellen sind in Realität fließend, wir kalkulieren beide Verfahren und legen Ihnen den Vergleich offen, damit Sie die Entscheidung treffen können.</p>
+                <p>Bei <strong>Mehrfachfertigung</strong> hängt das wirtschaftliche Verfahren von Stückzahl und Geometrie ab. <strong>FDM in-house</strong> ist die Standard-Wahl für 1-100 Stück bei einfachen Geometrien, wir fertigen mehrere Objekte parallel, die Stückkosten bleiben konstant. Ab <strong>50-500 Stück</strong> und höheren Festigkeitsanforderungen lohnt sich <strong>SLS oder MJF über Partner</strong>, etwa €4-12 pro Stück je nach Größe. Ab <strong>1.000-5.000 Stück</strong> wird klassischer <strong>Spritzguss</strong> wirtschaftlich, dann verweisen wir ehrlich an einen Spritzgießer und übernehmen optional die Urmodell-Fertigung. Diese Schwellen sind in Realität fließend, wir kalkulieren beide Verfahren und legen Ihnen den Vergleich offen, damit Sie die Entscheidung treffen können.</p>
 
-                <p>Für viele <strong>Innovation-Projekte und Vorseriendrucke</strong> sind 20-100 Stück FDM-Kleinserien genau richtig: schnelle Iteration, niedriges Risiko, keine Tool-Investition. Wenn das Produkt sich bewährt, geht es in Spritzguss; wenn nicht, ist nur ein Bruchteil des Geldes weg.</p>
+                <p>Für viele <strong>Innovation-Projekte und Vorab-Musterdrucke</strong> sind 20-100 Stück aus dem FDM-Druck genau richtig: schnelle Iteration, niedriges Risiko, keine Tool-Investition. Wenn das Produkt sich bewährt, geht es in Spritzguss; wenn nicht, ist nur ein Bruchteil des Geldes weg.</p>
               </div>
             </div>
           </div>

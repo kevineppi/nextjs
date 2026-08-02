@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Award, Users, Zap, Target, CheckCircle } from "lucide-react";
 const About = () => {
-  const capabilities = ["Einzelanfertigungen & Spezialanfertigungen", "Nachhaltige Inneneinrichtung", "Individuelle Projekte", "Design & Beratung", "Millimetergenaue Präzision", "Express-Service verfügbar"];
+  const capabilities = ["Einzelanfertigungen & Spezialanfertigungen", "Nachhaltige Inneneinrichtung", "Individuelle Projekte", "Design & Beratung", "Millimetergenaue Detailtreue", "Express-Service verfügbar"];
   const materials = ["100% Österreichisches Filament", "Hergestellt aus Industrieabfällen", "PLA & PLA+ nachhaltig", "PETG regional", "ABS aus Austria", "Flexible Materialien", "Alle Farben verfügbar", "Verschiedene Größen", "Umweltfreundlich", "Ressourcenschonend"];
   const values = [{
     icon: Target,
@@ -20,7 +20,7 @@ const About = () => {
   }, {
     icon: Award,
     title: "Qualität",
-    description: "Hohe Qualitätsansprüche und millimetergenaue Präzision bei jedem Projekt"
+    description: "Hohe Qualitätsansprüche und millimetergenaue Detailtreue bei jedem Projekt"
   }];
   return <section id="about" className="py-24 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
       {/* Decorative Background Elements */}

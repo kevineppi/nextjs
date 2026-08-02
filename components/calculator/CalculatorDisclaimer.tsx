@@ -15,7 +15,7 @@ const CalculatorDisclaimer = () => (
           </li>
           <li className="flex items-start gap-2">
             <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/60 flex-shrink-0" />
-            Die tatsächliche Kalkulation kann je nach Geometrie, Bauteilorientierung, Toleranzen, Materialverfügbarkeit, Nachbearbeitung und Prüfaufwand abweichen.
+            Die tatsächliche Kalkulation kann je nach Geometrie, Objektausrichtung, Detailtiefe, Materialverfügbarkeit, Nachbearbeitung und Prüfaufwand abweichen.
           </li>
           <li className="flex items-start gap-2">
             <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/60 flex-shrink-0" />

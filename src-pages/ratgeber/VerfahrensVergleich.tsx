@@ -52,7 +52,7 @@ const VerfahrensVergleich = () => {
   const slsAdvantages = ["Keine Stützstrukturen erforderlich", "Hohe mechanische Festigkeit", "Exzellente Oberflächenqualität", "Geeignet für Anschauungsmodelle und hochwertige Einzelstücke"];
   const slsDisadvantages = ["Sehr hohe Anschaffungskosten", "Höherer Energieverbrauch", "Begrenzte Materialauswahl", "Pulverentsorgung und -handhabung komplex"];
   return <>
-      <SEOHead title="FDM vs SLA vs SLS – Welches Verfahren passt? [2026]" description="Falsches Verfahren kostet doppelt. FDM (günstig, robust), SLA (glatt, präzise), SLS (komplex, stark) – Vergleichstabelle und Empfehlung für Ihren konkreten Projekttyp." keywords="fdm vs sla, 3d druckverfahren vergleich, fdm vs sls, sla vs sls, welches 3d druckverfahren, 3d druck verfahren auswählen" path="/ratgeber/verfahrens-vergleich" schemaType="article" datePublished="2025-10-20" dateModified="2026-05-01" />
+      <SEOHead title="FDM vs SLA vs SLS – Welches Verfahren passt? [2026]" description="Falsches Verfahren kostet doppelt. FDM (günstig, robust), SLA (glatt, detailgetreu), SLS (komplex, stark) – Vergleichstabelle und Empfehlung für Ihren konkreten Projekttyp." keywords="fdm vs sla, 3d druckverfahren vergleich, fdm vs sls, sla vs sls, welches 3d druckverfahren, 3d druck verfahren auswählen" path="/ratgeber/verfahrens-vergleich" schemaType="article" datePublished="2025-10-20" dateModified="2026-05-01" />
       <HowToSchema
         name="Das richtige 3D-Druckverfahren wählen"
         description="So finden Sie das optimale 3D-Druckverfahren für Ihr Projekt."
@@ -152,7 +152,7 @@ const VerfahrensVergleich = () => {
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-4 text-foreground">Wie funktioniert FDM?</h3>
                 <p className="text-muted-foreground mb-4">
-                  Beim FDM-Verfahren wird thermoplastisches Filament durch eine beheizte Düse geschmolzen und präzise auf einer Bauplattform abgelegt. Der Extruder bewegt sich entlang der X-, Y- und Z-Achse und trägt Material Schicht für Schicht auf, wobei jede neue Schicht mit der vorherigen verschmilzt.
+                  Beim FDM-Verfahren wird thermoplastisches Filament durch eine beheizte Düse geschmolzen und sauber auf einer Bauplattform abgelegt. Der Extruder bewegt sich entlang der X-, Y- und Z-Achse und trägt Material Schicht für Schicht auf, wobei jede neue Schicht mit der vorherigen verschmilzt.
                 </p>
                 <p className="text-muted-foreground mb-4">
                   <strong>Wissenschaftlicher Hintergrund:</strong> Die Schichtadhäsion bei FDM basiert auf der Interdiffusion von Polymerketten bei Temperaturen knapp über der Glasübergangstemperatur (Tg) des Materials. Bei PLA liegt diese bei ca. 60°C, bei PETG bei 80°C und bei ASA bei 100°C.
@@ -310,8 +310,8 @@ const VerfahrensVergleich = () => {
                   <CardContent className="space-y-2 text-muted-foreground">
                     <p>✓ Kosteneffizienz im Vordergrund steht</p>
                     <p>✓ Robuste Anschauungsmodelle oder Designstudien benötigt werden</p>
-                    <p>✓ Mechanische Belastbarkeit wichtiger ist als Oberflächenqualität</p>
-                    <p>✓ Große Bauteile (20x20x20cm+) gedruckt werden sollen</p>
+                    <p>✓ Robustheit wichtiger ist als Oberflächenqualität</p>
+                    <p>✓ Große Objekte (20x20x20cm+) gedruckt werden sollen</p>
                     <p>✓ Nachhaltige, recycelbare Materialien verwendet werden sollen</p>
                     <p className="pt-4 font-semibold text-foreground">Beispiele: Architekturmodelle, Messeexponate, Präsentationsmodelle, Designstudien</p>
                   </CardContent>

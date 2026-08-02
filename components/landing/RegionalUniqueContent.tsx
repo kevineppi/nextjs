@@ -53,7 +53,7 @@ const RegionalUniqueContent = ({
                   {[
                     { icon: Zap, title: "Express 24h", desc: `Für dringende Projekte in ${regionName}` },
                     { icon: Layers, title: "4 Materialien", desc: "PLA+, PETG, ASA, TPU – nach Bedarf" },
-                    { icon: Award, title: "Ab Stückzahl 1", desc: "Einzelteile bis Kleinserien" },
+                    { icon: Award, title: "Ab Stückzahl 1", desc: "Einzelteile bis Mehrfachfertigung" },
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3 p-4 rounded-xl bg-muted/40 border border-border/40">
                       <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">

@@ -39,7 +39,7 @@ const promiseFaqs = [
   },
   {
     question: 'Wie schnell antworten Sie auf eine Anfrage?',
-    answer: 'Werktags <2h auf Mail, WhatsApp und Telefon. Verbindliches Festpreisangebot in 6h nach CAD-Eingang. Bei komplexen Projekten (Segmentierung >5 Teile, Cutaway-Konstruktion) bis zu 24h · aber dann mit Zwischenmeldung wann das Angebot fertig ist.',
+    answer: 'Werktags <2h auf Mail, WhatsApp und Telefon. Verbindliches Festpreisangebot in 6h nach CAD-Eingang. Bei komplexen Projekten (Segmentierung >5 Teile, Cutaway-Aufbau) bis zu 24h · aber dann mit Zwischenmeldung wann das Angebot fertig ist.',
   },
   {
     question: 'Was kostet eine Modell-Revision nach Erst-Lieferung?',
@@ -51,7 +51,7 @@ const promiseFaqs = [
   },
   {
     question: 'Wie zeigen Sie mir die Qualität vor Versand?',
-    answer: 'Jedes Modell wird vor Verpackung von mir persönlich QA-geprüft (Maßhaltigkeit, Oberfläche, Lackierung, Logos). Sie bekommen Foto-Bestätigung per Mail oder WhatsApp, bevor verpackt wird. Bei Großprojekten >€2.000 zusätzlich Video-Walkaround.',
+    answer: 'Jedes Modell wird vor Verpackung von mir persönlich QA-geprüft (Maßstabstreue, Oberfläche, Lackierung, Logos). Sie bekommen Foto-Bestätigung per Mail oder WhatsApp, bevor verpackt wird. Bei Großprojekten >€2.000 zusätzlich Video-Walkaround.',
   },
   {
     question: 'Was passiert, wenn meine Anfrage nicht zu Ihnen passt?',
@@ -155,7 +155,7 @@ export default function QualityPage() {
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-3">
                 {[
-                  { icon: Clock, label: 'Angebot in 6h', detail: 'Verbindliches Festpreisangebot binnen 6 Werkstunden nach CAD-Eingang. Bei komplexen Konstruktionen Zwischenmeldung.' },
+                  { icon: Clock, label: 'Angebot in 6h', detail: 'Verbindliches Festpreisangebot binnen 6 Werkstunden nach CAD-Eingang. Bei komplexen Projekten Zwischenmeldung.' },
                   { icon: Camera, label: 'QA-Foto vor Versand', detail: 'Jedes Modell manuell QA-geprüft, fotodokumentiert. Sie sehen das Modell bevor es im Karton ist.' },
                   { icon: Mail, label: 'Antwort < 2h', detail: 'Werktags Mail/WhatsApp/Telefon · Antwortzeit unter 2 Stunden. Sonntags kein Service.' },
                   { icon: RotateCw, label: '14 Tage Reklamation', detail: 'Foto-Beleg bei Mängeln. Bei nachweislichem Druck-/Material-Fehler: Nachdruck startet binnen 48h, kostenlos.' },
@@ -195,7 +195,7 @@ export default function QualityPage() {
                   { num: '03', title: 'Festpreisangebot', timing: 'innerhalb 6h werktags', detail: 'Verbindlich, transparent. Material-Spezifikation, Nachbearbeitung, Lieferzeit, Versandkosten · alles auf einem Blatt.' },
                   { num: '04', title: 'Sie bestätigen', timing: 'wann es Ihnen passt', detail: 'Auftragserteilung per Mail oder PDF-Unterschrift. Bei Erstaufträgen Vorkasse möglich (oder Anzahlung 30%), bei Folgeaufträgen Zahlungsziel.' },
                   { num: '05', title: 'Druck startet', timing: 'meist nächster Werktag', detail: 'CAD-Aufbereitung, Slicing, Druckbett-Vorbereitung. Bei Express noch am gleichen Tag starten.' },
-                  { num: '06', title: 'Nachbearbeitung', timing: '0-3 Tage nach Druckende', detail: 'Schleifen, Grundieren, Lackieren wenn beauftragt. Logo-Anbringung, Sonder-Details. Manuelle QA jedes Bauteils.' },
+                  { num: '06', title: 'Nachbearbeitung', timing: '0-3 Tage nach Druckende', detail: 'Schleifen, Grundieren, Lackieren wenn beauftragt. Logo-Anbringung, Sonder-Details. Manuelle QA jedes Stücks.' },
                   { num: '07', title: 'QA-Foto + Versand-Freigabe', timing: 'vor Verpackung', detail: 'Foto-Bestätigung an Sie per Mail/WhatsApp. Bei Großprojekten Video-Walkaround. Erst nach Ihrer OK-Bestätigung wird verpackt.' },
                   { num: '08', title: 'Versand + Anlieferung', timing: 'AT 1-2 Tage, DACH 2-4 Tage', detail: 'ÖPOST / DPD / DHL. Bei Großmodellen ggf. Spedition oder persönliche Anlieferung. Tracking-Link automatisch.' },
                 ].map((step, i) => (

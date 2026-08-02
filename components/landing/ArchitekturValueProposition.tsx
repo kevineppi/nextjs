@@ -31,7 +31,7 @@ const ArchitekturValueProposition = ({ regionName }: ArchitekturValueProposition
       icon: Clock
     },
     {
-      metric: "Präzision",
+      metric: "Detailtreue",
       traditional: "Handwerklich begrenzt",
       printed: "0.1mm Auflösung",
       advantage: "Filigrane Details",
@@ -101,7 +101,7 @@ const ArchitekturValueProposition = ({ regionName }: ArchitekturValueProposition
                 { label: "Änderungen", value: "Schnelle Iteration", icon: RefreshCcw },
                 { label: "Maßstäbe", value: "1:50 bis 1:500", icon: Layers },
                 { label: "Skalierung", value: "Jede Größe", icon: TrendingUp },
-                { label: "Details", value: "0.1mm Präzision", icon: Sparkles }
+                { label: "Details", value: "0.1mm Detailtreue", icon: Sparkles }
               ].map((stat, index) => (
                 <div 
                   key={index}

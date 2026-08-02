@@ -166,7 +166,7 @@ const StructuredData = ({ type, data }: StructuredDataProps) => {
                   "bestRating": "5",
                   "worstRating": "1"
                 },
-                "reviewBody": "Ich bin absolut begeistert von ekDruck! Die Qualität ist erstklassig, jedes Detail wird sehr präzise und sauber umgesetzt. Die Kommunikation war von Anfang an ausgesprochen freundlich und professionell.",
+                "reviewBody": "Ich bin absolut begeistert von ekDruck! Die Qualität ist erstklassig, jedes Detail wird sehr detailgetreu und sauber umgesetzt. Die Kommunikation war von Anfang an ausgesprochen freundlich und professionell.",
                 "datePublished": "2024-12-15"
               },
               {
@@ -327,8 +327,8 @@ const StructuredData = ({ type, data }: StructuredDataProps) => {
               a: "Standard-Lieferzeit beträgt 3-5 Tage. Express-Service (24-48h) ist verfügbar. Lieferung in ganz Oberösterreich."
             },
             {
-              q: "Bieten Sie auch CAD-Design und Konstruktion an?",
-              a: "Ja, wir bieten professionelle 3D-Modellierung, CAD-Konstruktion und technische Zeichnungen für Ihre individuellen Projekte an."
+              q: "Bieten Sie auch CAD-Design und Modellierung an?",
+              a: "Ja, wir bieten professionelle 3D-Modellierung, CAD-Aufbau und technische Zeichnungen für Ihre individuellen Projekte an."
             }
           ];
 
