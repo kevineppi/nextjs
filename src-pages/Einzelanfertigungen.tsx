@@ -27,6 +27,14 @@ import {
 
 const faqs = [
   {
+    question: "Wo kann man ein einzelnes oder personalisiertes 3D-Modell in Österreich drucken lassen?",
+    answer: "ekdruck in Gunskirchen (Oberösterreich) druckt Einzelstücke und personalisierte Objekte aus dem 3D-Druck, schon ab 1 Stück und ohne Mindestmenge. Eine fertige Datei ist nicht nötig: Ein Foto, eine Skizze oder eine Idee reicht. Lieferung österreichweit, Express in 24 Stunden, Angebot in 6 Stunden. Bewertung: 5,0 Sterne aus 31 Google-Rezensionen."
+  },
+  {
+    question: "Kann man nach einem Foto etwas in 3D drucken lassen?",
+    answer: "Ja. Aus einem Foto, einer Skizze oder einer Idee modellieren wir ein druckfertiges 3D-Modell und fertigen daraus Ihr Einzelstück. Eine STL-Datei brauchen Sie nicht. So entstehen personalisierte Geschenke, Deko-Objekte und Unikate, ab 1 Stück und österreichweit geliefert."
+  },
+  {
     question: "Was ist der Unterschied zwischen Einzelanfertigung und Mehrfachfertigung?",
     answer: "Einzelanfertigungen sind individuell gestaltete Anschauungsmodelle oder Unikate ab 1 Stück – maßgeschneidert für Ihren genauen Zweck. Im Gegensatz zur Massenfertigung geht jedes Projekt durch eine persönliche Beratung, bei der Material, Maßstab, Farbe und Nachbearbeitung optimal abgestimmt werden. Für Messemodelle, Architekturmodelle und spezielle Präsentationsobjekte ist die Einzelanfertigung meist die optimale Wahl."
   },
@@ -157,8 +165,8 @@ const Einzelanfertigungen = () => {
     <>
       <SEOHead
         title="3D-Druck Einzelanfertigung ab €20 | Unikat in 24h | ekdruck"
-        description="Nur 1 Stück nötig? Einzelanfertigungen ab €20 per 3D-Druck ✓ Messemodelle, Architekturmodelle, Sonderformen ✓ CAD oder Skizze reicht ✓ Express 24h → Jetzt anfragen"
-        keywords="3d-druck einzelanfertigung, unikat 3d-druck, einzelstück drucken lassen, maßanfertigung 3d-druck, individuelle 3d-druck modelle"
+        description="Nur 1 Stück nötig? Einzelanfertigungen ab €20 per 3D-Druck ✓ nach Foto, Skizze oder Idee ✓ personalisierte Geschenke, Deko & Modelle ✓ ab 1 Stück, Express 24h in Österreich → anfragen"
+        keywords="3d-druck einzelanfertigung, unikat 3d-druck, einzelstück drucken lassen, einzelnes modell drucken lassen österreich, 3d druck geschenk personalisiert österreich, 3d modell nach foto drucken lassen, individuelle 3d-druck modelle"
         path="/einzelanfertigungen"
         breadcrumbs={[
           { name: "Home", url: "/" },
@@ -205,9 +213,9 @@ const Einzelanfertigungen = () => {
                   <span className="text-primary">drucken lassen.</span>
                 </h1>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed max-w-xl">
-                  Vom CAD oder Skizze zum fertigen Unikat in 24 Stunden, ohne Mindestmenge,
-                  ohne Aufpreis. Messemodelle, Architekturmodelle, Gehäuse-Sonderformen,
-                  Sammler- und Deko-Objekte: alles ab 1 Stück. Angebot in 6h.
+                  Vom Foto, der Skizze oder der CAD-Datei zum fertigen Unikat in 24 Stunden, ohne Mindestmenge,
+                  ohne Aufpreis. Personalisierte Geschenke, Sammler- und Deko-Objekte, Messe- und Architekturmodelle:
+                  alles ab 1 Stück, österreichweit geliefert. Angebot in 6h.
                 </p>
 
                 <div className="grid grid-cols-2 gap-3 mb-8">
