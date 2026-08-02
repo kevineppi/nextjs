@@ -6,7 +6,7 @@ import { MaterialRecommendation } from '@/components/landing/MesseMaterialTips';
 const defaultCaseStudy: CaseStudyData = {
   title: "Wettbewerbsmodell für Architekturbüro",
   industry: "Architektur",
-  challenge: "Ein Architekturbüro benötigte ein maßstabsgetreues Modell im Maßstab 1:100 für einen Architekturwettbewerb. Die komplexe Fassadenstruktur musste präzise wiedergegeben werden.",
+  challenge: "Ein Architekturbüro benötigte ein maßstabsgetreues Modell im Maßstab 1:100 für einen Architekturwettbewerb. Die komplexe Fassadenstruktur musste detailgetreu wiedergegeben werden.",
   solution: "Wir fertigten das Gebäudemodell in feiner Auflösung (0.1mm) aus weißem PLA. Die Fassadenelemente wurden separat gedruckt, Fenster aus transparentem PETG ergänzt.",
   result: "Das Modell überzeugte die Jury durch Detailgenauigkeit. Das Architekturbüro gewann den Wettbewerb.",
   specs: {

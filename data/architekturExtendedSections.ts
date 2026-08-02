@@ -17,7 +17,7 @@ const wien: ExtendedArchitekturSections = {
     {
       title: 'Wettbewerbsmodelle für Wiener Architekturbüros',
       description: 'Architekturbüros im 6. und 7. Bezirk reichen bei geladenen Wettbewerben maßstabsgetreue Modelle ein. 1:200 Stadtmodelle mit Umgebungsbebauung und Grünflächen · gedruckt über Nacht vor der Deadline.',
-      whyPrint: 'Handgefertigte Modelle dauern 2-3 Wochen. Ein 3D-gedrucktes 1:200 Modell ist in 48h abgabebereit · mit identischer Präzision bei Fensterteilungen und Fassadenstruktur.',
+      whyPrint: 'Handgefertigte Modelle dauern 2-3 Wochen. Ein 3D-gedrucktes 1:200 Modell ist in 48h abgabebereit · mit identischer Detailtreue bei Fensterteilungen und Fassadenstruktur.',
       requirements: ['Maßstab 1:200', 'Weiß oder grau monochrom', 'Umgebungsbebauung inklusive', 'Express 48h'],
     },
     {
@@ -182,7 +182,7 @@ const steiermark: ExtendedArchitekturSections = {
     { statement: 'Nachhaltige Materialien', explanation: 'In der Green-Tech-Hauptstadt Graz wird PLA als biobasierter Werkstoff geschätzt.' },
   ],
   commonMistakes: [
-    { mistake: 'Zu detaillierte CAD-Datei exportiert', explanation: 'Inneneinrichtung und unsichtbare Bauteile machen die Datei zu groß und den Druck zu langsam.', prevention: 'Wir bereinigen die Datei kostenlos und entfernen unsichtbare Geometrie. So wird der Druck schneller und günstiger.' },
+    { mistake: 'Zu detaillierte CAD-Datei exportiert', explanation: 'Inneneinrichtung und unsichtbare Teile machen die Datei zu groß und den Druck zu langsam.', prevention: 'Wir bereinigen die Datei kostenlos und entfernen unsichtbare Geometrie. So wird der Druck schneller und günstiger.' },
     { mistake: 'Dachbegrünung nicht darstellbar', explanation: 'Feine Gräser und Pflanzen sind im 3D-Druck nicht abbildbar.', prevention: 'Wir stellen Begrünung als texturierte Fläche oder leicht erhöhte Schicht in Grün dar · das wirkt realistisch im Maßstab.' },
     { mistake: 'Express zu spät angefragt', explanation: 'Wettbewerbsabgabe Freitag, Anfrage Donnerstag 16 Uhr · das ist nicht mehr machbar.', prevention: 'Für 48h-Express bitte mindestens 2 Tage vorab anfragen. Wir reservieren dann Druckerkapazität.' },
     { mistake: 'Maßstabsmischung im Modell', explanation: 'Gebäude in 1:200, aber Bäume in 1:100 · das wirkt unproportional.', prevention: 'Alle Elemente werden im gleichen Maßstab gefertigt. Wir prüfen die Konsistenz automatisch.' },
@@ -193,7 +193,7 @@ const kaernten: ExtendedArchitekturSections = {
   typicalProjects: [
     {
       title: 'Holzbau-Modelle für Kärntner Architekten',
-      description: 'Die Kärntner Holzbautradition spiegelt sich in Architekturmodellen wider. Holzkonstruktionen werden als transparente Schnittmodelle dargestellt, die das Tragwerk sichtbar machen.',
+      description: 'Die Kärntner Holzbautradition spiegelt sich in Architekturmodellen wider. Holzbauten werden als transparente Schnittmodelle dargestellt, die das Tragwerk sichtbar machen.',
       whyPrint: 'Holz-Tragwerke sind komplex. Ein geschnittenes 3D-Modell zeigt Verbindungen und Knotenpunkte besser als jede Zeichnung.',
       requirements: ['Maßstab 1:50 bis 1:100', 'Schnittdarstellung', 'PLA+ oder PETG', 'Standard 5-7 Tage'],
     },
@@ -221,7 +221,7 @@ const kaernten: ExtendedArchitekturSections = {
     ],
   },
   customerPriorities: [
-    { statement: 'Holzbau-Kompetenz', explanation: 'Kärntner Architekten erwarten, dass der Modellfertiger Holzkonstruktionen versteht und korrekt darstellt.' },
+    { statement: 'Holzbau-Kompetenz', explanation: 'Kärntner Architekten erwarten, dass der Modellfertiger den Holzbau versteht und korrekt darstellt.' },
     { statement: 'Robuste Alpen-Logistik', explanation: 'Der Transport über die Tauernautobahn ist lang. Die Verpackung muss Temperaturschwankungen und Erschütterungen standhalten.' },
     { statement: 'Budget für Gemeinden', explanation: 'Kleine Gemeinden haben begrenzte Budgets. Transparente Preise ab €30 sind wichtig.' },
   ],
@@ -329,7 +329,7 @@ const vorarlberg: ExtendedArchitekturSections = {
     {
       title: 'Kunsthaus-Erweiterungen und Kulturbauten',
       description: 'Kulturprojekte wie das KUB Bregenz setzen architektonische Maßstäbe. Wettbewerbsmodelle für Kulturbauten in Vorarlberg müssen höchsten Ansprüchen genügen.',
-      whyPrint: 'Vorarlberger Architekten erwarten Präzision. Jede Fuge, jeder Rücksprung muss im Modell sichtbar sein.',
+      whyPrint: 'Vorarlberger Architekten erwarten Detailtreue. Jede Fuge, jeder Rücksprung muss im Modell sichtbar sein.',
       requirements: ['Maßstab 1:200', 'Höchste Detailauflösung', 'PLA+ weiß', 'Express möglich'],
     },
     {
@@ -344,7 +344,7 @@ const vorarlberg: ExtendedArchitekturSections = {
     subheadline: 'Vom Bregenzerwald-Entwurf zum Wettbewerbsmodell',
     steps: [
       { title: 'Entwurf & Baukultur-Kontext', description: 'Wir besprechen nicht nur die Datei, sondern auch den architektonischen Anspruch. Vorarlberger Baukultur hat eigene Maßstäbe.', context: 'Wir kennen die Vorarlberger Architekturszene und wissen, was bei Jurys zählt.' },
-      { title: 'Präzisionsdruck', description: 'Für Vorarlberger Modelle nutzen wir 0.1mm Layer Height · das Maximum an Detailschärfe im FDM-Druck.', context: 'Die Differenz zwischen 0.12mm und 0.1mm ist bei Fassadenstrukturen sichtbar.' },
+      { title: 'Detailgenauer Druck', description: 'Für Vorarlberger Modelle nutzen wir 0.1mm Layer Height · das Maximum an Detailschärfe im FDM-Druck.', context: 'Die Differenz zwischen 0.12mm und 0.1mm ist bei Fassadenstrukturen sichtbar.' },
       { title: 'Qualitätskontrolle', description: 'Jedes Modell wird unter Lupe auf Schichtfehler und Detailgenauigkeit geprüft.', context: 'Vorarlberger Architekten sind anspruchsvoll · unsere QA-Standards passen dazu.' },
       { title: 'Lieferung ins Ländle', description: 'Versand über A14 Rheintal. Auch Lieferung in die Schweiz und nach Süddeutschland möglich.', context: 'Grenznahe Projekte beliefern wir regelmäßig · auch nach St. Gallen und Lindau.' },
     ],

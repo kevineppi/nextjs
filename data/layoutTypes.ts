@@ -474,7 +474,7 @@ export const messeCTAByType: Record<MesseLayoutType, (regionName: string, delive
   }),
   grossmodell: (r, d) => ({
     headline: `XXL-Messemodelle für ${r} · bis 2 Meter`,
-    subline: `Großformatige Modelle, die beeindrucken. Modulare Konstruktion für einfachen Transport. Lieferung nach ${r}: ${d}.`,
+    subline: `Großformatige Modelle, die beeindrucken. Modularer Aufbau für einfachen Transport. Lieferung nach ${r}: ${d}.`,
     ctaLabel: 'Großmodell anfragen',
     secondaryLabel: 'Größen & Preise',
     badge: 'Großformat-Spezialist',
@@ -487,7 +487,7 @@ export const messeCTAByType: Record<MesseLayoutType, (regionName: string, delive
     ctaLabel: 'Interaktives Modell anfragen',
     secondaryLabel: 'Technische Details',
     badge: 'Interaktiv & Erlebbar',
-    urgencyText: `🖐️ Zum Anfassen · Modulare Konstruktion · Für Messen in ${r}`,
+    urgencyText: `🖐️ Zum Anfassen · Modularer Aufbau · Für Messen in ${r}`,
     variant: 'card'
   }),
   budget: (r, d) => ({
@@ -566,11 +566,11 @@ export const druckCTAByType: Record<DruckLayoutType, (regionName: string, delive
     variant: 'card'
   }),
   serie: (r, d) => ({
-    headline: `Kleinserien 3D-Druck für ${r}`,
+    headline: `3D-Druck ab 10 Stück für ${r}`,
     subline: `Ab 10 Stück mit Mengenrabatt. Gleichbleibende Qualität bei jeder Stückzahl. Ideal für Präsentations- und Vertriebsmodelle.`,
-    ctaLabel: 'Kleinserie anfragen',
+    ctaLabel: 'Mehrfachfertigung anfragen',
     secondaryLabel: 'Staffelpreise ansehen',
-    badge: 'Kleinserien-Profi',
+    badge: 'Mehrfachfertigungs-Profi',
     urgencyText: `📦 10% ab 10 Stück · 15% ab 50 Stück · Lieferung nach ${r}`,
     variant: 'card'
   }),

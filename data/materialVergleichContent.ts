@@ -100,7 +100,7 @@ export const materials: MaterialSpec[] = [
     avoidFor: [
       'Outdoor-Anwendungen (UV-Abbau)',
       'Temperaturen >50 °C (Verformung)',
-      'Mechanisch belastete Bauteile',
+      'Dauerhaft mechanisch beanspruchte Teile',
       'Auto-Innenraum im Sommer',
     ],
     foodSafe: 'mit Filament-Zertifikat',
@@ -140,9 +140,9 @@ export const materials: MaterialSpec[] = [
     bestFor: [
       'Mehrfach-Messemodelle (5+ Messen)',
       'Outdoor-Demonstratoren (UV-stabilisiert)',
-      'Mechanisch belastete Schaufläche',
+      'Mechanisch beanspruchte Schauflächen',
       'Daueranfass-Modelle für Vertriebs-Touren',
-      'Funktionsbauteile mit moderater Belastung',
+      'Funktionsmuster mit moderater Beanspruchung',
     ],
     avoidFor: [
       'Höchste Detailtreue (PLA besser)',
@@ -234,7 +234,7 @@ export const materials: MaterialSpec[] = [
     ],
     bestFor: [
       'Premium-Show-Quality Messemodelle',
-      'Automotive-Bauteile mit Spritzguss-Optik',
+      'Automotive-Teile mit Spritzguss-Optik',
       'Modelle mit Aceton-Glättung (Hochglanz)',
       'Schaltschrank-Modelle (lackierbar in RAL 7035)',
     ],
@@ -260,7 +260,7 @@ export const materials: MaterialSpec[] = [
     name: 'TPU',
     fullName: 'Thermoplastisches Polyurethan',
     shortDescription:
-      'Flexibles Elastomer für gummiartige Bauteile. Drei Härtegrade gängig (Shore 85A weich, 95A standard, 70D hart).',
+      'Flexibles Elastomer für gummiartige Teile. Drei Härtegrade gängig (Shore 85A weich, 95A standard, 70D hart).',
     density: '1,20 g/cm³',
     tensileStrength: '25-50 MPa',
     flexuralModulus: '0,02-0,5 GPa (sehr niedrig · flexibel)',
@@ -278,7 +278,7 @@ export const materials: MaterialSpec[] = [
     uvResistance: 'mittel',
     postProcessing: ['Begrenzt · flexibles Material'],
     bestFor: [
-      'Dichtungen und Dämpfer',
+      'Flexible Auflagen und Dämpfer',
       'Stoßdämpfende Elemente in Demo-Modellen',
       'Flexible Scharniere',
       'Reifen-Mockups für Konzeptfahrzeuge',
@@ -287,7 +287,7 @@ export const materials: MaterialSpec[] = [
     avoidFor: [
       'Drucker ohne Direct-Extruder (Bowden-Setup schwierig)',
       'Starre Strukturen',
-      'Modelle die ihre Form präzise halten müssen',
+      'Modelle die formstabil bleiben müssen',
     ],
     foodSafe: 'nein',
     priceCategory: '€€€',
@@ -295,7 +295,7 @@ export const materials: MaterialSpec[] = [
     biodegradable: false,
     recyclable: 'eingeschränkt',
     ekdruckUsage:
-      'Sub-Komponenten in größeren Modellen · z.B. Reifen-Schalen bei Konzeptfahrzeugen, flexible Schläuche bei Anlagenmodellen, weiche Dichtungen die Magnet-Verbindungen ergänzen.',
+      'Sub-Komponenten in größeren Modellen · z.B. Reifen-Schalen bei Konzeptfahrzeugen, flexible Schläuche bei Anlagenmodellen, weiche Auflagen die Magnet-Verbindungen ergänzen.',
   },
 
   // ═══════════════════════════════════════════════════════════════
@@ -306,7 +306,7 @@ export const materials: MaterialSpec[] = [
     name: 'PA-CF',
     fullName: 'Carbon-Faser-verstärktes Polyamid (PA6 + CF)',
     shortDescription:
-      'Hochleistungs-Compound für funktionsfähige Bauteile. Carbon-Fasern erhöhen Steifigkeit und Festigkeit deutlich gegenüber reinem Polyamid.',
+      'Hochleistungs-Compound für funktionsfähige Teile. Carbon-Fasern erhöhen Steifigkeit und Festigkeit deutlich gegenüber reinem Polyamid.',
     density: '1,15 g/cm³',
     tensileStrength: '80-120 MPa',
     flexuralModulus: '7-12 GPa',
@@ -322,10 +322,10 @@ export const materials: MaterialSpec[] = [
     needsHardenedNozzle: true,
     hygroscopic: 'hoch',
     uvResistance: 'mittel',
-    postProcessing: ['Schleifen schwierig', 'Lackierung möglich', 'Maßhaltig auch nach Wärme'],
+    postProcessing: ['Schleifen schwierig', 'Lackierung möglich', 'Formstabil auch nach Wärme'],
     bestFor: [
-      'Funktionsmuster mit mechanischer Belastung',
-      'Vorserien-Bauteile für DV/PV-Tests',
+      'Funktionsmuster mit hoher Beanspruchung',
+      'Vorab-Muster für DV/PV-Tests',
       'Halterungen und Werkzeug-Aufnahmen',
       'E-Antriebs-Komponenten (Show + Test)',
       'Pre-Spritzguss-Validierung',
@@ -341,7 +341,7 @@ export const materials: MaterialSpec[] = [
     biodegradable: false,
     recyclable: 'eingeschränkt',
     ekdruckUsage:
-      'Funktionsmuster und Vorserien-Bauteile. Beispiel: Tier-1-Automotive-Zulieferer testet Konstruktions-Variante mit PA-CF-3D-Druck vor Spritzguss-Werkzeugbau · spart €10.000+ pro Iteration.',
+      'Funktionsmuster und Vorab-Muster. Beispiel: Tier-1-Automotive-Zulieferer testet Design-Variante mit PA-CF-3D-Druck vor Spritzguss-Werkzeugbau · spart €10.000+ pro Iteration.',
   },
 ]
 
@@ -392,16 +392,16 @@ export const decisionMatrix: DecisionScenario[] = [
   },
   {
     scenario: 'Funktionsmuster für mechanische Tests (DV/PV)',
-    context: 'Belastungstests vor Werkzeugbau, Maßhaltigkeit unter Last gefordert.',
+    context: 'Mechanische Tests vor Werkzeugbau, Formstabilität unter Beanspruchung gefordert.',
     recommendation:
-      'PA-CF · Carbon-Faser-Verstärkung erreicht Aluminium-nahe Steifigkeit, Maßhaltigkeit auch nach Wärme-Zyklen.',
+      'PA-CF · Carbon-Faser-Verstärkung erreicht Aluminium-nahe Steifigkeit, Formstabilität auch nach Wärme-Zyklen.',
     recommendedSlug: 'pa-cf',
   },
   {
-    scenario: 'Flexible Sub-Komponente (Dichtung, Tülle)',
-    context: 'Elastisches Verhalten benötigt, kein steifes Bauteil.',
+    scenario: 'Flexible Sub-Komponente (Auflage, Tülle)',
+    context: 'Elastisches Verhalten benötigt, kein steifes Teil.',
     recommendation:
-      'TPU Shore 95A · Standard-Härtegrad für die meisten Industrie-Dichtungen und Stoßdämpfer.',
+      'TPU Shore 95A · Standard-Härtegrad für die meisten flexiblen Industrie-Elemente und Stoßdämpfer.',
     recommendedSlug: 'tpu',
   },
 ]

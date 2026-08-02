@@ -139,7 +139,7 @@ export const swissExtendedData: Record<string, RegionalExtendedData> = {
       { question: "Liefern Sie Messemodelle direkt zur Messe Luzern?", answer: "Ja. Versicherter Versand direkt an Ihren Standplatz. Bitte Hallen- und Standnummer angeben. 4-5 Werktage Standard, Express 48h." },
       { question: "Können Sie Architekturmodelle für Schweizer Wettbewerbe fertigen?", answer: "Ja. Wir haben Erfahrung mit Wettbewerbsmodellen in Maßstäben von 1:50 bis 1:500, mit Geländemodellierung und Umgebungsdarstellung." },
     ],
-    introText: "Die Messe Luzern ist die wichtigste Messeplattform der Zentralschweiz. Die LUGA als Gewerbemesse und die Bauen+Wohnen als Fachmesse für die Baubranche ziehen jährlich Zehntausende Fachbesucher an. Für Aussteller an der Messe Luzern fertigen wir Architekturmodelle, Gebäudeschnitte und Infrastrukturmodelle aus dem 3D-Druck · präzise, termingerecht und mit vollständiger Zollabwicklung. Ob Wohnbauprojekt, Gewerbeimmobilie oder Energieinfrastruktur: Ihr Exponat wird zum Blickfang am Zentralschweizer Messestand."
+    introText: "Die Messe Luzern ist die wichtigste Messeplattform der Zentralschweiz. Die LUGA als Gewerbemesse und die Bauen+Wohnen als Fachmesse für die Baubranche ziehen jährlich Zehntausende Fachbesucher an. Für Aussteller an der Messe Luzern fertigen wir Architekturmodelle, Gebäudeschnitte und Infrastrukturmodelle aus dem 3D-Druck · detailgetreu, termingerecht und mit vollständiger Zollabwicklung. Ob Wohnbauprojekt, Gewerbeimmobilie oder Energieinfrastruktur: Ihr Exponat wird zum Blickfang am Zentralschweizer Messestand."
   },
 };
 

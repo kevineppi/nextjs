@@ -148,7 +148,7 @@ const wien: DruckSectionDataSet = {
       { label: 'Materialmix', value: '4 Typen kombinierbar', detail: 'PLA+, PETG, ASA und TPU in einem Modell' },
       { label: 'Farben', value: '20+ Standardfarben', detail: 'Alle Startup-CI-Farben darstellbar' },
       { label: 'Max. Größe', value: '30 x 30 x 40 cm', detail: 'Größere Modelle modular aufgebaut' },
-      { label: 'Toleranz', value: '±0.2mm', detail: 'Exakte Proportionen für Investorenvertrauen' },
+      { label: 'Abweichung', value: '±0.2mm', detail: 'Exakte Proportionen für Investorenvertrauen' },
       { label: 'Nachbearbeitung', value: 'Schleifen, Grundieren', detail: 'Premium-Oberfläche für Top-Pitches' },
     ],
   },
@@ -178,7 +178,7 @@ const wien: DruckSectionDataSet = {
     { anchor: '3D-Druck Expressfertigung in Linz', href: '/3d-druck-oberoesterreich', context: 'Für zeitkritische Projekte bietet unser Standort in Linz Same-Day-Abholung.' },
     { anchor: 'Designstudien für Messestände', href: '/messemodelle/wien', context: 'Wiener Messemodelle mit kreativer Gestaltung für Ihr nächstes Event.' },
     { anchor: '3D-gedruckte Architekturmodelle Wien', href: '/architekturmodelle/wien', context: 'Architekten in Wien vertrauen auf unsere maßstabsgetreuen Wettbewerbsmodelle.' },
-    { anchor: 'Modelldruck für Grazer Industriebetriebe', href: '/3d-druck-steiermark', context: 'Für Serienfertigung und Industrieanwendungen ist unser Grazer Service ideal.' },
+    { anchor: 'Modelldruck für Grazer Industriebetriebe', href: '/3d-druck-steiermark', context: 'Für Mehrfachfertigung und Industrieanwendungen ist unser Grazer Service ideal.' },
   ],
 
 };
@@ -227,7 +227,7 @@ const linz: DruckSectionDataSet = {
       { label: 'Schnellmodell (bis 8cm)', price: 'ab €15', note: 'Formcheck, erste Visualisierung' },
       { label: 'Schulungsmodell (15-25cm)', price: 'ab €50', note: 'Mehrfarbig, farbcodierte Schichten' },
       { label: 'Präsentationsmodell (30cm+)', price: 'ab €90', note: 'Nachbearbeitet, professionell' },
-      { label: '10er-Serie gleicher Teile', price: '-10%', note: 'Mengenrabatt ab 10 identischen Modellen' },
+      { label: '10er-Set gleicher Teile', price: '-10%', note: 'Mengenrabatt ab 10 identischen Modellen' },
     ],
     badges: ['Keine Versandkosten', 'Abholung Same-Day', 'Vor-Ort-Qualitätsprüfung'],
   },
@@ -238,7 +238,7 @@ const linz: DruckSectionDataSet = {
       { label: 'Mehrfarbig', value: 'Bis 6 Farben', detail: 'Farbcodierte Schichten für Schulungsmodelle' },
       { label: 'Schichthöhe', value: '0.12 · 0.28mm', detail: 'Fein für Details, grob für Schnellmodelle' },
       { label: 'Schnittmodelle', value: 'Mehrteilig zerlegbar', detail: 'Interne Strukturen sichtbar machen' },
-      { label: 'Toleranz', value: '±0.2mm', detail: 'Reproduzierbar bei Nachbestellungen' },
+      { label: 'Abweichung', value: '±0.2mm', detail: 'Reproduzierbar bei Nachbestellungen' },
       { label: 'Größe', value: '30 x 30 x 40 cm', detail: 'Größer modular · Nähte kaum sichtbar' },
     ],
   },
@@ -278,7 +278,7 @@ const linz: DruckSectionDataSet = {
 // ═══════════════════════════════════════════
 const graz: DruckSectionDataSet = {
   valueProposition: {
-    headline: 'Designstudien in Serie · für Grazer Technologieunternehmen',
+    headline: 'Designstudien in Mehrfachfertigung · für Grazer Technologieunternehmen',
     subheadline: 'Physische Bewertungsrunden statt Bildschirm-Reviews · 50 Varianten in einer Woche',
     advantages: [
       { icon: 'Layers', title: '50 Varianten in 5 Tagen', description: 'Drucken Sie alle Designoptionen parallel. Physischer Vergleich beschleunigt Entscheidungen um 80%.' },
@@ -287,7 +287,7 @@ const graz: DruckSectionDataSet = {
       { icon: 'Eye', title: 'Transparente Sichtmodelle', description: 'PETG Transparent zeigt innere Strukturen. Ideal für Design-Reviews und Konzeptbewertungen.' },
     ],
     stats: [
-      { label: 'Toleranz', value: '±0.2mm' },
+      { label: 'Abweichung', value: '±0.2mm' },
       { label: 'Mengenrabatt', value: 'ab 10 Stück' },
       { label: 'ASA verfügbar', value: 'UV-beständig' },
       { label: 'A9 Express', value: '1-2 Tage' },
@@ -298,7 +298,7 @@ const graz: DruckSectionDataSet = {
     subheadline: 'Vom CAD zur Bewertungsrunde · strukturiert, effizient, termingerecht',
     steps: [
       { title: 'CAD-Dateien liefern', tasks: ['STL/STEP für alle Varianten', 'Materialwunsch angeben (ASA empfohlen)', 'Stückzahl und Farbwünsche definieren'], tip: 'Wir prüfen alle Dateien kostenlos auf Druckbarkeit.' },
-      { title: 'Serien-Angebot', tasks: ['Staffelpreis-Angebot in 6h', 'Mengenrabatt automatisch berechnet', 'Optimierungsvorschläge für Oberfläche'], tip: 'Ab 10 identischen Teilen sparen Sie 10%.' },
+      { title: 'Mengen-Angebot', tasks: ['Staffelpreis-Angebot in 6h', 'Mengenrabatt automatisch berechnet', 'Optimierungsvorschläge für Oberfläche'], tip: 'Ab 10 identischen Teilen sparen Sie 10%.' },
       { title: 'Parallelfertigung', tasks: ['Alle Varianten gleichzeitig im Druck', 'ASA-Nachbearbeitung für Premium-Finish', 'Qualitätskontrolle jedes einzelnen Teils'], tip: '50 Teile in einer Woche realistisch.' },
       { title: 'Express nach Graz', tasks: ['Versand über A9 Pyhrnautobahn', 'Bruchsichere Einzelverpackung', 'Tracking-Nummer per E-Mail'], tip: 'Express 24h oder Standard 1-2 Werktage.' },
     ],
@@ -306,26 +306,26 @@ const graz: DruckSectionDataSet = {
   trustSignals: [
     { value: '100+', label: 'Projekte in Graz', detail: 'Designstudien, Konzeptmodelle, Sichtmodelle' },
     { value: '50+', label: 'Varianten pro Auftrag', detail: 'Parallele Fertigung aller Designoptionen' },
-    { value: '±0.2mm', label: 'Maßhaltigkeit', detail: 'Reproduzierbar bei jeder Stückzahl' },
+    { value: '±0.2mm', label: 'Maßstabstreue', detail: 'Reproduzierbar bei jeder Stückzahl' },
     { value: 'ASA', label: 'UV-Material verfügbar', detail: 'Premium-Oberfläche, witterungsbeständig' },
     { value: '15%', label: 'Rabatt ab 50 Stück', detail: 'Automatischer Mengenrabatt' },
   ],
   priceComparison: {
-    headline: 'Preise für Designstudien-Serien in Graz',
+    headline: 'Staffelpreise für Designstudien in Graz',
     subheadline: 'Mengenrabatt automatisch · gleiche Qualität bei 1 oder 50 Stück.',
     prices: [
       { label: 'Formcheck (bis 8cm)', price: 'ab €15', note: 'Schnelle Dimensionsprüfung' },
       { label: 'Designstudie Standard', price: 'ab €35', note: 'Einzelstück, ASA oder PLA+' },
-      { label: '10er-Serie Designstudien', price: 'ab €28/Stk.', note: '10% Mengenrabatt automatisch' },
-      { label: '50er-Serie', price: 'ab €25/Stk.', note: '15% Mengenrabatt, Premium-Finish' },
+      { label: '10er-Set Designstudien', price: 'ab €28/Stk.', note: '10% Mengenrabatt automatisch' },
+      { label: '50er-Set', price: 'ab €25/Stk.', note: '15% Mengenrabatt, Premium-Finish' },
     ],
     badges: ['Mengenrabatt automatisch', 'ASA-Expertise', 'A9-Express 24h'],
   },
   techSpecs: {
     headline: 'Spezifikationen für Designstudien',
-    subheadline: 'Optimiert für Serien-Qualität und Design-Reviews bei Grazer Unternehmen',
+    subheadline: 'Optimiert für gleichbleibende Qualität und Design-Reviews bei Grazer Unternehmen',
     specs: [
-      { label: 'Serientoleranz', value: '±0.2mm konstant', detail: 'Jedes Teil maßidentisch zum CAD' },
+      { label: 'Abweichung', value: '±0.2mm konstant', detail: 'Jedes Stück maßstabsgetreu zum CAD' },
       { label: 'ASA-Finish', value: 'Geschliffen + grundiert', detail: 'Premium-Oberfläche für Bewertungsrunden' },
       { label: 'Transparent', value: 'PETG klar verfügbar', detail: 'Innere Strukturen sichtbar machen' },
       { label: 'Batch-Größe', value: 'Bis 80 Teile/Woche', detail: 'Parallelkapazität für Großprojekte' },
@@ -344,18 +344,18 @@ const graz: DruckSectionDataSet = {
     solutions: [
       '50 Varianten in einer Woche: jede Form in der Hand vergleichen, Proportionen sofort spüren',
       'Entscheidungen fallen in einer Runde statt in drei Meetings · nachweislich 80% schneller',
-      'Ab €25/Stück bei 50er-Serien: günstiger als ein einziges Agentur-Handmuster',
+      'Ab €25/Stück bei 50er-Sets: günstiger als ein einziges Agentur-Handmuster',
       'PETG Transparent macht innere Strukturen sichtbar · kein Rendering kann das ersetzen',
     ],
   },
   expressTimeline: [
     { time: '0h', title: 'CAD-Paket senden', description: 'Alle Varianten als STL/STEP gebündelt.', highlight: false },
-    { time: '4h', title: 'Serien-Angebot', description: 'Staffelpreis mit automatischem Mengenrabatt.', highlight: false },
+    { time: '4h', title: 'Mengen-Angebot', description: 'Staffelpreis mit automatischem Mengenrabatt.', highlight: false },
     { time: '8h', title: 'Parallelfertigung', description: 'Alle Drucker arbeiten gleichzeitig an Ihren Varianten.', highlight: true },
-    { time: '3-5 Tage', title: 'Serie komplett', description: 'Einzeln verpackt, per A9-Express nach Graz.', highlight: true },
+    { time: '3-5 Tage', title: 'Auftrag komplett', description: 'Einzeln verpackt, per A9-Express nach Graz.', highlight: true },
   ],
   inTextLinks: [
-    { anchor: '3D-Druck Kleinserie Steiermark', href: '/3d-druck-steiermark', context: 'Für steiermarkweite Lieferungen nutzen Sie unseren regionalen Expressservice.' },
+    { anchor: '3D-Druck Mehrfachfertigung Steiermark', href: '/3d-druck-steiermark', context: 'Für steiermarkweite Lieferungen nutzen Sie unseren regionalen Expressservice.' },
     { anchor: 'Startup-Modelle aus Wien', href: '/3d-druck-wien', context: 'Wiener Startups setzen auf Pitch-ready Modelle in 48 Stunden.' },
     { anchor: 'Architekturmodelle für Grazer Büros', href: '/architekturmodelle/graz', context: 'Maßstabsgetreue Wettbewerbsmodelle für steirische Architekturprojekte.' },
   ],
@@ -387,8 +387,8 @@ const salzburg: DruckSectionDataSet = {
     subheadline: 'Vom Designwunsch zur fertigen Ausstattung · in einer Woche alle Filialen einheitlich',
     steps: [
       { title: 'Anforderung beschreiben', tasks: ['Tablet-Modell und Maße angeben', 'Logo und Farbwunsch beifügen', 'Stückzahl und Standorte nennen'], tip: 'Wir können Ihr CI-Pantone in PETG umsetzen.' },
-      { title: 'Design & Konstruktion', tasks: ['3D-Konstruktion nach Ihren Vorgaben', 'Kabelmanagement einplanen', 'Render zur Freigabe in 24h'], tip: 'Konstruktion bei Erstbestellung kostenlos.' },
-      { title: 'Serienfertigung', tasks: ['Alle Standorte in einem Durchlauf', 'Qualitätskontrolle jedes Teils', 'Logo-Integration und Farbabgleich'], tip: 'Bis 50 identische Teile in einer Woche.' },
+      { title: 'Design & Aufbau', tasks: ['3D-Modellierung nach Ihren Vorgaben', 'Kabelmanagement einplanen', 'Render zur Freigabe in 24h'], tip: 'Umsetzung bei Erstbestellung kostenlos.' },
+      { title: 'Mehrfachfertigung', tasks: ['Alle Standorte in einem Durchlauf', 'Qualitätskontrolle jedes Teils', 'Logo-Integration und Farbabgleich'], tip: 'Bis 50 identische Teile in einer Woche.' },
       { title: 'Versand an alle Standorte', tasks: ['Direkte Lieferung an jede Filiale', 'Bruchsichere Verpackung', 'Montagehinweise beigelegt'], tip: 'Nachbestellungen identisch reproduzierbar.' },
     ],
   },
@@ -401,14 +401,14 @@ const salzburg: DruckSectionDataSet = {
   ],
   priceComparison: {
     headline: 'Hotelausstattung · transparente Preise',
-    subheadline: 'Einmal konstruiert, unbegrenzt reproduzierbar. Preise pro Stück sinken mit der Menge.',
+    subheadline: 'Einmal aufgebaut, unbegrenzt reproduzierbar. Preise pro Stück sinken mit der Menge.',
     prices: [
       { label: 'Tablethalter (Standard)', price: 'ab €35', note: 'Einfache Form, Ihre Farbe' },
       { label: 'Halter mit Logo + Kabel', price: 'ab €55', note: 'Logo-Prägung, Kabelmanagement' },
       { label: '15er-Filial-Set', price: 'ab €40/Stk.', note: 'Identisch für alle Standorte' },
       { label: 'Displayobjekt Custom', price: 'ab €60', note: 'Individuelle Form nach Ihrem Design' },
     ],
-    badges: ['Konstruktion bei Erstauftrag gratis', 'Filialrabatt', 'Nachbestellung in 3 Tagen'],
+    badges: ['Umsetzung bei Erstauftrag gratis', 'Filialrabatt', 'Nachbestellung in 3 Tagen'],
   },
   techSpecs: {
     headline: 'Materialwahl für den Hotelalltag',
@@ -432,7 +432,7 @@ const salzburg: DruckSectionDataSet = {
     solutionTitle: 'Maßgefertigte Lösung für Ihre Hotelkette',
     solutions: [
       'Design in Ihrer CI-Farbe mit Logo · jedes Stück ein Markenobjekt',
-      '1 Konstruktion, 50 identische Teile: alle Filialen einheitlich ausgestattet',
+      '1 Aufbau, 50 identische Teile: alle Filialen einheitlich ausgestattet',
       'Integriertes Kabelmanagement: Kabel unsichtbar, Oberfläche aufgeräumt',
       'Digital gespeicherter Auftrag: Nachbestellung per E-Mail in 3 Werktagen',
     ],
@@ -478,7 +478,7 @@ const innsbruck: DruckSectionDataSet = {
     steps: [
       { title: 'Projektdaten senden', tasks: ['3D-Modell oder Beschreibung', 'Maßstab und gewünschte Farben', 'Abgabetermin angeben'], tip: 'Auch Handskizzen können wir in 3D umsetzen.' },
       { title: 'Akademisches Angebot', tasks: ['Studentenrabatt automatisch', 'Materialempfehlung für Lehrmittel', 'Termingarantie für Abgaben'], tip: 'Rechnungsadresse der Uni? Kein Problem.' },
-      { title: 'Präzisionsdruck', tasks: ['Farbcodierte Bereiche', 'Zerlegbare Strukturen möglich', 'Qualitätskontrolle vor Versand'], tip: 'Mehrteilige Modelle mit Steckverbindungen.' },
+      { title: 'Detaildruck', tasks: ['Farbcodierte Bereiche', 'Zerlegbare Strukturen möglich', 'Qualitätskontrolle vor Versand'], tip: 'Mehrteilige, zerlegbare Modelle.' },
       { title: '48h nach Innsbruck', tasks: ['Express-Versand mit Alpenverpackung', 'Tracking für termingerechte Planung', 'Abholung an Uni-Adresse möglich'], tip: 'Lieferung direkt ans Institut auf Anfrage.' },
     ],
   },
@@ -505,7 +505,7 @@ const innsbruck: DruckSectionDataSet = {
     subheadline: 'Optimiert für visuelle Klarheit, Robustheit und akademische Anforderungen',
     specs: [
       { label: 'Farbcodierung', value: 'Bis 6 Farben', detail: 'Jede Struktur in eigener Farbe' },
-      { label: 'Zerlegbarkeit', value: 'Steckverbindungen', detail: 'Schichten abnehmbar für Demonstrations' },
+      { label: 'Zerlegbarkeit', value: 'Modular abnehmbar', detail: 'Schichten abnehmbar für Demonstrations' },
       { label: 'Material', value: 'PETG empfohlen', detail: 'Robust für häufiges Anfassen in Seminaren' },
       { label: 'Transport', value: 'Alpenverpackung', detail: 'Schaumstoff-Einlage, stoßabsorbierend' },
       { label: 'Maßstab', value: 'Frei wählbar', detail: 'Von Miniaturmodell bis Seminarraumgröße' },
@@ -567,7 +567,7 @@ const klagenfurt: DruckSectionDataSet = {
     steps: [
       { title: 'Designvarianten liefern', tasks: ['STL-Dateien aller Varianten', 'Gewünschtes Material (ASA empfohlen)', 'Stückzahl pro Variante'], tip: 'Wir optimieren Ihre CAD-Dateien für FDM kostenlos.' },
       { title: 'Varianten-Angebot', tasks: ['Preis pro Variante und Gesamtpreis', 'Mengenrabatt-Berechnung', 'Empfehlung für Präsentations-Finish'], tip: 'Ab 30 Stück gesamt: automatischer Rabatt.' },
-      { title: 'Paralleldruck', tasks: ['Alle Varianten gleichzeitig', 'UV-beständiges ASA-Finish', 'Maßkontrolle jedes Gehäuses'], tip: 'Schraubdome und Steckverbindungen mit ±0.15mm.' },
+      { title: 'Paralleldruck', tasks: ['Alle Varianten gleichzeitig', 'UV-beständiges ASA-Finish', 'Maßkontrolle jedes Gehäuses'], tip: 'Schraubdome und Formteile mit ±0.15mm.' },
       { title: 'Sortierte Lieferung', tasks: ['Varianten separat verpackt', 'Beschriftung der Designversion', 'Versand über A10 Tauernautobahn'], tip: 'Direkte Lieferung an Ihren Kunden möglich.' },
     ],
   },
@@ -575,7 +575,7 @@ const klagenfurt: DruckSectionDataSet = {
     { value: '40+', label: 'IT-Projekte', detail: 'Gehäusemodelle für Kärntner IT-Unternehmen' },
     { value: 'ASA', label: 'UV-Material Standard', detail: 'Wetterfest für Outdoor-IoT-Gehäuse' },
     { value: '3-5', label: 'Varianten parallel', detail: 'Alle Formfaktoren gleichzeitig fertigen' },
-    { value: '±0.15mm', label: 'Gehäuse-Toleranz', detail: 'Schraubdome und Steckverbindungen' },
+    { value: '±0.15mm', label: 'Gehäuse-Abweichung', detail: 'Schraubdome und Formteile' },
     { value: '5.0', label: 'Google Bewertung', detail: 'Durchgehend 5 Sterne' },
   ],
   priceComparison: {
@@ -593,11 +593,11 @@ const klagenfurt: DruckSectionDataSet = {
     headline: 'Technische Daten für IoT-Gehäuse',
     subheadline: 'Spezifikationen für Smart-City-Sensoren und Elektronik-Designstudien',
     specs: [
-      { label: 'Toleranz Schraubdome', value: '±0.15mm', detail: 'Passgenaue Verbindungselemente' },
+      { label: 'Abweichung Schraubdome', value: '±0.15mm', detail: 'Passgenaue Formteile' },
       { label: 'Material', value: 'ASA UV-beständig', detail: 'IP44-Designkonzept darstellbar' },
       { label: 'Wandstärke', value: 'Ab 1.2mm', detail: 'Robust für Präsentationszwecke' },
       { label: 'Farboptionen', value: 'Signal-Weiß, Schwarz, Grau', detail: 'Professionelle Gehäusefarben' },
-      { label: 'Nachbearbeitung', value: 'Schleifen, Passungen', detail: 'Für präzise Zusammenbauten' },
+      { label: 'Nachbearbeitung', value: 'Schleifen, Passungen', detail: 'Für saubere Zusammenbauten' },
     ],
   },
   problemSolution: {
@@ -624,8 +624,8 @@ const klagenfurt: DruckSectionDataSet = {
   ],
   inTextLinks: [
     { anchor: '3D-Druck Forschung Villach', href: '/3d-druck-kaernten', context: 'Infineon-Zulieferer und Tech-Firmen in Villach nutzen unseren Prototypen-Service.' },
-    { anchor: 'Industriemodelle aus Graz', href: '/3d-druck-steiermark', context: 'Grazer Industriebetriebe vertrauen auf unsere Serienfertigung.' },
-    { anchor: 'Architekturmodelle Kärnten', href: '/architekturmodelle/kaernten', context: 'Kärntner Architekten setzen auf präzise 3D-gedruckte Wettbewerbsmodelle.' },
+    { anchor: 'Industriemodelle aus Graz', href: '/3d-druck-steiermark', context: 'Grazer Industriebetriebe vertrauen auf unsere Mehrfachfertigung.' },
+    { anchor: 'Architekturmodelle Kärnten', href: '/architekturmodelle/kaernten', context: 'Kärntner Architekten setzen auf detailgetreue 3D-gedruckte Wettbewerbsmodelle.' },
   ],
 
 };
@@ -639,7 +639,7 @@ const villach: DruckSectionDataSet = {
     subheadline: 'Designreviews beschleunigen mit physischen Modellen · 10x produktiver als am Bildschirm',
     advantages: [
       { icon: 'Cpu', title: 'Formfaktor-Vergleich', description: 'Verschiedene Gehäuseformen nebeneinander vergleichen. Proportionen und Ergonomie direkt bewerten.' },
-      { icon: 'TrendingUp', title: '0.12mm Detailauflösung', description: 'Passstifte, Rastnasen und Designdetails in höchster Präzision dargestellt.' },
+      { icon: 'TrendingUp', title: '0.12mm Detailauflösung', description: 'Passstifte, Rastnasen und Designdetails in höchster Detailtreue dargestellt.' },
       { icon: 'Layers', title: 'Iteratives Design', description: 'Erste Version, Feedback, zweite Version · in Tagen, nicht Wochen.' },
       { icon: 'DollarSign', title: 'Günstiger als Handmuster', description: '10 Konzeptmodelle kosten weniger als ein einzelnes CNC-gefrästes Handmuster.' },
     ],
@@ -655,8 +655,8 @@ const villach: DruckSectionDataSet = {
     subheadline: 'Vom CAD-Modell zum Design-Review · strukturiert und effizient',
     steps: [
       { title: 'STEP/STL übermitteln', tasks: ['CAD-Datei mit gewünschtem Detailgrad', 'Passungsanforderungen angeben', 'Gewünschte Iterationsanzahl'], tip: 'STEP-Format liefert die beste Qualität.' },
-      { title: 'Technische Abstimmung', tasks: ['Optimierung für FDM-Druck', 'Wandstärken- und Support-Check', 'Materialempfehlung'], tip: 'Für Passteile empfehlen wir ±0.15mm Toleranz.' },
-      { title: 'Präzisionsdruck', tasks: ['0.12mm Schichthöhe für Details', 'Passstifte und Rastnasen exakt', 'Sichtkontrolle vor Versand'], tip: 'Wir drucken Testpassungen vor der Serie mit.' },
+      { title: 'Technische Abstimmung', tasks: ['Optimierung für FDM-Druck', 'Wandstärken- und Support-Check', 'Materialempfehlung'], tip: 'Für Passteile empfehlen wir ±0.15mm Abweichung.' },
+      { title: 'Detaildruck', tasks: ['0.12mm Schichthöhe für Details', 'Passstifte und Rastnasen exakt', 'Sichtkontrolle vor Versand'], tip: 'Wir drucken Testpassungen vorab mit.' },
       { title: 'Lieferung nach Villach', tasks: ['Versand über A10/A2', 'Einzelverpackung mit Polsterung', 'Tracking-Nummer sofort'], tip: 'Lieferung direkt an den Technologiepark.' },
     ],
   },
@@ -683,7 +683,7 @@ const villach: DruckSectionDataSet = {
     subheadline: 'Optimiert für Designreviews und Formfaktor-Bewertungen',
     specs: [
       { label: 'Auflösung', value: '0.12mm', detail: 'Feinste Details für Passteile' },
-      { label: 'Passungstoleranz', value: '±0.15mm', detail: 'Schraubverbindungen funktionsfähig' },
+      { label: 'Passungsabweichung', value: '±0.15mm', detail: 'Passteile funktionsfähig' },
       { label: 'Oberfläche', value: 'Geschliffen verfügbar', detail: 'Premium-Finish für Kundenpräsentationen' },
       { label: 'Materialien', value: 'PLA+, PETG, ASA', detail: 'Je nach Anforderung wählbar' },
       { label: 'Iterationszeit', value: '3 Werktage', detail: 'Feedback-Schleife in 72h' },
@@ -708,12 +708,12 @@ const villach: DruckSectionDataSet = {
   expressTimeline: [
     { time: '0h', title: 'STEP-Datei senden', description: 'Per E-Mail mit Passungsanforderungen.', highlight: false },
     { time: '3h', title: 'Technische Abstimmung', description: 'Optimierung, Materialwahl, Preisangebot.', highlight: false },
-    { time: '12h', title: 'Präzisionsdruck', description: '0.12mm Auflösung, Passstifte exakt.', highlight: true },
+    { time: '12h', title: 'Detaildruck', description: '0.12mm Auflösung, Passstifte exakt.', highlight: true },
     { time: '3 Tage', title: 'In Villach', description: 'Lieferung an Technologiepark oder Firmenadresse.', highlight: true },
   ],
   inTextLinks: [
     { anchor: 'Startup-Modelle Klagenfurt', href: '/3d-druck-kaernten', context: 'Klagenfurter Startups aus dem Lakeside Park nutzen unsere Pitch-Modelle.' },
-    { anchor: 'Serienproduktion in Graz', href: '/3d-druck-steiermark', context: 'Für größere Serien bietet Graz optimale Industrieanbindung.' },
+    { anchor: 'Mehrfachfertigung in Graz', href: '/3d-druck-steiermark', context: 'Für größere Mengen bietet Graz optimale Industrieanbindung.' },
     { anchor: 'Messemodelle für Kärntner Events', href: '/messemodelle/steiermark', context: 'Professionelle Messeexponate für Kärntner Fachmessen.' },
   ],
 
@@ -833,7 +833,7 @@ const stpoelten: DruckSectionDataSet = {
     subheadline: 'Von der Idee zum Set-Prop · in 3 Tagen auf dem Drehtisch',
     steps: [
       { title: 'Projekt beschreiben', tasks: ['Skizze, Foto oder CAD-Datei', 'Größe und Farbwunsch angeben', 'Budget und Termin nennen'], tip: 'Auch eine Handzeichnung reicht als Startpunkt.' },
-      { title: 'Design & Machbarkeit', tasks: ['Konstruktion bei Bedarf inklusive', 'Materialempfehlung für den Einsatzzweck', 'Angebot innerhalb 6 Stunden'], tip: 'Für Studierende: Sonderkonditionen verfügbar.' },
+      { title: 'Design & Machbarkeit', tasks: ['Aufbau bei Bedarf inklusive', 'Materialempfehlung für den Einsatzzweck', 'Angebot innerhalb 6 Stunden'], tip: 'Für Studierende: Sonderkonditionen verfügbar.' },
       { title: 'Kreativdruck', tasks: ['Mehrfarbige Fertigung möglich', 'Nachbearbeitung nach Wunsch', 'Qualitätskontrolle vor Versand'], tip: 'Lackierung und Beschichtung auf Anfrage.' },
       { title: 'A1-Express', tasks: ['Versand über A1 Westautobahn', 'Sicher verpackt für empfindliche Props', 'Lieferung an FH-Adresse möglich'], tip: 'Overnight-Express für Last-Minute-Drehs.' },
     ],
@@ -854,7 +854,7 @@ const stpoelten: DruckSectionDataSet = {
       { label: 'Lehrmittel-Set (5 Stk.)', price: 'ab €18/Stk.', note: 'Identisch für alle Teilnehmer' },
       { label: 'Kreativprojekt XXL', price: 'ab €80', note: 'Über 30cm, individuell gestaltet' },
     ],
-    badges: ['Studentenrabatt', 'Konstruktion bei Bedarf gratis', 'FH-Rechnung möglich'],
+    badges: ['Studentenrabatt', 'Aufbau bei Bedarf gratis', 'FH-Rechnung möglich'],
   },
   techSpecs: {
     headline: 'Technik für Medien- und Kreativprojekte',
@@ -885,7 +885,7 @@ const stpoelten: DruckSectionDataSet = {
   },
   expressTimeline: [
     { time: '0h', title: 'Skizze oder Datei senden', description: 'Per E-Mail mit Beschreibung des Einsatzzwecks.', highlight: false },
-    { time: '6h', title: 'Angebot & Design', description: 'Preis, Machbarkeit und Konstruktionsvorschlag.', highlight: false },
+    { time: '6h', title: 'Angebot & Design', description: 'Preis, Machbarkeit und Umsetzungsvorschlag.', highlight: false },
     { time: '24h', title: 'Druck & Finish', description: 'Mehrfarbig, nachbearbeitet, set-ready.', highlight: true },
     { time: '48h', title: 'An der FH St. Pölten', description: 'Express über A1 · Lieferung ans Institut.', highlight: true },
   ],
@@ -906,7 +906,7 @@ const dornbirn: DruckSectionDataSet = {
     subheadline: 'Designvalidierung vor der Produktion · 3 Iterationen in 10 Tagen, ab €60 pro Runde',
     advantages: [
       { icon: 'Repeat', title: 'Iteratives Design', description: '3 Versionen in 10 Tagen: drucken, prüfen, anpassen, nächste Runde. Schneller als jede Werkstatt.' },
-      { icon: 'Shield', title: 'Formvalidierung spart Geld', description: 'Einen Designfehler vor der Serienfertigung finden spart Tausende Euro Werkzeugkosten.' },
+      { icon: 'Shield', title: 'Formvalidierung spart Geld', description: 'Einen Designfehler vor der Mehrfachfertigung finden spart Tausende Euro Werkzeugkosten.' },
       { icon: 'Globe', title: 'Auch nach CH & Süddeutschland', description: 'Grenznahe Lieferung: Vorarlberg, Schweiz und Bodenseeregion in 1-2 Tagen.' },
       { icon: 'Layers', title: 'PLA+ und PETG im Vergleich', description: 'Erste Iteration in PLA+ für Formcheck, finale Version in PETG für robuste Kundenpräsentation.' },
     ],
@@ -951,7 +951,7 @@ const dornbirn: DruckSectionDataSet = {
     specs: [
       { label: 'Iteration 1', value: 'PLA+ Standard', detail: 'Schnell und günstig für Proportionen' },
       { label: 'Iteration 2-3', value: 'PETG oder ASA', detail: 'Robust für Kundenpräsentation' },
-      { label: 'Toleranz', value: '±0.2mm', detail: 'Maßhaltig für Passungsprüfung' },
+      { label: 'Abweichung', value: '±0.2mm', detail: 'Maßstabsgetreu für Passungsprüfung' },
       { label: 'Oberfläche', value: 'Roh bis geschliffen', detail: 'Je nach Iterationsphase wählbar' },
       { label: 'Versandgebiet', value: 'AT, CH, DE', detail: 'Grenznahe Lage für Dreiländereck' },
     ],
@@ -960,7 +960,7 @@ const dornbirn: DruckSectionDataSet = {
     problemTitle: 'Risiken bei Produktdesign ohne Vorabmodell',
     problems: [
       'Werkzeugkosten für Spritzguss: €5.000-50.000 · ein Designfehler ist extrem teuer',
-      'Kunde sagt nach der Serienfertigung: "Die Proportionen stimmen nicht"',
+      'Kunde sagt nach der Mehrfachfertigung: "Die Proportionen stimmen nicht"',
       'Textil-Formteile lassen sich am Bildschirm nicht realistisch beurteilen',
       'Iterationen mit klassischem Modellbau dauern 2-4 Wochen pro Runde',
     ],
@@ -995,7 +995,7 @@ const gunskirchen: DruckSectionDataSet = {
     subheadline: 'Besuchen Sie uns in Gunskirchen: gemeinsam am Bildschirm designen, drucken, mitnehmen',
     advantages: [
       { icon: 'Home', title: 'Vor-Ort-Erlebnis', description: 'Kommen Sie vorbei, schauen Sie den Druckern zu, prüfen Sie Materialproben. 3D-Druck zum Anfassen.' },
-      { icon: 'Users', title: 'Co-Design am Bildschirm', description: 'Wir konstruieren gemeinsam mit Ihnen. Änderungen direkt am Bildschirm, Druck startet sofort.' },
+      { icon: 'Users', title: 'Co-Design am Bildschirm', description: 'Wir gestalten gemeinsam mit Ihnen. Änderungen direkt am Bildschirm, Druck startet sofort.' },
       { icon: 'Zap', title: 'Sofort-Fertigung', description: 'Kein Versand, kein Warten. Einfache Teile in 2-4 Stunden fertig. Vor Ihren Augen gedruckt.' },
       { icon: 'Shield', title: 'Qualität direkt prüfen', description: 'Modell aus dem Drucker nehmen, prüfen, bei Bedarf sofort nachdrucken. Zero-Risiko-Prinzip.' },
     ],
@@ -1011,7 +1011,7 @@ const gunskirchen: DruckSectionDataSet = {
     subheadline: 'Vorbeikommen, gemeinsam designen, zusehen, mitnehmen · 3D-Druck persönlich',
     steps: [
       { title: 'Vorbeikommen', tasks: ['Unangemeldeter Besuch möglich', 'Datei mitbringen oder Idee beschreiben', 'Materialproben vor Ort ansehen'], tip: 'Parkplatz direkt vor der Tür. Kaffee gibt es auch.' },
-      { title: 'Gemeinsam konstruieren', tasks: ['Am Bildschirm mit Ihnen designen', 'Änderungen direkt einarbeiten', 'Material und Farbe auswählen'], tip: 'Konstruktion vor Ort ist für einfache Teile kostenlos.' },
+      { title: 'Gemeinsam gestalten', tasks: ['Am Bildschirm mit Ihnen designen', 'Änderungen direkt einarbeiten', 'Material und Farbe auswählen'], tip: 'Gestaltung vor Ort ist für einfache Teile kostenlos.' },
       { title: 'Sofort drucken', tasks: ['Druck startet in Minuten', 'Sie können beim Drucken zusehen', 'Qualität direkt am Drucker prüfen'], tip: 'Einfache Teile: fertig in 2-4 Stunden.' },
       { title: 'Mitnehmen', tasks: ['Modell persönlich prüfen', 'Bei Bedarf sofort Nachbesserung', 'Zahlung: Bar, Karte oder Rechnung'], tip: 'Zufriedenheit garantiert · sonst drucken wir nochmal.' },
     ],
@@ -1030,7 +1030,7 @@ const gunskirchen: DruckSectionDataSet = {
       { label: 'Einzelteil Standard', price: 'ab €12', note: 'Einfache Form, sofort verfügbar' },
       { label: 'Designobjekt mittel', price: 'ab €30', note: 'Vor Ort gemeinsam entwickelt' },
       { label: 'Display-Set (5 Stk.)', price: 'ab €22/Stk.', note: 'Identisch reproduziert' },
-      { label: 'Konstruktion + Druck', price: 'ab €40', note: 'Wir designen mit Ihnen zusammen' },
+      { label: 'Gestaltung + Druck', price: 'ab €40', note: 'Wir designen mit Ihnen zusammen' },
     ],
     badges: ['Keine Versandkosten', 'Vor-Ort-Beratung gratis', 'Sofortfertigung'],
   },
@@ -1041,7 +1041,7 @@ const gunskirchen: DruckSectionDataSet = {
       { label: 'Kapazität', value: 'Parallelfertigung', detail: 'Mehrere Aufträge gleichzeitig' },
       { label: 'Materialien vor Ort', value: 'PLA+ PETG ASA TPU', detail: 'Alle Materialien zum Anfassen' },
       { label: 'Sofortfertigung', value: 'Ab 2 Stunden', detail: 'Für einfache Geometrien' },
-      { label: 'Co-Design', value: 'Gemeinsam am PC', detail: 'Wir konstruieren mit Ihnen zusammen' },
+      { label: 'Co-Design', value: 'Gemeinsam am PC', detail: 'Wir gestalten mit Ihnen zusammen' },
       { label: 'Qualitätsprüfung', value: 'Vor Ihren Augen', detail: 'Nachbesserung sofort möglich' },
     ],
   },
@@ -1058,7 +1058,7 @@ const gunskirchen: DruckSectionDataSet = {
       'Sofortfertigung in 2-4h: Sie nehmen Ihr Modell am selben Tag mit',
       'Materialproben anfassen: 8 Materialien in 20+ Farben direkt vergleichen',
       'Nicht zufrieden? Wir drucken vor Ihren Augen nochmal · sofort',
-      'Gemeinsam am Bildschirm: Sie zeigen, wir konstruieren. Änderungen in Minuten.',
+      'Gemeinsam am Bildschirm: Sie zeigen, wir gestalten. Änderungen in Minuten.',
     ],
   },
   expressTimeline: [
@@ -1101,7 +1101,7 @@ const oberoesterreich: DruckSectionDataSet = {
     steps: [
       { title: 'Projektanfrage', tasks: ['Per E-Mail, Telefon oder vor Ort', 'CAD-Daten oder Beschreibung', 'Stückzahl und Terminwunsch'], tip: 'Persönliche Beratung in Gunskirchen jederzeit möglich.' },
       { title: 'B2B-Angebot', tasks: ['Staffelpreis bei Mengen', 'Firmenrechnung netto (Kleinunternehmerregelung)', 'NDA auf Anfrage'], tip: 'Angebot in unter 6 Stunden garantiert.' },
-      { title: 'Serienfertigung', tasks: ['Bis 80 Teile pro Woche Kapazität', 'Qualitätskontrolle jedes Teils', 'Nachbearbeitung nach Standard'], tip: '40 identische Teile in 5-7 Werktagen.' },
+      { title: 'Mehrfachfertigung', tasks: ['Bis 80 Teile pro Woche Kapazität', 'Qualitätskontrolle jedes Teils', 'Nachbearbeitung nach Standard'], tip: '40 identische Teile in 5-7 Werktagen.' },
       { title: 'Abholung oder Versand', tasks: ['Persönliche Abholung in Gunskirchen', 'Oder OÖ-weiter Versand in 24h', 'Tracking bei Versand'], tip: 'Abholung spart Versandkosten und Zeit.' },
     ],
   },
@@ -1109,7 +1109,7 @@ const oberoesterreich: DruckSectionDataSet = {
     { value: '300+', label: 'OÖ-Projekte', detail: 'Von KMU bis Großkonzern' },
     { value: 'Gunskirchen', label: 'Standort in OÖ', detail: 'Persönliche Abholung und Beratung' },
     { value: 'NDA', label: 'Vertraulichkeit', detail: 'Geheimhaltungsvereinbarung möglich' },
-    { value: '80/Woche', label: 'Kapazität', detail: 'Für Projektmengen und Serien' },
+    { value: '80/Woche', label: 'Kapazität', detail: 'Für Projektmengen und Mehrfachfertigung' },
     { value: '5.0', label: 'Google Bewertung', detail: '31 Bewertungen · Top-Service' },
   ],
   priceComparison: {
@@ -1118,7 +1118,7 @@ const oberoesterreich: DruckSectionDataSet = {
     prices: [
       { label: 'Einzelmodell Standard', price: 'ab €20', note: 'PLA+ für interne Präsentationen' },
       { label: 'Präsentationsmodell', price: 'ab €50', note: 'Nachbearbeitet, kundentauglich' },
-      { label: 'Give-away-Serie (40 Stk.)', price: 'ab €15/Stk.', note: 'Identisch für Kundenevents' },
+      { label: 'Give-away-Set (40 Stk.)', price: 'ab €15/Stk.', note: 'Identisch für Kundenevents' },
       { label: 'Schulungsmodell Detail', price: 'ab €70', note: 'Mehrfarbig, zerlegbar' },
     ],
     badges: ['Firmenrechnung netto (Kleinunternehmerregelung)', 'Abholung in Gunskirchen', 'NDA möglich'],
@@ -1129,9 +1129,9 @@ const oberoesterreich: DruckSectionDataSet = {
     specs: [
       { label: 'Kapazität', value: 'Parallelfertigung', detail: 'Hohe Parallelkapazität' },
       { label: 'Materialien', value: 'PLA+ PETG ASA TPU', detail: 'Für jeden Einsatzzweck' },
-      { label: 'Serienfertigung', value: 'Bis 80/Woche', detail: 'Identische Qualität pro Stück' },
+      { label: 'Mehrfachfertigung', value: 'Bis 80/Woche', detail: 'Identische Qualität pro Stück' },
       { label: 'Oberfläche', value: 'Roh bis lackiert', detail: 'Je nach Präsentationslevel' },
-      { label: 'Toleranz', value: '±0.2mm', detail: 'Reproduzierbar bei Nachbestellungen' },
+      { label: 'Abweichung', value: '±0.2mm', detail: 'Reproduzierbar bei Nachbestellungen' },
     ],
   },
   problemSolution: {
@@ -1145,7 +1145,7 @@ const oberoesterreich: DruckSectionDataSet = {
     solutionTitle: 'Ihr lokaler Partner in Gunskirchen',
     solutions: [
       '40 Präsentationsmodelle in einer Woche · termingerecht für jedes Event',
-      'Ab €15/Stück bei 40er-Serien: professionelle Give-aways zum fairen Preis',
+      'Ab €15/Stück bei 40er-Sets: professionelle Give-aways zum fairen Preis',
       'Mehrfarbige Schulungsmodelle: Produktaufbau in Minuten verstanden statt Stunden',
       'Persönliche Abholung in Gunskirchen · Qualität prüfen, Kaffee trinken, mitnehmen',
     ],
@@ -1166,7 +1166,7 @@ const oberoesterreich: DruckSectionDataSet = {
 
 const niederoesterreich: DruckSectionDataSet = {
   valueProposition: {
-    headline: 'Kleinserien für NÖ-Gewerbebetriebe',
+    headline: 'Mehrfachfertigung für NÖ-Gewerbebetriebe',
     subheadline: 'Displayobjekte, Musterteile und Designmodelle · ideal für dezentrale Standorte in ganz Niederösterreich',
     advantages: [
       { icon: 'Truck', title: 'A1-Express nach NÖ', description: 'Über die Westautobahn in 1-2 Werktagen überall in Niederösterreich. Express über Nacht.' },
@@ -1186,7 +1186,7 @@ const niederoesterreich: DruckSectionDataSet = {
     subheadline: 'Von der Anfrage bis zur Lieferung · unkompliziert auch ohne CAD-Erfahrung',
     steps: [
       { title: 'Bedarf beschreiben', tasks: ['Foto, Skizze oder CAD-Datei', 'Material- und Farbwunsch', 'Stückzahl und Einsatzzweck'], tip: 'Auch ohne CAD-Datei können wir starten.' },
-      { title: 'Angebot in 6h', tasks: ['Preis inkl. Versand nach NÖ', 'Materialempfehlung', 'Konstruktion bei Bedarf angeboten'], tip: 'Konstruktion ab €30 für einfache Teile.' },
+      { title: 'Angebot in 6h', tasks: ['Preis inkl. Versand nach NÖ', 'Materialempfehlung', 'Aufbau bei Bedarf angeboten'], tip: 'Aufbau ab €30 für einfache Teile.' },
       { title: 'Fertigung in Gunskirchen', tasks: ['Sonderfarbe und Logo integriert', 'Qualitätskontrolle', 'Digital archiviert für Nachbestellungen'], tip: 'Standard 3-5 Tage, Express 24h.' },
       { title: 'A1-Express nach NÖ', tasks: ['Bruchsicher verpackt', 'Tracking-Nummer per E-Mail', 'Lieferung an jeden Ort in NÖ'], tip: 'Mehrere Lieferadressen in einer Bestellung möglich.' },
     ],
@@ -1205,7 +1205,7 @@ const niederoesterreich: DruckSectionDataSet = {
       { label: 'Displayhalter (Weingut)', price: 'ab €25', note: 'In Markenfarbe mit Logo' },
       { label: 'Musterteil / Schablone', price: 'ab €15', note: 'Funktionale Werkstatt-Hilfe' },
       { label: 'Gemeindemodell', price: 'ab €80', note: 'Für Präsentationen und Bürgerbeteiligung' },
-      { label: '20er-Serie Displays', price: 'ab €20/Stk.', note: 'Identisch für alle Standorte' },
+      { label: '20er-Set Displays', price: 'ab €20/Stk.', note: 'Identisch für alle Standorte' },
     ],
     badges: ['Firmenrechnung', 'Auch ohne CAD-Datei', 'A1-Express'],
   },
@@ -1232,7 +1232,7 @@ const niederoesterreich: DruckSectionDataSet = {
     solutions: [
       'A1-Express aus Gunskirchen: 1-2 Tage nach ganz Niederösterreich',
       'Maßgefertigte Displays in Ihrer Farbe mit Ihrem Logo · jedes Stück individuell',
-      'Ab €20/Stück bei 20er-Serien: reproduzierbar und kalkulierbar',
+      'Ab €20/Stück bei 20er-Sets: reproduzierbar und kalkulierbar',
       'Digital gespeichert: Nachbestellungen sind 100% identisch · auch nach Jahren',
     ],
   },
@@ -1329,7 +1329,7 @@ const steiermark: DruckSectionDataSet = {
     { time: '5-7 Tage', title: 'In der Steiermark', description: 'Über A9, verstärkt verpackt.', highlight: true },
   ],
   inTextLinks: [
-    { anchor: '3D-Druck Graz Serienfertigung', href: '/3d-druck-steiermark', context: 'Für Grazer Industriebetriebe bieten wir Kleinserien ab 10 Stück.' },
+    { anchor: '3D-Druck Graz Mehrfachfertigung', href: '/3d-druck-steiermark', context: 'Für Grazer Industriebetriebe bieten wir Mehrfachfertigung ab 10 Stück.' },
     { anchor: 'Outdoor-Installationen Kärnten', href: '/3d-druck-kaernten', context: 'Wetterfeste ASA-Modelle für touristische Anwendungen auch in Kärnten.' },
     { anchor: 'Messemodelle Steiermark', href: '/messemodelle/steiermark', context: 'Großformat-Exponate für steirische Industriemessen und Fachmessen.' },
   ],
@@ -1359,7 +1359,7 @@ const kaernten: DruckSectionDataSet = {
     steps: [
       { title: 'Bedarf beschreiben', tasks: ['Welches Thema soll visualisiert werden?', 'Gewünschte Größe und Anzahl', 'Altersgruppe der Schüler angeben'], tip: 'Wir haben fertige Modelle für Physik und Biologie.' },
       { title: 'Pädagogische Beratung', tasks: ['Welches Modell passt zum Lehrplan?', 'Zerlegbar oder einteilig?', 'Farbcodierung planen'], tip: 'Wir beraten kostenlos zur didaktischen Umsetzung.' },
-      { title: 'Seriendruck', tasks: ['25 identische Modelle für die Klasse', 'Splitterfreies PETG-Material', 'Qualitätsprüfung jedes Stücks'], tip: 'Klassensatz in 5-7 Werktagen.' },
+      { title: 'Mehrfachfertigung', tasks: ['25 identische Modelle für die Klasse', 'Splitterfreies PETG-Material', 'Qualitätsprüfung jedes Stücks'], tip: 'Klassensatz in 5-7 Werktagen.' },
       { title: 'Schullieferung', tasks: ['Versand an Schuladresse', 'Rechnung auf Schulkonto', 'Bruchsichere Verpackung'], tip: 'Rechnungsadresse der Gemeinde? Kein Problem.' },
     ],
   },
@@ -1387,7 +1387,7 @@ const kaernten: DruckSectionDataSet = {
     specs: [
       { label: 'Material', value: 'PETG empfohlen', detail: 'Splitterfrei, waschbar, lebensmittelsicher' },
       { label: 'Farbcodierung', value: 'Bis 6 Farben', detail: 'Strukturen farblich unterscheidbar' },
-      { label: 'Zerlegbarkeit', value: 'Steckverbindungen', detail: 'Schichten für Demonstrations öffnen' },
+      { label: 'Zerlegbarkeit', value: 'Modular abnehmbar', detail: 'Schichten für Demonstrations öffnen' },
       { label: 'Robustheit', value: 'Schüler-getestet', detail: 'Hält Fallen, Greifen, Waschen aus' },
       { label: 'Sicherheit', value: 'Keine scharfen Kanten', detail: 'Für alle Altersgruppen geeignet' },
     ],
@@ -1405,18 +1405,18 @@ const kaernten: DruckSectionDataSet = {
       'Maßgefertigte Modelle passend zum aktuellen Lehrplan · nicht zum Katalog von 2005',
       'Klassensatz ab €12/Stück: jeder Schüler hat sein eigenes Modell in der Hand',
       'Farbcodierte Strukturen: Aufbau auf einen Blick verständlich, ohne lange Erklärung',
-      'Zerlegbare 3D-Druckmodelle mit Steckverbindungen: öffnen, verstehen, zusammenbauen',
+      'Zerlegbare 3D-Druckmodelle zum Öffnen, Verstehen und Zusammenbauen',
     ],
   },
   expressTimeline: [
     { time: '0h', title: 'Lehrmittel-Anfrage', description: 'Thema, Altersgruppe, Stückzahl per E-Mail.', highlight: false },
     { time: '6h', title: 'Pädagogisches Angebot', description: 'Modellvorschlag, Farben, Preis für Klassensatz.', highlight: false },
-    { time: '3 Tage', title: 'Seriendruck', description: '25 identische PETG-Modelle in Produktion.', highlight: true },
+    { time: '3 Tage', title: 'Mehrfachfertigung', description: '25 identische PETG-Modelle in Produktion.', highlight: true },
     { time: '5-7 Tage', title: 'An Ihrer Schule', description: 'Lieferung an Schuladresse über A10.', highlight: true },
   ],
   inTextLinks: [
     { anchor: '3D-Druck Bildung Klagenfurt', href: '/3d-druck-kaernten', context: 'Klagenfurter Schulen und die Uni Klagenfurt nutzen unsere Lehrmittel.' },
-    { anchor: 'Technologie-Modelle Villach', href: '/3d-druck-kaernten', context: 'High-Tech Firmen in Villach schätzen unsere Präzisionsfertigung.' },
+    { anchor: 'Technologie-Modelle Villach', href: '/3d-druck-kaernten', context: 'High-Tech Firmen in Villach schätzen unsere sorgfältige Fertigung.' },
     { anchor: 'Outdoor-Modelle Steiermark', href: '/3d-druck-steiermark', context: 'Steirische Tourismusbetriebe setzen auf wetterfeste 3D-Modelle.' },
   ],
 
@@ -1510,7 +1510,7 @@ const tirol: DruckSectionDataSet = {
 
 const vorarlberg: DruckSectionDataSet = {
   valueProposition: {
-    headline: 'Kleinserien für Vorarlberger Produktion',
+    headline: 'Mehrfachfertigung für Vorarlberger Produktion',
     subheadline: 'Beschlag-Designstudien, Textil-Formteile und Möbelkonzepte · iterativ validiert',
     advantages: [
       { icon: 'Repeat', title: '8 Iterationen in 3 Wochen', description: 'Designrunde für Runde optimieren: PLA+ für Formcheck, PETG für Kundenpräsentation.' },
@@ -1529,7 +1529,7 @@ const vorarlberg: DruckSectionDataSet = {
     headline: 'Iteratives Design für Vorarlberg',
     subheadline: 'Vom Formcheck zur Kundenfreigabe · strukturiert in Runden',
     steps: [
-      { title: 'Erstversion senden', tasks: ['STEP-Datei der ersten Designversion', 'Toleranzanforderungen angeben', 'Budget für Iterationszyklus nennen'], tip: 'Wir empfehlen ein 3er- oder 5er-Iterationspaket.' },
+      { title: 'Erstversion senden', tasks: ['STEP-Datei der ersten Designversion', 'gewünschte Maßabweichungen angeben', 'Budget für Iterationszyklus nennen'], tip: 'Wir empfehlen ein 3er- oder 5er-Iterationspaket.' },
       { title: 'Formcheck (Runde 1)', tasks: ['PLA+-Druck in 24h', 'Proportionen und Maße prüfen', 'Feedback dokumentieren'], tip: 'PLA+ ist günstig und schnell · ideal für Runde 1.' },
       { title: 'Optimierung (Runde 2-4)', tasks: ['Maße anpassen', 'Detailgrad erhöhen', 'Material steigern: PLA+ → PETG → ASA'], tip: 'Jede Runde bringt das Design näher an die Perfektion.' },
       { title: 'Finale Version', tasks: ['Premium-Finish in ASA oder PETG', 'Kundenpräsentations-Qualität', 'Versand über A14 Rheintal'], tip: 'Auch Versand in die Schweiz in 1-2 Tagen.' },
@@ -1560,7 +1560,7 @@ const vorarlberg: DruckSectionDataSet = {
       { label: 'Runde 1', value: 'PLA+ Standard', detail: 'Günstig für Proportionsprüfung' },
       { label: 'Runde 2-3', value: 'PETG Robust', detail: 'Für Funktions- und Passungschecks' },
       { label: 'Finale', value: 'ASA Premium', detail: 'UV-beständig, Präsentationsqualität' },
-      { label: 'Toleranz', value: '±0.2mm konstant', detail: 'Über alle Iterationen reproduzierbar' },
+      { label: 'Abweichung', value: '±0.2mm konstant', detail: 'Über alle Iterationen reproduzierbar' },
       { label: 'Versandgebiet', value: 'AT, CH, DE', detail: 'Dreiländereck-Lieferung' },
     ],
   },
@@ -1616,7 +1616,7 @@ const burgenland: DruckSectionDataSet = {
     subheadline: 'Von der PV-Visualisierung bis zum Weindisplay · in einer Woche geliefert',
     steps: [
       { title: 'Projekt beschreiben', tasks: ['Was soll visualisiert werden?', 'Foto vom Dach/Raum hilfreich', 'Stückzahl und Farbwunsch'], tip: 'Für PV-Modelle reicht ein Foto vom Dach.' },
-      { title: 'Konstruktion & Angebot', tasks: ['Wir konstruieren das 3D-Modell', 'Preis inkl. Versand ins Burgenland', 'Render zur Freigabe'], tip: 'Konstruktion ab €30 für einfache Objekte.' },
+      { title: 'Aufbau & Angebot', tasks: ['Wir modellieren das 3D-Modell', 'Preis inkl. Versand ins Burgenland', 'Render zur Freigabe'], tip: 'Aufbau ab €30 für einfache Objekte.' },
       { title: 'Fertigung', tasks: ['Material passend zum Einsatzzweck', 'ASA für Outdoor-PV-Modelle', 'PETG für Weindisplays'], tip: 'Outdoor-Modelle in ASA halten 5+ Jahre.' },
       { title: 'Lieferung über A4', tasks: ['1-2 Werktage ins Burgenland', 'Bruchsichere Verpackung', 'Tracking-Nummer per E-Mail'], tip: 'Auch Lieferung an Veranstaltungsorte.' },
     ],
@@ -1637,7 +1637,7 @@ const burgenland: DruckSectionDataSet = {
       { label: 'Dekorationsobjekt', price: 'ab €30', note: 'Individuelles Design' },
       { label: 'Display-Set (10 Stk.)', price: 'ab €20/Stk.', note: 'Für Vinothek/Verkostungsraum' },
     ],
-    badges: ['Outdoor ASA verfügbar', 'Logo-Integration', 'Konstruktion bei Bedarf'],
+    badges: ['Outdoor ASA verfügbar', 'Logo-Integration', 'Aufbau bei Bedarf'],
   },
   techSpecs: {
     headline: 'Materialwahl für Burgenländer Einsatz',
@@ -1668,7 +1668,7 @@ const burgenland: DruckSectionDataSet = {
   },
   expressTimeline: [
     { time: '0h', title: 'Anfrage senden', description: 'Foto vom Dach, Skizze oder CAD-Datei.', highlight: false },
-    { time: '6h', title: 'Konstruktion & Angebot', description: 'Wir erstellen das 3D-Modell, Preis inklusive.', highlight: false },
+    { time: '6h', title: 'Aufbau & Angebot', description: 'Wir erstellen das 3D-Modell, Preis inklusive.', highlight: false },
     { time: '2-3 Tage', title: 'Fertigung in Gunskirchen', description: 'ASA für Outdoor, PETG für Displays.', highlight: true },
     { time: '4-5 Tage', title: 'Im Burgenland', description: 'Über A4, bruchsicher verpackt.', highlight: true },
   ],

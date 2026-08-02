@@ -123,7 +123,7 @@ export const regionalArchitekturExtendedData: Record<string, RegionalArchitektur
     uniqueSellingPoints: ["Erfahrung mit denkmalgeschützten Gebäuden", "Bestand-/Neubau-Overlay-Technik", "Schnelle Lieferung über A1"],
     introText: "Salzburg ist geprägt von historischer Bausubstanz und strengem Denkmalschutz. Die UNESCO-Altstadt stellt an Sanierungsprojekte höchste Anforderungen · jeder Eingriff muss der Altstadterhaltungskommission vorgelegt werden. Unsere Overlay-Technik, bei der Bestand und Planung als separate Modellschichten übereinandergelegt werden, hat sich als besonders überzeugend für Behördenpräsentationen erwiesen.",
     faqs: [
-      { question: "Was ist die Overlay-Technik für Sanierungsmodelle?", answer: "Wir drucken den Gebäudebestand in Grau und die geplante Sanierung in Weiß als separates Bauteil. Beide Teile können übereinandergelegt werden · die Behörde sieht auf einen Blick, was sich ändert und was erhalten bleibt." },
+      { question: "Was ist die Overlay-Technik für Sanierungsmodelle?", answer: "Wir drucken den Gebäudebestand in Grau und die geplante Sanierung in Weiß als separates Teil. Beide Teile können übereinandergelegt werden · die Behörde sieht auf einen Blick, was sich ändert und was erhalten bleibt." },
       { question: "Eignen sich 3D-Modelle für Denkmalschutzbehörden?", answer: "Sehr gut sogar. Physische Modelle zeigen räumliche Proportionen, die kein Plan vermitteln kann. Besonders bei Dachaufbauten, Anbauten oder Fassadenänderungen sind Modelle ein starkes Argument in der Kommissionssitzung." },
       { question: "Wie schnell geht die Lieferung nach Salzburg?", answer: "Standardlieferung über A1 Westautobahn: 5-7 Werktage. Express in 24h möglich. Salzburg liegt verkehrstechnisch günstig · die Lieferung ist schnell und unkompliziert." },
       { question: "Können historische Fassadendetails originalgetreu dargestellt werden?", answer: "Ja · wir drucken mit 0.1mm Schichthöhe, was feine Stuckprofile, Fensterumrahmungen und Gesimse ab ca. 1mm realem Maßstab sichtbar macht. Für 1:50-Modelle sind auch feinste Details darstellbar." }
@@ -134,22 +134,22 @@ export const regionalArchitekturExtendedData: Record<string, RegionalArchitektur
     caseStudy: {
       title: "Holzbau-Architekturmodell für Kärntner Planer",
       industry: "Holzbau & Architektur",
-      challenge: "Ein Kärntner Architekturbüro plante ein innovatives Holzhaus und benötigte ein Modell, das die Holzkonstruktion authentisch darstellt.",
-      solution: "Wir verwendeten holzfarbenes PLA mit sichtbarer Maserung. Das Modell zeigte die Konstruktion als Schnittmodell mit freiliegender Holzstruktur.",
+      challenge: "Ein Kärntner Architekturbüro plante ein innovatives Holzhaus und benötigte ein Modell, das die Holzbauweise authentisch darstellt.",
+      solution: "Wir verwendeten holzfarbenes PLA mit sichtbarer Maserung. Das Modell zeigte den Aufbau als Schnittmodell mit freiliegender Holzstruktur.",
       result: "Der Bauherr war begeistert von der authentischen Darstellung. Das Haus wurde wie geplant realisiert.",
       specs: { size: "50 x 40 x 30 cm", material: "PLA Holzoptik + weiß", time: "5 Werktage" },
       quote: "Die Holzoptik war erstaunlich authentisch. Unser Bauherr konnte sich das Haus perfekt vorstellen."
     },
     materials: [
-      { name: "PLA Holzoptik", description: "Authentische Holzmaserung für Kärntner Holzbau-Architektur. Naturnahes Erscheinungsbild.", bestFor: ["Holzhäuser", "Alpine Architektur", "Holzkonstruktionen"], icon: "palette" },
+      { name: "PLA Holzoptik", description: "Authentische Holzmaserung für Kärntner Holzbau-Architektur. Naturnahes Erscheinungsbild.", bestFor: ["Holzhäuser", "Alpine Architektur", "Holzbauten"], icon: "palette" },
       ...defaultMaterials.slice(1)
     ],
     industryFocus: "Holzbau & alpine Architektur in Kärnten",
-    uniqueSellingPoints: ["Holzoptik-Materialien für authentische Modelle", "Erfahrung mit alpiner Architektur", "Schnittmodelle für Konstruktionsdarstellungen"],
+    uniqueSellingPoints: ["Holzoptik-Materialien für authentische Modelle", "Erfahrung mit alpiner Architektur", "Schnittmodelle für Tragwerk-Darstellungen"],
     introText: "Kärnten hat eine starke Holzbau-Tradition. Die Region rund um Klagenfurt und Villach ist Heimat zahlreicher Holzbau-Architekten, die Wohnhäuser, Hotels und öffentliche Gebäude in Holzbauweise planen. Unsere Holzoptik-Materialien mit sichtbarer Maserung haben sich als besonders überzeugend erwiesen · Bauherren erleben das natürliche Materialkonzept bereits am Modell.",
     faqs: [
       { question: "Wie realistisch wirkt das Holzoptik-Material?", answer: "Unser PLA Holzoptik enthält echte Holzfasern und zeigt eine sichtbare Maserung. Im Maßstab 1:50 bis 1:100 wirkt das Material täuschend echt · ideal für Holzbau-Projekte, bei denen der Materialcharakter entscheidend ist." },
-      { question: "Können Schnittmodelle die Holzkonstruktion zeigen?", answer: "Ja · Schnittmodelle mit freiliegender Tragstruktur gehören zu unseren Spezialitäten. Wände werden teilweise offen gestaltet, damit Balken, Stützen und Verbindungen sichtbar werden." },
+      { question: "Können Schnittmodelle die Holzbauweise zeigen?", answer: "Ja · Schnittmodelle mit freiliegender Tragstruktur gehören zu unseren Spezialitäten. Wände werden teilweise offen gestaltet, damit Balken, Stützen und Verbindungen sichtbar werden." },
       { question: "Eignen sich Modelle für Tourismusbauten am Wörthersee?", answer: "Absolut. Für Hotelprojekte und Tourismusbauten erstellen wir Modelle mit Geländeintegration und Umgebungsdarstellung. Seeflächen in blau-transparentem PETG sind besonders wirkungsvoll." },
       { question: "Wie wird nach Kärnten geliefert?", answer: "Versand über A10 Tauernautobahn mit robuster Alpenverpackung. Standardlieferung 5-7 Werktage, Express in 24h für Wettbewerbstermine." }
     ]
@@ -184,14 +184,14 @@ export const regionalArchitekturExtendedData: Record<string, RegionalArchitektur
     caseStudy: {
       title: "Holzbau-Wettbewerbsmodell für Vorarlberger Architekten",
       industry: "Baukultur Vorarlberg",
-      challenge: "Ein Vorarlberger Architekturbüro · bekannt für die regionale Baukultur · benötigte ein Wettbewerbsmodell, das die innovative Holzkonstruktion eines öffentlichen Gebäudes zeigt.",
-      solution: "Wir druckten ein Modell im Maßstab 1:50 mit sichtbarer Konstruktion. Die Holzelemente in Holzoptik-PLA, die Glasfassade in transparentem PETG.",
+      challenge: "Ein Vorarlberger Architekturbüro · bekannt für die regionale Baukultur · benötigte ein Wettbewerbsmodell, das die innovative Holzbauweise eines öffentlichen Gebäudes zeigt.",
+      solution: "Wir druckten ein Modell im Maßstab 1:50 mit sichtbarem Aufbau. Die Holzelemente in Holzoptik-PLA, die Glasfassade in transparentem PETG.",
       result: "Das Modell gewann den 1. Platz im Wettbewerb. Die Jury hob die Qualität der Modelldarstellung hervor.",
       specs: { size: "55 x 40 x 30 cm", material: "PLA Holzoptik + PETG transparent", time: "5 Werktage" },
       quote: "Die Kombination aus Holzoptik und Transparenz hat die Jury überzeugt. Wettbewerb gewonnen!"
     },
     materials: [
-      { name: "PLA Holzoptik", description: "Für Vorarlberger Baukultur. Authentische Darstellung der regionalen Holzbauarchitektur.", bestFor: ["Holzkonstruktionen", "Vorarlberger Baukultur", "Öffentliche Gebäude"], icon: "palette" },
+      { name: "PLA Holzoptik", description: "Für Vorarlberger Baukultur. Authentische Darstellung der regionalen Holzbauarchitektur.", bestFor: ["Holzbauten", "Vorarlberger Baukultur", "Öffentliche Gebäude"], icon: "palette" },
       { name: "PETG Transparent", description: "Für großflächige Glasfassaden der modernen Vorarlberger Architektur.", bestFor: ["Glasfassaden", "Lichtdurchflutete Räume", "Moderne Architektur"], icon: "shield" },
       { name: "PLA Matt Schwarz", description: "Für kontraststarke Wettbewerbsmodelle. Edle Optik für Präsentationen.", bestFor: ["Wettbewerbsmodelle", "Kontrastmodelle", "Designarchitektur"], icon: "feather" }
     ],
@@ -199,9 +199,9 @@ export const regionalArchitekturExtendedData: Record<string, RegionalArchitektur
     uniqueSellingPoints: ["Erfahrung mit Vorarlberger Baukultur", "Holzoptik-Materialien verfügbar", "Grenznahe Lieferung CH/DE"],
     introText: "Vorarlberg gilt als die Architektur-Hochburg Österreichs. Die Bregenzerwälder Baukultur, die Rheintal-Moderne und die internationale Strahlkraft Vorarlberger Büros setzen höchste Maßstäbe an Modellqualität. Hier wird Architektur als Gesamtkunstwerk verstanden · und das Modell muss diesen Anspruch widerspiegeln. Unsere Kombination aus Holzoptik-Materialien und transparentem PETG trifft den Nerv dieser Designkultur.",
     faqs: [
-      { question: "Können Vorarlberger Holzbau-Details im Modell dargestellt werden?", answer: "Ja · in 1:50 werden Holzbalken, Fensterrahmen und konstruktive Details sichtbar. Wir nutzen PLA Holzoptik mit echter Holzfaser für authentische Materialwirkung. Ideal für die Darstellung typischer Bregenzerwälder Baukultur." },
+      { question: "Können Vorarlberger Holzbau-Details im Modell dargestellt werden?", answer: "Ja · in 1:50 werden Holzbalken, Fensterrahmen und bauliche Details sichtbar. Wir nutzen PLA Holzoptik mit echter Holzfaser für authentische Materialwirkung. Ideal für die Darstellung typischer Bregenzerwälder Baukultur." },
       { question: "Ist grenznahe Lieferung in die Schweiz oder nach Deutschland möglich?", answer: "Ja · wir liefern regelmäßig nach Vorarlberg, Liechtenstein und die angrenzende Schweiz/Süddeutschland. Zollfreie EU-Lieferung nach Vorarlberg in 5-7 Tagen, Express in 24h." },
-      { question: "Welche Materialien empfehlen Sie für Wettbewerbsmodelle?", answer: "Für Vorarlberger Wettbewerbe: PLA Matt Schwarz für reduzierten, eleganten Look oder PLA Weiß für den klassischen Wettbewerbsstil. Bei Holzkonstruktionen: PLA Holzoptik für die Tragstruktur, PETG Transparent für Glasfassaden." },
+      { question: "Welche Materialien empfehlen Sie für Wettbewerbsmodelle?", answer: "Für Vorarlberger Wettbewerbe: PLA Matt Schwarz für reduzierten, eleganten Look oder PLA Weiß für den klassischen Wettbewerbsstil. Bei Holzbauten: PLA Holzoptik für die Tragstruktur, PETG Transparent für Glasfassaden." },
       { question: "Wie detailliert können 1:50-Modelle werden?", answer: "In 1:50 werden Fensterprofile, Dachabschlüsse, Balkongeländer und Fassadengliederungen sichtbar. Mit 0.1mm Auflösung sind Details ab ca. 0.5mm Modellmaß darstellbar · das entspricht 25mm in der Realität." }
     ]
   },
@@ -310,7 +310,7 @@ export const regionalArchitekturExtendedData: Record<string, RegionalArchitektur
     introText: "Graz ist Österreichs zweitgrößte Stadt und ein Architektur-Hotspot: Die TU Graz bildet eine neue Generation von Architekten aus, die UNESCO-Altstadt stellt höchste Anforderungen an Eingriffe im historischen Bestand, und Smart-City-Projekte treiben die Stadtentwicklung voran. Grazer Architekturbüros brauchen Modelle, die Innovation und Kontext gleichermaßen transportieren.",
     faqs: [
       { question: "Wie werden Smart-City-Quartiere im Modell dargestellt?", answer: "Durch farbcodierte Nutzungszonen (Wohnen, Gewerbe, Grünflächen) und modulare Bauweise. Gebäude können herausgenommen werden, um Infrastruktur-Ebenen sichtbar zu machen. Lieferung nach Graz über A9." },
-      { question: "Werden Modelle für die Grazer Altstadt-Kommission akzeptiert?", answer: "Ja · für Eingriffe im UNESCO-geschützten Bereich erstellen wir Kontextmodelle mit Bestandsbebauung. Die räumliche Wirkung neuer Bauteile im historischen Umfeld wird sofort begreifbar." },
+      { question: "Werden Modelle für die Grazer Altstadt-Kommission akzeptiert?", answer: "Ja · für Eingriffe im UNESCO-geschützten Bereich erstellen wir Kontextmodelle mit Bestandsbebauung. Die räumliche Wirkung neuer Baukörper im historischen Umfeld wird sofort begreifbar." },
       { question: "Kann die TU Graz Modelle für Forschung bestellen?", answer: "Selbstverständlich. Studienmodelle für Semesterentwürfe ab €20, Diplomarbeitsmodelle nach Aufwand. Wir haben regelmäßig Projekte von TU Graz-Studierenden." },
       { question: "Was kostet ein Wohnbau-Modell für Grazer Projekte?", answer: "Wohnbauten im Maßstab 1:100 kosten €80-200. Bei Mehrfach-Varianten (z.B. drei Entwürfe zum Vergleich) ca. 20% Aufpreis pro Variante. Umgebungsdarstellung optional." }
     ]
@@ -327,7 +327,7 @@ export const regionalArchitekturExtendedData: Record<string, RegionalArchitektur
       quote: "Erst am Modell konnte ich mir vorstellen, wie die Terrassen zum See hin fließen. Perfekt."
     },
     materials: [
-      { name: "PLA Holzoptik", description: "Authentische Holzmaserung für Kärntner Holzbau-Architektur.", bestFor: ["Holzkonstruktionen", "Alpine Architektur", "Holzhäuser"], icon: "palette" },
+      { name: "PLA Holzoptik", description: "Authentische Holzmaserung für Kärntner Holzbau-Architektur.", bestFor: ["Holzbauten", "Alpine Architektur", "Holzhäuser"], icon: "palette" },
       ...defaultMaterials.slice(1)
     ],
     industryFocus: "Seearchitektur & Holzbau in Klagenfurt",
@@ -414,7 +414,7 @@ export const regionalArchitekturExtendedData: Record<string, RegionalArchitektur
     caseStudy: {
       title: "Bregenzerwald-Wohnhaus für internationalen Architekturpreis",
       industry: "Vorarlberger Baukultur",
-      challenge: "Ein Dornbirner Büro reichte ein Bregenzerwald-Wohnhaus für einen internationalen Architekturpreis ein. Die Jury verlangte ein physisches Modell, das die charakteristische Holzkonstruktion und Landschaftsintegration zeigt.",
+      challenge: "Ein Dornbirner Büro reichte ein Bregenzerwald-Wohnhaus für einen internationalen Architekturpreis ein. Die Jury verlangte ein physisches Modell, das die charakteristische Holzbauweise und Landschaftsintegration zeigt.",
       solution: "Wir druckten ein 1:50-Modell in PLA Holzoptik mit sichtbarem Tragwerk. Die Umgebungslandschaft wurde als grünes Geländemodell mit Wiesenflächen gestaltet. Transparente PETG-Fenster zeigten die Durchlässigkeit des Entwurfs.",
       result: "Das Modell wurde bei der Preisjury als besonders aussagekräftig gelobt. Das Büro erhielt eine lobende Erwähnung.",
       specs: { size: "50 x 35 x 25 cm", material: "PLA Holzoptik + PETG transparent + Gelände", time: "6 Werktage" },
@@ -428,7 +428,7 @@ export const regionalArchitekturExtendedData: Record<string, RegionalArchitektur
     uniqueSellingPoints: ["Erfahrung mit Vorarlberger Baukultur", "Design-Kompetenz", "Grenznahe Lieferung CH/DE"],
     introText: "Dornbirn ist das wirtschaftliche Zentrum Vorarlbergs und Messestadt. Aber die eigentliche architektonische DNA liegt im Bregenzerwald: eine Baukultur, die international bewundert wird. Dornbirner Architekturbüros verbinden diese Tradition mit zeitgenössischer Formensprache. Unsere Holzoptik-Materialien und das Verständnis für diese besondere Architektursprache machen uns zum passenden Partner.",
     faqs: [
-      { question: "Können Bregenzerwald-typische Holzdetails dargestellt werden?", answer: "Ja · in 1:50 werden Holzfassaden, Schindeln, Holzrahmen und konstruktive Details wie Stützen und Balken sichtbar. PLA Holzoptik mit echter Holzfaser verstärkt den authentischen Eindruck." },
+      { question: "Können Bregenzerwald-typische Holzdetails dargestellt werden?", answer: "Ja · in 1:50 werden Holzfassaden, Schindeln, Holzrahmen und bauliche Details wie Stützen und Balken sichtbar. PLA Holzoptik mit echter Holzfaser verstärkt den authentischen Eindruck." },
       { question: "Ist Lieferung nach Liechtenstein oder in die Schweiz möglich?", answer: "Ja · wir liefern regelmäßig nach Vorarlberg und die angrenzenden DACH-Regionen. Zollfreie EU-Lieferung nach Vorarlberg, Lieferung nach CH auf Anfrage möglich." },
       { question: "Was kostet ein Wettbewerbsmodell im Vorarlberger Stil?", answer: "Ein 1:50-Modell mit Holzoptik und Umgebungsmodell kostet typischerweise €200-400. Reine Wettbewerbsmodelle in Weiß ab €100. Express in 24h mit 50% Aufpreis." },
       { question: "Werden internationale Architekturpreis-Einreichungen unterstützt?", answer: "Ja · wir fertigen Modelle für nationale und internationale Preisjurys. Die Modelle können nach Juryvorgaben gestaltet werden (bestimmter Sockel, Maßstabsangabe, Material)." }
