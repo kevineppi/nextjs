@@ -775,7 +775,7 @@ const wels: DruckSectionDataSet = {
       { label: 'Logo-Integration', value: 'Im Druck integriert', detail: 'Kein Aufkleber · Logo aus dem Material' },
       { label: 'Sonderfarben', value: 'Pantone-nah', detail: 'Farbabstimmung an Ihre Firmenfarbe' },
       { label: 'Reproduzierbarkeit', value: '100% identisch', detail: 'Nachbestellungen per E-Mail' },
-      { label: 'Funktionsteile', value: 'Schablonen, Halter', detail: 'Werkstatt-Hilfsmittel nach Maß' },
+      { label: 'Hilfsmittel', value: 'Schablonen, Halter', detail: 'Einfache Werkstatt-Helfer nach Maß' },
     ],
   },
   problemSolution: {

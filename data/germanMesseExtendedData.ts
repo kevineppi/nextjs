@@ -31,7 +31,7 @@ const defaultCaseStudy: CaseStudyData = {
   title: "Eyecatcher-Modell für deutsche Fachmesse",
   industry: "Messebau",
   challenge: "Ein deutscher Aussteller benötigte ein beeindruckendes Präsentationsmodell für seinen Messestand. Das Modell musste leicht transportierbar, aber dennoch robust und detailreich sein.",
-  solution: "Wir fertigten ein mehrteiliges Modell aus hochwertigem PETG. Die modulare Konstruktion ermöglichte einfachen Transport, während die Oberflächenbehandlung eine professionelle Optik garantierte.",
+  solution: "Wir fertigten ein mehrteiliges Modell aus hochwertigem PETG. Der modulare Aufbau ermöglichte einfachen Transport, während die Oberflächenbehandlung eine professionelle Optik garantierte.",
   result: "Das Modell wurde zum Blickfang am Stand. Der Kunde berichtete von deutlich mehr Standbesuchern und qualitativ besseren Gesprächen mit potenziellen Kunden.",
   specs: {
     size: "80 x 60 x 40 cm",
@@ -121,7 +121,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
     industryFocus: "Fachpräsentationen, Energie & Handel in NRW",
     uniqueSellingPoints: [
       "Erfahrung mit MEDICA und Düsseldorfer Leitmessen",
-      "Präzisionsmodelle für professionelle Präsentationen",
+      "Detailgetreue Modelle für professionelle Präsentationen",
       "Express-Versand für kurzfristige NRW-Messetermine"
     ]
   },
@@ -219,7 +219,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
       title: "Industrie-4.0-Demonstrator für Hannover Messe",
       industry: "Industrie & Automatisierung",
       challenge: "Ein Automatisierungstechnik-Unternehmen brauchte ein anschauliches Modell einer vernetzten Produktionslinie für die Hannover Messe. Das Modell sollte die digitale Vernetzung physisch erlebbar machen.",
-      solution: "Wir konstruierten eine Miniatur-Produktionslinie mit 5 Stationen. Farbige Markierungen zeigten die Datenflüsse, transparente Gehäuse die Sensorik. Modularer Aufbau für einfachen Transport.",
+      solution: "Wir gestalteten eine Miniatur-Produktionslinie mit 5 Stationen. Farbige Markierungen zeigten die Datenflüsse, transparente Gehäuse die Sensorik. Modularer Aufbau für einfachen Transport.",
       result: "Das Modell wurde auf Social Media geteilt und in Fachmagazinen erwähnt. Über 150 qualifizierte Kontakte wurden am Stand generiert.",
       specs: {
         size: "120 x 40 x 30 cm",
@@ -231,14 +231,14 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
     materials: [
       {
         name: "PLA Industrial",
-        description: "Für technische Präsentationsmodelle. Präzise Oberflächen für Anschauungsexponate.",
+        description: "Für technische Präsentationsmodelle. Feine Oberflächen für Anschauungsexponate.",
         bestFor: ["Produktionslinien-Modelle", "Maschinenmodelle (Anschauung)", "Ausstellungsexponate"],
         icon: "palette"
       },
       {
         name: "PETG Transparent",
-        description: "Für sichtbare Innenleben und Sensorik-Darstellungen. Ideal für Industrie 4.0 Modelle.",
-        bestFor: ["Sensorgehäuse", "Datenfluss-Visualisierung", "Funktionsmodelle"],
+        description: "Für sichtbare Innenleben und Technik-Darstellungen. Ideal für Industrie 4.0 Schaumodelle.",
+        bestFor: ["Technik-Schaumodelle", "Datenfluss-Visualisierung", "Demonstrationsmodelle"],
         icon: "shield"
       },
       {
@@ -275,7 +275,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
     uniqueSellingPoints: [
       "Erfahrung mit Leipziger Messe",
       "Kompetenz für Präsentationsmodelle von Maschinen",
-      "Präzisionsdruck für hochdetaillierte Anschauungsmodelle"
+      "Detailgenauer Druck für hochdetaillierte Anschauungsmodelle"
     ]
   },
 
@@ -326,7 +326,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
       title: "Umwelttechnologie-Modell für IFAT München",
       industry: "Umwelttechnologie",
       challenge: "Ein Umwelttechnik-Unternehmen wollte auf der IFAT eine neue Wasseraufbereitungsanlage präsentieren. Das Modell sollte den Reinigungsprozess in mehreren Stufen visualisieren.",
-      solution: "Wir konstruierten ein transparentes Schnittmodell mit farbcodierten Stufen. Der Wasserfluss wurde durch blaue Transparentelemente dargestellt. Die modulare Bauweise ermöglichte die Erklärung jeder Stufe.",
+      solution: "Wir gestalteten ein transparentes Schnittmodell mit farbcodierten Stufen. Der Wasserfluss wurde durch blaue Transparentelemente dargestellt. Die modulare Bauweise ermöglichte die Erklärung jeder Stufe.",
       result: "Das Modell wurde zum didaktischen Hauptwerkzeug am Stand. Kommunale Entscheider konnten den Prozess sofort nachvollziehen.",
       specs: {
         size: "100 x 50 x 40 cm",
@@ -437,7 +437,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
       title: "Smart-Factory-Demonstrator für Hannover Messe",
       industry: "Industrie 4.0",
       challenge: "Ein Automationsunternehmen benötigte einen physischen Demonstrator einer Smart Factory für die Hannover Messe. Das Modell sollte Roboter, Förderbänder und vernetzte Sensorik zeigen.",
-      solution: "Wir konstruierten eine Miniatur-Smart-Factory mit 8 Arbeitsstationen. Farbcodierte Datenpfade zeigten die Vernetzung. Der modulare Aufbau ermöglichte stufenweisen Zusammenbau live am Stand.",
+      solution: "Wir gestalteten eine Miniatur-Smart-Factory mit 8 Arbeitsstationen. Farbcodierte Datenpfade zeigten die Vernetzung. Der modulare Aufbau ermöglichte stufenweisen Zusammenbau live am Stand.",
       result: "Der live-Aufbau am Stand wurde zum Event. Fachbesucher blieben stehen und diskutierten das Konzept.",
       specs: {
         size: "150 x 60 x 35 cm",
@@ -483,7 +483,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
       title: "Metallbearbeitungsmaschine für AMB Stuttgart",
       industry: "Metallbearbeitung",
       challenge: "Ein Werkzeugmaschinenhersteller wollte auf der AMB ein neues 5-Achs-Bearbeitungszentrum als Modell präsentieren. Das Modell sollte alle 5 Achsen und den Werkzeugwechsler darstellen.",
-      solution: "Wir konstruierten ein 1:5 Modell mit allen beweglichen Achsen. Der Werkzeugwechsler wurde mit entnehmbaren Werkzeugen realisiert.",
+      solution: "Wir gestalteten ein 1:5 Modell mit allen beweglichen Achsen. Der Werkzeugwechsler wurde mit entnehmbaren Werkzeugen realisiert.",
       result: "Das Modell war ideal für erste Beratungsgespräche und Vorabpräsentationen. Kunden konnten die Maschine 'begreifen'.",
       specs: {
         size: "60 x 50 x 50 cm",
@@ -517,7 +517,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
       title: "Arbeitsschutz-Demonstrationsmodell für A+A Dortmund",
       industry: "Arbeitsschutz & Sicherheit",
       challenge: "Ein Arbeitsschutz-Hersteller brauchte ein Demonstrationsmodell für ein neues Absturzsicherungssystem für die A+A Messe.",
-      solution: "Wir fertigten ein maßstabsgetreues Modell einer Dachkonstruktion mit installiertem Sicherungssystem. Detaillierte Befestigungspunkte zeigten die korrekte Installation.",
+      solution: "Wir fertigten ein maßstabsgetreues Modell eines Dachtragwerks mit installiertem Sicherungssystem. Detaillierte Befestigungspunkte zeigten die korrekte Installation.",
       result: "Das Modell ermöglichte anschauliche Schulungen direkt am Messestand. Fachkräfte für Arbeitssicherheit waren begeistert.",
       specs: {
         size: "80 x 60 x 40 cm",
@@ -610,7 +610,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
     uniqueSellingPoints: [
       "Kompetenz für Hightech-Modelle",
       "Erfahrung mit Silicon Saxony",
-      "Präzisionsdruck für Mikroelektronik-Modelle"
+      "Detailgenauer Druck für Mikroelektronik-Modelle"
     ]
   },
 

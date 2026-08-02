@@ -18,7 +18,7 @@ export interface RegionalDruckExtendedData {
 const defaultMaterials: MaterialRecommendation[] = [
   {
     name: "PLA+",
-    description: "Vielseitig, umweltfreundlich und präzise. Der Allrounder für Designstudien, Präsentationsmodelle und Anschauungsobjekte mit ausgezeichneter Oberflächenqualität.",
+    description: "Vielseitig, umweltfreundlich und detailgetreu. Der Allrounder für Designstudien, Präsentationsmodelle und Anschauungsobjekte mit ausgezeichneter Oberflächenqualität.",
     bestFor: ["Designstudien", "Präsentationsmodelle", "Anschauungsobjekte"],
     icon: "palette"
   },
@@ -95,8 +95,8 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
     },
     materials: [
       {
-        name: "PLA+ Präzision",
-        description: "Für maßhaltige Modelle mit sauberer Oberfläche. ±0.2mm Toleranz.",
+        name: "PLA+ Detailtreue",
+        description: "Für maßstabsgetreue Modelle mit sauberer Oberfläche. ±0.2mm Abweichung.",
         bestFor: ["Schnittmodelle", "Schulungsmodelle", "Präsentationsobjekte"],
         icon: "palette"
       },
@@ -144,7 +144,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
       },
       {
         name: "PLA+ Rapid",
-        description: "Für schnelle Designvalidierung und Formchecks. Günstig und präzise.",
+        description: "Für schnelle Designvalidierung und Formchecks. Günstig und fein.",
         bestFor: ["Schnelle Iterationen", "Formstudien", "Designvalidierung"],
         icon: "feather"
       }
@@ -159,7 +159,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
 
   'salzburg': {
     caseStudy: {
-      title: "Displayhalter-Serie für Salzburger Hotellerie",
+      title: "30 Displayhalter für Salzburger Hotellerie",
       industry: "Tourismus & Hotellerie",
       challenge: "Eine Salzburger Hotelkette suchte individuelle Displayhalter für Tablets an der Rezeption. Die Halterungen sollten zum CI des Hotels passen und in 15 Filialen identisch eingesetzt werden.",
       solution: "Wir entwickelten einen maßgeschneiderten Tablethalter mit integriertem Kabelmanagement und Logo-Prägung. 30 Stück in der Corporate-Farbe des Hotels aus PETG gefertigt.",
@@ -248,7 +248,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
     industryFocus: "IT & Elektronik-Design in Klagenfurt",
     uniqueSellingPoints: [
       "ASA-Expertise für wetterfeste Designmodelle",
-      "Erfahrung mit Designstudien-Serien",
+      "Erfahrung mit Designstudien in Mehrfachfertigung",
       "Mehrere Varianten parallel möglich"
     ]
   },
@@ -258,7 +258,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
       title: "Konzeptmodell für Villacher Technologieunternehmen",
       industry: "Technologie & Elektronik-Design",
       challenge: "Ein Elektronikunternehmen in Villach brauchte Konzeptmodelle für eine neue Produktlinie. Die Modelle sollten bei internen Designreviews eingesetzt werden und verschiedene Formfaktoren zeigen.",
-      solution: "Wir druckten 10 Konzeptmodelle in verschiedenen Formfaktoren aus PLA+ mit hoher Oberflächenqualität. Passstifte und Designdetails wurden mit 0.12mm Auflösung präzise dargestellt.",
+      solution: "Wir druckten 10 Konzeptmodelle in verschiedenen Formfaktoren aus PLA+ mit hoher Oberflächenqualität. Passstifte und Designdetails wurden mit 0.12mm Auflösung detailgetreu dargestellt.",
       result: "Das Designreview verlief deutlich produktiver mit physischen Modellen. Proportionen und Ergonomie konnten direkt bewertet werden statt nur am Bildschirm.",
       specs: {
         size: "10x 15 x 10 x 3 cm",
@@ -270,7 +270,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
     materials: defaultMaterials,
     industryFocus: "Technologie & Elektronik-Design in Villach",
     uniqueSellingPoints: [
-      "Maßhaltige Konzeptmodelle mit hoher Oberflächenqualität",
+      "Maßstabsgetreue Konzeptmodelle mit hoher Oberflächenqualität",
       "Verschiedene Designvarianten parallel möglich",
       "Erfahrung mit Technologieunternehmen"
     ]
@@ -281,7 +281,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
       title: "Displayobjekte für Welser Lebensmittelbetrieb",
       industry: "Lebensmittel & Präsentation",
       challenge: "Ein Lebensmittelbetrieb in Wels brauchte maßgeschneiderte Displayhalter für die Produktpräsentation auf Fachmessen und im Showroom.",
-      solution: "Wir konstruierten die Displayhalter nach Maß und druckten sie aus PETG in der Corporate-Farbe. Persönliche Abholung in Gunskirchen · der Kunde sah die Teile noch am selben Tag.",
+      solution: "Wir gestalteten die Displayhalter nach Maß und druckten sie aus PETG in der Corporate-Farbe. Persönliche Abholung in Gunskirchen · der Kunde sah die Teile noch am selben Tag.",
       result: "Die Displays werden auf jeder Messe eingesetzt und machen die Produkte deutlich ansprechender. Für jedes neue Produkt werden passende Halter nachbestellt.",
       specs: {
         size: "8x diverse Größen",
@@ -347,7 +347,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
     materials: [
       {
         name: "PLA+ Dimensionsstabil",
-        description: "Maßhaltig und verzugsarm. Perfekt für Designstudien und Vorabmodelle.",
+        description: "Maßstabsgetreu und verzugsarm. Perfekt für Designstudien und Vorabmodelle.",
         bestFor: ["Vorabmodelle", "Designvalidierung", "Formchecks"],
         icon: "palette"
       },
@@ -489,7 +489,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
     materials: defaultMaterials,
     industryFocus: "Elektrotechnik & Präsentation in Kärnten",
     uniqueSellingPoints: [
-      "Individuelle Modellserien für Kundenpräsentationen",
+      "Individuelle Modelle in Mehrfachfertigung für Kundenpräsentationen",
       "Mehrfarbige Modelle für Produktvergleiche",
       "Zuverlässiger Versand über A10"
     ]
@@ -542,7 +542,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
       title: "Konzeptmodell für burgenländischen Photovoltaik-Betrieb",
       industry: "Erneuerbare Energie & Visualisierung",
       challenge: "Ein burgenländischer PV-Installateur brauchte ein Konzeptmodell einer Solaranlage für Kundenpräsentationen. Potenzielle Kunden sollten sehen, wie die Anlage auf ihrem Dach aussehen würde.",
-      solution: "Wir konstruierten ein maßstabsgetreues Dachmodell mit aufgesetzten PV-Modulen aus ASA. Das Modell zeigt die Anordnung und Proportionen der geplanten Anlage.",
+      solution: "Wir gestalteten ein maßstabsgetreues Dachmodell mit aufgesetzten PV-Modulen aus ASA. Das Modell zeigt die Anordnung und Proportionen der geplanten Anlage.",
       result: "Die Abschlussrate bei Kundengesprächen stieg deutlich. Kunden verstehen mit dem Modell sofort, wie die Anlage aussehen wird.",
       specs: {
         size: "30 x 20 x 10 cm",
@@ -585,9 +585,9 @@ regionalDruckExtendedData['linz'].faqs = [
 regionalDruckExtendedData['linz'].introText = "Nur 20 Minuten von Linz entfernt · Same-Day-Abholung, mehrfarbige Schnittmodelle und Express-Service für Schulungen, Präsentationen und kreative Projekte.";
 
 regionalDruckExtendedData['graz'].faqs = [
-  { question: "Können größere Stückzahlen von Designstudien gefertigt werden?", answer: "Ja · ab 10 Stück mit 10% Mengenrabatt, ab 50 Stück mit 15%. Qualität und Maßhaltigkeit bleiben bei jeder Stückzahl identisch." },
+  { question: "Können größere Stückzahlen von Designstudien gefertigt werden?", answer: "Ja · ab 10 Stück mit 10% Mengenrabatt, ab 50 Stück mit 15%. Qualität und Maßstabstreue bleiben bei jeder Stückzahl identisch." },
   { question: "Welche Materialien eignen sich für langlebige Designmodelle?", answer: "ASA für UV-Beständigkeit und Premium-Oberflächen, PETG für Robustheit und Transparenz, PLA+ für schnelle Formchecks und Designvalidierung." },
-  { question: "Wie präzise sind die Maße bei 3D-gedruckten Designstudien?", answer: "Toleranz ±0.2mm bei Standardeinstellungen, ±0.1mm bei Feinauflösung. Für Passteile und Funktionschecks optimieren wir individuell." },
+  { question: "Wie genau sind die Maße bei 3D-gedruckten Designstudien?", answer: "Die Maße liegen bei ±0.2mm bei Standardeinstellungen, ±0.1mm bei Feinauflösung. Für Passteile und Funktionschecks optimieren wir individuell." },
   { question: "Können transparente Konzeptmodelle erstellt werden?", answer: "Ja · PETG Transparent zeigt innere Strukturen und Aufbauten. Ideal für Design-Reviews, bei denen das Innenleben sichtbar sein soll." },
   { question: "Wie ist die Lieferzeit nach Graz?", answer: "1-2 Werktage über die A9. Express 24h bei dringenden Designprojekten. Tracking-Nummer per E-Mail nach Versand." },
 ];
@@ -618,16 +618,16 @@ regionalDruckExtendedData['klagenfurt'].faqs = [
   { question: "Können unterschiedliche Formfaktoren zum Vergleich bestellt werden?", answer: "Ja · verschiedene Größen, Proportionen und Designansätze parallel. Physische Modelle machen Designentscheidungen deutlich einfacher." },
   { question: "Wie werden Modelle nach Klagenfurt geliefert?", answer: "Versand über die Tauernautobahn in 2-3 Werktagen. Express über Nacht für dringende Projekte. Tracking inklusive." },
 ];
-regionalDruckExtendedData['klagenfurt'].introText = "ASA-Designmodelle und Gehäuseserien für Klagenfurter IT- und Technologieunternehmen · UV-beständig, wetterfest und in beliebig vielen Varianten parallel.";
+regionalDruckExtendedData['klagenfurt'].introText = "ASA-Designmodelle und Gehäusemodelle für Klagenfurter IT- und Technologieunternehmen · UV-beständig, wetterfest und in beliebig vielen Varianten parallel.";
 
 regionalDruckExtendedData['villach'].faqs = [
   { question: "Können Konzeptmodelle für Technologieunternehmen gefertigt werden?", answer: "Ja · Formfaktor-Studien, Ergonomie-Checks und Designreviews. Unsere Modelle werden von Villacher Technologiefirmen für interne Bewertungen eingesetzt." },
   { question: "Wie hoch ist die Oberflächenqualität bei Konzeptmodellen?", answer: "Mit 0.12mm Auflösung und Nachbearbeitung erreichen wir Oberflächen, die direkt für Kundenpräsentationen geeignet sind." },
   { question: "Können verschiedene Formfaktoren zum Vergleich bestellt werden?", answer: "Ja · 5, 10 oder mehr Varianten parallel. Proportionen und Ergonomie lassen sich nur am physischen Modell wirklich beurteilen." },
-  { question: "Welche Toleranzen sind bei maßhaltigen Modellen erreichbar?", answer: "±0.2mm Standard, ±0.1mm bei Feinauflösung. Für funktionale Passstücke optimieren wir die Parameter individuell." },
+  { question: "Welche Maßgenauigkeit ist bei maßstabsgetreuen Modellen erreichbar?", answer: "±0.2mm Standard, ±0.1mm bei Feinauflösung. Für funktionale Passstücke optimieren wir die Parameter individuell." },
   { question: "Wie ist die Lieferzeit nach Villach?", answer: "2-3 Werktage per Paketversand mit Tracking. Express über Nacht für dringende Projekte möglich." },
 ];
-regionalDruckExtendedData['villach'].introText = "Maßhaltige Konzeptmodelle für Villacher Technologieunternehmen · Designreviews, Ergonomie-Checks und Formfaktor-Studien in Präsentationsqualität.";
+regionalDruckExtendedData['villach'].introText = "Maßstabsgetreue Konzeptmodelle für Villacher Technologieunternehmen · Designreviews, Ergonomie-Checks und Formfaktor-Studien in Präsentationsqualität.";
 
 regionalDruckExtendedData['wels'].faqs = [
   { question: "Ist Same-Day-Service für Welser Betriebe verfügbar?", answer: "Ja · unser Standort ist nur 10 Minuten entfernt. Morgens bestellt, nachmittags fertig. Persönliche Abholung in Gunskirchen jederzeit möglich." },
@@ -643,12 +643,12 @@ regionalDruckExtendedData['st-poelten'].faqs = [
   { question: "Welche Materialien eignen sich für Filmrequisiten?", answer: "PETG für robuste, häufig genutzte Requisiten. PLA+ für Dekorationsobjekte. TPU für flexible Elemente. Alle in vielen Farben verfügbar." },
   { question: "Wie schnell können kurzfristige Projekte umgesetzt werden?", answer: "Express in 24-48h. Standardlieferung nach St. Pölten in 1-2 Werktagen über die A1. Ideal für Projekte mit engem Zeitplan." },
   { question: "Gibt es studentenfreundliche Preise?", answer: "Unsere Preise starten ab €20 und sind bereits studentenfreundlich. Ab 10 Stück zusätzlich 10% Mengenrabatt. Ideal für Hochschulprojekte." },
-  { question: "Können modulare, zusammensteckbare Objekte gefertigt werden?", answer: "Ja · Stecksysteme, Schraubverbindungen und Magnetsysteme direkt ins Design integriert. Ideal für transport- und lagerfreundliche Objekte." },
+  { question: "Können modulare, zusammensteckbare Objekte gefertigt werden?", answer: "Ja · zusammensteckbare Elemente, Schraubverbindungen und Magnetsysteme direkt ins Design integriert. Ideal für transport- und lagerfreundliche Objekte." },
 ];
 regionalDruckExtendedData['st-poelten'].introText = "3D-Druck für Medienprojekte, FH-Arbeiten und kreative Produktion in St. Pölten · individuelle Requisiten, Props und Dekorationsobjekte ab €20.";
 
 regionalDruckExtendedData['dornbirn'].faqs = [
-  { question: "Können Vorabmodelle vor der Serienfertigung erstellt werden?", answer: "Ja · 3D-gedruckte Designstudien zeigen Form, Proportionen und Details, bevor teure Werkzeuge gebaut werden. Spart typischerweise 50-80% gegenüber Fehlproduktionen." },
+  { question: "Können Vorabmodelle vor der Mehrfachfertigung erstellt werden?", answer: "Ja · 3D-gedruckte Designstudien zeigen Form, Proportionen und Details, bevor teure Werkzeuge gebaut werden. Spart typischerweise 50-80% gegenüber Fehlproduktionen." },
   { question: "Sind mehrere Iterationsrunden in kurzer Zeit möglich?", answer: "Ja · drei Iterationen in unter zwei Wochen sind Standard. Jede Änderung wird visuell geprüft, bevor die nächste Version gedruckt wird." },
   { question: "Können verschiedene Materialien innerhalb eines Projekts verglichen werden?", answer: "Ja · das gleiche Design in PLA+, PETG und ASA drucken lassen. So vergleichen Sie Haptik, Stabilität und Optik direkt am Objekt." },
   { question: "Können Modelle für Kundenpräsentationen veredelt werden?", answer: "Ja · geschliffene, grundierte und lackierte Oberflächen für ein Spritzguss-nahes Finish. Ideal für Kundentermine und Entscheidungspräsentationen." },
@@ -677,9 +677,9 @@ regionalDruckExtendedData['oberoesterreich'].introText = "Lokaler 3D-Druck Herst
 regionalDruckExtendedData['niederoesterreich'].faqs = [
   { question: "Können individuelle Displayobjekte für Winzer gefertigt werden?", answer: "Ja · maßgeschneiderte Flaschenhalter, Displayobjekte und Präsentationsständer in Ihrer Markenfarbe. Logo-Integration und individuelle Formgebung inklusive." },
   { question: "Sind Modelle für Weinmessen und Verkostungsräume geeignet?", answer: "Ja · PETG-Displays sind robust genug für den Messeeinsatz und gleichzeitig edel genug für den Verkostungsraum." },
-  { question: "Können verschiedene Produktvarianten als Serie bestellt werden?", answer: "Ja · verschiedene Flaschenformate, Halterungen oder Displays in einer Bestellung. Jedes Stück individuell, aber im einheitlichen Markendesign." },
+  { question: "Können verschiedene Produktvarianten in Mehrfachfertigung bestellt werden?", answer: "Ja · verschiedene Flaschenformate, Halterungen oder Displays in einer Bestellung. Jedes Stück individuell, aber im einheitlichen Markendesign." },
   { question: "Wie schnell ist die Lieferung nach Niederösterreich?", answer: "1-2 Werktage über die A1. Von St. Pölten bis Krems, von Wiener Neustadt bis Zwettl · ganz NÖ schnell erreichbar." },
-  { question: "Eignen sich 3D-gedruckte Objekte als Geschenke für Verkostungen?", answer: "Ja · individuelle Miniatur-Objekte mit Logo oder als Weinflaschen-Replika. Ab €5 pro Stück als hochwertiges Give-away." },
+  { question: "Eignen sich 3D-gedruckte Objekte als Geschenke für Verkostungen?", answer: "Ja · individuelle Miniatur-Objekte mit Logo oder als Weinflaschen-Nachbildung. Ab €5 pro Stück als hochwertiges Give-away." },
 ];
 regionalDruckExtendedData['niederoesterreich'].introText = "3D-gedruckte Displayobjekte für niederösterreichische Winzer und KMU · Flaschenhalter, Verkostungsraum-Displays und Messeobjekte in Ihrer Markenfarbe.";
 
@@ -693,13 +693,13 @@ regionalDruckExtendedData['steiermark'].faqs = [
 regionalDruckExtendedData['steiermark'].introText = "Transparente Designstudien und iterative Konzeptmodelle für steirische Green-Tech-Unternehmen · PETG-Expertise, FFG-Projektmengen und Express-Lieferung über die A9.";
 
 regionalDruckExtendedData['kaernten'].faqs = [
-  { question: "Können individuelle Modellserien für Kundenpräsentationen gefertigt werden?", answer: "Ja · von der Einzelanfertigung bis zur Serie. Verschiedene Varianten parallel möglich, jedes Modell in professioneller Qualität." },
+  { question: "Können individuelle Modelle in Mehrfachfertigung für Kundenpräsentationen gefertigt werden?", answer: "Ja · von der Einzelanfertigung bis zur Mehrfachfertigung. Verschiedene Varianten parallel möglich, jedes Modell in professioneller Qualität." },
   { question: "Wie viele verschiedene Modelle können in einer Woche gefertigt werden?", answer: "15-20 verschiedene Modelle pro Woche sind problemlos machbar. Jedes Modell wird individuell gedruckt und geprüft." },
   { question: "Können Modelle in mehreren Farben gedruckt werden?", answer: "Ja · bis zu 6 verschiedene Farben in einem Modell. Farbcodierung macht Produktvarianten auf einen Blick unterscheidbar." },
   { question: "Wie werden empfindliche Modelle für den Versand geschützt?", answer: "Maßgefertigte Schaumstoff-Verpackung, versicherter Versand mit Tracking über die Tauernautobahn in 2-3 Tagen." },
   { question: "Können Modelle nach der Präsentation dauerhaft verwendet werden?", answer: "Ja · alle unsere Modelle sind als Dauerpräsentation im Showroom, Empfang oder Besprechungsraum geeignet." },
 ];
-regionalDruckExtendedData['kaernten'].introText = "Mehrfarbige Präsentationsmodelle und Designserien für Kärntner Unternehmen · individuelle Varianten parallel, farbcodiert und für den Dauereinsatz geeignet.";
+regionalDruckExtendedData['kaernten'].introText = "Mehrfarbige Präsentationsmodelle und Designmodelle in Mehrfachfertigung für Kärntner Unternehmen · individuelle Varianten parallel, farbcodiert und für den Dauereinsatz geeignet.";
 
 regionalDruckExtendedData['vorarlberg'].faqs = [
   { question: "Können Vorabmodelle für die Designvalidierung erstellt werden?", answer: "Ja · 3D-gedruckte Modelle zeigen Form, Proportionen und Passgenauigkeit, bevor teure Werkzeuge gebaut werden. Spart bis zu 80% gegenüber Fehlproduktionen." },
@@ -736,7 +736,7 @@ regionalDruckExtendedData['tirol'] = {
   materials: [
     {
       name: "PLA+ Sport-Design",
-      description: "Für Formstudien und äußere Designvalidierung. Leicht, präzise und schnell zu produzieren.",
+      description: "Für Formstudien und äußere Designvalidierung. Leicht, fein und schnell zu produzieren.",
       bestFor: ["Helmstudien", "Gehäuse-Formchecks", "Sportartikel-Design"],
       icon: "palette"
     },

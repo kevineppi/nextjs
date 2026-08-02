@@ -38,7 +38,7 @@ export const BRAND = {
   // Repo ist public, also gehoeren solche Angaben auch nicht in den Quellcode.
 
   // ─── Produktions-Kapazität ──────────────────────────────────────
-  monthlyCapacity: '~150 Bauteile Standard, ~25-40 Komplettmodelle',
+  monthlyCapacity: '~150 Stück Standard, ~25-40 Komplettmodelle',
   maxModelSize: '600 × 600 × 600 mm pro Druckbett, größere Modelle segmentiert',
 
   // ─── Hintergrund ──────────────────────────────────────────────

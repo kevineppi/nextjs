@@ -53,7 +53,7 @@ const wien: ExtendedMesseSections = {
     { mistake: 'Modell zu klein für den Messestand', explanation: 'Ein 15cm-Modell auf einem 12m²-Stand geht unter. Besucher laufen vorbei, ohne es zu bemerken.', prevention: 'Wir empfehlen mindestens 30cm Modellhöhe für Stände bis 18m². Größere Stände brauchen größere Modelle.' },
     { mistake: 'PLA bei starker Beleuchtung', explanation: 'Messespot-Lampen erzeugen Hitze. PLA wird ab 55°C weich und kann sich verformen.', prevention: 'Für beleuchtete Stände empfehlen wir PETG (bis 75°C) oder ASA (bis 95°C).' },
     { mistake: 'Aufbauanleitung vergessen', explanation: 'Mehrteilige Modelle werden am Messestand falsch zusammengebaut.', prevention: 'Jedes mehrteilige Modell bekommt eine nummerierte Aufbauanleitung mit Fotos.' },
-    { mistake: 'Keine Ersatzteile bestellt', explanation: 'Feine Bauteile können beim Transport oder Auf-/Abbau brechen. Ohne Ersatz steht ein beschädigtes Modell am Stand.', prevention: 'Wir empfehlen, filigrane Anbauteile doppelt zu bestellen. Kostenpunkt: wenige Euro extra.' },
+    { mistake: 'Keine Ersatzstücke bestellt', explanation: 'Feine Modellteile können beim Transport oder Auf- und Abbau brechen. Ohne Ersatz steht ein beschädigtes Modell am Stand.', prevention: 'Wir empfehlen, filigrane Anbau-Elemente doppelt zu bestellen. Kostenpunkt: wenige Euro extra.' },
   ],
 };
 
@@ -116,7 +116,7 @@ const oberoesterreich: ExtendedMesseSections = {
     },
     {
       title: 'Power-Days · Elektrotechnik-Schaumodelle',
-      description: 'Elektrotechnik-Aussteller zeigen Schaltschrank-Modelle und Installationsbeispiele. Kabelführung und Bauteilplatzierung werden dreidimensional sichtbar.',
+      description: 'Elektrotechnik-Aussteller zeigen Schaltschrank-Modelle und Installationsbeispiele. Kabelführung und Komponentenplatzierung werden dreidimensional sichtbar.',
       whyPrint: 'Schaltschränke sind von außen langweilig. Ein aufgeschnittenes 3D-Modell zeigt das Innenleben und begeistert Fachbesucher.',
       requirements: ['Schnittmodell', 'Farbcodierte Kabel', 'PLA+ oder PETG', 'Same-Day-Abholung'],
     },
@@ -189,7 +189,7 @@ const steiermark: ExtendedMesseSections = {
 const kaernten: ExtendedMesseSections = {
   typicalProjects: [
     {
-      title: 'Holzmesse Klagenfurt · Holzkonstruktions-Modelle',
+      title: 'Holzmesse Klagenfurt · Holzbau-Modelle',
       description: 'Holzbauunternehmen zeigen innovative Verbindungstechnik und Tragwerke als vergrößerte Modelle. Knotenpunkte werden sichtbar und greifbar.',
       whyPrint: 'Eine Holzverbindung im Original ist 5cm groß. Als 5:1 Vergrößerung wird sie zum didaktischen Exponat, das Zimmerer und Architekten begeistert.',
       requirements: ['Vergrößerung 5:1 bis 10:1', 'Zerlegbar für Demonstration', 'PLA+ oder PETG', 'Express über A10'],
