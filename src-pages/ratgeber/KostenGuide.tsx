@@ -82,7 +82,7 @@ const KostenGuide = () => {
     price: "200-280€",
     description: "Detaillierte Architekturmodelle mit Nachbearbeitung und Finish"
   }];
-  const savingTips = ["Optimieren Sie Ihr 3D-Modell: Reduzieren Sie unnötige Wandstärken und Vollmaterial", "Wählen Sie die richtige Auflösung: Nicht jedes Teil benötigt 0.1mm Schichthöhe", "Mehrere Teile kombinieren: Bestellen Sie mehrere Teile gleichzeitig für bessere Konditionen", "Standardmaterialien nutzen: PLA und PETG sind günstiger als Spezialmaterialien", "Auf Express verzichten: Standardlieferzeit spart 30% gegenüber 24h-Service", "Eigenfinish: Nachbearbeitung selbst übernehmen kann 30-50€ sparen"];
+  const savingTips = ["Optimieren Sie Ihr 3D-Modell: Reduzieren Sie unnötige Wandstärken und Vollmaterial", "Wählen Sie die richtige Auflösung: Nicht jedes Teil benötigt 0.1mm Schichthöhe", "Mehrere Teile kombinieren: Bestellen Sie mehrere Teile gleichzeitig für bessere Konditionen", "Standardmaterialien nutzen: PLA und PETG sind günstiger als Spezialmaterialien", "Auf Express verzichten: ohne den 50%-Express-Aufschlag ist die Standardlieferung deutlich günstiger", "Eigenfinish: Nachbearbeitung selbst übernehmen kann 30-50€ sparen"];
   return <>
       <SEOHead title="3D-Druck Kosten 2026: Echte Preise + 6 Spartipps [Guide]" description="Was kostet 3D-Druck wirklich? Preisbeispiele: Kleinteil ab €25, Messemodell ab €150 – plus 6 Spartipps für bis zu 30% weniger beim nächsten Auftrag." keywords="3d-druck kosten, was kostet 3d-druck, 3d-druck preise, 3d drucken lassen kosten, fdm 3d-druck kosten, 3d-druck preis pro stück" path="/ratgeber/kosten-guide" schemaType="article" datePublished="2025-11-01" dateModified="2026-05-01" />
       <HowToSchema

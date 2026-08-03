@@ -129,7 +129,7 @@ const AIChatWidget = () => {
         break;
       case 'time':
         userMessage = 'Wie lange dauert die Fertigung?';
-        assistantMessage = 'Die Produktionszeit hängt von Größe & Komplexität ab:\n\n🔸 Kleine Teile (<5cm): 2-4h Druck, 2-3 Werktage Lieferung\n🔶 Mittlere Teile (5-15cm): 6-16h Druck, 3-5 Werktage Lieferung\n🔺 Große Teile (>15cm): 16-48h Druck, 5-7 Werktage Lieferung\n\n⚡ Express-Service: 24-48h Lieferung (+40-60% Aufpreis)\n\nBenötigen Sie Express-Fertigung?';
+        assistantMessage = 'Die Produktionszeit hängt von Größe & Komplexität ab:\n\n🔸 Kleine Teile (<5cm): 2-4h Druck, 2-3 Werktage Lieferung\n🔶 Mittlere Teile (5-15cm): 6-16h Druck, 3-5 Werktage Lieferung\n🔺 Große Teile (>15cm): 16-48h Druck, 5-7 Werktage Lieferung\n\n⚡ Express-Service: 24-48h Lieferung (+50% Aufpreis)\n\nBenötigen Sie Express-Fertigung?';
         actions = [
           { label: 'Angebot anfordern', url: '/kontakt', icon: 'contact' }
         ];

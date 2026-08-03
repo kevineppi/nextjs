@@ -58,7 +58,7 @@ const pricingFaqs = [
   },
   {
     question: 'Was sind die typischen Aufschläge?',
-    answer: 'Express 24h: +30% auf Standardpreis. Express 48h: +15%. Lackierung pro Sektion: ab €40 (kleine Teile) bis €400+ (Großmodelle, 2K-Profi). Persönliche Anlieferung (außerhalb 50km-Radius Gunskirchen): €120-€350 Spesen je nach Distanz. NDA-Sonder-Variante: €150 einmalig.',
+    answer: 'Express (24-48h): pauschal +50% auf den Standardpreis. Lackierung pro Sektion: ab €40 (kleine Teile) bis €400+ (Großmodelle, 2K-Profi). Persönliche Anlieferung (außerhalb 50km-Radius Gunskirchen): €120-€350 Spesen je nach Distanz. NDA-Sonder-Variante: €150 einmalig.',
   },
 ]
 
@@ -156,7 +156,7 @@ export default function PricingPage() {
                       { label: 'Komplettanlage segmentiert (1m+)', range: '€3.500-€12.000' },
                       { label: 'Premium-Show-Quality (Licht, aktive Demo)', range: '€8.000-€18.000' },
                     ],
-                    note: 'Express 24h: +30%, Express 48h: +15%',
+                    note: 'Express (24-48h): pauschal +50%',
                   },
                   {
                     category: 'Mehrfachfertigung',
@@ -259,8 +259,8 @@ export default function PricingPage() {
                   },
                   {
                     factor: 'Express-Aufschlag',
-                    impact: '+15% bis +30%',
-                    detail: 'Express 48h: +15%. Express 24h: +30%. Express same-day (selten möglich, nur kleine Modelle): nach Verfügbarkeit. Wenn Lead-Time 3-5 Wochen erlaubt: Standard-Pricing. Wenn unter 2 Wochen: Express-Aufschlag rechnen.',
+                    impact: '+50%',
+                    detail: 'Express (24-48h): pauschal +50%. Express same-day (selten möglich, nur kleine Modelle): nach Verfügbarkeit. Wenn Lead-Time 3-5 Wochen erlaubt: Standard-Pricing. Wenn unter 2 Wochen: Express-Aufschlag rechnen.',
                   },
                 ].map((d, i) => (
                   <div key={i} className="grid md:grid-cols-12 gap-6 bg-muted/30 border-2 border-border rounded-2xl p-6 md:p-8 hover:border-primary/30 transition-all">

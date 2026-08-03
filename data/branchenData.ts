@@ -187,7 +187,7 @@ const maschinenbau: Branche = {
     {
       question: 'Wie lange dauert die Fertigung eines Werkzeugmaschinen-Modells?',
       answer:
-        'Standard: 3-5 Werktage nach CAD-Übergabe. Express 24-48h bei Bedarf, gegen Aufpreis von 30%. Komplexe Schnittmodelle mit Innenstruktur können bis zu 7 Werktagen brauchen.',
+        'Standard: 3-5 Werktage nach CAD-Übergabe. Express 24-48h bei Bedarf, gegen Aufpreis von 50%. Komplexe Schnittmodelle mit Innenstruktur können bis zu 7 Werktagen brauchen.',
     },
     {
       question: 'Welche CAD-Formate werden akzeptiert?',
