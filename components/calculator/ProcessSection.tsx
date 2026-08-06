@@ -5,7 +5,7 @@ const steps = [
     num: "01",
     icon: Upload,
     title: "3D-Datei hochladen",
-    desc: "Laden Sie Ihre STL-Datei hoch. Volumen, Oberfläche und Abmessungen werden sekundenschnell im Browser analysiert – Ihre Datei verlässt nie Ihren Rechner.",
+    desc: "Laden Sie Ihre STL-Datei hoch. Volumen, Oberfläche und Abmessungen werden sekundenschnell im Browser analysiert. Übertragen wird die Datei erst, wenn Sie Ihre Anfrage absenden.",
   },
   {
     num: "02",

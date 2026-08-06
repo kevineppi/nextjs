@@ -119,7 +119,7 @@ function calcPart(p: PartState): PricingResult {
 const calculatorFaqs = [
   { question: "Was kostet ein 3D-Druck Modell bei ekdruck?", answer: "Die 3D-Druck Kosten beginnen ab €20 pro Teil. Der genaue Preis hängt von Modellgröße, Material und Qualitätsstufe ab. Nutzen Sie unseren Online-Kostenrechner für eine sofortige Richtpreisberechnung, kostenlos und ohne Anmeldung. Für jedes Projekt erstellen wir ein persönlich geprüftes Festpreisangebot innerhalb von 6 Stunden." },
   { question: "Wie genau ist der Richtpreis aus dem Kostenrechner?", answer: "Der Richtpreis basiert auf der realen Geometrie Ihrer STL-Datei und berücksichtigt Materialverbrauch, Druckzeit, Baugröße und Setup-Aufwand. Typische Abweichung zum Endpreis: ±10 bis 15 %. Der verbindliche Festpreis wird nach persönlicher technischer Prüfung festgelegt und per E-Mail zugesendet." },
-  { question: "Welche Dateiformate werden unterstützt?", answer: "Aktuell unterstützen wir STL-Dateien bis 100 MB. Die Datei wird direkt im Browser analysiert – Volumen, Oberfläche und Maße werden automatisch berechnet. Für andere Formate (OBJ, STEP, 3MF) kontaktieren Sie uns bitte direkt." },
+  { question: "Welche Dateiformate werden unterstützt?", answer: "Aktuell unterstützen wir STL-Dateien bis 100 MB. Die Datei wird direkt im Browser analysiert – Volumen, Oberfläche und Maße werden automatisch berechnet. Beim Absenden einer Anfrage werden Ihre Dateien sicher an uns übertragen, damit wir das Festpreisangebot direkt anhand der Originaldaten erstellen können. Für andere Formate (OBJ, STEP, 3MF) kontaktieren Sie uns bitte direkt." },
   { question: "Welche 3D-Druck Materialien kann ich wählen?", answer: "Wir bieten 8 FDM-Materialien an: PLA (ideal für Präsentationsmodelle), PETG (UV-beständig, perfekt für Messemodelle), ABS (glätt- und lackierbar), PLA+ (verstärkt), ASA (wetterfest), TPU (flexibel), Polycarbonat (extrem schlagfest) und PA6-CF mit Carbonfaser für Premium-Showmodelle. Alle Filamente stammen aus österreichischer Produktion." },
   { question: "Was bedeutet Infill (Füllung)?", answer: "Der Infill-Wert bestimmt, wie dicht das Innere Ihres Modells gedruckt wird. 10–15 % reicht für leichte Präsentationsmodelle, 30–50 % für stabile Showmodelle, 100 % für massive Vollkörper." },
   { question: "Kann ich mehrere Teile gleichzeitig kalkulieren?", answer: "Ja, unser Kostenrechner unterstützt Multi-File-Upload. Sie können beliebig viele STL-Dateien hochladen, jeweils mit eigenem Material und eigener Stückzahl konfigurieren und erhalten einen Gesamtrichtpreis mit automatischem Mengenvorteil ab 10 Stück." },
@@ -209,6 +209,26 @@ const Kostenrechner = () => {
     }
     setIsSubmitting(true);
     try {
+      // STL-Dateien wie im Kontaktformular in den Storage laden (Bucket: contact-files).
+      // Best effort: ein fehlgeschlagener Upload (z. B. zu groß) darf die Anfrage nicht blockieren.
+      const partFiles = parts.map(p => p.file).filter((f): f is File => f instanceof File);
+      const fileUrls: string[] = [];
+      const failedUploads: string[] = [];
+      const lastName = contactForm.name.trim().split(" ").pop() || "Unbekannt";
+      for (let i = 0; i < partFiles.length; i++) {
+        const file = partFiles[i];
+        const fileExt = file.name.split(".").pop();
+        const fileNumber = partFiles.length > 1 ? `-${i + 1}` : "";
+        const filePath = `contact-files/${Date.now()}-${lastName}${fileNumber}.${fileExt}`;
+        const { error: uploadError } = await supabase.storage.from("contact-files").upload(filePath, file);
+        if (uploadError) {
+          console.error("Kostenrechner upload failed:", file.name, uploadError);
+          failedUploads.push(`${file.name} (${(file.size / 1024 / 1024).toFixed(1)} MB)`);
+        } else {
+          fileUrls.push(filePath);
+        }
+      }
+
       const configLines = parts.map((p, i) =>
         `- ${p.fileName || `Teil ${i + 1} (Standard)`} · ${p.materialKey} · ${p.layerHeight} mm · Infill ${p.infillPercent}% · Wand ${p.wallThickness.toFixed(1)} mm · ${p.qty}× · ${fmt(partResults[i]?.finalNet ?? 0)}`
       ).join("\n");
@@ -221,6 +241,7 @@ const Kostenrechner = () => {
         "Konfiguration:",
         configLines,
         contactForm.message ? `\nAnmerkungen:\n${contactForm.message}` : null,
+        failedUploads.length ? `\nNicht übertragene Dateien (Upload fehlgeschlagen, bitte per E-Mail anfordern): ${failedUploads.join(", ")}` : null,
       ].filter(Boolean).join("\n");
 
       const { error } = await supabase.from("contact_inquiries").insert({
@@ -228,6 +249,7 @@ const Kostenrechner = () => {
         email: contactForm.email,
         project_type: "Kostenrechner-Anfrage",
         message,
+        file_urls: fileUrls.length > 0 ? fileUrls : null,
         status: "new",
       });
       if (error) throw error;
@@ -561,6 +583,9 @@ const Kostenrechner = () => {
                         <Send className="w-4 h-4 mr-2" />
                         {isSubmitting ? "Wird gesendet..." : "Unverbindliches Angebot anfordern"}
                       </Button>
+                      <p className="text-[11px] text-muted-foreground text-center leading-relaxed">
+                        Mit dem Absenden werden Ihre Angaben und die hochgeladenen STL-Dateien sicher an uns übertragen. Details in der <a href="/datenschutz" className="underline hover:text-foreground">Datenschutzerklärung</a>.
+                      </p>
                       <button className="block mx-auto text-xs text-muted-foreground hover:text-foreground mt-1" onClick={() => setShowContactForm(false)}>Zurück</button>
                     </div>
                   ) : (
@@ -577,7 +602,7 @@ const Kostenrechner = () => {
 
                   {/* Trust */}
                   <div className="grid grid-cols-2 gap-2 mt-5">
-                    <span className="flex items-center gap-1.5 text-[11px] text-muted-foreground"><Shield className="w-3.5 h-3.5" /> Datei bleibt lokal</span>
+                    <span className="flex items-center gap-1.5 text-[11px] text-muted-foreground"><Shield className="w-3.5 h-3.5" /> Berechnung lokal im Browser</span>
                     <span className="flex items-center gap-1.5 text-[11px] text-muted-foreground"><Zap className="w-3.5 h-3.5" /> Express 24–48 h</span>
                     <span className="flex items-center gap-1.5 text-[11px] text-muted-foreground"><MapPin className="w-3.5 h-3.5" /> Gunskirchen, OÖ</span>
                     <span className="flex items-center gap-1.5 text-[11px] text-muted-foreground"><Leaf className="w-3.5 h-3.5" /> AT Filament</span>

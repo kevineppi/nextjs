@@ -15,7 +15,7 @@ import Link from "next/link";
  * KI-Chat wurde entfernt und ist daher nicht mehr aufgeführt.
  */
 
-const STAND = "Juli 2026";
+const STAND = "August 2026";
 
 const Datenschutz = () => {
   return (
@@ -47,8 +47,8 @@ const Datenschutz = () => {
               <li>Wir setzen <strong className="text-foreground">keine Werbe-Pixel</strong> und kein Re-Targeting ein.</li>
               <li>Wir erstellen <strong className="text-foreground">keine Nutzerprofile</strong> und verkaufen keine Daten.</li>
               <li>
-                Ihre <strong className="text-foreground">3D-Dateien bleiben im Browser.</strong> Der Kostenrechner
-                berechnet lokal auf Ihrem Gerät. Die Datei selbst wird nicht an uns übertragen.
+                Der Kostenrechner <strong className="text-foreground">berechnet lokal in Ihrem Browser.</strong>{" "}
+                Ihre 3D-Dateien werden erst an uns übertragen, wenn Sie aktiv eine Anfrage absenden.
               </li>
             </ul>
           </div>
@@ -126,13 +126,17 @@ const Datenschutz = () => {
               <h2 className="text-xl font-bold">3. Kostenrechner und Ihre 3D-Dateien</h2>
               <p className="text-muted-foreground">
                 Der Kostenrechner analysiert Ihre 3D-Datei <strong className="text-foreground">direkt in Ihrem
-                Browser</strong>. Die Datei wird nicht auf unsere Server hochgeladen und verlässt Ihr Gerät nicht.
+                Browser</strong>. Für die reine Preisberechnung wird die Datei nicht übertragen: Volumen, Maße
+                und Richtpreis werden lokal auf Ihrem Gerät ermittelt.
               </p>
               <p className="text-muted-foreground">
                 Erst wenn Sie aktiv auf &bdquo;Unverbindliches Angebot anfordern&ldquo; klicken, werden Ihre
-                Kontaktdaten und die berechnete Konfiguration (Dateiname, Material, Schichthöhe, Stückzahl,
-                Richtpreis) an uns übermittelt. Die 3D-Geometrie selbst bleibt bei Ihnen, bis Sie sie uns
-                ausdrücklich schicken.
+                Kontaktdaten, die berechnete Konfiguration (Dateiname, Material, Schichthöhe, Stückzahl,
+                Richtpreis) <strong className="text-foreground">und die von Ihnen hochgeladenen 3D-Dateien</strong>{" "}
+                an uns übermittelt und in unserem Anfrage-System (Supabase, siehe Abschnitt 7) gespeichert.
+                Wir verwenden die Dateien ausschließlich zur Prüfung Ihrer Anfrage und zur Angebotserstellung
+                (Art. 6 Abs. 1 lit. b DSGVO), geben sie nicht an Dritte weiter und löschen sie nach denselben
+                Fristen wie Ihre Anfrage (siehe Abschnitt 2).
               </p>
             </section>
 
@@ -211,8 +215,8 @@ const Datenschutz = () => {
                       },
                       {
                         n: "Supabase",
-                        w: "Datenbank für Anfragen",
-                        d: "Ihre Anfrage- und Kontaktdaten",
+                        w: "Datenbank und Datei-Speicher für Anfragen",
+                        d: "Ihre Anfrage- und Kontaktdaten sowie hochgeladene 3D-Dateien",
                       },
                       {
                         n: "Cal.com",
