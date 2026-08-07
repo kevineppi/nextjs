@@ -60,6 +60,10 @@ const FAQ_LD = faqSchema([
     a: 'Ein Designprototyp ist ein Modell zur Beurteilung von Form, Proportionen, Haptik und Optik, bevor es weitergeht. Anders als ein rein digitaler Entwurf lässt er sich in die Hand nehmen, zeigen und mit anderen Varianten vergleichen.',
   },
   {
+    q: 'Was ist der Unterschied zwischen Designprototyp und Funktionsprototyp?',
+    a: 'Ein Designprototyp zeigt Form, Optik, Proportion und Ergonomie zum Anfassen und Zeigen. Ein Funktionsprototyp prüft dagegen technische Funktion und Belastung. Wir sind auf den Designprototyp spezialisiert, technische Funktions- und Belastungstests gehören nicht zu unserem Angebot.',
+  },
+  {
     q: 'Was ist der Unterschied zwischen Designprototyp und Anschauungsmodell?',
     a: 'Ein Designprototyp dient dem Prüfen und Iterieren von Form und Optik in der Entwicklung. Ein Anschauungsmodell ist das ausgearbeitete Modell zum Zeigen, etwa für Vertrieb, Investoren-Pitch oder Messe. Beides fertigen wir aus dem gleichen Workflow.',
   },

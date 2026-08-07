@@ -51,6 +51,7 @@ const FAQ_LD = faqSchema([
   { q: 'Wofür wird ein Stadtmodell eingesetzt?', a: 'Für Gemeinde- und Bürgerpräsentationen, Bebauungspläne, die Vermarktung durch Bauträger und als Umgebungsmodell für Architektur-Wettbewerbe.' },
   { q: 'Was ist der Unterschied zwischen LoD1 und LoD2?', a: 'LoD1 sind einfache Klötzchen mit flachem Dach, LoD2 bildet die echten Dachformen ab. Für ein ruhiges Städtebaumodell reicht oft LoD1, für erkennbare Gebäude und Wettbewerbe lohnt sich LoD2. Wir wählen den Detailgrad passend zu Maßstab und Zweck und bereiten die Daten druckfertig auf.' },
   { q: 'Kann man ein Stadtmodell aus Wiener oder Grazer Geodaten drucken lassen?', a: 'Ja. Für Wien, Graz, Linz oder Ihre Gemeinde holen und verarbeiten wir die amtlichen Geodaten selbst, eigene CAD-Daten brauchen Sie nicht. Sie nennen uns Ort und Ausschnitt, wir liefern das fertige, maßstabsgetreue Stadtmodell.' },
+  { q: 'Was ist der Unterschied zwischen Stadtmodell und Geländemodell?', a: 'Ein Stadtmodell zeigt die Bebauung, also Gebäude, Straßen und Quartiere im Zusammenhang. Ein Geländemodell zeigt die reine Landschaft aus Höhendaten, ohne Häuser. Oft kombinieren wir beides: die Bebauung auf dem passenden Geländeverlauf.' },
 ])
 
 const BREADCRUMB_LD = breadcrumbSchema([

@@ -35,7 +35,7 @@ const SERVICE_LD = serviceSchema({
 
 const FAQ_LD = faqSchema([
   { q: 'Wo kann man ein einzelnes oder personalisiertes 3D-Modell in Österreich drucken lassen?', a: 'ekdruck in Gunskirchen (Oberösterreich) druckt Einzelstücke und personalisierte Objekte aus dem 3D-Druck, ab 1 Stück und ohne Mindestmenge. Eine fertige Datei ist nicht nötig: ein Foto, eine Skizze oder eine Idee reicht. Lieferung österreichweit, Express in 24 Stunden, Angebot in 6 Stunden. 5,0 Sterne aus 31 Google-Rezensionen.' },
-  { q: 'Kann man nach einem Foto etwas in 3D drucken lassen?', a: 'Ja. Aus einem Foto, einer Skizze oder einer Idee modellieren wir ein druckfertiges 3D-Modell und fertigen daraus Ihr Einzelstück. Eine STL-Datei brauchen Sie nicht. So entstehen personalisierte Geschenke, Deko-Objekte und Unikate, ab 1 Stück und österreichweit geliefert.' },
+  { q: 'Kann man nach einem Foto etwas in 3D drucken lassen?', a: 'Ja. Aus einem Foto, einer Skizze oder einer Idee modellieren wir ein druckfertiges 3D-Modell und fertigen daraus Ihr Einzelstück. Eine STL-Datei brauchen Sie nicht. So entstehen personalisierte Geschenke, Deko-Objekte und Unikate, von der Lithophanie, die ein Foto als Lichtbild zeigt, bis zum individuellen Präsent, ab 1 Stück und österreichweit geliefert.' },
   { q: 'Gibt es eine Mindestbestellmenge?', a: 'Nein. Wir fertigen ab 1 Stück, ohne Mindestmenge und ohne Aufpreis für das Einzelstück. Ideal für Unikate, personalisierte Geschenke und Ausstellungsstücke.' },
   { q: 'Wie lange dauert eine Einzelanfertigung?', a: 'Standard in 3 bis 7 Werktagen, Express in 24 bis 48 Stunden. Das kostenlose Angebot mit Liefertermin kommt innerhalb von 6 Arbeitsstunden.' },
 ])

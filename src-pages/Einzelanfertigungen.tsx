@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: "Kann man nach einem Foto etwas in 3D drucken lassen?",
-    answer: "Ja. Aus einem Foto, einer Skizze oder einer Idee modellieren wir ein druckfertiges 3D-Modell und fertigen daraus Ihr Einzelstück. Eine STL-Datei brauchen Sie nicht. So entstehen personalisierte Geschenke, Deko-Objekte und Unikate, ab 1 Stück und österreichweit geliefert."
+    answer: "Ja. Aus einem Foto, einer Skizze oder einer Idee modellieren wir ein druckfertiges 3D-Modell und fertigen daraus Ihr Einzelstück. Eine STL-Datei brauchen Sie nicht. So entstehen personalisierte Geschenke, Deko-Objekte und Unikate, von der Lithophanie, die ein Foto als Lichtbild zeigt, bis zum individuellen Präsent, ab 1 Stück und österreichweit geliefert."
   },
   {
     question: "Was ist der Unterschied zwischen Einzelanfertigung und Mehrfachfertigung?",
