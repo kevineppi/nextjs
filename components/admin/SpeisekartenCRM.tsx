@@ -48,15 +48,15 @@ function mailEntwurf(lead: SpeisekartenLead) {
     ? `Guten Tag ${lead.ansprechpartner.split(",")[0]},`
     : "Guten Tag,"
 
-  const betreff = `Speisekartenabdeckungen aus dem 3D-Druck, Ergänzung für Ihr Sortiment`
+  const betreff = `Kappen für Speisekarten aus dem 3D-Druck, jede Farbe ohne Werkzeugkosten`
 
   const body = `${anrede}
 
-ich bin Kevin Eppensteiner von ek-druck in Oberösterreich. Wir fertigen Speisekartenabdeckungen aus dem 3D-Druck, individuell auf den Betrieb abgestimmt, mit Logo, Namenszug oder eigener Form, ab einem Stück.
+ich bin Kevin Eppensteiner von ek-druck in Oberösterreich. Wir fertigen Kappen und Abdeckungen für Speisekarten aus dem 3D-Druck, in jeder Farbe und Form, ohne Werkzeugkosten und ohne Mindestmenge.
 
-Für Sie könnte das eine Ergänzung im Premium-Segment sein: Ihre Kunden bekommen eine Abdeckung, die es so kein zweites Mal gibt, und Sie brauchen dafür kein Werkzeug und keine Mindestmenge.
+Interessant wird das überall dort, wo sich ein Werkzeug nicht rechnet: Sonderfarben für einen einzelnen Hotelkunden, neue Varianten zum Ausprobieren oder Nachlieferungen in kleiner Menge. Eine neue Variante ist in Tagen da, nicht in Wochen.
 
-Ich schicke Ihnen gerne ein Muster mit Ihrem Logo, kostenlos und unverbindlich. Sagen Sie mir einfach, wohin.
+Ich schicke Ihnen gerne Muster, kostenlos und unverbindlich. Sagen Sie mir einfach, wohin.
 
 Beste Grüße
 Kevin Eppensteiner
