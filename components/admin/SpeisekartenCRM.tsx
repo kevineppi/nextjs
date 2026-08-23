@@ -10,11 +10,12 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import {
   SPEISEKARTEN_LEADS,
+  SPEISEKARTEN_BLACKLIST,
   LEAD_STATUS,
   type SpeisekartenLead,
   type LeadStatusValue,
 } from "@/data/speisekartenLeads"
-import { Search, Mail, Phone, ExternalLink, Copy, Check, ChevronDown, ChevronUp } from "lucide-react"
+import { Search, Mail, Phone, ExternalLink, Copy, Check, ChevronDown, ChevronUp, Ban } from "lucide-react"
 
 const STORAGE_KEY = "ekdruck_speisekarten_crm_v1"
 
@@ -44,30 +45,7 @@ const PRIO_STYLE: Record<string, string> = {
 }
 
 function mailEntwurf(lead: SpeisekartenLead) {
-  const anrede = lead.ansprechpartner && !lead.ansprechpartner.startsWith("kein")
-    ? `Guten Tag ${lead.ansprechpartner.split(",")[0]},`
-    : "Guten Tag,"
-
-  const betreff = `Weniger Reklamationen an Klemmschienen: Kantenabdeckung für Speisekarten`
-
-  const body = `${anrede}
-
-kennen Sie das Problem, dass Speisekarten mit Klemmschiene an den Schienenenden Druckstellen und unsaubere Kanten bekommen? Leder und Leinen reiben permanent auf dem Tisch, die offene Seite wirkt nicht mehr hochwertig, und am Ende landet die Reklamation beim Hersteller.
-
-Ich habe dafür eine Abdeckung entwickelt, die auf das Schienenende aufgesetzt wird. Sie schützt die Kante, verschließt die offene Seite und lässt sich zum Tauschen einzelner Seiten wieder abnehmen, ohne dass das Personal umlernen muss.
-
-Die Lösung ist als Gebrauchsmuster geschützt und im Spritzguss kaum umsetzbar. Ich fertige sie im 3D-Druck, in jeder Farbe und ohne Mindestmenge.
-
-Ich schicke Ihnen gerne Muster passend zu Ihrem Schienenprofil, kostenlos und unverbindlich. Sagen Sie mir einfach, welche Schienenbreite Sie verwenden.
-
-Beste Grüße
-Kevin Eppensteiner
-ek-druck
-+43 676 5517197
-office@ek-druck.at
-www.ek-druck.at`
-
-  return { betreff, body }
+  return { betreff: lead.mailBetreff, body: lead.mailText }
 }
 
 const SpeisekartenCRM = () => {
@@ -171,12 +149,34 @@ const SpeisekartenCRM = () => {
         ))}
       </div>
 
+      {/* Blacklist */}
+      {SPEISEKARTEN_BLACKLIST.length > 0 && (
+        <Card className="border-red-500/30 bg-red-500/[0.03]">
+          <CardContent className="pt-6">
+            <div className="flex items-start gap-3">
+              <Ban className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
+              <div>
+                <p className="font-semibold text-sm">Blacklist, wird nicht kontaktiert</p>
+                <ul className="mt-2 space-y-1">
+                  {SPEISEKARTEN_BLACKLIST.map((b) => (
+                    <li key={b.firma} className="text-sm text-muted-foreground">
+                      <span className="font-medium text-foreground">{b.firma}</span>: {b.grund}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      )}
+
       {/* Filter */}
       <Card>
         <CardHeader>
           <CardTitle className="text-lg">Speisekarten-Hersteller als Vertriebspartner</CardTitle>
           <p className="text-sm text-muted-foreground">
-            Kontaktdaten aus öffentlichen Impressen verifiziert. Status wird lokal in diesem Browser gespeichert.
+            Eigener Vertriebskanal für die Kantenabdeckung, getrennt von allen anderen CRM-Daten. Jeder Lead hat einen
+            eigenen Mailtext. Kontaktdaten aus öffentlichen Impressen verifiziert, Status wird lokal in diesem Browser gespeichert.
           </p>
         </CardHeader>
         <CardContent>
@@ -274,6 +274,16 @@ const SpeisekartenCRM = () => {
                         <TableCell colSpan={6} className="bg-muted/30">
                           <div className="p-4 space-y-4">
                             <p className="text-sm leading-relaxed">{lead.notiz}</p>
+
+                            <div className="rounded-lg border border-border bg-background p-4">
+                              <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-2">
+                                Mailtext für diesen Lead
+                              </p>
+                              <p className="text-sm font-semibold mb-2">Betreff: {lead.mailBetreff}</p>
+                              <p className="text-sm text-muted-foreground whitespace-pre-line leading-relaxed">
+                                {lead.mailText}
+                              </p>
+                            </div>
 
                             <div className="flex flex-wrap gap-2">
                               {lead.email && (
