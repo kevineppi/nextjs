@@ -13,10 +13,11 @@ import type { Tables } from "@/integrations/supabase/types";
 
 type ContactInquiry = Tables<'contact_inquiries'>;
 import { useToast } from "@/hooks/use-toast";
-import { Search, Filter, Download, RefreshCw, Eye, CheckCircle, Clock, Archive, Image } from "lucide-react";
+import { Search, Filter, Download, RefreshCw, Eye, CheckCircle, Clock, Archive, Image, BookOpen } from "lucide-react";
 import { format } from "date-fns";
 import { de } from "date-fns/locale";
 import ReferencesManager from "./ReferencesManager";
+import SpeisekartenCRM from "./admin/SpeisekartenCRM";
 
 const AdminDashboard = () => {
   const [inquiries, setInquiries] = useState<ContactInquiry[]>([]);
@@ -192,7 +193,7 @@ const AdminDashboard = () => {
 
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
-          <TabsList className="grid w-full max-w-lg grid-cols-2">
+          <TabsList className="grid w-full max-w-2xl grid-cols-3">
             <TabsTrigger value="inquiries">
               <Filter className="h-4 w-4 mr-2" />
               Kontaktanfragen
@@ -200,6 +201,10 @@ const AdminDashboard = () => {
             <TabsTrigger value="references">
               <Image className="h-4 w-4 mr-2" />
               Referenzen
+            </TabsTrigger>
+            <TabsTrigger value="speisekarten">
+              <BookOpen className="h-4 w-4 mr-2" />
+              Speisekarten
             </TabsTrigger>
           </TabsList>
 
@@ -483,6 +488,10 @@ const AdminDashboard = () => {
 
           <TabsContent value="references" className="space-y-6">
             <ReferencesManager />
+          </TabsContent>
+
+          <TabsContent value="speisekarten" className="space-y-6">
+            <SpeisekartenCRM />
           </TabsContent>
         </Tabs>
       </div>
