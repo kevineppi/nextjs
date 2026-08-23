@@ -1,7 +1,18 @@
 // ─────────────────────────────────────────────────────────────
 // SPEISEKARTEN-LEADS · Hersteller von Speisekartenmappen (DACH)
-// Zielgruppe für 3D-gedruckte Speisekartenabdeckungen als
+// Zielgruppe für die 3D-gedruckte Kantenabdeckung für
+// Klemmschienen (Gebrauchsmuster-geschützt) als
 // Wiederverkäufer/Vertriebspartner.
+//
+// PRODUKT: Abdeckung, die auf das Ende einer Speisekarten-
+// Klemmschiene aufgesetzt wird. Schützt die Kante vor
+// Druckstellen, verschließt die offene Seite, abnehmbar zum
+// Seitentausch. Verkaufsargument ist nicht der Preis, sondern
+// WENIGER REKLAMATIONEN beim Hersteller.
+//
+// PRIO-LOGIK: A bekommen Firmen mit Klemmsystemen im Sortiment
+// (direkter Produkt-Fit) plus der Bestandskunde plus der
+// größte Marktteilnehmer.
 //
 // Alle Kontaktdaten wurden aus öffentlichen Impressum-, Kontakt-
 // und Team-Seiten verifiziert (Recherche 2026-08). Keine Adresse
@@ -67,7 +78,7 @@ export const SPEISEKARTEN_LEADS: SpeisekartenLead[] = [
     email: 'uhl-austria@uhl-menu.com',
     telefon: '+43 316 767777-0',
     prioritaet: 'A',
-    notiz: 'Seit 1982, drei Standorte AT/DE/HU. Führt bereits Echtholz, Echtleder, Designleder, Magnet- und Klemmsysteme. Sondermaterial ist dort schon Teil des Geschäftsmodells, die Aufpreis-Argumentation entfällt.',
+    notiz: 'Führt ausdrücklich MAGNET- UND KLEMMSYSTEME, also direkter Produkt-Fit für die Kantenabdeckung. Seit 1982, drei Standorte AT/DE/HU. Echtholz und Echtleder im Sortiment, Sondermaterial ist dort schon Teil des Geschäftsmodells. Nach Schienenprofil fragen.',
   },
   {
     id: 'reischl-sohn',
@@ -81,7 +92,7 @@ export const SPEISEKARTEN_LEADS: SpeisekartenLead[] = [
     email: 'menu@reischl.at',
     telefon: '+43 6274 7331',
     prioritaet: 'A',
-    notiz: 'Ältester Anbieter, gegründet 1891. Hotelgruppen in ganz Europa als Langzeitkunden. Materialien: Loden, Buchleinen, Holz, Kunststoff. DE-Vertrieb über Rüd Progastro, info@rued.info, +49 7731 9249-60.',
+    notiz: 'Führt KLEMMMAPPEN, direkter Produkt-Fit. Ältester Anbieter, gegründet 1891, Hotelgruppen in ganz Europa als Langzeitkunden, also viele Karten im täglichen Gästekontakt und entsprechend Kantenverschleiß. DE-Vertrieb über Rüd Progastro, info@rued.info, +49 7731 9249-60.',
   },
   {
     id: 'scampolo',
@@ -95,7 +106,7 @@ export const SPEISEKARTEN_LEADS: SpeisekartenLead[] = [
     email: 'office@scampolo.at',
     telefon: '+43 7245 20165-0',
     prioritaet: 'A',
-    notiz: 'Nur rund 15 km von Gunskirchen. Persönlicher Besuch mit Muster möglich, kein Telefon nötig. Kleiner Umsatz, aber schnellster Weg zur ersten Wiederverkäufer-Referenz, die bei Lindner und Uhl zitierbar ist.',
+    notiz: 'Führt Klemmsysteme im Sortiment UND liegt nur rund 15 km von Gunskirchen. Persönlicher Besuch mit Muster möglich, kein Telefon nötig. Kleiner Umsatz, aber schnellster Weg zur ersten Wiederverkäufer-Referenz, die bei Lindner, Uhl und Klemmbinder zitierbar ist.',
   },
   {
     id: 'maren-thomsen',
@@ -164,8 +175,8 @@ export const SPEISEKARTEN_LEADS: SpeisekartenLead[] = [
     funktion: 'Inhaber',
     email: 'info@speisekartenzentrale.de',
     telefon: '+49 8751 619 99 22',
-    prioritaet: 'B',
-    notiz: 'Über 25 Jahre am Markt. Leinen-Buckram, Wollfilz, Holz (Nuss, Eiche), Metallbeschläge, Gravur. Positioniert sich über Material und Haptik, nicht über Preis. Alternativmail: mail@agenturkgb.de',
+    prioritaet: 'A',
+    notiz: 'Starker Klemm-Fit: betreibt zusätzlich klemmbretter.eu, führt Metallbeschläge und Klemmsysteme. Über 25 Jahre am Markt, positioniert sich über Material und Haptik statt Preis, passt also zum Premium-Argument der Kantenabdeckung. Alternativmail: mail@agenturkgb.de',
   },
   {
     id: 'heidemann-plastik',
@@ -206,8 +217,8 @@ export const SPEISEKARTEN_LEADS: SpeisekartenLead[] = [
     funktion: 'Inhaber',
     email: 'info@klemmbinder.de',
     telefon: '+49 7162 30 19 400',
-    prioritaet: 'B',
-    notiz: 'Einzelunternehmen, gute Sortimentstiefe: A6 bis A3, 26 Farben. Führt bereits Acryl und Holz, also Nicht-Textil-Materialien.',
+    prioritaet: 'A',
+    notiz: 'BESTER PRODUKT-FIT DER GANZEN LISTE. Reiner Klemmsystem-Spezialist: A6 bis A3, 26 Farben, DREI KLEMMSCHIENENBREITEN. Genau die Schienen, für die die Kantenabdeckung gemacht ist. Klein, aber jeder verkaufte Klemmbinder ist ein potenzieller Abnehmer. Nach Schienenprofil fragen und Muster für alle drei Breiten schicken.',
   },
   {
     id: 'sigel',

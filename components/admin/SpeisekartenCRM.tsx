@@ -48,15 +48,17 @@ function mailEntwurf(lead: SpeisekartenLead) {
     ? `Guten Tag ${lead.ansprechpartner.split(",")[0]},`
     : "Guten Tag,"
 
-  const betreff = `Kappen für Speisekarten aus dem 3D-Druck, jede Farbe ohne Werkzeugkosten`
+  const betreff = `Weniger Reklamationen an Klemmschienen: Kantenabdeckung für Speisekarten`
 
   const body = `${anrede}
 
-ich bin Kevin Eppensteiner von ek-druck in Oberösterreich. Wir fertigen Kappen und Abdeckungen für Speisekarten aus dem 3D-Druck, in jeder Farbe und Form, ohne Werkzeugkosten und ohne Mindestmenge.
+kennen Sie das Problem, dass Speisekarten mit Klemmschiene an den Schienenenden Druckstellen und unsaubere Kanten bekommen? Leder und Leinen reiben permanent auf dem Tisch, die offene Seite wirkt nicht mehr hochwertig, und am Ende landet die Reklamation beim Hersteller.
 
-Interessant wird das überall dort, wo sich ein Werkzeug nicht rechnet: Sonderfarben für einen einzelnen Hotelkunden, neue Varianten zum Ausprobieren oder Nachlieferungen in kleiner Menge. Eine neue Variante ist in Tagen da, nicht in Wochen.
+Ich habe dafür eine Abdeckung entwickelt, die auf das Schienenende aufgesetzt wird. Sie schützt die Kante, verschließt die offene Seite und lässt sich zum Tauschen einzelner Seiten wieder abnehmen, ohne dass das Personal umlernen muss.
 
-Ich schicke Ihnen gerne Muster, kostenlos und unverbindlich. Sagen Sie mir einfach, wohin.
+Die Lösung ist als Gebrauchsmuster geschützt und im Spritzguss kaum umsetzbar. Ich fertige sie im 3D-Druck, in jeder Farbe und ohne Mindestmenge.
+
+Ich schicke Ihnen gerne Muster passend zu Ihrem Schienenprofil, kostenlos und unverbindlich. Sagen Sie mir einfach, welche Schienenbreite Sie verwenden.
 
 Beste Grüße
 Kevin Eppensteiner
