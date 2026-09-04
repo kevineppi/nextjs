@@ -143,10 +143,18 @@ const AdminDashboard = () => {
 
   /** Herkunft einer Anfrage als kurzer Text, plus Google-Klick-ID falls vorhanden. */
   const getHerkunft = (i: ContactInquiry) => {
+    // Anfragen von vor dem 04.09.2026 wurden nie gemessen. Die duerfen
+    // nicht als "Direkt" erscheinen, das waere eine erfundene Tatsache.
+    const gemessen = Boolean(
+      i.erfasst_am || i.gclid || i.utm_source || i.referrer || i.landing_page
+    );
+    if (!gemessen) {
+      return { kurz: "unbekannt", voll: "unbekannt", gclid: null, gemessen: false };
+    }
     const kurz = herkunftKurz(i as any);
     const teile = [kurz];
     if (i.utm_campaign) teile.push(i.utm_campaign);
-    return { kurz, voll: teile.join(" · "), gclid: i.gclid ?? null };
+    return { kurz, voll: teile.join(" · "), gclid: i.gclid ?? null, gemessen: true };
   };
 
   const getTimelineLabel = (timeline: string) => {
@@ -374,7 +382,11 @@ const AdminDashboard = () => {
                           const ads = Boolean(h.gclid);
                           return (
                             <div className="leading-tight">
-                              <span className={ads ? "font-medium text-green-700" : "text-muted-foreground"}>
+                              <span className={
+                                ads ? "font-medium text-green-700"
+                                    : h.gemessen ? "text-muted-foreground"
+                                    : "italic text-muted-foreground/60"
+                              }>
                                 {h.voll}
                               </span>
                               {ads && (
@@ -500,9 +512,11 @@ const AdminDashboard = () => {
                               Verweis von: {selectedInquiry.referrer}
                             </p>
                           )}
-                          {!h.gclid && !selectedInquiry.utm_source && !selectedInquiry.referrer && (
+                          {!h.gemessen && (
                             <p className="text-xs text-muted-foreground">
-                              Keine Herkunftsdaten. Anfragen vor dem 04.09.2026 haben noch keine.
+                              Diese Anfrage stammt aus der Zeit vor der Herkunftsmessung
+                              (eingerichtet am 04.09.2026). Die Quelle laesst sich rueckwirkend
+                              nicht mehr feststellen.
                             </p>
                           )}
                         </div>
