@@ -18,6 +18,7 @@ import { useModelAnalysis } from "@/hooks/useModelAnalysis";
 import { type PricingInput, type PricingResult, calculatePrice } from "@/lib/pricingEngine";
 import { pricingConfig } from "@/data/pricingConfig";
 import { supabase } from "@/integrations/supabase/client";
+import { trackLeadConversion } from "@/lib/consent";
 import { toast } from "sonner";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -257,6 +258,7 @@ const Kostenrechner = () => {
       (window as any).dataLayer = (window as any).dataLayer || [];
       (window as any).dataLayer.push({ event: 'form_submit_success', form_name: 'kostenrechner_anfrage', project_type: 'Kostenrechner-Anfrage', timeline: 'nicht angegeben' });
       (window as any).dataLayer.push({ event: 'contact_channel_click', contact_channel: 'form', contact_source: 'kostenrechner', contact_context: 'kostenrechner', conversion: true });
+      trackLeadConversion("kostenrechner");
       setFormSubmitted(true);
       toast.success("Anfrage erfolgreich gesendet!");
     } catch (err) {

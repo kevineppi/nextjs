@@ -11,7 +11,9 @@ import Link from "next/link";
  *
  * WICHTIG: Der Inhalt beschreibt, was die Website TATSÄCHLICH verarbeitet
  * (Hosting Vercel, Datenbank Supabase, Terminbuchung Cal.com, Karte Google
- * Maps). Kein Analytics, kein Tracking, keine Werbe-Pixel. Der frühere
+ * Maps; NUR MIT EINWILLIGUNG über das Cookie-Banner zusätzlich Microsoft
+ * Clarity und Google-Ads-Conversion-Messung, siehe lib/consent.ts).
+ * Kein Re-Targeting, keine personalisierte Werbung. Der frühere
  * KI-Chat wurde entfernt und ist daher nicht mehr aufgeführt.
  */
 
@@ -43,8 +45,8 @@ const Datenschutz = () => {
           <div className="rounded-2xl border-2 border-primary/25 bg-primary/5 p-6 mb-12">
             <h2 className="text-lg font-bold mb-2">Das Wichtigste zuerst</h2>
             <ul className="space-y-1.5 text-sm text-muted-foreground">
-              <li>Wir setzen <strong className="text-foreground">kein Analyse-Tool</strong> ein (kein Google Analytics, kein Matomo).</li>
-              <li>Wir setzen <strong className="text-foreground">keine Werbe-Pixel</strong> und kein Re-Targeting ein.</li>
+              <li>Analyse und Werbemessung laufen <strong className="text-foreground">nur mit Ihrer Zustimmung</strong>. Ohne Ihr Ja im Cookie-Banner wird kein solches Tool geladen.</li>
+              <li><strong className="text-foreground">Kein Re-Targeting</strong> und keine personalisierte Werbung, auch nicht mit Zustimmung.</li>
               <li>Wir erstellen <strong className="text-foreground">keine Nutzerprofile</strong> und verkaufen keine Daten.</li>
               <li>
                 Der Kostenrechner <strong className="text-foreground">berechnet lokal in Ihrem Browser.</strong>{" "}
@@ -133,7 +135,7 @@ const Datenschutz = () => {
                 Erst wenn Sie aktiv auf &bdquo;Unverbindliches Angebot anfordern&ldquo; klicken, werden Ihre
                 Kontaktdaten, die berechnete Konfiguration (Dateiname, Material, Schichthöhe, Stückzahl,
                 Richtpreis) <strong className="text-foreground">und die von Ihnen hochgeladenen 3D-Dateien</strong>{" "}
-                an uns übermittelt und in unserem Anfrage-System (Supabase, siehe Abschnitt 7) gespeichert.
+                an uns übermittelt und in unserem Anfrage-System (Supabase, siehe Abschnitt 8) gespeichert.
                 Wir verwenden die Dateien ausschließlich zur Prüfung Ihrer Anfrage und zur Angebotserstellung
                 (Art. 6 Abs. 1 lit. b DSGVO), geben sie nicht an Dritte weiter und löschen sie nach denselben
                 Fristen wie Ihre Anfrage (siehe Abschnitt 2).
@@ -189,9 +191,37 @@ const Datenschutz = () => {
               </p>
             </section>
 
+            {/* 7 Webanalyse & Werbemessung (nur mit Einwilligung) */}
+            <section className="space-y-3">
+              <h2 className="text-xl font-bold">7. Webanalyse und Werbemessung (nur mit Einwilligung)</h2>
+              <p className="text-muted-foreground">
+                Ohne Ihre Zustimmung läuft auf dieser Website kein Analyse- und kein Werbe-Tool. Erst wenn
+                Sie im Cookie-Banner auf &bdquo;Zustimmen&ldquo; klicken, setzen wir zwei Dienste ein:
+              </p>
+              <p className="text-muted-foreground">
+                <strong className="text-foreground">Microsoft Clarity</strong> (Microsoft Ireland Operations
+                Ltd., Dublin) zeichnet auf, wie Besucher die Seite bedienen: Klicks, Scrollverhalten und
+                besuchte Seiten. Eingaben in Formularfelder werden maskiert und nicht aufgezeichnet. Wir
+                nutzen diese Aufzeichnungen, um die Website verständlicher und einfacher zu machen. Eine
+                Übermittlung in die USA ist möglich; Microsoft ist nach dem EU-US Data Privacy Framework
+                zertifiziert.
+              </p>
+              <p className="text-muted-foreground">
+                Die <strong className="text-foreground">Google Ads Conversion-Messung</strong> (Google
+                Ireland Ltd., Dublin) misst ausschließlich, ob ein Klick auf eine unserer Anzeigen zu einer
+                Anfrage geführt hat. Re-Targeting und personalisierte Werbung setzen wir nicht ein.
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Sie können Ihre Einwilligung
+                jederzeit über &bdquo;Cookie-Einstellungen&ldquo; im Fußbereich der Website ändern oder
+                widerrufen. Die von diesen Diensten gesetzten Cookies laufen nach längstens 13 Monaten ab
+                und lassen sich in Ihrem Browser auch vorher löschen.
+              </p>
+            </section>
+
             {/* 8 Empfänger */}
             <section className="space-y-3">
-              <h2 className="text-xl font-bold">7. Empfänger und Auftragsverarbeiter</h2>
+              <h2 className="text-xl font-bold">8. Empfänger und Auftragsverarbeiter</h2>
               <p className="text-muted-foreground">
                 Wir geben Ihre Daten nicht zum Zweck der Werbung weiter und verkaufen sie nicht. Für den Betrieb
                 der Website und die Bearbeitung Ihrer Anfrage setzen wir aber technische Dienstleister ein, die
@@ -217,6 +247,16 @@ const Datenschutz = () => {
                         n: "Supabase",
                         w: "Datenbank und Datei-Speicher für Anfragen",
                         d: "Ihre Anfrage- und Kontaktdaten sowie hochgeladene 3D-Dateien",
+                      },
+                      {
+                        n: "Microsoft Clarity",
+                        w: "Web-Analyse (nur mit Einwilligung)",
+                        d: "Sitzungsdaten wie Klicks und Scrollverhalten, Eingaben maskiert",
+                      },
+                      {
+                        n: "Google Ads",
+                        w: "Werbemessung (nur mit Einwilligung)",
+                        d: "Ob ein Anzeigenklick zu einer Anfrage geführt hat",
                       },
                       {
                         n: "Cal.com",
@@ -252,7 +292,7 @@ const Datenschutz = () => {
 
             {/* 9 Rechte */}
             <section className="space-y-3">
-              <h2 className="text-xl font-bold">8. Ihre Rechte</h2>
+              <h2 className="text-xl font-bold">9. Ihre Rechte</h2>
               <p className="text-muted-foreground">Ihnen stehen nach der DSGVO folgende Rechte zu:</p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 {[
@@ -283,7 +323,7 @@ const Datenschutz = () => {
 
             {/* 10 Beschwerde */}
             <section className="space-y-3">
-              <h2 className="text-xl font-bold">9. Beschwerderecht</h2>
+              <h2 className="text-xl font-bold">10. Beschwerderecht</h2>
               <p className="text-muted-foreground">
                 Wenn Sie glauben, dass wir Ihre Daten nicht rechtmäßig verarbeiten, können Sie sich bei der
                 Aufsichtsbehörde beschweren:
@@ -314,7 +354,7 @@ const Datenschutz = () => {
 
             {/* 11 Änderungen */}
             <section className="space-y-3">
-              <h2 className="text-xl font-bold">10. Änderungen dieser Erklärung</h2>
+              <h2 className="text-xl font-bold">11. Änderungen dieser Erklärung</h2>
               <p className="text-muted-foreground">
                 Wenn sich die Website oder die eingesetzten Dienste ändern, passen wir diese Erklärung an. Es gilt
                 jeweils die hier veröffentlichte Fassung. Stand: {STAND}.

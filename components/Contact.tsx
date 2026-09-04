@@ -12,6 +12,7 @@ import GoogleMaps from "./GoogleMaps";
 import GoogleReviews from "./GoogleReviews";
 import AnimatedSection from "./AnimatedSection";
 import { z } from "zod";
+import { trackLeadConversion } from "@/lib/consent";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name ist erforderlich").max(100, "Name darf maximal 100 Zeichen lang sein"),
@@ -127,6 +128,7 @@ const Contact = () => {
       (window as any).dataLayer.push({ event: 'form_submit_success', form_name: 'contact_inquiry', project_type: validatedData.project || 'nicht angegeben', timeline: validatedData.timeline || 'nicht angegeben' });
       // Einheitliches Conversion-Event für Channel-Vergleich
       (window as any).dataLayer.push({ event: 'contact_channel_click', contact_channel: 'form', contact_source: 'kontakt_form', contact_context: validatedData.project || null, conversion: true });
+      trackLeadConversion("kontaktformular");
       toast({ title: "Anfrage gesendet!", description: "Wir melden uns innerhalb von 6 Stunden bei Ihnen." });
     } catch (error) {
       toast({ title: "Fehler", description: "Die Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut.", variant: "destructive" });
