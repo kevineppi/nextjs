@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Mail, Phone, MapPin, Instagram, Linkedin, Star, Calculator, ArrowRight } from "lucide-react";
 import { BRAND } from "@/data/brandVoice";
-import { ConsentSettingsLink } from "@/components/ConsentBanner";
 
 /**
  * Footer · nach Nutzer-Absicht gruppiert
@@ -284,7 +283,6 @@ const Footer = () => {
             >
               Datenschutz
             </Link>
-            <ConsentSettingsLink className="text-sm text-muted-foreground hover:text-primary transition-colors" />
             <Link
               href="/kontakt"
               className="text-sm text-muted-foreground hover:text-primary transition-colors"

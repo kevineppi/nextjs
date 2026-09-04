@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Space_Grotesk, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import Providers from './providers'
-import ConsentBanner from '@/components/ConsentBanner'
+import TrackingLoader from '@/components/TrackingLoader'
 import { orgSchema, websiteSchema } from '@/lib/seo'
 
 // 2026-06-04: next/font/google statt @import in globals.css.
@@ -59,7 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Providers>
           {children}
-          <ConsentBanner />
+          <TrackingLoader />
         </Providers>
       </body>
     </html>

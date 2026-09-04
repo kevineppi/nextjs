@@ -5,9 +5,9 @@
  * Zentrale Schalter für Webanalyse (Microsoft Clarity) und
  * Google-Ads-Conversion-Messung.
  *
- * WICHTIG: Solange die IDs leer sind, erscheint KEIN Cookie-Banner
- * und es wird KEIN Tracking-Script geladen. Die Dienste laufen
- * grundsätzlich erst nach aktiver Einwilligung (Cookie-Banner).
+ * WICHTIG: Solange die IDs leer sind, wird KEIN Tracking-Script
+ * geladen. Modell: Opt-out — die Dienste laufen standardmäßig, der
+ * Widerspruchs-Schalter sitzt in der Datenschutzerklärung (Abschnitt 7).
  *
  * IDs eintragen:
  * - clarityProjectId: clarity.microsoft.com → Projekt anlegen →

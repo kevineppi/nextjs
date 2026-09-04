@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import Link from "next/link";
+import { AnalyticsOptOut } from "@/components/TrackingLoader";
 
 /**
  * Datenschutzerklärung · ekdruck e.U.
@@ -11,8 +12,9 @@ import Link from "next/link";
  *
  * WICHTIG: Der Inhalt beschreibt, was die Website TATSÄCHLICH verarbeitet
  * (Hosting Vercel, Datenbank Supabase, Terminbuchung Cal.com, Karte Google
- * Maps; NUR MIT EINWILLIGUNG über das Cookie-Banner zusätzlich Microsoft
- * Clarity und Google-Ads-Conversion-Messung, siehe lib/consent.ts).
+ * Maps; Webanalyse Microsoft Clarity + Google-Ads-Conversion-Messung im
+ * OPT-OUT-Modell: Widerspruchs-Schalter in Abschnitt 7, Logik in
+ * lib/consent.ts + components/TrackingLoader.tsx).
  * Kein Re-Targeting, keine personalisierte Werbung. Der frühere
  * KI-Chat wurde entfernt und ist daher nicht mehr aufgeführt.
  */
@@ -45,7 +47,7 @@ const Datenschutz = () => {
           <div className="rounded-2xl border-2 border-primary/25 bg-primary/5 p-6 mb-12">
             <h2 className="text-lg font-bold mb-2">Das Wichtigste zuerst</h2>
             <ul className="space-y-1.5 text-sm text-muted-foreground">
-              <li>Analyse und Werbemessung laufen <strong className="text-foreground">nur mit Ihrer Zustimmung</strong>. Ohne Ihr Ja im Cookie-Banner wird kein solches Tool geladen.</li>
+              <li>Wir analysieren die Nutzung der Website mit Microsoft Clarity, um sie zu verbessern. Eingaben werden maskiert, und Sie können der Analyse <strong className="text-foreground">jederzeit mit einem Klick widersprechen</strong> (Schalter in Abschnitt 7).</li>
               <li><strong className="text-foreground">Kein Re-Targeting</strong> und keine personalisierte Werbung, auch nicht mit Zustimmung.</li>
               <li>Wir erstellen <strong className="text-foreground">keine Nutzerprofile</strong> und verkaufen keine Daten.</li>
               <li>
@@ -193,10 +195,11 @@ const Datenschutz = () => {
 
             {/* 7 Webanalyse & Werbemessung (nur mit Einwilligung) */}
             <section className="space-y-3">
-              <h2 className="text-xl font-bold">7. Webanalyse und Werbemessung (nur mit Einwilligung)</h2>
+              <h2 className="text-xl font-bold">7. Webanalyse und Werbemessung</h2>
               <p className="text-muted-foreground">
-                Ohne Ihre Zustimmung läuft auf dieser Website kein Analyse- und kein Werbe-Tool. Erst wenn
-                Sie im Cookie-Banner auf &bdquo;Zustimmen&ldquo; klicken, setzen wir zwei Dienste ein:
+                Wir möchten verstehen, wo Besucher auf dieser Website hängen bleiben oder abbrechen, um sie
+                laufend zu verbessern. Dafür setzen wir zwei Dienste ein, denen Sie jederzeit mit einem
+                Klick widersprechen können (Schalter am Ende dieses Abschnitts):
               </p>
               <p className="text-muted-foreground">
                 <strong className="text-foreground">Microsoft Clarity</strong> (Microsoft Ireland Operations
@@ -212,11 +215,14 @@ const Datenschutz = () => {
                 Anfrage geführt hat. Re-Targeting und personalisierte Werbung setzen wir nicht ein.
               </p>
               <p className="text-sm text-muted-foreground">
-                Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Sie können Ihre Einwilligung
-                jederzeit über &bdquo;Cookie-Einstellungen&ldquo; im Fußbereich der Website ändern oder
-                widerrufen. Die von diesen Diensten gesetzten Cookies laufen nach längstens 13 Monaten ab
-                und lassen sich in Ihrem Browser auch vorher löschen.
+                Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Verbesserung
+                unserer Website und der Messung unserer Werbung). Sie haben das Recht, dieser Verarbeitung
+                jederzeit zu widersprechen (Art. 21 DSGVO). Nutzen Sie dafür den folgenden Schalter; die
+                Einstellung gilt für dieses Gerät und diesen Browser. Die von diesen Diensten gesetzten
+                Cookies laufen nach längstens 13 Monaten ab und lassen sich in Ihrem Browser auch vorher
+                löschen.
               </p>
+              <AnalyticsOptOut />
             </section>
 
             {/* 8 Empfänger */}
@@ -250,12 +256,12 @@ const Datenschutz = () => {
                       },
                       {
                         n: "Microsoft Clarity",
-                        w: "Web-Analyse (nur mit Einwilligung)",
+                        w: "Web-Analyse (Widerspruch jederzeit möglich)",
                         d: "Sitzungsdaten wie Klicks und Scrollverhalten, Eingaben maskiert",
                       },
                       {
                         n: "Google Ads",
-                        w: "Werbemessung (nur mit Einwilligung)",
+                        w: "Werbemessung (Widerspruch jederzeit möglich)",
                         d: "Ob ein Anzeigenklick zu einer Anfrage geführt hat",
                       },
                       {

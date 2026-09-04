@@ -2,10 +2,11 @@
  * Consent-Verwaltung + Script-Loader · ekdruck
  * ──────────────────────────────────────────────────────────────────
  *
- * Grundsatz: Kein Analyse- oder Werbe-Script wird geladen, bevor der
- * Besucher im Cookie-Banner aktiv zugestimmt hat (Art. 6 Abs. 1 lit. a
- * DSGVO, § 165 Abs. 3 TKG). Die Entscheidung liegt im localStorage und
- * kann über "Cookie-Einstellungen" im Footer jederzeit geändert werden.
+ * Modell seit 04.09.2026 (Kevin-Entscheidung): Opt-out statt Banner.
+ * Die Scripts laden standardmäßig (components/TrackingLoader.tsx),
+ * AUSSER im localStorage liegt "denied" — gesetzt über den
+ * Widerspruchs-Schalter in der Datenschutzerklärung (Art. 21 DSGVO,
+ * Rechtsgrundlage lit. f). Frühere Banner-Ablehnungen bleiben wirksam.
  *
  * Geladene Dienste bei Zustimmung (nur wenn in trackingConfig.ts
  * konfiguriert):
@@ -20,9 +21,6 @@
 import { TRACKING } from "@/lib/trackingConfig";
 
 const STORAGE_KEY = "ekdruck_consent_v1";
-
-/** Event-Name, mit dem der Footer-Link das Banner erneut öffnet. */
-export const CONSENT_OPEN_EVENT = "ekdruck:consent-open";
 
 export type ConsentValue = "granted" | "denied";
 
@@ -47,17 +45,11 @@ export function setStoredConsent(value: ConsentValue): void {
   }
 }
 
-/** Öffnet das Cookie-Banner erneut (Widerruf / Änderung der Entscheidung). */
-export function openConsentSettings(): void {
-  if (typeof window === "undefined") return;
-  window.dispatchEvent(new Event(CONSENT_OPEN_EVENT));
-}
-
 let scriptsLoaded = false;
 
 /**
  * Lädt Clarity und gtag.js. Idempotent — mehrfacher Aufruf lädt nichts doppelt.
- * Darf ausschließlich nach erteilter Einwilligung aufgerufen werden.
+ * Wird vom TrackingLoader aufgerufen, sofern kein Opt-out ("denied") vorliegt.
  */
 export function loadTrackingScripts(): void {
   if (typeof window === "undefined" || scriptsLoaded) return;
