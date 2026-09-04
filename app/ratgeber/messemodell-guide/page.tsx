@@ -1074,10 +1074,10 @@ export default function MessemodellGuidePage() {
             </div>
 
             <Link
-              href="/preise"
+              href="/kostenrechner"
               className="inline-flex items-center gap-2 text-primary font-bold hover:underline"
             >
-              Vollständige Preisübersicht <ArrowRight className="w-4 h-4" />
+              Richtpreis für Ihr Projekt berechnen <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </section>

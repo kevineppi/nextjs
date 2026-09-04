@@ -16,6 +16,7 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
 import { supabase } from "@/integrations/supabase/client";
 import OptimizedImage from "@/components/OptimizedImage";
 import ImageGallery from "@/components/ImageGallery";
+import { cases as projectCases } from "@/data/realCases";
 import { 
   Clock, 
   Scale, 
@@ -505,6 +506,31 @@ const Referenzen = () => {
                     <p className="font-semibold text-sm group-hover:text-primary transition-colors">{label}</p>
                     <p className="text-xs text-muted-foreground">{desc}</p>
                   </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── Projekt-Stories (Cases) — seit 2026-09-04 hier statt im Hauptmenü ── */}
+        <section className="py-16 border-t border-border">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <p className="mono text-[10px] font-bold text-muted-foreground uppercase tracking-[0.2em] mb-3">Projekt-Stories</p>
+            <h2 className="text-3xl font-bold mb-3 tracking-tight">Ausgewählte Cases im Detail</h2>
+            <p className="text-muted-foreground mb-8 max-w-2xl">
+              Ausführliche Einblicke in einzelne Projekte: Ausgangslage, Umsetzung und Ergebnis.
+            </p>
+            <div className="grid md:grid-cols-2 gap-4">
+              {projectCases.map((c) => (
+                <Link
+                  key={c.slug}
+                  href={`/cases/${c.slug}`}
+                  className="group block border-2 border-border rounded-2xl p-6 bg-background hover:border-primary/40 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/5 transition-all"
+                >
+                  <p className="text-xs text-muted-foreground mb-2">{c.customerLabel} · {c.year}</p>
+                  <h3 className="font-bold text-lg mb-2 leading-snug group-hover:text-primary transition-colors">{c.title}</h3>
+                  <p className="text-sm text-muted-foreground line-clamp-2 mb-3">{c.challenge}</p>
+                  <span className="text-sm font-semibold text-primary">Case lesen →</span>
                 </Link>
               ))}
             </div>

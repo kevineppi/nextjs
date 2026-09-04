@@ -13,6 +13,9 @@ const nextConfig = {
       //     Beleg: /ratgeber/material-guide war in GSC unter www UND non-www gelistet. ═══
       { source: '/:path*', has: [{ type: 'host', value: 'ek-druck.at' }], destination: 'https://www.ek-druck.at/:path*', permanent: true },
 
+      // ═══ Preise-Seite entfernt (2026-09-04, Kevin): Menü entschlackt, Kostenrechner ist die Preis-Antwort ═══
+      { source: '/preise', destination: '/kostenrechner', permanent: true },
+
       // ═══ Prototyping: alte URLs konsolidieren auf /prototyping ═══
       { source: '/prototypen', destination: '/prototyping', permanent: true },
       { source: '/rapid-prototyping', destination: '/prototyping', permanent: true },

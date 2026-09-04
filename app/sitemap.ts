@@ -47,7 +47,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ─── TRUST-PAGES ──────────────────────────────────────────────
   const trustPages: MetadataRoute.Sitemap = [
     { url: `${SITE}/qualitaet`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${SITE}/preise`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${SITE}/cases`, lastModified: buildDate, changeFrequency: 'weekly', priority: 0.85 },
     { url: `${SITE}/checkliste`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.85 },
   ]

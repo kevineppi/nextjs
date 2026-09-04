@@ -170,8 +170,7 @@ const Navigation = () => {
               <Calculator className="h-4 w-4" />
               Rechner
             </Link>
-            <Link href="/cases" className="text-foreground/80 hover:text-primary transition-all duration-300 font-medium hover:scale-105">Cases</Link>
-            <Link href="/preise" className="text-foreground/80 hover:text-primary transition-all duration-300 font-medium hover:scale-105">Preise</Link>
+            <Link href="/referenzen" className="text-foreground/80 hover:text-primary transition-all duration-300 font-medium hover:scale-105">Referenzen</Link>
             <Link href="/ueber-uns" className="text-foreground/80 hover:text-primary transition-all duration-300 font-medium hover:scale-105">Über uns</Link>
 
             {/* Quick Contact Icons */}
@@ -358,17 +357,7 @@ const Navigation = () => {
                 </div>
               </Link>
 
-              <div className="grid grid-cols-3 gap-2 mt-2">
-                <Link href="/cases" onClick={() => setIsOpen(false)}
-                  className="flex flex-col items-center gap-1 p-3 bg-muted/40 text-foreground rounded-xl hover:bg-primary/10 active:scale-[0.98] transition-all">
-                  <span className="text-[11px] font-bold uppercase tracking-wider">Cases</span>
-                  <span className="text-[9px] text-muted-foreground">Projekt-Stories</span>
-                </Link>
-                <Link href="/preise" onClick={() => setIsOpen(false)}
-                  className="flex flex-col items-center gap-1 p-3 bg-muted/40 text-foreground rounded-xl hover:bg-primary/10 active:scale-[0.98] transition-all">
-                  <span className="text-[11px] font-bold uppercase tracking-wider">Preise</span>
-                  <span className="text-[9px] text-muted-foreground">Echte Beispiele</span>
-                </Link>
+              <div className="grid grid-cols-1 gap-2 mt-2">
                 <Link href="/qualitaet" onClick={() => setIsOpen(false)}
                   className="flex flex-col items-center gap-1 p-3 bg-muted/40 text-foreground rounded-xl hover:bg-primary/10 active:scale-[0.98] transition-all">
                   <span className="text-[11px] font-bold uppercase tracking-wider">Qualität</span>

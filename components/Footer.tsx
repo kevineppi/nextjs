@@ -29,7 +29,6 @@ const LEISTUNGEN = [
 ];
 
 const ANGEBOT = [
-  { href: "/preise", label: "Preise & Beispiele" },
   { href: "/cases", label: "Cases & Projekt-Stories" },
   { href: "/referenzen", label: "Referenzen" },
   { href: "/qualitaet", label: "Qualitäts-Versprechen" },

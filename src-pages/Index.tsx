@@ -462,9 +462,9 @@ const Index = () => {
                 </Link>
               </AnimatedSection>
 
-              {/* Pfad 2: Preise-Seite — Orientierung */}
+              {/* Pfad 2: Referenzen — Orientierung */}
               <AnimatedSection animation="slide-up" delay={100}>
-                <Link href="/preise" className="group block h-full">
+                <Link href="/referenzen" className="group block h-full">
                   <div className="h-full rounded-3xl border-2 border-border bg-background p-8 md:p-10 transition-all duration-500 group-hover:-translate-y-1 group-hover:border-primary/40 relative overflow-hidden">
                     <div className="flex items-center gap-3 mb-5">
                       <div className="w-12 h-12 rounded-2xl bg-muted flex items-center justify-center">
@@ -473,14 +473,14 @@ const Index = () => {
                       <p className="mono text-[10px] font-bold text-muted-foreground uppercase tracking-[0.2em]">Pfad B · Orientierung</p>
                     </div>
                     <h3 className="text-2xl md:text-3xl font-bold mb-4 tracking-[-0.02em] group-hover:text-primary transition-colors">
-                      Preisbeispiele pro Projekt-Typ
+                      Echte Projekte als Referenz
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
-                      Was kostet ein Architekturmodell? Ein Messemodell? Ein Prototyp?
-                      Konkrete Preisbereiche, Treiber-Übersicht, Rabattstaffel.
+                      Architekturmodelle, Messemodelle, Werbeartikel: fertige Kundenprojekte
+                      mit Fotos aus der Werkstatt und ausführlichen Projekt-Stories.
                     </p>
                     <ul className="space-y-2 mb-8">
-                      {["6 Projekt-Kategorien", "Realistische Bereiche", "Was treibt den Preis"].map(t =>
+                      {["Nach Kategorie filterbar", "Fotos aus der Werkstatt", "Cases im Detail"].map(t =>
                         <li key={t} className="flex items-center gap-2 text-sm">
                           <Check className="w-4 h-4 text-primary shrink-0" />
                           <span className="text-muted-foreground">{t}</span>
@@ -488,7 +488,7 @@ const Index = () => {
                       )}
                     </ul>
                     <span className="inline-flex items-center gap-2 border-2 border-foreground text-foreground rounded-full px-5 py-2.5 font-bold text-sm group-hover:gap-4 group-hover:bg-foreground group-hover:text-background transition-all">
-                      Preise &amp; Beispiele <ArrowRight className="w-4 h-4" />
+                      Referenzen ansehen <ArrowRight className="w-4 h-4" />
                     </span>
                   </div>
                 </Link>

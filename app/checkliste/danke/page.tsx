@@ -153,13 +153,13 @@ function DankeContent() {
                 </Link>
 
                 <Link
-                  href="/preise"
+                  href="/kostenrechner"
                   className="group flex items-center justify-between gap-4 p-5 bg-background border-2 border-border rounded-2xl hover:border-primary/40 transition-all"
                 >
                   <div>
-                    <p className="font-bold text-base mb-1">Konkrete Preisbereiche</p>
+                    <p className="font-bold text-base mb-1">Richtpreis in 60 Sekunden</p>
                     <p className="text-sm text-muted-foreground">
-                      Was kosten Modelle in Ihrer Größenordnung · mit Beispielen und Preis-Treibern
+                      STL-Datei hochladen und sofort einen Richtwert für Ihr Projekt sehen
                     </p>
                   </div>
                   <ArrowRight className="w-5 h-5 text-primary shrink-0 group-hover:translate-x-1 transition-transform" />
