@@ -17,6 +17,7 @@ import { Search, Filter, Download, RefreshCw, Eye, CheckCircle, Clock, Archive, 
 import { format } from "date-fns";
 import { de } from "date-fns/locale";
 import ReferencesManager from "./ReferencesManager";
+import { herkunftKurz } from "@/lib/attribution";
 import SpeisekartenCRM from "./admin/SpeisekartenCRM";
 
 const AdminDashboard = () => {
@@ -140,6 +141,14 @@ const AdminDashboard = () => {
     return types[projectType as keyof typeof types] || projectType;
   };
 
+  /** Herkunft einer Anfrage als kurzer Text, plus Google-Klick-ID falls vorhanden. */
+  const getHerkunft = (i: ContactInquiry) => {
+    const kurz = herkunftKurz(i as any);
+    const teile = [kurz];
+    if (i.utm_campaign) teile.push(i.utm_campaign);
+    return { kurz, voll: teile.join(" · "), gclid: i.gclid ?? null };
+  };
+
   const getTimelineLabel = (timeline: string) => {
     const timelines = {
       express: "Express (24-48h)",
@@ -152,7 +161,7 @@ const AdminDashboard = () => {
 
   const exportToCSV = () => {
     const csvContent = [
-      ["Name", "E-Mail", "Projekt-Art", "Zeitrahmen", "Status", "Erstellt am", "Nachricht"],
+      ["Name", "E-Mail", "Projekt-Art", "Zeitrahmen", "Status", "Erstellt am", "Herkunft", "Google-Klick-ID", "Kampagne", "Landingpage", "Nachricht"],
       ...filteredInquiries.map(inquiry => [
         inquiry.name,
         inquiry.email,
@@ -160,6 +169,10 @@ const AdminDashboard = () => {
         getTimelineLabel(inquiry.timeline),
         inquiry.status,
         inquiry.created_at ? format(new Date(inquiry.created_at), "dd.MM.yyyy HH:mm", { locale: de }) : "",
+        getHerkunft(inquiry).kurz,
+        inquiry.gclid ?? "",
+        inquiry.utm_campaign ?? "",
+        inquiry.landing_page ?? "",
         inquiry.message.replace(/\n/g, " ")
       ])
     ].map(row => row.map(cell => `"${cell}"`).join(",")).join("\n");
@@ -342,6 +355,7 @@ const AdminDashboard = () => {
                     <TableHead>E-Mail</TableHead>
                     <TableHead>Projekt-Art</TableHead>
                     <TableHead>Zeitrahmen</TableHead>
+                    <TableHead>Herkunft</TableHead>
                     <TableHead>Status</TableHead>
                     <TableHead>Erstellt</TableHead>
                     <TableHead>Aktionen</TableHead>
@@ -354,6 +368,24 @@ const AdminDashboard = () => {
                       <TableCell>{inquiry.email}</TableCell>
                       <TableCell>{getProjectTypeLabel(inquiry.project_type)}</TableCell>
                       <TableCell>{getTimelineLabel(inquiry.timeline)}</TableCell>
+                      <TableCell>
+                        {(() => {
+                          const h = getHerkunft(inquiry);
+                          const ads = Boolean(h.gclid);
+                          return (
+                            <div className="leading-tight">
+                              <span className={ads ? "font-medium text-green-700" : "text-muted-foreground"}>
+                                {h.voll}
+                              </span>
+                              {ads && (
+                                <div className="font-mono text-[10px] text-muted-foreground break-all max-w-[190px]">
+                                  {h.gclid}
+                                </div>
+                              )}
+                            </div>
+                          );
+                        })()}
+                      </TableCell>
                       <TableCell>{getStatusBadge(inquiry.status)}</TableCell>
                       <TableCell>
                         {inquiry.created_at ? format(new Date(inquiry.created_at), "dd.MM.yyyy", { locale: de }) : ""}
@@ -441,6 +473,41 @@ const AdminDashboard = () => {
                   <div>
                     <label className="text-sm font-medium">Status</label>
                     <p>{getStatusBadge(selectedInquiry.status)}</p>
+                  </div>
+                  <div className="sm:col-span-2 rounded-md border bg-muted/40 p-3">
+                    <label className="text-sm font-medium">Herkunft</label>
+                    {(() => {
+                      const h = getHerkunft(selectedInquiry);
+                      return (
+                        <div className="mt-1 space-y-1 text-sm">
+                          <p className={h.gclid ? "font-medium text-green-700" : ""}>{h.voll}</p>
+                          {h.gclid && (
+                            <p className="text-xs text-muted-foreground">
+                              Google-Klick-ID:{" "}
+                              <span className="font-mono select-all break-all">{h.gclid}</span>
+                            </p>
+                          )}
+                          {selectedInquiry.utm_term && (
+                            <p className="text-xs text-muted-foreground">Suchbegriff: {selectedInquiry.utm_term}</p>
+                          )}
+                          {selectedInquiry.landing_page && (
+                            <p className="text-xs text-muted-foreground break-all">
+                              Einstieg: {selectedInquiry.landing_page}
+                            </p>
+                          )}
+                          {selectedInquiry.referrer && (
+                            <p className="text-xs text-muted-foreground break-all">
+                              Verweis von: {selectedInquiry.referrer}
+                            </p>
+                          )}
+                          {!h.gclid && !selectedInquiry.utm_source && !selectedInquiry.referrer && (
+                            <p className="text-xs text-muted-foreground">
+                              Keine Herkunftsdaten. Anfragen vor dem 04.09.2026 haben noch keine.
+                            </p>
+                          )}
+                        </div>
+                      );
+                    })()}
                   </div>
                   <div>
                     <label className="text-sm font-medium">Erstellt am</label>
