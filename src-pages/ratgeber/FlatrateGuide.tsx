@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ConversionBanner from "@/components/ConversionBanner";
 import StickyCTA from "@/components/landing/StickyCTA";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import FAQSchema from "@/components/FAQSchema";
@@ -502,6 +503,16 @@ const FlatrateGuide = () => {
         </article>
 
         <StickyCTA context="Flatrate Guide" />
+        <div className="container mx-auto px-4 max-w-4xl py-10">
+          <ConversionBanner
+            headline="Flatrate ab 490 € im Monat, erstes Modell kostenlos."
+            subline="Für Architekturbüros mit laufendem Modellbedarf: planbare Fixkosten, Express inklusive, monatlich kündbar."
+            primaryLabel="Flatrate ansehen"
+            primaryHref="/architekturmodelle-abo"
+            secondaryLabel="Anfrage senden"
+            secondaryHref="/kontakt"
+          />
+        </div>
         <Footer />
       </div>
     </>

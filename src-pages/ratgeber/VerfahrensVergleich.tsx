@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ConversionBanner from "@/components/ConversionBanner";
 import SEOHead from "@/components/SEOHead";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -390,7 +391,17 @@ const VerfahrensVergleich = () => {
               </div>
             </section>
           </div>
-        </article>        <Footer />
+        </article>        <div className="container mx-auto px-4 max-w-4xl py-10">
+          <ConversionBanner
+            headline="Verfahren klar? Dann zum Preis."
+            subline="STL hochladen und Richtpreis in 60 Sekunden sehen. Persönlich geprüftes Angebot in 6 Stunden."
+            primaryLabel="Zum Kostenrechner"
+            primaryHref="/kostenrechner"
+            secondaryLabel="Angebot anfordern"
+            secondaryHref="/kontakt"
+          />
+        </div>
+        <Footer />
       </div>
     </>;
   };

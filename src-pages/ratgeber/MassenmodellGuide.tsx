@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ConversionBanner from "@/components/ConversionBanner";
 import CTASection from "@/components/landing/CTASection";
 import StickyCTA from "@/components/landing/StickyCTA";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
@@ -561,7 +562,17 @@ const MassenmodellGuide = () => {
       </section>
 
       <CTASection />
-      <Footer />
+      <div className="container mx-auto px-4 max-w-4xl py-10">
+          <ConversionBanner
+            headline="Ihr Ortsmodell direkt aus den Gebäudedaten."
+            subline="Stadt- und Ortsmodelle im Maßstab 1:500 bis 1:1000, geliefert in wenigen Werktagen."
+            primaryLabel="Architekturmodelle ansehen"
+            primaryHref="/architekturmodelle"
+            secondaryLabel="Preis berechnen"
+            secondaryHref="/kostenrechner"
+          />
+        </div>
+        <Footer />
       <StickyCTA />
     </div>
   );

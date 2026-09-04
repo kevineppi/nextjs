@@ -23,6 +23,7 @@ import {
 } from 'lucide-react'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import ConversionBanner from '@/components/ConversionBanner'
 import Breadcrumbs from '@/components/landing/Breadcrumbs'
 import AuthorByline from '@/components/AuthorByline'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
@@ -1271,6 +1272,17 @@ export default function MessemodellGuidePage() {
             </p>
           </div>
         </section>
+
+        <div className="container mx-auto px-4 max-w-4xl py-10">
+          <ConversionBanner
+            headline="Ihr Exponat für den nächsten Messestand."
+            subline="Anlagen, Geräte und Produkte als Modell für Ihren Stand. Angebot in 6 Stunden."
+            primaryLabel="Messemodelle ansehen"
+            primaryHref="/messemodelle"
+            secondaryLabel="Anfrage senden"
+            secondaryHref="/kontakt"
+          />
+        </div>
       </main>
 
       <Footer />

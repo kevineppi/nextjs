@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ConversionBanner from "@/components/ConversionBanner";
 import CTASection from "@/components/landing/CTASection";
 import StickyCTA from "@/components/landing/StickyCTA";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
@@ -513,7 +514,17 @@ const DatenaufbereitungGuide = () => {
       </section>
 
       <CTASection />
-      <Footer />
+      <div className="container mx-auto px-4 max-w-4xl py-10">
+          <ConversionBanner
+            headline="Schicken Sie einfach, was Sie haben."
+            subline="Wir prüfen Ihre CAD-Daten kostenlos und sagen Ihnen, was für das Modell noch fehlt. Antwort in 6 Stunden."
+            primaryLabel="Daten prüfen lassen"
+            primaryHref="/kontakt"
+            secondaryLabel="Architekturmodelle ansehen"
+            secondaryHref="/architekturmodelle"
+          />
+        </div>
+        <Footer />
       <StickyCTA />
     </div>
   );

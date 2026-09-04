@@ -404,6 +404,16 @@ const KostenGuide = () => {
         </article>
 
         <StickyCTA context="Kosten-Guide" />
+        <div className="container mx-auto px-4 max-w-4xl py-10">
+          <ConversionBanner
+            headline="Genug Theorie. Was kostet Ihr Modell?"
+            subline="Richtpreis sofort im Browser, das persönlich geprüfte Festpreisangebot kommt in 6 Stunden."
+            primaryLabel="Zum Kostenrechner"
+            primaryHref="/kostenrechner"
+            secondaryLabel="Angebot anfordern"
+            secondaryHref="/kontakt"
+          />
+        </div>
         <Footer />
       </div>
 

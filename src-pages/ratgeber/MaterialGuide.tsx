@@ -467,7 +467,17 @@ const MaterialGuide = () => {
               </div>
             </section>
           </div>
-        </article>        <Footer />
+        </article>        <div className="container mx-auto px-4 max-w-4xl py-10">
+          <ConversionBanner
+            headline="Material gefunden? Jetzt durchrechnen."
+            subline="STL-Datei hochladen, Material wählen, Richtpreis in 60 Sekunden. Kostenlos und ohne Anmeldung."
+            primaryLabel="Zum Kostenrechner"
+            primaryHref="/kostenrechner"
+            secondaryLabel="Angebot anfordern"
+            secondaryHref="/kontakt"
+          />
+        </div>
+        <Footer />
       </div>
     </>;
   };

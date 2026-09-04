@@ -7,6 +7,7 @@ import {
 } from 'lucide-react'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import ConversionBanner from '@/components/ConversionBanner';
 import Breadcrumbs from '@/components/landing/Breadcrumbs'
 import AuthorByline from '@/components/AuthorByline'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
@@ -715,6 +716,16 @@ export default function FdmMaterialVergleichPage() {
 
         </article>
 
+        <div className="container mx-auto px-4 max-w-4xl py-10">
+          <ConversionBanner
+            headline="Werte verglichen? Jetzt Preis berechnen."
+            subline="STL hochladen, eines der 8 Materialien wählen, Richtpreis sofort. Kostenlos und ohne Anmeldung."
+            primaryLabel="Zum Kostenrechner"
+            primaryHref="/kostenrechner"
+            secondaryLabel="Angebot anfordern"
+            secondaryHref="/kontakt"
+          />
+        </div>
         <Footer />
       </div>
     </>
