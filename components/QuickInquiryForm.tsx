@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Upload, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
+import { holeHerkunft } from "@/lib/attribution";
 
 const QuickInquiryForm = () => {
   const [name, setName] = useState("");
@@ -69,7 +70,8 @@ const QuickInquiryForm = () => {
           name: name.trim(),
           email: email.trim(),
           message: "Schnellanfrage (Quick Inquiry Form)",
-          file_urls: fileUrl ? [fileUrl] : null
+          file_urls: fileUrl ? [fileUrl] : null,
+          ...holeHerkunft()
         });
 
       if (error) throw error;

@@ -35,6 +35,7 @@ import {
   Calculator, ShieldCheck, UserCheck, Box, ArrowRight,
   FlaskConical, Sparkles, Eye, TrendingDown,
 } from "lucide-react";
+import { holeHerkunft } from "@/lib/attribution";
 
 // ─── MATERIAL UI META ────────────────────────────────────────────
 const MATERIAL_META: Record<string, { desc: string; color: string; colorBg: string }> = {
@@ -252,6 +253,7 @@ const Kostenrechner = () => {
         message,
         file_urls: fileUrls.length > 0 ? fileUrls : null,
         status: "new",
+        ...holeHerkunft(),
       });
       if (error) throw error;
       // Conversion-Event (analog components/Contact.tsx) — Kostenrechner-Leads messbar machen

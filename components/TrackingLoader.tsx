@@ -17,10 +17,14 @@
 
 import { useEffect, useState } from "react";
 import { getStoredConsent, loadTrackingScripts, setStoredConsent } from "@/lib/consent";
+import { erfasseHerkunft } from "@/lib/attribution";
 import { trackingConfigured } from "@/lib/trackingConfig";
 
 const TrackingLoader = () => {
   useEffect(() => {
+    // Herkunft immer erfassen: kein Drittanbieter, kein Cookie, die
+    // Daten verlassen den Browser erst mit dem abgesendeten Formular.
+    erfasseHerkunft();
     if (!trackingConfigured()) return;
     if (getStoredConsent() !== "denied") loadTrackingScripts();
   }, []);

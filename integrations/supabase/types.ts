@@ -26,6 +26,15 @@ export type Database = {
           status: string
           timeline: string | null
           updated_at: string
+          gclid: string | null
+          utm_source: string | null
+          utm_medium: string | null
+          utm_campaign: string | null
+          utm_term: string | null
+          utm_content: string | null
+          landing_page: string | null
+          referrer: string | null
+          erfasst_am: string | null
         }
         Insert: {
           created_at?: string
@@ -38,6 +47,15 @@ export type Database = {
           status?: string
           timeline?: string | null
           updated_at?: string
+          gclid?: string | null
+          utm_source?: string | null
+          utm_medium?: string | null
+          utm_campaign?: string | null
+          utm_term?: string | null
+          utm_content?: string | null
+          landing_page?: string | null
+          referrer?: string | null
+          erfasst_am?: string | null
         }
         Update: {
           created_at?: string
@@ -50,6 +68,15 @@ export type Database = {
           status?: string
           timeline?: string | null
           updated_at?: string
+          gclid?: string | null
+          utm_source?: string | null
+          utm_medium?: string | null
+          utm_campaign?: string | null
+          utm_term?: string | null
+          utm_content?: string | null
+          landing_page?: string | null
+          referrer?: string | null
+          erfasst_am?: string | null
         }
         Relationships: []
       }

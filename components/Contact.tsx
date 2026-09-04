@@ -13,6 +13,7 @@ import GoogleReviews from "./GoogleReviews";
 import AnimatedSection from "./AnimatedSection";
 import { z } from "zod";
 import { trackLeadConversion } from "@/lib/consent";
+import { holeHerkunft } from "@/lib/attribution";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name ist erforderlich").max(100, "Name darf maximal 100 Zeichen lang sein"),
@@ -117,7 +118,8 @@ const Contact = () => {
         timeline: validatedData.timeline || null,
         message: validatedData.message || null,
         file_urls: fileUrls.length > 0 ? fileUrls : null,
-        status: 'new'
+        status: 'new',
+        ...holeHerkunft()
       }]);
       if (error) throw error;
       setIsSubmitted(true);
