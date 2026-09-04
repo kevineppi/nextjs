@@ -319,14 +319,6 @@ const Ratgeber = () => {
               ))}
             </div>
 
-            <div className="mt-12 text-center">
-              <p className="text-muted-foreground mb-4">
-                Möchten Sie über neue Artikel informiert werden?
-              </p>
-              <Button asChild variant="outline">
-                <Link href="/kontakt">Newsletter abonnieren</Link>
-              </Button>
-            </div>
           </div>
         </section>
 

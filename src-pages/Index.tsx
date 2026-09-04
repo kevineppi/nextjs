@@ -15,7 +15,6 @@ import FAQSchema from "@/components/FAQSchema";
 // für LocalBusiness + Organization + AggregateRating + Reviews. Dadurch reduzieren sich
 // die LocalBusiness-Duplikate von 5 auf 1 im Rich-Results-Test.
 import SEOHead from "@/components/SEOHead";
-import ExitIntentPopup from "@/components/ExitIntentPopup";
 import TrustBadges from "@/components/TrustBadges";
 import ReferencesTeaser from "@/components/ReferencesTeaser";
 import AnimatedSection from "@/components/AnimatedSection";
@@ -791,7 +790,6 @@ const Index = () => {
 
       <Footer />
       <StickyCTA />
-      <ExitIntentPopup />
     </div>
   </>;
 };
