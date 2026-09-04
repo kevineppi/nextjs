@@ -22,7 +22,7 @@
  */
 
 export const TRACKING = {
-  clarityProjectId: "",
+  clarityProjectId: "ycwud20nqh", // clarity.microsoft.com · Projekt "ek-druck.at" (eingetragen 04.09.2026)
   googleAdsId: "",
   googleAdsLeadLabel: "",
 } as const;
