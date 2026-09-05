@@ -502,6 +502,70 @@ export const cases: RealCase[] = [
     relatedCases: ['ortsmodell-1-500-gemeindepraesentation', 'wien-stadtentwicklung-1-500-stadtmodell'],
   },
 
+  // ─── Justitia-Statue · KUNSTundHISTORISCHES Hofmuseum (2026-09) ───
+  {
+    slug: 'justitia-statue-museum-edt-bei-lambach',
+    title: 'Justitia für ein Museum: 70 cm Ausstellungsfigur, digital modelliert und gedruckt',
+    customerLabel: 'KUNSTundHISTORISCHES Hofmuseum, Edt bei Lambach',
+    branchen: ['einzelanfertigung'],
+    region: 'Oberösterreich',
+    year: 2026,
+    status: 'completed',
+
+    metaTitle: 'Justitia-Statue aus dem 3D-Druck · 70 cm für ein Museum | ekdruck',
+    metaDescription:
+      'Ausstellungsfigur für das KUNSTundHISTORISCHE Hofmuseum in Edt bei Lambach: eigene Justitia-Deutung, digital modelliert, 70 cm inkl. Sockel mit gravierter Inschrift, gedruckt aus weißem PETG.',
+    primaryKeyword: 'statue 3d-druck ausstellung',
+
+    challenge:
+      'Das KUNSTundHISTORISCHE Hofmuseum in Edt bei Lambach wollte für seine Ausstellung eine eigene Justitia, keine Kopie einer bestehenden Figur, sondern eine eigenständige Deutung: ohne Augenbinde, ohne Schwert, dafür mit einer Inschrift am Sockel. Eine 3D-Datei gab es nicht, und eine klassisch von Hand modellierte Figur in dieser Größe hätte Monate gedauert.',
+
+    approach: [
+      {
+        label: 'Motiv gemeinsam festgelegt',
+        detail:
+          'Haltung, Gewand und die Botschaft am Sockel wurden mit dem Museum abgestimmt: eine Justitia mit offenem Haar und ausgestrecktem Waagen-Arm, dazu die Inschrift "Gerechtigkeit braucht Wahrheit. Menschlichkeit. Zeit."',
+      },
+      {
+        label: 'Digital modelliert in der Werkstatt',
+        detail:
+          'Die Figur entstand komplett digital bei uns: Faltenwurf, Haarsträhnen, Gürtel mit Sternornament und der runde Sockel mit eingelassener Schrifttafel, alles in einem Datensatz.',
+      },
+      {
+        label: 'Gedruckt in Weiß, 70 cm inkl. Sockel',
+        detail:
+          'Gefertigt aus weißem PETG. Die Inschrift ist direkt in den Sockel graviert statt aufgesetzt, die Waage bekommt eine eigene Halterung am ausgestreckten Arm.',
+      },
+      {
+        label: 'Übergabe im Rohzustand',
+        detail:
+          'Bewusste Arbeitsteilung: Wir liefern die weiße Figur, das Museum übernimmt Fassung, Lackierung und setzt die Waage selbst auf. So trägt das fertige Ausstellungsstück beide Handschriften.',
+      },
+    ],
+
+    technicalSpecs: [
+      { label: 'Modelltyp', value: 'Ausstellungsfigur / Statue' },
+      { label: 'Material', value: 'Weißes PETG' },
+      { label: 'Größe', value: '70 cm hoch inkl. Sockel' },
+      { label: 'Besonderheit', value: 'Gravierte Sockel-Inschrift, eigene Justitia-Deutung ohne Augenbinde und Schwert' },
+      { label: 'Fassung', value: 'Lackierung und Waagen-Montage durch das Museum' },
+      { label: 'Standort', value: 'Ausstellung in Edt bei Lambach, 5 Autominuten von unserer Werkstatt' },
+    ],
+
+    outcome:
+      'Die Figur steht künftig in der Ausstellung des Museums, keine fünf Autominuten von unserer Werkstatt entfernt. Vom ersten Motivgespräch bis zur Übergabe blieb alles in einer Hand: Modellierung, Fertigung und die gravierte Inschrift kamen aus Gunskirchen, die Fassung macht das Museum selbst.',
+
+    lessons:
+      'Haarsträhnen und Faltenwurf sind bei einer Figur der ehrlichste Qualitätstest, dort sieht man jede Schwäche zuerst. Und: Eine Inschrift direkt in den Sockel zu gravieren wirkt hochwertiger als jedes aufgeklebte Schild, kostet im Druck aber keinen Cent extra. Die Arbeitsteilung mit dem Kunden, Rohfigur von uns, Fassung vom Museum, hat sich bewährt.',
+
+    images: [
+      { src: '/cases/justitia-front.jpg', alt: 'Weiße Justitia-Statue aus dem 3D-Druck, 70 cm, Frontansicht mit Sockel-Inschrift' },
+      { src: '/cases/justitia-gesicht.jpg', alt: 'Gesicht und Oberkörper der 3D-gedruckten Justitia-Figur mit offenem Haar' },
+      { src: '/cases/justitia-rueckansicht.jpg', alt: 'Rückansicht der Justitia mit Faltenwurf des Gewands aus weißem PETG' },
+      { src: '/cases/justitia-haar-detail.jpg', alt: 'Detail der gedruckten Haarsträhnen der Justitia-Ausstellungsfigur' },
+    ],
+  },
+
 ]
 
 // ─── Helpers ─────────────────────────────────────────────────────
