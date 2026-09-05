@@ -25,6 +25,7 @@ export const TRACKING = {
   clarityProjectId: "ycwud20nqh", // clarity.microsoft.com · Projekt "ek-druck.at" (eingetragen 04.09.2026)
   googleAdsId: "AW-16570583366", // Google Ads · Conversion-Aktion "Lead-Formular senden" (eingetragen 04.09.2026)
   googleAdsLeadLabel: "T46fCJPHnO4cEMaSvN09", // Label aus dem Ereignis-Snippet derselben Aktion
+  openaiPixelId: "QhSBiwu9mCuH7w2m9FFyEL", // ads.openai.com · Datenquelle "Formular gesendet" (Testkampagne ab 05.09.2026)
 } as const;
 
 /** Mindestens ein Dienst konfiguriert? Steuert, ob das Cookie-Banner überhaupt erscheint. */

@@ -211,8 +211,10 @@ const Datenschutz = () => {
               </p>
               <p className="text-muted-foreground">
                 Die <strong className="text-foreground">Google Ads Conversion-Messung</strong> (Google
-                Ireland Ltd., Dublin) misst ausschließlich, ob ein Klick auf eine unserer Anzeigen zu einer
-                Anfrage geführt hat. Re-Targeting und personalisierte Werbung setzen wir nicht ein.
+                Ireland Ltd., Dublin) und die <strong className="text-foreground">OpenAI Ads
+                Conversion-Messung</strong> (OpenAI Ireland Ltd., Dublin; Übermittlung in die USA möglich)
+                messen ausschließlich, ob ein Klick auf eine unserer Anzeigen zu einer Anfrage geführt hat.
+                Re-Targeting und personalisierte Werbung setzen wir nicht ein.
               </p>
               <p className="text-sm text-muted-foreground">
                 Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Verbesserung
@@ -263,6 +265,11 @@ const Datenschutz = () => {
                         n: "Google Ads",
                         w: "Werbemessung (Widerspruch jederzeit möglich)",
                         d: "Ob ein Anzeigenklick zu einer Anfrage geführt hat",
+                      },
+                      {
+                        n: "OpenAI Ads",
+                        w: "Werbemessung (Widerspruch jederzeit möglich)",
+                        d: "Ob ein Anzeigenklick in ChatGPT zu einer Anfrage geführt hat",
                       },
                       {
                         n: "Cal.com",

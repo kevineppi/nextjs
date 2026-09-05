@@ -69,6 +69,22 @@ export function loadTrackingScripts(): void {
     document.head.appendChild(s);
   }
 
+  // ── OpenAI Ads Measurement Pixel (ChatGPT-Anzeigen) ──
+  if (TRACKING.openaiPixelId) {
+    if (!w.oaiq) {
+      const q: any = function () {
+        (q.q = q.q || []).push(arguments);
+      };
+      q.q = [];
+      w.oaiq = q;
+      const s = document.createElement("script");
+      s.async = true;
+      s.src = "https://bzrcdn.openai.com/sdk/oaiq.min.js";
+      document.head.appendChild(s);
+    }
+    w.oaiq("init", { pixelId: TRACKING.openaiPixelId });
+  }
+
   // ── Google Ads Conversion (gtag.js) ──
   if (TRACKING.googleAdsId) {
     const s = document.createElement("script");
@@ -114,5 +130,9 @@ export function trackLeadConversion(source: "kostenrechner" | "kontaktformular")
     w.gtag("event", "conversion", {
       send_to: `${TRACKING.googleAdsId}/${TRACKING.googleAdsLeadLabel}`,
     });
+  }
+  if (typeof w.oaiq === "function" && TRACKING.openaiPixelId) {
+    // Standard-Event laut OpenAI-Doku für Lead-Formulare
+    w.oaiq("measure", "lead_created", { type: "customer_action" });
   }
 }
