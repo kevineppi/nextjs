@@ -162,6 +162,22 @@ const Hero = () => {
                   Flatrate ab €490/Mon. · Erstes Modell kostenlos →
                 </Link>
               </p>
+              {/* Mobile-Beweisfoto: Anspruch → Handlung → Beweis im ersten Viewport.
+                  Hintergrund: Clarity 09/2026, Mobile-Ads-Besucher scrollen im Schnitt nur ~7-26% —
+                  das Produkt muss VOR dem Scrollen sichtbar sein. Desktop-Hero bleibt typografisch. */}
+              <Link href="/referenzen" className="relative block md:hidden overflow-hidden rounded-2xl border border-border bg-muted/30">
+                <img
+                  src="/cases/ortsmodell-express-uebersicht.jpg"
+                  alt="Weißes 3D-gedrucktes Ortsmodell mit Geländerelief und Gebäuden"
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                  className="h-48 w-full object-cover"
+                />
+                <span className="absolute bottom-2.5 left-2.5 rounded-full border border-border bg-background/90 px-3 py-1 text-[11px] font-semibold text-foreground backdrop-blur">
+                  Ortsmodell · modelliert &amp; geliefert in 2 Tagen
+                </span>
+              </Link>
             </div>
           </div>
 
