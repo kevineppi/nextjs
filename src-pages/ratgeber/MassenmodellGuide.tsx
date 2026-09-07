@@ -213,32 +213,9 @@ const MassenmodellGuide = () => {
                 Bestand. Genau dafür ist das Massenmodell gemacht. Wer mehr Detail will, sieht weiter unten, ab
                 wann sich das überhaupt lohnt.
               </p>
-              <div className="grid sm:grid-cols-2 gap-4 mt-8">
-                <figure>
-                  <img
-                    src="/cases/massenmodell-draufsicht.jpg"
-                    alt="Massenmodell von oben: weiße Baukörper als reine Volumen auf der Grundplatte"
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full rounded-2xl border border-border aspect-[4/3] object-cover"
-                  />
-                  <figcaption className="text-xs text-muted-foreground mt-2">
-                    Baukörper als reine Volumen: Massenmodell aus unserer Werkstatt, von oben.
-                  </figcaption>
-                </figure>
-                <figure>
-                  <img
-                    src="/cases/massenmodell-detail.jpg"
-                    alt="Detail eines weißen Massenmodells mit Giebeldächern aus dem 3D-Druck"
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full rounded-2xl border border-border aspect-[4/3] object-cover"
-                  />
-                  <figcaption className="text-xs text-muted-foreground mt-2">
-                    Mit Dachform wird aus LoD1 ein LoD2: gleiche Körnung, mehr Aussage.
-                  </figcaption>
-                </figure>
-              </div>
+              {/* Bildpaar Massenmodell (Draufsicht + Dach-Detail) entfernt am 07.09.2026:
+                  Kundenfreigabe erst Anfang Dezember. Optimierte Dateien liegen in
+                  ~/Downloads/massenmodell-freigabe-dezember/ zum Wiedereinbau. */}
             </AnimatedSection>
           </div>
         </div>
