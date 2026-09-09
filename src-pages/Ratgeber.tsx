@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BookOpen, TrendingUp, Clock, Award, Palette, Wrench, Wallet, Cog, Ship, Factory, Zap, Car, Lightbulb, Beaker, Layers, Ruler } from "lucide-react";
+import { BookOpen, TrendingUp, Clock, Award, Palette, Wrench, Wallet, Cog, Ship, Factory, Zap, Car, Lightbulb, Beaker, Layers, Ruler, Calculator } from "lucide-react";
 import StickyCTA from "@/components/landing/StickyCTA";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -10,6 +10,16 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const Ratgeber = () => {
   const articles = [
+    {
+      title: "Was kostet ein Architekturmodell? Echte Preise und Preistreiber",
+      description: "Die Frage, auf die sonst niemand in der Branche antwortet: konkrete Preise vom Einfamilienhaus 1:100 bis zum Stadtmodell 1:1000, dazu die sechs Faktoren, die den Preis wirklich treiben. Offen erklärt, ohne Sternchen.",
+      link: "/ratgeber/architekturmodell-kosten",
+      icon: Calculator,
+      category: "Preise & Kosten",
+      readTime: "8 Min. Lesezeit",
+      date: "September 2026",
+      highlight: true
+    },
     {
       title: "Massenmodell, LoD1, LoD2: welche Gebäudedaten brauche ich?",
       description: "Referenz für Architektur- und Städtebaumodelle: die LoD-Stufen nach CityGML, und wo es in Österreich, Deutschland und der Schweiz die Gebäude- und Geländedaten wirklich gibt. Mit Lizenz, Format und Kosten je Quelle.",
