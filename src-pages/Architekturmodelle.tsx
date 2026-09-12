@@ -162,7 +162,7 @@ const Architekturmodelle = () => (
                 <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">AT+DE</p>
                 <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
                   <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Lieferung</p>
-                  <p className="text-[10px] text-muted-foreground">versichert, 2–3 Werktage</p>
+                  <p className="text-[10px] text-muted-foreground">versichert, in 4 Tagen garantiert</p>
                 </div>
               </div>
               <div className="relative py-8 md:py-10 px-2 md:px-6 group border-t md:border-t-0 border-l md:border-l border-border">
