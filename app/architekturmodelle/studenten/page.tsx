@@ -4,9 +4,11 @@
  * Rebuild 12.09.2026 nach Rollen-Panel (Webdesigner/CEO/CMO/Student),
  * Protokoll: Vault "03 Projects/Website Conversion/(C) Studenten-Funnel".
  * v2.1: Restyling in der ekdruck-Designsprache (Kevin-Feedback 12.09.:
- * v2 sah generisch aus) — echtes Logo, Grid-Hintergrund + Accent-Blobs,
- * Sticker-Badge, text-gradient-Headline, Mono-Stats, CTA-Buttons wie Hero.
- * - KEINE Site-Navigation (Funnel ohne Ausstiege), Mini-Header/-Footer
+ * v2 sah generisch aus) — Grid-Hintergrund + Accent-Blobs, Sticker-Badge,
+ * text-gradient-Headline, Mono-Stats, CTA-Buttons wie Hero.
+ * v2.2: normale Site-Navigation + Footer (Kevin, 12.09.: Seite gehört in
+ * die Website eingebaut, nicht isoliert — "Navigationsmenü weg" bezog
+ * sich nicht auf den Site-Header)
  * - GEO-first: zitierfähiger Faktenblock, Frage-H2s, FAQPage-Schema,
  *   sichtbares Stand-Datum (ai-seo-Playbook: 40-60-Wort-Antworten)
  * - Konditionen (Kevin, 12.09.): 10% Studierende, 15% österr. Unis/FHs
@@ -14,9 +16,10 @@
  */
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
-import { Phone, MessageCircle, Star, MapPin, ArrowRight, Calculator } from 'lucide-react'
+import { Star, MapPin, ArrowRight, Calculator } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 import StudentenDeadlineForm from '@/components/StudentenDeadlineForm'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 
@@ -101,33 +104,7 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
 
-      {/* Funnel: bewusst OHNE Site-Navigation — Header wie Navigation.tsx, nur ohne Links */}
-      <header className="fixed top-0 w-full z-[100] bg-background/95 backdrop-blur-lg border-b border-border/50">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-18 md:h-20">
-            <Link href="/" className="hover:opacity-80 transition-opacity duration-300">
-              <Image
-                src="/lovable-uploads/40dc02c2-6cc2-46bb-aff9-6f06079f1f77.png"
-                alt="ekdruck e.U. - 3D-Druck Oberösterreich Logo"
-                className="h-12 md:h-16 w-auto max-w-[180px] sm:max-w-none"
-                width={180}
-                height={64}
-                priority
-              />
-            </Link>
-            <div className="flex items-center gap-3 md:gap-5">
-              <a href="https://wa.me/436765517197" className="inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground hover:text-primary transition-colors">
-                <MessageCircle className="w-4 h-4" /> <span className="hidden sm:inline">WhatsApp</span>
-              </a>
-              <Button variant="cta" size="sm" className="rounded-full px-5" asChild>
-                <a href="tel:+436765517197">
-                  <Phone className="w-4 h-4 mr-1.5" /> 0676 5517197
-                </a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Navigation />
 
       <main className="min-h-screen bg-background">
         {/* HERO + zitierfähiger Faktenblock — Designsprache wie Hero.tsx */}
@@ -292,18 +269,7 @@ export default function Page() {
         </section>
       </main>
 
-      {/* Mini-Footer: nur Pflichtlinks */}
-      <footer className="border-t border-border py-6">
-        <div className="container mx-auto px-4 flex flex-wrap items-center justify-between gap-3">
-          <span className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/30">
-            © 2026 ekdruck e.U. · Gunskirchen · Stand: 12.09.2026
-          </span>
-          <span className="flex gap-5 text-xs text-muted-foreground">
-            <Link href="/impressum" className="hover:text-foreground transition-colors">Impressum</Link>
-            <Link href="/datenschutz" className="hover:text-foreground transition-colors">Datenschutz</Link>
-          </span>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }
