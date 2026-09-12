@@ -143,6 +143,13 @@ const Kostenrechner = () => {
   const [activePart, setActivePart] = useState(0);
   const [showAdvanced, setShowAdvanced] = useState(false);
   const [showContactForm, setShowContactForm] = useState(false);
+  // Autofill-Fallback (siehe Contact.tsx): Browser füllen Felder teils ohne React-Events.
+  // Deshalb Submit-Button nie an den State koppeln und beim Absenden DOM-Werte mergen.
+  const kfNameRef = useRef<HTMLInputElement>(null);
+  const kfEmailRef = useRef<HTMLInputElement>(null);
+  const kfCompanyRef = useRef<HTMLInputElement>(null);
+  const kfPhoneRef = useRef<HTMLInputElement>(null);
+  const kfMessageRef = useRef<HTMLTextAreaElement>(null);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [contactForm, setContactForm] = useState({ name: "", email: "", company: "", phone: "", message: "" });
@@ -205,7 +212,16 @@ const Kostenrechner = () => {
 
   // ── Submit ──
   const handleSubmit = async () => {
-    if (!contactForm.name.trim() || !contactForm.email.trim()) {
+    const merged = {
+      name: kfNameRef.current?.value ?? contactForm.name,
+      email: kfEmailRef.current?.value ?? contactForm.email,
+      company: kfCompanyRef.current?.value ?? contactForm.company,
+      phone: kfPhoneRef.current?.value ?? contactForm.phone,
+      message: kfMessageRef.current?.value ?? contactForm.message,
+    };
+    if (JSON.stringify(merged) !== JSON.stringify(contactForm)) setContactForm(merged);
+    const contactData = merged;
+    if (!contactData.name.trim() || !contactData.email.trim()) {
       toast.error("Bitte Name und E-Mail angeben.");
       return;
     }
@@ -216,7 +232,7 @@ const Kostenrechner = () => {
       const partFiles = parts.map(p => p.file).filter((f): f is File => f instanceof File);
       const fileUrls: string[] = [];
       const failedUploads: string[] = [];
-      const lastName = contactForm.name.trim().split(" ").pop() || "Unbekannt";
+      const lastName = contactData.name.trim().split(" ").pop() || "Unbekannt";
       for (let i = 0; i < partFiles.length; i++) {
         const file = partFiles[i];
         const fileExt = file.name.split(".").pop();
@@ -236,19 +252,19 @@ const Kostenrechner = () => {
       ).join("\n");
       const message = [
         "Kostenrechner-Anfrage",
-        contactForm.company ? `Firma: ${contactForm.company}` : null,
-        contactForm.phone ? `Telefon: ${contactForm.phone}` : null,
+        contactData.company ? `Firma: ${contactData.company}` : null,
+        contactData.phone ? `Telefon: ${contactData.phone}` : null,
         `Gesamt-Richtpreis: ${fmt(totalNet)} exkl. MwSt. (${totalQty} ${totalQty === 1 ? "Teil" : "Teile"})`,
         "",
         "Konfiguration:",
         configLines,
-        contactForm.message ? `\nAnmerkungen:\n${contactForm.message}` : null,
+        contactData.message ? `\nAnmerkungen:\n${contactData.message}` : null,
         failedUploads.length ? `\nNicht übertragene Dateien (Upload fehlgeschlagen, bitte per E-Mail anfordern): ${failedUploads.join(", ")}` : null,
       ].filter(Boolean).join("\n");
 
       const { error } = await supabase.from("contact_inquiries").insert({
-        name: contactForm.name,
-        email: contactForm.email,
+        name: contactData.name,
+        email: contactData.email,
         project_type: "Kostenrechner-Anfrage",
         message,
         file_urls: fileUrls.length > 0 ? fileUrls : null,
@@ -578,12 +594,12 @@ const Kostenrechner = () => {
                     </div>
                   ) : showContactForm ? (
                     <div className="space-y-2">
-                      <Input placeholder="Name *" value={contactForm.name} onChange={(e) => setContactForm(f => ({ ...f, name: e.target.value }))} />
-                      <Input placeholder="E-Mail *" type="email" value={contactForm.email} onChange={(e) => setContactForm(f => ({ ...f, email: e.target.value }))} />
-                      <Input placeholder="Firma (optional)" value={contactForm.company} onChange={(e) => setContactForm(f => ({ ...f, company: e.target.value }))} />
-                      <Input placeholder="Telefon (optional)" value={contactForm.phone} onChange={(e) => setContactForm(f => ({ ...f, phone: e.target.value }))} />
-                      <Textarea placeholder="Anmerkungen zum Projekt (optional)" value={contactForm.message} onChange={(e) => setContactForm(f => ({ ...f, message: e.target.value }))} className="min-h-[60px]" />
-                      <Button className="w-full rounded-xl py-5" onClick={handleSubmit} disabled={!contactForm.name || !contactForm.email || isSubmitting}>
+                      <Input ref={kfNameRef} placeholder="Name *" value={contactForm.name} onChange={(e) => setContactForm(f => ({ ...f, name: e.target.value }))} />
+                      <Input ref={kfEmailRef} placeholder="E-Mail *" type="email" value={contactForm.email} onChange={(e) => setContactForm(f => ({ ...f, email: e.target.value }))} />
+                      <Input ref={kfCompanyRef} placeholder="Firma (optional)" value={contactForm.company} onChange={(e) => setContactForm(f => ({ ...f, company: e.target.value }))} />
+                      <Input ref={kfPhoneRef} placeholder="Telefon (optional)" value={contactForm.phone} onChange={(e) => setContactForm(f => ({ ...f, phone: e.target.value }))} />
+                      <Textarea ref={kfMessageRef} placeholder="Anmerkungen zum Projekt (optional)" value={contactForm.message} onChange={(e) => setContactForm(f => ({ ...f, message: e.target.value }))} className="min-h-[60px]" />
+                      <Button className="w-full rounded-xl py-5" onClick={handleSubmit} disabled={isSubmitting}>
                         <Send className="w-4 h-4 mr-2" />
                         {isSubmitting ? "Wird gesendet..." : "Unverbindliches Angebot anfordern"}
                       </Button>

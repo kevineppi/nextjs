@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -37,6 +37,21 @@ const Contact = () => {
   const [uploadProgress, setUploadProgress] = useState<{ [key: string]: number }>({});
   const [currentStep, setCurrentStep] = useState(1);
   const { toast } = useToast();
+  // Autofill-Fallback: Browser/Passwortmanager füllen Felder teils OHNE React-Events.
+  // Der State bliebe dann leer, obwohl die Felder gefüllt aussehen -> Validierung
+  // lehnt sichtbar ausgefüllte Felder ab (reproduzierter Abbruch-Bug, 09.09.2026).
+  const nameRef = useRef<HTMLInputElement>(null);
+  const emailRef = useRef<HTMLInputElement>(null);
+
+  const mergeDomValues = () => {
+    const merged = {
+      ...formData,
+      name: nameRef.current?.value ?? formData.name,
+      email: emailRef.current?.value ?? formData.email,
+    };
+    if (merged.name !== formData.name || merged.email !== formData.email) setFormData(merged);
+    return merged;
+  };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -91,7 +106,7 @@ const Contact = () => {
       name: z.string().trim().min(1, "Name ist erforderlich").max(100),
       email: z.string().trim().email("Ungültige E-Mail-Adresse").max(255),
     });
-    const validationResult = step1Schema.safeParse(formData);
+    const validationResult = step1Schema.safeParse(mergeDomValues());
     if (!validationResult.success) {
       toast({ title: "Fehler", description: validationResult.error.errors[0].message, variant: "destructive" });
       return;
@@ -101,7 +116,7 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const validationResult = contactSchema.safeParse(formData);
+    const validationResult = contactSchema.safeParse(mergeDomValues());
     if (!validationResult.success) {
       toast({ title: "Fehler", description: validationResult.error.errors[0].message, variant: "destructive" });
       return;
@@ -299,11 +314,11 @@ const Contact = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                           <div>
                             <label className="block text-sm font-medium mb-2">Name *</label>
-                            <Input name="name" value={formData.name} onChange={handleInputChange} placeholder="Ihr vollständiger Name" required />
+                            <Input ref={nameRef} name="name" value={formData.name} onChange={handleInputChange} placeholder="Ihr vollständiger Name" required />
                           </div>
                           <div>
                             <label className="block text-sm font-medium mb-2">E-Mail *</label>
-                            <Input name="email" type="email" value={formData.email} onChange={handleInputChange} placeholder="ihre@email.at" required />
+                            <Input ref={emailRef} name="email" type="email" value={formData.email} onChange={handleInputChange} placeholder="ihre@email.at" required />
                           </div>
                         </div>
 
