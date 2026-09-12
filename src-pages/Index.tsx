@@ -85,7 +85,7 @@ const Index = () => {
 
               {/* Säule 1: Architekten */}
               <AnimatedSection animation="slide-up" delay={0}>
-                <Link href="/architekturmodelle" className="group block h-full">
+                <div className="group relative block h-full">
                   <MagneticCard className="h-full rounded-3xl border-2 border-border hover:border-primary/40 p-8 md:p-10 transition-all duration-500 group-hover:-translate-y-1 relative overflow-hidden">
                     <div className="absolute top-6 right-6">
                       <Building2 className="w-10 h-10 text-primary/15" />
@@ -104,20 +104,20 @@ const Index = () => {
                       )}
                     </div>
                     <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                      <span className="flex items-center gap-2 text-primary font-bold text-sm group-hover:gap-4 transition-all">
+                      <Link href="/architekturmodelle" className="flex items-center gap-2 text-primary font-bold text-sm group-hover:gap-4 transition-all after:absolute after:inset-0">
                         Zur Architektur-Lösung <ArrowRight className="w-4 h-4" />
-                      </span>
-                      <Link href="/architekturmodelle-abo" className="text-xs text-muted-foreground hover:text-primary transition-colors">
+                      </Link>
+                      <Link href="/architekturmodelle-abo" className="relative z-10 text-xs text-muted-foreground hover:text-primary transition-colors">
                         oder: Flatrate für Büros ab €490/Mon →
                       </Link>
                     </div>
                   </MagneticCard>
-                </Link>
+                </div>
               </AnimatedSection>
 
               {/* Säule 2: Messeaussteller / Industrie */}
               <AnimatedSection animation="slide-up" delay={100}>
-                <Link href="/branchen" className="group block h-full">
+                <div className="group relative block h-full">
                   <MagneticCard className="h-full rounded-3xl bg-foreground p-8 md:p-10 relative overflow-hidden
                     border-2 border-foreground hover:border-primary transition-all duration-500 group-hover:-translate-y-1" glowColor="hsl(var(--primary) / 0.15)">
                     <div className="absolute top-6 right-6">
@@ -137,20 +137,20 @@ const Index = () => {
                       )}
                     </div>
                     <div className="flex flex-col gap-2 pt-4 border-t border-background/10">
-                      <span className="flex items-center gap-2 text-primary font-bold text-sm group-hover:gap-4 transition-all">
+                      <Link href="/branchen" className="flex items-center gap-2 text-primary font-bold text-sm group-hover:gap-4 transition-all after:absolute after:inset-0">
                         Zu Ihrer Branche <ArrowRight className="w-4 h-4" />
-                      </span>
-                      <Link href="/messemodelle" className="text-xs text-background/50 hover:text-primary transition-colors">
+                      </Link>
+                      <Link href="/messemodelle" className="relative z-10 text-xs text-background/50 hover:text-primary transition-colors">
                         oder: Messemodelle allgemein →
                       </Link>
                     </div>
                   </MagneticCard>
-                </Link>
+                </div>
               </AnimatedSection>
 
               {/* Säule 3: B2B Firmenkunden */}
               <AnimatedSection animation="slide-up" delay={200}>
-                <Link href="/firmenkunden" className="group block h-full">
+                <div className="group relative block h-full">
                   <MagneticCard className="h-full rounded-3xl border-2 border-border hover:border-primary/40 p-8 md:p-10 transition-all duration-500 group-hover:-translate-y-1 relative overflow-hidden">
                     <div className="absolute top-6 right-6">
                       <Users className="w-10 h-10 text-primary/15" />
@@ -169,15 +169,15 @@ const Index = () => {
                       )}
                     </div>
                     <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                      <span className="flex items-center gap-2 text-primary font-bold text-sm group-hover:gap-4 transition-all">
+                      <Link href="/firmenkunden" className="flex items-center gap-2 text-primary font-bold text-sm group-hover:gap-4 transition-all after:absolute after:inset-0">
                         Zu B2B-Konditionen <ArrowRight className="w-4 h-4" />
-                      </span>
-                      <Link href="/einzelanfertigungen" className="text-xs text-muted-foreground hover:text-primary transition-colors">
+                      </Link>
+                      <Link href="/einzelanfertigungen" className="relative z-10 text-xs text-muted-foreground hover:text-primary transition-colors">
                         oder: Einzelanfertigung ab 1 Stück →
                       </Link>
                     </div>
                   </MagneticCard>
-                </Link>
+                </div>
               </AnimatedSection>
             </div>
 
