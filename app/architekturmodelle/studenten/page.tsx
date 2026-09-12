@@ -25,7 +25,7 @@ import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 
 const TITLE = 'Architekturmodell für die Uni-Abgabe drucken lassen · Express 24h | ekdruck'
 const DESCRIPTION =
-  'Abgabemodell in 3-5 Werktagen, Express in 24-48h, aus ganz Österreich. 10% Studierendenrabatt, 15% für österreichische Unis und FHs. Deadline schicken, sofort Ja/Nein-Antwort.'
+  'Abgabemodell für die Uni in 3-5 Werktagen, Express in 24-48h, Versand in ganz Österreich. 10% Studierendenrabatt, 15% an österreichischen Unis und FHs. Deadline schicken, sofort Ja/Nein-Antwort.'
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -64,6 +64,18 @@ const faqs = [
     q: 'Welcher Maßstab und welches Material sind für Abgabemodelle üblich?',
     a: 'Üblich sind 1:200 bis 1:500 für Entwurfs- und Städtebauabgaben, gedruckt in weißem, mattem Material in klassischer Präsentationsoptik, wie sie Jurys und Professoren erwarten. Gelände, Umgebung und Sockel werden an deiner Aufgabenstellung ausgerichtet.',
   },
+  {
+    q: 'Bis wann kann ich bestellen, wenn meine Abgabe schon nächste Woche ist?',
+    a: 'Schick deine Deadline am besten sofort, auch am Wochenende. Im Express werden Abgabemodelle in 24 bis 48 Stunden gefertigt, dazu kommt Versand oder Abholung in Gunskirchen. Du bekommst vorab eine ehrliche Ja/Nein-Antwort, ob sich dein Termin ausgeht, keine vagen Vertröstungen.',
+  },
+  {
+    q: 'Liefert ekdruck Abgabemodelle auch nach Wien, Graz, Linz und Innsbruck?',
+    a: 'Ja, versicherter Versand geht in ganz Österreich, also auch an die TU Wien, TU Graz, Kunstuni Linz oder Uni Innsbruck. Wer in der Nähe von Wels oder Linz studiert, kann sein Abgabemodell direkt in der Werkstatt in Gunskirchen abholen und spart den Versand.',
+  },
+  {
+    q: 'Welche Dateien brauche ich für mein Abgabemodell?',
+    a: 'Am einfachsten sind 3D-Daten aus Rhino, ArchiCAD, SketchUp oder ein STL-Export. Es geht aber auch ohne: Pläne, Schnitte oder Screenshots reichen für eine Einschätzung, die Datenaufbereitung übernimmt ekdruck. Was sie kostet, erfährst du vor der Beauftragung, nicht danach.',
+  },
 ]
 
 const faqJsonLd = {
@@ -74,6 +86,29 @@ const faqJsonLd = {
     name: f.q,
     acceptedAnswer: { '@type': 'Answer', text: f.a },
   })),
+}
+
+/** HowTo-Schema: 3 Schritte zur Uni-Abgabe (extrahierbar für "wie"-Prompts) */
+const howToJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Architekturmodell für die Uni-Abgabe drucken lassen',
+  totalTime: 'P5D',
+  step: [
+    { '@type': 'HowToStep', position: 1, name: 'Deadline und Daten schicken', text: 'Abgabetermin plus 3D-Daten (Rhino, ArchiCAD, SketchUp, STL) oder nur Pläne über das Formular, per WhatsApp oder E-Mail schicken.' },
+    { '@type': 'HowToStep', position: 2, name: 'Fixpreis und Ja/Nein-Antwort erhalten', text: 'Innerhalb weniger Stunden kommt der Fixpreis inklusive Studierendenrabatt und die ehrliche Ansage, ob sich die Deadline ausgeht.' },
+    { '@type': 'HowToStep', position: 3, name: 'Druck und Lieferung', text: 'Standard in 3 bis 5 Werktagen, Express in 24 bis 48 Stunden. Versicherter Versand in ganz Österreich oder Abholung in Gunskirchen bei Wels.' },
+  ],
+}
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: '3D-Druck Österreich', item: 'https://www.ek-druck.at/' },
+    { '@type': 'ListItem', position: 2, name: 'Architekturmodelle', item: 'https://www.ek-druck.at/architekturmodelle' },
+    { '@type': 'ListItem', position: 3, name: 'Für Studierende', item: 'https://www.ek-druck.at/architekturmodelle/studenten' },
+  ],
 }
 
 const serviceJsonLd = {
@@ -103,6 +138,8 @@ export default function Page() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <Navigation />
 
@@ -130,17 +167,17 @@ export default function Page() {
               </div>
 
               <h1 className="text-[clamp(2.6rem,7.5vw,6.5rem)] font-bold leading-[1.02] tracking-[-0.05em] mb-6">
-                <span className="block">Abgabe bald?</span>
+                <span className="block">Uni-Abgabe bald?</span>
                 <span className="block text-gradient mt-1 md:mt-3 text-[clamp(2rem,5.5vw,5rem)] pt-[0.1em] leading-[1.1]">
                   Dein Modell kommt pünktlich.
                 </span>
               </h1>
 
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mb-10">
-                ekdruck druckt Architektur-Abgabemodelle für Studierende in ganz Österreich: Standard in{' '}
-                <span className="text-foreground font-semibold">3 bis 5 Werktagen</span>, Express in{' '}
-                <span className="text-foreground font-semibold">24 bis 48 Stunden</span>, aus der Werkstatt in
-                Gunskirchen bei Wels. Mit Studierendenausweis bekommst du{' '}
+                ekdruck druckt dein Abgabemodell für Entwerfen, Städtebau und Endpräsentation aus deinen
+                CAD-Daten: Standard in <span className="text-foreground font-semibold">3 bis 5 Werktagen</span>,
+                Express in <span className="text-foreground font-semibold">24 bis 48 Stunden</span>, mit Versand
+                in ganz Österreich. Mit Studierendenausweis bekommst du{' '}
                 <span className="text-primary font-semibold">10 % Rabatt</span>, an österreichischen Unis und FHs{' '}
                 <span className="text-primary font-semibold">15 %</span>. Bisher wurde jede zugesagte Abgabe
                 pünktlich geliefert.
@@ -192,8 +229,33 @@ export default function Page() {
           </div>
         </section>
 
+        {/* ABLAUF: 3 Schritte (deckt "wie funktioniert"-Prompts ab, passend zum HowTo-Schema) */}
+        <section className="py-16 md:py-24 border-t border-border">
+          <div className="container mx-auto px-4">
+            <div className="max-w-7xl mx-auto">
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Ablauf</p>
+              <h2 className="text-4xl md:text-6xl font-bold leading-[0.95] tracking-[-0.04em] mb-10 md:mb-14">
+                In drei Schritten zur Abgabe.
+              </h2>
+              <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+                {[
+                  { nr: '01', titel: 'Deadline und Daten schicken', text: 'Abgabetermin plus 3D-Daten (Rhino, ArchiCAD, SketchUp, STL) oder nur Pläne, über das Formular oder per WhatsApp. Auch sonntags um 23 Uhr.' },
+                  { nr: '02', titel: 'Fixpreis und Ja/Nein-Antwort', text: 'Innerhalb weniger Stunden bekommst du den Fixpreis inklusive Studierendenrabatt und die ehrliche Ansage, ob sich deine Deadline ausgeht.' },
+                  { nr: '03', titel: 'Druck und Lieferung', text: 'Standard in 3 bis 5 Werktagen, Express in 24 bis 48 Stunden. Versicherter Versand in ganz Österreich oder Abholung in Gunskirchen bei Wels.' },
+                ].map(({ nr, titel, text }) => (
+                  <div key={nr}>
+                    <p className="mono text-5xl md:text-6xl font-bold text-primary/20 leading-none mb-4">{nr}</p>
+                    <h3 className="font-bold text-lg mb-2.5">{titel}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* PIDING-GALERIE */}
-        <section className="py-16 md:py-24 bg-secondary/30 border-y border-border relative">
+        <section className="py-16 md:py-24 border-t border-border relative">
           <div className="container mx-auto px-4">
             <div className="max-w-7xl mx-auto">
               <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Referenz · Ortsmodell 1:500</p>
@@ -201,7 +263,8 @@ export default function Page() {
                 So sieht Abgabequalität aus.
               </h2>
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl mb-10">
-                Weißes Material, klassische Präsentationsoptik, direkt aus den Planungsdaten.
+                Gedruckt, wie es bei Städtebau- und Entwurfsabgaben verlangt wird: weißes, mattes Material,
+                klassische Präsentationsoptik, direkt aus den Planungsdaten.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
                 <img src="/cases/ortsmodell-kirche.jpg" alt="Detail eines 3D-gedruckten Ortsmodells 1:500: Kirche und umliegende Gebäude" loading="lazy" decoding="async" className="w-full rounded-2xl border border-border object-cover aspect-square" />
@@ -217,10 +280,10 @@ export default function Page() {
         </section>
 
         {/* GEO-FAQ */}
-        <section className="py-16 md:py-24">
+        <section className="py-16 md:py-24 border-t border-border">
           <div className="container mx-auto px-4">
             <div className="max-w-7xl mx-auto">
-              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">FAQ</p>
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">FAQ · Uni-Abgabe</p>
               <h2 className="text-4xl md:text-6xl font-bold leading-[0.95] tracking-[-0.04em] mb-10 md:mb-14">
                 Kurz beantwortet.
               </h2>
