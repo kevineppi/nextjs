@@ -1,8 +1,11 @@
 /**
- * Studenten-Funnel v2 · /architekturmodelle/studenten
+ * Studenten-Funnel v2.1 · /architekturmodelle/studenten
  * ──────────────────────────────────────────────────────────────────
  * Rebuild 12.09.2026 nach Rollen-Panel (Webdesigner/CEO/CMO/Student),
  * Protokoll: Vault "03 Projects/Website Conversion/(C) Studenten-Funnel".
+ * v2.1: Restyling in der ekdruck-Designsprache (Kevin-Feedback 12.09.:
+ * v2 sah generisch aus) — echtes Logo, Grid-Hintergrund + Accent-Blobs,
+ * Sticker-Badge, text-gradient-Headline, Mono-Stats, CTA-Buttons wie Hero.
  * - KEINE Site-Navigation (Funnel ohne Ausstiege), Mini-Header/-Footer
  * - GEO-first: zitierfähiger Faktenblock, Frage-H2s, FAQPage-Schema,
  *   sichtbares Stand-Datum (ai-seo-Playbook: 40-60-Wort-Antworten)
@@ -11,7 +14,9 @@
  */
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Phone, MessageCircle, Clock, BadgePercent, MapPin, Star } from 'lucide-react'
+import Image from 'next/image'
+import { Phone, MessageCircle, Star, MapPin, ArrowRight, Calculator } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 import StudentenDeadlineForm from '@/components/StudentenDeadlineForm'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 
@@ -81,159 +86,221 @@ const serviceJsonLd = {
   ],
 }
 
+/** Grid-Hintergrund wie Hero.tsx (statisch, ohne Parallax) */
+const gridBg = {
+  backgroundImage: `
+    linear-gradient(hsl(var(--border) / 0.4) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--border) / 0.4) 1px, transparent 1px)
+  `,
+  backgroundSize: '80px 80px',
+}
+
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
 
-      {/* Funnel: bewusst OHNE Site-Navigation */}
-      <header className="border-b border-border bg-background">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <Link href="/" className="font-black tracking-tight text-lg">EK DRUCK</Link>
-          <div className="flex items-center gap-3">
-            <a href="https://wa.me/436765517197" className="inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground hover:text-primary transition-colors">
-              <MessageCircle className="w-4 h-4" /> WhatsApp
-            </a>
-            <a href="tel:+436765517197" className="inline-flex items-center gap-1.5 text-sm font-semibold hover:text-primary transition-colors">
-              <Phone className="w-4 h-4" /> 0676 5517197
-            </a>
+      {/* Funnel: bewusst OHNE Site-Navigation — Header wie Navigation.tsx, nur ohne Links */}
+      <header className="fixed top-0 w-full z-[100] bg-background/95 backdrop-blur-lg border-b border-border/50">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-18 md:h-20">
+            <Link href="/" className="hover:opacity-80 transition-opacity duration-300">
+              <Image
+                src="/lovable-uploads/40dc02c2-6cc2-46bb-aff9-6f06079f1f77.png"
+                alt="ekdruck e.U. - 3D-Druck Oberösterreich Logo"
+                className="h-12 md:h-16 w-auto max-w-[180px] sm:max-w-none"
+                width={180}
+                height={64}
+                priority
+              />
+            </Link>
+            <div className="flex items-center gap-3 md:gap-5">
+              <a href="https://wa.me/436765517197" className="inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground hover:text-primary transition-colors">
+                <MessageCircle className="w-4 h-4" /> <span className="hidden sm:inline">WhatsApp</span>
+              </a>
+              <Button variant="cta" size="sm" className="rounded-full px-5" asChild>
+                <a href="tel:+436765517197">
+                  <Phone className="w-4 h-4 mr-1.5" /> 0676 5517197
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </header>
 
       <main className="min-h-screen bg-background">
-        {/* HERO + zitierfähiger Faktenblock */}
-        <section className="pt-12 md:pt-16 pb-8">
-          <div className="container mx-auto px-4 max-w-5xl">
-            <p className="mono text-[11px] font-bold uppercase tracking-[0.2em] text-primary mb-4">
-              Für Architektur-Studierende · Stand: September 2026
-            </p>
-            <h1 className="text-4xl md:text-6xl font-bold leading-[1.02] tracking-[-0.03em] mb-6 break-words">
-              {"Abgabe bald? Dein Modell kommt pünktlich."}
-            </h1>
-            <p className="text-lg md:text-xl text-foreground/85 leading-relaxed max-w-3xl">
-              ekdruck druckt Architektur-Abgabemodelle für Studierende in ganz Österreich: Standard in{' '}
-              <strong>3 bis 5 Werktagen</strong>, Express in <strong>24 bis 48 Stunden</strong>, aus der
-              Werkstatt in Gunskirchen bei Wels. Mit Studierendenausweis bekommst du <strong>10 % Rabatt</strong>,
-              an österreichischen Unis und FHs <strong>15 %</strong>. Bisher wurde jede zugesagte Abgabe
-              pünktlich geliefert.
-            </p>
+        {/* HERO + zitierfähiger Faktenblock — Designsprache wie Hero.tsx */}
+        <section className="relative overflow-hidden pt-32 md:pt-40 pb-10 md:pb-14 bg-background">
+          <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+            <div className="absolute inset-0" style={gridBg} />
+            <div className="absolute top-[15%] right-[8%] w-[500px] h-[500px] rounded-full bg-primary/[0.06] blur-[120px]" />
+            <div className="absolute bottom-[10%] left-[5%] w-[300px] h-[300px] rounded-full bg-accent/[0.04] blur-[80px]" />
+          </div>
+
+          {/* Corner label wie Startseite */}
+          <div className="absolute top-24 md:top-28 right-6 md:right-12 z-10 hidden sm:block">
+            <div className="mono text-[10px] font-bold tracking-[0.3em] text-foreground/30 uppercase text-right leading-relaxed">
+              Für Architektur-<br />Studierende<br />Österreich
+            </div>
+          </div>
+
+          <div className="relative z-10 container mx-auto px-4">
+            <div className="max-w-7xl mx-auto">
+              <div className="sticker border-primary text-primary w-fit mb-8">
+                <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                Express 24&#8211;48h · Stand: September 2026
+              </div>
+
+              <h1 className="text-[clamp(2.6rem,7.5vw,6.5rem)] font-bold leading-[1.02] tracking-[-0.05em] mb-6">
+                <span className="block">Abgabe bald?</span>
+                <span className="block text-gradient mt-1 md:mt-3 text-[clamp(2rem,5.5vw,5rem)] pt-[0.1em] leading-[1.1]">
+                  Dein Modell kommt pünktlich.
+                </span>
+              </h1>
+
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mb-10">
+                ekdruck druckt Architektur-Abgabemodelle für Studierende in ganz Österreich: Standard in{' '}
+                <span className="text-foreground font-semibold">3 bis 5 Werktagen</span>, Express in{' '}
+                <span className="text-foreground font-semibold">24 bis 48 Stunden</span>, aus der Werkstatt in
+                Gunskirchen bei Wels. Mit Studierendenausweis bekommst du{' '}
+                <span className="text-primary font-semibold">10 % Rabatt</span>, an österreichischen Unis und FHs{' '}
+                <span className="text-primary font-semibold">15 %</span>. Bisher wurde jede zugesagte Abgabe
+                pünktlich geliefert.
+              </p>
+
+              {/* Stats row im Hero-Stil (Mono-Zahlen) */}
+              <div className="flex items-center gap-10 lg:gap-16 flex-wrap">
+                {[
+                  { val: '10%', label: 'Studierendenausweis' },
+                  { val: '15%', label: 'Österr. Unis & FHs' },
+                  { val: '24h', label: 'Express' },
+                  { val: '5.0', label: 'Google Rating' },
+                ].map(({ val, label }) => (
+                  <div key={label}>
+                    <p className="text-4xl md:text-5xl font-bold text-foreground leading-none tracking-tight mono">{val}</p>
+                    <p className="mono text-[10px] text-foreground/30 mt-2 font-bold uppercase tracking-[0.2em]">{label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
         {/* FORMULAR + BEWEISFOTO */}
-        <section className="py-8 md:py-12">
-          <div className="container mx-auto px-4 max-w-5xl grid md:grid-cols-2 gap-8 items-start">
-            <StudentenDeadlineForm />
-            <figure>
-              <img
-                src="/cases/ortsmodell-uebersicht.jpg"
-                alt="Weißes Ortsmodell im Maßstab 1:500 aus dem 3D-Druck, Abgabequalität"
-                loading="eager"
-                fetchPriority="high"
-                decoding="async"
-                className="w-full rounded-2xl border border-border object-cover aspect-[4/3]"
-              />
-              <figcaption className="text-xs text-muted-foreground mt-2">
-                Ortsmodell 1:500, komplett gefertigt in 2 Tagen: Auftrag Sonntagabend, Versand Dienstagmittag.
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
-        {/* RABATTE kompakt */}
-        <section className="py-10 bg-muted/30 border-y border-border">
-          <div className="container mx-auto px-4 max-w-5xl">
-            <div className="grid sm:grid-cols-3 gap-4 text-center">
-              <div className="rounded-2xl bg-background border border-border p-6">
-                <BadgePercent className="w-6 h-6 text-primary mx-auto mb-2" />
-                <p className="mono text-3xl font-bold">10 %</p>
-                <p className="text-sm text-muted-foreground mt-1">Rabatt mit Studierendenausweis</p>
-              </div>
-              <div className="rounded-2xl bg-background border-2 border-primary p-6">
-                <BadgePercent className="w-6 h-6 text-primary mx-auto mb-2" />
-                <p className="mono text-3xl font-bold">15 %</p>
-                <p className="text-sm text-muted-foreground mt-1">für österreichische Unis &amp; FHs</p>
-              </div>
-              <div className="rounded-2xl bg-background border border-border p-6">
-                <Clock className="w-6 h-6 text-primary mx-auto mb-2" />
-                <p className="mono text-3xl font-bold">24–48 h</p>
-                <p className="text-sm text-muted-foreground mt-1">Express, wenn es brennt</p>
-              </div>
+        <section className="py-10 md:py-16 border-t border-border">
+          <div className="container mx-auto px-4">
+            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
+              <StudentenDeadlineForm />
+              <figure className="md:sticky md:top-28">
+                <img
+                  src="/cases/ortsmodell-uebersicht.jpg"
+                  alt="Weißes Ortsmodell im Maßstab 1:500 aus dem 3D-Druck, Abgabequalität"
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                  className="w-full rounded-2xl border border-border object-cover aspect-[4/3]"
+                />
+                <figcaption className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/40 mt-3">
+                  Ortsmodell 1:500 · Auftrag Sonntagabend, Versand Dienstagmittag
+                </figcaption>
+              </figure>
             </div>
-            <p className="text-sm text-muted-foreground text-center mt-6 max-w-2xl mx-auto">
-              Kein Pauschalpreis-Schema: Jedes Modell wird einzeln kalkuliert, damit du den günstigsten Preis
-              für genau deine Abgabe bekommst. Richtwert vorab? Der{' '}
-              <Link href="/kostenrechner" className="text-primary underline underline-offset-4">Kostenrechner</Link>{' '}
+            <p className="text-sm text-muted-foreground max-w-7xl mx-auto mt-8">
+              Kein Pauschalpreis-Schema: Jedes Modell wird einzeln kalkuliert, damit du den günstigsten Preis für
+              genau deine Abgabe bekommst. Richtwert vorab? Der{' '}
+              <Link href="/kostenrechner" className="text-primary font-semibold hover:underline">Kostenrechner</Link>{' '}
               braucht 60 Sekunden.
             </p>
           </div>
         </section>
 
         {/* PIDING-GALERIE */}
-        <section className="py-12 md:py-16">
-          <div className="container mx-auto px-4 max-w-5xl">
-            <h2 className="text-2xl md:text-3xl font-bold tracking-[-0.02em] mb-2">
-              So sieht Abgabequalität aus
-            </h2>
-            <p className="text-muted-foreground mb-6 text-sm">
-              Ortsmodell 1:500 aus weißem Material, klassische Präsentationsoptik, direkt aus den Planungsdaten.
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-              <img src="/cases/ortsmodell-kirche.jpg" alt="Detail eines 3D-gedruckten Ortsmodells 1:500: Kirche und umliegende Gebäude" loading="lazy" decoding="async" className="w-full rounded-xl border border-border object-cover aspect-square" />
-              <img src="/cases/ortsmodell-hoehenlinien.jpg" alt="Geländemodell mit Höhenlinien und Straßenverlauf aus dem 3D-Druck" loading="lazy" decoding="async" className="w-full rounded-xl border border-border object-cover aspect-square" />
-              <img src="/cases/ortsmodell-tiefe.jpg" alt="Blick über ein weißes Architekturmodell im Maßstab 1:500" loading="lazy" decoding="async" className="w-full rounded-xl border border-border object-cover aspect-square col-span-2 md:col-span-1" />
-            </div>
-            <div className="mt-6 flex flex-wrap items-center gap-x-8 gap-y-2 text-sm text-muted-foreground">
-              <span className="flex items-center gap-2"><Star className="w-4 h-4 text-primary" /> ★5,0 aus 31 Google-Bewertungen</span>
-              <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-primary" /> Gunskirchen bei Wels · Abholung möglich</span>
+        <section className="py-16 md:py-24 bg-secondary/30 border-y border-border relative">
+          <div className="container mx-auto px-4">
+            <div className="max-w-7xl mx-auto">
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Referenz · Ortsmodell 1:500</p>
+              <h2 className="text-4xl md:text-6xl font-bold leading-[0.95] tracking-[-0.04em] mb-5">
+                So sieht Abgabequalität aus.
+              </h2>
+              <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl mb-10">
+                Weißes Material, klassische Präsentationsoptik, direkt aus den Planungsdaten.
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+                <img src="/cases/ortsmodell-kirche.jpg" alt="Detail eines 3D-gedruckten Ortsmodells 1:500: Kirche und umliegende Gebäude" loading="lazy" decoding="async" className="w-full rounded-2xl border border-border object-cover aspect-square" />
+                <img src="/cases/ortsmodell-hoehenlinien.jpg" alt="Geländemodell mit Höhenlinien und Straßenverlauf aus dem 3D-Druck" loading="lazy" decoding="async" className="w-full rounded-2xl border border-border object-cover aspect-square" />
+                <img src="/cases/ortsmodell-tiefe.jpg" alt="Blick über ein weißes Architekturmodell im Maßstab 1:500" loading="lazy" decoding="async" className="w-full rounded-2xl border border-border object-cover aspect-square col-span-2 md:col-span-1" />
+              </div>
+              <div className="mt-8 flex flex-wrap items-center gap-x-10 gap-y-3">
+                <span className="flex items-center gap-2 text-sm font-semibold"><Star className="w-4 h-4 text-primary fill-primary" /> 5,0 aus 31 Google-Bewertungen</span>
+                <span className="flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="w-4 h-4 text-primary" /> Gunskirchen bei Wels · Abholung möglich</span>
+              </div>
             </div>
           </div>
         </section>
 
         {/* GEO-FAQ */}
-        <section className="py-12 md:py-16 bg-muted/30 border-y border-border">
-          <div className="container mx-auto px-4 max-w-5xl">
-            <h2 className="text-2xl md:text-3xl font-bold tracking-[-0.02em] mb-8">Kurz beantwortet</h2>
-            <div className="space-y-7">
-              {faqs.map((f) => (
-                <div key={f.q}>
-                  <h3 className="font-bold mb-2">{f.q}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed max-w-3xl">{f.a}</p>
-                </div>
-              ))}
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-7xl mx-auto">
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">FAQ</p>
+              <h2 className="text-4xl md:text-6xl font-bold leading-[0.95] tracking-[-0.04em] mb-10 md:mb-14">
+                Kurz beantwortet.
+              </h2>
+              <div className="grid md:grid-cols-2 gap-x-12 gap-y-9">
+                {faqs.map((f) => (
+                  <div key={f.q}>
+                    <h3 className="font-bold text-lg leading-snug mb-2.5">{f.q}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{f.a}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
 
         {/* SCHLUSS-CTA → Formular-Anker */}
-        <section className="py-14 md:py-20">
-          <div className="container mx-auto px-4 max-w-3xl text-center">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-[-0.02em] mb-4">
-              Deine Deadline entscheidet. Frag jetzt.
+        <section className="relative overflow-hidden py-20 md:py-28 border-t border-border">
+          <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+            <div className="absolute inset-0" style={gridBg} />
+            <div className="absolute top-[20%] left-[15%] w-[400px] h-[400px] rounded-full bg-primary/[0.06] blur-[100px]" />
+          </div>
+          <div className="relative z-10 container mx-auto px-4 max-w-3xl text-center">
+            <h2 className="text-4xl md:text-6xl font-bold leading-[0.95] tracking-[-0.04em] mb-5">
+              Deine Deadline<br />
+              <span className="text-gradient">entscheidet. Frag jetzt.</span>
             </h2>
-            <p className="text-muted-foreground mb-8">
+            <p className="text-muted-foreground text-base md:text-lg mb-10 max-w-xl mx-auto">
               30 Sekunden ausfüllen, in wenigen Stunden weißt du Preis und Termin. Ehrlich, auch wenn es sich
               nicht mehr ausgeht.
             </p>
-            <a
-              href="#deadline-check"
-              className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-10 py-4 rounded-full font-semibold hover:bg-primary/90 transition-all"
-            >
-              Zum Deadline-Check
-            </a>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button variant="cta" size="lg" className="group text-base px-10 py-7 rounded-full" asChild>
+                <a href="#deadline-check">
+                  Zum Deadline-Check
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1.5 transition-transform" />
+                </a>
+              </Button>
+              <Button size="lg" className="group text-base px-8 py-7 rounded-full bg-foreground text-background hover:bg-foreground/90 font-semibold" asChild>
+                <Link href="/kostenrechner">
+                  <Calculator className="mr-2 w-4 h-4" />
+                  Preis berechnen
+                </Link>
+              </Button>
+            </div>
           </div>
         </section>
       </main>
 
       {/* Mini-Footer: nur Pflichtlinks */}
       <footer className="border-t border-border py-6">
-        <div className="container mx-auto px-4 flex flex-wrap items-center justify-between gap-3 text-xs text-muted-foreground">
-          <span>© 2026 ekdruck e.U. · Gunskirchen · Stand: 12.09.2026</span>
-          <span className="flex gap-4">
-            <Link href="/impressum" className="hover:text-foreground">Impressum</Link>
-            <Link href="/datenschutz" className="hover:text-foreground">Datenschutz</Link>
+        <div className="container mx-auto px-4 flex flex-wrap items-center justify-between gap-3">
+          <span className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/30">
+            © 2026 ekdruck e.U. · Gunskirchen · Stand: 12.09.2026
+          </span>
+          <span className="flex gap-5 text-xs text-muted-foreground">
+            <Link href="/impressum" className="hover:text-foreground transition-colors">Impressum</Link>
+            <Link href="/datenschutz" className="hover:text-foreground transition-colors">Datenschutz</Link>
           </span>
         </div>
       </footer>
