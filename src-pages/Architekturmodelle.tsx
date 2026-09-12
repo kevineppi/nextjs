@@ -87,8 +87,8 @@ const faqs = [
 const Architekturmodelle = () => (
   <>
     <SEOHead
-      title="Architekturmodell drucken lassen – 3D-Druck ab €20 ★5,0 | ekdruck"
-      description="Architekturmodelle aus dem 3D-Druck: Wettbewerb · Bauherr · Stadtmodell. Maßstab 1:50–1:500 · ArchiCAD, Revit, Rhino, SketchUp · Express 24h · ab €20."
+      title="Architekturmodell drucken lassen · Express 24h ★5,0 | ekdruck"
+      description="Architekturmodelle aus dem 3D-Druck: Wettbewerb · Bauherr · Stadtmodell. Maßstab 1:50–1:500 · ArchiCAD, Revit, Rhino, SketchUp · Express 24h · Lieferung nach Österreich und Deutschland."
       keywords="architekturmodell, architekturmodell drucken, architekturmodell 3d druck, architekturmodellbau, wettbewerbsmodell, präsentationsmodell architektur, städtebauliches modell, bauherrenmodell, stadtmodell drucken, gebäudemodell, architekturmodell wien, architekturmodell österreich, archicad 3d druck, revit modell drucken, sketchup modell drucken, rhino modell, maßstab 1 100, maßstab 1 200, maßstab 1 500, weißes modell"
       path="/architekturmodelle"
     />
@@ -96,7 +96,7 @@ const Architekturmodelle = () => (
       name="Architekturmodelle aus dem 3D-Druck"
       description="Architekturmodelle drucken lassen: Wettbewerbsmodelle, Bauträger-Modelle, Stadtmodelle. Maßstab 1:50–1:1000. ArchiCAD, Revit, Rhino, SketchUp. Express 24h."
       url="https://www.ek-druck.at/architekturmodelle"
-      lowPrice="20"
+      lowPrice="280"
       highPrice="5000"
       category="Architekturmodelle"
     />
@@ -120,7 +120,7 @@ const Architekturmodelle = () => (
                 Google las "Architektur modelle." mit Spacing → kein Exact-Match.
                 Jetzt eine Zeile, Exact-Match auf Hauptkeyword "Architekturmodelle". */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-[-0.04em] mb-8">
-              <span className="block text-gradient">Architekturmodelle.</span>
+              <span className="block text-gradient">{"Architektur­modelle."}</span>
               <span className="block text-3xl md:text-5xl lg:text-6xl mt-3 text-outline">Aus dem 3D-Druck.</span>
             </h1>
 
@@ -159,10 +159,10 @@ const Architekturmodelle = () => (
               </div>
               <div className="relative py-8 md:py-10 px-2 md:px-6 group border-t md:border-t-0 md:border-l border-border">
                 <div className="absolute bottom-0 left-0 h-0.5 bg-primary w-0 group-hover:w-full transition-all duration-500" />
-                <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">€280</p>
+                <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">AT+DE</p>
                 <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
-                  <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Ab Preis</p>
-                  <p className="text-[10px] text-muted-foreground hidden md:inline">EFH 1:100</p>
+                  <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Lieferung</p>
+                  <p className="text-[10px] text-muted-foreground">versichert, 2–3 Werktage</p>
                 </div>
               </div>
               <div className="relative py-8 md:py-10 px-2 md:px-6 group border-t md:border-t-0 border-l md:border-l border-border">
