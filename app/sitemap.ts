@@ -73,6 +73,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ─── RATGEBER ─────────────────────────────────────────────────
   const ratgeberPages: MetadataRoute.Sitemap = [
     { url: `${SITE}/ratgeber`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${SITE}/architekturmodelle/studenten`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${SITE}/ratgeber/architekturmodell-kosten`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE}/ratgeber/massenmodell-lod-gebaeudedaten`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE}/ratgeber/datenaufbereitung-architekturmodell`, lastModified: buildDate, changeFrequency: 'monthly', priority: 0.8 },
