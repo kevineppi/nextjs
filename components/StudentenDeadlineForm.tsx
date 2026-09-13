@@ -1,7 +1,7 @@
 'use client'
 
 /**
- * Deadline-Formular · Studenten-Funnel (/architekturmodelle/studenten)
+ * Deadline-Formular · Studierenden-Seite (/studenten)
  * ──────────────────────────────────────────────────────────────────
  * Bewusst UNCONTROLLED (FormData statt React-State je Feld):
  * damit per Design immun gegen den Autofill-Bug (Befund B13, 09.09.).
@@ -45,7 +45,7 @@ const StudentenDeadlineForm = () => {
       const { error } = await supabase.from("contact_inquiries").insert({
         name,
         email,
-        project_type: "architekturmodell",
+        project_type: "studentenprojekt",
         timeline: "express",
         message,
         status: "new",
@@ -100,7 +100,7 @@ const StudentenDeadlineForm = () => {
       </div>
       <div>
         <label htmlFor="sf-nachricht" className="block text-sm font-medium mb-1.5">Was brauchst du? <span className="text-muted-foreground font-normal">(optional)</span></label>
-        <textarea id="sf-nachricht" name="nachricht" rows={2} placeholder="z. B. Städtebaumodell 1:500, ca. 40 × 40 cm, Rhino-Datei vorhanden" className="w-full px-3 py-2.5 rounded-lg border border-input bg-background text-sm" />
+        <textarea id="sf-nachricht" name="nachricht" rows={2} placeholder="z. B. Ortsmodell 1:500 für die Abgabe, Anschauungsmodell der Semesterarbeit, STL vorhanden" className="w-full px-3 py-2.5 rounded-lg border border-input bg-background text-sm" />
       </div>
       {fehler && <p className="text-sm text-destructive">{fehler}</p>}
       <button

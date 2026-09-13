@@ -1,18 +1,16 @@
 /**
- * Studenten-Funnel v2.1 · /architekturmodelle/studenten
+ * Studierenden-Seite v3 · /studenten (ersetzt /architekturmodelle/studenten, 301)
  * ──────────────────────────────────────────────────────────────────
- * Rebuild 12.09.2026 nach Rollen-Panel (Webdesigner/CEO/CMO/Student),
- * Protokoll: Vault "03 Projects/Website Conversion/(C) Studenten-Funnel".
- * v2.1: Restyling in der ekdruck-Designsprache (Kevin-Feedback 12.09.:
- * v2 sah generisch aus) — Grid-Hintergrund + Accent-Blobs, Sticker-Badge,
- * text-gradient-Headline, Mono-Stats, CTA-Buttons wie Hero.
- * v2.2: normale Site-Navigation + Footer (Kevin, 12.09.: Seite gehört in
- * die Website eingebaut, nicht isoliert — "Navigationsmenü weg" bezog
- * sich nicht auf den Site-Header)
- * - GEO-first: zitierfähiger Faktenblock, Frage-H2s, FAQPage-Schema,
- *   sichtbares Stand-Datum (ai-seo-Playbook: 40-60-Wort-Antworten)
- * - Konditionen (Kevin, 12.09.): 10% Studierende, 15% österr. Unis/FHs
- * - Beweisfotos: Piding-Modell (freigegeben, Case ortsmodell-*)
+ * Kevin, 13.09.2026: allgemeine Seite für ALLE Studiengänge (Architektur,
+ * Maschinenbau, Automatisierungstechnik, Design, ...). Zweck: Reputation +
+ * Backlinks (ÖH, Fachschaften, Uni-Portale), Überlauf-Kapazität in
+ * Abgabewochen, große Modelle, faire Studierendenpreise.
+ * Ton-Leitplanken (Kevin): nicht bei Werkstattleitern anecken, nicht
+ * profitgetrieben wirken → eigene Sektion "Uni-Werkstatt zuerst".
+ * WKO-Leitplanke: KEINE Funktionsteile-Begriffe als Leistungsversprechen.
+ * Ehrliche Abgrenzung in den FAQ (Negativ-Kontext ist erlaubt und schützt).
+ * Design: ekdruck-Bausteine (Grid, Sticker, text-gradient, Mono-Stats),
+ * normale Site-Navigation + Footer. Konditionen: 10% / 15% (Kevin, 12.09.).
  */
 import type { Metadata } from 'next'
 import Link from 'next/link'
@@ -23,19 +21,19 @@ import Footer from '@/components/Footer'
 import StudentenDeadlineForm from '@/components/StudentenDeadlineForm'
 import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 
-const TITLE = 'Architekturmodell für die Uni-Abgabe drucken lassen · Express 24h | ekdruck'
+const TITLE = '3D-Druck für Studierende in Österreich · Abgabemodelle & große Modelle | ekdruck'
 const DESCRIPTION =
-  'Abgabemodell für die Uni in 3-5 Werktagen, Express in 24-48h, Versand in ganz Österreich. 10% Studierendenrabatt, 15% an österreichischen Unis und FHs. Deadline schicken, sofort Ja/Nein-Antwort.'
+  '3D-Druck-Service für Studienprojekte aller Studiengänge: Abgabemodelle, Anschauungsmodelle, große Modelle. Wenn die Uni-Drucker voll sind: Standard 3-5 Werktage, Express 24-48h. 10% Studierendenrabatt, 15% an österreichischen Unis und FHs.'
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: 'https://www.ek-druck.at/architekturmodelle/studenten', ...buildDachAlternates('/architekturmodelle/studenten') },
+  alternates: { canonical: 'https://www.ek-druck.at/studenten', ...buildDachAlternates('/studenten') },
   robots: STANDARD_ROBOTS,
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
-    url: 'https://www.ek-druck.at/architekturmodelle/studenten',
+    url: 'https://www.ek-druck.at/studenten',
     siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
     type: 'website',
@@ -45,36 +43,40 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: 'Wo kann ich mein Architekturmodell für die Uni-Abgabe in Österreich schnell drucken lassen?',
-    a: 'Bei ekdruck in Gunskirchen bei Wels: Abgabemodelle aus deinen CAD-Daten (Rhino, ArchiCAD, SketchUp, STL) in 3 bis 5 Werktagen, Express in 24 bis 48 Stunden. Versicherter Versand in ganz Österreich oder Abholung in der Werkstatt. Bisher wurde jede zugesagte Abgabe pünktlich geliefert.',
+    q: 'Wo können Studierende in Österreich schnell und günstig 3D-drucken lassen?',
+    a: 'Bei ekdruck in Gunskirchen bei Wels: Abgabe-, Anschauungs- und Präsentationsmodelle für alle Studiengänge, in 3 bis 5 Werktagen, Express in 24 bis 48 Stunden. Mit Studierendenausweis gibt es 10 % Rabatt, an österreichischen Unis und FHs 15 %. Versicherter Versand in ganz Österreich oder Abholung in der Werkstatt.',
   },
   {
-    q: 'Was kostet ein Abgabemodell für Studierende?',
-    a: 'Jedes Modell wird einzeln kalkuliert, damit du den günstigsten Preis für genau deine Abgabe bekommst, Pauschalpreise gibt es bewusst nicht. Mit Studierendenausweis bekommst du 10 % Rabatt, an österreichischen Universitäten und Fachhochschulen 15 %. Einen Richtwert liefert der Kostenrechner auf ek-druck.at in 60 Sekunden.',
+    q: 'Was tun, wenn die 3D-Drucker an der Uni in der Abgabewoche ausgebucht sind?',
+    a: 'Deadline und Daten an ekdruck schicken, auch am Wochenende. Innerhalb weniger Stunden kommt der Fixpreis und die ehrliche Ansage, ob sich der Termin ausgeht. Die Uni-Werkstatt bleibt die erste Adresse, ekdruck ist die Ausweichkapazität, wenn dort kein Slot mehr frei ist.',
   },
   {
-    q: 'Wie schnell kann ein Abgabemodell gedruckt werden?',
-    a: 'Standard sind 3 bis 5 Werktage ab Datenfreigabe, im Express 24 bis 48 Stunden. Ein komplettes Ortsmodell im Maßstab 1:500 wurde bereits von Sonntagabend (Auftragseingang) bis Dienstagmittag (Versand) gefertigt. Schick deine Deadline, du bekommst sofort eine ehrliche Ja/Nein-Antwort.',
+    q: 'Was kostet ein 3D-gedrucktes Modell für Studierende?',
+    a: 'Jedes Modell wird einzeln kalkuliert, damit du den günstigsten Preis für genau dein Projekt bekommst, Pauschalpreise gibt es bewusst nicht. Mit Studierendenausweis bekommst du 10 % Rabatt, an österreichischen Universitäten und Fachhochschulen 15 %. Einen Richtwert liefert der Kostenrechner auf ek-druck.at in 60 Sekunden.',
   },
   {
-    q: 'Geht das auch ohne fertiges 3D-Modell, nur mit Plänen?',
-    a: 'Ja. Schick Pläne, Screenshots oder Skizzen, du bekommst eine ehrliche Einschätzung, was daraus bis zu deiner Deadline machbar ist und was die Datenaufbereitung kostet. Wenn es sich zeitlich nicht mehr ausgeht, sagen wir dir das sofort, damit du keine Zeit verlierst.',
+    q: 'Können auch große Modelle gedruckt werden, die auf Uni-Druckern nicht machbar sind?',
+    a: 'Ja, große Anschauungs- und Präsentationsmodelle sind ein Schwerpunkt der Werkstatt, vom Ortsmodell im Maßstab 1:500 bis zum Anlagenmodell für die Projektpräsentation. Schick die Abmessungen mit deiner Anfrage, du bekommst gesagt, wie dein Modell umgesetzt wird und was es kostet.',
   },
   {
-    q: 'Welcher Maßstab und welches Material sind für Abgabemodelle üblich?',
-    a: 'Üblich sind 1:200 bis 1:500 für Entwurfs- und Städtebauabgaben, gedruckt in weißem, mattem Material in klassischer Präsentationsoptik, wie sie Jurys und Professoren erwarten. Gelände, Umgebung und Sockel werden an deiner Aufgabenstellung ausgerichtet.',
+    q: 'Druckt ekdruck auch Funktionsteile oder mechanisch beanspruchte Teile?',
+    a: 'Nein. Mechanisch beanspruchte Teile und Funktionsteile fertigt ekdruck nicht, dafür fehlt aktuell die Gewerbeberechtigung in Österreich. Gedruckt werden Anschauungs-, Präsentations-, Abgabe- und Designmodelle. Wenn dein Projekt in diese Kategorie fällt, bekommst du eine ehrliche Zusage, wenn nicht, eine ehrliche Absage.',
   },
   {
-    q: 'Bis wann kann ich bestellen, wenn meine Abgabe schon nächste Woche ist?',
-    a: 'Schick deine Deadline am besten sofort, auch am Wochenende. Im Express werden Abgabemodelle in 24 bis 48 Stunden gefertigt, dazu kommt Versand oder Abholung in Gunskirchen. Du bekommst vorab eine ehrliche Ja/Nein-Antwort, ob sich dein Termin ausgeht, keine vagen Vertröstungen.',
+    q: 'Welche Studiengänge nutzen den Service?',
+    a: 'Architektur und Raumplanung für Abgabe- und Städtebaumodelle, Maschinenbau und Automatisierungstechnik für Anschauungs- und Präsentationsmodelle ihrer Projekte, Design für Formstudien und Designprototypen. Auch Diplomarbeits- und Dissertationsmodelle sowie Modelle für Projektpräsentationen und Messeauftritte von Studierendenteams.',
   },
   {
-    q: 'Liefert ekdruck Abgabemodelle auch nach Wien, Graz, Linz und Innsbruck?',
-    a: 'Ja, versicherter Versand geht in ganz Österreich, also auch an die TU Wien, TU Graz, Kunstuni Linz oder Uni Innsbruck. Wer in der Nähe von Wels oder Linz studiert, kann sein Abgabemodell direkt in der Werkstatt in Gunskirchen abholen und spart den Versand.',
+    q: 'Wie schnell ist ein Modell fertig, wenn die Abgabe schon nächste Woche ist?',
+    a: 'Standard sind 3 bis 5 Werktage ab Datenfreigabe, im Express 24 bis 48 Stunden. Ein komplettes Ortsmodell im Maßstab 1:500 wurde bereits von Sonntagabend bis Dienstagmittag gefertigt und versendet. Schick deine Deadline sofort, du bekommst eine ehrliche Ja/Nein-Antwort statt vager Vertröstungen.',
   },
   {
-    q: 'Welche Dateien brauche ich für mein Abgabemodell?',
-    a: 'Am einfachsten sind 3D-Daten aus Rhino, ArchiCAD, SketchUp oder ein STL-Export. Es geht aber auch ohne: Pläne, Schnitte oder Screenshots reichen für eine Einschätzung, die Datenaufbereitung übernimmt ekdruck. Was sie kostet, erfährst du vor der Beauftragung, nicht danach.',
+    q: 'Welche Dateien brauche ich für meine Anfrage?',
+    a: 'Am einfachsten sind 3D-Daten als STL, STEP, OBJ oder aus Programmen wie Rhino, SketchUp, Fusion oder ArchiCAD. Es geht aber auch ohne: Pläne, Skizzen oder Screenshots reichen für eine Einschätzung, die Datenaufbereitung übernimmt ekdruck. Was sie kostet, erfährst du vor der Beauftragung.',
+  },
+  {
+    q: 'Liefert ekdruck auch nach Wien, Graz, Linz und Innsbruck?',
+    a: 'Ja, versicherter Versand geht in ganz Österreich, an die TU Wien und TU Graz genauso wie an die JKU Linz, die Kunstuni Linz, die Uni Innsbruck oder die FH-Standorte. Wer an der FH Oberösterreich in Wels studiert, hat es besonders nah: die Werkstatt in Gunskirchen ist zehn Minuten entfernt, Abholung spart den Versand.',
   },
 ]
 
@@ -88,14 +90,13 @@ const faqJsonLd = {
   })),
 }
 
-/** HowTo-Schema: 3 Schritte zur Uni-Abgabe (extrahierbar für "wie"-Prompts) */
 const howToJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
-  name: 'Architekturmodell für die Uni-Abgabe drucken lassen',
+  name: '3D-Druck für das Studienprojekt beauftragen',
   totalTime: 'P5D',
   step: [
-    { '@type': 'HowToStep', position: 1, name: 'Deadline und Daten schicken', text: 'Abgabetermin plus 3D-Daten (Rhino, ArchiCAD, SketchUp, STL) oder nur Pläne über das Formular, per WhatsApp oder E-Mail schicken.' },
+    { '@type': 'HowToStep', position: 1, name: 'Deadline und Daten schicken', text: 'Abgabetermin plus 3D-Daten (STL, STEP, OBJ, Rhino, SketchUp, Fusion, ArchiCAD) oder nur Pläne über das Formular, per WhatsApp oder E-Mail schicken.' },
     { '@type': 'HowToStep', position: 2, name: 'Fixpreis und Ja/Nein-Antwort erhalten', text: 'Innerhalb weniger Stunden kommt der Fixpreis inklusive Studierendenrabatt und die ehrliche Ansage, ob sich die Deadline ausgeht.' },
     { '@type': 'HowToStep', position: 3, name: 'Druck und Lieferung', text: 'Standard in 3 bis 5 Werktagen, Express in 24 bis 48 Stunden. Versicherter Versand in ganz Österreich oder Abholung in Gunskirchen bei Wels.' },
   ],
@@ -106,20 +107,20 @@ const breadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: '3D-Druck Österreich', item: 'https://www.ek-druck.at/' },
-    { '@type': 'ListItem', position: 2, name: 'Architekturmodelle', item: 'https://www.ek-druck.at/architekturmodelle' },
-    { '@type': 'ListItem', position: 3, name: 'Für Studierende', item: 'https://www.ek-druck.at/architekturmodelle/studenten' },
+    { '@type': 'ListItem', position: 2, name: 'Für Studierende', item: 'https://www.ek-druck.at/studenten' },
   ],
 }
 
 const serviceJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  name: 'Architekturmodell-Druck für Studierende',
+  name: '3D-Druck für Studierende',
+  serviceType: 'Abgabe-, Anschauungs- und Präsentationsmodelle aus dem 3D-Druck',
   provider: { '@type': 'LocalBusiness', name: 'ekdruck e.U.', address: { '@type': 'PostalAddress', streetAddress: 'Negrellistraße 15', postalCode: '4623', addressLocality: 'Gunskirchen', addressCountry: 'AT' }, telephone: '+43 676 5517197' },
   areaServed: 'AT',
   audience: { '@type': 'EducationalAudience', educationalRole: 'student' },
   offers: [
-    { '@type': 'Offer', name: '10% Studierendenrabatt', description: 'Für alle Studierenden mit gültigem Studierendenausweis' },
+    { '@type': 'Offer', name: '10% Studierendenrabatt', description: 'Für alle Studierenden mit gültigem Studierendenausweis, alle Studiengänge' },
     { '@type': 'Offer', name: '15% Rabatt für österreichische Universitäten und Fachhochschulen', description: 'Für Studierende an österreichischen Unis und FHs, mit Studierendenausweis' },
   ],
 }
@@ -152,10 +153,9 @@ export default function Page() {
             <div className="absolute bottom-[10%] left-[5%] w-[300px] h-[300px] rounded-full bg-accent/[0.04] blur-[80px]" />
           </div>
 
-          {/* Corner label wie Startseite */}
           <div className="absolute top-24 md:top-28 right-6 md:right-12 z-10 hidden sm:block">
             <div className="mono text-[10px] font-bold tracking-[0.3em] text-foreground/30 uppercase text-right leading-relaxed">
-              Für Architektur-<br />Studierende<br />Österreich
+              Für Studierende<br />aller Studiengänge<br />Österreich
             </div>
           </div>
 
@@ -167,23 +167,22 @@ export default function Page() {
               </div>
 
               <h1 className="text-[clamp(2.6rem,7.5vw,6.5rem)] font-bold leading-[1.02] tracking-[-0.05em] mb-6">
-                <span className="block">Uni-Abgabe bald?</span>
+                <span className="block">Uni-Drucker voll?</span>
                 <span className="block text-gradient mt-1 md:mt-3 text-[clamp(2rem,5.5vw,5rem)] pt-[0.1em] leading-[1.1]">
-                  Dein Modell kommt pünktlich.
+                  Dein Modell kommt trotzdem.
                 </span>
               </h1>
 
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mb-10">
-                ekdruck druckt dein Abgabemodell für Entwerfen, Städtebau und Endpräsentation aus deinen
-                CAD-Daten: Standard in <span className="text-foreground font-semibold">3 bis 5 Werktagen</span>,
-                Express in <span className="text-foreground font-semibold">24 bis 48 Stunden</span>, mit Versand
-                in ganz Österreich. Mit Studierendenausweis bekommst du{' '}
+                ekdruck druckt Abgabe-, Anschauungs- und Präsentationsmodelle für Studierende aller
+                Studiengänge, von Architektur über Maschinenbau bis Automatisierungstechnik und Design:
+                Standard in <span className="text-foreground font-semibold">3 bis 5 Werktagen</span>, Express in{' '}
+                <span className="text-foreground font-semibold">24 bis 48 Stunden</span>, mit Versand in ganz
+                Österreich. Mit Studierendenausweis bekommst du{' '}
                 <span className="text-primary font-semibold">10 % Rabatt</span>, an österreichischen Unis und FHs{' '}
-                <span className="text-primary font-semibold">15 %</span>. Bisher wurde jede zugesagte Abgabe
-                pünktlich geliefert.
+                <span className="text-primary font-semibold">15 %</span>.
               </p>
 
-              {/* Stats row im Hero-Stil (Mono-Zahlen) */}
               <div className="flex items-center gap-10 lg:gap-16 flex-wrap">
                 {[
                   { val: '10%', label: 'Studierendenausweis' },
@@ -209,7 +208,7 @@ export default function Page() {
               <figure className="md:sticky md:top-28">
                 <img
                   src="/cases/ortsmodell-uebersicht.jpg"
-                  alt="Weißes Ortsmodell im Maßstab 1:500 aus dem 3D-Druck, Abgabequalität"
+                  alt="Weißes Ortsmodell im Maßstab 1:500 aus dem 3D-Druck, gefertigt als Abgabemodell"
                   loading="eager"
                   fetchPriority="high"
                   decoding="async"
@@ -222,24 +221,80 @@ export default function Page() {
             </div>
             <p className="text-sm text-muted-foreground max-w-7xl mx-auto mt-8">
               Kein Pauschalpreis-Schema: Jedes Modell wird einzeln kalkuliert, damit du den günstigsten Preis für
-              genau deine Abgabe bekommst. Richtwert vorab? Der{' '}
+              genau dein Projekt bekommst. Richtwert vorab? Der{' '}
               <Link href="/kostenrechner" className="text-primary font-semibold hover:underline">Kostenrechner</Link>{' '}
               braucht 60 Sekunden.
             </p>
           </div>
         </section>
 
-        {/* ABLAUF: 3 Schritte (deckt "wie funktioniert"-Prompts ab, passend zum HowTo-Schema) */}
+        {/* WANN ekdruck: 3 Einsatzfälle */}
+        <section className="py-16 md:py-24 border-t border-border">
+          <div className="container mx-auto px-4">
+            <div className="max-w-7xl mx-auto">
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Wofür Studierende ekdruck nutzen</p>
+              <h2 className="text-4xl md:text-6xl font-bold leading-[0.95] tracking-[-0.04em] mb-10 md:mb-14">
+                Drei Situationen, ein Ausweg.
+              </h2>
+              <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+                <div>
+                  <h3 className="font-bold text-lg mb-2.5">Abgabewoche, kein Slot mehr frei</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Vor Abgaben sind die Drucker an vielen Unis und FHs auf Wochen ausgebucht. ekdruck fängt
+                    das ab: Deadline schicken, Fixpreis bekommen, Modell kommt pünktlich. Auch wenn der
+                    Auftrag am Sonntagabend eingeht.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-2.5">Zu groß für den Uni-Drucker</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Ortsmodelle, Geländemodelle, Anlagen- und Projektmodelle in Präsentationsgröße: große
+                    Modelle sind ein Schwerpunkt der Werkstatt. Schick die Abmessungen, du bekommst gesagt,
+                    wie dein Modell umgesetzt wird.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-2.5">Knappes Budget</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Studieren ist teuer genug. Deshalb wird jedes Modell einzeln kalkuliert statt nach
+                    Pauschalpreisen abgerechnet, dazu kommen 10 % Rabatt mit Studierendenausweis und 15 % an
+                    österreichischen Unis und FHs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* UNI-WERKSTATT ZUERST — Ton-Leitplanke: nicht bei Werkstattleitern anecken */}
+        <section className="py-12 md:py-16 border-t border-border">
+          <div className="container mx-auto px-4">
+            <div className="max-w-7xl mx-auto">
+              <div className="rounded-2xl border-2 border-border p-8 md:p-10 max-w-4xl">
+                <h2 className="font-bold text-xl md:text-2xl mb-3">Deine Uni-Werkstatt bleibt die erste Adresse.</h2>
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                  Wenn deine Hochschule eine Modellbauwerkstatt oder ein Drucklabor hat, nutz sie: dort lernst
+                  du am meisten und zahlst am wenigsten. ekdruck ist für die Fälle da, in denen das nicht
+                  reicht, ausgebuchte Abgabewochen, Modelle über der Größe der Uni-Drucker oder Projekte,
+                  die neben Job und Studium einfach fertig werden müssen. Werkstätten und FabLabs, die in
+                  Stoßzeiten Anfragen weiterleiten möchten, können sich jederzeit direkt melden.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ABLAUF: 3 Schritte */}
         <section className="py-16 md:py-24 border-t border-border">
           <div className="container mx-auto px-4">
             <div className="max-w-7xl mx-auto">
               <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Ablauf</p>
               <h2 className="text-4xl md:text-6xl font-bold leading-[0.95] tracking-[-0.04em] mb-10 md:mb-14">
-                In drei Schritten zur Abgabe.
+                In drei Schritten zum Modell.
               </h2>
               <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
                 {[
-                  { nr: '01', titel: 'Deadline und Daten schicken', text: 'Abgabetermin plus 3D-Daten (Rhino, ArchiCAD, SketchUp, STL) oder nur Pläne, über das Formular oder per WhatsApp. Auch sonntags um 23 Uhr.' },
+                  { nr: '01', titel: 'Deadline und Daten schicken', text: 'Abgabetermin plus 3D-Daten (STL, STEP, OBJ, Rhino, SketchUp, Fusion, ArchiCAD) oder nur Pläne, über das Formular oder per WhatsApp. Auch sonntags um 23 Uhr.' },
                   { nr: '02', titel: 'Fixpreis und Ja/Nein-Antwort', text: 'Innerhalb weniger Stunden bekommst du den Fixpreis inklusive Studierendenrabatt und die ehrliche Ansage, ob sich deine Deadline ausgeht.' },
                   { nr: '03', titel: 'Druck und Lieferung', text: 'Standard in 3 bis 5 Werktagen, Express in 24 bis 48 Stunden. Versicherter Versand in ganz Österreich oder Abholung in Gunskirchen bei Wels.' },
                 ].map(({ nr, titel, text }) => (
@@ -254,7 +309,7 @@ export default function Page() {
           </div>
         </section>
 
-        {/* PIDING-GALERIE */}
+        {/* GALERIE (Piding, freigegeben) */}
         <section className="py-16 md:py-24 border-t border-border relative">
           <div className="container mx-auto px-4">
             <div className="max-w-7xl mx-auto">
@@ -263,13 +318,13 @@ export default function Page() {
                 So sieht Abgabequalität aus.
               </h2>
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl mb-10">
-                Gedruckt, wie es bei Städtebau- und Entwurfsabgaben verlangt wird: weißes, mattes Material,
+                Gedruckt, wie es bei Abgaben und Projektpräsentationen verlangt wird: weißes, mattes Material,
                 klassische Präsentationsoptik, direkt aus den Planungsdaten.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
                 <img src="/cases/ortsmodell-kirche.jpg" alt="Detail eines 3D-gedruckten Ortsmodells 1:500: Kirche und umliegende Gebäude" loading="lazy" decoding="async" className="w-full rounded-2xl border border-border object-cover aspect-square" />
                 <img src="/cases/ortsmodell-hoehenlinien.jpg" alt="Geländemodell mit Höhenlinien und Straßenverlauf aus dem 3D-Druck" loading="lazy" decoding="async" className="w-full rounded-2xl border border-border object-cover aspect-square" />
-                <img src="/cases/ortsmodell-tiefe.jpg" alt="Blick über ein weißes Architekturmodell im Maßstab 1:500" loading="lazy" decoding="async" className="w-full rounded-2xl border border-border object-cover aspect-square col-span-2 md:col-span-1" />
+                <img src="/cases/ortsmodell-tiefe.jpg" alt="Blick über ein weißes Modell im Maßstab 1:500 aus dem 3D-Druck" loading="lazy" decoding="async" className="w-full rounded-2xl border border-border object-cover aspect-square col-span-2 md:col-span-1" />
               </div>
               <div className="mt-8 flex flex-wrap items-center gap-x-10 gap-y-3">
                 <span className="flex items-center gap-2 text-sm font-semibold"><Star className="w-4 h-4 text-primary fill-primary" /> 5,0 aus 31 Google-Bewertungen</span>
@@ -283,7 +338,7 @@ export default function Page() {
         <section className="py-16 md:py-24 border-t border-border">
           <div className="container mx-auto px-4">
             <div className="max-w-7xl mx-auto">
-              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">FAQ · Uni-Abgabe</p>
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">FAQ · 3D-Druck im Studium</p>
               <h2 className="text-4xl md:text-6xl font-bold leading-[0.95] tracking-[-0.04em] mb-10 md:mb-14">
                 Kurz beantwortet.
               </h2>

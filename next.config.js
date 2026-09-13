@@ -16,6 +16,10 @@ const nextConfig = {
       // ═══ Preise-Seite entfernt (2026-09-04, Kevin): Menü entschlackt, Kostenrechner ist die Preis-Antwort ═══
       { source: '/preise', destination: '/kostenrechner', permanent: true },
 
+      // ═══ Studenten-Seite verallgemeinert (2026-09-13, Kevin): alle Studiengänge, neue URL /studenten.
+      //     301 erhält die bereits verteilten Links (Fachschafts-Mails, ChatGPT-Zitate). ═══
+      { source: '/architekturmodelle/studenten', destination: '/studenten', permanent: true },
+
       // ═══ Prototyping: alte URLs konsolidieren auf /prototyping ═══
       { source: '/prototypen', destination: '/prototyping', permanent: true },
       { source: '/rapid-prototyping', destination: '/prototyping', permanent: true },
