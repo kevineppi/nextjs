@@ -58,7 +58,7 @@ export const CODES: Record<string, string> = {
   "OEH-BOKU": "Universität für Bodenkultur Wien",
   "OEH-NDU": "New Design University St. Pölten",
   "OEH-FHBGLD": "FH Burgenland",
-  "OEH-KUFSTEIN": "FH Kufstein Tirol",
+  "OEH-KUFSTEIN": "HOK Hochschule Kufstein Tirol",
 };
 
 /**
@@ -69,7 +69,9 @@ const AT_DOMAINS = [
   ".ac.at",        // deckt tuwien, uibk, boku, akbild, fhstp, fh-salzburg, fhwn, uni-ak,
                    // unileoben, ndu und fh-kufstein
   "jku.at",        // JKU Linz laeuft NICHT auf .ac.at, deckt auch oeh.jku.at
-  "fh-burgenland.at",
+  "hochschule-burgenland.at",   // ÖH nutzt NICHT fh-burgenland.at (geprueft 16.09.2026)
+  "hok.ac.at",                 // FH Kufstein heisst seit 18.08.2026 HOK
+  "fh-kufstein.ac.at",         // ÖH-Adressen laufen weiter auf der alten Domain
   "oehboku.at",
   "tugraz.at",
   "htugraz.at",
