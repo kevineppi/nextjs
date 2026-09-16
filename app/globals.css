@@ -118,6 +118,30 @@
   }
 
   /* ═══ REVEAL LINE ═══ */
+  /* ═══ KOSTENRECHNER-BÜHNE (16.09.2026) ═══ */
+  @keyframes schweben {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  .animate-schweben {
+    animation: schweben 3s ease-in-out infinite;
+  }
+  @keyframes atmen {
+    0%, 100% { box-shadow: 0 0 0 0 hsl(var(--primary) / 0.18); }
+    50% { box-shadow: 0 0 0 14px hsl(var(--primary) / 0); }
+  }
+  .animate-atmen {
+    animation: atmen 2.6s ease-out infinite;
+  }
+  @keyframes wort-rein {
+    0% { opacity: 0; transform: translateY(8px); }
+    12%, 88% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-8px); }
+  }
+  .animate-wort-rein {
+    animation: wort-rein 2.4s ease-in-out both;
+  }
+
   @keyframes reveal-line {
     from { width: 0; }
     to { width: 100%; }

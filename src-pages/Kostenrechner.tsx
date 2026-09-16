@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
@@ -54,6 +54,17 @@ const MATERIAL_META: Record<string, { desc: string; color: string; colorBg: stri
 
 /** Die drei Materialien, die real fast jede Anfrage abdecken — Rest hinter Aufklapper (16.09.) */
 const HAUPT_MATERIALIEN = ["PLA", "PETG", "ASA"];
+
+/** Rotierende Beispiele in der Dropzone — zeigt, was hier gedruckt wird (16.09.) */
+const DRUCK_BEISPIELE = [
+  "ein Architekturmodell 1:500",
+  "ein Messemodell in Firmenfarben",
+  "dein Abgabemodell für die Uni",
+  "eine Statue in Museumsqualität",
+  "einen Designprototyp",
+  "ein Geländemodell mit Höhenlinien",
+  "170 Stück für den Messestand",
+];
 
 const QUALITY_PRESETS = [
   { label: "Standard", layer: 0.20, desc: "Schnell & günstig" },
@@ -152,6 +163,12 @@ const Kostenrechner = () => {
   const [showAllMaterials, setShowAllMaterials] = useState(false);
   const [showMoreFields, setShowMoreFields] = useState(false);
   const [showRabatt, setShowRabatt] = useState(false);
+  // Rotierendes Druck-Beispiel in der Dropzone (Leerzustand)
+  const [beispiel, setBeispiel] = useState(0);
+  useEffect(() => {
+    const t = setInterval(() => setBeispiel((b) => (b + 1) % DRUCK_BEISPIELE.length), 2400);
+    return () => clearInterval(t);
+  }, []);
   // Autofill-Fallback (siehe Contact.tsx): Browser füllen Felder teils ohne React-Events.
   // Deshalb Submit-Button nie an den State koppeln und beim Absenden DOM-Werte mergen.
   const kfNameRef = useRef<HTMLInputElement>(null);
@@ -357,47 +374,77 @@ const Kostenrechner = () => {
           <div className="relative z-10 container mx-auto px-4">
             {!hatDateien ? (
               /* ── Leerer Zustand (Kevin, 16.09.): ohne Datei kein Rechner ── */
-              <div className="max-w-2xl mx-auto">
-                <div className="sticker border-primary text-primary w-fit mx-auto mb-5">
-                  <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                  Richtpreis in Echtzeit · lokal im Browser
-                </div>
-                <div className="bg-card border border-border rounded-2xl p-5 md:p-6 shadow-lg shadow-primary/5">
-                  <div
-                    className={`group border-2 border-dashed rounded-xl p-10 md:p-14 text-center cursor-pointer transition-all duration-200 ${dragOver ? "border-primary bg-primary/5 scale-[1.01]" : "border-border hover:border-primary/50 bg-muted/20"}`}
-                    onClick={() => fileInputRef.current?.click()}
-                    onDragOver={(e) => { e.preventDefault(); setDragOver(true); }}
-                    onDragLeave={() => setDragOver(false)}
-                    onDrop={(e) => { e.preventDefault(); setDragOver(false); handleFiles(e.dataTransfer.files); }}
-                  >
-                    <Upload className={`w-9 h-9 mx-auto mb-3 text-primary transition-transform duration-300 group-hover:-translate-y-1 ${dragOver ? "-translate-y-1 scale-110" : ""}`} />
-                    <p className="text-base font-semibold">STL-Datei hierher ziehen oder klicken</p>
-                    <p className="text-xs text-muted-foreground mt-1.5">Binär &amp; ASCII · max. 100 MB · mehrere Dateien möglich</p>
+              <div className="max-w-3xl mx-auto">
+                <AnimatedSection animation="fade-in">
+                  <div className="sticker border-primary text-primary w-fit mx-auto mb-6">
+                    <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                    Richtpreis in Echtzeit · lokal im Browser
                   </div>
-                  {/* Mini-Ablauf im Site-Stil (Mono-Nummern) */}
-                  <div className="grid grid-cols-3 gap-3 mt-5">
-                    {[
-                      { nr: "01", t: "Datei hochladen" },
-                      { nr: "02", t: "Material wählen" },
-                      { nr: "03", t: "Richtpreis sofort" },
-                    ].map(({ nr, t }) => (
-                      <div key={nr} className="text-center">
-                        <p className="mono text-2xl font-bold text-primary/25 leading-none">{nr}</p>
-                        <p className="text-[11px] font-semibold mt-1.5 text-muted-foreground">{t}</p>
+                </AnimatedSection>
+
+                <AnimatedSection animation="scale-in" delay={100}>
+                  <div className="bg-card border border-border rounded-2xl p-5 md:p-6 shadow-lg shadow-primary/5">
+                    <div
+                      className={`group relative border-2 border-dashed rounded-xl px-8 py-12 md:px-12 md:py-16 text-center cursor-pointer transition-all duration-300 ${dragOver ? "border-primary bg-primary/5 scale-[1.01]" : "border-border hover:border-primary/60 bg-muted/20"}`}
+                      onClick={() => fileInputRef.current?.click()}
+                      onDragOver={(e) => { e.preventDefault(); setDragOver(true); }}
+                      onDragLeave={() => setDragOver(false)}
+                      onDrop={(e) => { e.preventDefault(); setDragOver(false); handleFiles(e.dataTransfer.files); }}
+                    >
+                      {/* Schwebendes Icon mit Atem-Glow */}
+                      <div className={`mx-auto mb-5 w-16 h-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center animate-atmen ${dragOver ? "scale-110" : "animate-schweben"} transition-transform duration-300`}>
+                        <Upload className="w-7 h-7 text-primary" />
                       </div>
-                    ))}
+
+                      <p className="text-xl md:text-2xl font-bold tracking-tight mb-2">
+                        {dragOver ? "Loslassen, wir rechnen." : "Zieh dein Modell hier rein."}
+                      </p>
+
+                      {/* Rotierendes Beispiel — key erzwingt Re-Animation pro Wechsel */}
+                      <p className="text-sm md:text-base text-muted-foreground h-6 overflow-hidden">
+                        Zum Beispiel{" "}
+                        <span key={beispiel} className="inline-block animate-wort-rein text-primary font-semibold">
+                          {DRUCK_BEISPIELE[beispiel]}
+                        </span>
+                      </p>
+
+                      <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/30 mt-6">
+                        STL · max. 100 MB · mehrere Dateien · deine Datei bleibt im Browser
+                      </p>
+                    </div>
+
+                    {/* Mini-Ablauf im Site-Stil, gestaffelt einfliegend */}
+                    <div className="grid grid-cols-3 gap-3 mt-6">
+                      {[
+                        { nr: "01", t: "Datei reinziehen", d: "Analyse in Sekunden" },
+                        { nr: "02", t: "Material wählen", d: "Preis läuft live mit" },
+                        { nr: "03", t: "Angebot anfordern", d: "Fixpreis in 6 Stunden" },
+                      ].map(({ nr, t, d }, i) => (
+                        <AnimatedSection key={nr} animation="slide-up" delay={200 + i * 150}>
+                          <div className="text-center group cursor-default">
+                            <p className="mono text-2xl font-bold text-primary/25 leading-none transition-colors duration-300 group-hover:text-primary/60">{nr}</p>
+                            <p className="text-xs font-semibold mt-1.5">{t}</p>
+                            <p className="text-[11px] text-muted-foreground mt-0.5">{d}</p>
+                          </div>
+                        </AnimatedSection>
+                      ))}
+                    </div>
+
+                    <p className="text-xs text-muted-foreground text-center mt-6">
+                      Keine 3D-Datei? Schick Pläne, Fotos oder Skizzen über das{" "}
+                      <a href="/kontakt" className="text-primary font-semibold hover:underline">Kontaktformular</a>, die Datenaufbereitung übernehmen wir.
+                    </p>
+                    <input ref={fileInputRef} type="file" accept=".stl" multiple className="hidden" onChange={(e) => e.target.files && handleFiles(e.target.files)} />
                   </div>
-                  <p className="text-xs text-muted-foreground text-center mt-5">
-                    Keine 3D-Datei? Schick Pläne, Fotos oder Skizzen über das{" "}
-                    <a href="/kontakt" className="text-primary font-semibold hover:underline">Kontaktformular</a>, die Datenaufbereitung übernehmen wir.
-                  </p>
-                  <input ref={fileInputRef} type="file" accept=".stl" multiple className="hidden" onChange={(e) => e.target.files && handleFiles(e.target.files)} />
-                </div>
-                {/* Laufendes Band echter Projekte: füllt die Fläche, zeigt was möglich ist */}
-                <div className="mt-8 -mx-4 md:mx-0">
-                  <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-foreground/30 text-center mb-3">Frisch aus der Werkstatt</p>
-                  <FotoMarquee />
-                </div>
+                </AnimatedSection>
+
+                {/* Laufendes Band echter Projekte: einheitliches Format, ruhiges Tempo */}
+                <AnimatedSection animation="fade-in" delay={350}>
+                  <div className="mt-10 -mx-4 md:mx-0">
+                    <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-foreground/30 text-center mb-4">Frisch aus der Werkstatt</p>
+                    <FotoMarquee />
+                  </div>
+                </AnimatedSection>
               </div>
             ) : (
             <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-6 items-start">

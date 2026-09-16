@@ -25,26 +25,30 @@ type Foto = { src: string; alt: string }
 
 const FotoMarquee = ({
   fotos = FREIGEGEBENE_FOTOS,
-  hoehe = 'h-28 md:h-36',
   className = '',
 }: {
   fotos?: Foto[]
-  hoehe?: string
   className?: string
 }) => {
   const doppelt = [...fotos, ...fotos]
   return (
     <div className={`overflow-hidden ${className}`} aria-hidden="true">
-      <div className="animate-marquee inline-flex gap-3 md:gap-4 hover:[animation-play-state:paused] motion-reduce:animate-none">
+      {/* Einheitliches Format (fixe Breite × Höhe, object-cover) statt springender
+          Naturformate — Kevin, 16.09.: "stabilere Fotos". Tempo bewusst ruhig. */}
+      <div
+        className="animate-marquee inline-flex gap-3 md:gap-4 hover:[animation-play-state:paused] motion-reduce:animate-none"
+        style={{ animationDuration: '45s' }}
+      >
         {doppelt.map((f, i) => (
-          <img
-            key={i}
-            src={f.src}
-            alt=""
-            loading={i < 5 ? 'eager' : 'lazy'}
-            decoding="async"
-            className={`${hoehe} w-auto rounded-xl border border-border object-cover shrink-0 hover:scale-[1.03] transition-transform duration-500`}
-          />
+          <div key={i} className="w-48 h-36 md:w-60 md:h-44 shrink-0 overflow-hidden rounded-xl border border-border bg-muted/30 shadow-sm">
+            <img
+              src={f.src}
+              alt=""
+              loading={i < 5 ? 'eager' : 'lazy'}
+              decoding="async"
+              className="w-full h-full object-cover hover:scale-[1.05] transition-transform duration-700"
+            />
+          </div>
         ))}
       </div>
     </div>
