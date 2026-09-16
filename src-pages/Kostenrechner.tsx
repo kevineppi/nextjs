@@ -192,7 +192,7 @@ const Kostenrechner = () => {
   const geo = current ? getGeo(current) : null;
 
   // ── File handling ──
-  const handleFiles = useCallback(async (files: FileList) => {
+  const handleFiles = useCallback(async (files: FileList | File[]) => {
     const { parseSTL } = await import("@/lib/stlParser");
     const stlFiles = Array.from(files).filter(f => f.name.toLowerCase().endsWith(".stl"));
     if (stlFiles.length === 0) {
@@ -213,11 +213,70 @@ const Kostenrechner = () => {
     }
     if (newParts.length === 0) return;
 
+    // Funnel-Messung (16.09.): Upload-Event, damit Upload→Submit auswertbar wird
+    (window as any).dataLayer = (window as any).dataLayer || [];
+    (window as any).dataLayer.push({
+      event: "kostenrechner_upload",
+      file_count: newParts.length,
+      demo: newParts.some(p => p.fileName?.startsWith("Beispielmodell")),
+    });
+
     setParts(prev => {
       setActivePart(prev.length);
       return [...prev, ...newParts];
     });
   }, []);
+
+  // ── Beispielmodell (16.09.): Flow ohne eigene Datei erlebbar machen ──
+  const ladeBeispiel = useCallback(async (e: React.MouseEvent) => {
+    e.stopPropagation();
+    try {
+      const res = await fetch("/demo/beispielmodell.stl");
+      if (!res.ok) throw new Error(String(res.status));
+      const buf = await res.arrayBuffer();
+      const file = new File([buf], "Beispielmodell-Haus.stl", { type: "model/stl" });
+      handleFiles([file]);
+    } catch {
+      toast.error("Beispielmodell konnte nicht geladen werden. Bitte eigene STL hochladen.");
+    }
+  }, [handleFiles]);
+
+  // ── Drop überall (16.09.): Datei irgendwo auf der Seite loslassen ──
+  const [seitenDrag, setSeitenDrag] = useState(false);
+  const dragZaehler = useRef(0);
+  useEffect(() => {
+    const hatFiles = (e: DragEvent) => !!e.dataTransfer?.types?.includes("Files");
+    const enter = (e: DragEvent) => { if (!hatFiles(e)) return; e.preventDefault(); dragZaehler.current++; setSeitenDrag(true); };
+    const over = (e: DragEvent) => { if (hatFiles(e)) e.preventDefault(); };
+    const leave = (e: DragEvent) => { if (!hatFiles(e)) return; dragZaehler.current = Math.max(0, dragZaehler.current - 1); if (dragZaehler.current === 0) setSeitenDrag(false); };
+    const drop = (e: DragEvent) => {
+      if (!hatFiles(e)) return;
+      dragZaehler.current = 0;
+      setSeitenDrag(false);
+      // Wenn die Dropzone selbst den Drop schon verarbeitet hat (preventDefault), nicht doppelt hinzufügen
+      if (e.defaultPrevented) return;
+      e.preventDefault();
+      if (e.dataTransfer?.files?.length) handleFiles(e.dataTransfer.files);
+    };
+    window.addEventListener("dragenter", enter);
+    window.addEventListener("dragover", over);
+    window.addEventListener("dragleave", leave);
+    window.addEventListener("drop", drop);
+    return () => {
+      window.removeEventListener("dragenter", enter);
+      window.removeEventListener("dragover", over);
+      window.removeEventListener("dragleave", leave);
+      window.removeEventListener("drop", drop);
+    };
+  }, [handleFiles]);
+
+  // ── Preis-Pop (16.09.): Zahl reagiert sichtbar auf jede Konfig-Änderung ──
+  const [preisPop, setPreisPop] = useState(0);
+  const vorherigerPreis = useRef(totalNet);
+  useEffect(() => {
+    if (hatDateien && vorherigerPreis.current !== totalNet) setPreisPop(k => k + 1);
+    vorherigerPreis.current = totalNet;
+  }, [totalNet, hatDateien]);
 
   const updatePart = (key: keyof PartState, value: any) => {
     setParts(prev => prev.map((p, i) => i === activePart ? { ...p, [key]: value } : p));
@@ -312,6 +371,16 @@ const Kostenrechner = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Drop-überall-Overlay: erscheint, sobald eine Datei über dem Fenster hängt */}
+      {seitenDrag && (
+        <div className="fixed inset-0 z-[200] bg-primary/10 backdrop-blur-sm flex items-center justify-center pointer-events-none">
+          <div className="bg-background border-2 border-dashed border-primary rounded-2xl px-10 py-8 text-center shadow-2xl">
+            <Upload className="w-10 h-10 text-primary mx-auto mb-3 animate-schweben" />
+            <p className="text-2xl font-bold tracking-tight">Loslassen, wir rechnen.</p>
+            <p className="text-sm text-muted-foreground mt-1">STL-Datei einfach irgendwo fallen lassen</p>
+          </div>
+        </div>
+      )}
       <SEOHead
         title="3D-Druck Kosten berechnen – Richtpreis in 60 Sek. | ★5,0"
         description="STL hochladen → Richtpreis sofort. Mehrere Teile kalkulieren. Kein Account nötig. Angebot in 6h · ab €20 · ★5,0 (31 Bewertungen) | ekdruck"
@@ -430,10 +499,16 @@ const Kostenrechner = () => {
                       ))}
                     </div>
 
-                    <p className="text-xs text-muted-foreground text-center mt-6">
-                      Keine 3D-Datei? Schick Pläne, Fotos oder Skizzen über das{" "}
-                      <a href="/kontakt" className="text-primary font-semibold hover:underline">Kontaktformular</a>, die Datenaufbereitung übernehmen wir.
-                    </p>
+                    <div className="flex flex-col items-center gap-2 mt-6">
+                      <Button variant="outline" size="sm" className="rounded-full text-xs" onClick={ladeBeispiel}>
+                        <FlaskConical className="w-3.5 h-3.5 mr-1.5" />
+                        Kein STL zur Hand? Beispielmodell testen
+                      </Button>
+                      <p className="text-xs text-muted-foreground text-center">
+                        Oder schick Pläne, Fotos oder Skizzen über das{" "}
+                        <a href="/kontakt" className="text-primary font-semibold hover:underline">Kontaktformular</a>, die Datenaufbereitung übernehmen wir.
+                      </p>
+                    </div>
                     <input ref={fileInputRef} type="file" accept=".stl" multiple className="hidden" onChange={(e) => e.target.files && handleFiles(e.target.files)} />
                   </div>
                 </AnimatedSection>
@@ -621,7 +696,7 @@ const Kostenrechner = () => {
                   {/* v2 (16.09.): keine Kalkulations-Interna mehr (Material-Gramm, Druckzeit,
                       Setup-Pauschale) — nur Richtpreis, Teileliste und Mengenvorteil */}
                   <div className="text-center py-6">
-                    <p className="text-5xl font-bold tracking-tight text-gradient mono">{fmt(totalNet)}</p>
+                    <p key={preisPop} className="text-5xl font-bold tracking-tight text-gradient mono animate-preis-pop">{fmt(totalNet)}</p>
                     <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/30 mt-3">
                       {totalQty} {totalQty === 1 ? "Teil" : "Teile"} · exkl. MwSt.
                     </p>

@@ -141,6 +141,14 @@
   .animate-wort-rein {
     animation: wort-rein 2.4s ease-in-out both;
   }
+  @keyframes preis-pop {
+    0% { transform: scale(1); }
+    35% { transform: scale(1.07); }
+    100% { transform: scale(1); }
+  }
+  .animate-preis-pop {
+    animation: preis-pop 0.35s ease-out;
+  }
 
   @keyframes reveal-line {
     from { width: 0; }
