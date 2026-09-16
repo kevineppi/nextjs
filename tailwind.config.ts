@@ -5,6 +5,12 @@ export default {
   content: [
     "./app/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
+    // 16.09.2026: src-pages fehlte — Klassen, die NUR dort vorkommen (z. B. pt-20
+    // am Kostenrechner-main), wurden nie ins CSS kompiliert. data/lib enthalten
+    // ebenfalls className-Strings (z. B. serviceSeoContent).
+    "./src-pages/**/*.{ts,tsx}",
+    "./data/**/*.{ts,tsx}",
+    "./lib/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {

@@ -49,19 +49,19 @@ const SEOContentSection = () => (
             <div className="border-l-2 border-primary/30 pl-4">
               <h4 className="font-semibold text-foreground">3. Baugröße</h4>
               <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
-                Modelle mit einer maximalen Ausdehnung ab 170 mm erhalten einen Größenzuschlag. Der
-                Grund: Größere Drucke erfordern mehr Plattenbelegung, längere Aufwärmzeiten und
-                erhöhte Fehlerrisiken. Ab 260 mm maximaler Dimension wird mit dem erhöhten
-                Stundensatz kalkuliert.
+                Große Modelle kosten überproportional mehr: Sie belegen die Druckplatte länger,
+                brauchen mehr Vorbereitung und stellen höhere Anforderungen an einen stabilen
+                Druckverlauf. Der Rechner berücksichtigt das automatisch anhand der Abmessungen
+                Ihrer Datei.
               </p>
             </div>
             <div className="border-l-2 border-primary/30 pl-4">
               <h4 className="font-semibold text-foreground">4. Setup & Vorbereitung</h4>
               <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
-                Für jedes Projekt fällt eine Setup-Pauschale von €12,99 an. Diese deckt die
-                technische Vorbereitung: Slicing, Druckoptimierung, Objektausrichtung und
-                Qualitätskontrolle. Bei uns ist das kein automatisierter Prozess – jedes Modell
-                wird von einem Fachmann vorbereitet.
+                Jedes Projekt wird manuell vorbereitet: Slicing, Druckoptimierung,
+                Objektausrichtung und Qualitätskontrolle. Bei uns ist das kein automatisierter
+                Prozess – jedes Modell wird von einem Fachmann geprüft, dieser Aufwand fließt als
+                fixer Anteil in den Richtpreis ein.
               </p>
             </div>
             <div className="border-l-2 border-primary/30 pl-4">

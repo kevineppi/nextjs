@@ -17,7 +17,7 @@ const steps = [
     num: "03",
     icon: FileCheck,
     title: "Richtpreis erhalten",
-    desc: "Sie sehen sofort eine detaillierte Aufschlüsselung: Materialkosten, Druckkosten, Setup-Pauschale und eventuelle Mengenvorteile bei größeren Projektmengen.",
+    desc: "Sie sehen sofort Ihren Richtpreis, inklusive automatischem Mengenvorteil bei größeren Projektmengen. Die Berechnung läuft direkt in Ihrem Browser.",
   },
   {
     num: "04",

@@ -36,18 +36,23 @@ import {
   FlaskConical, Sparkles, Eye, TrendingDown,
 } from "lucide-react";
 import { holeHerkunft } from "@/lib/attribution";
+import { pruefeRabatt, mitRabatt, rabattZeile, RABATT_PROZENT } from "@/lib/studentenrabatt";
 
 // ─── MATERIAL UI META ────────────────────────────────────────────
+// Texte bewusst auf Optik/Einsatzzweck, keine Festigkeits-Versprechen (WKO-Wortliste, 16.09.)
 const MATERIAL_META: Record<string, { desc: string; color: string; colorBg: string }> = {
   PLA:      { desc: "Glatte Oberfläche, ideal für Präsentationsmodelle", color: "text-blue-600", colorBg: "bg-blue-500" },
-  "PLA+":   { desc: "Verstärkt, höhere Schlagzähigkeit als Standard-PLA", color: "text-indigo-600", colorBg: "bg-indigo-500" },
-  PETG:     { desc: "UV-stabil & schlagfest, perfekt für Messemodelle", color: "text-emerald-600", colorBg: "bg-emerald-500" },
+  "PLA+":   { desc: "Verstärktes PLA mit satterer Oberfläche", color: "text-indigo-600", colorBg: "bg-indigo-500" },
+  PETG:     { desc: "UV-stabil, perfekt für Messemodelle", color: "text-emerald-600", colorBg: "bg-emerald-500" },
   ABS:      { desc: "Glätt- und lackierbar für Ausstellungsobjekte", color: "text-amber-600", colorBg: "bg-amber-500" },
-  ASA:      { desc: "Wetterfest & UV-beständig für Außenanwendungen", color: "text-cyan-600", colorBg: "bg-cyan-500" },
-  TPU:      { desc: "Flexibel & gummiartig, für biegbare Teile", color: "text-rose-600", colorBg: "bg-rose-500" },
+  ASA:      { desc: "Wetterfest & UV-beständig für den Außenbereich", color: "text-cyan-600", colorBg: "bg-cyan-500" },
+  TPU:      { desc: "Weiche, gummiartige Haptik", color: "text-rose-600", colorBg: "bg-rose-500" },
   "PA6-CF": { desc: "Carbon-Look, ultraleicht, Premium-Showmodelle", color: "text-slate-700", colorBg: "bg-slate-800" },
-  PC:       { desc: "Polycarbonat: extrem schlagfest & hitzebeständig", color: "text-violet-600", colorBg: "bg-violet-500" },
+  PC:       { desc: "Technische Optik für Premium-Showobjekte", color: "text-violet-600", colorBg: "bg-violet-500" },
 };
+
+/** Die drei Materialien, die real fast jede Anfrage abdecken — Rest hinter Aufklapper (16.09.) */
+const HAUPT_MATERIALIEN = ["PLA", "PETG", "ASA"];
 
 const QUALITY_PRESETS = [
   { label: "Standard", layer: 0.20, desc: "Schnell & günstig" },
@@ -139,10 +144,13 @@ const breadcrumbs = [
 // MAIN COMPONENT
 // ═════════════════════════════════════════════════════════════════
 const Kostenrechner = () => {
-  const [parts, setParts] = useState<PartState[]>([createPart()]);
+  // v2 (Kevin, 16.09.): ohne Datei kein Rechner — Start ist leer, kein Standardwürfel.
+  const [parts, setParts] = useState<PartState[]>([]);
   const [activePart, setActivePart] = useState(0);
   const [showAdvanced, setShowAdvanced] = useState(false);
-  const [showContactForm, setShowContactForm] = useState(false);
+  const [showAllMaterials, setShowAllMaterials] = useState(false);
+  const [showMoreFields, setShowMoreFields] = useState(false);
+  const [showRabatt, setShowRabatt] = useState(false);
   // Autofill-Fallback (siehe Contact.tsx): Browser füllen Felder teils ohne React-Events.
   // Deshalb Submit-Button nie an den State koppeln und beim Absenden DOM-Werte mergen.
   const kfNameRef = useRef<HTMLInputElement>(null);
@@ -152,17 +160,18 @@ const Kostenrechner = () => {
   const kfMessageRef = useRef<HTMLTextAreaElement>(null);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [contactForm, setContactForm] = useState({ name: "", email: "", company: "", phone: "", message: "" });
+  const [contactForm, setContactForm] = useState({ name: "", email: "", company: "", phone: "", message: "" , rabattcode: "" });
   const [dragOver, setDragOver] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
+  const hatDateien = parts.length > 0;
   const current = parts[activePart] || parts[0];
   const partResults = parts.map(calcPart);
   const totalNet = partResults.reduce((s, r) => s + r.finalNet, 0);
   const totalQty = parts.reduce((s, p) => s + p.qty, 0);
   const totalPrintTime = partResults.reduce((s, r) => s + r.printTimeMin, 0);
-  const currentResult = partResults[activePart];
-  const geo = getGeo(current);
+  const currentResult = partResults[activePart] || partResults[0];
+  const geo = current ? getGeo(current) : null;
 
   // ── File handling ──
   const handleFiles = useCallback(async (files: FileList) => {
@@ -180,16 +189,13 @@ const Kostenrechner = () => {
         const geometry = parseSTL(buffer);
         newParts.push(createPart({ fileName: file.name, fileSize: file.size, geometry, arrayBuffer: buffer, file }));
       } catch (err) {
-        toast.error(`Fehler beim Parsen von ${file.name}`);
-        newParts.push(createPart({ fileName: file.name, fileSize: file.size }));
+        // v2: kein Würfel-Fallback mehr — Datei ohne lesbare Geometrie wird nicht kalkuliert
+        toast.error(`${file.name} konnte nicht gelesen werden. Bitte als Binär-STL exportieren oder direkt per Kontaktformular schicken.`);
       }
     }
+    if (newParts.length === 0) return;
 
     setParts(prev => {
-      if (prev.length === 1 && !prev[0].fileName) {
-        setActivePart(0);
-        return newParts.length > 0 ? newParts : prev;
-      }
       setActivePart(prev.length);
       return [...prev, ...newParts];
     });
@@ -200,14 +206,9 @@ const Kostenrechner = () => {
   };
 
   const removePart = (idx: number) => {
-    if (parts.length <= 1) return;
+    // v2: auch das letzte Teil darf entfernt werden — dann zurück zum leeren Upload-Zustand
     setParts(prev => prev.filter((_, i) => i !== idx));
-    setActivePart(a => Math.min(a, parts.length - 2));
-  };
-
-  const addEmptyPart = () => {
-    setParts(prev => [...prev, createPart()]);
-    setActivePart(parts.length);
+    setActivePart(a => Math.max(0, Math.min(a, parts.length - 2)));
   };
 
   // ── Submit ──
@@ -218,6 +219,7 @@ const Kostenrechner = () => {
       company: kfCompanyRef.current?.value ?? contactForm.company,
       phone: kfPhoneRef.current?.value ?? contactForm.phone,
       message: kfMessageRef.current?.value ?? contactForm.message,
+      rabattcode: contactForm.rabattcode,
     };
     if (JSON.stringify(merged) !== JSON.stringify(contactForm)) setContactForm(merged);
     const contactData = merged;
@@ -247,6 +249,7 @@ const Kostenrechner = () => {
         }
       }
 
+      const rabatt = pruefeRabatt(contactData.email, contactData.rabattcode);
       const configLines = parts.map((p, i) =>
         `- ${p.fileName || `Teil ${i + 1} (Standard)`} · ${p.materialKey} · ${p.layerHeight} mm · Infill ${p.infillPercent}% · Wand ${p.wallThickness.toFixed(1)} mm · ${p.qty}× · ${fmt(partResults[i]?.finalNet ?? 0)}`
       ).join("\n");
@@ -255,6 +258,8 @@ const Kostenrechner = () => {
         contactData.company ? `Firma: ${contactData.company}` : null,
         contactData.phone ? `Telefon: ${contactData.phone}` : null,
         `Gesamt-Richtpreis: ${fmt(totalNet)} exkl. MwSt. (${totalQty} ${totalQty === 1 ? "Teil" : "Teile"})`,
+        rabatt.berechtigt ? `Nach Studentenrabatt: ${fmt(mitRabatt(totalNet, rabatt))} exkl. MwSt.` : null,
+        rabattZeile(rabatt),
         "",
         "Konfiguration:",
         configLines,
@@ -313,46 +318,22 @@ const Kostenrechner = () => {
         {/* ══════════════════════════════════════════════════════
             HERO
         ══════════════════════════════════════════════════════ */}
-        <section className="relative overflow-hidden bg-gradient-to-b from-primary/6 via-background to-background py-16 md:py-24">
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-primary/8 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
-          <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-gradient-to-tr from-accent/10 to-transparent rounded-full blur-2xl translate-y-1/3 -translate-x-1/4" />
-
+        {/* v2 (Kevin, 16.09.): Hero kompakt — der Rechner beginnt im ersten Viewport,
+            keine button-artigen Badges mehr (Dead-Click-Quelle lt. Clarity) */}
+        <section className="relative overflow-hidden bg-gradient-to-b from-primary/6 via-background to-background pt-10 pb-6 md:pt-14 md:pb-8">
           <div className="container mx-auto px-4 text-center relative">
-            <div className="inline-flex items-center gap-2 bg-primary/8 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-6 border border-primary/15">
-              <Calculator className="h-4 w-4" />
-              3D drucken lassen – Online-Kostenrechner
-            </div>
-
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-5 tracking-tight leading-[1.1]">
-              3D drucken lassen –<br />
-              <span className="text-primary">Kosten in 60 Sekunden</span>
+            <h1 className="text-2xl md:text-4xl font-bold text-foreground mb-3 tracking-tight leading-[1.1]">
+              3D drucken lassen – <span className="text-primary">Kosten in 60 Sekunden</span>
             </h1>
-
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-              STL-Datei hochladen, Material wählen –{" "}
-              <strong className="text-foreground">Richtpreis erscheint in Echtzeit</strong>.
-              Jede Anfrage wird persönlich geprüft, Festpreisangebot innerhalb von 6 Stunden.
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              STL hochladen, Material wählen, Richtpreis sofort. Festpreisangebot in 6 Stunden.
             </p>
-
-            <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
-              <Badge variant="outline" className="border-border/80 text-foreground gap-1.5 px-3.5 py-2 text-sm bg-background/60 backdrop-blur-sm">
-                <Star className="h-3.5 w-3.5 text-primary" /> 5,0 ★ Google (31)
-              </Badge>
-              <Badge variant="outline" className="border-border/80 text-foreground gap-1.5 px-3.5 py-2 text-sm bg-background/60 backdrop-blur-sm">
-                <Package className="h-3.5 w-3.5 text-primary" /> Ab €20 pro Teil
-              </Badge>
-              <Badge variant="outline" className="border-border/80 text-foreground gap-1.5 px-3.5 py-2 text-sm bg-background/60 backdrop-blur-sm">
-                <Zap className="h-3.5 w-3.5 text-primary" /> Express 24–48 h
-              </Badge>
-              <Badge variant="outline" className="border-border/80 text-foreground gap-1.5 px-3.5 py-2 text-sm bg-background/60 backdrop-blur-sm">
-                <Leaf className="h-3.5 w-3.5 text-primary" /> AT Filament
-              </Badge>
-            </div>
-
-            <a href="#calculator" className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium group">
-              <ArrowDown className="h-4 w-4 animate-bounce group-hover:animate-none" />
-              Direkt zum Rechner
-            </a>
+            <p className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 mt-4 text-xs text-muted-foreground">
+              <span className="inline-flex items-center gap-1"><Star className="h-3.5 w-3.5 text-primary" /> 5,0 ★ Google (31)</span>
+              <span className="inline-flex items-center gap-1"><Package className="h-3.5 w-3.5 text-primary" /> Ab €20 pro Teil</span>
+              <span className="inline-flex items-center gap-1"><Zap className="h-3.5 w-3.5 text-primary" /> Express 24–48 h</span>
+              <span className="inline-flex items-center gap-1"><Leaf className="h-3.5 w-3.5 text-primary" /> AT Filament</span>
+            </p>
           </div>
         </section>
 
@@ -361,31 +342,35 @@ const Kostenrechner = () => {
         ══════════════════════════════════════════════════════ */}
         <section id="calculator" className="py-8 md:py-14 scroll-mt-20">
           <div className="container mx-auto px-4">
+            {!hatDateien ? (
+              /* ── Leerer Zustand (Kevin, 16.09.): ohne Datei kein Rechner ── */
+              <div className="max-w-2xl mx-auto">
+                <div className="bg-card border border-border rounded-2xl p-5 md:p-6">
+                  <div
+                    className={`border-2 border-dashed rounded-xl p-10 md:p-14 text-center cursor-pointer transition-all duration-200 ${dragOver ? "border-primary bg-primary/5 scale-[1.01]" : "border-border hover:border-primary/50 bg-muted/20"}`}
+                    onClick={() => fileInputRef.current?.click()}
+                    onDragOver={(e) => { e.preventDefault(); setDragOver(true); }}
+                    onDragLeave={() => setDragOver(false)}
+                    onDrop={(e) => { e.preventDefault(); setDragOver(false); handleFiles(e.dataTransfer.files); }}
+                  >
+                    <Upload className="w-8 h-8 mx-auto mb-3 text-primary" />
+                    <p className="text-base font-semibold">STL-Datei hierher ziehen oder klicken</p>
+                    <p className="text-xs text-muted-foreground mt-1.5">Binär &amp; ASCII · max. 100 MB · mehrere Dateien möglich · Berechnung lokal im Browser</p>
+                  </div>
+                  <p className="text-xs text-muted-foreground text-center mt-3">
+                    Keine 3D-Datei? Schick Pläne, Fotos oder Skizzen über das{" "}
+                    <a href="/kontakt" className="text-primary font-semibold hover:underline">Kontaktformular</a>, die Datenaufbereitung übernehmen wir.
+                  </p>
+                  <input ref={fileInputRef} type="file" accept=".stl" multiple className="hidden" onChange={(e) => e.target.files && handleFiles(e.target.files)} />
+                </div>
+              </div>
+            ) : (
             <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-6 items-start">
 
-              {/* ── LEFT: Upload + Config ── */}
+              {/* ── LEFT: Dateien + Config ── */}
               <div className="space-y-4">
-                {/* Upload / File list card */}
+                {/* File list card */}
                 <div className="bg-card border border-border rounded-2xl p-5">
-                  {parts.length <= 1 && !parts[0]?.fileName ? (
-                    <>
-                      <p className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground mb-2 font-semibold">Datei hochladen</p>
-                      <div
-                        className={`border-2 border-dashed rounded-xl p-8 text-center cursor-pointer transition-all duration-200 ${dragOver ? "border-primary bg-primary/5 scale-[1.01]" : "border-border hover:border-primary/50 bg-muted/20"}`}
-                        onClick={() => fileInputRef.current?.click()}
-                        onDragOver={(e) => { e.preventDefault(); setDragOver(true); }}
-                        onDragLeave={() => setDragOver(false)}
-                        onDrop={(e) => { e.preventDefault(); setDragOver(false); handleFiles(e.dataTransfer.files); }}
-                      >
-                        <Upload className="w-7 h-7 mx-auto mb-2 text-muted-foreground" />
-                        <p className="text-sm font-medium">STL-Dateien hierher ziehen oder klicken</p>
-                        <p className="text-xs text-muted-foreground mt-1">Binär & ASCII · max. 100 MB · Mehrere Dateien möglich</p>
-                      </div>
-                      <p className="text-[11px] text-muted-foreground text-center mt-2">
-                        Ohne Datei wird mit einem Standardwürfel (50 × 50 × 50 mm) kalkuliert.
-                      </p>
-                    </>
-                  ) : (
                     <div>
                       <div className="flex justify-between items-center mb-2">
                         <p className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground font-semibold">
@@ -412,11 +397,9 @@ const Kostenrechner = () => {
                             </div>
                             <Badge variant="secondary" className="text-[11px] font-semibold">{p.qty}×</Badge>
                             <span className="text-sm font-bold min-w-[65px] text-right">{fmt(r.finalNet)}</span>
-                            {parts.length > 1 && (
-                              <button className="p-1 rounded-md hover:bg-destructive/10 text-muted-foreground hover:text-destructive transition-colors" onClick={(e) => { e.stopPropagation(); removePart(i); }}>
-                                <Trash2 className="w-3.5 h-3.5" />
-                              </button>
-                            )}
+                            <button className="p-1 rounded-md hover:bg-destructive/10 text-muted-foreground hover:text-destructive transition-colors" onClick={(e) => { e.stopPropagation(); removePart(i); }}>
+                              <Trash2 className="w-3.5 h-3.5" />
+                            </button>
                           </div>
                         );
                       })}
@@ -432,14 +415,10 @@ const Kostenrechner = () => {
 
                       <div className="flex gap-2 mt-3">
                         <Button variant="outline" size="sm" onClick={() => fileInputRef.current?.click()} className="text-xs rounded-lg">
-                          <Plus className="w-3 h-3 mr-1" /> STL hochladen
-                        </Button>
-                        <Button variant="outline" size="sm" onClick={addEmptyPart} className="text-xs rounded-lg">
-                          <Plus className="w-3 h-3 mr-1" /> Ohne Datei
+                          <Plus className="w-3 h-3 mr-1" /> Weitere STL hochladen
                         </Button>
                       </div>
                     </div>
-                  )}
                   <input ref={fileInputRef} type="file" accept=".stl" multiple className="hidden" onChange={(e) => e.target.files && handleFiles(e.target.files)} />
                 </div>
 
@@ -462,14 +441,16 @@ const Kostenrechner = () => {
                   <p className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground mb-3 font-semibold">
                     Material{parts.length > 1 ? `: ${current.fileName || `Teil ${activePart + 1}`}` : ""}
                   </p>
-                  <div className="grid grid-cols-2 gap-1.5 mb-5">
-                    {cfg.materialKeys.map(key => {
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-1.5 mb-2">
+                    {cfg.materialKeys
+                      .filter(key => showAllMaterials || HAUPT_MATERIALIEN.includes(key) || current.materialKey === key)
+                      .map(key => {
                       const meta = MATERIAL_META[key] ?? { desc: "", color: "text-gray-600", colorBg: "bg-gray-500" };
                       const sel = current.materialKey === key;
                       return (
                         <button
                           key={key}
-                          className={`text-left p-3 rounded-xl border transition-all duration-150 ${sel ? "border-primary bg-primary/5 ring-1 ring-primary" : "border-border hover:border-muted-foreground/30 hover:shadow-sm"}`}
+                          className={`text-left p-2.5 rounded-xl border transition-all duration-150 ${sel ? "border-primary bg-primary/5 ring-1 ring-primary" : "border-border hover:border-muted-foreground/30 hover:shadow-sm"}`}
                           onClick={() => updatePart("materialKey", key)}
                         >
                           <div className="flex items-center gap-1.5 mb-0.5">
@@ -477,11 +458,17 @@ const Kostenrechner = () => {
                             <span className="text-sm font-medium">{cfg.materialLabels[key] ?? key}</span>
                           </div>
                           <p className="text-[11px] text-muted-foreground leading-snug">{meta.desc}</p>
-                          <p className="text-[11px] text-muted-foreground/60 mt-0.5">ab {cfg.pricePerKg[key]} €/kg</p>
                         </button>
                       );
                     })}
                   </div>
+                  <button
+                    className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors mb-5"
+                    onClick={() => setShowAllMaterials(!showAllMaterials)}
+                  >
+                    <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${showAllMaterials ? "rotate-180" : ""}`} />
+                    {showAllMaterials ? "Weniger Materialien anzeigen" : `Alle ${cfg.materialKeys.length} Materialien anzeigen`}
+                  </button>
 
                   {/* Quality */}
                   <p className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground mb-2 font-semibold">Qualitätsstufe</p>
@@ -549,40 +536,33 @@ const Kostenrechner = () => {
                 <div className="bg-card border-2 border-primary/20 rounded-2xl p-5 shadow-lg shadow-primary/5">
                   <p className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground font-semibold">Ihr Richtpreis</p>
 
+                  {/* v2 (16.09.): keine Kalkulations-Interna mehr (Material-Gramm, Druckzeit,
+                      Setup-Pauschale) — nur Richtpreis, Teileliste und Mengenvorteil */}
                   <div className="text-center py-6">
                     <p className="text-5xl font-bold tracking-tight text-primary">{fmt(totalNet)}</p>
                     <p className="text-xs text-muted-foreground mt-2">
-                      {totalQty > 1 ? `${totalQty} Teile · ` : ""}exkl. MwSt. · Druckzeit ~{fmtMin(totalPrintTime)}
+                      {totalQty} {totalQty === 1 ? "Teil" : "Teile"} · Richtpreis exkl. MwSt.
                     </p>
                   </div>
 
-                  <Separator className="mb-3" />
-
-                  {/* Breakdown */}
                   <div className="space-y-1 mb-4">
-                    {parts.length === 1 ? (
+                    {parts.length > 1 && (
                       <>
-                        <div className="flex justify-between text-sm text-muted-foreground"><span>Material ({current.materialKey}, {Math.round(currentResult.materialWeightG)} g)</span><span>{fmt(currentResult.materialCost)}</span></div>
-                        <div className="flex justify-between text-sm text-muted-foreground"><span>Druckzeit ({fmtMin(currentResult.printTimeMin)})</span><span>{fmt(currentResult.printCost)}</span></div>
-                        {currentResult.sizeFactor > 1 && <div className="flex justify-between text-sm text-muted-foreground"><span>Größenzuschlag (×{currentResult.sizeFactor.toFixed(2)})</span><span>{fmt((currentResult.scaledUnitCost - currentResult.materialCost - currentResult.printCost - currentResult.setupCost))}</span></div>}
-                        <div className="flex justify-between text-sm text-muted-foreground"><span>Setup-Pauschale</span><span>{fmt(currentResult.setupCost)}</span></div>
-                        {current.qty > 1 && <div className="flex justify-between text-sm text-muted-foreground"><span>× {current.qty} Stück</span><span>{fmt(currentResult.subtotalNet)}</span></div>}
-                        {currentResult.discountRate > 0 && <div className="flex justify-between text-sm text-emerald-600 font-medium"><span>Mengenvorteil ({(currentResult.discountRate * 100).toFixed(0)} %)</span><span>− {fmt(currentResult.quantityDiscount)}</span></div>}
-                        {currentResult.surcharge > 0 && <div className="flex justify-between text-sm text-muted-foreground"><span>Mindermengenzuschlag</span><span>{fmt(currentResult.surcharge)}</span></div>}
+                        {parts.map((p, i) => (
+                          <div key={p.id} className="flex justify-between text-sm text-muted-foreground">
+                            <span className="truncate max-w-[180px]">{p.fileName?.replace(/\.stl$/i, "") || `Teil ${i + 1}`} ({p.qty}×)</span>
+                            <span className="font-medium">{fmt(partResults[i].finalNet)}</span>
+                          </div>
+                        ))}
+                        <Separator className="my-2" />
                       </>
-                    ) : (
-                      parts.map((p, i) => (
-                        <div key={p.id} className="flex justify-between text-sm text-muted-foreground">
-                          <span className="truncate max-w-[180px]">{p.fileName?.replace(/\.stl$/i, "") || `Teil ${i + 1}`} ({p.qty}×)</span>
-                          <span className="font-medium">{fmt(partResults[i].finalNet)}</span>
-                        </div>
-                      ))
                     )}
-                    <Separator className="my-2" />
-                    <div className="flex justify-between text-base font-bold">
-                      <span>Richtpreis {totalQty > 1 ? `(${totalQty} Teile)` : ""}</span>
-                      <span className="text-primary">{fmt(totalNet)}</span>
-                    </div>
+                    {partResults.some(r => r.discountRate > 0) && (
+                      <div className="flex justify-between text-sm text-emerald-600 font-medium">
+                        <span>Mengenvorteil aktiv</span>
+                        <span>− {fmt(partResults.reduce((s, r) => s + r.quantityDiscount, 0))}</span>
+                      </div>
+                    )}
                   </div>
 
                   {/* CTA / Form */}
@@ -592,32 +572,63 @@ const Kostenrechner = () => {
                       <p className="text-sm font-bold text-emerald-700 dark:text-emerald-400">Anfrage gesendet!</p>
                       <p className="text-xs text-emerald-600/80 mt-1">Wir melden uns innerhalb von 6 Stunden mit Ihrem persönlichen Festpreisangebot.</p>
                     </div>
-                  ) : showContactForm ? (
+                  ) : (
+                    /* v2 (16.09.): kein Zwei-Stufen-Klick mehr — Formular direkt sichtbar,
+                       nur Name + E-Mail Pflicht, Rest hinter Aufklappern */
                     <div className="space-y-2">
                       <Input ref={kfNameRef} placeholder="Name *" value={contactForm.name} onChange={(e) => setContactForm(f => ({ ...f, name: e.target.value }))} />
                       <Input ref={kfEmailRef} placeholder="E-Mail *" type="email" value={contactForm.email} onChange={(e) => setContactForm(f => ({ ...f, email: e.target.value }))} />
-                      <Input ref={kfCompanyRef} placeholder="Firma (optional)" value={contactForm.company} onChange={(e) => setContactForm(f => ({ ...f, company: e.target.value }))} />
-                      <Input ref={kfPhoneRef} placeholder="Telefon (optional)" value={contactForm.phone} onChange={(e) => setContactForm(f => ({ ...f, phone: e.target.value }))} />
-                      <Textarea ref={kfMessageRef} placeholder="Anmerkungen zum Projekt (optional)" value={contactForm.message} onChange={(e) => setContactForm(f => ({ ...f, message: e.target.value }))} className="min-h-[60px]" />
+                      {showMoreFields ? (
+                        <>
+                          <Input ref={kfCompanyRef} placeholder="Firma (optional)" value={contactForm.company} onChange={(e) => setContactForm(f => ({ ...f, company: e.target.value }))} />
+                          <Input ref={kfPhoneRef} placeholder="Telefon (optional)" value={contactForm.phone} onChange={(e) => setContactForm(f => ({ ...f, phone: e.target.value }))} />
+                          <Textarea ref={kfMessageRef} placeholder="Anmerkungen zum Projekt (optional)" value={contactForm.message} onChange={(e) => setContactForm(f => ({ ...f, message: e.target.value }))} className="min-h-[60px]" />
+                        </>
+                      ) : (
+                        <button className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors" onClick={() => setShowMoreFields(true)}>
+                          <ChevronDown className="w-3.5 h-3.5" /> Firma, Telefon oder Anmerkung ergänzen
+                        </button>
+                      )}
+                      {(() => {
+                        const r = pruefeRabatt(contactForm.email, contactForm.rabattcode);
+                        if (r.berechtigt) {
+                          return (
+                            <p className="text-sm text-green-700">
+                              Studentenrabatt {r.prozent} % wird berücksichtigt
+                              {r.grund === "mailadresse"
+                                ? " (bestätigt über deine Hochschul-Mailadresse)"
+                                : ` (${r.hochschule})`}.
+                            </p>
+                          );
+                        }
+                        if (showRabatt) {
+                          return (
+                            <>
+                              <Input
+                                placeholder="Studierenden-Rabattcode"
+                                value={contactForm.rabattcode}
+                                onChange={(e) => setContactForm(f => ({ ...f, rabattcode: e.target.value }))}
+                              />
+                              {contactForm.rabattcode.trim() && (
+                                <p className="text-xs text-muted-foreground">Code unbekannt. Mit einer Hochschul-Mailadresse geht es auch ohne Code.</p>
+                              )}
+                            </>
+                          );
+                        }
+                        return (
+                          <button className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors" onClick={() => setShowRabatt(true)}>
+                            <ChevronDown className="w-3.5 h-3.5" /> Studierende? {RABATT_PROZENT} % Rabatt einlösen
+                          </button>
+                        );
+                      })()}
                       <Button className="w-full rounded-xl py-5" onClick={handleSubmit} disabled={isSubmitting}>
                         <Send className="w-4 h-4 mr-2" />
                         {isSubmitting ? "Wird gesendet..." : "Unverbindliches Angebot anfordern"}
                       </Button>
                       <p className="text-[11px] text-muted-foreground text-center leading-relaxed">
-                        Mit dem Absenden werden Ihre Angaben und die hochgeladenen STL-Dateien sicher an uns übertragen. Details in der <a href="/datenschutz" className="underline hover:text-foreground">Datenschutzerklärung</a>.
+                        Persönliche Prüfung, Antwort in 6 h, kein Account nötig. Angaben und STL-Dateien werden sicher übertragen, Details in der <a href="/datenschutz" className="underline hover:text-foreground">Datenschutzerklärung</a>.
                       </p>
-                      <button className="block mx-auto text-xs text-muted-foreground hover:text-foreground mt-1" onClick={() => setShowContactForm(false)}>Zurück</button>
                     </div>
-                  ) : (
-                    <>
-                      <Button className="w-full rounded-xl py-5 text-base" size="lg" onClick={() => setShowContactForm(true)}>
-                        <Send className="w-4 h-4 mr-2" />
-                        Unverbindliches Angebot anfordern
-                      </Button>
-                      <p className="text-center text-[11px] text-muted-foreground mt-2">
-                        Persönliche Prüfung, Antwort in 6 h, kein Account nötig
-                      </p>
-                    </>
                   )}
 
                   {/* Trust */}
@@ -638,6 +649,7 @@ const Kostenrechner = () => {
                 </div>
               </div>
             </div>
+            )}
           </div>
         </section>
 
