@@ -55,6 +55,15 @@ const MATERIAL_META: Record<string, { desc: string; color: string; colorBg: stri
 /** Die drei Materialien, die real fast jede Anfrage abdecken — Rest hinter Aufklapper (16.09.) */
 const HAUPT_MATERIALIEN = ["PLA", "PETG", "ASA"];
 
+/** Echte Google-Rezensionen (aus GoogleReviewsSection-Bestand, 5,0★).
+ *  Silvio T. bewusst ausgelassen („exakter Clone") — WKO-Außenwirkung. */
+const REVIEW_ZITATE = [
+  { text: "Die Qualität ist erstklassig, jedes Detail wird sehr detailgetreu und sauber umgesetzt.", autor: "Christian Steller" },
+  { text: "Sehr schnelle Abwicklung, Kommunikation war ausgezeichnet.", autor: "Klaus F." },
+  { text: "Mein Auftrag wurde schnell bearbeitet, Top Qualität, kann ich nur weiterempfehlen.", autor: "Hannah E." },
+  { text: "Antwortet schnell, Preis-Leistung extrem fair. Empfehlenswert!", autor: "Simone G." },
+];
+
 /** Rotierende Beispiele in der Dropzone — zeigt, was hier gedruckt wird (16.09.) */
 const DRUCK_BEISPIELE = [
   "ein Architekturmodell 1:500",
@@ -167,6 +176,12 @@ const Kostenrechner = () => {
   const [beispiel, setBeispiel] = useState(0);
   useEffect(() => {
     const t = setInterval(() => setBeispiel((b) => (b + 1) % DRUCK_BEISPIELE.length), 2400);
+    return () => clearInterval(t);
+  }, []);
+  // Rotierendes Google-Zitat unter dem Werkstatt-Band
+  const [zitat, setZitat] = useState(0);
+  useEffect(() => {
+    const t = setInterval(() => setZitat((z) => (z + 1) % REVIEW_ZITATE.length), 5000);
     return () => clearInterval(t);
   }, []);
   // Autofill-Fallback (siehe Contact.tsx): Browser füllen Felder teils ohne React-Events.
@@ -518,6 +533,18 @@ const Kostenrechner = () => {
                   <div className="mt-10 -mx-4 md:mx-0">
                     <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-foreground/30 text-center mb-4">Frisch aus der Werkstatt</p>
                     <FotoMarquee />
+                  </div>
+                  {/* Rotierendes Google-Zitat (echte Rezensionen, 5,0★ aus 35) */}
+                  <div key={zitat} className="animate-fade-slide-in mt-8 text-center px-4">
+                    <div className="flex justify-center gap-0.5 mb-2">
+                      {[1, 2, 3, 4, 5].map((i) => <Star key={i} className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />)}
+                    </div>
+                    <p className="text-sm md:text-base text-foreground/80 italic max-w-xl mx-auto">
+                      &bdquo;{REVIEW_ZITATE[zitat].text}&ldquo;
+                    </p>
+                    <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/30 mt-2">
+                      {REVIEW_ZITATE[zitat].autor} · Google-Rezension
+                    </p>
                   </div>
                 </AnimatedSection>
               </div>
