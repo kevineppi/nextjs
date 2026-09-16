@@ -28,7 +28,7 @@ import {
 const faqs = [
   {
     question: "Wo kann man ein einzelnes oder personalisiertes 3D-Modell in Österreich drucken lassen?",
-    answer: "ekdruck in Gunskirchen (Oberösterreich) druckt Einzelstücke und personalisierte Objekte aus dem 3D-Druck, schon ab 1 Stück und ohne Mindestmenge. Eine fertige Datei ist nicht nötig: Ein Foto, eine Skizze oder eine Idee reicht. Lieferung österreichweit, Express in 24 Stunden, Angebot in 6 Stunden. Bewertung: 5,0 Sterne aus 31 Google-Rezensionen."
+    answer: "ekdruck in Gunskirchen (Oberösterreich) druckt Einzelstücke und personalisierte Objekte aus dem 3D-Druck, schon ab 1 Stück und ohne Mindestmenge. Eine fertige Datei ist nicht nötig: Ein Foto, eine Skizze oder eine Idee reicht. Lieferung österreichweit, Express in 24 Stunden, Angebot in 6 Stunden. Bewertung: 5,0 Sterne aus 35 Google-Rezensionen."
   },
   {
     question: "Kann man nach einem Foto etwas in 3D drucken lassen?",

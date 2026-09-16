@@ -243,7 +243,7 @@ const ArchitekturmodelleAbo = () => {
             </div>
 
             <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm text-muted-foreground">
-              <div className="flex items-center gap-2"><Star className="h-4 w-4 text-primary fill-primary" /> 5.0 Google (31 Rezensionen)</div>
+              <div className="flex items-center gap-2"><Star className="h-4 w-4 text-primary fill-primary" /> 5.0 Google (35 Rezensionen)</div>
               <div className="flex items-center gap-2"><Zap className="h-4 w-4 text-primary" /> Lieferung in 48 Stunden</div>
               <div className="flex items-center gap-2"><Unlock className="h-4 w-4 text-primary" /> Keine Mindestlaufzeit</div>
               <div className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" /> Made in Austria</div>

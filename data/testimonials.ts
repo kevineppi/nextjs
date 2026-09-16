@@ -8,7 +8,7 @@
  *   K3 · Customer-Logo-Strip mit "public-mention OK"-Kunden.
  *
  * WICHTIG: Erste Wave Quotes sind PLATZHALTER für die echten Reviews.
- *   Kevin muss die 31 Google-Reviews durchschauen, die 3-5 stärksten
+ *   Kevin muss die 35 Google-Reviews durchschauen, die 3-5 stärksten
  *   identifizieren, ggf. Reviewer-Erlaubnis einholen für Namen-Nennung,
  *   dann hier ersetzen.
  *

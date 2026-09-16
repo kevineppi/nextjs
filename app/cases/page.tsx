@@ -68,7 +68,7 @@ export default function CasesPage() {
               <div className="flex flex-wrap gap-3 items-center">
                 <div className="flex items-center gap-2 px-4 py-2 rounded-full border-2 border-border bg-muted/30">
                   <Star className="w-4 h-4 text-primary fill-primary" />
-                  <span className="text-sm font-bold">★5,0 · 31 Bewertungen</span>
+                  <span className="text-sm font-bold">★5,0 · 35 Bewertungen</span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-2 rounded-full border-2 border-border bg-muted/30">
                   <Building2 className="w-4 h-4 text-primary" />

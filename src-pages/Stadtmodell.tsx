@@ -92,7 +92,7 @@ const Stadtmodell = () => (
                 { v: "1:500", l: "Maßstab", s: "bis 1:1000" },
                 { v: "XXL", l: "Größe", s: "segmentiert" },
                 { v: "6h", l: "Angebot", s: "Festpreis" },
-                { v: "5,0★", l: "Google", s: "31 Bewertungen" },
+                { v: "5,0★", l: "Google", s: "35 Bewertungen" },
               ].map((s, i) => (
                 <div key={s.l} className={`relative py-8 md:py-10 px-2 md:px-6 group ${i > 0 ? "border-l border-border" : ""} ${i >= 2 ? "border-t md:border-t-0" : ""}`}>
                   <p className="mono text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">{s.v}</p>

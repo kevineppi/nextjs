@@ -108,7 +108,7 @@ const MessemodellRegion = () => {
     "url": `https://www.ek-druck.at/messemodelle/${regionData.slug}`,
     "telephone": "+43 676 5517197",
     "address": { "@type": "PostalAddress", "streetAddress": "Negrellistraße 15", "addressLocality": "Gunskirchen", "postalCode": "4623", "addressRegion": "Oberösterreich", "addressCountry": "AT" },
-    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "31", "bestRating": "5", "worstRating": "1" }
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "35", "bestRating": "5", "worstRating": "1" }
   };
 
   const breadcrumbs = [

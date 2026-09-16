@@ -10,7 +10,7 @@ import {
 
 const TITLE = 'Städtebaumodell & Stadtmodell 3D-Druck ★5,0 | ekdruck'
 const DESCRIPTION =
-  'Stadt- und Städtebaumodelle drucken lassen, aufgebaut auf amtlichen Kartendaten. Maßstab 1:500-1:1000, segmentiert bis XXL. Für Gemeinde, Bauträger, Planung. Angebot in 6h. ★5,0 (31).'
+  'Stadt- und Städtebaumodelle drucken lassen, aufgebaut auf amtlichen Kartendaten. Maßstab 1:500-1:1000, segmentiert bis XXL. Für Gemeinde, Bauträger, Planung. Angebot in 6h. ★5,0 (35).'
 
 export const metadata: Metadata = {
   title: TITLE,

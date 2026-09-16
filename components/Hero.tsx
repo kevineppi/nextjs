@@ -187,7 +187,7 @@ const Hero = () => {
               { val: "5.0", label: "Google Rating" },
               { val: "24h", label: "Express" },
               { val: "€20", label: "Ab Preis" },
-              { val: "31", label: "Reviews" },
+              { val: "35", label: "Reviews" },
             ].map(({ val, label }) => (
               <div key={label}>
                 <p className="text-4xl md:text-5xl font-bold text-foreground leading-none tracking-tight mono">{val}</p>

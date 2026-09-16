@@ -100,7 +100,7 @@ const GoogleReviewsSection = () => {
         setData({
           name: "ekdruck e.U.",
           rating: 5.0,
-          total: 31,
+          total: 35,
           reviews: FALLBACK_REVIEWS,
         });
       } finally {

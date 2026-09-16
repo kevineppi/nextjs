@@ -26,7 +26,7 @@ export const swissMesseData: Record<string, SwissMesseData> = {
     title: 'Messemodelle für Zürich',
     h1Title: 'Messemodelle Zürich · 3D-Druck Express für Schweizer Messen',
     metaTitle: 'Messemodelle Zürich | 3D-Druck Express · ab €30 | ekdruck',
-    metaDescription: 'Messemodelle & Exponate für Messen in Zürich drucken lassen. Express-Fertigung, bruchsichere Lieferung inkl. Zollabwicklung. Ab €30 · ★5,0 (31 Bewertungen).',
+    metaDescription: 'Messemodelle & Exponate für Messen in Zürich drucken lassen. Express-Fertigung, bruchsichere Lieferung inkl. Zollabwicklung. Ab €30 · ★5,0 (35 Bewertungen).',
     heroSubtitle: 'Zürich ist das wirtschaftliche Zentrum der Schweiz mit über 40 jährlichen Fachmessen am Messezentrum Zürich, im Kongresshaus und in der Halle 550. Wir liefern Ihre Ausstellungsmodelle, Exponate und Präsentationsmodelle direkt zum Messegelände · inklusive vollständiger Zollabwicklung.',
     deliveryTime: '3-5 Werktage',
     deliveryNote: 'Lieferung ab Gunskirchen (AT) via A1/A14 Grenzübergang St. Margrethen. Zolldokumentation durch uns.',

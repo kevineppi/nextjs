@@ -18,7 +18,7 @@ const UeberUns = () => {
     <div className="min-h-screen bg-background text-foreground">
       <SEOHead
         title="Über uns, Kevin Eppensteiner, ekdruck e.U. aus Gunskirchen | ekdruck"
-        description="Wer hinter ekdruck steht: Kevin Eppensteiner, Inhaber. Spezialisierte FDM-Werkstatt in Gunskirchen, OÖ. Architektur- und Messemodelle, Großformat-Fertigung bis 2 m. ★5,0 (31 Bewertungen)."
+        description="Wer hinter ekdruck steht: Kevin Eppensteiner, Inhaber. Spezialisierte FDM-Werkstatt in Gunskirchen, OÖ. Architektur- und Messemodelle, Großformat-Fertigung bis 2 m. ★5,0 (35 Bewertungen)."
         keywords="ekdruck über uns, kevin eppensteiner, ekdruck e.u., 3d druck gunskirchen, 3d druck inhaber oberösterreich, 3d druck werkstatt"
         path="/ueber-uns"
       />

@@ -17,7 +17,7 @@ import {
 
 const TITLE = 'Designprototyp & Anschauungsmodell 3D-Druck ★5,0 | ekdruck'
 const DESCRIPTION =
-  'Designprototyp und Anschauungsmodell aus dem 3D-Druck: Form, Optik und Haptik am echten Modell prüfen. Ab 1 Stück, Angebot in 6h, Express 24h in Österreich. ★5,0 (31).'
+  'Designprototyp und Anschauungsmodell aus dem 3D-Druck: Form, Optik und Haptik am echten Modell prüfen. Ab 1 Stück, Angebot in 6h, Express 24h in Österreich. ★5,0 (35).'
 
 export const metadata: Metadata = {
   title: TITLE,

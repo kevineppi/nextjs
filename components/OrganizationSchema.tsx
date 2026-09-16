@@ -59,8 +59,8 @@ const OrganizationSchema = () => {
       ratingValue: '5.0',
       bestRating: '5',
       worstRating: '1',
-      reviewCount: '31',
-      ratingCount: '31',
+      reviewCount: '35',
+      ratingCount: '35',
     },
     foundingDate: '2024',
     knowsAbout: [

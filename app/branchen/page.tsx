@@ -206,7 +206,7 @@ export default function BranchenPage() {
               <div className="flex flex-wrap gap-3 items-center mb-12">
                 <div className="flex items-center gap-2 px-4 py-2 rounded-full border-2 border-border bg-background/80 backdrop-blur-sm hover:border-primary/40 transition-colors">
                   <Star className="w-4 h-4 text-primary fill-primary" />
-                  <span className="text-sm font-bold">★5,0 · 31 Bewertungen</span>
+                  <span className="text-sm font-bold">★5,0 · 35 Bewertungen</span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-2 rounded-full border-2 border-border bg-background/80 backdrop-blur-sm hover:border-primary/40 transition-colors">
                   <Building2 className="w-4 h-4 text-primary" />
@@ -593,7 +593,7 @@ export default function BranchenPage() {
                   </div>
                   <div className="p-6 bg-card rounded-2xl border border-border hover:border-primary/40 transition-colors">
                     <div className="text-3xl font-bold text-primary mb-1">★5,0</div>
-                    <div className="text-sm text-muted-foreground">31 Google-Bewertungen</div>
+                    <div className="text-sm text-muted-foreground">35 Google-Bewertungen</div>
                   </div>
                   <div className="p-6 bg-card rounded-2xl border border-border hover:border-primary/40 transition-colors">
                     <div className="text-3xl font-bold text-primary mb-1">3</div>

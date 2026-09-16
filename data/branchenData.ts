@@ -72,7 +72,7 @@ const maschinenbau: Branche = {
   slug: 'maschinenbau',
   metaTitle: 'Maschinenbau-Messemodell ★5,0 · CNC-Fräse als Exponat',
   metaDescription:
-    '8-Tonnen-CNC-Fräse als 30cm-Modell? Maschinenbau-Messemodelle in 24-48h: maßstabsgetreu, segmentiert, bruchsicher. ★5,0 (31 Reviews).',
+    '8-Tonnen-CNC-Fräse als 30cm-Modell? Maschinenbau-Messemodelle in 24-48h: maßstabsgetreu, segmentiert, bruchsicher. ★5,0 (35 Reviews).',
   eyebrow: 'Branche · Maschinenbau & Werkzeugbau',
   h1: 'Maschinenbau-Messemodell aus dem 3D-Druck · Ihre 8-Tonnen-Maschine als Tisch-Exponat',
   subline:
@@ -230,7 +230,7 @@ const schiffbau: Branche = {
   slug: 'schiffbau',
   metaTitle: 'Schiffbau-Messemodell ★5,0 · Antrieb·Propeller·Yacht',
   metaDescription:
-    'Schiffsantrieb, Schraubantrieb, Marine-Komponente zur Messe · ohne 8-Tonnen-Kran. 3D-Druck 1:10-1:50, segmentiert. ★5,0 (31 Reviews).',
+    'Schiffsantrieb, Schraubantrieb, Marine-Komponente zur Messe · ohne 8-Tonnen-Kran. 3D-Druck 1:10-1:50, segmentiert. ★5,0 (35 Reviews).',
   eyebrow: 'Branche · Schiffbau, Marine & Werften',
   h1: 'Schiffbau-Messemodell aus dem 3D-Druck · Antriebe, Propeller, Yacht-Visualisierung',
   subline:
@@ -387,7 +387,7 @@ const energietechnik: Branche = {
   slug: 'energietechnik',
   metaTitle: 'Energietechnik-Messemodell ★5,0 · Wind·Trafo·Kraftwerk',
   metaDescription:
-    'Windturbine, PV-Anlage, Trafostation, Kraftwerks-Komponente als Messemodell. 3D-Druck maßstabsgetreu in 24-48h. ★5,0 (31 Reviews). STL hochladen →',
+    'Windturbine, PV-Anlage, Trafostation, Kraftwerks-Komponente als Messemodell. 3D-Druck maßstabsgetreu in 24-48h. ★5,0 (35 Reviews). STL hochladen →',
   eyebrow: 'Branche · Energietechnik & Erneuerbare',
   h1: 'Energietechnik-Messemodell aus dem 3D-Druck · Windturbinen, Trafostationen, Kraftwerks-Komponenten',
   subline:
@@ -538,7 +538,7 @@ const automotive: Branche = {
   slug: 'automotive',
   metaTitle: 'Automotive-Messemodell 3D-Druck ★5,0 · Fahrzeug · Mobility',
   metaDescription:
-    'Fahrzeugteil, E-Antrieb, Karosseriedetail, Mobility-Studie als Messemodell. 3D-Druck Maßstab 1:1-1:10, lackierbar. ★5,0 (31 Reviews) →',
+    'Fahrzeugteil, E-Antrieb, Karosseriedetail, Mobility-Studie als Messemodell. 3D-Druck Maßstab 1:1-1:10, lackierbar. ★5,0 (35 Reviews) →',
   eyebrow: 'Branche · Automotive & Mobility',
   h1: 'Automotive-Messemodell aus dem 3D-Druck · Modelle, E-Antriebe, Mobility-Konzepte',
   subline:
@@ -686,7 +686,7 @@ const anlagenbau: Branche = {
   slug: 'anlagenbau',
   metaTitle: 'Anlagenbau-Messemodell ★5,0 · Pumpe·Ventil·Reaktor',
   metaDescription:
-    'Pumpen, Ventile, Reaktoren, Verfahrenstechnik-Anlagen als Messemodell. 3D-Druck Maßstab 1:5-1:50, segmentierbar, lackierbar. ★5,0 (31 Reviews) →',
+    'Pumpen, Ventile, Reaktoren, Verfahrenstechnik-Anlagen als Messemodell. 3D-Druck Maßstab 1:5-1:50, segmentierbar, lackierbar. ★5,0 (35 Reviews) →',
   eyebrow: 'Branche · Anlagenbau & Verfahrenstechnik',
   h1: 'Anlagenbau-Messemodell aus dem 3D-Druck · Pumpen, Ventile, Reaktoren, Komplettanlagen',
   subline:
@@ -837,7 +837,7 @@ const elektrotechnik: Branche = {
   slug: 'elektrotechnik',
   metaTitle: 'Elektrotechnik-Messemodell 3D-Druck · Trafo · Schaltschrank',
   metaDescription:
-    'Schaltschrank, Trafo, Schaltanlage, MV-Komponente als Messemodell. 3D-Druck Maßstab 1:1-1:10, schnittfähig, lackierbar. ★5,0 (31 Reviews) →',
+    'Schaltschrank, Trafo, Schaltanlage, MV-Komponente als Messemodell. 3D-Druck Maßstab 1:1-1:10, schnittfähig, lackierbar. ★5,0 (35 Reviews) →',
   eyebrow: 'Branche · Elektrotechnik & Messwandler',
   h1: 'Elektrotechnik-Messemodell aus dem 3D-Druck · Schaltschränke, Trafos, MV-Komponenten',
   subline:

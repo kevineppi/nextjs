@@ -276,7 +276,7 @@ const Firmenkunden = () => {
     <>
       <SEOHead
         title="3D-Druck B2B Österreich ★5,0 – Rahmenverträge · NDA · Angebot in 6h"
-        description="3D-Druck für Unternehmen ✓ Mengenrabatt ab 5 Stück ✓ NDA möglich ✓ Rahmenverträge ✓ Express 24h ✓ Angebot in 6h. ★ 5,0 (31 Bewertungen) | ekdruck"
+        description="3D-Druck für Unternehmen ✓ Mengenrabatt ab 5 Stück ✓ NDA möglich ✓ Rahmenverträge ✓ Express 24h ✓ Angebot in 6h. ★ 5,0 (35 Bewertungen) | ekdruck"
         keywords="3d druck service österreich, 3d druck firma österreich, professioneller 3d druck b2b, 3d druck dienstleister österreich, 3d druck anbieter firma, 3d druck unternehmen österreich, b2b 3d druck service"
         path="/firmenkunden"
       />

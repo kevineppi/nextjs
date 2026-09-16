@@ -155,7 +155,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
               <div className="flex flex-wrap gap-4 mb-10 items-center">
                 <div className="flex items-center gap-2 px-4 py-2 rounded-full border-2 border-border bg-muted/30">
                   <Star className="w-4 h-4 text-primary fill-primary" />
-                  <span className="text-sm font-bold">★5,0 · 31 Bewertungen</span>
+                  <span className="text-sm font-bold">★5,0 · 35 Bewertungen</span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-2 rounded-full border-2 border-border bg-muted/30">
                   <Clock className="w-4 h-4 text-primary" />
@@ -631,7 +631,7 @@ const BranchenLanding = ({ branche }: BranchenLandingProps) => {
                 <div className="text-center">
                   <p className="mono text-2xl md:text-3xl font-bold text-primary leading-none">★5,0</p>
                   <p className="mono text-[9px] text-background/60 mt-2 font-bold uppercase tracking-[0.2em]">
-                    31 Google-Reviews
+                    35 Google-Reviews
                   </p>
                 </div>
                 <div className="text-center">

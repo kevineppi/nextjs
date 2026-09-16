@@ -221,7 +221,7 @@ const getSchemaData = (
           "ratingValue": "5.0",
           "bestRating": "5",
           "worstRating": "1",
-          "reviewCount": "31"
+          "reviewCount": "35"
         }
       };
 

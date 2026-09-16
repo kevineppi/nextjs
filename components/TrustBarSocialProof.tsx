@@ -10,7 +10,7 @@ const TrustBarSocialProof = () => {
     {
       icon: Star,
       label: "5.0 ★ Google",
-      sublabel: "31 Bewertungen",
+      sublabel: "35 Bewertungen",
       highlight: true,
     },
     {

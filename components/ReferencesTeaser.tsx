@@ -253,7 +253,7 @@ const ReferencesTeaser = () => {
               {[
                 { val: "120+", lbl: "Projekte gesamt" },
                 { val: "50+", lbl: "Messen beliefert" },
-                { val: "5.0 ★", lbl: "Google (31 Bew.)" },
+                { val: "5.0 ★", lbl: "Google (35 Bew.)" },
                 { val: "98%", lbl: "Wiederkehrend" },
               ].map((s, i) => (
                 <div key={s.lbl} className={`py-5 text-center ${i > 0 ? 'border-l border-border' : ''}`}>

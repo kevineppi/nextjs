@@ -10,12 +10,12 @@ import {
 
 export const metadata: Metadata = {
   title: 'Architekturmodell drucken lassen · 3D-Druck ★5,0 | ekdruck',
-  description: 'Architekturmodelle 3D-Druck: Wettbewerb · Bauherr · Stadtmodell. 1:50-1:500. ArchiCAD/Revit/Rhino. Express 24h. Lieferung AT & DE. ★5,0 (31 Bewertungen).',
+  description: 'Architekturmodelle 3D-Druck: Wettbewerb · Bauherr · Stadtmodell. 1:50-1:500. ArchiCAD/Revit/Rhino. Express 24h. Lieferung AT & DE. ★5,0 (35 Bewertungen).',
   keywords: 'architekturmodell, architekturmodell drucken, architekturmodell 3d druck, architekturmodellbau, wettbewerbsmodell, präsentationsmodell architektur, städtebauliches modell, bauherrenmodell, stadtmodell drucken, gebäudemodell, architekturmodell wien, architekturmodell österreich, modellbau architektur, archicad 3d druck, revit modell drucken, sketchup modell drucken, rhino modell, maßstab 1 100, maßstab 1 200, maßstab 1 500, weißes modell, präsentationsmodell',
   alternates: buildDachAlternates('/architekturmodelle'),
   openGraph: {
     title: 'Architekturmodell drucken lassen · 3D-Druck ★5,0 | ekdruck',
-    description: 'Architekturmodelle 3D-Druck: Wettbewerb · Bauherr · Stadtmodell. 1:50-1:500. ArchiCAD/Revit/Rhino. Express 24h. Lieferung AT & DE. ★5,0 (31 Bewertungen).',
+    description: 'Architekturmodelle 3D-Druck: Wettbewerb · Bauherr · Stadtmodell. 1:50-1:500. ArchiCAD/Revit/Rhino. Express 24h. Lieferung AT & DE. ★5,0 (35 Bewertungen).',
     url: 'https://www.ek-druck.at/architekturmodelle',
     siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Architekturmodell drucken lassen · 3D-Druck ★5,0 | ekdruck',
-    description: 'Architekturmodelle 3D-Druck: Wettbewerb · Bauherr · Stadtmodell. Maßstab 1:50-1:500 ✓ Express 24h ✓ Lieferung AT & DE ✓ ★5,0 (31 Bewertungen).',
+    description: 'Architekturmodelle 3D-Druck: Wettbewerb · Bauherr · Stadtmodell. Maßstab 1:50-1:500 ✓ Express 24h ✓ Lieferung AT & DE ✓ ★5,0 (35 Bewertungen).',
   },
   robots: STANDARD_ROBOTS,
 }

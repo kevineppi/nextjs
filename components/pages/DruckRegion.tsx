@@ -95,7 +95,7 @@ const DruckRegion = ({ region }: DruckRegionProps) => {
   const aggregateRatingSchema = {
     "@context": "https://schema.org", "@type": "LocalBusiness", "name": "ekdruck e.U.",
     "url": `https://www.ek-druck.at/3d-druck-${regionData.slug}`,
-    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "31", "bestRating": "5", "worstRating": "1" }
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "35", "bestRating": "5", "worstRating": "1" }
   };
 
   const breadcrumbs = [

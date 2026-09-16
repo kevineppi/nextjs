@@ -170,7 +170,7 @@ const Architekturmodelle = () => (
                 <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">5,0★</p>
                 <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
                   <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Google</p>
-                  <p className="text-[10px] text-muted-foreground hidden md:inline">31 Bewertungen</p>
+                  <p className="text-[10px] text-muted-foreground hidden md:inline">35 Bewertungen</p>
                 </div>
               </div>
             </div>

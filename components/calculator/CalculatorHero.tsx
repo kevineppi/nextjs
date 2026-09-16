@@ -36,7 +36,7 @@ const CalculatorHero = () => (
         </Badge>
         <Badge variant="outline" className="border-border/80 text-foreground gap-1.5 px-3.5 py-2 text-sm bg-background/60 backdrop-blur-sm">
           <Star className="h-3.5 w-3.5 text-primary" />
-          5,0 ★ auf Google (31 Bewertungen)
+          5,0 ★ auf Google (35 Bewertungen)
         </Badge>
       </div>
 

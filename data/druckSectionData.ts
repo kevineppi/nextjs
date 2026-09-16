@@ -122,7 +122,7 @@ const wien: DruckSectionDataSet = {
     ],
   },
   trustSignals: [
-    { value: '5.0', label: 'Google Bewertung', detail: '31 Bewertungen · durchgehend 5 Sterne' },
+    { value: '5.0', label: 'Google Bewertung', detail: '35 Bewertungen · durchgehend 5 Sterne' },
     { value: '50+', label: 'Wiener Startups', detail: 'Nutzen unsere Pitch-Modelle regelmäßig' },
     { value: '48h', label: 'Express-Turnaround', detail: 'Vom CAD zum Modell in unter 2 Tagen' },
     { value: '10+', label: 'Parallele Varianten', detail: 'Bis 10 Designvarianten gleichzeitig' },
@@ -217,7 +217,7 @@ const linz: DruckSectionDataSet = {
     { value: '20 Min', label: 'Von Linz', detail: 'Gunskirchen direkt an der A1 Ausfahrt' },
     { value: '150+', label: 'Linzer Projekte', detail: 'Für Industrie, Kreativ und Bildung' },
     { value: 'Same Day', label: 'Abholung', detail: 'Morgens bestellt, nachmittags abholbereit' },
-    { value: '5.0', label: 'Google Bewertung', detail: '31 Bewertungen von zufriedenen Kunden' },
+    { value: '5.0', label: 'Google Bewertung', detail: '35 Bewertungen von zufriedenen Kunden' },
     { value: '30 Min', label: 'Antwortzeit', detail: 'WhatsApp-Anfragen werden sofort bearbeitet' },
   ],
   priceComparison: {
@@ -397,7 +397,7 @@ const salzburg: DruckSectionDataSet = {
     { value: '30+', label: 'Filialen ausgestattet', detail: 'Identische Ausstattung, einheitliches Design' },
     { value: '3 Tage', label: 'Nachbestellzeit', detail: 'Per E-Mail · digital gespeicherte Aufträge' },
     { value: 'PETG', label: 'Hotel-Material', detail: 'Reinigungsbeständig, farbecht, schlagzäh' },
-    { value: '5.0', label: 'Bewertung', detail: '31 Google-Bewertungen · durchgehend 5 Sterne' },
+    { value: '5.0', label: 'Bewertung', detail: '35 Google-Bewertungen · durchgehend 5 Sterne' },
   ],
   priceComparison: {
     headline: 'Hotelausstattung · transparente Preise',
@@ -754,7 +754,7 @@ const wels: DruckSectionDataSet = {
     { value: '120+', label: 'Welser Projekte', detail: 'Landwirtschaft, Lebensmittel, Handwerk' },
     { value: 'Same Day', label: 'Für Standardteile', detail: 'Vormittags bestellt, nachmittags abholbereit' },
     { value: 'CI-Farben', label: 'In PETG verfügbar', detail: 'Ihre Firmenfarbe für Displays und Halterungen' },
-    { value: '5.0', label: 'Google Bewertung', detail: '31 Bewertungen · 100% zufrieden' },
+    { value: '5.0', label: 'Google Bewertung', detail: '35 Bewertungen · 100% zufrieden' },
   ],
   priceComparison: {
     headline: 'Preise für Welser Betriebe',
@@ -1021,7 +1021,7 @@ const gunskirchen: DruckSectionDataSet = {
     { value: '2-4h', label: 'Sofortfertigung', detail: 'Für einfache Standardteile' },
     { value: '0€', label: 'Vor-Ort-Beratung', detail: 'Gemeinsames Designen am Bildschirm gratis' },
     { value: '100%', label: 'Zufriedenheitsgarantie', detail: 'Nachbesserung vor Ihren Augen' },
-    { value: '5.0', label: 'Google Bewertung', detail: '31 Bewertungen · persönlicher Service' },
+    { value: '5.0', label: 'Google Bewertung', detail: '35 Bewertungen · persönlicher Service' },
   ],
   priceComparison: {
     headline: 'Preise ab Werk · ohne Versandaufschlag',
@@ -1110,7 +1110,7 @@ const oberoesterreich: DruckSectionDataSet = {
     { value: 'Gunskirchen', label: 'Standort in OÖ', detail: 'Persönliche Abholung und Beratung' },
     { value: 'NDA', label: 'Vertraulichkeit', detail: 'Geheimhaltungsvereinbarung möglich' },
     { value: '80/Woche', label: 'Kapazität', detail: 'Für Projektmengen und Mehrfachfertigung' },
-    { value: '5.0', label: 'Google Bewertung', detail: '31 Bewertungen · Top-Service' },
+    { value: '5.0', label: 'Google Bewertung', detail: '35 Bewertungen · Top-Service' },
   ],
   priceComparison: {
     headline: 'Industriepreise für OÖ-Betriebe',
@@ -1196,7 +1196,7 @@ const niederoesterreich: DruckSectionDataSet = {
     { value: 'A1', label: 'Expressroute', detail: 'Über Westautobahn in 1-2 Tagen' },
     { value: 'Logo', label: 'CI-Integration', detail: 'Firmenfarbe und Logo direkt im Druck' },
     { value: '3 Tage', label: 'Nachbestellungen', detail: 'Per E-Mail · identisch reproduziert' },
-    { value: '5.0', label: 'Google Bewertung', detail: '31 Bewertungen · zuverlässiger Service' },
+    { value: '5.0', label: 'Google Bewertung', detail: '35 Bewertungen · zuverlässiger Service' },
   ],
   priceComparison: {
     headline: 'Preise für NÖ-Gewerbebetriebe',
@@ -1282,7 +1282,7 @@ const steiermark: DruckSectionDataSet = {
     { value: 'ASA', label: 'UV-Experten', detail: 'Jahrelange Erfahrung mit Outdoor-Modellen' },
     { value: 'FFG', label: 'Förderprojekte unterstützt', detail: 'Modelle überzeugten Förder-Jurys' },
     { value: 'PETG klar', label: 'Transparente Modelle', detail: 'Innere Strukturen sichtbar' },
-    { value: '5.0', label: 'Google Bewertung', detail: '31 Bewertungen' },
+    { value: '5.0', label: 'Google Bewertung', detail: '35 Bewertungen' },
   ],
   priceComparison: {
     headline: 'Outdoor-Modell Preise für die Steiermark',
@@ -1454,7 +1454,7 @@ const tirol: DruckSectionDataSet = {
     { value: '40+', label: 'Tiroler Projekte', detail: 'Sport, Tourismus, Forschung' },
     { value: '0', label: 'Transportschäden', detail: 'Alpenrobuste Spezialverpackung' },
     { value: 'ASA', label: 'Alpentauglich', detail: 'UV-beständig, frostfest, robust' },
-    { value: '5.0', label: 'Bewertung', detail: '31 Google-Bewertungen' },
+    { value: '5.0', label: 'Bewertung', detail: '35 Google-Bewertungen' },
   ],
   priceComparison: {
     headline: 'Express-Preise für Tirol',
@@ -1540,7 +1540,7 @@ const vorarlberg: DruckSectionDataSet = {
     { value: '€500', label: 'Für 8 Iterationen', detail: 'Günstiger als ein CNC-Handmuster' },
     { value: 'CH+DE', label: 'Grenznaher Versand', detail: 'Bodenseeregion in 1-2 Tagen' },
     { value: 'Ø 5', label: 'Iterationen/Projekt', detail: 'Optimierung in strukturierten Runden' },
-    { value: '5.0', label: 'Google Bewertung', detail: '31 Bewertungen' },
+    { value: '5.0', label: 'Google Bewertung', detail: '35 Bewertungen' },
   ],
   priceComparison: {
     headline: 'Iterationspreise für Vorarlberg',
@@ -1626,7 +1626,7 @@ const burgenland: DruckSectionDataSet = {
     { value: '10+', label: 'PV-Konzeptmodelle', detail: 'Für Kundenpräsentationen und Verkaufsgespräche' },
     { value: 'ASA', label: 'Outdoor-fähig', detail: 'PV-Modelle halten jahrelang im Freien' },
     { value: '1-2 Tage', label: 'Über A4', detail: 'Schnelle Anbindung aus OÖ' },
-    { value: '5.0', label: 'Google Bewertung', detail: '31 Bewertungen' },
+    { value: '5.0', label: 'Google Bewertung', detail: '35 Bewertungen' },
   ],
   priceComparison: {
     headline: 'Preise für Burgenländer Projekte',

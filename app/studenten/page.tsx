@@ -403,7 +403,7 @@ export default function Page() {
               </div>
               <AnimatedSection animation="fade-in" delay={200}>
                 <div className="mt-8 flex flex-wrap items-center gap-x-10 gap-y-3">
-                  <span className="flex items-center gap-2 text-sm font-semibold"><Star className="w-4 h-4 text-primary fill-primary" /> 5,0 aus 31 Google-Bewertungen</span>
+                  <span className="flex items-center gap-2 text-sm font-semibold"><Star className="w-4 h-4 text-primary fill-primary" /> 5,0 aus 35 Google-Bewertungen</span>
                   <span className="flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="w-4 h-4 text-primary" /> Gunskirchen bei Wels · Abholung möglich</span>
                 </div>
               </AnimatedSection>

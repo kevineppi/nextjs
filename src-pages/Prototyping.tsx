@@ -137,7 +137,7 @@ const Prototyping = () => (
   <>
     <SEOHead
       title="Designprototyp & Anschauungsmodell aus dem 3D-Druck | Österreich | ekdruck"
-      description="Designprototypen und Anschauungsmodelle fürs Produktdesign aus dem 3D-Druck. Form, Optik, Haptik. FDM in-house, SLA/SLS über Partner. Express 24h · ab 1 Stück · ★5,0 (31 Bewertungen)"
+      description="Designprototypen und Anschauungsmodelle fürs Produktdesign aus dem 3D-Druck. Form, Optik, Haptik. FDM in-house, SLA/SLS über Partner. Express 24h · ab 1 Stück · ★5,0 (35 Bewertungen)"
       keywords="designprototyp, anschauungsmodell produktdesign, designmodell, konzeptmodell, anschauungsmodell, designmuster, modell nach foto, modell nach skizze, formmodell, feinmodell, produktdesign modell, prototyp drucken lassen, 3d druck modell, designprototyp österreich, anschauungsmodell österreich, designmodell wien, designprototyp linz, prototyp gunskirchen, mehrfachfertigung 3d druck, fdm modell, sla modell, sls modell, design-review modell, ergonomie modell, investoren modell, messemodell design, prototyp ohne mindestmenge, prototyp 24 stunden, nda 3d druck, hardware startup modell"
       path="/prototyping"
     />
@@ -220,7 +220,7 @@ const Prototyping = () => (
                 <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">5,0★</p>
                 <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
                   <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Google</p>
-                  <p className="text-[10px] text-muted-foreground hidden md:inline">31 Bewertungen</p>
+                  <p className="text-[10px] text-muted-foreground hidden md:inline">35 Bewertungen</p>
                 </div>
               </div>
             </div>

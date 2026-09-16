@@ -86,7 +86,7 @@ export const BRAND = {
 
     // Bei Trust · Spezifisch:
     trustGeo: 'Werkstatt in Gunskirchen (OÖ, zwischen Wels und Linz)',
-    trustReviews: '★5,0 von 31 Google-Bewertungen',
+    trustReviews: '★5,0 von 35 Google-Bewertungen',
     trustOwnership: 'Eigentümergeführt · Sie sprechen mit dem, der druckt',
     trustReachable: 'Antwortzeit Werktags <2h auf Mail, WhatsApp & Telefon',
   },

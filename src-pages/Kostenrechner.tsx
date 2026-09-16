@@ -383,7 +383,7 @@ const Kostenrechner = () => {
       )}
       <SEOHead
         title="3D-Druck Kosten berechnen – Richtpreis in 60 Sek. | ★5,0"
-        description="STL hochladen → Richtpreis sofort. Mehrere Teile kalkulieren. Kein Account nötig. Angebot in 6h · ab €20 · ★5,0 (31 Bewertungen) | ekdruck"
+        description="STL hochladen → Richtpreis sofort. Mehrere Teile kalkulieren. Kein Account nötig. Angebot in 6h · ab €20 · ★5,0 (35 Bewertungen) | ekdruck"
         path="/kostenrechner"
         keywords="3d drucken lassen, 3d drucken lassen kosten, 3d druck preis berechnen, 3d druck online bestellen, 3d druck kosten österreich, 3d modell drucken lassen, 3d druck anbieter österreich, kostenrechner 3d druck, 3d druck online rechner"
         breadcrumbs={breadcrumbs}
@@ -416,7 +416,7 @@ const Kostenrechner = () => {
               STL hochladen, Material wählen, Richtpreis sofort. Festpreisangebot in 6 Stunden.
             </p>
             <p className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 mt-4 text-xs text-muted-foreground">
-              <span className="inline-flex items-center gap-1"><Star className="h-3.5 w-3.5 text-primary" /> 5,0 ★ Google (31)</span>
+              <span className="inline-flex items-center gap-1"><Star className="h-3.5 w-3.5 text-primary" /> 5,0 ★ Google (35)</span>
               <span className="inline-flex items-center gap-1"><Package className="h-3.5 w-3.5 text-primary" /> Ab €20 pro Teil</span>
               <span className="inline-flex items-center gap-1"><Zap className="h-3.5 w-3.5 text-primary" /> Express 24–48 h</span>
               <span className="inline-flex items-center gap-1"><Leaf className="h-3.5 w-3.5 text-primary" /> AT Filament</span>
@@ -816,7 +816,7 @@ const Kostenrechner = () => {
             <span className="flex items-center gap-1.5"><ShieldCheck className="h-4 w-4 text-primary" />Kein Webshop – keine Bestellung</span>
             <span className="flex items-center gap-1.5"><UserCheck className="h-4 w-4 text-primary" />Persönliche Prüfung jeder Anfrage</span>
             <span className="flex items-center gap-1.5"><Clock className="h-4 w-4 text-primary" />Angebot in 6h</span>
-            <span className="flex items-center gap-1.5"><Star className="h-4 w-4 text-primary" />5,0 ★ Google (31 Bewertungen)</span>
+            <span className="flex items-center gap-1.5"><Star className="h-4 w-4 text-primary" />5,0 ★ Google (35 Bewertungen)</span>
           </div>
         </div>
 

@@ -161,7 +161,7 @@ const Referenzen = () => {
     <>
       <SEOHead 
         title="3D-Druck Referenzen & Projekte | ★ 5.0 Google | ekdruck"
-        description="Echte 3D-Druck Projekte mit Fotos, Maßen & Druckzeiten ✓ Architekturmodelle, Messeexponate & Einzelstücke ✓ 31 Google-Bewertungen mit 5.0/5 → Projekte ansehen"
+        description="Echte 3D-Druck Projekte mit Fotos, Maßen & Druckzeiten ✓ Architekturmodelle, Messeexponate & Einzelstücke ✓ 35 Google-Bewertungen mit 5.0/5 → Projekte ansehen"
         keywords="3d-druck referenzen, 3d-druck portfolio, messemodell beispiele, architekturmodell projekte, 3d-druck ergebnisse"
         path="/referenzen"
       />

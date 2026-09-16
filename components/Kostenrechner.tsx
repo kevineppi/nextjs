@@ -225,7 +225,7 @@ export default function Kostenrechner() {
           Verbindliches Festpreisangebot in 6h.
         </p>
         <div className="flex gap-2 justify-center flex-wrap mt-4">
-          <Badge variant="outline" className="gap-1"><Star className="w-3 h-3" /> 5,0 Google (31)</Badge>
+          <Badge variant="outline" className="gap-1"><Star className="w-3 h-3" /> 5,0 Google (35)</Badge>
           <Badge variant="outline">Ab 20 € pro Teil</Badge>
           <Badge variant="outline" className="gap-1"><Zap className="w-3 h-3" /> Express 24–48 h</Badge>
           <Badge variant="outline" className="gap-1"><Leaf className="w-3 h-3" /> AT Filament</Badge>
