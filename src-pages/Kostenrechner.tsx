@@ -36,6 +36,7 @@ import {
   FlaskConical, Sparkles, Eye, TrendingDown,
 } from "lucide-react";
 import { holeHerkunft } from "@/lib/attribution";
+import FotoMarquee from "@/components/FotoMarquee";
 import { pruefeRabatt, mitRabatt, rabattZeile, RABATT_PROZENT } from "@/lib/studentenrabatt";
 
 // ─── MATERIAL UI META ────────────────────────────────────────────
@@ -340,28 +341,62 @@ const Kostenrechner = () => {
         {/* ══════════════════════════════════════════════════════
             CALCULATOR — Single-Page Layout
         ══════════════════════════════════════════════════════ */}
-        <section id="calculator" className="py-8 md:py-14 scroll-mt-20">
-          <div className="container mx-auto px-4">
+        <section id="calculator" className="relative overflow-hidden py-8 md:py-14 scroll-mt-20">
+          {/* Grid-Hintergrund + Accent-Blobs wie Hero.tsx — füllt den Leerzustand optisch (Kevin, 16.09.) */}
+          <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+            <div className="absolute inset-0" style={{
+              backgroundImage: `
+                linear-gradient(hsl(var(--border) / 0.4) 1px, transparent 1px),
+                linear-gradient(90deg, hsl(var(--border) / 0.4) 1px, transparent 1px)
+              `,
+              backgroundSize: '80px 80px',
+            }} />
+            <div className="absolute top-[10%] right-[8%] w-[420px] h-[420px] rounded-full bg-primary/[0.06] blur-[110px]" />
+            <div className="absolute bottom-[10%] left-[5%] w-[280px] h-[280px] rounded-full bg-accent/[0.04] blur-[80px]" />
+          </div>
+          <div className="relative z-10 container mx-auto px-4">
             {!hatDateien ? (
               /* ── Leerer Zustand (Kevin, 16.09.): ohne Datei kein Rechner ── */
               <div className="max-w-2xl mx-auto">
-                <div className="bg-card border border-border rounded-2xl p-5 md:p-6">
+                <div className="sticker border-primary text-primary w-fit mx-auto mb-5">
+                  <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                  Richtpreis in Echtzeit · lokal im Browser
+                </div>
+                <div className="bg-card border border-border rounded-2xl p-5 md:p-6 shadow-lg shadow-primary/5">
                   <div
-                    className={`border-2 border-dashed rounded-xl p-10 md:p-14 text-center cursor-pointer transition-all duration-200 ${dragOver ? "border-primary bg-primary/5 scale-[1.01]" : "border-border hover:border-primary/50 bg-muted/20"}`}
+                    className={`group border-2 border-dashed rounded-xl p-10 md:p-14 text-center cursor-pointer transition-all duration-200 ${dragOver ? "border-primary bg-primary/5 scale-[1.01]" : "border-border hover:border-primary/50 bg-muted/20"}`}
                     onClick={() => fileInputRef.current?.click()}
                     onDragOver={(e) => { e.preventDefault(); setDragOver(true); }}
                     onDragLeave={() => setDragOver(false)}
                     onDrop={(e) => { e.preventDefault(); setDragOver(false); handleFiles(e.dataTransfer.files); }}
                   >
-                    <Upload className="w-8 h-8 mx-auto mb-3 text-primary" />
+                    <Upload className={`w-9 h-9 mx-auto mb-3 text-primary transition-transform duration-300 group-hover:-translate-y-1 ${dragOver ? "-translate-y-1 scale-110" : ""}`} />
                     <p className="text-base font-semibold">STL-Datei hierher ziehen oder klicken</p>
-                    <p className="text-xs text-muted-foreground mt-1.5">Binär &amp; ASCII · max. 100 MB · mehrere Dateien möglich · Berechnung lokal im Browser</p>
+                    <p className="text-xs text-muted-foreground mt-1.5">Binär &amp; ASCII · max. 100 MB · mehrere Dateien möglich</p>
                   </div>
-                  <p className="text-xs text-muted-foreground text-center mt-3">
+                  {/* Mini-Ablauf im Site-Stil (Mono-Nummern) */}
+                  <div className="grid grid-cols-3 gap-3 mt-5">
+                    {[
+                      { nr: "01", t: "Datei hochladen" },
+                      { nr: "02", t: "Material wählen" },
+                      { nr: "03", t: "Richtpreis sofort" },
+                    ].map(({ nr, t }) => (
+                      <div key={nr} className="text-center">
+                        <p className="mono text-2xl font-bold text-primary/25 leading-none">{nr}</p>
+                        <p className="text-[11px] font-semibold mt-1.5 text-muted-foreground">{t}</p>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-xs text-muted-foreground text-center mt-5">
                     Keine 3D-Datei? Schick Pläne, Fotos oder Skizzen über das{" "}
                     <a href="/kontakt" className="text-primary font-semibold hover:underline">Kontaktformular</a>, die Datenaufbereitung übernehmen wir.
                   </p>
                   <input ref={fileInputRef} type="file" accept=".stl" multiple className="hidden" onChange={(e) => e.target.files && handleFiles(e.target.files)} />
+                </div>
+                {/* Laufendes Band echter Projekte: füllt die Fläche, zeigt was möglich ist */}
+                <div className="mt-8 -mx-4 md:mx-0">
+                  <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-foreground/30 text-center mb-3">Frisch aus der Werkstatt</p>
+                  <FotoMarquee />
                 </div>
               </div>
             ) : (
@@ -539,9 +574,9 @@ const Kostenrechner = () => {
                   {/* v2 (16.09.): keine Kalkulations-Interna mehr (Material-Gramm, Druckzeit,
                       Setup-Pauschale) — nur Richtpreis, Teileliste und Mengenvorteil */}
                   <div className="text-center py-6">
-                    <p className="text-5xl font-bold tracking-tight text-primary">{fmt(totalNet)}</p>
-                    <p className="text-xs text-muted-foreground mt-2">
-                      {totalQty} {totalQty === 1 ? "Teil" : "Teile"} · Richtpreis exkl. MwSt.
+                    <p className="text-5xl font-bold tracking-tight text-gradient mono">{fmt(totalNet)}</p>
+                    <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/30 mt-3">
+                      {totalQty} {totalQty === 1 ? "Teil" : "Teile"} · exkl. MwSt.
                     </p>
                   </div>
 
