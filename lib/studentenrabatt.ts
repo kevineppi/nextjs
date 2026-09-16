@@ -52,6 +52,13 @@ export const CODES: Record<string, string> = {
   "OEH-AKBILD": "Akademie der bildenden Künste Wien",
   "OEH-ANGEWANDTE": "Universität für angewandte Kunst Wien",
   "OEH-FHWN": "FH Wiener Neustadt",
+  // zweite Welle, 16.09.2026
+  "OEH-JKU": "Johannes Kepler Universität Linz",
+  "OEH-LEOBEN": "Montanuniversität Leoben",
+  "OEH-BOKU": "Universität für Bodenkultur Wien",
+  "OEH-NDU": "New Design University St. Pölten",
+  "OEH-FHBGLD": "FH Burgenland",
+  "OEH-KUFSTEIN": "FH Kufstein Tirol",
 };
 
 /**
@@ -59,7 +66,11 @@ export const CODES: Record<string, string> = {
  * Unterdomänen wie students.fh-ooe.at oder edu.fh-joanneum.at greifen.
  */
 const AT_DOMAINS = [
-  ".ac.at",        // deckt tuwien, uibk, boku, akbild, fhstp, fh-salzburg, fhwn, uni-ak u. a.
+  ".ac.at",        // deckt tuwien, uibk, boku, akbild, fhstp, fh-salzburg, fhwn, uni-ak,
+                   // unileoben, ndu und fh-kufstein
+  "jku.at",        // JKU Linz laeuft NICHT auf .ac.at, deckt auch oeh.jku.at
+  "fh-burgenland.at",
+  "oehboku.at",
   "tugraz.at",
   "htugraz.at",
   "htu.at",
