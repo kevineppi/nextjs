@@ -13,7 +13,10 @@
  * profitgetrieben wirken → eigene Sektion "Uni-Werkstatt zuerst".
  * WKO-Leitplanke: KEINE Funktionsteile-Begriffe als Leistungsversprechen.
  * Ehrliche Abgrenzung in den FAQ (Negativ-Kontext ist erlaubt und schützt).
- * Konditionen: 10% / 15% (Kevin, 12.09.).
+ * Konditionen (Kevin, 16.09.): 15 % für Studierende in Oesterreich,
+ * 10 % für Studierende aus Deutschland und der Schweiz. Die Staffelung ist
+ * geografisch, NICHT nach Studierendenausweis gegen Hochschule. Nachweis
+ * laeuft ueber Hochschul-Mailadresse, ÖH-Rabattcode oder Studierendenausweis.
  */
 import type { Metadata } from 'next'
 import Link from 'next/link'
@@ -29,7 +32,7 @@ import { buildDachAlternates, STANDARD_ROBOTS } from '@/lib/seo'
 
 const TITLE = '3D-Druck für Studierende in Österreich · Abgabemodelle & große Modelle | ekdruck'
 const DESCRIPTION =
-  '3D-Druck-Service für Studienprojekte aller Studiengänge: Abgabemodelle, Anschauungsmodelle, große Modelle. Wenn die Uni-Drucker voll sind: Standard 3-5 Werktage, Express 24-48h. 10% Studierendenrabatt, 15% an österreichischen Unis und FHs.'
+  '3D-Druck-Service für Studienprojekte aller Studiengänge: Abgabemodelle, Anschauungsmodelle, große Modelle. Wenn die Uni-Drucker voll sind: Standard 3-5 Werktage, Express 24-48h. 15% Rabatt für Studierende in Österreich, 10% für Studierende aus Deutschland und der Schweiz.'
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -72,7 +75,7 @@ const galerieFotos = [
 const faqs = [
   {
     q: 'Wo können Studierende in Österreich schnell und günstig 3D-drucken lassen?',
-    a: 'Bei ekdruck in Gunskirchen bei Wels: Abgabe-, Anschauungs- und Präsentationsmodelle für alle Studiengänge, in 3 bis 5 Werktagen, Express in 24 bis 48 Stunden. Mit Studierendenausweis gibt es 10 % Rabatt, an österreichischen Unis und FHs 15 %. Versicherter Versand in ganz Österreich oder Abholung in der Werkstatt.',
+    a: 'Bei ekdruck in Gunskirchen bei Wels: Abgabe-, Anschauungs- und Präsentationsmodelle für alle Studiengänge, in 3 bis 5 Werktagen, Express in 24 bis 48 Stunden. Studierende in Österreich bekommen 15 % Rabatt, Studierende aus Deutschland und der Schweiz 10 %. Versicherter Versand in ganz Österreich oder Abholung in der Werkstatt.',
   },
   {
     q: 'Was tun, wenn die 3D-Drucker an der Uni in der Abgabewoche ausgebucht sind?',
@@ -80,7 +83,7 @@ const faqs = [
   },
   {
     q: 'Was kostet ein 3D-gedrucktes Modell für Studierende?',
-    a: 'Jedes Modell wird einzeln kalkuliert, damit du den günstigsten Preis für genau dein Projekt bekommst, Pauschalpreise gibt es bewusst nicht. Mit Studierendenausweis bekommst du 10 % Rabatt, an österreichischen Universitäten und Fachhochschulen 15 %. Einen Richtwert liefert der Kostenrechner auf ek-druck.at in 60 Sekunden.',
+    a: 'Jedes Modell wird einzeln kalkuliert, damit du den günstigsten Preis für genau dein Projekt bekommst, Pauschalpreise gibt es bewusst nicht. Studierst du in Österreich, bekommst du 15 % Rabatt, aus Deutschland oder der Schweiz sind es 10 %. Den Nachweis führst du am einfachsten, indem du von deiner Hochschul-Mailadresse schreibst, alternativ über den Rabattcode deiner ÖH oder deinen Studierendenausweis. Einen Richtwert liefert der Kostenrechner auf ek-druck.at in 60 Sekunden.',
   },
   {
     q: 'Können auch große Modelle gedruckt werden, die auf Uni-Druckern nicht machbar sind?',
@@ -148,8 +151,8 @@ const serviceJsonLd = {
   areaServed: 'AT',
   audience: { '@type': 'EducationalAudience', educationalRole: 'student' },
   offers: [
-    { '@type': 'Offer', name: '10% Studierendenrabatt', description: 'Für alle Studierenden mit gültigem Studierendenausweis, alle Studiengänge' },
-    { '@type': 'Offer', name: '15% Rabatt für österreichische Universitäten und Fachhochschulen', description: 'Für Studierende an österreichischen Unis und FHs, mit Studierendenausweis' },
+    { '@type': 'Offer', name: '15% Studierendenrabatt Österreich', description: 'Für Studierende an österreichischen Universitäten und Fachhochschulen, alle Studiengänge. Nachweis über Hochschul-Mailadresse, ÖH-Rabattcode oder Studierendenausweis', eligibleRegion: { '@type': 'Country', name: 'AT' } },
+    { '@type': 'Offer', name: '10% Studierendenrabatt Deutschland und Schweiz', description: 'Für Studierende an deutschen und Schweizer Hochschulen, alle Studiengänge. Nachweis über Hochschul-Mailadresse oder Studierendenausweis', eligibleRegion: [{ '@type': 'Country', name: 'DE' }, { '@type': 'Country', name: 'CH' }] },
   ],
 }
 
@@ -212,17 +215,17 @@ export default function Page() {
                   Studiengänge, von Architektur über Maschinenbau bis Automatisierungstechnik und Design:
                   Standard in <span className="text-foreground font-semibold">3 bis 5 Werktagen</span>, Express in{' '}
                   <span className="text-foreground font-semibold">24 bis 48 Stunden</span>, mit Versand in ganz
-                  Österreich. Mit Studierendenausweis bekommst du{' '}
-                  <span className="text-primary font-semibold">10 % Rabatt</span>, an österreichischen Unis und FHs{' '}
-                  <span className="text-primary font-semibold">15 %</span>.
+                  Österreich. Studierst du in Österreich, bekommst du{' '}
+                  <span className="text-primary font-semibold">15 % Rabatt</span>, aus Deutschland oder der Schweiz{' '}
+                  <span className="text-primary font-semibold">10 %</span>.
                 </p>
               </AnimatedSection>
 
               <AnimatedSection animation="fade-in" delay={350}>
                 <div className="flex items-center gap-10 lg:gap-16 flex-wrap pb-12">
                   {[
-                    { val: '10%', label: 'Studierendenausweis' },
-                    { val: '15%', label: 'Österr. Unis & FHs' },
+                    { val: '15%', label: 'Studierende in AT' },
+                    { val: '10%', label: 'Studierende DE & CH' },
                     { val: '24h', label: 'Express' },
                     { val: '5.0', label: 'Google Rating' },
                   ].map(({ val, label }) => (
@@ -303,7 +306,7 @@ export default function Page() {
                 {[
                   { titel: 'Abgabewoche, kein Slot mehr frei', text: 'Vor Abgaben sind die Drucker an vielen Unis und FHs auf Wochen ausgebucht. ekdruck fängt das ab: Deadline schicken, Fixpreis bekommen, Modell kommt pünktlich. Auch wenn der Auftrag am Sonntagabend eingeht.' },
                   { titel: 'Zu groß für den Uni-Drucker', text: 'Ortsmodelle, Geländemodelle, Anlagen- und Projektmodelle in Präsentationsgröße: große Modelle sind ein Schwerpunkt der Werkstatt. Schick die Abmessungen, du bekommst gesagt, wie dein Modell umgesetzt wird.' },
-                  { titel: 'Knappes Budget', text: 'Studieren ist teuer genug. Deshalb wird jedes Modell einzeln kalkuliert statt nach Pauschalpreisen abgerechnet, dazu kommen 10 % Rabatt mit Studierendenausweis und 15 % an österreichischen Unis und FHs.' },
+                  { titel: 'Knappes Budget', text: 'Studieren ist teuer genug. Deshalb wird jedes Modell einzeln kalkuliert statt nach Pauschalpreisen abgerechnet, dazu kommen 15 % Rabatt für Studierende in Österreich und 10 % für Studierende aus Deutschland und der Schweiz.' },
                 ].map(({ titel, text }, i) => (
                   <AnimatedSection key={titel} animation="slide-up" delay={i * 120}>
                     <MagneticCard className="rounded-2xl border-2 border-border bg-background p-7 md:p-8 h-full hover:border-primary/40">

@@ -617,7 +617,7 @@ const Kostenrechner = () => {
                         }
                         return (
                           <button className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors" onClick={() => setShowRabatt(true)}>
-                            <ChevronDown className="w-3.5 h-3.5" /> Studierende? {RABATT_PROZENT} % Rabatt einlösen
+                            <ChevronDown className="w-3.5 h-3.5" /> Studierende? Bis zu {RABATT_PROZENT} % Rabatt einlösen
                           </button>
                         );
                       })()}
