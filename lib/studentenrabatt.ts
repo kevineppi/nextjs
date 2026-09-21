@@ -49,7 +49,8 @@ export const CODES: Record<string, string> = {
   "OEH-MCI": "MCI Innsbruck",
   "OEH-FHSTP": "FH St. Pölten",
   "OEH-FHV": "FH Vorarlberg",
-  "OEH-AKBILD": "Akademie der bildenden Künste Wien",
+  // OEH-AKBILD entfernt 21.09.2026: Das Infrastrukturreferat der Akademie hat
+  // abgelehnt, wörtlich "Wir machen keine Werbung für Unternehmen."
   "OEH-ANGEWANDTE": "Universität für angewandte Kunst Wien",
   "OEH-FHWN": "FH Wiener Neustadt",
   // zweite Welle, 16.09.2026
