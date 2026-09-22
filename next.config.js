@@ -20,6 +20,23 @@ const nextConfig = {
       //     hing aber mit "Serienfertigung"-Titel im Google-Index ═══
       { source: '/serienfertigung', destination: '/firmenkunden', permanent: true },
 
+      // ═══ GSC-404-Bereinigung (2026-09-22): 14 URLs aus dem Index, die nie
+      //     Routen hatten (routenlose Messe-Datensätze) oder Alt-Varianten sind ═══
+      { source: '/messemodelle/kaernten', destination: '/messemodelle', permanent: true },
+      { source: '/messemodelle/niederoesterreich', destination: '/messemodelle', permanent: true },
+      { source: '/messemodelle/dornbirn', destination: '/messemodelle', permanent: true },
+      { source: '/messemodelle/burgenland', destination: '/messemodelle', permanent: true },
+      { source: '/messemodelle/karlsruhe', destination: '/messemodelle', permanent: true },
+      { source: '/messemodelle/saarland', destination: '/messemodelle', permanent: true },
+      { source: '/messemodelle/mecklenburg-vorpommern', destination: '/messemodelle', permanent: true },
+      { source: '/messemodelle/augsburg', destination: '/messemodelle', permanent: true },
+      { source: '/messemodelle/brandenburg', destination: '/messemodelle', permanent: true },
+      { source: '/messemodelle/bremen', destination: '/messemodelle', permanent: true },
+      { source: '/messemodelle/dresden', destination: '/messemodelle', permanent: true },
+      { source: '/messemodelle/friedrichshafen', destination: '/messemodelle', permanent: true },
+      { source: '/3d-druck/klagenfurt', destination: '/3d-druck-kaernten', permanent: true },
+      { source: '/3d-druck-tirol', destination: '/3d-druck-salzburg', permanent: true },
+
       // ═══ Case-Bereinigung (2026-09-22, Kevin-Wahrheitscheck): 3 unbestätigte
       //     Cases entfernt, Generali-Stückzahl korrigiert (3.500 → 1.000) ═══
       { source: '/cases/maschinenbau-werkzeugmaschine-schnitt', destination: '/branchen/maschinenbau', permanent: true },
