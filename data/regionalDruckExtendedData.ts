@@ -48,8 +48,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
         size: "3x 12 x 8 x 4 cm",
         material: "PLA+ weiß, 0.12mm",
         time: "36 Stunden Express"
-      },
-      quote: "Drei Designvarianten in 36 Stunden · das hat den Investoren gezeigt, wie durchdacht unser Produkt ist."
+      }
     },
     materials: [
       {
@@ -90,8 +89,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
         size: "20 x 15 x 10 cm",
         material: "PLA+ vierfarbig",
         time: "Same Day · Abholung in Gunskirchen"
-      },
-      quote: "Ein Bild sagt mehr als tausend Worte · ein Modell zum Anfassen sagt noch mehr."
+      }
     },
     materials: [
       {
@@ -126,8 +124,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
         size: "50x 6 x 4 x 3 cm",
         material: "ASA schwarz, nachbearbeitet",
         time: "5 Werktage"
-      },
-      quote: "Physische Modelle beschleunigen Designentscheidungen enorm · jeder kann das Objekt drehen und bewerten."
+      }
     },
     materials: [
       {
@@ -168,8 +165,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
         size: "30x 25 x 18 x 12 cm",
         material: "PETG in Sonderfarbe",
         time: "5 Werktage"
-      },
-      quote: "Endlich Halterungen, die zu unserem Design passen. Die Gäste nutzen die Terminals jetzt viel häufiger."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Tourismus & Gastronomie in Salzburg",
@@ -191,8 +187,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
         size: "Mehrteilig, ø 15 cm",
         material: "PETG mehrfarbig",
         time: "48 Stunden inkl. Versand"
-      },
-      quote: "Das Modell hat unsere Präsentation auf ein ganz anderes Niveau gehoben. Die Zuhörer konnten alles sofort nachvollziehen."
+      }
     },
     materials: [
       {
@@ -233,8 +228,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
         size: "30x 10 x 8 x 5 cm",
         material: "ASA weiß, UV-beständig",
         time: "7 Werktage"
-      },
-      quote: "Drei Designvarianten zum Anfassen · das hat die Entscheidung unserer Auftraggeber enorm beschleunigt."
+      }
     },
     materials: [
       {
@@ -264,8 +258,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
         size: "10x 15 x 10 x 3 cm",
         material: "PLA+ weiß, 0.12mm",
         time: "5 Werktage"
-      },
-      quote: "Physische Konzeptmodelle machen Designreviews 10x produktiver. Am Bildschirm sieht alles anders aus als in der Hand."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Technologie & Elektronik-Design in Villach",
@@ -287,8 +280,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
         size: "8x diverse Größen",
         material: "PETG in Sonderfarbe",
         time: "Same Day · Abholung Gunskirchen"
-      },
-      quote: "Same-Day Abholung direkt nebenan. So muss Service sein."
+      }
     },
     materials: [
       {
@@ -318,8 +310,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
         size: "5x diverse Objekte",
         material: "PETG mehrfarbig",
         time: "3 Werktage"
-      },
-      quote: "Ohne die maßgeschneiderten Requisiten wäre das Set-Design nicht möglich gewesen."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Medientechnik & Bildung in St. Pölten",
@@ -341,8 +332,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
         size: "3 Iterationen, je 15 x 10 x 5 cm",
         material: "PLA+ und PETG",
         time: "3x 3 Werktage"
-      },
-      quote: "Drei Designiterationen für €200 · das Ergebnis war perfekt und der Kunde sofort überzeugt."
+      }
     },
     materials: [
       {
@@ -383,8 +373,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
         size: "20x individuelle Objekte",
         material: "PETG schwarz",
         time: "Same Day · gemeinsam vor Ort entwickelt"
-      },
-      quote: "Einfach vorbeikommen, gemeinsam designen, mitnehmen. So stelle ich mir Service vor."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Direkt vom Hersteller in Gunskirchen",
@@ -406,8 +395,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
         size: "40x 12 x 10 x 8 cm",
         material: "PLA+ weiß, nachbearbeitet",
         time: "7 Werktage + Abholung"
-      },
-      quote: "Greifbare Modelle überzeugen Kunden mehr als jede Powerpoint-Präsentation."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Industriepräsentation in Oberösterreich",
@@ -429,8 +417,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
         size: "15x diverse Display-Objekte",
         material: "PETG in Sonderfarbe",
         time: "5 Werktage"
-      },
-      quote: "Endlich Displays, die zu unserem Weingut passen. Unsere Gäste sind begeistert."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Weinbau & KMU in Niederösterreich",
@@ -452,8 +439,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
         size: "25 Varianten, je 8 x 8 x 12 cm",
         material: "PETG transparent",
         time: "3 Wochen iterativ"
-      },
-      quote: "25 Designvarianten in 3 Wochen bewerten · mit physischen Modellen geht das unglaublich effizient."
+      }
     },
     materials: [
       {
@@ -483,8 +469,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
         size: "15x 20 x 15 x 5 cm",
         material: "PLA+ dreifarbig",
         time: "5 Werktage"
-      },
-      quote: "15 verschiedene Modelle in einer Woche · und jedes sieht professionell aus."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Elektrotechnik & Präsentation in Kärnten",
@@ -506,8 +491,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
         size: "8 Iterationen, je 6 x 4 x 2 cm",
         material: "PLA+ und PETG",
         time: "3 Wochen iterativ"
-      },
-      quote: "8 Designiterationen für unter €500 · und das finale Modell hat den Kunden sofort überzeugt."
+      }
     },
     materials: [
       {
@@ -548,8 +532,7 @@ export const regionalDruckExtendedData: Record<string, RegionalDruckExtendedData
         size: "30 x 20 x 10 cm",
         material: "ASA schwarz/silber",
         time: "4 Werktage"
-      },
-      quote: "Seit wir das Modell bei Kundenterminen dabeihaben, entscheiden sich mehr Kunden für eine Anlage."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Erneuerbare Energie & Agrar im Burgenland",
@@ -585,11 +568,11 @@ regionalDruckExtendedData['linz'].faqs = [
 regionalDruckExtendedData['linz'].introText = "Nur 20 Minuten von Linz entfernt · Same-Day-Abholung, mehrfarbige Schnittmodelle und Express-Service für Schulungen, Präsentationen und kreative Projekte.";
 
 regionalDruckExtendedData['graz'].faqs = [
-  { question: "Können größere Stückzahlen von Designstudien gefertigt werden?", answer: "Ja · ab 10 Stück mit 10% Mengenrabatt, ab 50 Stück mit 15%. Qualität und Maßstabstreue bleiben bei jeder Stückzahl identisch." },
+  { question: "Können größere Stückzahlen von Designstudien gefertigt werden?", answer: "Ja · ab 10 Stück mit 5 % Mengenrabatt, ab 50 Stück mit 8 %. Qualität und Detailtreue bleiben bei jeder Stückzahl identisch." },
   { question: "Welche Materialien eignen sich für langlebige Designmodelle?", answer: "ASA für UV-Beständigkeit und Premium-Oberflächen, PETG für Robustheit und Transparenz, PLA+ für schnelle Formchecks und Designvalidierung." },
   { question: "Wie genau sind die Maße bei 3D-gedruckten Designstudien?", answer: "Die Maße liegen bei ±0.2mm bei Standardeinstellungen, ±0.1mm bei Feinauflösung. Für Passteile und Funktionschecks optimieren wir individuell." },
   { question: "Können transparente Konzeptmodelle erstellt werden?", answer: "Ja · PETG Transparent zeigt innere Strukturen und Aufbauten. Ideal für Design-Reviews, bei denen das Innenleben sichtbar sein soll." },
-  { question: "Wie ist die Lieferzeit nach Graz?", answer: "1-2 Werktage über die A9. Express 24h bei dringenden Designprojekten. Tracking-Nummer per E-Mail nach Versand." },
+  { question: "Wie ist die Lieferzeit nach Graz?", answer: "Fertigung 3-5 Werktage, Versand 1-2 Werktage über die A9. Express 24h bei dringenden Designprojekten. Tracking-Nummer per E-Mail nach Versand." },
 ];
 regionalDruckExtendedData['graz'].introText = "Designstudien und Konzeptmodelle für Grazer Technologieunternehmen · ASA-Expertise, Projektmengen mit Mengenrabatt und Express-Lieferung über die A9.";
 
@@ -598,7 +581,7 @@ regionalDruckExtendedData['salzburg'].faqs = [
   { question: "Sind Nachbestellungen identischer Teile möglich?", answer: "Ja · jeder Auftrag wird digital gespeichert. Nachbestellungen sind per E-Mail in 3 Werktagen fertig. Ideal für Filialkonzepte mit identischer Ausstattung." },
   { question: "Welche Materialien eignen sich für den Dauereinsatz in Hotels?", answer: "PETG für hohe Beanspruchung und Reinigungsbeständigkeit, PLA+ für dekorative Objekte, ASA für Objekte im Außenbereich wie Terrasse oder Pool." },
   { question: "Können Halterungen mit integriertem Kabelmanagement gefertigt werden?", answer: "Ja · Kabelführung, USB-Aussparungen und Lüftungsschlitze können direkt ins Design eingebaut werden. Funktional und ästhetisch." },
-  { question: "Wie schnell ist die Lieferung nach Salzburg?", answer: "1-2 Werktage über die A1 Westautobahn. Projektlieferungen an mehrere Filialen gleichzeitig sind möglich." },
+  { question: "Wie schnell ist die Lieferung nach Salzburg?", answer: "Fertigung 3-5 Werktage, Versand 1-2 Werktage über die A1 Westautobahn. Projektlieferungen an mehrere Filialen gleichzeitig sind möglich." },
 ];
 regionalDruckExtendedData['salzburg'].introText = "3D-gedruckte Displayhalter und Hotelausstattung für die Salzburger Tourismusbranche · individuelle Tablethalter, Logo-Displays und Filialkonzepte.";
 
@@ -613,7 +596,7 @@ regionalDruckExtendedData['innsbruck'].introText = "Anschauungsmodelle für Inns
 
 regionalDruckExtendedData['klagenfurt'].faqs = [
   { question: "Können Gehäusemodelle für Kundenpräsentationen gefertigt werden?", answer: "Ja · verschiedene Designvarianten aus UV-beständigem ASA. Ideal für die Präsentation von Produktdesigns bei Kundenbesuchen." },
-  { question: "Wie viele Designvarianten können parallel gefertigt werden?", answer: "Beliebig viele · 10, 20 oder 50 Varianten parallel möglich. Ab 10 Stück mit 10% Mengenrabatt." },
+  { question: "Wie viele Designvarianten können parallel gefertigt werden?", answer: "Beliebig viele · 10, 20 oder 50 Varianten parallel möglich. Ab 10 Stück mit 5 % Mengenrabatt." },
   { question: "Welches Material eignet sich für Outdoor-Präsentationen?", answer: "ASA ist UV-beständig, witterungsfest und farbstabil. Ideal für Modelle, die auch im Außenbereich gezeigt werden." },
   { question: "Können unterschiedliche Formfaktoren zum Vergleich bestellt werden?", answer: "Ja · verschiedene Größen, Proportionen und Designansätze parallel. Physische Modelle machen Designentscheidungen deutlich einfacher." },
   { question: "Wie werden Modelle nach Klagenfurt geliefert?", answer: "Versand über die Tauernautobahn in 2-3 Werktagen. Express über Nacht für dringende Projekte. Tracking inklusive." },
@@ -641,8 +624,8 @@ regionalDruckExtendedData['wels'].introText = "Same-Day-Service für Wels · nur
 regionalDruckExtendedData['st-poelten'].faqs = [
   { question: "Können individuelle Requisiten für Medienprojekte gefertigt werden?", answer: "Ja · Requisiten, Set-Dekorationen und Props in jeder Form und Farbe. Von der FH St. Pölten bis zu professionellen Filmproduktionen." },
   { question: "Welche Materialien eignen sich für Filmrequisiten?", answer: "PETG für robuste, häufig genutzte Requisiten. PLA+ für Dekorationsobjekte. TPU für flexible Elemente. Alle in vielen Farben verfügbar." },
-  { question: "Wie schnell können kurzfristige Projekte umgesetzt werden?", answer: "Express in 24-48h. Standardlieferung nach St. Pölten in 1-2 Werktagen über die A1. Ideal für Projekte mit engem Zeitplan." },
-  { question: "Gibt es studentenfreundliche Preise?", answer: "Unsere Preise starten ab €20 und sind bereits studentenfreundlich. Ab 10 Stück zusätzlich 10% Mengenrabatt. Ideal für Hochschulprojekte." },
+  { question: "Wie schnell können kurzfristige Projekte umgesetzt werden?", answer: "Express in 24-48h. Versand nach St. Pölten in 1-2 Werktagen über die A1. Ideal für Projekte mit engem Zeitplan." },
+  { question: "Gibt es studentenfreundliche Preise?", answer: "Unsere Preise starten ab €20 und sind bereits studentenfreundlich. Ab 10 Stück zusätzlich 5 % Mengenrabatt. Ideal für Hochschulprojekte." },
   { question: "Können modulare, zusammensteckbare Objekte gefertigt werden?", answer: "Ja · zusammensteckbare Elemente, Schraubverbindungen und Magnetsysteme direkt ins Design integriert. Ideal für transport- und lagerfreundliche Objekte." },
 ];
 regionalDruckExtendedData['st-poelten'].introText = "3D-Druck für Medienprojekte, FH-Arbeiten und kreative Produktion in St. Pölten · individuelle Requisiten, Props und Dekorationsobjekte ab €20.";
@@ -666,7 +649,7 @@ regionalDruckExtendedData['gunskirchen'].faqs = [
 regionalDruckExtendedData['gunskirchen'].introText = "Direkt vom Hersteller · gemeinsam vor Ort entwickeln, drucken und mitnehmen. Same-Day-Service, persönliche Beratung und Qualitätsprüfung bei der Abholung.";
 
 regionalDruckExtendedData['oberoesterreich'].faqs = [
-  { question: "Können Präsentationsmodelle in größeren Stückzahlen gefertigt werden?", answer: "Ja · ab 10 Stück mit 10% Mengenrabatt, ab 50 Stück mit 15%. Jedes Modell in identischer Qualität. Persönliche Abholung in Gunskirchen." },
+  { question: "Können Präsentationsmodelle in größeren Stückzahlen gefertigt werden?", answer: "Ja · ab 10 Stück mit 5 % Mengenrabatt, ab 50 Stück mit 8 %. Jedes Modell in identischer Qualität. Persönliche Abholung in Gunskirchen." },
   { question: "Eignen sich 3D-gedruckte Modelle als Kunden-Give-aways?", answer: "Ja · individuelle Modelle mit Ihrem Logo als Giveaway hinterlassen bleibenden Eindruck. Deutlich wirkungsvoller als herkömmliche Werbegeschenke." },
   { question: "Wie werden große Projektmengen qualitätsgesichert?", answer: "Ab 20 Stück erstellen wir ein Referenzmuster zur Freigabe. Jedes einzelne Modell wird nach identischen Parametern gedruckt und individuell geprüft." },
   { question: "Welche OÖ-Branchen nutzen den Service am häufigsten?", answer: "Industriepräsentationen, Lebensmittelbetriebe, Handwerksbetriebe und Kreativagenturen. Oberösterreich ist unser Heimatmarkt mit den meisten Kunden." },
@@ -730,8 +713,7 @@ regionalDruckExtendedData['tirol'] = {
       size: "5x Helmschalen, Originalgröße",
       material: "PLA+ + TPU flexibel",
       time: "5 Werktage"
-    },
-    quote: "Fünf Helmvarianten in einer Woche · das hätte mit traditionellen Methoden Monate gedauert."
+    }
   },
   materials: [
     {
@@ -781,8 +763,7 @@ export const getDruckExtendedDataBySlug = (slug: string): RegionalDruckExtendedD
         size: "Individuell",
         material: "PLA+ / PETG",
         time: "3-5 Werktage"
-      },
-      quote: "Schnell, unkompliziert und genau passend · so muss 3D-Druck sein."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Allgemeiner 3D-Druck Service",

@@ -142,7 +142,7 @@ export const materials: MaterialSpec[] = [
       'Outdoor-Demonstratoren (UV-stabilisiert)',
       'Mechanisch beanspruchte Schauflächen',
       'Daueranfass-Modelle für Vertriebs-Touren',
-      'Funktionsmuster mit moderater Beanspruchung',
+      'Anschauungsmodelle mit robuster Auslegung',
     ],
     avoidFor: [
       'Höchste Detailtreue (PLA besser)',
@@ -324,7 +324,7 @@ export const materials: MaterialSpec[] = [
     uvResistance: 'mittel',
     postProcessing: ['Schleifen schwierig', 'Lackierung möglich', 'Formstabil auch nach Wärme'],
     bestFor: [
-      'Funktionsmuster mit hoher Beanspruchung',
+      'besonders steife, formstabile Modelle',
       'Vorab-Muster für DV/PV-Tests',
       'Halterungen und Werkzeug-Aufnahmen',
       'E-Antriebs-Komponenten (Show + Test)',
@@ -341,7 +341,7 @@ export const materials: MaterialSpec[] = [
     biodegradable: false,
     recyclable: 'eingeschränkt',
     ekdruckUsage:
-      'Funktionsmuster und Vorab-Muster. Beispiel: Tier-1-Automotive-Zulieferer testet Design-Variante mit PA-CF-3D-Druck vor Spritzguss-Werkzeugbau · spart €10.000+ pro Iteration.',
+      'Design-Vorab-Muster. Beispiel: eine Design-Variante wird als PA-CF-Modell begutachtet, bevor teurer Werkzeugbau startet.',
   },
 ]
 
@@ -391,7 +391,7 @@ export const decisionMatrix: DecisionScenario[] = [
     recommendedSlug: 'abs',
   },
   {
-    scenario: 'Funktionsmuster für mechanische Tests (DV/PV)',
+    scenario: 'Besonders steifes, formstabiles Anschauungsmodell',
     context: 'Mechanische Tests vor Werkzeugbau, Formstabilität unter Beanspruchung gefordert.',
     recommendation:
       'PA-CF · Carbon-Faser-Verstärkung erreicht Aluminium-nahe Steifigkeit, Formstabilität auch nach Wärme-Zyklen.',

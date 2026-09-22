@@ -42,7 +42,7 @@ const wien: ExtendedDruckSections = {
     steps: [
       { title: 'Analyse der CAD-Datei & Zielanwendung', description: 'Wir prüfen Ihre Datei auf Druckbarkeit und fragen: Wofür wird das Modell genutzt? Pitch, Designreview oder Funktionstest?', context: 'Startup-Gründer senden oft Skizzen statt CAD · auch das funktioniert als Startpunkt.' },
       { title: 'Materialauswahl basierend auf Einsatz', description: 'Für Pitches empfehlen wir PLA+ mit Schleifen, für Funktionstests PETG oder TPU. Wir erklären die Unterschiede verständlich.', context: 'Die meisten Wiener Kunden wählen PLA+ wegen der besten Oberfläche bei kleinen Modellen.' },
-      { title: 'Paralleldruck aller Varianten', description: 'Statt nacheinander drucken wir 3-10 Varianten gleichzeitig auf mehreren Druckern. Jedes Modell bekommt eine eigene Qualitätskontrolle.', context: 'Bei Designvergleichen sparen parallele Varianten bis zu 70% Zeit gegenüber sequentiellem Druck.' },
+      { title: 'Paralleldruck aller Varianten', description: 'Statt nacheinander drucken wir 3-10 Varianten gleichzeitig auf mehreren Druckern. Jedes Modell bekommt eine eigene Qualitätskontrolle.', context: 'Bei Designvergleichen sparen parallele Varianten viel Zeit gegenüber sequentiellem Druck.' },
       { title: 'Feinabstimmung für Optik oder Stabilität', description: 'Nachbearbeitung nach Wunsch: Schleifen, Grundieren oder roh belassen. Für Pitches empfehlen wir immer Schleifen + Grundierung.', context: 'Premium-Finish kostet ca. 30% Aufpreis, wirkt aber bei Investoren professioneller.' },
       { title: 'Express-Versand nach Wien über Nacht', description: 'Bestellung bis 10 Uhr = Versand am selben Tag. Am nächsten Morgen liegt das Modell in Wien.', context: 'Persönliche Übergabe in Wien ist auf Anfrage ebenfalls möglich.' },
     ],
@@ -421,7 +421,7 @@ const stpoelten: ExtendedDruckSections = {
     {
       title: 'Präsentationsmodelle für NÖ-Wirtschaftskammer',
       description: 'Gewerbebetriebe in NÖ präsentieren ihre Produkte bei WKO-Veranstaltungen mit 3D-gedruckten Modellen. Produktneuheiten werden physisch vorgestellt statt nur als Flyer.',
-      whyPrint: 'Ein physisches Modell auf dem Messetisch erzeugt 5x mehr Aufmerksamkeit als ein Produktflyer. Bei WKO-Events zählt der erste Eindruck.',
+      whyPrint: 'Ein physisches Modell auf dem Messetisch erzeugt deutlich mehr Aufmerksamkeit als ein Produktflyer. Bei WKO-Events zählt der erste Eindruck.',
       requirements: ['10-25 cm Größe', 'Nachbearbeitung für Präsentationsqualität', 'Rechnung für WKO-Förderung', 'Express 48h möglich'],
     },
   ],
@@ -765,9 +765,9 @@ const tirol: ExtendedDruckSections = {
     subheadline: 'Für Seilbahn-Modelle, Wetterdienste und Tourismus · detailgetreu und alpin-tauglich',
     steps: [
       { title: 'Anforderungsprofil mit Einsatzbedingungen', description: 'Wir klären: Welche Temperaturen? Welche UV-Belastung? Kontakt mit Schnee/Wasser? Höhenmeter? Daraus ergibt sich das Materialkonzept.', context: 'Für Hochgebirgs-Anwendungen über 2.500m empfehlen wir immer ASA mit erhöhtem Infill.' },
-      { title: 'Materialtest unter Realbedingungen', description: 'Bei Erstprojekten drucken wir ein Testmuster, das 2-4 Wochen im alpinen Einsatz getestet wird.', context: 'Wir haben ASA-Testmuster, die seit 3 Jahren auf 2.800m stehen · ohne sichtbare Degradation.' },
+      { title: 'Materialtest unter Realbedingungen', description: 'Bei Erstprojekten drucken wir ein Testmuster, das 2-4 Wochen im alpinen Einsatz getestet wird.', context: 'ASA ist für dauerhafte Außenanwendung ausgelegt und UV-beständig.' },
       { title: 'Mehrfachfertigung mit Kälteschutz-Verpackung', description: 'Modelle werden in klimastabiler Verpackung versandt, damit sie im Winter unbeschädigt ankommen.', context: 'Im Winter versenden wir mit Kälteschutz, damit Modelle nicht verspröden.' },
-      { title: 'Express-Versand nach Tirol', description: 'Standard: 1-2 Tage. Express 24h. Für dringende Messe-Deadlines: Same-Day-Versand mit Kurier.', context: 'Bei beschädigten Ausstellungsmodellen liefern wir Ersatz in unter 24h.' },
+      { title: 'Express-Versand nach Tirol', description: 'Standard: 3-5 Werktage. Express 24-48h.', context: 'Bei beschädigten Ausstellungsmodellen liefern wir Ersatz in unter 24h.' },
     ],
   },
   customerPriorities: [

@@ -1,9 +1,9 @@
 import AnimatedSection from "@/components/AnimatedSection";
 
 const effects = [
-  { num: "01", title: "Der Bemusterungs-Effekt", text: "Ein 3D-Rendering überzeugt am Bildschirm. Ein physisches Modell überzeugt in der Hand. Wer Investoren, Vorstand oder Kunden mit greifbaren Prototypen abholt, gewinnt die Entscheidung schneller – weil das Produkt schon halb existiert.", stat: "5 Min.", statLabel: "Ø Entscheidungszeit beim Bemustern" },
-  { num: "02", title: "Der Iterations-Effekt", text: "Wer drei Designvarianten parallel druckt und alle drei vergleicht, kommt schneller zum optimalen Modell als wer eine einzige Hypothese verteidigt. Die Frage verschiebt sich von 'trifft das Design?' zu 'welche Variante überzeugt am meisten?'.", stat: "3×", statLabel: "schnellere Designkonvergenz" },
-  { num: "03", title: "Der Validierungs-Effekt", text: "Formen und Proportionen, die im CAD überzeugen, wirken im echten Modell oft anders als erwartet. Ein gedruckter geometrischer Prototyp zeigt in 5 Minuten, was die Simulation in 5 Wochen nicht zeigt.", stat: "−80%", statLabel: "weniger Nacharbeit nach der Freigabe" },
+  { num: "01", title: "Der Bemusterungs-Effekt", text: "Ein 3D-Rendering überzeugt am Bildschirm. Ein physisches Modell überzeugt in der Hand. Wer Investoren, Vorstand oder Kunden mit greifbaren Prototypen abholt, gewinnt die Entscheidung schneller – weil das Produkt schon halb existiert.", stat: "Haptik", statLabel: "die Entscheidung fällt am Modell" },
+  { num: "02", title: "Der Iterations-Effekt", text: "Wer drei Designvarianten parallel druckt und alle drei vergleicht, kommt schneller zum optimalen Modell als wer eine einzige Hypothese verteidigt. Die Frage verschiebt sich von 'trifft das Design?' zu 'welche Variante überzeugt am meisten?'.", stat: "Parallel", statLabel: "mehrere Varianten in einem Durchgang" },
+  { num: "03", title: "Der Validierungs-Effekt", text: "Formen und Proportionen, die im CAD überzeugen, wirken im echten Modell oft anders als erwartet. Ein gedruckter geometrischer Prototyp zeigt in 5 Minuten, was die Simulation in 5 Wochen nicht zeigt.", stat: "Geprüft", statLabel: "Freigabe am echten Modell" },
 ];
 
 const PrototypingProcessSection = () => (

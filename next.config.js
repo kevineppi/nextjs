@@ -16,6 +16,10 @@ const nextConfig = {
       // ═══ Preise-Seite entfernt (2026-09-04, Kevin): Menü entschlackt, Kostenrechner ist die Preis-Antwort ═══
       { source: '/preise', destination: '/kostenrechner', permanent: true },
 
+      // ═══ WKO-Altlast (2026-09-22, AI-SEO-Audit): /serienfertigung war 404,
+      //     hing aber mit "Serienfertigung"-Titel im Google-Index ═══
+      { source: '/serienfertigung', destination: '/firmenkunden', permanent: true },
+
       // ═══ Studenten-Seite verallgemeinert (2026-09-13, Kevin): alle Studiengänge, neue URL /studenten.
       //     301 erhält die bereits verteilten Links (Fachschafts-Mails, ChatGPT-Zitate). ═══
       { source: '/architekturmodelle/studenten', destination: '/studenten', permanent: true },

@@ -76,7 +76,7 @@ const DruckRegion = ({ region }: DruckRegionProps) => {
     { question: `Welche Materialien sind verfügbar?`, answer: `PLA+ (Allrounder), PETG (robust), ASA (UV-beständig), TPU (flexibel). Alle in verschiedenen Farben.` },
     { question: `Wie schnell nach ${regionData.name}?`, answer: `Standard: ${regionData.deliveryTime}. Express 24h möglich (50% Aufpreis).` },
     { question: `Welche Dateiformate?`, answer: `STL, OBJ, 3MF und STEP. Auch Modellierung nach Skizze auf Anfrage.` },
-    { question: `Gibt es Mengenrabatt?`, answer: `Ab 10 Stück: 10%. Ab 50 Stück: 15%. Ab 100 Stück: individueller Projektpreis.` },
+    { question: `Gibt es Mengenrabatt?`, answer: `Ab 10 Stück: 5%. Ab 50 Stück: 8%. Ab 100 Stück: individueller Projektpreis.` },
   ];
   const faqs = extendedData.faqs || fallbackFaqs;
 

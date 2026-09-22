@@ -13,8 +13,7 @@ const defaultCaseStudy: CaseStudyData = {
     size: "40 x 30 x 25 cm",
     material: "PLA weiß + PETG transparent",
     time: "5 Werktage"
-  },
-  quote: "Die Qualität hat uns und die Jury begeistert. 3D-Druck ist für unsere Wettbewerbe jetzt Standard."
+  }
 };
 
 const defaultMaterials: MaterialRecommendation[] = [
@@ -46,8 +45,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       challenge: "Ein Münchner Projektentwickler plante ein neues Wohnquartier mit 200 Einheiten und brauchte ein Modell im Maßstab 1:200 für die Bürgerinformation.",
       solution: "Wir fertigten ein modulares Quartiers-Modell mit farblich codierten Bauphasen. Die Bestandsbebauung in Grau, Neubauten in Weiß. Same-Day über A8.",
       result: "Das Modell überzeugte bei der Bürgerinformation. Das Projekt wurde ohne Einsprüche genehmigt.",
-      specs: { size: "100 x 80 x 25 cm", material: "PLA weiß/grau + farbige Akzente", time: "7 Werktage" },
-      quote: "Grenznahe Fertigung aus Österreich war ideal · schnell, günstig und die Qualität stimmt."
+      specs: { size: "100 x 80 x 25 cm", material: "PLA weiß/grau + farbige Akzente", time: "7 Werktage" }
     },
     materials: defaultMaterials,
     industryFocus: "Stadtentwicklung & Wohnbau in Bayern",
@@ -61,8 +59,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       challenge: "Das KIT Karlsruhe benötigte ein Campus-Modell für die Planung eines neuen Forschungsgebäudes. Der bestehende Campus musste im Kontext dargestellt werden.",
       solution: "Wir erstellten ein Modell im Maßstab 1:500 mit abnehmbarem Neubau. Die Integration in den Campus war sofort ersichtlich.",
       result: "Das Modell wurde zum zentralen Planungsinstrument. Die Finanzierung wurde genehmigt.",
-      specs: { size: "80 x 60 x 15 cm", material: "PLA weiß + grau", time: "6 Werktage" },
-      quote: "Das Campusmodell hat die Entscheidungsträger sofort überzeugt. Schnelle Lieferung aus Österreich!"
+      specs: { size: "80 x 60 x 15 cm", material: "PLA weiß + grau", time: "6 Werktage" }
     },
     materials: defaultMaterials,
     industryFocus: "Bildungsbau & Innovation in Baden-Württemberg",
@@ -76,8 +73,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       challenge: "Ein Essener Architekturbüro entwarf die Umnutzung eines ehemaligen Zechengeländes zu einem Kreativquartier. Das Modell musste Bestand und Neubau zeigen.",
       solution: "Wir fertigten ein zweiteiliges Modell: historische Industriebauten in grauem PLA, neue Einbauten in weißem PLA mit transparenten PETG-Dachflächen.",
       result: "Das Modell gewann den Wettbewerb. Der IBA-Jury überzeugte die sensible Bestandsintegration.",
-      specs: { size: "70 x 50 x 30 cm", material: "PLA grau/weiß + PETG", time: "7 Werktage" },
-      quote: "Alt und Neu im selben Modell · genau so haben wir es uns vorgestellt. Express aus Österreich war perfekt."
+      specs: { size: "70 x 50 x 30 cm", material: "PLA grau/weiß + PETG", time: "7 Werktage" }
     },
     materials: [
       { name: "PLA Grau", description: "Für Bestandsgebäude und Industriebauten. Authentische Darstellung.", bestFor: ["Industriebauten", "Bestandsgebäude", "Kontextmodelle"], icon: "palette" },
@@ -94,8 +90,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       challenge: "Ein Frankfurter Büro entwarf ein 180m-Hochhaus und brauchte ein Modell im Maßstab 1:200 mit Skyline-Kontext für die Investorenpräsentation.",
       solution: "Wir druckten das Hochhaus mit transparenter PETG-Fassade. Die umliegende Skyline wurde als Silhouette in grauem PLA ergänzt.",
       result: "Die Investoren genehmigten das Projekt. Das transparente Modell zeigte die Etagen und den Gebäudekern.",
-      specs: { size: "25 x 25 x 90 cm", material: "PETG transparent + PLA grau", time: "6 Werktage" },
-      quote: "Ein 90cm hohes transparentes Hochhausmodell · das hat selbst erfahrene Investoren beeindruckt."
+      specs: { size: "25 x 25 x 90 cm", material: "PETG transparent + PLA grau", time: "6 Werktage" }
     },
     materials: [
       { name: "PETG Transparent", description: "Ideal für Frankfurter Hochhaus-Fassaden. Zeigt Geschossstruktur und Gebäudekern.", bestFor: ["Hochhäuser", "Bürotürme", "Glasfassaden"], icon: "shield" },
@@ -119,8 +114,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       challenge: "Ein Dresdner Architekturbüro plante die Sanierung eines barocken Stadtpalais. Das Modell musste historische Details und moderne Eingriffe zeigen.",
       solution: "Wir erstellten ein Schnittmodell: Außenfassade in detailliertem PLA, Inneres als moderner Einbau. Das Dach war abnehmbar.",
       result: "Die Denkmalbehörde genehmigte die Sanierung. Das Schnittmodell war ausschlaggebend.",
-      specs: { size: "50 x 40 x 35 cm", material: "PLA weiß detailliert", time: "7 Werktage" },
-      quote: "Die Detailgenauigkeit der Barockfassade war erstaunlich. Perfekt für die Denkmalbehörde."
+      specs: { size: "50 x 40 x 35 cm", material: "PLA weiß detailliert", time: "7 Werktage" }
     },
     materials: defaultMaterials,
     industryFocus: "Denkmalpflege & Barock-Architektur in Sachsen",
@@ -148,8 +142,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       challenge: "Ein Potsdamer Büro plante eine moderne Erweiterung im Umfeld eines denkmalgeschützten Schlossparks. Das Modell musste den historischen Kontext zeigen.",
       solution: "Wir fertigten ein Geländemodell mit historischem Bestand in Grau und dem modernen Neubau in Weiß. Bäume und Parkanlage wurden stilisiert dargestellt.",
       result: "Die Denkmalbehörde genehmigte den Entwurf. Der historische Kontext war sofort nachvollziehbar.",
-      specs: { size: "80 x 60 x 20 cm", material: "PLA grau/weiß + Geländemodell", time: "6 Werktage" },
-      quote: "Alt und Neu im Parkkontext · das Modell hat die Behörde sofort überzeugt."
+      specs: { size: "80 x 60 x 20 cm", material: "PLA grau/weiß + Geländemodell", time: "6 Werktage" }
     },
     materials: defaultMaterials,
     industryFocus: "Denkmalpflege & Stadtentwicklung in Brandenburg",
@@ -191,8 +184,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       challenge: "Ein Berliner Architekturbüro nahm an einem Wettbewerb für ein neues Stadtquartier in Berlin-Kreuzberg teil. 500 Wohnungen auf 4 Hektar mussten dargestellt werden.",
       solution: "Wir erstellten ein modulares Quartiers-Modell im Maßstab 1:500. Die einzelnen Gebäudegruppen waren herausnehmbar, um Varianten zu zeigen.",
       result: "Das Büro erreichte die engere Auswahl. Die Jury lobte die Qualität des Modells.",
-      specs: { size: "100 x 80 x 20 cm", material: "PLA weiß + farbige Akzente", time: "8 Werktage" },
-      quote: "Für den Preis in Berlin ein Modell in dieser Qualität zu bekommen · unmöglich. Danke an ek-druck!"
+      specs: { size: "100 x 80 x 20 cm", material: "PLA weiß + farbige Akzente", time: "8 Werktage" }
     },
     materials: defaultMaterials,
     industryFocus: "Stadtentwicklung & Großprojekte in Berlin",
@@ -206,8 +198,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       challenge: "Ein Hamburger Architekturbüro entwarf ein Wohn- und Geschäftshaus in der HafenCity. Das Modell musste die Wasserlage und die Nachbarbebauung zeigen.",
       solution: "Wir fertigten ein Modell mit blau-transparentem PETG für die Wasserfläche. Das Gebäude in weißem PLA, Nachbarbebauung in Grau.",
       result: "Das Modell kam in die engere Auswahl. Die Darstellung der Wasserlage überzeugte.",
-      specs: { size: "60 x 40 x 25 cm", material: "PLA weiß/grau + PETG blau", time: "6 Werktage" },
-      quote: "Die blaue Wasserfläche war ein Hingucker. So wird HafenCity-Architektur greifbar."
+      specs: { size: "60 x 40 x 25 cm", material: "PLA weiß/grau + PETG blau", time: "6 Werktage" }
     },
     materials: [
       { name: "PETG Blau-Transparent", description: "Für Wasserflächen in Hafenstadt-Modellen. Authentische Darstellung.", bestFor: ["Hafenmodelle", "Wasserflächen", "Maritime Projekte"], icon: "shield" },
@@ -231,8 +222,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       challenge: "Ein Münchner Investor plante ein Büroquartier im Werksviertel und brauchte drei Varianten für die Investorenentscheidung.",
       solution: "Wir fertigten drei Modelle im Maßstab 1:200 mit identischer Umgebung. Express-Lieferung über A8 in nur 3 Stunden.",
       result: "Variante A wurde gewählt. Der Investor lobte die schnelle Umsetzung und die Möglichkeit, direkt zu vergleichen.",
-      specs: { size: "3x 50 x 40 x 20 cm", material: "PLA weiß + PETG Fassaden", time: "5 Werktage" },
-      quote: "Drei Varianten parallel · und in 3 Stunden geliefert. Das gibt's nur grenznahe!"
+      specs: { size: "3x 50 x 40 x 20 cm", material: "PLA weiß + PETG Fassaden", time: "5 Werktage" }
     },
     materials: defaultMaterials,
     industryFocus: "Bürobau & Stadtentwicklung in München",
@@ -260,8 +250,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       challenge: "Ein Stuttgarter Büro brauchte ein Modell des neuen Rosenstein-Quartiers im Kontext des Stuttgart 21-Areals.",
       solution: "Wir erstellten ein großformatiges Modell im Maßstab 1:500 mit dem neuen Bahnhof und dem geplanten Quartier. Modulare Bauphasen.",
       result: "Das Modell wurde bei der Bürgerbeteiligung eingesetzt und half, das Projekt verständlich zu machen.",
-      specs: { size: "120 x 80 x 20 cm", material: "PLA weiß + farbcodiert", time: "8 Werktage" },
-      quote: "Das größte Modell, das wir je in Auftrag gegeben haben · und die Qualität stimmt."
+      specs: { size: "120 x 80 x 20 cm", material: "PLA weiß + farbcodiert", time: "8 Werktage" }
     },
     materials: defaultMaterials,
     industryFocus: "Stadtplanung & Innovation in Stuttgart",
@@ -289,8 +278,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       challenge: "Ein Düsseldorfer Büro entwarf ein Bürogebäude im Medienhafen neben den Gehry-Bauten. Das Modell musste den prominenten Kontext zeigen.",
       solution: "Wir fertigten das Neubaumodell in Weiß mit den umgebenden Gehry-Bauten als Kontextmodell in Grau. Transparente Fassade aus PETG.",
       result: "Das Büro gewann den Wettbewerb. Die Jury lobte die Kontextsensibilität.",
-      specs: { size: "60 x 40 x 30 cm", material: "PLA weiß/grau + PETG", time: "6 Werktage" },
-      quote: "Den Gehry-Kontext im Modell zu haben war entscheidend. Perfekt umgesetzt!"
+      specs: { size: "60 x 40 x 30 cm", material: "PLA weiß/grau + PETG", time: "6 Werktage" }
     },
     materials: defaultMaterials,
     industryFocus: "Star-Architektur & Bürobau in Düsseldorf",
@@ -325,8 +313,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       challenge: "Ein internationales Architekturbüro brauchte ein Modell eines 200m-Hochhauses für einen Investorenpitch in Frankfurt.",
       solution: "Wir druckten ein 1m hohes Modell mit transparenter PETG-Fassade. Der Gebäudekern und die Geschossebenen waren sichtbar. Express-Versand nach Frankfurt.",
       result: "Die Investoren waren beeindruckt. Das transparente Modell zeigte die Raumstruktur auf allen Ebenen.",
-      specs: { size: "30 x 30 x 100 cm", material: "PETG transparent + PLA Kern", time: "7 Werktage" },
-      quote: "Ein Meter hohes transparentes Hochhaus · das hat den Pitch gewonnen!"
+      specs: { size: "30 x 30 x 100 cm", material: "PETG transparent + PLA Kern", time: "7 Werktage" }
     },
     materials: [
       { name: "PETG Transparent", description: "Ideal für Frankfurter Hochhäuser. Zeigt Geschossstruktur und Gebäudekern.", bestFor: ["Hochhäuser", "Skyline-Modelle", "Investoren-Pitches"], icon: "shield" },
@@ -357,8 +344,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       challenge: "Ein Dresdner Büro plante die Sanierung einer barocken Fassade und brauchte ein 1:25-Detailmodell für die Abstimmung mit der Denkmalbehörde.",
       solution: "Wir druckten das Fassadenmodell in höchster Auflösung (0.05mm). Jedes Stuckelement, jede Rosette war detailgetreu dargestellt.",
       result: "Die Denkmalbehörde genehmigte die Sanierung. Die Detailtreue war ausschlaggebend.",
-      specs: { size: "60 x 15 x 40 cm", material: "PLA weiß Feinauflösung", time: "6 Werktage" },
-      quote: "0.05mm Auflösung für Barockstuck · unglaublich detailliert. Die Behörde war begeistert."
+      specs: { size: "60 x 15 x 40 cm", material: "PLA weiß Feinauflösung", time: "6 Werktage" }
     },
     materials: defaultMaterials,
     industryFocus: "Barockarchitektur & Denkmalpflege in Dresden",
@@ -393,8 +379,7 @@ export const germanArchitekturExtendedData: Record<string, RegionalArchitekturEx
       challenge: "Moderne Ergänzung im UNESCO-Welterbe-Kontext. Das Modell musste die sensible Integration in die historische Parklandschaft zeigen.",
       solution: "Geländemodell mit historischem Park in Grün/Grau, Neubau in Weiß. Maßstab 1:200 mit modellierten Baumgruppen.",
       result: "Die UNESCO-Kommission akzeptierte den Entwurf. Das Modell war entscheidend.",
-      specs: { size: "80 x 60 x 20 cm", material: "PLA weiß/grau/grün", time: "7 Werktage" },
-      quote: "Im UNESCO-Kontext braucht man perfekte Modelle. ek-druck hat geliefert."
+      specs: { size: "80 x 60 x 20 cm", material: "PLA weiß/grau/grün", time: "7 Werktage" }
     },
     materials: defaultMaterials,
     industryFocus: "Denkmalpflege & UNESCO-Welterbe in Potsdam",

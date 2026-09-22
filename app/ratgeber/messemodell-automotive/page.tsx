@@ -366,7 +366,7 @@ export default function MesseModellAutomotivePage() {
                 <strong>Konkret kalkuliert:</strong> ein €9.500-Premium-Karosserie-Schnittmodell für 3 internationale Automotive-Messen
                 pro Jahr × 2 Jahre = 6 Messeauftritte. Tier-1-Zulieferer-Anfrage-Steigerung von 4 auf 11 pro Messe = 42 zusätzliche
                 qualifizierte OEM-Anfragen. Bei 8%-Konversion und €450k Ø-Auftragswert: 3 zusätzliche Abschlüsse =
-                <strong className="text-primary"> +€1,35 Mio Mehrumsatz</strong>.
+                 spürbar mehr qualifizierte Gespräche · schon wenige davon rechnen das Modell.
               </p>
             </div>
           </div>

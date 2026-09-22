@@ -191,7 +191,7 @@ const Referenzen = () => {
               <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
                 <span className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-green-500" />
-                  100% Made in Austria
+                  Gefertigt in Österreich
                 </span>
                 <span className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-green-500" />

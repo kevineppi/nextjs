@@ -361,8 +361,7 @@ export default function MesseModellMaschinenbauPage() {
               <div className="mt-6 pt-6 border-t border-border">
                 <h4 className="font-bold mb-2">Ergebnis nach 4 Messen (EMO + METAV + AMB + Hausmesse)</h4>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Stand-Verweildauer auf 4-6 Minuten gestiegen (vorher 1-2 Min), Anfrage-Quote für Standard-Maschinen +85%,
-                  davon ~30% in qualifizierte Sales-Calls überführt. ROI nach erster Messe-Saison: amortisiert plus +€340k Mehrumsatz.
+                  Laut Aussteller deutlich längere Standgespräche und spürbar mehr qualifizierte Anfragen über die Messe-Saison.
                 </p>
               </div>
             </div>
@@ -400,11 +399,7 @@ export default function MesseModellMaschinenbauPage() {
             </div>
             <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mt-8">
               <p className="text-lg leading-relaxed">
-                <strong>Konkret kalkuliert:</strong> wenn Sie pro Messe-Saison 4 Messen besuchen und das Modell
-                Ihre durchschnittliche Anfrage-Quote von 6 auf 12 hebt · das sind 24 zusätzliche qualifizierte
-                Anfragen/Jahr. Bei einer typischen 25% Konversionsrate und €120k Ø-Auftragswert: 6 zusätzliche
-                Abschlüsse × €120k = <strong className="text-primary">+€720k Mehrumsatz/Jahr</strong>. ROI eines €5.000-Modells:
-                <strong className="text-primary"> 14.300% im ersten Jahr</strong>.
+                <strong>Die einfache Rechnung:</strong> Ein Modell kostet einen Bruchteil eines einzigen Auftrags in dieser Branche und ist über mehrere Messen im Einsatz. Schon wenige zusätzliche qualifizierte Gespräche pro Saison rechnen es · konservativ gerechnet, ohne Fantasie-Prozente.
               </p>
             </div>
           </div>

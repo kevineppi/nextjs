@@ -147,7 +147,7 @@ export const orgSchema = () => ({
   logo: `${SITE_BASE}/lovable-uploads/40dc02c2-6cc2-46bb-aff9-6f06079f1f77.png`,
   image: `${SITE_BASE}/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png`,
   description:
-    'FDM, SLA und SLS 3D-Druck-Service aus Gunskirchen, Oberösterreich. Architekturmodelle, Messemodelle, Prototypen und Kleinserien mit Express 24h Lieferung in ganz Österreich.',
+    '3D-Druck-Service aus Gunskirchen, Oberösterreich. Architekturmodelle, Messemodelle, Designprototypen und Mehrfachfertigung mit Express-Lieferung in ganz Österreich.',
   foundingDate: '2024',
   telephone: '+43 676 5517197',
   email: 'office@ek-druck.at',
@@ -208,31 +208,24 @@ export const orgSchema = () => ({
     'Carbon-PA',
   ],
   sameAs: [
-    'https://firmen.wko.at/ekdruck-eu-3d--druck-dienstleistung/oberösterreich/',
+    'https://firmen.wko.at/ekdruck-eu-3d--druck-dienstleistung/ober%C3%B6sterreich/',
     'https://at.trustpilot.com/review/www.ek-druck.at',
     'https://www.firmenabc.at/ekdruck-e-u_BBVcp',
     'https://www.herold.at/gelbe-seiten/gunskirchen/nck9b/ek-druck/',
     'https://www.instagram.com/ekdruck/',
+    'https://www.linkedin.com/in/3d-druck/',
+    'https://www.wirtschaft.at/u/639499s',
+    // TODO Kevin: Google-Business-Profile-Maps-URL ergänzen (Audit A4/K4)
   ],
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '5.0',
-    reviewCount: '35',
-    bestRating: '5',
-    worstRating: '1',
+  // 22.09.2026 (AI-SEO-Audit K2/K3): AggregateRating + Review-Array entfernt.
+  // Self-serving Reviews im Organization-Block sind von Rich Results ausgeschlossen
+  // und standen auf ~90% der Seiten ohne sichtbare Bewertung (Richtlinien-Risiko).
+  // Die Bewertungsstärke transportiert das Google Business Profile via sameAs.
+  identifier: {
+    '@type': 'PropertyValue',
+    name: 'Firmenbuchnummer',
+    value: 'FN 639499s',
   },
-  review: REAL_GOOGLE_REVIEWS.map((r) => ({
-    '@type': 'Review',
-    author: { '@type': 'Person', name: r.author },
-    reviewRating: {
-      '@type': 'Rating',
-      ratingValue: '5',
-      bestRating: '5',
-      worstRating: '1',
-    },
-    reviewBody: r.body,
-    datePublished: r.date,
-  })),
 })
 
 /**
@@ -295,7 +288,7 @@ export const regionalLocalBusinessSchema = (params: {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   '@id': `${params.url}#localbusiness`,
-  name: `ekdruck e.U. — 3D-Druck für ${params.region}`,
+  name: 'ekdruck e.U.',
   parentOrganization: { '@id': ORG_ID },
   url: params.url,
   description: params.description,

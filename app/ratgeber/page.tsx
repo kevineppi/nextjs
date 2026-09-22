@@ -4,13 +4,13 @@ import { breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: '3D-Druck-Ratgeber: 7 kostenlose Guides zu Material, Preis, CAD',
-  description: 'Was kostet 3D-Druck? Welches Material? FDM oder SLA? 7 ehrliche Guides aus 8 Jahren Werkstatt-Praxis · ohne Verkaufsmasche.',
+  description: 'Was kostet 3D-Druck? Welches Material? FDM oder SLA? 7 ehrliche Guides aus der täglichen Werkstatt-Praxis · ohne Verkaufsmasche.',
   alternates: {
     canonical: 'https://www.ek-druck.at/ratgeber',
   },
   openGraph: {
     title: '3D-Druck-Ratgeber: 7 kostenlose Guides zu Material, Preis, CAD',
-    description: 'Was kostet 3D-Druck? Welches Material? FDM oder SLA? 7 ehrliche Guides aus 8 Jahren Werkstatt-Praxis · ohne Verkaufsmasche.',
+    description: 'Was kostet 3D-Druck? Welches Material? FDM oder SLA? 7 ehrliche Guides aus der täglichen Werkstatt-Praxis · ohne Verkaufsmasche.',
     url: 'https://www.ek-druck.at/ratgeber',
     siteName: 'ekdruck · 3D-Druck Österreich',
     locale: 'de_AT',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '3D-Druck-Ratgeber: 7 kostenlose Guides zu Material, Preis, CAD',
-    description: 'Was kostet 3D-Druck? Welches Material? FDM oder SLA? 7 ehrliche Guides aus 8 Jahren Werkstatt-Praxis · ohne Verkaufsmasche.',
+    description: 'Was kostet 3D-Druck? Welches Material? FDM oder SLA? 7 ehrliche Guides aus der täglichen Werkstatt-Praxis · ohne Verkaufsmasche.',
   },
 }
 
@@ -29,7 +29,7 @@ const COLLECTION_LD = {
   '@type': 'CollectionPage',
   name: '3D-Druck Ratgeber & Guides',
   description:
-    'Praxiserprobte Guides zu 3D-Druck-Material, Verfahren, Kostenkalkulation, Maschinenbau-Branchen-Anwendungen und Architekturmodellen. Aus 8 Jahren Werkstatt-Erfahrung.',
+    'Praxiserprobte Guides zu 3D-Druck-Material, Verfahren, Kostenkalkulation, Maschinenbau-Branchen-Anwendungen und Architekturmodellen. Aus echter Werkstatt-Erfahrung.',
   url: 'https://www.ek-druck.at/ratgeber',
   inLanguage: 'de-AT',
 }

@@ -1,9 +1,9 @@
 import AnimatedSection from "@/components/AnimatedSection";
 
 const stats = [
-  { label: "Time-to-Market", value: "−65%", detail: "Formfehler früh am Modell erkennen, nicht erst in der Produktion. 5 Monate Markteinführungszeit gewonnen statt verloren." },
-  { label: "Iterationskosten pro Zyklus", value: "−92%", detail: "FDM-Iteration ab €30 statt teurer Produktionsänderung ab €5.000. Mehr Iterationen, schnellere Konvergenz zum optimalen Design." },
-  { label: "Nacharbeit nach Freigabe", value: "−80%", detail: "Das Design ist am echten Modell geprüft, bevor die Produktion startet. Form, Proportion und Ergonomie sitzen, teure Nacharbeit wird zur Ausnahme." },
+  { label: "Früher testen", value: "Tage", detail: "Formfehler am Modell erkennen statt in der Produktion: eine Iteration dauert Tage, keine Wochen." },
+  { label: "Iterationskosten", value: "ab €30", detail: "Eine FDM-Iteration kostet ab €30, eine Änderung nach Produktionsstart schnell vier Stellen. Die Rechnung geht fast immer fürs Modell auf." },
+  { label: "Freigabe am Modell", value: "geprüft", detail: "Form, Proportion und Ergonomie sind am echten Stück geprüft, bevor die Produktion startet." },
   { label: "Marktrisiko vor Launch", value: "messbar", detail: "Designprototypen ermöglichen echte Nutzerfeedbacks lange vor der Produktion. Featuredecisions auf Daten, nicht auf Bauchgefühl." },
 ];
 

@@ -214,7 +214,7 @@ export const roiExamples: ROIExample[] = [
     nachherAnfragenProMesse: 18,
     nachherKonversionsrate: 0.22,
     nachherAvgAuftragswert: 105000,
-    hinweis: 'Schnittmodell mit beweglichen Komponenten und farblicher Materialfluss-Markierung. Standzeit-Anfragen ~120% gesteigert, Konversion durch Fachgespräch am Modell-Detail.',
+    hinweis: 'Schnittmodell mit beweglichen Komponenten und farblicher Materialfluss-Markierung. Standgespräche laut Kunde deutlich gesteigert, Konversion durch Fachgespräch am Modell-Detail.',
   },
   {
     branche: 'Energietechnik',
@@ -394,7 +394,7 @@ export const messeFAQs: FAQItem[] = [
   {
     question: 'Wie lange dauert die Herstellung von der Bestellung zur Lieferung?',
     answer:
-      'Standard-Lieferzeit: 3-5 Wochen ab CAD-Eingang für die meisten Industrie-Messemodelle. Bei eigener Datenaufbereitung (Sie liefern Skizze, wir bauen die CAD-Datei auf) verlängert sich auf 4-7 Wochen. Express-Lieferung 2-3 Wochen ist möglich bei verfügbarer Druckerkapazität (Aufpreis 30-50%). Für Folge-Modelle aus bestehender CAD-Datei: 10-15 Werktage. Empfehlung: 8 Wochen vor Messestart starten, sonst wird der Spielraum für Iterations-Reviews knapp.',
+      'Standard sind 3-5 Werktage ab Datenfreigabe. Braucht es vorher Datenaufbereitung (Sie liefern Pläne oder Skizzen, wir bauen die CAD-Datei auf), kommt deren Aufwand dazu. Express in 24-48 Stunden gegen 50% Aufpreis. Empfehlung: mit genug Vorlauf vor Messestart anfragen, dann bleibt Raum für eine Abstimmungsrunde.',
   },
   {
     question: 'Können bewegliche Komponenten in ein Messemodell integriert werden?',
@@ -409,7 +409,7 @@ export const messeFAQs: FAQItem[] = [
   {
     question: 'Können die Modelle nach der Messe noch verändert werden (Folge-Messen, Updates)?',
     answer:
-      'Ja, das ist sogar eine bewusste Auslegungs-Entscheidung. Wir fertigen bei Multi-Messen-Strategien modular: einzelne Komponenten austauschbar (z.B. neues Produkt-Modul für nächste Messe), Sockel separat von Hauptmodell, segmentierbare Strukturen. Update-Modelle für Folge-Messen ab €300-800 je nach Modifikations-Umfang. CAD-Daten bleiben gespeichert (DSGVO-konform unter Geschäftsbesorgungsvertrag), Neudruck einzelner Teile ist innerhalb 5-10 Werktagen möglich.',
+      'Ja, das ist sogar eine bewusste Auslegungs-Entscheidung. Wir fertigen bei Multi-Messen-Strategien modular: einzelne Komponenten austauschbar (z.B. neues Produkt-Modul für nächste Messe), Sockel separat von Hauptmodell, segmentierbare Strukturen. Update-Modelle für Folge-Messen ab €300-800 je nach Modifikations-Umfang. CAD-Daten bleiben gespeichert (DSGVO-konform unter Geschäftsbesorgungsvertrag), Neudruck einzelner Teile ist innerhalb 3-5 Werktagen möglich.',
   },
   {
     question: 'Was passiert wenn das Modell auf der Messe beschädigt wird?',
@@ -424,7 +424,7 @@ export const messeFAQs: FAQItem[] = [
   {
     question: 'Lohnen sich Multi-Messen-Strategien · ein Modell für mehrere Messen?',
     answer:
-      'Das ist die wirtschaftlich beste Auslegung. Beispielrechnung: Ein €4.500-Modell für eine einzelne Messe = €4.500/Messe. Das gleiche Modell auf 4 Messen pro Jahr × 3 Jahre = 12 Messeeinsätze = €375/Messe. Bei realistischer Anfrage-Steigerung von +50% durch das Modell und durchschnittlichem Auftragswert von €60k macht das einen ROI über 3 Jahre von 800-1500%. Wir fertigen Modelle bewusst transport-robust und mit modularen Update-Komponenten für Multi-Messen-Tauglichkeit.',
+      'Das ist die wirtschaftlich beste Auslegung. Beispielrechnung: Ein €4.500-Modell für eine einzelne Messe = €4.500/Messe. Das gleiche Modell auf 4 Messen pro Jahr × 3 Jahre = 12 Messeeinsätze = €375/Messe. So verteilt sich der Modellpreis auf viele Einsätze, während Prospekte jede Messe neu gedruckt werden. Wir fertigen Modelle bewusst transport-robust und mit modularen Update-Komponenten für Multi-Messen-Tauglichkeit.',
   },
   {
     question: 'Können Sie die CAD-Daten aufbauen wenn wir nur Skizzen haben?',
@@ -449,7 +449,7 @@ export const messeFAQs: FAQItem[] = [
   {
     question: 'Können Sie auch Sonderwünsche wie LED-Beleuchtung oder Animation umsetzen?',
     answer:
-      'LED-Beleuchtung: ja, bei Aufpreis ab €200-800 je nach Komplexität. Wir integrieren LED-Strips intern, USB-Powered, mit kleinem Schalter am Sockel. Animation (Motorantriebe für drehende Komponenten): ja, Standard-Servomotoren mit Mikro-Controller (Arduino-basiert) ab €400-1.500 je nach Komplexität. Sound-Elemente: nur in Ausnahmefällen, weil Messehallen-Lärm Sound-Effekte fast immer unterläuft. Für Premium-Showcase-Modelle Bewegung + LED ist die Kombination die maximale Stand-Anfrage-Steigerung produziert (laut Practitioner-Daten +200% vs statisches Modell).',
+      'LED-Beleuchtung: ja, bei Aufpreis ab €200-800 je nach Komplexität. Wir integrieren LED-Strips intern, USB-Powered, mit kleinem Schalter am Sockel. Animation (Motorantriebe für drehende Komponenten): ja, Standard-Servomotoren mit Mikro-Controller (Arduino-basiert) ab €400-1.500 je nach Komplexität. Sound-Elemente: nur in Ausnahmefällen, weil Messehallen-Lärm Sound-Effekte fast immer unterläuft. Für Premium-Showcase-Modelle Bewegung + LED ist die Kombination erfahrungsgemäß die meisten Standgespräche auslöst.',
   },
 ]
 

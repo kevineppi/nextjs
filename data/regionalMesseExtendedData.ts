@@ -24,8 +24,7 @@ const defaultCaseStudy: CaseStudyData = {
     size: "80 x 60 x 40 cm",
     material: "PETG weiß, lackiert",
     time: "5 Werktage"
-  },
-  quote: "Das Modell war der absolute Eyecatcher an unserem Stand. So viele Besucher wie dieses Jahr hatten wir noch nie!"
+  }
 };
 
 // Default materials
@@ -57,13 +56,12 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
       industry: "Tourismus & Messepräsentation",
       challenge: "Ein Wiener Reiseveranstalter wollte auf der FERIEN-MESSE Wien ein aufmerksamkeitsstarkes Modell einer neuen Hotelanlage als Eyecatcher für seinen Stand. Das Modell musste leicht transportierbar und robust genug für 4 Messetage sein.",
       solution: "Wir fertigten ein farbiges Modell der Hotelanlage mit Pool-Landschaft im Maßstab 1:100. Palmen aus grünem PLA, Wasserflächen aus blau-transparentem PETG. Der modulare Aufbau passte in zwei Transportkoffer.",
-      result: "Der Stand verzeichnete 60% mehr Besucher als im Vorjahr. Das Modell wurde zum meistfotografierten Objekt der Messe und generierte zahlreiche Social-Media-Posts.",
+      result: "Der Kunde meldete deutlich mehr Standbesucher als im Vorjahr. Das Modell wurde zum meistfotografierten Objekt der Messe und generierte zahlreiche Social-Media-Posts.",
       specs: {
         size: "80 x 60 x 30 cm",
         material: "PLA mehrfarbig + PETG blau",
         time: "6 Werktage"
-      },
-      quote: "Das Modell hat unseren Stand zur Attraktion gemacht. Die Besucher blieben stehen und wollten alles über die Anlage wissen."
+      }
     },
     materials: [
       {
@@ -104,8 +102,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
         size: "60 x 45 x 45 cm",
         material: "PLA mehrfarbig",
         time: "3 Werktage + Same-Day Lieferung"
-      },
-      quote: "Als lokaler Partner war ekdruck unschlagbar. Abholung in Gunskirchen, und 30 Minuten später stand das Modell am Messestand in Wels."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Präsentationsmodelle für oberösterreichische Unternehmen",
@@ -127,8 +124,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
         size: "150 x 60 x 60 cm",
         material: "PLA in Corporate-Farben, mehrteilig",
         time: "8 Werktage"
-      },
-      quote: "Das riesige Modell hat alle Blicke auf sich gezogen. Jeder Besucher wollte ein Foto damit machen."
+      }
     },
     materials: [
       {
@@ -169,8 +165,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
         size: "35 x 25 x 60 cm",
         material: "PLA, patiniert",
         time: "5 Werktage"
-      },
-      quote: "Die Detailtreue war beeindruckend. Unsere Kunden konnten sich das finale Werk perfekt vorstellen."
+      }
     },
     materials: [
       {
@@ -211,8 +206,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
         size: "100 x 80 x 60 cm",
         material: "PLA Holzoptik",
         time: "8 Werktage"
-      },
-      quote: "Perfekt für die Holzmesse! Das Material sah täuschend echt aus und die Besucher waren begeistert vom modularen Konzept."
+      }
     },
     materials: [
       {
@@ -253,8 +247,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
         size: "120 x 90 x 30 cm",
         material: "PLA weiß + farbige Akzente",
         time: "10 Werktage"
-      },
-      quote: "Die Investoren konnten das Projekt endlich greifen. Das Modell war entscheidend für die Projektgenehmigung."
+      }
     },
     materials: [
       {
@@ -295,8 +288,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
         size: "40 x 35 x 20 cm",
         material: "PLA matt schwarz",
         time: "4 Werktage"
-      },
-      quote: "Ohne 3D-Druck hätten wir das organische Design niemals so überzeugend präsentieren können. Der Award war das Ergebnis!"
+      }
     },
     materials: [
       {
@@ -337,8 +329,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
         size: "55 x 40 x 30 cm",
         material: "PETG robust + bewegliche Teile",
         time: "6 Werktage"
-      },
-      quote: "Endlich konnten wir zeigen, wie einfach unser System funktioniert. Das bewegliche Modell hat alles verständlich gemacht."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Landwirtschaft & Regionalmessen in NÖ",
@@ -360,8 +351,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
         size: "70 x 50 x 25 cm",
         material: "PLA weiß + Landschaftselemente",
         time: "7 Werktage"
-      },
-      quote: "Mit dem Modell konnten wir unsere Vision greifbar machen. Die Investoren waren sofort überzeugt."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Wein & Tourismus im Burgenland",
@@ -384,8 +374,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
         size: "150 x 100 x 80 cm",
         material: "PLA weiß, mehrteilig",
         time: "5 Werktage + Same-Day Lieferung"
-      },
-      quote: "Die Nähe zu ekdruck war ein Riesenvorteil. Wir konnten das Modell selbst abholen und sofort einsetzen."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Kreativwirtschaft & Design in Linz",
@@ -407,8 +396,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
         size: "45 x 25 x 20 cm",
         material: "PETG robust + bewegliche Teile",
         time: "4 Werktage"
-      },
-      quote: "Persönliche Abholung in Gunskirchen · und 10 Minuten später stand das Modell auf unserem Stand in Wels!"
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Messen in Wels",
@@ -430,8 +418,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
         size: "120 x 60 x 80 cm",
         material: "PLA mehrfarbig, lackiert",
         time: "7 Werktage"
-      },
-      quote: "Ein Modell, drei Messen · die Investition hat sich mehrfach bezahlt gemacht."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Messepräsentation & Events in Graz",
@@ -476,8 +463,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
         size: "60 x 40 x 20 cm",
         material: "PLA weiß/grün + PETG blau",
         time: "5 Werktage"
-      },
-      quote: "Das Thermenmodell begeistert unsere Gäste täglich. Ein tolles Gesprächsstück im Hotelfoyer."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Tourismus & regionale Events in Villach",
@@ -499,8 +485,7 @@ export const regionalExtendedData: Record<string, RegionalExtendedData> = {
         size: "30 x 20 x 25 cm",
         material: "PLA+ weiß + farbige Akzente",
         time: "3 Werktage"
-      },
-      quote: "Klein, aber wirkungsvoll. Das Modell hat mehr Gespräche gebracht als jeder Prospekt."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Regionale Gewerbemessen in St. Pölten",
@@ -585,7 +570,7 @@ regionalExtendedData['steiermark'].faqs = [
   { question: "Können überdimensionale Eyecatcher für die Grazer Herbstmesse gefertigt werden?", answer: "Ja · wir fertigen Modelle bis 2 Meter Höhe. Mehrteilige Aufbauten ermöglichen den Transport im PKW. Der Aufbau am Stand ist in wenigen Minuten erledigt." },
   { question: "Wie wird ein großes Modell sicher zur Messe Graz transportiert?", answer: "Unsere modulare Bauweise mit Stecklösungen macht den Transport einfach. Jedes Teil wird einzeln in Schaumstoff verpackt. Lieferzeit nach Graz: 1-2 Werktage." },
   { question: "Welche Nachbearbeitung ist für messetaugliche Oberflächen empfehlenswert?", answer: "Für optimale Messeoptik empfehlen wir Schleifen und Grundierung bei großen Flächen, Lackierung für glatte Oberflächen und farbliche Highlights durch Airbrush-Akzente." },
-  { question: "Eignen sich 3D-gedruckte Modelle auch für die Häuslbauermesse?", answer: "Ja · besonders für Aussteller, die Gebäudekonzepte oder Produkte greifbar präsentieren möchten. Physische Modelle steigern die Aufmerksamkeit am Stand nachweislich." },
+  { question: "Eignen sich 3D-gedruckte Modelle auch für die Häuslbauermesse?", answer: "Ja · besonders für Aussteller, die Gebäudekonzepte oder Produkte greifbar präsentieren möchten. Physische Modelle steigern die Aufmerksamkeit am Stand spürbar." },
   { question: "Können Modelle für steirische Branchenmessen individuell gestaltet werden?", answer: "Jedes Modell wird individuell nach Ihren Vorgaben gefertigt. Von der Farbe über die Größe bis zur Oberflächenbehandlung · alles wird an Ihre Messepräsentation angepasst." },
 ];
 regionalExtendedData['steiermark'].introText = "Für Grazer Herbstmesse, Häuslbauermesse und Frühjahrsmesse · wir fertigen XXL-Exponate und Präsentationsmodelle, die steirische Messebesucher begeistern.";

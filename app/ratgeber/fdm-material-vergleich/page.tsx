@@ -73,7 +73,7 @@ const faqs = [
   {
     question: 'Wann lohnt sich PA-CF gegenüber PETG oder ABS?',
     answer:
-      'PA-CF (Carbon-Faser-verstärktes Polyamid) hat etwa das 2- bis 3-fache Zugfestigkeitsniveau von PETG/ABS und eine Wärmeformbeständigkeit bis ~180 °C. Es ist die richtige Wahl für Funktionsmuster, die mechanisch belastet werden, in DV/PV-Tests laufen oder bei Wärme formstabil bleiben müssen. Der Mehrpreis (€80-€150/kg) und der Bedarf einer gehärteten Düse rechtfertigen sich nur bei Funktions-Anforderungen · für reine Show-Modelle ist PA-CF überdimensioniert.',
+      'PA-CF (Carbon-Faser-verstärktes Polyamid) hat etwa das 2- bis 3-fache Zugfestigkeitsniveau von PETG/ABS und eine Wärmeformbeständigkeit bis ~180 °C. Es ist die richtige Wahl, wenn ein Modell besonders steif und bei Wärme formstabil bleiben soll. Der Mehrpreis (€80-€150/kg) rechtfertigt sich nur bei solchen Anforderungen · für reine Show-Modelle ist PA-CF überdimensioniert.',
   },
   {
     question: 'Welches Material eignet sich für Lebensmittelkontakt?',
@@ -250,7 +250,7 @@ export default function FdmMaterialVergleichPage() {
                   <p>
                     <strong className="text-primary">TPU</strong> ist flexibel (Shore 85A-70D) für biegsame Objekte
                     und Dämpfer. <strong className="text-primary">PA-CF</strong> ist Hochleistung (Aluminium-ähnliche
-                    Steifigkeit) für Funktionsmuster mit Last.
+                    Steifigkeit), wenn maximale Formstabilität gefragt ist.
                   </p>
                 </div>
               </div>
@@ -262,7 +262,7 @@ export default function FdmMaterialVergleichPage() {
             <div className="container mx-auto px-4">
               <div className="max-w-7xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold leading-tight tracking-[-0.02em] mb-3">
-                  TLDR-Vergleich: Alle 6 Materialien auf einen Blick
+                  TLDR-Vergleich: Alle 8 Materialien auf einen Blick
                 </h2>
                 <p className="text-base text-muted-foreground mb-8 max-w-3xl">
                   Standardisierte Materialwerte nach ISO-Normen. Für detaillierte Erklärungen siehe Material-Profile unten.

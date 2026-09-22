@@ -251,7 +251,7 @@ export default function Page() {
                   Nicht jedes Modell gehört in den 3D-Drucker. Filigrane Fassadendetails in 1:50 mit Echtholz
                   und Messing sind Handwerksarbeit für den klassischen Modellbau. Unsere Stärke sind saubere
                   Baukörper, Gelände, Bebauungsstudien und Präsentationsmodelle mit kurzer Lieferzeit,
-                  gefertigt aus Filamenten österreichischer Produktion.
+                  gefertigt aus nachhaltigen Filamenten.
                 </p>
               </div>
             </div>

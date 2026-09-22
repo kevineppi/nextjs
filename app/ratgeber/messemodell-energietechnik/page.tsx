@@ -346,7 +346,7 @@ export default function MesseModellEnergietechnikPage() {
               <div className="bg-card border border-border rounded-lg p-6">
                 <Target className="w-8 h-8 text-primary mb-3" />
                 <h3 className="font-bold text-lg mb-2">Stand-Interaktivität</h3>
-                <p className="text-sm text-muted-foreground">Klappbare Türen → Einkäufer öffnet selbst → fühlt sich beteiligt → bleibt länger. Faktor 3-4x Stand-Verweildauer vs. Renderings.</p>
+                <p className="text-sm text-muted-foreground">Klappbare Türen → Einkäufer öffnet selbst → fühlt sich beteiligt → bleibt deutlich länger als vor einem Rendering.</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
                 <Lightbulb className="w-8 h-8 text-primary mb-3" />
@@ -368,7 +368,7 @@ export default function MesseModellEnergietechnikPage() {
               <p className="text-lg leading-relaxed">
                 <strong>Konkret kalkuliert:</strong> ein €7.500-MV-Schaltanlagen-Modell für 6 internationale Energie-Messen
                 über 3 Jahre. Anfrage-Steigerung von 12 auf 28 pro Messe = 96 zusätzliche qualifizierte Energieversorger-Anfragen.
-                Bei 12%-Konversion und €195k Ø-Auftragswert: 11 zusätzliche Abschlüsse = <strong className="text-primary">+€2,1 Mio Mehrumsatz</strong> über die Modell-Lebenszeit.
+                Schon wenige zusätzliche qualifizierte Gespräche pro Saison rechnen das Modell · konservativ gerechnet, ohne Fantasie-Prozente.
               </p>
             </div>
           </div>

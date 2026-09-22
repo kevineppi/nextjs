@@ -78,7 +78,7 @@ const QuickInquiryForm = () => {
 
       toast({
         title: "Anfrage gesendet!",
-        description: "Wir melden uns innerhalb von 2 Stunden bei Ihnen."
+        description: "Wir melden uns innerhalb weniger Stunden bei Ihnen."
       });
 
       setName("");

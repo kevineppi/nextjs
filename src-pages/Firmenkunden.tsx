@@ -46,10 +46,10 @@ import {
 
 const Firmenkunden = () => {
   const heroStats = [
-    { value: "100+", label: "Firmenkunden", icon: Building },
+    { value: "6h", label: "Angebot werktags", icon: Building },
     { value: "5.0", label: "Google Rating", icon: Star },
     { value: "24h", label: "Express", icon: Zap },
-    { value: "100%", label: "Termintreue", icon: CalendarCheck }
+    { value: "24-48h", label: "Express-Option", icon: CalendarCheck }
   ];
 
   const trustLogos = [
@@ -62,7 +62,7 @@ const Firmenkunden = () => {
       title: "Verbindliche Lieferzeiten",
       description: "Termine die zu Ihren Projektplänen passen. Wir halten was wir versprechen.",
       highlight: "Express in 24-48h möglich",
-      stats: "100% Termintreue"
+      stats: "Bisher jeden zugesagten Termin gehalten"
     },
     {
       icon: Handshake,
@@ -221,7 +221,7 @@ const Firmenkunden = () => {
     },
     { 
       title: "Schnelle Reaktionszeit", 
-      desc: "Antwort innerhalb von 24h garantiert – meist deutlich schneller",
+      desc: "Angebot in 6 Stunden werktags – meist deutlich schneller",
       icon: MessageSquare
     },
     { 
@@ -324,7 +324,7 @@ const Firmenkunden = () => {
                     "Express 24h",
                     "Persönlicher Kontakt",
                     "Made in Austria",
-                    "100% Termintreue"
+                    "Bisher jeden zugesagten Termin gehalten"
                   ].map((usp, i) => (
                     <div key={i} className="flex items-center gap-2 bg-muted/50 px-3 py-1.5 rounded-full text-sm">
                       <CheckCircle className="w-4 h-4 text-primary" />
@@ -414,8 +414,8 @@ const Firmenkunden = () => {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 text-center">
               <div>
-                <div className="text-3xl font-bold text-primary">100+</div>
-                <div className="text-sm text-muted-foreground">Firmenkunden</div>
+                <div className="text-3xl font-bold text-primary">B2B</div>
+                <div className="text-sm text-muted-foreground">Rechnung mit UID</div>
               </div>
               <div className="h-12 w-px bg-border hidden md:block" />
               <div>

@@ -58,7 +58,7 @@ const QuickContactBar = ({
       label: "WhatsApp Chat",
       sublabel: "Foto/Skizze direkt senden",
       href: getWhatsAppUrl(waMessage),
-      badge: "Antwort < 2h",
+      badge: "Antwort in wenigen Stunden",
       external: true,
       primary: false,
       channel: "whatsapp",

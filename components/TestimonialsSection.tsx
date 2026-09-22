@@ -96,6 +96,7 @@ const TestimonialsSection = ({
   const reviewSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
+    '@id': 'https://www.ek-druck.at/#organization',
     name: BRAND.companyName,
     // aggregateRating entfernt: einzige Bewertungsquelle ist global orgSchema() (Review-Snippet-Dedup)
     review: list.map((t) => ({

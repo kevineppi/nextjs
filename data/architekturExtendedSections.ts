@@ -126,7 +126,7 @@ const oberoesterreich: ExtendedArchitekturSections = {
     headline: 'Ihr Architekturmodell aus OÖ · Abholung am selben Tag',
     subheadline: 'Lokale Fertigung in Gunskirchen · kein Versandrisiko, persönliche Qualitätskontrolle',
     steps: [
-      { title: 'Datei hochladen & Maßstab besprechen', description: 'CAD-Export senden · wir prüfen Druckbarkeit und Detailgrad innerhalb von 2 Stunden.', context: 'OÖ-Kunden können die Besprechung auch persönlich in Gunskirchen führen.' },
+      { title: 'Datei hochladen & Maßstab besprechen', description: 'CAD-Export senden · wir prüfen Druckbarkeit und Detailgrad innerhalb weniger Stunden.', context: 'OÖ-Kunden können die Besprechung auch persönlich in Gunskirchen führen.' },
       { title: 'Druck starten · Same-Day möglich', description: 'Bei Auftragseingang bis 10 Uhr ist Same-Day-Abholung für Standardmodelle möglich.', context: 'Große Modelle (>30cm) brauchen 8-12h Druckzeit · Abholung dann am Folgetag.' },
       { title: 'Qualitätskontrolle gemeinsam vor Ort', description: 'Sie prüfen das Modell persönlich in Gunskirchen. Korrekturen können sofort besprochen werden.', context: 'Das ist unser größter Vorteil: Kein Versand, kein Bruchrisiko, persönliche Abstimmung.' },
       { title: 'Fertigstellung & Abholung', description: 'Modell auf Grundplatte montiert, beschriftet und verpackt · oder direkt mitgenommen.', context: 'Wir haben immer Verpackungsmaterial vor Ort, falls Sie das Modell im Auto transportieren.' },
@@ -243,7 +243,7 @@ const salzburg: ExtendedArchitekturSections = {
     {
       title: 'Hotel-Präsentationen im Salzburger Land',
       description: 'Hotelprojekte in Tourismusregionen werden Investoren als maßstabsgetreues Modell präsentiert. Zimmeraufteilung, Spa-Bereich und Außenanlagen werden sichtbar.',
-      whyPrint: 'Hotel-Investoren treffen Entscheidungen oft bei einer einzigen Präsentation. Ein physisches Modell erhöht die Abschlussquote messbar.',
+      whyPrint: 'Hotel-Investoren treffen Entscheidungen oft bei einer einzigen Präsentation. Ein physisches Modell erhöht die Abschlussquote erfahrungsgemäß.',
       requirements: ['Maßstab 1:200', 'Mit Außenanlagen', 'Abnehmbare Geschosse', 'Express über A1'],
     },
     {

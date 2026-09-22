@@ -3,10 +3,10 @@
 import AnimatedSection from "@/components/AnimatedSection";
 
 const stats = [
-  { label: "Verweildauer am Stand", value: "+340%", detail: "Besucher verbringen 3,4× mehr Zeit an Ständen mit physischen Modellen als an reinen Screen-Ständen." },
-  { label: "Erinnerungsrate nach 7 Tagen", value: "6× höher", detail: "Haptische Erlebnisse bleiben 6× länger im Gedächtnis als rein visuelle Reize." },
-  { label: "Qualifizierte Standgespräche", value: "+47%", detail: "Wer ein Modell anfasst, stellt Fragen. Wer Fragen stellt, ist ein qualifizierter Lead." },
-  { label: "Wiedereinsätze pro Modell", value: "5–10×", detail: "PETG/ASA-Modelle überstehen 5–10 Messen. Kosten pro Einsatz: €18–36." },
+  { label: "Express-Fertigung", value: "24-48h", detail: "Wenn die Messe naechste Woche ist: Express-Fertigung gegen 50% Aufpreis, versicherter Versand in AT und DE." },
+  { label: "Festpreisangebot", value: "6h", detail: "CAD-Daten oder Skizze schicken, werktags kommt das Festpreisangebot innerhalb von 6 Stunden." },
+  { label: "Gewicht gegenueber Original", value: "bis -90%", detail: "Ein 3D-gedrucktes Modell wiegt einen Bruchteil des Originals: tragbar statt Kran, Paket statt Spedition." },
+  { label: "Google-Bewertungen", value: "5,0", detail: "35 Bewertungen, alle fuenf Sterne, von Messe- und Architekturkunden aus ganz Oesterreich." },
 ];
 
 const MesseROISection = () => (
@@ -15,8 +15,8 @@ const MesseROISection = () => (
       <div className="max-w-7xl mx-auto">
         <AnimatedSection animation="fade-in" className="mb-12">
           <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Return on Investment</p>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-[-0.03em] mb-3">Ein Modell. Hunderte Gespräche.</h2>
-          <p className="text-background/50 max-w-lg">Was bringt ein 3D-Exponat wirtschaftlich? Die Zahlen unserer Kunden sprechen für sich.</p>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-[-0.03em] mb-3">Ein Modell, das für Sie arbeitet.</h2>
+          <p className="text-background/50 max-w-lg">Was Sie von einem 3D-Exponat konkret erwarten können, nüchtern gerechnet.</p>
         </AnimatedSection>
 
         <div className="grid sm:grid-cols-2 gap-4 mb-4">
@@ -55,7 +55,7 @@ const MesseROISection = () => (
                 )
               )}
             </div>
-            <p className="text-sm text-background/60">Bei einem B2B-Lead-Wert von <strong className="text-primary">€500+</strong> rechnet sich Ihr Messemodell nach <strong className="text-primary">einem einzigen qualifizierten Kontakt</strong>.</p>
+            <p className="text-sm text-background/60">Beispielrechnung mit angenommenen 8 Einsätzen: schon ein einziger qualifizierter Kontakt kann den Modellpreis decken.</p>
           </div>
         </AnimatedSection>
       </div>

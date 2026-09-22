@@ -37,7 +37,7 @@ const Index = () => {
   return <>
     <SEOHead
       title="3D-Druck Österreich ★5,0 – Architekturmodelle & Messemodelle | ekdruck"
-      description="Österreichs Spezialist für Architekturmodelle & Messemodelle. ★ 5,0 Google (35 Bewertungen) · Angebot in 6h · Express 24h · ab €20 · Flatrate für Architekturbüros ab €490/Mon."
+      description="Spezialisiert auf Architekturmodelle & Messemodelle. ★ 5,0 Google (35 Bewertungen) · Angebot in 6h · Express 24h · ab €20 · Flatrate für Architekturbüros ab €490/Mon."
       keywords="3d druck, 3d druck österreich, 3d druck service, 3d druck firma, 3d druck anbieter, 3d druck dienstleister, 3d druck oberösterreich, 3d druck prototypen"
       path="/"
     />
@@ -636,7 +636,7 @@ const Index = () => {
               {
                 anchor: "Rapid Prototyping",
                 href: "/rapid-prototyping",
-                after: " im Designprozess die schnellste Lösung am Markt.",
+                after: " im Designprozess oft die schnellste Lösung.",
               },
             ],
           },

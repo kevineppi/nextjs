@@ -163,7 +163,7 @@ export default function MesseModellElektrotechnikPage() {
             </p>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Plus: 1:5-Modelle mit klappbaren Türen erlauben dem Buyer, selbst zu öffnen und das Innere zu erkunden · ein
-              psychologischer Akt der Beteiligung, der die Aufenthaltsdauer am Stand verdreifacht.
+              psychologischer Akt der Beteiligung, der Besucher deutlich länger am Stand hält.
             </p>
             <div className="grid md:grid-cols-3 gap-6 my-8">
               <div className="bg-destructive/5 border border-destructive/20 rounded-lg p-6">
@@ -373,7 +373,7 @@ export default function MesseModellElektrotechnikPage() {
                 <strong>Konkret kalkuliert:</strong> ein €5.500-Schaltschrank-Modell (1:5, mit klappbarer Tür und vollständiger
                 Klemmenreihen-Innenausstattung) für 3 Messen pro Jahr × 3 Jahre = 9 Messeauftritte. Industrie-Einkäufer-Anfragen
                 steigen von 10 auf 22 pro Messe = 108 zusätzliche qualifizierte Anfragen über die Lebenszeit. Bei 18%-Konversion
-                und €85k Ø-Schaltschrank-Auftragswert: 19 zusätzliche Abschlüsse = <strong className="text-primary">+€1,6 Mio Mehrumsatz</strong>.
+                Schon wenige zusätzliche qualifizierte Gespräche pro Saison rechnen das Modell · konservativ gerechnet, ohne Fantasie-Prozente.
               </p>
             </div>
           </div>

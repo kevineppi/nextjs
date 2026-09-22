@@ -30,7 +30,7 @@ const faqSchema = {
   "@type": "FAQPage",
   mainEntity: [
     { "@type": "Question", name: "Was kostet ein 3D-Druck Modell bei ekdruck?", acceptedAnswer: { "@type": "Answer", text: "Die 3D-Druck Kosten beginnen bei ekdruck ab €20 pro Teil. Der genaue Preis hängt von Modellgröße, Material und Qualitätsstufe ab. Nutzen Sie unseren Online-Kostenrechner für eine sofortige Richtpreisberechnung · kostenlos und ohne Anmeldung." } },
-    { "@type": "Question", name: "Welche 3D-Druck Materialien kann ich wählen?", acceptedAnswer: { "@type": "Answer", text: "Wir bieten 8 FDM-Materialien an: PLA, PETG, ABS, PLA+, ASA, TPU, Polycarbonat und PA6-CF mit Carbonfaser. Alle Filamente stammen aus österreichischer Produktion." } },
+    { "@type": "Question", name: "Welche 3D-Druck Materialien kann ich wählen?", acceptedAnswer: { "@type": "Answer", text: "Wir bieten 8 FDM-Materialien an: PLA, PETG, ABS, PLA+, ASA, TPU, Polycarbonat und PA6-CF mit Carbonfaser." } },
     { "@type": "Question", name: "Wie genau ist der Richtpreis?", acceptedAnswer: { "@type": "Answer", text: "Typische Abweichung zum Endpreis: ±10 bis 15 %. Der verbindliche Festpreis wird nach persönlicher technischer Prüfung festgelegt." } },
     { "@type": "Question", name: "Kann ich mehrere Modelle gleichzeitig kalkulieren?", acceptedAnswer: { "@type": "Answer", text: "Ja, Multi-File-Upload wird unterstützt. Mengenvorteil ab 10 Stück automatisch." } },
     { "@type": "Question", name: "Wie schnell ist die Lieferung?", acceptedAnswer: { "@type": "Answer", text: "Standard 3-5 Werktage, Express 24-48 Stunden. Versand in ganz Österreich." } },

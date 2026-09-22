@@ -8,8 +8,8 @@ const TrustBadges = ({ variant = "full" }: TrustBadgesProps) => {
   const badges = [
     {
       icon: Users,
-      text: "100+ erfolgreiche Projekte",
-      highlight: "100+",
+      text: "Echte Referenzprojekte mit Fotos",
+      highlight: "Referenzen",
     },
     {
       icon: Star,
@@ -18,8 +18,8 @@ const TrustBadges = ({ variant = "full" }: TrustBadgesProps) => {
     },
     {
       icon: CheckCircle,
-      text: "100% Zufriedenheitsgarantie",
-      highlight: "100%",
+      text: "Nachdruck bei Mängeln auf unsere Kosten",
+      highlight: "Nachdruck",
     },
     {
       icon: Shield,

@@ -45,7 +45,7 @@ const ReviewsWidget = () => {
             Das sagen unsere <span className="text-gradient">Kunden</span>
           </h2>
           <p className="text-muted-foreground mb-4">
-            Über 50+ zufriedene Kunden vertrauen auf unseren 3D-Druck Service
+            5,0 Sterne aus 35 Google-Bewertungen vertrauen auf unseren 3D-Druck Service
           </p>
           <div className="flex items-center justify-center gap-2">
             <div className="flex">

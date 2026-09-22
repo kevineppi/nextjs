@@ -206,12 +206,12 @@ const UeberUns = () => {
                   {
                     icon: Printer,
                     title: "Highspeed-FDM",
-                    description: "Für Standard-Modelle, Detailgrade bis 0,1 mm Schichthöhe, Bauvolumen bis 256×256×256 mm. Unser Arbeitstier für schnelle Durchlaufzeiten.",
+                    description: "Für Standard-Modelle mit feinen Detailgraden und schnellen Durchlaufzeiten. Unser Arbeitstier im Tagesgeschäft.",
                   },
                   {
                     icon: Package,
                     title: "Großformat & Multi-Material",
-                    description: "Großformat-FDM bis 360×360×360 mm, Multi-Material-Druck mit bis zu 5 Filamenten gleichzeitig, perfekt für mehrfarbige Modelle ohne Maskierung.",
+                    description: "Einzeldruck bis 35 × 35 × 35 cm, mehrfarbiger Multi-Material-Druck ohne Maskierung. Größere Modelle entstehen segmentiert bis 2 m.",
                   },
                   {
                     icon: Clock,
@@ -275,7 +275,7 @@ const UeberUns = () => {
                   <h2 className="text-3xl md:text-4xl font-bold mb-5">Regional &amp; nachhaltig produziert</h2>
                   <div className="space-y-4 text-muted-foreground leading-relaxed">
                     <p>
-                      Mein Filament kommt aus österreichischer Produktion. Konkret: das Material wird aus
+                      Mein Filament wird aus
                       recycelten Industrieabfällen hergestellt, Energie kommt aus Ökostrom, der CO₂-Fußabdruck
                       ist im Vergleich zu Standard-Importware aus Asien ca. 80% niedriger.
                     </p>

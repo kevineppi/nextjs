@@ -365,7 +365,7 @@ export default function MesseModellAnlagenbauPage() {
               <p className="text-lg leading-relaxed">
                 <strong>Konkret kalkuliert:</strong> ein €4.500-Schnittmodell für Pumpen-Hersteller über 3 Messen pro Jahr × 3 Jahre =
                 9 Messeauftritte. Anfrage-Steigerung von 8 auf 18 pro Messe = 90 zusätzliche Anfragen über die Modell-Lebenszeit.
-                Bei 22%-Konversion und €105k Ø-Auftragswert: 20 zusätzliche Abschlüsse = <strong className="text-primary">+€2,1 Mio Mehrumsatz</strong>.
+                Schon wenige zusätzliche qualifizierte Gespräche pro Saison rechnen das Modell · konservativ gerechnet, ohne Fantasie-Prozente.
               </p>
             </div>
           </div>

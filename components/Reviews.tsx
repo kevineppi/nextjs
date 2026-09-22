@@ -41,7 +41,7 @@ const Reviews = () => {
     description: "Schnelle Umsetzung für eilige Projekte"
   }, {
     icon: <CheckCircle className="w-6 h-6" />,
-    title: "100% Zufriedenheitsgarantie",
+    title: "Nachdruck bei Mängeln auf unsere Kosten",
     description: "Ihre Zufriedenheit ist unser Anspruch"
   }];
   return <section className="py-24 bg-muted/30">

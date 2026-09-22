@@ -111,7 +111,7 @@ const maschinenbau: Branche = {
       problem:
         'Renderbilder am Roll-up sehen aus wie jeder andere Stand. Niemand bleibt stehen.',
       solution:
-        'Ein 3D-gedrucktes Modell ist physisch greifbar, segmentierbar, drehbar. Die Lead-Capture-Rate ist nach Erfahrung 3-5× höher als bei reinem 2D-Marketing.',
+        'Ein 3D-gedrucktes Modell ist physisch greifbar, segmentierbar, drehbar. Die Lead-Capture-Rate ist nach Kundenrückmeldungen deutlich höher als bei reinem 2D-Marketing.',
     },
     {
       problem:
@@ -354,7 +354,7 @@ const schiffbau: Branche = {
     {
       question: 'Bis zu welcher Größe können Sie Schiffsmodelle drucken?',
       answer:
-        'Einzelne Druckbett-Größe bis 600x600x600mm. Größere Modelle werden segmentiert gedruckt und unsichtbar verbunden · bis 2 m Modelllänge bei Yacht-Vollmodellen problemlos realisierbar, theoretisch unbegrenzt.',
+        'Einzeldruck bis 35 x 35 x 35 cm. Größere Modelle werden segmentiert gefertigt und unsichtbar verbunden · bis 2 m Gesamtgröße.',
     },
     {
       question: 'Werden Propeller-Blätter exakt nach Original-CAD gedruckt?',
@@ -411,7 +411,7 @@ const energietechnik: Branche = {
     h2: 'Energietechnik-Modelle aus dem 3D-Druck · Wind, Solar, Schaltanlagen, Kraftwerke',
     paragraphs: [
       'Eine Windturbine-Modell-Anfrage erreicht uns typisch im Vorfeld einer Messe wie der HUSUM Wind oder WindEnergy Hamburg. Wir drucken Windkraftanlagen im Maßstab 1:50 bis 1:200 · eine moderne 150-Meter-Anlage wird damit zur 1-1,5 m hohen Tisch-Skulptur mit drehbaren Rotorblättern und abnehmbarem Maschinenhaus. Der Windkraftanlage-3D-Druck zeigt den Generator, das Getriebe, die Bremse als greifbare Innenstruktur · was am Stand mehr verkauft als jede Renderbild-Animation. PETG ist hier das Material der Wahl wegen UV-Stabilität.',
-      'Ein Photovoltaik-Modell oder PV-Anlage-Modell für Bürger-Informationsveranstaltungen verändert die Akzeptanz-Dynamik bei Genehmigungs-Verfahren. Wir drucken Solarpark-Landschaftsmodelle im Maßstab 1:200 bis 1:1000 mit topographisch korrektem Untergrund, einzelne PV-Module mit verspiegelter PET-Folie, integrierte Trafostationen und Wechselrichter-Standorte. Ein Solar-Modell dieser Qualität reduziert nachweislich Bürgerwiderstand, weil die geplante Anlage erstmals physisch erfahrbar wird statt nur als CAD-Render auf der Leinwand zu erscheinen.',
+      'Ein Photovoltaik-Modell oder PV-Anlage-Modell für Bürger-Informationsveranstaltungen verändert die Akzeptanz-Dynamik bei Genehmigungs-Verfahren. Wir drucken Solarpark-Landschaftsmodelle im Maßstab 1:200 bis 1:1000 mit topographisch korrektem Untergrund, einzelne PV-Module mit verspiegelter PET-Folie, integrierte Trafostationen und Wechselrichter-Standorte. Ein Solar-Modell dieser Qualität macht das Vorhaben für Bürger greifbar, weil die geplante Anlage erstmals physisch erfahrbar wird statt nur als CAD-Render auf der Leinwand zu erscheinen.',
       'Bei Trafostation-Modellen und Schaltanlage-Modellen geht es um eine andere Liga: Schulungsmaterial und Vertriebs-Demos für EVUs und Stadtwerke. Wir drucken MV-Schaltanlagen im Maßstab 1:5 bis 1:25 mit sichtbaren Sammelschienen, Leistungsschaltern, Stromwandlern. Eine Trafostation-Modell-Schnittansicht zeigt Live wie der Schaltvorgang abläuft · auf Drehkurbel betätigt, ohne Hochspannungs-Risiko. ABS in RAL 7035 (Standard MV-Lichtgrau) ist das Material-Setup, mit lasergravierten Typenschildern als authentischem Detail.',
       'Ein Wasserkraftwerk-Modell oder Generator-Modell mit Turbinen-Sektion ist die anspruchsvollste Kategorie. Hier kombinieren wir PLA-Detailteile (Leitapparat, Laufrad) mit klaren Acryl-Inserts für sichtbare Strömungsführung · manchmal beleuchtet mit Mini-LED zur Visualisierung. Ein Energiespeicher-Modell (BESS-Container-Stack) wird typisch im Maßstab 1:10 bis 1:25 gedruckt, mit aufklappbarer Frontwand für Modul-Innenansicht. Beide Modell-Typen sind häufige Anfragen für E-world Essen und Power-Gen Europe, wo Netzausbau-Visualisierung ein zentrales Thema ist.',
     ],
@@ -542,7 +542,7 @@ const automotive: Branche = {
   eyebrow: 'Branche · Automotive & Mobility',
   h1: 'Automotive-Messemodell aus dem 3D-Druck · Modelle, E-Antriebe, Mobility-Konzepte',
   subline:
-    'OEM-Zulieferer, Tier-1-Hersteller, Mobility-Startups · von Karosseriedetails über E-Antriebs-Komponenten bis zu Showcase-Modellen neuer Mobilitätskonzepte. 3D-Druck reduziert Werkzeugkosten um 95% und liefert in 24-48h.',
+    'OEM-Zulieferer, Tier-1-Hersteller, Mobility-Startups · von Karosseriedetails über E-Antriebs-Komponenten bis zu Showcase-Modellen neuer Mobilitätskonzepte. 3D-Druck kommt ohne teuren Werkzeugbau aus und liefert in 24-48h.',
   primaryKeyword: 'Automotive Messemodell',
   secondaryKeywords: [
     'Fahrzeugteil Modell',

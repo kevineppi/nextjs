@@ -318,7 +318,7 @@ export default function MessemodellGuidePage() {
                 <h3 className="font-bold text-lg mb-2">Banner & 2D-Drucke</h3>
                 <p className="text-sm text-muted-foreground">
                   Visuell flach, kein Stop-Faktor im hektischen Messe-Verkehr.
-                  Durchschnittliche Stand-Verweildauer: 6-12 Sekunden bei reinen
+                  Die Stand-Verweildauer ist bei reinen Screen-Ständen erfahrungsgemäß kurz bei reinen
                   Banner-Auftritten.
                 </p>
               </div>
@@ -597,7 +597,7 @@ export default function MessemodellGuidePage() {
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Industriegüter-Marketing ist oft anekdotisch ("der Stand mit dem Modell hatte
-              mehr Besucher"). Konkret heißt das: Stand-Anfrage-Steigerung von +50% bis +180%,
+              mehr Besucher"). Konkret heißt das: eine spürbare Stand-Anfrage-Steigerung,
               Konversionsraten-Verbesserung von +30% bis +80%. Diese Beispiel-Rechnungen
               basieren auf realen ekdruck-Projekten 2024-2025.
             </p>
@@ -716,12 +716,11 @@ export default function MessemodellGuidePage() {
             <div className="bg-muted/30 rounded-lg p-6 mt-8">
               <h3 className="font-bold mb-2">Wichtige Einordnung</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Diese Rechnungen sind Best-Case-Beispiele aus tatsächlichen ekdruck-Aufträgen
-                mit qualifiziertem Anfragesteigerungs-Tracking durch die Kunden. Branchen-Variabilität
-                ist hoch: Maschinenbau und Anlagenbau zeigen typischerweise höhere Multiplikatoren,
-                weil das Modell konkrete Kaufentscheidungs-Argumente liefert (bewegliche Komponenten,
-                Schnittansichten). In Branchen mit kürzeren Sales-Cycles (Konsumgüter, kleinere
-                Komponenten) sind die ROI-Werte tendenziell niedriger.
+                Diese Rechnungen sind hypothetische Beispielszenarien mit angenommenen Werten,
+                keine gemessenen Kundenergebnisse. Sie zeigen die Logik: ein Modell verteilt seine
+                Kosten über viele Messe-Einsätze, und in Branchen mit hohen Auftragswerten reichen
+                wenige zusätzliche qualifizierte Gespräche, damit sich die Investition rechnet.
+                Wie stark der Effekt bei Ihnen ausfällt, hängt von Branche, Produkt und Stand ab.
               </p>
             </div>
           </div>

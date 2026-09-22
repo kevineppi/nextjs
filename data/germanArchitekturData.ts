@@ -20,7 +20,7 @@ export const germanArchitekturData: Record<string, GermanRegionalArchitekturData
     title: 'Architekturmodelle für Bayern',
     h1Title: '3D-Druck Architekturmodelle Bayern · München & Nürnberg',
     metaTitle: 'Architekturmodelle Bayern ★5,0 · 3h Lieferung · ab €20',
-    metaDescription: 'Architekturmodelle für Bayern ✓ Wettbewerbe ✓ Denkmalpflege ✓ Lieferung in 3h ✓ ab €20. ★ 5,0 (35 Bewertungen) · ekdruck, grenznahe Fertigung.',
+    metaDescription: 'Architekturmodelle für Bayern ✓ Wettbewerbe ✓ Denkmalpflege ✓ Lieferung in 3 Tagen ✓ ab €20. ★ 5,0 (35 Bewertungen) · ekdruck, grenznahe Fertigung.',
     heroSubtitle: 'Hochwertige 3D-gedruckte Architekturmodelle für bayerische Architekturbüros. Grenznahe Fertigung für schnellste Lieferung nach München, Nürnberg und ganz Bayern.',
     deliveryTime: '3-5 Tage',
     deliveryNote: 'Grenznahe Fertigung · kürzeste Wege über A8/A93 nach Bayern',

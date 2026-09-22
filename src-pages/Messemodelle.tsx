@@ -90,7 +90,7 @@ const faqs = [
   { question: "Welche Dateiformate werden akzeptiert?", answer: "STL, OBJ, STEP, IGES und 3MF. Auch native CAD-Formate aus SolidWorks, Inventor, Fusion 360 und Rhino. Kein 3D-Modell vorhanden? Wir erstellen Ihr Exponat auch nach Skizze, Foto oder technischer Zeichnung." },
   { question: "Kann ich mein Exponat in unserer CI-Farbe erhalten?", answer: "Ja. Über 20 Filamentfarben ab Lager, oder Lackierung nach RAL-, Pantone- oder HEX-Farbwerten – exakt nach Ihrem Corporate Design." },
   { question: "Wie wird das Exponat bruchsicher geliefert?", answer: "Individuelle Schaumstoffverpackung mit doppelwandigem Karton. Großmodelle in Holzkisten. Lieferung direkt zum Messestand in Wien, München, Düsseldorf, Basel und weiteren Messestädten." },
-  { question: "3D-Druck vs. klassischer Modellbau – was ist besser?", answer: "3D-Druck ist 5–10× schneller, 60–80% günstiger und erlaubt unbegrenzte geometrische Komplexität. Digital reproduzierbar – Korrekturen kosten nur eine Dateiänderung. Handmodellbau hat Vorteile bei Oberfläche und Haptik." },
+  { question: "3D-Druck vs. klassischer Modellbau – was ist besser?", answer: "3D-Druck ist deutlich schneller und günstiger als klassischer Modellbau und erlaubt unbegrenzte geometrische Komplexität. Digital reproduzierbar – Korrekturen kosten nur eine Dateiänderung. Handmodellbau hat Vorteile bei Oberfläche und Haptik." },
   { question: "Bieten Sie Express für kurzfristige Messetermine?", answer: "Ja. 24–48h Express-Fertigung. Freitag bestellt, Montag auf der Messe. Rufen Sie an: +43 676 5517197." },
   { question: "Für welche DACH-Messen liefern Sie?", answer: "Alle Messen: Wien, München (BAU, IFAT), Düsseldorf (MEDICA), Hannover, Frankfurt (Automechanika), Nürnberg (SPS), Basel (Swissbau), St. Gallen (OLMA), Zürich und viele weitere." },
   { question: "Kann ein Modell mehrfach eingesetzt werden?", answer: "Ja. PETG oder ASA überstehen 5–10 Messeeinsätze. Wir empfehlen eine Transportbox für sichere Lagerung." },
@@ -372,7 +372,7 @@ const Messemodelle = () => (
                     <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center shrink-0"><TrendingUp className="w-7 h-7 text-emerald-500" /></div>
                     <div>
                       <p className="text-xl font-bold mb-2">ROI nach dem ersten Lead</p>
-                      <p className="text-muted-foreground leading-relaxed">Ein Eyecatcher ab €180 generiert 30–50% mehr Standgespräche. Bei einem Lead-Wert von €500+ rechnet sich das Modell nach einem einzigen Kontakt.</p>
+                      <p className="text-muted-foreground leading-relaxed">Ein Eyecatcher ab €180 bringt Besucher an den Stand, die sonst vorbeigelaufen wären. Bei einem Lead-Wert von €500+ rechnet sich das Modell nach einem einzigen Kontakt.</p>
                     </div>
                   </div>
                 </MagneticCard>
@@ -510,7 +510,7 @@ const Messemodelle = () => (
               <h2 className="text-3xl md:text-4xl font-bold tracking-[-0.03em] mb-10">Warum 3D-gedruckte Exponate Ihren Messeauftritt verändern</h2>
 
               <div className="space-y-8 text-base leading-[1.85] text-foreground/85">
-                <p>Ein physisches Modell am Messestand erzeugt mehr Aufmerksamkeit als jeder Bildschirm. Besucher bleiben stehen, greifen zu, stellen Fragen – und erinnern sich. Studien zeigen: Haptische Erlebnisse bleiben bis zu 6× länger im Gedächtnis als rein visuelle Reize. <strong>Messemodelle und Exponate aus dem 3D-Druck</strong> machen genau das möglich.</p>
+                <p>Ein physisches Modell am Messestand erzeugt mehr Aufmerksamkeit als jeder Bildschirm. Besucher bleiben stehen, greifen zu, stellen Fragen – und erinnern sich. Ein Modell zum Anfassen bleibt Besuchern in Erinnerung, lange nachdem der Prospekt im Papierkorb ist. <strong>Messemodelle und Exponate aus dem 3D-Druck</strong> machen genau das möglich.</p>
 
                 <p>Ob maßstabsgetreues <Link href="/messemodelle/muenchen" className="text-primary font-semibold hover:underline">Anschauungsmodell für die BAU München</Link>, ein Schnittmodell für die <Link href="/messemodelle/hannover" className="text-primary font-semibold hover:underline">Hannover Messe</Link>, ein Exponat für die <Link href="/messemodelle/zuerich" className="text-primary font-semibold hover:underline">FINANZ Zürich</Link> oder ein Demonstrationsmodell für die <Link href="/messemodelle/duesseldorf" className="text-primary font-semibold hover:underline">MEDICA Düsseldorf</Link> – wir fertigen Ihr Messemodell termingerecht und bruchsicher.</p>
 
@@ -521,7 +521,7 @@ const Messemodelle = () => (
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Wie fällt man mit dem Messestand auf?</h3>
-                  <p>Aufmerksamkeit am Messestand entsteht selten über den nächsten Bildschirm. Ein großformatiger <strong>Eye-Catcher zum Anfassen</strong> zieht Blicke schon aus dem Gang, gibt Besuchern einen Grund stehenzubleiben und einen Aufhänger fürs Gespräch. Ein 3D-gedrucktes Modell des eigenen Produkts, vergrößert oder maßstabsgetreu, ist genau dieser Blickfang, und es kostet weniger als eine Videowall. Ein Eyecatcher-Modell bringt erfahrungsgemäß 30 bis 50 Prozent mehr Standgespräche.</p>
+                  <p>Aufmerksamkeit am Messestand entsteht selten über den nächsten Bildschirm. Ein großformatiger <strong>Eye-Catcher zum Anfassen</strong> zieht Blicke schon aus dem Gang, gibt Besuchern einen Grund stehenzubleiben und einen Aufhänger fürs Gespräch. Ein 3D-gedrucktes Modell des eigenen Produkts, vergrößert oder maßstabsgetreu, ist genau dieser Blickfang, und es kostet weniger als eine Videowall. Ein Eyecatcher-Modell bringt erfahrungsgemäß spürbar mehr Standgespräche.</p>
                 </div>
 
                 <div className="rounded-3xl bg-muted/50 border border-border/50 p-8 md:p-10 not-prose">
@@ -536,7 +536,7 @@ const Messemodelle = () => (
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Ihr strategisches Messewerkzeug</h3>
-                  <p>Ein hochwertiges Messeexponat ist ein <strong>Vertriebswerkzeug</strong>. Ein gut platziertes Anschauungsmodell reduziert die Erklärzeit um bis zu 70%, erhöht die Verweildauer am Stand und qualifiziert Leads: Wer sich für das Modell interessiert, interessiert sich für Ihr Produkt.</p>
+                  <p>Ein hochwertiges Messeexponat ist ein <strong>Vertriebswerkzeug</strong>. Ein gut platziertes Anschauungsmodell verkürzt die Erklärzeit spürbar und erhöht die Verweildauer am Stand und qualifiziert Leads: Wer sich für das Modell interessiert, interessiert sich für Ihr Produkt.</p>
                 </div>
 
                 <div>

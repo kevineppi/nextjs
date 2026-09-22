@@ -414,7 +414,7 @@ const Einzelanfertigungen = () => {
               <div className="space-y-8">
                 <div>
                   <h3 className="font-bold text-xl mb-2 text-foreground">Gehäuse-Sonderformen für Elektronik-Prototypen</h3>
-                  <p className="text-foreground/85 leading-relaxed">Sie haben eine PCB und brauchen ein passendes Gehäuse. Gefräst wäre zu teuer, Spritzguss lohnt sich erst bei tausenden Stück. Wir drucken Ihr <strong>Gehäuse</strong> in PETG oder ABS, mit Schraubdom-Auslegung, Lüftungsschlitzen und Kabelausgängen genau dort wo Sie sie brauchen. Maße bis 300×300×300 mm in einem Stück, größer durch unsichtbares Segmentieren. Ab €25 für einfache Geometrien.</p>
+                  <p className="text-foreground/85 leading-relaxed">Sie haben eine PCB und brauchen ein passendes Gehäuse. Gefräst wäre zu teuer, Spritzguss lohnt sich erst bei tausenden Stück. Wir drucken Ihr <strong>Gehäuse</strong> in PETG oder ABS, mit Schraubdom-Auslegung, Lüftungsschlitzen und Kabelausgängen genau dort wo Sie sie brauchen. Maße bis 350×350×350 mm in einem Stück, größer durch unsichtbares Segmentieren. Ab €25 für einfache Geometrien.</p>
                 </div>
 
                 <div>

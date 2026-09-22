@@ -37,8 +37,7 @@ const defaultCaseStudy: CaseStudyData = {
     size: "80 x 60 x 40 cm",
     material: "PETG weiß, lackiert",
     time: "5 Werktage + Versand"
-  },
-  quote: "Das Modell war der absolute Eyecatcher an unserem Stand. Trotz der Lieferung aus Österreich war alles pünktlich und perfekt!"
+  }
 };
 
 export const germanExtendedData: Record<string, RegionalExtendedData> = {
@@ -48,13 +47,12 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
       industry: "Baumaschinen & Bautechnik",
       challenge: "Ein bayerischer Baumaschinenhersteller wollte auf der bauma in München ein neues Kompaktbagger-Modell präsentieren. Das Modell sollte bewegliche Teile haben und die Hydraulik sichtbar machen.",
       solution: "Wir erstellten ein 1:10 Modell mit funktionsfähigem Ausleger und Schaufel. Transparente PETG-Elemente zeigten die Hydraulikleitungen. Die farbliche Gestaltung entsprach exakt dem Corporate Design.",
-      result: "Das Modell generierte über 200 qualifizierte Leads auf der bauma. Drei Großbestellungen folgten direkt nach der Messe.",
+      result: "Das Modell war laut Kunde ein zentraler Gesprächsanlass auf der bauma. Drei Großbestellungen folgten direkt nach der Messe.",
       specs: {
         size: "90 x 40 x 50 cm",
         material: "PLA + PETG transparent, lackiert",
         time: "8 Werktage + 3 Tage Versand"
-      },
-      quote: "Trotz Fertigung in Österreich war das Modell 5 Tage vor Messebeginn da. Die Qualität hat unsere Erwartungen übertroffen."
+      }
     },
     materials: [
       {
@@ -90,13 +88,12 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
       industry: "Fachpräsentation",
       challenge: "Ein NRW-Unternehmen brauchte ein vergrößertes Anschauungsmodell eines neuen Produkts für die MEDICA. Das Modell sollte die interne Struktur zeigen und professionell aussehen.",
       solution: "Wir fertigten ein 20-fach vergrößertes Modell mit aufklappbaren Segmenten. Die Oberfläche wurde so veredelt, dass sie den professionellen Ansprüchen optisch entsprach.",
-      result: "Das Modell ermöglichte detaillierte Erklärungen, die mit Bildern allein nicht möglich gewesen wären. Der Messestand verzeichnete 40% mehr Fachbesucher.",
+      result: "Das Modell ermöglichte detaillierte Erklärungen, die mit Bildern allein nicht möglich gewesen wären. Der Kunde meldete deutlich mehr Fachbesucher.",
       specs: {
         size: "30 x 20 x 15 cm",
         material: "PLA weiß, professionelle Optik",
         time: "6 Werktage + Expressversand"
-      },
-      quote: "Endlich konnten wir unser Produkt dreidimensional erklären. Das Modell hat den Unterschied gemacht."
+      }
     },
     materials: [
       {
@@ -137,8 +134,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         size: "120 x 15 x 20 cm",
         material: "PLA weiß + transparent, lackiert",
         time: "10 Werktage + Versand"
-      },
-      quote: "Die Detailtreue des Modells hat bei Einkäufern und Presse gleichermaßen Eindruck gemacht."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Mobilität, Technologie & Tourismus in Berlin",
@@ -160,8 +156,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         size: "30 x 30 x 150 cm (Höhe)",
         material: "PLA weiß + graue Akzente",
         time: "8 Werktage + Versand"
-      },
-      quote: "Das Modell war perfekt für unsere Investorengespräche. Die Qualität aus Österreich ist erstklassig."
+      }
     },
     materials: [
       {
@@ -202,8 +197,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         size: "60 x 60 x 50 cm",
         material: "PLA mehrfarbig + PETG transparent",
         time: "7 Werktage + Versand"
-      },
-      quote: "Endlich konnten wir zeigen, wie alle Gewerke zusammenspielen. Das Modell war unser bestes Verkaufstool."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Gebäudetechnik, Automobil & Konsumgüter in Hessen",
@@ -220,13 +214,12 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
       industry: "Industrie & Automatisierung",
       challenge: "Ein Automatisierungstechnik-Unternehmen brauchte ein anschauliches Modell einer vernetzten Produktionslinie für die Hannover Messe. Das Modell sollte die digitale Vernetzung physisch erlebbar machen.",
       solution: "Wir gestalteten eine Miniatur-Produktionslinie mit 5 Stationen. Farbige Markierungen zeigten die Datenflüsse, transparente Gehäuse die Sensorik. Modularer Aufbau für einfachen Transport.",
-      result: "Das Modell wurde auf Social Media geteilt und in Fachmagazinen erwähnt. Über 150 qualifizierte Kontakte wurden am Stand generiert.",
+      result: "Das Modell wurde auf Social Media geteilt und in Fachmagazinen erwähnt. Der Stand war laut Kunde durchgehend gut besucht.",
       specs: {
         size: "120 x 40 x 30 cm",
         material: "PLA + PETG, mehrfarbig",
         time: "10 Werktage + Versand"
-      },
-      quote: "Industrie 4.0 endlich zum Anfassen. Unsere Besucher haben es geliebt, die Produktionslinie im Miniaturformat zu sehen."
+      }
     },
     materials: [
       {
@@ -267,8 +260,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         size: "50 x 40 x 45 cm",
         material: "PLA grau + Akzente",
         time: "6 Werktage + Versand"
-      },
-      quote: "Komplexe Technik einfach erklärt · das Modell war Gold wert für unsere Vertriebsgespräche."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Fertigungstechnik & Halbleiter in Sachsen",
@@ -290,8 +282,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         size: "60 x 40 x 25 cm",
         material: "PLA mit Spezialfinish",
         time: "8 Werktage + Versand"
-      },
-      quote: "Die Materialimitation war verblüffend echt. Unser Kunde konnte das neue Interieur regelrecht fühlen."
+      }
     },
     materials: [
       {
@@ -332,8 +323,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         size: "100 x 50 x 40 cm",
         material: "PETG transparent + PLA farbig",
         time: "8 Werktage + 3 Tage Versand"
-      },
-      quote: "Komplexe Verfahrenstechnik verständlich gemacht · das Modell war unser überzeugenstes Verkaufsargument."
+      }
     },
     materials: [
       {
@@ -374,8 +364,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         size: "40 x 40 x 35 cm",
         material: "PLA mehrfarbig, beschriftet",
         time: "6 Werktage + Expressversand"
-      },
-      quote: "Ein Bild sagt mehr als tausend Worte · ein 3D-Modell sagt mehr als tausend Bilder. Genau so war es auf der Automechanika."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Präsentation, Gebäudetechnik & Konsumgüter in Frankfurt",
@@ -397,8 +386,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         size: "45 x 35 x 30 cm",
         material: "PLA grau + PETG transparent",
         time: "7 Werktage + Versand"
-      },
-      quote: "Unsere Kunden konnten das Werkzeug von innen sehen, bevor es gefertigt wird. Ein unschätzbarer Vorteil."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Kunststoff, Fachpräsentationen & Handel in Düsseldorf",
@@ -420,8 +408,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         size: "5 Modelle, je ca. 40 x 30 x 25 cm",
         material: "PLA in Naturfarben",
         time: "7 Werktage + Versand"
-      },
-      quote: "Die Modelle haben unsere nachhaltigen Verpackungen perfekt in Szene gesetzt. Genau der richtige Eyecatcher."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Food, Gaming & Möbel in Köln",
@@ -443,8 +430,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         size: "150 x 60 x 35 cm",
         material: "PLA + PETG, mehrfarbig, modular",
         time: "12 Werktage + Versand"
-      },
-      quote: "Die modulare Bauweise war genial · wir konnten die Smart Factory Schritt für Schritt erklären."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Industrie 4.0, Logistik & Landtechnik in Hannover",
@@ -466,8 +452,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         size: "50 x 30 x 20 cm",
         material: "PLA grau + grüne Platinen",
         time: "5 Werktage + Versand"
-      },
-      quote: "Das Modell war der Star unseres Stands auf der SPS. Selbst erfahrene Ingenieure waren beeindruckt."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Automatisierung, Spielwaren & Verpackung in Nürnberg",
@@ -489,8 +474,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         size: "60 x 50 x 50 cm",
         material: "PLA grau + Metalloptik-Finish",
         time: "8 Werktage + Versand"
-      },
-      quote: "Unsere Vertriebsingenieure lieben das Modell. Es macht jede Präsentation anschaulicher."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Metallbearbeitung, Automobil & Bildverarbeitung in Stuttgart",
@@ -523,8 +507,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         size: "80 x 60 x 40 cm",
         material: "PLA + farbige Sicherheitsmarkierungen",
         time: "6 Werktage + Versand"
-      },
-      quote: "Arbeitsschutz zum Anfassen · genau so muss eine Messepräsentation sein."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Arbeitsschutz, Modellbau & Kreativ in Dortmund",
@@ -546,8 +529,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         size: "35 x 15 x 60 cm",
         material: "PLA + PETG transparent",
         time: "5 Werktage + Versand"
-      },
-      quote: "Endlich konnten wir zeigen, was in unserer Gabel steckt. Das Modell war unser PR-Hit auf der Eurobike."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Outdoor, Fahrrad & Luftfahrt in Friedrichshafen",
@@ -591,8 +573,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
         size: "70 x 50 x 40 cm",
         material: "PLA zweifarbig",
         time: "8 Werktage + Versand"
-      },
-      quote: "Alt und Neu in einem Modell · genau das brauchten wir, um unsere Kunden zu überzeugen."
+      }
     },
     materials: defaultMaterials,
     industryFocus: "Denkmalpflege, Buch & Fertigungstechnik in Leipzig",

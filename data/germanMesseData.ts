@@ -20,7 +20,7 @@ export const germanMesseData: Record<string, GermanRegionalMesseData> = {
     title: 'Messemodelle für Bayern',
     h1Title: '3D-Messemodelle Bayern · München & Nürnberg',
     metaTitle: 'Messemodelle Bayern ★5,0 · BAU & SPS · 3h Lieferung',
-    metaDescription: 'Messemodelle für Bayern ✓ BAU München ✓ SPS Nürnberg ✓ IFAT ✓ Lieferung in 3h ✓ ab €20. ★ 5,0 (35 Bew.) · ekdruck',
+    metaDescription: 'Messemodelle für Bayern ✓ BAU München ✓ SPS Nürnberg ✓ IFAT ✓ Lieferung in 3 Tagen ✓ ab €20. ★ 5,0 (35 Bew.) · ekdruck',
     heroSubtitle: 'Hochwertige 3D-gedruckte Messemodelle für den bayerischen Messestandort. Zuverlässige Lieferung nach München, Nürnberg und ganz Bayern.',
     deliveryTime: '3-5 Tage',
     deliveryNote: 'Schnelle Lieferung über A8/A93 direkt aus Österreich',

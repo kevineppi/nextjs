@@ -60,7 +60,7 @@ const Materialien = () => {
                 <span className="block text-2xl lg:text-3xl mt-2 text-accent font-normal">Nachhaltig. Regional. Hochwertig.</span>
               </h1>
               <p className="text-xl lg:text-2xl mb-8 text-muted-foreground max-w-3xl mx-auto">
-                <strong className="text-foreground">Nachhaltiges AT-Filament</strong> – Premium 3D-Druck Materialien aus österreichischer Produktion. 
+                <strong className="text-foreground">Nachhaltige Filamente</strong> – Premium 3D-Druck Materialien, hergestellt aus recycelten Industrieabfällen. 
                 Unser <strong className="text-foreground">österreichisches Filament</strong> wird aus recycelten Industrieabfällen hergestellt 
                 für höchste Qualität und Nachhaltigkeit.
               </p>

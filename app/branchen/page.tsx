@@ -588,16 +588,16 @@ export default function BranchenPage() {
 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="p-6 bg-card rounded-2xl border border-border hover:border-primary/40 transition-colors">
-                    <div className="text-3xl font-bold text-primary mb-1">300+</div>
-                    <div className="text-sm text-muted-foreground">Projekte realisiert</div>
+                    <div className="text-3xl font-bold text-primary mb-1">24–48h</div>
+                    <div className="text-sm text-muted-foreground">Express-Fertigung</div>
                   </div>
                   <div className="p-6 bg-card rounded-2xl border border-border hover:border-primary/40 transition-colors">
                     <div className="text-3xl font-bold text-primary mb-1">★5,0</div>
                     <div className="text-sm text-muted-foreground">35 Google-Bewertungen</div>
                   </div>
                   <div className="p-6 bg-card rounded-2xl border border-border hover:border-primary/40 transition-colors">
-                    <div className="text-3xl font-bold text-primary mb-1">3</div>
-                    <div className="text-sm text-muted-foreground">Industrie-FDM-Drucker</div>
+                    <div className="text-3xl font-bold text-primary mb-1">2 m</div>
+                    <div className="text-sm text-muted-foreground">Modelle segmentiert bis 2 m</div>
                   </div>
                   <div className="p-6 bg-card rounded-2xl border border-border hover:border-primary/40 transition-colors">
                     <div className="text-3xl font-bold text-primary mb-1">2024</div>

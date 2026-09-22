@@ -430,7 +430,7 @@ const Contact = () => {
                 {[
                   "Express 24h möglich",
                   "Österr. Filament",
-                  "100+ Projekte",
+                  "Referenzen mit Fotos",
                   "Kostenlos & unverbindlich"
                 ].map(item => (
                   <div key={item} className="flex items-center gap-1.5">

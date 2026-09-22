@@ -4,11 +4,11 @@ import { Badge } from "@/components/ui/badge";
 import { Award, Users, Zap, Target, CheckCircle } from "lucide-react";
 const About = () => {
   const capabilities = ["Einzelanfertigungen & Spezialanfertigungen", "Nachhaltige Inneneinrichtung", "Individuelle Projekte", "Design & Beratung", "Millimetergenaue Detailtreue", "Express-Service verfügbar"];
-  const materials = ["100% Österreichisches Filament", "Hergestellt aus Industrieabfällen", "PLA & PLA+ nachhaltig", "PETG regional", "ABS aus Austria", "Flexible Materialien", "Alle Farben verfügbar", "Verschiedene Größen", "Umweltfreundlich", "Ressourcenschonend"];
+  const materials = ["Nachhaltige Filamente", "Hergestellt aus Industrieabfällen", "PLA & PLA+ nachhaltig", "PETG regional", "Flexible Materialien", "Alle Farben verfügbar", "Verschiedene Größen", "Umweltfreundlich", "Ressourcenschonend"];
   const values = [{
     icon: Target,
     title: "Nachhaltigkeit",
-    description: "100% österreichisches Filament aus Industrieabfällen für ressourcenschonende Produktion"
+    description: "Nachhaltige Filamente aus Industrieabfällen für ressourcenschonende Produktion"
   }, {
     icon: Zap,
     title: "Regionalität",

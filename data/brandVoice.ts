@@ -39,7 +39,7 @@ export const BRAND = {
 
   // ─── Produktions-Kapazität ──────────────────────────────────────
   monthlyCapacity: '~150 Stück Standard, ~25-40 Komplettmodelle',
-  maxModelSize: '600 × 600 × 600 mm pro Druckbett, größere Modelle segmentiert',
+  maxModelSize: 'segmentiert bis 2 m Gesamtgröße pro Druckbett, größere Modelle segmentiert',
 
   // ─── Hintergrund ──────────────────────────────────────────────
   // (verwendbar in About-Page und Branchen-Authority-Block)
@@ -51,7 +51,7 @@ export const BRAND = {
   // ─── Reviews (Stand 2026-05) ──────────────────────────────────
   reviews: {
     rating: 5.0,
-    count: 31,
+    count: 35,
     platform: 'Google',
     star: '★',
   },

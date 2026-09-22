@@ -45,13 +45,13 @@ const MesseCaseStudy = ({ caseStudy, regionName }: MesseCaseStudyProps) => {
           <AnimatedSection animation="fade-in" className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full text-sm font-semibold mb-6 shadow-lg">
               <Sparkles className="w-4 h-4" />
-              Erfolgsgeschichte aus der Praxis
+              Beispiel-Szenario
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              So überzeugen unsere Kunden
+              So könnte Ihr Projekt aussehen
             </h2>
             <p className="text-xl text-muted-foreground max-w-xl mx-auto">
-              Ein Blick hinter die Kulissen erfolgreicher Messeprojekte in {regionName}
+              Ein typisches Projektszenario für {regionName} · echte, benannte Referenzen finden Sie unter Referenzen
             </p>
           </AnimatedSection>
 

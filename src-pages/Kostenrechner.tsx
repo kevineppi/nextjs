@@ -148,7 +148,7 @@ const calculatorFaqs = [
   { question: "Was kostet ein 3D-Druck Modell bei ekdruck?", answer: "Die 3D-Druck Kosten beginnen ab €20 pro Teil. Der genaue Preis hängt von Modellgröße, Material und Qualitätsstufe ab. Nutzen Sie unseren Online-Kostenrechner für eine sofortige Richtpreisberechnung, kostenlos und ohne Anmeldung. Für jedes Projekt erstellen wir ein persönlich geprüftes Festpreisangebot innerhalb von 6 Stunden." },
   { question: "Wie genau ist der Richtpreis aus dem Kostenrechner?", answer: "Der Richtpreis basiert auf der realen Geometrie Ihrer STL-Datei und berücksichtigt Materialverbrauch, Druckzeit, Baugröße und Setup-Aufwand. Typische Abweichung zum Endpreis: ±10 bis 15 %. Der verbindliche Festpreis wird nach persönlicher technischer Prüfung festgelegt und per E-Mail zugesendet." },
   { question: "Welche Dateiformate werden unterstützt?", answer: "Aktuell unterstützen wir STL-Dateien bis 100 MB. Die Datei wird direkt im Browser analysiert – Volumen, Oberfläche und Maße werden automatisch berechnet. Beim Absenden einer Anfrage werden Ihre Dateien sicher an uns übertragen, damit wir das Festpreisangebot direkt anhand der Originaldaten erstellen können. Für andere Formate (OBJ, STEP, 3MF) kontaktieren Sie uns bitte direkt." },
-  { question: "Welche 3D-Druck Materialien kann ich wählen?", answer: "Wir bieten 8 FDM-Materialien an: PLA (ideal für Präsentationsmodelle), PETG (UV-beständig, perfekt für Messemodelle), ABS (glätt- und lackierbar), PLA+ (verstärkt), ASA (wetterfest), TPU (flexibel), Polycarbonat (extrem schlagfest) und PA6-CF mit Carbonfaser für Premium-Showmodelle. Alle Filamente stammen aus österreichischer Produktion." },
+  { question: "Welche 3D-Druck Materialien kann ich wählen?", answer: "Wir bieten 8 FDM-Materialien an: PLA (ideal für Präsentationsmodelle), PETG (UV-beständig, perfekt für Messemodelle), ABS (glätt- und lackierbar), PLA+ (verstärkt), ASA (wetterfest), TPU (flexibel), Polycarbonat (extrem schlagfest) und PA6-CF mit Carbonfaser für Premium-Showmodelle." },
   { question: "Was bedeutet Infill (Füllung)?", answer: "Der Infill-Wert bestimmt, wie dicht das Innere Ihres Modells gedruckt wird. 10–15 % reicht für leichte Präsentationsmodelle, 30–50 % für stabile Showmodelle, 100 % für massive Vollkörper." },
   { question: "Kann ich mehrere Teile gleichzeitig kalkulieren?", answer: "Ja, unser Kostenrechner unterstützt Multi-File-Upload. Sie können beliebig viele STL-Dateien hochladen, jeweils mit eigenem Material und eigener Stückzahl konfigurieren und erhalten einen Gesamtrichtpreis mit automatischem Mengenvorteil ab 10 Stück." },
   { question: "Kann ich direkt über den Rechner bestellen?", answer: "Nein. Der Rechner dient ausschließlich zur unverbindlichen Preisindikation. Über das integrierte Formular können Sie eine Anfrage senden – Ihr Projekt wird persönlich von uns geprüft. Erst nach individueller Begutachtung erhalten Sie ein verbindliches Angebot." },
@@ -434,7 +434,7 @@ const Kostenrechner = () => {
               <span className="inline-flex items-center gap-1"><Star className="h-3.5 w-3.5 text-primary" /> 5,0 ★ Google (35)</span>
               <span className="inline-flex items-center gap-1"><Package className="h-3.5 w-3.5 text-primary" /> Ab €20 pro Teil</span>
               <span className="inline-flex items-center gap-1"><Zap className="h-3.5 w-3.5 text-primary" /> Express 24–48 h</span>
-              <span className="inline-flex items-center gap-1"><Leaf className="h-3.5 w-3.5 text-primary" /> AT Filament</span>
+              <span className="inline-flex items-center gap-1"><Leaf className="h-3.5 w-3.5 text-primary" /> Nachhaltiges Filament</span>
             </p>
           </div>
         </section>
@@ -820,7 +820,7 @@ const Kostenrechner = () => {
                     <span className="flex items-center gap-1.5 text-[11px] text-muted-foreground"><Shield className="w-3.5 h-3.5" /> Berechnung lokal im Browser</span>
                     <span className="flex items-center gap-1.5 text-[11px] text-muted-foreground"><Zap className="w-3.5 h-3.5" /> Express 24–48 h</span>
                     <span className="flex items-center gap-1.5 text-[11px] text-muted-foreground"><MapPin className="w-3.5 h-3.5" /> Gunskirchen, OÖ</span>
-                    <span className="flex items-center gap-1.5 text-[11px] text-muted-foreground"><Leaf className="w-3.5 h-3.5" /> AT Filament</span>
+                    <span className="flex items-center gap-1.5 text-[11px] text-muted-foreground"><Leaf className="w-3.5 h-3.5" /> Nachhaltiges Filament</span>
                   </div>
                 </div>
 

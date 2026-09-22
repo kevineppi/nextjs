@@ -33,8 +33,7 @@ const TrustBarSocialProof = () => {
     },
     {
       icon: Shield,
-      label: "5+ Jahre Erfahrung",
-      sublabel: "Eigentümergeführt",
+      label: "Eigentümergeführt",      sublabel: "Inhaber persönlich erreichbar",
       highlight: false,
     },
     {

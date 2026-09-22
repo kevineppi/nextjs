@@ -101,7 +101,7 @@ const wien: DruckSectionDataSet = {
     advantages: [
       { icon: 'Zap', title: '48h Pitch-Modelle', description: 'Vom CAD zum greifbaren Investorenmodell in unter 48 Stunden. Drei Varianten parallel möglich.' },
       { icon: 'Layers', title: 'Designvarianten ab €20', description: 'Testen Sie fünf Gehäuseformen, bevor Sie sich festlegen. Jede Variante kostet nur das Material.' },
-      { icon: 'Users', title: 'Startup-erprobt', description: 'Über 50 Wiener Startups nutzen unsere Pitch-Modelle. Von der Garage bis zur Series-A.' },
+      { icon: 'Users', title: 'Startup-erprobt', description: 'Startups nutzen unsere Pitch-Modelle für Investorentermine. Von der Garage bis zur Series-A.' },
       { icon: 'Palette', title: 'Materialmix möglich', description: 'Starrer Korpus aus PLA+, flexible Griffe aus TPU, transparente Fenster aus PETG · alles kombinierbar.' },
     ],
     stats: [
@@ -259,7 +259,7 @@ const linz: DruckSectionDataSet = {
     ],
   },
   expressTimeline: [
-    { time: '0h', title: 'WhatsApp oder E-Mail', description: 'Datei senden · Antwort in 30 Minuten.', highlight: false },
+    { time: '0h', title: 'WhatsApp oder E-Mail', description: 'Datei senden · Antwort in wenigen Stunden.', highlight: false },
     { time: '1h', title: 'Sofort-Angebot', description: 'Preis, Material, Fertigungszeit · alles klar.', highlight: false },
     { time: '2h', title: 'Druck läuft', description: 'Sofort nach Freigabe starten unsere Drucker.', highlight: true },
     { time: '6h', title: 'Abholung in Gunskirchen', description: 'SMS wenn fertig · nur 20 Min von Linz.', highlight: true },
@@ -343,7 +343,7 @@ const graz: DruckSectionDataSet = {
     solutionTitle: 'Physische Designstudien beschleunigen alles',
     solutions: [
       '50 Varianten in einer Woche: jede Form in der Hand vergleichen, Proportionen sofort spüren',
-      'Entscheidungen fallen in einer Runde statt in drei Meetings · nachweislich 80% schneller',
+      'Entscheidungen fallen oft in einer Runde statt in drei Meetings',
       'Ab €25/Stück bei 50er-Sets: günstiger als ein einziges Agentur-Handmuster',
       'PETG Transparent macht innere Strukturen sichtbar · kein Rendering kann das ersetzen',
     ],
@@ -460,7 +460,7 @@ const innsbruck: DruckSectionDataSet = {
     headline: 'Anschauungsmodelle für Innsbrucker Hochschulen',
     subheadline: 'Lehrmittel, Konferenzmodelle und Forschungsvisualisierungen · ab €20, in 48h geliefert',
     advantages: [
-      { icon: 'GraduationCap', title: 'Uni-erprobt seit 2020', description: 'Regelmäßige Aufträge von Universität Innsbruck, MCI und FH Kufstein. Wir kennen akademische Deadlines.' },
+      { icon: 'GraduationCap', title: 'Vertraut mit Uni-Abläufen', description: 'Abgabe- und Semestermodelle für Studierende und Institute. Wir kennen akademische Deadlines.' },
       { icon: 'Layers', title: 'Farbcodierte Strukturen', description: 'Bis 6 Farben in einem Modell · verschiedene Bereiche visuell sofort unterscheidbar.' },
       { icon: 'Package', title: 'Robuster Alpentransport', description: 'Spezialverpackung für den Transport über den Brenner. Kein Modell kam bisher beschädigt an.' },
       { icon: 'DollarSign', title: 'Ab €20 für Studierende', description: 'Studentenfreundliche Preise. Abschlussarbeiten, Semesterprojekte und Lehrmittel zu fairen Konditionen.' },
@@ -613,7 +613,7 @@ const klagenfurt: DruckSectionDataSet = {
       '30 Gehäusemodelle in 7 Tagen: termingerecht für jede Kundenpräsentation',
       '3 Varianten à 10 Stück: Kunde nimmt jede Form in die Hand und entscheidet sofort',
       'ASA-Gehäuse ab €40: Outdoor-fähig ohne Spritzguss-Investition',
-      'Modelle zum Anfassen überzeugen Auftraggeber nachweislich schneller als Renderings',
+      'Modelle zum Anfassen überzeugen Auftraggeber oft schneller als Renderings',
     ],
   },
   expressTimeline: [
@@ -636,7 +636,7 @@ const klagenfurt: DruckSectionDataSet = {
 const villach: DruckSectionDataSet = {
   valueProposition: {
     headline: 'Konzeptmodelle für Villachs Technologieunternehmen',
-    subheadline: 'Designreviews beschleunigen mit physischen Modellen · 10x produktiver als am Bildschirm',
+    subheadline: 'Designreviews beschleunigen mit physischen Modellen statt am Bildschirm',
     advantages: [
       { icon: 'Cpu', title: 'Formfaktor-Vergleich', description: 'Verschiedene Gehäuseformen nebeneinander vergleichen. Proportionen und Ergonomie direkt bewerten.' },
       { icon: 'TrendingUp', title: '0.12mm Detailauflösung', description: 'Passstifte, Rastnasen und Designdetails in höchster Detailtreue dargestellt.' },
@@ -663,7 +663,7 @@ const villach: DruckSectionDataSet = {
   trustSignals: [
     { value: '25+', label: 'Technologieprojekte', detail: 'Für Villacher Elektronik- und Sensorik-Firmen' },
     { value: '0.12mm', label: 'Feinste Auflösung', detail: 'Details wie Rastnasen und Passstifte sichtbar' },
-    { value: '10x', label: 'Produktiver', detail: 'Designreviews mit Modell vs. Bildschirm' },
+    { value: '48h', label: 'Express-Option', detail: 'Wenn das Review nicht warten kann' },
     { value: '3 Tage', label: 'Iterations-Zyklus', detail: 'Feedback → neuer Druck → nächstes Review' },
     { value: 'WKO', label: 'Gewerbeberechtigung', detail: 'Registriertes Gewerbe in Österreich' },
   ],
@@ -754,7 +754,7 @@ const wels: DruckSectionDataSet = {
     { value: '120+', label: 'Welser Projekte', detail: 'Landwirtschaft, Lebensmittel, Handwerk' },
     { value: 'Same Day', label: 'Für Standardteile', detail: 'Vormittags bestellt, nachmittags abholbereit' },
     { value: 'CI-Farben', label: 'In PETG verfügbar', detail: 'Ihre Firmenfarbe für Displays und Halterungen' },
-    { value: '5.0', label: 'Google Bewertung', detail: '35 Bewertungen · 100% zufrieden' },
+    { value: '5.0', label: 'Google Bewertung', detail: '35 Bewertungen, alle 5 Sterne' },
   ],
   priceComparison: {
     headline: 'Preise für Welser Betriebe',
@@ -1020,7 +1020,7 @@ const gunskirchen: DruckSectionDataSet = {
     { value: '180+', label: 'Vor-Ort-Kunden', detail: 'Stammkunden kommen regelmäßig vorbei' },
     { value: '2-4h', label: 'Sofortfertigung', detail: 'Für einfache Standardteile' },
     { value: '0€', label: 'Vor-Ort-Beratung', detail: 'Gemeinsames Designen am Bildschirm gratis' },
-    { value: '100%', label: 'Zufriedenheitsgarantie', detail: 'Nachbesserung vor Ihren Augen' },
+    { value: '48h', label: 'Nachdruck bei Mängeln', detail: 'auf unsere Kosten' },
     { value: '5.0', label: 'Google Bewertung', detail: '35 Bewertungen · persönlicher Service' },
   ],
   priceComparison: {
@@ -1319,7 +1319,7 @@ const steiermark: DruckSectionDataSet = {
       'ASA ist UV-beständig, wetterfest und bleibt auch nach Jahren formstabil',
       '70% leichter als Holz, kein Pflegeaufwand, keine Nachbehandlung nötig',
       'Transparente PETG-Modelle machen Filtersysteme und Energieflüsse sichtbar',
-      'Physische Modelle auf dem FFG-Gutachtertisch erhöhen nachweislich die Förderchance',
+      'Ein physisches Modell macht den Projektstand für Gutachter greifbar',
     ],
   },
   expressTimeline: [
@@ -1575,7 +1575,7 @@ const vorarlberg: DruckSectionDataSet = {
     solutionTitle: 'Iterative 3D-Druck-Validierung',
     solutions: [
       '8 Iterationen für €500: günstiger als ein einziges CNC-Muster',
-      'Physische Modelle beschleunigen Meeting-Entscheidungen nachweislich um 80%',
+      'Physische Modelle beschleunigen Meeting-Entscheidungen spürbar',
       'Grenznaher Versand: Vorarlberg, Ostschweiz und Bodensee in 1-2 Tagen',
       'PLA+ → PETG → ASA: Materialkosten steigen nur, wenn die Qualität es erfordert',
     ],

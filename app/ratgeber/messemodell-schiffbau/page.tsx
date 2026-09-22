@@ -366,8 +366,7 @@ export default function MesseModellSchiffbauPage() {
               <p className="text-lg leading-relaxed">
                 <strong>Konkret kalkuliert:</strong> ein €8.500-Vollschiff-Modell für 4 internationale Leitmessen über
                 2 Jahre. Wenn die Anfrage-Quote von 8 auf 15 pro Messe steigt · das sind 28 zusätzliche qualifizierte
-                Reeder-Anfragen über die Lebenszeit. Bei einem 15%-Konversions-Schnitt und €4-12 Mio Ø-Schiffspreis:
-                4 zusätzliche Abschlüsse = <strong className="text-primary">+€16-48 Mio Mehrumsatz</strong>.
+                Reeder-Anfragen über die Lebenszeit. Schon ein einziges zusätzliches qualifiziertes Gespräch pro Messe kann in dieser Branche das Modell um ein Vielfaches rechnen · konservativ gerechnet, ohne Fantasie-Prozente.
               </p>
             </div>
           </div>

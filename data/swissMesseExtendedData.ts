@@ -19,8 +19,7 @@ export const swissExtendedData: Record<string, RegionalExtendedData> = {
       challenge: "Ein Schweizer FinTech-Unternehmen wollte seine Cloud-Infrastruktur als physisches Modell für die FINANZ-Messe im Kongresshaus Zürich darstellen · abstrakt genug für Marketing, aber technisch korrekt für Fachbesucher.",
       solution: "Wir entwickelten ein modulares Serverrack-Modell im Maßstab 1:10 aus PETG, mit farbcodierten Ebenen (Daten, Verarbeitung, Schnittstellen). Jedes Modul ist einzeln entnehmbar und dient als Gesprächsstarter.",
       result: "Das Modell generierte laut Kunde 40% mehr Standgespräche als im Vorjahr. Drei Module wurden als Give-away an Key Accounts überreicht.",
-      specs: { size: "30 x 20 x 50 cm", material: "PETG mehrfarbig, mattlackiert", time: "7 Werktage" },
-      quote: "Unsere Software ist komplex · das Modell hat sie für jeden Besucher sofort verständlich gemacht."
+      specs: { size: "30 x 20 x 50 cm", material: "PETG mehrfarbig, mattlackiert", time: "7 Werktage" }
     },
     materials: swissMaterials,
     industryFocus: "Banking, FinTech, Versicherungen, Medtech",
@@ -46,8 +45,7 @@ export const swissExtendedData: Record<string, RegionalExtendedData> = {
       challenge: "Ein Schweizer Bauunternehmen brauchte für die Swissbau ein Schnittmodell, das die Schichten einer energetischen Gebäudesanierung zeigt · vom Mauerwerk über Dämmung bis zur Fassadenverkleidung.",
       solution: "Wir druckten ein Wandsegment im Maßstab 1:5 aus verschiedenfarbigen Materialien. Jede Schicht ist einzeln entnehmbar und mit beschrifteten Sockeln versehen. Das Modell steht auf einer drehbaren Grundplatte.",
       result: "Der Aussteller berichtete, dass das Schnittmodell zum meistfotografierten Exponat seines Stands wurde. Zwei Architekten bestellten direkt am Stand ähnliche Modelle für eigene Kundenpräsentationen.",
-      specs: { size: "40 x 30 x 60 cm", material: "PLA mehrfarbig + PETG Sockelplatte", time: "8 Werktage" },
-      quote: "Endlich verstehen Bauherren auf Anhieb, was wir mit ‚Mehrschicht-Dämmung' meinen."
+      specs: { size: "40 x 30 x 60 cm", material: "PLA mehrfarbig + PETG Sockelplatte", time: "8 Werktage" }
     },
     materials: swissMaterials,
     industryFocus: "Bau, Architektur, Pharma, Chemie, Fertigungsindustrie",
@@ -72,8 +70,7 @@ export const swissExtendedData: Record<string, RegionalExtendedData> = {
       challenge: "Eine Schweizer Gemeinde wollte auf der Suisse Public ihr geplantes Fernwärmenetz als Anschauungsmodell präsentieren · inklusive Einbettung in die lokale Topografie.",
       solution: "Wir erstellten ein Geländemodell im Maßstab 1:500 mit eingebetteten Fernwärmeleitungen (rot eingefärbt) und den versorgten Gebäuden. Das Modell basiert auf GIS-Höhendaten, die wir in ein 3D-Druckformat konvertierten.",
       result: "Das Modell wurde zum Mittelpunkt des Gemeindeauftritts. Der Gemeinderat berichtete, dass Bürger nach der Messe erstmals die geplante Fernwärmelösung visuell verstanden und die Zustimmungsrate in der Volksabstimmung deutlich stieg.",
-      specs: { size: "80 x 60 x 15 cm", material: "PLA weiß + farbige Akzente, Sockelplatte", time: "10 Werktage" },
-      quote: "Das Modell hat unsere Fernwärme-Abstimmung entschieden. Die Leute haben endlich gesehen, was wir planen."
+      specs: { size: "80 x 60 x 15 cm", material: "PLA weiß + farbige Akzente, Sockelplatte", time: "10 Werktage" }
     },
     materials: swissMaterials,
     industryFocus: "Öffentlicher Sektor, Infrastruktur, Landwirtschaft, Medtech",
@@ -98,8 +95,7 @@ export const swissExtendedData: Record<string, RegionalExtendedData> = {
       challenge: "Ein Stallbauunternehmen aus der Ostschweiz wollte auf der Tier&Technik ein komplett neues Stallkonzept präsentieren · inklusive Belüftungssystem, Melkroboter-Station und Fressplatzgestaltung.",
       solution: "Wir druckten ein aufklappbares Stallmodell im Maßstab 1:50 mit abnehmbarem Dach. Das Belüftungssystem wurde mit farbigen Pfeilen dargestellt, der Melkroboter als separates Detailmodell in 1:10.",
       result: "Das aufklappbare Modell zog Landwirte an den Stand wie ein Magnet. Der Kunde erhielt 28 qualifizierte Anfragen während der 4-tägigen Messe · doppelt so viele wie im Vorjahr.",
-      specs: { size: "60 x 40 x 25 cm (Stall) + 15 x 15 x 20 cm (Melkroboter)", material: "PETG weiß + PLA Detailteile", time: "12 Werktage" },
-      quote: "Das aufklappbare Dach war genial. Jeder Besucher wollte reinschauen · und dann reden."
+      specs: { size: "60 x 40 x 25 cm (Stall) + 15 x 15 x 20 cm (Melkroboter)", material: "PETG weiß + PLA Detailteile", time: "12 Werktage" }
     },
     materials: swissMaterials,
     industryFocus: "Landwirtschaft, Lebensmittel, Stallbau, Ostschweizer Gewerbe",
@@ -124,8 +120,7 @@ export const swissExtendedData: Record<string, RegionalExtendedData> = {
       challenge: "Ein Zentralschweizer Architekturbüro präsentierte auf der Bauen+Wohnen Luzern ein CO₂-neutrales Wohnquartier. Das Modell sollte Photovoltaik-Fassade, Gründächer und Quartiers-Infrastruktur zeigen.",
       solution: "Ein segmentiertes Quartiersmodell im Maßstab 1:200 mit abnehmbaren Gebäuden. Die PV-Fassade wurde durch reflektierendes Filament dargestellt, Gründächer mit grünem PLA.",
       result: "Das Modell überzeugte die Messejury: Der Stand gewann den ‚Nachhaltigkeitspreis' der Bauen+Wohnen. Drei Gemeinden meldeten sich für Machbarkeitsstudien.",
-      specs: { size: "80 x 80 x 20 cm", material: "PLA mehrfarbig + PETG Grundplatte", time: "14 Werktage" },
-      quote: "Das Modell hat unsere Idee greifbar gemacht. Die Gemeindevertreter haben sofort verstanden, wie das Quartier funktioniert."
+      specs: { size: "80 x 80 x 20 cm", material: "PLA mehrfarbig + PETG Grundplatte", time: "14 Werktage" }
     },
     materials: swissMaterials,
     industryFocus: "Bau, Immobilien, Energie, Gesundheit, Zentralschweizer Gewerbe",

@@ -52,7 +52,7 @@ const RegionalUniqueContent = ({
                 <div className="grid sm:grid-cols-3 gap-4 mt-6 not-prose">
                   {[
                     { icon: Zap, title: "Express 24h", desc: `Für dringende Projekte in ${regionName}` },
-                    { icon: Layers, title: "4 Materialien", desc: "PLA+, PETG, ASA, TPU – nach Bedarf" },
+                    { icon: Layers, title: "8 Materialien", desc: "von PLA bis PA6-CF – nach Bedarf" },
                     { icon: Award, title: "Ab Stückzahl 1", desc: "Einzelteile bis Mehrfachfertigung" },
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3 p-4 rounded-xl bg-muted/40 border border-border/40">

@@ -2,10 +2,10 @@ import AnimatedSection from "@/components/AnimatedSection";
 import { TrendingUp, Users, Clock, Award } from "lucide-react";
 
 const stats = [
-  { v: "+47%", l: "Entscheidungs-Tempo", sub: "Bauherren entscheiden schneller wenn sie das Projekt physisch sehen", icon: TrendingUp },
-  { v: "8×", l: "Erinnerungsrate", sub: "Modelle bleiben Wochen nach dem Termin im Gedächtnis – Renderings nicht", icon: Users },
-  { v: "−65%", l: "Iterations-Zeit", sub: "Drei Varianten parallel drucken statt einzeln nachzubauen", icon: Clock },
-  { v: "+34%", l: "Wettbewerbs-Quote", sub: "Architekturbüros mit Modell gewinnen Wettbewerbe häufiger", icon: Award },
+  { v: "24-48h", l: "Express-Fertigung", sub: "Wettbewerbsmodelle auch dann, wenn die Abgabe schon nächste Woche ist", icon: Clock },
+  { v: "3-5 WT", l: "Standard-Lieferzeit", sub: "ab Datenfreigabe, versicherter Versand in Österreich und Deutschland", icon: TrendingUp },
+  { v: "ab €490", l: "Flatrate pro Monat", sub: "für Büros mit regelmäßigem Bedarf, erstes Modell kostenlos", icon: Award },
+  { v: "5,0", l: "35 Google-Bewertungen", sub: "alle fünf Sterne, viele davon von Architektur- und Planungskunden", icon: Users },
 ];
 
 const ArchitekturROISection = () => (
@@ -23,7 +23,7 @@ const ArchitekturROISection = () => (
               Ein Modell verkauft<br/><span className="text-gradient">was Pläne nicht erklären können.</span>
             </h2>
             <p className="text-background/70 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
-              Statistiken aus dem Architekturbüro-Alltag und Studien zur Bauherren-Entscheidungsfindung. Physische Modelle sind kein Marketing-Trick, sondern messbarer Entscheidungs-Hebel.
+              Ein physisches Modell macht Maßstab, Proportion und Materialität greifbar, lange bevor gebaut wird. Deshalb setzen Büros es im Wettbewerb, beim Bauherrn und in der Sitzung ein.
             </p>
           </div>
         </AnimatedSection>
@@ -47,7 +47,7 @@ const ArchitekturROISection = () => (
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Beispielrechnung Wohnbauprojekt</p>
-                <h3 className="text-3xl md:text-4xl font-bold tracking-[-0.02em] mb-6 text-background">Mehrkosten Modell amortisieren sich in <span className="text-primary">14 Tagen.</span></h3>
+                <h3 className="text-3xl md:text-4xl font-bold tracking-[-0.02em] mb-6 text-background">Was kostet ein Modell im Verhältnis zum Projekt? <span className="text-primary">Eine Beispielrechnung.</span></h3>
                 <p className="text-background/70 leading-relaxed mb-6">
                   Bauträger entwickelt 30-Einheiten-Wohnbauprojekt. Vermarktung mit Renderings führt zu langer Vermarktungsphase, viele Rückfragen, langsame Reservierungen.
                 </p>
@@ -79,7 +79,7 @@ const ArchitekturROISection = () => (
                     <span className="mono font-bold text-2xl text-primary">+€19.210</span>
                   </div>
                 </div>
-                <p className="text-[11px] text-background/40 italic mt-6 leading-relaxed">Beispielrechnung. Tatsächliche Werte abhängig von Projektgröße, Vermarktungskanal und Lage. Detaillierte Branchenstudien zur Modell-Wirkung auf Bauherren-Entscheidungen verfügbar im Beratungsgespräch.</p>
+                <p className="text-[11px] text-background/40 italic mt-6 leading-relaxed">Beispielrechnung mit angenommenen Werten. Tatsächliche Kosten und Nutzen hängen von Projektgröße, Vermarktungskanal und Lage ab.</p>
               </div>
             </div>
           </div>
