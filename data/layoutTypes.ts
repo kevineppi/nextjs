@@ -80,19 +80,19 @@ export const architekturSectionOrder: Record<ArchitekturLayoutType, SectionId[]>
   ],
   kosten: [
     'hero', 'priceComparison', 'typicalProjects', 'valueProposition', 'checklist', 'projectWorkflow',
-    'caseStudy', 'customerPriorities', 'commonMistakes', 'ctaPrimary', 'faq', 'localAdvantages', 'nearbyRegions', 'allRegionsLinks', 'relatedPages'
+    'caseStudy', 'customerPriorities', 'localContext', 'commonMistakes', 'ctaPrimary', 'faq', 'localAdvantages', 'nearbyRegions', 'allRegionsLinks', 'relatedPages'
   ],
   express: [
     'hero', 'expressTimeline', 'typicalProjects', 'ctaSecondary', 'caseStudy', 'projectWorkflow',
-    'trustSignals', 'customerPriorities', 'materials', 'commonMistakes', 'faq', 'ctaPrimary', 'nearbyRegions', 'allRegionsLinks', 'relatedPages'
+    'trustSignals', 'customerPriorities', 'localContext', 'materials', 'commonMistakes', 'faq', 'ctaPrimary', 'nearbyRegions', 'allRegionsLinks', 'relatedPages'
   ],
   casestudy: [
     'hero', 'caseStudy', 'typicalProjects', 'uniqueContent', 'projectWorkflow', 'localAdvantages',
-    'customerPriorities', 'materials', 'commonMistakes', 'ctaPrimary', 'faq', 'deliveryInfo', 'nearbyRegions', 'allRegionsLinks', 'relatedPages'
+    'customerPriorities', 'localContext', 'materials', 'commonMistakes', 'ctaPrimary', 'faq', 'deliveryInfo', 'nearbyRegions', 'allRegionsLinks', 'relatedPages'
   ],
   material: [
     'hero', 'techSpecs', 'typicalProjects', 'materials', 'projectWorkflow', 'checklist',
-    'customerPriorities', 'caseStudy', 'commonMistakes', 'faq', 'ctaPrimary', 'nearbyRegions', 'allRegionsLinks', 'relatedPages'
+    'customerPriorities', 'localContext', 'caseStudy', 'commonMistakes', 'faq', 'ctaPrimary', 'nearbyRegions', 'allRegionsLinks', 'relatedPages'
   ],
   behoerden: [
     'hero', 'trustSignals', 'typicalProjects', 'valueProposition', 'projectWorkflow', 'caseStudy',
@@ -100,7 +100,7 @@ export const architekturSectionOrder: Record<ArchitekturLayoutType, SectionId[]>
   ],
   universitaet: [
     'hero', 'typicalProjects', 'industryShowcase', 'priceComparison', 'projectWorkflow', 'materials',
-    'customerPriorities', 'caseStudy', 'commonMistakes', 'faq', 'ctaPrimary', 'nearbyRegions', 'allRegionsLinks', 'relatedPages'
+    'customerPriorities', 'localContext', 'caseStudy', 'commonMistakes', 'faq', 'ctaPrimary', 'nearbyRegions', 'allRegionsLinks', 'relatedPages'
   ]
 };
 

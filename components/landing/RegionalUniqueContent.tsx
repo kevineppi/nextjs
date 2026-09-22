@@ -46,7 +46,7 @@ const RegionalUniqueContent = ({
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  Unser Leistungsspektrum umfasst Designstudien, Präsentationsmodelle, Konzeptmodelle, Projektmengen und Einzelanfertigungen. Wir verarbeiten hochwertige Materialien wie PLA+, PETG, ASA und TPU – je nach Anforderung an Oberfläche, Haltbarkeit oder Flexibilität. Die Lieferung nach {regionName} erfolgt innerhalb von {deliveryTime}. Für zeitkritische Projekte steht unser Express-Service mit 24-Stunden-Fertigung bereit.
+                  Unser Leistungsspektrum umfasst Designstudien, Präsentationsmodelle, Konzeptmodelle, Projektmengen und Einzelanfertigungen. Wir verarbeiten acht FDM-Materialien von PLA bis PA6-CF – je nach Anforderung an Oberfläche und Optik. Die Lieferung nach {regionName} erfolgt innerhalb von {deliveryTime}. Für zeitkritische Projekte steht unser Express-Service mit 24-Stunden-Fertigung bereit.
                 </p>
 
                 <div className="grid sm:grid-cols-3 gap-4 mt-6 not-prose">
@@ -72,7 +72,7 @@ const RegionalUniqueContent = ({
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  Besonders für Unternehmen in {regionName}, die regelmäßig Modelle benötigen, bieten wir attraktive Konditionen: kostenloser Versand ab €100 Bestellwert, persönliche Beratung bei Materialwahl und Druckeinstellungen sowie Nachbearbeitung auf Wunsch (Schleifen, Lackieren, Gewindeeinsätze). Über 500 zufriedene Kunden {countryPrep} vertrauen bereits auf unseren Service.
+                  Für Unternehmen in {regionName}, die regelmäßig Modelle benötigen, gibt es Mengenkonditionen, persönliche Beratung bei der Materialwahl und Nachbearbeitung auf Wunsch (Schleifen, Lackieren). 35 Google-Bewertungen mit 5,0 Sternen sprechen für die Zusammenarbeit.
                 </p>
               </div>
             </AnimatedSection>

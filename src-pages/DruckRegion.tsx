@@ -13,6 +13,9 @@ import FAQSection from "@/components/landing/FAQSection";
 import DruckChecklist from "@/components/landing/DruckChecklist";
 import DruckValueProposition from "@/components/landing/DruckValueProposition";
 import MesseCaseStudy from "@/components/landing/MesseCaseStudy";
+import LocalKevinAnchorSection from "@/components/landing/sections/LocalKevinAnchorSection";
+import LocalMessen2026Section from "@/components/landing/sections/LocalMessen2026Section";
+import DominantBranchenSection from "@/components/landing/sections/DominantBranchenSection";
 import MesseMaterialTips from "@/components/landing/MesseMaterialTips";
 import StickyCTA from "@/components/landing/StickyCTA";
 import SectionDivider from "@/components/landing/SectionDivider";
@@ -238,27 +241,7 @@ const DruckRegion = ({ region }: DruckRegionProps) => {
           eyebrow={`3D-Druck Service ${regionData.name}`}
           heading={`Mehr 3D-Druck Lösungen für ${regionData.name}`}
           description={`Sie suchen für Ihr Projekt in ${regionData.name} mehr als nur den Standard-Druck? Hier finden Sie passende Spezialangebote.`}
-          paragraphs={[
-            {
-              parts: [
-                { before: `Für eine schnelle Preisindikation Ihres Projekts in ${regionData.name} nutzen Sie unseren `, anchor: "kostenlosen 3D-Druck Kostenrechner", href: "/kostenrechner", after: " – STL-Datei hochladen, Material wählen, Richtpreis in 60 Sekunden erhalten. Anschließend können Sie direkt eine " },
-                { anchor: "verbindliche Anfrage stellen", href: "/kontakt", after: ` und erhalten Ihr Festpreisangebot innerhalb von 6 Stunden.` },
-              ],
-            },
-            {
-              parts: [
-                { before: `Architekturbüros in ${regionData.name} setzen auf unsere `, anchor: "maßstabsgetreuen Architekturmodelle (1:50–1:500)", href: "/architekturmodelle", after: " für Wettbewerbe und Baueinreichungen. Messeaussteller nutzen unsere " },
-                { anchor: `Express-Messemodelle mit 24h-Lieferung nach ${regionData.name}`, href: "/messemodelle", after: ". Für Produktentwickler bieten wir " },
-                { anchor: "Rapid Prototyping ab €20", href: "/rapid-prototyping", after: " ohne Mindestmenge." },
-              ],
-            },
-            {
-              parts: [
-                { before: `Unternehmen in ${regionData.name} profitieren von unseren `, anchor: "B2B-Konditionen für Firmenkunden", href: "/firmenkunden", after: ": Mengenrabatt ab 5 Stück, NDA-fähige Projektabwicklung, Zahlungsziel 30 Tage. Eine vollständige Übersicht aller verfügbaren " },
-                { anchor: "3D-Druck Materialien (PLA, PETG, ASA, Carbon-PA)", href: "/3d-druck-materialien", after: " finden Sie auf unserer Material-Seite." },
-              ],
-            },
-          ]}
+          paragraphs={[]}
           actions={[
             { label: "Preis online berechnen", href: "/kostenrechner", description: `Richtpreis für Ihr Projekt in ${regionData.name} in 60 Sekunden` },
             { label: "B2B-Anfrage stellen", href: "/firmenkunden", description: "Mengenrabatt, fester Ansprechpartner, NDA" },
@@ -272,6 +255,9 @@ const DruckRegion = ({ region }: DruckRegionProps) => {
       case 'projectWorkflow': return <ProjectWorkflowSection key="pw" regionName={regionData.name} data={extSections.projectWorkflow} />;
       case 'customerPriorities': return <CustomerPrioritiesSection key="cp" regionName={regionData.name} data={extSections.customerPriorities} />;
       case 'commonMistakes': return <CommonMistakesSection key="cm" regionName={regionData.name} data={extSections.commonMistakes} />;
+      case 'localKevinAnchor': return <LocalKevinAnchorSection key="lka" regionSlug={regionData.slug} />;
+      case 'localMessen2026': return <LocalMessen2026Section key="lm26" regionSlug={regionData.slug} regionName={regionData.name} />;
+      case 'dominantBranchen': return <DominantBranchenSection key="db" regionSlug={regionData.slug} regionName={regionData.name} />;
       default: return null;
     }
   };
