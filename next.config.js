@@ -20,6 +20,13 @@ const nextConfig = {
       //     hing aber mit "Serienfertigung"-Titel im Google-Index ═══
       { source: '/serienfertigung', destination: '/firmenkunden', permanent: true },
 
+      // ═══ Case-Bereinigung (2026-09-22, Kevin-Wahrheitscheck): 3 unbestätigte
+      //     Cases entfernt, Generali-Stückzahl korrigiert (3.500 → 1.000) ═══
+      { source: '/cases/maschinenbau-werkzeugmaschine-schnitt', destination: '/branchen/maschinenbau', permanent: true },
+      { source: '/cases/anlagenbau-pumpen-schnittmodell', destination: '/branchen/anlagenbau', permanent: true },
+      { source: '/cases/wien-stadtentwicklung-1-500-stadtmodell', destination: '/architekturmodelle/stadtmodell', permanent: true },
+      { source: '/cases/generali-firmen-keksausstecher-3500-stueck', destination: '/cases/generali-keksausstecher-1000-stueck', permanent: true },
+
       // ═══ Studenten-Seite verallgemeinert (2026-09-13, Kevin): alle Studiengänge, neue URL /studenten.
       //     301 erhält die bereits verteilten Links (Fachschafts-Mails, ChatGPT-Zitate). ═══
       { source: '/architekturmodelle/studenten', destination: '/studenten', permanent: true },

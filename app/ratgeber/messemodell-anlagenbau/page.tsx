@@ -305,7 +305,7 @@ export default function MesseModellAnlagenbauPage() {
 
         <section className="px-4 py-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Case: Pumpen-Schnittmodell für Anlagenbauer OÖ</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Beispiel-Szenario: Pumpen-Schnittmodell für Anlagenbauer OÖ</h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Pumpen-Hersteller aus der OÖ-Industrieregion. Industrielle Kreiselpumpe, Hauptanwendung in der Verfahrenstechnik
               (Chemie-Anlagen, Pharma-Linien). Showcase-Bedarf für POWTECH und Achema sowie für Hausmesse-Auftritte.
@@ -330,8 +330,8 @@ export default function MesseModellAnlagenbauPage() {
                 </p>
               </div>
             </div>
-            <Link href="/cases/anlagenbau-pumpen-schnittmodell" className="inline-flex items-center gap-2 text-primary font-bold hover:underline mt-6">
-              Vollständige Case-Story lesen <ArrowRight className="w-4 h-4" />
+            <Link href="/cases" className="inline-flex items-center gap-2 text-primary font-bold hover:underline mt-6">
+              Echte Referenzprojekte ansehen <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </section>

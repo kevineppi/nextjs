@@ -340,7 +340,7 @@ export default function MesseModellMaschinenbauPage() {
         {/* CASE-STORY */}
         <section className="px-4 py-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Case: Werkzeugmaschinen-Schnittmodell 1:8</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Beispiel-Szenario: Werkzeugmaschinen-Schnittmodell 1:8</h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Werkzeugmaschinen-Hersteller aus dem Industrieviertel NÖ. Original-CNC-Fräse 2,8×1,9×2,3 m,
               Auftragswert in Standardausstattung €180-280k. Showcase-Bedarf für EMO Hannover und METAV
@@ -356,7 +356,7 @@ export default function MesseModellMaschinenbauPage() {
                 <div><span className="text-muted-foreground">Bewegliche Komponenten:</span> <strong>Spindel + Werkzeug-Wechsler</strong></div>
                 <div><span className="text-muted-foreground">Lackierung:</span> <strong>2K im Original-RAL 7035</strong></div>
                 <div><span className="text-muted-foreground">Lieferzeit:</span> <strong>4 Wochen ab CAD</strong></div>
-                <div><span className="text-muted-foreground">Auftragswert:</span> <strong>€4.800</strong></div>
+                
               </div>
               <div className="mt-6 pt-6 border-t border-border">
                 <h4 className="font-bold mb-2">Ergebnis nach 4 Messen (EMO + METAV + AMB + Hausmesse)</h4>
@@ -365,8 +365,8 @@ export default function MesseModellMaschinenbauPage() {
                 </p>
               </div>
             </div>
-            <Link href="/cases/maschinenbau-werkzeugmaschine-schnitt" className="inline-flex items-center gap-2 text-primary font-bold hover:underline mt-6">
-              Vollständige Case-Story lesen <ArrowRight className="w-4 h-4" />
+            <Link href="/cases" className="inline-flex items-center gap-2 text-primary font-bold hover:underline mt-6">
+              Echte Referenzprojekte ansehen <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </section>

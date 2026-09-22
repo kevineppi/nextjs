@@ -760,7 +760,7 @@ export default function MessemodellGuidePage() {
               </Link>
 
               <Link
-                href="/cases/maschinenbau-werkzeugmaschine-schnitt"
+                href="/cases"
                 className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors group"
               >
                 <span className="inline-block px-2 py-1 bg-primary/10 text-primary text-xs font-bold rounded mb-3">
@@ -779,7 +779,7 @@ export default function MessemodellGuidePage() {
               </Link>
 
               <Link
-                href="/cases/anlagenbau-pumpen-schnittmodell"
+                href="/cases"
                 className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors group"
               >
                 <span className="inline-block px-2 py-1 bg-primary/10 text-primary text-xs font-bold rounded mb-3">
