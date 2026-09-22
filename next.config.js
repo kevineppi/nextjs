@@ -37,6 +37,18 @@ const nextConfig = {
       { source: '/3d-druck/klagenfurt', destination: '/3d-druck-kaernten', permanent: true },
       { source: '/3d-druck-tirol', destination: '/3d-druck-salzburg', permanent: true },
 
+      // ═══ Architektur-Städte → Bundesländer (2026-09-22, Kevin): dünne Stadt-
+      //     Duplikate konsolidieren, analog zum 3d-druck-Cluster. Bündelt Signale
+      //     auf 9 starke Seiten statt 17 halbstarke (GSC: 'Gecrawlt, nicht indexiert') ═══
+      { source: '/architekturmodelle/linz', destination: '/architekturmodelle/oberoesterreich', permanent: true },
+      { source: '/architekturmodelle/wels', destination: '/architekturmodelle/oberoesterreich', permanent: true },
+      { source: '/architekturmodelle/graz', destination: '/architekturmodelle/steiermark', permanent: true },
+      { source: '/architekturmodelle/klagenfurt', destination: '/architekturmodelle/kaernten', permanent: true },
+      { source: '/architekturmodelle/villach', destination: '/architekturmodelle/kaernten', permanent: true },
+      { source: '/architekturmodelle/st-poelten', destination: '/architekturmodelle/niederoesterreich', permanent: true },
+      { source: '/architekturmodelle/innsbruck', destination: '/architekturmodelle/tirol', permanent: true },
+      { source: '/architekturmodelle/dornbirn', destination: '/architekturmodelle/vorarlberg', permanent: true },
+
       // ═══ Case-Bereinigung (2026-09-22, Kevin-Wahrheitscheck): 3 unbestätigte
       //     Cases entfernt, Generali-Stückzahl korrigiert (3.500 → 1.000) ═══
       { source: '/cases/maschinenbau-werkzeugmaschine-schnitt', destination: '/branchen/maschinenbau', permanent: true },
