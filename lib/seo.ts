@@ -215,7 +215,10 @@ export const orgSchema = () => ({
     'https://www.instagram.com/ekdruck/',
     'https://www.linkedin.com/in/3d-druck/',
     'https://www.wirtschaft.at/u/639499s',
-    // TODO Kevin: Google-Business-Profile-Maps-URL ergänzen (Audit A4/K4)
+    // Google Business Profile via Knowledge-Graph-ID (Kevin, 22.09.2026):
+    // verknüpft die Entität mit der Quelle der 5,0/35-Bewertungen
+    'https://www.google.com/search?kgmid=/g/11vztpkz0f',
+    'https://share.google/3dLsCBL54ORykesA9',
   ],
   // 22.09.2026 (AI-SEO-Audit K2/K3): AggregateRating + Review-Array entfernt.
   // Self-serving Reviews im Organization-Block sind von Rich Results ausgeschlossen
