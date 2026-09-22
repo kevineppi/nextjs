@@ -34,8 +34,9 @@ const UeberUns = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Person",
+    "@id": "https://www.ek-druck.at/ueber-uns#kevin",
             "name": BRAND.founderName,
-            "jobTitle": "Inhaber & Gründer ekdruck e.U.",
+            "jobTitle": "Gründer & Geschäftsführer",
             "worksFor": {
               "@type": "Organization",
               "name": BRAND.companyName,

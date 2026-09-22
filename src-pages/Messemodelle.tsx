@@ -104,7 +104,15 @@ const faqs = [
 const Messemodelle = () => (
   <>
     <SEOHead title="Messemodelle, Exponate & Präsentationsmodelle | 3D-Druck Express | ekdruck" description="Messemodelle drucken lassen: Ausstellungsmodelle, Exponate & Schaumodelle für DACH-Messen. Express 24h · ab €30 · bruchsicher · ★5,0 (35 Bewertungen)" keywords="messemodelle, messemodell drucken lassen, messeexponat, ausstellungsmodell, präsentationsmodell, exponat, schaumodell, anschauungsmodell, industriemodell, messemodelle kosten, 3d druck messe, messestand modell, produktmodell messe, demonstrationsmodell, standmodell, eyecatcher messestand, modellbau messe, messebau modell" path="/messemodelle" />
-    <ProductOfferSchema name="Messemodelle & Exponate 3D-Druck" description="3D-gedruckte Messemodelle, Exponate und Präsentationsmodelle für Fachmessen in Österreich, Deutschland und der Schweiz. Express 24h." price="30" image="https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png" />
+    <ProductOfferSchema
+        name="Messemodelle & Exponate 3D-Druck"
+        description="3D-gedruckte Messemodelle, Exponate und Präsentationsmodelle für Fachmessen in Österreich, Deutschland und der Schweiz. Express 24h."
+        url="https://www.ek-druck.at/messemodelle"
+        lowPrice="30"
+        highPrice="15000"
+        category="Messemodelle"
+        image="https://jkzrpjlfdsxvcfwhuoey.supabase.co/storage/v1/object/public/reference-images/1778767680367-47c5a49c-a230-4042-9b0d-b26065b4d8ea.png"
+      />
     <Navigation />
     <main className="min-h-screen bg-background pt-28 md:pt-32">
 

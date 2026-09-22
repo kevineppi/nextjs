@@ -280,11 +280,6 @@ const Firmenkunden = () => {
         keywords="3d druck service österreich, 3d druck firma österreich, professioneller 3d druck b2b, 3d druck dienstleister österreich, 3d druck anbieter firma, 3d druck unternehmen österreich, b2b 3d druck service"
         path="/firmenkunden"
       />
-
-      <BreadcrumbSchema items={[
-        { name: "Home", url: "/" },
-        { name: "Firmenkunden", url: "/firmenkunden" }
-      ]} />
       <Navigation />
       <Breadcrumbs items={breadcrumbs} />
 

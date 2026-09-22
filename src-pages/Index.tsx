@@ -51,7 +51,6 @@ const Index = () => {
       { question: "Warum österreichisches Filament?", answer: "Recycelte Industrieabfälle, Ökostrom, 80% weniger CO₂. Gleichmäßiger Filament-Durchmesser ±0,02 mm." },
       { question: "Welche Nachbearbeitungs-Optionen gibt es?", answer: "Schleifen, Grundierung, Lackierung RAL/Pantone, Aceton-Dampfglättung, Segmentierung." },
     ]} />
-    <BreadcrumbSchema items={[{ name: "Home", url: "/" }]} />
 
     <div className="min-h-screen bg-background">
       <Navigation />

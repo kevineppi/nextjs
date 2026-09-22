@@ -5,6 +5,7 @@ interface ProductOfferSchemaProps {
   lowPrice: string;
   highPrice?: string;
   category?: string;
+  image?: string;
 }
 
 const ProductOfferSchema = ({
@@ -13,12 +14,14 @@ const ProductOfferSchema = ({
   url,
   lowPrice,
   highPrice,
-  category = "3D-Druck Service"
+  category = "3D-Druck Service",
+  image = "https://www.ek-druck.at/cases/ortsmodell-uebersicht.jpg"
 }: ProductOfferSchemaProps) => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": name,
+    "image": image,
     "description": description,
     "brand": {
       "@type": "Brand",
@@ -30,7 +33,7 @@ const ProductOfferSchema = ({
       "priceCurrency": "EUR",
       "lowPrice": lowPrice,
       ...(highPrice && { "highPrice": highPrice }),
-      "offerCount": "3",
+      
       "availability": "https://schema.org/InStock",
       "url": url,
       "seller": {

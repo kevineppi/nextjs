@@ -59,9 +59,10 @@ export default async function CaseDetailPage({ params }: CasePageProps) {
     description: c.metaDescription,
     author: { '@type': 'Person', name: BRAND.founderName },
     publisher: {
+      '@id': 'https://www.ek-druck.at/#organization',
       '@type': 'Organization',
       name: BRAND.companyName,
-      logo: { '@type': 'ImageObject', url: 'https://www.ek-druck.at/icon-192.png' },
+      logo: { '@type': 'ImageObject', url: 'https://www.ek-druck.at/lovable-uploads/40dc02c2-6cc2-46bb-aff9-6f06079f1f77.png' },
     },
     datePublished: `${c.year}-12-01`,
     about: c.primaryKeyword,

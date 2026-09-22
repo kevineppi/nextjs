@@ -149,7 +149,7 @@ export const orgSchema = () => ({
   description:
     '3D-Druck-Service aus Gunskirchen, Oberösterreich. Architekturmodelle, Messemodelle, Designprototypen und Mehrfachfertigung mit Express-Lieferung in ganz Österreich.',
   foundingDate: '2024',
-  telephone: '+43 676 5517197',
+  telephone: '+436765517197',
   email: 'office@ek-druck.at',
   address: {
     '@type': 'PostalAddress',
@@ -183,12 +183,13 @@ export const orgSchema = () => ({
   contactPoint: {
     '@type': 'ContactPoint',
     contactType: 'customer service',
-    telephone: '+43 676 5517197',
+    telephone: '+436765517197',
     email: 'office@ek-druck.at',
     availableLanguage: ['German', 'English'],
   },
   founder: {
     '@type': 'Person',
+    '@id': `${SITE_BASE}/ueber-uns#kevin`,
     name: 'Kevin Eppensteiner',
     url: `${SITE_BASE}/ueber-uns`,
     jobTitle: 'Gründer & Geschäftsführer',
@@ -232,7 +233,7 @@ export const orgSchema = () => ({
 })
 
 /**
- * WebSite + SearchAction — für SiteLinks-Searchbox in SERPs.
+ * WebSite-Entität (bewusst ohne SearchAction — die Site hat keine eigene Suche).
  */
 export const websiteSchema = () => ({
   '@context': 'https://schema.org',

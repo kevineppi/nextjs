@@ -35,7 +35,7 @@ const SERVICE_LD = serviceSchema({
   description:
     'Maßgefertigte Architekturmodelle aus dem 3D-Druck für Wettbewerbe, Bauherren und Stadtmodelle. Maßstab 1:50 bis 1:500. PLA matt, PETG, ASA. Lieferung in ganz DACH.',
   url: 'https://www.ek-druck.at/architekturmodelle',
-  lowPrice: '20',
+  lowPrice: '280',
   highPrice: '5000',
 })
 
@@ -75,7 +75,6 @@ export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_LD) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_LD) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_LD) }} />
       <Architekturmodelle />
     </>

@@ -189,7 +189,6 @@ const Einzelanfertigungen = () => {
       />
       <SpeakableSchema url="https://www.ek-druck.at/einzelanfertigungen" />
       {/* StructuredData entfernt — Organization läuft nun site-wide via app/layout.tsx */}
-      <BreadcrumbSchema items={[{ name: "Home", url: "/" }, { name: "Einzelanfertigungen", url: "/einzelanfertigungen" }]} />
 
       <Navigation />
       <Breadcrumbs items={[{ name: "Services", url: "#" }, { name: "Einzelanfertigungen", url: "/einzelanfertigungen" }]} />

@@ -22,29 +22,11 @@ const ServiceSeoBlock = ({ serviceSlug }: ServiceSeoBlockProps) => {
   const content = getServiceSeoContent(serviceSlug)
   if (!content) return null
 
-  // FAQPage-Schema für AI-Overview-Optimierung
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: content.faqs.map((f) => ({
-      '@type': 'Question',
-      name: f.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: f.answer,
-      },
-    })),
-  }
+  // 22.09.2026 (Audit B3/M1): kein eigenes FAQPage-Schema mehr — pro Seite
+  // emittiert nur noch FAQSection das Schema (sichtbarer Inhalt = Schema-Quelle).
 
   return (
     <>
-      {/* Inline FAQPage Schema — Server-side render für SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        id={`faqschema-${serviceSlug}`}
-      />
-
       {/* ═══ LONG-TAIL-BODY ═══ */}
       <section className="py-16 md:py-24 bg-background border-t border-border" aria-label="Detail-Information">
         <div className="container mx-auto px-4">

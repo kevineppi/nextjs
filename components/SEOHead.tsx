@@ -82,20 +82,8 @@ const SEOHead = ({
       }
     });
 
-    // Structured Data (only if schemaType is explicitly provided)
-    if (schemaType) {
-      const schemaId = `schema-${schemaType}-${path.replace(/\//g, '-') || 'home'}`;
-      const existingSchema = document.querySelector(`script[data-schema-id="${schemaId}"]`);
-      if (existingSchema) existingSchema.remove();
-
-      const schemaScript = document.createElement('script');
-      schemaScript.type = 'application/ld+json';
-      schemaScript.setAttribute('data-schema-id', schemaId);
-      schemaScript.textContent = JSON.stringify(
-        getSchemaData(schemaType, path, title, description, breadcrumbs, datePublished, dateModified)
-      );
-      document.head.appendChild(schemaScript);
-    }
+    // 22.09.2026 (Audit B3/M9): Client-seitige JSON-LD-Injection entfernt.
+    // Schemas kommen ausschließlich server-seitig aus den Seiten/Komponenten.
 
     return () => {
       preloadResources.forEach((resource) => {

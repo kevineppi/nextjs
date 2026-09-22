@@ -69,7 +69,7 @@ const DruckRegion = ({ region }: DruckRegionProps) => {
   const serviceSchema = {
     "@context": "https://schema.org", "@type": "Service",
     "name": `3D-Druck ${regionData.name}`, "description": regionData.metaDescription,
-    "provider": { "@type": "LocalBusiness", "name": "ekdruck e.U.", "address": { "@type": "PostalAddress", "streetAddress": "Negrellistraße 15", "addressLocality": "Gunskirchen", "postalCode": "4623", "addressRegion": "Oberösterreich", "addressCountry": "AT" }, "telephone": "+43 676 5517197" },
+    "provider": { "@id": "https://www.ek-druck.at/#organization" },
     "areaServed": { "@type": regionData.type === 'bundesland' ? "State" : "City", "name": regionData.name },
     "serviceType": "FDM 3D-Druck Service"
   };
@@ -87,7 +87,7 @@ const DruckRegion = ({ region }: DruckRegionProps) => {
     "@context": "https://schema.org", "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ek-druck.at/" },
-      { "@type": "ListItem", "position": 2, "name": "FDM 3D-Druck", "item": "https://www.ek-druck.at/fdm-3d-druck" },
+      { "@type": "ListItem", "position": 2, "name": "3D-Druck Service", "item": "https://www.ek-druck.at/" },
       { "@type": "ListItem", "position": 3, "name": regionData.name, "item": `https://www.ek-druck.at/3d-druck-${regionData.slug}` }
     ]
   };
@@ -101,7 +101,7 @@ const DruckRegion = ({ region }: DruckRegionProps) => {
   };
 
   const breadcrumbs = [
-    { name: "FDM 3D-Druck", url: "/fdm-3d-druck" },
+    { name: "3D-Druck Service", url: "/" },
     { name: regionData.name, url: `/3d-druck-${regionData.slug}` }
   ];
 
@@ -123,7 +123,7 @@ const DruckRegion = ({ region }: DruckRegionProps) => {
                   <p className="text-xl text-muted-foreground mb-10 leading-relaxed max-w-xl">{extendedData.introText || regionData.heroSubtitle}</p>
                   <div className="flex flex-col sm:flex-row gap-4 mb-10">
                     <Button asChild size="lg" variant="hero" className="text-base"><Link href="/kontakt">{ctaConfig.ctaLabel}<ArrowRight className="ml-2 w-5 h-5" /></Link></Button>
-                    <Button asChild size="lg" variant="outline" className="group"><Link href="/fdm-3d-druck">FDM-Verfahren im Detail<ArrowRight className="ml-2 w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" /></Link></Button>
+                    <Button asChild size="lg" variant="outline" className="group"><Link href="/ratgeber/verfahrens-vergleich">FDM-Verfahren im Detail<ArrowRight className="ml-2 w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" /></Link></Button>
                   </div>
                   <div className="flex flex-wrap items-center gap-4 pt-8 border-t border-border/50">
                     <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border/50"><Truck className="w-4 h-4 text-primary" /><span className="text-sm font-medium">{regionData.deliveryTime}</span></div>
@@ -266,8 +266,6 @@ const DruckRegion = ({ region }: DruckRegionProps) => {
     <>
       <SEOHead title={regionData.metaTitle} description={regionData.metaDescription} keywords={`3d druck ${regionData.name.toLowerCase()}, 3d-druck service ${regionData.name.toLowerCase()}, fdm druck ${regionData.name.toLowerCase()}`} path={`/3d-druck-${regionData.slug}`} />
       <InlineSchema id={`druck-service-${regionData.slug}`} schema={serviceSchema} />
-      <InlineSchema id={`druck-breadcrumb-${regionData.slug}`} schema={breadcrumbSchema} />
-      <InlineSchema id={`druck-faq-${regionData.slug}`} schema={faqSchema} />
 
       <Navigation />
       <Breadcrumbs items={breadcrumbs} />

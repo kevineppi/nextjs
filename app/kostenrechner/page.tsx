@@ -48,19 +48,12 @@ const webAppSchema = {
   applicationCategory: "BusinessApplication",
   operatingSystem: "All",
   offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
-  provider: {
-    "@type": "LocalBusiness",
-    name: "ekdruck e.U.",
-    url: "https://www.ek-druck.at",
-    telephone: "+436765517197",
-    address: { "@type": "PostalAddress", streetAddress: "Negrellistraße 15", addressLocality: "Gunskirchen", postalCode: "4623", addressRegion: "Oberösterreich", addressCountry: "AT" },
-  },
+  provider: { "@id": "https://www.ek-druck.at/#organization" },
 };
 
 export default function KostenrechnerPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }} />
       <Kostenrechner />
     </>
