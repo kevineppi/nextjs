@@ -306,36 +306,6 @@ export default function MesseModellSchiffbauPage() {
           </div>
         </section>
 
-        <section className="px-4 py-12">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Case: Aktiv in Arbeit · Querschnitt-Schiffsmodell für Hamburger Eventagentur</h2>
-            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Aktuell in unserer Werkstatt: Querschnitt-Schiffsmodell mit Antriebsbereich (Schottel-Antrieb) und
-              Elektronik-Steuerung (Elkon-Komponenten) für eine Hamburger Eventagentur. Auftragswert ~€30.000. Fertigstellung
-              August 2026 für Multi-Messen-Strategie der Endkunden.
-            </p>
-            <div className="bg-card border border-border rounded-lg p-6">
-              <h3 className="font-bold text-xl mb-4">Projekt-Specs</h3>
-              <div className="grid md:grid-cols-2 gap-4 text-sm">
-                <div><span className="text-muted-foreground">Maßstab:</span> <strong>1:50</strong></div>
-                <div><span className="text-muted-foreground">Modell-Größe:</span> <strong>~1,4 m × 60 cm</strong></div>
-                <div><span className="text-muted-foreground">Segmentierung:</span> <strong>3-teilig magnetisch</strong></div>
-                <div><span className="text-muted-foreground">Highlight:</span> <strong>Antriebs-Schnitt + Elektronik-Bereich</strong></div>
-                <div><span className="text-muted-foreground">Material:</span> <strong>PETG + PLA-Detail + PA-CF Propeller</strong></div>
-                <div><span className="text-muted-foreground">Brennstoffklasse:</span> <strong>B1 (Hamburger Messe-Standard)</strong></div>
-                <div><span className="text-muted-foreground">Lackierung:</span> <strong>2K-Premium in Hauptkunde-Farbgebung</strong></div>
-                <div><span className="text-muted-foreground">Lieferzeit gesamt:</span> <strong>~12 Wochen</strong></div>
-              </div>
-              <div className="mt-6 pt-6 border-t border-border">
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  <strong className="text-foreground">Lehre aus dem Projekt:</strong> bei Mehrkomponenten-Modellen (Schottel + Elkon
-                  = zwei Hersteller integriert) ist die Koordinations-Tiefe in der CAD-Datenaufbereitung der größte Aufwands-Treiber.
-                  Die reine Drucker-Zeit ist ~30% der Lieferzeit, der Rest entfällt auf 3-Wege-Abstimmung mit den Komponenten-Lieferanten.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <section className="px-4 py-12 bg-muted/30">
           <div className="max-w-4xl mx-auto">

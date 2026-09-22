@@ -264,7 +264,7 @@ const schiffbau: Branche = {
       problem:
         'Eine Schiffsschraube wiegt 1-30 Tonnen. Sie auf die SMM Hamburg, Posidonia Athen oder Boot Düsseldorf zu transportieren ist logistisch und finanziell ein Albtraum.',
       solution:
-        'Maßstab 1:10 bis 1:50. Aus dem Original-CAD von Schottel, Voith Schneider, Caterpillar oder anderen Antriebsherstellern in 4-7 Tagen gedruckt. Lackiert in Originalfarbe.',
+        'Maßstab 1:10 bis 1:50. Aus dem Original-CAD des Antriebsherstellers in 4-7 Tagen gedruckt. Lackiert in Originalfarbe.',
     },
     {
       problem:
@@ -283,7 +283,7 @@ const schiffbau: Branche = {
     {
       title: 'Schiffsantrieb Komplettmodell',
       description:
-        'Pod-Drive, Schottel-Antrieb, Voith-Schneider-Propeller oder Wasserstrahlantrieb maßstabsgetreu. Mit detaillierten Propeller-Blättern, Gehäuse, Anschlussflanschen.',
+        'Pod-Drive, Ruderpropeller, Voith-Schneider-Propeller oder Wasserstrahlantrieb maßstabsgetreu. Mit detaillierten Propeller-Blättern, Gehäuse, Anschlussflanschen.',
       scaleHint: 'Maßstab 1:10-1:30, Modellgröße 30-80 cm',
       materialHint: 'PETG für Robustheit + maritime Anmutung',
     },
