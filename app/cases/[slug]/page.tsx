@@ -221,6 +221,34 @@ export default async function CaseDetailPage({ params }: CasePageProps) {
                 </p>
               </div>
 
+              {c.costComparison && (
+                <div className="bg-background/5 border-2 border-background/10 rounded-2xl p-6 md:p-8 mb-8 overflow-x-auto">
+                  <p className="mono text-[10px] font-bold uppercase tracking-wider text-primary mb-2">
+                    {c.costComparison.title}
+                  </p>
+                  <p className="text-sm text-background/70 leading-relaxed mb-6">{c.costComparison.intro}</p>
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="border-b border-background/20">
+                        <th className="text-left py-2 pr-4 font-bold text-background/50"></th>
+                        <th className="text-left py-2 pr-4 font-bold text-background/70">{c.costComparison.colA}</th>
+                        <th className="text-left py-2 font-bold text-primary">{c.costComparison.colB}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {c.costComparison.rows.map((r, i) => (
+                        <tr key={i} className="border-b border-background/10">
+                          <td className="py-3 pr-4 font-semibold text-background/90">{r.posten}</td>
+                          <td className="py-3 pr-4 text-background/60">{r.a}</td>
+                          <td className="py-3 text-background/90">{r.b}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                  <p className="text-xs text-background/50 leading-relaxed mt-5 italic">{c.costComparison.fazit}</p>
+                </div>
+              )}
+
               {c.customerQuote && (
                 <blockquote className="bg-background/5 border-l-4 border-primary p-8 rounded-r-2xl mb-8">
                   <Quote className="w-6 h-6 text-primary mb-3" />

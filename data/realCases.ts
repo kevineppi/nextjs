@@ -54,6 +54,16 @@ export interface RealCase {
   // Optional Cross-Links
   relatedCases?: string[] // slugs
 
+  // Optional: Kosten-Gegenüberstellung (z. B. Großgerät vs. Modell am Messestand)
+  costComparison?: {
+    title: string
+    intro: string
+    colA: string // Spaltentitel links, z. B. "Großgerät am Stand"
+    colB: string // Spaltentitel rechts, z. B. "Modell am Stand"
+    rows: { posten: string; a: string; b: string }[]
+    fazit: string // klar gelabelte Beispielrechnung
+  }
+
   // Optional echte Projektfotos + Fotocredit
   images?: { src: string; alt: string }[]
   photoCredit?: string
@@ -443,6 +453,151 @@ export const cases: RealCase[] = [
     ],
   },
 
+  {
+    slug: 'messemodell-stalltechnik-statt-grossgeraet',
+    title: 'Vier Modelle statt Sperrguttransport: Stalltechnik auf Messegröße gebracht',
+    customerLabel: 'Hersteller von Stall- und Fütterungstechnik, Österreich',
+    branchen: ['maschinenbau'],
+    region: 'oberoesterreich',
+    year: 2026,
+    status: 'ongoing',
+
+    metaTitle: 'Case: Messemodell statt Großgerät · kleinere Stände, kein Sperrguttransport',
+    metaDescription: 'Ein Stalltechnik-Hersteller zeigt seine Geräte als 3D-gedruckte Modelle: kleinere Messestände, kein Sperrguttransport, vier Modelle für Showroom, Messen und Kundentermine.',
+    primaryKeyword: 'Messemodell statt Maschine Transport',
+
+    challenge:
+      'Die Geräte des Herstellers sind zu groß und zu schwer, um sie zu jeder Messe zu bringen: Sperrguttransport, aufwendiger Aufbau und eine Standfläche, die das Gerät überhaupt erst aufnehmen kann. Gesucht war ein Weg, die Produkte zu zeigen, ohne die Geräte selbst zu bewegen.',
+
+    approach: [
+      {
+        label: 'Maßstabsmodell nach Original-Daten',
+        detail: 'Das Gerät wurde als maßstabsgetreues Anschauungsmodell umgesetzt · mit dem Detailgrad, der am Messestand und im Kundengespräch wirklich sichtbar ist.',
+      },
+      {
+        label: 'Für den Dauereinsatz gebaut',
+        detail: 'Das Modell ist für den wiederholten Einsatz ausgelegt: Messen, Showroom, Kundentermine · einpacken, mitnehmen, aufstellen.',
+      },
+      {
+        label: 'Vom Einzelstück zur Serie an Einsatzorten',
+        detail: 'Nach dem ersten Modell entschied der Kunde, das Prinzip auszurollen: insgesamt vier Modelle sind in Planung · für Showroom, Messen und wichtige Kunden.',
+      },
+    ],
+
+    technicalSpecs: [
+      { label: 'Einsatz', value: 'Messen, Showroom, Kundenpräsentationen' },
+      { label: 'Umfang', value: '4 Modelle in Planung (laufende Zusammenarbeit)' },
+      { label: 'Modellpreis', value: 'ab rund €500 pro Modell' },
+      { label: 'Transport', value: 'Paket statt Sperrgut' },
+    ],
+
+    outcome:
+      'Das erste Modell war laut Kunde ein voller Erfolg · so überzeugend, dass insgesamt vier Modelle in Planung sind. Der für die Entscheidung wesentliche Punkt: Der Hersteller kann jetzt kleinere Messestände buchen, weil keine sperrigen Geräte mehr transportiert und aufgebaut werden müssen · die Produkte werden am Modell demonstriert.',
+
+    costComparison: {
+      title: 'Was der Umstieg rechnerisch bedeutet',
+      intro: 'Die Gegenüberstellung zeigt, wo ein Messemodell gegenüber dem Originalgerät ansetzt · Posten für Posten:',
+      colA: 'Großgerät am Stand',
+      colB: 'Modell am Stand',
+      rows: [
+        { posten: 'Standfläche', a: 'muss das Gerät aufnehmen, plus Rangier- und Sicherheitsfläche', b: 'ein Tisch oder Sockel genügt · kleinere Standkategorie buchbar' },
+        { posten: 'Transport', a: 'Sperrgut oder Spedition, je Messe neu', b: 'Paket oder Kofferraum, von einer Person getragen' },
+        { posten: 'Auf- und Abbau', a: 'Team, Zeitfenster, teils Hebetechnik', b: 'aufstellen und fertig · Minuten statt Stunden' },
+        { posten: 'Risiko', a: 'Transportschäden am Originalgerät', b: 'Modell ist ersetzbar, Nachdruck möglich' },
+        { posten: 'Wiedereinsatz', a: 'jede Messe verursacht die Logistik erneut', b: 'dasselbe Modell über viele Messen, Showroom inklusive' },
+      ],
+      fazit: 'Beispielrechnung mit typischen Annahmen, mit Ihren eigenen Zahlen nachrechenbar: Spart das Modell nur 10 m² Standfläche, sind das bei marktüblichen Quadratmeterpreisen von Fachmessen schnell vierstellige Beträge pro Messe · noch ohne Spedition, Aufbau-Team und Zeitaufwand. Ein Modell ab rund €500 hat sich damit oft schon beim ersten Einsatz bezahlt gemacht.',
+    },
+  },
+  {
+    slug: 'gelaendemodell-vermessungsbuero-3-tage',
+    title: 'Fix-fertig in drei Tagen · und der Express-Zuschlag flog raus',
+    customerLabel: 'Vermessungsbüro (ZT), Oberösterreich',
+    branchen: ['architektur'],
+    region: 'oberoesterreich',
+    year: 2026,
+    status: 'completed',
+
+    metaTitle: 'Case: Projektmodell in 3 Tagen geliefert · Express-Zuschlag gestrichen',
+    metaDescription: 'Ein Vermessungsbüro brauchte sein Projektmodell schnell. Geliefert wurde fix-fertig in drei Tagen · und der angebotene Express-Zuschlag wurde gestrichen, weil er nicht nötig war.',
+    primaryKeyword: 'Modell Vermessungsbüro schnell drucken',
+
+    challenge:
+      'Ein Ziviltechniker-Büro für Vermessung brauchte sein Projektmodell mit fixem Termin und rechnete mit dem Express-Zuschlag, der für vorgezogene Fertigung anfällt.',
+
+    approach: [
+      {
+        label: 'Druckfertige Datei, sofort geprüft',
+        detail: 'Das Büro lieferte eine sauber aufbereitete, druckfertige Datei · die Datenprüfung war in kurzer Zeit erledigt, Aufbereitungsaufwand fiel keiner an.',
+      },
+      {
+        label: 'Freie Kapazität genutzt',
+        detail: 'Die Fertigung konnte direkt eingeplant werden, ohne andere Aufträge zu verschieben · der Grund, warum kein Express-Aufschlag nötig war.',
+      },
+      {
+        label: 'Trotzdem Express versendet',
+        detail: 'Verschickt wurde per Express-Versand, damit der gewonnene Zeitpuffer beim Kunden ankommt und nicht beim Paketdienst liegen bleibt.',
+      },
+    ],
+
+    technicalSpecs: [
+      { label: 'Lieferzeit', value: '3 Tage ab Beauftragung, fix-fertig' },
+      { label: 'Datenlage', value: 'druckfertige Datei vom Büro' },
+      { label: 'Versand', value: 'Express, versichert' },
+      { label: 'Express-Zuschlag', value: 'gestrichen · war nicht nötig' },
+    ],
+
+    outcome:
+      'Das Modell war drei Tage nach Beauftragung fix-fertig beim Kunden. Den angebotenen Express-Zuschlag haben wir gestrichen: Die Datei kam druckfertig und die Kapazität war frei · verrechnet wird Express nur, wenn er wirklich gebraucht wird.',
+
+    lessons:
+      'Eine sauber vorbereitete Datei ist der schnellste Beschleuniger · manchmal schneller als jeder Zuschlag. Und ein gestrichener Aufpreis sagt mehr über eine Zusammenarbeit als jede Werbezeile.',
+
+    relatedCases: ['ortsmodell-express-zwei-tage', 'wettbewerbsmodell-kiga-express-wochenende'],
+  },
+  {
+    slug: 'wettbewerbsmodell-kiga-express-wochenende',
+    title: 'Wettbewerbsmodell übers Wochenende: Anfrage Freitag, Abholung Montag Mittag',
+    customerLabel: 'Architekturbüro, Oberösterreich',
+    branchen: ['architektur'],
+    region: 'oberoesterreich',
+    year: 2026,
+    status: 'completed',
+
+    metaTitle: 'Case: Wettbewerbsmodell 1:500 übers Wochenende gefertigt · Express',
+    metaDescription: 'Kindergarten-Wettbewerb, Anfrage am Freitag: Das Modell 1:500 wurde übers Wochenende gefertigt und Montag Mittag in Gunskirchen abgeholt.',
+    primaryKeyword: 'Wettbewerbsmodell Express drucken lassen',
+
+    challenge:
+      'Ein Architekturbüro stand kurz vor der Abgabe eines Kindergarten-Wettbewerbs und fragte am Freitag an · das Modell im Maßstab 1:500 musste zum Wochenstart fertig sein.',
+
+    approach: [
+      {
+        label: 'Freitag: Anfrage, Angebot, Freigabe',
+        detail: 'Anfrage und Freigabe am selben Tag · die Express-Option stand als eigene Position im Angebot, das Büro hat sie ohne Zögern gezogen.',
+      },
+      {
+        label: 'Wochenende: Fertigung',
+        detail: 'Das Modell entstand übers Wochenende · vorgezogen vor andere Aufträge, genau dafür ist der Express-Zuschlag da.',
+      },
+      {
+        label: 'Montag Mittag: Abholung in Gunskirchen',
+        detail: 'Das Büro holte das fertige Modell persönlich in der Werkstatt ab · kein Versandrisiko, kein Warten auf den Paketdienst.',
+      },
+    ],
+
+    technicalSpecs: [
+      { label: 'Maßstab', value: '1:500' },
+      { label: 'Zeitraum', value: 'Anfrage Freitag → Abholung Montag Mittag' },
+      { label: 'Übergabe', value: 'persönliche Abholung in Gunskirchen' },
+      { label: 'Option', value: 'Express-Fertigung (+50 %)' },
+    ],
+
+    outcome:
+      'Von der Anfrage bis zur Übergabe lag ein Wochenende. Montag Mittag nahm das Büro sein Wettbewerbsmodell in Gunskirchen mit · rechtzeitig zur Abgabe. Der Express-Zuschlag war dem Büro den Termin wert.',
+
+    relatedCases: ['gelaendemodell-vermessungsbuero-3-tage', 'ortsmodell-express-zwei-tage'],
+  },
 ]
 
 // ─── Helpers ─────────────────────────────────────────────────────
