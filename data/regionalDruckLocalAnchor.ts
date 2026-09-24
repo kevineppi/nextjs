@@ -48,7 +48,7 @@ export const regionalKevinAnchors: Record<string, LocalKevinAnchor> = {
     whyThisRegion:
       'Die Werkstatt steht in Gunskirchen bei Wels · der Großteil meiner Aufträge kommt aus Oberösterreich, von Architekturbüros über Vermessungsbüros bis zu Industriebetrieben.',
     personalStory: [
-      'Wels-Zentrum erreiche ich in rund 10 Minuten, Linz in etwa 20. Das heißt konkret: Abholung in Gunskirchen jederzeit nach Absprache, und wenn es brennt, bringe ich das Modell im Raum Wels/Linz auch selbst vorbei.',
+      'Wels-Zentrum erreiche ich in rund 10 Minuten, Linz in etwa 20. Das heißt konkret: Abholung in Gunskirchen jederzeit nach Absprache, und wenn es brennt, bringe ich das Modell im Raum Wels/Linz auch selbst vorbei. Für Linzer Büros und Betriebe bin ich damit oft schneller als jeder Paketdienst.',
       'Der kürzeste Weg zahlt sich aus: Ein Architekturbüro aus der Region hat am Freitag angefragt und sein Wettbewerbsmodell am Montag Mittag persönlich bei mir abgeholt. Solche Wochenend-Sprints gehen nur, wenn die Wege kurz sind.',
       'Und manchmal geht es schneller als gedacht: Einem Vermessungsbüro habe ich den angebotenen Express-Zuschlag wieder gestrichen, weil die Datei druckfertig kam und Kapazität frei war · geliefert wurde trotzdem in drei Tagen, per Express-Versand.',
     ],

@@ -18,9 +18,9 @@ import { BRAND } from '@/data/brandVoice'
 //   METADATA & SEO
 // ─────────────────────────────────────────────────────────────────
 
-const TITLE = 'PLA vs PETG vs ASA vs ABS · FDM-Material-Vergleich 2026 | ekdruck'
+const TITLE = 'PETG vs. PLA vs. ASA: alle 8 FDM-Materialien im Daten-Vergleich (2026)'
 const DESCRIPTION =
-  'Wissenschaftlicher Material-Vergleich für FDM-3D-Druck: PLA, PETG, ASA, ABS, TPU, PA-CF. Normwerte nach ISO 527/178/75, Druck-Parameter, Anwendungs-Entscheidungsmatrix. Aus der ekdruck-Werkstatt.'
+  'Der Daten-Vergleich für FDM-Filamente: PLA, PETG, ASA, ABS, TPU, PA-CF mit Normwerten (ISO 527/178/75), Temperaturen und Entscheidungsmatrix je Anwendung. Aus der ekdruck-Werkstatt.'
 
 export const metadata: Metadata = {
   title: TITLE,

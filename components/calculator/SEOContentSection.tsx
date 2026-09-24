@@ -17,7 +17,8 @@ const SEOContentSection = () => (
             Ihren Druckparametern. Ob Einzelstück oder Kleinauflage mit 50, 100 oder mehr
             Exemplaren: Die Kalkulation passt sich automatisch an. Jede Preisindikation ist
             unverbindlich – der endgültige Preis wird erst nach persönlicher Prüfung durch
-            unser Team festgelegt.
+            unser Team festgelegt. Speziell für Architekturmodelle: Richtwerte und Preistreiber im Ratgeber{' '}
+            <a href="/ratgeber/architekturmodell-kosten" className="text-primary font-semibold hover:underline">Architekturmodell Kosten</a>.
           </p>
         </div>
 

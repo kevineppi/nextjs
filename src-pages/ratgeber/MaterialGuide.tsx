@@ -60,7 +60,7 @@ const MaterialGuide = () => {
     unit: "Pro Kilogramm"
   }];
   return <>
-      <SEOHead title="PLA vs PETG vs ASA: Filament Vergleich [2026 Guide]" description="Falsches Filament = weggeworfenes Geld. PLA (Modellbau), PETG (Outdoor & technisch), ASA (UV-beständig) – Vergleich mit Temperaturen, Kosten & klarer Materialempfehlung." keywords="pla vs petg, asa vs pla, asa vs petg, filament vergleich, 3d-druck materialien, pla vs asa, welches filament" path="/ratgeber/material-guide" schemaType="article" datePublished="2025-10-15" dateModified="2026-05-01" />
+      <SEOHead title="PLA vs. PETG vs. ASA: Welches Filament wofür? [Vergleich 2026]" description="PETG oder PLA? ASA oder PETG? Der ehrliche Vergleich mit Temperatur-Tabelle, Kosten pro kg und klarer Empfehlung je Anwendung · aus der täglichen Werkstatt-Praxis." keywords="pla vs petg, asa vs pla, asa vs petg, filament vergleich, 3d-druck materialien, pla vs asa, welches filament" path="/ratgeber/material-guide" schemaType="article" datePublished="2025-10-15" dateModified="2026-05-01" />
       <HowToSchema
         name="Das richtige 3D-Druck Material wählen"
         description="In 4 Schritten zum optimalen Filament für Ihr 3D-Druck-Projekt."
