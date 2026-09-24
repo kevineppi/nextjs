@@ -24,7 +24,7 @@ const SEOContentSection = () => (
         {/* ── Kostenfaktoren ───────────────────── */}
         <div>
           <h3 className="text-xl font-bold text-foreground mb-4">
-            Die fünf Faktoren, die Ihren Preis bestimmen
+            Wie entsteht der Preis beim 3D-Druck? Die fünf Faktoren
           </h3>
           <div className="space-y-4">
             <div className="border-l-2 border-primary/30 pl-4">
