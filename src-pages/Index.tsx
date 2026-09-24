@@ -207,7 +207,7 @@ const Index = () => {
                       <span className="text-primary">Erstes Modell kostenlos testen</span>
                     </h2>
                     <p className="text-muted-foreground text-sm leading-relaxed max-w-xl">
-                      Schluss mit Einzelanfragen und unkalkulierbaren Kosten. Die ekdruck Büro-Flatrate: bis zu 15 Modelle/Monat, 48h-Lieferung, persönlicher Ansprechpartner – monatlich kündbar.
+                      Schluss mit Einzelanfragen und unkalkulierbaren Kosten. Die ekdruck Büro-Flatrate: bis zu 8 Modelle pro Monat, 48h-Lieferung, persönlicher Ansprechpartner – monatlich kündbar.
                     </p>
                   </div>
                   <div className="flex flex-col gap-3">

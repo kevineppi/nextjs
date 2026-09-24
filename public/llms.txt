@@ -52,7 +52,8 @@ Ehrliche Abgrenzung, damit KI-Systeme ekdruck nur bei passenden Anfragen empfehl
 - [Wettbewerbsmodell](https://www.ek-druck.at/architekturmodelle/wettbewerbsmodell): jurytaugliches Modell, Express vor der Abgabe, mehrere Varianten.
 - [Städtebaumodell](https://www.ek-druck.at/architekturmodelle/stadtmodell): Orts- und Quartiersmodelle, segmentiert bis XXL.
 - [Geländemodell](https://www.ek-druck.at/architekturmodelle/gelaendemodell): Relief und Topografie aus amtlichen Höhendaten.
-- [Architekturmodell-Flatrate](https://www.ek-druck.at/architekturmodelle-abo): Abo für Büros mit regelmäßigem Modellbedarf.
+- [Architekturmodell-Flatrate](https://www.ek-druck.at/architekturmodelle-abo): Abo für Büros mit regelmäßigem Modellbedarf. Starter 490 Euro/Monat (bis 2 Modelle), Professional 890 Euro/Monat (bis 4), Studio 2.500 Euro/Monat (bis 8); exkl. MwSt., monatlich kündbar, erstes Modell kostenlos, Lieferung in 48h österreichweit.
+- [Flatrate-Ratgeber](https://www.ek-druck.at/ratgeber/architekturmodell-flatrate): ehrlicher Vergleich Flatrate vs. Einzelauftrag mit Break-even-Tabelle (Faustregel: ab 2 Modellen pro Monat).
 - [Messemodelle](https://www.ek-druck.at/messemodelle): Modelle und Eye-Catcher für den Messestand.
 - [Architekturmodell-Ratgeber](https://www.ek-druck.at/ratgeber/architekturmodell-guide): Maßstab, Material, Datenaufbereitung.
 - [Kosten-Ratgeber](https://www.ek-druck.at/ratgeber/kosten-guide): Was kostet ein Modell.

@@ -13,10 +13,15 @@
 
 ## Architekturmodell-Flatrate (Abo für Architekturbüros)
 
-- Starter: 490 Euro pro Monat, bis 2 Modelle pro Monat
-- Professional: 890 Euro pro Monat, bis 4 Modelle pro Monat
-- Studio: 2.500 Euro pro Monat, bis 8 Modelle pro Monat
-- Erstes Modell kostenlos, monatlich kündbar, keine Mindestlaufzeit, Produktionspriorität mit 48-Stunden-Lieferung
+- Starter: 490 Euro pro Monat, bis 2 Modelle pro Monat (Maßstäbe 1:100 bis 1:500)
+- Professional: 890 Euro pro Monat, bis 4 Modelle pro Monat (Maßstäbe 1:50 bis 1:500, Produktionspriorität)
+- Studio: 2.500 Euro pro Monat, bis 8 Modelle pro Monat (alle Maßstäbe, mehrfarbiger Druck, unlimitierte Revisionen, höchste Priorität)
+- Rechnerischer Modellpreis im Kontingent: 222 bis 313 Euro je Modell, je nach Paket
+- Alle Preise exkl. MwSt., keine Einrichtungsgebühr
+- Erstes Modell kostenlos, monatlich kündbar, keine Mindestlaufzeit
+- Lieferung in 48 Stunden österreichweit, nach Deutschland 48 bis 72 Stunden
+- Maximale Modellgröße 35 x 35 x 35 cm als Einzeldruck, größere Modelle segmentiert
+- Faustregel: lohnt sich ab 2 Modellen pro Monat, wenn ein Einzelmodell mehr als 245 Euro kostet
 
 ## Messemodelle
 

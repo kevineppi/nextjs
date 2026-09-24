@@ -1,5 +1,6 @@
+import Link from "next/link";
 import AnimatedSection from "@/components/AnimatedSection";
-import { TrendingUp, Users, Clock, Award } from "lucide-react";
+import { TrendingUp, Users, Clock, Award, ArrowRight } from "lucide-react";
 
 const stats = [
   { v: "24-48h", l: "Express-Fertigung", sub: "Wettbewerbsmodelle auch dann, wenn die Abgabe schon nächste Woche ist", icon: Clock },
@@ -40,6 +41,19 @@ const ArchitekturROISection = () => (
             </AnimatedSection>
           ))}
         </div>
+
+        {/* Direkter Weg zur Flatrate — bisher war der €490-Wert nur Text ohne Link */}
+        <AnimatedSection animation="fade-in" delay={300}>
+          <div className="text-center mb-16 -mt-8">
+            <Link
+              href="/architekturmodelle-abo"
+              className="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all"
+            >
+              Zur Architekturmodell-Flatrate: Pakete, Preise, erstes Modell gratis
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </AnimatedSection>
 
         {/* Konkretes Rechenbeispiel */}
         <AnimatedSection animation="fade-in" delay={400}>

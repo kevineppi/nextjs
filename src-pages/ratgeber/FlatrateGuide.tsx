@@ -18,7 +18,7 @@ const FlatrateGuide = () => {
   const faqs = [
     {
       question: "Für welche Büros lohnt sich die Architekturmodell-Flatrate?",
-      answer: "Die Flatrate rechnet sich ab ca. 2 Modellen pro Monat. Für Büros mit laufenden Wettbewerben, mehreren aktiven Bauprojekten oder regelmäßigen Kundenpräsentationen ist der Break-even in der Regel bereits im ersten Monat erreicht. Beim Professional-Paket (€890/Monat, bis 4 Modelle) entspricht das einem Einzelpreis von rund €220 pro Modell."
+      answer: "Die Flatrate rechnet sich ab ca. 2 Modellen pro Monat. Für Büros mit laufenden Wettbewerben, mehreren aktiven Bauprojekten oder regelmäßigen Kundenpräsentationen ist der Break-even in der Regel bereits im ersten Monat erreicht. Beim Professional-Paket (€890/Monat, bis 4 Modelle) entspricht das einem Einzelpreis von rund €222 pro Modell."
     },
     {
       question: "Gibt es eine Mindestlaufzeit bei der ekdruck Flatrate?",
@@ -34,7 +34,7 @@ const FlatrateGuide = () => {
     },
     {
       question: "Kann ich das Paket jederzeit upgraden oder downgraden?",
-      answer: "Ja. Ein Upgrade ist jederzeit sofort möglich, ein Downgrade zum nächsten Monatsbeginn. So können Sie in Phasen mit Wettbewerben auf Studio wechseln und danach wieder auf Starter zurück."
+      answer: "Ja. Upgrade und Downgrade sind jederzeit zum nächsten Monatsersten möglich, unkompliziert per E-Mail. So können Sie in Phasen mit Wettbewerben auf Studio wechseln und danach wieder auf Starter zurück."
     },
   ];
 
@@ -74,7 +74,7 @@ const FlatrateGuide = () => {
     {
       aspect: "Preis pro Modell",
       einzeln: "€300–600 je nach Aufwand",
-      flatrate: "€220–310 effektiv",
+      flatrate: "€222–313 effektiv",
       winner: "flatrate"
     },
     {
@@ -307,7 +307,7 @@ const FlatrateGuide = () => {
                   </table>
                 </div>
                 <div className="mt-6 p-5 rounded-xl bg-muted/40 border border-border text-sm text-muted-foreground">
-                  <strong>Annahme:</strong> Ein Standardmodell (Maßstab 1:200, ca. A4-Grundfläche, FDM-Druck weiß) kostet bei Einzelauftrag zwischen €80 und €200. Komplexere Modelle oder andere Maßstäbe können deutlich teurer sein. Die Flatrate deckt alle Standardmodelle ohne Nachkalkulation ab.
+                  <strong>Annahme:</strong> Ein typisches Architekturmodell kostet bei Einzelauftrag zwischen €200 und €450, je nach Größe und Detailgrad (siehe <a href="/ratgeber/architekturmodell-kosten" className="underline hover:text-primary">Kosten-Ratgeber</a>). Kleine Studienmodelle liegen darunter, große Umgebungsmodelle darüber. Die Flatrate deckt alle Standardmodelle ohne Nachkalkulation ab.
                 </div>
 
                 <div className="mt-8 p-6 rounded-2xl border-2 border-primary/30 bg-primary/5">
@@ -399,18 +399,18 @@ const FlatrateGuide = () => {
                     {
                       icon: Building2,
                       type: "Kleines Büro, Wien",
-                      situation: "2 Architekten, 1–2 Wohnbauprojekte laufend, alle 2 Wochen ein Modell für Baubesprechungen.",
+                      situation: "2 Architekten, 1–2 Wohnbauprojekte laufend, alle 2 Wochen ein kleines Modell für Baubesprechungen.",
                       vorher: "2 × €180 Einzelauftrag = €360/Monat + 5–7 Tage Lieferzeit",
                       nachher: "Starter-Flatrate: €490/Monat + 48h-Lieferung",
-                      ersparnis: "€161/Monat gespart · 3–5 Tage schneller"
+                      ersparnis: "Ehrliches Ergebnis: €130/Monat teurer. Bei kleinen €180-Modellen bleibt der Einzelauftrag günstiger – die Flatrate lohnt sich hier nur, wenn die 48h-Termine den Aufpreis wert sind."
                     },
                     {
                       icon: Star,
                       type: "Mittelgroßes Büro, Graz",
                       situation: "8 Mitarbeiter, 3–4 aktive Projekte, durchschnittlich 5 Modelle pro Monat inklusive Wettbewerbe.",
                       vorher: "5 × €200 Einzelauftrag = €1.000/Monat, davon 2× Express mit Aufpreis = effektiv €1.200/Monat",
-                      nachher: "Professional-Flatrate: €890/Monat, 48h inklusive, kein Express-Aufpreis",
-                      ersparnis: "€851/Monat gespart · Planbare Fixkosten"
+                      nachher: "Professional-Flatrate: €890/Monat (4 Modelle) + 1 Zusatzmodell, 48h inklusive, kein Express-Aufpreis",
+                      ersparnis: "Rund €300/Monat gespart · Planbare Fixkosten"
                     },
                     {
                       icon: Zap,

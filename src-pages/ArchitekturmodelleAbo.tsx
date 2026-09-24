@@ -14,73 +14,11 @@ import StickyCTA from "@/components/landing/StickyCTA";
 import QuickContactBar from "@/components/QuickContactBar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { } from "@/components/ui/input";
-import { } from "@/components/ui/textarea";
-import { } from "@/components/ui/label";
-import {
-  Select,
-} from "@/components/ui/select";
 import {
   Accordion, AccordionContent, AccordionItem, AccordionTrigger,
 } from "@/components/ui/accordion";
-import { CONTACT } from "@/lib/contactConfig";
 import { trackContactClick } from "@/lib/tracking";
-import { supabase } from "@/integrations/supabase/client";
-import { toast } from "sonner";
-
-const SCHEMA = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  name: "Architekturmodell Flatrate – ekdruck e.U.",
-  description:
-    "Monatliches Abo für Architekturbüros: 3D-gedruckte Architekturmodelle im Fixpreis, 48h-Lieferung, keine Mindestlaufzeit. Erstes Modell kostenlos.",
-  brand: { "@type": "Brand", name: "ekdruck e.U." },
-  manufacturer: { "@type": "Organization", name: "ekdruck e.U.", url: "https://www.ek-druck.at" },
-  image: "https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png",
-  offers: [
-    {
-      "@type": "Offer",
-      name: "Starter Flatrate",
-      price: "490",
-      priceCurrency: "EUR",
-      priceSpecification: { "@type": "UnitPriceSpecification", price: "490", priceCurrency: "EUR", referenceQuantity: { "@type": "QuantitativeValue", value: "1", unitCode: "MON" } },
-      availability: "https://schema.org/InStock",
-      url: "https://www.ek-druck.at/architekturmodelle-abo",
-      seller: { "@type": "Organization", name: "ekdruck e.U." },
-    },
-    {
-      "@type": "Offer",
-      name: "Professional Flatrate",
-      price: "890",
-      priceCurrency: "EUR",
-      priceSpecification: { "@type": "UnitPriceSpecification", price: "890", priceCurrency: "EUR", referenceQuantity: { "@type": "QuantitativeValue", value: "1", unitCode: "MON" } },
-      availability: "https://schema.org/InStock",
-      url: "https://www.ek-druck.at/architekturmodelle-abo",
-      seller: { "@type": "Organization", name: "ekdruck e.U." },
-    },
-    {
-      "@type": "Offer",
-      name: "Studio Flatrate",
-      price: "2500",
-      priceCurrency: "EUR",
-      priceSpecification: { "@type": "UnitPriceSpecification", price: "2500", priceCurrency: "EUR", referenceQuantity: { "@type": "QuantitativeValue", value: "1", unitCode: "MON" } },
-      availability: "https://schema.org/InStock",
-      url: "https://www.ek-druck.at/architekturmodelle-abo",
-      seller: { "@type": "Organization", name: "ekdruck e.U." },
-    },
-  ],
-};
-
-const FAQ_SCHEMA = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    { "@type": "Question", name: "Was kostet die Architekturmodell-Flatrate?", acceptedAnswer: { "@type": "Answer", text: "Die Flatrate startet ab €490/Monat (Starter: 2 Modelle inklusive), Professional bei €890/Monat (4 Modelle inklusive), Studio bei €2.500/Monat (8 Modelle inklusive). Alle Pakete sind monatlich kündbar, ohne Mindestlaufzeit." } },
-    { "@type": "Question", name: "Was bedeutet 'Erstes Modell kostenlos'?", acceptedAnswer: { "@type": "Answer", text: "Neue Flatrate-Kunden erhalten ihr erstes Architekturmodell kostenlos gedruckt – als Qualitätstest ohne Risiko. Das Testmodell wird nach Auftragsbestätigung der Flatrate produziert und in 48 Stunden geliefert." } },
-    { "@type": "Question", name: "Welche CAD-Programme werden unterstützt?", acceptedAnswer: { "@type": "Answer", text: "Wir akzeptieren alle gängigen Formate: STL, OBJ, STEP, 3DM (Rhino), DWG/DXF sowie native Formate aus ArchiCAD, Revit, SketchUp und anderen Architekturprogrammen." } },
-    { "@type": "Question", name: "Wie schnell wird geliefert?", acceptedAnswer: { "@type": "Answer", text: "Flatrate-Kunden genießen Produktionspriorität – Lieferung garantiert in 48 Stunden österreichweit. Auch nach Deutschland in 48–72 Stunden." } },
-  ],
-};
+import { ABO_FAQS } from "@/data/aboFaqs";
 
 const PAIN_POINTS = [
   { title: "Zeitdruck vor Wettbewerben", text: "Sie brauchen das Modell für Freitag. Der Modellbauer hat drei Wochen Wartezeit. Der 3D-Druck-Anbieter antwortet nicht auf Ihre Anfrage." },
@@ -91,7 +29,7 @@ const PAIN_POINTS = [
 const STEPS = [
   { n: "01", title: "Modell anfragen", text: "Schicken Sie uns Ihre CAD-Datei (ArchiCAD, Revit, Rhino, SketchUp, STL) per E-Mail oder über unser Portal. Keine Rückfragen, keine Formulare – einfach senden." },
   { n: "02", title: "Angebot in 6h", text: "Sie erhalten ein verbindliches Festpreisangebot innerhalb von 6 Arbeitsstunden. Kein Kleingedrucktes, keine Nachberechnung." },
-  { n: "03", title: "Produktion startet sofort", text: "Flatrate-Kunden haben Produktionspriorität. Ihr Modell wird vor allen Einzelaufträgen gefertigt – garantiert." },
+  { n: "03", title: "Produktion startet sofort", text: "Ab dem Professional-Paket wird Ihr Modell mit Produktionspriorität vor allen Einzelaufträgen gefertigt. Die 48-Stunden-Lieferung gilt in jedem Paket." },
   { n: "04", title: "Lieferung in 48 Stunden", text: "Österreichweit. Sicher verpackt. Direkt ins Büro oder an die Baustelle." },
 ];
 
@@ -151,11 +89,11 @@ const TIERS = [
 ];
 
 const COMPARE_ROWS = [
-  { label: "Kosten pro Modell", a: "€300–€1.200", b: "€150–€450", c: "ab €210/Modell" },
+  { label: "Kosten pro Modell", a: "€300–€1.200", b: "€200–€450", c: "€222–€313 im Kontingent" },
   { label: "Lieferzeit", a: "2–4 Wochen", b: "3–7 Tage", c: "48 Stunden" },
   { label: "Planungssicherheit", a: "❌", b: "❌", c: "✅ Fixpreis" },
   { label: "CAD-Kompatibilität", a: "Eingeschränkt", b: "Variiert", c: "✅ Alle Formate" },
-  { label: "Revisionen", a: "❌ Aufpreis", b: "❌ Aufpreis", c: "✅ Inklusive" },
+  { label: "Revisionen", a: "❌ Aufpreis", b: "❌ Aufpreis", c: "✅ Studio: unlimitiert" },
   { label: "Persönlicher Kontakt", a: "✅", b: "❌", c: "✅" },
 ];
 
@@ -168,21 +106,13 @@ const TARGET_AUDIENCE = [
   { Icon: TrendingUp, title: "Sie als Immobilienentwickler arbeiten", text: "und Modelle für Investorenpräsentationen, Behördeneinreichungen und Verkaufsunterlagen brauchen." },
 ];
 
+// Echte Google-Rezensionen (5,0 · 35 Bewertungen) — keine erfundenen Testimonials.
 const TESTIMONIALS = [
-  { quote: "Endlich ein Anbieter, der versteht, wie Architekturbüros arbeiten. Das Modell für unseren Wettbewerbsbeitrag war in 36 Stunden da – perfekte Qualität.", author: "M.K., Architekturbüro Wien" },
-  { quote: "Die Flatrate rechnet sich bereits ab dem zweiten Modell pro Monat. Wir bestellen jetzt entspannt, statt jedes Mal neu zu verhandeln.", author: "T.H., Planungsbüro Linz" },
-  { quote: "Ich habe das erste Modell kostenlos testen dürfen – die Qualität hat mich überzeugt. Seitdem sind wir Professional-Kunde.", author: "S.R., Architektin, Graz" },
+  { quote: "Die Qualität ist erstklassig, jedes Detail wird sehr detailgetreu und sauber umgesetzt.", author: "Christian Steller · Google-Rezension" },
+  { quote: "Sehr schnelle Abwicklung, Kommunikation war ausgezeichnet.", author: "Klaus F. · Google-Rezension" },
+  { quote: "Mein Auftrag wurde schnell bearbeitet, Top Qualität, kann ich nur weiterempfehlen.", author: "Hannah E. · Google-Rezension" },
 ];
 
-const FAQS = [
-  { q: "Welche Dateiformate werden akzeptiert?", a: "Wir akzeptieren STL, OBJ, STEP, 3DM (Rhino), DWG/DXF sowie native Formate aus ArchiCAD, Revit und SketchUp. Falls Sie kein druckfertiges Modell haben, helfen wir bei der Aufbereitung – inklusive im Professional- und Studio-Paket." },
-  { q: "Gibt es eine Mindestlaufzeit?", a: "Nein. Die Flatrate ist monatlich kündbar, ohne Fristen oder Aufwandsentschädigung. Wir sind überzeugt, dass Sie bleiben werden – weil die Qualität stimmt." },
-  { q: "Was passiert, wenn ich mein Modell-Kontingent nicht ausschöpfe?", a: "Nicht genutzte Modelle verfallen am Monatsende. Es gibt jedoch keine Nachberechnung bei Überschreitung – zusätzliche Modelle werden zum günstigen Flatrate-Zusatzpreis abgerechnet." },
-  { q: "Wie groß können die Modelle sein?", a: "Je nach Paket bis zu 35×35×35 cm als Einzeldruck. Größere Modelle fertigen wir als modulares System – ohne Aufpreis im Studio-Paket." },
-  { q: "Liefern Sie auch nach Deutschland?", a: "Ja. Wir liefern in ganz Österreich und Deutschland. Die Lieferzeit beträgt 48–72 Stunden nach Deutschland." },
-  { q: "Kann ich das Abo upgraden oder downgraden?", a: "Ja, jederzeit zum nächsten Monatsersten – unkompliziert per E-Mail." },
-  { q: "Was bedeutet \"Produktionspriorität\"?", a: "Flatrate-Kunden werden vor allen Einzelaufträgen produziert. Das garantiert die 48h-Lieferzeit auch in Hochsaison (z.B. vor großen Messen oder Wettbewerbsdeadlines)." },
-];
 
 const ArchitekturmodelleAbo = () => {
 
@@ -277,7 +207,7 @@ const ArchitekturmodelleAbo = () => {
             ))}
           </div>
           <p className="text-center text-xl md:text-2xl font-bold text-foreground mt-16 max-w-3xl mx-auto">
-            Das war gestern. Willkommen bei der ersten Architekturmodell-Flatrate Österreichs.
+            Das war gestern. Willkommen bei der Architekturmodell-Flatrate von ekdruck.
           </p>
         </div>
       </section>
@@ -451,9 +381,12 @@ const ArchitekturmodelleAbo = () => {
       {/* SECTION 6 – TESTIMONIALS */}
       <section className="py-20 md:py-28 bg-secondary text-secondary-foreground">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16 tracking-tight">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-4 tracking-tight">
             Was unsere Kunden sagen
           </h2>
+          <p className="text-center text-secondary-foreground/60 mb-16">
+            Aus den 35 Google-Bewertungen · 5,0 Sterne
+          </p>
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {TESTIMONIALS.map((t, i) => (
               <div key={i} className="bg-secondary-foreground/5 backdrop-blur border border-secondary-foreground/10 rounded-2xl p-7">
@@ -480,7 +413,7 @@ const ArchitekturmodelleAbo = () => {
           </h2>
           <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="space-y-3">
-              {FAQS.map((f, i) => (
+              {ABO_FAQS.map((f, i) => (
                 <AccordionItem
                   key={i}
                   value={`item-${i}`}
@@ -508,11 +441,12 @@ const ArchitekturmodelleAbo = () => {
           <h2 className="text-2xl md:text-4xl font-bold text-center text-foreground mb-12 tracking-tight">
             Weitere Leistungen von ekdruck
           </h2>
-          <div className="grid md:grid-cols-3 gap-5 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-5 max-w-5xl mx-auto">
             {[
+              { to: "/architekturmodelle", label: "Architekturmodelle im Einzelauftrag" },
+              { to: "/ratgeber/architekturmodell-flatrate", label: "Ratgeber: Wann lohnt sich die Flatrate?" },
               { to: "/messemodelle", label: "Messemodelle & Exponate" },
               { to: "/einzelanfertigungen", label: "Einzelanfertigungen & Prototypen" },
-              { to: "/", label: "Alle 3D-Druck Leistungen" },
             ].map((l) => (
               <Link
                 key={l.to}
