@@ -55,6 +55,10 @@ const nextConfig = {
       { source: '/cases/anlagenbau-pumpen-schnittmodell', destination: '/branchen/anlagenbau', permanent: true },
       { source: '/cases/wien-stadtentwicklung-1-500-stadtmodell', destination: '/architekturmodelle/stadtmodell', permanent: true },
       { source: '/cases/generali-firmen-keksausstecher-3500-stueck', destination: '/cases/generali-keksausstecher-1000-stueck', permanent: true },
+      // GSC-Fund 24.09.: Alt-URLs noch im Index (zackbumm-Case existiert nicht mehr,
+      // 'verbinder' in der URL ist zudem WKO-Wort; Umlaut-Ratgeber-URL war nie live)
+      { source: '/cases/theater-zackbumm-buehnenbild-verbinder', destination: '/cases', permanent: true },
+      { source: '/ratgeber/ma%C3%9Fstab-cad-export-5-fehler', destination: '/ratgeber/datenaufbereitung-architekturmodell', permanent: true },
 
       // ═══ Studenten-Seite verallgemeinert (2026-09-13, Kevin): alle Studiengänge, neue URL /studenten.
       //     301 erhält die bereits verteilten Links (Fachschafts-Mails, ChatGPT-Zitate). ═══
