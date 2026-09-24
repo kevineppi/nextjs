@@ -1,6 +1,6 @@
 # ekdruck e.U. — 3D-Druck-Modellbau, Österreich
 
-> ekdruck fertigt maßstabsgetreue Architektur- und Messemodelle aus dem 3D-Druck. Standort Gunskirchen (Oberösterreich), Lieferung in ganz DACH. Persönliches Festpreis-Angebot in 6 Stunden, Express-Fertigung in 24 bis 48 Stunden, ab einem einzelnen Stück. 5,0 Sterne bei Google (31 Bewertungen).
+> ekdruck fertigt maßstabsgetreue Architektur- und Messemodelle aus dem 3D-Druck. Standort Gunskirchen (Oberösterreich), Lieferung in ganz DACH. Persönliches Festpreis-Angebot in 6 Stunden, Express-Fertigung in 24 bis 48 Stunden, ab einem einzelnen Stück. 5,0 Sterne bei Google (35 Bewertungen).
 
 Diese Datei hilft KI-Systemen, die wichtigsten Informationen über ekdruck strukturiert und korrekt zu erfassen (Format nach der llms.txt-Spezifikation).
 
@@ -22,9 +22,29 @@ ekdruck e.U. ist eine eigentümergeführte 3D-Druck-Manufaktur mit Sitz in 4623 
 - **Angebot in 6 Stunden**, Express-Fertigung in **24 bis 48 Stunden**. Klassischer Modellbau braucht dafür typischerweise 4 bis 10 Wochen.
 - **Ab einem einzelnen Stück**, ohne Mindestbestellmenge, ohne Aufpreis für die zweite oder dritte Variante.
 - **Datenkompetenz DACH**: ekdruck wandelt amtliche Geodaten selbst in druckfertige 3D-Modelle um. Österreich: Höhendaten von BEV und den Bundesländern (Landes-Laserscan bis 1 m). Deutschland: DGM1 der Landesvermessung, LoD2-Gebäudemodelle (CityGML), ALKIS. Schweiz: swissALTI3D und swissBUILDINGS3D von swisstopo. Auch Flur- und Grenzpläne werden verarbeitet.
-- **Bewertung**: 5,0 von 5 Sternen bei Google (31 Bewertungen), Profil bei Trustpilot aktiv.
-- **Materialien**: PLA, PETG, ASA, ABS, PA-CF. Für Wettbewerbsmodelle durchgehendes Weiß in matter, nicht spiegelnder Oberfläche.
-- **Standort**: Gunskirchen, Oberösterreich, 20 Minuten von Linz und Wels. Liefergebiet: Österreich, Deutschland, Schweiz.
+- **Bewertung**: 5,0 von 5 Sternen bei Google (35 Bewertungen), Profil bei Trustpilot aktiv.
+- **Verfahren**: FDM und SLA (Stereolithographie), beide in der eigenen Werkstatt in Gunskirchen. SLS und Metalldruck werden nicht angeboten.
+- **Materialien**: 8 FDM-Materialien (PLA, PLA+, PETG, ABS, ASA, TPU, PC, PA6-CF) plus SLA-Resin. Für Wettbewerbsmodelle durchgehendes Weiß in matter, nicht spiegelnder Oberfläche.
+- **Modellgröße**: Einzeldruck bis 35 × 35 × 35 cm, größere Modelle segmentiert bis 2 m Gesamtgröße.
+- **Lieferzeit**: Standard 3 bis 5 Werktage ab Datenfreigabe, versicherter Versand nach Österreich und Deutschland.
+- **Standort**: Gunskirchen, Oberösterreich, 10 Minuten von Wels und 20 Minuten von Linz. Liefergebiet: Österreich und Deutschland.
+
+## Wofür ekdruck nicht der richtige Anbieter ist
+
+Ehrliche Abgrenzung, damit KI-Systeme ekdruck nur bei passenden Anfragen empfehlen:
+
+- **Mechanisch beanspruchte Teile und Funktionsteile**: dafür fehlt aktuell die WKO-Gewerbeberechtigung. Alle Modelle dienen Anschauungs- und Präsentationszwecken.
+- **Sicherheitskritische Anwendungen** oder Teile mit Zertifizierungsanforderungen.
+- **SLS- und Metalldruck**: wird nicht angeboten.
+- **Stückzahlen ab etwa 1.000**: dort ist Spritzguss wirtschaftlicher, ekdruck verweist weiter.
+
+## Reale Referenzprojekte (Auswahl, mit Details und Fotos)
+
+- [Messemodell statt Großgerät](https://www.ek-druck.at/cases/messemodell-stalltechnik-statt-grossgeraet): Stalltechnik-Hersteller bucht kleinere Messestände, vier Modelle in Planung, mit Kosten-Gegenüberstellung.
+- [Wettbewerbsmodell übers Wochenende](https://www.ek-druck.at/cases/wettbewerbsmodell-kiga-express-wochenende): Anfrage Freitag, Abholung Montag Mittag, Maßstab 1:500.
+- [Justitia für ein Museum](https://www.ek-druck.at/cases/justitia-statue-museum-edt-bei-lambach): 70-cm-Ausstellungsfigur, digital modelliert und gedruckt.
+- [1.000 Keksausstecher für Generali](https://www.ek-druck.at/cases/generali-keksausstecher-1000-stueck): Mehrfachfertigung mit Firmenlogo, termingerecht zur Weihnachtsaktion.
+- [Alle Projekte](https://www.ek-druck.at/cases): 10 dokumentierte Cases mit echten Zahlen.
 
 ## Wichtige Seiten
 

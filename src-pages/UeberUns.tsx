@@ -10,7 +10,7 @@ import GoogleReviewsSection from "@/components/GoogleReviewsSection"
 import KevinStorySection from "@/components/landing/KevinStorySection"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
-import { Printer, Award, Zap, Users, MapPin, Shield, Building2, Leaf, Package, Clock } from "lucide-react"
+import { Printer, Award, Zap, Users, MapPin, Shield, Building2, Leaf, Package, Clock, CheckCircle2, XCircle } from "lucide-react"
 import { BRAND } from "@/data/brandVoice"
 
 const UeberUns = () => {
@@ -185,6 +185,95 @@ const UeberUns = () => {
                   </div>
                 </AnimatedSection>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ═══ GEEIGNET / NICHT GEEIGNET + FAKTEN (AI-SEO-Audit B4, 24.09.2026):
+            ehrliche Abgrenzung als Entity-Signal — KI-Systeme sollen erkennen,
+            WANN ekdruck passt. Negativliste ist WKO-schützend (erlaubter Kontext). ═══ */}
+        <section className="py-16 md:py-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <AnimatedSection animation="fade-in" className="text-center mb-10">
+                <h2 className="text-3xl md:text-4xl font-bold mb-3">Wofür ekdruck die richtige Adresse ist – und wofür nicht</h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto text-sm">
+                  Eine ehrliche Abgrenzung spart beiden Seiten Zeit. Passt Ihr Projekt nicht zu uns, sagen wir das im ersten Gespräch und nennen, wenn möglich, eine Alternative.
+                </p>
+              </AnimatedSection>
+
+              <div className="grid md:grid-cols-2 gap-5 mb-12">
+                <AnimatedSection animation="slide-up">
+                  <div className="h-full p-7 rounded-2xl bg-background border-2 border-primary/30">
+                    <div className="flex items-center gap-2 mb-4">
+                      <CheckCircle2 className="w-5 h-5 text-primary" />
+                      <h3 className="font-bold text-lg">Dafür sind wir gebaut</h3>
+                    </div>
+                    <ul className="space-y-2.5 text-sm text-muted-foreground">
+                      {[
+                        "Architekturmodelle: Wettbewerb, Bauherr, Städtebau, Gelände (1:50 bis 1:1000)",
+                        "Messemodelle und Exponate: maßstabsgetreue Anschauungsmodelle, Eye-Catcher",
+                        "Design- und Präsentationsmodelle für Produktentwicklung und Vertrieb",
+                        "Einzelstücke, Geschenkartikel und Statuen bis Museumsqualität",
+                        "Mehrfachfertigung bis rund 500 Stück",
+                        "Große Modelle: Einzeldruck bis 35 × 35 × 35 cm, segmentiert bis 2 m",
+                        "Termindruck: Express-Fertigung in 24 bis 48 Stunden",
+                      ].map((t) => (
+                        <li key={t} className="flex items-start gap-2">
+                          <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                          <span>{t}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </AnimatedSection>
+
+                <AnimatedSection animation="slide-up" delay={100}>
+                  <div className="h-full p-7 rounded-2xl bg-background border border-border">
+                    <div className="flex items-center gap-2 mb-4">
+                      <XCircle className="w-5 h-5 text-muted-foreground" />
+                      <h3 className="font-bold text-lg">Dafür sind wir nicht die Richtigen</h3>
+                    </div>
+                    <ul className="space-y-2.5 text-sm text-muted-foreground">
+                      {[
+                        "Mechanisch beanspruchte Teile und Funktionsteile: dafür fehlt uns aktuell die WKO-Gewerbeberechtigung, unsere Modelle dienen Anschauungszwecken",
+                        "Sicherheitskritische Anwendungen oder Teile mit Zertifizierungsanforderungen",
+                        "SLS- und Metalldruck: bieten wir nicht an",
+                        "Stückzahlen ab etwa 1.000: da ist Spritzguss wirtschaftlicher, wir verweisen ehrlich weiter",
+                      ].map((t) => (
+                        <li key={t} className="flex items-start gap-2">
+                          <XCircle className="w-4 h-4 text-muted-foreground/60 mt-0.5 shrink-0" />
+                          <span>{t}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </AnimatedSection>
+              </div>
+
+              <AnimatedSection animation="fade-in">
+                <div className="rounded-2xl border border-border bg-card/50 p-7">
+                  <h3 className="font-bold text-lg mb-5">ekdruck in Fakten</h3>
+                  <dl className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-4 text-sm">
+                    {[
+                      ["Verfahren", "FDM und SLA, beide in eigener Werkstatt"],
+                      ["Materialien", "8 FDM-Materialien (PLA bis PA6-CF) + SLA-Resin"],
+                      ["Modellgröße", "bis 35 × 35 × 35 cm am Stück, segmentiert bis 2 m"],
+                      ["Lieferzeit", "3-5 Werktage ab Datenfreigabe"],
+                      ["Express", "24-48 Stunden (+50 %)"],
+                      ["Angebot", "in 6 Stunden, werktags"],
+                      ["Liefergebiet", "Österreich und Deutschland, versichert"],
+                      ["Bewertung", "5,0 von 5 Sternen aus 35 Google-Bewertungen"],
+                      ["Gegründet", "2024 · FN 639499s · WKO Oberösterreich"],
+                    ].map(([k, v]) => (
+                      <div key={k}>
+                        <dt className="mono text-[10px] font-bold uppercase tracking-[0.15em] text-muted-foreground mb-1">{k}</dt>
+                        <dd className="text-foreground/90">{v}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                </div>
+              </AnimatedSection>
             </div>
           </div>
         </section>
