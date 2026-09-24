@@ -14,7 +14,9 @@ import type { RealCase } from '@/data/realCases'
 
 type CostComparison = NonNullable<RealCase['costComparison']>
 
-const fmt = (n: number) => n.toLocaleString('de-AT')
+// Deterministisch statt toLocaleString: Node (SSG) und Browser-ICU formatieren
+// de-AT unterschiedlich (Punkt vs. NBSP) → Hydration-Mismatch (React #425).
+const fmt = (n: number) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')
 
 function useInView<T extends HTMLElement>(threshold = 0.25) {
   const ref = useRef<T>(null)

@@ -1,471 +1,443 @@
 'use client'
 
-import { useState } from "react";
+/**
+ * Architekturmodell-Flatrate — eigener UI-Stil "Datenblatt":
+ * ruhig, flach, tabellarisch. Feines Raster statt Foto, Mono-Indexlabels,
+ * Preis-Matrix als Kernstück, ehrliche Passt/Passt-nicht-Abgrenzung.
+ * Kevin-Vorgabe 24.09.2026: Hintergrundfoto weg, Inhalte maximal relevant,
+ * locker übersichtlich.
+ */
+
 import Link from "next/link";
-import {
-  Star, Zap, Unlock, MapPin, X, Check, Clock, Wallet,
-  Trophy, Building2, Briefcase, GraduationCap, Globe, TrendingUp,
-  Phone, Mail, ChevronDown, ArrowRight, Sparkles, MessageCircle
-} from "lucide-react";
+import { Star, Check, ArrowRight, MessageCircle, X } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import StickyCTA from "@/components/landing/StickyCTA";
-import QuickContactBar from "@/components/QuickContactBar";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import {
   Accordion, AccordionContent, AccordionItem, AccordionTrigger,
 } from "@/components/ui/accordion";
 import { trackContactClick } from "@/lib/tracking";
 import { ABO_FAQS } from "@/data/aboFaqs";
 
-const PAIN_POINTS = [
-  { title: "Zeitdruck vor Wettbewerben", text: "Sie brauchen das Modell für Freitag. Der Modellbauer hat drei Wochen Wartezeit. Der 3D-Druck-Anbieter antwortet nicht auf Ihre Anfrage." },
-  { title: "Unkalkulierbare Kosten", text: "Jede Anfrage ein neues Angebot. Mal €180, mal €420 – für scheinbar ähnliche Modelle. Keine Planungssicherheit für Ihr Budget." },
-  { title: "Qualität trifft Kompromiss", text: "Günstige Anbieter liefern schlechte Qualität. Gute Qualität kostet Zeit und Geld. Beides gleichzeitig scheint unmöglich." },
+/* ── Daten ─────────────────────────────────────────────────────────── */
+
+const KONDITIONEN = [
+  { k: "Lieferzeit", v: "48 Stunden", sub: "österreichweit · DE 48–72h" },
+  { k: "Laufzeit", v: "keine", sub: "monatlich kündbar" },
+  { k: "Einstieg", v: "1. Modell gratis", sub: "als Qualitätstest" },
+  { k: "Modellgröße", v: "35×35×35 cm", sub: "größer: segmentiert" },
+  { k: "Angebot", v: "in 6h", sub: "werktags, Festpreis" },
+  { k: "Dateiformate", v: "alle gängigen", sub: "ArchiCAD, Revit, Rhino, STL …" },
+];
+
+const MATRIX_TIERS = [
+  { name: "Starter", price: 490, sub: "kleine Büros, Gelegenheitsbedarf" },
+  { name: "Professional", price: 890, sub: "aktive Büros, regelmäßiger Bedarf", badge: "Beliebteste Wahl" },
+  { name: "Studio", price: 2500, sub: "große Büros, Wettbewerbsphasen" },
+];
+
+const MATRIX_ROWS: { label: string; values: (string | boolean)[] }[] = [
+  { label: "Modelle pro Monat", values: ["bis 2", "bis 4", "bis 8"] },
+  { label: "Rechnerisch je Modell", values: ["€245", "€222,50", "€312,50"] },
+  { label: "Maßstäbe", values: ["1:100 – 1:500", "1:50 – 1:500", "alle, inkl. Detailmodelle"] },
+  { label: "Max. Größe je Modell", values: ["35×35×35 cm", "35×35×35 cm", "35×35×35 cm"] },
+  { label: "48h-Lieferung", values: [true, true, true] },
+  { label: "Persönlicher Ansprechpartner", values: [true, true, true] },
+  { label: "Monatlich kündbar", values: [true, true, true] },
+  { label: "Datenaufbereitung inklusive", values: [false, true, true] },
+  { label: "Produktionspriorität", values: [false, true, "höchste Stufe"] },
+  { label: "Mehrfarbiger Druck", values: [false, false, true] },
+  { label: "Unlimitierte Revisionen", values: [false, false, true] },
 ];
 
 const STEPS = [
-  { n: "01", title: "Modell anfragen", text: "Schicken Sie uns Ihre CAD-Datei (ArchiCAD, Revit, Rhino, SketchUp, STL) per E-Mail oder über unser Portal. Keine Rückfragen, keine Formulare – einfach senden." },
-  { n: "02", title: "Angebot in 6h", text: "Sie erhalten ein verbindliches Festpreisangebot innerhalb von 6 Arbeitsstunden. Kein Kleingedrucktes, keine Nachberechnung." },
-  { n: "03", title: "Produktion startet sofort", text: "Ab dem Professional-Paket wird Ihr Modell mit Produktionspriorität vor allen Einzelaufträgen gefertigt. Die 48-Stunden-Lieferung gilt in jedem Paket." },
-  { n: "04", title: "Lieferung in 48 Stunden", text: "Österreichweit. Sicher verpackt. Direkt ins Büro oder an die Baustelle." },
+  { n: "01", title: "Modell anfragen", text: "CAD-Datei per E-Mail senden: ArchiCAD, Revit, Rhino, SketchUp oder STL. Keine Formulare." },
+  { n: "02", title: "Angebot in 6h", text: "Verbindliches Festpreisangebot innerhalb von 6 Arbeitsstunden. Keine Nachberechnung." },
+  { n: "03", title: "Produktion startet", text: "Ab Professional mit Produktionspriorität vor allen Einzelaufträgen. 48h-Lieferung gilt in jedem Paket." },
+  { n: "04", title: "Lieferung in 48h", text: "Österreichweit, sicher verpackt, direkt ins Büro. Nach Deutschland in 48–72 Stunden." },
 ];
 
-const TIERS = [
-  {
-    name: "Starter",
-    price: "490",
-    subtitle: "Für kleine Büros & Gelegenheitsnutzer",
-    highlighted: false,
-    features: [
-      { text: "Bis zu 2 Modelle pro Monat inklusive", included: true },
-      { text: "Maßstäbe 1:100 bis 1:500", included: true },
-      { text: "Maximale Druckfläche: 35×35×35 cm pro Modell", included: true },
-      { text: "48h Express-Lieferung inklusive", included: true },
-      { text: "Persönlicher Ansprechpartner", included: true },
-      { text: "Keine Mindestlaufzeit – monatlich kündbar", included: true },
-      { text: "Produktionspriorität", included: false },
-      { text: "Mehrfarbiger Druck", included: false },
-      { text: "Unlimitierte Revisionen", included: false },
-    ],
-  },
-  {
-    name: "Professional",
-    price: "890",
-    subtitle: "Für aktive Büros mit regelmäßigem Bedarf",
-    highlighted: true,
-    badge: "Beliebteste Wahl",
-    features: [
-      { text: "Bis zu 4 Modelle pro Monat inklusive", included: true },
-      { text: "Maßstäbe 1:50 bis 1:500", included: true },
-      { text: "Maximale Druckfläche: 35×35×35 cm pro Modell", included: true },
-      { text: "48h Express-Lieferung inklusive", included: true },
-      { text: "Persönlicher Ansprechpartner", included: true },
-      { text: "Keine Mindestlaufzeit – monatlich kündbar", included: true },
-      { text: "Produktionspriorität (vor Einzelkunden)", included: true },
-      { text: "Mehrfarbiger Druck", included: false },
-      { text: "Unlimitierte Revisionen", included: false },
-    ],
-  },
-  {
-    name: "Studio",
-    price: "2500",
-    subtitle: "Für große Büros & Wettbewerbsstudios",
-    highlighted: false,
-    features: [
-      { text: "Bis zu 8 Modelle pro Monat inklusive", included: true },
-      { text: "Alle Maßstäbe inkl. 1:50 und Detailmodelle", included: true },
-      { text: "Maximale Druckfläche: 35×35×35 cm pro Modell", included: true },
-      { text: "48h Express-Lieferung inklusive", included: true },
-      { text: "Persönlicher Ansprechpartner", included: true },
-      { text: "Keine Mindestlaufzeit – monatlich kündbar", included: true },
-      { text: "Produktionspriorität (höchste Stufe)", included: true },
-      { text: "Mehrfarbiger Druck (Multi-Color)", included: true },
-      { text: "Unlimitierte Revisionen & Korrekturen", included: true },
-    ],
-  },
+const PASST = [
+  "Sie brauchen regelmäßig Modelle: Wettbewerbe, Baubesprechungen, Kundenpräsentationen",
+  "Sie führen mehrere Projekte parallel und wollen kurze, planbare Lieferzeiten",
+  "Sie wollen einen fixen Monatsbetrag statt Einzelangeboten im Budget",
+  "Sie entwickeln Immobilien und brauchen Modelle für Investoren- und Verkaufstermine",
 ];
 
-const COMPARE_ROWS = [
-  { label: "Kosten pro Modell", a: "€300–€1.200", b: "€200–€450", c: "€222–€313 im Kontingent" },
-  { label: "Lieferzeit", a: "2–4 Wochen", b: "3–7 Tage", c: "48 Stunden" },
-  { label: "Planungssicherheit", a: "❌", b: "❌", c: "✅ Fixpreis" },
-  { label: "CAD-Kompatibilität", a: "Eingeschränkt", b: "Variiert", c: "✅ Alle Formate" },
-  { label: "Revisionen", a: "❌ Aufpreis", b: "❌ Aufpreis", c: "✅ Studio: unlimitiert" },
-  { label: "Persönlicher Kontakt", a: "✅", b: "❌", c: "✅" },
-];
-
-const TARGET_AUDIENCE = [
-  { Icon: Trophy, title: "Sie regelmäßig an Wettbewerben teilnehmen", text: "und immer pünktlich liefern müssen, egal wie knapp die Deadline ist." },
-  { Icon: Building2, title: "Sie mehrere Projekte parallel führen", text: "und für jedes Projekt schnell ein Modell für Kundenpräsentationen brauchen." },
-  { Icon: Briefcase, title: "Sie Ihr Budget planbar halten wollen", text: "ein Fixpreis pro Monat statt überraschender Einzelrechnungen." },
-  { Icon: GraduationCap, title: "Sie an einer Architekturschule lehren oder studieren", text: "und regelmäßig Modelle für Semesterarbeiten und Abschlussarbeiten benötigen." },
-  { Icon: Globe, title: "Ihr Büro in Wien, Linz, Graz oder Salzburg sitzt", text: "wir liefern österreichweit in 48 Stunden." },
-  { Icon: TrendingUp, title: "Sie als Immobilienentwickler arbeiten", text: "und Modelle für Investorenpräsentationen, Behördeneinreichungen und Verkaufsunterlagen brauchen." },
+const PASST_NICHT = [
+  { text: "Sie brauchen seltener als 2 Modelle pro Monat: dann fahren Sie mit dem Einzelauftrag günstiger.", link: { to: "/architekturmodelle", label: "Zu den Einzelaufträgen" } },
+  { text: "Sie brauchen ein einziges Modell für ein einmaliges Projekt: auch dafür ist der Einzelauftrag der richtige Weg.", link: { to: "/kostenrechner", label: "Richtpreis berechnen" } },
+  { text: "Ob sich die Flatrate für Ihr Büro rechnet, zeigt der ehrliche Vergleich mit Break-even-Tabelle.", link: { to: "/ratgeber/architekturmodell-flatrate", label: "Zum Flatrate-Ratgeber" } },
 ];
 
 // Echte Google-Rezensionen (5,0 · 35 Bewertungen) — keine erfundenen Testimonials.
 const TESTIMONIALS = [
-  { quote: "Die Qualität ist erstklassig, jedes Detail wird sehr detailgetreu und sauber umgesetzt.", author: "Christian Steller · Google-Rezension" },
-  { quote: "Sehr schnelle Abwicklung, Kommunikation war ausgezeichnet.", author: "Klaus F. · Google-Rezension" },
-  { quote: "Mein Auftrag wurde schnell bearbeitet, Top Qualität, kann ich nur weiterempfehlen.", author: "Hannah E. · Google-Rezension" },
+  { quote: "Die Qualität ist erstklassig, jedes Detail wird sehr detailgetreu und sauber umgesetzt.", author: "Christian Steller" },
+  { quote: "Sehr schnelle Abwicklung, Kommunikation war ausgezeichnet.", author: "Klaus F." },
+  { quote: "Mein Auftrag wurde schnell bearbeitet, Top Qualität, kann ich nur weiterempfehlen.", author: "Hannah E." },
 ];
 
+const WHATSAPP_HREF = `https://wa.me/436765517197?text=${encodeURIComponent("Hallo ekdruck, ich interessiere mich für die Architekturmodell-Flatrate und möchte mein erstes Modell kostenlos testen.")}`;
+
+/* ── Bausteine des Datenblatt-Stils ────────────────────────────────── */
+
+const SectionLabel = ({ index, children }: { index: string; children: React.ReactNode }) => (
+  <div className="flex items-baseline gap-3 mb-3">
+    <span className="mono text-[10px] font-bold text-primary">{index}</span>
+    <span className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-muted-foreground">{children}</span>
+  </div>
+);
+
+const GRID_BG = {
+  backgroundImage:
+    "linear-gradient(hsl(var(--border) / 0.55) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--border) / 0.55) 1px, transparent 1px)",
+  backgroundSize: "48px 48px",
+};
+
+const CellValue = ({ v }: { v: string | boolean }) => {
+  if (v === true) return <Check className="w-4 h-4 text-primary inline-block" aria-label="inklusive" />;
+  if (v === false) return <span className="text-muted-foreground/40" aria-label="nicht enthalten">–</span>;
+  return <span className="font-medium text-foreground">{v}</span>;
+};
+
+/* ── Seite ─────────────────────────────────────────────────────────── */
 
 const ArchitekturmodelleAbo = () => {
-
-
+  const scrollKontakt = (source: string, context?: string) => {
+    trackContactClick("form", { source, context });
+    document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="min-h-screen bg-background">
-
       <Navigation />
 
-      {/* HERO */}
-      <section className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "linear-gradient(135deg, hsl(var(--background) / 0.92), hsl(var(--background) / 0.85)), url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1920&q=80')",
-          }}
-        />
+      {/* HERO — kein Foto, feines Raster, kompakt */}
+      <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 border-b border-border overflow-hidden">
+        <div className="absolute inset-0" style={GRID_BG} aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/40 to-background" aria-hidden="true" />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            {/* Urgency-Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-semibold mb-6">
-              <Sparkles className="h-3.5 w-3.5" />
-              🎁 Erstes Modell kostenlos – für neue Flatrate-Kunden
-            </div>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-[1.1] tracking-tight">
-              Architekturmodelle auf Abruf –{" "}
-              <span className="text-primary">Fixpreis, 48h-Lieferung, keine Mindestlaufzeit</span>
+          <div className="max-w-5xl mx-auto">
+            <SectionLabel index="/">Flatrate für Architekturbüros</SectionLabel>
+            <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-[1.02] tracking-[-0.04em] mb-6 max-w-3xl">
+              Die Architekturmodell-Flatrate.{" "}
+              <span className="text-primary">Fixpreis, 48h, monatlich kündbar.</span>
             </h1>
-            <p className="text-lg md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-              Keine Einzelanfragen, keine Wartezeiten, keine Überraschungskosten. Die ekdruck Büro-Flatrate: Ihr persönlicher 3D-Druck Service für Architekturbüros in ganz Österreich.
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl">
+              Zwei bis acht Modelle pro Monat zum fixen Betrag, geliefert in 48 Stunden.
+              Das erste Modell drucke ich kostenlos, damit Sie die Qualität prüfen können, bevor Sie sich entscheiden.
             </p>
 
-            {/* Primary CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <Button asChild size="lg" className="text-base px-8 py-6 hover:scale-105 active:scale-95 transition-transform shadow-xl">
-                <a href="#kontakt">
-                  Jetzt kostenlos testen <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
+            <div className="flex flex-col sm:flex-row gap-3 mb-4">
+              <Button size="lg" className="px-8" onClick={() => scrollKontakt("hero")}>
+                Erstes Modell kostenlos anfragen <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button asChild variant="outline" size="lg" className="text-base px-8 py-6 hover:scale-105 active:scale-95 transition-transform">
-                <a href="#preise">Preise ansehen</a>
+              <Button asChild variant="outline" size="lg" className="px-8">
+                <a href="#preise">Pakete vergleichen</a>
               </Button>
             </div>
+            <a
+              href={WHATSAPP_HREF}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-[#25D366] transition-colors mb-10"
+            >
+              <MessageCircle className="h-4 w-4 text-[#25D366]" />
+              Oder direkt per WhatsApp anfragen →
+            </a>
 
-            {/* Direct WhatsApp CTA – niedrigste Hürde für 24h Conversion */}
-            <div className="flex justify-center mb-10">
-              <a
-                href={`https://wa.me/436765517197?text=${encodeURIComponent("Hallo ekdruck, ich interessiere mich für die Architekturmodell-Flatrate und möchte gerne mein erstes Modell kostenlos testen.")}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-[#25D366] transition-colors"
-              >
-                <MessageCircle className="h-4 w-4 text-[#25D366]" />
-                Oder direkt per WhatsApp: Erstes Modell kostenlos anfragen →
-              </a>
-            </div>
-
-            <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm text-muted-foreground">
-              <div className="flex items-center gap-2"><Star className="h-4 w-4 text-primary fill-primary" /> 5.0 Google (35 Rezensionen)</div>
-              <div className="flex items-center gap-2"><Zap className="h-4 w-4 text-primary" /> Lieferung in 48 Stunden</div>
-              <div className="flex items-center gap-2"><Unlock className="h-4 w-4 text-primary" /> Keine Mindestlaufzeit</div>
-              <div className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" /> Made in Austria</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* MULTI-CHANNEL KONTAKT – direkt nach Hero, maximale Conversion */}
-      <QuickContactBar
-        context="Architekturmodell-Flatrate"
-        title="Bereit für planbare Architekturmodelle? Wählen Sie Ihren Weg."
-        subtitle="Erstes Modell kostenlos · 48h-Lieferung · Keine Mindestlaufzeit – direkt zum Inhaber, kein Callcenter."
-      />
-
-      {/* SECTION 1 – PAIN POINTS */}
-      <section className="py-20 md:py-28 bg-muted/40">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-16 tracking-tight">
-            Kennen Sie das?
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {PAIN_POINTS.map((p, i) => (
-              <Card key={i} className="p-8 border-border bg-card hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                <div className="w-12 h-12 rounded-full bg-destructive/10 flex items-center justify-center mb-5">
-                  <X className="h-6 w-6 text-destructive" />
+            {/* Konditionen-Leiste: die 6 relevantesten Fakten als Datenzeile */}
+            <dl className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 border-y border-border divide-x divide-border bg-background/70 backdrop-blur-[2px]">
+              {KONDITIONEN.map((f) => (
+                <div key={f.k} className="p-4">
+                  <dt className="mono text-[9px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-1">{f.k}</dt>
+                  <dd className="font-bold text-foreground text-sm leading-tight">{f.v}</dd>
+                  <dd className="text-[11px] text-muted-foreground leading-tight mt-0.5">{f.sub}</dd>
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">{p.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{p.text}</p>
-              </Card>
-            ))}
+              ))}
+            </dl>
+            <p className="flex items-center gap-2 text-xs text-muted-foreground mt-4">
+              <Star className="h-3.5 w-3.5 text-primary fill-primary" />
+              5,0 auf Google · 35 Rezensionen · ekdruck e.U., Gunskirchen
+            </p>
           </div>
-          <p className="text-center text-xl md:text-2xl font-bold text-foreground mt-16 max-w-3xl mx-auto">
-            Das war gestern. Willkommen bei der Architekturmodell-Flatrate von ekdruck.
-          </p>
         </div>
       </section>
 
-      {/* SECTION 2 – PROCESS */}
-      <section className="py-20 md:py-28">
+      {/* 01 · PAKETE — die Matrix als Kernstück */}
+      <section id="preise" className="py-16 md:py-24 scroll-mt-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-16 tracking-tight">
-            Die ekdruck Büro-Flatrate – so funktioniert's
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            {STEPS.map((s, i) => (
-              <div key={i} className="relative">
-                <div className="bg-card border border-border rounded-2xl p-7 h-full hover:shadow-lg hover:border-primary/40 transition-all duration-300 hover:-translate-y-1">
-                  <div className="w-14 h-14 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg mb-5 shadow-md">
-                    {s.n}
-                  </div>
-                  <h3 className="text-lg font-bold text-foreground mb-3">{s.title}</h3>
+          <div className="max-w-5xl mx-auto">
+            <SectionLabel index="01">Pakete &amp; Preise</SectionLabel>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-[-0.02em] mb-3">
+              Drei Pakete, eine Tabelle. Mehr braucht es nicht.
+            </h2>
+            <p className="text-muted-foreground mb-10 max-w-2xl">
+              Alle Preise exkl. MwSt., keine Einrichtungsgebühr. Upgrade und Downgrade jederzeit zum nächsten Monatsersten.
+            </p>
+
+            <div className="overflow-x-auto border border-border rounded-2xl">
+              <table className="w-full min-w-[680px] text-sm border-collapse">
+                <thead>
+                  <tr className="border-b-2 border-border">
+                    <th className="text-left p-5 align-bottom w-[26%]">
+                      <span className="mono text-[9px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Leistung</span>
+                    </th>
+                    {MATRIX_TIERS.map((t) => (
+                      <th key={t.name} className={`text-left p-5 align-bottom ${t.badge ? "bg-primary/5 border-x border-primary/20" : ""}`}>
+                        {t.badge && (
+                          <span className="inline-block mono text-[9px] font-bold uppercase tracking-[0.15em] text-primary-foreground bg-primary px-2 py-1 rounded-full mb-3">
+                            {t.badge}
+                          </span>
+                        )}
+                        <p className="text-lg font-bold text-foreground leading-none mb-1">{t.name}</p>
+                        <p className="text-2xl font-bold text-foreground mono leading-none mb-1">
+                          €{t.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}
+                          <span className="text-xs text-muted-foreground font-normal"> /Monat</span>
+                        </p>
+                        <p className="text-[11px] text-muted-foreground font-normal leading-tight">{t.sub}</p>
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {MATRIX_ROWS.map((row, i) => (
+                    <tr key={row.label} className={i % 2 === 0 ? "bg-muted/30" : ""}>
+                      <td className="p-4 pl-5 text-muted-foreground">{row.label}</td>
+                      {row.values.map((v, k) => (
+                        <td key={k} className={`p-4 pl-5 ${MATRIX_TIERS[k].badge ? "bg-primary/5 border-x border-primary/20" : ""}`}>
+                          <CellValue v={v} />
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                  <tr className="border-t-2 border-border">
+                    <td className="p-4 pl-5"></td>
+                    {MATRIX_TIERS.map((t) => (
+                      <td key={t.name} className={`p-4 ${t.badge ? "bg-primary/5 border-x border-primary/20" : ""}`}>
+                        <Button
+                          size="sm"
+                          variant={t.badge ? "default" : "outline"}
+                          className="w-full"
+                          onClick={() => scrollKontakt("pricing_matrix", t.name)}
+                        >
+                          {t.name} anfragen
+                        </Button>
+                      </td>
+                    ))}
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-muted-foreground mt-4">
+              Erstes Modell kostenlos zum Testen · Nicht genutzte Modelle verfallen am Monatsende, Zusatzmodelle zum Flatrate-Zusatzpreis.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 02 · RECHNET SICH DAS — ehrliche Einordnung statt Verkaufsdruck */}
+      <section className="py-16 md:py-20 border-y border-border bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-12 gap-10">
+            <div className="md:col-span-7">
+              <SectionLabel index="02">Rechnet sich das?</SectionLabel>
+              <h2 className="text-2xl md:text-3xl font-bold tracking-[-0.02em] mb-4">
+                Faustregel: ab zwei Modellen pro Monat.
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Im Kontingent kostet ein Modell je nach Paket €222 bis €313. Die Flatrate rechnet sich
+                also, sobald Sie monatlich mindestens zwei Modelle brauchen, die im Einzelauftrag mehr
+                als rund €245 kosten würden. Dazu kommen 48-Stunden-Lieferung und ein fixer Monatsbetrag
+                statt Einzelangeboten.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Bei weniger Bedarf sage ich es Ihnen offen: Dann ist der{" "}
+                <Link href="/architekturmodelle" className="underline underline-offset-2 hover:text-primary">Einzelauftrag</Link>{" "}
+                der günstigere Weg.
+              </p>
+            </div>
+            <div className="md:col-span-5">
+              <div className="border border-border rounded-2xl bg-background p-6 h-full flex flex-col justify-between">
+                <div>
+                  <p className="mono text-[9px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-3">Der ehrliche Vergleich</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                    Break-even-Tabelle, Praxisbeispiele und der Fall, in dem sich die Flatrate{" "}
+                    <em>nicht</em> lohnt: alles im Ratgeber.
+                  </p>
+                </div>
+                <Link
+                  href="/ratgeber/architekturmodell-flatrate"
+                  className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:gap-3 transition-all"
+                >
+                  Flatrate vs. Einzelauftrag lesen <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 03 · ABLAUF — schlanke Zeile statt Karten-Grid */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <SectionLabel index="03">So funktioniert&apos;s</SectionLabel>
+            <h2 className="text-2xl md:text-3xl font-bold tracking-[-0.02em] mb-10">
+              Von der CAD-Datei zum Modell im Büro.
+            </h2>
+            <div className="grid md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-border border-y border-border">
+              {STEPS.map((s) => (
+                <div key={s.n} className="py-6 md:py-2 md:px-6 first:pl-0 last:pr-0">
+                  <p className="mono text-3xl font-bold text-primary/25 mb-3">{s.n}</p>
+                  <h3 className="font-bold text-foreground mb-2">{s.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{s.text}</p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 3 – PRICING */}
-      <section id="preise" className="py-20 md:py-28 bg-muted/40 scroll-mt-20">
+      {/* 04 · FÜR WEN — Passt / Passt nicht, ehrliche Abgrenzung */}
+      <section className="py-16 md:py-20 border-y border-border bg-muted/30">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-4 tracking-tight">
-            Transparente Preise. Keine Überraschungen.
-          </h2>
-          <p className="text-center text-muted-foreground mb-16 text-lg">Drei Pakete – für jedes Büro die passende Flatrate.</p>
-
-          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {TIERS.map((tier) => (
-              <Card
-                key={tier.name}
-                className={`relative p-8 transition-all duration-300 hover:-translate-y-1 ${
-                  tier.highlighted
-                    ? "border-2 border-primary shadow-2xl shadow-primary/20 md:scale-105 bg-card"
-                    : "border-border bg-card hover:shadow-lg"
-                }`}
-              >
-                {tier.badge && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-xs font-bold rounded-full shadow-md">
-                    {tier.badge}
-                  </div>
-                )}
-                <h3 className="text-2xl font-bold text-foreground mb-1">{tier.name}</h3>
-                <p className="text-sm text-muted-foreground mb-6 italic">{tier.subtitle}</p>
-                <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-5xl font-bold text-foreground">€{Number(tier.price).toLocaleString("de-AT")}</span>
-                  <span className="text-muted-foreground">/Monat</span>
-                </div>
-                <ul className="space-y-3 mb-8">
-                  {tier.features.map((f, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm">
-                      {f.included ? (
-                        <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      ) : (
-                        <X className="h-5 w-5 text-muted-foreground/40 flex-shrink-0 mt-0.5" />
-                      )}
-                      <span className={f.included ? "text-foreground" : "text-muted-foreground/60 line-through"}>
-                        {f.text}
+          <div className="max-w-5xl mx-auto">
+            <SectionLabel index="04">Für wen</SectionLabel>
+            <h2 className="text-2xl md:text-3xl font-bold tracking-[-0.02em] mb-10">
+              Passt die Flatrate zu Ihrem Büro?
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="border border-border rounded-2xl bg-background p-7">
+                <p className="mono text-[9px] font-bold uppercase tracking-[0.2em] text-primary mb-5">Ja, wenn</p>
+                <ul className="space-y-4">
+                  {PASST.map((t, i) => (
+                    <li key={i} className="flex gap-3 text-sm leading-relaxed text-foreground/90">
+                      <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                      {t}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="border border-border rounded-2xl bg-background p-7">
+                <p className="mono text-[9px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-5">Eher nicht, wenn</p>
+                <ul className="space-y-5">
+                  {PASST_NICHT.map((t, i) => (
+                    <li key={i} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
+                      <X className="w-4 h-4 text-muted-foreground/50 shrink-0 mt-0.5" />
+                      <span>
+                        {t.text}{" "}
+                        <Link href={t.link.to} className="text-primary font-semibold whitespace-nowrap hover:underline underline-offset-2">
+                          {t.link.label} →
+                        </Link>
                       </span>
                     </li>
                   ))}
                 </ul>
-                <Button
-                  className={`w-full hover:scale-[1.02] active:scale-[0.98] transition-transform ${
-                    tier.highlighted ? "" : "bg-secondary hover:bg-secondary/90 text-secondary-foreground"
-                  }`}
-                  size="lg"
-                  onClick={() => {
-                    trackContactClick("form", { source: "pricing_card", context: tier.name });
-                    document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" });
-                  }}
-                >
-                  {tier.name} wählen
-                </Button>
-              </Card>
-            ))}
-          </div>
-          <p className="text-center text-sm text-muted-foreground mt-10 max-w-2xl mx-auto">
-            Alle Preise exkl. MwSt. · Keine Einrichtungsgebühr · Monatlich kündbar · Erstes Modell kostenlos zum Testen
-          </p>
-        </div>
-      </section>
-
-      {/* SECTION 4 – COMPARISON */}
-      <section className="py-20 md:py-28">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-16 tracking-tight">
-            Was kostet ein Architekturmodell wirklich?
-          </h2>
-          <div className="max-w-5xl mx-auto overflow-x-auto">
-            <table className="w-full border-collapse bg-card rounded-2xl overflow-hidden shadow-sm">
-              <thead>
-                <tr className="bg-muted">
-                  <th className="text-left p-5 font-semibold text-foreground"></th>
-                  <th className="text-center p-5 font-semibold text-foreground">Traditioneller Modellbau</th>
-                  <th className="text-center p-5 font-semibold text-foreground">Einzelauftrag 3D-Druck</th>
-                  <th className="text-center p-5 font-bold text-primary bg-primary/5">ekdruck Flatrate</th>
-                </tr>
-              </thead>
-              <tbody>
-                {COMPARE_ROWS.map((row, i) => (
-                  <tr key={i} className="border-t border-border">
-                    <td className="p-5 font-semibold text-foreground">{row.label}</td>
-                    <td className="p-5 text-center text-muted-foreground">{row.a}</td>
-                    <td className="p-5 text-center text-muted-foreground">{row.b}</td>
-                    <td className="p-5 text-center font-bold text-primary bg-primary/5">{row.c}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-            <p className="text-xs text-muted-foreground mt-4 text-center">
-              *Marktvergleich Österreich 2026. Preise variieren je nach Komplexität und Anbieter.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* MID-PAGE CONVERSION NUDGE */}
-      <section className="py-12 bg-primary">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-primary-foreground/90 text-lg font-semibold mb-5">
-            Bereits überzeugt? Das erste Modell ist kostenlos – kein Vertrag.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-white text-primary hover:bg-white/90 font-semibold shadow-lg"
-              onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
-            >
-              Jetzt kostenlos anfragen <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-            <a
-              href={`https://wa.me/436765517197?text=${encodeURIComponent("Hallo ekdruck, ich interessiere mich für die Architekturmodell-Flatrate und möchte mein erstes Modell kostenlos testen.")}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 border border-primary-foreground/30 px-6 py-3 rounded-md text-primary-foreground hover:bg-primary-foreground/10 transition-colors font-medium text-sm"
-            >
-              <MessageCircle className="h-4 w-4" /> Direkt per WhatsApp
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 5 – TARGET AUDIENCE */}
-      <section className="py-20 md:py-28 bg-muted/40">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-16 tracking-tight">
-            Die Flatrate ist perfekt für Sie, wenn...
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {TARGET_AUDIENCE.map(({ Icon, title, text }, i) => (
-              <Card key={i} className="p-7 border-border bg-card hover:shadow-lg hover:-translate-y-1 hover:border-primary/40 transition-all duration-300">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
-                  <Icon className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="font-bold text-foreground mb-2">{title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{text}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 6 – TESTIMONIALS */}
-      <section className="py-20 md:py-28 bg-secondary text-secondary-foreground">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-4 tracking-tight">
-            Was unsere Kunden sagen
-          </h2>
-          <p className="text-center text-secondary-foreground/60 mb-16">
-            Aus den 35 Google-Bewertungen · 5,0 Sterne
-          </p>
-          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {TESTIMONIALS.map((t, i) => (
-              <div key={i} className="bg-secondary-foreground/5 backdrop-blur border border-secondary-foreground/10 rounded-2xl p-7">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, k) => (
-                    <Star key={k} className="h-4 w-4 fill-primary text-primary" />
-                  ))}
-                </div>
-                <blockquote className="italic text-secondary-foreground/90 leading-relaxed mb-5">
-                  „{t.quote}"
-                </blockquote>
-                <div className="text-sm font-semibold text-secondary-foreground/70">– {t.author}</div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 7 – FAQ */}
-      <section className="py-20 md:py-28">
+      {/* 05 · STIMMEN — schmale Zeile, echte Rezensionen */}
+      <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-16 tracking-tight">
-            Häufige Fragen zur Büro-Flatrate
-          </h2>
-          <div className="max-w-3xl mx-auto">
-            <Accordion type="single" collapsible className="space-y-3">
-              {ABO_FAQS.map((f, i) => (
-                <AccordionItem
-                  key={i}
-                  value={`item-${i}`}
-                  className="border border-border bg-card rounded-xl px-5 hover:border-primary/40 transition-colors"
-                >
-                  <AccordionTrigger className="text-left font-semibold text-foreground hover:no-underline py-5">
-                    {f.q}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
-                    {f.a}
-                  </AccordionContent>
-                </AccordionItem>
+          <div className="max-w-5xl mx-auto">
+            <SectionLabel index="05">Kundenstimmen</SectionLabel>
+            <div className="flex items-baseline justify-between flex-wrap gap-2 mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold tracking-[-0.02em]">Was Kunden sagen.</h2>
+              <p className="text-sm text-muted-foreground">5,0 Sterne · aus 35 Google-Bewertungen</p>
+            </div>
+            <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-border border-y border-border">
+              {TESTIMONIALS.map((t, i) => (
+                <figure key={i} className="py-6 md:py-2 md:px-6 first:pl-0 last:pr-0">
+                  <div className="flex gap-0.5 mb-3" aria-label="5 von 5 Sternen">
+                    {[...Array(5)].map((_, k) => (
+                      <Star key={k} className="h-3.5 w-3.5 fill-primary text-primary" />
+                    ))}
+                  </div>
+                  <blockquote className="text-sm text-foreground/85 leading-relaxed mb-3">„{t.quote}"</blockquote>
+                  <figcaption className="mono text-[9px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
+                    {t.author} · Google-Rezension
+                  </figcaption>
+                </figure>
               ))}
-            </Accordion>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 8 – CONTACT */}
+      {/* 06 · FAQ */}
+      <section className="py-16 md:py-20 border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-12 gap-10">
+            <div className="md:col-span-4">
+              <SectionLabel index="06">FAQ</SectionLabel>
+              <h2 className="text-2xl md:text-3xl font-bold tracking-[-0.02em] mb-4">
+                Häufige Fragen zur Flatrate.
+              </h2>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Etwas nicht dabei? Rufen Sie mich an: <a href="tel:+436765517197" className="font-bold text-foreground hover:text-primary">0676 5517197</a>, oder schreiben Sie per WhatsApp.
+              </p>
+            </div>
+            <div className="md:col-span-8">
+              <Accordion type="single" collapsible className="w-full">
+                {ABO_FAQS.map((f, i) => (
+                  <AccordionItem key={i} value={`item-${i}`} className="border-b border-border">
+                    <AccordionTrigger className="text-left font-semibold text-foreground hover:no-underline py-5 text-sm md:text-base">
+                      {f.q}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground leading-relaxed pb-5 text-sm">
+                      {f.a}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* KONTAKT */}
       <section id="kontakt" className="scroll-mt-20"><Contact /></section>
 
-      {/* SECTION 9 – INTERNAL LINKS */}
-      <section className="py-20 md:py-24">
+      {/* WEITERE WEGE */}
+      <section className="py-16 md:py-20 border-t border-border">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-4xl font-bold text-center text-foreground mb-12 tracking-tight">
-            Weitere Leistungen von ekdruck
-          </h2>
-          <div className="grid md:grid-cols-2 gap-5 max-w-5xl mx-auto">
-            {[
-              { to: "/architekturmodelle", label: "Architekturmodelle im Einzelauftrag" },
-              { to: "/ratgeber/architekturmodell-flatrate", label: "Ratgeber: Wann lohnt sich die Flatrate?" },
-              { to: "/messemodelle", label: "Messemodelle & Exponate" },
-              { to: "/einzelanfertigungen", label: "Einzelanfertigungen & Prototypen" },
-            ].map((l) => (
-              <Link
-                key={l.to}
-                href={l.to}
-                className="group flex items-center justify-between p-6 bg-card border border-border rounded-2xl hover:border-primary hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-              >
-                <span className="font-semibold text-foreground group-hover:text-primary transition-colors">{l.label}</span>
-                <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
-              </Link>
-            ))}
+          <div className="max-w-5xl mx-auto">
+            <SectionLabel index="07">Weiterlesen</SectionLabel>
+            <div className="grid md:grid-cols-2 gap-4">
+              {[
+                { to: "/architekturmodelle", label: "Architekturmodelle im Einzelauftrag" },
+                { to: "/ratgeber/architekturmodell-flatrate", label: "Ratgeber: Wann lohnt sich die Flatrate?" },
+                { to: "/messemodelle", label: "Messemodelle & Exponate" },
+                { to: "/einzelanfertigungen", label: "Einzelanfertigungen & Prototypen" },
+              ].map((l) => (
+                <Link
+                  key={l.to}
+                  href={l.to}
+                  className="group flex items-center justify-between py-4 px-5 border border-border rounded-xl hover:border-primary/50 transition-colors"
+                >
+                  <span className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">{l.label}</span>
+                  <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* SEO-Footer-Block */}
-      <section className="py-10 bg-muted/40">
+      {/* SEO-Absatz */}
+      <section className="py-10 border-t border-border bg-muted/30">
         <div className="container mx-auto px-4">
-          <p className="text-xs text-muted-foreground leading-relaxed max-w-5xl mx-auto text-center">
-            ekdruck e.U. ist spezialisierter 3D-Druck Dienstleister für Architekturbüros, Planungsbüros und Immobilienentwickler in ganz Österreich. Unsere Architekturmodell-Flatrate ermöglicht planbare, schnelle und günstige Modellproduktion für Wettbewerbe, Behördeneinreichungen und Kundenpräsentationen. Wir beliefern Architekturbüros in Wien, Graz, Linz, Salzburg, Innsbruck und ganz Österreich innerhalb von 48 Stunden.
+          <p className="text-xs text-muted-foreground leading-relaxed max-w-4xl mx-auto text-center">
+            Die Architekturmodell-Flatrate von ekdruck e.U. ist ein monatliches Fixpreis-Abo für Architekturbüros,
+            Planungsbüros und Immobilienentwickler: zwei bis acht 3D-gedruckte Modelle pro Monat, Lieferung in 48
+            Stunden österreichweit, monatlich kündbar, erstes Modell kostenlos. Gefertigt in Gunskirchen bei Wels,
+            geliefert nach Wien, Graz, Linz, Salzburg, Innsbruck und in ganz Österreich.
           </p>
         </div>
       </section>
