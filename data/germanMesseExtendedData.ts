@@ -359,7 +359,7 @@ export const germanExtendedData: Record<string, RegionalExtendedData> = {
       industry: "Automobil-Design & Präsentation",
       challenge: "Ein Zulieferer brauchte ein vergrößertes Schnittmodell eines innovativen Bremssystems als Anschauungsmodell für die Automechanika. Die inneren Komponenten sollten sichtbar und entnehmbar sein.",
       solution: "Wir fertigten ein 5-fach vergrößertes Schnittmodell mit 12 entnehmbaren Einzelteilen. Jedes Teil wurde farbcodiert und beschriftet.",
-      result: "Werkstätten und Händler konnten die Vorteile des neuen Systems sofort verstehen. 300+ Visitenkarten wurden am Stand gesammelt.",
+      result: "Werkstätten und Händler konnten die Vorteile des neuen Systems direkt am Modell nachvollziehen.",
       specs: {
         size: "40 x 40 x 35 cm",
         material: "PLA mehrfarbig, beschriftet",

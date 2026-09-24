@@ -1089,7 +1089,7 @@ const oberoesterreich: DruckSectionDataSet = {
       { icon: 'Shield', title: 'Nachbearbeitete Oberflächen', description: 'Geschliffen und grundiert für Kundenpräsentationen und Veranstaltungen.' },
     ],
     stats: [
-      { label: 'OÖ-Projekte', value: '300+' },
+      { label: 'Google-Bewertungen', value: '5,0 ★' },
       { label: 'Standort', value: 'Gunskirchen' },
       { label: 'Firmenrechnung', value: 'Standard' },
       { label: 'Abholung', value: 'Jederzeit' },
@@ -1106,7 +1106,7 @@ const oberoesterreich: DruckSectionDataSet = {
     ],
   },
   trustSignals: [
-    { value: '300+', label: 'OÖ-Projekte', detail: 'Von KMU bis Großkonzern' },
+    { value: '5,0 ★', label: 'Google-Bewertung', detail: '35 Bewertungen, alle fünf Sterne' },
     { value: 'Gunskirchen', label: 'Standort in OÖ', detail: 'Persönliche Abholung und Beratung' },
     { value: 'NDA', label: 'Vertraulichkeit', detail: 'Geheimhaltungsvereinbarung möglich' },
     { value: '80/Woche', label: 'Kapazität', detail: 'Für Projektmengen und Mehrfachfertigung' },
