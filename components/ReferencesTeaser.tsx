@@ -254,7 +254,7 @@ const ReferencesTeaser = () => {
                 { val: "120+", lbl: "Projekte gesamt" },
                 { val: "50+", lbl: "Messen beliefert" },
                 { val: "5.0 ★", lbl: "Google (35 Bew.)" },
-                { val: "98%", lbl: "Wiederkehrend" },
+                { val: "AT+DE", lbl: "Liefergebiet" },
               ].map((s, i) => (
                 <div key={s.lbl} className={`py-5 text-center ${i > 0 ? 'border-l border-border' : ''}`}>
                   <p className="text-2xl md:text-3xl font-bold text-primary">{s.val}</p>

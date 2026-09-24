@@ -229,7 +229,7 @@ export const regionalDruckData: Record<string, RegionalDruckData> = {
     metaTitle: '3D-Druck Wels · Abholung in 10 Min, Same-Day-Fertigung',
     metaDescription: '3D-Druck Anbieter direkt vor der Tür von Wels: Musterteile, Konzeptmodelle und Schablonen drucken lassen. 10 Min zur Abholung, Same-Day möglich.',
     heroSubtitle: 'Ihr direkter Nachbar für professionellen 3D-Druck. Persönliche Abholung in Gunskirchen · nur 10 Minuten von Wels entfernt. Same-Day-Service für dringende Projekte.',
-    deliveryTime: 'Sofort',
+    deliveryTime: '3-5 Werktage, Abholung möglich',
     deliveryNote: 'Persönliche Abholung in Gunskirchen · nur 10 Minuten',
     localIndustries: [
       { name: 'Agrartechnik-Modelle', sector: 'Landwirtschaft', application: 'Konzeptmodelle, Anschauungsobjekte, Designstudien für Geräte' },
@@ -244,7 +244,7 @@ export const regionalDruckData: Record<string, RegionalDruckData> = {
       'Langjährige Erfahrung mit Welser Unternehmen',
     ],
     nearbyRegions: ['oberoesterreich', 'linz'],
-    stats: { projekte: '120+', lieferzeit: 'Sofort', materialien: '8+' },
+    stats: { projekte: '120+', lieferzeit: '3-5 Werktage', materialien: '8+' },
   },
 
   'st-poelten': {
@@ -310,7 +310,7 @@ export const regionalDruckData: Record<string, RegionalDruckData> = {
     metaTitle: '3D Druck Gunskirchen · Direkt abholen | ekdruck',
     metaDescription: 'Unser Standort: Morgens bestellt, abends fertig. Qualitätsprüfung vor Ort, 8 Materialien, kein Versandrisiko. Jetzt Termin buchen.',
     heroSubtitle: 'Hier werden Ihre Modelle gedruckt. Besuchen Sie uns in Gunskirchen · persönliche Abholung, Beratung vor Ort und Same-Day-Service ohne Umwege.',
-    deliveryTime: 'Sofort',
+    deliveryTime: '3-5 Werktage, Abholung möglich',
     deliveryNote: 'Persönliche Abholung direkt am Produktionsstandort',
     localIndustries: [
       { name: 'Direktabholung', sector: 'Lokale Unternehmen', application: 'Kein Versandrisiko, persönliche Qualitätsprüfung vor Ort' },
@@ -325,7 +325,7 @@ export const regionalDruckData: Record<string, RegionalDruckData> = {
       'Kein Versandrisiko, keine Wartezeit',
     ],
     nearbyRegions: ['wels', 'linz', 'oberoesterreich'],
-    stats: { projekte: '500+', lieferzeit: 'Sofort', materialien: '10+' },
+    stats: { projekte: '500+', lieferzeit: '3-5 Werktage', materialien: '8' },
   },
 
   // BUNDESLÄNDER
@@ -353,7 +353,7 @@ export const regionalDruckData: Record<string, RegionalDruckData> = {
       'Erfahrung mit OÖ Unternehmen',
     ],
     nearbyRegions: ['niederoesterreich', 'salzburg', 'linz', 'wels'],
-    stats: { projekte: '300+', lieferzeit: 'Sofort', materialien: '10+' },
+    stats: { projekte: '300+', lieferzeit: '3-5 Werktage', materialien: '8' },
   },
 
   'niederoesterreich': {

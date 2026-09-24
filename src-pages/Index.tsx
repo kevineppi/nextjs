@@ -48,7 +48,7 @@ const Index = () => {
       { question: "Wie schnell erhalte ich mein 3D-Modell?", answer: "Standard: 3–5 Werktage. Express: 24–48 Stunden. Versandkostenfrei ab €100." },
       { question: "Welche Dateiformate werden akzeptiert?", answer: "STL, OBJ, STEP, 3MF, ArchiCAD, Revit, SolidWorks. Keine Datei? Wir modellieren kostenlos nach Skizze." },
       { question: "Für welche Branchen eignet sich ekdruck?", answer: "Architekten, Messeaussteller, Produktentwickler und Firmenkunden mit B2B-Konditionen." },
-      { question: "Warum österreichisches Filament?", answer: "Recycelte Industrieabfälle, Ökostrom, 80% weniger CO₂. Gleichmäßiger Filament-Durchmesser ±0,02 mm." },
+      { question: "Warum österreichisches Filament?", answer: "Recycelte Industrieabfälle, Ökostrom, rund 65% weniger CO₂ als Import-Filament (Herleitung im Material-Guide). Gleichmäßiger Filament-Durchmesser ±0,02 mm." },
       { question: "Welche Nachbearbeitungs-Optionen gibt es?", answer: "Schleifen, Grundierung, Lackierung RAL/Pantone, Aceton-Dampfglättung, Segmentierung." },
     ]} />
 
@@ -274,7 +274,7 @@ const Index = () => {
                 { icon: TrendingDown, title: "Keine Werkzeugkosten", desc: "Spritzguss ab €10.000. Bei ekdruck ab €20." },
                 { icon: Clock, title: "10x schneller", desc: "Handmodellbau: 1–4 Wochen. ekdruck Express: 24h." },
                 { icon: Repeat2, title: "Digital reproduzierbar", desc: "Jede Kopie identisch. Korrekturen = Dateiänderung." },
-                { icon: Leaf, title: "Nachhaltig aus Österreich", desc: "Filament aus Industrieabfällen, 80% weniger CO₂." },
+                { icon: Leaf, title: "Nachhaltig aus Österreich", desc: "Filament aus Industrieabfällen, rund 65% weniger CO₂ als Import." },
               ].map(({ icon: Icon, title, desc }) =>
                 <div key={title} className="flex gap-4 p-6 rounded-2xl border-2 border-border hover:border-primary/30 transition-all duration-300 hover:-translate-y-0.5">
                   <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
@@ -359,7 +359,7 @@ const Index = () => {
               <AnimatedSection animation="slide-up" delay={0.2}>
                 <h3 className="text-2xl md:text-3xl font-bold mb-5 tracking-[-0.02em]">Acht Materialien für jeden Einsatz.</h3>
                 <p className="text-base leading-[1.85] text-foreground/85 mb-4">
-                  <strong>PLA</strong> für Anschauungsmodelle, <strong>PETG</strong> für robuste Gebrauchsmodelle, <strong>ASA</strong> für UV-beständige Außenanwendungen, <strong>ABS</strong> mit Aceton-Glättung für Spritzguss-Optik, <strong>TPU</strong> für flexible, biegbare Elemente, <strong>PETG-CF</strong> und <strong>PA-CF</strong> mit Carbonfaser für besonders robuste Modelle sowie <strong>SLA-Resin</strong> für hochfeine Detailmodelle und Schmuckguss.
+                  <strong>PLA</strong> für Anschauungsmodelle, <strong>PETG</strong> für robuste Gebrauchsmodelle, <strong>ASA</strong> für UV-beständige Außenanwendungen, <strong>ABS</strong> mit Aceton-Glättung für Spritzguss-Optik, <strong>TPU</strong> für flexible, biegbare Elemente, <strong>PETG-CF</strong> und <strong>PA-CF</strong> mit Carbonfaser für besonders robuste Modelle sowie <strong>SLA-Resin</strong> für hochfeine Detailmodelle und Schmuckguss (Resin-Fertigung über unseren Partner).
                 </p>
                 <p className="text-base leading-[1.85] text-foreground/85">
                   Welches Material wann, ehrlich beraten statt verkauft. Wenn ein Wunsch nicht zum Modell passt, weisen wir vor dem Auftrag auf die bessere Alternative hin. Der <Link href="/3d-druck-materialien" className="text-primary hover:underline font-semibold">Detailvergleich aller Materialien</Link> zeigt Festigkeit, Temperaturverhalten und Preis pro Gramm.
@@ -549,7 +549,7 @@ const Index = () => {
                     { q: "Welche Dateiformate?", a: "STL, OBJ, STEP, 3MF, ArchiCAD, Revit, SolidWorks, Rhino, Fusion 360. Oder wir modellieren nach Skizze – kostenlos.", link: null },
                     { q: "Für welche Branchen?", a: "Architekten (1:50–1:500), Messeaussteller (Express 24h), Produktentwickler, Firmenkunden (NDA, Mengenrabatte, Rahmenverträge).", link: null },
                     { q: "Welche Nachbearbeitung?", a: "Schleifen, Grundierung, Lackierung RAL/Pantone, Aceton-Dampfglättung, Segmentierung. Manuelle QA.", link: null },
-                    { q: "Warum österreichisches Filament?", a: "Recycelte Industrieabfälle, Ökostrom. 80% weniger CO₂. Filament-Durchmesser ±0,02 mm.", link: { to: "/ratgeber/material-guide", text: "Material-Guide →" } },
+                    { q: "Warum österreichisches Filament?", a: "Recycelte Industrieabfälle, Ökostrom. Rund 65% weniger CO₂ als Import-Filament, die Rechnung steht im Material-Guide. Filament-Durchmesser ±0,02 mm.", link: { to: "/ratgeber/material-guide", text: "Material-Guide →" } },
                   ].map((item, i) =>
                     <AccordionItem key={i} value={`faq-${i}`}
                       className="border-2 border-border rounded-2xl px-6 hover:border-primary/30 transition-all data-[state=open]:border-primary/30">

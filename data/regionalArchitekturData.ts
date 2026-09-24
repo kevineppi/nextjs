@@ -105,7 +105,7 @@ export const regionalArchitekturData: Record<string, RegionalArchitekturData> = 
       'Erfahrung mit OÖ Architekturbüros',
     ],
     nearbyRegions: ['niederoesterreich', 'salzburg', 'linz', 'wels'],
-    stats: { projekte: '80+', lieferzeit: 'Sofort', kunden: '40+' },
+    stats: { projekte: '80+', lieferzeit: '3-5 Werktage', kunden: '40+' },
   },
 
   'steiermark': {
@@ -307,7 +307,7 @@ export const regionalArchitekturData: Record<string, RegionalArchitekturData> = 
     metaTitle: 'Architekturmodelle Wels · Abholung in 10 Min | ekdruck',
     metaDescription: 'Welser Architekten: Gewerbepark-Modelle, Schulbauten & Wohnbau. Persönliche Abholung in 10 Min aus Gunskirchen. Last-Minute möglich.',
     heroSubtitle: 'Direkt vor Ort · Ihr lokaler Partner für Architekturmodelle. Persönliche Abholung in Gunskirchen · nur 10 Minuten entfernt.',
-    deliveryTime: 'Sofort',
+    deliveryTime: '3-5 Werktage, Abholung möglich',
     deliveryNote: 'Persönliche Abholung in Gunskirchen · nur 10 Minuten',
     localArchitekturContext: [
       { name: 'Stadtentwicklung', location: 'Wels Innenstadt', type: 'Städtebau' },
@@ -322,7 +322,7 @@ export const regionalArchitekturData: Record<string, RegionalArchitekturData> = 
       'Erfahrung mit lokalen Architekten',
     ],
     nearbyRegions: ['oberoesterreich', 'linz'],
-    stats: { projekte: '45+', lieferzeit: 'Sofort', kunden: '20+' },
+    stats: { projekte: '45+', lieferzeit: '3-5 Werktage', kunden: '20+' },
   },
 
   'graz': {

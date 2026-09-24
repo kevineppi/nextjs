@@ -428,7 +428,7 @@ const Einzelanfertigungen = () => {
 
                 <div>
                   <h3 className="font-bold text-xl mb-2 text-foreground">Präsentations-Unikate für Geschäftsgeschenke</h3>
-                  <p className="text-foreground/85 leading-relaxed">Ein <strong>Pokal</strong> in Form Ihres Produkts. Ein <strong>Pensionsgeschenk</strong> als Miniatur der ersten Maschine die jemand jahrzehntelang bedient hat. Ein <strong>Jubiläumsgeschenk</strong> mit dem Firmenlogo als 3D-Skulptur. Wir entwerfen oder verarbeiten Ihre Vorlage und drucken ein wertiges Unikat, meist in PLA mit Lackier-Finish oder direkt in SLA-Resin für höchste Detailtiefe. Lieferzeit 5-10 Tage, Preis €80-400 je nach Größe und Aufwand.</p>
+                  <p className="text-foreground/85 leading-relaxed">Ein <strong>Pokal</strong> in Form Ihres Produkts. Ein <strong>Pensionsgeschenk</strong> als Miniatur der ersten Maschine die jemand jahrzehntelang bedient hat. Ein <strong>Jubiläumsgeschenk</strong> mit dem Firmenlogo als 3D-Skulptur. Wir entwerfen oder verarbeiten Ihre Vorlage und drucken ein wertiges Unikat, meist in PLA mit Lackier-Finish oder in SLA-Resin für höchste Detailtiefe (Resin-Fertigung über Partner). Lieferzeit 5-10 Tage, Preis €80-400 je nach Größe und Aufwand.</p>
                 </div>
 
                 <div>

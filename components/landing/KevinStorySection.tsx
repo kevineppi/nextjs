@@ -198,7 +198,7 @@ const KevinStorySection = () => {
                   icon: MapPin,
                   value: 'Made in Austria, wörtlich genommen',
                   meaning:
-                    'Werkstatt in Gunskirchen, Filament aus österreichischer Produktion (recycelte Industrieabfälle, Ökostrom, rund 80 % weniger CO₂ als Standard-Importware), Verpackung aus Österreich. Das ist keine Marketing-Floskel, sondern eine kurze Lieferkette. Und kurze Lieferketten sind der Grund, warum Termine halten.',
+                    'Werkstatt in Gunskirchen, Filament aus österreichischer Produktion (recycelte Industrieabfälle, Ökostrom, rund 65 % weniger CO₂ als Standard-Importware), Verpackung aus Österreich. Das ist keine Marketing-Floskel, sondern eine kurze Lieferkette. Und kurze Lieferketten sind der Grund, warum Termine halten.',
                   example:
                     'Beispiel: Als im Frühjahr 2025 wegen Material-Engpässen aus Übersee vielerorts vier bis sechs Wochen Lieferzeit angekündigt wurden, haben meine österreichischen Filament-Lieferanten ohne Unterbrechung geliefert. Für ek-druck-Kunden hat sich in dieser Phase nichts verschoben.',
                 },

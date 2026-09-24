@@ -110,7 +110,7 @@ export const regionalMesseData: Record<string, RegionalMesseData> = {
       'Same-Day-Service für dringende Projekte',
     ],
     nearbyRegions: ['niederoesterreich', 'salzburg', 'linz', 'wels'],
-    stats: { messen: '30+', lieferzeit: 'Sofort', kunden: '40+' },
+    stats: { messen: '30+', lieferzeit: '3-5 Werktage', kunden: '40+' },
   },
 
   'steiermark': {
@@ -311,7 +311,7 @@ export const regionalMesseData: Record<string, RegionalMesseData> = {
     metaTitle: 'Messemodelle Wels · 10 Min zum Messegelände | ekdruck',
     metaDescription: 'Welser Messe-Aussteller: Modelle für AGRARIA, Power-Days & FISCH&FEINES. 10 Min Abholung in Gunskirchen. Last-Minute möglich.',
     heroSubtitle: 'Direkt vor Ort · Ihr lokaler Partner für die Welser Messe. Persönliche Abholung oder Express-Lieferung zum Messegelände.',
-    deliveryTime: 'Sofort',
+    deliveryTime: '3-5 Werktage, Abholung möglich',
     deliveryNote: 'Persönliche Abholung in Gunskirchen · nur 10 Minuten zur Messe Wels',
     localMessen: [
       { name: 'Welser Messe', location: 'Messe Wels', type: 'Allgemein' },
@@ -326,7 +326,7 @@ export const regionalMesseData: Record<string, RegionalMesseData> = {
       'Last-Minute-Service für dringende Projekte',
     ],
     nearbyRegions: ['oberoesterreich', 'linz'],
-    stats: { messen: '20+', lieferzeit: 'Sofort', kunden: '30+' },
+    stats: { messen: '20+', lieferzeit: '3-5 Werktage', kunden: '30+' },
   },
 
   'graz': {

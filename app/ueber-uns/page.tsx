@@ -37,8 +37,6 @@ const PERSON_LD = {
   worksFor: { '@id': ORG_ID },
   knowsAbout: [
     'FDM 3D-Druck',
-    'SLA 3D-Druck',
-    'SLS 3D-Druck',
     'Rapid Prototyping',
     'Architekturmodellbau',
     'Messemodellbau',

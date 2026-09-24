@@ -296,7 +296,7 @@ const UeberUns = () => {
                 <AnimatedSection animation="fade-in">
                   <div className="space-y-3">
                     {[
-                      { stat: "~80%", label: "weniger CO₂ vs. Asien-Import" },
+                      { stat: "~65%", label: "weniger CO₂ vs. Asien-Import" },
                       { stat: "100%", label: "Ökostrom in der Produktion" },
                       { stat: "<200 km", label: "Material-Transport bis Werkstatt" },
                       { stat: "0", label: "Kunststoff-Neu-Granulat, alles recycelt" },
