@@ -69,30 +69,14 @@ const verfahren = [
     lieferzeit: "5–7 Werktage",
     icon: Beaker,
   },
-  {
-    name: "SLS",
-    typ: "Partner",
-    typColor: "bg-secondary/10 text-secondary",
-    untertitel: "Selective Laser Sintering · Pulver",
-    text: "Robuste Kunststoff-Modelle mit sauberer Oberfläche und ohne Stützstrukturen. Geeignet für Mehrfachfertigung, Anschauungsmodelle und Objekte mit gleichmäßigen Eigenschaften.",
-    ideal: "Anschauungsmuster · Mehrfachfertigung · Endobjekte · Sichtmodelle",
-    features: [
-      { label: "Bauraum", value: "bis 700 × 380 × 380 mm" },
-      { label: "Schichtstärke", value: "0,1 – 0,12 mm" },
-      { label: "Detailtreue", value: "fein" },
-      { label: "Materialien", value: "PA12, PA11, GF, TPU" },
-    ],
-    lieferzeit: "7–10 Werktage",
-    icon: Cpu,
-  },
 ];
 
 const prototypTypen = [
   { num: "01", title: "Designprototyp", text: "Form, Ergonomie und Erscheinungsbild prüfen. Oberfläche lackierbar, fertig zur Bemusterung in Fokusgruppen.", material: "PLA+ · SLA-Resin", lieferzeit: "2–5 Tage", preis: "ab €20" },
   { num: "02", title: "Formmodell", text: "Formtreue Fertigung zur Beurteilung von Proportionen und Aufbau. Erste Aussagen zu Erscheinungsbild und Materialwahl.", material: "PETG · ABS · PA12", lieferzeit: "3–7 Tage", preis: "ab €35" },
   { num: "03", title: "Anschauungsmodell", text: "Detailreiches Modell aus robusten Materialien. Optik, Haptik und Handhabung am echten Objekt beurteilen.", material: "Carbon-PA · ASA · PA12", lieferzeit: "5–10 Tage", preis: "ab €60" },
-  { num: "04", title: "Feinmodell", text: "Feinste Oberfläche für die finale Optik-Abstimmung vor der Freigabe. Ausführungsmuster, das Farbe, Glanz und Detailtreue am echten Objekt zeigt.", material: "SLA-Resin · SLS PA12", lieferzeit: "7–14 Tage", preis: "ab €120" },
-  { num: "05", title: "Mehrfachfertigung", text: "Bis zu 200 Stück additiv gefertigt. Reproduzierbarkeit prüfen, Markttests, kleine Auflagen ohne Werkzeug.", material: "FDM PETG/ASA · SLS PA12", lieferzeit: "2–4 Wochen", preis: "Mengenrabatt ab 5 Stk." },
+  { num: "04", title: "Feinmodell", text: "Feinste Oberfläche für die finale Optik-Abstimmung vor der Freigabe. Ausführungsmuster, das Farbe, Glanz und Detailtreue am echten Objekt zeigt.", material: "SLA-Resin", lieferzeit: "7–14 Tage", preis: "ab €120" },
+  { num: "05", title: "Mehrfachfertigung", text: "Bis zu 200 Stück additiv gefertigt. Reproduzierbarkeit prüfen, Markttests, kleine Auflagen ohne Werkzeug.", material: "FDM PETG/ASA", lieferzeit: "2–4 Wochen", preis: "Mengenrabatt ab 5 Stk." },
 ];
 
 const materialGuide = [
@@ -116,16 +100,16 @@ const faqs = [
   { question: "Was ist der Unterschied zwischen Designprototyp und Funktionsprototyp?", answer: "Ein Designprototyp zeigt Form, Optik, Proportion und Ergonomie zum Anfassen und Zeigen. Ein Funktionsprototyp prüft dagegen technische Funktion und Belastung. Wir sind auf den Designprototyp spezialisiert, technische Funktions- und Belastungstests gehören nicht zu unserem Angebot." },
   { question: "Was ist der Unterschied zwischen Designprototyp und Anschauungsmodell?", answer: "Ein Designprototyp begleitet die Entwicklung: Sie prüfen und verändern Form und Optik über mehrere Iterationen. Ein Anschauungsmodell ist das fertig ausgearbeitete Modell zum Zeigen, für Pitch, Investoren, Messe oder Kundengespräch, mit sauberer Oberfläche und finaler Optik. Beides drucken wir aus dem gleichen Workflow, ab 1 Stück." },
   { question: "Kann man ein Modell nach Skizze oder Foto machen lassen?", answer: "Ja. Kein 3D-Modell vorhanden? Wir modellieren Ihr Objekt am Rechner nach Skizze, Foto oder Zeichnung und drucken es anschließend als Designprototyp oder Anschauungsmodell. Modellieren ab €120, danach greift der normale Druckpreis ab €20. Auf Wunsch stimmen wir Form und Details vor dem Druck mit Ihnen ab." },
-  { question: "Was kostet ein 3D-gedruckter Prototyp?", answer: "Einfache Designprototypen starten ab €20, robuste Modelle aus Carbon-PA oder SLS PA12 ab €60–120. Sie erhalten innerhalb von 6 Stunden ein verbindliches Festpreisangebot – kostenlos und unverbindlich, mit Materialempfehlung und Lieferdatum. Ab dem 5. Auftrag pro Quartal erhalten Stammkunden automatisch 10% Rabatt." },
-  { question: "Wie schnell ist mein Prototyp lieferbar?", answer: "FDM-Prototypen in 1–5 Werktagen, Express-Fertigung in 24h möglich (+50% Aufpreis). SLA in 5–7 Werktagen, SLS über Partner in 7–10 Werktagen. Bei dringenden Projekten rufen Sie an: +43 676 5517197 – wir reservieren einen Express-Slot direkt am Telefon." },
-  { question: "Wie fein und detailtreu wird mein Modell?", answer: "FDM löst feine Details sauber auf und eignet sich für die meisten Design-Prototypen und Anschauungsmodelle. SLA ist das feinste Verfahren mit besonders glatten Oberflächen, ideal für Sichtmodelle und Schmuck-Prototypen. SLS liegt dazwischen und punktet mit gleichmäßiger Oberfläche ohne Stützstrukturen. Bei besonders wichtigen Details prüfen wir jedes Modell vor dem Versand und dokumentieren die Ausführung auf Wunsch." },
-  { question: "Welche 3D-Druck Verfahren bietet ihr an?", answer: "FDM (Fused Deposition Modeling) führen wir direkt in unserer Werkstatt in Gunskirchen aus – kurze Reaktionszeit, Express in 24h möglich. SLA (Stereolithographie für hochauflösende Resin-Drucke) und SLS (Selective Laser Sintering für lasersinternde Pulver-Drucke) bieten wir über eingespielte Partner-Druckereien an. Die gesamte Abwicklung läuft über uns – ein Ansprechpartner, eine Rechnung, eine NDA." },
-  { question: "Welche Materialien sind verfügbar?", answer: "Im FDM-Verfahren: PLA, PLA+, PETG, PETG transparent, ABS, ASA, TPU flexibel, Carbon-PA. Im SLA-Verfahren: Standard-, Tough- und Flexible-Resin, weitere Spezial-Resine auf Anfrage. Im SLS-Verfahren über Partner: PA12, PA11, glasgefülltes PA, TPU-Pulver. Auf Wunsch auch metallisch beschichtete Oberflächen." },
+  { question: "Was kostet ein 3D-gedruckter Prototyp?", answer: "Einfache Designprototypen starten ab €20, robuste Modelle aus Carbon-PA ab €60–120. Sie erhalten innerhalb von 6 Stunden ein verbindliches Festpreisangebot – kostenlos und unverbindlich, mit Materialempfehlung und Lieferdatum. Ab dem 5. Auftrag pro Quartal erhalten Stammkunden automatisch 10% Rabatt." },
+  { question: "Wie schnell ist mein Prototyp lieferbar?", answer: "FDM-Prototypen in 1–5 Werktagen, Express-Fertigung in 24h möglich (+50% Aufpreis). SLA in 5–7 Werktagen. Bei dringenden Projekten rufen Sie an: +43 676 5517197 – wir reservieren einen Express-Slot direkt am Telefon." },
+  { question: "Wie fein und detailtreu wird mein Modell?", answer: "FDM löst feine Details sauber auf und eignet sich für die meisten Design-Prototypen und Anschauungsmodelle. SLA ist das feinste Verfahren mit besonders glatten Oberflächen, ideal für Sichtmodelle und Schmuck-Prototypen. Bei besonders wichtigen Details prüfen wir jedes Modell vor dem Versand und dokumentieren die Ausführung auf Wunsch." },
+  { question: "Welche 3D-Druck Verfahren bietet ihr an?", answer: "FDM (Fused Deposition Modeling) und SLA (Stereolithographie für hochauflösende Resin-Drucke) – beides fertigen wir direkt in unserer Werkstatt in Gunskirchen. Kurze Reaktionszeit, Express in 24h möglich, ein Ansprechpartner, eine Rechnung, auf Wunsch eine NDA." },
+  { question: "Welche Materialien sind verfügbar?", answer: "Im FDM-Verfahren: PLA, PLA+, PETG, PETG transparent, ABS, ASA, TPU flexibel, Carbon-PA. Im SLA-Verfahren: Standard-, Tough- und Flexible-Resin, weitere Spezial-Resine auf Anfrage. Auf Wunsch auch metallisch beschichtete Oberflächen." },
   { question: "Gibt es eine Mindestbestellmenge?", answer: "Nein. Einzelstücke ohne Aufpreis, transparente Kalkulation ab Stückzahl 1. Mengenrabatte ab 5 Stück, attraktive Konditionen für Mehrfachfertigung ab 20 Stück. Ab 5 Aufträgen pro Quartal werden Sie automatisch Stammkunde mit 10% Rabatt." },
   { question: "Welche Dateiformate werden akzeptiert?", answer: "STL, STEP, IGES, 3MF, OBJ und alle gängigen CAD-Formate aus SolidWorks, Fusion 360, Inventor, Rhino, CATIA, NX, Creo oder OnShape. Kein 3D-Modell vorhanden? Wir modellieren Ihr Objekt nach Skizze, Foto oder Zeichnung – ab €120." },
   { question: "Wie ist die Vertraulichkeit bei Entwicklungsprojekten geregelt?", answer: "Auf Wunsch unterzeichnen wir eine NDA, bevor Daten ausgetauscht werden. Direkte Kommunikation mit dem Inhaber ohne Zwischeninstanzen. Keine Weitergabe an Subunternehmer ohne Ihre ausdrückliche Zustimmung. Datenarchivierung nach Projektabschluss optional – auf Wunsch löschen wir CAD-Daten sofort nach Lieferung." },
-  { question: "FDM, SLA oder SLS – welches Verfahren ist richtig?", answer: "FDM für robuste Modelle, Anschauungsmodelle und Design-Prototypen, das wirtschaftlichste Verfahren mit der größten Materialvielfalt. SLA für höchste Detailauflösung, glatte Oberflächen, Designmuster und Sichtmodelle. SLS für Mehrfachfertigung, Anschauungsmodelle und Objekte mit gleichmäßigen Materialeigenschaften ohne Stützstrukturen." },
-  { question: "Wie groß kann ein Prototyp maximal sein?", answer: "FDM-Einzelstücke bis 350 × 350 × 350 mm in einem Stück. Größere Modelle durch segmentierten Druck mit unsichtbaren Nahtstellen segmentiert bis 2 m Gesamtgröße. SLS-Bauraum bei Partnern bis 700 × 380 × 380 mm." },
+  { question: "FDM oder SLA – welches Verfahren ist richtig?", answer: "FDM für robuste Modelle, Anschauungsmodelle und Design-Prototypen, das wirtschaftlichste Verfahren mit der größten Materialvielfalt. SLA für höchste Detailauflösung, glatte Oberflächen, Designmuster und Sichtmodelle." },
+  { question: "Wie groß kann ein Prototyp maximal sein?", answer: "FDM-Einzelstücke bis 350 × 350 × 350 mm in einem Stück. Größere Modelle durch segmentierten Druck mit unsichtbaren Nahtstellen segmentiert bis 2 m Gesamtgröße." },
   { question: "Bietet ihr persönliche Zustellung an?", answer: "Ja. Innerhalb Oberösterreichs (Linz, Wels, Vöcklabruck, Steyr und Umgebung) liefern wir auf Wunsch persönlich gegen Aufwandsentschädigung ab €40. Wien und Salzburg gegen entsprechenden Aufpreis möglich. Sinnvoll bei sehr empfindlichen Modellen, dringenden Wettbewerbsabgaben oder wenn eine kurze Einweisung gewünscht ist. Preis vor Abholung verbindlich kalkuliert." },
   { question: "Bietet ihr Druckoptimierung an?", answer: "Ja. Wir prüfen Ihre Modelle vor dem Druck auf Wandstärken, Stützstrukturen, Auflagepunkte und Oberfläche. Bei Optimierungspotenzial melden wir uns mit konkreten Vorschlägen, bevor irgendetwas gedruckt wird. Für ausführliche Design-Optimierung ab €80/Stunde." },
   { question: "Gibt es Rabatte für Stammkunden?", answer: "Ja, automatisch: Ab 5 Aufträgen pro Quartal 10% Rabatt, ab 10 Aufträgen 15%, ab 20 Aufträgen 20% plus direkten Inhaber-Kontakt. Keine Mitgliedschaft, keine Karte – wir erkennen Sie über Ihre Auftraggeber-Daten und rechnen automatisch an. Zusätzlich gibt es das Hardware-Sprint-Paket (10 Iterationen in 3 Monaten zum Festpreis €1.490) und Express-Slot-Vorverträge." },
@@ -143,7 +127,7 @@ const Prototyping = () => (
     />
     <ProductOfferSchema
       name="Designprototyp & Anschauungsmodell aus dem 3D-Druck"
-      description="3D-gedruckte Designprototypen, Anschauungsmodelle und Mehrfachfertigung fürs Produktdesign. FDM und SLA in-house, SLS über Partner. Angebot in 6h, Express in 24h. Form, Optik und Haptik am echten Objekt."
+      description="3D-gedruckte Designprototypen, Anschauungsmodelle und Mehrfachfertigung fürs Produktdesign. FDM und SLA in-house. Angebot in 6h, Express in 24h. Form, Optik und Haptik am echten Objekt."
       url="https://www.ek-druck.at/prototyping"
       lowPrice="20"
       highPrice="2500"
@@ -212,7 +196,7 @@ const Prototyping = () => (
                 <p className="mono text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">8</p>
                 <div className="flex flex-wrap items-baseline gap-x-2 mt-3">
                   <p className="mono text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/80">Materialien</p>
-                  <p className="text-[10px] text-muted-foreground hidden md:inline">FDM · SLA · SLS</p>
+                  <p className="text-[10px] text-muted-foreground hidden md:inline">FDM · SLA</p>
                 </div>
               </div>
               <div className="relative py-8 md:py-10 px-2 md:px-6 group border-t md:border-t-0 border-l border-border md:border-l">
@@ -233,7 +217,7 @@ const Prototyping = () => (
         <div className="animate-marquee inline-flex whitespace-nowrap">
           {[...Array(2)].map((_, di) => (
             <span key={di} className="inline-flex whitespace-nowrap">
-              {["DESIGNPROTOTYP","ANSCHAUUNGSMODELL","DESIGNMODELL","KONZEPTMODELL","MEHRFACHFERTIGUNG","FORM & OPTIK","FDM IN-HOUSE","SLA","SLS","CARBON-PA","PA12-SLS","FEINE DETAILS","NDA-FÄHIG","MODELL NACH FOTO","EXPRESS 24H","ZUSTELLUNG OÖ"].map((w, i) => (
+              {["DESIGNPROTOTYP","ANSCHAUUNGSMODELL","DESIGNMODELL","KONZEPTMODELL","MEHRFACHFERTIGUNG","FORM & OPTIK","FDM IN-HOUSE","SLA","CARBON-PA","FEINE DETAILS","NDA-FÄHIG","MODELL NACH FOTO","EXPRESS 24H","ZUSTELLUNG OÖ"].map((w, i) => (
                 <span key={`${di}-${i}`} className="inline-flex items-center gap-6 mx-6 whitespace-nowrap">
                   <span className="mono text-xs font-bold tracking-[0.2em] text-foreground/40 whitespace-nowrap">{w}</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
@@ -334,12 +318,12 @@ const Prototyping = () => (
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <AnimatedSection animation="fade-in" className="mb-16">
-              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Drei Verfahren · Ein Ansprechpartner</p>
-              <h2 className="text-4xl md:text-6xl font-bold tracking-[-0.03em] mb-4">FDM & SLA in-house.<br/><span className="text-gradient">SLS über Partner.</span></h2>
-              <p className="text-muted-foreground max-w-2xl leading-relaxed">Sie kommunizieren mit einem einzigen Ansprechpartner. Wir wählen für jedes Modell das passende Verfahren, kümmern uns um Datenaufbereitung, Qualitätskontrolle und Versand, egal ob auf unseren Druckern oder bei einem Partner gefertigt.</p>
+              <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Zwei Verfahren · Eine Werkstatt</p>
+              <h2 className="text-4xl md:text-6xl font-bold tracking-[-0.03em] mb-4">Zwei Verfahren.<br/><span className="text-gradient">Beide in unserer Werkstatt.</span></h2>
+              <p className="text-muted-foreground max-w-2xl leading-relaxed">FDM und SLA fertigen wir beide in-house in Gunskirchen. Wir wählen für jedes Modell das passende Verfahren und kümmern uns um Datenaufbereitung, Qualitätskontrolle und Versand.</p>
             </AnimatedSection>
 
-            <div className="grid md:grid-cols-3 gap-4">
+            <div className="grid md:grid-cols-2 gap-4">
               {verfahren.map((v, i) => (
                 <AnimatedSection key={v.name} animation="slide-up" delay={i * 100}>
                   <MagneticCard className={`rounded-3xl border-2 h-full transition-all duration-500 ${v.popular ? 'border-primary shadow-xl shadow-primary/10 bg-card' : 'border-border bg-card hover:border-primary/30'}`}>
@@ -377,16 +361,6 @@ const Prototyping = () => (
               ))}
             </div>
 
-            <AnimatedSection animation="fade-in" delay={400}>
-              <div className="mt-8 border-2 border-primary/20 rounded-3xl p-6 bg-primary/[0.02] flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0"><Zap className="w-6 h-6 text-primary" /></div>
-                <div className="text-sm">
-                  <strong className="text-foreground">Hinweis zur Partner-Fertigung:</strong>
-                  <span className="text-muted-foreground"> Bei SLA und SLS arbeiten wir mit ausgewählten Druckereien in Österreich und Deutschland zusammen. Die Auftragsabwicklung, Qualitätskontrolle und Lieferung läuft vollständig über uns – Sie haben einen Ansprechpartner, eine Rechnung, eine NDA. </span>
-                  <Link href="/ratgeber/verfahrens-vergleich" className="text-primary font-semibold hover:underline">Verfahren im Detail →</Link>
-                </div>
-              </div>
-            </AnimatedSection>
           </div>
         </div>
       </section>
@@ -403,19 +377,17 @@ const Prototyping = () => (
 
             <AnimatedSection animation="slide-up">
               <div className="rounded-3xl border-2 border-border overflow-hidden bg-card">
-                <div className="grid grid-cols-4 bg-muted/50 border-b border-border">
+                <div className="grid grid-cols-3 bg-muted/50 border-b border-border">
                   <div className="p-4 md:p-5 mono text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Eigenschaft</div>
                   <div className="p-4 md:p-5 mono text-[10px] font-bold uppercase tracking-wider text-primary border-l border-border">FDM</div>
                   <div className="p-4 md:p-5 mono text-[10px] font-bold uppercase tracking-wider text-muted-foreground border-l border-border">SLA</div>
-                  <div className="p-4 md:p-5 mono text-[10px] font-bold uppercase tracking-wider text-muted-foreground border-l border-border">SLS</div>
-                </div>
+                                  </div>
                 {techSpecs.map((row, i) => (
-                  <div key={row.label} className={`grid grid-cols-4 ${i < techSpecs.length - 1 ? 'border-b border-border/50' : ''}`}>
+                  <div key={row.label} className={`grid grid-cols-3 ${i < techSpecs.length - 1 ? 'border-b border-border/50' : ''}`}>
                     <div className="p-4 md:p-5 text-sm font-semibold text-foreground/90">{row.label}</div>
                     <div className="p-4 md:p-5 text-sm mono text-foreground border-l border-border/50">{row.fdm}</div>
                     <div className="p-4 md:p-5 text-sm mono text-foreground border-l border-border/50">{row.sla}</div>
-                    <div className="p-4 md:p-5 text-sm mono text-foreground border-l border-border/50">{row.sls}</div>
-                  </div>
+                                      </div>
                 ))}
               </div>
               <p className="text-xs text-muted-foreground mt-4 italic">Werte gelten für Standard-Material und kalibrierte Druckparameter. Feinere Oberflächen auf Anfrage durch Postprocessing möglich.</p>
@@ -565,7 +537,7 @@ const Prototyping = () => (
               <div className="space-y-8 text-base leading-[1.85] text-foreground/85">
                 <p>Wer ein neues Produkt entwickelt, kennt die teuersten Fehler: Formen und Proportionen, die am Bildschirm überzeugen, in der Hand aber nicht wirken. Ein Design, das sich erst im Gespräch mit dem Kunden als zu klobig herausstellt. Investorenpräsentationen mit Renderings, die der Realität nicht standhalten. Ein <strong>Designprototyp aus dem 3D-Druck</strong> löst genau diese Probleme: Sie beurteilen Form, Optik und Haptik am echten Objekt.</p>
 
-                <p>Ob <strong>robustes Anschauungsmodell aus Carbon-PA</strong>, <strong>Designmuster aus SLA-Resin</strong> für die Investorenpräsentation, oder eine <strong>SLS-Mehrfachfertigung aus PA12</strong> für den Markttest, wir wählen Verfahren und Material sauber nach Anwendungsziel. <Link href="/ratgeber/prototyping-guide" className="text-primary font-semibold hover:underline">Im Prototyping-Guide</Link> finden Sie eine ausführliche Entscheidungshilfe für Produktentwickler.</p>
+                <p>Ob <strong>robustes Anschauungsmodell aus Carbon-PA</strong>, <strong>Designmuster aus SLA-Resin</strong> für die Investorenpräsentation, wir wählen Verfahren und Material sauber nach Anwendungsziel. <Link href="/ratgeber/prototyping-guide" className="text-primary font-semibold hover:underline">Im Prototyping-Guide</Link> finden Sie eine ausführliche Entscheidungshilfe für Produktentwickler.</p>
 
                 <div className="rounded-3xl bg-muted/50 border border-border/50 p-8 md:p-10 not-prose">
                   <h3 className="font-bold text-xl mb-4 text-foreground">Iteration in Tagen statt Wochen</h3>
@@ -574,7 +546,7 @@ const Prototyping = () => (
 
                 <div>
                   <h3 className="font-bold text-xl mb-3 text-foreground">Detailtreue und Oberfläche</h3>
-                  <p>Die wichtigste Frage bei anspruchsvollen Modellen: wie fein und sauber wird die Oberfläche wirklich? <strong>FDM löst feine Details zuverlässig auf</strong> und ist die richtige Wahl für die meisten Design-Prototypen, Anschauungsmuster und robusten Modelle. <strong>SLA ist das feinste Verfahren</strong> mit besonders glatten, sauber aufgelösten Oberflächen, ideal für Sichtmodelle und Schmuck-Prototypen. SLS liegt dazwischen und punktet mit gleichmäßiger Oberfläche ohne Stützstrukturen. Bei besonders wichtigen Details prüfen wir jedes Modell vor dem Versand und dokumentieren die Ausführung auf Wunsch.</p>
+                  <p>Die wichtigste Frage bei anspruchsvollen Modellen: wie fein und sauber wird die Oberfläche wirklich? <strong>FDM löst feine Details zuverlässig auf</strong> und ist die richtige Wahl für die meisten Design-Prototypen, Anschauungsmuster und robusten Modelle. <strong>SLA ist das feinste Verfahren</strong> mit besonders glatten, sauber aufgelösten Oberflächen, ideal für Sichtmodelle und Schmuck-Prototypen. Bei besonders wichtigen Details prüfen wir jedes Modell vor dem Versand und dokumentieren die Ausführung auf Wunsch.</p>
                 </div>
 
                 <div>
@@ -612,10 +584,6 @@ const Prototyping = () => (
                   <p><strong>Produktentwickler, Industriebetriebe, Designagenturen und Hardware-Startups</strong> aus dem DACH-Raum. Produktentwicklung, Konsumgüter, Elektronik-Design, Medizintechnik, Interior und Industriedesign. B2B-Konditionen unter <Link href="/firmenkunden" className="text-primary font-semibold hover:underline">Firmenkunden</Link>.</p>
                 </div>
 
-                <div>
-                  <h3 className="font-bold text-xl mb-3 text-foreground">MJF & SLS über zertifizierte Partner</h3>
-                  <p>Für besonders anspruchsvolle Modelle mit gleichmäßiger, robuster Oberfläche liefern wir <strong>HP Multi Jet Fusion (MJF)</strong> und <strong>Selective Laser Sintering (SLS)</strong> über zertifizierte Partner aus Deutschland und der Schweiz. PA12, PA12-GF (glasfaserverstärkt) und PA11 (bio-basiert) verfügbar. Stückzahlen ab 1 Stück bis zur Mehrfachfertigung von 500 Stück. <strong>Feine, gleichmäßige Oberflächen</strong>, Finish über Färben (Schwarz, mehrere Farben), Glätten oder Vibrationsschleifen. Lieferzeit MJF/SLS 5-7 Werktage ab Datenfreigabe, Express 3-4 Werktage gegen Aufpreis. Für 80 % aller <strong>Modell-Anwendungen</strong> reicht unser FDM in-house, für besonders feine Oberflächen und größere Auflagen ohne Stützstrukturen nutzen wir die SLS/MJF-Strecke. Die Beratung, welches Verfahren zu welchem Modell passt, ist kostenlos, und wir empfehlen aktiv die günstigere Variante, wenn FDM ausreicht.</p>
-                </div>
               </div>
             </AnimatedSection>
           </div>

@@ -53,15 +53,15 @@ const VerfahrensVergleich = () => {
   const slsAdvantages = ["Keine Stützstrukturen erforderlich", "Hohe mechanische Festigkeit", "Exzellente Oberflächenqualität", "Geeignet für Anschauungsmodelle und hochwertige Einzelstücke"];
   const slsDisadvantages = ["Sehr hohe Anschaffungskosten", "Höherer Energieverbrauch", "Begrenzte Materialauswahl", "Pulverentsorgung und -handhabung komplex"];
   return <>
-      <SEOHead title="FDM vs SLA vs SLS – Welches Verfahren passt? [2026]" description="Falsches Verfahren kostet doppelt. FDM (günstig, robust), SLA (glatt, detailgetreu), SLS (komplex, stark) – Vergleichstabelle und Empfehlung für Ihren konkreten Projekttyp." keywords="fdm vs sla, 3d druckverfahren vergleich, fdm vs sls, sla vs sls, welches 3d druckverfahren, 3d druck verfahren auswählen" path="/ratgeber/verfahrens-vergleich" schemaType="article" datePublished="2025-10-20" dateModified="2026-05-01" />
+      <SEOHead title="FDM oder SLA – Welches Verfahren passt? [2026]" description="Falsches Verfahren kostet doppelt. FDM (günstig, vielseitig) oder SLA (glatt, detailgetreu) – Vergleichstabelle und Empfehlung für Ihren konkreten Projekttyp." keywords="fdm vs sla, 3d druckverfahren vergleich, welches 3d druckverfahren, 3d druck verfahren auswählen" path="/ratgeber/verfahrens-vergleich" schemaType="article" datePublished="2025-10-20" dateModified="2026-05-01" />
       <HowToSchema
         name="Das richtige 3D-Druckverfahren wählen"
         description="So finden Sie das optimale 3D-Druckverfahren für Ihr Projekt."
         totalTime="PT5M"
         steps={[
-          { name: "Anforderungen definieren", text: "Brauchen Sie hohe Detailgenauigkeit (→ SLA), robuste Anschauungsmodelle (→ FDM), oder komplexe Geometrien ohne Stützstrukturen (→ SLS)?" },
-          { name: "Budget bestimmen", text: "FDM: günstigste Option (Material ab €20/kg). SLA: mittlere Kosten (Resin ab €100/L). SLS: höchste Kosten (Pulver ab €60/kg + teure Maschinen)." },
-          { name: "Oberfläche bewerten", text: "Glatte Oberfläche nötig? → SLA. Sichtbare Schichten akzeptabel? → FDM (nachbearbeitbar). Leicht körnig OK? → SLS." },
+          { name: "Anforderungen definieren", text: "Brauchen Sie hohe Detailgenauigkeit und besonders glatte Oberflächen (→ SLA) oder robuste, wirtschaftliche Anschauungsmodelle (→ FDM)?" },
+          { name: "Budget bestimmen", text: "FDM ist die günstigste Option (Material ab €20/kg), SLA liegt bei mittleren Kosten (Resin ab €100/L) und liefert dafür die feinste Oberfläche." },
+          { name: "Oberfläche bewerten", text: "Glatte Oberfläche ab Druck nötig? → SLA. Sichtbare Schichten akzeptabel oder Nachbearbeitung geplant? → FDM." },
           { name: "Anbieter kontaktieren", text: "Für Anschauungsmodelle, Messemodelle und Architekturmodelle ist FDM die wirtschaftlichste Wahl. Kontaktieren Sie uns für ein kostenloses Angebot." }
         ]}
       />
@@ -96,7 +96,7 @@ const VerfahrensVergleich = () => {
               </div>
 
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-                FDM vs. SLA vs. SLS: Welches 3D-Druckverfahren ist das richtige?
+                FDM oder SLA: Welches 3D-Druckverfahren ist das richtige?
               </h1>
 
               <div className="flex items-center gap-4 text-sm text-muted-foreground mb-8">
@@ -106,7 +106,7 @@ const VerfahrensVergleich = () => {
               </div>
 
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Die Wahl des richtigen 3D-Druckverfahrens entscheidet über Erfolg oder Misserfolg Ihres Projekts. In diesem wissenschaftlich fundierten Vergleich erklären wir die technischen Unterschiede zwischen FDM, SLA und SLS und helfen Ihnen, die optimale Technologie für Ihre Anforderungen zu finden.
+                Die Wahl des richtigen 3D-Druckverfahrens entscheidet über Erfolg oder Misserfolg Ihres Projekts. In diesem fundierten Vergleich erklären wir die technischen Unterschiede zwischen FDM und SLA – die beiden Verfahren, die wir in unserer Werkstatt in Gunskirchen selbst fertigen – und helfen Ihnen, die passende Technologie für Ihre Anforderungen zu finden.
               </p>
             </div>
 
@@ -117,7 +117,7 @@ const VerfahrensVergleich = () => {
                 Additive Fertigung, allgemein als 3D-Druck bekannt, beschreibt Verfahren, bei denen dreidimensionale Objekte durch schichtweises Auftragen von Material erstellt werden. Im Gegensatz zu subtraktiven Fertigungsverfahren wie Fräsen oder Drehen wird Material gezielt hinzugefügt statt abgetragen, was Materialverschwendung reduziert und komplexe Geometrien ermöglicht.
               </p>
               <p className="text-muted-foreground mb-6">
-                Die drei verbreitetsten Technologien – FDM (Fused Deposition Modeling), SLA (Stereolithography) und SLS (Selective Laser Sintering) – nutzen unterschiedliche Materialien und physikalische Prozesse, was zu erheblichen Unterschieden in Detailgenauigkeit, mechanischer Festigkeit und Kosten führt.
+                Die beiden verbreitetsten Technologien für Modelle und Prototypen – FDM (Fused Deposition Modeling) und SLA (Stereolithography) – nutzen unterschiedliche Materialien und physikalische Prozesse, was zu deutlichen Unterschieden in Detailgrad, Oberfläche und Kosten führt.
               </p>
             </section>
 
@@ -131,15 +131,13 @@ const VerfahrensVergleich = () => {
                       <TableHead className="font-bold">Kriterium</TableHead>
                       <TableHead className="font-bold">FDM</TableHead>
                       <TableHead className="font-bold">SLA</TableHead>
-                      <TableHead className="font-bold">SLS</TableHead>
-                    </TableRow>
+                                          </TableRow>
                   </TableHeader>
                   <TableBody>
                     {comparisonData.map((row, index) => <TableRow key={index}>
                         <TableCell className="font-medium">{row.aspect}</TableCell>
                         <TableCell>{row.fdm}</TableCell>
                         <TableCell>{row.sla}</TableCell>
-                        <TableCell>{row.sls}</TableCell>
                       </TableRow>)}
                   </TableBody>
                 </Table>
@@ -248,56 +246,6 @@ const VerfahrensVergleich = () => {
               </div>
             </section>
 
-            {/* SLS Section */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold mb-6 text-foreground">SLS (Selective Laser Sintering)</h2>
-              
-              <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4 text-foreground">Wie funktioniert SLS?</h3>
-                <p className="text-muted-foreground mb-4">
-                  SLS verwendet einen Hochleistungslaser, um Pulverpartikel (meist Nylon/Polyamid) selektiv zu verschmelzen. Eine dünne Pulverschicht wird auf der Bauplattform verteilt, der Laser sintert das Material nach dem digitalen Modell, dann wird eine neue Pulverschicht aufgetragen.
-                </p>
-                <p className="text-muted-foreground mb-4">
-                  <strong>Wissenschaftlicher Hintergrund:</strong> Der Sinterprozess erhitzt das Pulver knapp unter den Schmelzpunkt (ca. 170-180°C bei PA12), wodurch Partikeloberflächen verschmelzen ohne vollständig zu schmelzen. Dies ermöglicht hohe Festigkeit bei geringem Verzug.
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <Award className="w-5 h-5 text-primary" />
-                      Vorteile von SLS
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2">
-                      {slsAdvantages.map((adv, i) => <li key={i} className="flex items-start gap-2">
-                          <span className="text-primary mt-1">✓</span>
-                          <span className="text-muted-foreground">{adv}</span>
-                        </li>)}
-                    </ul>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <AlertCircle className="w-5 h-5 text-primary" />
-                      Nachteile von SLS
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2">
-                      {slsDisadvantages.map((dis, i) => <li key={i} className="flex items-start gap-2">
-                          <span className="text-muted-foreground mt-1">−</span>
-                          <span className="text-muted-foreground">{dis}</span>
-                        </li>)}
-                    </ul>
-                  </CardContent>
-                </Card>
-              </div>
-            </section>
 
             {/* Decision Guide */}
             <section className="mb-16">
@@ -331,18 +279,6 @@ const VerfahrensVergleich = () => {
                   </CardContent>
                 </Card>
 
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="text-xl">Wählen Sie SLS wenn...</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-2 text-muted-foreground">
-                    <p>✓ Höchste mechanische Festigkeit erforderlich ist</p>
-                    <p>✓ Keine Stützstrukturen gewünscht sind</p>
-                    <p>✓ Besonders detaillierte Modelle gefertigt werden</p>
-                    <p>✓ Budget für professionelle Fertigung vorhanden ist</p>
-                    <p className="pt-4 font-semibold text-foreground">Beispiele: Hochwertige Architekturmodelle, detaillierte Messeexponate, komplexe Designobjekte</p>
-                  </CardContent>
-                </Card>
               </div>
             </section>
 

@@ -51,7 +51,7 @@ const PrototypingROISection = () => (
                 )
               )}
             </div>
-            <p className="text-sm text-background/60 text-center max-w-3xl mx-auto">Drei FDM-Iterationen à €120, eine SLS-Mehrfachfertigung à 30 Stück. Das Design ist am Modell geprüft, bevor die Produktion startet. Bei aufwändigen Produkten: <strong className="text-primary">ROI schon nach einer einzigen vermiedenen Produktionsänderung</strong>.</p>
+            <p className="text-sm text-background/60 text-center max-w-3xl mx-auto">Drei FDM-Iterationen à €120, dann eine Mehrfachfertigung à 30 Stück. Das Design ist am Modell geprüft, bevor die Produktion startet. Bei aufwändigen Produkten: <strong className="text-primary">ROI schon nach einer einzigen vermiedenen Produktionsänderung</strong>.</p>
           </div>
         </AnimatedSection>
       </div>

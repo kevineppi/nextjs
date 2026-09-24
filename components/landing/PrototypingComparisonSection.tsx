@@ -49,7 +49,7 @@ const alternatives = [
 const winner = {
   name: "3D-Druck Prototyp",
   icon: "🎯",
-  sub: "ekdruck · FDM, SLA, SLS",
+  sub: "ekdruck · FDM & SLA",
   price: "ab €20",
   priceSub: "Express 24h · Festpreis",
   items: [

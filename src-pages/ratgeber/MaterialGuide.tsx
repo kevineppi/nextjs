@@ -432,7 +432,7 @@ const MaterialGuide = () => {
                 <Card className="hover:shadow-lg transition-shadow">
                   <CardHeader>
                     <CardTitle className="text-lg">Verfahrensvergleich</CardTitle>
-                    <CardDescription>FDM vs. SLA vs. SLS</CardDescription>
+                    <CardDescription>FDM vs. SLA</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <Button asChild variant="link" className="p-0">

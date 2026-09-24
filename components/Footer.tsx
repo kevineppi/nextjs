@@ -65,7 +65,7 @@ const BRANCHEN_GUIDES = [
 ];
 
 const WEITERE_GUIDES = [
-  { href: "/ratgeber/verfahrens-vergleich", label: "FDM vs SLA vs SLS" },
+  { href: "/ratgeber/verfahrens-vergleich", label: "FDM oder SLA?" },
   { href: "/ratgeber/fdm-material-vergleich", label: "FDM-Material-Vergleich" },
   { href: "/ratgeber/architekturmodell-flatrate", label: "Flatrate-Guide für Büros" },
 ];

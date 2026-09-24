@@ -151,7 +151,7 @@ const Ratgeber = () => {
       date: "März 2026"
     },
     {
-      title: "FDM vs. SLA vs. SLS: Welches 3D-Druckverfahren ist das richtige?",
+      title: "FDM oder SLA: Welches 3D-Druckverfahren ist das richtige?",
       description: "Wissenschaftlich fundierter Vergleich der drei wichtigsten 3D-Druckverfahren. Genauigkeit, Kosten, Anwendungen und technische Details im direkten Vergleich.",
       link: "/ratgeber/verfahrens-vergleich",
       icon: Award,
