@@ -462,12 +462,12 @@ export const cases: RealCase[] = [
     year: 2026,
     status: 'ongoing',
 
-    metaTitle: 'Case: Messemodell statt Großgerät · kleinere Stände, kein Sperrguttransport',
-    metaDescription: 'Ein Stalltechnik-Hersteller zeigt seine Geräte als 3D-gedruckte Modelle: kleinere Messestände, kein Sperrguttransport, vier Modelle für Showroom, Messen und Kundentermine.',
-    primaryKeyword: 'Messemodell statt Maschine Transport',
+    metaTitle: 'Case: Messemodell statt Großgerät · Beispielrechnung: rund 6.000 € je Messe gespart',
+    metaDescription: 'Ein Stalltechnik-Hersteller zeigt seine Geräte als 3D-gedruckte Modelle statt als Originale: 8 m² kleinere Stände, Paket statt Spedition. Die Beispielrechnung mit AUMA-Richtwerten und echten Messetarifen ergibt rund 6.000 bis 7.600 € weniger pro Messe · bei einmalig ab €500 pro Modell.',
+    primaryKeyword: 'Messemodell statt Maschine Transport Kosten',
 
     challenge:
-      'Die Geräte des Herstellers sind zu groß und zu schwer, um sie zu jeder Messe zu bringen: Sperrguttransport, aufwendiger Aufbau und eine Standfläche, die das Gerät überhaupt erst aufnehmen kann. Gesucht war ein Weg, die Produkte zu zeigen, ohne die Geräte selbst zu bewegen.',
+      'Die Geräte des Herstellers sind zu groß und zu schwer, um sie zu jeder Messe zu bringen: Spedition statt Paketdienst, Staplertermine, ein Aufbau-Team und eine Standfläche, die das Gerät samt Rangier- und Sicherheitsabstand überhaupt erst aufnehmen kann. Das Gerät diktiert damit die Standgröße · und die Standgröße diktiert das Messebudget: Nach dem Branchenrichtwert des Messeverbands AUMA kostet ein Messeauftritt im Schnitt 750 bis 950 € je Quadratmeter Standfläche, alles eingerechnet. Gesucht war ein Weg, die Produkte zu zeigen, ohne die Geräte selbst zu bewegen.',
 
     approach: [
       {
@@ -476,10 +476,10 @@ export const cases: RealCase[] = [
       },
       {
         label: 'Für den Dauereinsatz gebaut',
-        detail: 'Das Modell ist für den wiederholten Einsatz ausgelegt: Messen, Showroom, Kundentermine · einpacken, mitnehmen, aufstellen.',
+        detail: 'Das Modell ist für den wiederholten Einsatz ausgelegt: Messen, Showroom, Kundentermine · einpacken, mitnehmen, aufstellen. Die Logistik-Ersparnis fällt damit nicht einmal an, sondern bei jedem einzelnen Auftritt neu.',
       },
       {
-        label: 'Vom Einzelstück zur Serie an Einsatzorten',
+        label: 'Vom ersten Modell zum Programm',
         detail: 'Nach dem ersten Modell entschied der Kunde, das Prinzip auszurollen: insgesamt vier Modelle sind in Planung · für Showroom, Messen und wichtige Kunden.',
       },
     ],
@@ -487,26 +487,28 @@ export const cases: RealCase[] = [
     technicalSpecs: [
       { label: 'Einsatz', value: 'Messen, Showroom, Kundenpräsentationen' },
       { label: 'Umfang', value: '4 Modelle in Planung (laufende Zusammenarbeit)' },
-      { label: 'Modellpreis', value: 'ab rund €500 pro Modell' },
-      { label: 'Transport', value: 'Paket statt Sperrgut' },
+      { label: 'Modellpreis', value: 'einmalig ab rund €500 pro Modell' },
+      { label: 'Ersparnis je Messe', value: 'rechnerisch €6.000 bis €7.600 (Beispielrechnung unten)' },
+      { label: 'Transport', value: 'Paket statt Spedition' },
     ],
 
     outcome:
-      'Das erste Modell war laut Kunde ein voller Erfolg · so überzeugend, dass insgesamt vier Modelle in Planung sind. Der für die Entscheidung wesentliche Punkt: Der Hersteller kann jetzt kleinere Messestände buchen, weil keine sperrigen Geräte mehr transportiert und aufgebaut werden müssen · die Produkte werden am Modell demonstriert.',
+      'Das erste Modell war laut Kunde ein voller Erfolg · so überzeugend, dass insgesamt vier Modelle in Planung sind. Der für die Entscheidung wesentliche Punkt: Der Hersteller kann jetzt deutlich kleinere Messestände buchen, weil keine sperrigen Geräte mehr transportiert und aufgebaut werden müssen. Was das in Euro heißt, steht in der Beispielrechnung unten: Schon 8 m² weniger Standfläche sind nach AUMA-Richtwert 6.000 bis 7.600 € weniger Messebudget · pro Messe, Jahr für Jahr. Das Modell kostet einmalig ab rund €500.',
 
     costComparison: {
-      title: 'Was der Umstieg rechnerisch bedeutet',
-      intro: 'Die Gegenüberstellung zeigt, wo ein Messemodell gegenüber dem Originalgerät ansetzt · Posten für Posten:',
-      colA: 'Großgerät am Stand',
-      colB: 'Modell am Stand',
+      title: 'Die Beispielrechnung: 20 m² Stand gegen 12 m² Stand',
+      intro: 'Gerechnet mit veröffentlichten Zahlen statt Behauptungen: dem Hallentarif der agraria Messe Wels (57,50 € je m² Platzmiete bis 30 m², netto) und dem AUMA-Richtwert für die vollen Kosten einer Messebeteiligung (750 bis 950 € je m² · inklusive Standbau, Personal, Reise und Logistik). Angenommen: Das Gerät braucht mit Rangier- und Sicherheitsfläche einen 20-m²-Stand, das Modell auf dem Sockel kommt mit 12 m² aus.',
+      colA: 'Großgerät am Stand (20 m²)',
+      colB: 'Modell am Stand (12 m²)',
       rows: [
-        { posten: 'Standfläche', a: 'muss das Gerät aufnehmen, plus Rangier- und Sicherheitsfläche', b: 'ein Tisch oder Sockel genügt · kleinere Standkategorie buchbar' },
-        { posten: 'Transport', a: 'Sperrgut oder Spedition, je Messe neu', b: 'Paket oder Kofferraum, von einer Person getragen' },
-        { posten: 'Auf- und Abbau', a: 'Team, Zeitfenster, teils Hebetechnik', b: 'aufstellen und fertig · Minuten statt Stunden' },
+        { posten: 'Platzmiete (agraria-Hallentarif, 57,50 €/m²)', a: '€1.150 netto', b: '€690 netto · €460 weniger, jede Messe' },
+        { posten: 'Messebudget gesamt (AUMA-Richtwert, 750 bis 950 €/m²)', a: '€15.000 bis €19.000', b: '€9.000 bis €11.400 · €6.000 bis €7.600 weniger' },
+        { posten: 'Transport', a: 'Spedition mit Staplertermin, je Messe neu', b: 'Paket ab rund €10 oder im Kofferraum, von einer Person getragen' },
+        { posten: 'Auf- und Abbau', a: 'Team, Zeitfenster, teils Hebetechnik', b: 'hinstellen, fertig · Minuten statt Stunden' },
         { posten: 'Risiko', a: 'Transportschäden am Originalgerät', b: 'Modell ist ersetzbar, Nachdruck möglich' },
-        { posten: 'Wiedereinsatz', a: 'jede Messe verursacht die Logistik erneut', b: 'dasselbe Modell über viele Messen, Showroom inklusive' },
+        { posten: 'Einmalkosten', a: 'keine', b: 'Modell ab rund €500 · wiederverwendbar über Jahre' },
       ],
-      fazit: 'Beispielrechnung mit typischen Annahmen, mit Ihren eigenen Zahlen nachrechenbar: Spart das Modell nur 10 m² Standfläche, sind das bei marktüblichen Quadratmeterpreisen von Fachmessen schnell vierstellige Beträge pro Messe · noch ohne Spedition, Aufbau-Team und Zeitaufwand. Ein Modell ab rund €500 hat sich damit oft schon beim ersten Einsatz bezahlt gemacht.',
+      fazit: 'Quellen: Platzmietentarif der agraria Messe Wels (Halle bis 30 m², zuletzt veröffentlichter Tarif, netto) und AUMA-Durchschnittskosten einer Messebeteiligung (750 bis 950 € je m²). Der AUMA-Wert ist ein Richtwert über alle Kostenarten, einzelne Posten wie Personal schrumpfen nicht 1:1 mit der Fläche · die Größenordnung bleibt: Das Modell hat sich rechnerisch beim ersten Auftritt bezahlt gemacht, ab der zweiten Messe ist es reine Ersparnis. Rechnen Sie mit Ihren eigenen Standkosten nach.',
     },
   },
   {
