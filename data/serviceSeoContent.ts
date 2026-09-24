@@ -205,7 +205,7 @@ const prototyping: ServiceSeoContent = {
     {
       question: 'Können Sie Mehrfachfertigung (10-100 Stück) übernehmen?',
       answer:
-        'Ja. Mehrfachfertigung bis 500 Stück über parallelisiertes Drucker-Setup. Ab 10 Stück 5 % Rabatt, ab 50 Stück 8 %, ab 100 Stück 10 %. Druckbett-Optimierung ermöglicht oft zusätzliche Kostenvorteile bei größeren Stückzahlen.',
+        'Ja. Mehrfachfertigung bis rund 1.000 Stück über parallelisiertes Drucker-Setup (Referenz: 1.000 Stück für Generali). Ab 10 Stück 5 % Rabatt, ab 50 Stück 8 %, ab 100 Stück 10 %. Druckbett-Optimierung ermöglicht oft zusätzliche Kostenvorteile bei größeren Stückzahlen.',
     },
     {
       question: 'Was ist DfAM-Beratung?',

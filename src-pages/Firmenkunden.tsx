@@ -242,6 +242,10 @@ const Firmenkunden = () => {
 
   const faqs = [
     {
+      question: "Kann ich beim 3D-Druck auch kleinere Stückzahlen bestellen?",
+      answer: "Ja, das ist unser Kerngeschäft: Mehrfachfertigung von 5 bis rund 1.000 Stück, ohne Werkzeugkosten und ohne Mindestmenge. Referenz: 1.000 Keksausstecher mit Firmenlogo für die Generali-Weihnachtsaktion, termingerecht geliefert. Ab 10 Stück gibt es 5 % Mengenrabatt, ab 50 Stück 8 %, ab 100 Stück 10 %. Erst bei Stückzahlen deutlich über 1.000 wird Spritzguss wirtschaftlicher, dann sagen wir das ehrlich."
+    },
+    {
       question: "Gibt es Mengenrabatte für Unternehmen?",
       answer: "Ja! Ab 10 identischen Teilen erhalten Sie 5% Rabatt, ab 20 Stück 10%, ab 50 Stück bis zu 20%. Bei regelmäßigen Aufträgen sind individuelle Rahmenverträge mit besonderen Konditionen möglich. Der Rabatt wird automatisch im Konfigurator angezeigt."
     },
@@ -675,7 +679,7 @@ const Firmenkunden = () => {
 
               <h3 className="text-2xl md:text-3xl font-bold mt-12 mb-5 tracking-[-0.02em]">Mehrfachfertigung 5-500 Stück: wann FDM, wann Spritzguss</h3>
               <div className="prose prose-lg max-w-none text-foreground/85">
-                <p>Bei <strong>Mehrfachfertigung</strong> hängt das wirtschaftliche Verfahren von Stückzahl und Geometrie ab. <strong>FDM in-house</strong> ist die Standard-Wahl bis etwa 500 Stück: wir fertigen mehrere Objekte parallel, die Stückkosten bleiben konstant. Ab <strong>1.000-5.000 Stück</strong> wird klassischer <strong>Spritzguss</strong> wirtschaftlich, dann verweisen wir ehrlich an einen Spritzgießer und übernehmen optional die Urmodell-Fertigung. Diese Schwellen sind in Realität fließend, wir kalkulieren beide Verfahren und legen Ihnen den Vergleich offen, damit Sie die Entscheidung treffen können.</p>
+                <p>Bei <strong>Mehrfachfertigung</strong> hängt das wirtschaftliche Verfahren von Stückzahl und Geometrie ab. <strong>FDM in-house</strong> ist die Standard-Wahl bis rund 1.000 Stück: wir fertigen mehrere Objekte parallel, die Stückkosten bleiben konstant (Referenz: 1.000 Logo-Keksausstecher für Generali). Ab <strong>1.000-5.000 Stück</strong> wird klassischer <strong>Spritzguss</strong> wirtschaftlich, dann verweisen wir ehrlich an einen Spritzgießer und übernehmen optional die Urmodell-Fertigung. Diese Schwellen sind in Realität fließend, wir kalkulieren beide Verfahren und legen Ihnen den Vergleich offen, damit Sie die Entscheidung treffen können.</p>
 
                 <p>Für viele <strong>Innovation-Projekte und Vorab-Musterdrucke</strong> sind 20-100 Stück aus dem FDM-Druck genau richtig: schnelle Iteration, niedriges Risiko, keine Tool-Investition. Wenn das Produkt sich bewährt, geht es in Spritzguss; wenn nicht, ist nur ein Bruchteil des Geldes weg.</p>
               </div>
