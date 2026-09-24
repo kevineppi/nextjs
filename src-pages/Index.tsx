@@ -359,7 +359,7 @@ const Index = () => {
               <AnimatedSection animation="slide-up" delay={0.2}>
                 <h3 className="text-2xl md:text-3xl font-bold mb-5 tracking-[-0.02em]">Acht Materialien für jeden Einsatz.</h3>
                 <p className="text-base leading-[1.85] text-foreground/85 mb-4">
-                  <strong>PLA</strong> für Anschauungsmodelle, <strong>PETG</strong> für robuste Gebrauchsmodelle, <strong>ASA</strong> für UV-beständige Außenanwendungen, <strong>ABS</strong> mit Aceton-Glättung für Spritzguss-Optik, <strong>TPU</strong> für flexible, biegbare Elemente, <strong>PETG-CF</strong> und <strong>PA-CF</strong> mit Carbonfaser für besonders robuste Modelle sowie <strong>SLA-Resin</strong> für hochfeine Detailmodelle und Schmuckguss (Resin-Fertigung über unseren Partner).
+                  <strong>PLA</strong> für Anschauungsmodelle, <strong>PETG</strong> für robuste Gebrauchsmodelle, <strong>ASA</strong> für UV-beständige Außenanwendungen, <strong>ABS</strong> mit Aceton-Glättung für Spritzguss-Optik, <strong>TPU</strong> für flexible, biegbare Elemente, <strong>PETG-CF</strong> und <strong>PA-CF</strong> mit Carbonfaser für besonders robuste Modelle sowie <strong>SLA-Resin</strong> für hochfeine Detailmodelle und Schmuckguss.
                 </p>
                 <p className="text-base leading-[1.85] text-foreground/85">
                   Welches Material wann, ehrlich beraten statt verkauft. Wenn ein Wunsch nicht zum Modell passt, weisen wir vor dem Auftrag auf die bessere Alternative hin. Der <Link href="/3d-druck-materialien" className="text-primary hover:underline font-semibold">Detailvergleich aller Materialien</Link> zeigt Festigkeit, Temperaturverhalten und Preis pro Gramm.

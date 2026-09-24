@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 const SERVICE_LD = serviceSchema({
   serviceType: 'Designprototyp & Anschauungsmodell 3D-Druck',
   description:
-    'Designprototypen und Anschauungsmodelle fürs Produktdesign aus dem 3D-Druck. Fokus auf Form, Optik, Haptik und Ergonomie, Modelle zum Anfassen und Zeigen. FDM in-house, SLA und SLS über Partner. Ab 1 Stück, Festpreis-Angebot in 6h, Express in 24h. Aus Gunskirchen, OÖ in ganz DACH.',
+    'Designprototypen und Anschauungsmodelle fürs Produktdesign aus dem 3D-Druck. Fokus auf Form, Optik, Haptik und Ergonomie, Modelle zum Anfassen und Zeigen. FDM und SLA in-house. Ab 1 Stück, Festpreis-Angebot in 6h, Express in 24h. Aus Gunskirchen, OÖ in ganz DACH.',
   url: 'https://www.ek-druck.at/prototyping',
   lowPrice: '20',
   highPrice: '3000',
