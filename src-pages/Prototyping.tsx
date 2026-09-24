@@ -55,10 +55,10 @@ const verfahren = [
   },
   {
     name: "SLA",
-    typ: "Partner",
+    typ: "In-House",
     typColor: "bg-secondary/10 text-secondary",
     untertitel: "Stereolithographie · Resin",
-    text: "Höchste Detailauflösung für Designprototypen und Modelle mit anspruchsvollen Oberflächen. Glatt, sauber aufgelöst, besonders feine Optik. Über eingespielte Partner-Druckereien, eine Rechnung, ein Ansprechpartner.",
+    text: "Höchste Detailauflösung für Designprototypen und Modelle mit anspruchsvollen Oberflächen. Glatt, sauber aufgelöst, besonders feine Optik. Gefertigt in unserer eigenen Werkstatt in Gunskirchen.",
     ideal: "Designmuster · Sichtmodelle · Schmuck · Demonstrationsmodelle",
     features: [
       { label: "Schichtstärke", value: "0,025 – 0,1 mm" },
@@ -117,10 +117,10 @@ const faqs = [
   { question: "Was ist der Unterschied zwischen Designprototyp und Anschauungsmodell?", answer: "Ein Designprototyp begleitet die Entwicklung: Sie prüfen und verändern Form und Optik über mehrere Iterationen. Ein Anschauungsmodell ist das fertig ausgearbeitete Modell zum Zeigen, für Pitch, Investoren, Messe oder Kundengespräch, mit sauberer Oberfläche und finaler Optik. Beides drucken wir aus dem gleichen Workflow, ab 1 Stück." },
   { question: "Kann man ein Modell nach Skizze oder Foto machen lassen?", answer: "Ja. Kein 3D-Modell vorhanden? Wir modellieren Ihr Objekt am Rechner nach Skizze, Foto oder Zeichnung und drucken es anschließend als Designprototyp oder Anschauungsmodell. Modellieren ab €120, danach greift der normale Druckpreis ab €20. Auf Wunsch stimmen wir Form und Details vor dem Druck mit Ihnen ab." },
   { question: "Was kostet ein 3D-gedruckter Prototyp?", answer: "Einfache Designprototypen starten ab €20, robuste Modelle aus Carbon-PA oder SLS PA12 ab €60–120. Sie erhalten innerhalb von 6 Stunden ein verbindliches Festpreisangebot – kostenlos und unverbindlich, mit Materialempfehlung und Lieferdatum. Ab dem 5. Auftrag pro Quartal erhalten Stammkunden automatisch 10% Rabatt." },
-  { question: "Wie schnell ist mein Prototyp lieferbar?", answer: "FDM-Prototypen in 1–5 Werktagen, Express-Fertigung in 24h möglich (+50% Aufpreis). SLA über Partner in 5–7 Werktagen, SLS in 7–10 Werktagen. Bei dringenden Projekten rufen Sie an: +43 676 5517197 – wir reservieren einen Express-Slot direkt am Telefon." },
+  { question: "Wie schnell ist mein Prototyp lieferbar?", answer: "FDM-Prototypen in 1–5 Werktagen, Express-Fertigung in 24h möglich (+50% Aufpreis). SLA in 5–7 Werktagen, SLS über Partner in 7–10 Werktagen. Bei dringenden Projekten rufen Sie an: +43 676 5517197 – wir reservieren einen Express-Slot direkt am Telefon." },
   { question: "Wie fein und detailtreu wird mein Modell?", answer: "FDM löst feine Details sauber auf und eignet sich für die meisten Design-Prototypen und Anschauungsmodelle. SLA ist das feinste Verfahren mit besonders glatten Oberflächen, ideal für Sichtmodelle und Schmuck-Prototypen. SLS liegt dazwischen und punktet mit gleichmäßiger Oberfläche ohne Stützstrukturen. Bei besonders wichtigen Details prüfen wir jedes Modell vor dem Versand und dokumentieren die Ausführung auf Wunsch." },
   { question: "Welche 3D-Druck Verfahren bietet ihr an?", answer: "FDM (Fused Deposition Modeling) führen wir direkt in unserer Werkstatt in Gunskirchen aus – kurze Reaktionszeit, Express in 24h möglich. SLA (Stereolithographie für hochauflösende Resin-Drucke) und SLS (Selective Laser Sintering für lasersinternde Pulver-Drucke) bieten wir über eingespielte Partner-Druckereien an. Die gesamte Abwicklung läuft über uns – ein Ansprechpartner, eine Rechnung, eine NDA." },
-  { question: "Welche Materialien sind verfügbar?", answer: "Im FDM-Verfahren: PLA, PLA+, PETG, PETG transparent, ABS, ASA, TPU flexibel, Carbon-PA. Im SLA-Verfahren über Partner: Standard-Resin, ABS-like Resin, Tough Resin, Flexible Resin, biokompatible Resine. Im SLS-Verfahren über Partner: PA12, PA11, glasgefülltes PA, TPU-Pulver. Auf Wunsch auch metallisch beschichtete Oberflächen." },
+  { question: "Welche Materialien sind verfügbar?", answer: "Im FDM-Verfahren: PLA, PLA+, PETG, PETG transparent, ABS, ASA, TPU flexibel, Carbon-PA. Im SLA-Verfahren: Standard-, Tough- und Flexible-Resin, weitere Spezial-Resine auf Anfrage. Im SLS-Verfahren über Partner: PA12, PA11, glasgefülltes PA, TPU-Pulver. Auf Wunsch auch metallisch beschichtete Oberflächen." },
   { question: "Gibt es eine Mindestbestellmenge?", answer: "Nein. Einzelstücke ohne Aufpreis, transparente Kalkulation ab Stückzahl 1. Mengenrabatte ab 5 Stück, attraktive Konditionen für Mehrfachfertigung ab 20 Stück. Ab 5 Aufträgen pro Quartal werden Sie automatisch Stammkunde mit 10% Rabatt." },
   { question: "Welche Dateiformate werden akzeptiert?", answer: "STL, STEP, IGES, 3MF, OBJ und alle gängigen CAD-Formate aus SolidWorks, Fusion 360, Inventor, Rhino, CATIA, NX, Creo oder OnShape. Kein 3D-Modell vorhanden? Wir modellieren Ihr Objekt nach Skizze, Foto oder Zeichnung – ab €120." },
   { question: "Wie ist die Vertraulichkeit bei Entwicklungsprojekten geregelt?", answer: "Auf Wunsch unterzeichnen wir eine NDA, bevor Daten ausgetauscht werden. Direkte Kommunikation mit dem Inhaber ohne Zwischeninstanzen. Keine Weitergabe an Subunternehmer ohne Ihre ausdrückliche Zustimmung. Datenarchivierung nach Projektabschluss optional – auf Wunsch löschen wir CAD-Daten sofort nach Lieferung." },
@@ -137,13 +137,13 @@ const Prototyping = () => (
   <>
     <SEOHead
       title="Designprototyp & Anschauungsmodell aus dem 3D-Druck | Österreich | ekdruck"
-      description="Designprototypen und Anschauungsmodelle fürs Produktdesign aus dem 3D-Druck. Form, Optik, Haptik. FDM in-house, SLA/SLS über Partner. Express 24h · ab 1 Stück · ★5,0 (35 Bewertungen)"
+      description="Designprototypen und Anschauungsmodelle fürs Produktdesign aus dem 3D-Druck. Form, Optik, Haptik. FDM und SLA in-house. Express 24h · ab 1 Stück · ★5,0 (35 Bewertungen)"
       keywords="designprototyp, anschauungsmodell produktdesign, designmodell, konzeptmodell, anschauungsmodell, designmuster, modell nach foto, modell nach skizze, formmodell, feinmodell, produktdesign modell, prototyp drucken lassen, 3d druck modell, designprototyp österreich, anschauungsmodell österreich, designmodell wien, designprototyp linz, prototyp gunskirchen, mehrfachfertigung 3d druck, fdm modell, sla modell, sls modell, design-review modell, ergonomie modell, investoren modell, messemodell design, prototyp ohne mindestmenge, prototyp 24 stunden, nda 3d druck, hardware startup modell"
       path="/prototyping"
     />
     <ProductOfferSchema
       name="Designprototyp & Anschauungsmodell aus dem 3D-Druck"
-      description="3D-gedruckte Designprototypen, Anschauungsmodelle und Mehrfachfertigung fürs Produktdesign. FDM in-house, SLA/SLS über Partner. Angebot in 6h, Express in 24h. Form, Optik und Haptik am echten Objekt."
+      description="3D-gedruckte Designprototypen, Anschauungsmodelle und Mehrfachfertigung fürs Produktdesign. FDM und SLA in-house, SLS über Partner. Angebot in 6h, Express in 24h. Form, Optik und Haptik am echten Objekt."
       url="https://www.ek-druck.at/prototyping"
       lowPrice="20"
       highPrice="2500"
@@ -335,7 +335,7 @@ const Prototyping = () => (
           <div className="max-w-7xl mx-auto">
             <AnimatedSection animation="fade-in" className="mb-16">
               <p className="mono text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4">Drei Verfahren · Ein Ansprechpartner</p>
-              <h2 className="text-4xl md:text-6xl font-bold tracking-[-0.03em] mb-4">FDM in-house.<br/><span className="text-gradient">SLA & SLS über Partner.</span></h2>
+              <h2 className="text-4xl md:text-6xl font-bold tracking-[-0.03em] mb-4">FDM & SLA in-house.<br/><span className="text-gradient">SLS über Partner.</span></h2>
               <p className="text-muted-foreground max-w-2xl leading-relaxed">Sie kommunizieren mit einem einzigen Ansprechpartner. Wir wählen für jedes Modell das passende Verfahren, kümmern uns um Datenaufbereitung, Qualitätskontrolle und Versand, egal ob auf unseren Druckern oder bei einem Partner gefertigt.</p>
             </AnimatedSection>
 
