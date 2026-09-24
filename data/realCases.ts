@@ -62,6 +62,12 @@ export interface RealCase {
     colB: string // Spaltentitel rechts, z. B. "Modell am Stand"
     rows: { posten: string; a: string; b: string }[]
     fazit: string // klar gelabelte Beispielrechnung
+    /** Große Stat-Kacheln über den Charts (CostComparisonShowcase) */
+    stats?: { value: string; label: string; sub?: string }[]
+    /** Budget-Balkenvergleich: min/max je Szenario, highlight = Modell-Balken */
+    budgetBars?: { label: string; min: number; max: number; highlight?: boolean }[]
+    /** Amortisationskurve: kumulierte Ersparnis (konservativ) je Messe */
+    amortisation?: { perMesse: number; einmalkosten: number; messen: number; note: string }
   }
 
   // Optional echte Projektfotos + Fotocredit
@@ -493,7 +499,7 @@ export const cases: RealCase[] = [
     ],
 
     outcome:
-      'Das erste Modell war laut Kunde ein voller Erfolg · so überzeugend, dass insgesamt vier Modelle in Planung sind. Der für die Entscheidung wesentliche Punkt: Der Hersteller kann jetzt deutlich kleinere Messestände buchen, weil keine sperrigen Geräte mehr transportiert und aufgebaut werden müssen. Was das in Euro heißt, steht in der Beispielrechnung unten: Schon 8 m² weniger Standfläche sind nach AUMA-Richtwert 6.000 bis 7.600 € weniger Messebudget · pro Messe, Jahr für Jahr. Das Modell kostet einmalig ab rund €500.',
+      'Das erste Modell war laut Kunde ein voller Erfolg · so überzeugend, dass insgesamt vier Modelle in Planung sind. Der für die Entscheidung wesentliche Punkt: Der Hersteller kann jetzt deutlich kleinere Messestände buchen, weil keine sperrigen Geräte mehr transportiert und aufgebaut werden müssen. Was das in Euro heißt, zeigt die Beispielrechnung oben: Schon 8 m² weniger Standfläche sind nach AUMA-Richtwert 6.000 bis 7.600 € weniger Messebudget · pro Messe, Jahr für Jahr. Das Modell kostet einmalig ab rund €500.',
 
     costComparison: {
       title: 'Die Beispielrechnung: 20 m² Stand gegen 12 m² Stand',
@@ -509,6 +515,21 @@ export const cases: RealCase[] = [
         { posten: 'Einmalkosten', a: 'keine', b: 'Modell ab rund €500 · wiederverwendbar über Jahre' },
       ],
       fazit: 'Quellen: Platzmietentarif der agraria Messe Wels (Halle bis 30 m², zuletzt veröffentlichter Tarif, netto) und AUMA-Durchschnittskosten einer Messebeteiligung (750 bis 950 € je m²). Der AUMA-Wert ist ein Richtwert über alle Kostenarten, einzelne Posten wie Personal schrumpfen nicht 1:1 mit der Fläche · die Größenordnung bleibt: Das Modell hat sich rechnerisch beim ersten Auftritt bezahlt gemacht, ab der zweiten Messe ist es reine Ersparnis. Rechnen Sie mit Ihren eigenen Standkosten nach.',
+      stats: [
+        { value: '8 m²', label: 'weniger Standfläche', sub: '20 m² Stand wird zum 12-m²-Stand' },
+        { value: '€6.000', label: 'weniger Messebudget · je Messe', sub: 'bis €7.600 nach AUMA-Richtwert' },
+        { value: '1. Messe', label: 'und das Modell ist bezahlt', sub: 'einmalig ab rund €500' },
+      ],
+      budgetBars: [
+        { label: 'Großgerät am Stand · 20 m²', min: 15000, max: 19000 },
+        { label: 'Modell am Stand · 12 m²', min: 9000, max: 11400, highlight: true },
+      ],
+      amortisation: {
+        perMesse: 6000,
+        einmalkosten: 500,
+        messen: 5,
+        note: 'Konservativ gerechnet: unterer AUMA-Wert (€6.000 Ersparnis je Messe) abzüglich einmaliger Modellkosten ab rund €500. Mit dem oberen Richtwert wären es nach fünf Messen rund €37.500.',
+      },
     },
   },
   {
