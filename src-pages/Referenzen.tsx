@@ -73,8 +73,44 @@ interface Category {
   type: string;
 }
 
+// Lokal gepflegte Referenzen (Bilder in public/referenzen/).
+// Grund: Supabase-RLS erlaubt keine anonymen Inserts; neue Einträge
+// landen deshalb versioniert im Repo und werden vor die DB-Einträge gereiht.
+const LOKALE_REFERENZEN: ProjectReference[] = [
+  {
+    id: "lokal-efh-1zu100",
+    title: "Einfamilienhaus 1:100 · modernes EFH mit Flachdach, PV und Garage",
+    description:
+      "Modernes Einfamilienhaus im Maßstab 1:100 als weißes Präsentationsmodell: Flachdach mit PV-Feld, Balkonnische, Garage und Grundstücksplatte mit Zufahrt. Gefertigt in unserer Werkstatt in Gunskirchen als Anschauungsmodell, so wie wir es für Bauträger, Planungsbüros und private Bauherren drucken · fürs Verkaufsgespräch, den Schauraum oder als Geschenk zur Schlüsselübergabe.",
+    industry: "Architektur",
+    material: "PLA",
+    color: "Weiß",
+    print_time_hours: null,
+    weight_grams: null,
+    dimensions: "220 × 165 × 78 mm",
+    quantity: null,
+    delivery_days: null,
+    image_url: "/referenzen/efh-modell-1zu100-gesamt.jpg",
+    customer_quote: null,
+    customer_name: null,
+    highlights: [
+      "Flachdach mit PV-Feld und Attika",
+      "Balkonnische, Garage und Zufahrt",
+      "Grundstücksplatte als Sockel",
+      "weiße Ausführung für die Präsentation",
+    ],
+    is_featured: true,
+    images: [
+      { id: "efh-1", image_url: "/referenzen/efh-modell-1zu100-gesamt.jpg", thumbnail_url: "/referenzen/efh-modell-1zu100-gesamt.jpg", alt_text: "Modernes Einfamilienhaus als weißes 3D-Druck-Modell im Maßstab 1:100 mit Garage und Grundstücksplatte", is_primary: true, sort_order: 0 },
+      { id: "efh-2", image_url: "/referenzen/efh-modell-1zu100-strassenseite.jpg", thumbnail_url: "/referenzen/efh-modell-1zu100-strassenseite.jpg", alt_text: "Straßenseite des EFH-Modells 1:100 mit Fensterfaschen, Eingang und Zufahrt", is_primary: false, sort_order: 1 },
+      { id: "efh-3", image_url: "/referenzen/efh-modell-1zu100-zwei-modelle.jpg", thumbnail_url: "/referenzen/efh-modell-1zu100-zwei-modelle.jpg", alt_text: "Zwei weiße Einfamilienhaus-Modelle im Maßstab 1:100 mit Balkonnische und Flachdach", is_primary: false, sort_order: 2 },
+      { id: "efh-4", image_url: "/referenzen/efh-modell-1zu100-dachdetail.jpg", thumbnail_url: "/referenzen/efh-modell-1zu100-dachdetail.jpg", alt_text: "Detail des Flachdachs mit PV-Feld und Attikakante am 1:100-Architekturmodell", is_primary: false, sort_order: 3 },
+    ],
+  },
+];
+
 const Referenzen = () => {
-  const [projects, setProjects] = useState<ProjectReference[]>([]);
+  const [projects, setProjects] = useState<ProjectReference[]>(LOKALE_REFERENZEN);
   const [categories, setCategories] = useState<Category[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedProject, setSelectedProject] = useState<ProjectReference | null>(null);
@@ -108,7 +144,7 @@ const Referenzen = () => {
           images: (imagesData || []).filter(img => img.reference_id === ref.id)
         }));
 
-        setProjects(refsWithImages);
+        setProjects([...LOKALE_REFERENZEN, ...refsWithImages]);
 
         // Fetch categories
         const { data: catsData, error: catsError } = await supabase

@@ -621,6 +621,57 @@ export const cases: RealCase[] = [
 
     relatedCases: ['gelaendemodell-vermessungsbuero-3-tage', 'ortsmodell-express-zwei-tage'],
   },
+  {
+    slug: 'einfamilienhaus-modell-1-100',
+    title: 'Ein modernes Einfamilienhaus in 1:100 · das Haus auf dem Schreibtisch',
+    customerLabel: 'Eigenprojekt aus der Werkstatt · Demonstrationsmodell',
+    branchen: ['architektur'],
+    region: 'oberoesterreich',
+    year: 2026,
+    status: 'completed',
+
+    metaTitle: 'Case: Einfamilienhaus als 1:100-Modell · Flachdach, PV-Feld, Garage',
+    metaDescription:
+      'Ein modernes EFH als weißes Präsentationsmodell im Maßstab 1:100: Flachdach mit PV-Feld, Balkonnische, Garage und Grundstücksplatte. So sieht ein Einfamilienhaus-Modell aus unserer Werkstatt aus.',
+    primaryKeyword: 'Einfamilienhaus Modell 3D-Druck 1:100',
+
+    challenge:
+      'Bauträger, Planungsbüros und private Bauherren fragen regelmäßig an, wie ihr Haus als Modell aussehen würde · und genau das lässt sich schlecht beschreiben, man muss es sehen. Deshalb haben wir ein typisches modernes Einfamilienhaus als Demonstrationsmodell gefertigt: transparent als Eigenprojekt der Werkstatt, mit dem Detailgrad, den ein Kunde bei einem EFH-Modell bekommt.',
+
+    approach: [
+      {
+        label: 'Ein Haus, wie es heute geplant wird',
+        detail: 'Flachdach mit PV-Feld und Attika, Balkonnische, versetzte Baukörper, Garage mit Zufahrt · die Architektursprache, die in aktuellen Einreichungen tatsächlich vorkommt.',
+      },
+      {
+        label: 'Maßstab 1:100 mit Grundstücksplatte',
+        detail: 'Bei 1:100 wird aus dem Haus ein Objekt von 220 × 165 mm: groß genug für Fensterfaschen, Eingangspodest und die PV-Rasterung am Dach, klein genug für Schreibtisch und Schauraum.',
+      },
+      {
+        label: 'Weiße Ausführung',
+        detail: 'Monochrom weiß, wie es Architekturbüros für Präsentation und Jury kennen · die Form spricht, nicht die Farbe.',
+      },
+    ],
+
+    technicalSpecs: [
+      { label: 'Maßstab', value: '1:100' },
+      { label: 'Abmessungen', value: '220 × 165 × 78 mm' },
+      { label: 'Ausführung', value: 'PLA, weiß matt' },
+      { label: 'Einsatz', value: 'Verkaufsgespräch, Schauraum, Schlüsselübergabe' },
+    ],
+
+    outcome:
+      'Das Modell ist unser Anschauungsstück für Einfamilienhaus-Anfragen: Es zeigt, welchen Detailgrad ein EFH-Modell in 1:100 hat · vom PV-Raster am Flachdach bis zur Zufahrt auf der Grundstücksplatte. Wer sein eigenes Projekt so sehen will, schickt uns die CAD- oder Plandaten und bekommt das Angebot innerhalb von 6 Stunden.',
+
+    relatedCases: ['architekturmodell-vereinsheim-ried', 'wettbewerbsmodell-kiga-express-wochenende', 'architekturmodell-wechsel-einsaetze-loftop'],
+
+    images: [
+      { src: '/referenzen/efh-modell-1zu100-gesamt.jpg', alt: 'Modernes Einfamilienhaus als weißes 3D-Druck-Modell im Maßstab 1:100 mit Garage und Grundstücksplatte' },
+      { src: '/referenzen/efh-modell-1zu100-strassenseite.jpg', alt: 'Straßenseite des Einfamilienhaus-Modells 1:100 mit Fensterfaschen, Eingang und Zufahrt' },
+      { src: '/referenzen/efh-modell-1zu100-zwei-modelle.jpg', alt: 'Zwei weiße Einfamilienhaus-Modelle im Maßstab 1:100 mit Balkonnische und Flachdach' },
+      { src: '/referenzen/efh-modell-1zu100-dachdetail.jpg', alt: 'Detail des Flachdachs mit PV-Feld und Attikakante am Architekturmodell 1:100' },
+    ],
+  },
 ]
 
 // ─── Helpers ─────────────────────────────────────────────────────
