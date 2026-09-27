@@ -22,6 +22,17 @@
 
 import { NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
+import { cases } from '@/data/realCases'
+
+// Lokal gepflegte Referenz-Bilder (public/referenzen/, Repo statt Supabase,
+// weil RLS keine anonymen Inserts erlaubt · siehe LOKALE_REFERENZEN in
+// src-pages/Referenzen.tsx). Werden dem /referenzen-Block vorangestellt.
+const LOKALE_REFERENZ_BILDER: { loc: string; title: string; caption: string }[] = [
+  { loc: 'https://www.ek-druck.at/referenzen/efh-modell-1zu100-gesamt.jpg', title: 'Einfamilienhaus 1:100 · modernes EFH mit Flachdach, PV und Garage · ekdruck 3D-Druck Referenz', caption: 'Modernes Einfamilienhaus als weißes 3D-Druck-Modell im Maßstab 1:100 mit Garage und Grundstücksplatte · PETG weiß, 220 × 165 × 78 mm' },
+  { loc: 'https://www.ek-druck.at/referenzen/efh-modell-1zu100-strassenseite.jpg', title: 'Einfamilienhaus-Modell 1:100 · Straßenseite · ekdruck 3D-Druck Referenz', caption: 'Straßenseite des EFH-Modells 1:100 mit Fensterfaschen, Eingang und Zufahrt' },
+  { loc: 'https://www.ek-druck.at/referenzen/efh-modell-1zu100-zwei-modelle.jpg', title: 'Zwei Einfamilienhaus-Modelle 1:100 · ekdruck 3D-Druck Referenz', caption: 'Zwei weiße Einfamilienhaus-Modelle im Maßstab 1:100 mit Balkonnische und Flachdach' },
+  { loc: 'https://www.ek-druck.at/referenzen/efh-modell-1zu100-dachdetail.jpg', title: 'Flachdach mit PV-Feld · Detail am 1:100-Modell · ekdruck 3D-Druck Referenz', caption: 'Detail des Flachdachs mit PV-Feld und Attikakante am Architekturmodell im Maßstab 1:100' },
+]
 
 const SITE = 'https://www.ek-druck.at'
 const SUPABASE_URL = 'https://jkzrpjlfdsxvcfwhuoey.supabase.co'
@@ -117,6 +128,17 @@ export async function GET() {
     `    <loc>${SITE}/referenzen</loc>`,
   ]
 
+  // Lokale (im Repo versionierte) Referenz-Bilder zuerst
+  for (const img of LOKALE_REFERENZ_BILDER) {
+    xmlParts.push(
+      '    <image:image>',
+      `      <image:loc>${escapeXml(img.loc)}</image:loc>`,
+      `      <image:caption>${escapeXml(img.caption)}</image:caption>`,
+      `      <image:title>${escapeXml(img.title)}</image:title>`,
+      '    </image:image>'
+    )
+  }
+
   // Pro Referenz alle zugehörigen Bilder einfügen
   for (const ref of refs as ReferenceRow[]) {
     const refImages = (images as ReferenceImageRow[] | null)?.filter(
@@ -146,7 +168,26 @@ export async function GET() {
     }
   }
 
-  xmlParts.push('  </url>', '', '</urlset>')
+  xmlParts.push('  </url>', '')
+
+  // Case-Detailseiten mit echten Projektfotos (data/realCases.ts)
+  for (const c of cases) {
+    if (!c.images || c.images.length === 0) continue
+    xmlParts.push('  <url>', `    <loc>${SITE}/cases/${c.slug}</loc>`)
+    for (const img of c.images) {
+      const loc = img.src.startsWith('http') ? img.src : `${SITE}${img.src}`
+      xmlParts.push(
+        '    <image:image>',
+        `      <image:loc>${escapeXml(loc)}</image:loc>`,
+        `      <image:caption>${escapeXml(img.alt)}</image:caption>`,
+        `      <image:title>${escapeXml(c.title + ' · ekdruck Case')}</image:title>`,
+        '    </image:image>'
+      )
+    }
+    xmlParts.push('  </url>', '')
+  }
+
+  xmlParts.push('</urlset>')
 
   const xml = xmlParts.join('\n')
 

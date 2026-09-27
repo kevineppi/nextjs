@@ -656,7 +656,7 @@ export const cases: RealCase[] = [
     technicalSpecs: [
       { label: 'Maßstab', value: '1:100' },
       { label: 'Abmessungen', value: '220 × 165 × 78 mm' },
-      { label: 'Ausführung', value: 'PLA, weiß matt' },
+      { label: 'Ausführung', value: 'PETG, weiß matt' },
       { label: 'Einsatz', value: 'Verkaufsgespräch, Schauraum, Schlüsselübergabe' },
     ],
 

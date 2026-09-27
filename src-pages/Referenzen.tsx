@@ -83,7 +83,7 @@ const LOKALE_REFERENZEN: ProjectReference[] = [
     description:
       "Modernes Einfamilienhaus im Maßstab 1:100 als weißes Präsentationsmodell: Flachdach mit PV-Feld, Balkonnische, Garage und Grundstücksplatte mit Zufahrt. Gefertigt in unserer Werkstatt in Gunskirchen als Anschauungsmodell, so wie wir es für Bauträger, Planungsbüros und private Bauherren drucken · fürs Verkaufsgespräch, den Schauraum oder als Geschenk zur Schlüsselübergabe.",
     industry: "Architektur",
-    material: "PLA",
+    material: "PETG",
     color: "Weiß",
     print_time_hours: null,
     weight_grams: null,
@@ -367,7 +367,10 @@ const Referenzen = () => {
         {/* Projects Grid */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            {loading ? (
+            {/* Spinner nur, wenn wirklich noch nichts da ist: die lokalen
+                Referenzen stehen ab dem ersten Render im HTML (SSG),
+                damit Google Bilder + Beschreibung ohne JS indexieren kann. */}
+            {loading && filteredProjects.length === 0 ? (
               <div className="flex items-center justify-center py-20">
                 <Loader2 className="w-8 h-8 animate-spin text-primary" />
               </div>

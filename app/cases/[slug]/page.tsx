@@ -38,7 +38,12 @@ export async function generateMetadata({ params }: CasePageProps): Promise<Metad
       siteName: 'ekdruck · 3D-Druck Österreich',
       locale: 'de_AT',
       type: 'article',
-      images: [{ url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630 }],
+      // Erstes Projektfoto als OG-Bild, wenn der Case echte Fotos hat
+      images: [
+        c.images && c.images.length > 0
+          ? { url: c.images[0].src.startsWith('http') ? c.images[0].src : `https://www.ek-druck.at${c.images[0].src}` }
+          : { url: 'https://www.ek-druck.at/lovable-uploads/a2a7821e-537c-4599-9e3e-c212d6a9bb02.png', width: 1200, height: 630 },
+      ],
     },
     twitter: { card: 'summary_large_image', title: c.metaTitle, description: c.metaDescription },
     robots: STANDARD_ROBOTS,
@@ -67,6 +72,11 @@ export default async function CaseDetailPage({ params }: CasePageProps) {
     },
     datePublished: `${c.year}-12-01`,
     about: c.primaryKeyword,
+    // Projektfotos ins Article-Schema: hilft Google Images, Bild und
+    // Beschreibung derselben Entitaet zuzuordnen
+    ...(c.images && c.images.length > 0
+      ? { image: c.images.map((img) => (img.src.startsWith('http') ? img.src : `https://www.ek-druck.at${img.src}`)) }
+      : {}),
   }
 
   return (

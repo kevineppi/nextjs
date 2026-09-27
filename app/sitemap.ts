@@ -67,6 +67,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: buildDate,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
+    // Bild-Sitemap: Projektfotos explizit fuer die Google-Bildersuche anmelden
+    images: (c.images || []).map((img) =>
+      img.src.startsWith('http') ? img.src : `${SITE}${img.src}`
+    ),
   }))
 
   // ─── BRANCHEN-CLUSTER · aus branchenData.ts generiert ─────────
