@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import StickyCTA from "@/components/landing/StickyCTA";
+import QuickContactBar from "@/components/QuickContactBar";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -509,14 +510,14 @@ const Referenzen = () => {
 
                       {/* Technical Data - Box Style like Modal */}
                       <div className="grid grid-cols-2 gap-2">
-                        <div className="border border-border rounded-md p-2">
+                        <div className="py-1">
                           <div className="flex items-center gap-1.5 text-muted-foreground text-[10px] uppercase tracking-wide mb-0.5">
                             <Layers className="w-3 h-3" />
                             <span>Material</span>
                           </div>
                           <span className="text-sm font-medium">{project.material}</span>
                         </div>
-                        <div className="border border-border rounded-md p-2">
+                        <div className="py-1">
                           <div className="flex items-center gap-1.5 text-muted-foreground text-[10px] uppercase tracking-wide mb-0.5">
                             <Box className="w-3 h-3" />
                             <span>Stückzahl</span>
@@ -569,6 +570,14 @@ const Referenzen = () => {
             </div>
           </div>
         </section>
+
+        {/* Direkter Kontaktweg: Instagram-Besucher bleiben laut Clarity auf
+            genau einer Seite · die Anfrage muss hier passieren, nicht auf Seite 2 */}
+        <QuickContactBar
+          context="Referenzprojekt"
+          title="So ein Modell für Ihr Projekt?"
+          subtitle="Foto oder Datei schicken reicht · Angebot in 6 Stunden, direkt von Kevin."
+        />
 
         {/* Internal linking section */}
         <section className="py-12 bg-muted/30 border-t border-border">
@@ -707,7 +716,7 @@ const Referenzen = () => {
 
                 {/* Technical Specs Grid */}
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="p-4 rounded-xl bg-muted/50 border border-border/50">
+                  <div className="py-3 border-b border-border/40">
                     <div className="flex items-center gap-2 text-muted-foreground mb-1">
                       <Layers className="w-4 h-4" />
                       <span className="text-xs uppercase tracking-wide">Material</span>
@@ -716,7 +725,7 @@ const Referenzen = () => {
                   </div>
                   
                   {selectedProject.color && (
-                    <div className="p-4 rounded-xl bg-muted/50 border border-border/50">
+                    <div className="py-3 border-b border-border/40">
                       <div className="flex items-center gap-2 text-muted-foreground mb-1">
                         <Palette className="w-4 h-4" />
                         <span className="text-xs uppercase tracking-wide">Farbe</span>
@@ -726,7 +735,7 @@ const Referenzen = () => {
                   )}
                   
                   {selectedProject.dimensions && (
-                    <div className="p-4 rounded-xl bg-muted/50 border border-border/50">
+                    <div className="py-3 border-b border-border/40">
                       <div className="flex items-center gap-2 text-muted-foreground mb-1">
                         <Ruler className="w-4 h-4" />
                         <span className="text-xs uppercase tracking-wide">Abmessungen</span>
@@ -736,7 +745,7 @@ const Referenzen = () => {
                   )}
                   
                   {selectedProject.print_time_hours && (
-                    <div className="p-4 rounded-xl bg-muted/50 border border-border/50">
+                    <div className="py-3 border-b border-border/40">
                       <div className="flex items-center gap-2 text-muted-foreground mb-1">
                         <Clock className="w-4 h-4" />
                         <span className="text-xs uppercase tracking-wide">Druckzeit</span>
@@ -746,7 +755,7 @@ const Referenzen = () => {
                   )}
                   
                   {selectedProject.weight_grams && (
-                    <div className="p-4 rounded-xl bg-muted/50 border border-border/50">
+                    <div className="py-3 border-b border-border/40">
                       <div className="flex items-center gap-2 text-muted-foreground mb-1">
                         <Scale className="w-4 h-4" />
                         <span className="text-xs uppercase tracking-wide">Gewicht</span>
@@ -756,7 +765,7 @@ const Referenzen = () => {
                   )}
                   
                   {selectedProject.quantity && (
-                    <div className="p-4 rounded-xl bg-muted/50 border border-border/50">
+                    <div className="py-3 border-b border-border/40">
                       <div className="flex items-center gap-2 text-muted-foreground mb-1">
                         <Box className="w-4 h-4" />
                         <span className="text-xs uppercase tracking-wide">Stückzahl</span>
@@ -766,7 +775,7 @@ const Referenzen = () => {
                   )}
                   
                   {selectedProject.delivery_days && (
-                    <div className="p-4 rounded-xl bg-muted/50 border border-border/50">
+                    <div className="py-3 border-b border-border/40">
                       <div className="flex items-center gap-2 text-muted-foreground mb-1">
                         <Truck className="w-4 h-4" />
                         <span className="text-xs uppercase tracking-wide">Lieferzeit</span>

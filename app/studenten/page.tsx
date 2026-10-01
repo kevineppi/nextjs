@@ -196,7 +196,7 @@ export default function Page() {
               <AnimatedSection animation="fade-in">
                 <div className="sticker border-primary text-primary w-fit mb-8">
                   <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                  Express 24&#8211;48h · Stand: September 2026
+                  Express 24&#8211;48h · Stand: {new Date().toLocaleDateString('de-AT', { month: 'long', year: 'numeric' })}
                 </div>
               </AnimatedSection>
 
@@ -218,6 +218,28 @@ export default function Page() {
                   Österreich. Studierst du in Österreich, bekommst du{' '}
                   <span className="text-primary font-semibold">15 % Rabatt</span>, aus Deutschland oder der Schweiz{' '}
                   <span className="text-primary font-semibold">10 %</span>.
+                </p>
+              </AnimatedSection>
+
+              {/* Hero-CTA: Clarity 10/2026 zeigte 23 % Scrolltiefe · der erste
+                  Handlungs-Button kam vorher erst beim Formular weiter unten */}
+              <AnimatedSection animation="fade-in" delay={300}>
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 mb-4">
+                  <Link
+                    href="/kostenrechner"
+                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground rounded-full px-7 py-3.5 font-bold hover:opacity-90 transition-all"
+                  >
+                    Richtpreis in 60 Sekunden
+                  </Link>
+                  <a
+                    href="#anfrage"
+                    className="inline-flex items-center gap-2 border-2 border-foreground rounded-full px-7 py-3.5 font-bold hover:bg-foreground hover:text-background transition-all"
+                  >
+                    Deadline-Anfrage stellen
+                  </a>
+                </div>
+                <p className="mono text-[11px] text-muted-foreground mb-10">
+                  Rabatt-Nachweis: einfach von deiner Uni-Mailadresse schreiben, oder den ÖH-Code deiner Hochschule eingeben.
                 </p>
               </AnimatedSection>
 
@@ -257,7 +279,7 @@ export default function Page() {
         </section>
 
         {/* FORMULAR + BEWEISFOTO */}
-        <section className="py-10 md:py-16 border-t border-border">
+        <section id="anfrage" className="py-10 md:py-16 border-t border-border scroll-mt-24">
           <div className="container mx-auto px-4">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
               <AnimatedSection animation="slide-up">
