@@ -73,6 +73,47 @@ interface Category {
   type: string;
 }
 
+/* ── WKO-Wortfilter für Supabase-Inhalte ─────────────────────────────
+ * Die Referenz-Texte kommen aus der Datenbank (Lovable-Altbestand) und
+ * enthielten Begriffe von der WKO-Sperrliste ("Präzise Toleranzen",
+ * "passgenau", "Serienfertigung"), die als Leistungsversprechen nicht
+ * nach außen dürfen (Gewerbeberechtigung, siehe CLAUDE.md-Wortliste).
+ * Da die DB per RLS nicht anonym schreibbar ist, werden die Texte hier
+ * beim Laden bereinigt · zusätzlich bitte an der Quelle korrigieren.
+ * Druckzeit und Gewicht sind Betriebsinterna und werden genullt. */
+const WKO_ERSATZ: [RegExp, string][] = [
+  [/präzise (zusammengefügt|gefertigt|umgesetzt|verbunden)/gi, "sauber $1"],
+  [/präzise[rn]? (Visualisierung|Darstellung|Ausführung|Umsetzung|Detail)/gi, "detailgetreue $1"],
+  [/präzis\w*/gi, "detailgetreu"],
+  [/Toleranz\w*/g, "Ausführung"],
+  [/passgenau\w*/gi, "sauber sitzend"],
+  [/maßhaltig\w*/gi, "sauber ausgeführt"],
+  [/Serienfertigung/gi, "Mehrfachfertigung"],
+  [/Kleinserien?/gi, "Mehrfachfertigung"],
+];
+const WKO_HIGHLIGHT_SPERRE = /Toleranz|präzis|maßhaltig|belastbar|lasttragend|passgenau|Stecksystem|Verbinder|Dichtung/i;
+
+const wkoText = (s: string | null): string | null => {
+  if (!s) return s;
+  let out = s;
+  for (const [re, ersatz] of WKO_ERSATZ) out = out.replace(re, ersatz);
+  return out;
+};
+
+const wkoBereinigen = (ref: ProjectReference): ProjectReference => ({
+  ...ref,
+  title: wkoText(ref.title) || ref.title,
+  description: wkoText(ref.description),
+  industry: wkoText(ref.industry) || ref.industry,
+  customer_quote: wkoText(ref.customer_quote),
+  highlights: (ref.highlights || [])
+    .filter((h) => !WKO_HIGHLIGHT_SPERRE.test(h))
+    .map((h) => wkoText(h) || h),
+  // Betriebsinterna nie nach außen (CLAUDE.md): Druckzeit, Gewicht
+  print_time_hours: null,
+  weight_grams: null,
+});
+
 // Lokal gepflegte Referenzen (Bilder in public/referenzen/).
 // Grund: Supabase-RLS erlaubt keine anonymen Inserts; neue Einträge
 // landen deshalb versioniert im Repo und werden vor die DB-Einträge gereiht.
@@ -144,7 +185,7 @@ const Referenzen = () => {
           images: (imagesData || []).filter(img => img.reference_id === ref.id)
         }));
 
-        setProjects([...LOKALE_REFERENZEN, ...refsWithImages]);
+        setProjects([...LOKALE_REFERENZEN, ...refsWithImages.map(wkoBereinigen)]);
 
         // Fetch categories
         const { data: catsData, error: catsError } = await supabase
@@ -154,7 +195,9 @@ const Referenzen = () => {
           .order('sort_order', { ascending: true });
 
         if (catsError) throw catsError;
-        setCategories(catsData || []);
+        // Kategorienamen durch denselben WKO-Filter (z. B. "Serienfertigung"
+        // -> "Mehrfachfertigung"), damit Filter und Projekt-Badges zusammenpassen
+        setCategories((catsData || []).map((c: Category) => ({ ...c, name: wkoText(c.name) || c.name })));
       } catch (error) {
         console.error('Error fetching data:', error);
       } finally {
@@ -197,7 +240,7 @@ const Referenzen = () => {
     <>
       <SEOHead 
         title="3D-Druck Referenzen & Projekte | ★ 5.0 Google | ekdruck"
-        description="Echte 3D-Druck Projekte mit Fotos, Maßen & Druckzeiten ✓ Architekturmodelle, Messeexponate & Einzelstücke ✓ 35 Google-Bewertungen mit 5.0/5 → Projekte ansehen"
+        description="Echte 3D-Druck Projekte mit Fotos, Maßen & Materialien ✓ Architekturmodelle, Messeexponate & Einzelstücke ✓ 35 Google-Bewertungen mit 5.0/5 → Projekte ansehen"
         keywords="3d-druck referenzen, 3d-druck portfolio, messemodell beispiele, architekturmodell projekte, 3d-druck ergebnisse"
         path="/referenzen"
       />
@@ -222,7 +265,7 @@ const Referenzen = () => {
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
                 Von Architekturmodellen bis Deko-Objekten – entdecken Sie ausgewählte Projekte mit 
-                technischen Details, Druckzeiten und Kundenfeedback.
+                technischen Details, Maßen und Kundenfeedback.
               </p>
               <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
                 <span className="flex items-center gap-2">

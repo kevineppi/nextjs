@@ -423,7 +423,7 @@ const Einzelanfertigungen = () => {
 
                 <div>
                   <h3 className="font-bold text-xl mb-2 text-foreground">Historische Vorlagen und Sammlermodelle</h3>
-                  <p className="text-foreground/85 leading-relaxed">Ein markantes Zierteil aus den 60er-Jahren das spröde geworden ist. Ein Knopf oder ein Emblem einer alten Maschine als Anschauungsstück fürs Vereinsheim oder die Vitrine. Wir scannen oder rekonstruieren die Vorlage und drucken ein detailgetreues 1:1-Modell. Für Vereins-Restauratoren, Sammler und Museen: ab €40 bei vorhandenem Original, ab €120 bei Reverse-Engineering nach Skizze. Hinweis: rechtlich „Anschauungsstück", nicht offiziell zugelassene Ersatzteile.</p>
+                  <p className="text-foreground/85 leading-relaxed">Ein markantes Zierteil aus den 60er-Jahren das spröde geworden ist. Ein Knopf oder ein Emblem einer alten Maschine als Anschauungsstück fürs Vereinsheim oder die Vitrine. Wir scannen die Vorlage oder modellieren sie nach Skizze und drucken ein detailgetreues 1:1-Modell. Für Vereins-Restauratoren, Sammler und Museen: ab €40 bei vorhandenem Original, ab €120 beim Nachmodellieren nach Skizze. Wichtig: Es entsteht ein Anschauungsstück für Vitrine und Sammlung, kein Teil zum Einbauen oder Verwenden.</p>
                 </div>
 
                 <div>
@@ -438,7 +438,7 @@ const Einzelanfertigungen = () => {
 
                 <div>
                   <h3 className="font-bold text-xl mb-2 text-foreground">Maßanfertigung nach Kunden-Skizze</h3>
-                  <p className="text-foreground/85 leading-relaxed">Sie haben kein CAD, sondern eine <strong>Skizze, Foto oder mündliche Beschreibung</strong>. Wir nehmen Maße auf (telefonisch oder vor Ort in OÖ), erstellen das 3D-Modell, schicken Ihnen eine Vorab-Visualisierung, drucken nach Freigabe. Reverse-Engineering und 3D-Modellierung ab €120/Stunde, der Druck danach ab €20. Für Kunden ohne CAD-Erfahrung oder bei Objekten ohne Plan ist das oft der einzige Weg, und ein riesiger Mehrwert im Vergleich zu „bringen Sie uns ein STL".</p>
+                  <p className="text-foreground/85 leading-relaxed">Sie haben kein CAD, sondern eine <strong>Skizze, Foto oder mündliche Beschreibung</strong>. Wir nehmen Maße auf (telefonisch oder vor Ort in OÖ), erstellen das 3D-Modell, schicken Ihnen eine Vorab-Visualisierung, drucken nach Freigabe. 3D-Modellierung nach Vorlage ab €120/Stunde, der Druck danach ab €20. Für Kunden ohne CAD-Erfahrung oder bei Objekten ohne Plan ist das oft der einzige Weg, und ein riesiger Mehrwert im Vergleich zu „bringen Sie uns ein STL".</p>
                 </div>
               </div>
             </div>
