@@ -29,8 +29,8 @@ const FlatrateGuide = () => {
       answer: "Nicht genutzte Modelle verfallen am Monatsende. Wenn Sie in einem Monat mehr Modelle benötigen als im Paket enthalten sind, werden die Mehrmengen zum günstigeren Flatrate-Preis abgerechnet – nicht zum regulären Einzelpreis."
     },
     {
-      question: "Ist das erste Modell wirklich kostenlos?",
-      answer: "Ja, für neue Flatrate-Kunden drucken wir das erste Modell kostenlos – als Qualitätstest ohne Risiko. Das Testmodell wird nach Abschluss der Flatrate-Vereinbarung produziert und in 48 Stunden geliefert."
+      question: "Werden Flatrate-Aufträge in der Fertigung wirklich vorgezogen?",
+      answer: "Ja. Aufträge aus dem Professional- und Studio-Paket werden vor allen Einzelaufträgen produziert, so hält die 48-Stunden-Lieferung auch in der Hochsaison. Die 48h-Lieferung selbst gilt in allen drei Paketen."
     },
     {
       question: "Kann ich das Paket jederzeit upgraden oder downgraden?",
@@ -168,7 +168,7 @@ const FlatrateGuide = () => {
                 Die Flatrate lohnt sich ab ca. <strong>2 Modellen pro Monat</strong>: schon beim Starter-Paket (€490/Mon.) amortisiert sich das gegenüber Einzelaufträgen, wenn ein Modell im Schnitt mehr als €245 kostet.
               </p>
               <p className="text-muted-foreground">
-                Für Büros mit laufenden Wettbewerben oder mehreren aktiven Projekten gleichzeitig rechnet sich der Wechsel bereits im ersten Monat. Das erste Modell ist bei ekdruck kostenlos. So können Sie das selbst testen.
+                Für Büros mit laufenden Wettbewerben oder mehreren aktiven Projekten gleichzeitig rechnet sich der Wechsel bereits im ersten Monat. Und weil die Flatrate monatlich kündbar ist, testen Sie das ohne Risiko.
               </p>
             </div>
           </div>
@@ -471,9 +471,9 @@ const FlatrateGuide = () => {
             <AnimatedSection animation="fade-in">
               <div className="p-8 rounded-2xl bg-primary/5 border-2 border-primary/20 text-center">
                 <div className="text-xs font-bold uppercase tracking-wider text-primary mb-3">Jetzt testen – risikofrei</div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-4">Erstes Modell kostenlos drucken lassen</h3>
+                <h3 className="text-2xl md:text-3xl font-bold mb-4">Flatrate unverbindlich anfragen</h3>
                 <p className="text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-                  Schicken Sie uns Ihre STL-Datei oder beschreiben Sie Ihr Modell kurz. Wir drucken es kostenlos als Qualitätstest. Kein Vertrag, keine Mindestlaufzeit.
+                  Schicken Sie uns Ihre STL-Datei oder beschreiben Sie Ihren Bedarf kurz, Sie bekommen das Angebot innerhalb von 6 Stunden. Kein Vertrag, keine Mindestlaufzeit.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/architekturmodelle-abo">
@@ -482,7 +482,7 @@ const FlatrateGuide = () => {
                     </Button>
                   </Link>
                   <a
-                    href={`https://wa.me/436765517197?text=${encodeURIComponent("Hallo ekdruck, ich habe den Flatrate-Guide gelesen und möchte mein erstes Modell kostenlos testen.")}`}
+                    href={`https://wa.me/436765517197?text=${encodeURIComponent("Hallo ekdruck, ich habe den Flatrate-Guide gelesen und interessiere mich für die Flatrate.")}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 border border-border px-8 py-6 rounded-xl hover:bg-muted transition-colors text-base font-medium"
@@ -505,7 +505,7 @@ const FlatrateGuide = () => {
         <StickyCTA context="Flatrate Guide" />
         <div className="container mx-auto px-4 max-w-4xl py-10">
           <ConversionBanner
-            headline="Flatrate ab 490 € im Monat, erstes Modell kostenlos."
+            headline="Flatrate ab 490 € im Monat, monatlich kündbar."
             subline="Für Architekturbüros mit laufendem Modellbedarf: planbare Fixkosten, Express inklusive, monatlich kündbar."
             primaryLabel="Flatrate ansehen"
             primaryHref="/architekturmodelle-abo"

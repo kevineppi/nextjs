@@ -592,7 +592,7 @@ const ArchitekturmodellGuide = () => {
                   <div className="flex-1">
                     <div className="text-xs font-bold uppercase tracking-wider text-primary mb-1">Tipp für regelmäßige Auftraggeber</div>
                     <h3 className="text-xl font-bold mb-2">Architekturmodell-Flatrate – Fixpreis statt Einzelkalkulation</h3>
-                    <p className="text-sm text-muted-foreground">Büros, die mehr als 1–2 Modelle pro Monat beauftragen, sparen mit der Flatrate bis zu 40% gegenüber Einzelpreisen. Kein Vertrag, monatlich kündbar. <strong>Erstes Modell kostenlos testen.</strong></p>
+                    <p className="text-sm text-muted-foreground">Büros, die mehr als 1–2 Modelle pro Monat beauftragen, sparen mit der Flatrate bis zu 40% gegenüber Einzelpreisen. Kein Vertrag, monatlich kündbar. <strong>Flatrate-Aufträge werden in der Fertigung vorgezogen.</strong></p>
                   </div>
                   <Link href="/architekturmodelle-abo" className="shrink-0 inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold px-5 py-3 rounded-xl hover:bg-primary/90 transition-colors text-sm whitespace-nowrap">
                     Ab €490/Monat →
@@ -705,7 +705,7 @@ const ArchitekturmodellGuide = () => {
           secondaryLabel="Architektur-Flatrate ab €490/Monat"
           secondaryHref="/architekturmodelle-abo"
           badge="Für Architekten & Planer"
-          urgencyText="⚡ Flatrate: Erstes Modell kostenlos · Kein Vertrag, monatlich kündbar"
+          urgencyText="⚡ Flatrate: Fertigung mit Priorität · Kein Vertrag, monatlich kündbar"
         />
 
         <StickyCTA context="Architekturmodell-Guide" />

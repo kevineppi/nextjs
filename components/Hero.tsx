@@ -159,7 +159,7 @@ const Hero = () => {
               <p className="text-xs text-muted-foreground text-center sm:text-left">
                 Für Architekturbüros:{" "}
                 <Link href="/architekturmodelle-abo" className="text-primary hover:underline font-semibold">
-                  Flatrate ab €490/Mon. · Erstes Modell kostenlos →
+                  Flatrate ab €490/Mon. · monatlich kündbar →
                 </Link>
               </p>
               {/* Mobile-Beweisfoto: Anspruch → Handlung → Beweis im ersten Viewport.

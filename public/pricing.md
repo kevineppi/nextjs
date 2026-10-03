@@ -18,7 +18,7 @@
 - Studio: 2.500 Euro pro Monat, bis 8 Modelle pro Monat (alle Maßstäbe, mehrfarbiger Druck, unlimitierte Revisionen, höchste Priorität)
 - Rechnerischer Modellpreis im Kontingent: 222 bis 313 Euro je Modell, je nach Paket
 - Alle Preise exkl. MwSt., keine Einrichtungsgebühr
-- Erstes Modell kostenlos, monatlich kündbar, keine Mindestlaufzeit
+- Monatlich kündbar, keine Mindestlaufzeit, Fertigung mit Produktionspriorität (ab Professional)
 - Lieferung in 48 Stunden österreichweit, nach Deutschland 48 bis 72 Stunden
 - Maximale Modellgröße 35 x 35 x 35 cm als Einzeldruck, größere Modelle segmentiert
 - Faustregel: lohnt sich ab 2 Modellen pro Monat, wenn ein Einzelmodell mehr als 245 Euro kostet

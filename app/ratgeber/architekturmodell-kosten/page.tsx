@@ -262,7 +262,7 @@ export default function Page() {
         <div className="container mx-auto px-4 max-w-4xl py-12">
           <ConversionBanner
             headline="Preis in 60 Sekunden statt in drei Angebotsrunden."
-            subline="STL-Datei in den Kostenrechner laden, Richtpreis ablesen. Das geprüfte Festpreisangebot kommt in 6 Stunden. Für Architekturbüros mit laufendem Bedarf: Flatrate ab 490 € im Monat, erstes Modell kostenlos."
+            subline="STL-Datei in den Kostenrechner laden, Richtpreis ablesen. Das geprüfte Festpreisangebot kommt in 6 Stunden. Für Architekturbüros mit laufendem Bedarf: Flatrate ab 490 € im Monat, monatlich kündbar."
             primaryLabel="Zum Kostenrechner"
             primaryHref="/kostenrechner"
             secondaryLabel="Flatrate ansehen"

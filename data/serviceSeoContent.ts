@@ -145,7 +145,7 @@ const architekturmodelle: ServiceSeoContent = {
     {
       question: 'Was ist die Architekturmodell-Flatrate?',
       answer:
-        'Festpreis-Abo für Architekturbüros mit regelmäßigem Modellbedarf: ab €490/Monat. Beinhaltet eine bestimmte Anzahl Modelle pro Monat (je nach Tarif 2-8 Stück), garantierte Lead-Time und persönlichen Ansprechpartner. Erstes Modell kostenlos testen, monatlich kündbar. Details unter /architekturmodelle-abo.',
+        'Festpreis-Abo für Architekturbüros mit regelmäßigem Modellbedarf: ab €490/Monat. Beinhaltet eine bestimmte Anzahl Modelle pro Monat (je nach Tarif 2-8 Stück), garantierte Lead-Time und persönlichen Ansprechpartner. Monatlich kündbar, ohne Mindestlaufzeit. Details unter /architekturmodelle-abo.',
     },
     {
       question: 'Liefern Sie das Architekturmodell mit Sockel?',

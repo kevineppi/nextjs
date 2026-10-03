@@ -26,7 +26,7 @@ import { ABO_FAQS } from "@/data/aboFaqs";
 const KONDITIONEN = [
   { k: "Lieferzeit", v: "48 Stunden", sub: "österreichweit · DE 48–72h" },
   { k: "Laufzeit", v: "keine", sub: "monatlich kündbar" },
-  { k: "Einstieg", v: "1. Modell gratis", sub: "als Qualitätstest" },
+  { k: "Priorität", v: "vorgezogen", sub: "Fertigung ab Professional" },
   { k: "Modellgröße", v: "35×35×35 cm", sub: "größer: segmentiert" },
   { k: "Angebot", v: "in 6h", sub: "werktags, Festpreis" },
   { k: "Dateiformate", v: "alle gängigen", sub: "ArchiCAD, Revit, Rhino, STL …" },
@@ -79,7 +79,7 @@ const TESTIMONIALS = [
   { quote: "Mein Auftrag wurde schnell bearbeitet, Top Qualität, kann ich nur weiterempfehlen.", author: "Hannah E." },
 ];
 
-const WHATSAPP_HREF = `https://wa.me/436765517197?text=${encodeURIComponent("Hallo ekdruck, ich interessiere mich für die Architekturmodell-Flatrate und möchte mein erstes Modell kostenlos testen.")}`;
+const WHATSAPP_HREF = `https://wa.me/436765517197?text=${encodeURIComponent("Hallo ekdruck, ich interessiere mich für die Architekturmodell-Flatrate und hätte gern ein Angebot.")}`;
 
 /* ── Bausteine des Datenblatt-Stils ────────────────────────────────── */
 
@@ -127,12 +127,12 @@ const ArchitekturmodelleAbo = () => {
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl">
               Zwei bis acht Modelle pro Monat zum fixen Betrag, geliefert in 48 Stunden.
-              Das erste Modell drucke ich kostenlos, damit Sie die Qualität prüfen können, bevor Sie sich entscheiden.
+              Keine Mindestlaufzeit: Wenn die Flatrate nicht zu Ihrem Büro passt, kündigen Sie einfach zum Monatsende.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 mb-4">
               <Button size="lg" className="px-8" onClick={() => scrollKontakt("hero")}>
-                Erstes Modell kostenlos anfragen <ArrowRight className="ml-2 h-4 w-4" />
+                Flatrate anfragen <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button asChild variant="outline" size="lg" className="px-8">
                 <a href="#preise">Pakete vergleichen</a>
@@ -232,7 +232,7 @@ const ArchitekturmodelleAbo = () => {
               </table>
             </div>
             <p className="text-xs text-muted-foreground mt-4">
-              Erstes Modell kostenlos zum Testen · Nicht genutzte Modelle verfallen am Monatsende, Zusatzmodelle zum Flatrate-Zusatzpreis.
+              Nicht genutzte Modelle verfallen am Monatsende, Zusatzmodelle zum Flatrate-Zusatzpreis.
             </p>
           </div>
         </div>
@@ -436,13 +436,13 @@ const ArchitekturmodelleAbo = () => {
           <p className="text-xs text-muted-foreground leading-relaxed max-w-4xl mx-auto text-center">
             Die Architekturmodell-Flatrate von ekdruck e.U. ist ein monatliches Fixpreis-Abo für Architekturbüros,
             Planungsbüros und Immobilienentwickler: zwei bis acht 3D-gedruckte Modelle pro Monat, Lieferung in 48
-            Stunden österreichweit, monatlich kündbar, erstes Modell kostenlos. Gefertigt in Gunskirchen bei Wels,
+            Stunden österreichweit, monatlich kündbar, gefertigt mit Produktionspriorität. Gefertigt in Gunskirchen bei Wels,
             geliefert nach Wien, Graz, Linz, Salzburg, Innsbruck und in ganz Österreich.
           </p>
         </div>
       </section>
 
-      <StickyCTA context="Architekturmodell-Flatrate – Erstes Modell kostenlos" />
+      <StickyCTA context="Architekturmodell-Flatrate" />
       <Footer />
     </div>
   );

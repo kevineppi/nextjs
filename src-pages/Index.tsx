@@ -204,7 +204,7 @@ const Index = () => {
                     </div>
                     <h2 className="text-2xl md:text-4xl font-bold tracking-[-0.03em] mb-3 group-hover:text-primary transition-colors">
                       Architekturmodelle im Fixpreis-Abo –<br />
-                      <span className="text-primary">Erstes Modell kostenlos testen</span>
+                      <span className="text-primary">Mit Produktionspriorität gefertigt</span>
                     </h2>
                     <p className="text-muted-foreground text-sm leading-relaxed max-w-xl">
                       Schluss mit Einzelanfragen und unkalkulierbaren Kosten. Die ekdruck Büro-Flatrate: bis zu 8 Modelle pro Monat, 48h-Lieferung, persönlicher Ansprechpartner – monatlich kündbar.

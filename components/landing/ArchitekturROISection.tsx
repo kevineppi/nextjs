@@ -5,7 +5,7 @@ import { TrendingUp, Users, Clock, Award, ArrowRight } from "lucide-react";
 const stats = [
   { v: "24-48h", l: "Express-Fertigung", sub: "Wettbewerbsmodelle auch dann, wenn die Abgabe schon nächste Woche ist", icon: Clock },
   { v: "3-5 WT", l: "Standard-Lieferzeit", sub: "ab Datenfreigabe, versicherter Versand in Österreich und Deutschland", icon: TrendingUp },
-  { v: "ab €490", l: "Flatrate pro Monat", sub: "für Büros mit regelmäßigem Bedarf, erstes Modell kostenlos", icon: Award },
+  { v: "ab €490", l: "Flatrate pro Monat", sub: "für Büros mit regelmäßigem Bedarf, Fertigung mit Priorität", icon: Award },
   { v: "5,0", l: "35 Google-Bewertungen", sub: "alle fünf Sterne, viele davon von Architektur- und Planungskunden", icon: Users },
 ];
 
@@ -49,7 +49,7 @@ const ArchitekturROISection = () => (
               href="/architekturmodelle-abo"
               className="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all"
             >
-              Zur Architekturmodell-Flatrate: Pakete, Preise, erstes Modell gratis
+              Zur Architekturmodell-Flatrate: Pakete, Preise, Konditionen
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
