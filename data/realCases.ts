@@ -323,49 +323,49 @@ export const cases: RealCase[] = [
 
     metaTitle: 'Justitia-Statue aus dem 3D-Druck · 70 cm für ein Museum | ekdruck',
     metaDescription:
-      'Ausstellungsfigur für das KUNSTundHISTORISCHE Hofmuseum in Edt bei Lambach: eigene Justitia-Deutung, digital modelliert, 70 cm inkl. Sockel mit gravierter Inschrift, gedruckt aus weißem PETG.',
+      'Der künstlerische Entwurf der neuen Justitia stammt vom KUNSTundHISTORISCHEN Hofmuseum in Edt bei Lambach. ekdruck hat den fertigen Entwurf digital modelliert, in sieben Einzelteile aufgeteilt und im 3D-Druck umgesetzt.',
     primaryKeyword: 'statue 3d-druck ausstellung',
 
     challenge:
-      'Das KUNSTundHISTORISCHE Hofmuseum in Edt bei Lambach wollte für seine Ausstellung eine eigene Justitia, keine Kopie einer bestehenden Figur, sondern eine eigenständige Deutung: ohne Augenbinde, ohne Schwert, dafür mit einer Inschrift am Sockel. Eine 3D-Datei gab es nicht, und eine klassisch von Hand modellierte Figur in dieser Größe hätte Monate gedauert.',
+      'Die Grundidee, das Erscheinungsbild und der künstlerische Entwurf der neuen Justitia stammen vom KUNSTundHISTORISCHEN Hofmuseum in Edt bei Lambach, entwickelt als zentrale Figur des Ausstellungskonzepts „Das Dreieck der Zeit": eine eigenständige Deutung ohne Augenbinde und ohne Schwert, mit einer Inschrift am Sockel. Der Entwurf lag fertig vor. Unser Auftrag war die technische Umsetzung: den Entwurf digital modellieren und für den 3D-Druck fertigungsgerecht aufbereiten.',
 
     approach: [
       {
-        label: 'Motiv gemeinsam festgelegt',
+        label: 'Der Entwurf: vom Museum',
         detail:
-          'Haltung, Gewand und die Botschaft am Sockel wurden mit dem Museum abgestimmt: eine Justitia mit offenem Haar und ausgestrecktem Waagen-Arm, dazu die Inschrift "Gerechtigkeit braucht Wahrheit. Menschlichkeit. Zeit."',
+          'Haltung, Gewand, offenes Haar, der ausgestreckte Waagen-Arm und die Inschrift „Gerechtigkeit braucht Wahrheit. Menschlichkeit. Zeit." sind der künstlerische Entwurf des Museums. Das geistige Eigentum an der Figur liegt beim Künstler.',
       },
       {
-        label: 'Digital modelliert in der Werkstatt',
+        label: 'Digitale Modellierung nach Vorlage',
         detail:
-          'Die Figur entstand komplett digital bei uns: Faltenwurf, Haarsträhnen, Gürtel mit Sternornament und der runde Sockel mit eingelassener Schrifttafel, alles in einem Datensatz.',
+          'Wir haben den fertigen Entwurf in einen druckbaren Datensatz übersetzt: Faltenwurf, Haarsträhnen, Gürtel mit Sternornament und der runde Sockel mit eingelassener Schrifttafel.',
       },
       {
-        label: 'Gedruckt in Weiß, 70 cm inkl. Sockel',
+        label: 'In sieben Teilen gedruckt, 70 cm inkl. Sockel',
         detail:
-          'Gefertigt aus weißem PETG. Die Inschrift ist direkt in den Sockel graviert statt aufgesetzt, die Waage bekommt eine eigene Halterung am ausgestreckten Arm.',
+          'Für den Druck wurde die Figur in sieben Einzelteile aufgeteilt und aus weißem PETG gefertigt. Die Inschrift ist direkt in den Sockel graviert statt aufgesetzt, die Waage bekommt eine eigene Halterung am ausgestreckten Arm.',
       },
       {
-        label: 'Übergabe im Rohzustand',
+        label: 'Vollendet wurde die Figur im Museum',
         detail:
-          'Bewusste Arbeitsteilung: Wir liefern die weiße Figur, das Museum übernimmt Fassung, Lackierung und setzt die Waage selbst auf. So trägt das fertige Ausstellungsstück beide Handschriften.',
+          'Nach der Übergabe der Druckteile folgten viele Arbeitsstunden über mehrere Wochen, von Hand und durch den Künstler selbst: Nachbearbeiten der Einzelteile, teils händische Neuanfertigung von Bereichen, Verspachteln, Schleifen, mehrmaliges Auftragen der Feinstruktur und die gesamte Farbgestaltung. Erst dadurch wurde aus den gedruckten Teilen die fertige Justitia.',
       },
     ],
 
     technicalSpecs: [
-      { label: 'Modelltyp', value: 'Ausstellungsfigur / Statue' },
+      { label: 'Künstlerischer Entwurf', value: 'KUNSTundHISTORISCHES Hofmuseum (geistiges Eigentum beim Künstler)' },
+      { label: 'Leistung ekdruck', value: 'Digitale Modellierung des Entwurfs, Aufteilung in 7 Teile, 3D-Druck' },
       { label: 'Material', value: 'Weißes PETG' },
       { label: 'Größe', value: '70 cm hoch inkl. Sockel' },
-      { label: 'Besonderheit', value: 'Gravierte Sockel-Inschrift, eigene Justitia-Deutung ohne Augenbinde und Schwert' },
-      { label: 'Fassung', value: 'Lackierung und Waagen-Montage durch das Museum' },
-      { label: 'Standort', value: 'Ausstellung in Edt bei Lambach, 5 Autominuten von unserer Werkstatt' },
+      { label: 'Ausarbeitung & Farbgestaltung', value: 'in Wochen Handarbeit durch das Museum' },
+      { label: 'Standort', value: 'Ausstellung „Das Dreieck der Zeit", Edt bei Lambach' },
     ],
 
     outcome:
-      'Die Figur steht künftig in der Ausstellung des Museums, keine fünf Autominuten von unserer Werkstatt entfernt. Vom ersten Motivgespräch bis zur Übergabe blieb alles in einer Hand: Modellierung, Fertigung und die gravierte Inschrift kamen aus Gunskirchen, die Fassung macht das Museum selbst.',
+      'Der künstlerische Entwurf und die Grundidee der neuen Justitia stammen vom KUNSTundHISTORISCHEN Hofmuseum. Auf Grundlage dieses fertigen Entwurfs wurde die Figur von ekdruck digital modelliert, in sieben Einzelteile aufgeteilt und im 3D-Druck technisch umgesetzt. Die weitere handwerkliche Ausarbeitung, Oberflächenbearbeitung und Farbgestaltung erfolgte anschließend im Museum. Heute ist die Justitia das zentrale Element der Ausstellung „Das Dreieck der Zeit", erstmals öffentlich präsentiert bei der Langen Nacht der Museen am 3. Oktober 2026.',
 
     lessons:
-      'Haarsträhnen und Faltenwurf sind bei einer Figur der ehrlichste Qualitätstest, dort sieht man jede Schwäche zuerst. Und: Eine Inschrift direkt in den Sockel zu gravieren wirkt hochwertiger als jedes aufgeklebte Schild, kostet im Druck aber keinen Cent extra. Die Arbeitsteilung mit dem Kunden, Rohfigur von uns, Fassung vom Museum, hat sich bewährt.',
+      'Haarsträhnen und Faltenwurf sind beim Modellieren einer Figur der ehrlichste Qualitätstest, dort sieht man jede Schwäche zuerst. Eine Inschrift direkt in den Sockel zu gravieren wirkt hochwertiger als jedes aufgeklebte Schild. Und: Bei Kunstprojekten gehört die Trennung zwischen künstlerischem Entwurf und technischer Umsetzung klar benannt, der Entwurf gehört hier zu jeder Zeit dem Künstler.',
 
     images: [
       { src: '/cases/justitia-front.jpg', alt: 'Weiße Justitia-Statue aus dem 3D-Druck, 70 cm, Frontansicht mit Sockel-Inschrift' },
