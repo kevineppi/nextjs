@@ -120,6 +120,36 @@ const wkoBereinigen = (ref: ProjectReference): ProjectReference => ({
 // landen deshalb versioniert im Repo und werden vor die DB-Einträge gereiht.
 const LOKALE_REFERENZEN: ProjectReference[] = [
   {
+    id: "lokal-rudermaschine-becker",
+    title: "Rudermaschine · Becker Marine Systems",
+    description:
+      "Für einen Messeauftritt in Griechenland haben wir die Rudermaschine von Becker Marine Systems als Ausstellungsmodell gebaut, nach der CAD-Datei des Herstellers. Schicht für Schicht gedruckt, von Hand nachbearbeitet, mit einem Schutzring für die feinen Lamellen an der Unterseite. Verpackt ist das Modell so, dass es als Handgepäck mit dem Standteam zur Messe fliegt. Von der Freigabe bis zum Versand vergingen rund zehn Tage.",
+    industry: "Ausstellungsmodelle",
+    material: "PETG",
+    color: "Grau",
+    print_time_hours: null,
+    weight_grams: null,
+    dimensions: "321 × 194 × 316 mm",
+    quantity: 1,
+    delivery_days: 10,
+    image_url: "/cases/rudermaschine-messemodell-detail.jpg",
+    customer_quote: "Das Paket mit Modell ist wohlbehalten bei uns angekommen. Wir haben es gerade ausgepackt und es gefällt uns sehr gut.",
+    customer_name: "Marketing, Becker Marine Systems",
+    highlights: [
+      "Messemodell nach der CAD-Datei des Herstellers",
+      "Schutzring für die Lamellen an der Unterseite",
+      "als Handgepäck verpackt",
+      "rund zehn Tage von der Freigabe bis zum Versand",
+    ],
+    is_featured: true,
+    images: [
+      { id: "becker-1", image_url: "/cases/rudermaschine-messemodell-detail.jpg", thumbnail_url: "/cases/rudermaschine-messemodell-detail.jpg", alt_text: "Messemodell der Rudermaschine von Becker Marine Systems aus dem 3D-Druck, Detailansicht", is_primary: true, sort_order: 0 },
+      { id: "becker-2", image_url: "/cases/rudermaschine-messemodell-schraeg.jpg", thumbnail_url: "/cases/rudermaschine-messemodell-schraeg.jpg", alt_text: "Ausstellungsmodell einer Rudermaschine für den Messestand, Schrägansicht", is_primary: false, sort_order: 1 },
+      { id: "becker-3", image_url: "/cases/rudermaschine-messemodell-draufsicht.jpg", thumbnail_url: "/cases/rudermaschine-messemodell-draufsicht.jpg", alt_text: "Draufsicht auf das 3D-gedruckte Messemodell der Rudermaschine", is_primary: false, sort_order: 2 },
+      { id: "becker-4", image_url: "/cases/rudermaschine-messemodell-oben.jpg", thumbnail_url: "/cases/rudermaschine-messemodell-oben.jpg", alt_text: "Messemodell der Rudermaschine mit Schutzring an der Unterseite", is_primary: false, sort_order: 3 },
+    ],
+  },
+  {
     id: "lokal-efh-1zu100",
     title: "Einfamilienhaus 1:100 · modernes EFH mit Flachdach, PV und Garage",
     description:

@@ -751,8 +751,8 @@ export default function MessemodellGuidePage() {
                   MV-Schaltanlage 1:25 für Dubai-Messe
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  3-stöckige Mittelspannungs-Schaltanlage als Tisch-Exponat. ABS mit
-                  2K-Lackierung RAL 7035, Magnetverbindungen für Segmentierung.
+                  Mittelspannungs-Anlage als Messemodell, 1.600 × 800 × 800 mm, mehrfarbig und in
+                  Modulen, die als Handgepäck zur Messe mitreisen.
                 </p>
                 <div className="flex items-center gap-1 text-sm text-primary font-bold">
                   Case lesen <ArrowRight className="w-4 h-4" />

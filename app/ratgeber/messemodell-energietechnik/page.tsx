@@ -150,9 +150,8 @@ export default function MesseModellEnergietechnikPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Das Energie-Aussteller-Showcase-Problem</h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Eine 3-stöckige Mittelspannungs-Schaltanlage ist 12 m breit, 3,5 m hoch, wiegt 2,8 Tonnen, kostet 6-stellig pro Stück.
-              Auf eine Energie-Fachmesse zu transportieren? Theoretisch möglich, praktisch sinnlos · Logistik €15-25k pro Veranstaltung,
-              Auf-/Abbau-Kosten dazu, Versicherung, Lkw mit Schwerlast-Anmeldung.
+              Eine Mittelspannungs-Schaltanlage auf eine Energie-Fachmesse zu bringen, ist theoretisch möglich und praktisch kaum
+              sinnvoll: Schwertransport, Kran, Aufbau-Team und Versicherung, und das für wenige Messetage.
             </p>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Was wirklich passiert auf den Energie-Messen: ein 60-Zoll-Bildschirm zeigt CAD-Renderings im Loop. Daneben stehen
@@ -310,27 +309,18 @@ export default function MesseModellEnergietechnikPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Case: MV-Schaltanlage 1:25 für Dubai Energy-Messe</h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Messwandler-Hersteller, deutscher Konzern. Hauptkunden im internationalen Stromnetz-Ausbau. Showcase-Bedarf für
-              Energie-Fachmesse Dubai. Originalanlage 2,8 Tonnen, 3-stöckig, Logistik-Schätzung €18k allein für die 4-Tages-Messe.
+              Ein Messwandler-Hersteller aus Deutschland wollte auf einer Energie-Fachmesse in Dubai seine Mittelspannungs-Anlage
+              zeigen. Das Original kam dafür nicht infrage, das Modell reist in Modulen als Handgepäck mit.
             </p>
             <div className="bg-card border border-border rounded-lg p-6">
               <h3 className="font-bold text-xl mb-4">Projekt-Specs</h3>
               <div className="grid md:grid-cols-2 gap-4 text-sm">
                 <div><span className="text-muted-foreground">Maßstab:</span> <strong>1:25</strong></div>
-                <div><span className="text-muted-foreground">Modell-Größe:</span> <strong>~14×48×35 cm</strong></div>
-                <div><span className="text-muted-foreground">Segmentierung:</span> <strong>4 Module magnetisch</strong></div>
-                <div><span className="text-muted-foreground">Material:</span> <strong>ABS lackiert, Polycarbonat-FR Detail</strong></div>
-                <div><span className="text-muted-foreground">Lackierung:</span> <strong>2K in RAL 7035 (MV-Standard)</strong></div>
-                <div><span className="text-muted-foreground">Highlight:</span> <strong>Klappbare Front, Sammelschienen sichtbar</strong></div>
-                <div><span className="text-muted-foreground">Brennstoffklasse:</span> <strong>B1 (international Standard)</strong></div>
-                <div><span className="text-muted-foreground">Lieferzeit:</span> <strong>5 Wochen ab CAD</strong></div>
-              </div>
-              <div className="mt-6 pt-6 border-t border-border">
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  <strong className="text-foreground">Lehre aus dem Projekt:</strong> die lasergravierten Typenschilder waren der
-                  entscheidende Trust-Faktor. Internationale Energie-Einkäufer haben das Modell von allen Seiten begutachtet,
-                  die Typenbezeichnungen mit den Datenblättern abgeglichen, dann nach der Liefer-Roadmap gefragt.
-                </p>
+                <div><span className="text-muted-foreground">Modell-Größe:</span> <strong>1.600 × 800 × 800 mm</strong></div>
+                <div><span className="text-muted-foreground">Aufbau:</span> <strong>15 bis 20 Einzelteile, modular</strong></div>
+                <div><span className="text-muted-foreground">Ausführung:</span> <strong>mehrfarbig, sehr feine Strukturen</strong></div>
+                <div><span className="text-muted-foreground">Transport:</span> <strong>in Modulen, als Handgepäck</strong></div>
+                <div><span className="text-muted-foreground">Ergebnis:</span> <strong>laut Kunde sehr gut auf der Messe angekommen</strong></div>
               </div>
             </div>
             <Link href="/cases/industriemodell-mittelspannungs-anlage-dubai" className="inline-flex items-center gap-2 text-primary font-bold hover:underline mt-6">

@@ -149,6 +149,29 @@ export default function MesseModellSchiffbauPage() {
           </div>
         </section>
 
+        <section className="px-4 mb-16" aria-label="Projekt aus der Werkstatt">
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center bg-card border border-border rounded-2xl overflow-hidden">
+            <img
+              src="/cases/rudermaschine-messemodell-detail.jpg"
+              alt="Messemodell der Rudermaschine von Becker Marine Systems aus dem 3D-Druck, Detailansicht"
+              loading="lazy"
+              className="w-full h-full object-cover"
+            />
+            <div className="p-6 md:p-8">
+              <p className="text-xs font-bold uppercase tracking-wider text-primary mb-3">Aus der Werkstatt</p>
+              <h2 className="text-2xl font-bold mb-3">Rudermaschine für Becker Marine Systems</h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Für einen Messeauftritt in Griechenland haben wir die Rudermaschine von Becker Marine Systems aus Hamburg als
+                Ausstellungsmodell gebaut: rund 32 × 19 × 32 cm, mit Schutzring für die feinen Lamellen und so verpackt, dass es im
+                Handgepäck mitfliegt. Von der Freigabe bis zum Versand vergingen rund zehn Tage.
+              </p>
+              <Link href="/cases/messemodell-rudermaschine-becker-marine-systems" className="inline-flex items-center gap-2 font-semibold text-primary hover:underline">
+                Zum Projekt <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <section className="px-4 py-12">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Das Schiffbau-Showcase-Dilemma</h2>

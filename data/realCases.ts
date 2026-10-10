@@ -83,62 +83,44 @@ export const cases: RealCase[] = [
   {
     slug: 'industriemodell-mittelspannungs-anlage-dubai',
     title: 'Mittelspannungs-Anlage 1:25 für Messeauftritt in Dubai',
-    customerLabel: 'Messwandler-Hersteller, deutscher Konzern',
+    customerLabel: 'Messwandler-Hersteller aus Deutschland',
     branchen: ['elektrotechnik', 'energietechnik'],
     region: 'oberoesterreich',
     year: 2025,
     status: 'completed',
 
     metaTitle: 'Case: MV-Schaltanlage 1:25 für Dubai-Messe · 3D-Druck ekdruck',
-    metaDescription: 'Wie wir eine 3-stöckige MV-Schaltanlage als Tischmodell für eine Energie-Messe in Dubai gedruckt haben. Maßstab 1:25, lackiert RAL 7035, segmentiert mit Magnetverbindungen.',
+    metaDescription: 'Für eine Energie-Fachmesse in Dubai hat ekdruck eine Mittelspannungs-Anlage als Messemodell gebaut: 1.600 × 800 × 800 mm, aus 15 bis 20 Einzelteilen, mehrfarbig und in Modulen, die als Handgepäck mitreisen.',
     primaryKeyword: 'Mittelspannungs-Schaltanlage Messemodell',
 
     challenge:
-      'Der Kunde · ein Messwandler-Hersteller mit Hauptkunden im Stromnetz-Ausbau · musste auf einer Energie-Fachmesse in Dubai seine Mittelspannungs-Schaltanlage zeigen. Die Originalanlage wiegt 2,8 Tonnen, ist 3 Stockwerke hoch, kostet 6-stellig pro Stück und hätte für die Demo ein extra Container-Setup gebraucht. Logistik-Kosten allein wären 18.000 € gewesen · nur für eine 4-Tages-Messe.',
+      'Ein Messwandler-Hersteller wollte auf einer Energie-Fachmesse in Dubai seine Mittelspannungs-Anlage zeigen. Die Originalanlage lässt sich nicht sinnvoll zu einer Messe bringen, schon gar nicht ins Ausland. Gesucht war ein Modell, das die Anlage mit ihren Details zeigt und trotzdem zur Messe nach Dubai mitreisen kann.',
 
     approach: [
       {
-        label: 'CAD-Übernahme + NDA',
-        detail: 'STEP-Dateien direkter Transfer per verschlüsselter Strecke. NDA mit Datenlöschung nach Lieferung, separater Werkstattbereich für sensible Projekte.',
+        label: 'Modell nach den CAD-Daten des Kunden',
+        detail: 'Grundlage waren die CAD-Daten des Herstellers. Daraus entstand ein Modell mit 1.600 × 800 × 800 mm, das die Anlage mit ihren sichtbaren Details zeigt.',
       },
       {
-        label: 'Segmentierungs-Planung',
-        detail: 'Aufgrund der 3-Stockwerke-Höhe Modell in 4 Hauptsegmente aufgeteilt. Unsichtbare Magnet-Verbindungen entlang natürlicher Wand-Übergänge. Trennstellen mit Spachtel und Lackierung kaschiert.',
+        label: 'Aufgeteilt in Module',
+        detail: 'Das Modell besteht aus 15 bis 20 Einzelteilen. Die Aufteilung ist so gewählt, dass die Module einzeln verpackt als Handgepäck zu internationalen Messen mitreisen können.',
       },
       {
-        label: 'Produktion + Lackierung',
-        detail: 'ABS für Lackierfähigkeit, Aceton-Dampfglättung an sichtbaren Sektionen. 2K-Lackierung in RAL 7035 (Standard MV-Lichtgrau). Lasergravierte Typenschilder als Inlay.',
-      },
-      {
-        label: 'Detail zum Öffnen',
-        detail: 'Eine Sektion mit klappbarer Tür → öffnet die Sicht auf gedruckte Sammelschienen, Stromwandler, Leistungsschalter. Live-Demo am Messestand möglich.',
-      },
-      {
-        label: 'Versand direkt Messeadresse',
-        detail: 'Holzkiste mit Schaumstoff-Inserts, Versand per Luftfracht direkt an Stand-Nummer in Dubai. Anlieferung 3 Tage vor Messe-Aufbau.',
+        label: 'Mehrfarbig, mit sehr feinen Strukturen',
+        detail: 'Die Teile wurden mehrfarbig gedruckt. Bei den feinsten Strukturen wurde so lange nachgedruckt, bis jedes Teil sauber war.',
       },
     ],
 
     technicalSpecs: [
       { label: 'Maßstab', value: '1:25' },
-      { label: 'Modell-Höhe', value: '~65 cm (4 Segmente)' },
-      { label: 'Material', value: 'ABS, Aceton-geglättet' },
-      { label: 'Lackierung', value: 'RAL 7035, 2K-Klarlack-Versiegelung' },
-      { label: 'Druckzeit gesamt', value: '~140 Stunden über 8 Tage' },
-      { label: 'Lead-Time', value: '4 Wochen Brief-to-Versand' },
-      { label: 'Special', value: 'NDA + verschlüsselter CAD-Transfer + lasergravierte Typenschilder' },
+      { label: 'Modellgröße', value: '1.600 × 800 × 800 mm, segmentiert' },
+      { label: 'Aufbau', value: '15 bis 20 Einzelteile, modular' },
+      { label: 'Ausführung', value: 'mehrfarbig, sehr feine Strukturen' },
+      { label: 'Transport', value: 'in Modulen, als Handgepäck' },
     ],
 
     outcome:
-      'Modell am Stand der zentrale Eyecatcher der Messe. Nach Kunden-Feedback >40 qualifizierte Lead-Gespräche entlang des Modells geführt · Lead-Capture-Rate 3× höher als bei den 2D-Roll-ups daneben. Folgeauftrag für eine Variante zur AMPEC Indien.',
-
-    lessons:
-      'Was ich beim nächsten Mal anders machen würde: Die Magnetverbindungen hatten zu viel Spielraum bei einem der Übergänge · manuelle Nachjustierung am Aufbautag nötig. Heute fixiere ich kritische Verbindungen mit Konus-Steckung + Magnet kombiniert.',
-
-    customerQuote: {
-      text: 'Die Detailtreue hat selbst unsere Engineering-Kollegen überrascht. Am Stand wirkte es, als stünde unsere Anlage im Maßstab 1:25 vor uns.',
-      attribution: 'Marketing-Leitung (auf Wunsch anonymisiert)',
-    },
+      'Das Modell ist laut Kunde auf der Messe in Dubai sehr gut angekommen. Durch die Aufteilung in Module reist es ohne Spedition mit zur Messe.',
 
     relatedCases: ['ortsmodell-express-zwei-tage', 'justitia-statue-museum-edt-bei-lambach'],
   },
@@ -459,6 +441,71 @@ export const cases: RealCase[] = [
     ],
   },
 
+  {
+    slug: 'messemodell-rudermaschine-becker-marine-systems',
+    title: 'Rudermaschine als Messemodell: im Handgepäck zur Messe nach Griechenland',
+    customerLabel: 'Becker Marine Systems GmbH, Hamburg',
+    branchen: ['schiffbau'],
+    region: 'oberoesterreich',
+    year: 2026,
+    status: 'completed',
+
+    metaTitle: 'Case: Rudermaschine als Messemodell für Becker Marine Systems · ekdruck',
+    metaDescription: 'Für einen Messeauftritt in Griechenland hat ekdruck die Rudermaschine von Becker Marine Systems als Ausstellungsmodell aus dem 3D-Druck gebaut: rund 32 × 19 × 32 cm, mit Schutzring für den Transport, verpackt fürs Handgepäck. Rund zehn Tage von der Freigabe bis zum Versand.',
+    primaryKeyword: 'Messemodell Rudermaschine',
+
+    challenge:
+      'Becker Marine Systems aus Hamburg entwickelt Ruder- und Manövriersysteme für Schiffe. Für einen Messeauftritt in Griechenland sollte die Rudermaschine am Stand zu sehen sein. Das Original kommt dafür nicht infrage: zu groß, zu schwer und für eine Reise zur Messe nicht gedacht. Gesucht war ein Modell, das den Aufbau zeigt und mit dem Standteam mitreisen kann, und das in kurzer Zeit.',
+
+    approach: [
+      {
+        label: 'Modell nach der CAD-Datei des Herstellers',
+        detail: 'Grundlage war die CAD-Datei von Becker. Das Modell entstand in der Größe, in der die Datei angelegt war, rund 32 × 19 × 32 cm, mit allen sichtbaren Details der Rudermaschine.',
+      },
+      {
+        label: 'Schicht für Schicht gedruckt, von Hand nachbearbeitet',
+        detail: 'Gedruckt im 3D-Druck und anschließend von Hand nachbearbeitet. Farbton und Oberfläche wurden vorab mit dem Kunden abgestimmt.',
+      },
+      {
+        label: 'Schutzring für die Unterseite',
+        detail: 'An der Unterseite sitzen feine Lamellen. Ein eigener Schutzring hält sie beim Transport frei, damit am Stand nichts abgebrochen ankommt.',
+      },
+      {
+        label: 'Verpackt fürs Handgepäck',
+        detail: 'Das Modell ist so verpackt, dass es als Handgepäck mit dem Standteam zur Messe fliegen kann. Keine Spedition, kein Warten auf die Fracht.',
+      },
+    ],
+
+    technicalSpecs: [
+      { label: 'Gegenstand', value: 'Rudermaschine, Ausstellungsmodell' },
+      { label: 'Größe', value: 'rund 32 × 19 × 32 cm' },
+      { label: 'Datengrundlage', value: 'CAD-Datei des Herstellers' },
+      { label: 'Extras', value: 'Schutzring für die Unterseite' },
+      { label: 'Transport', value: 'als Handgepäck verpackt' },
+      { label: 'Lieferzeit', value: 'rund 10 Tage von der Freigabe bis zum Versand' },
+    ],
+
+    outcome:
+      'Freigabe am 21. September, Versand am 30. September, wenige Tage später war das Modell wohlbehalten in Hamburg. Von dort reist es mit dem Standteam zur Messe nach Griechenland. Am Stand lässt sich der Aufbau der Rudermaschine damit von allen Seiten zeigen, statt nur auf Bildschirm und Prospekt.',
+
+    lessons:
+      'Die empfindlichste Stelle eines Modells ist selten die, die man am Stand sieht. Hier waren es die Lamellen an der Unterseite. Ein eigener Schutzring kostet wenig und erspart beim Transport jede Diskussion.',
+
+    customerQuote: {
+      text: 'Das Paket mit Modell ist wohlbehalten bei uns angekommen. Wir haben es gerade ausgepackt und es gefällt uns sehr gut.',
+      attribution: 'Marketing, Becker Marine Systems',
+    },
+
+    relatedCases: ['industriemodell-mittelspannungs-anlage-dubai', 'messemodell-stalltechnik-statt-grossgeraet'],
+
+    images: [
+      { src: '/cases/rudermaschine-messemodell-detail.jpg', alt: 'Messemodell der Rudermaschine von Becker Marine Systems aus dem 3D-Druck, Detailansicht' },
+      { src: '/cases/rudermaschine-messemodell-schraeg.jpg', alt: 'Ausstellungsmodell einer Rudermaschine für den Messestand, Schrägansicht' },
+      { src: '/cases/rudermaschine-messemodell-draufsicht.jpg', alt: 'Draufsicht auf das 3D-gedruckte Messemodell der Rudermaschine' },
+      { src: '/cases/rudermaschine-messemodell-oben.jpg', alt: 'Messemodell der Rudermaschine mit Schutzring an der Unterseite' },
+    ],
+    photoCredit: 'ekdruck',
+  },
   {
     slug: 'messemodell-stalltechnik-statt-grossgeraet',
     title: 'Vier Modelle statt Sperrguttransport: Stalltechnik auf Messegröße gebracht',
